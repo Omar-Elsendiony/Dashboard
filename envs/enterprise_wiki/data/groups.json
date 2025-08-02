@@ -1,0 +1,402 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Administrators",
+    "description": "Monitoring architecture process review project testing deployment framework process deployment methodology. System management framework proceeding deployment analysis project management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2025-04-22T14:19:41.304064",
+    "created_by": 44
+  },
+  "2": {
+    "id": 2,
+    "name": "Editors",
+    "description": null,
+    "type": "system",
+    "created_at": "2023-09-16T14:19:41.304076",
+    "created_by": 12
+  },
+  "3": {
+    "id": 3,
+    "name": "Content Managers",
+    "description": "Deployment system planning strategy analysis project deployment development integration methodology workflow management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2024-01-09T14:19:41.304091",
+    "created_by": 141
+  },
+  "4": {
+    "id": 4,
+    "name": "Reviewers",
+    "description": null,
+    "type": "system",
+    "created_at": "2024-09-30T14:19:41.304098",
+    "created_by": 77
+  },
+  "5": {
+    "id": 5,
+    "name": "IT Support",
+    "description": "Workflow testing optimization management workflow development documentation planning optimization solution methodology deployment. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2025-01-09T14:19:41.304110",
+    "created_by": 249
+  },
+  "6": {
+    "id": 6,
+    "name": "Human Resources",
+    "description": null,
+    "type": "custom",
+    "created_at": "2025-01-31T14:19:41.304117",
+    "created_by": 258
+  },
+  "7": {
+    "id": 7,
+    "name": "Finance",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-08-02T14:19:41.304123",
+    "created_by": 139
+  },
+  "8": {
+    "id": 8,
+    "name": "Marketing",
+    "description": "Integration project methodology workflow methodology dep",
+    "type": "custom",
+    "created_at": "2024-03-11T14:19:41.304135",
+    "created_by": 337
+  },
+  "9": {
+    "id": 9,
+    "name": "Sales",
+    "description": "Methodology execution management review process strategy methodology implementation strategy strategy documentation in deployment. Workflow architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2025-06-15T14:19:41.304147",
+    "created_by": 184
+  },
+  "10": {
+    "id": 10,
+    "name": "Engineering",
+    "description": "Optimization optimization documentation review planning monitoring analysis monitoring system process process optimization project execution management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2024-01-24T14:19:41.304159",
+    "created_by": 67
+  },
+  "11": {
+    "id": 11,
+    "name": "Design",
+    "description": null,
+    "type": "custom",
+    "created_at": "2023-12-30T14:19:41.304166",
+    "created_by": 166
+  },
+  "12": {
+    "id": 12,
+    "name": "Product Management",
+    "description": "Integration execution framework strategy strategy review deployment management optimization analysis process workflow system design. Methodology architecture project review management integration deployment testing.",
+    "type": "custom",
+    "created_at": "2025-05-10T14:19:41.304177",
+    "created_by": 203
+  },
+  "13": {
+    "id": 13,
+    "name": "Customer Support",
+    "description": "Analysis review design deployment solution monitoring analysis design optimization. Methodology process integration documentation analysis deployment management optimization review project workflow system design.",
+    "type": "custom",
+    "created_at": "2025-03-09T14:19:41.304193",
+    "created_by": 163
+  },
+  "14": {
+    "id": 14,
+    "name": "Legal",
+    "description": "Execution development framework process review development. Methodology architecture design analysis project documentation. Implementation methodology design management deployment testing.",
+    "type": "custom",
+    "created_at": "2025-04-28T14:19:41.304214",
+    "created_by": 116
+  },
+  "15": {
+    "id": 15,
+    "name": "Operations",
+    "description": "Methodology project project workflow system analysis. Development management execution review analysis review planning design testing architecture integration.",
+    "type": "custom",
+    "created_at": "2025-02-06T14:19:41.304233",
+    "created_by": 282
+  },
+  "16": {
+    "id": 16,
+    "name": "Research",
+    "description": null,
+    "type": "custom",
+    "created_at": "2023-12-06T14:19:41.304239",
+    "created_by": 28
+  },
+  "17": {
+    "id": 17,
+    "name": "Quality Assurance",
+    "description": null,
+    "type": "custom",
+    "created_at": "2023-07-05T14:19:41.304245",
+    "created_by": 219
+  },
+  "18": {
+    "id": 18,
+    "name": "Business Analysts",
+    "description": "Solution monitoring system documentation solution review deployment system methodology deployment planning workflow solution management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2024-07-26T14:19:41.304257",
+    "created_by": 190
+  },
+  "19": {
+    "id": 19,
+    "name": "Project Managers",
+    "description": "Workflow deployment process workflow management. System architecture methodology testing framework process management implementation optimization review architecture. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2024-08-09T14:19:41.304272",
+    "created_by": 18
+  },
+  "20": {
+    "id": 20,
+    "name": "Consultants",
+    "description": "Development review review methodology system testing review deployment review solution management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2023-09-08T14:19:41.304284",
+    "created_by": 45
+  },
+  "21": {
+    "id": 21,
+    "name": "Executive Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2025-01-21T14:19:41.304291",
+    "created_by": 204
+  },
+  "22": {
+    "id": 22,
+    "name": "Board Members",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-04-09T14:19:41.304297",
+    "created_by": 267
+  },
+  "23": {
+    "id": 23,
+    "name": "Contractors",
+    "description": null,
+    "type": "custom",
+    "created_at": "2023-07-14T14:19:41.304303",
+    "created_by": 320
+  },
+  "24": {
+    "id": 24,
+    "name": "Interns",
+    "description": null,
+    "type": "custom",
+    "created_at": "2023-10-25T14:19:41.304309",
+    "created_by": 213
+  },
+  "25": {
+    "id": 25,
+    "name": "Training Team",
+    "description": "Integration framework execution execution optimization system workflow optimization analysis management deployment. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2024-04-09T14:19:41.304321",
+    "created_by": 207
+  },
+  "26": {
+    "id": 26,
+    "name": "Documentation Team",
+    "description": "Testing planning architecture management deployment. Planning project methodology workflow workflow monitoring design system strategy. Workflow framework development deployment management optimization analysis process workflow system design.",
+    "type": "custom",
+    "created_at": "2024-09-26T14:19:41.304338",
+    "created_by": 109
+  },
+  "27": {
+    "id": 27,
+    "name": "Compliance",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-11-09T14:19:41.304345",
+    "created_by": 265
+  },
+  "28": {
+    "id": 28,
+    "name": "Security",
+    "description": null,
+    "type": "custom",
+    "created_at": "2023-08-28T14:19:41.304351",
+    "created_by": 264
+  },
+  "29": {
+    "id": 29,
+    "name": "DevOps",
+    "description": "Design testing framework optimization integration development plan",
+    "type": "custom",
+    "created_at": "2023-08-04T14:19:41.304362",
+    "created_by": 234
+  },
+  "30": {
+    "id": 30,
+    "name": "Data Science",
+    "description": "Workflow methodology monitoring solution system project implementation integration. Review deployment optimization analysis strategy process solution management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2023-10-02T14:19:41.304376",
+    "created_by": 146
+  },
+  "31": {
+    "id": 31,
+    "name": "TechCorp Team",
+    "description": "Framework documentation process process documentation solution monitoring strategy review analysis management optimization. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2024-02-16T14:19:41.304389",
+    "created_by": 130
+  },
+  "32": {
+    "id": 32,
+    "name": "SilverData Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-09-07T14:19:41.304397",
+    "created_by": 193
+  },
+  "33": {
+    "id": 33,
+    "name": "TechFlow Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-02-10T14:19:41.304404",
+    "created_by": 239
+  },
+  "34": {
+    "id": 34,
+    "name": "InfoTech Team",
+    "description": "Review review strategy optimization integration wor",
+    "type": "custom",
+    "created_at": "2025-04-29T14:19:41.304416",
+    "created_by": 153
+  },
+  "35": {
+    "id": 35,
+    "name": "WebTech Team",
+    "description": "Testing analysis development project monitoring workflow planning management optimization. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2025-06-03T14:19:41.304429",
+    "created_by": 274
+  },
+  "36": {
+    "id": 36,
+    "name": "GoldTech Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-12-02T14:19:41.304437",
+    "created_by": 154
+  },
+  "37": {
+    "id": 37,
+    "name": "SmartSolutions Team",
+    "description": null,
+    "type": "system",
+    "created_at": "2023-10-09T14:19:41.304444",
+    "created_by": 242
+  },
+  "38": {
+    "id": 38,
+    "name": "DigitalFlow Team",
+    "description": "System implementation framework analysis methodology analysis process workflow strategy deployment strategy integration execution management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2024-11-25T14:19:41.304456",
+    "created_by": 62
+  },
+  "39": {
+    "id": 39,
+    "name": "PlatinumSys Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-08-28T14:19:41.304463",
+    "created_by": 28
+  },
+  "40": {
+    "id": 40,
+    "name": "DigitalFlow Team",
+    "description": "Review planning review development strategy documentation management analysis review analysis management. Workflow framework development deployment management optimization analysis process workflow system design. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2023-08-09T14:19:41.304479",
+    "created_by": 274
+  },
+  "41": {
+    "id": 41,
+    "name": "WebTech Team",
+    "description": "Documentation architecture solution process architecture analysis system implementation integration development methodology workflow management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "custom",
+    "created_at": "2024-12-15T14:19:41.304492",
+    "created_by": 306
+  },
+  "42": {
+    "id": 42,
+    "name": "BlueTech Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2025-06-04T14:19:41.304499",
+    "created_by": 69
+  },
+  "43": {
+    "id": 43,
+    "name": "DevHub Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-01-10T14:19:41.304506",
+    "created_by": 85
+  },
+  "44": {
+    "id": 44,
+    "name": "DataFlow Team",
+    "description": "Documentation project monitoring system design methodology implementation. Process optimization management deployment analysis review project workflow system design. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2024-05-05T14:19:41.304522",
+    "created_by": 216
+  },
+  "45": {
+    "id": 45,
+    "name": "PlatinumSys Team",
+    "description": null,
+    "type": "system",
+    "created_at": "2025-03-30T14:19:41.304529",
+    "created_by": 311
+  },
+  "46": {
+    "id": 46,
+    "name": "DiamondCode Team",
+    "description": null,
+    "type": "system",
+    "created_at": "2023-10-17T14:19:41.304536",
+    "created_by": 262
+  },
+  "47": {
+    "id": 47,
+    "name": "CrystalSoft Team",
+    "description": null,
+    "type": "system",
+    "created_at": "2023-10-26T14:19:41.304543",
+    "created_by": 55
+  },
+  "48": {
+    "id": 48,
+    "name": "CoreTech Team",
+    "description": "Review implementation testing development optimization planning architecture monitoring process project system system design. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2024-11-18T14:19:41.304555",
+    "created_by": 77
+  },
+  "49": {
+    "id": 49,
+    "name": "CloudWorks Team",
+    "description": "Process review workflow deployment system documentation project workflow methodology analysis design system framework management. Methodology architecture process review project testing deployment framework process deployment methodology.",
+    "type": "system",
+    "created_at": "2025-05-11T14:19:41.304568",
+    "created_by": 332
+  },
+  "50": {
+    "id": 50,
+    "name": "SmartSolutions Team",
+    "description": null,
+    "type": "custom",
+    "created_at": "2024-09-22T14:19:41.304576",
+    "created_by": 319
+  }
+}

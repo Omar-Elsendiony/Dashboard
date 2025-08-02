@@ -1,0 +1,110 @@
+{
+  "1": {
+    "id": 1,
+    "name": "space_view",
+    "description": "View space content",
+    "category": "space"
+  },
+  "2": {
+    "id": 2,
+    "name": "space_edit",
+    "description": "Edit space settings",
+    "category": "space"
+  },
+  "3": {
+    "id": 3,
+    "name": "space_delete",
+    "description": "Delete space",
+    "category": "space"
+  },
+  "4": {
+    "id": 4,
+    "name": "space_admin",
+    "description": "Administer space",
+    "category": "space"
+  },
+  "5": {
+    "id": 5,
+    "name": "page_view",
+    "description": "View page content",
+    "category": "page"
+  },
+  "6": {
+    "id": 6,
+    "name": "page_edit",
+    "description": "Edit page content",
+    "category": "page"
+  },
+  "7": {
+    "id": 7,
+    "name": "page_delete",
+    "description": "Delete page",
+    "category": "page"
+  },
+  "8": {
+    "id": 8,
+    "name": "page_comment",
+    "description": "Comment on page",
+    "category": "page"
+  },
+  "9": {
+    "id": 9,
+    "name": "page_attach",
+    "description": "Attach files to pages",
+    "category": "page"
+  },
+  "10": {
+    "id": 10,
+    "name": "user_admin",
+    "description": "Administer users",
+    "category": "system"
+  },
+  "11": {
+    "id": 11,
+    "name": "group_admin",
+    "description": "Administer groups",
+    "category": "system"
+  },
+  "12": {
+    "id": 12,
+    "name": "system_admin",
+    "description": "System administration",
+    "category": "system"
+  },
+  "13": {
+    "id": 13,
+    "name": "audit_view",
+    "description": "View audit logs",
+    "category": "system"
+  },
+  "14": {
+    "id": 14,
+    "name": "space_create",
+    "description": "Create new spaces",
+    "category": "system"
+  },
+  "15": {
+    "id": 15,
+    "name": "profile_view",
+    "description": "View user profiles",
+    "category": "user"
+  },
+  "16": {
+    "id": 16,
+    "name": "profile_edit",
+    "description": "Edit own profile",
+    "category": "user"
+  },
+  "17": {
+    "id": 17,
+    "name": "password_change",
+    "description": "Change password",
+    "category": "user"
+  },
+  "18": {
+    "id": 18,
+    "name": "notifications_manage",
+    "description": "Manage notifications",
+    "category": "user"
+  }
+}

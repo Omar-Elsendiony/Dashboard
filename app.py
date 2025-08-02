@@ -167,13 +167,13 @@ def env_interface():
             
             # global last_environment, last_interface, data
             
-            print(environment, session.get("environment"))
+            # print(environment, session.get("environment"))
             if environment != session.get("environment"):
                 g.data.clear()
                 ENVS_PATH = "envs"
                 DATA_PATH = f"{ENVS_PATH}/{environment}/data"
                 data_files = os.listdir(DATA_PATH)
-                print("Loaded data:")
+                # print("Loaded data:")
                 for data_file in data_files:
                     if data_file.endswith(".json"):
                         data_file_path = os.path.join(DATA_PATH, data_file)

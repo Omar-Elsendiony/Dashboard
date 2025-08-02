@@ -1,0 +1,240 @@
+{
+    "1": {
+        "subcategory_id": "1",
+        "category_id": "1",
+        "name": "Laptop",
+        "created_at": "2021-12-02T00:06:09.639258",
+        "updated_at": "2021-12-02T00:06:09.639258"
+    },
+    "2": {
+        "subcategory_id": "2",
+        "category_id": "1",
+        "name": "Printer",
+        "created_at": "2025-06-24T03:59:45.771702",
+        "updated_at": "2025-06-24T03:59:45.771702"
+    },
+    "3": {
+        "subcategory_id": "3",
+        "category_id": "1",
+        "name": "Monitor",
+        "created_at": "2025-01-13T09:02:11.345031",
+        "updated_at": "2025-01-13T09:02:11.345031"
+    },
+    "4": {
+        "subcategory_id": "4",
+        "category_id": "1",
+        "name": "Keyboard/Mouse",
+        "created_at": "2021-02-17T02:45:29.268055",
+        "updated_at": "2021-02-17T02:45:29.268055"
+    },
+    "5": {
+        "subcategory_id": "5",
+        "category_id": "2",
+        "name": "CRM",
+        "created_at": "2024-03-24T13:11:40.403738",
+        "updated_at": "2024-03-24T13:11:40.403738"
+    },
+    "6": {
+        "subcategory_id": "6",
+        "category_id": "2",
+        "name": "Email Client",
+        "created_at": "2021-03-25T02:22:36.822968",
+        "updated_at": "2021-03-25T02:22:36.822968"
+    },
+    "7": {
+        "subcategory_id": "7",
+        "category_id": "2",
+        "name": "Operating System",
+        "created_at": "2021-11-13T14:32:35.002298",
+        "updated_at": "2021-11-13T14:32:35.002298"
+    },
+    "8": {
+        "subcategory_id": "8",
+        "category_id": "2",
+        "name": "Custom App",
+        "created_at": "2023-01-27T02:42:27.731624",
+        "updated_at": "2023-01-27T02:42:27.731624"
+    },
+    "9": {
+        "subcategory_id": "9",
+        "category_id": "3",
+        "name": "VPN",
+        "created_at": "2024-06-25T10:26:55.454860",
+        "updated_at": "2024-06-25T10:26:55.454860"
+    },
+    "10": {
+        "subcategory_id": "10",
+        "category_id": "3",
+        "name": "Wi-Fi",
+        "created_at": "2020-04-26T11:37:49.528329",
+        "updated_at": "2020-04-26T11:37:49.528329"
+    },
+    "11": {
+        "subcategory_id": "11",
+        "category_id": "3",
+        "name": "Firewall",
+        "created_at": "2023-07-12T03:49:01.709692",
+        "updated_at": "2023-07-12T03:49:01.709692"
+    },
+    "12": {
+        "subcategory_id": "12",
+        "category_id": "3",
+        "name": "DNS",
+        "created_at": "2020-05-09T23:30:40.190554",
+        "updated_at": "2020-05-09T23:30:40.190554"
+    },
+    "13": {
+        "subcategory_id": "13",
+        "category_id": "4",
+        "name": "Password Reset",
+        "created_at": "2022-07-10T10:17:39.705804",
+        "updated_at": "2022-07-10T10:17:39.705804"
+    },
+    "14": {
+        "subcategory_id": "14",
+        "category_id": "4",
+        "name": "New Account",
+        "created_at": "2022-07-15T07:40:15.309855",
+        "updated_at": "2022-07-15T07:40:15.309855"
+    },
+    "15": {
+        "subcategory_id": "15",
+        "category_id": "4",
+        "name": "Permissions",
+        "created_at": "2022-03-02T07:01:29.475994",
+        "updated_at": "2022-03-02T07:01:29.475994"
+    },
+    "16": {
+        "subcategory_id": "16",
+        "category_id": "4",
+        "name": "Account Lockout",
+        "created_at": "2022-02-08T16:01:06.086675",
+        "updated_at": "2022-02-08T16:01:06.086675"
+    },
+    "17": {
+        "subcategory_id": "17",
+        "category_id": "5",
+        "name": "Office Maintenance",
+        "created_at": "2025-05-16T13:26:26.473267",
+        "updated_at": "2025-05-16T13:26:26.473267"
+    },
+    "18": {
+        "subcategory_id": "18",
+        "category_id": "5",
+        "name": "HVAC",
+        "created_at": "2023-04-27T00:28:56.704385",
+        "updated_at": "2023-04-27T00:28:56.704385"
+    },
+    "19": {
+        "subcategory_id": "19",
+        "category_id": "5",
+        "name": "Room Booking",
+        "created_at": "2020-10-01T10:58:14.741855",
+        "updated_at": "2020-10-01T10:58:14.741855"
+    },
+    "20": {
+        "subcategory_id": "20",
+        "category_id": "6",
+        "name": "Payroll System",
+        "created_at": "2023-04-16T12:24:03.891184",
+        "updated_at": "2023-04-16T12:24:03.891184"
+    },
+    "21": {
+        "subcategory_id": "21",
+        "category_id": "6",
+        "name": "Benefits Portal",
+        "created_at": "2024-09-01T12:59:20.511760",
+        "updated_at": "2024-09-01T12:59:20.511760"
+    },
+    "22": {
+        "subcategory_id": "22",
+        "category_id": "6",
+        "name": "Time-off Request",
+        "created_at": "2024-01-14T11:30:50.162591",
+        "updated_at": "2024-01-14T11:30:50.162591"
+    },
+    "23": {
+        "subcategory_id": "23",
+        "category_id": "7",
+        "name": "Invoice Discrepancy",
+        "created_at": "2024-05-08T13:20:00.468379",
+        "updated_at": "2024-05-08T13:20:00.468379"
+    },
+    "24": {
+        "subcategory_id": "24",
+        "category_id": "7",
+        "name": "Payment Status",
+        "created_at": "2025-03-18T05:42:19.886033",
+        "updated_at": "2025-03-18T05:42:19.886033"
+    },
+    "25": {
+        "subcategory_id": "25",
+        "category_id": "7",
+        "name": "Update Billing Info",
+        "created_at": "2023-02-01T17:20:05.054820",
+        "updated_at": "2023-02-01T17:20:05.054820"
+    },
+    "26": {
+        "subcategory_id": "26",
+        "category_id": "8",
+        "name": "Phishing Report",
+        "created_at": "2025-03-27T05:05:05.648586",
+        "updated_at": "2025-03-27T05:05:05.648586"
+    },
+    "27": {
+        "subcategory_id": "27",
+        "category_id": "8",
+        "name": "Virus/Malware",
+        "created_at": "2025-03-11T12:09:34.328918",
+        "updated_at": "2025-03-11T12:09:34.328918"
+    },
+    "28": {
+        "subcategory_id": "28",
+        "category_id": "8",
+        "name": "Security Policy Question",
+        "created_at": "2022-04-18T01:28:13.006073",
+        "updated_at": "2022-04-18T01:28:13.006073"
+    },
+    "29": {
+        "subcategory_id": "29",
+        "category_id": "9",
+        "name": "Projector Issue",
+        "created_at": "2020-06-01T21:25:43.191634",
+        "updated_at": "2020-06-01T21:25:43.191634"
+    },
+    "30": {
+        "subcategory_id": "30",
+        "category_id": "9",
+        "name": "Conference Phone",
+        "created_at": "2022-04-17T12:33:28.766349",
+        "updated_at": "2022-04-17T12:33:28.766349"
+    },
+    "31": {
+        "subcategory_id": "31",
+        "category_id": "9",
+        "name": "Video Conferencing",
+        "created_at": "2021-07-07T02:17:36.728110",
+        "updated_at": "2021-07-07T02:17:36.728110"
+    },
+    "32": {
+        "subcategory_id": "32",
+        "category_id": "10",
+        "name": "How do I...?",
+        "created_at": "2023-11-20T19:06:57.934281",
+        "updated_at": "2023-11-20T19:06:57.934281"
+    },
+    "33": {
+        "subcategory_id": "33",
+        "category_id": "10",
+        "name": "Information Request",
+        "created_at": "2021-09-30T15:59:27.895094",
+        "updated_at": "2021-09-30T15:59:27.895094"
+    },
+    "34": {
+        "subcategory_id": "34",
+        "category_id": "10",
+        "name": "Other",
+        "created_at": "2023-08-06T00:04:45.049268",
+        "updated_at": "2023-08-06T00:04:45.049268"
+    }
+}
