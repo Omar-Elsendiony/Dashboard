@@ -19,9 +19,9 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = False
-# app.config['SESSION_TYPE'] = 'filesystem'
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+app.config['SESSION_TYPE'] = 'filesystem'
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ###################### GLOBAL ENVIRONMENTS ##################################
@@ -154,7 +154,7 @@ def extract_file_info(file_path: str) -> Dict[str, Any]:
 ######################## END UTILITY FUNCTIONS ##############################
 
 
-@app.route('/', strict_slashes=False, methods=["POST", "GET"])
+@app.route('/task-framework', strict_slashes=False, methods=["POST", "GET"])
 def index():
     return render_template('index.html')
 
@@ -351,6 +351,9 @@ def execute_api():
             'message': f'API {api_name} not found'
         }), 404
 
+@app.route('/', methods=['GET'])
+def home_page():
+    return render_template('main.html')
 
 if __name__ == "__main__":
     """ Main Function """
