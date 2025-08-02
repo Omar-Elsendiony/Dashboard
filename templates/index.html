@@ -773,6 +773,7 @@
 
                 if (!response.ok) {
                     showWrongMessage('Failed to select Environment and Interface.');
+                    console.error('Error details:', await response.json());
                     return;
                 }
 
