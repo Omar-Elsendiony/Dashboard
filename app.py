@@ -10,6 +10,8 @@ from typing import Dict, Any
 import re
 from flask import Flask, session, g
 from flask_session import Session
+# import gspread
+# from oauth2client.service_account import ServiceAccountCredentials
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -350,6 +352,92 @@ def execute_api():
             'status': 'error',
             'message': f'API {api_name} not found'
         }), 404
+
+############# TASK TRACKER LOGIC ####################
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import time
+import threading
+
+
+# Your Google Sheets functions
+def connect_to_sheets():
+    """Connect to Google Sheets with credentials"""
+    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
+    client = gspread.authorize(creds)
+    return client
+
+def get_sheet_data(sheet_name, worksheet_name):
+    """Get all data from a specific worksheet"""
+    client = connect_to_sheets()
+    sheet = client.open(sheet_name).worksheet(worksheet_name)
+    return sheet.get_all_values()
+
+def print_sheet_data(all_rows, sheet_name):
+    """Print all rows from sheet"""
+    print(f"All rows from {sheet_name}:")
+    for i, row in enumerate(all_rows):
+        print(f"Row {i+1}: {row}")
+
+# Example usage with different timeout methods
+def run_with_timeout(func, args=(), kwargs=None, timeout_seconds=10):
+    """
+    Run a function with a timeout using threading
+    """
+    if kwargs is None:
+        kwargs = {}
+    
+    result = [None]
+    exception = [None]
+    
+    def target():
+        try:
+            result[0] = func(*args, **kwargs)
+        except Exception as e:
+            exception[0] = e
+    
+    thread = threading.Thread(target=target)
+    thread.daemon = True
+    thread.start()
+    thread.join(timeout_seconds)
+    
+    if thread.is_alive():
+        print(f"Function timed out after {timeout_seconds} seconds")
+        return None
+    
+    if exception[0]:
+        raise exception[0]
+    
+    return result[0]
+
+###########################################################
+
+@app.route('/tracker', strict_slashes=False, methods=["GET", "POST"])
+def tracker():
+    """ Endpoint to render the tracker page """
+    if request.method == "POST":
+        # Define the scope and credentials
+        all_rows = run_with_timeout(
+        get_sheet_data, 
+        args=('Amazon', 'Automated Tracker'),
+        timeout_seconds=15
+        )
+        
+        if all_rows:
+            print_sheet_data(all_rows, 'Automated Tracker')
+        else:
+            print("Failed to fetch Automated Tracker data")
+        
+        print("\n" + "="*50 + "\n")
+        
+        return jsonify({
+            'status': 'success',
+            'data': all_rows
+        }), 200
+        
+    return render_template('tracker.html')
+
 
 @app.route('/', methods=['GET'])
 def home_page():
