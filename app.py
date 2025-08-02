@@ -248,6 +248,7 @@ def env_interface():
                 session["imports_set"] = (importsSet)
                 session["invoke_methods"] = invoke_methods
                 
+                print("Imports set:", session["imports_set"])
                 return jsonify({
                     'status': 'success',
                     'message': 'Environment and interface selected successfully',
