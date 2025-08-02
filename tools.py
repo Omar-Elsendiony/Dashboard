@@ -4,458 +4,845 @@ import json
 
 class Tools:
     @staticmethod
-    def get_user_groups_invoke(data: Dict[str, Any], user_id: int) -> str:
+    def search_kb_articles_invoke(data: Dict[str, Any], company_id: Optional[str] = None,
+               department_id: Optional[str] = None, category_id: Optional[str] = None,
+               subcategory_id: Optional[str] = None, created_by: Optional[str] = None) -> str:
+        kb_articles = data.get("knowledge_base", {})
+        results = []
         
-        user_groups = data.get("user_groups", {})
-        groups = data.get("groups", {})
-        group_ids = [ug["group_id"] for ug in user_groups.values() if str(ug["user_id"]) == str(user_id)]
-        print(f"User ID: {user_id}, Group IDs: {group_ids}")
-        return json.dumps([groups[str(gid)] for gid in group_ids if str(gid) in groups])
+        for article in kb_articles.values():
+            if company_id and article.get("company_id") != company_id:
+                continue
+            if department_id and article.get("department_id") != department_id:
+                continue
+            if category_id and article.get("category_id") != category_id:
+                continue
+            if subcategory_id and article.get("subcategory_id") != subcategory_id:
+                continue
+            if created_by and article.get("created_by") != created_by:
+                continue
+            results.append(article)
+        
+        return json.dumps(results)
 
     @staticmethod
-    def update_notification_read_status_invoke(data: Dict[str, Any], notification_id: int, is_read: bool) -> str:
-        notifications = data.get("notifications", {})
-        notification = notifications.get(str(notification_id))
-
-        if not notification:
-            raise ValueError("Notification not found")
-
-        notification["is_read"] = is_read
-
-        return json.dumps({
-            "status": "updated",
-            "notification_id": notification_id,
-            "is_read": is_read
-        })
-
-    @staticmethod
-    def get_spaces_by_filters_invoke(data: Dict[str, Any],  **criteria: Any) -> str:
-        """
-        Return all spaces that match *all* supplied non-None criteria.
-        Example call:
-            GetSpacesByFilters.get_spaces_by_filters_invoke(data, name="General Documentation", status="current")
-        """
-        spaces = data.get("spaces", {})
-        filtered_spaces = []
-        # print("Criteria received:", criteria)
+    def log_incident_change_invoke(data: Dict[str, Any], incident_id: str, changed_by: str,
+               incident_values: Optional[Dict] = None, task_values: Optional[Dict] = None) -> str:
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
         
-        # Remove params that aren't actual filters (defensive) and drop None values
-        criteria = {
-            k: v for k, v in criteria.items()
-            if k not in ("data",) and v is not None  # 'data' shouldn't be passed, but guard anyway
+        incidents = data.get("incidents", {})
+        users = data.get("users", {})
+        tasks = data.get("tasks", {})
+        incident_history = data.get("incident_history", {})
+        if not incident_values and not task_values:
+            raise ValueError("Either incident_values or task_values must be provided")
+
+        # Validate incident exists
+        if str(incident_id) not in incidents:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate user exists
+        if str(changed_by) not in users:
+            raise ValueError(f"User {changed_by} not found")
+        
+        # Get current incident data for old values
+        current_incident = incidents[str(incident_id)]
+        
+        # Process incident values - capture old values and apply new ones
+        processed_incident_values = {}
+        if incident_values:
+            for field, new_value in incident_values.items():
+                old_value = current_incident.get(field)
+                # If new_value is None, keep the old value
+                actual_new_value = old_value if new_value is None else new_value
+                processed_incident_values[field] = {
+                    "old": old_value,
+                    "new": actual_new_value
+                }
+                # Apply the new value to the incident
+                current_incident[field] = actual_new_value
+        
+        # Process task values - capture old values and apply new ones
+        # Structure: {"task_id": {"field_name": "new_value", ...}, ...}
+        processed_task_values = {}
+        if task_values:
+            for task_id, task_changes in task_values.items():
+                task_id_str = str(task_id)
+                if task_id_str not in tasks:
+                    raise ValueError(f"Task {task_id} not found")
+                
+                current_task = tasks[task_id_str]
+                processed_task_values[task_id_str] = {}
+                
+                for field, new_value in task_changes.items():
+                    if field not in current_task:
+                        raise ValueError(f"Invalid field '{field}' for task {task_id}")
+                    
+                    old_value = current_task.get(field)
+                    # If new_value is None, keep the old value
+                    actual_new_value = old_value if new_value is None else new_value
+                    processed_task_values[task_id_str][field] = {
+                        "old": old_value,
+                        "new": actual_new_value
+                    }
+                    # Apply the new value to the task
+                    current_task[field] = actual_new_value
+        
+        history_id = generate_id(incident_history)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_history = {
+            "incident_history_id": str(history_id),
+            "incident_id": incident_id,
+            "changed_by": changed_by,
+            "incident_values": processed_incident_values if processed_incident_values else None,
+            "task_values": processed_task_values if processed_task_values else None,
+            "changed_at": timestamp
         }
         
-        # Check for empty criteria after filtering
-        if not criteria:
-            raise ValueError("At least one filter criterion must be provided.")
-
-        for space in spaces.values():
-            # require all provided criteria to match exactly
-            if all(str(space.get(k)) == str(v) for k, v in criteria.items()):
-                filtered_spaces.append(space)
-
-        return json.dumps(filtered_spaces)
+        incident_history[str(history_id)] = new_history
+        return json.dumps(new_history)
 
     @staticmethod
-    def get_user_notifications_invoke(data: Dict[str, Any], user_id: int) -> str:
-        notifications = data.get("notifications", {})
-        user_notifications = [
-            notif for notif in notifications.values()
-            if str(notif["user_id"]) == str(user_id)
-        ]
-        return json.dumps(user_notifications)
-
-    @staticmethod
-    def update_comment_status_invoke(data: Dict[str, Any], comment_id: int, status: str) -> str:
-        comments = data.get("comments", {})
-        comment = comments.get(str(comment_id))
-        if not comment:
-            raise ValueError("Comment not found")
+    def search_departments_invoke(data: Dict[str, Any], company_id: Optional[str] = None, 
+               manager_id: Optional[str] = None, name: Optional[str] = None) -> str:
+        departments = data.get("departments", {})
+        results = []
         
-        valid_statuses = ["active", "deleted", "resolved"]
-        if status not in valid_statuses:
-            raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        for department in departments.values():
+            if company_id and department.get("company_id") != company_id:
+                continue
+            if manager_id and department.get("manager_id") != manager_id:
+                continue
+            if name and name.lower() not in department.get("name", "").lower():
+                continue
+            results.append(department)
         
-        comment["status"] = status
-        # set_updated_at("comments", comment_id, data)
-        comment["updated_at"] = None
-        return json.dumps(comment)
+        return json.dumps(results)
 
     @staticmethod
-    def get_users_by_filters_invoke(
-        data: Dict[str, Any],
-        status: Optional[str] = None,
-        username: Optional[str] = None,
-        email: Optional[str] = None,
-        locale: Optional[str] = None,
-        timezone: Optional[str] = None,
-    ) -> str:
+    def update_incident_invoke(data: Dict[str, Any], incident_id: str, title: Optional[str] = None,
+               description: Optional[str] = None, status: Optional[str] = None,
+               priority: Optional[str] = None, assigned_to: Optional[str] = None,
+               category_id: Optional[str] = None, subcategory_id: Optional[str] = None) -> str:
+        incidents = data.get("incidents", {})
+        incident = incidents.get(str(incident_id))
+        
+        if not incident:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate status if provided
+        if status:
+            valid_statuses = ["open", "in_progress", "resolved", "closed"]
+            if status not in valid_statuses:
+                raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        # Validate priority if provided
+        if priority:
+            valid_priorities = ["low", "medium", "high", "critical"]
+            if priority not in valid_priorities:
+                raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate assigned user if provided
+        if assigned_to:
+            users = data.get("users", {})
+            if str(assigned_to) not in users:
+                raise ValueError(f"Assigned user {assigned_to} not found")
+        
+        # Validate category if provided
+        if category_id:
+            categories = data.get("categories", {})
+            if str(category_id) not in categories:
+                raise ValueError(f"Category {category_id} not found")
+        
+        # Validate subcategory if provided
+        if subcategory_id:
+            subcategories = data.get("subcategories", {})
+            if str(subcategory_id) not in subcategories:
+                raise ValueError(f"Subcategory {subcategory_id} not found")
+        
+        # Update fields
+        if title is not None:
+            incident["title"] = title
+        if description is not None:
+            incident["description"] = description
+        if status is not None:
+            incident["status"] = status
+        if priority is not None:
+            incident["priority"] = priority
+        if assigned_to is not None:
+            incident["assigned_to"] = assigned_to
+        if category_id is not None:
+            incident["category_id"] = category_id
+        if subcategory_id is not None:
+            incident["subcategory_id"] = subcategory_id
+        
+        incident["updated_at"] = "2025-10-01T00:00:00"
+        return json.dumps(incident)
+
+    @staticmethod
+    def search_users_invoke(data: Dict[str, Any], company_id: Optional[str] = None, 
+               department_id: Optional[str] = None, role: Optional[str] = None,
+               status: Optional[str] = None, email: Optional[str] = None) -> str:
         users = data.get("users", {})
-        filtered_users = []
+        results = []
         
-        if (status is None and username is None and email is None and locale is None and timezone is None):
-            raise ValueError("At least one filter criterion must be provided.")
-
         for user in users.values():
+            if company_id and user.get("company_id") != company_id:
+                continue
+            if department_id and user.get("department_id") != department_id:
+                continue
+            if role and user.get("role") != role:
+                continue
             if status and user.get("status") != status:
                 continue
-            if username and user.get("username") != username:
+            if email and user.get("email", "").lower() != email.lower():
                 continue
-            if email and user.get("email") != email:
-                continue
-            if locale and user.get("locale") != locale:
-                continue
-            if timezone and user.get("timezone") != timezone:
-                continue
-            filtered_users.append(user)
-
-        return json.dumps(filtered_users)
+            results.append(user)
+        
+        return json.dumps(results)
 
     @staticmethod
-    def update_watcher_settings_invoke(
-        data: Dict[str, Any],
-        watcher_id: int,
-        watch_type: Optional[str] = None,
-        notifications_enabled: Optional[bool] = None
-    ) -> str:
-        watchers = data.get("watchers", {})
-        watcher = watchers.get(str(watcher_id))
-        if not watcher:
-            raise ValueError("Watcher not found")
-        
-        if watch_type is None and notifications_enabled is None:
-            raise ValueError("At least one of watch_type or notifications_enabled must be provided")
-        
-        if watch_type:
-            valid_types = ["watching", "not_watching"]
-            if watch_type not in valid_types:
-                raise ValueError(f"Invalid watch type. Must be one of {valid_types}")
-            watcher["watch_type"] = watch_type
-        
-        if notifications_enabled is not None:
-            watcher["notifications_enabled"] = notifications_enabled
-        
-        return json.dumps(watcher)
+    def get_incident_invoke(data: Dict[str, Any], incident_id: str) -> str:
+        incidents = data.get("incidents", {})
+        incident = incidents.get(incident_id)
+        if not incident:
+            raise ValueError(f"Incident {incident_id} not found")
+        return json.dumps(incident)
 
     @staticmethod
-    def update_user_status_invoke(data: Dict[str, Any], user_id: int, status: str) -> str:
+    def get_company_by_name_invoke(data: Dict[str, Any], name: str) -> str:
+        companies = data.get("companies", {})
+        for company in companies.values():
+            if company.get("name", "").lower() == name.lower():
+                return json.dumps(company)
+        raise ValueError(f"Company '{name}' not found")
+
+    @staticmethod
+    def update_task_invoke(data: Dict[str, Any], task_id: str, description: Optional[str] = None,
+               status: Optional[str] = None, priority: Optional[str] = None,
+               assigned_to: Optional[str] = None, due_date: Optional[str] = None) -> str:
+        tasks = data.get("tasks", {})
+        task = tasks.get(str(task_id))
+        
+        if not task:
+            raise ValueError(f"Task {task_id} not found")
+        
+        # Validate status if provided
+        if status:
+            valid_statuses = ["todo", "in_progress", "blocked", "done", "cancelled"]
+            if status not in valid_statuses:
+                raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        # Validate priority if provided
+        if priority:
+            valid_priorities = ["low", "medium", "high", "critical"]
+            if priority not in valid_priorities:
+                raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate assigned user if provided
+        if assigned_to:
+            users = data.get("users", {})
+            if str(assigned_to) not in users:
+                raise ValueError(f"Assigned user {assigned_to} not found")
+        
+        # Update fields
+        if description is not None:
+            task["description"] = description
+        if status is not None:
+            task["status"] = status
+        if priority is not None:
+            task["priority"] = priority
+        if assigned_to is not None:
+            task["assigned_to"] = assigned_to
+        if due_date is not None:
+            task["due_date"] = due_date
+        
+        task["updated_at"] = "2025-10-01T00:00:00"
+        return json.dumps(task)
+
+    @staticmethod
+    def update_change_request_invoke(data: Dict[str, Any], change_request_id: int, 
+               description: Optional[str] = None, status: Optional[str] = None,
+               priority: Optional[str] = None, risk_level: Optional[str] = None,
+               approved_by: Optional[int] = None, assigned_to: Optional[int] = None,
+               scheduled_start: Optional[str] = None, scheduled_end: Optional[str] = None,
+               affected_scope: Optional[Dict] = None) -> str:
+        change_requests = data.get("change_requests", {})
+        cr = change_requests.get(str(change_request_id))
+        
+        if not cr:
+            raise ValueError(f"Change request {change_request_id} not found")
+        
+        # Validate status if provided
+        if status:
+            valid_statuses = ["draft", "submitted", "approved", "rejected", 
+                            "in_progress", "implemented", "closed"]
+            if status not in valid_statuses:
+                raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        # Validate priority if provided
+        if priority:
+            valid_priorities = ["low", "medium", "high", "critical"]
+            if priority not in valid_priorities:
+                raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate risk level if provided
+        if risk_level:
+            valid_risk_levels = ["low", "medium", "high"]
+            if risk_level not in valid_risk_levels:
+                raise ValueError(f"Invalid risk level. Must be one of {valid_risk_levels}")
+        
+        # Validate users if provided
         users = data.get("users", {})
-        user = users.get(str(user_id))
-        if not user:
-            raise ValueError("User not found")
+        if approved_by and str(approved_by) not in users:
+            raise ValueError(f"Approver user {approved_by} not found")
+        if assigned_to and str(assigned_to) not in users:
+            raise ValueError(f"Assigned user {assigned_to} not found")
         
-        valid_statuses = ["active", "inactive", "suspended"]
+        # Update fields
+        if description is not None:
+            cr["description"] = description
+        if status is not None:
+            cr["status"] = status
+        if priority is not None:
+            cr["priority"] = priority
+        if risk_level is not None:
+            cr["risk_level"] = risk_level
+        if approved_by is not None:
+            cr["approved_by"] = approved_by
+        if assigned_to is not None:
+            cr["assigned_to"] = assigned_to
+        if scheduled_start is not None:
+            cr["scheduled_start"] = scheduled_start
+        if scheduled_end is not None:
+            cr["scheduled_end"] = scheduled_end
+        if affected_scope is not None:
+            cr["affected_scope"] = affected_scope
+        
+        cr["updated_at"] = "2025-10-01T00:00:00"
+        return json.dumps(cr)
+
+    @staticmethod
+    def search_change_requests_invoke(data: Dict[str, Any], incident_id: Optional[str] = None,
+               assigned_to: Optional[str] = None, status: Optional[str] = None,
+               priority: Optional[str] = None, risk_level: Optional[str] = None) -> str:
+        change_requests = data.get("change_requests", {})
+        results = []
+        
+        for cr in change_requests.values():
+            if incident_id and cr.get("incident_id") != incident_id:
+                continue
+            if assigned_to and cr.get("assigned_to") != assigned_to:
+                continue
+            if status and cr.get("status") != status:
+                continue
+            if priority and cr.get("priority") != priority:
+                continue
+            if risk_level and cr.get("risk_level") != risk_level:
+                continue
+            results.append(cr)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def get_incident_comments_invoke(data: Dict[str, Any], incident_id: str, is_public: Optional[bool] = None) -> str:
+        comments = data.get("incident_comments", {})
+        results = []
+        
+        for comment in comments.values():
+            if comment.get("incident_id") != incident_id:
+                continue
+            if is_public is not None and comment.get("is_public") != is_public:
+                continue
+            results.append(comment)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def link_incident_to_kb_invoke(data: Dict[str, Any], incident_id: str, knowledge_base_id: str) -> str:
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        incidents = data.get("incidents", {})
+        kb_articles = data.get("knowledge_base", {})
+        incident_knowledge = data.get("incident_knowledge", {})
+        
+        # Validate incident exists
+        if str(incident_id) not in incidents:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate KB article exists
+        if str(knowledge_base_id) not in kb_articles:
+            raise ValueError(f"Knowledge base article {knowledge_base_id} not found")
+        
+        # Check if link already exists
+        for link in incident_knowledge.values():
+            if (link.get("incident_id") == incident_id and 
+                link.get("knowledge_base_id") == knowledge_base_id):
+                return json.dumps({"status": "already_linked"})
+        
+        link_id = generate_id(incident_knowledge)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_link = {
+            "incident_id": incident_id,
+            "knowledge_base_id": knowledge_base_id,
+            "created_at": timestamp
+        }
+        
+        incident_knowledge[str(link_id)] = new_link
+        return json.dumps(new_link)
+
+    @staticmethod
+    def get_incident_tasks_invoke(data: Dict[str, Any], incident_id: str, assigned_to: Optional[str] = None,
+               status: Optional[str] = None) -> str:
+        tasks = data.get("tasks", {})
+        results = []
+        
+        for task in tasks.values():
+            if task.get("incident_id") != incident_id:
+                continue
+            if assigned_to and task.get("assigned_to") != assigned_to:
+                continue
+            if status and task.get("status") != status:
+                continue
+            results.append(task)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def register_change_request_invoke(data: Dict[str, Any], assigned_to: str, description: str,
+               priority: str = "medium", risk_level: str = "low",
+               incident_id: Optional[str] = None, affected_scope: Optional[Dict] = None,
+               scheduled_start: Optional[str] = None, scheduled_end: Optional[str] = None) -> str:
+
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        change_requests = data.get("change_requests", {})
+        users = data.get("users", {})
+        
+        # Validate assigned user exists
+        if str(assigned_to) not in users:
+            raise ValueError(f"Assigned user {assigned_to} not found")
+        
+        # Validate incident if provided
+        if incident_id:
+            incidents = data.get("incidents", {})
+            if str(incident_id) not in incidents:
+                raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate priority
+        valid_priorities = ["low", "medium", "high", "critical"]
+        if priority not in valid_priorities:
+            raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate risk level
+        valid_risk_levels = ["low", "medium", "high"]
+        if risk_level not in valid_risk_levels:
+            raise ValueError(f"Invalid risk level. Must be one of {valid_risk_levels}")
+        
+        cr_id = generate_id(change_requests)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_cr = {
+            "change_request_id": cr_id,
+            "incident_id": incident_id,
+            "assigned_to": assigned_to,
+            "approved_by": None,
+            "description": description,
+            "status": "draft",
+            "priority": priority,
+            "risk_level": risk_level,
+            "affected_scope": affected_scope,
+            "scheduled_start": scheduled_start,
+            "scheduled_end": scheduled_end,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+        
+        change_requests[str(cr_id)] = new_cr
+        return json.dumps(new_cr)
+
+    @staticmethod
+    def search_incidents_invoke(data: Dict[str, Any], company_id: Optional[str] = None,
+               department_id: Optional[str] = None, assigned_to: Optional[str] = None,
+               reported_by: Optional[str] = None, status: Optional[str] = None,
+               priority: Optional[str] = None, category_id: Optional[str] = None) -> str:
+        incidents = data.get("incidents", {})
+        results = []
+        
+        for incident in incidents.values():
+            if company_id and incident.get("company_id") != company_id:
+                continue
+            if department_id and incident.get("department_id") != department_id:
+                continue
+            if assigned_to and incident.get("assigned_to") != assigned_to:
+                continue
+            if reported_by and incident.get("reported_by") != reported_by:
+                continue
+            if status and incident.get("status") != status:
+                continue
+            if priority and incident.get("priority") != priority:
+                continue
+            if category_id and incident.get("category_id") != category_id:
+                continue
+            results.append(incident)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def create_user_invoke(data: Dict[str, Any], first_name: str, last_name: str, email: str,
+               role: str, company_id: str,
+               department_id: Optional[str] = None, timezone: Optional[str] = None,
+               status: str = "active") -> str:
+        
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        users = data.get("users", {})
+        companies = data.get("companies", {})
+        
+        # Validate company exists
+        if str(company_id) not in companies:
+            raise ValueError(f"Company {company_id} not found")
+        
+        # Validate department if provided
+        if department_id:
+            departments = data.get("departments", {})
+            if str(department_id) not in departments:
+                raise ValueError(f"Department {department_id} not found")
+        
+        # Check email uniqueness
+        for user in users.values():
+            if user.get("email", "").lower() == email.lower():
+                raise ValueError(f"Email {email} already exists")
+        
+        # Validate role
+        valid_roles = ["end_user", "agent", "manager", "admin"]
+        if role not in valid_roles:
+            raise ValueError(f"Invalid role. Must be one of {valid_roles}")
+        
+        # Validate status
+        valid_statuses = ["active", "inactive"]
         if status not in valid_statuses:
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
         
-        user["status"] = status
-        # set_updated_at("users", user_id, data)
-        user["updated_at"] = None
+        user_id = generate_id(users)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_user = {
+            "user_id": user_id,
+            "first_name": first_name,
+            "last_name": last_name,
+            "email": email,
+            "role": role,
+            "status": status,
+            "timezone": timezone,
+            "company_id": company_id,
+            "department_id": department_id,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+        
+        users[str(user_id)] = new_user
+        return json.dumps({"user_id": user_id})
+
+    @staticmethod
+    def create_incident_task_invoke(data: Dict[str, Any], incident_id: str, description: str,
+               assigned_to: str, priority: str = "medium", 
+               due_date: Optional[str] = None, status: str = "todo") -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        incidents = data.get("incidents", {})
+        users = data.get("users", {})
+        tasks = data.get("tasks", {})
+        
+        # Validate incident exists
+        if str(incident_id) not in incidents:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate assigned user exists
+        if str(assigned_to) not in users:
+            raise ValueError(f"Assigned user {assigned_to} not found")
+        
+        # Validate priority
+        valid_priorities = ["low", "medium", "high", "critical"]
+        if priority not in valid_priorities:
+            raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate status
+        valid_statuses = ["todo", "in_progress", "blocked", "done", "cancelled"]
+        if status not in valid_statuses:
+            raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        task_id = generate_id(tasks)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_task = {
+            "task_id": task_id,
+            "incident_id": incident_id,
+            "description": description,
+            "assigned_to": assigned_to,
+            "status": status,
+            "priority": priority,
+            "due_date": due_date,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+        
+        tasks[str(task_id)] = new_task
+        return json.dumps({"task_id": task_id})
+
+    @staticmethod
+    def update_user_profile_invoke(data: Dict[str, Any], user_id: str, first_name: Optional[str] = None,
+               last_name: Optional[str] = None, email: Optional[str] = None,
+               timezone: Optional[str] = None, department_id: Optional[str] = None,
+               status: Optional[str] = None) -> str:
+        users = data.get("users", {})
+        user = users.get(str(user_id))
+        
+        if not user:
+            raise ValueError(f"User {user_id} not found")
+        
+        # Check email uniqueness if updating email
+        if email and email != user.get("email"):
+            for other_user in users.values():
+                if (other_user.get("email", "").lower() == email.lower() and 
+                    other_user.get("user_id") != user_id):
+                    raise ValueError(f"Email {email} already exists")
+        
+        # Validate department if provided
+        if department_id:
+            departments = data.get("departments", {})
+            if str(department_id) not in departments:
+                raise ValueError(f"Department {department_id} not found")
+        
+        # Validate status if provided
+        if status:
+            valid_statuses = ["active", "inactive"]
+            if status not in valid_statuses:
+                raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        # Update fields
+        if first_name is not None:
+            user["first_name"] = first_name
+        if last_name is not None:
+            user["last_name"] = last_name
+        if email is not None:
+            user["email"] = email
+        if timezone is not None:
+            user["timezone"] = timezone
+        if department_id is not None:
+            user["department_id"] = department_id
+        if status is not None:
+            user["status"] = status
+        
+        user["updated_at"] = "2025-10-01T00:00:00"
         return json.dumps(user)
 
     @staticmethod
-    def update_comment_content_invoke(
-        data: Dict[str, Any],
-        comment_id: int,
-        content: str,
-        content_format: str = "markdown"
-    ) -> str:
-        comments = data.get("comments", {})
-        comment = comments.get(str(comment_id))
-        if not comment:
-            raise ValueError("Comment not found")
-        
-        comment["content"] = content
-        comment["content_format"] = content_format
-        comment["updated_at"] = None
-        
-        return json.dumps(comment)
+    def get_category_by_name_invoke(data: Dict[str, Any], name: str) -> str:
+        categories = data.get("categories", {})
+        for category in categories.values():
+            if category.get("name", "").lower() == name.lower():
+                return json.dumps(category)
+        raise ValueError(f"Category '{name}' not found")
 
     @staticmethod
-    def get_comment_info_invoke(data: Dict[str, Any], comment_id: int) -> str:
-        comments = data.get("comments", {})
-        comment = comments.get(str(comment_id))
-        if not comment:
-            raise ValueError("Comment not found")
-        return json.dumps(comment)
+    def search_subcategories_invoke(data: Dict[str, Any], category_id: Optional[str] = None, 
+               name: Optional[str] = None) -> str:
+        subcategories = data.get("subcategories", {})
+        results = []
+        
+        for subcategory in subcategories.values():
+            if category_id and subcategory.get("category_id") != category_id:
+                continue
+            if name and name.lower() not in subcategory.get("name", "").lower():
+                continue
+            results.append(subcategory)
+        
+        return json.dumps(results)
 
     @staticmethod
-    def get_space_pages_invoke(data: Dict[str, Any], space_id: str) -> str:
-        pages = data.get("pages", {})
-        spaces = data.get("spaces", {})
-        
-        if space_id not in spaces:
-            raise ValueError("Space not found")
-        
-        space_pages = []
-        for page_id, page in pages.items():
-            if str(page.get("space_id")) == str(space_id):
-                space_pages.append(page)
-        
-        return json.dumps(space_pages)
-
-    @staticmethod
-    def delete_watcher_invoke(data: Dict[str, Any], watcher_id: int) -> str:
-        watchers = data.get("watchers", {})
-        if str(watcher_id) not in watchers:
-            raise ValueError("Watcher not found")
-        
-        del watchers[str(watcher_id)]
-        return json.dumps({"success": True})
-
-    @staticmethod
-    def create_attachment_invoke(data: Dict[str, Any], filename: str, original_filename: str, 
-               mime_type: str, file_size: int, storage_path: str, uploaded_by: str,
-               storage_type: str = None, version: str = None, page_id: Optional[str] = None, 
-               comment_id: Optional[str] = None) -> str:
-        attachments = data.get("attachments", {})
-        users = data.get("users", {})
-        
-        if uploaded_by not in users:
-            raise ValueError("User not found")
-        
-        if page_id:
-            pages = data.get("pages", {})
-            if page_id not in pages:
-                raise ValueError("Page not found")
-        
-        if comment_id:
-            comments = data.get("comments", {})
-            if comment_id not in comments:
-                raise ValueError("Comment not found")
-        
-        def generate_id(table: Dict[str, Any]) -> str:
-            if not table:
-                return 1
-            return (max(int(k) for k in table.keys()) + 1)
-        
-        attachment_id = generate_id(attachments)
-        
-        new_attachment = {
-            "id": attachment_id,
-            "page_id": page_id,
-            "comment_id": comment_id,
-            "filename": filename,
-            "original_filename": original_filename,
-            "mime_type": mime_type,
-            "file_size": file_size,
-            "storage_path": storage_path,
-            "storage_type": storage_type,
-            "version": version,
-            "uploaded_by": uploaded_by,
-            "created_at": "2025-07-01T00:00:00Z",
-        }
-        
-        attachments[str(attachment_id)] = new_attachment
-        
-        return json.dumps({"attachment_id": attachment_id})
-
-    @staticmethod
-    def create_comment_invoke(
-        data: Dict[str, Any],
-        page_id: int,
-        content: str,
-        created_by: int,
-        content_format: str = "markdown",
-        parent_id: Optional[int] = None
-    ) -> str:
+    def add_incident_comment_invoke(data: Dict[str, Any], incident_id: str, user_id: str, 
+               comment_text: str, is_public: bool = True) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
                 return 1
             return max(int(k) for k in table.keys()) + 1
         
-        # Validate page
-        pages = data.get("pages", {})
-        if str(page_id) not in pages:
-            raise ValueError("Page not found")
-        
-        # Validate user
+        incidents = data.get("incidents", {})
         users = data.get("users", {})
-        if str(created_by) not in users:
-            raise ValueError("User not found")
+        comments = data.get("incident_comments", {})
         
-        # Validate parent comment if exists
-        if parent_id:
-            comments = data.get("comments", {})
-            if str(parent_id) not in comments:
-                raise ValueError("Parent comment not found")
+        # Validate incident exists
+        if str(incident_id) not in incidents:
+            raise ValueError(f"Incident {incident_id} not found")
         
-        # Create new comment
-        comments = data.setdefault("comments", {})
-        new_id = generate_id(comments)
+        # Validate user exists
+        if str(user_id) not in users:
+            raise ValueError(f"User {user_id} not found")
         
-        thread_level = 0
-        if parent_id:
-            # Calculate thread level based on parent
-            parent = comments[str(parent_id)]
-            thread_level = parent.get("thread_level", 0) + 1
-
-        created_at = updated_at = "2025-07-01T00:00:00Z"
-
-
+        comment_id = generate_id(comments)
+        timestamp = "2025-10-01T00:00:00"
+        
         new_comment = {
-            "id": new_id,
-            "page_id": page_id,
-            "parent_id": parent_id,
-            "content": content,
-            "content_format": content_format,
-            "status": "active",
-            "thread_level": thread_level,
-            "created_at": created_at,
-            "updated_at": updated_at,
-            "created_by": created_by
+            "incident_comment_id": comment_id,
+            "incident_id": incident_id,
+            "user_id": user_id,
+            "comment_text": comment_text,
+            "is_public": is_public,
+            "created_at": timestamp,
+            "updated_at": timestamp
         }
         
-        comments[str(new_id)] = new_comment
+        comments[str(comment_id)] = new_comment
         return json.dumps(new_comment)
 
     @staticmethod
-    def create_watcher_invoke(
-        data: Dict[str, Any],
-        user_id: int,
-        target_type: str,
-        target_id: int,
-        watch_type: str = "watching",
-        notifications_enabled: bool = True
-    ) -> str:
+    def update_kb_article_invoke(data: Dict[str, Any], knowledge_base_id: str, 
+               description: Optional[str] = None, category_id: Optional[str] = None,
+               subcategory_id: Optional[str] = None, department_id: Optional[str] = None) -> str:
+        kb_articles = data.get("knowledge_base", {})
+        article = kb_articles.get(str(knowledge_base_id))
+        
+        if not article:
+            raise ValueError(f"Knowledge base article {knowledge_base_id} not found")
+        
+        # Validate category if provided
+        if category_id:
+            categories = data.get("categories", {})
+            if str(category_id) not in categories:
+                raise ValueError(f"Category {category_id} not found")
+        
+        # Validate subcategory if provided
+        if subcategory_id:
+            subcategories = data.get("subcategories", {})
+            if str(subcategory_id) not in subcategories:
+                raise ValueError(f"Subcategory {subcategory_id} not found")
+        
+        # Validate department if provided
+        if department_id:
+            departments = data.get("departments", {})
+            if str(department_id) not in departments:
+                raise ValueError(f"Department {department_id} not found")
+        
+        # Update fields
+        if description is not None:
+            article["description"] = description
+        if category_id is not None:
+            article["category_id"] = category_id
+        if subcategory_id is not None:
+            article["subcategory_id"] = subcategory_id
+        if department_id is not None:
+            article["department_id"] = department_id
+        
+        article["updated_at"] = "2025-10-01T00:00:00"
+        return json.dumps(article)
+
+    @staticmethod
+    def create_incident_invoke(data: Dict[str, Any], title: str, description: str, reported_by: str,
+               company_id: str, priority: str = "medium", category_id: Optional[str] = None,
+               subcategory_id: Optional[str] = None, assigned_to: Optional[str] = None,
+               department_id: Optional[str] = None) -> str:
+        
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
                 return 1
             return max(int(k) for k in table.keys()) + 1
-        # Validate user
+        
+        incidents = data.get("incidents", {})
         users = data.get("users", {})
-        if str(user_id) not in users:
-            raise ValueError("User not found")
+        companies = data.get("companies", {})
         
-        # Validate target type
-        valid_targets = ["space", "page", "user"]
-        if target_type not in valid_targets:
-            raise ValueError(f"Invalid target type. Must be one of {valid_targets}")
+        # Validate reporter exists
+        if str(reported_by) not in users:
+            raise ValueError(f"Reporter user {reported_by} not found")
         
-        # Create watcher
-        watchers = data.setdefault("watchers", {})
-        new_id = generate_id(watchers)
+        # Validate company exists
+        if str(company_id) not in companies:
+            raise ValueError(f"Company {company_id} not found")
         
+        # Validate assigned user if provided
+        if assigned_to and str(assigned_to) not in users:
+            raise ValueError(f"Assigned user {assigned_to} not found")
         
-        created_at = "2025-07-01T00:00:00Z"
-
+        # Validate priority
+        valid_priorities = ["low", "medium", "high", "critical"]
+        if priority not in valid_priorities:
+            raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
         
-        new_watcher = {
-            "id": new_id,
-            "user_id": user_id,
-            "target_type": target_type,
-            "target_id": target_id,
-            "watch_type": watch_type,
-            "notifications_enabled": notifications_enabled,
-            "created_at": created_at
-        }
+        # Validate category if provided
+        if category_id:
+            categories = data.get("categories", {})
+            if str(category_id) not in categories:
+                raise ValueError(f"Category {category_id} not found")
         
-        watchers[str(new_id)] = new_watcher
-        return json.dumps(new_watcher)
-
-    @staticmethod
-    def update_notification_delivery_method_invoke(data: Dict[str, Any], notification_id: int, delivery_method: str) -> str:
-        notifications = data.get("notifications", {})
-        notification = notifications.get(str(notification_id))
-        if not notification:
-            raise ValueError("Notification not found")
+        # Validate subcategory if provided
+        if subcategory_id:
+            subcategories = data.get("subcategories", {})
+            if str(subcategory_id) not in subcategories:
+                raise ValueError(f"Subcategory {subcategory_id} not found")
         
-        valid_methods = ["web", "email", "both"]
-        if delivery_method not in valid_methods:
-            raise ValueError(f"Invalid delivery method. Must be one of {valid_methods}")
+        # Validate department if provided
+        if department_id:
+            departments = data.get("departments", {})
+            if str(department_id) not in departments:
+                raise ValueError(f"Department {department_id} not found")
         
-        notification["delivery_method"] = delivery_method
-        return json.dumps({"success": True})
-
-    @staticmethod
-    def create_notification_invoke(
-        data: Dict[str, Any],
-        user_id: int,
-        notification_type: str,
-        title: str,
-        message: str,
-        created_by: int,
-        target_type: str,
-        target_id: int,
-        delivery_method: str = "web"  # <-- add this
-    ) -> str:
-
-        def generate_id(table: Dict[str, Any]) -> int:
-            if not table:
-                return 1
-            return max(int(k) for k in table.keys()) + 1
-        # Validate user
-        users = data.get("users", {})
-        if str(user_id) not in users:
-            raise ValueError("User not found")
+        incident_id = generate_id(incidents)
+        timestamp = "2025-10-01T00:00:00"
         
-        # Validate created_by
-        if str(created_by) not in users:
-            raise ValueError("Created_by user not found")
-        
-        # Create notification
-        notifications = data.setdefault("notifications", {})
-        new_id = generate_id(notifications)
-        
-        
-        created_at = "2025-07-01T00:00:00Z"
-
-        
-        new_notification = {
-            "id": new_id,
-            "user_id": user_id,
-            "type": notification_type,
+        new_incident = {
+            "incident_id": incident_id,
             "title": title,
-            "message": message,
-            "target_type": target_type,
-            "target_id": target_id,
-            "is_read": False,
-            "read_at": None,
-            "delivery_method": "web",
-            "email_sent": False,
-            "created_at": created_at,
-            "created_by": created_by
+            "description": description,
+            "category_id": category_id,
+            "subcategory_id": subcategory_id,
+            "reported_by": reported_by,
+            "assigned_to": assigned_to,
+            "department_id": department_id,
+            "company_id": company_id,
+            "status": "open",
+            "priority": priority,
+            "created_at": timestamp,
+            "updated_at": timestamp
         }
         
-        notifications[str(new_id)] = new_notification
-        return json.dumps(new_notification)
+        incidents[str(incident_id)] = new_incident
+        return json.dumps({"incident_id": incident_id})
 
     @staticmethod
-    def get_user_watchers_invoke(data: Dict[str, Any], user_id: int) -> str:
-        watchers = data.get("watchers", {})  # watcher_id -> {"target_type", "target_id", "user_id"}
-        user_watch_targets = set()
-
-        # Step 1: collect all targets the user is watching
-        for w in watchers.values():
-            if str(w["user_id"]) == str(user_id):
-                user_watch_targets.add((w["target_type"], str(w["target_id"])))
-
-        if not user_watch_targets:
-            return json.dumps([])
-
-        # Step 2: find other users watching the same targets
-        result = list()
-        for w in watchers.values():
-            target = (w["target_type"], str(w["target_id"]))
-            if target in user_watch_targets and str(w["user_id"]) != str(user_id):
-                result.append(w)
-
-        return json.dumps(result)
-
-    @staticmethod
-    def get_user_by_email_invoke(data: Dict[str, Any], email: str) -> str:
-        users = data.get("users", {})
+    def search_surveys_invoke(data: Dict[str, Any], incident_id: Optional[str] = None,
+               user_id: Optional[int] = None, min_rating: Optional[int] = None) -> str:
+        surveys = data.get("surveys", {})
+        results = []
         
-        for user_id, user in users.items():
-            if user.get("email") == email:
-                return json.dumps(user)
+        for survey in surveys.values():
+            if incident_id and survey.get("incident_id") != incident_id:
+                continue
+            if user_id and survey.get("user_id") != user_id:
+                continue
+            if min_rating and int(survey.get("rating", 0)) < int(min_rating):
+                continue
+            results.append(survey)
         
-        raise ValueError("User not found")
-
-    @staticmethod
-    def get_page_comments_invoke(data: Dict[str, Any], page_id: int) -> str:
-        comments = data.get("comments", {})
-        print(type(comments))
-        return json.dumps([c["id"] for c in comments.values() if c["page_id"] == int(page_id)])
+        return json.dumps(results)
 

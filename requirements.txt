@@ -1,5 +1,6 @@
 Flask
 Flask-Cors
+Flask-Session
 python-dateutil
 python-dotenv
 pytz
