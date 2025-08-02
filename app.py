@@ -236,7 +236,7 @@ def env_interface():
             print(f"Error processing request: {str(e)}")
             return jsonify({
                 'status': 'error',
-                'message': 'Internal server error'
+                'message': f'{str(e)}'
             }), 500
     
     # Handle GET requests
