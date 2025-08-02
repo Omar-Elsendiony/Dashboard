@@ -1021,7 +1021,6 @@
                 }
             } catch (error) {
                 console.error('Network error:', error);
-                console.error(response.json());
                 responseDiv.className = 'api-response show error';
                 responseDiv.innerHTML = `
                     <div class="response-header">❌ Network Error</div>
