@@ -1,5 +1,5 @@
 # Task_Framework
-Repository that aids utilities that help in the task creation
+Repository that has utilities which help in the task creation
 
 # How to Use
 
