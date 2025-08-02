@@ -4,3 +4,4 @@ Flask-Session
 python-dateutil
 python-dotenv
 pytz
+redis

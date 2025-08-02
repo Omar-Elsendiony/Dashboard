@@ -2,6 +2,7 @@
 """ Flask Application """
 import json
 import os
+import redis
 from flask import Flask, render_template, jsonify, request
 from flask_cors import CORS
 import ast
@@ -18,7 +19,9 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = False
-app.config['SESSION_TYPE'] = 'filesystem'
+# app.config['SESSION_TYPE'] = 'filesystem'
+app.config['SESSION_TYPE'] = 'redis'
+app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ###################### GLOBAL ENVIRONMENTS ##################################
