@@ -243,7 +243,7 @@ def env_interface():
                 #     new_file.write("class Tools:\n")
                 #     for invoke_method in invoke_methods:
                 #         new_file.write("    @staticmethod\n" + invoke_method + "\n\n")
-                session["imports_set"] = sorted(importsSet)
+                session["imports_set"] = (importsSet)
                 session["invoke_methods"] = invoke_methods
                 
                 return jsonify({
@@ -275,7 +275,11 @@ def env_interface():
 @app.route('/execute_api', strict_slashes=False, methods=["GET", "POST"])
 def execute_api():
     # global data, last_environment, last_interface  # Add global declaration
-
+    if request.method != "POST":
+        return jsonify({
+            'status': 'error',
+            'message': 'Only POST requests are allowed'
+        }), 405
 
     passed_data = request.get_json()
     api_name = passed_data.get('api_name')
