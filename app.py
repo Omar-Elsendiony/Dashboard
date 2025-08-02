@@ -165,11 +165,13 @@ def create_tools_class(imports_set, invoke_methods):
 
 class Tools:
 """
-
+    print("Imports code:", imports_code)
+    print("Invoke methods:", invoke_methods)
     for invoke_method in invoke_methods:
         class_code += ("    @staticmethod\n" + invoke_method + "\n\n")
     # Execute the code and return the class
     namespace = {}
+    print(class_code)
     exec(class_code, namespace)
     # return namespace['Tools']
     # session["tools_class_code"] = class_code 
