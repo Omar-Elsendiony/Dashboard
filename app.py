@@ -155,6 +155,27 @@ def extract_file_info(file_path: str) -> Dict[str, Any]:
 def index():
     return render_template('index.html')
 
+def create_tools_class(imports_set, invoke_methods):
+    # Create the class dynamically in memory
+    imports_code = '\n'.join(sorted(imports_set))
+    
+    # Build the class definition as a string
+    class_code = f"""
+{imports_code}
+
+class Tools:
+"""
+
+    for invoke_method in invoke_methods:
+        class_code += ("    @staticmethod\n" + invoke_method + "\n\n")
+    # Execute the code and return the class
+    namespace = {}
+    exec(class_code, namespace)
+    # return namespace['Tools']
+    # session["tools_class_code"] = class_code 
+    return namespace['Tools']
+
+
 @app.route('/choose_env_interface', strict_slashes=False, methods=["POST", "GET"])
 def env_interface():
     """ Endpoint to handle environment and interface selection """
@@ -215,11 +236,15 @@ def env_interface():
                         except Exception as e:
                             print(f"Error processing {api_file}: {e}")
                 
-                with open("tools.py", "w") as new_file:
-                    new_file.write('\n'.join(sorted(importsSet)) + "\n\n")
-                    new_file.write("class Tools:\n")
-                    for invoke_method in invoke_methods:
-                        new_file.write("    @staticmethod\n" + invoke_method + "\n\n")
+                # temp_dir = "/tmp"
+                # tools_file_path = os.path.join(temp_dir, "tools.py")
+                # with open(tools_file_path, "w") as new_file:
+                #     new_file.write('\n'.join(sorted(importsSet)) + "\n\n")
+                #     new_file.write("class Tools:\n")
+                #     for invoke_method in invoke_methods:
+                #         new_file.write("    @staticmethod\n" + invoke_method + "\n\n")
+                session["imports_set"] = sorted(importsSet)
+                session["invoke_methods"] = invoke_methods
                 
                 return jsonify({
                     'status': 'success',
@@ -288,12 +313,14 @@ def execute_api():
     
     # print("Received data for API execution:", passed_data)
     
-    import importlib
-    import tools  
-    importlib.reload(tools) 
-
-    tools_instance = tools.Tools()
+    # import importlib
+    # import tools  
+    # importlib.reload(tools) 
     
+
+    # tools_instance = tools.Tools()
+    tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
+
     if hasattr(tools_instance, api_name):
         try:
             # print(g.data)
