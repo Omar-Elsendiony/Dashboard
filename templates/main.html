@@ -87,7 +87,7 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
-        .turing-logo {
+        /*.turing-logo {
             width: 200px;
             height: 200px;
             background: linear-gradient(135deg, #ffd700, #ffed4e);
@@ -99,7 +99,7 @@
             color: black;
             font-weight: bold;
             box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
-        }
+        }*/
 
         .functionalities-section {
             background: #1a1a1a;
@@ -141,7 +141,7 @@
 
         .functionality-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+            box-shadow:  0 15px 40px  #667eea;
             border-color: rgba(255, 215, 0, 0.3);
         }
 
@@ -156,6 +156,7 @@
             font-size: 5.5rem;
             color: black;
             margin-bottom: 1.5rem;
+            width: 100%;
         }
 
         .card-title {
@@ -172,11 +173,11 @@
             font-size: 1rem;
         }
 
-        .card-date {
+        /* .card-date {
             margin-top: 1rem;
             font-size: 0.9rem;
             color: rgba(255, 215, 0, 0.8);
-        }
+        } */
 
         .cta-section {
             text-align: center;
@@ -200,7 +201,15 @@
 
         .cta-button:hover {
             transform: translateY(-2px);
+            // box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
             box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        #amazon-word {
+            color: #ff9900;
+            font-weight: bold;
+            display: inline-block;
+            animation: pulse 2s infinite;
         }
 
         @media (max-width: 768px) {
@@ -235,7 +244,7 @@
     <section class="hero-section">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Welcome to Turing Amazon Tooling</h1>
+                <h1>Welcome to Turing <div id="amazon-word">Amazon</div> Tooling</h1>
                 <p>Turing Amazon Tooling is your comprehensive suite for managing and optimizing the Amazon agentic project workflow. </p>
             </div>
             <!-- <div class="hero-image">
@@ -244,7 +253,7 @@
                 </div>
             </div> -->
             <div>
-                <img src="{{ url_for('static', filename='images/prismatic.avif') }}" alt="Turing Logo" style="width: 150px; height: 150px; display: block; margin: 0 auto;">
+                <img src="{{ url_for('static', filename='images/amazon_logo.svg') }}" alt="Turing Logo" style="display: block; margin: 0 auto; width: 400px; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);">
             </div>
         </div>
     </section>
@@ -255,9 +264,9 @@
             <h2 class="functionalities-title">Available Tools & Features</h2>
             
             <div class="cards-grid">
-                <a href="#" class="functionality-card">
-                    <div class="card-icon">📊</div>
-                    <div class="card-title">Task Tracker</div>
+                <a href="/tracker" class="functionality-card">
+                    <div class="card-icon">🔍</div>
+                    <div class="card-title">Tasks Tracker & Analysis</div>
                     <div class="card-description">
                         Tracks the tasks done by Turing trainers across pods, providing insights into task completion and performance metrics.
                     </div>
@@ -265,7 +274,7 @@
                 </a>
 
                 <a href="/task-framework" class="functionality-card">
-                    <div class="card-icon">🧠</div>
+                    <img  class="card-icon" src="{{ url_for('static', filename='images/block-build.svg') }}" alt="Task Framework Icon">
                     <div class="card-title">Task Framework</div>
                     <div class="card-description">
                         A Framework for creating tasks encompassing tools that execute the actions, visualize the connections between APIs
@@ -273,10 +282,10 @@
                 </a>
 
                 <a href="#" class="functionality-card">
-                    <div class="card-icon">🤖</div>
-                    <div class="card-title">Automated ML Pipeline</div>
-                    <div class="card-description">
-                        Streamline your machine learning workflows with intelligent automation for training, validation, and deployment processes.
+                    <img  class="card-icon" src="{{ url_for('static', filename='images/connections-scheme.svg') }}" alt="Task Framework Icon">
+                    <div class="card-title">Interface Connections Visualizer</div>
+                    <div>
+                        Visualizes the connections between the APIs, helping to understand how different APIs interact.
                     </div>
 
                 </a>

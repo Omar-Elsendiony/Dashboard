@@ -261,7 +261,7 @@
             .filters-header {
                 flex-direction: column;
                 gap: 1rem;
-                align-items: flex-start;
+                // align-items: flex-start;
             }
 
             .filters-grid {
@@ -278,6 +278,32 @@
         }
     </style>
     <script>
+        var github_username_mapping = new Object();
+        ////////// AUTOMATED TRACKER CONSTANTS ////////////
+        const CREATED_DATE = 0;
+        const WEEK_NUM = 1;
+        const TASK = 2;
+        const GITHUB_USERNAME_AT = 3; // meaning that it is the one in the automated tracker sheet
+        const LEAD = 4;
+        const CALIBRATOR = 5;
+        const DOMAIN = 6;
+        const DB_USED = 7;
+        const INTERFACE = 8;
+        const APIs_USED = 9;
+        const COMPLEXITY = 10;
+        const PR_STATUS = 11;
+        const CALIBRATED_BY = 12;
+        const MERGED_DATE = 13;
+        const CALIBRATION_METHOD = 14;
+        const UPDATED_DATE = 15;
+        ////////// AUTOMATED TRACKER CONSTANTS ////////////
+
+        ////////// TEAM STRUCTURE CONSTANTS ////////////
+        var pods = new Set();
+        var calibrators = new Set();
+        var trainers = new Set();
+
+
         // Function to reload tracker data
         function reloadTrackerData() {
             const reloadBtn = document.getElementById('reloadBtn');
@@ -297,7 +323,30 @@
             .then(response => response.json())
             .then(data => {
                 console.log('Tracker data reloaded:', data);
-                reloadBtn.innerHTML = '✅ Reloaded!';
+                reloadBtn.innerHTML = 'Reloaded &#10003;';
+                
+                username_email_mapping = data.username_email_mapping || {};
+                // console.log('Username to Email Mapping:', username_email_mapping);
+                /* for (const [username, actual_name, email] of Object.entries(username_email_mapping)) {
+                    if (email) {
+                        github_username_name_mapping[username] = actual_name;
+                    }
+                } */
+                for (const user of username_email_mapping) {
+                    if (user['GitHub Username']) {
+                        github_username_mapping[user['GitHub Username']] = user['Email'];
+                    }
+                }
+                console.log('GitHub Username to Name Mapping:', github_username_mapping);
+                
+                for (const team_structure of data.team_structure) {
+                    pods.add(team_structure['Pod Lead']);
+                    // calibrators.add(team_structure.calibrator);
+                    // trainers.add(team_structure.trainer);
+                }
+
+                console.log('Pods:', pods);
+                
                 
                 // Update analytics if data is provided
                 if (data.analytics) {
@@ -335,9 +384,9 @@
         // Function to apply filters
         function applyFilters() {
             const filters = {
+                week: document.getElementById('weekFilter').value,
                 pod: document.getElementById('podFilter').value,
-                status: document.getElementById('statusFilter').value,
-                priority: document.getElementById('priorityFilter').value,
+                trainer: document.getElementById('trainerFilter').value,
                 dateRange: document.getElementById('dateRange').value
             };
 
@@ -355,7 +404,7 @@
             });
 
             // Load initial data
-            reloadTrackerData();
+            // reloadTrackerData();
         });
     </script>
 </head>
@@ -373,24 +422,24 @@
             <p class="tracker-description">
                 Comprehensive task analysis and monitoring system that provides real-time insights into task distribution, 
                 completion rates, and performance metrics across all pods. Track the number of active tasks, monitor 
-                workload distribution, and analyze productivity patterns to optimize your Amazon agentic project workflow.
+                workload distribution, and analyze productivity patterns to optimize Amazon agentic project workflow.
             </p>
         </div>
 
         <!-- Analytics Overview -->
         <div class="analytics-container">
             <div class="analytics-card">
-                <div class="analytics-number" id="totalTasks">0</div>
+                <div class="analytics-number" id="totalTasks">?</div>
                 <div class="analytics-label">Total Tasks</div>
                 <div class="analytics-description">Active and completed tasks across all pods</div>
             </div>
             <div class="analytics-card">
-                <div class="analytics-number" id="activePods">0</div>
+                <div class="analytics-number" id="activePods">?</div>
                 <div class="analytics-label">Active Pods</div>
                 <div class="analytics-description">Currently operational pod instances</div>
             </div>
             <div class="analytics-card">
-                <div class="analytics-number" id="completionRate">0%</div>
+                <div class="analytics-number" id="completionRate">?%</div>
                 <div class="analytics-label">Completion Rate</div>
                 <div class="analytics-description">Overall task completion percentage</div>
             </div>
@@ -401,40 +450,31 @@
             <div class="filters-header">
                 <h2 class="filters-title">Filters & Controls</h2>
                 <button id="reloadBtn" class="reload-button" onclick="reloadTrackerData()">
-                    🔄 Reload Data
+                    &#x21bb Reload Data
                 </button>
             </div>
             
             <div class="filters-grid">
                 <div class="filter-group">
+                    <label class="filter-label" for="weekFilter">Week</label>
+                    <select id="weekFilter" class="filter-select">
+                    </select>
+                </div>
+
+                <div class="filter-group">
                     <label class="filter-label" for="podFilter">Pod</label>
                     <select id="podFilter" class="filter-select">
-                        <option value="">All Pods</option>
-                        <option value="pod-1">Pod 1</option>
-                        <option value="pod-2">Pod 2</option>
-                        <option value="pod-3">Pod 3</option>
-                        <option value="pod-4">Pod 4</option>
                     </select>
                 </div>
                 
-                <div class="filter-group">
-                    <label class="filter-label" for="statusFilter">Status</label>
-                    <select id="statusFilter" class="filter-select">
-                        <option value="">All Statuses</option>
-                        <option value="pending">Pending</option>
-                        <option value="in-progress">In Progress</option>
-                        <option value="completed">Completed</option>
-                        <option value="failed">Failed</option>
-                    </select>
-                </div>
                 
                 <div class="filter-group">
-                    <label class="filter-label" for="priorityFilter">Priority</label>
-                    <select id="priorityFilter" class="filter-select">
-                        <option value="">All Priorities</option>
-                        <option value="high">High</option>
-                        <option value="medium">Medium</option>
-                        <option value="low">Low</option>
+                    <label class="filter-label" for="trainerFilter">Trainer</label>
+                    <select id="trainerFilter" class="filter-select">
+                        <option value="all">All Trainers</option>
+                        <option value="trainer1">Trainer 1</option>
+                        <option value="trainer2">Trainer 2</option>
+                        <option value="trainer3">Trainer 3</option>
                     </select>
                 </div>
                 
@@ -458,5 +498,13 @@
             </div>
         </div>
     </section>
+
+    <script>
+        var filters = null;
+        window.addEventListener('DOMContentLoaded', function() {
+            // Simulate loading task data
+            
+        });
+    </script>
 </body>
 </html>

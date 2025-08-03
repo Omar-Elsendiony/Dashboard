@@ -21,7 +21,7 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = False
-# app.config['SESSION_TYPE'] = 'filesystem'
+# app.config['SESSION_TYPE'] = 'filesystem'   
 app.config['SESSION_TYPE'] = 'redis'
 app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
@@ -358,13 +358,23 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import time
 import threading
-
+import base64
 
 # Your Google Sheets functions
 def connect_to_sheets():
     """Connect to Google Sheets with credentials"""
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
+    encoded = os.environ.get("CREDENTIAL_JSON_BASE64")
+
+    if not encoded:
+        raise ValueError("Missing credential JSON environment variable.")
+
+    # Decode base64 to JSON string
+    json_str = base64.b64decode(encoded).decode("utf-8")
+
+    # Load JSON into dictionary
+    credentials = json.loads(json_str)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
     client = gspread.authorize(creds)
     return client
 
@@ -418,22 +428,64 @@ def tracker():
     """ Endpoint to render the tracker page """
     if request.method == "POST":
         # Define the scope and credentials
-        all_rows = run_with_timeout(
+        tasks_info = run_with_timeout(
         get_sheet_data, 
         args=('Amazon', 'Automated Tracker'),
         timeout_seconds=15
         )
         
-        if all_rows:
-            print_sheet_data(all_rows, 'Automated Tracker')
-        else:
-            print("Failed to fetch Automated Tracker data")
+        tasks_headers = tasks_info[0]
+        tasks_rows = tasks_info[1:]
+
+        list_of_tasks = []
+
+        for row in tasks_rows:
+            row_dict = dict(zip(tasks_headers, row))
+            list_of_tasks.append(row_dict)
+
         
-        print("\n" + "="*50 + "\n")
+        username_email_mapping = run_with_timeout(
+        get_sheet_data, 
+        args=('Amazon', 'Username-email mapping'),
+        timeout_seconds=15
+        )
+        
+        username_email_mapping_headers = username_email_mapping[0]
+        username_email_mapping_rows = username_email_mapping[1:]
+
+        list_of_usernames = []
+
+        for row in username_email_mapping_rows:
+            row_dict = dict(zip(username_email_mapping_headers, row))
+            list_of_usernames.append(row_dict)
+
+        team_structure = run_with_timeout(
+        get_sheet_data, 
+        args=('Amazon', 'Team Structure'),
+        timeout_seconds=15
+        )
+        
+        team_headers = team_structure[0]
+        team_rows = team_structure[1:]
+
+        list_of_teams = []
+
+        for row in team_rows:
+            row_dict = dict(zip(team_headers, row))
+            list_of_teams.append(row_dict)
+
+        # if tasks_info:
+        #     print_sheet_data(tasks_info, 'Automated Tracker')
+        # else:
+        #     print("Failed to fetch Automated Tracker data")
+        
+        # print("\n" + "="*50 + "\n")
         
         return jsonify({
             'status': 'success',
-            'data': all_rows
+            'tasks_info': list_of_tasks,
+            'username_email_mapping': list_of_usernames,
+            'team_structure': list_of_teams
         }), 200
         
     return render_template('tracker.html')
