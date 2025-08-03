@@ -236,7 +236,7 @@
 <body>
     <header class="dashboard-header">
         <div class="logo">
-            <img src="{{ url_for('static', filename='images/turing_logo.svg') }}" alt="turing image" style="width: 100px; scale: 1.5; display: block; margin: 0 auto;">
+            <a href='/'><img src="{{ url_for('static', filename='images/turing_logo.svg') }}" alt="turing image" style="width: 100px; scale: 1.5; display: block; margin: 0 auto;"></a>
         </div>
     </header>
 
@@ -281,7 +281,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="functionality-card">
+                <a href="/interface_connections" class="functionality-card">
                     <img  class="card-icon" src="{{ url_for('static', filename='images/connections-scheme.svg') }}" alt="Task Framework Icon">
                     <div class="card-title">Interface Connections Visualizer</div>
                     <div>
@@ -290,13 +290,12 @@
 
                 </a>
 
-                <a href="#" class="functionality-card">
-                    <div class="card-icon">🔍</div>
-                    <div class="card-title">Data Analysis & Optimization</div>
+                <a href="/chain_analyzer" class="functionality-card">
+                    <div class="card-icon">🔗</div>
+                    <div class="card-title">Chain Analyzer</div>
                     <div class="card-description">
-                        Powerful tools for data preprocessing, feature engineering, and model optimization to maximize your AI system performance.
+                        Analyze Python functions and JSON data to suggest optimal chaining patterns.
                     </div>
-
                 </a>
 
             </div>

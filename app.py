@@ -21,9 +21,9 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = False
-# app.config['SESSION_TYPE'] = 'filesystem'   
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+app.config['SESSION_TYPE'] = 'filesystem'   
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ###################### GLOBAL ENVIRONMENTS ##################################
@@ -490,10 +490,127 @@ def tracker():
         
     return render_template('tracker.html')
 
+@app.route('/interface_connections', strict_slashes=False, methods=["GET", "POST"])
+def connections():
+    return render_template('connections.html')
 
 @app.route('/', methods=['GET'])
 def home_page():
     return render_template('main.html')
+
+################# CHAIN CONNECTOR ###############
+from utils import FunctionAnalyzer
+# Initialize the analyzer
+analyzer = FunctionAnalyzer()
+
+@app.route('/chain_analyzer', methods=['GET'])
+def chain_analyzer():
+    return render_template('chain_analyzer.html')
+
+@app.route('/api/load_python', methods=['POST'])
+def load_python():
+    data = request.get_json()
+    directory_path = data.get('directory_path', '')
+    
+    if not directory_path:
+        return jsonify({'success': False, 'error': 'Directory path is required'})
+    
+    try:
+        python_files, functions = analyzer.load_python_files_from_directory(directory_path)
+        
+        # Store in session
+        session['python_files'] = python_files
+        session['functions'] = functions
+        
+        return jsonify({
+            'success': True,
+            'python_files_count': len(python_files),
+            'functions_count': len(functions),
+            'functions': functions
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)})
+
+@app.route('/api/load_json', methods=['POST'])
+def load_json():
+    data = request.get_json()
+    directory_path = data.get('directory_path', '')
+    
+    if not directory_path:
+        return jsonify({'success': False, 'error': 'Directory path is required'})
+    
+    try:
+        json_files = analyzer.load_json_files_from_directory(directory_path)
+        
+        # Store in session
+        session['json_files'] = json_files
+        
+        return jsonify({
+            'success': True,
+            'json_files_count': len(json_files),
+            'json_files': {name: {'structure': data['structure']} for name, data in json_files.items()}
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)})
+
+@app.route('/api/get_json_data', methods=['POST'])
+def get_json_data():
+    data = request.get_json()
+    filename = data.get('filename', '')
+    
+    json_files = session.get('json_files', {})
+    if filename not in json_files:
+        return jsonify({'success': False, 'error': 'File not found'})
+    
+    return jsonify({
+        'success': True,
+        'data': json_files[filename]['data']
+    })
+
+@app.route('/api/analyze_chains', methods=['POST'])
+def analyze_chains():
+    data = request.get_json()
+    starting_variable = data.get('starting_variable', '')
+    
+    if not starting_variable:
+        return jsonify({'success': False, 'error': 'Starting variable is required'})
+    
+    functions = session.get('functions', {})
+    json_files = session.get('json_files', {})
+    
+    if not functions:
+        return jsonify({'success': False, 'error': 'No functions loaded'})
+    
+    try:
+        # Get debug info
+        matching_functions = []
+        for func_name, func_info in functions.items():
+            if analyzer._can_function_accept_input(func_info, starting_variable):
+                matching_functions.append(func_name)
+        
+        # Generate chains
+        chains = analyzer.suggest_chains(functions, {}, "", starting_variable)
+        
+        return jsonify({
+            'success': True,
+            'functions_count': len(functions),
+            'matching_functions': matching_functions[:10],
+            'chains_count': len(chains),
+            'chains': chains
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)})
+
+@app.route('/api/get_session_info', methods=['GET'])
+def get_session_info():
+    return jsonify({
+        'functions_count': len(session.get('functions', {})),
+        'json_files_count': len(session.get('json_files', {})),
+        'functions': session.get('functions', {}),
+        'json_files': {name: {'structure': data['structure']} for name, data in session.get('json_files', {}).items()}
+    })
+########## END CHAIN CONNECTOR ##########
+
 
 if __name__ == "__main__":
     """ Main Function """
