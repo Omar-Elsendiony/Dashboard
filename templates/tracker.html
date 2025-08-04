@@ -820,10 +820,42 @@ function renderTable() {
                 }
                 
                 console.log('Tasks Info:', tasks_info);
-                // Update analytics if data is provided
-                if (data.analytics) {
-                    updateAnalytics(data.analytics);
+
+                current_domain = tasks_info[0]['Domain'] // current domain is the last submitted domain as of now
+                document.getElementById('currentDomain').textContent = current_domain;
+                tasks_occurred = new Set();
+                tasks_completed = 0;
+                merged_tasks = 0;
+                discarded_tasks = 0;
+                ready_to_merge_tasks = 0;
+                for (const task of tasks_info) {
+                    if (task['Domain'] == current_domain && !tasks_occurred.has(task['Task'])) {
+                        tasks_completed += 1;
+                        if (task['Pull Request Status'] === 'Merged') {
+                            merged_tasks += 1;
+                        }
+                        if (task['Pull Request Status'] === 'ready to merge') {
+                            ready_to_merge_tasks += 1;
+                        }
+                        if (task['Pull Request Status'] === 'discarded') {
+                            discarded_tasks += 1;
+                        }
+                        tasks_occurred.add(task['Task']);
+                    }
                 }
+                const TASKS_TO_BE_COMPLETED = 200; 
+                analytics = {
+                    totalTasks: tasks_completed,
+                    activePods: pods.size,
+                    totalMergedTasks: merged_tasks,
+                    totalDiscardedTasks: discarded_tasks,
+                    readyToMergeTasks: ready_to_merge_tasks,
+                    completionRate: (merged_tasks / TASKS_TO_BE_COMPLETED * 100).toFixed(2)
+                };
+                // Update analytics if data is provided
+                // if (data.analytics) {
+                updateAnalytics(analytics);
+                // }
 
                 // Populate dropdowns and render table
                 populateDropdowns();
@@ -846,13 +878,22 @@ function renderTable() {
 
         // Function to update analytics display
         function updateAnalytics(analytics) {
-            if (analytics.totalTasks) {
+            if (analytics.totalTasks !== undefined) {
                 document.getElementById('totalTasks').textContent = analytics.totalTasks;
             }
-            if (analytics.activePods) {
+            if (analytics.activePods !== undefined) {
                 document.getElementById('activePods').textContent = analytics.activePods;
             }
-            if (analytics.completionRate) {
+            if (analytics.totalMergedTasks !== undefined) {
+                document.getElementById('totalMergedTasks').textContent = analytics.totalMergedTasks;
+            }
+            if (analytics.totalDiscardedTasks !== undefined) {
+                document.getElementById('totalDiscardedTasks').textContent = analytics.totalDiscardedTasks;
+            }
+            if (analytics.readyToMergeTasks !== undefined) {
+                document.getElementById('readyToMergeTasks').textContent = analytics.readyToMergeTasks;
+            }
+            if (analytics.completionRate !== undefined) {
                 document.getElementById('completionRate').textContent = analytics.completionRate + '%';
             }
         }
@@ -871,6 +912,9 @@ function renderTable() {
 
             // Show initial loading message
             document.getElementById('tasksDisplay').innerHTML = '<div class="no-data">Click "Reload Data" to load task information</div>';
+
+            // Initial data load
+            reloadTrackerData();
         });
     </script>   
 </head>
@@ -892,12 +936,31 @@ function renderTable() {
             </p>
         </div>
 
+        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
+            <h2 style="display: inline;"> Current Domain: <span id="currentDomain" style="font-weight: bold; color: #4CAF50;">?</span> </h2>
+            
+        </div>
         <!-- Analytics Overview -->
         <div class="analytics-container">
             <div class="analytics-card">
                 <div class="analytics-number" id="totalTasks">?</div>
                 <div class="analytics-label">Total Tasks</div>
                 <div class="analytics-description">Completed tasks across all pods</div>
+            </div>
+            <div class="analytics-card">
+                <div class="analytics-number" id="totalMergedTasks">?</div>
+                <div class="analytics-label">Total Merged Tasks</div>
+                <div class="analytics-description">Merged tasks across all pods</div>
+            </div>
+            <div class="analytics-card">
+                <div class="analytics-number" id="totalDiscardedTasks">?</div>
+                <div class="analytics-label">Total Discarded Tasks</div>
+                <div class="analytics-description">Discarded tasks across all pods</div>
+            </div>
+            <div class="analytics-card">
+                <div class="analytics-number" id="readyToMergeTasks">?</div>
+                <div class="analytics-label">Ready to Merge Tasks</div>
+                <div class="analytics-description">Tasks ready to be merged across all pods</div>
             </div>
             <div class="analytics-card">
                 <div class="analytics-number" id="activePods">?</div>
