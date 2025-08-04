@@ -13,6 +13,7 @@ from flask_session import Session
 # import gspread
 # from oauth2client.service_account import ServiceAccountCredentials
 from dotenv import load_dotenv
+from datetime import timedelta
 load_dotenv()
 
 
@@ -20,7 +21,9 @@ load_dotenv()
 app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
-app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_PERMANENT"] = True
+
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
 # app.config['SESSION_TYPE'] = 'filesystem'   
 app.config['SESSION_TYPE'] = 'redis'
 app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
