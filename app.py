@@ -449,7 +449,7 @@ def tracker():
         
         username_email_mapping = run_with_timeout(
         get_sheet_data, 
-        args=('Amazon', 'Username-email mapping'),
+        args=('Amazon Agentic - Automated Tracking', 'Username-email mapping'),
         timeout_seconds=15
         )
         
@@ -464,7 +464,7 @@ def tracker():
 
         team_structure = run_with_timeout(
         get_sheet_data, 
-        args=('Amazon', 'Team Structure'),
+        args=('Amazon Agentic - Automated Tracking', 'Team Structure Aug 4 - Aug 8'),
         timeout_seconds=15
         )
         
