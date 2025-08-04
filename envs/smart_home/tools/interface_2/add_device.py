@@ -15,10 +15,10 @@ class AddDevice(Tool):
                price: float,
                scheduled_maintainance_date: str,
                daily_rated_power_consumption_kWh: float,
-               current_temperate: float,
-               lowest_rated_temeprature: float,
-               highest_rated_temeprature: float,
-               last_adjustment_time: str) -> str:
+               current_temperate: float = None,
+               lowest_rated_temeprature: float = None,
+               highest_rated_temeprature: float = None,
+               last_adjustment_time: str = None) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             return max([int(k) for k in table.keys()], default=0) + 1
@@ -93,9 +93,7 @@ class AddDevice(Tool):
                     "required": [
                         "device_type", "room_id", "insurance_expiry_date", "home_id", "status",
                         "width_ft", "length_ft", "price", "scheduled_maintainance_date",
-                        "daily_rated_power_consumption_kWh", "current_temperate",
-                        "lowest_rated_temeprature", "highest_rated_temeprature",
-                        "last_adjustment_time"
+                        "daily_rated_power_consumption_kWh"
                     ]
                 }
             }

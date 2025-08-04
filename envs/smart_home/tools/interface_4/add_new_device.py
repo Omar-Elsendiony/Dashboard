@@ -15,7 +15,7 @@ class AddNewDevice(Tool):
                length_ft: float,
                price: float,
                daily_rated_power_consumption_kWh: float,
-               resolution: str) -> str:
+               resolution: str = None) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             return max([int(k) for k in table.keys()], default=0) + 1
@@ -87,7 +87,7 @@ class AddNewDevice(Tool):
                     },
                     "required": [
                         "device_type", "room_id", "insurance_expiry_date", "home_id", "status",
-                        "width_ft", "length_ft", "price", "daily_rated_power_consumption_kWh", "resolution"
+                        "width_ft", "length_ft", "price", "daily_rated_power_consumption_kWh"
                     ]
                 }
             }

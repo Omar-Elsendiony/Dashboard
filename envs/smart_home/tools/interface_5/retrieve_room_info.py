@@ -21,7 +21,7 @@ class RetrieveRoomInfo(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "retreive_room_info",
+                "name": "retrieve_room_info",
                 "description": "Retrieve full details of a room using its ID.",
                 "parameters": {
                     "type": "object",

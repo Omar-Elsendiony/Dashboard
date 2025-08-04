@@ -1,5 +1,6 @@
 {
   "1": {
+    "alert_id": "1",
     "home_id": "97",
     "device_id": "2018",
     "alert_type": "bulb_malfunction",
@@ -12,6 +13,7 @@
     "created_at": "2025-06-17T03:34:32.351938"
   },
   "2": {
+    "alert_id": "2",
     "home_id": "133",
     "device_id": "2774",
     "alert_type": "refrigerator_malfunction",
@@ -24,6 +26,7 @@
     "created_at": "2025-07-23T21:29:38.339876"
   },
   "3": {
+    "alert_id": "3",
     "home_id": "128",
     "device_id": "2661",
     "alert_type": "camera_offline",
@@ -36,6 +39,7 @@
     "created_at": "2025-05-26T15:30:52.589194"
   },
   "4": {
+    "alert_id": "4",
     "home_id": "17",
     "device_id": "334",
     "alert_type": "refrigerator_temperature_alert",
@@ -48,6 +52,7 @@
     "created_at": "2025-05-10T16:29:55.634068"
   },
   "5": {
+    "alert_id": "5",
     "home_id": "25",
     "device_id": "513",
     "alert_type": "tv_malfunction",
@@ -60,6 +65,7 @@
     "created_at": "2025-07-03T08:21:35.109642"
   },
   "6": {
+    "alert_id": "6",
     "home_id": "80",
     "device_id": "1655",
     "alert_type": "camera_motion_detected",
@@ -72,6 +78,7 @@
     "created_at": "2025-05-02T19:47:44.810152"
   },
   "7": {
+    "alert_id": "7",
     "home_id": "84",
     "device_id": "1730",
     "alert_type": "bulb_malfunction",
@@ -84,6 +91,7 @@
     "created_at": "2025-07-31T18:20:46.352123"
   },
   "8": {
+    "alert_id": "8",
     "home_id": "126",
     "device_id": "2631",
     "alert_type": "refrigerator_malfunction",
@@ -96,6 +104,7 @@
     "created_at": "2025-06-19T02:54:33.715708"
   },
   "9": {
+    "alert_id": "9",
     "home_id": "54",
     "device_id": "1126",
     "alert_type": "oven_malfunction",
@@ -108,6 +117,7 @@
     "created_at": "2025-05-24T17:05:49.193608"
   },
   "10": {
+    "alert_id": "10",
     "home_id": "115",
     "device_id": "2375",
     "alert_type": "bulb_malfunction",
@@ -120,6 +130,7 @@
     "created_at": "2025-05-27T10:13:07.602099"
   },
   "11": {
+    "alert_id": "11",
     "home_id": "89",
     "device_id": "1856",
     "alert_type": "bulb_malfunction",
@@ -132,6 +143,7 @@
     "created_at": "2025-07-04T19:13:41.047960"
   },
   "12": {
+    "alert_id": "12",
     "home_id": "90",
     "device_id": "1875",
     "alert_type": "bulb_malfunction",
@@ -144,6 +156,7 @@
     "created_at": "2025-06-13T00:25:57.129975"
   },
   "13": {
+    "alert_id": "13",
     "home_id": "146",
     "device_id": "2975",
     "alert_type": "oven_overheating",
@@ -156,6 +169,7 @@
     "created_at": "2025-05-11T09:55:56.344838"
   },
   "14": {
+    "alert_id": "14",
     "home_id": "98",
     "device_id": "2060",
     "alert_type": "speaker_offline",
@@ -168,6 +182,7 @@
     "created_at": "2025-05-28T23:41:11.150208"
   },
   "15": {
+    "alert_id": "15",
     "home_id": "88",
     "device_id": "1827",
     "alert_type": "camera_offline",
@@ -180,6 +195,7 @@
     "created_at": "2025-07-28T04:33:33.748124"
   },
   "16": {
+    "alert_id": "16",
     "home_id": "92",
     "device_id": "1931",
     "alert_type": "refrigerator_malfunction",
@@ -192,6 +208,7 @@
     "created_at": "2025-06-27T13:02:40.728165"
   },
   "17": {
+    "alert_id": "17",
     "home_id": "141",
     "device_id": "2904",
     "alert_type": "bulb_malfunction",
@@ -204,6 +221,7 @@
     "created_at": "2025-06-05T19:15:45.635104"
   },
   "18": {
+    "alert_id": "18",
     "home_id": "83",
     "device_id": "1725",
     "alert_type": "speaker_offline",
@@ -216,6 +234,7 @@
     "created_at": "2025-06-29T16:30:43.821697"
   },
   "19": {
+    "alert_id": "19",
     "home_id": "98",
     "device_id": "2050",
     "alert_type": "thermostat_offline",
@@ -228,6 +247,7 @@
     "created_at": "2025-05-17T10:54:53.021559"
   },
   "20": {
+    "alert_id": "20",
     "home_id": "117",
     "device_id": "2422",
     "alert_type": "bulb_malfunction",
@@ -240,6 +260,7 @@
     "created_at": "2025-06-30T03:07:45.586667"
   },
   "21": {
+    "alert_id": "21",
     "home_id": "119",
     "device_id": "2470",
     "alert_type": "bulb_malfunction",
@@ -252,6 +273,7 @@
     "created_at": "2025-05-20T18:09:22.779729"
   },
   "22": {
+    "alert_id": "22",
     "home_id": "76",
     "device_id": "1570",
     "alert_type": "thermostat_offline",
@@ -264,6 +286,7 @@
     "created_at": "2025-06-05T07:47:41.800437"
   },
   "23": {
+    "alert_id": "23",
     "home_id": "65",
     "device_id": "1340",
     "alert_type": "camera_offline",
@@ -276,6 +299,7 @@
     "created_at": "2025-06-03T06:41:05.905667"
   },
   "24": {
+    "alert_id": "24",
     "home_id": "150",
     "device_id": "3063",
     "alert_type": "camera_motion_detected",
@@ -288,6 +312,7 @@
     "created_at": "2025-05-02T19:47:44.460363"
   },
   "25": {
+    "alert_id": "25",
     "home_id": "121",
     "device_id": "2519",
     "alert_type": "refrigerator_malfunction",
@@ -300,6 +325,7 @@
     "created_at": "2025-05-14T15:09:58.624983"
   },
   "26": {
+    "alert_id": "26",
     "home_id": "13",
     "device_id": "254",
     "alert_type": "thermostat_temperature_alert",
@@ -312,6 +338,7 @@
     "created_at": "2025-06-05T19:22:46.084023"
   },
   "27": {
+    "alert_id": "27",
     "home_id": "59",
     "device_id": "1225",
     "alert_type": "refrigerator_temperature_alert",
@@ -324,6 +351,7 @@
     "created_at": "2025-07-09T21:10:31.956072"
   },
   "28": {
+    "alert_id": "28",
     "home_id": "33",
     "device_id": "680",
     "alert_type": "refrigerator_temperature_alert",
@@ -336,6 +364,7 @@
     "created_at": "2025-06-14T04:29:36.725648"
   },
   "29": {
+    "alert_id": "29",
     "home_id": "34",
     "device_id": "696",
     "alert_type": "oven_malfunction",
@@ -348,6 +377,7 @@
     "created_at": "2025-07-04T21:32:40.366319"
   },
   "30": {
+    "alert_id": "30",
     "home_id": "134",
     "device_id": "2792",
     "alert_type": "bulb_malfunction",
@@ -360,6 +390,7 @@
     "created_at": "2025-05-18T05:29:44.647873"
   },
   "31": {
+    "alert_id": "31",
     "home_id": "138",
     "device_id": "2869",
     "alert_type": "tv_malfunction",
@@ -372,6 +403,7 @@
     "created_at": "2025-07-16T00:32:10.810130"
   },
   "32": {
+    "alert_id": "32",
     "home_id": "63",
     "device_id": "1309",
     "alert_type": "speaker_offline",
@@ -384,6 +416,7 @@
     "created_at": "2025-06-02T03:07:06.392279"
   },
   "33": {
+    "alert_id": "33",
     "home_id": "150",
     "device_id": "3071",
     "alert_type": "speaker_offline",
@@ -396,6 +429,7 @@
     "created_at": "2025-05-05T12:36:15.935284"
   },
   "34": {
+    "alert_id": "34",
     "home_id": "51",
     "device_id": "1047",
     "alert_type": "oven_overheating",
@@ -408,6 +442,7 @@
     "created_at": "2025-06-25T13:00:40.452426"
   },
   "35": {
+    "alert_id": "35",
     "home_id": "28",
     "device_id": "575",
     "alert_type": "oven_malfunction",
@@ -420,6 +455,7 @@
     "created_at": "2025-06-11T20:36:57.903692"
   },
   "36": {
+    "alert_id": "36",
     "home_id": "41",
     "device_id": "845",
     "alert_type": "speaker_offline",
@@ -432,6 +468,7 @@
     "created_at": "2025-07-15T09:37:39.770059"
   },
   "37": {
+    "alert_id": "37",
     "home_id": "133",
     "device_id": "2765",
     "alert_type": "bulb_malfunction",
@@ -444,6 +481,7 @@
     "created_at": "2025-06-06T01:18:46.384741"
   },
   "38": {
+    "alert_id": "38",
     "home_id": "137",
     "device_id": "2856",
     "alert_type": "tv_malfunction",
@@ -456,6 +494,7 @@
     "created_at": "2025-05-04T12:04:26.275237"
   },
   "39": {
+    "alert_id": "39",
     "home_id": "147",
     "device_id": "3000",
     "alert_type": "tv_malfunction",
@@ -468,6 +507,7 @@
     "created_at": "2025-05-20T00:05:56.468304"
   },
   "40": {
+    "alert_id": "40",
     "home_id": "12",
     "device_id": "248",
     "alert_type": "speaker_offline",
@@ -480,6 +520,7 @@
     "created_at": "2025-07-09T14:42:43.895382"
   },
   "41": {
+    "alert_id": "41",
     "home_id": "69",
     "device_id": "1414",
     "alert_type": "thermostat_offline",
@@ -492,6 +533,7 @@
     "created_at": "2025-07-30T19:47:50.975276"
   },
   "42": {
+    "alert_id": "42",
     "home_id": "19",
     "device_id": "373",
     "alert_type": "bulb_malfunction",
@@ -504,6 +546,7 @@
     "created_at": "2025-05-27T02:55:18.808722"
   },
   "43": {
+    "alert_id": "43",
     "home_id": "131",
     "device_id": "2730",
     "alert_type": "speaker_offline",
@@ -516,6 +559,7 @@
     "created_at": "2025-06-10T03:35:35.192756"
   },
   "44": {
+    "alert_id": "44",
     "home_id": "97",
     "device_id": "2035",
     "alert_type": "tv_malfunction",
@@ -528,6 +572,7 @@
     "created_at": "2025-07-29T03:02:52.390444"
   },
   "45": {
+    "alert_id": "45",
     "home_id": "56",
     "device_id": "1165",
     "alert_type": "oven_malfunction",
@@ -540,6 +585,7 @@
     "created_at": "2025-07-20T23:17:45.912831"
   },
   "46": {
+    "alert_id": "46",
     "home_id": "7",
     "device_id": "127",
     "alert_type": "bulb_malfunction",
@@ -552,6 +598,7 @@
     "created_at": "2025-06-19T05:09:54.470874"
   },
   "47": {
+    "alert_id": "47",
     "home_id": "36",
     "device_id": "740",
     "alert_type": "tv_malfunction",
@@ -564,6 +611,7 @@
     "created_at": "2025-07-09T16:59:22.747807"
   },
   "48": {
+    "alert_id": "48",
     "home_id": "146",
     "device_id": "2964",
     "alert_type": "bulb_malfunction",
@@ -576,6 +624,7 @@
     "created_at": "2025-07-06T14:18:59.437924"
   },
   "49": {
+    "alert_id": "49",
     "home_id": "7",
     "device_id": "141",
     "alert_type": "speaker_offline",
@@ -588,6 +637,7 @@
     "created_at": "2025-07-15T13:16:11.849335"
   },
   "50": {
+    "alert_id": "50",
     "home_id": "110",
     "device_id": "2280",
     "alert_type": "thermostat_temperature_alert",
@@ -600,6 +650,7 @@
     "created_at": "2025-05-10T09:52:26.805568"
   },
   "51": {
+    "alert_id": "51",
     "home_id": "89",
     "device_id": "1873",
     "alert_type": "tv_malfunction",
@@ -612,6 +663,7 @@
     "created_at": "2025-07-17T22:21:22.581809"
   },
   "52": {
+    "alert_id": "52",
     "home_id": "124",
     "device_id": "2581",
     "alert_type": "bulb_malfunction",
@@ -624,6 +676,7 @@
     "created_at": "2025-07-25T14:46:25.734487"
   },
   "53": {
+    "alert_id": "53",
     "home_id": "131",
     "device_id": "2736",
     "alert_type": "tv_malfunction",
@@ -636,6 +689,7 @@
     "created_at": "2025-05-18T11:52:47.734793"
   },
   "54": {
+    "alert_id": "54",
     "home_id": "89",
     "device_id": "1858",
     "alert_type": "thermostat_offline",
@@ -648,6 +702,7 @@
     "created_at": "2025-07-28T03:47:36.768068"
   },
   "55": {
+    "alert_id": "55",
     "home_id": "128",
     "device_id": "2663",
     "alert_type": "refrigerator_malfunction",
@@ -660,6 +715,7 @@
     "created_at": "2025-05-16T12:41:55.424561"
   },
   "56": {
+    "alert_id": "56",
     "home_id": "69",
     "device_id": "1424",
     "alert_type": "speaker_offline",
@@ -672,6 +728,7 @@
     "created_at": "2025-06-16T19:25:23.280955"
   },
   "57": {
+    "alert_id": "57",
     "home_id": "41",
     "device_id": "844",
     "alert_type": "speaker_offline",
@@ -684,6 +741,7 @@
     "created_at": "2025-05-11T02:26:13.130315"
   },
   "58": {
+    "alert_id": "58",
     "home_id": "118",
     "device_id": "2444",
     "alert_type": "bulb_malfunction",
@@ -696,6 +754,7 @@
     "created_at": "2025-07-05T18:07:04.753070"
   },
   "59": {
+    "alert_id": "59",
     "home_id": "131",
     "device_id": "2716",
     "alert_type": "bulb_malfunction",
@@ -708,6 +767,7 @@
     "created_at": "2025-05-19T20:44:13.128365"
   },
   "60": {
+    "alert_id": "60",
     "home_id": "65",
     "device_id": "1333",
     "alert_type": "bulb_malfunction",
@@ -720,6 +780,7 @@
     "created_at": "2025-07-29T00:56:56.252962"
   },
   "61": {
+    "alert_id": "61",
     "home_id": "31",
     "device_id": "643",
     "alert_type": "oven_overheating",
@@ -732,6 +793,7 @@
     "created_at": "2025-07-30T17:44:08.815798"
   },
   "62": {
+    "alert_id": "62",
     "home_id": "88",
     "device_id": "1817",
     "alert_type": "bulb_malfunction",
@@ -744,6 +806,7 @@
     "created_at": "2025-07-29T10:51:32.528091"
   },
   "63": {
+    "alert_id": "63",
     "home_id": "135",
     "device_id": "2824",
     "alert_type": "tv_malfunction",
@@ -756,6 +819,7 @@
     "created_at": "2025-07-03T11:08:35.688225"
   },
   "64": {
+    "alert_id": "64",
     "home_id": "33",
     "device_id": "662",
     "alert_type": "bulb_malfunction",
@@ -768,6 +832,7 @@
     "created_at": "2025-05-21T19:43:37.642643"
   },
   "65": {
+    "alert_id": "65",
     "home_id": "150",
     "device_id": "3062",
     "alert_type": "camera_offline",
@@ -780,6 +845,7 @@
     "created_at": "2025-05-08T07:10:55.689751"
   },
   "66": {
+    "alert_id": "66",
     "home_id": "90",
     "device_id": "1882",
     "alert_type": "speaker_offline",
@@ -792,6 +858,7 @@
     "created_at": "2025-07-26T12:09:20.362055"
   },
   "67": {
+    "alert_id": "67",
     "home_id": "57",
     "device_id": "1185",
     "alert_type": "oven_overheating",
@@ -804,6 +871,7 @@
     "created_at": "2025-06-18T20:55:40.274657"
   },
   "68": {
+    "alert_id": "68",
     "home_id": "14",
     "device_id": "267",
     "alert_type": "bulb_malfunction",
@@ -816,6 +884,7 @@
     "created_at": "2025-06-18T03:25:45.141940"
   },
   "69": {
+    "alert_id": "69",
     "home_id": "47",
     "device_id": "955",
     "alert_type": "bulb_malfunction",
@@ -828,6 +897,7 @@
     "created_at": "2025-05-06T16:57:49.787337"
   },
   "70": {
+    "alert_id": "70",
     "home_id": "3",
     "device_id": "52",
     "alert_type": "tv_malfunction",
@@ -840,6 +910,7 @@
     "created_at": "2025-07-05T05:01:26.088573"
   },
   "71": {
+    "alert_id": "71",
     "home_id": "69",
     "device_id": "1414",
     "alert_type": "thermostat_offline",
@@ -852,6 +923,7 @@
     "created_at": "2025-05-09T08:11:20.105147"
   },
   "72": {
+    "alert_id": "72",
     "home_id": "114",
     "device_id": "2360",
     "alert_type": "refrigerator_temperature_alert",
@@ -864,6 +936,7 @@
     "created_at": "2025-07-29T00:12:29.055276"
   },
   "73": {
+    "alert_id": "73",
     "home_id": "84",
     "device_id": "1753",
     "alert_type": "tv_malfunction",
@@ -876,6 +949,7 @@
     "created_at": "2025-06-14T09:28:05.501017"
   },
   "74": {
+    "alert_id": "74",
     "home_id": "2",
     "device_id": "30",
     "alert_type": "thermostat_temperature_alert",
@@ -888,6 +962,7 @@
     "created_at": "2025-06-08T08:07:33.477751"
   },
   "75": {
+    "alert_id": "75",
     "home_id": "30",
     "device_id": "625",
     "alert_type": "speaker_offline",
@@ -900,6 +975,7 @@
     "created_at": "2025-05-13T00:05:48.119060"
   },
   "76": {
+    "alert_id": "76",
     "home_id": "77",
     "device_id": "1585",
     "alert_type": "bulb_malfunction",
@@ -912,6 +988,7 @@
     "created_at": "2025-07-01T04:42:14.906273"
   },
   "77": {
+    "alert_id": "77",
     "home_id": "133",
     "device_id": "2766",
     "alert_type": "bulb_malfunction",
@@ -924,6 +1001,7 @@
     "created_at": "2025-05-09T08:49:56.259127"
   },
   "78": {
+    "alert_id": "78",
     "home_id": "134",
     "device_id": "2800",
     "alert_type": "oven_malfunction",
@@ -936,6 +1014,7 @@
     "created_at": "2025-05-14T04:05:13.840516"
   },
   "79": {
+    "alert_id": "79",
     "home_id": "51",
     "device_id": "1042",
     "alert_type": "thermostat_temperature_alert",
@@ -948,6 +1027,7 @@
     "created_at": "2025-05-30T21:44:24.995908"
   },
   "80": {
+    "alert_id": "80",
     "home_id": "44",
     "device_id": "904",
     "alert_type": "bulb_malfunction",
@@ -960,6 +1040,7 @@
     "created_at": "2025-05-15T05:26:16.564270"
   },
   "81": {
+    "alert_id": "81",
     "home_id": "105",
     "device_id": "2183",
     "alert_type": "bulb_malfunction",
@@ -972,6 +1053,7 @@
     "created_at": "2025-06-12T21:35:08.068299"
   },
   "82": {
+    "alert_id": "82",
     "home_id": "49",
     "device_id": "1007",
     "alert_type": "speaker_offline",
@@ -984,6 +1066,7 @@
     "created_at": "2025-07-10T00:32:46.353185"
   },
   "83": {
+    "alert_id": "83",
     "home_id": "77",
     "device_id": "1598",
     "alert_type": "speaker_offline",
@@ -996,6 +1079,7 @@
     "created_at": "2025-06-27T22:15:00.195010"
   },
   "84": {
+    "alert_id": "84",
     "home_id": "110",
     "device_id": "2291",
     "alert_type": "speaker_offline",
@@ -1008,6 +1092,7 @@
     "created_at": "2025-07-21T23:01:56.562184"
   },
   "85": {
+    "alert_id": "85",
     "home_id": "151",
     "device_id": "3093",
     "alert_type": "speaker_offline",
@@ -1020,6 +1105,7 @@
     "created_at": "2025-05-25T16:37:35.363309"
   },
   "86": {
+    "alert_id": "86",
     "home_id": "151",
     "device_id": "3091",
     "alert_type": "oven_overheating",
@@ -1032,6 +1118,7 @@
     "created_at": "2025-05-25T19:29:46.432940"
   },
   "87": {
+    "alert_id": "87",
     "home_id": "109",
     "device_id": "2256",
     "alert_type": "bulb_malfunction",
@@ -1044,6 +1131,7 @@
     "created_at": "2025-07-14T01:47:48.142806"
   },
   "88": {
+    "alert_id": "88",
     "home_id": "104",
     "device_id": "2164",
     "alert_type": "refrigerator_malfunction",
@@ -1056,6 +1144,7 @@
     "created_at": "2025-05-09T22:47:40.826948"
   },
   "89": {
+    "alert_id": "89",
     "home_id": "59",
     "device_id": "1219",
     "alert_type": "bulb_malfunction",
@@ -1068,6 +1157,7 @@
     "created_at": "2025-07-23T09:12:34.890127"
   },
   "90": {
+    "alert_id": "90",
     "home_id": "125",
     "device_id": "2620",
     "alert_type": "tv_malfunction",
@@ -1080,6 +1170,7 @@
     "created_at": "2025-05-08T03:57:11.130877"
   },
   "91": {
+    "alert_id": "91",
     "home_id": "66",
     "device_id": "1362",
     "alert_type": "bulb_malfunction",
@@ -1092,6 +1183,7 @@
     "created_at": "2025-07-16T01:30:23.355523"
   },
   "92": {
+    "alert_id": "92",
     "home_id": "111",
     "device_id": "2310",
     "alert_type": "tv_malfunction",
@@ -1104,6 +1196,7 @@
     "created_at": "2025-05-06T11:07:56.336139"
   },
   "93": {
+    "alert_id": "93",
     "home_id": "75",
     "device_id": "1553",
     "alert_type": "bulb_malfunction",
@@ -1116,6 +1209,7 @@
     "created_at": "2025-05-08T12:45:18.402488"
   },
   "94": {
+    "alert_id": "94",
     "home_id": "124",
     "device_id": "2589",
     "alert_type": "tv_malfunction",
@@ -1128,6 +1222,7 @@
     "created_at": "2025-05-22T07:11:55.308635"
   },
   "95": {
+    "alert_id": "95",
     "home_id": "5",
     "device_id": "96",
     "alert_type": "oven_malfunction",
@@ -1140,6 +1235,7 @@
     "created_at": "2025-05-21T13:05:33.859460"
   },
   "96": {
+    "alert_id": "96",
     "home_id": "42",
     "device_id": "855",
     "alert_type": "bulb_malfunction",
@@ -1152,6 +1248,7 @@
     "created_at": "2025-06-01T03:18:14.460835"
   },
   "97": {
+    "alert_id": "97",
     "home_id": "58",
     "device_id": "1210",
     "alert_type": "speaker_offline",
@@ -1164,6 +1261,7 @@
     "created_at": "2025-07-21T13:03:57.179938"
   },
   "98": {
+    "alert_id": "98",
     "home_id": "12",
     "device_id": "244",
     "alert_type": "refrigerator_malfunction",
@@ -1176,6 +1274,7 @@
     "created_at": "2025-05-27T04:08:54.944092"
   },
   "99": {
+    "alert_id": "99",
     "home_id": "71",
     "device_id": "1447",
     "alert_type": "bulb_malfunction",
@@ -1188,6 +1287,7 @@
     "created_at": "2025-06-20T00:50:57.351335"
   },
   "100": {
+    "alert_id": "100",
     "home_id": "84",
     "device_id": "1744",
     "alert_type": "oven_malfunction",
@@ -1200,6 +1300,7 @@
     "created_at": "2025-06-16T02:47:21.434363"
   },
   "101": {
+    "alert_id": "101",
     "home_id": "130",
     "device_id": "2704",
     "alert_type": "refrigerator_malfunction",
@@ -1212,6 +1313,7 @@
     "created_at": "2025-06-07T17:14:08.700843"
   },
   "102": {
+    "alert_id": "102",
     "home_id": "53",
     "device_id": "1098",
     "alert_type": "refrigerator_malfunction",
@@ -1224,6 +1326,7 @@
     "created_at": "2025-06-14T10:59:03.741003"
   },
   "103": {
+    "alert_id": "103",
     "home_id": "128",
     "device_id": "2667",
     "alert_type": "speaker_offline",
@@ -1236,6 +1339,7 @@
     "created_at": "2025-06-29T17:17:36.198858"
   },
   "104": {
+    "alert_id": "104",
     "home_id": "81",
     "device_id": "1677",
     "alert_type": "camera_motion_detected",
@@ -1248,6 +1352,7 @@
     "created_at": "2025-05-02T19:47:44.182796"
   },
   "105": {
+    "alert_id": "105",
     "home_id": "74",
     "device_id": "1530",
     "alert_type": "bulb_malfunction",
@@ -1260,6 +1365,7 @@
     "created_at": "2025-05-10T17:52:37.390491"
   },
   "106": {
+    "alert_id": "106",
     "home_id": "42",
     "device_id": "852",
     "alert_type": "bulb_malfunction",
@@ -1272,6 +1378,7 @@
     "created_at": "2025-07-19T06:18:34.486623"
   },
   "107": {
+    "alert_id": "107",
     "home_id": "56",
     "device_id": "1156",
     "alert_type": "bulb_malfunction",
@@ -1284,6 +1391,7 @@
     "created_at": "2025-05-24T01:02:04.504276"
   },
   "108": {
+    "alert_id": "108",
     "home_id": "134",
     "device_id": "2795",
     "alert_type": "thermostat_offline",
@@ -1296,6 +1404,7 @@
     "created_at": "2025-07-24T07:24:36.230811"
   },
   "109": {
+    "alert_id": "109",
     "home_id": "92",
     "device_id": "1921",
     "alert_type": "bulb_malfunction",
@@ -1308,6 +1417,7 @@
     "created_at": "2025-06-25T05:25:51.509915"
   },
   "110": {
+    "alert_id": "110",
     "home_id": "24",
     "device_id": "488",
     "alert_type": "refrigerator_temperature_alert",
@@ -1320,6 +1430,7 @@
     "created_at": "2025-05-16T11:58:24.520584"
   },
   "111": {
+    "alert_id": "111",
     "home_id": "52",
     "device_id": "1073",
     "alert_type": "oven_overheating",
@@ -1332,6 +1443,7 @@
     "created_at": "2025-06-30T06:16:25.291422"
   },
   "112": {
+    "alert_id": "112",
     "home_id": "144",
     "device_id": "2950",
     "alert_type": "tv_malfunction",
@@ -1344,6 +1456,7 @@
     "created_at": "2025-06-21T03:52:52.964069"
   },
   "113": {
+    "alert_id": "113",
     "home_id": "27",
     "device_id": "539",
     "alert_type": "bulb_malfunction",
@@ -1356,6 +1469,7 @@
     "created_at": "2025-07-28T15:59:22.204329"
   },
   "114": {
+    "alert_id": "114",
     "home_id": "113",
     "device_id": "2349",
     "alert_type": "oven_overheating",
@@ -1368,6 +1482,7 @@
     "created_at": "2025-05-13T22:26:37.890087"
   },
   "115": {
+    "alert_id": "115",
     "home_id": "46",
     "device_id": "938",
     "alert_type": "bulb_malfunction",
@@ -1380,6 +1495,7 @@
     "created_at": "2025-05-09T05:49:17.792157"
   },
   "116": {
+    "alert_id": "116",
     "home_id": "134",
     "device_id": "2799",
     "alert_type": "refrigerator_malfunction",
@@ -1392,6 +1508,7 @@
     "created_at": "2025-05-24T07:40:23.030066"
   },
   "117": {
+    "alert_id": "117",
     "home_id": "1",
     "device_id": "3",
     "alert_type": "bulb_malfunction",
@@ -1404,6 +1521,7 @@
     "created_at": "2025-07-18T20:02:23.589006"
   },
   "118": {
+    "alert_id": "118",
     "home_id": "96",
     "device_id": "2007",
     "alert_type": "speaker_offline",
@@ -1416,6 +1534,7 @@
     "created_at": "2025-07-09T03:03:22.967731"
   },
   "119": {
+    "alert_id": "119",
     "home_id": "150",
     "device_id": "3067",
     "alert_type": "refrigerator_temperature_alert",
@@ -1428,6 +1547,7 @@
     "created_at": "2025-07-22T03:25:47.590215"
   },
   "120": {
+    "alert_id": "120",
     "home_id": "134",
     "device_id": "2799",
     "alert_type": "refrigerator_malfunction",
@@ -1440,6 +1560,7 @@
     "created_at": "2025-06-26T09:25:13.929803"
   },
   "121": {
+    "alert_id": "121",
     "home_id": "152",
     "device_id": "3111",
     "alert_type": "oven_malfunction",
@@ -1452,6 +1573,7 @@
     "created_at": "2025-07-22T01:05:50.227572"
   },
   "122": {
+    "alert_id": "122",
     "home_id": "88",
     "device_id": "1826",
     "alert_type": "thermostat_temperature_alert",
@@ -1464,6 +1586,7 @@
     "created_at": "2025-07-04T20:13:26.194162"
   },
   "123": {
+    "alert_id": "123",
     "home_id": "110",
     "device_id": "2292",
     "alert_type": "tv_malfunction",
@@ -1476,6 +1599,7 @@
     "created_at": "2025-06-11T07:33:58.265274"
   },
   "124": {
+    "alert_id": "124",
     "home_id": "71",
     "device_id": "1451",
     "alert_type": "bulb_malfunction",
@@ -1488,6 +1612,7 @@
     "created_at": "2025-05-19T14:16:03.809549"
   },
   "125": {
+    "alert_id": "125",
     "home_id": "3",
     "device_id": "44",
     "alert_type": "bulb_malfunction",
@@ -1500,6 +1625,7 @@
     "created_at": "2025-05-12T20:53:36.883113"
   },
   "126": {
+    "alert_id": "126",
     "home_id": "26",
     "device_id": "531",
     "alert_type": "tv_malfunction",
@@ -1512,6 +1638,7 @@
     "created_at": "2025-07-28T00:23:26.495792"
   },
   "127": {
+    "alert_id": "127",
     "home_id": "53",
     "device_id": "1088",
     "alert_type": "bulb_malfunction",
@@ -1524,6 +1651,7 @@
     "created_at": "2025-07-12T20:41:43.767170"
   },
   "128": {
+    "alert_id": "128",
     "home_id": "121",
     "device_id": "2522",
     "alert_type": "speaker_offline",
@@ -1536,6 +1664,7 @@
     "created_at": "2025-06-28T22:21:16.057447"
   },
   "129": {
+    "alert_id": "129",
     "home_id": "79",
     "device_id": "1628",
     "alert_type": "thermostat_offline",
@@ -1548,6 +1677,7 @@
     "created_at": "2025-07-01T03:03:30.828576"
   },
   "130": {
+    "alert_id": "130",
     "home_id": "40",
     "device_id": "822",
     "alert_type": "tv_malfunction",
@@ -1560,6 +1690,7 @@
     "created_at": "2025-06-15T07:39:08.910868"
   },
   "131": {
+    "alert_id": "131",
     "home_id": "107",
     "device_id": "2216",
     "alert_type": "bulb_malfunction",
@@ -1572,6 +1703,7 @@
     "created_at": "2025-05-18T08:54:23.680580"
   },
   "132": {
+    "alert_id": "132",
     "home_id": "98",
     "device_id": "2064",
     "alert_type": "tv_malfunction",
@@ -1584,6 +1716,7 @@
     "created_at": "2025-06-07T07:39:56.647026"
   },
   "133": {
+    "alert_id": "133",
     "home_id": "7",
     "device_id": "119",
     "alert_type": "bulb_malfunction",
@@ -1596,6 +1729,7 @@
     "created_at": "2025-05-23T17:40:00.279603"
   },
   "134": {
+    "alert_id": "134",
     "home_id": "50",
     "device_id": "1026",
     "alert_type": "refrigerator_temperature_alert",
@@ -1608,6 +1742,7 @@
     "created_at": "2025-05-08T20:22:21.022842"
   },
   "135": {
+    "alert_id": "135",
     "home_id": "30",
     "device_id": "618",
     "alert_type": "refrigerator_malfunction",
@@ -1620,6 +1755,7 @@
     "created_at": "2025-06-03T17:19:19.062697"
   },
   "136": {
+    "alert_id": "136",
     "home_id": "130",
     "device_id": "2695",
     "alert_type": "bulb_malfunction",
@@ -1632,6 +1768,7 @@
     "created_at": "2025-05-21T17:29:01.214355"
   },
   "137": {
+    "alert_id": "137",
     "home_id": "130",
     "device_id": "2708",
     "alert_type": "tv_malfunction",
@@ -1644,6 +1781,7 @@
     "created_at": "2025-05-26T12:09:05.777013"
   },
   "138": {
+    "alert_id": "138",
     "home_id": "144",
     "device_id": "2945",
     "alert_type": "oven_overheating",
@@ -1656,6 +1794,7 @@
     "created_at": "2025-05-08T08:22:55.599986"
   },
   "139": {
+    "alert_id": "139",
     "home_id": "41",
     "device_id": "828",
     "alert_type": "bulb_malfunction",
@@ -1668,6 +1807,7 @@
     "created_at": "2025-07-01T15:01:51.262884"
   },
   "140": {
+    "alert_id": "140",
     "home_id": "79",
     "device_id": "1637",
     "alert_type": "tv_malfunction",
@@ -1680,6 +1820,7 @@
     "created_at": "2025-07-06T13:13:09.220092"
   },
   "141": {
+    "alert_id": "141",
     "home_id": "41",
     "device_id": "833",
     "alert_type": "bulb_malfunction",
@@ -1692,6 +1833,7 @@
     "created_at": "2025-07-08T23:35:01.516701"
   },
   "142": {
+    "alert_id": "142",
     "home_id": "72",
     "device_id": "1507",
     "alert_type": "tv_malfunction",
@@ -1704,6 +1846,7 @@
     "created_at": "2025-06-04T10:20:59.986065"
   },
   "143": {
+    "alert_id": "143",
     "home_id": "50",
     "device_id": "1020",
     "alert_type": "bulb_malfunction",
@@ -1716,6 +1859,7 @@
     "created_at": "2025-06-28T05:27:09.841821"
   },
   "144": {
+    "alert_id": "144",
     "home_id": "150",
     "device_id": "3071",
     "alert_type": "speaker_offline",
@@ -1728,6 +1872,7 @@
     "created_at": "2025-05-25T08:55:04.153918"
   },
   "145": {
+    "alert_id": "145",
     "home_id": "8",
     "device_id": "152",
     "alert_type": "bulb_malfunction",
@@ -1740,6 +1885,7 @@
     "created_at": "2025-06-10T10:19:11.398812"
   },
   "146": {
+    "alert_id": "146",
     "home_id": "19",
     "device_id": "375",
     "alert_type": "bulb_malfunction",
@@ -1752,6 +1898,7 @@
     "created_at": "2025-06-05T08:18:47.217806"
   },
   "147": {
+    "alert_id": "147",
     "home_id": "5",
     "device_id": "87",
     "alert_type": "bulb_malfunction",
@@ -1764,6 +1911,7 @@
     "created_at": "2025-07-03T06:11:46.676625"
   },
   "148": {
+    "alert_id": "148",
     "home_id": "117",
     "device_id": "2437",
     "alert_type": "speaker_offline",
@@ -1776,6 +1924,7 @@
     "created_at": "2025-07-10T19:16:58.371168"
   },
   "149": {
+    "alert_id": "149",
     "home_id": "152",
     "device_id": "3105",
     "alert_type": "thermostat_temperature_alert",
@@ -1788,6 +1937,7 @@
     "created_at": "2025-06-08T01:40:31.737546"
   },
   "150": {
+    "alert_id": "150",
     "home_id": "81",
     "device_id": "1681",
     "alert_type": "oven_overheating",
@@ -1800,6 +1950,7 @@
     "created_at": "2025-06-06T12:39:13.007709"
   },
   "151": {
+    "alert_id": "151",
     "home_id": "59",
     "device_id": "1228",
     "alert_type": "speaker_offline",
@@ -1812,6 +1963,7 @@
     "created_at": "2025-06-24T21:49:53.257752"
   },
   "152": {
+    "alert_id": "152",
     "home_id": "134",
     "device_id": "2799",
     "alert_type": "refrigerator_malfunction",
@@ -1824,6 +1976,7 @@
     "created_at": "2025-06-04T19:20:55.730493"
   },
   "153": {
+    "alert_id": "153",
     "home_id": "42",
     "device_id": "855",
     "alert_type": "bulb_malfunction",
@@ -1836,6 +1989,7 @@
     "created_at": "2025-06-22T14:49:13.919351"
   },
   "154": {
+    "alert_id": "154",
     "home_id": "142",
     "device_id": "2920",
     "alert_type": "oven_malfunction",
@@ -1848,6 +2002,7 @@
     "created_at": "2025-06-12T06:54:27.099383"
   },
   "155": {
+    "alert_id": "155",
     "home_id": "88",
     "device_id": "1837",
     "alert_type": "tv_malfunction",
@@ -1860,6 +2015,7 @@
     "created_at": "2025-05-07T03:19:17.971273"
   },
   "156": {
+    "alert_id": "156",
     "home_id": "115",
     "device_id": "2387",
     "alert_type": "speaker_offline",
@@ -1872,6 +2028,7 @@
     "created_at": "2025-05-08T01:22:45.095739"
   },
   "157": {
+    "alert_id": "157",
     "home_id": "66",
     "device_id": "1360",
     "alert_type": "bulb_malfunction",
@@ -1884,6 +2041,7 @@
     "created_at": "2025-05-09T08:08:11.245826"
   },
   "158": {
+    "alert_id": "158",
     "home_id": "35",
     "device_id": "708",
     "alert_type": "bulb_malfunction",
@@ -1896,6 +2054,7 @@
     "created_at": "2025-05-05T02:26:11.200760"
   },
   "159": {
+    "alert_id": "159",
     "home_id": "6",
     "device_id": "100",
     "alert_type": "bulb_malfunction",
@@ -1908,6 +2067,7 @@
     "created_at": "2025-06-16T19:51:49.604331"
   },
   "160": {
+    "alert_id": "160",
     "home_id": "81",
     "device_id": "1674",
     "alert_type": "bulb_malfunction",
@@ -1920,6 +2080,7 @@
     "created_at": "2025-06-26T03:45:39.985148"
   },
   "161": {
+    "alert_id": "161",
     "home_id": "40",
     "device_id": "825",
     "alert_type": "tv_malfunction",
@@ -1932,6 +2093,7 @@
     "created_at": "2025-07-04T19:28:18.142613"
   },
   "162": {
+    "alert_id": "162",
     "home_id": "14",
     "device_id": "279",
     "alert_type": "speaker_offline",
@@ -1944,6 +2106,7 @@
     "created_at": "2025-06-18T05:02:56.761965"
   },
   "163": {
+    "alert_id": "163",
     "home_id": "106",
     "device_id": "2198",
     "alert_type": "bulb_malfunction",
@@ -1956,6 +2119,7 @@
     "created_at": "2025-07-18T02:34:11.092055"
   },
   "164": {
+    "alert_id": "164",
     "home_id": "125",
     "device_id": "2601",
     "alert_type": "bulb_malfunction",
@@ -1968,6 +2132,7 @@
     "created_at": "2025-05-19T15:44:02.093853"
   },
   "165": {
+    "alert_id": "165",
     "home_id": "92",
     "device_id": "1924",
     "alert_type": "bulb_malfunction",
@@ -1980,6 +2145,7 @@
     "created_at": "2025-05-11T16:31:28.892361"
   },
   "166": {
+    "alert_id": "166",
     "home_id": "86",
     "device_id": "1782",
     "alert_type": "bulb_malfunction",
@@ -1992,6 +2158,7 @@
     "created_at": "2025-06-23T07:45:28.358692"
   },
   "167": {
+    "alert_id": "167",
     "home_id": "47",
     "device_id": "959",
     "alert_type": "bulb_malfunction",
@@ -2004,6 +2171,7 @@
     "created_at": "2025-05-13T06:17:04.999843"
   },
   "168": {
+    "alert_id": "168",
     "home_id": "144",
     "device_id": "2949",
     "alert_type": "speaker_offline",
@@ -2016,6 +2184,7 @@
     "created_at": "2025-06-22T19:55:34.617106"
   },
   "169": {
+    "alert_id": "169",
     "home_id": "2",
     "device_id": "26",
     "alert_type": "bulb_malfunction",
@@ -2028,6 +2197,7 @@
     "created_at": "2025-06-30T18:25:01.748169"
   },
   "170": {
+    "alert_id": "170",
     "home_id": "91",
     "device_id": "1903",
     "alert_type": "oven_malfunction",
@@ -2040,6 +2210,7 @@
     "created_at": "2025-07-08T22:08:59.642289"
   },
   "171": {
+    "alert_id": "171",
     "home_id": "132",
     "device_id": "2744",
     "alert_type": "bulb_malfunction",
@@ -2052,6 +2223,7 @@
     "created_at": "2025-05-02T21:33:54.792993"
   },
   "172": {
+    "alert_id": "172",
     "home_id": "36",
     "device_id": "734",
     "alert_type": "thermostat_offline",
@@ -2064,6 +2236,7 @@
     "created_at": "2025-06-30T10:01:27.991304"
   },
   "173": {
+    "alert_id": "173",
     "home_id": "96",
     "device_id": "1996",
     "alert_type": "thermostat_temperature_alert",
@@ -2076,6 +2249,7 @@
     "created_at": "2025-07-13T23:10:19.927082"
   },
   "174": {
+    "alert_id": "174",
     "home_id": "30",
     "device_id": "620",
     "alert_type": "oven_overheating",
@@ -2088,6 +2262,7 @@
     "created_at": "2025-07-02T09:18:28.642917"
   },
   "175": {
+    "alert_id": "175",
     "home_id": "88",
     "device_id": "1838",
     "alert_type": "tv_malfunction",
@@ -2100,6 +2275,7 @@
     "created_at": "2025-07-08T14:56:08.363565"
   },
   "176": {
+    "alert_id": "176",
     "home_id": "75",
     "device_id": "1561",
     "alert_type": "oven_overheating",
@@ -2112,6 +2288,7 @@
     "created_at": "2025-06-05T09:45:32.361316"
   },
   "177": {
+    "alert_id": "177",
     "home_id": "55",
     "device_id": "1135",
     "alert_type": "bulb_malfunction",
@@ -2124,6 +2301,7 @@
     "created_at": "2025-06-25T13:12:27.235163"
   },
   "178": {
+    "alert_id": "178",
     "home_id": "123",
     "device_id": "2549",
     "alert_type": "bulb_malfunction",
@@ -2136,6 +2314,7 @@
     "created_at": "2025-07-22T22:03:21.704022"
   },
   "179": {
+    "alert_id": "179",
     "home_id": "21",
     "device_id": "424",
     "alert_type": "bulb_malfunction",
@@ -2148,6 +2327,7 @@
     "created_at": "2025-06-11T14:52:26.278150"
   },
   "180": {
+    "alert_id": "180",
     "home_id": "48",
     "device_id": "977",
     "alert_type": "bulb_malfunction",
@@ -2160,6 +2340,7 @@
     "created_at": "2025-07-29T10:06:56.405131"
   },
   "181": {
+    "alert_id": "181",
     "home_id": "79",
     "device_id": "1629",
     "alert_type": "thermostat_temperature_alert",
@@ -2172,6 +2353,7 @@
     "created_at": "2025-06-23T02:52:06.430758"
   },
   "182": {
+    "alert_id": "182",
     "home_id": "40",
     "device_id": "825",
     "alert_type": "tv_malfunction",
@@ -2184,6 +2366,7 @@
     "created_at": "2025-06-08T19:18:41.116693"
   },
   "183": {
+    "alert_id": "183",
     "home_id": "108",
     "device_id": "2248",
     "alert_type": "speaker_offline",
@@ -2196,6 +2379,7 @@
     "created_at": "2025-07-09T18:31:29.829832"
   },
   "184": {
+    "alert_id": "184",
     "home_id": "45",
     "device_id": "925",
     "alert_type": "thermostat_temperature_alert",
@@ -2208,6 +2392,7 @@
     "created_at": "2025-07-12T02:42:08.847911"
   },
   "185": {
+    "alert_id": "185",
     "home_id": "69",
     "device_id": "1411",
     "alert_type": "bulb_malfunction",
@@ -2220,6 +2405,7 @@
     "created_at": "2025-07-03T06:30:49.439140"
   },
   "186": {
+    "alert_id": "186",
     "home_id": "40",
     "device_id": "812",
     "alert_type": "camera_offline",
@@ -2232,6 +2418,7 @@
     "created_at": "2025-05-26T03:57:12.277192"
   },
   "187": {
+    "alert_id": "187",
     "home_id": "29",
     "device_id": "607",
     "alert_type": "tv_malfunction",
@@ -2244,6 +2431,7 @@
     "created_at": "2025-07-14T14:53:31.086305"
   },
   "188": {
+    "alert_id": "188",
     "home_id": "132",
     "device_id": "2745",
     "alert_type": "bulb_malfunction",
@@ -2256,6 +2444,7 @@
     "created_at": "2025-05-05T05:53:10.303937"
   },
   "189": {
+    "alert_id": "189",
     "home_id": "107",
     "device_id": "2219",
     "alert_type": "thermostat_temperature_alert",
@@ -2268,6 +2457,7 @@
     "created_at": "2025-05-30T14:49:30.246195"
   },
   "190": {
+    "alert_id": "190",
     "home_id": "85",
     "device_id": "1766",
     "alert_type": "refrigerator_malfunction",
@@ -2280,6 +2470,7 @@
     "created_at": "2025-05-04T06:10:21.302751"
   },
   "191": {
+    "alert_id": "191",
     "home_id": "97",
     "device_id": "2020",
     "alert_type": "bulb_malfunction",
@@ -2292,6 +2483,7 @@
     "created_at": "2025-05-21T17:51:30.179930"
   },
   "192": {
+    "alert_id": "192",
     "home_id": "21",
     "device_id": "429",
     "alert_type": "oven_overheating",
@@ -2304,6 +2496,7 @@
     "created_at": "2025-06-06T22:15:43.285507"
   },
   "193": {
+    "alert_id": "193",
     "home_id": "91",
     "device_id": "1892",
     "alert_type": "bulb_malfunction",
@@ -2316,6 +2509,7 @@
     "created_at": "2025-05-20T16:37:58.141780"
   },
   "194": {
+    "alert_id": "194",
     "home_id": "130",
     "device_id": "2704",
     "alert_type": "refrigerator_temperature_alert",
@@ -2328,6 +2522,7 @@
     "created_at": "2025-07-14T14:29:31.297825"
   },
   "195": {
+    "alert_id": "195",
     "home_id": "104",
     "device_id": "2171",
     "alert_type": "speaker_offline",
@@ -2340,6 +2535,7 @@
     "created_at": "2025-07-03T04:29:31.285317"
   },
   "196": {
+    "alert_id": "196",
     "home_id": "10",
     "device_id": "190",
     "alert_type": "bulb_malfunction",
@@ -2352,6 +2548,7 @@
     "created_at": "2025-05-19T02:05:56.287376"
   },
   "197": {
+    "alert_id": "197",
     "home_id": "84",
     "device_id": "1737",
     "alert_type": "thermostat_offline",
@@ -2364,6 +2561,7 @@
     "created_at": "2025-05-13T02:44:10.008493"
   },
   "198": {
+    "alert_id": "198",
     "home_id": "9",
     "device_id": "166",
     "alert_type": "bulb_malfunction",
@@ -2376,6 +2574,7 @@
     "created_at": "2025-05-19T23:26:07.881208"
   },
   "199": {
+    "alert_id": "199",
     "home_id": "50",
     "device_id": "1023",
     "alert_type": "thermostat_offline",
@@ -2388,6 +2587,7 @@
     "created_at": "2025-06-06T05:22:50.538222"
   },
   "200": {
+    "alert_id": "200",
     "home_id": "113",
     "device_id": "2340",
     "alert_type": "bulb_malfunction",
@@ -2400,6 +2600,7 @@
     "created_at": "2025-05-21T07:38:43.656319"
   },
   "201": {
+    "alert_id": "201",
     "home_id": "100",
     "device_id": "2088",
     "alert_type": "bulb_malfunction",
@@ -2412,6 +2613,7 @@
     "created_at": "2025-07-08T03:38:15.908564"
   },
   "202": {
+    "alert_id": "202",
     "home_id": "124",
     "device_id": "2584",
     "alert_type": "refrigerator_malfunction",
@@ -2424,6 +2626,7 @@
     "created_at": "2025-06-13T10:02:02.894147"
   },
   "203": {
+    "alert_id": "203",
     "home_id": "124",
     "device_id": "2588",
     "alert_type": "speaker_offline",
@@ -2436,6 +2639,7 @@
     "created_at": "2025-06-22T05:48:49.702874"
   },
   "204": {
+    "alert_id": "204",
     "home_id": "139",
     "device_id": "2885",
     "alert_type": "oven_overheating",
@@ -2448,6 +2652,7 @@
     "created_at": "2025-07-14T11:39:27.504424"
   },
   "205": {
+    "alert_id": "205",
     "home_id": "73",
     "device_id": "1524",
     "alert_type": "speaker_offline",
@@ -2460,6 +2665,7 @@
     "created_at": "2025-05-18T11:16:21.755907"
   },
   "206": {
+    "alert_id": "206",
     "home_id": "87",
     "device_id": "1812",
     "alert_type": "speaker_offline",
@@ -2472,6 +2678,7 @@
     "created_at": "2025-05-13T21:04:12.599574"
   },
   "207": {
+    "alert_id": "207",
     "home_id": "44",
     "device_id": "905",
     "alert_type": "thermostat_offline",
@@ -2484,6 +2691,7 @@
     "created_at": "2025-06-21T03:46:45.158309"
   },
   "208": {
+    "alert_id": "208",
     "home_id": "20",
     "device_id": "416",
     "alert_type": "tv_malfunction",
@@ -2496,6 +2704,7 @@
     "created_at": "2025-07-18T14:33:15.819434"
   },
   "209": {
+    "alert_id": "209",
     "home_id": "91",
     "device_id": "1887",
     "alert_type": "bulb_malfunction",
@@ -2508,6 +2717,7 @@
     "created_at": "2025-05-19T18:59:04.692968"
   },
   "210": {
+    "alert_id": "210",
     "home_id": "142",
     "device_id": "2915",
     "alert_type": "bulb_malfunction",
@@ -2520,6 +2730,7 @@
     "created_at": "2025-05-19T09:02:45.031660"
   },
   "211": {
+    "alert_id": "211",
     "home_id": "71",
     "device_id": "1469",
     "alert_type": "tv_malfunction",
@@ -2532,6 +2743,7 @@
     "created_at": "2025-06-29T13:22:52.769827"
   },
   "212": {
+    "alert_id": "212",
     "home_id": "75",
     "device_id": "1563",
     "alert_type": "tv_malfunction",
@@ -2544,6 +2756,7 @@
     "created_at": "2025-07-16T01:13:09.278314"
   },
   "213": {
+    "alert_id": "213",
     "home_id": "84",
     "device_id": "1746",
     "alert_type": "tv_malfunction",
@@ -2556,6 +2769,7 @@
     "created_at": "2025-06-25T07:46:57.963828"
   },
   "214": {
+    "alert_id": "214",
     "home_id": "141",
     "device_id": "2910",
     "alert_type": "speaker_offline",
@@ -2568,6 +2782,7 @@
     "created_at": "2025-06-30T19:02:20.392700"
   },
   "215": {
+    "alert_id": "215",
     "home_id": "148",
     "device_id": "3014",
     "alert_type": "refrigerator_malfunction",
@@ -2580,6 +2795,7 @@
     "created_at": "2025-06-22T10:13:32.348841"
   },
   "216": {
+    "alert_id": "216",
     "home_id": "92",
     "device_id": "1918",
     "alert_type": "bulb_malfunction",
@@ -2592,6 +2808,7 @@
     "created_at": "2025-06-22T17:23:13.155668"
   },
   "217": {
+    "alert_id": "217",
     "home_id": "123",
     "device_id": "2571",
     "alert_type": "speaker_offline",
@@ -2604,6 +2821,7 @@
     "created_at": "2025-07-30T00:23:39.577798"
   },
   "218": {
+    "alert_id": "218",
     "home_id": "28",
     "device_id": "587",
     "alert_type": "tv_malfunction",
@@ -2616,6 +2834,7 @@
     "created_at": "2025-07-10T03:15:18.330749"
   },
   "219": {
+    "alert_id": "219",
     "home_id": "14",
     "device_id": "276",
     "alert_type": "refrigerator_temperature_alert",
@@ -2628,6 +2847,7 @@
     "created_at": "2025-07-14T11:25:01.629462"
   },
   "220": {
+    "alert_id": "220",
     "home_id": "57",
     "device_id": "1185",
     "alert_type": "oven_overheating",
@@ -2640,6 +2860,7 @@
     "created_at": "2025-06-05T17:42:06.757942"
   },
   "221": {
+    "alert_id": "221",
     "home_id": "81",
     "device_id": "1676",
     "alert_type": "thermostat_offline",
@@ -2652,6 +2873,7 @@
     "created_at": "2025-06-29T07:45:00.768104"
   },
   "222": {
+    "alert_id": "222",
     "home_id": "79",
     "device_id": "1628",
     "alert_type": "thermostat_temperature_alert",
@@ -2664,6 +2886,7 @@
     "created_at": "2025-07-12T09:01:44.539079"
   },
   "223": {
+    "alert_id": "223",
     "home_id": "45",
     "device_id": "935",
     "alert_type": "tv_malfunction",
@@ -2676,6 +2899,7 @@
     "created_at": "2025-07-24T05:38:10.512793"
   },
   "224": {
+    "alert_id": "224",
     "home_id": "117",
     "device_id": "2436",
     "alert_type": "speaker_offline",
@@ -2688,6 +2912,7 @@
     "created_at": "2025-07-27T02:02:57.444456"
   },
   "225": {
+    "alert_id": "225",
     "home_id": "116",
     "device_id": "2401",
     "alert_type": "bulb_malfunction",
@@ -2700,6 +2925,7 @@
     "created_at": "2025-06-02T09:21:17.429984"
   },
   "226": {
+    "alert_id": "226",
     "home_id": "16",
     "device_id": "317",
     "alert_type": "speaker_offline",
@@ -2712,6 +2938,7 @@
     "created_at": "2025-05-20T10:54:25.672787"
   },
   "227": {
+    "alert_id": "227",
     "home_id": "48",
     "device_id": "984",
     "alert_type": "thermostat_offline",
@@ -2724,6 +2951,7 @@
     "created_at": "2025-06-21T12:52:58.826518"
   },
   "228": {
+    "alert_id": "228",
     "home_id": "78",
     "device_id": "1608",
     "alert_type": "thermostat_temperature_alert",
@@ -2736,6 +2964,7 @@
     "created_at": "2025-07-09T04:04:35.148577"
   },
   "229": {
+    "alert_id": "229",
     "home_id": "35",
     "device_id": "706",
     "alert_type": "bulb_malfunction",
@@ -2748,6 +2977,7 @@
     "created_at": "2025-05-29T02:18:01.054617"
   },
   "230": {
+    "alert_id": "230",
     "home_id": "111",
     "device_id": "2295",
     "alert_type": "bulb_malfunction",
@@ -2760,6 +2990,7 @@
     "created_at": "2025-07-19T18:48:29.844574"
   },
   "231": {
+    "alert_id": "231",
     "home_id": "98",
     "device_id": "2043",
     "alert_type": "bulb_malfunction",
@@ -2772,6 +3003,7 @@
     "created_at": "2025-07-30T06:25:42.806031"
   },
   "232": {
+    "alert_id": "232",
     "home_id": "76",
     "device_id": "1570",
     "alert_type": "thermostat_offline",
@@ -2784,6 +3016,7 @@
     "created_at": "2025-06-18T12:17:58.963860"
   },
   "233": {
+    "alert_id": "233",
     "home_id": "71",
     "device_id": "1449",
     "alert_type": "bulb_malfunction",
@@ -2796,6 +3029,7 @@
     "created_at": "2025-05-26T00:38:08.254750"
   },
   "234": {
+    "alert_id": "234",
     "home_id": "68",
     "device_id": "1395",
     "alert_type": "bulb_malfunction",
@@ -2808,6 +3042,7 @@
     "created_at": "2025-05-16T00:12:53.383843"
   },
   "235": {
+    "alert_id": "235",
     "home_id": "30",
     "device_id": "626",
     "alert_type": "speaker_offline",
@@ -2820,6 +3055,7 @@
     "created_at": "2025-06-04T19:22:29.738988"
   },
   "236": {
+    "alert_id": "236",
     "home_id": "8",
     "device_id": "148",
     "alert_type": "bulb_malfunction",
@@ -2832,6 +3068,7 @@
     "created_at": "2025-05-18T12:24:11.060422"
   },
   "237": {
+    "alert_id": "237",
     "home_id": "73",
     "device_id": "1515",
     "alert_type": "thermostat_offline",
@@ -2844,6 +3081,7 @@
     "created_at": "2025-05-03T20:57:16.117795"
   },
   "238": {
+    "alert_id": "238",
     "home_id": "110",
     "device_id": "2290",
     "alert_type": "speaker_offline",
@@ -2856,6 +3094,7 @@
     "created_at": "2025-07-10T06:29:18.974512"
   },
   "239": {
+    "alert_id": "239",
     "home_id": "14",
     "device_id": "276",
     "alert_type": "refrigerator_temperature_alert",
@@ -2868,6 +3107,7 @@
     "created_at": "2025-05-05T22:36:51.922674"
   },
   "240": {
+    "alert_id": "240",
     "home_id": "87",
     "device_id": "1807",
     "alert_type": "oven_malfunction",
@@ -2880,6 +3120,7 @@
     "created_at": "2025-07-09T13:29:21.401280"
   },
   "241": {
+    "alert_id": "241",
     "home_id": "31",
     "device_id": "639",
     "alert_type": "camera_offline",
@@ -2892,6 +3133,7 @@
     "created_at": "2025-07-10T09:56:05.098910"
   },
   "242": {
+    "alert_id": "242",
     "home_id": "64",
     "device_id": "1316",
     "alert_type": "bulb_malfunction",
@@ -2904,6 +3146,7 @@
     "created_at": "2025-07-05T13:43:13.720471"
   },
   "243": {
+    "alert_id": "243",
     "home_id": "51",
     "device_id": "1046",
     "alert_type": "oven_overheating",
@@ -2916,6 +3159,7 @@
     "created_at": "2025-07-13T00:20:20.133103"
   },
   "244": {
+    "alert_id": "244",
     "home_id": "14",
     "device_id": "271",
     "alert_type": "camera_motion_detected",
@@ -2928,6 +3172,7 @@
     "created_at": "2025-05-02T19:47:44.908523"
   },
   "245": {
+    "alert_id": "245",
     "home_id": "88",
     "device_id": "1819",
     "alert_type": "bulb_malfunction",
@@ -2940,6 +3185,7 @@
     "created_at": "2025-06-12T00:27:52.484084"
   },
   "246": {
+    "alert_id": "246",
     "home_id": "46",
     "device_id": "950",
     "alert_type": "oven_overheating",
@@ -2952,6 +3198,7 @@
     "created_at": "2025-05-09T18:33:33.585353"
   },
   "247": {
+    "alert_id": "247",
     "home_id": "149",
     "device_id": "3035",
     "alert_type": "camera_offline",
@@ -2964,6 +3211,7 @@
     "created_at": "2025-06-14T01:10:34.411486"
   },
   "248": {
+    "alert_id": "248",
     "home_id": "14",
     "device_id": "271",
     "alert_type": "camera_offline",
@@ -2976,6 +3224,7 @@
     "created_at": "2025-07-09T20:22:21.660637"
   },
   "249": {
+    "alert_id": "249",
     "home_id": "69",
     "device_id": "1420",
     "alert_type": "refrigerator_temperature_alert",
@@ -2988,6 +3237,7 @@
     "created_at": "2025-06-19T12:32:51.815487"
   },
   "250": {
+    "alert_id": "250",
     "home_id": "87",
     "device_id": "1798",
     "alert_type": "bulb_malfunction",
@@ -3000,6 +3250,7 @@
     "created_at": "2025-06-20T00:54:44.674320"
   },
   "251": {
+    "alert_id": "251",
     "home_id": "9",
     "device_id": "165",
     "alert_type": "bulb_malfunction",
@@ -3012,6 +3263,7 @@
     "created_at": "2025-07-14T09:22:36.091395"
   },
   "252": {
+    "alert_id": "252",
     "home_id": "84",
     "device_id": "1728",
     "alert_type": "bulb_malfunction",
@@ -3024,6 +3276,7 @@
     "created_at": "2025-05-05T22:46:33.320851"
   },
   "253": {
+    "alert_id": "253",
     "home_id": "147",
     "device_id": "2986",
     "alert_type": "bulb_malfunction",
@@ -3036,6 +3289,7 @@
     "created_at": "2025-07-16T21:11:50.121527"
   },
   "254": {
+    "alert_id": "254",
     "home_id": "28",
     "device_id": "580",
     "alert_type": "oven_malfunction",
@@ -3048,6 +3302,7 @@
     "created_at": "2025-07-20T01:40:54.210121"
   },
   "255": {
+    "alert_id": "255",
     "home_id": "19",
     "device_id": "378",
     "alert_type": "bulb_malfunction",
@@ -3060,6 +3315,7 @@
     "created_at": "2025-05-09T09:00:12.127209"
   },
   "256": {
+    "alert_id": "256",
     "home_id": "110",
     "device_id": "2290",
     "alert_type": "speaker_offline",
@@ -3072,6 +3328,7 @@
     "created_at": "2025-06-15T05:04:17.410282"
   },
   "257": {
+    "alert_id": "257",
     "home_id": "60",
     "device_id": "1254",
     "alert_type": "speaker_offline",
@@ -3084,6 +3341,7 @@
     "created_at": "2025-05-25T02:09:24.417591"
   },
   "258": {
+    "alert_id": "258",
     "home_id": "40",
     "device_id": "825",
     "alert_type": "tv_malfunction",
@@ -3096,6 +3354,7 @@
     "created_at": "2025-05-19T11:55:49.926694"
   },
   "259": {
+    "alert_id": "259",
     "home_id": "125",
     "device_id": "2604",
     "alert_type": "bulb_malfunction",
@@ -3108,6 +3367,7 @@
     "created_at": "2025-06-14T17:33:49.219777"
   },
   "260": {
+    "alert_id": "260",
     "home_id": "84",
     "device_id": "1742",
     "alert_type": "refrigerator_temperature_alert",
@@ -3120,6 +3380,7 @@
     "created_at": "2025-05-18T05:17:02.735238"
   },
   "261": {
+    "alert_id": "261",
     "home_id": "93",
     "device_id": "1954",
     "alert_type": "speaker_offline",
@@ -3132,6 +3393,7 @@
     "created_at": "2025-06-08T19:34:42.259716"
   },
   "262": {
+    "alert_id": "262",
     "home_id": "72",
     "device_id": "1493",
     "alert_type": "oven_malfunction",
@@ -3144,6 +3406,7 @@
     "created_at": "2025-06-05T09:39:58.075140"
   },
   "263": {
+    "alert_id": "263",
     "home_id": "148",
     "device_id": "3020",
     "alert_type": "speaker_offline",
@@ -3156,6 +3419,7 @@
     "created_at": "2025-06-02T15:23:48.105142"
   },
   "264": {
+    "alert_id": "264",
     "home_id": "89",
     "device_id": "1851",
     "alert_type": "bulb_malfunction",
@@ -3168,6 +3432,7 @@
     "created_at": "2025-06-27T23:26:31.056730"
   },
   "265": {
+    "alert_id": "265",
     "home_id": "79",
     "device_id": "1626",
     "alert_type": "bulb_malfunction",
@@ -3180,6 +3445,7 @@
     "created_at": "2025-06-16T18:09:31.570349"
   },
   "266": {
+    "alert_id": "266",
     "home_id": "24",
     "device_id": "487",
     "alert_type": "camera_offline",
@@ -3192,6 +3458,7 @@
     "created_at": "2025-05-30T21:45:04.479562"
   },
   "267": {
+    "alert_id": "267",
     "home_id": "91",
     "device_id": "1915",
     "alert_type": "speaker_offline",
@@ -3204,6 +3471,7 @@
     "created_at": "2025-07-23T18:35:08.979533"
   },
   "268": {
+    "alert_id": "268",
     "home_id": "125",
     "device_id": "2620",
     "alert_type": "tv_malfunction",
@@ -3216,6 +3484,7 @@
     "created_at": "2025-05-23T05:01:59.733330"
   },
   "269": {
+    "alert_id": "269",
     "home_id": "22",
     "device_id": "443",
     "alert_type": "bulb_malfunction",
@@ -3228,6 +3497,7 @@
     "created_at": "2025-07-11T03:21:17.532248"
   },
   "270": {
+    "alert_id": "270",
     "home_id": "43",
     "device_id": "885",
     "alert_type": "bulb_malfunction",
@@ -3240,6 +3510,7 @@
     "created_at": "2025-06-20T08:29:08.967391"
   },
   "271": {
+    "alert_id": "271",
     "home_id": "28",
     "device_id": "576",
     "alert_type": "oven_malfunction",
@@ -3252,6 +3523,7 @@
     "created_at": "2025-05-31T19:53:27.619121"
   },
   "272": {
+    "alert_id": "272",
     "home_id": "148",
     "device_id": "3013",
     "alert_type": "refrigerator_temperature_alert",
@@ -3264,6 +3536,7 @@
     "created_at": "2025-05-12T09:30:46.965200"
   },
   "273": {
+    "alert_id": "273",
     "home_id": "136",
     "device_id": "2826",
     "alert_type": "bulb_malfunction",
@@ -3276,6 +3549,7 @@
     "created_at": "2025-06-04T09:59:02.167639"
   },
   "274": {
+    "alert_id": "274",
     "home_id": "146",
     "device_id": "2966",
     "alert_type": "bulb_malfunction",
@@ -3288,6 +3562,7 @@
     "created_at": "2025-06-23T17:27:40.823380"
   },
   "275": {
+    "alert_id": "275",
     "home_id": "127",
     "device_id": "2639",
     "alert_type": "bulb_malfunction",
@@ -3300,6 +3575,7 @@
     "created_at": "2025-07-07T13:01:59.458492"
   },
   "276": {
+    "alert_id": "276",
     "home_id": "11",
     "device_id": "234",
     "alert_type": "speaker_offline",
@@ -3312,6 +3588,7 @@
     "created_at": "2025-07-16T08:12:44.109569"
   },
   "277": {
+    "alert_id": "277",
     "home_id": "141",
     "device_id": "2905",
     "alert_type": "bulb_malfunction",
@@ -3324,6 +3601,7 @@
     "created_at": "2025-06-05T03:37:01.435302"
   },
   "278": {
+    "alert_id": "278",
     "home_id": "67",
     "device_id": "1382",
     "alert_type": "bulb_malfunction",
@@ -3336,6 +3614,7 @@
     "created_at": "2025-07-17T00:03:00.191211"
   },
   "279": {
+    "alert_id": "279",
     "home_id": "131",
     "device_id": "2719",
     "alert_type": "bulb_malfunction",
@@ -3348,6 +3627,7 @@
     "created_at": "2025-05-02T23:58:43.738711"
   },
   "280": {
+    "alert_id": "280",
     "home_id": "1",
     "device_id": "23",
     "alert_type": "speaker_offline",
@@ -3360,6 +3640,7 @@
     "created_at": "2025-07-31T18:15:19.945513"
   },
   "281": {
+    "alert_id": "281",
     "home_id": "30",
     "device_id": "615",
     "alert_type": "bulb_malfunction",
@@ -3372,6 +3653,7 @@
     "created_at": "2025-05-31T05:17:17.066611"
   },
   "282": {
+    "alert_id": "282",
     "home_id": "124",
     "device_id": "2584",
     "alert_type": "refrigerator_temperature_alert",
@@ -3384,6 +3666,7 @@
     "created_at": "2025-06-29T20:11:21.741254"
   },
   "283": {
+    "alert_id": "283",
     "home_id": "111",
     "device_id": "2302",
     "alert_type": "thermostat_offline",
@@ -3396,6 +3679,7 @@
     "created_at": "2025-07-21T02:38:48.407291"
   },
   "284": {
+    "alert_id": "284",
     "home_id": "150",
     "device_id": "3081",
     "alert_type": "speaker_offline",
@@ -3408,6 +3692,7 @@
     "created_at": "2025-05-18T16:02:32.645144"
   },
   "285": {
+    "alert_id": "285",
     "home_id": "114",
     "device_id": "2359",
     "alert_type": "thermostat_offline",
@@ -3420,6 +3705,7 @@
     "created_at": "2025-07-13T04:16:02.080562"
   },
   "286": {
+    "alert_id": "286",
     "home_id": "115",
     "device_id": "2389",
     "alert_type": "tv_malfunction",
@@ -3432,6 +3718,7 @@
     "created_at": "2025-05-30T05:25:35.347230"
   },
   "287": {
+    "alert_id": "287",
     "home_id": "78",
     "device_id": "1605",
     "alert_type": "bulb_malfunction",
@@ -3444,6 +3731,7 @@
     "created_at": "2025-07-04T23:49:09.527905"
   },
   "288": {
+    "alert_id": "288",
     "home_id": "71",
     "device_id": "1464",
     "alert_type": "oven_malfunction",
@@ -3456,6 +3744,7 @@
     "created_at": "2025-07-03T19:27:59.559628"
   },
   "289": {
+    "alert_id": "289",
     "home_id": "92",
     "device_id": "1931",
     "alert_type": "refrigerator_temperature_alert",
@@ -3468,6 +3757,7 @@
     "created_at": "2025-05-25T12:57:53.434625"
   },
   "290": {
+    "alert_id": "290",
     "home_id": "137",
     "device_id": "2848",
     "alert_type": "refrigerator_temperature_alert",
@@ -3480,6 +3770,7 @@
     "created_at": "2025-05-14T18:00:09.841810"
   },
   "291": {
+    "alert_id": "291",
     "home_id": "64",
     "device_id": "1311",
     "alert_type": "bulb_malfunction",
@@ -3492,6 +3783,7 @@
     "created_at": "2025-07-24T06:37:07.747676"
   },
   "292": {
+    "alert_id": "292",
     "home_id": "108",
     "device_id": "2243",
     "alert_type": "oven_overheating",
@@ -3504,6 +3796,7 @@
     "created_at": "2025-05-10T10:47:22.793223"
   },
   "293": {
+    "alert_id": "293",
     "home_id": "4",
     "device_id": "80",
     "alert_type": "speaker_offline",
@@ -3516,6 +3809,7 @@
     "created_at": "2025-05-07T06:11:07.640292"
   },
   "294": {
+    "alert_id": "294",
     "home_id": "116",
     "device_id": "2403",
     "alert_type": "bulb_malfunction",
@@ -3528,6 +3822,7 @@
     "created_at": "2025-05-31T14:16:58.291759"
   },
   "295": {
+    "alert_id": "295",
     "home_id": "67",
     "device_id": "1394",
     "alert_type": "speaker_offline",
@@ -3540,6 +3835,7 @@
     "created_at": "2025-05-17T13:48:12.838801"
   },
   "296": {
+    "alert_id": "296",
     "home_id": "36",
     "device_id": "730",
     "alert_type": "bulb_malfunction",
@@ -3552,6 +3848,7 @@
     "created_at": "2025-05-06T21:35:23.418946"
   },
   "297": {
+    "alert_id": "297",
     "home_id": "74",
     "device_id": "1545",
     "alert_type": "speaker_offline",
@@ -3564,6 +3861,7 @@
     "created_at": "2025-06-25T02:12:39.486410"
   },
   "298": {
+    "alert_id": "298",
     "home_id": "102",
     "device_id": "2134",
     "alert_type": "oven_malfunction",
@@ -3576,6 +3874,7 @@
     "created_at": "2025-06-09T15:07:46.504635"
   },
   "299": {
+    "alert_id": "299",
     "home_id": "131",
     "device_id": "2720",
     "alert_type": "bulb_malfunction",
@@ -3588,6 +3887,7 @@
     "created_at": "2025-05-03T14:18:11.328344"
   },
   "300": {
+    "alert_id": "300",
     "home_id": "107",
     "device_id": "2222",
     "alert_type": "refrigerator_temperature_alert",
@@ -3600,6 +3900,7 @@
     "created_at": "2025-05-22T20:53:02.024925"
   },
   "301": {
+    "alert_id": "301",
     "home_id": "118",
     "device_id": "2461",
     "alert_type": "oven_malfunction",
@@ -3612,6 +3913,7 @@
     "created_at": "2025-05-13T21:05:08.202865"
   },
   "302": {
+    "alert_id": "302",
     "home_id": "72",
     "device_id": "1503",
     "alert_type": "tv_malfunction",
@@ -3624,6 +3926,7 @@
     "created_at": "2025-07-20T14:49:13.541020"
   },
   "303": {
+    "alert_id": "303",
     "home_id": "59",
     "device_id": "1219",
     "alert_type": "bulb_malfunction",
@@ -3636,6 +3939,7 @@
     "created_at": "2025-05-19T11:42:40.313579"
   },
   "304": {
+    "alert_id": "304",
     "home_id": "63",
     "device_id": "1291",
     "alert_type": "bulb_malfunction",
@@ -3648,6 +3952,7 @@
     "created_at": "2025-07-22T10:12:17.773526"
   },
   "305": {
+    "alert_id": "305",
     "home_id": "91",
     "device_id": "1915",
     "alert_type": "speaker_offline",
@@ -3660,6 +3965,7 @@
     "created_at": "2025-07-19T15:00:26.355155"
   },
   "306": {
+    "alert_id": "306",
     "home_id": "22",
     "device_id": "435",
     "alert_type": "bulb_malfunction",
@@ -3672,6 +3978,7 @@
     "created_at": "2025-07-29T13:44:29.185986"
   },
   "307": {
+    "alert_id": "307",
     "home_id": "20",
     "device_id": "410",
     "alert_type": "oven_malfunction",
@@ -3684,6 +3991,7 @@
     "created_at": "2025-05-05T02:54:02.765892"
   },
   "308": {
+    "alert_id": "308",
     "home_id": "151",
     "device_id": "3086",
     "alert_type": "bulb_malfunction",
@@ -3696,6 +4004,7 @@
     "created_at": "2025-06-03T02:33:49.498303"
   },
   "309": {
+    "alert_id": "309",
     "home_id": "104",
     "device_id": "2153",
     "alert_type": "bulb_malfunction",
@@ -3708,6 +4017,7 @@
     "created_at": "2025-07-02T21:05:48.360588"
   },
   "310": {
+    "alert_id": "310",
     "home_id": "150",
     "device_id": "3077",
     "alert_type": "tv_malfunction",
@@ -3720,6 +4030,7 @@
     "created_at": "2025-07-01T04:38:28.081495"
   },
   "311": {
+    "alert_id": "311",
     "home_id": "11",
     "device_id": "210",
     "alert_type": "bulb_malfunction",
@@ -3732,6 +4043,7 @@
     "created_at": "2025-07-29T18:25:11.789938"
   },
   "312": {
+    "alert_id": "312",
     "home_id": "119",
     "device_id": "2477",
     "alert_type": "refrigerator_malfunction",
@@ -3744,6 +4056,7 @@
     "created_at": "2025-06-10T06:43:03.643198"
   },
   "313": {
+    "alert_id": "313",
     "home_id": "44",
     "device_id": "909",
     "alert_type": "refrigerator_malfunction",
@@ -3756,6 +4069,7 @@
     "created_at": "2025-05-23T16:30:18.311183"
   },
   "314": {
+    "alert_id": "314",
     "home_id": "134",
     "device_id": "2798",
     "alert_type": "refrigerator_malfunction",
@@ -3768,6 +4082,7 @@
     "created_at": "2025-07-11T22:54:34.111190"
   },
   "315": {
+    "alert_id": "315",
     "home_id": "52",
     "device_id": "1059",
     "alert_type": "bulb_malfunction",
@@ -3780,6 +4095,7 @@
     "created_at": "2025-05-13T00:37:45.469136"
   },
   "316": {
+    "alert_id": "316",
     "home_id": "140",
     "device_id": "2894",
     "alert_type": "bulb_malfunction",
@@ -3792,6 +4108,7 @@
     "created_at": "2025-05-25T12:33:50.125593"
   },
   "317": {
+    "alert_id": "317",
     "home_id": "110",
     "device_id": "2291",
     "alert_type": "speaker_offline",
@@ -3804,6 +4121,7 @@
     "created_at": "2025-07-25T21:53:25.627887"
   },
   "318": {
+    "alert_id": "318",
     "home_id": "33",
     "device_id": "684",
     "alert_type": "speaker_offline",
@@ -3816,6 +4134,7 @@
     "created_at": "2025-05-14T10:09:30.912133"
   },
   "319": {
+    "alert_id": "319",
     "home_id": "89",
     "device_id": "1872",
     "alert_type": "tv_malfunction",
@@ -3828,6 +4147,7 @@
     "created_at": "2025-05-23T06:37:13.263825"
   },
   "320": {
+    "alert_id": "320",
     "home_id": "120",
     "device_id": "2503",
     "alert_type": "tv_malfunction",
@@ -3840,6 +4160,7 @@
     "created_at": "2025-06-30T00:45:58.781868"
   },
   "321": {
+    "alert_id": "321",
     "home_id": "20",
     "device_id": "399",
     "alert_type": "bulb_malfunction",
@@ -3852,6 +4173,7 @@
     "created_at": "2025-07-19T00:22:13.346012"
   },
   "322": {
+    "alert_id": "322",
     "home_id": "66",
     "device_id": "1358",
     "alert_type": "bulb_malfunction",
@@ -3864,6 +4186,7 @@
     "created_at": "2025-06-18T22:59:25.653250"
   },
   "323": {
+    "alert_id": "323",
     "home_id": "47",
     "device_id": "953",
     "alert_type": "bulb_malfunction",
@@ -3876,6 +4199,7 @@
     "created_at": "2025-06-21T06:22:38.220992"
   },
   "324": {
+    "alert_id": "324",
     "home_id": "108",
     "device_id": "2245",
     "alert_type": "speaker_offline",
@@ -3888,6 +4212,7 @@
     "created_at": "2025-07-22T21:04:53.487968"
   },
   "325": {
+    "alert_id": "325",
     "home_id": "35",
     "device_id": "707",
     "alert_type": "bulb_malfunction",
@@ -3900,6 +4225,7 @@
     "created_at": "2025-07-13T09:18:17.651311"
   },
   "326": {
+    "alert_id": "326",
     "home_id": "153",
     "device_id": "3131",
     "alert_type": "tv_malfunction",
@@ -3912,6 +4238,7 @@
     "created_at": "2025-05-10T12:02:02.512136"
   },
   "327": {
+    "alert_id": "327",
     "home_id": "146",
     "device_id": "2973",
     "alert_type": "refrigerator_temperature_alert",
@@ -3924,6 +4251,7 @@
     "created_at": "2025-06-21T07:02:30.849455"
   },
   "328": {
+    "alert_id": "328",
     "home_id": "100",
     "device_id": "2090",
     "alert_type": "bulb_malfunction",
@@ -3936,6 +4264,7 @@
     "created_at": "2025-05-15T07:13:18.722622"
   },
   "329": {
+    "alert_id": "329",
     "home_id": "112",
     "device_id": "2315",
     "alert_type": "bulb_malfunction",
@@ -3948,6 +4277,7 @@
     "created_at": "2025-07-05T14:43:07.623658"
   },
   "330": {
+    "alert_id": "330",
     "home_id": "108",
     "device_id": "2239",
     "alert_type": "bulb_malfunction",
@@ -3960,6 +4290,7 @@
     "created_at": "2025-07-15T04:43:21.655244"
   },
   "331": {
+    "alert_id": "331",
     "home_id": "8",
     "device_id": "149",
     "alert_type": "bulb_malfunction",
@@ -3972,6 +4303,7 @@
     "created_at": "2025-06-02T04:52:53.884900"
   },
   "332": {
+    "alert_id": "332",
     "home_id": "20",
     "device_id": "413",
     "alert_type": "speaker_offline",
@@ -3984,6 +4316,7 @@
     "created_at": "2025-06-05T05:50:17.849095"
   },
   "333": {
+    "alert_id": "333",
     "home_id": "34",
     "device_id": "690",
     "alert_type": "bulb_malfunction",
@@ -3996,6 +4329,7 @@
     "created_at": "2025-07-28T09:49:39.928545"
   },
   "334": {
+    "alert_id": "334",
     "home_id": "88",
     "device_id": "1822",
     "alert_type": "bulb_malfunction",
@@ -4008,6 +4342,7 @@
     "created_at": "2025-07-17T07:20:56.157063"
   },
   "335": {
+    "alert_id": "335",
     "home_id": "50",
     "device_id": "1016",
     "alert_type": "bulb_malfunction",
@@ -4020,6 +4355,7 @@
     "created_at": "2025-06-14T07:01:41.887647"
   },
   "336": {
+    "alert_id": "336",
     "home_id": "68",
     "device_id": "1396",
     "alert_type": "bulb_malfunction",
@@ -4032,6 +4368,7 @@
     "created_at": "2025-07-27T19:31:00.786165"
   },
   "337": {
+    "alert_id": "337",
     "home_id": "119",
     "device_id": "2475",
     "alert_type": "thermostat_temperature_alert",
@@ -4044,6 +4381,7 @@
     "created_at": "2025-06-06T13:57:13.915313"
   },
   "338": {
+    "alert_id": "338",
     "home_id": "58",
     "device_id": "1208",
     "alert_type": "oven_overheating",
@@ -4056,6 +4394,7 @@
     "created_at": "2025-07-06T09:59:04.069385"
   },
   "339": {
+    "alert_id": "339",
     "home_id": "55",
     "device_id": "1140",
     "alert_type": "bulb_malfunction",
@@ -4068,6 +4407,7 @@
     "created_at": "2025-07-30T14:10:37.496280"
   },
   "340": {
+    "alert_id": "340",
     "home_id": "10",
     "device_id": "197",
     "alert_type": "thermostat_temperature_alert",
@@ -4080,6 +4420,7 @@
     "created_at": "2025-05-12T18:52:54.629984"
   },
   "341": {
+    "alert_id": "341",
     "home_id": "104",
     "device_id": "2163",
     "alert_type": "camera_offline",
@@ -4092,6 +4433,7 @@
     "created_at": "2025-05-22T11:35:23.144549"
   },
   "342": {
+    "alert_id": "342",
     "home_id": "118",
     "device_id": "2444",
     "alert_type": "bulb_malfunction",
@@ -4104,6 +4446,7 @@
     "created_at": "2025-07-15T16:05:52.857974"
   },
   "343": {
+    "alert_id": "343",
     "home_id": "42",
     "device_id": "863",
     "alert_type": "camera_offline",
@@ -4116,6 +4459,7 @@
     "created_at": "2025-06-18T05:42:34.701560"
   },
   "344": {
+    "alert_id": "344",
     "home_id": "114",
     "device_id": "2362",
     "alert_type": "oven_overheating",
@@ -4128,6 +4472,7 @@
     "created_at": "2025-07-07T19:52:56.288826"
   },
   "345": {
+    "alert_id": "345",
     "home_id": "25",
     "device_id": "507",
     "alert_type": "oven_malfunction",
@@ -4140,6 +4485,7 @@
     "created_at": "2025-06-23T13:05:39.271363"
   },
   "346": {
+    "alert_id": "346",
     "home_id": "14",
     "device_id": "273",
     "alert_type": "refrigerator_malfunction",
@@ -4152,6 +4498,7 @@
     "created_at": "2025-05-02T21:09:10.491960"
   },
   "347": {
+    "alert_id": "347",
     "home_id": "60",
     "device_id": "1242",
     "alert_type": "bulb_malfunction",
@@ -4164,6 +4511,7 @@
     "created_at": "2025-07-05T09:18:24.182617"
   },
   "348": {
+    "alert_id": "348",
     "home_id": "44",
     "device_id": "899",
     "alert_type": "bulb_malfunction",
@@ -4176,6 +4524,7 @@
     "created_at": "2025-07-27T05:18:49.342892"
   },
   "349": {
+    "alert_id": "349",
     "home_id": "42",
     "device_id": "861",
     "alert_type": "thermostat_temperature_alert",
@@ -4188,6 +4537,7 @@
     "created_at": "2025-07-17T12:56:31.211142"
   },
   "350": {
+    "alert_id": "350",
     "home_id": "71",
     "device_id": "1469",
     "alert_type": "tv_malfunction",
@@ -4200,6 +4550,7 @@
     "created_at": "2025-05-26T13:59:12.524623"
   },
   "351": {
+    "alert_id": "351",
     "home_id": "4",
     "device_id": "81",
     "alert_type": "tv_malfunction",
@@ -4212,6 +4563,7 @@
     "created_at": "2025-07-29T14:24:24.771323"
   },
   "352": {
+    "alert_id": "352",
     "home_id": "117",
     "device_id": "2442",
     "alert_type": "speaker_offline",
@@ -4224,6 +4576,7 @@
     "created_at": "2025-07-24T01:49:32.447133"
   },
   "353": {
+    "alert_id": "353",
     "home_id": "127",
     "device_id": "2648",
     "alert_type": "refrigerator_malfunction",
@@ -4236,6 +4589,7 @@
     "created_at": "2025-05-06T16:04:01.140502"
   },
   "354": {
+    "alert_id": "354",
     "home_id": "93",
     "device_id": "1951",
     "alert_type": "refrigerator_malfunction",
@@ -4248,6 +4602,7 @@
     "created_at": "2025-07-10T18:57:03.327556"
   },
   "355": {
+    "alert_id": "355",
     "home_id": "74",
     "device_id": "1535",
     "alert_type": "bulb_malfunction",
@@ -4260,6 +4615,7 @@
     "created_at": "2025-05-22T07:56:27.861298"
   },
   "356": {
+    "alert_id": "356",
     "home_id": "52",
     "device_id": "1067",
     "alert_type": "bulb_malfunction",
@@ -4272,6 +4628,7 @@
     "created_at": "2025-07-25T08:43:46.067031"
   },
   "357": {
+    "alert_id": "357",
     "home_id": "89",
     "device_id": "1860",
     "alert_type": "refrigerator_temperature_alert",
@@ -4284,6 +4641,7 @@
     "created_at": "2025-07-05T18:11:09.551285"
   },
   "358": {
+    "alert_id": "358",
     "home_id": "79",
     "device_id": "1638",
     "alert_type": "speaker_offline",
@@ -4296,6 +4654,7 @@
     "created_at": "2025-05-09T14:45:48.951959"
   },
   "359": {
+    "alert_id": "359",
     "home_id": "87",
     "device_id": "1809",
     "alert_type": "tv_malfunction",
@@ -4308,6 +4667,7 @@
     "created_at": "2025-07-13T13:11:14.162939"
   },
   "360": {
+    "alert_id": "360",
     "home_id": "37",
     "device_id": "748",
     "alert_type": "bulb_malfunction",
@@ -4320,6 +4680,7 @@
     "created_at": "2025-06-19T15:38:36.579989"
   },
   "361": {
+    "alert_id": "361",
     "home_id": "27",
     "device_id": "544",
     "alert_type": "bulb_malfunction",
@@ -4332,6 +4693,7 @@
     "created_at": "2025-06-25T21:18:48.493488"
   },
   "362": {
+    "alert_id": "362",
     "home_id": "131",
     "device_id": "2717",
     "alert_type": "bulb_malfunction",
@@ -4344,6 +4706,7 @@
     "created_at": "2025-05-28T19:35:06.605381"
   },
   "363": {
+    "alert_id": "363",
     "home_id": "23",
     "device_id": "472",
     "alert_type": "oven_overheating",
@@ -4356,6 +4719,7 @@
     "created_at": "2025-05-28T03:43:34.169590"
   },
   "364": {
+    "alert_id": "364",
     "home_id": "89",
     "device_id": "1863",
     "alert_type": "tv_malfunction",
@@ -4368,6 +4732,7 @@
     "created_at": "2025-07-31T02:33:11.853870"
   },
   "365": {
+    "alert_id": "365",
     "home_id": "54",
     "device_id": "1118",
     "alert_type": "thermostat_offline",
@@ -4380,6 +4745,7 @@
     "created_at": "2025-05-04T05:57:58.760767"
   },
   "366": {
+    "alert_id": "366",
     "home_id": "22",
     "device_id": "453",
     "alert_type": "speaker_offline",
@@ -4392,6 +4758,7 @@
     "created_at": "2025-06-17T16:46:22.877973"
   },
   "367": {
+    "alert_id": "367",
     "home_id": "61",
     "device_id": "1272",
     "alert_type": "oven_malfunction",
@@ -4404,6 +4771,7 @@
     "created_at": "2025-07-14T06:42:43.838202"
   },
   "368": {
+    "alert_id": "368",
     "home_id": "133",
     "device_id": "2784",
     "alert_type": "tv_malfunction",
@@ -4416,6 +4784,7 @@
     "created_at": "2025-06-12T23:31:59.797225"
   },
   "369": {
+    "alert_id": "369",
     "home_id": "112",
     "device_id": "2314",
     "alert_type": "bulb_malfunction",
@@ -4428,6 +4797,7 @@
     "created_at": "2025-06-24T23:09:06.496007"
   },
   "370": {
+    "alert_id": "370",
     "home_id": "30",
     "device_id": "623",
     "alert_type": "oven_malfunction",
@@ -4440,6 +4810,7 @@
     "created_at": "2025-07-16T06:47:40.926181"
   },
   "371": {
+    "alert_id": "371",
     "home_id": "132",
     "device_id": "2757",
     "alert_type": "speaker_offline",
@@ -4452,6 +4823,7 @@
     "created_at": "2025-06-30T04:35:32.347894"
   },
   "372": {
+    "alert_id": "372",
     "home_id": "135",
     "device_id": "2810",
     "alert_type": "bulb_malfunction",
@@ -4464,6 +4836,7 @@
     "created_at": "2025-06-22T00:56:58.916509"
   },
   "373": {
+    "alert_id": "373",
     "home_id": "133",
     "device_id": "2782",
     "alert_type": "speaker_offline",
@@ -4476,6 +4849,7 @@
     "created_at": "2025-05-05T16:38:18.796288"
   },
   "374": {
+    "alert_id": "374",
     "home_id": "121",
     "device_id": "2524",
     "alert_type": "speaker_offline",
@@ -4488,6 +4862,7 @@
     "created_at": "2025-07-22T02:10:14.194432"
   },
   "375": {
+    "alert_id": "375",
     "home_id": "93",
     "device_id": "1951",
     "alert_type": "refrigerator_malfunction",
@@ -4500,6 +4875,7 @@
     "created_at": "2025-07-21T01:25:25.106744"
   },
   "376": {
+    "alert_id": "376",
     "home_id": "52",
     "device_id": "1068",
     "alert_type": "thermostat_offline",
@@ -4512,6 +4888,7 @@
     "created_at": "2025-06-04T08:28:53.236155"
   },
   "377": {
+    "alert_id": "377",
     "home_id": "96",
     "device_id": "2009",
     "alert_type": "tv_malfunction",
@@ -4524,6 +4901,7 @@
     "created_at": "2025-07-30T15:35:05.832228"
   },
   "378": {
+    "alert_id": "378",
     "home_id": "89",
     "device_id": "1871",
     "alert_type": "tv_malfunction",
@@ -4536,6 +4914,7 @@
     "created_at": "2025-07-29T04:19:29.021246"
   },
   "379": {
+    "alert_id": "379",
     "home_id": "30",
     "device_id": "616",
     "alert_type": "bulb_malfunction",
@@ -4548,6 +4927,7 @@
     "created_at": "2025-06-18T11:36:09.888971"
   },
   "380": {
+    "alert_id": "380",
     "home_id": "71",
     "device_id": "1464",
     "alert_type": "oven_overheating",
@@ -4560,6 +4940,7 @@
     "created_at": "2025-05-16T15:52:14.286161"
   },
   "381": {
+    "alert_id": "381",
     "home_id": "85",
     "device_id": "1759",
     "alert_type": "bulb_malfunction",
@@ -4572,6 +4953,7 @@
     "created_at": "2025-07-16T07:59:06.820905"
   },
   "382": {
+    "alert_id": "382",
     "home_id": "98",
     "device_id": "2063",
     "alert_type": "speaker_offline",
@@ -4584,6 +4966,7 @@
     "created_at": "2025-06-19T16:49:21.825770"
   },
   "383": {
+    "alert_id": "383",
     "home_id": "153",
     "device_id": "3120",
     "alert_type": "bulb_malfunction",
@@ -4596,6 +4979,7 @@
     "created_at": "2025-06-28T00:57:39.788045"
   },
   "384": {
+    "alert_id": "384",
     "home_id": "28",
     "device_id": "587",
     "alert_type": "tv_malfunction",
@@ -4608,6 +4992,7 @@
     "created_at": "2025-05-31T11:31:59.303576"
   },
   "385": {
+    "alert_id": "385",
     "home_id": "137",
     "device_id": "2851",
     "alert_type": "tv_malfunction",
@@ -4620,6 +5005,7 @@
     "created_at": "2025-06-24T20:00:16.306409"
   },
   "386": {
+    "alert_id": "386",
     "home_id": "29",
     "device_id": "600",
     "alert_type": "camera_motion_detected",
@@ -4632,6 +5018,7 @@
     "created_at": "2025-05-06T02:07:34.598112"
   },
   "387": {
+    "alert_id": "387",
     "home_id": "14",
     "device_id": "270",
     "alert_type": "thermostat_temperature_alert",
@@ -4644,6 +5031,7 @@
     "created_at": "2025-06-03T09:28:36.247955"
   },
   "388": {
+    "alert_id": "388",
     "home_id": "111",
     "device_id": "2301",
     "alert_type": "bulb_malfunction",
@@ -4656,6 +5044,7 @@
     "created_at": "2025-05-10T00:54:12.629091"
   },
   "389": {
+    "alert_id": "389",
     "home_id": "63",
     "device_id": "1291",
     "alert_type": "bulb_malfunction",
@@ -4668,6 +5057,7 @@
     "created_at": "2025-07-07T02:38:24.960533"
   },
   "390": {
+    "alert_id": "390",
     "home_id": "105",
     "device_id": "2185",
     "alert_type": "bulb_malfunction",
@@ -4680,6 +5070,7 @@
     "created_at": "2025-05-23T03:13:51.212331"
   },
   "391": {
+    "alert_id": "391",
     "home_id": "112",
     "device_id": "2326",
     "alert_type": "speaker_offline",
@@ -4692,6 +5083,7 @@
     "created_at": "2025-05-27T22:42:26.177172"
   },
   "392": {
+    "alert_id": "392",
     "home_id": "22",
     "device_id": "457",
     "alert_type": "speaker_offline",
@@ -4704,6 +5096,7 @@
     "created_at": "2025-05-14T00:56:07.440094"
   },
   "393": {
+    "alert_id": "393",
     "home_id": "2",
     "device_id": "36",
     "alert_type": "refrigerator_temperature_alert",
@@ -4716,6 +5109,7 @@
     "created_at": "2025-06-24T15:03:02.447851"
   },
   "394": {
+    "alert_id": "394",
     "home_id": "65",
     "device_id": "1330",
     "alert_type": "bulb_malfunction",
@@ -4728,6 +5122,7 @@
     "created_at": "2025-06-07T09:57:09.448610"
   },
   "395": {
+    "alert_id": "395",
     "home_id": "32",
     "device_id": "648",
     "alert_type": "bulb_malfunction",
@@ -4740,6 +5135,7 @@
     "created_at": "2025-06-09T17:36:44.899037"
   },
   "396": {
+    "alert_id": "396",
     "home_id": "137",
     "device_id": "2835",
     "alert_type": "bulb_malfunction",
@@ -4752,6 +5148,7 @@
     "created_at": "2025-07-17T05:17:06.371150"
   },
   "397": {
+    "alert_id": "397",
     "home_id": "29",
     "device_id": "599",
     "alert_type": "thermostat_offline",
@@ -4764,6 +5161,7 @@
     "created_at": "2025-05-12T12:16:55.421283"
   },
   "398": {
+    "alert_id": "398",
     "home_id": "53",
     "device_id": "1090",
     "alert_type": "bulb_malfunction",
@@ -4776,6 +5174,7 @@
     "created_at": "2025-05-20T18:44:57.392136"
   },
   "399": {
+    "alert_id": "399",
     "home_id": "14",
     "device_id": "267",
     "alert_type": "bulb_malfunction",
@@ -4788,6 +5187,7 @@
     "created_at": "2025-05-28T08:01:57.616751"
   },
   "400": {
+    "alert_id": "400",
     "home_id": "121",
     "device_id": "2511",
     "alert_type": "bulb_malfunction",
@@ -4800,6 +5200,7 @@
     "created_at": "2025-07-02T11:51:21.672721"
   },
   "401": {
+    "alert_id": "401",
     "home_id": "47",
     "device_id": "959",
     "alert_type": "bulb_malfunction",
@@ -4812,6 +5213,7 @@
     "created_at": "2025-05-14T07:05:40.506482"
   },
   "402": {
+    "alert_id": "402",
     "home_id": "50",
     "device_id": "1018",
     "alert_type": "bulb_malfunction",
@@ -4824,6 +5226,7 @@
     "created_at": "2025-06-13T11:40:43.620918"
   },
   "403": {
+    "alert_id": "403",
     "home_id": "111",
     "device_id": "2301",
     "alert_type": "bulb_malfunction",
@@ -4836,6 +5239,7 @@
     "created_at": "2025-05-16T11:45:46.278045"
   },
   "404": {
+    "alert_id": "404",
     "home_id": "58",
     "device_id": "1213",
     "alert_type": "speaker_offline",
@@ -4848,6 +5252,7 @@
     "created_at": "2025-06-04T08:46:57.814539"
   },
   "405": {
+    "alert_id": "405",
     "home_id": "47",
     "device_id": "958",
     "alert_type": "bulb_malfunction",
@@ -4860,6 +5265,7 @@
     "created_at": "2025-06-08T08:44:23.938269"
   },
   "406": {
+    "alert_id": "406",
     "home_id": "122",
     "device_id": "2538",
     "alert_type": "refrigerator_malfunction",
@@ -4872,6 +5278,7 @@
     "created_at": "2025-06-29T14:34:18.359692"
   },
   "407": {
+    "alert_id": "407",
     "home_id": "131",
     "device_id": "2717",
     "alert_type": "bulb_malfunction",
@@ -4884,6 +5291,7 @@
     "created_at": "2025-05-27T01:21:19.544609"
   },
   "408": {
+    "alert_id": "408",
     "home_id": "20",
     "device_id": "397",
     "alert_type": "bulb_malfunction",
@@ -4896,6 +5304,7 @@
     "created_at": "2025-07-07T19:48:19.751350"
   },
   "409": {
+    "alert_id": "409",
     "home_id": "51",
     "device_id": "1036",
     "alert_type": "bulb_malfunction",
@@ -4908,6 +5317,7 @@
     "created_at": "2025-05-02T22:44:29.923662"
   },
   "410": {
+    "alert_id": "410",
     "home_id": "84",
     "device_id": "1736",
     "alert_type": "thermostat_temperature_alert",
@@ -4920,6 +5330,7 @@
     "created_at": "2025-07-19T10:32:53.529396"
   },
   "411": {
+    "alert_id": "411",
     "home_id": "42",
     "device_id": "861",
     "alert_type": "thermostat_temperature_alert",
@@ -4932,6 +5343,7 @@
     "created_at": "2025-06-28T00:24:08.266900"
   },
   "412": {
+    "alert_id": "412",
     "home_id": "24",
     "device_id": "486",
     "alert_type": "thermostat_offline",
@@ -4944,6 +5356,7 @@
     "created_at": "2025-06-15T17:38:31.574508"
   },
   "413": {
+    "alert_id": "413",
     "home_id": "27",
     "device_id": "549",
     "alert_type": "refrigerator_malfunction",
@@ -4956,6 +5369,7 @@
     "created_at": "2025-05-06T18:23:19.580739"
   },
   "414": {
+    "alert_id": "414",
     "home_id": "139",
     "device_id": "2879",
     "alert_type": "thermostat_offline",
@@ -4968,6 +5382,7 @@
     "created_at": "2025-05-06T20:12:20.224489"
   },
   "415": {
+    "alert_id": "415",
     "home_id": "64",
     "device_id": "1317",
     "alert_type": "thermostat_offline",
@@ -4980,6 +5395,7 @@
     "created_at": "2025-06-03T03:38:17.850371"
   },
   "416": {
+    "alert_id": "416",
     "home_id": "139",
     "device_id": "2885",
     "alert_type": "oven_overheating",
@@ -4992,6 +5408,7 @@
     "created_at": "2025-07-04T19:32:51.358938"
   },
   "417": {
+    "alert_id": "417",
     "home_id": "61",
     "device_id": "1264",
     "alert_type": "bulb_malfunction",
@@ -5004,6 +5421,7 @@
     "created_at": "2025-05-29T02:27:34.380243"
   },
   "418": {
+    "alert_id": "418",
     "home_id": "25",
     "device_id": "494",
     "alert_type": "bulb_malfunction",
@@ -5016,6 +5434,7 @@
     "created_at": "2025-07-22T17:25:11.164448"
   },
   "419": {
+    "alert_id": "419",
     "home_id": "89",
     "device_id": "1861",
     "alert_type": "oven_overheating",
@@ -5028,6 +5447,7 @@
     "created_at": "2025-05-15T22:24:47.347626"
   },
   "420": {
+    "alert_id": "420",
     "home_id": "62",
     "device_id": "1280",
     "alert_type": "bulb_malfunction",
@@ -5040,6 +5460,7 @@
     "created_at": "2025-07-30T06:46:21.417707"
   },
   "421": {
+    "alert_id": "421",
     "home_id": "150",
     "device_id": "3070",
     "alert_type": "oven_malfunction",
@@ -5052,6 +5473,7 @@
     "created_at": "2025-06-25T18:19:41.792046"
   },
   "422": {
+    "alert_id": "422",
     "home_id": "133",
     "device_id": "2780",
     "alert_type": "oven_overheating",
@@ -5064,6 +5486,7 @@
     "created_at": "2025-07-28T11:33:17.435472"
   },
   "423": {
+    "alert_id": "423",
     "home_id": "41",
     "device_id": "828",
     "alert_type": "bulb_malfunction",
@@ -5076,6 +5499,7 @@
     "created_at": "2025-05-20T17:37:59.650721"
   },
   "424": {
+    "alert_id": "424",
     "home_id": "92",
     "device_id": "1934",
     "alert_type": "speaker_offline",
@@ -5088,6 +5512,7 @@
     "created_at": "2025-07-15T15:50:11.183018"
   },
   "425": {
+    "alert_id": "425",
     "home_id": "145",
     "device_id": "2954",
     "alert_type": "bulb_malfunction",
@@ -5100,6 +5525,7 @@
     "created_at": "2025-07-25T17:06:13.929410"
   },
   "426": {
+    "alert_id": "426",
     "home_id": "39",
     "device_id": "792",
     "alert_type": "bulb_malfunction",
@@ -5112,6 +5538,7 @@
     "created_at": "2025-07-04T12:44:03.109581"
   },
   "427": {
+    "alert_id": "427",
     "home_id": "107",
     "device_id": "2224",
     "alert_type": "oven_overheating",
@@ -5124,6 +5551,7 @@
     "created_at": "2025-07-09T13:03:23.947067"
   },
   "428": {
+    "alert_id": "428",
     "home_id": "91",
     "device_id": "1909",
     "alert_type": "tv_malfunction",
@@ -5136,6 +5564,7 @@
     "created_at": "2025-07-05T20:25:55.531711"
   },
   "429": {
+    "alert_id": "429",
     "home_id": "44",
     "device_id": "904",
     "alert_type": "bulb_malfunction",
@@ -5148,6 +5577,7 @@
     "created_at": "2025-07-17T03:09:13.498533"
   },
   "430": {
+    "alert_id": "430",
     "home_id": "41",
     "device_id": "847",
     "alert_type": "speaker_offline",
@@ -5160,6 +5590,7 @@
     "created_at": "2025-07-31T04:44:35.239438"
   },
   "431": {
+    "alert_id": "431",
     "home_id": "104",
     "device_id": "2177",
     "alert_type": "speaker_offline",
@@ -5172,6 +5603,7 @@
     "created_at": "2025-07-05T11:13:54.444848"
   },
   "432": {
+    "alert_id": "432",
     "home_id": "28",
     "device_id": "570",
     "alert_type": "thermostat_offline",
@@ -5184,6 +5616,7 @@
     "created_at": "2025-07-18T19:26:14.333432"
   },
   "433": {
+    "alert_id": "433",
     "home_id": "52",
     "device_id": "1073",
     "alert_type": "oven_overheating",
@@ -5196,6 +5629,7 @@
     "created_at": "2025-07-19T09:20:46.285961"
   },
   "434": {
+    "alert_id": "434",
     "home_id": "92",
     "device_id": "1918",
     "alert_type": "bulb_malfunction",
@@ -5208,6 +5642,7 @@
     "created_at": "2025-06-09T13:05:11.876400"
   },
   "435": {
+    "alert_id": "435",
     "home_id": "98",
     "device_id": "2049",
     "alert_type": "thermostat_temperature_alert",
@@ -5220,6 +5655,7 @@
     "created_at": "2025-05-03T20:45:27.565172"
   },
   "436": {
+    "alert_id": "436",
     "home_id": "67",
     "device_id": "1385",
     "alert_type": "thermostat_offline",
@@ -5232,6 +5668,7 @@
     "created_at": "2025-07-14T04:17:52.771767"
   },
   "437": {
+    "alert_id": "437",
     "home_id": "117",
     "device_id": "2421",
     "alert_type": "bulb_malfunction",
@@ -5244,6 +5681,7 @@
     "created_at": "2025-07-19T12:51:09.740631"
   },
   "438": {
+    "alert_id": "438",
     "home_id": "91",
     "device_id": "1910",
     "alert_type": "speaker_offline",
@@ -5256,6 +5694,7 @@
     "created_at": "2025-06-05T04:04:42.738039"
   },
   "439": {
+    "alert_id": "439",
     "home_id": "145",
     "device_id": "2961",
     "alert_type": "speaker_offline",
@@ -5268,6 +5707,7 @@
     "created_at": "2025-05-19T19:15:58.995797"
   },
   "440": {
+    "alert_id": "440",
     "home_id": "11",
     "device_id": "214",
     "alert_type": "bulb_malfunction",
@@ -5280,6 +5720,7 @@
     "created_at": "2025-05-17T03:10:27.286911"
   },
   "441": {
+    "alert_id": "441",
     "home_id": "83",
     "device_id": "1716",
     "alert_type": "oven_overheating",
@@ -5292,6 +5733,7 @@
     "created_at": "2025-06-16T18:14:48.696169"
   },
   "442": {
+    "alert_id": "442",
     "home_id": "67",
     "device_id": "1391",
     "alert_type": "tv_malfunction",
@@ -5304,6 +5746,7 @@
     "created_at": "2025-06-01T10:21:47.985704"
   },
   "443": {
+    "alert_id": "443",
     "home_id": "19",
     "device_id": "386",
     "alert_type": "oven_malfunction",
@@ -5316,6 +5759,7 @@
     "created_at": "2025-05-28T19:35:56.722537"
   },
   "444": {
+    "alert_id": "444",
     "home_id": "62",
     "device_id": "1282",
     "alert_type": "bulb_malfunction",
@@ -5328,6 +5772,7 @@
     "created_at": "2025-07-09T09:29:46.432497"
   },
   "445": {
+    "alert_id": "445",
     "home_id": "55",
     "device_id": "1150",
     "alert_type": "tv_malfunction",
@@ -5340,6 +5785,7 @@
     "created_at": "2025-06-12T23:40:45.404933"
   },
   "446": {
+    "alert_id": "446",
     "home_id": "77",
     "device_id": "1594",
     "alert_type": "speaker_offline",
@@ -5352,6 +5798,7 @@
     "created_at": "2025-07-03T01:52:26.121764"
   },
   "447": {
+    "alert_id": "447",
     "home_id": "91",
     "device_id": "1897",
     "alert_type": "bulb_malfunction",
@@ -5364,6 +5811,7 @@
     "created_at": "2025-06-06T12:41:34.946045"
   },
   "448": {
+    "alert_id": "448",
     "home_id": "84",
     "device_id": "1740",
     "alert_type": "oven_overheating",
@@ -5376,6 +5824,7 @@
     "created_at": "2025-05-12T14:02:23.911136"
   },
   "449": {
+    "alert_id": "449",
     "home_id": "69",
     "device_id": "1415",
     "alert_type": "camera_motion_detected",
@@ -5388,6 +5837,7 @@
     "created_at": "2025-06-04T17:23:22.246434"
   },
   "450": {
+    "alert_id": "450",
     "home_id": "77",
     "device_id": "1587",
     "alert_type": "thermostat_offline",
@@ -5400,6 +5850,7 @@
     "created_at": "2025-05-27T14:34:57.996563"
   },
   "451": {
+    "alert_id": "451",
     "home_id": "84",
     "device_id": "1730",
     "alert_type": "bulb_malfunction",
@@ -5412,6 +5863,7 @@
     "created_at": "2025-06-13T23:03:48.234372"
   },
   "452": {
+    "alert_id": "452",
     "home_id": "78",
     "device_id": "1613",
     "alert_type": "refrigerator_malfunction",
@@ -5424,6 +5876,7 @@
     "created_at": "2025-05-13T02:41:30.959240"
   },
   "453": {
+    "alert_id": "453",
     "home_id": "18",
     "device_id": "351",
     "alert_type": "bulb_malfunction",
@@ -5436,6 +5889,7 @@
     "created_at": "2025-05-22T13:44:49.553944"
   },
   "454": {
+    "alert_id": "454",
     "home_id": "132",
     "device_id": "2742",
     "alert_type": "bulb_malfunction",
@@ -5448,6 +5902,7 @@
     "created_at": "2025-06-22T20:02:14.275598"
   },
   "455": {
+    "alert_id": "455",
     "home_id": "89",
     "device_id": "1872",
     "alert_type": "tv_malfunction",
@@ -5460,6 +5915,7 @@
     "created_at": "2025-06-18T21:48:34.036438"
   },
   "456": {
+    "alert_id": "456",
     "home_id": "144",
     "device_id": "2946",
     "alert_type": "refrigerator_temperature_alert",
@@ -5472,6 +5928,7 @@
     "created_at": "2025-06-10T11:18:12.705308"
   },
   "457": {
+    "alert_id": "457",
     "home_id": "25",
     "device_id": "503",
     "alert_type": "camera_motion_detected",
@@ -5484,6 +5941,7 @@
     "created_at": "2025-05-02T19:47:44.794597"
   },
   "458": {
+    "alert_id": "458",
     "home_id": "53",
     "device_id": "1096",
     "alert_type": "oven_overheating",
@@ -5496,6 +5954,7 @@
     "created_at": "2025-07-30T06:55:14.629270"
   },
   "459": {
+    "alert_id": "459",
     "home_id": "36",
     "device_id": "730",
     "alert_type": "bulb_malfunction",
@@ -5508,6 +5967,7 @@
     "created_at": "2025-06-17T20:36:43.926935"
   },
   "460": {
+    "alert_id": "460",
     "home_id": "87",
     "device_id": "1810",
     "alert_type": "speaker_offline",
@@ -5520,6 +5980,7 @@
     "created_at": "2025-06-17T15:50:05.184579"
   },
   "461": {
+    "alert_id": "461",
     "home_id": "123",
     "device_id": "2557",
     "alert_type": "thermostat_temperature_alert",
@@ -5532,6 +5993,7 @@
     "created_at": "2025-07-14T21:58:25.958268"
   },
   "462": {
+    "alert_id": "462",
     "home_id": "109",
     "device_id": "2252",
     "alert_type": "bulb_malfunction",
@@ -5544,6 +6006,7 @@
     "created_at": "2025-05-27T19:53:23.207534"
   },
   "463": {
+    "alert_id": "463",
     "home_id": "128",
     "device_id": "2670",
     "alert_type": "tv_malfunction",
@@ -5556,6 +6019,7 @@
     "created_at": "2025-07-10T20:45:00.441434"
   },
   "464": {
+    "alert_id": "464",
     "home_id": "28",
     "device_id": "581",
     "alert_type": "speaker_offline",
@@ -5568,6 +6032,7 @@
     "created_at": "2025-06-01T19:41:02.083706"
   },
   "465": {
+    "alert_id": "465",
     "home_id": "148",
     "device_id": "3011",
     "alert_type": "thermostat_offline",
@@ -5580,6 +6045,7 @@
     "created_at": "2025-07-25T09:28:15.341861"
   },
   "466": {
+    "alert_id": "466",
     "home_id": "42",
     "device_id": "866",
     "alert_type": "oven_overheating",
@@ -5592,6 +6058,7 @@
     "created_at": "2025-05-14T03:29:43.842447"
   },
   "467": {
+    "alert_id": "467",
     "home_id": "120",
     "device_id": "2503",
     "alert_type": "tv_malfunction",
@@ -5604,6 +6071,7 @@
     "created_at": "2025-05-06T00:23:10.120328"
   },
   "468": {
+    "alert_id": "468",
     "home_id": "71",
     "device_id": "1467",
     "alert_type": "tv_malfunction",
@@ -5616,6 +6084,7 @@
     "created_at": "2025-06-17T12:03:28.046371"
   },
   "469": {
+    "alert_id": "469",
     "home_id": "107",
     "device_id": "2229",
     "alert_type": "speaker_offline",
@@ -5628,6 +6097,7 @@
     "created_at": "2025-07-06T08:33:56.261594"
   },
   "470": {
+    "alert_id": "470",
     "home_id": "145",
     "device_id": "2956",
     "alert_type": "thermostat_offline",
@@ -5640,6 +6110,7 @@
     "created_at": "2025-06-23T14:27:40.775758"
   },
   "471": {
+    "alert_id": "471",
     "home_id": "146",
     "device_id": "2979",
     "alert_type": "tv_malfunction",
@@ -5652,6 +6123,7 @@
     "created_at": "2025-06-03T15:20:40.305643"
   },
   "472": {
+    "alert_id": "472",
     "home_id": "140",
     "device_id": "2900",
     "alert_type": "speaker_offline",
@@ -5664,6 +6136,7 @@
     "created_at": "2025-06-02T00:22:28.766818"
   },
   "473": {
+    "alert_id": "473",
     "home_id": "14",
     "device_id": "284",
     "alert_type": "tv_malfunction",
@@ -5676,6 +6149,7 @@
     "created_at": "2025-06-13T17:41:54.857919"
   },
   "474": {
+    "alert_id": "474",
     "home_id": "4",
     "device_id": "67",
     "alert_type": "thermostat_temperature_alert",
@@ -5688,6 +6162,7 @@
     "created_at": "2025-06-21T19:59:02.145468"
   },
   "475": {
+    "alert_id": "475",
     "home_id": "89",
     "device_id": "1855",
     "alert_type": "bulb_malfunction",
@@ -5700,6 +6175,7 @@
     "created_at": "2025-05-08T01:49:15.165961"
   },
   "476": {
+    "alert_id": "476",
     "home_id": "52",
     "device_id": "1080",
     "alert_type": "tv_malfunction",
@@ -5712,6 +6188,7 @@
     "created_at": "2025-07-27T04:14:24.052477"
   },
   "477": {
+    "alert_id": "477",
     "home_id": "95",
     "device_id": "1979",
     "alert_type": "thermostat_offline",
@@ -5724,6 +6201,7 @@
     "created_at": "2025-05-03T03:42:47.893750"
   },
   "478": {
+    "alert_id": "478",
     "home_id": "75",
     "device_id": "1561",
     "alert_type": "oven_malfunction",
@@ -5736,6 +6214,7 @@
     "created_at": "2025-05-11T05:27:32.848713"
   },
   "479": {
+    "alert_id": "479",
     "home_id": "55",
     "device_id": "1131",
     "alert_type": "bulb_malfunction",
@@ -5748,6 +6227,7 @@
     "created_at": "2025-07-12T14:55:39.130153"
   },
   "480": {
+    "alert_id": "480",
     "home_id": "79",
     "device_id": "1638",
     "alert_type": "speaker_offline",
@@ -5760,6 +6240,7 @@
     "created_at": "2025-07-12T19:05:37.705658"
   },
   "481": {
+    "alert_id": "481",
     "home_id": "98",
     "device_id": "2042",
     "alert_type": "bulb_malfunction",
@@ -5772,6 +6253,7 @@
     "created_at": "2025-06-07T00:19:16.459380"
   },
   "482": {
+    "alert_id": "482",
     "home_id": "66",
     "device_id": "1358",
     "alert_type": "bulb_malfunction",
@@ -5784,6 +6266,7 @@
     "created_at": "2025-06-26T14:18:55.966282"
   },
   "483": {
+    "alert_id": "483",
     "home_id": "79",
     "device_id": "1629",
     "alert_type": "thermostat_offline",
@@ -5796,6 +6279,7 @@
     "created_at": "2025-07-11T20:39:35.444826"
   },
   "484": {
+    "alert_id": "484",
     "home_id": "110",
     "device_id": "2281",
     "alert_type": "thermostat_offline",
@@ -5808,6 +6292,7 @@
     "created_at": "2025-06-19T03:38:08.819645"
   },
   "485": {
+    "alert_id": "485",
     "home_id": "60",
     "device_id": "1236",
     "alert_type": "bulb_malfunction",
@@ -5820,6 +6305,7 @@
     "created_at": "2025-05-07T13:16:24.915056"
   },
   "486": {
+    "alert_id": "486",
     "home_id": "5",
     "device_id": "99",
     "alert_type": "speaker_offline",
@@ -5832,6 +6318,7 @@
     "created_at": "2025-06-14T08:35:19.151800"
   },
   "487": {
+    "alert_id": "487",
     "home_id": "73",
     "device_id": "1510",
     "alert_type": "bulb_malfunction",
@@ -5844,6 +6331,7 @@
     "created_at": "2025-07-11T19:26:42.700604"
   },
   "488": {
+    "alert_id": "488",
     "home_id": "66",
     "device_id": "1377",
     "alert_type": "speaker_offline",
@@ -5856,6 +6344,7 @@
     "created_at": "2025-06-17T16:00:31.247001"
   },
   "489": {
+    "alert_id": "489",
     "home_id": "139",
     "device_id": "2885",
     "alert_type": "oven_overheating",
@@ -5868,6 +6357,7 @@
     "created_at": "2025-07-08T12:43:10.463845"
   },
   "490": {
+    "alert_id": "490",
     "home_id": "94",
     "device_id": "1958",
     "alert_type": "bulb_malfunction",
@@ -5880,6 +6370,7 @@
     "created_at": "2025-05-28T01:36:47.746612"
   },
   "491": {
+    "alert_id": "491",
     "home_id": "130",
     "device_id": "2694",
     "alert_type": "bulb_malfunction",
@@ -5892,6 +6383,7 @@
     "created_at": "2025-05-11T12:26:22.101789"
   },
   "492": {
+    "alert_id": "492",
     "home_id": "26",
     "device_id": "524",
     "alert_type": "thermostat_offline",
@@ -5904,6 +6396,7 @@
     "created_at": "2025-07-22T08:10:38.464859"
   },
   "493": {
+    "alert_id": "493",
     "home_id": "152",
     "device_id": "3108",
     "alert_type": "refrigerator_temperature_alert",
@@ -5916,6 +6409,7 @@
     "created_at": "2025-07-16T11:24:54.352723"
   },
   "494": {
+    "alert_id": "494",
     "home_id": "94",
     "device_id": "1965",
     "alert_type": "refrigerator_temperature_alert",
@@ -5928,6 +6422,7 @@
     "created_at": "2025-05-11T23:17:16.722370"
   },
   "495": {
+    "alert_id": "495",
     "home_id": "16",
     "device_id": "307",
     "alert_type": "bulb_malfunction",
@@ -5940,6 +6435,7 @@
     "created_at": "2025-07-27T04:20:43.733624"
   },
   "496": {
+    "alert_id": "496",
     "home_id": "27",
     "device_id": "533",
     "alert_type": "bulb_malfunction",
@@ -5952,6 +6448,7 @@
     "created_at": "2025-06-02T18:37:23.150381"
   },
   "497": {
+    "alert_id": "497",
     "home_id": "44",
     "device_id": "901",
     "alert_type": "bulb_malfunction",
@@ -5964,6 +6461,7 @@
     "created_at": "2025-05-06T14:38:01.224906"
   },
   "498": {
+    "alert_id": "498",
     "home_id": "90",
     "device_id": "1876",
     "alert_type": "bulb_malfunction",
@@ -5976,6 +6474,7 @@
     "created_at": "2025-05-03T17:16:53.179617"
   },
   "499": {
+    "alert_id": "499",
     "home_id": "15",
     "device_id": "291",
     "alert_type": "bulb_malfunction",
@@ -5988,6 +6487,7 @@
     "created_at": "2025-06-16T04:09:39.217484"
   },
   "500": {
+    "alert_id": "500",
     "home_id": "147",
     "device_id": "2985",
     "alert_type": "bulb_malfunction",
@@ -6000,6 +6500,7 @@
     "created_at": "2025-07-21T01:11:57.192596"
   },
   "501": {
+    "alert_id": "501",
     "home_id": "75",
     "device_id": "1552",
     "alert_type": "bulb_malfunction",
@@ -6012,6 +6513,7 @@
     "created_at": "2025-05-18T09:59:53.176287"
   },
   "502": {
+    "alert_id": "502",
     "home_id": "105",
     "device_id": "2191",
     "alert_type": "oven_overheating",
@@ -6024,6 +6526,7 @@
     "created_at": "2025-06-28T04:23:14.603586"
   },
   "503": {
+    "alert_id": "503",
     "home_id": "51",
     "device_id": "1052",
     "alert_type": "speaker_offline",
@@ -6036,6 +6539,7 @@
     "created_at": "2025-06-10T05:00:01.535576"
   },
   "504": {
+    "alert_id": "504",
     "home_id": "96",
     "device_id": "2011",
     "alert_type": "tv_malfunction",
@@ -6048,6 +6552,7 @@
     "created_at": "2025-06-25T15:43:53.808873"
   },
   "505": {
+    "alert_id": "505",
     "home_id": "100",
     "device_id": "2089",
     "alert_type": "bulb_malfunction",
@@ -6060,6 +6565,7 @@
     "created_at": "2025-06-14T07:14:15.722745"
   },
   "506": {
+    "alert_id": "506",
     "home_id": "39",
     "device_id": "799",
     "alert_type": "speaker_offline",
@@ -6072,6 +6578,7 @@
     "created_at": "2025-06-03T18:36:34.745222"
   },
   "507": {
+    "alert_id": "507",
     "home_id": "73",
     "device_id": "1526",
     "alert_type": "speaker_offline",
@@ -6084,6 +6591,7 @@
     "created_at": "2025-07-16T05:28:04.578008"
   },
   "508": {
+    "alert_id": "508",
     "home_id": "117",
     "device_id": "2439",
     "alert_type": "speaker_offline",
@@ -6096,6 +6604,7 @@
     "created_at": "2025-07-25T08:58:03.869633"
   },
   "509": {
+    "alert_id": "509",
     "home_id": "13",
     "device_id": "251",
     "alert_type": "bulb_malfunction",
@@ -6108,6 +6617,7 @@
     "created_at": "2025-07-09T05:33:45.641367"
   },
   "510": {
+    "alert_id": "510",
     "home_id": "72",
     "device_id": "1481",
     "alert_type": "bulb_malfunction",
@@ -6120,6 +6630,7 @@
     "created_at": "2025-05-07T04:10:01.742039"
   },
   "511": {
+    "alert_id": "511",
     "home_id": "60",
     "device_id": "1241",
     "alert_type": "bulb_malfunction",
@@ -6132,6 +6643,7 @@
     "created_at": "2025-05-17T08:43:09.161509"
   },
   "512": {
+    "alert_id": "512",
     "home_id": "41",
     "device_id": "837",
     "alert_type": "thermostat_offline",
@@ -6144,6 +6656,7 @@
     "created_at": "2025-06-01T09:08:14.753837"
   },
   "513": {
+    "alert_id": "513",
     "home_id": "99",
     "device_id": "2080",
     "alert_type": "refrigerator_temperature_alert",
@@ -6156,6 +6669,7 @@
     "created_at": "2025-07-12T22:02:10.085876"
   },
   "514": {
+    "alert_id": "514",
     "home_id": "110",
     "device_id": "2279",
     "alert_type": "bulb_malfunction",
@@ -6168,6 +6682,7 @@
     "created_at": "2025-07-01T16:14:53.171494"
   },
   "515": {
+    "alert_id": "515",
     "home_id": "35",
     "device_id": "705",
     "alert_type": "bulb_malfunction",
@@ -6180,6 +6695,7 @@
     "created_at": "2025-05-24T15:37:25.793825"
   },
   "516": {
+    "alert_id": "516",
     "home_id": "71",
     "device_id": "1448",
     "alert_type": "bulb_malfunction",
@@ -6192,6 +6708,7 @@
     "created_at": "2025-06-16T17:19:17.957417"
   },
   "517": {
+    "alert_id": "517",
     "home_id": "128",
     "device_id": "2669",
     "alert_type": "tv_malfunction",
@@ -6204,6 +6721,7 @@
     "created_at": "2025-06-01T14:14:10.142111"
   },
   "518": {
+    "alert_id": "518",
     "home_id": "51",
     "device_id": "1038",
     "alert_type": "bulb_malfunction",
@@ -6216,6 +6734,7 @@
     "created_at": "2025-06-21T22:55:49.706595"
   },
   "519": {
+    "alert_id": "519",
     "home_id": "150",
     "device_id": "3059",
     "alert_type": "bulb_malfunction",
@@ -6228,6 +6747,7 @@
     "created_at": "2025-06-26T20:31:16.084348"
   },
   "520": {
+    "alert_id": "520",
     "home_id": "60",
     "device_id": "1241",
     "alert_type": "bulb_malfunction",
@@ -6240,6 +6760,7 @@
     "created_at": "2025-06-18T17:21:38.335419"
   },
   "521": {
+    "alert_id": "521",
     "home_id": "23",
     "device_id": "478",
     "alert_type": "speaker_offline",
@@ -6252,6 +6773,7 @@
     "created_at": "2025-05-02T23:04:25.104146"
   },
   "522": {
+    "alert_id": "522",
     "home_id": "99",
     "device_id": "2081",
     "alert_type": "refrigerator_malfunction",
@@ -6264,6 +6786,7 @@
     "created_at": "2025-06-29T01:09:39.038506"
   },
   "523": {
+    "alert_id": "523",
     "home_id": "124",
     "device_id": "2585",
     "alert_type": "oven_overheating",
@@ -6276,6 +6799,7 @@
     "created_at": "2025-07-19T07:43:46.673055"
   },
   "524": {
+    "alert_id": "524",
     "home_id": "31",
     "device_id": "629",
     "alert_type": "bulb_malfunction",
@@ -6288,6 +6812,7 @@
     "created_at": "2025-07-01T07:54:18.480478"
   },
   "525": {
+    "alert_id": "525",
     "home_id": "43",
     "device_id": "894",
     "alert_type": "oven_malfunction",
@@ -6300,6 +6825,7 @@
     "created_at": "2025-06-27T13:38:08.061861"
   },
   "526": {
+    "alert_id": "526",
     "home_id": "2",
     "device_id": "33",
     "alert_type": "oven_malfunction",
@@ -6312,6 +6838,7 @@
     "created_at": "2025-05-26T03:15:53.603926"
   },
   "527": {
+    "alert_id": "527",
     "home_id": "84",
     "device_id": "1730",
     "alert_type": "bulb_malfunction",
@@ -6324,6 +6851,7 @@
     "created_at": "2025-05-06T14:32:51.745840"
   },
   "528": {
+    "alert_id": "528",
     "home_id": "72",
     "device_id": "1494",
     "alert_type": "refrigerator_temperature_alert",
@@ -6336,6 +6864,7 @@
     "created_at": "2025-07-03T07:39:59.636071"
   },
   "529": {
+    "alert_id": "529",
     "home_id": "112",
     "device_id": "2314",
     "alert_type": "bulb_malfunction",
@@ -6348,6 +6877,7 @@
     "created_at": "2025-07-07T12:29:08.320466"
   },
   "530": {
+    "alert_id": "530",
     "home_id": "109",
     "device_id": "2250",
     "alert_type": "bulb_malfunction",
@@ -6360,6 +6890,7 @@
     "created_at": "2025-06-22T19:36:13.736649"
   },
   "531": {
+    "alert_id": "531",
     "home_id": "21",
     "device_id": "428",
     "alert_type": "refrigerator_malfunction",
@@ -6372,6 +6903,7 @@
     "created_at": "2025-07-29T07:45:18.210545"
   },
   "532": {
+    "alert_id": "532",
     "home_id": "142",
     "device_id": "2914",
     "alert_type": "bulb_malfunction",
@@ -6384,6 +6916,7 @@
     "created_at": "2025-07-01T03:51:41.037795"
   },
   "533": {
+    "alert_id": "533",
     "home_id": "10",
     "device_id": "207",
     "alert_type": "tv_malfunction",
@@ -6396,6 +6929,7 @@
     "created_at": "2025-06-23T04:12:31.870015"
   },
   "534": {
+    "alert_id": "534",
     "home_id": "92",
     "device_id": "1924",
     "alert_type": "bulb_malfunction",
@@ -6408,6 +6942,7 @@
     "created_at": "2025-06-23T02:45:37.297351"
   },
   "535": {
+    "alert_id": "535",
     "home_id": "142",
     "device_id": "2915",
     "alert_type": "bulb_malfunction",
@@ -6420,6 +6955,7 @@
     "created_at": "2025-06-27T13:31:11.662383"
   },
   "536": {
+    "alert_id": "536",
     "home_id": "36",
     "device_id": "728",
     "alert_type": "bulb_malfunction",
@@ -6432,6 +6968,7 @@
     "created_at": "2025-07-27T17:55:37.851970"
   },
   "537": {
+    "alert_id": "537",
     "home_id": "18",
     "device_id": "349",
     "alert_type": "bulb_malfunction",
@@ -6444,6 +6981,7 @@
     "created_at": "2025-05-19T22:28:55.741614"
   },
   "538": {
+    "alert_id": "538",
     "home_id": "51",
     "device_id": "1055",
     "alert_type": "speaker_offline",
@@ -6456,6 +6994,7 @@
     "created_at": "2025-05-26T16:07:32.653208"
   },
   "539": {
+    "alert_id": "539",
     "home_id": "51",
     "device_id": "1054",
     "alert_type": "speaker_offline",
@@ -6468,6 +7007,7 @@
     "created_at": "2025-07-03T19:42:05.953549"
   },
   "540": {
+    "alert_id": "540",
     "home_id": "60",
     "device_id": "1241",
     "alert_type": "bulb_malfunction",
@@ -6480,6 +7020,7 @@
     "created_at": "2025-07-18T11:36:35.598881"
   },
   "541": {
+    "alert_id": "541",
     "home_id": "52",
     "device_id": "1065",
     "alert_type": "bulb_malfunction",
@@ -6492,6 +7033,7 @@
     "created_at": "2025-05-30T19:22:12.861496"
   },
   "542": {
+    "alert_id": "542",
     "home_id": "40",
     "device_id": "812",
     "alert_type": "camera_motion_detected",
@@ -6504,6 +7046,7 @@
     "created_at": "2025-05-28T21:09:34.213619"
   },
   "543": {
+    "alert_id": "543",
     "home_id": "104",
     "device_id": "2152",
     "alert_type": "bulb_malfunction",
@@ -6516,6 +7059,7 @@
     "created_at": "2025-07-26T18:36:31.783410"
   },
   "544": {
+    "alert_id": "544",
     "home_id": "91",
     "device_id": "1885",
     "alert_type": "bulb_malfunction",
@@ -6528,6 +7072,7 @@
     "created_at": "2025-06-22T03:35:13.359998"
   },
   "545": {
+    "alert_id": "545",
     "home_id": "1",
     "device_id": "2",
     "alert_type": "bulb_malfunction",
@@ -6540,6 +7085,7 @@
     "created_at": "2025-05-15T00:57:27.522484"
   },
   "546": {
+    "alert_id": "546",
     "home_id": "102",
     "device_id": "2120",
     "alert_type": "bulb_malfunction",
@@ -6552,6 +7098,7 @@
     "created_at": "2025-05-18T07:16:16.100584"
   },
   "547": {
+    "alert_id": "547",
     "home_id": "22",
     "device_id": "450",
     "alert_type": "refrigerator_temperature_alert",
@@ -6564,6 +7111,7 @@
     "created_at": "2025-05-20T15:30:00.810213"
   },
   "548": {
+    "alert_id": "548",
     "home_id": "116",
     "device_id": "2400",
     "alert_type": "bulb_malfunction",
@@ -6576,6 +7124,7 @@
     "created_at": "2025-05-11T06:38:22.845483"
   },
   "549": {
+    "alert_id": "549",
     "home_id": "108",
     "device_id": "2236",
     "alert_type": "bulb_malfunction",
@@ -6588,6 +7137,7 @@
     "created_at": "2025-07-08T22:20:40.660366"
   },
   "550": {
+    "alert_id": "550",
     "home_id": "63",
     "device_id": "1296",
     "alert_type": "bulb_malfunction",
@@ -6600,6 +7150,7 @@
     "created_at": "2025-07-27T10:51:57.250060"
   },
   "551": {
+    "alert_id": "551",
     "home_id": "52",
     "device_id": "1065",
     "alert_type": "bulb_malfunction",
@@ -6612,6 +7163,7 @@
     "created_at": "2025-07-28T09:03:58.685136"
   },
   "552": {
+    "alert_id": "552",
     "home_id": "37",
     "device_id": "755",
     "alert_type": "thermostat_temperature_alert",
@@ -6624,6 +7176,7 @@
     "created_at": "2025-07-05T17:35:28.724785"
   },
   "553": {
+    "alert_id": "553",
     "home_id": "116",
     "device_id": "2406",
     "alert_type": "camera_motion_detected",
@@ -6636,6 +7189,7 @@
     "created_at": "2025-05-02T19:47:44.391725"
   },
   "554": {
+    "alert_id": "554",
     "home_id": "94",
     "device_id": "1962",
     "alert_type": "bulb_malfunction",
@@ -6648,6 +7202,7 @@
     "created_at": "2025-05-20T12:35:19.173155"
   },
   "555": {
+    "alert_id": "555",
     "home_id": "29",
     "device_id": "606",
     "alert_type": "tv_malfunction",
@@ -6660,6 +7215,7 @@
     "created_at": "2025-05-29T09:35:33.801908"
   },
   "556": {
+    "alert_id": "556",
     "home_id": "72",
     "device_id": "1483",
     "alert_type": "bulb_malfunction",
@@ -6672,6 +7228,7 @@
     "created_at": "2025-06-04T00:06:51.898075"
   },
   "557": {
+    "alert_id": "557",
     "home_id": "131",
     "device_id": "2715",
     "alert_type": "bulb_malfunction",
@@ -6684,6 +7241,7 @@
     "created_at": "2025-06-16T19:49:44.134407"
   },
   "558": {
+    "alert_id": "558",
     "home_id": "38",
     "device_id": "774",
     "alert_type": "bulb_malfunction",
@@ -6696,6 +7254,7 @@
     "created_at": "2025-05-15T12:16:47.883515"
   },
   "559": {
+    "alert_id": "559",
     "home_id": "59",
     "device_id": "1221",
     "alert_type": "bulb_malfunction",
@@ -6708,6 +7267,7 @@
     "created_at": "2025-06-27T01:07:27.147771"
   },
   "560": {
+    "alert_id": "560",
     "home_id": "42",
     "device_id": "866",
     "alert_type": "oven_malfunction",
@@ -6720,6 +7280,7 @@
     "created_at": "2025-07-31T11:51:23.480445"
   },
   "561": {
+    "alert_id": "561",
     "home_id": "66",
     "device_id": "1355",
     "alert_type": "bulb_malfunction",
@@ -6732,6 +7293,7 @@
     "created_at": "2025-05-30T11:30:42.944769"
   },
   "562": {
+    "alert_id": "562",
     "home_id": "124",
     "device_id": "2591",
     "alert_type": "speaker_offline",
@@ -6744,6 +7306,7 @@
     "created_at": "2025-05-15T12:28:27.233624"
   },
   "563": {
+    "alert_id": "563",
     "home_id": "43",
     "device_id": "884",
     "alert_type": "bulb_malfunction",
@@ -6756,6 +7319,7 @@
     "created_at": "2025-06-03T22:03:44.506799"
   },
   "564": {
+    "alert_id": "564",
     "home_id": "150",
     "device_id": "3046",
     "alert_type": "bulb_malfunction",
@@ -6768,6 +7332,7 @@
     "created_at": "2025-06-28T19:54:20.488529"
   },
   "565": {
+    "alert_id": "565",
     "home_id": "52",
     "device_id": "1067",
     "alert_type": "bulb_malfunction",
@@ -6780,6 +7345,7 @@
     "created_at": "2025-06-23T09:13:42.386598"
   },
   "566": {
+    "alert_id": "566",
     "home_id": "41",
     "device_id": "832",
     "alert_type": "bulb_malfunction",
@@ -6792,6 +7358,7 @@
     "created_at": "2025-06-29T10:17:10.573817"
   },
   "567": {
+    "alert_id": "567",
     "home_id": "62",
     "device_id": "1284",
     "alert_type": "thermostat_temperature_alert",
@@ -6804,6 +7371,7 @@
     "created_at": "2025-06-07T13:35:03.290233"
   },
   "568": {
+    "alert_id": "568",
     "home_id": "66",
     "device_id": "1373",
     "alert_type": "refrigerator_malfunction",
@@ -6816,6 +7384,7 @@
     "created_at": "2025-06-26T16:49:33.420619"
   },
   "569": {
+    "alert_id": "569",
     "home_id": "60",
     "device_id": "1242",
     "alert_type": "bulb_malfunction",
@@ -6828,6 +7397,7 @@
     "created_at": "2025-07-05T13:22:06.632171"
   },
   "570": {
+    "alert_id": "570",
     "home_id": "26",
     "device_id": "519",
     "alert_type": "bulb_malfunction",
@@ -6840,6 +7410,7 @@
     "created_at": "2025-06-25T22:37:56.234983"
   },
   "571": {
+    "alert_id": "571",
     "home_id": "129",
     "device_id": "2673",
     "alert_type": "bulb_malfunction",
@@ -6852,6 +7423,7 @@
     "created_at": "2025-05-30T18:45:48.488935"
   },
   "572": {
+    "alert_id": "572",
     "home_id": "49",
     "device_id": "998",
     "alert_type": "bulb_malfunction",
@@ -6864,6 +7436,7 @@
     "created_at": "2025-06-02T04:14:14.554749"
   },
   "573": {
+    "alert_id": "573",
     "home_id": "125",
     "device_id": "2622",
     "alert_type": "speaker_offline",
@@ -6876,6 +7449,7 @@
     "created_at": "2025-07-19T06:30:29.846853"
   },
   "574": {
+    "alert_id": "574",
     "home_id": "66",
     "device_id": "1368",
     "alert_type": "refrigerator_temperature_alert",
@@ -6888,6 +7462,7 @@
     "created_at": "2025-07-25T13:40:54.139688"
   },
   "575": {
+    "alert_id": "575",
     "home_id": "69",
     "device_id": "1418",
     "alert_type": "oven_overheating",
@@ -6900,6 +7475,7 @@
     "created_at": "2025-06-15T08:33:11.262542"
   },
   "576": {
+    "alert_id": "576",
     "home_id": "104",
     "device_id": "2157",
     "alert_type": "bulb_malfunction",
@@ -6912,6 +7488,7 @@
     "created_at": "2025-07-03T01:32:03.971108"
   },
   "577": {
+    "alert_id": "577",
     "home_id": "138",
     "device_id": "2864",
     "alert_type": "camera_offline",
@@ -6924,6 +7501,7 @@
     "created_at": "2025-05-18T19:54:20.675073"
   },
   "578": {
+    "alert_id": "578",
     "home_id": "136",
     "device_id": "2826",
     "alert_type": "bulb_malfunction",
@@ -6936,6 +7514,7 @@
     "created_at": "2025-07-07T14:33:33.436834"
   },
   "579": {
+    "alert_id": "579",
     "home_id": "78",
     "device_id": "1603",
     "alert_type": "bulb_malfunction",
@@ -6948,6 +7527,7 @@
     "created_at": "2025-05-03T15:30:15.077062"
   },
   "580": {
+    "alert_id": "580",
     "home_id": "44",
     "device_id": "907",
     "alert_type": "camera_offline",
@@ -6960,6 +7540,7 @@
     "created_at": "2025-05-16T22:16:14.894773"
   },
   "581": {
+    "alert_id": "581",
     "home_id": "80",
     "device_id": "1654",
     "alert_type": "camera_motion_detected",
@@ -6972,6 +7553,7 @@
     "created_at": "2025-06-17T09:12:04.260064"
   },
   "582": {
+    "alert_id": "582",
     "home_id": "24",
     "device_id": "480",
     "alert_type": "bulb_malfunction",
@@ -6984,6 +7566,7 @@
     "created_at": "2025-07-27T01:04:30.133753"
   },
   "583": {
+    "alert_id": "583",
     "home_id": "60",
     "device_id": "1236",
     "alert_type": "bulb_malfunction",
@@ -6996,6 +7579,7 @@
     "created_at": "2025-06-20T03:31:44.795050"
   },
   "584": {
+    "alert_id": "584",
     "home_id": "47",
     "device_id": "969",
     "alert_type": "refrigerator_temperature_alert",
@@ -7008,6 +7592,7 @@
     "created_at": "2025-06-09T06:59:56.025651"
   },
   "585": {
+    "alert_id": "585",
     "home_id": "118",
     "device_id": "2451",
     "alert_type": "bulb_malfunction",
@@ -7020,6 +7605,7 @@
     "created_at": "2025-05-31T16:36:56.287611"
   },
   "586": {
+    "alert_id": "586",
     "home_id": "93",
     "device_id": "1947",
     "alert_type": "thermostat_temperature_alert",
@@ -7032,6 +7618,7 @@
     "created_at": "2025-05-15T09:14:31.361429"
   },
   "587": {
+    "alert_id": "587",
     "home_id": "78",
     "device_id": "1621",
     "alert_type": "speaker_offline",
@@ -7044,6 +7631,7 @@
     "created_at": "2025-06-17T10:00:12.187108"
   },
   "588": {
+    "alert_id": "588",
     "home_id": "143",
     "device_id": "2924",
     "alert_type": "thermostat_offline",
@@ -7056,6 +7644,7 @@
     "created_at": "2025-06-13T00:43:54.486173"
   },
   "589": {
+    "alert_id": "589",
     "home_id": "148",
     "device_id": "3018",
     "alert_type": "oven_malfunction",
@@ -7068,6 +7657,7 @@
     "created_at": "2025-07-24T10:19:44.742170"
   },
   "590": {
+    "alert_id": "590",
     "home_id": "148",
     "device_id": "3002",
     "alert_type": "bulb_malfunction",
@@ -7080,6 +7670,7 @@
     "created_at": "2025-07-13T10:03:21.289918"
   },
   "591": {
+    "alert_id": "591",
     "home_id": "118",
     "device_id": "2456",
     "alert_type": "camera_offline",
@@ -7092,6 +7683,7 @@
     "created_at": "2025-07-18T06:12:27.056358"
   },
   "592": {
+    "alert_id": "592",
     "home_id": "97",
     "device_id": "2013",
     "alert_type": "bulb_malfunction",
@@ -7104,6 +7696,7 @@
     "created_at": "2025-06-07T10:06:31.184812"
   },
   "593": {
+    "alert_id": "593",
     "home_id": "107",
     "device_id": "2215",
     "alert_type": "bulb_malfunction",
@@ -7116,6 +7709,7 @@
     "created_at": "2025-07-17T15:57:11.274291"
   },
   "594": {
+    "alert_id": "594",
     "home_id": "58",
     "device_id": "1206",
     "alert_type": "refrigerator_temperature_alert",
@@ -7128,6 +7722,7 @@
     "created_at": "2025-07-17T15:54:33.296145"
   },
   "595": {
+    "alert_id": "595",
     "home_id": "102",
     "device_id": "2134",
     "alert_type": "oven_overheating",
@@ -7140,6 +7735,7 @@
     "created_at": "2025-06-27T21:00:06.023723"
   },
   "596": {
+    "alert_id": "596",
     "home_id": "110",
     "device_id": "2278",
     "alert_type": "bulb_malfunction",
@@ -7152,6 +7748,7 @@
     "created_at": "2025-05-22T19:28:09.171676"
   },
   "597": {
+    "alert_id": "597",
     "home_id": "115",
     "device_id": "2382",
     "alert_type": "refrigerator_temperature_alert",
@@ -7164,6 +7761,7 @@
     "created_at": "2025-06-27T14:19:58.560546"
   },
   "598": {
+    "alert_id": "598",
     "home_id": "3",
     "device_id": "51",
     "alert_type": "speaker_offline",
@@ -7176,6 +7774,7 @@
     "created_at": "2025-05-26T09:03:39.081644"
   },
   "599": {
+    "alert_id": "599",
     "home_id": "63",
     "device_id": "1305",
     "alert_type": "refrigerator_temperature_alert",
@@ -7188,6 +7787,7 @@
     "created_at": "2025-05-29T07:09:31.314175"
   },
   "600": {
+    "alert_id": "600",
     "home_id": "41",
     "device_id": "841",
     "alert_type": "refrigerator_temperature_alert",
@@ -7200,6 +7800,7 @@
     "created_at": "2025-05-26T00:57:38.099216"
   },
   "601": {
+    "alert_id": "601",
     "home_id": "150",
     "device_id": "3053",
     "alert_type": "bulb_malfunction",
@@ -7212,6 +7813,7 @@
     "created_at": "2025-06-20T01:06:01.842387"
   },
   "602": {
+    "alert_id": "602",
     "home_id": "70",
     "device_id": "1441",
     "alert_type": "tv_malfunction",
@@ -7224,6 +7826,7 @@
     "created_at": "2025-06-20T01:55:53.742048"
   },
   "603": {
+    "alert_id": "603",
     "home_id": "78",
     "device_id": "1613",
     "alert_type": "refrigerator_malfunction",
@@ -7236,6 +7839,7 @@
     "created_at": "2025-06-22T03:12:29.283695"
   },
   "604": {
+    "alert_id": "604",
     "home_id": "19",
     "device_id": "392",
     "alert_type": "tv_malfunction",
@@ -7248,6 +7852,7 @@
     "created_at": "2025-07-25T11:39:14.730345"
   },
   "605": {
+    "alert_id": "605",
     "home_id": "84",
     "device_id": "1751",
     "alert_type": "tv_malfunction",
@@ -7260,6 +7865,7 @@
     "created_at": "2025-06-11T16:36:39.814443"
   },
   "606": {
+    "alert_id": "606",
     "home_id": "85",
     "device_id": "1764",
     "alert_type": "camera_motion_detected",
@@ -7272,6 +7878,7 @@
     "created_at": "2025-05-02T19:47:44.496094"
   },
   "607": {
+    "alert_id": "607",
     "home_id": "7",
     "device_id": "128",
     "alert_type": "bulb_malfunction",
@@ -7284,6 +7891,7 @@
     "created_at": "2025-05-22T09:49:25.666035"
   },
   "608": {
+    "alert_id": "608",
     "home_id": "98",
     "device_id": "2041",
     "alert_type": "bulb_malfunction",
@@ -7296,6 +7904,7 @@
     "created_at": "2025-06-06T18:20:16.769137"
   },
   "609": {
+    "alert_id": "609",
     "home_id": "102",
     "device_id": "2126",
     "alert_type": "bulb_malfunction",
@@ -7308,6 +7917,7 @@
     "created_at": "2025-06-01T07:28:11.165189"
   },
   "610": {
+    "alert_id": "610",
     "home_id": "14",
     "device_id": "275",
     "alert_type": "oven_overheating",
@@ -7320,6 +7930,7 @@
     "created_at": "2025-07-29T17:33:51.621132"
   },
   "611": {
+    "alert_id": "611",
     "home_id": "9",
     "device_id": "172",
     "alert_type": "thermostat_offline",
@@ -7332,6 +7943,7 @@
     "created_at": "2025-05-13T18:59:55.507549"
   },
   "612": {
+    "alert_id": "612",
     "home_id": "27",
     "device_id": "557",
     "alert_type": "speaker_offline",
@@ -7344,6 +7956,7 @@
     "created_at": "2025-06-06T09:06:35.590412"
   },
   "613": {
+    "alert_id": "613",
     "home_id": "116",
     "device_id": "2417",
     "alert_type": "speaker_offline",
@@ -7356,6 +7969,7 @@
     "created_at": "2025-06-27T16:11:53.814225"
   },
   "614": {
+    "alert_id": "614",
     "home_id": "58",
     "device_id": "1199",
     "alert_type": "bulb_malfunction",
@@ -7368,6 +7982,7 @@
     "created_at": "2025-07-09T04:14:01.046191"
   },
   "615": {
+    "alert_id": "615",
     "home_id": "55",
     "device_id": "1140",
     "alert_type": "bulb_malfunction",
@@ -7380,6 +7995,7 @@
     "created_at": "2025-05-14T10:08:25.564790"
   },
   "616": {
+    "alert_id": "616",
     "home_id": "76",
     "device_id": "1567",
     "alert_type": "bulb_malfunction",
@@ -7392,6 +8008,7 @@
     "created_at": "2025-05-23T20:17:33.450035"
   },
   "617": {
+    "alert_id": "617",
     "home_id": "105",
     "device_id": "2185",
     "alert_type": "bulb_malfunction",
@@ -7404,6 +8021,7 @@
     "created_at": "2025-07-06T08:31:44.343144"
   },
   "618": {
+    "alert_id": "618",
     "home_id": "129",
     "device_id": "2682",
     "alert_type": "oven_overheating",
@@ -7416,6 +8034,7 @@
     "created_at": "2025-05-16T02:03:11.603851"
   },
   "619": {
+    "alert_id": "619",
     "home_id": "102",
     "device_id": "2131",
     "alert_type": "thermostat_temperature_alert",
@@ -7428,6 +8047,7 @@
     "created_at": "2025-05-26T10:52:25.124836"
   },
   "620": {
+    "alert_id": "620",
     "home_id": "51",
     "device_id": "1047",
     "alert_type": "oven_overheating",
@@ -7440,6 +8060,7 @@
     "created_at": "2025-06-28T13:56:01.043807"
   },
   "621": {
+    "alert_id": "621",
     "home_id": "1",
     "device_id": "16",
     "alert_type": "oven_overheating",
@@ -7452,6 +8073,7 @@
     "created_at": "2025-06-21T16:07:16.854618"
   },
   "622": {
+    "alert_id": "622",
     "home_id": "44",
     "device_id": "904",
     "alert_type": "bulb_malfunction",
@@ -7464,6 +8086,7 @@
     "created_at": "2025-07-07T01:14:48.083410"
   },
   "623": {
+    "alert_id": "623",
     "home_id": "144",
     "device_id": "2937",
     "alert_type": "bulb_malfunction",
@@ -7476,6 +8099,7 @@
     "created_at": "2025-06-01T04:30:18.826615"
   },
   "624": {
+    "alert_id": "624",
     "home_id": "132",
     "device_id": "2757",
     "alert_type": "speaker_offline",
@@ -7488,6 +8112,7 @@
     "created_at": "2025-06-03T23:13:19.618970"
   },
   "625": {
+    "alert_id": "625",
     "home_id": "61",
     "device_id": "1268",
     "alert_type": "camera_offline",
@@ -7500,6 +8125,7 @@
     "created_at": "2025-07-12T23:01:05.729221"
   },
   "626": {
+    "alert_id": "626",
     "home_id": "31",
     "device_id": "645",
     "alert_type": "tv_malfunction",
@@ -7512,6 +8138,7 @@
     "created_at": "2025-07-18T19:24:46.009390"
   },
   "627": {
+    "alert_id": "627",
     "home_id": "102",
     "device_id": "2131",
     "alert_type": "thermostat_temperature_alert",
@@ -7524,6 +8151,7 @@
     "created_at": "2025-05-21T09:26:52.084980"
   },
   "628": {
+    "alert_id": "628",
     "home_id": "89",
     "device_id": "1851",
     "alert_type": "bulb_malfunction",
@@ -7536,6 +8164,7 @@
     "created_at": "2025-05-23T16:32:47.607105"
   },
   "629": {
+    "alert_id": "629",
     "home_id": "50",
     "device_id": "1027",
     "alert_type": "oven_overheating",
@@ -7548,6 +8177,7 @@
     "created_at": "2025-06-11T22:34:26.910307"
   },
   "630": {
+    "alert_id": "630",
     "home_id": "83",
     "device_id": "1703",
     "alert_type": "bulb_malfunction",
@@ -7560,6 +8190,7 @@
     "created_at": "2025-07-12T00:09:35.752098"
   },
   "631": {
+    "alert_id": "631",
     "home_id": "52",
     "device_id": "1063",
     "alert_type": "bulb_malfunction",
@@ -7572,6 +8203,7 @@
     "created_at": "2025-06-08T22:35:16.466547"
   },
   "632": {
+    "alert_id": "632",
     "home_id": "150",
     "device_id": "3058",
     "alert_type": "bulb_malfunction",
@@ -7584,6 +8216,7 @@
     "created_at": "2025-06-25T11:28:43.552391"
   },
   "633": {
+    "alert_id": "633",
     "home_id": "94",
     "device_id": "1958",
     "alert_type": "bulb_malfunction",
@@ -7596,6 +8229,7 @@
     "created_at": "2025-06-04T01:31:22.010828"
   },
   "634": {
+    "alert_id": "634",
     "home_id": "140",
     "device_id": "2898",
     "alert_type": "refrigerator_temperature_alert",
@@ -7608,6 +8242,7 @@
     "created_at": "2025-07-26T03:15:46.094027"
   },
   "635": {
+    "alert_id": "635",
     "home_id": "38",
     "device_id": "786",
     "alert_type": "speaker_offline",
@@ -7620,6 +8255,7 @@
     "created_at": "2025-06-07T13:22:27.246466"
   },
   "636": {
+    "alert_id": "636",
     "home_id": "27",
     "device_id": "536",
     "alert_type": "bulb_malfunction",
@@ -7632,6 +8268,7 @@
     "created_at": "2025-05-07T20:02:33.802515"
   },
   "637": {
+    "alert_id": "637",
     "home_id": "82",
     "device_id": "1693",
     "alert_type": "thermostat_offline",
@@ -7644,6 +8281,7 @@
     "created_at": "2025-07-07T02:05:59.583431"
   },
   "638": {
+    "alert_id": "638",
     "home_id": "19",
     "device_id": "373",
     "alert_type": "bulb_malfunction",
@@ -7656,6 +8294,7 @@
     "created_at": "2025-06-03T21:33:04.203854"
   },
   "639": {
+    "alert_id": "639",
     "home_id": "109",
     "device_id": "2267",
     "alert_type": "speaker_offline",
@@ -7668,6 +8307,7 @@
     "created_at": "2025-05-15T08:32:38.784663"
   },
   "640": {
+    "alert_id": "640",
     "home_id": "58",
     "device_id": "1193",
     "alert_type": "bulb_malfunction",
@@ -7680,6 +8320,7 @@
     "created_at": "2025-05-03T14:35:51.284106"
   },
   "641": {
+    "alert_id": "641",
     "home_id": "72",
     "device_id": "1506",
     "alert_type": "tv_malfunction",
@@ -7692,6 +8333,7 @@
     "created_at": "2025-06-25T00:47:05.524908"
   },
   "642": {
+    "alert_id": "642",
     "home_id": "54",
     "device_id": "1129",
     "alert_type": "tv_malfunction",
@@ -7704,6 +8346,7 @@
     "created_at": "2025-05-21T09:11:11.384086"
   },
   "643": {
+    "alert_id": "643",
     "home_id": "97",
     "device_id": "2013",
     "alert_type": "bulb_malfunction",
@@ -7716,6 +8359,7 @@
     "created_at": "2025-07-22T15:52:21.662027"
   },
   "644": {
+    "alert_id": "644",
     "home_id": "130",
     "device_id": "2707",
     "alert_type": "speaker_offline",
@@ -7728,6 +8372,7 @@
     "created_at": "2025-05-12T02:29:15.272183"
   },
   "645": {
+    "alert_id": "645",
     "home_id": "41",
     "device_id": "839",
     "alert_type": "refrigerator_temperature_alert",
@@ -7740,6 +8385,7 @@
     "created_at": "2025-07-31T00:07:09.357175"
   },
   "646": {
+    "alert_id": "646",
     "home_id": "21",
     "device_id": "427",
     "alert_type": "thermostat_offline",
@@ -7752,6 +8398,7 @@
     "created_at": "2025-07-07T00:31:24.871260"
   },
   "647": {
+    "alert_id": "647",
     "home_id": "73",
     "device_id": "1510",
     "alert_type": "bulb_malfunction",
@@ -7764,6 +8411,7 @@
     "created_at": "2025-07-18T01:41:48.061968"
   },
   "648": {
+    "alert_id": "648",
     "home_id": "7",
     "device_id": "121",
     "alert_type": "bulb_malfunction",
@@ -7776,6 +8424,7 @@
     "created_at": "2025-07-20T09:59:42.169667"
   },
   "649": {
+    "alert_id": "649",
     "home_id": "54",
     "device_id": "1105",
     "alert_type": "bulb_malfunction",
@@ -7788,6 +8437,7 @@
     "created_at": "2025-06-17T22:55:07.624488"
   },
   "650": {
+    "alert_id": "650",
     "home_id": "111",
     "device_id": "2305",
     "alert_type": "camera_motion_detected",
@@ -7800,6 +8450,7 @@
     "created_at": "2025-05-21T04:41:59.106756"
   },
   "651": {
+    "alert_id": "651",
     "home_id": "14",
     "device_id": "275",
     "alert_type": "oven_malfunction",
@@ -7812,6 +8463,7 @@
     "created_at": "2025-06-03T07:51:58.881493"
   },
   "652": {
+    "alert_id": "652",
     "home_id": "124",
     "device_id": "2584",
     "alert_type": "refrigerator_malfunction",
@@ -7824,6 +8476,7 @@
     "created_at": "2025-07-06T05:15:02.468092"
   },
   "653": {
+    "alert_id": "653",
     "home_id": "90",
     "device_id": "1879",
     "alert_type": "refrigerator_temperature_alert",
@@ -7836,6 +8489,7 @@
     "created_at": "2025-07-19T20:45:15.289207"
   },
   "654": {
+    "alert_id": "654",
     "home_id": "5",
     "device_id": "84",
     "alert_type": "bulb_malfunction",
@@ -7848,6 +8502,7 @@
     "created_at": "2025-05-03T14:46:48.414371"
   },
   "655": {
+    "alert_id": "655",
     "home_id": "106",
     "device_id": "2196",
     "alert_type": "bulb_malfunction",
@@ -7860,6 +8515,7 @@
     "created_at": "2025-05-12T17:01:19.166283"
   },
   "656": {
+    "alert_id": "656",
     "home_id": "34",
     "device_id": "703",
     "alert_type": "tv_malfunction",
@@ -7872,6 +8528,7 @@
     "created_at": "2025-06-03T00:01:27.504008"
   },
   "657": {
+    "alert_id": "657",
     "home_id": "110",
     "device_id": "2282",
     "alert_type": "refrigerator_malfunction",
@@ -7884,6 +8541,7 @@
     "created_at": "2025-07-22T17:44:51.947434"
   },
   "658": {
+    "alert_id": "658",
     "home_id": "106",
     "device_id": "2205",
     "alert_type": "refrigerator_malfunction",
@@ -7896,6 +8554,7 @@
     "created_at": "2025-06-09T09:44:22.771698"
   },
   "659": {
+    "alert_id": "659",
     "home_id": "95",
     "device_id": "1979",
     "alert_type": "thermostat_temperature_alert",
@@ -7908,6 +8567,7 @@
     "created_at": "2025-05-25T00:44:56.462305"
   },
   "660": {
+    "alert_id": "660",
     "home_id": "146",
     "device_id": "2965",
     "alert_type": "bulb_malfunction",
@@ -7920,6 +8580,7 @@
     "created_at": "2025-06-10T18:19:52.740489"
   },
   "661": {
+    "alert_id": "661",
     "home_id": "81",
     "device_id": "1668",
     "alert_type": "bulb_malfunction",
@@ -7932,6 +8593,7 @@
     "created_at": "2025-07-21T00:52:37.108712"
   },
   "662": {
+    "alert_id": "662",
     "home_id": "91",
     "device_id": "1902",
     "alert_type": "refrigerator_temperature_alert",
@@ -7944,6 +8606,7 @@
     "created_at": "2025-05-13T11:09:22.708116"
   },
   "663": {
+    "alert_id": "663",
     "home_id": "106",
     "device_id": "2201",
     "alert_type": "thermostat_offline",
@@ -7956,6 +8619,7 @@
     "created_at": "2025-06-01T04:58:12.860046"
   },
   "664": {
+    "alert_id": "664",
     "home_id": "22",
     "device_id": "436",
     "alert_type": "bulb_malfunction",
@@ -7968,6 +8632,7 @@
     "created_at": "2025-06-15T01:59:11.589159"
   },
   "665": {
+    "alert_id": "665",
     "home_id": "125",
     "device_id": "2602",
     "alert_type": "bulb_malfunction",
@@ -7980,6 +8645,7 @@
     "created_at": "2025-05-28T19:57:15.288930"
   },
   "666": {
+    "alert_id": "666",
     "home_id": "29",
     "device_id": "591",
     "alert_type": "bulb_malfunction",
@@ -7992,6 +8658,7 @@
     "created_at": "2025-05-08T16:10:17.483049"
   },
   "667": {
+    "alert_id": "667",
     "home_id": "15",
     "device_id": "297",
     "alert_type": "tv_malfunction",
@@ -8004,6 +8671,7 @@
     "created_at": "2025-06-02T06:11:44.108653"
   },
   "668": {
+    "alert_id": "668",
     "home_id": "63",
     "device_id": "1309",
     "alert_type": "speaker_offline",
@@ -8016,6 +8684,7 @@
     "created_at": "2025-06-14T04:07:51.951651"
   },
   "669": {
+    "alert_id": "669",
     "home_id": "8",
     "device_id": "160",
     "alert_type": "speaker_offline",
@@ -8028,6 +8697,7 @@
     "created_at": "2025-07-30T14:26:32.503803"
   },
   "670": {
+    "alert_id": "670",
     "home_id": "65",
     "device_id": "1337",
     "alert_type": "thermostat_temperature_alert",
@@ -8040,6 +8710,7 @@
     "created_at": "2025-07-06T06:04:41.515056"
   },
   "671": {
+    "alert_id": "671",
     "home_id": "37",
     "device_id": "754",
     "alert_type": "bulb_malfunction",
@@ -8052,6 +8723,7 @@
     "created_at": "2025-07-18T12:49:44.265576"
   },
   "672": {
+    "alert_id": "672",
     "home_id": "10",
     "device_id": "188",
     "alert_type": "bulb_malfunction",
@@ -8064,6 +8736,7 @@
     "created_at": "2025-05-25T04:43:18.470628"
   },
   "673": {
+    "alert_id": "673",
     "home_id": "38",
     "device_id": "784",
     "alert_type": "speaker_offline",
@@ -8076,6 +8749,7 @@
     "created_at": "2025-05-05T09:36:59.828967"
   },
   "674": {
+    "alert_id": "674",
     "home_id": "55",
     "device_id": "1148",
     "alert_type": "oven_overheating",
@@ -8088,6 +8762,7 @@
     "created_at": "2025-06-08T18:20:29.368190"
   },
   "675": {
+    "alert_id": "675",
     "home_id": "40",
     "device_id": "803",
     "alert_type": "bulb_malfunction",
@@ -8100,6 +8775,7 @@
     "created_at": "2025-05-11T11:15:57.189939"
   },
   "676": {
+    "alert_id": "676",
     "home_id": "150",
     "device_id": "3061",
     "alert_type": "thermostat_offline",
@@ -8112,6 +8788,7 @@
     "created_at": "2025-07-25T08:22:52.738807"
   },
   "677": {
+    "alert_id": "677",
     "home_id": "29",
     "device_id": "595",
     "alert_type": "bulb_malfunction",
@@ -8124,6 +8801,7 @@
     "created_at": "2025-06-30T00:00:48.458870"
   },
   "678": {
+    "alert_id": "678",
     "home_id": "91",
     "device_id": "1917",
     "alert_type": "tv_malfunction",
@@ -8136,6 +8814,7 @@
     "created_at": "2025-07-10T01:13:47.694189"
   },
   "679": {
+    "alert_id": "679",
     "home_id": "53",
     "device_id": "1096",
     "alert_type": "oven_overheating",
@@ -8148,6 +8827,7 @@
     "created_at": "2025-07-16T01:47:29.579621"
   },
   "680": {
+    "alert_id": "680",
     "home_id": "91",
     "device_id": "1900",
     "alert_type": "camera_motion_detected",
@@ -8160,6 +8840,7 @@
     "created_at": "2025-05-02T19:47:44.324388"
   },
   "681": {
+    "alert_id": "681",
     "home_id": "152",
     "device_id": "3098",
     "alert_type": "bulb_malfunction",
@@ -8172,6 +8853,7 @@
     "created_at": "2025-07-29T19:55:03.751274"
   },
   "682": {
+    "alert_id": "682",
     "home_id": "38",
     "device_id": "781",
     "alert_type": "refrigerator_malfunction",
@@ -8184,6 +8866,7 @@
     "created_at": "2025-05-11T11:39:42.336691"
   },
   "683": {
+    "alert_id": "683",
     "home_id": "136",
     "device_id": "2832",
     "alert_type": "oven_malfunction",
@@ -8196,6 +8879,7 @@
     "created_at": "2025-06-26T04:43:47.834495"
   },
   "684": {
+    "alert_id": "684",
     "home_id": "133",
     "device_id": "2779",
     "alert_type": "oven_overheating",
@@ -8208,6 +8892,7 @@
     "created_at": "2025-06-15T15:03:20.053018"
   },
   "685": {
+    "alert_id": "685",
     "home_id": "24",
     "device_id": "488",
     "alert_type": "refrigerator_temperature_alert",
@@ -8220,6 +8905,7 @@
     "created_at": "2025-07-01T22:26:10.792649"
   },
   "686": {
+    "alert_id": "686",
     "home_id": "68",
     "device_id": "1401",
     "alert_type": "oven_malfunction",
@@ -8232,6 +8918,7 @@
     "created_at": "2025-07-18T02:45:34.830884"
   },
   "687": {
+    "alert_id": "687",
     "home_id": "90",
     "device_id": "1883",
     "alert_type": "speaker_offline",
@@ -8244,6 +8931,7 @@
     "created_at": "2025-05-21T16:36:08.355749"
   },
   "688": {
+    "alert_id": "688",
     "home_id": "113",
     "device_id": "2337",
     "alert_type": "bulb_malfunction",
@@ -8256,6 +8944,7 @@
     "created_at": "2025-06-24T14:05:48.463834"
   },
   "689": {
+    "alert_id": "689",
     "home_id": "63",
     "device_id": "1293",
     "alert_type": "bulb_malfunction",
@@ -8268,6 +8957,7 @@
     "created_at": "2025-05-12T05:47:49.031120"
   },
   "690": {
+    "alert_id": "690",
     "home_id": "94",
     "device_id": "1957",
     "alert_type": "bulb_malfunction",
@@ -8280,6 +8970,7 @@
     "created_at": "2025-06-30T09:47:04.032745"
   },
   "691": {
+    "alert_id": "691",
     "home_id": "30",
     "device_id": "620",
     "alert_type": "oven_overheating",
@@ -8292,6 +8983,7 @@
     "created_at": "2025-06-05T05:48:27.724419"
   },
   "692": {
+    "alert_id": "692",
     "home_id": "28",
     "device_id": "574",
     "alert_type": "refrigerator_malfunction",
@@ -8304,6 +8996,7 @@
     "created_at": "2025-07-29T10:12:22.819369"
   },
   "693": {
+    "alert_id": "693",
     "home_id": "72",
     "device_id": "1481",
     "alert_type": "bulb_malfunction",
@@ -8316,6 +9009,7 @@
     "created_at": "2025-05-07T07:29:44.258260"
   },
   "694": {
+    "alert_id": "694",
     "home_id": "148",
     "device_id": "3002",
     "alert_type": "bulb_malfunction",
@@ -8328,6 +9022,7 @@
     "created_at": "2025-05-12T05:28:53.301253"
   },
   "695": {
+    "alert_id": "695",
     "home_id": "42",
     "device_id": "876",
     "alert_type": "speaker_offline",
@@ -8340,6 +9035,7 @@
     "created_at": "2025-07-14T03:46:59.649577"
   },
   "696": {
+    "alert_id": "696",
     "home_id": "37",
     "device_id": "761",
     "alert_type": "oven_malfunction",
@@ -8352,6 +9048,7 @@
     "created_at": "2025-06-21T16:30:22.153286"
   },
   "697": {
+    "alert_id": "697",
     "home_id": "33",
     "device_id": "671",
     "alert_type": "bulb_malfunction",
@@ -8364,6 +9061,7 @@
     "created_at": "2025-07-26T15:24:14.310448"
   },
   "698": {
+    "alert_id": "698",
     "home_id": "115",
     "device_id": "2376",
     "alert_type": "bulb_malfunction",
@@ -8376,6 +9074,7 @@
     "created_at": "2025-06-22T13:31:38.706965"
   },
   "699": {
+    "alert_id": "699",
     "home_id": "33",
     "device_id": "676",
     "alert_type": "camera_motion_detected",
@@ -8388,6 +9087,7 @@
     "created_at": "2025-05-02T19:47:44.484731"
   },
   "700": {
+    "alert_id": "700",
     "home_id": "31",
     "device_id": "631",
     "alert_type": "bulb_malfunction",
@@ -8400,6 +9100,7 @@
     "created_at": "2025-07-13T16:26:38.474007"
   },
   "701": {
+    "alert_id": "701",
     "home_id": "55",
     "device_id": "1133",
     "alert_type": "bulb_malfunction",
@@ -8412,6 +9113,7 @@
     "created_at": "2025-05-03T10:24:41.623954"
   },
   "702": {
+    "alert_id": "702",
     "home_id": "65",
     "device_id": "1333",
     "alert_type": "bulb_malfunction",
@@ -8424,6 +9126,7 @@
     "created_at": "2025-06-29T16:23:33.650513"
   },
   "703": {
+    "alert_id": "703",
     "home_id": "27",
     "device_id": "557",
     "alert_type": "speaker_offline",
@@ -8436,6 +9139,7 @@
     "created_at": "2025-07-07T06:22:20.854532"
   },
   "704": {
+    "alert_id": "704",
     "home_id": "92",
     "device_id": "1919",
     "alert_type": "bulb_malfunction",
@@ -8448,6 +9152,7 @@
     "created_at": "2025-07-31T09:34:21.621199"
   },
   "705": {
+    "alert_id": "705",
     "home_id": "3",
     "device_id": "48",
     "alert_type": "camera_offline",
@@ -8460,6 +9165,7 @@
     "created_at": "2025-06-03T19:44:05.970534"
   },
   "706": {
+    "alert_id": "706",
     "home_id": "20",
     "device_id": "407",
     "alert_type": "camera_offline",
@@ -8472,6 +9178,7 @@
     "created_at": "2025-05-11T12:50:33.868865"
   },
   "707": {
+    "alert_id": "707",
     "home_id": "119",
     "device_id": "2478",
     "alert_type": "oven_overheating",
@@ -8484,6 +9191,7 @@
     "created_at": "2025-07-02T09:08:25.499031"
   },
   "708": {
+    "alert_id": "708",
     "home_id": "90",
     "device_id": "1874",
     "alert_type": "bulb_malfunction",
@@ -8496,6 +9204,7 @@
     "created_at": "2025-07-02T15:07:30.731282"
   },
   "709": {
+    "alert_id": "709",
     "home_id": "42",
     "device_id": "863",
     "alert_type": "camera_offline",
@@ -8508,6 +9217,7 @@
     "created_at": "2025-07-28T08:19:03.675096"
   },
   "710": {
+    "alert_id": "710",
     "home_id": "22",
     "device_id": "447",
     "alert_type": "camera_motion_detected",
@@ -8520,6 +9230,7 @@
     "created_at": "2025-05-02T19:47:44.566212"
   },
   "711": {
+    "alert_id": "711",
     "home_id": "122",
     "device_id": "2538",
     "alert_type": "refrigerator_malfunction",
@@ -8532,6 +9243,7 @@
     "created_at": "2025-06-26T07:40:24.712152"
   },
   "712": {
+    "alert_id": "712",
     "home_id": "107",
     "device_id": "2232",
     "alert_type": "tv_malfunction",
@@ -8544,6 +9256,7 @@
     "created_at": "2025-07-13T03:04:49.204688"
   },
   "713": {
+    "alert_id": "713",
     "home_id": "89",
     "device_id": "1855",
     "alert_type": "bulb_malfunction",
@@ -8556,6 +9269,7 @@
     "created_at": "2025-05-19T09:25:04.888802"
   },
   "714": {
+    "alert_id": "714",
     "home_id": "108",
     "device_id": "2246",
     "alert_type": "speaker_offline",
@@ -8568,6 +9282,7 @@
     "created_at": "2025-06-14T08:55:17.219845"
   },
   "715": {
+    "alert_id": "715",
     "home_id": "128",
     "device_id": "2670",
     "alert_type": "tv_malfunction",
@@ -8580,6 +9295,7 @@
     "created_at": "2025-05-17T13:21:31.182970"
   },
   "716": {
+    "alert_id": "716",
     "home_id": "73",
     "device_id": "1527",
     "alert_type": "tv_malfunction",
@@ -8592,6 +9308,7 @@
     "created_at": "2025-06-21T01:24:10.151310"
   },
   "717": {
+    "alert_id": "717",
     "home_id": "52",
     "device_id": "1078",
     "alert_type": "speaker_offline",
@@ -8604,6 +9321,7 @@
     "created_at": "2025-06-26T05:13:30.900441"
   },
   "718": {
+    "alert_id": "718",
     "home_id": "100",
     "device_id": "2094",
     "alert_type": "bulb_malfunction",
@@ -8616,6 +9334,7 @@
     "created_at": "2025-06-23T08:11:24.208600"
   },
   "719": {
+    "alert_id": "719",
     "home_id": "8",
     "device_id": "150",
     "alert_type": "bulb_malfunction",
@@ -8628,6 +9347,7 @@
     "created_at": "2025-06-21T04:21:19.442666"
   },
   "720": {
+    "alert_id": "720",
     "home_id": "6",
     "device_id": "102",
     "alert_type": "bulb_malfunction",
@@ -8640,6 +9360,7 @@
     "created_at": "2025-07-04T02:28:56.178724"
   },
   "721": {
+    "alert_id": "721",
     "home_id": "91",
     "device_id": "1885",
     "alert_type": "bulb_malfunction",
@@ -8652,6 +9373,7 @@
     "created_at": "2025-07-07T08:22:10.364190"
   },
   "722": {
+    "alert_id": "722",
     "home_id": "120",
     "device_id": "2500",
     "alert_type": "speaker_offline",
@@ -8664,6 +9386,7 @@
     "created_at": "2025-05-13T04:09:11.935594"
   },
   "723": {
+    "alert_id": "723",
     "home_id": "132",
     "device_id": "2743",
     "alert_type": "bulb_malfunction",
@@ -8676,6 +9399,7 @@
     "created_at": "2025-05-04T07:53:46.315567"
   },
   "724": {
+    "alert_id": "724",
     "home_id": "19",
     "device_id": "368",
     "alert_type": "bulb_malfunction",
@@ -8688,6 +9412,7 @@
     "created_at": "2025-07-30T19:14:19.583670"
   },
   "725": {
+    "alert_id": "725",
     "home_id": "53",
     "device_id": "1087",
     "alert_type": "bulb_malfunction",
@@ -8700,6 +9425,7 @@
     "created_at": "2025-06-24T06:04:33.110411"
   },
   "726": {
+    "alert_id": "726",
     "home_id": "137",
     "device_id": "2856",
     "alert_type": "tv_malfunction",
@@ -8712,6 +9438,7 @@
     "created_at": "2025-06-08T16:14:52.531398"
   },
   "727": {
+    "alert_id": "727",
     "home_id": "55",
     "device_id": "1141",
     "alert_type": "thermostat_temperature_alert",
@@ -8724,6 +9451,7 @@
     "created_at": "2025-05-17T12:25:16.324895"
   },
   "728": {
+    "alert_id": "728",
     "home_id": "43",
     "device_id": "883",
     "alert_type": "bulb_malfunction",
@@ -8736,6 +9464,7 @@
     "created_at": "2025-07-02T11:32:52.613101"
   },
   "729": {
+    "alert_id": "729",
     "home_id": "131",
     "device_id": "2715",
     "alert_type": "bulb_malfunction",
@@ -8748,6 +9477,7 @@
     "created_at": "2025-07-23T00:03:04.298043"
   },
   "730": {
+    "alert_id": "730",
     "home_id": "123",
     "device_id": "2553",
     "alert_type": "bulb_malfunction",
@@ -8760,6 +9490,7 @@
     "created_at": "2025-06-17T16:20:13.649904"
   },
   "731": {
+    "alert_id": "731",
     "home_id": "132",
     "device_id": "2746",
     "alert_type": "bulb_malfunction",
@@ -8772,6 +9503,7 @@
     "created_at": "2025-07-26T00:46:35.410697"
   },
   "732": {
+    "alert_id": "732",
     "home_id": "78",
     "device_id": "1602",
     "alert_type": "bulb_malfunction",
@@ -8784,6 +9516,7 @@
     "created_at": "2025-06-19T00:54:54.957630"
   },
   "733": {
+    "alert_id": "733",
     "home_id": "49",
     "device_id": "1008",
     "alert_type": "speaker_offline",
@@ -8796,6 +9529,7 @@
     "created_at": "2025-05-15T08:03:20.384870"
   },
   "734": {
+    "alert_id": "734",
     "home_id": "32",
     "device_id": "652",
     "alert_type": "thermostat_offline",
@@ -8808,6 +9542,7 @@
     "created_at": "2025-07-30T19:10:47.919879"
   },
   "735": {
+    "alert_id": "735",
     "home_id": "150",
     "device_id": "3071",
     "alert_type": "speaker_offline",
@@ -8820,6 +9555,7 @@
     "created_at": "2025-07-16T10:54:30.639596"
   },
   "736": {
+    "alert_id": "736",
     "home_id": "110",
     "device_id": "2291",
     "alert_type": "speaker_offline",
@@ -8832,6 +9568,7 @@
     "created_at": "2025-06-13T19:42:07.392692"
   },
   "737": {
+    "alert_id": "737",
     "home_id": "72",
     "device_id": "1504",
     "alert_type": "speaker_offline",
@@ -8844,6 +9581,7 @@
     "created_at": "2025-05-18T22:16:58.599224"
   },
   "738": {
+    "alert_id": "738",
     "home_id": "98",
     "device_id": "2047",
     "alert_type": "bulb_malfunction",
@@ -8856,6 +9594,7 @@
     "created_at": "2025-06-25T23:10:32.404274"
   },
   "739": {
+    "alert_id": "739",
     "home_id": "49",
     "device_id": "995",
     "alert_type": "bulb_malfunction",
@@ -8868,6 +9607,7 @@
     "created_at": "2025-06-16T22:32:27.621065"
   },
   "740": {
+    "alert_id": "740",
     "home_id": "104",
     "device_id": "2158",
     "alert_type": "bulb_malfunction",
@@ -8880,6 +9620,7 @@
     "created_at": "2025-07-05T19:01:51.228266"
   },
   "741": {
+    "alert_id": "741",
     "home_id": "133",
     "device_id": "2784",
     "alert_type": "tv_malfunction",
@@ -8892,6 +9633,7 @@
     "created_at": "2025-07-18T10:05:35.401629"
   },
   "742": {
+    "alert_id": "742",
     "home_id": "115",
     "device_id": "2380",
     "alert_type": "camera_motion_detected",
@@ -8904,6 +9646,7 @@
     "created_at": "2025-05-02T19:47:44.555095"
   },
   "743": {
+    "alert_id": "743",
     "home_id": "89",
     "device_id": "1864",
     "alert_type": "tv_malfunction",
@@ -8916,6 +9659,7 @@
     "created_at": "2025-05-21T09:00:44.431142"
   },
   "744": {
+    "alert_id": "744",
     "home_id": "40",
     "device_id": "820",
     "alert_type": "speaker_offline",
@@ -8928,6 +9672,7 @@
     "created_at": "2025-05-22T03:01:03.601598"
   },
   "745": {
+    "alert_id": "745",
     "home_id": "132",
     "device_id": "2753",
     "alert_type": "refrigerator_temperature_alert",
@@ -8940,6 +9685,7 @@
     "created_at": "2025-07-21T07:05:34.954337"
   },
   "746": {
+    "alert_id": "746",
     "home_id": "60",
     "device_id": "1237",
     "alert_type": "bulb_malfunction",
@@ -8952,6 +9698,7 @@
     "created_at": "2025-06-09T19:13:37.432338"
   },
   "747": {
+    "alert_id": "747",
     "home_id": "22",
     "device_id": "436",
     "alert_type": "bulb_malfunction",
@@ -8964,6 +9711,7 @@
     "created_at": "2025-06-05T07:06:08.373209"
   },
   "748": {
+    "alert_id": "748",
     "home_id": "31",
     "device_id": "643",
     "alert_type": "oven_malfunction",
@@ -8976,6 +9724,7 @@
     "created_at": "2025-06-17T19:40:51.090315"
   },
   "749": {
+    "alert_id": "749",
     "home_id": "98",
     "device_id": "2038",
     "alert_type": "bulb_malfunction",
@@ -8988,6 +9737,7 @@
     "created_at": "2025-06-25T05:25:23.989870"
   },
   "750": {
+    "alert_id": "750",
     "home_id": "23",
     "device_id": "462",
     "alert_type": "bulb_malfunction",
@@ -9000,6 +9750,7 @@
     "created_at": "2025-05-12T12:31:21.304704"
   },
   "751": {
+    "alert_id": "751",
     "home_id": "79",
     "device_id": "1624",
     "alert_type": "bulb_malfunction",
@@ -9012,6 +9763,7 @@
     "created_at": "2025-05-27T01:23:32.808170"
   },
   "752": {
+    "alert_id": "752",
     "home_id": "4",
     "device_id": "58",
     "alert_type": "bulb_malfunction",
@@ -9024,6 +9776,7 @@
     "created_at": "2025-07-19T15:48:07.344398"
   },
   "753": {
+    "alert_id": "753",
     "home_id": "33",
     "device_id": "677",
     "alert_type": "refrigerator_temperature_alert",
@@ -9036,6 +9789,7 @@
     "created_at": "2025-07-21T13:06:44.592165"
   },
   "754": {
+    "alert_id": "754",
     "home_id": "144",
     "device_id": "2948",
     "alert_type": "speaker_offline",
@@ -9048,6 +9802,7 @@
     "created_at": "2025-07-05T01:01:01.748202"
   },
   "755": {
+    "alert_id": "755",
     "home_id": "61",
     "device_id": "1270",
     "alert_type": "refrigerator_temperature_alert",
@@ -9060,6 +9815,7 @@
     "created_at": "2025-05-05T21:31:52.342726"
   },
   "756": {
+    "alert_id": "756",
     "home_id": "84",
     "device_id": "1734",
     "alert_type": "bulb_malfunction",
@@ -9072,6 +9828,7 @@
     "created_at": "2025-06-22T20:17:02.927532"
   },
   "757": {
+    "alert_id": "757",
     "home_id": "31",
     "device_id": "646",
     "alert_type": "speaker_offline",
@@ -9084,6 +9841,7 @@
     "created_at": "2025-05-18T19:54:35.861411"
   },
   "758": {
+    "alert_id": "758",
     "home_id": "55",
     "device_id": "1152",
     "alert_type": "speaker_offline",
@@ -9096,6 +9854,7 @@
     "created_at": "2025-05-31T09:39:40.556139"
   },
   "759": {
+    "alert_id": "759",
     "home_id": "24",
     "device_id": "485",
     "alert_type": "thermostat_offline",
@@ -9108,6 +9867,7 @@
     "created_at": "2025-07-16T04:38:40.858551"
   },
   "760": {
+    "alert_id": "760",
     "home_id": "100",
     "device_id": "2100",
     "alert_type": "oven_overheating",
@@ -9120,6 +9880,7 @@
     "created_at": "2025-07-15T20:38:26.489333"
   },
   "761": {
+    "alert_id": "761",
     "home_id": "104",
     "device_id": "2162",
     "alert_type": "camera_motion_detected",
@@ -9132,6 +9893,7 @@
     "created_at": "2025-05-06T16:09:51.661860"
   },
   "762": {
+    "alert_id": "762",
     "home_id": "78",
     "device_id": "1617",
     "alert_type": "speaker_offline",
@@ -9144,6 +9906,7 @@
     "created_at": "2025-07-10T06:44:18.485846"
   },
   "763": {
+    "alert_id": "763",
     "home_id": "10",
     "device_id": "199",
     "alert_type": "camera_offline",
@@ -9156,6 +9919,7 @@
     "created_at": "2025-05-09T09:27:31.848854"
   },
   "764": {
+    "alert_id": "764",
     "home_id": "149",
     "device_id": "3040",
     "alert_type": "oven_malfunction",
@@ -9168,6 +9932,7 @@
     "created_at": "2025-06-30T00:45:17.797198"
   },
   "765": {
+    "alert_id": "765",
     "home_id": "36",
     "device_id": "736",
     "alert_type": "refrigerator_temperature_alert",
@@ -9180,6 +9945,7 @@
     "created_at": "2025-05-30T00:54:51.033241"
   },
   "766": {
+    "alert_id": "766",
     "home_id": "19",
     "device_id": "392",
     "alert_type": "tv_malfunction",
@@ -9192,6 +9958,7 @@
     "created_at": "2025-06-25T01:47:50.403292"
   },
   "767": {
+    "alert_id": "767",
     "home_id": "47",
     "device_id": "970",
     "alert_type": "oven_malfunction",
@@ -9204,6 +9971,7 @@
     "created_at": "2025-06-18T18:19:43.701248"
   },
   "768": {
+    "alert_id": "768",
     "home_id": "93",
     "device_id": "1939",
     "alert_type": "bulb_malfunction",
@@ -9216,6 +9984,7 @@
     "created_at": "2025-06-06T03:59:40.945773"
   },
   "769": {
+    "alert_id": "769",
     "home_id": "27",
     "device_id": "546",
     "alert_type": "thermostat_offline",
@@ -9228,6 +9997,7 @@
     "created_at": "2025-05-24T18:17:00.725267"
   },
   "770": {
+    "alert_id": "770",
     "home_id": "34",
     "device_id": "691",
     "alert_type": "thermostat_offline",
@@ -9240,6 +10010,7 @@
     "created_at": "2025-07-24T16:16:22.766826"
   },
   "771": {
+    "alert_id": "771",
     "home_id": "52",
     "device_id": "1082",
     "alert_type": "tv_malfunction",
@@ -9252,6 +10023,7 @@
     "created_at": "2025-06-14T01:50:02.514146"
   },
   "772": {
+    "alert_id": "772",
     "home_id": "71",
     "device_id": "1462",
     "alert_type": "refrigerator_malfunction",
@@ -9264,6 +10036,7 @@
     "created_at": "2025-07-02T12:31:32.172217"
   },
   "773": {
+    "alert_id": "773",
     "home_id": "97",
     "device_id": "2016",
     "alert_type": "bulb_malfunction",
@@ -9276,6 +10049,7 @@
     "created_at": "2025-07-13T09:54:33.051168"
   },
   "774": {
+    "alert_id": "774",
     "home_id": "43",
     "device_id": "892",
     "alert_type": "oven_overheating",
@@ -9288,6 +10062,7 @@
     "created_at": "2025-06-11T07:27:12.500264"
   },
   "775": {
+    "alert_id": "775",
     "home_id": "123",
     "device_id": "2559",
     "alert_type": "camera_offline",
@@ -9300,6 +10075,7 @@
     "created_at": "2025-05-07T17:41:46.062187"
   },
   "776": {
+    "alert_id": "776",
     "home_id": "26",
     "device_id": "526",
     "alert_type": "refrigerator_malfunction",
@@ -9312,6 +10088,7 @@
     "created_at": "2025-07-30T05:06:52.004875"
   },
   "777": {
+    "alert_id": "777",
     "home_id": "48",
     "device_id": "986",
     "alert_type": "refrigerator_temperature_alert",
@@ -9324,6 +10101,7 @@
     "created_at": "2025-05-30T18:59:44.978564"
   },
   "778": {
+    "alert_id": "778",
     "home_id": "88",
     "device_id": "1835",
     "alert_type": "speaker_offline",
@@ -9336,6 +10114,7 @@
     "created_at": "2025-07-01T21:03:07.179677"
   },
   "779": {
+    "alert_id": "779",
     "home_id": "78",
     "device_id": "1604",
     "alert_type": "bulb_malfunction",
@@ -9348,6 +10127,7 @@
     "created_at": "2025-07-05T23:37:12.811864"
   },
   "780": {
+    "alert_id": "780",
     "home_id": "91",
     "device_id": "1896",
     "alert_type": "bulb_malfunction",
@@ -9360,6 +10140,7 @@
     "created_at": "2025-07-12T10:57:34.686610"
   },
   "781": {
+    "alert_id": "781",
     "home_id": "144",
     "device_id": "2951",
     "alert_type": "tv_malfunction",
@@ -9372,6 +10153,7 @@
     "created_at": "2025-06-10T23:50:11.256170"
   },
   "782": {
+    "alert_id": "782",
     "home_id": "104",
     "device_id": "2179",
     "alert_type": "tv_malfunction",
@@ -9384,6 +10166,7 @@
     "created_at": "2025-07-17T04:21:21.899122"
   },
   "783": {
+    "alert_id": "783",
     "home_id": "89",
     "device_id": "1848",
     "alert_type": "bulb_malfunction",

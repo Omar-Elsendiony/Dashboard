@@ -1,6 +1,6 @@
 import json
 import re
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
 class RetrieveUserProfile(Tool):
@@ -14,11 +14,12 @@ class RetrieveUserProfile(Tool):
                phone_number: str = None,
                email: str = None) -> str:
         """
-        Retrieve user profiles matching any combination of the given fields. All fields are optional.
-        Phone numbers are compared by digits only (ignoring formatting characters) and support suffix matching.
-        Email comparison is case-insensitive.
+        Retrieve user profiles matching any combination of the given fields.
+        Adds `primary_home_info`, which is the home record whose address_id
+        matches the user's primary_address_id (or null if none).
         """
         users = data.get("users", {})
+        homes = data.get("homes", {})
         results = []
 
         def normalize_phone(p) -> str:
@@ -30,6 +31,7 @@ class RetrieveUserProfile(Tool):
         target_email = email.lower() if email else None
 
         for user in users.values():
+            # Apply filters
             if user_id and user.get("user_id") != user_id:
                 continue
             if first_name and user.get("first_name") != first_name:
@@ -40,17 +42,34 @@ class RetrieveUserProfile(Tool):
                 continue
             if role and user.get("role") != role:
                 continue
+
             if phone_number:
                 user_phone = normalize_phone(user.get("phone_number"))
                 if not user_phone.endswith(target_phone):
                     continue
+
             if target_email:
                 user_email = user.get("email", "").lower()
                 if user_email != target_email:
                     continue
-            results.append(user)
 
-        return json.dumps(results if results else {"error": "No matching user profiles found"})
+            # Find the home whose address_id matches this user's primary_address_id
+            primary_addr_id = user.get("primary_address_id")
+            primary_home: Optional[Dict[str, Any]] = None
+            for h in homes.values():
+                if h.get("address_id") == primary_addr_id:
+                    primary_home = h
+                    break
+
+            # Build enriched user profile
+            profile = user.copy()
+            profile["primary_home_info"] = primary_home  # may be None
+
+            results.append(profile)
+
+        if not results:
+            return json.dumps({"error": "No matching user profiles found"})
+        return json.dumps(results)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -61,7 +80,11 @@ class RetrieveUserProfile(Tool):
             "type": "function",
             "function": {
                 "name": "retrieve_user_profile",
-                "description": "Retrieve user profiles based on any combination of ID, name, DOB, role, or contact details. Phone comparison ignores formatting and supports suffix matching. Email is case-insensitive.",
+                "description": (
+                    "Retrieve user profiles based on any combination of ID, name, DOB, role, or contact details. "
+                    "Phone comparison ignores formatting and supports suffix matching. Email is case-insensitive. "
+                    "Adds `primary_home_info`, the home record matching the user's primary_address_id (or null)."
+                ),
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -83,7 +106,7 @@ class RetrieveUserProfile(Tool):
                         },
                         "role": {
                             "type": "string",
-                            "description": "Role of the user (Owner, Partner, Child, Guest, Servant)"
+                            "description": "Role of the user (Parent, Child, Guest, Servant)"
                         },
                         "phone_number": {
                             "type": "string",
