@@ -430,7 +430,7 @@ def tracker():
         # Define the scope and credentials
         tasks_info = run_with_timeout(
         get_sheet_data, 
-        args=('Amazon', 'Automated Tracker'),
+        args=('Amazon Agentic - Automated Tracking', 'Automated Tracker'),
         timeout_seconds=15
         )
         
