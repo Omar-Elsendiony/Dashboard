@@ -464,7 +464,7 @@ def tracker():
 
         team_structure = run_with_timeout(
         get_sheet_data, 
-        args=('Amazon Agentic - Automated Tracking', 'Team Structure Aug 4 - Aug 8'),
+        args=('Amazon Agentic - Automated Tracking', 'Team Structure'),
         timeout_seconds=15
         )
         
