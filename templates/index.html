@@ -1237,10 +1237,29 @@
                 
                 paramInputs.forEach(input => {
                     const paramName = input.dataset.param;
-                    const value = input.value.trim();
+                    const paramVal = input.value.trim();
+                    if (Number(paramVal) !== NaN && paramVal !== '') {
+                        if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to')) {
+                            parameters[paramName] = paramVal; // Keep as string for IDs
+                        }
+                        else {
+                            parameters[paramName] = Number(paramVal);
+                        }
+                    } else if (paramVal === 'true' || paramVal === 'false') {
+                        parameters[paramName] = (paramVal === 'true');
+                    } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
+                        try {
+                            parameters[paramName] = JSON.parse(paramVal);
+                        } catch (e) {
+                            parameters[paramName] = paramVal; // Fallback to string if parsing fails
+                        }
+                    } else {
+                        parameters[paramName] = paramVal;
+                    }
+                    /* const value = input.value.trim();
                     if (value !== '') {
                         parameters[paramName] = value;
-                    }
+                    } */
                 });
                 // console.log(actionEl.querySelector('.response-content'))
                 output = actionEl.querySelector('.response-content');

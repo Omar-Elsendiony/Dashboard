@@ -22,12 +22,12 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5) 
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=8) 
 
-# app.config['SESSION_TYPE'] = 'filesystem' 
+app.config['SESSION_TYPE'] = 'filesystem' 
 
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ###################### GLOBAL ENVIRONMENTS ##################################
@@ -174,13 +174,10 @@ def create_tools_class(imports_set, invoke_methods):
 
 class Tools:
 """
-    print("Imports code:", imports_code)
-    print("Invoke methods:", invoke_methods)
     for invoke_method in invoke_methods:
         class_code += ("    @staticmethod\n" + invoke_method + "\n\n")
     # Execute the code and return the class
     namespace = {}
-    print(class_code)
     exec(class_code, namespace)
     # return namespace['Tools']
     # session["tools_class_code"] = class_code 
@@ -230,7 +227,6 @@ def env_interface():
                 for api_file in API_files:
                     if api_file.endswith(".py") and not api_file.startswith("__"):
                         file_path = os.path.join(INTERFACE_PATH, api_file)
-                        # print(f"Processing file: {file_path}")
                         try:
                             function_info, invoke_method, imports = extract_file_info(file_path)
                             # print(f"Extracted function info: {function_info}")
@@ -325,7 +321,7 @@ def execute_api():
             continue
 
         # Skip IDs (do not modify or parse)
-        if "id" == argument.lower() or "_id" in argument.lower() or "by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower():
+        if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower():
             cleaned_arguments[argument] = argument_value
             continue
 
@@ -337,8 +333,6 @@ def execute_api():
 
     # Replace original dict
     arguments = cleaned_arguments
-
-    # print("Received data for API execution:", passed_data)
     
     # import importlib
     # import tools  
