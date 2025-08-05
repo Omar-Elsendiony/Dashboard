@@ -24,10 +24,10 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=8) 
 
-app.config['SESSION_TYPE'] = 'filesystem' 
+# app.config['SESSION_TYPE'] = 'filesystem' 
 
-# app.config['SESSION_TYPE'] = 'redis'
-# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+app.config['SESSION_TYPE'] = 'redis'
+app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ###################### GLOBAL ENVIRONMENTS ##################################
@@ -199,7 +199,7 @@ def env_interface():
             # print(environment, session.get("environment"))
             if environment != session.get("environment"):
                 g.data.clear()
-                ENVS_PATH = "envs"
+                # ENVS_PATH = "envs"
                 # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
                 # data_files = os.listdir(DATA_PATH)
                 # # print("Loaded data:")
