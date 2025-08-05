@@ -22,9 +22,10 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
-
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5) 
-# app.config['SESSION_TYPE'] = 'filesystem'   
+
+# app.config['SESSION_TYPE'] = 'filesystem' 
+
 app.config['SESSION_TYPE'] = 'redis'
 app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
@@ -202,17 +203,17 @@ def env_interface():
             if environment != session.get("environment"):
                 g.data.clear()
                 ENVS_PATH = "envs"
-                DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-                data_files = os.listdir(DATA_PATH)
-                # print("Loaded data:")
-                for data_file in data_files:
-                    if data_file.endswith(".json"):
-                        data_file_path = os.path.join(DATA_PATH, data_file)
-                        with open(data_file_path, "r") as file:
-                            g.data[data_file.split('.')[0]] = json.load(file)
+                # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
+                # data_files = os.listdir(DATA_PATH)
+                # # print("Loaded data:")
+                # for data_file in data_files:
+                #     if data_file.endswith(".json"):
+                #         data_file_path = os.path.join(DATA_PATH, data_file)
+                #         with open(data_file_path, "r") as file:
+                #             g.data[data_file.split('.')[0]] = json.load(file)
                 session["environment"] = environment
                 session["interface"] = interface
-                session["data"] = g.data
+                # session["data"] = g.data
                 # print("data", g.data)
             
             # print(session["environment"], session["interface"])
@@ -256,7 +257,7 @@ def env_interface():
                 session["imports_set"] = (importsSet)
                 session["invoke_methods"] = invoke_methods
                 
-                print("Imports set:", session["imports_set"])
+                # print("Imports set:", session["imports_set"])
                 return jsonify({
                     'status': 'success',
                     'message': 'Environment and interface selected successfully',
@@ -301,6 +302,18 @@ def execute_api():
             'message': 'API name is required'
         }), 400
     
+    environment = passed_data.get('environment', session.get("environment"))
+    ENVS_PATH = "envs"
+    DATA_PATH = f"{ENVS_PATH}/{environment}/data"
+    data_files = os.listdir(DATA_PATH)
+    # print("Loaded data:")
+    for data_file in data_files:
+        if data_file.endswith(".json"):
+            data_file_path = os.path.join(DATA_PATH, data_file)
+            with open(data_file_path, "r") as file:
+                g.data[data_file.split('.')[0]] = json.load(file)
+                
+    
     arguments = passed_data.get('parameters', {})
     cleaned_arguments = {}
 
@@ -340,7 +353,7 @@ def execute_api():
             # print(g.data)
             # Dynamically call the method with the provided arguments
             result = getattr(tools_instance, api_name)(data=g.data, **arguments)
-            print(f"Result from API {api_name}: {result}")
+            # print(f"Result from API {api_name}: {result}")
             return jsonify({
                 'output': json.loads(result) if isinstance(result, str) else result
             }), 200
