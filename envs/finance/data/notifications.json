@@ -1,0 +1,3782 @@
+{
+    "1": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "meadowsmary@snyder.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.416924",
+      "reference_id": "208",
+      "notification_id": "1"
+    },
+    "2": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "scott43@elliott-hernandez.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.420988",
+      "created_at": "2025-08-04T23:41:24.422193",
+      "reference_id": "527",
+      "notification_id": "2"
+    },
+    "3": {
+      "type": "report",
+      "class": "trades",
+      "email": "danielle64@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.425187",
+      "reference_id": "2000",
+      "notification_id": "3"
+    },
+    "4": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "phillip27@wolfe.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.427398",
+      "reference_id": "97",
+      "notification_id": "4"
+    },
+    "5": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "bbush@martin.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.429396",
+      "created_at": "2025-08-04T23:41:24.431725",
+      "reference_id": "558",
+      "notification_id": "5"
+    },
+    "6": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "lindsay78@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.434717",
+      "reference_id": "470",
+      "notification_id": "6"
+    },
+    "7": {
+      "type": "report",
+      "class": "investors",
+      "email": "zwelch@brown.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.43575",
+      "reference_id": "6",
+      "notification_id": "7"
+    },
+    "8": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "brandi17@beck.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.43771",
+      "created_at": "2025-08-04T23:41:24.43771",
+      "reference_id": "45",
+      "notification_id": "8"
+    },
+    "9": {
+      "type": "alert",
+      "class": "trades",
+      "email": "wstewart@example.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.440425",
+      "created_at": "2025-08-04T23:41:24.440425",
+      "reference_id": "321",
+      "notification_id": "9"
+    },
+    "10": {
+      "type": "report",
+      "class": "trades",
+      "email": "danielle64@example.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.443843",
+      "reference_id": "1354",
+      "notification_id": "10"
+    },
+    "11": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "znelson@rivera.info",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.446844",
+      "reference_id": "47",
+      "notification_id": "11"
+    },
+    "12": {
+      "type": "report",
+      "class": "investors",
+      "email": "taylorvictoria@cabrera.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.448834",
+      "reference_id": "62",
+      "notification_id": "12"
+    },
+    "13": {
+      "type": "report",
+      "class": "documents",
+      "email": "jamesshawn@example.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.450864",
+      "reference_id": "651",
+      "notification_id": "13"
+    },
+    "14": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "barbara10@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.452823",
+      "created_at": "2025-08-04T23:41:24.454286",
+      "reference_id": "522",
+      "notification_id": "14"
+    },
+    "15": {
+      "type": "alert",
+      "class": "funds",
+      "email": "kimberly39@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.456281",
+      "reference_id": "104",
+      "notification_id": "15"
+    },
+    "16": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "jcannon@campbell.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.458276",
+      "created_at": "2025-08-04T23:41:24.458276",
+      "reference_id": "527",
+      "notification_id": "16"
+    },
+    "17": {
+      "type": "alert",
+      "class": "investors",
+      "email": "mwoods@morris-brewer.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.459481",
+      "reference_id": "44",
+      "notification_id": "17"
+    },
+    "18": {
+      "type": "alert",
+      "class": "funds",
+      "email": "kimberly39@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.461183",
+      "created_at": "2025-08-04T23:41:24.462184",
+      "reference_id": "117",
+      "notification_id": "18"
+    },
+    "19": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "prattsue@li.biz",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.466172",
+      "reference_id": "420",
+      "notification_id": "19"
+    },
+    "20": {
+      "type": "alert",
+      "class": "trades",
+      "email": "brittany58@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.469164",
+      "reference_id": "1119",
+      "notification_id": "20"
+    },
+    "21": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "davidcaldwell@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.471762",
+      "created_at": "2025-08-04T23:41:24.471762",
+      "reference_id": "426",
+      "notification_id": "21"
+    },
+    "22": {
+      "type": "alert",
+      "class": "trades",
+      "email": "alexistyler@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.473757",
+      "reference_id": "718",
+      "notification_id": "22"
+    },
+    "23": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "timothyalvarado@cruz.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.475837",
+      "created_at": "2025-08-04T23:41:24.475837",
+      "reference_id": "216",
+      "notification_id": "23"
+    },
+    "24": {
+      "type": "alert",
+      "class": "investors",
+      "email": "charlesharris@rodriguez.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.476953",
+      "created_at": "2025-08-04T23:41:24.476953",
+      "reference_id": "145",
+      "notification_id": "24"
+    },
+    "25": {
+      "type": "alert",
+      "class": "funds",
+      "email": "alexistyler@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.479041",
+      "reference_id": "26",
+      "notification_id": "25"
+    },
+    "26": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "jwelch@davidson.biz",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.481451",
+      "reference_id": "196",
+      "notification_id": "26"
+    },
+    "27": {
+      "type": "alert",
+      "class": "documents",
+      "email": "courtneyconner@example.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.483017",
+      "created_at": "2025-08-04T23:41:24.484746",
+      "reference_id": "278",
+      "notification_id": "27"
+    },
+    "28": {
+      "type": "report",
+      "class": "reports",
+      "email": "courtneyconner@example.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.486375",
+      "created_at": "2025-08-04T23:41:24.486375",
+      "reference_id": "419",
+      "notification_id": "28"
+    },
+    "29": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "millertodd@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.488161",
+      "reference_id": "569",
+      "notification_id": "29"
+    },
+    "30": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "zhuang@blevins-ballard.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.488712",
+      "created_at": "2025-08-04T23:41:24.490253",
+      "reference_id": "40",
+      "notification_id": "30"
+    },
+    "31": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "davisphillip@levy-lewis.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.493245",
+      "created_at": "2025-08-04T23:41:24.493245",
+      "reference_id": "190",
+      "notification_id": "31"
+    },
+    "32": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "rachelramos@davis.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.49524",
+      "reference_id": "309",
+      "notification_id": "32"
+    },
+    "33": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "jenna88@vance-york.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.498247",
+      "created_at": "2025-08-04T23:41:24.498247",
+      "reference_id": "227",
+      "notification_id": "33"
+    },
+    "34": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "rosshannah@lewis.info",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.500852",
+      "reference_id": "63",
+      "notification_id": "34"
+    },
+    "35": {
+      "type": "alert",
+      "class": "investors",
+      "email": "gentrygregory@peck.biz",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.501855",
+      "created_at": "2025-08-04T23:41:24.501855",
+      "reference_id": "45",
+      "notification_id": "35"
+    },
+    "36": {
+      "type": "alert",
+      "class": "documents",
+      "email": "courtneyconner@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.503847",
+      "reference_id": "319",
+      "notification_id": "36"
+    },
+    "37": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "haroldhorne@tran.biz",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.505849",
+      "created_at": "2025-08-04T23:41:24.505849",
+      "reference_id": "536",
+      "notification_id": "37"
+    },
+    "38": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "michael23@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.507837",
+      "reference_id": "1049",
+      "notification_id": "38"
+    },
+    "39": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "regina78@ballard.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.509875",
+      "reference_id": "420",
+      "notification_id": "39"
+    },
+    "40": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "duncanashley@navarro.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.511826",
+      "reference_id": "70",
+      "notification_id": "40"
+    },
+    "41": {
+      "type": "report",
+      "class": "documents",
+      "email": "john21@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.514818",
+      "reference_id": "715",
+      "notification_id": "41"
+    },
+    "42": {
+      "type": "reminder",
+      "class": "funds",
+      "email": "reynoldsjulie@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.51752",
+      "reference_id": "79",
+      "notification_id": "42"
+    },
+    "43": {
+      "type": "alert",
+      "class": "documents",
+      "email": "hickmannatasha@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.519512",
+      "reference_id": "400",
+      "notification_id": "43"
+    },
+    "44": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "wheelersean@warner.biz",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.520508",
+      "created_at": "2025-08-04T23:41:24.520508",
+      "reference_id": "61",
+      "notification_id": "44"
+    },
+    "45": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "colelisa@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.521707",
+      "reference_id": "94",
+      "notification_id": "45"
+    },
+    "46": {
+      "type": "alert",
+      "class": "investors",
+      "email": "igonzalez@hayes.info",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.523746",
+      "reference_id": "15",
+      "notification_id": "46"
+    },
+    "47": {
+      "type": "report",
+      "class": "investors",
+      "email": "xmoran@chavez.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.524735",
+      "reference_id": "221",
+      "notification_id": "47"
+    },
+    "48": {
+      "type": "report",
+      "class": "commitments",
+      "email": "wardsheryl@weber.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.525697",
+      "created_at": "2025-08-04T23:41:24.525697",
+      "reference_id": "225",
+      "notification_id": "48"
+    },
+    "49": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "brian29@stark.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.527735",
+      "reference_id": "431",
+      "notification_id": "49"
+    },
+    "50": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "chad34@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.530686",
+      "created_at": "2025-08-04T23:41:24.531684",
+      "reference_id": "87",
+      "notification_id": "50"
+    },
+    "51": {
+      "type": "alert",
+      "class": "reports",
+      "email": "pwallace@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.533837",
+      "created_at": "2025-08-04T23:41:24.533837",
+      "reference_id": "139",
+      "notification_id": "51"
+    },
+    "52": {
+      "type": "subscription_update",
+      "class": "commitments",
+      "email": "icraig@rich-henderson.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.535881",
+      "reference_id": "193",
+      "notification_id": "52"
+    },
+    "53": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "millertodd@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.537036",
+      "created_at": "2025-08-04T23:41:24.537036",
+      "reference_id": "487",
+      "notification_id": "53"
+    },
+    "54": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "hickmannatasha@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.53858",
+      "created_at": "2025-08-04T23:41:24.53858",
+      "reference_id": "102",
+      "notification_id": "54"
+    },
+    "55": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "jacobconrad@lewis-summers.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.540147",
+      "reference_id": "168",
+      "notification_id": "55"
+    },
+    "56": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "teresa28@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.541877",
+      "reference_id": "136",
+      "notification_id": "56"
+    },
+    "57": {
+      "type": "alert",
+      "class": "funds",
+      "email": "alexistyler@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.543366",
+      "created_at": "2025-08-04T23:41:24.543366",
+      "reference_id": "26",
+      "notification_id": "57"
+    },
+    "58": {
+      "type": "alert",
+      "class": "funds",
+      "email": "alexistyler@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.544471",
+      "created_at": "2025-08-04T23:41:24.545513",
+      "reference_id": "26",
+      "notification_id": "58"
+    },
+    "59": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "seanlyons@garcia.biz",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.548463",
+      "created_at": "2025-08-04T23:41:24.548463",
+      "reference_id": "546",
+      "notification_id": "59"
+    },
+    "60": {
+      "type": "report",
+      "class": "documents",
+      "email": "hickmannatasha@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.550433",
+      "reference_id": "514",
+      "notification_id": "60"
+    },
+    "61": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "amitchell@jordan.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.552084",
+      "reference_id": "255",
+      "notification_id": "61"
+    },
+    "62": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "samantha22@daniels.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.553641",
+      "created_at": "2025-08-04T23:41:24.553641",
+      "reference_id": "580",
+      "notification_id": "62"
+    },
+    "63": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "johnsonmatthew@byrd.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.555168",
+      "created_at": "2025-08-04T23:41:24.555168",
+      "reference_id": "382",
+      "notification_id": "63"
+    },
+    "64": {
+      "type": "alert",
+      "class": "trades",
+      "email": "barbara10@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.557331",
+      "created_at": "2025-08-04T23:41:24.557331",
+      "reference_id": "668",
+      "notification_id": "64"
+    },
+    "65": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "ybrooks@kane-knox.biz",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.558887",
+      "reference_id": "355",
+      "notification_id": "65"
+    },
+    "66": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "david70@powell.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.559955",
+      "reference_id": "219",
+      "notification_id": "66"
+    },
+    "67": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "bbush@martin.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.560863",
+      "created_at": "2025-08-04T23:41:24.561882",
+      "reference_id": "168",
+      "notification_id": "67"
+    },
+    "68": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "alexistyler@example.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.564323",
+      "created_at": "2025-08-04T23:41:24.564323",
+      "reference_id": "329",
+      "notification_id": "68"
+    },
+    "69": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "perryrandy@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.566771",
+      "reference_id": "792",
+      "notification_id": "69"
+    },
+    "70": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "youngryan@jackson.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.568339",
+      "reference_id": "191",
+      "notification_id": "70"
+    },
+    "71": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "phillip27@wolfe.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.569923",
+      "reference_id": "521",
+      "notification_id": "71"
+    },
+    "72": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "reedscott@burgess-lewis.net",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.57143",
+      "reference_id": "596",
+      "notification_id": "72"
+    },
+    "73": {
+      "type": "report",
+      "class": "trades",
+      "email": "michele22@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.573534",
+      "reference_id": "522",
+      "notification_id": "73"
+    },
+    "74": {
+      "type": "alert",
+      "class": "trades",
+      "email": "colelisa@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.575677",
+      "reference_id": "1913",
+      "notification_id": "74"
+    },
+    "75": {
+      "type": "subscription_update",
+      "class": "commitments",
+      "email": "stucker@lee.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.576722",
+      "created_at": "2025-08-04T23:41:24.576722",
+      "reference_id": "599",
+      "notification_id": "75"
+    },
+    "76": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "josephbrennan@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.578873",
+      "reference_id": "50",
+      "notification_id": "76"
+    },
+    "77": {
+      "type": "alert",
+      "class": "funds",
+      "email": "kellie42@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.580804",
+      "created_at": "2025-08-04T23:41:24.580804",
+      "reference_id": "105",
+      "notification_id": "77"
+    },
+    "78": {
+      "type": "report",
+      "class": "reports",
+      "email": "vjohnson@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.582931",
+      "reference_id": "74",
+      "notification_id": "78"
+    },
+    "79": {
+      "type": "alert",
+      "class": "reports",
+      "email": "barbara10@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.583929",
+      "created_at": "2025-08-04T23:41:24.584926",
+      "reference_id": "178",
+      "notification_id": "79"
+    },
+    "80": {
+      "type": "subscription_update",
+      "class": "trades",
+      "email": "millertodd@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.586766",
+      "created_at": "2025-08-04T23:41:24.586766",
+      "reference_id": "2056",
+      "notification_id": "80"
+    },
+    "81": {
+      "type": "report",
+      "class": "invoices",
+      "email": "amitchell@jordan.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.588332",
+      "reference_id": "507",
+      "notification_id": "81"
+    },
+    "82": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "avilatiffany@nunez-stephens.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.58994",
+      "reference_id": "316",
+      "notification_id": "82"
+    },
+    "83": {
+      "type": "alert",
+      "class": "reports",
+      "email": "perryrandy@example.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.591561",
+      "created_at": "2025-08-04T23:41:24.591561",
+      "reference_id": "407",
+      "notification_id": "83"
+    },
+    "84": {
+      "type": "alert",
+      "class": "portfolios",
+      "email": "vtaylor@young.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.592623",
+      "created_at": "2025-08-04T23:41:24.592623",
+      "reference_id": "163",
+      "notification_id": "84"
+    },
+    "85": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "xhaynes@villegas-miller.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.593622",
+      "reference_id": "143",
+      "notification_id": "85"
+    },
+    "86": {
+      "type": "report",
+      "class": "reports",
+      "email": "salasaudrey@example.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.596112",
+      "created_at": "2025-08-04T23:41:24.596112",
+      "reference_id": "352",
+      "notification_id": "86"
+    },
+    "87": {
+      "type": "report",
+      "class": "trades",
+      "email": "lammarc@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.598457",
+      "created_at": "2025-08-04T23:41:24.598457",
+      "reference_id": "1704",
+      "notification_id": "87"
+    },
+    "88": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "davidzimmerman@smith.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.600043",
+      "reference_id": "324",
+      "notification_id": "88"
+    },
+    "89": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "brenda71@brown-walters.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.601636",
+      "reference_id": "195",
+      "notification_id": "89"
+    },
+    "90": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "reynoldsjulie@example.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.602696",
+      "created_at": "2025-08-04T23:41:24.602696",
+      "reference_id": "205",
+      "notification_id": "90"
+    },
+    "91": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "davidcaldwell@example.net",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.604842",
+      "reference_id": "107",
+      "notification_id": "91"
+    },
+    "92": {
+      "type": "report",
+      "class": "invoices",
+      "email": "jwelch@davidson.biz",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.606443",
+      "created_at": "2025-08-04T23:41:24.606443",
+      "reference_id": "85",
+      "notification_id": "92"
+    },
+    "93": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "john36@larsen-taylor.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.608037",
+      "created_at": "2025-08-04T23:41:24.608037",
+      "reference_id": "252",
+      "notification_id": "93"
+    },
+    "94": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "walkerkeith@hernandez-rogers.info",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.60853",
+      "reference_id": "336",
+      "notification_id": "94"
+    },
+    "95": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "mserrano@thompson.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.610837",
+      "reference_id": "236",
+      "notification_id": "95"
+    },
+    "96": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "ashaw@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.613384",
+      "reference_id": "91",
+      "notification_id": "96"
+    },
+    "97": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "tiffanysantiago@stone-watts.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.615341",
+      "reference_id": "263",
+      "notification_id": "97"
+    },
+    "98": {
+      "type": "report",
+      "class": "trades",
+      "email": "ofinley@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.617323",
+      "reference_id": "575",
+      "notification_id": "98"
+    },
+    "99": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "shannonford@davis.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.619318",
+      "reference_id": "433",
+      "notification_id": "99"
+    },
+    "100": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "hartmanerik@herrera.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.620316",
+      "created_at": "2025-08-04T23:41:24.620316",
+      "reference_id": "153",
+      "notification_id": "100"
+    },
+    "101": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "georgeweber@morgan.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.62231",
+      "created_at": "2025-08-04T23:41:24.62231",
+      "reference_id": "22",
+      "notification_id": "101"
+    },
+    "102": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "robinsonwilliam@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.624352",
+      "reference_id": "863",
+      "notification_id": "102"
+    },
+    "103": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "millertodd@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.625594",
+      "reference_id": "119",
+      "notification_id": "103"
+    },
+    "104": {
+      "type": "subscription_update",
+      "class": "trades",
+      "email": "ashaw@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.627809",
+      "reference_id": "1223",
+      "notification_id": "104"
+    },
+    "105": {
+      "type": "alert",
+      "class": "documents",
+      "email": "hickmannatasha@example.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.629562",
+      "reference_id": "102",
+      "notification_id": "105"
+    },
+    "106": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "phillip27@wolfe.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.631236",
+      "created_at": "2025-08-04T23:41:24.631236",
+      "reference_id": "485",
+      "notification_id": "106"
+    },
+    "107": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "travis84@walker-ray.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.63283",
+      "reference_id": "7",
+      "notification_id": "107"
+    },
+    "108": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "jenniferbrock@bryant.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.634429",
+      "reference_id": "32",
+      "notification_id": "108"
+    },
+    "109": {
+      "type": "report",
+      "class": "reports",
+      "email": "teresa28@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.636044",
+      "reference_id": "340",
+      "notification_id": "109"
+    },
+    "110": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "shinton@marshall-garcia.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.637603",
+      "created_at": "2025-08-04T23:41:24.637603",
+      "reference_id": "342",
+      "notification_id": "110"
+    },
+    "111": {
+      "type": "report",
+      "class": "funds",
+      "email": "ashaw@example.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.639238",
+      "created_at": "2025-08-04T23:41:24.639238",
+      "reference_id": "11",
+      "notification_id": "111"
+    },
+    "112": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "lammarc@example.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.640698",
+      "created_at": "2025-08-04T23:41:24.640698",
+      "reference_id": "150",
+      "notification_id": "112"
+    },
+    "113": {
+      "type": "alert",
+      "class": "investors",
+      "email": "stucker@lee.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.642046",
+      "reference_id": "241",
+      "notification_id": "113"
+    },
+    "114": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "bruce43@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.644213",
+      "reference_id": "1716",
+      "notification_id": "114"
+    },
+    "115": {
+      "type": "report",
+      "class": "funds",
+      "email": "ofinley@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.645812",
+      "reference_id": "47",
+      "notification_id": "115"
+    },
+    "116": {
+      "type": "report",
+      "class": "reports",
+      "email": "lindsay78@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.647985",
+      "created_at": "2025-08-04T23:41:24.647985",
+      "reference_id": "402",
+      "notification_id": "116"
+    },
+    "117": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "lindsay78@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.649587",
+      "reference_id": "550",
+      "notification_id": "117"
+    },
+    "118": {
+      "type": "alert",
+      "class": "documents",
+      "email": "gabriellecameron@example.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.651142",
+      "created_at": "2025-08-04T23:41:24.651142",
+      "reference_id": "9",
+      "notification_id": "118"
+    },
+    "119": {
+      "type": "alert",
+      "class": "trades",
+      "email": "reynoldsjulie@example.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.653342",
+      "created_at": "2025-08-04T23:41:24.653342",
+      "reference_id": "784",
+      "notification_id": "119"
+    },
+    "120": {
+      "type": "report",
+      "class": "commitments",
+      "email": "shannonford@davis.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.654921",
+      "reference_id": "229",
+      "notification_id": "120"
+    },
+    "121": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "tiffanysantiago@stone-watts.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.656928",
+      "reference_id": "215",
+      "notification_id": "121"
+    },
+    "122": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "eric31@pacheco.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.658121",
+      "created_at": "2025-08-04T23:41:24.658121",
+      "reference_id": "81",
+      "notification_id": "122"
+    },
+    "123": {
+      "type": "report",
+      "class": "reports",
+      "email": "barbara10@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.659761",
+      "created_at": "2025-08-04T23:41:24.659761",
+      "reference_id": "84",
+      "notification_id": "123"
+    },
+    "124": {
+      "type": "report",
+      "class": "trades",
+      "email": "kimberly39@example.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.661722",
+      "reference_id": "1169",
+      "notification_id": "124"
+    },
+    "125": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "fbrewer@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.663798",
+      "reference_id": "258",
+      "notification_id": "125"
+    },
+    "126": {
+      "type": "report",
+      "class": "investors",
+      "email": "hdunn@wilson.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.664719",
+      "created_at": "2025-08-04T23:41:24.664719",
+      "reference_id": "109",
+      "notification_id": "126"
+    },
+    "127": {
+      "type": "report",
+      "class": "commitments",
+      "email": "zowens@harrison.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.665766",
+      "created_at": "2025-08-04T23:41:24.666763",
+      "reference_id": "108",
+      "notification_id": "127"
+    },
+    "128": {
+      "type": "subscription_update",
+      "class": "trades",
+      "email": "hickmannatasha@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.668627",
+      "reference_id": "448",
+      "notification_id": "128"
+    },
+    "129": {
+      "type": "alert",
+      "class": "reports",
+      "email": "danielle64@example.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.670074",
+      "reference_id": "128",
+      "notification_id": "129"
+    },
+    "130": {
+      "type": "alert",
+      "class": "reports",
+      "email": "perryrandy@example.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.672119",
+      "reference_id": "405",
+      "notification_id": "130"
+    },
+    "131": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "nelsonebony@example.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.674042",
+      "created_at": "2025-08-04T23:41:24.674042",
+      "reference_id": "2188",
+      "notification_id": "131"
+    },
+    "132": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "jamesshawn@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.675633",
+      "reference_id": "632",
+      "notification_id": "132"
+    },
+    "133": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "victorgonzalez@allen.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.676691",
+      "created_at": "2025-08-04T23:41:24.676691",
+      "reference_id": "285",
+      "notification_id": "133"
+    },
+    "134": {
+      "type": "alert",
+      "class": "reports",
+      "email": "brittany58@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.677747",
+      "created_at": "2025-08-04T23:41:24.678751",
+      "reference_id": "115",
+      "notification_id": "134"
+    },
+    "135": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "rjohnson@thomas-franklin.biz",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.680351",
+      "reference_id": "487",
+      "notification_id": "135"
+    },
+    "136": {
+      "type": "report",
+      "class": "commitments",
+      "email": "hancocktammy@smith.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.681911",
+      "created_at": "2025-08-04T23:41:24.681911",
+      "reference_id": "287",
+      "notification_id": "136"
+    },
+    "137": {
+      "type": "alert",
+      "class": "documents",
+      "email": "ericfarmer@example.net",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.683472",
+      "reference_id": "793",
+      "notification_id": "137"
+    },
+    "138": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "dpeters@david-powers.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.684982",
+      "created_at": "2025-08-04T23:41:24.684982",
+      "reference_id": "261",
+      "notification_id": "138"
+    },
+    "139": {
+      "type": "alert",
+      "class": "funds",
+      "email": "chad34@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.685982",
+      "created_at": "2025-08-04T23:41:24.686979",
+      "reference_id": "130",
+      "notification_id": "139"
+    },
+    "140": {
+      "type": "subscription_update",
+      "class": "subscriptions",
+      "email": "tiffanysantiago@stone-watts.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.688243",
+      "created_at": "2025-08-04T23:41:24.688243",
+      "reference_id": "296",
+      "notification_id": "140"
+    },
+    "141": {
+      "type": "alert",
+      "class": "portfolios",
+      "email": "kdiaz@vargas.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.689878",
+      "created_at": "2025-08-04T23:41:24.689878",
+      "reference_id": "92",
+      "notification_id": "141"
+    },
+    "142": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "vmedina@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.692069",
+      "reference_id": "219",
+      "notification_id": "142"
+    },
+    "143": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "xevans@yates-harper.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.693644",
+      "created_at": "2025-08-04T23:41:24.693644",
+      "reference_id": "279",
+      "notification_id": "143"
+    },
+    "144": {
+      "type": "alert",
+      "class": "investors",
+      "email": "edwardsnicole@reyes.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.694558",
+      "created_at": "2025-08-04T23:41:24.694558",
+      "reference_id": "123",
+      "notification_id": "144"
+    },
+    "145": {
+      "type": "report",
+      "class": "investors",
+      "email": "juliephillips@bowers.info",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.69556",
+      "reference_id": "127",
+      "notification_id": "145"
+    },
+    "146": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "sanderswayne@allen.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.697654",
+      "created_at": "2025-08-04T23:41:24.697654",
+      "reference_id": "256",
+      "notification_id": "146"
+    },
+    "147": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "lindsay78@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.699319",
+      "created_at": "2025-08-04T23:41:24.699319",
+      "reference_id": "204",
+      "notification_id": "147"
+    },
+    "148": {
+      "type": "report",
+      "class": "investors",
+      "email": "jonathanwhite@greene-elliott.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.700366",
+      "created_at": "2025-08-04T23:41:24.700366",
+      "reference_id": "264",
+      "notification_id": "148"
+    },
+    "149": {
+      "type": "alert",
+      "class": "documents",
+      "email": "robinsonwilliam@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.70101",
+      "reference_id": "823",
+      "notification_id": "149"
+    },
+    "150": {
+      "type": "alert",
+      "class": "documents",
+      "email": "john21@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.703518",
+      "reference_id": "735",
+      "notification_id": "150"
+    },
+    "151": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "teresa28@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.705081",
+      "reference_id": "861",
+      "notification_id": "151"
+    },
+    "152": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "riverajenna@williams.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.706145",
+      "reference_id": "474",
+      "notification_id": "152"
+    },
+    "153": {
+      "type": "report",
+      "class": "commitments",
+      "email": "samantha22@daniels.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.70823",
+      "reference_id": "580",
+      "notification_id": "153"
+    },
+    "154": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "millerdonna@griffin-robbins.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.709795",
+      "reference_id": "511",
+      "notification_id": "154"
+    },
+    "155": {
+      "type": "alert",
+      "class": "trades",
+      "email": "kellie42@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.711263",
+      "created_at": "2025-08-04T23:41:24.712267",
+      "reference_id": "1072",
+      "notification_id": "155"
+    },
+    "156": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "bartonshannon@lawrence.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.71399",
+      "created_at": "2025-08-04T23:41:24.71399",
+      "reference_id": "224",
+      "notification_id": "156"
+    },
+    "157": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "ybrooks@kane-knox.biz",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.715582",
+      "created_at": "2025-08-04T23:41:24.715582",
+      "reference_id": "355",
+      "notification_id": "157"
+    },
+    "158": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "diazcatherine@smith.info",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.717553",
+      "reference_id": "86",
+      "notification_id": "158"
+    },
+    "159": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "kcooper@morris.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.718798",
+      "created_at": "2025-08-04T23:41:24.718798",
+      "reference_id": "466",
+      "notification_id": "159"
+    },
+    "160": {
+      "type": "report",
+      "class": "investors",
+      "email": "william66@moon.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.719854",
+      "created_at": "2025-08-04T23:41:24.719854",
+      "reference_id": "226",
+      "notification_id": "160"
+    },
+    "161": {
+      "type": "report",
+      "class": "documents",
+      "email": "robinsonwilliam@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.721438",
+      "created_at": "2025-08-04T23:41:24.721438",
+      "reference_id": "647",
+      "notification_id": "161"
+    },
+    "162": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "stewartkyle@hays-daniels.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.723021",
+      "reference_id": "147",
+      "notification_id": "162"
+    },
+    "163": {
+      "type": "alert",
+      "class": "documents",
+      "email": "hickmannatasha@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.724564",
+      "reference_id": "122",
+      "notification_id": "163"
+    },
+    "164": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "brandi17@beck.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.726126",
+      "created_at": "2025-08-04T23:41:24.726126",
+      "reference_id": "488",
+      "notification_id": "164"
+    },
+    "165": {
+      "type": "alert",
+      "class": "investors",
+      "email": "clarkrandy@brown.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.726126",
+      "created_at": "2025-08-04T23:41:24.727495",
+      "reference_id": "299",
+      "notification_id": "165"
+    },
+    "166": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "lopezshane@hunt.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.72883",
+      "reference_id": "418",
+      "notification_id": "166"
+    },
+    "167": {
+      "type": "alert",
+      "class": "investors",
+      "email": "juliephillips@bowers.info",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.730099",
+      "reference_id": "127",
+      "notification_id": "167"
+    },
+    "168": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "robinsonwilliam@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.731171",
+      "created_at": "2025-08-04T23:41:24.731171",
+      "reference_id": "525",
+      "notification_id": "168"
+    },
+    "169": {
+      "type": "alert",
+      "class": "funds",
+      "email": "perryrandy@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.733179",
+      "created_at": "2025-08-04T23:41:24.733718",
+      "reference_id": "115",
+      "notification_id": "169"
+    },
+    "170": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "lindsay78@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.734991",
+      "reference_id": "827",
+      "notification_id": "170"
+    },
+    "171": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "martinjeremy@delgado-page.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.73658",
+      "reference_id": "351",
+      "notification_id": "171"
+    },
+    "172": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "amitchell@jordan.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.738189",
+      "reference_id": "222",
+      "notification_id": "172"
+    },
+    "173": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "vjohnson@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.740361",
+      "reference_id": "1136",
+      "notification_id": "173"
+    },
+    "174": {
+      "type": "alert",
+      "class": "reports",
+      "email": "millertodd@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.741974",
+      "reference_id": "26",
+      "notification_id": "174"
+    },
+    "175": {
+      "type": "report",
+      "class": "invoices",
+      "email": "wlynn@lambert.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.743502",
+      "created_at": "2025-08-04T23:41:24.743502",
+      "reference_id": "484",
+      "notification_id": "175"
+    },
+    "176": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "gabriellecameron@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.745565",
+      "reference_id": "123",
+      "notification_id": "176"
+    },
+    "177": {
+      "type": "report",
+      "class": "trades",
+      "email": "vjohnson@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.747805",
+      "reference_id": "1480",
+      "notification_id": "177"
+    },
+    "178": {
+      "type": "alert",
+      "class": "investors",
+      "email": "carolyn13@shepherd-cortez.info",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.748802",
+      "created_at": "2025-08-04T23:41:24.748802",
+      "reference_id": "262",
+      "notification_id": "178"
+    },
+    "179": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "sharris@khan.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.750798",
+      "reference_id": "119",
+      "notification_id": "179"
+    },
+    "180": {
+      "type": "report",
+      "class": "funds",
+      "email": "millertodd@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.751797",
+      "reference_id": "126",
+      "notification_id": "180"
+    },
+    "181": {
+      "type": "report",
+      "class": "investors",
+      "email": "flynnjeffrey@hill.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.75379",
+      "reference_id": "108",
+      "notification_id": "181"
+    },
+    "182": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "davisphillip@levy-lewis.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.754787",
+      "reference_id": "363",
+      "notification_id": "182"
+    },
+    "183": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "ysilva@wiggins.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.756782",
+      "created_at": "2025-08-04T23:41:24.756782",
+      "reference_id": "552",
+      "notification_id": "183"
+    },
+    "184": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "smiththomas@wheeler.info",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.75778",
+      "reference_id": "410",
+      "notification_id": "184"
+    },
+    "185": {
+      "type": "report",
+      "class": "invoices",
+      "email": "caseymoore@weiss-weaver.info",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.759774",
+      "created_at": "2025-08-04T23:41:24.759774",
+      "reference_id": "145",
+      "notification_id": "185"
+    },
+    "186": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "lindsay78@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.761769",
+      "reference_id": "81",
+      "notification_id": "186"
+    },
+    "187": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "chad34@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.763764",
+      "reference_id": "245",
+      "notification_id": "187"
+    },
+    "188": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "andreagray@miller.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.764761",
+      "reference_id": "218",
+      "notification_id": "188"
+    },
+    "189": {
+      "type": "reminder",
+      "class": "funds",
+      "email": "vmedina@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.766726",
+      "reference_id": "99",
+      "notification_id": "189"
+    },
+    "190": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "unovak@walters.info",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.768724",
+      "reference_id": "378",
+      "notification_id": "190"
+    },
+    "191": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "dpeters@david-powers.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.769959",
+      "reference_id": "330",
+      "notification_id": "191"
+    },
+    "192": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "ytaylor@wagner.biz",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.771577",
+      "created_at": "2025-08-04T23:41:24.771577",
+      "reference_id": "107",
+      "notification_id": "192"
+    },
+    "193": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "ohughes@hamilton-smith.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.773176",
+      "reference_id": "289",
+      "notification_id": "193"
+    },
+    "194": {
+      "type": "alert",
+      "class": "portfolios",
+      "email": "zwelch@brown.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.77475",
+      "created_at": "2025-08-04T23:41:24.77475",
+      "reference_id": "6",
+      "notification_id": "194"
+    },
+    "195": {
+      "type": "alert",
+      "class": "funds",
+      "email": "vjohnson@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.776375",
+      "created_at": "2025-08-04T23:41:24.776375",
+      "reference_id": "186",
+      "notification_id": "195"
+    },
+    "196": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "ujenkins@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.777843",
+      "created_at": "2025-08-04T23:41:24.777843",
+      "reference_id": "393",
+      "notification_id": "196"
+    },
+    "197": {
+      "type": "alert",
+      "class": "trades",
+      "email": "michele22@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.779854",
+      "created_at": "2025-08-04T23:41:24.780838",
+      "reference_id": "536",
+      "notification_id": "197"
+    },
+    "198": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "james94@dean.info",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.782476",
+      "reference_id": "140",
+      "notification_id": "198"
+    },
+    "199": {
+      "type": "alert",
+      "class": "trades",
+      "email": "cindy14@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.784703",
+      "reference_id": "951",
+      "notification_id": "199"
+    },
+    "200": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "jamesmorales@mccoy.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.786267",
+      "created_at": "2025-08-04T23:41:24.786267",
+      "reference_id": "107",
+      "notification_id": "200"
+    },
+    "201": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "millertodd@example.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.787822",
+      "created_at": "2025-08-04T23:41:24.787822",
+      "reference_id": "519",
+      "notification_id": "201"
+    },
+    "202": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "brittany58@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.789467",
+      "created_at": "2025-08-04T23:41:24.789467",
+      "reference_id": "139",
+      "notification_id": "202"
+    },
+    "203": {
+      "type": "reminder",
+      "class": "funds",
+      "email": "jonesjason@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.791049",
+      "created_at": "2025-08-04T23:41:24.791049",
+      "reference_id": "147",
+      "notification_id": "203"
+    },
+    "204": {
+      "type": "alert",
+      "class": "trades",
+      "email": "jsawyer@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.793246",
+      "reference_id": "2001",
+      "notification_id": "204"
+    },
+    "205": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "teresa28@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.794617",
+      "reference_id": "235",
+      "notification_id": "205"
+    },
+    "206": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "johnsonmichael@baker.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.797631",
+      "reference_id": "332",
+      "notification_id": "206"
+    },
+    "207": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "diazcatherine@smith.info",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.798699",
+      "created_at": "2025-08-04T23:41:24.799668",
+      "reference_id": "86",
+      "notification_id": "207"
+    },
+    "208": {
+      "type": "report",
+      "class": "trades",
+      "email": "michele22@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.800666",
+      "created_at": "2025-08-04T23:41:24.80162",
+      "reference_id": "609",
+      "notification_id": "208"
+    },
+    "209": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "khill@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.802617",
+      "created_at": "2025-08-04T23:41:24.802617",
+      "reference_id": "273",
+      "notification_id": "209"
+    },
+    "210": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "gary57@garza.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.804614",
+      "created_at": "2025-08-04T23:41:24.804614",
+      "reference_id": "58",
+      "notification_id": "210"
+    },
+    "211": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "davisdonna@ryan.biz",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.805626",
+      "reference_id": "268",
+      "notification_id": "211"
+    },
+    "212": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "angelaburns@lopez.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.806607",
+      "created_at": "2025-08-04T23:41:24.806607",
+      "reference_id": "106",
+      "notification_id": "212"
+    },
+    "213": {
+      "type": "alert",
+      "class": "trades",
+      "email": "lammarc@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.80865",
+      "reference_id": "3",
+      "notification_id": "213"
+    },
+    "214": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "vmedina@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.810596",
+      "reference_id": "1122",
+      "notification_id": "214"
+    },
+    "215": {
+      "type": "alert",
+      "class": "investors",
+      "email": "jonathanwhite@greene-elliott.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.811594",
+      "created_at": "2025-08-04T23:41:24.812603",
+      "reference_id": "264",
+      "notification_id": "215"
+    },
+    "216": {
+      "type": "report",
+      "class": "reports",
+      "email": "pwallace@example.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.814635",
+      "reference_id": "139",
+      "notification_id": "216"
+    },
+    "217": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "jhawkins@davis.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.815584",
+      "created_at": "2025-08-04T23:41:24.815584",
+      "reference_id": "35",
+      "notification_id": "217"
+    },
+    "218": {
+      "type": "subscription_update",
+      "class": "commitments",
+      "email": "duncanashley@navarro.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.817578",
+      "reference_id": "173",
+      "notification_id": "218"
+    },
+    "219": {
+      "type": "alert",
+      "class": "funds",
+      "email": "nelsonebony@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.818575",
+      "reference_id": "196",
+      "notification_id": "219"
+    },
+    "220": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "thomassmith@porter-cowan.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.820602",
+      "reference_id": "385",
+      "notification_id": "220"
+    },
+    "221": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "cindy14@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.822345",
+      "reference_id": "277",
+      "notification_id": "221"
+    },
+    "222": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "wstewart@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.823923",
+      "reference_id": "44",
+      "notification_id": "222"
+    },
+    "223": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "kcooper@morris.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.825451",
+      "reference_id": "523",
+      "notification_id": "223"
+    },
+    "224": {
+      "type": "report",
+      "class": "commitments",
+      "email": "wlynn@lambert.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.826502",
+      "reference_id": "41",
+      "notification_id": "224"
+    },
+    "225": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "amy28@garza.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.8285",
+      "created_at": "2025-08-04T23:41:24.8285",
+      "reference_id": "344",
+      "notification_id": "225"
+    },
+    "226": {
+      "type": "alert",
+      "class": "portfolios",
+      "email": "lynchjenny@mendez-meyer.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.830693",
+      "reference_id": "475",
+      "notification_id": "226"
+    },
+    "227": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "michael77@smith-johnson.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.832146",
+      "created_at": "2025-08-04T23:41:24.832146",
+      "reference_id": "446",
+      "notification_id": "227"
+    },
+    "228": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "hickmannatasha@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.833757",
+      "reference_id": "48",
+      "notification_id": "228"
+    },
+    "229": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "mcneilrobert@woods.biz",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.835296",
+      "created_at": "2025-08-04T23:41:24.835296",
+      "reference_id": "19",
+      "notification_id": "229"
+    },
+    "230": {
+      "type": "alert",
+      "class": "reports",
+      "email": "colelisa@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.836882",
+      "reference_id": "88",
+      "notification_id": "230"
+    },
+    "231": {
+      "type": "subscription_update",
+      "class": "trades",
+      "email": "judyfox@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.839022",
+      "reference_id": "890",
+      "notification_id": "231"
+    },
+    "232": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "xevans@yates-harper.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.840625",
+      "reference_id": "305",
+      "notification_id": "232"
+    },
+    "233": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "kimberly39@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.842227",
+      "created_at": "2025-08-04T23:41:24.842227",
+      "reference_id": "104",
+      "notification_id": "233"
+    },
+    "234": {
+      "type": "report",
+      "class": "documents",
+      "email": "teresa28@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.843228",
+      "reference_id": "896",
+      "notification_id": "234"
+    },
+    "235": {
+      "type": "report",
+      "class": "investors",
+      "email": "tiffanysantiago@stone-watts.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.845225",
+      "created_at": "2025-08-04T23:41:24.845225",
+      "reference_id": "215",
+      "notification_id": "235"
+    },
+    "236": {
+      "type": "report",
+      "class": "investors",
+      "email": "diazcatherine@smith.info",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.847264",
+      "reference_id": "323",
+      "notification_id": "236"
+    },
+    "237": {
+      "type": "report",
+      "class": "investors",
+      "email": "scott43@elliott-hernandez.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.847974",
+      "created_at": "2025-08-04T23:41:24.847974",
+      "reference_id": "172",
+      "notification_id": "237"
+    },
+    "238": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "avilatiffany@nunez-stephens.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.849574",
+      "reference_id": "59",
+      "notification_id": "238"
+    },
+    "239": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "johnsonmatthew@byrd.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.851193",
+      "created_at": "2025-08-04T23:41:24.851193",
+      "reference_id": "382",
+      "notification_id": "239"
+    },
+    "240": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "jamesshawn@example.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.852852",
+      "created_at": "2025-08-04T23:41:24.852852",
+      "reference_id": "436",
+      "notification_id": "240"
+    },
+    "241": {
+      "type": "report",
+      "class": "investors",
+      "email": "shawdon@hall.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.853904",
+      "reference_id": "261",
+      "notification_id": "241"
+    },
+    "242": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "charles27@gomez-shannon.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.855464",
+      "created_at": "2025-08-04T23:41:24.855464",
+      "reference_id": "425",
+      "notification_id": "242"
+    },
+    "243": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "elizabethcalderon@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.857098",
+      "created_at": "2025-08-04T23:41:24.857098",
+      "reference_id": "54",
+      "notification_id": "243"
+    },
+    "244": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "martintamara@brock.info",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.858014",
+      "created_at": "2025-08-04T23:41:24.859061",
+      "reference_id": "138",
+      "notification_id": "244"
+    },
+    "245": {
+      "type": "alert",
+      "class": "investors",
+      "email": "jeremy37@andrews-green.biz",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.860059",
+      "reference_id": "280",
+      "notification_id": "245"
+    },
+    "246": {
+      "type": "report",
+      "class": "invoices",
+      "email": "williamsconnie@smith-noble.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.861199",
+      "created_at": "2025-08-04T23:41:24.861199",
+      "reference_id": "448",
+      "notification_id": "246"
+    },
+    "247": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "robinsonwilliam@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.863336",
+      "reference_id": "140",
+      "notification_id": "247"
+    },
+    "248": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "stephaniethomas@gregory.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.864931",
+      "created_at": "2025-08-04T23:41:24.864931",
+      "reference_id": "390",
+      "notification_id": "248"
+    },
+    "249": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "davidzimmerman@smith.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.866505",
+      "created_at": "2025-08-04T23:41:24.866505",
+      "reference_id": "133",
+      "notification_id": "249"
+    },
+    "250": {
+      "type": "report",
+      "class": "reports",
+      "email": "ashaw@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.868102",
+      "created_at": "2025-08-04T23:41:24.868102",
+      "reference_id": "34",
+      "notification_id": "250"
+    },
+    "251": {
+      "type": "alert",
+      "class": "trades",
+      "email": "rileyamy@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.86969",
+      "created_at": "2025-08-04T23:41:24.86969",
+      "reference_id": "1930",
+      "notification_id": "251"
+    },
+    "252": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "larsonkevin@stokes.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.871798",
+      "created_at": "2025-08-04T23:41:24.871798",
+      "reference_id": "118",
+      "notification_id": "252"
+    },
+    "253": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "psnyder@example.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.873439",
+      "reference_id": "85",
+      "notification_id": "253"
+    },
+    "254": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "james14@huffman.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.874064",
+      "created_at": "2025-08-04T23:41:24.874064",
+      "reference_id": "103",
+      "notification_id": "254"
+    },
+    "255": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "tylerjimenez@adams.biz",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.875443",
+      "created_at": "2025-08-04T23:41:24.876528",
+      "reference_id": "9",
+      "notification_id": "255"
+    },
+    "256": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "llopez@james.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.878191",
+      "reference_id": "409",
+      "notification_id": "256"
+    },
+    "257": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "james14@huffman.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.880184",
+      "created_at": "2025-08-04T23:41:24.880184",
+      "reference_id": "103",
+      "notification_id": "257"
+    },
+    "258": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "joseph19@wilson-nunez.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.881768",
+      "created_at": "2025-08-04T23:41:24.881768",
+      "reference_id": "416",
+      "notification_id": "258"
+    },
+    "259": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "sandrahamilton@foster.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.883317",
+      "reference_id": "297",
+      "notification_id": "259"
+    },
+    "260": {
+      "type": "report",
+      "class": "commitments",
+      "email": "ztodd@petersen.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.884828",
+      "reference_id": "269",
+      "notification_id": "260"
+    },
+    "261": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "linda73@norris.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.886365",
+      "created_at": "2025-08-04T23:41:24.886365",
+      "reference_id": "57",
+      "notification_id": "261"
+    },
+    "262": {
+      "type": "alert",
+      "class": "investors",
+      "email": "watsonrebecca@williams.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.887399",
+      "created_at": "2025-08-04T23:41:24.887399",
+      "reference_id": "120",
+      "notification_id": "262"
+    },
+    "263": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "ujenkins@example.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.889003",
+      "created_at": "2025-08-04T23:41:24.889003",
+      "reference_id": "371",
+      "notification_id": "263"
+    },
+    "264": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "courtneyconner@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.890903",
+      "reference_id": "28",
+      "notification_id": "264"
+    },
+    "265": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "youngryan@jackson.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.891903",
+      "created_at": "2025-08-04T23:41:24.892948",
+      "reference_id": "352",
+      "notification_id": "265"
+    },
+    "266": {
+      "type": "report",
+      "class": "commitments",
+      "email": "anaacosta@henderson.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.894158",
+      "reference_id": "454",
+      "notification_id": "266"
+    },
+    "267": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "ingramjill@anderson-bell.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.895869",
+      "created_at": "2025-08-04T23:41:24.895869",
+      "reference_id": "122",
+      "notification_id": "267"
+    },
+    "268": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "leescott@hernandez-vaughn.biz",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.897577",
+      "reference_id": "342",
+      "notification_id": "268"
+    },
+    "269": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "lopezjason@figueroa-malone.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.899176",
+      "reference_id": "182",
+      "notification_id": "269"
+    },
+    "270": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "brittany58@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.900803",
+      "created_at": "2025-08-04T23:41:24.900803",
+      "reference_id": "333",
+      "notification_id": "270"
+    },
+    "271": {
+      "type": "report",
+      "class": "trades",
+      "email": "judyfox@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.903007",
+      "created_at": "2025-08-04T23:41:24.903007",
+      "reference_id": "1329",
+      "notification_id": "271"
+    },
+    "272": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "lynchjenny@mendez-meyer.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.904582",
+      "reference_id": "534",
+      "notification_id": "272"
+    },
+    "273": {
+      "type": "report",
+      "class": "trades",
+      "email": "vjohnson@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.906061",
+      "created_at": "2025-08-04T23:41:24.907107",
+      "reference_id": "960",
+      "notification_id": "273"
+    },
+    "274": {
+      "type": "alert",
+      "class": "portfolios",
+      "email": "joycesmith@donovan.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.908431",
+      "reference_id": "71",
+      "notification_id": "274"
+    },
+    "275": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "sandrahamilton@foster.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.909996",
+      "created_at": "2025-08-04T23:41:24.909996",
+      "reference_id": "297",
+      "notification_id": "275"
+    },
+    "276": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "jacqueline71@example.net",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.912073",
+      "reference_id": "154",
+      "notification_id": "276"
+    },
+    "277": {
+      "type": "alert",
+      "class": "reports",
+      "email": "jacqueline71@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.913068",
+      "created_at": "2025-08-04T23:41:24.913068",
+      "reference_id": "112",
+      "notification_id": "277"
+    },
+    "278": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "ugibson@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.915307",
+      "reference_id": "200",
+      "notification_id": "278"
+    },
+    "279": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "zhall@lopez.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.916913",
+      "created_at": "2025-08-04T23:41:24.916913",
+      "reference_id": "89",
+      "notification_id": "279"
+    },
+    "280": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "jessica10@roman-nelson.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.917979",
+      "created_at": "2025-08-04T23:41:24.917979",
+      "reference_id": "134",
+      "notification_id": "280"
+    },
+    "281": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "larsonkevin@stokes.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.919022",
+      "reference_id": "333",
+      "notification_id": "281"
+    },
+    "282": {
+      "type": "report",
+      "class": "commitments",
+      "email": "jodistewart@davis.info",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.920071",
+      "created_at": "2025-08-04T23:41:24.920071",
+      "reference_id": "289",
+      "notification_id": "282"
+    },
+    "283": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "warddiana@miller.biz",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.922069",
+      "reference_id": "101",
+      "notification_id": "283"
+    },
+    "284": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "thomassmith@porter-cowan.net",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.924039",
+      "reference_id": "292",
+      "notification_id": "284"
+    },
+    "285": {
+      "type": "report",
+      "class": "investors",
+      "email": "watsonrebecca@williams.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.925071",
+      "created_at": "2025-08-04T23:41:24.925071",
+      "reference_id": "120",
+      "notification_id": "285"
+    },
+    "286": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "courtneyconner@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.926688",
+      "created_at": "2025-08-04T23:41:24.926688",
+      "reference_id": "292",
+      "notification_id": "286"
+    },
+    "287": {
+      "type": "reminder",
+      "class": "funds",
+      "email": "jcervantes@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.928764",
+      "reference_id": "68",
+      "notification_id": "287"
+    },
+    "288": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "barnettapril@hughes-hardin.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.930182",
+      "created_at": "2025-08-04T23:41:24.930182",
+      "reference_id": "512",
+      "notification_id": "288"
+    },
+    "289": {
+      "type": "subscription_update",
+      "class": "commitments",
+      "email": "johnsonmichael@baker.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.931772",
+      "created_at": "2025-08-04T23:41:24.931772",
+      "reference_id": "332",
+      "notification_id": "289"
+    },
+    "290": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "thomas23@jennings.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.933368",
+      "created_at": "2025-08-04T23:41:24.933368",
+      "reference_id": "205",
+      "notification_id": "290"
+    },
+    "291": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "mserrano@thompson.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.934918",
+      "created_at": "2025-08-04T23:41:24.934918",
+      "reference_id": "236",
+      "notification_id": "291"
+    },
+    "292": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "dalton83@vasquez-brown.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.935984",
+      "created_at": "2025-08-04T23:41:24.935984",
+      "reference_id": "310",
+      "notification_id": "292"
+    },
+    "293": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "ericfarmer@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.937982",
+      "created_at": "2025-08-04T23:41:24.937982",
+      "reference_id": "385",
+      "notification_id": "293"
+    },
+    "294": {
+      "type": "subscription_update",
+      "class": "subscriptions",
+      "email": "william66@moon.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.939891",
+      "reference_id": "117",
+      "notification_id": "294"
+    },
+    "295": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "nelsonebony@example.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.941569",
+      "created_at": "2025-08-04T23:41:24.941569",
+      "reference_id": "221",
+      "notification_id": "295"
+    },
+    "296": {
+      "type": "alert",
+      "class": "reports",
+      "email": "pwallace@example.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.943167",
+      "created_at": "2025-08-04T23:41:24.943167",
+      "reference_id": "89",
+      "notification_id": "296"
+    },
+    "297": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "haroldhorne@tran.biz",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.944219",
+      "created_at": "2025-08-04T23:41:24.945223",
+      "reference_id": "536",
+      "notification_id": "297"
+    },
+    "298": {
+      "type": "alert",
+      "class": "investors",
+      "email": "brettbennett@morrison.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.946217",
+      "reference_id": "67",
+      "notification_id": "298"
+    },
+    "299": {
+      "type": "alert",
+      "class": "documents",
+      "email": "lindsay78@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.947791",
+      "reference_id": "513",
+      "notification_id": "299"
+    },
+    "300": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "courtneyconner@example.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.949439",
+      "created_at": "2025-08-04T23:41:24.949439",
+      "reference_id": "384",
+      "notification_id": "300"
+    },
+    "301": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "prattsue@li.biz",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.951027",
+      "reference_id": "420",
+      "notification_id": "301"
+    },
+    "302": {
+      "type": "reminder",
+      "class": "portfolios",
+      "email": "hannah45@walker.info",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.952081",
+      "reference_id": "473",
+      "notification_id": "302"
+    },
+    "303": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "teresa28@example.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.954079",
+      "created_at": "2025-08-04T23:41:24.954079",
+      "reference_id": "716",
+      "notification_id": "303"
+    },
+    "304": {
+      "type": "report",
+      "class": "trades",
+      "email": "lammarc@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.956433",
+      "reference_id": "1793",
+      "notification_id": "304"
+    },
+    "305": {
+      "type": "report",
+      "class": "reports",
+      "email": "khill@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.958045",
+      "reference_id": "282",
+      "notification_id": "305"
+    },
+    "306": {
+      "type": "report",
+      "class": "documents",
+      "email": "gabriellecameron@example.org",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.95959",
+      "created_at": "2025-08-04T23:41:24.95959",
+      "reference_id": "311",
+      "notification_id": "306"
+    },
+    "307": {
+      "type": "alert",
+      "class": "documents",
+      "email": "fbrewer@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.961143",
+      "reference_id": "702",
+      "notification_id": "307"
+    },
+    "308": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "jasonjohnson@jackson.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.962922",
+      "created_at": "2025-08-04T23:41:24.962922",
+      "reference_id": "171",
+      "notification_id": "308"
+    },
+    "309": {
+      "type": "report",
+      "class": "commitments",
+      "email": "desireebailey@haney.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.964561",
+      "reference_id": "15",
+      "notification_id": "309"
+    },
+    "310": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "warddiana@miller.biz",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.966115",
+      "created_at": "2025-08-04T23:41:24.966115",
+      "reference_id": "208",
+      "notification_id": "310"
+    },
+    "311": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "scottbowen@goodman.info",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.967705",
+      "created_at": "2025-08-04T23:41:24.967705",
+      "reference_id": "124",
+      "notification_id": "311"
+    },
+    "312": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "kari89@parsons.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:24.968206",
+      "created_at": "2025-08-04T23:41:24.969627",
+      "reference_id": "234",
+      "notification_id": "312"
+    },
+    "313": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "lindsay78@example.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.970627",
+      "created_at": "2025-08-04T23:41:24.970627",
+      "reference_id": "776",
+      "notification_id": "313"
+    },
+    "314": {
+      "type": "alert",
+      "class": "portfolios",
+      "email": "ohunter@mason.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.97262",
+      "reference_id": "130",
+      "notification_id": "314"
+    },
+    "315": {
+      "type": "report",
+      "class": "investors",
+      "email": "shawdon@hall.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.973617",
+      "reference_id": "261",
+      "notification_id": "315"
+    },
+    "316": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "jonathanwhite@greene-elliott.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.974615",
+      "created_at": "2025-08-04T23:41:24.975612",
+      "reference_id": "354",
+      "notification_id": "316"
+    },
+    "317": {
+      "type": "subscription_update",
+      "class": "invoices",
+      "email": "kchristian@walton.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.976768",
+      "created_at": "2025-08-04T23:41:24.976768",
+      "reference_id": "261",
+      "notification_id": "317"
+    },
+    "318": {
+      "type": "report",
+      "class": "trades",
+      "email": "alexistyler@example.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.978765",
+      "created_at": "2025-08-04T23:41:24.978765",
+      "reference_id": "1494",
+      "notification_id": "318"
+    },
+    "319": {
+      "type": "subscription_update",
+      "class": "funds",
+      "email": "pwallace@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.980757",
+      "reference_id": "103",
+      "notification_id": "319"
+    },
+    "320": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "davidzimmerman@smith.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.981754",
+      "created_at": "2025-08-04T23:41:24.982752",
+      "reference_id": "239",
+      "notification_id": "320"
+    },
+    "321": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "tthomas@maxwell.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.983749",
+      "reference_id": "607",
+      "notification_id": "321"
+    },
+    "322": {
+      "type": "report",
+      "class": "invoices",
+      "email": "buckleyanna@floyd.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.985756",
+      "created_at": "2025-08-04T23:41:24.985756",
+      "reference_id": "173",
+      "notification_id": "322"
+    },
+    "323": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "victorpena@morgan.info",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.987739",
+      "reference_id": "589",
+      "notification_id": "323"
+    },
+    "324": {
+      "type": "report",
+      "class": "portfolios",
+      "email": "walkerkeith@hernandez-rogers.info",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.988736",
+      "created_at": "2025-08-04T23:41:24.988736",
+      "reference_id": "336",
+      "notification_id": "324"
+    },
+    "325": {
+      "type": "subscription_update",
+      "class": "subscriptions",
+      "email": "dalton83@vasquez-brown.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.99073",
+      "reference_id": "339",
+      "notification_id": "325"
+    },
+    "326": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "kellie37@castillo-castro.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.991736",
+      "created_at": "2025-08-04T23:41:24.991736",
+      "reference_id": "45",
+      "notification_id": "326"
+    },
+    "327": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "lisapeck@edwards.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.993722",
+      "created_at": "2025-08-04T23:41:24.993722",
+      "reference_id": "528",
+      "notification_id": "327"
+    },
+    "328": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "ztodd@petersen.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:24.995718",
+      "reference_id": "2",
+      "notification_id": "328"
+    },
+    "329": {
+      "type": "report",
+      "class": "investors",
+      "email": "sean43@steele.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:24.996825",
+      "created_at": "2025-08-04T23:41:24.996953",
+      "reference_id": "164",
+      "notification_id": "329"
+    },
+    "330": {
+      "type": "report",
+      "class": "trades",
+      "email": "davidcaldwell@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:24.998948",
+      "created_at": "2025-08-04T23:41:24.998948",
+      "reference_id": "843",
+      "notification_id": "330"
+    },
+    "331": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "vjohnson@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.000942",
+      "reference_id": "395",
+      "notification_id": "331"
+    },
+    "332": {
+      "type": "report",
+      "class": "trades",
+      "email": "nelsonebony@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.00309",
+      "reference_id": "1971",
+      "notification_id": "332"
+    },
+    "333": {
+      "type": "subscription_update",
+      "class": "trades",
+      "email": "kellie42@example.net",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:25.005234",
+      "created_at": "2025-08-04T23:41:25.005234",
+      "reference_id": "1719",
+      "notification_id": "333"
+    },
+    "334": {
+      "type": "subscription_update",
+      "class": "trades",
+      "email": "davidcaldwell@example.net",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.007379",
+      "reference_id": "277",
+      "notification_id": "334"
+    },
+    "335": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "angelaburns@lopez.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:25.008944",
+      "created_at": "2025-08-04T23:41:25.008944",
+      "reference_id": "559",
+      "notification_id": "335"
+    },
+    "336": {
+      "type": "alert",
+      "class": "investors",
+      "email": "crawfordwilliam@porter.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.010011",
+      "created_at": "2025-08-04T23:41:25.010011",
+      "reference_id": "135",
+      "notification_id": "336"
+    },
+    "337": {
+      "type": "report",
+      "class": "commitments",
+      "email": "lopezjason@figueroa-malone.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:25.011073",
+      "created_at": "2025-08-04T23:41:25.012076",
+      "reference_id": "180",
+      "notification_id": "337"
+    },
+    "338": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "nathanwheeler@horne.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.013606",
+      "created_at": "2025-08-04T23:41:25.013606",
+      "reference_id": "185",
+      "notification_id": "338"
+    },
+    "339": {
+      "type": "report",
+      "class": "trades",
+      "email": "bruce43@example.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.015733",
+      "created_at": "2025-08-04T23:41:25.015733",
+      "reference_id": "908",
+      "notification_id": "339"
+    },
+    "340": {
+      "type": "reminder",
+      "class": "documents",
+      "email": "john21@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:25.016729",
+      "created_at": "2025-08-04T23:41:25.017925",
+      "reference_id": "452",
+      "notification_id": "340"
+    },
+    "341": {
+      "type": "report",
+      "class": "reports",
+      "email": "nelsonebony@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.019231",
+      "reference_id": "147",
+      "notification_id": "341"
+    },
+    "342": {
+      "type": "alert",
+      "class": "commitments",
+      "email": "ann45@jenkins.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.020801",
+      "reference_id": "579",
+      "notification_id": "342"
+    },
+    "343": {
+      "type": "alert",
+      "class": "trades",
+      "email": "ashaw@example.org",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:25.022987",
+      "created_at": "2025-08-04T23:41:25.022987",
+      "reference_id": "989",
+      "notification_id": "343"
+    },
+    "344": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "watsonrebecca@williams.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.024555",
+      "reference_id": "161",
+      "notification_id": "344"
+    },
+    "345": {
+      "type": "alert",
+      "class": "investors",
+      "email": "mgonzales@galvan.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.025595",
+      "created_at": "2025-08-04T23:41:25.025595",
+      "reference_id": "277",
+      "notification_id": "345"
+    },
+    "346": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "josephbrennan@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.027742",
+      "reference_id": "1945",
+      "notification_id": "346"
+    },
+    "347": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "amitchell@jordan.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.029439",
+      "reference_id": "507",
+      "notification_id": "347"
+    },
+    "348": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "vwillis@morris-daugherty.biz",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:25.030553",
+      "created_at": "2025-08-04T23:41:25.030553",
+      "reference_id": "160",
+      "notification_id": "348"
+    },
+    "349": {
+      "type": "alert",
+      "class": "documents",
+      "email": "ericfarmer@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.031553",
+      "created_at": "2025-08-04T23:41:25.03255",
+      "reference_id": "196",
+      "notification_id": "349"
+    },
+    "350": {
+      "type": "alert",
+      "class": "reports",
+      "email": "john21@example.net",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.033912",
+      "created_at": "2025-08-04T23:41:25.033912",
+      "reference_id": "266",
+      "notification_id": "350"
+    },
+    "351": {
+      "type": "alert",
+      "class": "portfolios",
+      "email": "comptonjeremy@mccann-ramos.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.035526",
+      "reference_id": "181",
+      "notification_id": "351"
+    },
+    "352": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "johnsonmatthew@byrd.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.036953",
+      "reference_id": "333",
+      "notification_id": "352"
+    },
+    "353": {
+      "type": "report",
+      "class": "documents",
+      "email": "hickmannatasha@example.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.038702",
+      "reference_id": "689",
+      "notification_id": "353"
+    },
+    "354": {
+      "type": "report",
+      "class": "funds",
+      "email": "vjohnson@example.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:25.040349",
+      "created_at": "2025-08-04T23:41:25.040349",
+      "reference_id": "186",
+      "notification_id": "354"
+    },
+    "355": {
+      "type": "subscription_update",
+      "class": "commitments",
+      "email": "kcooper@morris.org",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.041921",
+      "reference_id": "429",
+      "notification_id": "355"
+    },
+    "356": {
+      "type": "report",
+      "class": "commitments",
+      "email": "mgonzales@galvan.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.043476",
+      "reference_id": "52",
+      "notification_id": "356"
+    },
+    "357": {
+      "type": "subscription_update",
+      "class": "investors",
+      "email": "wlynn@lambert.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:25.04451",
+      "created_at": "2025-08-04T23:41:25.04451",
+      "reference_id": "250",
+      "notification_id": "357"
+    },
+    "358": {
+      "type": "reminder",
+      "class": "commitments",
+      "email": "watsonrebecca@williams.com",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.046387",
+      "reference_id": "437",
+      "notification_id": "358"
+    },
+    "359": {
+      "type": "report",
+      "class": "investors",
+      "email": "crawfordwilliam@porter.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.047388",
+      "reference_id": "135",
+      "notification_id": "359"
+    },
+    "360": {
+      "type": "report",
+      "class": "funds",
+      "email": "alexistyler@example.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.049399",
+      "reference_id": "26",
+      "notification_id": "360"
+    },
+    "361": {
+      "type": "report",
+      "class": "reports",
+      "email": "perryrandy@example.com",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:25.051064",
+      "created_at": "2025-08-04T23:41:25.051064",
+      "reference_id": "368",
+      "notification_id": "361"
+    },
+    "362": {
+      "type": "reminder",
+      "class": "reports",
+      "email": "jeffrey10@example.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.052668",
+      "created_at": "2025-08-04T23:41:25.052668",
+      "reference_id": "127",
+      "notification_id": "362"
+    },
+    "363": {
+      "type": "subscription_update",
+      "class": "reports",
+      "email": "gabriellecameron@example.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.05426",
+      "created_at": "2025-08-04T23:41:25.05426",
+      "reference_id": "122",
+      "notification_id": "363"
+    },
+    "364": {
+      "type": "report",
+      "class": "funds",
+      "email": "barbara10@example.net",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.055883",
+      "reference_id": "114",
+      "notification_id": "364"
+    },
+    "365": {
+      "type": "alert",
+      "class": "invoices",
+      "email": "brittney88@burns.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.05693",
+      "reference_id": "214",
+      "notification_id": "365"
+    },
+    "366": {
+      "type": "reminder",
+      "class": "invoices",
+      "email": "webbkenneth@wilson.com",
+      "status": "pending",
+      "sent_at": "2025-08-04T23:41:25.0591",
+      "created_at": "2025-08-04T23:41:25.0591",
+      "reference_id": "71",
+      "notification_id": "366"
+    },
+    "367": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "mitchellpaul@nash.com",
+      "status": "failed",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.060051",
+      "reference_id": "186",
+      "notification_id": "367"
+    },
+    "368": {
+      "type": "alert",
+      "class": "investors",
+      "email": "finleycasey@cline-ayala.com",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.061075",
+      "created_at": "2025-08-04T23:41:25.061075",
+      "reference_id": "139",
+      "notification_id": "368"
+    },
+    "369": {
+      "type": "subscription_update",
+      "class": "portfolios",
+      "email": "mitchellpeters@hinton-lane.biz",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.06312",
+      "reference_id": "366",
+      "notification_id": "369"
+    },
+    "370": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "ujenkins@example.org",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.06524",
+      "reference_id": "2208",
+      "notification_id": "370"
+    },
+    "371": {
+      "type": "reminder",
+      "class": "investors",
+      "email": "cprice@erickson.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.066302",
+      "reference_id": "192",
+      "notification_id": "371"
+    },
+    "372": {
+      "type": "reminder",
+      "class": "trades",
+      "email": "judyfox@example.net",
+      "status": "pending",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.068446",
+      "reference_id": "1831",
+      "notification_id": "372"
+    },
+    "373": {
+      "type": "alert",
+      "class": "reports",
+      "email": "reynoldsjulie@example.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.070046",
+      "reference_id": "303",
+      "notification_id": "373"
+    },
+    "374": {
+      "type": "subscription_update",
+      "class": "commitments",
+      "email": "webbkenneth@wilson.com",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.071609",
+      "reference_id": "520",
+      "notification_id": "374"
+    },
+    "375": {
+      "type": "reminder",
+      "class": "subscriptions",
+      "email": "robin05@elliott.info",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.073182",
+      "reference_id": "331",
+      "notification_id": "375"
+    },
+    "376": {
+      "type": "report",
+      "class": "subscriptions",
+      "email": "martinjeremy@delgado-page.org",
+      "status": "sent",
+      "sent_at": null,
+      "created_at": "2025-08-04T23:41:25.074718",
+      "reference_id": "351",
+      "notification_id": "376"
+    },
+    "377": {
+      "type": "subscription_update",
+      "class": "documents",
+      "email": "barbara10@example.net",
+      "status": "sent",
+      "sent_at": "2025-08-04T23:41:25.076377",
+      "created_at": "2025-08-04T23:41:25.076377",
+      "reference_id": "85",
+      "notification_id": "377"
+    },
+    "378": {
+      "type": "alert",
+      "class": "subscriptions",
+      "email": "melissa87@buchanan.org",
+      "status": "failed",
+      "sent_at": "2025-08-04T23:41:25.077803",
+      "created_at": "2025-08-04T23:41:25.077803",
+      "reference_id": "411",
+      "notification_id": "378"
+    }
+  }

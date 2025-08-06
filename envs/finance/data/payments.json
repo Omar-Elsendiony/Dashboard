@@ -1,0 +1,5015 @@
+{
+    "1": {
+      "amount": 110668.4,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:06.688692",
+      "invoice_id": "1",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "1"
+    },
+    "2": {
+      "amount": 123268.54,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:06.730873",
+      "invoice_id": "2",
+      "payment_date": "2025-08-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "2"
+    },
+    "3": {
+      "amount": 432709.51,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:06.755197",
+      "invoice_id": "3",
+      "payment_date": "2025-09-27T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "3"
+    },
+    "4": {
+      "amount": 495443.3,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:06.804778",
+      "invoice_id": "4",
+      "payment_date": "2025-07-27T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "4"
+    },
+    "5": {
+      "amount": 306156.75,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:06.835981",
+      "invoice_id": "5",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "5"
+    },
+    "6": {
+      "amount": 441264.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:06.876126",
+      "invoice_id": "6",
+      "payment_date": "2025-08-11T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "6"
+    },
+    "7": {
+      "amount": 69723.57,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:06.927776",
+      "invoice_id": "7",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "7"
+    },
+    "8": {
+      "amount": 465852.4,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:06.950402",
+      "invoice_id": "8",
+      "payment_date": "2025-08-12T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "8"
+    },
+    "9": {
+      "amount": 116948.38,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:06.962142",
+      "invoice_id": "9",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "9"
+    },
+    "10": {
+      "amount": 415750.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.002489",
+      "invoice_id": "10",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "10"
+    },
+    "11": {
+      "amount": 163797.66,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.052261",
+      "invoice_id": "11",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "11"
+    },
+    "12": {
+      "amount": 83620.32,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.085509",
+      "invoice_id": "12",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "12"
+    },
+    "13": {
+      "amount": 56549.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.125162",
+      "invoice_id": "13",
+      "payment_date": "2025-09-12T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "13"
+    },
+    "14": {
+      "amount": 260631.47,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:07.164731",
+      "invoice_id": "14",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "14"
+    },
+    "15": {
+      "amount": 385311.1,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.205744",
+      "invoice_id": "15",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "15"
+    },
+    "16": {
+      "amount": 95186.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.217994",
+      "invoice_id": "16",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "16"
+    },
+    "17": {
+      "amount": 215709.76,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.257362",
+      "invoice_id": "17",
+      "payment_date": "2025-06-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "17"
+    },
+    "18": {
+      "amount": 489460.43,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.287645",
+      "invoice_id": "18",
+      "payment_date": "2025-08-16T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "18"
+    },
+    "19": {
+      "amount": 134123.24,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.327207",
+      "invoice_id": "19",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "19"
+    },
+    "20": {
+      "amount": 178351.33,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.339537",
+      "invoice_id": "20",
+      "payment_date": "2025-08-16T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "20"
+    },
+    "21": {
+      "amount": 166383.4,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.360583",
+      "invoice_id": "21",
+      "payment_date": "2025-07-10T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "21"
+    },
+    "22": {
+      "amount": 480994.81,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.410691",
+      "invoice_id": "22",
+      "payment_date": "2025-07-16T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "22"
+    },
+    "23": {
+      "amount": 108468.02,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.422676",
+      "invoice_id": "23",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "23"
+    },
+    "24": {
+      "amount": 205998.37,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.444508",
+      "invoice_id": "24",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "24"
+    },
+    "25": {
+      "amount": 368473.5,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.49307",
+      "invoice_id": "25",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "25"
+    },
+    "26": {
+      "amount": 134123.24,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.523371",
+      "invoice_id": "26",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "26"
+    },
+    "27": {
+      "amount": 34521.17,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.554605",
+      "invoice_id": "27",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "27"
+    },
+    "28": {
+      "amount": 228376.95,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.566117",
+      "invoice_id": "28",
+      "payment_date": "2025-09-07T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "28"
+    },
+    "29": {
+      "amount": 65871.45,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.605976",
+      "invoice_id": "29",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "29"
+    },
+    "30": {
+      "amount": 215709.76,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.646433",
+      "invoice_id": "30",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "30"
+    },
+    "31": {
+      "amount": 203841.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.659632",
+      "invoice_id": "31",
+      "payment_date": "2025-07-18T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "31"
+    },
+    "32": {
+      "amount": 424255.43,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.69906",
+      "invoice_id": "32",
+      "payment_date": "2025-08-20T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "32"
+    },
+    "33": {
+      "amount": 18706.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.73045",
+      "invoice_id": "33",
+      "payment_date": "2025-08-28T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "33"
+    },
+    "34": {
+      "amount": 58571.13,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:07.76097",
+      "invoice_id": "34",
+      "payment_date": "2025-08-19T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "34"
+    },
+    "35": {
+      "amount": 75795.95,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.781963",
+      "invoice_id": "35",
+      "payment_date": "2025-08-16T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "35"
+    },
+    "36": {
+      "amount": 115908.54,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.822745",
+      "invoice_id": "36",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "36"
+    },
+    "37": {
+      "amount": 382151.71,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.843275",
+      "invoice_id": "37",
+      "payment_date": "2025-07-27T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "37"
+    },
+    "38": {
+      "amount": 486422.22,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.864414",
+      "invoice_id": "38",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "38"
+    },
+    "39": {
+      "amount": 246978.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.887344",
+      "invoice_id": "39",
+      "payment_date": "2025-08-19T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "39"
+    },
+    "40": {
+      "amount": 86682.48,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:07.908582",
+      "invoice_id": "40",
+      "payment_date": "2025-07-16T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "40"
+    },
+    "41": {
+      "amount": 278368.39,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.957554",
+      "invoice_id": "41",
+      "payment_date": "2025-09-13T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "41"
+    },
+    "42": {
+      "amount": 326904.37,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:07.969593",
+      "invoice_id": "42",
+      "payment_date": "2025-08-02T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "42"
+    },
+    "43": {
+      "amount": 442015.08,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.018786",
+      "invoice_id": "43",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "43"
+    },
+    "44": {
+      "amount": 332224.81,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.048993",
+      "invoice_id": "44",
+      "payment_date": "2025-07-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "44"
+    },
+    "45": {
+      "amount": 319496.98,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.09781",
+      "invoice_id": "45",
+      "payment_date": "2025-09-03T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "45"
+    },
+    "46": {
+      "amount": 301198.54,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.138937",
+      "invoice_id": "46",
+      "payment_date": "2025-06-29T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "46"
+    },
+    "47": {
+      "amount": 260641.72,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.187643",
+      "invoice_id": "47",
+      "payment_date": "2025-08-06T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "47"
+    },
+    "48": {
+      "amount": 124739.14,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.218166",
+      "invoice_id": "48",
+      "payment_date": "2025-08-06T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "48"
+    },
+    "49": {
+      "amount": 333480.73,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.267057",
+      "invoice_id": "49",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "49"
+    },
+    "50": {
+      "amount": 203841.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.278546",
+      "invoice_id": "50",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "50"
+    },
+    "51": {
+      "amount": 442577.86,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.29955",
+      "invoice_id": "51",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "51"
+    },
+    "52": {
+      "amount": 101896.27,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.330247",
+      "invoice_id": "52",
+      "payment_date": "2025-07-24T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "52"
+    },
+    "53": {
+      "amount": 6476.77,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:08.353828",
+      "invoice_id": "53",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "53"
+    },
+    "54": {
+      "amount": 249505.5,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.374858",
+      "invoice_id": "54",
+      "payment_date": "2025-09-04T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "54"
+    },
+    "55": {
+      "amount": 307912.13,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.424481",
+      "invoice_id": "55",
+      "payment_date": "2025-07-25T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "55"
+    },
+    "56": {
+      "amount": 232407.75,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.473382",
+      "invoice_id": "56",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "56"
+    },
+    "57": {
+      "amount": 149401.96,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.513026",
+      "invoice_id": "57",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "57"
+    },
+    "58": {
+      "amount": 347713.17,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.552877",
+      "invoice_id": "58",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "58"
+    },
+    "59": {
+      "amount": 19091.69,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.603309",
+      "invoice_id": "59",
+      "payment_date": "2025-07-12T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "59"
+    },
+    "60": {
+      "amount": 56998.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.652494",
+      "invoice_id": "60",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "60"
+    },
+    "61": {
+      "amount": 194374.67,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.701691",
+      "invoice_id": "61",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "61"
+    },
+    "62": {
+      "amount": 92264.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.741015",
+      "invoice_id": "62",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "62"
+    },
+    "63": {
+      "amount": 240660.43,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.771613",
+      "invoice_id": "63",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "63"
+    },
+    "64": {
+      "amount": 55416.54,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.821573",
+      "invoice_id": "64",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "64"
+    },
+    "65": {
+      "amount": 134123.24,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.852414",
+      "invoice_id": "65",
+      "payment_date": "2025-07-18T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "65"
+    },
+    "66": {
+      "amount": 115908.54,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.873887",
+      "invoice_id": "66",
+      "payment_date": "2025-08-24T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "66"
+    },
+    "67": {
+      "amount": 116136.31,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.904597",
+      "invoice_id": "67",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "67"
+    },
+    "68": {
+      "amount": 122608.76,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.945165",
+      "invoice_id": "68",
+      "payment_date": "2025-07-29T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "68"
+    },
+    "69": {
+      "amount": 167115.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:08.98583",
+      "invoice_id": "69",
+      "payment_date": "2025-09-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "69"
+    },
+    "70": {
+      "amount": 185188.43,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.006981",
+      "invoice_id": "70",
+      "payment_date": "2025-07-22T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "70"
+    },
+    "71": {
+      "amount": 205039.55,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.05721",
+      "invoice_id": "71",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "71"
+    },
+    "72": {
+      "amount": 43697.96,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:09.069383",
+      "invoice_id": "72",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "72"
+    },
+    "73": {
+      "amount": 241164.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.109759",
+      "invoice_id": "73",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "73"
+    },
+    "74": {
+      "amount": 444714.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.130471",
+      "invoice_id": "74",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "74"
+    },
+    "75": {
+      "amount": 186492.44,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.169566",
+      "invoice_id": "75",
+      "payment_date": "2025-08-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "75"
+    },
+    "76": {
+      "amount": 476674.7,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.181938",
+      "invoice_id": "76",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "76"
+    },
+    "77": {
+      "amount": 157213.29,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.212495",
+      "invoice_id": "77",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "77"
+    },
+    "78": {
+      "amount": 476402.56,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.233665",
+      "invoice_id": "78",
+      "payment_date": "2025-08-01T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "78"
+    },
+    "79": {
+      "amount": 201884.7,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.281769",
+      "invoice_id": "79",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "79"
+    },
+    "80": {
+      "amount": 326904.37,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.303863",
+      "invoice_id": "80",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "80"
+    },
+    "81": {
+      "amount": 223141.61,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.35224",
+      "invoice_id": "81",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "81"
+    },
+    "82": {
+      "amount": 499806.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.38306",
+      "invoice_id": "82",
+      "payment_date": "2025-09-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "82"
+    },
+    "83": {
+      "amount": 350570.3,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:09.432892",
+      "invoice_id": "83",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "83"
+    },
+    "84": {
+      "amount": 19573.59,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:09.481951",
+      "invoice_id": "84",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "84"
+    },
+    "85": {
+      "amount": 323036.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.494238",
+      "invoice_id": "85",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "85"
+    },
+    "86": {
+      "amount": 197017.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.53476",
+      "invoice_id": "86",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "86"
+    },
+    "87": {
+      "amount": 158750.73,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.56489",
+      "invoice_id": "87",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "87"
+    },
+    "88": {
+      "amount": 152383.95,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.605065",
+      "invoice_id": "88",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "88"
+    },
+    "89": {
+      "amount": 343344.67,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.616916",
+      "invoice_id": "89",
+      "payment_date": "2025-07-31T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "89"
+    },
+    "90": {
+      "amount": 57834.16,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:09.628708",
+      "invoice_id": "90",
+      "payment_date": "2025-07-29T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "90"
+    },
+    "91": {
+      "amount": 154297.59,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.650057",
+      "invoice_id": "91",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "91"
+    },
+    "92": {
+      "amount": 228756.12,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.671196",
+      "invoice_id": "92",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "92"
+    },
+    "93": {
+      "amount": 330959.37,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.720041",
+      "invoice_id": "93",
+      "payment_date": "2025-07-24T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "93"
+    },
+    "94": {
+      "amount": 320447.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.740797",
+      "invoice_id": "94",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "94"
+    },
+    "95": {
+      "amount": 106897.66,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.790729",
+      "invoice_id": "95",
+      "payment_date": "2025-08-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "95"
+    },
+    "96": {
+      "amount": 113114.41,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:09.839682",
+      "invoice_id": "96",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "96"
+    },
+    "97": {
+      "amount": 83080.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.879458",
+      "invoice_id": "97",
+      "payment_date": "2025-07-20T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "97"
+    },
+    "98": {
+      "amount": 74685.32,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:09.920554",
+      "invoice_id": "98",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "98"
+    },
+    "99": {
+      "amount": 358005.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.932128",
+      "invoice_id": "99",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "99"
+    },
+    "100": {
+      "amount": 29478.68,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:09.972243",
+      "invoice_id": "100",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "100"
+    },
+    "101": {
+      "amount": 322393.68,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.022446",
+      "invoice_id": "101",
+      "payment_date": "2025-09-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "101"
+    },
+    "102": {
+      "amount": 404097.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.061449",
+      "invoice_id": "102",
+      "payment_date": "2025-08-12T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "102"
+    },
+    "103": {
+      "amount": 137031.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.094274",
+      "invoice_id": "103",
+      "payment_date": "2025-07-08T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "103"
+    },
+    "104": {
+      "amount": 469411.7,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.105944",
+      "invoice_id": "104",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "104"
+    },
+    "105": {
+      "amount": 273622.67,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.154798",
+      "invoice_id": "105",
+      "payment_date": "2025-07-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "105"
+    },
+    "106": {
+      "amount": 129867.09,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.175677",
+      "invoice_id": "106",
+      "payment_date": "2025-09-14T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "106"
+    },
+    "107": {
+      "amount": 288771.55,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.215794",
+      "invoice_id": "107",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "107"
+    },
+    "108": {
+      "amount": 273499.56,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.247494",
+      "invoice_id": "108",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "108"
+    },
+    "109": {
+      "amount": 353274.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.279758",
+      "invoice_id": "109",
+      "payment_date": "2025-09-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "109"
+    },
+    "110": {
+      "amount": 113062.12,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.329121",
+      "invoice_id": "110",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "110"
+    },
+    "111": {
+      "amount": 265139.54,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:10.359603",
+      "invoice_id": "111",
+      "payment_date": "2025-08-12T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "111"
+    },
+    "112": {
+      "amount": 440542.74,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.391017",
+      "invoice_id": "112",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "112"
+    },
+    "113": {
+      "amount": 23528.2,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:10.430518",
+      "invoice_id": "113",
+      "payment_date": "2025-09-19T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "113"
+    },
+    "114": {
+      "amount": 219266.75,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.452438",
+      "invoice_id": "114",
+      "payment_date": "2025-09-06T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "114"
+    },
+    "115": {
+      "amount": 270656.02,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.502682",
+      "invoice_id": "115",
+      "payment_date": "2025-08-16T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "115"
+    },
+    "116": {
+      "amount": 149883.71,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:10.542775",
+      "invoice_id": "116",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "116"
+    },
+    "117": {
+      "amount": 283922.15,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.581938",
+      "invoice_id": "117",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "117"
+    },
+    "118": {
+      "amount": 298605.39,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:10.630579",
+      "invoice_id": "118",
+      "payment_date": "2025-10-03T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "118"
+    },
+    "119": {
+      "amount": 139853.88,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.652888",
+      "invoice_id": "119",
+      "payment_date": "2025-10-02T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "119"
+    },
+    "120": {
+      "amount": 119124.3,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:10.683676",
+      "invoice_id": "120",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "120"
+    },
+    "121": {
+      "amount": 300964.84,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.695872",
+      "invoice_id": "121",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "121"
+    },
+    "122": {
+      "amount": 492990.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.744603",
+      "invoice_id": "122",
+      "payment_date": "2025-08-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "122"
+    },
+    "123": {
+      "amount": 480687.51,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.774845",
+      "invoice_id": "123",
+      "payment_date": "2025-08-12T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "123"
+    },
+    "124": {
+      "amount": 408770.85,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.80597",
+      "invoice_id": "124",
+      "payment_date": "2025-08-07T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "124"
+    },
+    "125": {
+      "amount": 56998.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.854827",
+      "invoice_id": "125",
+      "payment_date": "2025-09-29T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "125"
+    },
+    "126": {
+      "amount": 325225.48,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.876669",
+      "invoice_id": "126",
+      "payment_date": "2025-07-27T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "126"
+    },
+    "127": {
+      "amount": 232262.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.906913",
+      "invoice_id": "127",
+      "payment_date": "2025-06-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "127"
+    },
+    "128": {
+      "amount": 53348.88,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:10.928428",
+      "invoice_id": "128",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "128"
+    },
+    "129": {
+      "amount": 7372.7,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:10.941136",
+      "invoice_id": "129",
+      "payment_date": "2025-09-13T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "129"
+    },
+    "130": {
+      "amount": 219266.75,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.953101",
+      "invoice_id": "130",
+      "payment_date": "2025-09-12T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "130"
+    },
+    "131": {
+      "amount": 391792.86,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:10.964573",
+      "invoice_id": "131",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "131"
+    },
+    "132": {
+      "amount": 156945.36,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.014185",
+      "invoice_id": "132",
+      "payment_date": "2025-08-24T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "132"
+    },
+    "133": {
+      "amount": 231051.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.063708",
+      "invoice_id": "133",
+      "payment_date": "2025-08-20T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "133"
+    },
+    "134": {
+      "amount": 126900.64,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.112782",
+      "invoice_id": "134",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "134"
+    },
+    "135": {
+      "amount": 119805.79,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:11.153333",
+      "invoice_id": "135",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "135"
+    },
+    "136": {
+      "amount": 146997.43,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.165603",
+      "invoice_id": "136",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "136"
+    },
+    "137": {
+      "amount": 261632.41,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:11.186974",
+      "invoice_id": "137",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "137"
+    },
+    "138": {
+      "amount": 288771.55,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.217077",
+      "invoice_id": "138",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "138"
+    },
+    "139": {
+      "amount": 166953.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.229365",
+      "invoice_id": "139",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "139"
+    },
+    "140": {
+      "amount": 249880.05,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.25045",
+      "invoice_id": "140",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "140"
+    },
+    "141": {
+      "amount": 139615.14,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.271899",
+      "invoice_id": "141",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "141"
+    },
+    "142": {
+      "amount": 178682.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.284062",
+      "invoice_id": "142",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "142"
+    },
+    "143": {
+      "amount": 233881.21,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.313972",
+      "invoice_id": "143",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "143"
+    },
+    "144": {
+      "amount": 352924.94,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.354682",
+      "invoice_id": "144",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "144"
+    },
+    "145": {
+      "amount": 167115.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.394883",
+      "invoice_id": "145",
+      "payment_date": "2025-09-11T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "145"
+    },
+    "146": {
+      "amount": 347713.17,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.417143",
+      "invoice_id": "146",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "146"
+    },
+    "147": {
+      "amount": 92264.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.466566",
+      "invoice_id": "147",
+      "payment_date": "2025-07-10T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "147"
+    },
+    "148": {
+      "amount": 70346.51,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.506501",
+      "invoice_id": "148",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "148"
+    },
+    "149": {
+      "amount": 476674.7,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.518149",
+      "invoice_id": "149",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "149"
+    },
+    "150": {
+      "amount": 106251.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.548914",
+      "invoice_id": "150",
+      "payment_date": "2025-07-29T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "150"
+    },
+    "151": {
+      "amount": 235702.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.579186",
+      "invoice_id": "151",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "151"
+    },
+    "152": {
+      "amount": 228756.12,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.600555",
+      "invoice_id": "152",
+      "payment_date": "2025-09-03T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "152"
+    },
+    "153": {
+      "amount": 77820.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.641416",
+      "invoice_id": "153",
+      "payment_date": "2025-09-30T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "153"
+    },
+    "154": {
+      "amount": 120535.52,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.671624",
+      "invoice_id": "154",
+      "payment_date": "2025-07-31T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "154"
+    },
+    "155": {
+      "amount": 17707.49,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:11.692355",
+      "invoice_id": "155",
+      "payment_date": "2025-08-11T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "155"
+    },
+    "156": {
+      "amount": 491930.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.713439",
+      "invoice_id": "156",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "156"
+    },
+    "157": {
+      "amount": 267959.77,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.743927",
+      "invoice_id": "157",
+      "payment_date": "2025-09-01T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "157"
+    },
+    "158": {
+      "amount": 200571.1,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:11.793355",
+      "invoice_id": "158",
+      "payment_date": "2025-07-14T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "158"
+    },
+    "159": {
+      "amount": 355740.27,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.841528",
+      "invoice_id": "159",
+      "payment_date": "2025-09-03T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "159"
+    },
+    "160": {
+      "amount": 355934.3,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.892273",
+      "invoice_id": "160",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "160"
+    },
+    "161": {
+      "amount": 492990.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.940764",
+      "invoice_id": "161",
+      "payment_date": "2025-07-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "161"
+    },
+    "162": {
+      "amount": 282417.34,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:11.989885",
+      "invoice_id": "162",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "162"
+    },
+    "163": {
+      "amount": 495816.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.038111",
+      "invoice_id": "163",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "163"
+    },
+    "164": {
+      "amount": 337606.94,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.078977",
+      "invoice_id": "164",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "164"
+    },
+    "165": {
+      "amount": 129084.89,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:12.10061",
+      "invoice_id": "165",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "165"
+    },
+    "166": {
+      "amount": 199396.38,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.131779",
+      "invoice_id": "166",
+      "payment_date": "2025-08-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "166"
+    },
+    "167": {
+      "amount": 492353.27,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.162414",
+      "invoice_id": "167",
+      "payment_date": "2025-07-01T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "167"
+    },
+    "168": {
+      "amount": 135394.7,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:12.184433",
+      "invoice_id": "168",
+      "payment_date": "2025-08-19T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "168"
+    },
+    "169": {
+      "amount": 25021.27,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:12.214564",
+      "invoice_id": "169",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "169"
+    },
+    "170": {
+      "amount": 33800.09,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.254523",
+      "invoice_id": "170",
+      "payment_date": "2025-08-06T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "170"
+    },
+    "171": {
+      "amount": 186492.44,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.303204",
+      "invoice_id": "171",
+      "payment_date": "2025-07-14T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "171"
+    },
+    "172": {
+      "amount": 215709.76,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.336131",
+      "invoice_id": "172",
+      "payment_date": "2025-06-30T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "172"
+    },
+    "173": {
+      "amount": 121763.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.386096",
+      "invoice_id": "173",
+      "payment_date": "2025-07-27T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "173"
+    },
+    "174": {
+      "amount": 439873.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.435004",
+      "invoice_id": "174",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "174"
+    },
+    "175": {
+      "amount": 46811.25,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:12.446429",
+      "invoice_id": "175",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "175"
+    },
+    "176": {
+      "amount": 327490.9,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.467998",
+      "invoice_id": "176",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "176"
+    },
+    "177": {
+      "amount": 27993.32,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.489368",
+      "invoice_id": "177",
+      "payment_date": "2025-09-21T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "177"
+    },
+    "178": {
+      "amount": 41399.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.510683",
+      "invoice_id": "178",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "178"
+    },
+    "179": {
+      "amount": 441264.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.550168",
+      "invoice_id": "179",
+      "payment_date": "2025-08-24T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "179"
+    },
+    "180": {
+      "amount": 247018.69,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.562241",
+      "invoice_id": "180",
+      "payment_date": "2025-06-28T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "180"
+    },
+    "181": {
+      "amount": 228831.49,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.585617",
+      "invoice_id": "181",
+      "payment_date": "2025-07-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "181"
+    },
+    "182": {
+      "amount": 243888.26,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.597611",
+      "invoice_id": "182",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "182"
+    },
+    "183": {
+      "amount": 215425.06,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.619122",
+      "invoice_id": "183",
+      "payment_date": "2025-07-27T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "183"
+    },
+    "184": {
+      "amount": 426829.07,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.658408",
+      "invoice_id": "184",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "184"
+    },
+    "185": {
+      "amount": 101715.22,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:12.679133",
+      "invoice_id": "185",
+      "payment_date": "2025-08-19T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "185"
+    },
+    "186": {
+      "amount": 250494.62,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.728482",
+      "invoice_id": "186",
+      "payment_date": "2025-07-12T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "186"
+    },
+    "187": {
+      "amount": 285447.84,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.768207",
+      "invoice_id": "187",
+      "payment_date": "2025-06-30T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "187"
+    },
+    "188": {
+      "amount": 408770.85,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.791897",
+      "invoice_id": "188",
+      "payment_date": "2025-06-30T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "188"
+    },
+    "189": {
+      "amount": 302613.78,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.804044",
+      "invoice_id": "189",
+      "payment_date": "2025-08-01T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "189"
+    },
+    "190": {
+      "amount": 202039.21,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.824855",
+      "invoice_id": "190",
+      "payment_date": "2025-07-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "190"
+    },
+    "191": {
+      "amount": 385082.45,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.855326",
+      "invoice_id": "191",
+      "payment_date": "2025-09-17T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "191"
+    },
+    "192": {
+      "amount": 106251.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.876212",
+      "invoice_id": "192",
+      "payment_date": "2025-06-12T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "192"
+    },
+    "193": {
+      "amount": 19002.39,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.906483",
+      "invoice_id": "193",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "193"
+    },
+    "194": {
+      "amount": 307118.07,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.945674",
+      "invoice_id": "194",
+      "payment_date": "2025-07-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "194"
+    },
+    "195": {
+      "amount": 219266.75,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.985818",
+      "invoice_id": "195",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "195"
+    },
+    "196": {
+      "amount": 419603.13,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:12.997382",
+      "invoice_id": "196",
+      "payment_date": "2025-07-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "196"
+    },
+    "197": {
+      "amount": 92422.4,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.047407",
+      "invoice_id": "197",
+      "payment_date": "2025-07-31T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "197"
+    },
+    "198": {
+      "amount": 82128.61,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:13.068655",
+      "invoice_id": "198",
+      "payment_date": "2025-08-29T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "198"
+    },
+    "199": {
+      "amount": 430195.21,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.117873",
+      "invoice_id": "199",
+      "payment_date": "2025-07-25T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "199"
+    },
+    "200": {
+      "amount": 307885.68,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.167793",
+      "invoice_id": "200",
+      "payment_date": "2025-09-29T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "200"
+    },
+    "201": {
+      "amount": 85841.5,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.188741",
+      "invoice_id": "201",
+      "payment_date": "2025-07-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "201"
+    },
+    "202": {
+      "amount": 86084.44,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.228373",
+      "invoice_id": "202",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "202"
+    },
+    "203": {
+      "amount": 366783.99,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.268856",
+      "invoice_id": "203",
+      "payment_date": "2025-07-22T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "203"
+    },
+    "204": {
+      "amount": 426873.04,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.308226",
+      "invoice_id": "204",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "204"
+    },
+    "205": {
+      "amount": 14133.3,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:13.320429",
+      "invoice_id": "205",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "205"
+    },
+    "206": {
+      "amount": 270784.12,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.368982",
+      "invoice_id": "206",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "206"
+    },
+    "207": {
+      "amount": 318357.03,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.400117",
+      "invoice_id": "207",
+      "payment_date": "2025-08-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "207"
+    },
+    "208": {
+      "amount": 137952.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.411272",
+      "invoice_id": "208",
+      "payment_date": "2025-09-15T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "208"
+    },
+    "209": {
+      "amount": 463811.99,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.442071",
+      "invoice_id": "209",
+      "payment_date": "2025-06-12T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "209"
+    },
+    "210": {
+      "amount": 41552.12,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:13.472393",
+      "invoice_id": "210",
+      "payment_date": "2025-07-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "210"
+    },
+    "211": {
+      "amount": 241330.94,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.522613",
+      "invoice_id": "211",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "211"
+    },
+    "212": {
+      "amount": 60472.91,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:13.552506",
+      "invoice_id": "212",
+      "payment_date": "2025-09-01T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "212"
+    },
+    "213": {
+      "amount": 97878.73,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.564489",
+      "invoice_id": "213",
+      "payment_date": "2025-06-23T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "213"
+    },
+    "214": {
+      "amount": 323891.43,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.59498",
+      "invoice_id": "214",
+      "payment_date": "2025-08-29T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "214"
+    },
+    "215": {
+      "amount": 65339.36,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.606773",
+      "invoice_id": "215",
+      "payment_date": "2025-09-20T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "215"
+    },
+    "216": {
+      "amount": 201884.7,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.619118",
+      "invoice_id": "216",
+      "payment_date": "2025-07-27T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "216"
+    },
+    "217": {
+      "amount": 133332.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.669166",
+      "invoice_id": "217",
+      "payment_date": "2025-09-29T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "217"
+    },
+    "218": {
+      "amount": 97452.08,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.70884",
+      "invoice_id": "218",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "218"
+    },
+    "219": {
+      "amount": 233403.89,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.741161",
+      "invoice_id": "219",
+      "payment_date": "2025-09-27T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "219"
+    },
+    "220": {
+      "amount": 317491.09,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.753659",
+      "invoice_id": "220",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "220"
+    },
+    "221": {
+      "amount": 253893.15,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.801689",
+      "invoice_id": "221",
+      "payment_date": "2025-08-29T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "221"
+    },
+    "222": {
+      "amount": 45319.53,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.814246",
+      "invoice_id": "222",
+      "payment_date": "2025-06-09T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "222"
+    },
+    "223": {
+      "amount": 393438.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.844431",
+      "invoice_id": "223",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "223"
+    },
+    "224": {
+      "amount": 389439.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.875235",
+      "invoice_id": "224",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "224"
+    },
+    "225": {
+      "amount": 129093.67,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.924246",
+      "invoice_id": "225",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "225"
+    },
+    "226": {
+      "amount": 50389.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.94547",
+      "invoice_id": "226",
+      "payment_date": "2025-10-05T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "226"
+    },
+    "227": {
+      "amount": 233403.89,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:13.995385",
+      "invoice_id": "227",
+      "payment_date": "2025-08-25T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "227"
+    },
+    "228": {
+      "amount": 109056.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.034419",
+      "invoice_id": "228",
+      "payment_date": "2025-08-02T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "228"
+    },
+    "229": {
+      "amount": 244877.71,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.065607",
+      "invoice_id": "229",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "229"
+    },
+    "230": {
+      "amount": 91771.88,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.105411",
+      "invoice_id": "230",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "230"
+    },
+    "231": {
+      "amount": 123422.67,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.117561",
+      "invoice_id": "231",
+      "payment_date": "2025-07-11T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "231"
+    },
+    "232": {
+      "amount": 382151.71,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.147567",
+      "invoice_id": "232",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "232"
+    },
+    "233": {
+      "amount": 12367.62,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.197052",
+      "invoice_id": "233",
+      "payment_date": "2025-08-25T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "233"
+    },
+    "234": {
+      "amount": 32551.28,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:14.219146",
+      "invoice_id": "234",
+      "payment_date": "2025-08-25T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "234"
+    },
+    "235": {
+      "amount": 17215.17,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.239029",
+      "invoice_id": "235",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "235"
+    },
+    "236": {
+      "amount": 233881.21,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.252035",
+      "invoice_id": "236",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "236"
+    },
+    "237": {
+      "amount": 200254.71,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.292136",
+      "invoice_id": "237",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "237"
+    },
+    "238": {
+      "amount": 290102.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.322915",
+      "invoice_id": "238",
+      "payment_date": "2025-10-01T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "238"
+    },
+    "239": {
+      "amount": 92098.17,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:14.335149",
+      "invoice_id": "239",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "239"
+    },
+    "240": {
+      "amount": 202346.56,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.385186",
+      "invoice_id": "240",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "240"
+    },
+    "241": {
+      "amount": 29127.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.415315",
+      "invoice_id": "241",
+      "payment_date": "2025-09-30T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "241"
+    },
+    "242": {
+      "amount": 382151.71,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.456439",
+      "invoice_id": "242",
+      "payment_date": "2025-07-29T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "242"
+    },
+    "243": {
+      "amount": 21716.03,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.468288",
+      "invoice_id": "243",
+      "payment_date": "2025-08-07T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "243"
+    },
+    "244": {
+      "amount": 53901.38,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.498687",
+      "invoice_id": "244",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "244"
+    },
+    "245": {
+      "amount": 95767.05,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.51047",
+      "invoice_id": "245",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "245"
+    },
+    "246": {
+      "amount": 205476.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.540633",
+      "invoice_id": "246",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "246"
+    },
+    "247": {
+      "amount": 480687.51,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.553013",
+      "invoice_id": "247",
+      "payment_date": "2025-07-16T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "247"
+    },
+    "248": {
+      "amount": 267443.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.592741",
+      "invoice_id": "248",
+      "payment_date": "2025-09-14T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "248"
+    },
+    "249": {
+      "amount": 142355.53,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:14.623656",
+      "invoice_id": "249",
+      "payment_date": "2025-09-12T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "249"
+    },
+    "250": {
+      "amount": 200254.71,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.664403",
+      "invoice_id": "250",
+      "payment_date": "2025-07-05T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "250"
+    },
+    "251": {
+      "amount": 457302.19,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.716437",
+      "invoice_id": "251",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "251"
+    },
+    "252": {
+      "amount": 167791.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.737618",
+      "invoice_id": "252",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "252"
+    },
+    "253": {
+      "amount": 152383.95,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.777152",
+      "invoice_id": "253",
+      "payment_date": "2025-07-31T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "253"
+    },
+    "254": {
+      "amount": 317197.21,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.816432",
+      "invoice_id": "254",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "254"
+    },
+    "255": {
+      "amount": 91771.88,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.856303",
+      "invoice_id": "255",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "255"
+    },
+    "256": {
+      "amount": 417568.03,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.877522",
+      "invoice_id": "256",
+      "payment_date": "2025-07-07T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "256"
+    },
+    "257": {
+      "amount": 383746.56,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.917721",
+      "invoice_id": "257",
+      "payment_date": "2025-09-06T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "257"
+    },
+    "258": {
+      "amount": 249892.77,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.929722",
+      "invoice_id": "258",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "258"
+    },
+    "259": {
+      "amount": 237238.52,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:14.959795",
+      "invoice_id": "259",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "259"
+    },
+    "260": {
+      "amount": 207674.36,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.009316",
+      "invoice_id": "260",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "260"
+    },
+    "261": {
+      "amount": 50389.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.049815",
+      "invoice_id": "261",
+      "payment_date": "2025-09-29T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "261"
+    },
+    "262": {
+      "amount": 62170.53,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.061481",
+      "invoice_id": "262",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "262"
+    },
+    "263": {
+      "amount": 76299.09,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.091538",
+      "invoice_id": "263",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "263"
+    },
+    "264": {
+      "amount": 225690.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.103414",
+      "invoice_id": "264",
+      "payment_date": "2025-09-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "264"
+    },
+    "265": {
+      "amount": 40475.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.13382",
+      "invoice_id": "265",
+      "payment_date": "2025-07-06T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "265"
+    },
+    "266": {
+      "amount": 426829.07,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.183314",
+      "invoice_id": "266",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "266"
+    },
+    "267": {
+      "amount": 457543.38,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.232689",
+      "invoice_id": "267",
+      "payment_date": "2025-08-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "267"
+    },
+    "268": {
+      "amount": 215902.13,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:15.244817",
+      "invoice_id": "268",
+      "payment_date": "2025-08-25T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "268"
+    },
+    "269": {
+      "amount": 163124.86,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.275565",
+      "invoice_id": "269",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "269"
+    },
+    "270": {
+      "amount": 125258.71,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:15.296761",
+      "invoice_id": "270",
+      "payment_date": "2025-09-03T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "270"
+    },
+    "271": {
+      "amount": 342994.29,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.309189",
+      "invoice_id": "271",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "271"
+    },
+    "272": {
+      "amount": 478382.89,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.329695",
+      "invoice_id": "272",
+      "payment_date": "2025-06-26T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "272"
+    },
+    "273": {
+      "amount": 83080.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.370611",
+      "invoice_id": "273",
+      "payment_date": "2025-07-07T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "273"
+    },
+    "274": {
+      "amount": 34316.69,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.402121",
+      "invoice_id": "274",
+      "payment_date": "2025-07-05T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "274"
+    },
+    "275": {
+      "amount": 215427.89,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.451265",
+      "invoice_id": "275",
+      "payment_date": "2025-07-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "275"
+    },
+    "276": {
+      "amount": 130163.34,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.490824",
+      "invoice_id": "276",
+      "payment_date": "2025-07-14T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "276"
+    },
+    "277": {
+      "amount": 59480.13,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.54015",
+      "invoice_id": "277",
+      "payment_date": "2025-08-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "277"
+    },
+    "278": {
+      "amount": 431795.16,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.570209",
+      "invoice_id": "278",
+      "payment_date": "2025-07-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "278"
+    },
+    "279": {
+      "amount": 54000.1,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:15.582594",
+      "invoice_id": "279",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "279"
+    },
+    "280": {
+      "amount": 210504.0,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.613596",
+      "invoice_id": "280",
+      "payment_date": "2025-07-16T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "280"
+    },
+    "281": {
+      "amount": 344039.19,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.654173",
+      "invoice_id": "281",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "281"
+    },
+    "282": {
+      "amount": 126018.0,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.693712",
+      "invoice_id": "282",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "282"
+    },
+    "283": {
+      "amount": 395179.75,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.705671",
+      "invoice_id": "283",
+      "payment_date": "2025-08-19T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "283"
+    },
+    "284": {
+      "amount": 44387.18,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:15.726678",
+      "invoice_id": "284",
+      "payment_date": "2025-07-31T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "284"
+    },
+    "285": {
+      "amount": 18005.16,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:15.775537",
+      "invoice_id": "285",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "285"
+    },
+    "286": {
+      "amount": 207110.02,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.7876",
+      "invoice_id": "286",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "286"
+    },
+    "287": {
+      "amount": 137031.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.818472",
+      "invoice_id": "287",
+      "payment_date": "2025-07-25T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "287"
+    },
+    "288": {
+      "amount": 84470.71,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:15.859203",
+      "invoice_id": "288",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "288"
+    },
+    "289": {
+      "amount": 29127.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.899129",
+      "invoice_id": "289",
+      "payment_date": "2025-09-11T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "289"
+    },
+    "290": {
+      "amount": 247170.89,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:15.938327",
+      "invoice_id": "290",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "290"
+    },
+    "291": {
+      "amount": 185529.14,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.96871",
+      "invoice_id": "291",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "291"
+    },
+    "292": {
+      "amount": 328074.17,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:15.989877",
+      "invoice_id": "292",
+      "payment_date": "2025-07-28T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "292"
+    },
+    "293": {
+      "amount": 253893.15,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.038592",
+      "invoice_id": "293",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "293"
+    },
+    "294": {
+      "amount": 352726.27,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.077975",
+      "invoice_id": "294",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "294"
+    },
+    "295": {
+      "amount": 12309.62,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.119284",
+      "invoice_id": "295",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "295"
+    },
+    "296": {
+      "amount": 496541.03,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.150281",
+      "invoice_id": "296",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "296"
+    },
+    "297": {
+      "amount": 19479.44,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:16.180848",
+      "invoice_id": "297",
+      "payment_date": "2025-07-04T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "297"
+    },
+    "298": {
+      "amount": 417630.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.219973",
+      "invoice_id": "298",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "298"
+    },
+    "299": {
+      "amount": 282417.34,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.260413",
+      "invoice_id": "299",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "299"
+    },
+    "300": {
+      "amount": 210547.13,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.300269",
+      "invoice_id": "300",
+      "payment_date": "2025-09-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "300"
+    },
+    "301": {
+      "amount": 75601.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.31253",
+      "invoice_id": "301",
+      "payment_date": "2025-10-02T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "301"
+    },
+    "302": {
+      "amount": 494807.77,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.334397",
+      "invoice_id": "302",
+      "payment_date": "2025-08-14T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "302"
+    },
+    "303": {
+      "amount": 307118.07,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.364755",
+      "invoice_id": "303",
+      "payment_date": "2025-08-06T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "303"
+    },
+    "304": {
+      "amount": 441264.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.417932",
+      "invoice_id": "304",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "304"
+    },
+    "305": {
+      "amount": 285447.84,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.494951",
+      "invoice_id": "305",
+      "payment_date": "2025-06-18T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "305"
+    },
+    "306": {
+      "amount": 479536.78,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.516102",
+      "invoice_id": "306",
+      "payment_date": "2025-08-15T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "306"
+    },
+    "307": {
+      "amount": 98374.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.546482",
+      "invoice_id": "307",
+      "payment_date": "2025-09-19T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "307"
+    },
+    "308": {
+      "amount": 281031.01,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:16.597028",
+      "invoice_id": "308",
+      "payment_date": "2025-09-24T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "308"
+    },
+    "309": {
+      "amount": 23376.06,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.627573",
+      "invoice_id": "309",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "309"
+    },
+    "310": {
+      "amount": 342994.29,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.64042",
+      "invoice_id": "310",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "310"
+    },
+    "311": {
+      "amount": 43230.94,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:16.664041",
+      "invoice_id": "311",
+      "payment_date": "2025-09-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "311"
+    },
+    "312": {
+      "amount": 246625.05,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.703839",
+      "invoice_id": "312",
+      "payment_date": "2025-07-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "312"
+    },
+    "313": {
+      "amount": 282417.34,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.757443",
+      "invoice_id": "313",
+      "payment_date": "2025-07-05T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "313"
+    },
+    "314": {
+      "amount": 474859.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.799847",
+      "invoice_id": "314",
+      "payment_date": "2025-08-31T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "314"
+    },
+    "315": {
+      "amount": 395320.47,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.852137",
+      "invoice_id": "315",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "315"
+    },
+    "316": {
+      "amount": 353503.23,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.873053",
+      "invoice_id": "316",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "316"
+    },
+    "317": {
+      "amount": 34677.99,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.924002",
+      "invoice_id": "317",
+      "payment_date": "2025-06-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "317"
+    },
+    "318": {
+      "amount": 492677.22,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.937094",
+      "invoice_id": "318",
+      "payment_date": "2025-09-17T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "318"
+    },
+    "319": {
+      "amount": 142942.09,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.958178",
+      "invoice_id": "319",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "319"
+    },
+    "320": {
+      "amount": 36591.35,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:16.979925",
+      "invoice_id": "320",
+      "payment_date": "2025-08-07T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "320"
+    },
+    "321": {
+      "amount": 338779.18,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.03124",
+      "invoice_id": "321",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "321"
+    },
+    "322": {
+      "amount": 198451.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.042524",
+      "invoice_id": "322",
+      "payment_date": "2025-07-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "322"
+    },
+    "323": {
+      "amount": 86084.44,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.091857",
+      "invoice_id": "323",
+      "payment_date": "2025-09-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "323"
+    },
+    "324": {
+      "amount": 264361.58,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:17.131731",
+      "invoice_id": "324",
+      "payment_date": "2025-07-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "324"
+    },
+    "325": {
+      "amount": 74535.04,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:17.171635",
+      "invoice_id": "325",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "325"
+    },
+    "326": {
+      "amount": 107877.2,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.192874",
+      "invoice_id": "326",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "326"
+    },
+    "327": {
+      "amount": 94710.7,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.214472",
+      "invoice_id": "327",
+      "payment_date": "2025-06-28T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "327"
+    },
+    "328": {
+      "amount": 62170.53,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.235801",
+      "invoice_id": "328",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "328"
+    },
+    "329": {
+      "amount": 451527.09,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.277387",
+      "invoice_id": "329",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "329"
+    },
+    "330": {
+      "amount": 204029.47,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:17.326209",
+      "invoice_id": "330",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "330"
+    },
+    "331": {
+      "amount": 34329.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.347531",
+      "invoice_id": "331",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "331"
+    },
+    "332": {
+      "amount": 359242.84,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.359673",
+      "invoice_id": "332",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "332"
+    },
+    "333": {
+      "amount": 273053.03,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.371963",
+      "invoice_id": "333",
+      "payment_date": "2025-08-12T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "333"
+    },
+    "334": {
+      "amount": 56998.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.412758",
+      "invoice_id": "334",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "334"
+    },
+    "335": {
+      "amount": 189165.61,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.443255",
+      "invoice_id": "335",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "335"
+    },
+    "336": {
+      "amount": 287951.59,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.454872",
+      "invoice_id": "336",
+      "payment_date": "2025-08-12T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "336"
+    },
+    "337": {
+      "amount": 383059.78,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.475971",
+      "invoice_id": "337",
+      "payment_date": "2025-09-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "337"
+    },
+    "338": {
+      "amount": 351498.05,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.526137",
+      "invoice_id": "338",
+      "payment_date": "2025-09-07T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "338"
+    },
+    "339": {
+      "amount": 290102.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.574194",
+      "invoice_id": "339",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "339"
+    },
+    "340": {
+      "amount": 301025.59,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.613494",
+      "invoice_id": "340",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "340"
+    },
+    "341": {
+      "amount": 109512.74,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.635249",
+      "invoice_id": "341",
+      "payment_date": "2025-09-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "341"
+    },
+    "342": {
+      "amount": 210151.88,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:17.656394",
+      "invoice_id": "342",
+      "payment_date": "2025-07-01T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "342"
+    },
+    "343": {
+      "amount": 265841.96,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:17.686825",
+      "invoice_id": "343",
+      "payment_date": "2025-07-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "343"
+    },
+    "344": {
+      "amount": 215654.3,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.718165",
+      "invoice_id": "344",
+      "payment_date": "2025-08-24T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "344"
+    },
+    "345": {
+      "amount": 355934.3,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.749184",
+      "invoice_id": "345",
+      "payment_date": "2025-09-03T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "345"
+    },
+    "346": {
+      "amount": 167791.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.760931",
+      "invoice_id": "346",
+      "payment_date": "2025-08-16T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "346"
+    },
+    "347": {
+      "amount": 48066.9,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.782344",
+      "invoice_id": "347",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "347"
+    },
+    "348": {
+      "amount": 95186.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.803877",
+      "invoice_id": "348",
+      "payment_date": "2025-07-31T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "348"
+    },
+    "349": {
+      "amount": 82959.77,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.815452",
+      "invoice_id": "349",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "349"
+    },
+    "350": {
+      "amount": 129521.37,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:17.865404",
+      "invoice_id": "350",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "350"
+    },
+    "351": {
+      "amount": 72692.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.905308",
+      "invoice_id": "351",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "351"
+    },
+    "352": {
+      "amount": 272492.5,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.917505",
+      "invoice_id": "352",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "352"
+    },
+    "353": {
+      "amount": 250072.02,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.948658",
+      "invoice_id": "353",
+      "payment_date": "2025-09-03T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "353"
+    },
+    "354": {
+      "amount": 307118.07,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:17.988843",
+      "invoice_id": "354",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "354"
+    },
+    "355": {
+      "amount": 126413.85,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.000941",
+      "invoice_id": "355",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "355"
+    },
+    "356": {
+      "amount": 358005.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.031424",
+      "invoice_id": "356",
+      "payment_date": "2025-08-08T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "356"
+    },
+    "357": {
+      "amount": 357747.76,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.043109",
+      "invoice_id": "357",
+      "payment_date": "2025-09-29T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "357"
+    },
+    "358": {
+      "amount": 460888.34,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.055245",
+      "invoice_id": "358",
+      "payment_date": "2025-08-24T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "358"
+    },
+    "359": {
+      "amount": 53602.71,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:18.076205",
+      "invoice_id": "359",
+      "payment_date": "2025-07-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "359"
+    },
+    "360": {
+      "amount": 160713.39,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:18.098079",
+      "invoice_id": "360",
+      "payment_date": "2025-08-11T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "360"
+    },
+    "361": {
+      "amount": 203841.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.137276",
+      "invoice_id": "361",
+      "payment_date": "2025-07-11T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "361"
+    },
+    "362": {
+      "amount": 285447.84,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.186786",
+      "invoice_id": "362",
+      "payment_date": "2025-06-27T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "362"
+    },
+    "363": {
+      "amount": 158304.68,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:18.236932",
+      "invoice_id": "363",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "363"
+    },
+    "364": {
+      "amount": 482641.57,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.266591",
+      "invoice_id": "364",
+      "payment_date": "2025-07-13T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "364"
+    },
+    "365": {
+      "amount": 113642.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.297581",
+      "invoice_id": "365",
+      "payment_date": "2025-08-15T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "365"
+    },
+    "366": {
+      "amount": 163876.31,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.33757",
+      "invoice_id": "366",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "366"
+    },
+    "367": {
+      "amount": 88867.64,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.359083",
+      "invoice_id": "367",
+      "payment_date": "2025-09-16T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "367"
+    },
+    "368": {
+      "amount": 133479.37,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.408195",
+      "invoice_id": "368",
+      "payment_date": "2025-07-27T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "368"
+    },
+    "369": {
+      "amount": 323036.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.450521",
+      "invoice_id": "369",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "369"
+    },
+    "370": {
+      "amount": 295951.56,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.462029",
+      "invoice_id": "370",
+      "payment_date": "2025-07-10T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "370"
+    },
+    "371": {
+      "amount": 291267.59,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.474077",
+      "invoice_id": "371",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "371"
+    },
+    "372": {
+      "amount": 27993.32,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.486128",
+      "invoice_id": "372",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "372"
+    },
+    "373": {
+      "amount": 92264.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.507408",
+      "invoice_id": "373",
+      "payment_date": "2025-07-20T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "373"
+    },
+    "374": {
+      "amount": 167826.91,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:18.546514",
+      "invoice_id": "374",
+      "payment_date": "2025-06-18T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "374"
+    },
+    "375": {
+      "amount": 192103.42,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:18.586878",
+      "invoice_id": "375",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "375"
+    },
+    "376": {
+      "amount": 242882.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.607863",
+      "invoice_id": "376",
+      "payment_date": "2025-09-20T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "376"
+    },
+    "377": {
+      "amount": 236900.97,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.619603",
+      "invoice_id": "377",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "377"
+    },
+    "378": {
+      "amount": 22837.13,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.671574",
+      "invoice_id": "378",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "378"
+    },
+    "379": {
+      "amount": 424255.43,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.692437",
+      "invoice_id": "379",
+      "payment_date": "2025-07-25T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "379"
+    },
+    "380": {
+      "amount": 256085.86,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.71377",
+      "invoice_id": "380",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "380"
+    },
+    "381": {
+      "amount": 101011.54,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.726056",
+      "invoice_id": "381",
+      "payment_date": "2025-07-24T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "381"
+    },
+    "382": {
+      "amount": 325225.48,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.774781",
+      "invoice_id": "382",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "382"
+    },
+    "383": {
+      "amount": 82617.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.78697",
+      "invoice_id": "383",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "383"
+    },
+    "384": {
+      "amount": 15858.89,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.817489",
+      "invoice_id": "384",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "384"
+    },
+    "385": {
+      "amount": 98817.67,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.86667",
+      "invoice_id": "385",
+      "payment_date": "2025-07-29T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "385"
+    },
+    "386": {
+      "amount": 432477.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.887759",
+      "invoice_id": "386",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "386"
+    },
+    "387": {
+      "amount": 28538.03,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:18.900692",
+      "invoice_id": "387",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "387"
+    },
+    "388": {
+      "amount": 465825.08,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:18.950536",
+      "invoice_id": "388",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "388"
+    },
+    "389": {
+      "amount": 58588.29,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:18.990438",
+      "invoice_id": "389",
+      "payment_date": "2025-06-28T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "389"
+    },
+    "390": {
+      "amount": 92802.52,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.039071",
+      "invoice_id": "390",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "390"
+    },
+    "391": {
+      "amount": 382402.02,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.051132",
+      "invoice_id": "391",
+      "payment_date": "2025-07-31T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "391"
+    },
+    "392": {
+      "amount": 286339.52,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.072142",
+      "invoice_id": "392",
+      "payment_date": "2025-07-25T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "392"
+    },
+    "393": {
+      "amount": 187509.78,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:19.121077",
+      "invoice_id": "393",
+      "payment_date": "2025-06-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "393"
+    },
+    "394": {
+      "amount": 196872.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.188569",
+      "invoice_id": "394",
+      "payment_date": "2025-06-29T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "394"
+    },
+    "395": {
+      "amount": 153709.72,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.225849",
+      "invoice_id": "395",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "395"
+    },
+    "396": {
+      "amount": 196524.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.277876",
+      "invoice_id": "396",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "396"
+    },
+    "397": {
+      "amount": 180355.69,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.318181",
+      "invoice_id": "397",
+      "payment_date": "2025-07-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "397"
+    },
+    "398": {
+      "amount": 487737.76,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.329574",
+      "invoice_id": "398",
+      "payment_date": "2025-07-05T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "398"
+    },
+    "399": {
+      "amount": 472297.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.381056",
+      "invoice_id": "399",
+      "payment_date": "2025-06-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "399"
+    },
+    "400": {
+      "amount": 326904.37,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.411366",
+      "invoice_id": "400",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "400"
+    },
+    "401": {
+      "amount": 257659.6,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.459574",
+      "invoice_id": "401",
+      "payment_date": "2025-09-03T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "401"
+    },
+    "402": {
+      "amount": 178682.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.500951",
+      "invoice_id": "402",
+      "payment_date": "2025-09-18T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "402"
+    },
+    "403": {
+      "amount": 268131.55,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.550269",
+      "invoice_id": "403",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "403"
+    },
+    "404": {
+      "amount": 228831.49,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.580869",
+      "invoice_id": "404",
+      "payment_date": "2025-07-10T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "404"
+    },
+    "405": {
+      "amount": 246165.38,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.624224",
+      "invoice_id": "405",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "405"
+    },
+    "406": {
+      "amount": 69819.1,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.655529",
+      "invoice_id": "406",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "406"
+    },
+    "407": {
+      "amount": 29203.52,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.686125",
+      "invoice_id": "407",
+      "payment_date": "2025-09-07T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "407"
+    },
+    "408": {
+      "amount": 48102.06,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:19.707851",
+      "invoice_id": "408",
+      "payment_date": "2025-08-06T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "408"
+    },
+    "409": {
+      "amount": 120696.56,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:19.748172",
+      "invoice_id": "409",
+      "payment_date": "2025-09-11T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "409"
+    },
+    "410": {
+      "amount": 437643.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.787877",
+      "invoice_id": "410",
+      "payment_date": "2025-07-11T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "410"
+    },
+    "411": {
+      "amount": 317197.21,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.819399",
+      "invoice_id": "411",
+      "payment_date": "2025-09-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "411"
+    },
+    "412": {
+      "amount": 402051.48,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.831408",
+      "invoice_id": "412",
+      "payment_date": "2025-09-02T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "412"
+    },
+    "413": {
+      "amount": 472297.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.854185",
+      "invoice_id": "413",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "413"
+    },
+    "414": {
+      "amount": 383059.78,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.866109",
+      "invoice_id": "414",
+      "payment_date": "2025-09-07T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "414"
+    },
+    "415": {
+      "amount": 257919.29,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.906631",
+      "invoice_id": "415",
+      "payment_date": "2025-08-10T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "415"
+    },
+    "416": {
+      "amount": 41000.9,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.95533",
+      "invoice_id": "416",
+      "payment_date": "2025-08-24T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "416"
+    },
+    "417": {
+      "amount": 82959.77,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:19.966649",
+      "invoice_id": "417",
+      "payment_date": "2025-08-02T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "417"
+    },
+    "418": {
+      "amount": 244259.84,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.00692",
+      "invoice_id": "418",
+      "payment_date": "2025-06-17T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "418"
+    },
+    "419": {
+      "amount": 391679.86,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.028103",
+      "invoice_id": "419",
+      "payment_date": "2025-07-28T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "419"
+    },
+    "420": {
+      "amount": 431596.06,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.040195",
+      "invoice_id": "420",
+      "payment_date": "2025-08-03T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "420"
+    },
+    "421": {
+      "amount": 203620.13,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.089988",
+      "invoice_id": "421",
+      "payment_date": "2025-07-07T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "421"
+    },
+    "422": {
+      "amount": 77820.01,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.129341",
+      "invoice_id": "422",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "422"
+    },
+    "423": {
+      "amount": 296501.46,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.177572",
+      "invoice_id": "423",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "423"
+    },
+    "424": {
+      "amount": 250072.02,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.189846",
+      "invoice_id": "424",
+      "payment_date": "2025-09-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "424"
+    },
+    "425": {
+      "amount": 17628.46,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:20.230339",
+      "invoice_id": "425",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "425"
+    },
+    "426": {
+      "amount": 34312.61,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.270258",
+      "invoice_id": "426",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "426"
+    },
+    "427": {
+      "amount": 161663.97,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.311457",
+      "invoice_id": "427",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "427"
+    },
+    "428": {
+      "amount": 379062.48,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.341518",
+      "invoice_id": "428",
+      "payment_date": "2025-08-02T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "428"
+    },
+    "429": {
+      "amount": 253893.15,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.372421",
+      "invoice_id": "429",
+      "payment_date": "2025-08-01T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "429"
+    },
+    "430": {
+      "amount": 290102.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.393679",
+      "invoice_id": "430",
+      "payment_date": "2025-08-28T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "430"
+    },
+    "431": {
+      "amount": 358005.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.423935",
+      "invoice_id": "431",
+      "payment_date": "2025-09-11T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "431"
+    },
+    "432": {
+      "amount": 215427.89,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.443959",
+      "invoice_id": "432",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "432"
+    },
+    "433": {
+      "amount": 432477.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.484217",
+      "invoice_id": "433",
+      "payment_date": "2025-07-28T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "433"
+    },
+    "434": {
+      "amount": 152383.95,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.505468",
+      "invoice_id": "434",
+      "payment_date": "2025-08-02T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "434"
+    },
+    "435": {
+      "amount": 492490.64,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.518279",
+      "invoice_id": "435",
+      "payment_date": "2025-09-28T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "435"
+    },
+    "436": {
+      "amount": 48720.57,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.550319",
+      "invoice_id": "436",
+      "payment_date": "2025-08-15T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "436"
+    },
+    "437": {
+      "amount": 266881.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.599438",
+      "invoice_id": "437",
+      "payment_date": "2025-09-04T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "437"
+    },
+    "438": {
+      "amount": 493836.46,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.629889",
+      "invoice_id": "438",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "438"
+    },
+    "439": {
+      "amount": 249623.36,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.678592",
+      "invoice_id": "439",
+      "payment_date": "2025-07-28T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "439"
+    },
+    "440": {
+      "amount": 353274.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.699986",
+      "invoice_id": "440",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "440"
+    },
+    "441": {
+      "amount": 195552.53,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.730769",
+      "invoice_id": "441",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "441"
+    },
+    "442": {
+      "amount": 284325.99,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.761477",
+      "invoice_id": "442",
+      "payment_date": "2025-09-28T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "442"
+    },
+    "443": {
+      "amount": 96643.62,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:20.811219",
+      "invoice_id": "443",
+      "payment_date": "2025-09-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "443"
+    },
+    "444": {
+      "amount": 48908.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.860531",
+      "invoice_id": "444",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "444"
+    },
+    "445": {
+      "amount": 127300.22,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.882207",
+      "invoice_id": "445",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "445"
+    },
+    "446": {
+      "amount": 35642.46,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:20.931802",
+      "invoice_id": "446",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "446"
+    },
+    "447": {
+      "amount": 125910.06,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.94336",
+      "invoice_id": "447",
+      "payment_date": "2025-10-04T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "447"
+    },
+    "448": {
+      "amount": 478168.39,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:20.973755",
+      "invoice_id": "448",
+      "payment_date": "2025-08-25T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "448"
+    },
+    "449": {
+      "amount": 341384.83,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.024287",
+      "invoice_id": "449",
+      "payment_date": "2025-07-20T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "449"
+    },
+    "450": {
+      "amount": 157235.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.072902",
+      "invoice_id": "450",
+      "payment_date": "2025-08-01T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "450"
+    },
+    "451": {
+      "amount": 493207.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.121904",
+      "invoice_id": "451",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "451"
+    },
+    "452": {
+      "amount": 48908.41,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.142083",
+      "invoice_id": "452",
+      "payment_date": "2025-09-10T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "452"
+    },
+    "453": {
+      "amount": 49168.57,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.154993",
+      "invoice_id": "453",
+      "payment_date": "2025-07-24T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "453"
+    },
+    "454": {
+      "amount": 301826.6,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:21.166953",
+      "invoice_id": "454",
+      "payment_date": "2025-09-27T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "454"
+    },
+    "455": {
+      "amount": 215425.06,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.206969",
+      "invoice_id": "455",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "455"
+    },
+    "456": {
+      "amount": 115467.42,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:21.2478",
+      "invoice_id": "456",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "456"
+    },
+    "457": {
+      "amount": 457302.19,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.278917",
+      "invoice_id": "457",
+      "payment_date": "2025-09-06T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "457"
+    },
+    "458": {
+      "amount": 176949.94,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.319459",
+      "invoice_id": "458",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "458"
+    },
+    "459": {
+      "amount": 202346.56,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.349899",
+      "invoice_id": "459",
+      "payment_date": "2025-07-24T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "459"
+    },
+    "460": {
+      "amount": 166953.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.390017",
+      "invoice_id": "460",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "460"
+    },
+    "461": {
+      "amount": 359423.18,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.401939",
+      "invoice_id": "461",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "461"
+    },
+    "462": {
+      "amount": 243319.64,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.432582",
+      "invoice_id": "462",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "462"
+    },
+    "463": {
+      "amount": 230449.06,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.463722",
+      "invoice_id": "463",
+      "payment_date": "2025-08-04T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "463"
+    },
+    "464": {
+      "amount": 331553.56,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.515074",
+      "invoice_id": "464",
+      "payment_date": "2025-09-06T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "464"
+    },
+    "465": {
+      "amount": 257919.29,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.564277",
+      "invoice_id": "465",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "465"
+    },
+    "466": {
+      "amount": 24923.28,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:21.585539",
+      "invoice_id": "466",
+      "payment_date": "2025-07-14T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "466"
+    },
+    "467": {
+      "amount": 328483.91,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.635134",
+      "invoice_id": "467",
+      "payment_date": "2025-07-20T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "467"
+    },
+    "468": {
+      "amount": 476674.7,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.6842",
+      "invoice_id": "468",
+      "payment_date": "2025-09-06T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "468"
+    },
+    "469": {
+      "amount": 166953.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.705746",
+      "invoice_id": "469",
+      "payment_date": "2025-06-23T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "469"
+    },
+    "470": {
+      "amount": 366023.27,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.746279",
+      "invoice_id": "470",
+      "payment_date": "2025-08-20T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "470"
+    },
+    "471": {
+      "amount": 327212.06,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.758251",
+      "invoice_id": "471",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "471"
+    },
+    "472": {
+      "amount": 106070.97,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.770733",
+      "invoice_id": "472",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "472"
+    },
+    "473": {
+      "amount": 16706.69,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.782931",
+      "invoice_id": "473",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "473"
+    },
+    "474": {
+      "amount": 120535.52,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.82237",
+      "invoice_id": "474",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "474"
+    },
+    "475": {
+      "amount": 436113.94,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.843399",
+      "invoice_id": "475",
+      "payment_date": "2025-07-15T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "475"
+    },
+    "476": {
+      "amount": 90848.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.874286",
+      "invoice_id": "476",
+      "payment_date": "2025-08-25T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "476"
+    },
+    "477": {
+      "amount": 126007.48,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:21.914451",
+      "invoice_id": "477",
+      "payment_date": "2025-07-25T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "477"
+    },
+    "478": {
+      "amount": 110204.53,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:21.96593",
+      "invoice_id": "478",
+      "payment_date": "2025-09-16T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "478"
+    },
+    "479": {
+      "amount": 372926.26,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.015075",
+      "invoice_id": "479",
+      "payment_date": "2025-08-21T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "479"
+    },
+    "480": {
+      "amount": 408770.85,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.065161",
+      "invoice_id": "480",
+      "payment_date": "2025-07-20T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "480"
+    },
+    "481": {
+      "amount": 176656.79,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.104572",
+      "invoice_id": "481",
+      "payment_date": "2025-07-26T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "481"
+    },
+    "482": {
+      "amount": 257659.6,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.144207",
+      "invoice_id": "482",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "482"
+    },
+    "483": {
+      "amount": 127858.93,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.156557",
+      "invoice_id": "483",
+      "payment_date": "2025-09-20T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "483"
+    },
+    "484": {
+      "amount": 487737.76,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.169522",
+      "invoice_id": "484",
+      "payment_date": "2025-07-20T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "484"
+    },
+    "485": {
+      "amount": 35466.69,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:22.192708",
+      "invoice_id": "485",
+      "payment_date": "2025-08-19T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "485"
+    },
+    "486": {
+      "amount": 419313.73,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.214895",
+      "invoice_id": "486",
+      "payment_date": "2025-07-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "486"
+    },
+    "487": {
+      "amount": 321204.5,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.235684",
+      "invoice_id": "487",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "487"
+    },
+    "488": {
+      "amount": 99806.61,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.284845",
+      "invoice_id": "488",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "488"
+    },
+    "489": {
+      "amount": 253799.09,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.333801",
+      "invoice_id": "489",
+      "payment_date": "2025-08-01T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "489"
+    },
+    "490": {
+      "amount": 188830.48,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:22.373489",
+      "invoice_id": "490",
+      "payment_date": "2025-09-23T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "490"
+    },
+    "491": {
+      "amount": 101011.54,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.425408",
+      "invoice_id": "491",
+      "payment_date": "2025-07-06T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "491"
+    },
+    "492": {
+      "amount": 323834.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.474123",
+      "invoice_id": "492",
+      "payment_date": "2025-07-19T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "492"
+    },
+    "493": {
+      "amount": 131280.9,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.523012",
+      "invoice_id": "493",
+      "payment_date": "2025-09-25T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "493"
+    },
+    "494": {
+      "amount": 213440.45,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.542911",
+      "invoice_id": "494",
+      "payment_date": "2025-10-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "494"
+    },
+    "495": {
+      "amount": 163797.66,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.593071",
+      "invoice_id": "495",
+      "payment_date": "2025-09-16T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "495"
+    },
+    "496": {
+      "amount": 333480.73,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.614373",
+      "invoice_id": "496",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "496"
+    },
+    "497": {
+      "amount": 365893.51,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.626313",
+      "invoice_id": "497",
+      "payment_date": "2025-07-14T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "497"
+    },
+    "498": {
+      "amount": 432302.59,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.65818",
+      "invoice_id": "498",
+      "payment_date": "2025-07-10T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "498"
+    },
+    "499": {
+      "amount": 144831.23,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:22.688479",
+      "invoice_id": "499",
+      "payment_date": "2025-07-13T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "499"
+    },
+    "500": {
+      "amount": 359242.84,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.719996",
+      "invoice_id": "500",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "500"
+    },
+    "501": {
+      "amount": 198175.64,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.731623",
+      "invoice_id": "501",
+      "payment_date": "2025-07-17T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "501"
+    },
+    "502": {
+      "amount": 158750.73,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.7625",
+      "invoice_id": "502",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "502"
+    },
+    "503": {
+      "amount": 29182.18,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:22.811464",
+      "invoice_id": "503",
+      "payment_date": "2025-09-27T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "503"
+    },
+    "504": {
+      "amount": 337080.87,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:22.842794",
+      "invoice_id": "504",
+      "payment_date": "2025-09-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "504"
+    },
+    "505": {
+      "amount": 177628.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.854683",
+      "invoice_id": "505",
+      "payment_date": "2025-08-08T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "505"
+    },
+    "506": {
+      "amount": 235764.8,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:22.895104",
+      "invoice_id": "506",
+      "payment_date": "2025-08-11T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "506"
+    },
+    "507": {
+      "amount": 91771.88,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.907102",
+      "invoice_id": "507",
+      "payment_date": "2025-10-04T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "507"
+    },
+    "508": {
+      "amount": 79928.95,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.937598",
+      "invoice_id": "508",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "508"
+    },
+    "509": {
+      "amount": 230934.07,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.958753",
+      "invoice_id": "509",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "509"
+    },
+    "510": {
+      "amount": 210236.89,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:22.989268",
+      "invoice_id": "510",
+      "payment_date": "2025-06-26T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "510"
+    },
+    "511": {
+      "amount": 199396.38,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.001163",
+      "invoice_id": "511",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "511"
+    },
+    "512": {
+      "amount": 257728.11,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.050931",
+      "invoice_id": "512",
+      "payment_date": "2025-09-20T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "512"
+    },
+    "513": {
+      "amount": 306156.75,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.063237",
+      "invoice_id": "513",
+      "payment_date": "2025-09-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "513"
+    },
+    "514": {
+      "amount": 195106.78,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.074417",
+      "invoice_id": "514",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "514"
+    },
+    "515": {
+      "amount": 243627.27,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:23.104905",
+      "invoice_id": "515",
+      "payment_date": "2025-08-17T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "515"
+    },
+    "516": {
+      "amount": 298058.44,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:23.117027",
+      "invoice_id": "516",
+      "payment_date": "2025-07-03T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "516"
+    },
+    "517": {
+      "amount": 43007.53,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:23.148124",
+      "invoice_id": "517",
+      "payment_date": "2025-09-01T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "517"
+    },
+    "518": {
+      "amount": 365941.44,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.169254",
+      "invoice_id": "518",
+      "payment_date": "2025-07-23T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "518"
+    },
+    "519": {
+      "amount": 33592.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.209078",
+      "invoice_id": "519",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "519"
+    },
+    "520": {
+      "amount": 274565.57,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.25127",
+      "invoice_id": "520",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "520"
+    },
+    "521": {
+      "amount": 345370.08,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.290742",
+      "invoice_id": "521",
+      "payment_date": "2025-08-01T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "521"
+    },
+    "522": {
+      "amount": 42959.79,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:23.302555",
+      "invoice_id": "522",
+      "payment_date": "2025-08-02T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "522"
+    },
+    "523": {
+      "amount": 401913.71,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.352778",
+      "invoice_id": "523",
+      "payment_date": "2025-09-06T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "523"
+    },
+    "524": {
+      "amount": 245943.16,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.374683",
+      "invoice_id": "524",
+      "payment_date": "2025-08-05T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "524"
+    },
+    "525": {
+      "amount": 364909.57,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.386887",
+      "invoice_id": "525",
+      "payment_date": "2025-08-20T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "525"
+    },
+    "526": {
+      "amount": 5039.58,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:23.3989",
+      "invoice_id": "526",
+      "payment_date": "2025-07-03T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "526"
+    },
+    "527": {
+      "amount": 44978.5,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.420104",
+      "invoice_id": "527",
+      "payment_date": "2025-06-20T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "527"
+    },
+    "528": {
+      "amount": 196892.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.441705",
+      "invoice_id": "528",
+      "payment_date": "2025-09-18T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "528"
+    },
+    "529": {
+      "amount": 463811.99,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.463179",
+      "invoice_id": "529",
+      "payment_date": "2025-07-03T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "529"
+    },
+    "530": {
+      "amount": 394062.78,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.503025",
+      "invoice_id": "530",
+      "payment_date": "2025-08-02T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "530"
+    },
+    "531": {
+      "amount": 75601.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.524363",
+      "invoice_id": "531",
+      "payment_date": "2025-08-22T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "531"
+    },
+    "532": {
+      "amount": 79928.95,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.57283",
+      "invoice_id": "532",
+      "payment_date": "2025-07-28T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "532"
+    },
+    "533": {
+      "amount": 126413.85,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.615",
+      "invoice_id": "533",
+      "payment_date": "2025-08-30T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "533"
+    },
+    "534": {
+      "amount": 394062.78,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.664023",
+      "invoice_id": "534",
+      "payment_date": "2025-06-30T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "534"
+    },
+    "535": {
+      "amount": 171713.36,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.694336",
+      "invoice_id": "535",
+      "payment_date": "2025-09-20T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "535"
+    },
+    "536": {
+      "amount": 345340.24,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.716571",
+      "invoice_id": "536",
+      "payment_date": "2025-09-27T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "536"
+    },
+    "537": {
+      "amount": 24829.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.765506",
+      "invoice_id": "537",
+      "payment_date": "2025-08-01T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "537"
+    },
+    "538": {
+      "amount": 288771.55,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.786556",
+      "invoice_id": "538",
+      "payment_date": "2025-08-18T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "538"
+    },
+    "539": {
+      "amount": 323834.65,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.836101",
+      "invoice_id": "539",
+      "payment_date": "2025-08-09T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "539"
+    },
+    "540": {
+      "amount": 185903.93,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.848422",
+      "invoice_id": "540",
+      "payment_date": "2025-09-12T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "540"
+    },
+    "541": {
+      "amount": 374694.94,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.869039",
+      "invoice_id": "541",
+      "payment_date": "2025-08-07T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "541"
+    },
+    "542": {
+      "amount": 302493.03,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.880991",
+      "invoice_id": "542",
+      "payment_date": "2025-08-26T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "542"
+    },
+    "543": {
+      "amount": 359884.67,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.929978",
+      "invoice_id": "543",
+      "payment_date": "2025-08-23T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "543"
+    },
+    "544": {
+      "amount": 323036.92,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:23.97886",
+      "invoice_id": "544",
+      "payment_date": "2025-08-27T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "544"
+    },
+    "545": {
+      "amount": 98374.82,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.027892",
+      "invoice_id": "545",
+      "payment_date": "2025-09-22T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "545"
+    },
+    "546": {
+      "amount": 375909.42,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.049176",
+      "invoice_id": "546",
+      "payment_date": "2025-08-07T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "546"
+    },
+    "547": {
+      "amount": 18706.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.081168",
+      "invoice_id": "547",
+      "payment_date": "2025-07-21T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "547"
+    },
+    "548": {
+      "amount": 462193.91,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.102283",
+      "invoice_id": "548",
+      "payment_date": "2025-07-04T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "548"
+    },
+    "549": {
+      "amount": 72692.63,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.151854",
+      "invoice_id": "549",
+      "payment_date": "2025-07-07T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "549"
+    },
+    "550": {
+      "amount": 138553.16,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.191012",
+      "invoice_id": "550",
+      "payment_date": "2025-09-08T00:00:00",
+      "payment_method": "cheque",
+      "payment_id": "550"
+    },
+    "551": {
+      "amount": 23448.92,
+      "status": "draft",
+      "created_at": "2025-08-04T23:41:24.212287",
+      "invoice_id": "551",
+      "payment_date": "2025-08-08T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "551"
+    },
+    "552": {
+      "amount": 371733.8,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.224063",
+      "invoice_id": "552",
+      "payment_date": "2025-09-09T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "552"
+    },
+    "553": {
+      "amount": 166953.25,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.246342",
+      "invoice_id": "553",
+      "payment_date": "2025-07-30T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "553"
+    },
+    "554": {
+      "amount": 46489.81,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.276397",
+      "invoice_id": "554",
+      "payment_date": "2025-08-25T00:00:00",
+      "payment_method": "credit_card",
+      "payment_id": "554"
+    },
+    "555": {
+      "amount": 247936.55,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.299801",
+      "invoice_id": "555",
+      "payment_date": "2025-09-05T00:00:00",
+      "payment_method": "bank_transfer",
+      "payment_id": "555"
+    },
+    "556": {
+      "amount": 383563.58,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.329686",
+      "invoice_id": "556",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "556"
+    },
+    "557": {
+      "amount": 137286.87,
+      "status": "completed",
+      "created_at": "2025-08-04T23:41:24.350617",
+      "invoice_id": "557",
+      "payment_date": "2025-08-13T00:00:00",
+      "payment_method": "wire",
+      "payment_id": "557"
+    }
+  }
