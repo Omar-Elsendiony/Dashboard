@@ -161,8 +161,8 @@ def extract_file_info(file_path: str) -> Dict[str, Any]:
 
 
 @app.route('/task-framework', strict_slashes=False, methods=["POST", "GET"])
-def index():
-    return render_template('index.html')
+def task_framework():
+    return render_template('task_framework.html')
 
 def create_tools_class(imports_set, invoke_methods):
     # Create the class dynamically in memory
@@ -502,8 +502,8 @@ def tracker():
     return render_template('tracker.html')
 
 @app.route('/interface_connections', strict_slashes=False, methods=["GET", "POST"])
-def connections():
-    return render_template('connections.html')
+def interface_connections():
+    return render_template('interface_connections.html')
 
 @app.route('/', methods=['GET'])
 def home_page():
@@ -622,6 +622,19 @@ def get_session_info():
     })
 ########## END CHAIN CONNECTOR ##########
 
+############ DB UTILITIES APIs ##############
+@app.route('/db_connections', strict_slashes=False, methods=["GET", "POST"])
+def db_connections():
+    """ Endpoint to render the DB connections page """
+    if request.method == "POST":
+        # Handle POST requests here if needed
+        return jsonify({
+            'status': 'success',
+            'message': 'DB connections endpoint is working'
+        }), 200
+    
+    # Handle GET requests
+    return render_template('db_connections.html')
 
 if __name__ == "__main__":
     """ Main Function """

@@ -6,10 +6,15 @@
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
     <title>Turing Tooling</title>
     <style>
+        @font-face {
+            font-family: 'MozillaHeadline-VariableFont_wdth,wght';
+            src: url("{{ url_for('static', filename='fonts/MozillaHeadline-VariableFont_wdth,wght.ttf') }}") format('truetype')
+        }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'MozillaHeadline-VariableFont_wdth,wght', sans-serif;
         }
 
         h1, h2 {
@@ -298,7 +303,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="functionality-card">
+                <a href="/db_connections" class="functionality-card">
                     <img  class="card-icon" src="{{ url_for('static', filename='images/database.svg') }}" alt="Database Icon">
                     <div class="card-title">Database Creation Utilities</div>
                     <div class="card-description">
