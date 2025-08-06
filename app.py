@@ -24,10 +24,10 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=8) 
 
-# app.config['SESSION_TYPE'] = 'filesystem' 
+app.config['SESSION_TYPE'] = 'filesystem' 
 
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ###################### GLOBAL ENVIRONMENTS ##################################
@@ -635,6 +635,58 @@ def db_connections():
     
     # Handle GET requests
     return render_template('db_connections.html')
+
+@app.route('/database_utilities', methods=["POST"])
+def database_utilities():
+    data = request.get_json()
+    
+    action = data.get('action')
+    if action == 'policy_creation':
+        # Handle policy creation logic here
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        
+        example_policies_file_path = f"prompts/{action}/example_policies.txt"
+        if not os.path.exists(example_policies_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example policies file for {action} not found'
+            }), 404
+        
+        with open(example_policies_file_path, 'r') as file:
+            example_policies = file.read()
+        
+        
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'example_policies': example_policies
+        }), 200
+        
+    elif action == 'api_implementation':
+        # Handle API implementation logic here
+        return jsonify({
+            'status': 'success',
+            'message': 'API implemented successfully'
+        }), 200
+    elif action == 'database_seeding':
+        # Handle database seeding logic here
+        return jsonify({
+            'status': 'success',
+            'message': 'Database seeded successfully'
+        }), 200
+    else:
+        return jsonify({
+            'status': 'error',
+            'message': 'Invalid action'
+        }), 400
 
 if __name__ == "__main__":
     """ Main Function """

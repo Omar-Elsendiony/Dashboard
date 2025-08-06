@@ -218,6 +218,42 @@
             color: inherit;
         }
 
+        #content{
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            display: none;
+        }
+
+        #content-header {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .content-subheader {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            resize: none;
+        }
+
         @media (max-width: 768px) {
             .task-tracker-section {
                 padding: 0 1rem;
@@ -245,7 +281,45 @@
         }
     </style>
     <script>
-        // Initialize page
+        async function policy_creation_handling(){
+
+            const response = await fetch('/database_utilities', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    action: 'policy_creation'
+                })
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('content').innerHTML = '';
+            document.getElementById('content').innerHTML = `
+                <h2 id="content-header">Policy Creation</h2>
+                <h3 class="content-subheader">Initial Prompt</h3>
+                <textarea>
+This utility allows you to create and manage database access policies, security rules, and permission frameworks.
+It provides a user-friendly interface to define roles, permissions, and access controls for your database domains.
+                </textarea>
+
+                <h3 class="content-subheader">Database schema</h3>
+                <textarea>
+This utility allows you to create and manage database access policies, security rules, and permission frameworks.
+It provides a user-friendly interface to define roles, permissions, and access controls for your database domains.
+                </textarea>
+
+                <h3 class="content-subheader">Example policies</h3>
+                <textarea>
+This utility allows you to create and manage database access policies, security rules, and permission frameworks.
+It provides a user-friendly interface to define roles, permissions, and access controls for your database domains.
+                </textarea>
+            `;
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             // Add click handlers for utility cards
             const cards = document.querySelectorAll('.analytics-card');
@@ -255,6 +329,13 @@
                     if (utility) {
                         console.log(`Clicked on ${utility}`);
                         // Add navigation logic here
+                        if (utility === 'policy-creation') {
+                            policy_creation_handling();
+                        } else if (utility === 'api-implementation') {
+                            api_implementation_handling();
+                        } else if (utility === 'database-seeding') {
+                            // database_seeding_handling();
+                        }
                     }
                 });
             });
@@ -337,6 +418,8 @@
             </div>
         </div>
 
+        <div id="content">
+        </div>
     </section>
 </body>
 </html>

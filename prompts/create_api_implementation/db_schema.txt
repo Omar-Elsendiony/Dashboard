@@ -1,0 +1,230 @@
+CREATE TABLE `users` (
+  `user_id` int PRIMARY KEY,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `email` varchar(320) UNIQUE NOT NULL,
+  `role` enum(admin,employee) NOT NULL,
+  `timezone` varchar(50) NOT NULL,
+  `status` enum(active,inactive,suspended) NOT NULL DEFAULT 'active',
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `funds` (
+  `fund_id` int PRIMARY KEY,
+  `name` varchar(255) NOT NULL,
+  `fund_type` enum(equity,fixed_income,multi_asset,hedge) NOT NULL,
+  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `manager_id` int NOT NULL,
+  `size` decimal(18,2),
+  `status` enum(open,closed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `investors` (
+  `investor_id` int PRIMARY KEY,
+  `employee_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `investor_type` enum(organization,retail,high_net_worth) NOT NULL,
+  `contact_email` varchar(320) NOT NULL,
+  `accreditation_status` enum(accredited,non_accredited) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `subscriptions` (
+  `subscription_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int NOT NULL,
+  `amount` decimal(18,2) NOT NULL,
+  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `status` enum(pending,approved,cancelled) NOT NULL,
+  `request_assigned_to` int NOT NULL,
+  `request_date` date NOT NULL,
+  `approval_date` date,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `commitments` (
+  `commitment_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int NOT NULL,
+  `commitment_amount` decimal(18,2) NOT NULL,
+  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `commitment_date` date NOT NULL,
+  `status` enum(pending,fulfilled) NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `portfolios` (
+  `portfolio_id` int PRIMARY KEY,
+  `investor_id` int NOT NULL,
+  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `status` enum(active,inactive,archived) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `portfolio_holdings` (
+  `holding_id` int PRIMARY KEY,
+  `portfolio_id` int NOT NULL,
+  `instrument_id` int NOT NULL,
+  `quantity` decimal(18,4) NOT NULL,
+  `cost_basis` decimal(18,4) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `instruments` (
+  `instrument_id` int PRIMARY KEY,
+  `ticker` varchar(20) UNIQUE NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `instrument_type` enum(stock,bond,derivative,cash,other) NOT NULL
+);
+
+CREATE TABLE `instrument_prices` (
+  `price_id` int PRIMARY KEY,
+  `instrument_id` int NOT NULL,
+  `price_date` date NOT NULL,
+  `open_price` decimal(18,4) NOT NULL,
+  `high_price` decimal(18,4) NOT NULL,
+  `low_price` decimal(18,4) NOT NULL,
+  `close_price` decimal(18,4) NOT NULL
+);
+
+CREATE TABLE `nav_records` (
+  `nav_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `nav_date` date NOT NULL,
+  `nav_value` decimal(18,4) NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `trades` (
+  `trade_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `instrument_id` int NOT NULL,
+  `trade_date` timestamp NOT NULL,
+  `quantity` decimal(18,4) NOT NULL,
+  `price` decimal(18,4) NOT NULL,
+  `side` enum(buy,sell) NOT NULL,
+  `status` enum(executed,pending,failed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `notifications` (
+  `notification_id` int PRIMARY KEY,
+  `email` varchar(320),
+  `type` enum(alert,report,reminder,subscription_update) NOT NULL,
+  `class` enum(funds,investors,portfolios,trades,invoices,reports,documents,subscriptions,commitments) NOT NULL,
+  `reference_id` int,
+  `status` enum(pending,sent,failed) NOT NULL,
+  `sent_at` timestamp,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `reports` (
+  `report_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int,
+  `report_date` date NOT NULL,
+  `report_type` enum(performance,holding,financial) NOT NULL DEFAULT 'performance',
+  `generated_by` int NOT NULL,
+  `status` enum(pending,completed,failed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `export_period_end` date NOT NULL
+);
+
+CREATE TABLE `documents` (
+  `document_id` int PRIMARY KEY,
+  `name` varchar(255) NOT NULL,
+  `type` enum(pdf,xlsx,docx,csv,other) NOT NULL,
+  `uploaded_by` int NOT NULL,
+  `upload_date` timestamp NOT NULL,
+  `report_id` int,
+  `size_bytes` bigint,
+  `status` enum(available,archived,deleted) NOT NULL
+);
+
+CREATE TABLE `invoices` (
+  `invoice_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int NOT NULL,
+  `commitment_id` int,
+  `invoice_date` date NOT NULL,
+  `due_date` date NOT NULL,
+  `amount` decimal(18,2) NOT NULL,
+  `payment_type` enum(auto-pay,manual) NOT NULL DEFAULT 'manual',
+  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `status` enum(issued,paid) NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `payments` (
+  `payment_id` int PRIMARY KEY,
+  `invoice_id` int NOT NULL,
+  `payment_date` timestamp NOT NULL,
+  `amount` decimal(18,2) NOT NULL,
+  `payment_method` enum(wire,cheque,credit_card,bank_transfer) NOT NULL,
+  `status` enum(draft,completed,failed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+CREATE TABLE `tickets` (
+  `ticket_id` int PRIMARY KEY,
+  `invoice_id` int,
+  `issue_date` timestamp NOT NULL,
+  `type` enum(missing_payment,overpayment,underpayment,mismatched_amount,invoice_duplicate,manual_follow_up),
+  `status` enum(open,in_review,resolved,closed) NOT NULL,
+  `assigned_to` int,
+  `resolution_date` timestamp,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
+
+ALTER TABLE `funds` ADD FOREIGN KEY (`manager_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `reports` ADD FOREIGN KEY (`generated_by`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `documents` ADD FOREIGN KEY (`uploaded_by`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `tickets` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `subscriptions` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+
+ALTER TABLE `commitments` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+
+ALTER TABLE `nav_records` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+
+ALTER TABLE `trades` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+
+ALTER TABLE `reports` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+
+ALTER TABLE `invoices` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+
+ALTER TABLE `subscriptions` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+
+ALTER TABLE `commitments` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+
+ALTER TABLE `portfolios` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+
+ALTER TABLE `invoices` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+
+ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`portfolio_id`) REFERENCES `portfolios` (`portfolio_id`);
+
+ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+
+ALTER TABLE `instrument_prices` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+
+ALTER TABLE `trades` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+
+ALTER TABLE `payments` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
+
+ALTER TABLE `tickets` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
+
+ALTER TABLE `subscriptions` ADD FOREIGN KEY (`request_assigned_to`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `invoices` ADD FOREIGN KEY (`commitment_id`) REFERENCES `commitments` (`commitment_id`);
+
+ALTER TABLE `investors` ADD FOREIGN KEY (`employee_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `documents` ADD FOREIGN KEY (`report_id`) REFERENCES `reports` (`report_id`);
