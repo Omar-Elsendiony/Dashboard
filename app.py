@@ -199,18 +199,18 @@ def env_interface():
             # print(environment, session.get("environment"))
             if environment != session.get("environment"):
                 g.data.clear()
-                # ENVS_PATH = "envs"
-                # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-                # data_files = os.listdir(DATA_PATH)
-                # # print("Loaded data:")
-                # for data_file in data_files:
-                #     if data_file.endswith(".json"):
-                #         data_file_path = os.path.join(DATA_PATH, data_file)
-                #         with open(data_file_path, "r") as file:
-                #             g.data[data_file.split('.')[0]] = json.load(file)
+                ENVS_PATH = "envs"
+                DATA_PATH = f"{ENVS_PATH}/{environment}/data"
+                data_files = os.listdir(DATA_PATH)
+                # print("Loaded data:")
+                for data_file in data_files:
+                    if data_file.endswith(".json"):
+                        data_file_path = os.path.join(DATA_PATH, data_file)
+                        with open(data_file_path, "r") as file:
+                            g.data[data_file.split('.')[0]] = json.load(file)
                 session["environment"] = environment
                 session["interface"] = interface
-                # session["data"] = g.data
+                session["data"] = g.data
                 # print("data", g.data)
             
             # print(session["environment"], session["interface"])
@@ -298,17 +298,19 @@ def execute_api():
             'message': 'API name is required'
         }), 400
     
-    print(passed_data.get('environment'))
+    # print(passed_data.get('environment'))
     environment = passed_data.get('environment', session.get("environment"))
-    ENVS_PATH = "envs"
-    DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-    data_files = os.listdir(DATA_PATH)
-    # print("Loaded data:")
-    for data_file in data_files:
-        if data_file.endswith(".json"):
-            data_file_path = os.path.join(DATA_PATH, data_file)
-            with open(data_file_path, "r") as file:
-                g.data[data_file.split('.')[0]] = json.load(file)
+    # ENVS_PATH = "envs"
+    # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
+    # data_files = os.listdir(DATA_PATH)
+    # # print("Loaded data:")
+    # for data_file in data_files:
+    #     if data_file.endswith(".json"):
+    #         data_file_path = os.path.join(DATA_PATH, data_file)
+    #         with open(data_file_path, "r") as file:
+    #             g.data[data_file.split('.')[0]] = json.load(file)
+
+    
                 
     
     arguments = passed_data.get('parameters', {})
