@@ -1238,7 +1238,7 @@
                 paramInputs.forEach(input => {
                     const paramName = input.dataset.param;
                     const paramVal = input.value.trim();
-                    if (value !== '') {
+                    if (paramVal !== '') {
                     if (Number(paramVal) !== NaN && paramVal !== '') {
                         if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to')) {
                             parameters[paramName] = paramVal; // Keep as string for IDs
