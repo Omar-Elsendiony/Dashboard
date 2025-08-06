@@ -1240,8 +1240,8 @@
                     const paramVal = input.value.trim();
                     console.log(paramName, paramVal);
                     if (paramVal !== '') {
-                        console.log(Number.isNaN(Number(paramVal)))
-                        if (!Number.isNaN(Number(paramVal))) {
+                        // console.log(Number.isNaN(Number(paramVal)))
+                        if (!Number.isNaN(Number(paramVal)) && !paramName.includes('phone') && !paramName.includes('mobile')) {
                             console.log('parsing number')
                             if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to')) {
                                 parameters[paramName] = paramVal; // Keep as string for IDs
@@ -1250,17 +1250,17 @@
                                 parameters[paramName] = Number(paramVal);
                             }
                         } else if (paramVal === 'true' || paramVal === 'false') {
-                            console.log('mgegege')
+                            // console.log('mgegege')
                             parameters[paramName] = (paramVal === 'true');
                         } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
-                            console.log('parsing json')
+                            // console.log('parsing json')
                             try {
                                 parameters[paramName] = JSON.parse(paramVal);
                             } catch (e) {
                                 parameters[paramName] = paramVal; // Fallback to string if parsing fails
                             }
                         } else {
-                            console.log('hereeee')
+                            // console.log('hereeee')
                             parameters[paramName] = paramVal;
                         }
                     }

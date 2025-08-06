@@ -199,18 +199,18 @@ def env_interface():
             # print(environment, session.get("environment"))
             if environment != session.get("environment"):
                 g.data.clear()
-                ENVS_PATH = "envs"
-                DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-                data_files = os.listdir(DATA_PATH)
-                # print("Loaded data:")
-                for data_file in data_files:
-                    if data_file.endswith(".json"):
-                        data_file_path = os.path.join(DATA_PATH, data_file)
-                        with open(data_file_path, "r") as file:
-                            g.data[data_file.split('.')[0]] = json.load(file)
+                # ENVS_PATH = "envs"
+                # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
+                # data_files = os.listdir(DATA_PATH)
+                # # print("Loaded data:")
+                # for data_file in data_files:
+                #     if data_file.endswith(".json"):
+                #         data_file_path = os.path.join(DATA_PATH, data_file)
+                #         with open(data_file_path, "r") as file:
+                #             g.data[data_file.split('.')[0]] = json.load(file)
                 session["environment"] = environment
                 session["interface"] = interface
-                session["data"] = g.data
+                # session["data"] = g.data
                 # print("data", g.data)
             
             # print(session["environment"], session["interface"])
@@ -252,7 +252,7 @@ def env_interface():
                 #         new_file.write("    @staticmethod\n" + invoke_method + "\n\n")
                 session["imports_set"] = (importsSet)
                 session["invoke_methods"] = invoke_methods
-                
+                session["actions"] = []
                 # print("Imports set:", session["imports_set"])
                 return jsonify({
                     'status': 'success',
@@ -279,6 +279,53 @@ def env_interface():
             'message': 'Choose environment and interface endpoint is working'
         })
 
+def execute_api_utility(api_name, arguments):
+    tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
+    print('executing ...')
+    arguments = arguments_processing(arguments)
+    if hasattr(tools_instance, api_name):
+        # try:
+            # print(g.data)
+            # Dynamically call the method with the provided arguments
+            result = getattr(tools_instance, api_name)(data=g.data, **arguments)
+            # print(f"Result from API {api_name}: {result}")
+            # session["actions"].append({
+            #     'api_name': api_name,
+            #     'arguments': arguments
+            # })
+    #         return jsonify({
+    #             'output': json.loads(result) if isinstance(result, str) else result
+    #         }), 200
+    #     except Exception as e:
+    #         print(f"Error executing API {api_name}: {str(e)}")
+    #         return jsonify({
+    #             'status': 'error',
+    #             'message': f'Failed to execute API: {str(e)}'
+    #         }), 500
+    # else:
+    #     return jsonify({
+    #         'status': 'error',
+    #         'message': f'API {api_name} not found'
+    #     }), 404
+
+def arguments_processing(arguments):
+    cleaned_arguments = {}
+    for argument, argument_value in arguments.items():
+        # Skip empty values
+        if argument_value == '':
+            continue
+
+        # Skip IDs (do not modify or parse)
+        if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower():
+            cleaned_arguments[argument] = argument_value
+            continue
+        # Try to evaluate literal (e.g., convert "True" → True, "123" → 123)
+        try:
+            cleaned_arguments[argument] = ast.literal_eval(argument_value)
+        except (ValueError, SyntaxError):
+            cleaned_arguments[argument] = argument_value
+
+    return cleaned_arguments
 
 @app.route('/execute_api', strict_slashes=False, methods=["GET", "POST"])
 def execute_api():
@@ -290,6 +337,23 @@ def execute_api():
         }), 405
 
     passed_data = request.get_json()
+    # print(passed_data.get('environment'))
+    environment = passed_data.get('environment', session.get("environment"))
+    ENVS_PATH = "envs"
+    DATA_PATH = f"{ENVS_PATH}/{environment}/data"
+    data_files = os.listdir(DATA_PATH)
+    # print("Loaded data:")
+    for data_file in data_files:
+        if data_file.endswith(".json"):
+            data_file_path = os.path.join(DATA_PATH, data_file)
+            with open(data_file_path, "r") as file:
+                g.data[data_file.split('.')[0]] = json.load(file)
+    
+    for action in session.get("actions", []):
+        print('session:', session.get("actions"))
+        api_name = action.get('api_name')
+        execute_api_utility(api_name, action.get('arguments', {}))
+    
     api_name = passed_data.get('api_name')
     api_name = api_name + "_invoke" if api_name else None
     if not api_name:
@@ -297,52 +361,13 @@ def execute_api():
             'status': 'error',
             'message': 'API name is required'
         }), 400
-    
-    # print(passed_data.get('environment'))
-    # environment = passed_data.get('environment', session.get("environment"))
-    # ENVS_PATH = "envs"
-    # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-    # data_files = os.listdir(DATA_PATH)
-    # # print("Loaded data:")
-    # for data_file in data_files:
-    #     if data_file.endswith(".json"):
-    #         data_file_path = os.path.join(DATA_PATH, data_file)
-    #         with open(data_file_path, "r") as file:
-    #             g.data[data_file.split('.')[0]] = json.load(file)
 
-    
-                
     
     arguments = passed_data.get('parameters', {})
-    cleaned_arguments = {}
-
-
-
-    for argument, argument_value in arguments.items():
-        # Skip empty values
-        if argument_value == '':
-            continue
-
-        # Skip IDs (do not modify or parse)
-        if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower():
-            cleaned_arguments[argument] = argument_value
-            continue
-
-        # Try to evaluate literal (e.g., convert "True" → True, "123" → 123)
-        try:
-            cleaned_arguments[argument] = ast.literal_eval(argument_value)
-        except (ValueError, SyntaxError):
-            cleaned_arguments[argument] = argument_value
-
-    # Replace original dict
+    cleaned_arguments = arguments_processing(arguments)
     arguments = cleaned_arguments
     
-    # import importlib
-    # import tools  
-    # importlib.reload(tools) 
     
-
-    # tools_instance = tools.Tools()
     tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
 
     if hasattr(tools_instance, api_name):
@@ -350,7 +375,11 @@ def execute_api():
             # print(g.data)
             # Dynamically call the method with the provided arguments
             result = getattr(tools_instance, api_name)(data=g.data, **arguments)
-            # print(f"Result from API {api_name}: {result}")
+            print(f"Result from API {api_name}: {result}")
+            session["actions"].append({
+                'api_name': api_name,
+                'arguments': arguments
+            })
             return jsonify({
                 'output': json.loads(result) if isinstance(result, str) else result
             }), 200
