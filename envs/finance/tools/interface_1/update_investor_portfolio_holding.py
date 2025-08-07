@@ -7,8 +7,8 @@ class update_investor_portfolio_holding(Tool):
     def invoke(
         data: Dict[str, Any],
         holding_id: str,
-        quantity: str = None,
-        cost_basis: str = None
+        quantity: float = None,
+        cost_basis: float = None
     ) -> str:
         portfolio_holdings = data.get("portfolio_holdings", {})
 
@@ -21,9 +21,9 @@ class update_investor_portfolio_holding(Tool):
 
         # Update fields if provided
         if quantity is not None:
-            holding["quantity"] = quantity
+            holding["quantity"] = round(float(quantity), 4)
         if cost_basis is not None:
-            holding["cost_basis"] = cost_basis
+            holding["cost_basis"] = round(float(cost_basis), 4)
 
         # Return updated state
         return json.dumps(holding)
@@ -39,8 +39,8 @@ class update_investor_portfolio_holding(Tool):
                     "type": "object",
                     "properties": {
                         "holding_id": {"type": "string", "description": "ID of the holding"},
-                        "quantity": {"type": "string", "description": "New quantity of the holding"},
-                        "cost_basis": {"type": "string", "description": "New cost basis per unit of the holding"}
+                        "quantity": {"type": "number", "description": "New quantity of the holding"},
+                        "cost_basis": {"type": "number", "description": "New cost basis per unit of the holding"}
                     },
                     "required": ["holding_id"]
                 }

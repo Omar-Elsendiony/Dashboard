@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -25,7 +24,7 @@ class create_portfolio(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         portfolio_id = generate_id(portfolios)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
         
         new_portfolio = {
             "portfolio_id": portfolio_id,

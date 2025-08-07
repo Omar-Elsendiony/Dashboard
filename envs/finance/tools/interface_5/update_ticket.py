@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -35,7 +34,7 @@ class update_ticket(Tool):
         if assigned_to:
             ticket["assigned_to"] = assigned_to
         
-        ticket["updated_at"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        ticket["updated_at"] = "2025-08-07T00:00:00Z"
         
         return json.dumps(ticket)
 

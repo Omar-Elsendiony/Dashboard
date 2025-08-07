@@ -1,43 +1,44 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
 class purchase_instrument(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], portfolio_id: str, instrument_id: str, 
-               quantity: str, cost_basis: str) -> str:
-        
-        def generate_id(table: Dict[str, Any]) -> int:
-            if not table:
-                return '1'
-            return str(max(int(k) for k in table.keys()) + 1)
-        
+    def invoke(
+        data: Dict[str, Any],
+        portfolio_id: str,
+        instrument_id: str,
+        quantity: float,
+        cost_basis: float
+    ) -> str:
+        def generate_id(table: Dict[str, Any]) -> str:
+            return str(max((int(k) for k in table.keys()), default=0) + 1)
+
         portfolios = data.get("portfolios", {})
         instruments = data.get("instruments", {})
-        portfolio_holdings = data.get("portfolio_holdings", {})
-        
+        portfolio_holdings = data.setdefault("portfolio_holdings", {})
+
         # Validate portfolio exists
-        if str(portfolio_id) not in portfolios:
+        if portfolio_id not in portfolios:
             raise ValueError(f"Portfolio {portfolio_id} not found")
-        
+
         # Validate instrument exists
-        if str(instrument_id) not in instruments:
+        if instrument_id not in instruments:
             raise ValueError(f"Instrument {instrument_id} not found")
-        
+
         holding_id = generate_id(portfolio_holdings)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
-        
+        now = "2025-08-07T00:00:00Z"
+
         new_holding = {
             "holding_id": holding_id,
             "portfolio_id": portfolio_id,
             "instrument_id": instrument_id,
-            "quantity": quantity,
-            "cost_basis": cost_basis,
-            "created_at": timestamp
+            "quantity": round(float(quantity), 4),
+            "cost_basis": round(float(cost_basis), 4),
+            "created_at": now
         }
-        
-        portfolio_holdings[str(holding_id)] = new_holding
+
+        portfolio_holdings[holding_id] = new_holding
         return json.dumps(new_holding)
 
     @staticmethod
@@ -50,10 +51,22 @@ class purchase_instrument(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "portfolio_id": {"type": "string", "description": "ID of the portfolio"},
-                        "instrument_id": {"type": "string", "description": "ID of the instrument to purchase"},
-                        "quantity": {"type": "string", "description": "Quantity of the instrument to purchase"},
-                        "cost_basis": {"type": "string", "description": "Cost basis per unit of the instrument"}
+                        "portfolio_id": {
+                            "type": "string",
+                            "description": "ID of the portfolio"
+                        },
+                        "instrument_id": {
+                            "type": "string",
+                            "description": "ID of the instrument to purchase"
+                        },
+                        "quantity": {
+                            "type": "number",
+                            "description": "Quantity of the instrument to purchase"
+                        },
+                        "cost_basis": {
+                            "type": "number",
+                            "description": "Cost basis per unit of the instrument"
+                        }
                     },
                     "required": ["portfolio_id", "instrument_id", "quantity", "cost_basis"]
                 }

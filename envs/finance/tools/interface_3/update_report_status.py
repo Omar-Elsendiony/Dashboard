@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
@@ -20,7 +19,7 @@ class update_report_status(Tool):
         
         report = reports[str(report_id)]
         report["status"] = status
-        report["updated_at"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        report["updated_at"] = "2025-08-07T00:00:00Z"
         
         return json.dumps(report)
 
@@ -29,7 +28,7 @@ class update_report_status(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "update_report",
+                "name": "update_report_status",
                 "description": "Update a report's status",
                 "parameters": {
                     "type": "object",

@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -12,7 +11,7 @@ class issue_invoice(Tool):
         commitment_id: str,
         invoice_date: str,
         due_date: str,
-        amount: str,
+        amount: float,
         currency: str,
         payment_type: Optional[str] = None
     ) -> str:
@@ -48,7 +47,7 @@ class issue_invoice(Tool):
             raise ValueError(f"Invalid payment_type. Must be one of {valid_payment_types}")
 
         invoice_id = generate_id(invoices)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
 
         new_invoice = {
             "invoice_id": invoice_id,
@@ -57,7 +56,7 @@ class issue_invoice(Tool):
             "commitment_id": commitment_id,
             "invoice_date": invoice_date,
             "due_date": due_date,
-            "amount": amount,
+            "amount": round(float(amount), 2),
             "payment_type": pt,
             "currency": currency,
             "status": "issued",
@@ -82,7 +81,7 @@ class issue_invoice(Tool):
                         "commitment_id": {"type": "string", "description": "ID of the commitment"},
                         "invoice_date": {"type": "string", "description": "Invoice date in YYYY-MM-DD format"},
                         "due_date": {"type": "string", "description": "Due date in YYYY-MM-DD format"},
-                        "amount": {"type": "string", "description": "Invoice amount"},
+                        "amount": {"type": "number", "description": "Invoice amount"},
                         "currency": {"type": "string", "description": "Currency (USD, EUR, GBP, NGN)"},
                         "payment_type": {
                             "type": "string",

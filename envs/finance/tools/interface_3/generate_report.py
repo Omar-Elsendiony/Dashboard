@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -36,7 +35,7 @@ class generate_report(Tool):
             raise ValueError(f"Invalid report type. Must be one of {valid_types}")
         
         report_id = generate_id(reports)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
         
         new_report = {
             "report_id": report_id,

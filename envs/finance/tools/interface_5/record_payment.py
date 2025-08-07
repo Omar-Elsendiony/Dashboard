@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -9,7 +8,7 @@ class record_payment(Tool):
         data: Dict[str, Any],
         invoice_id: str,
         payment_date: str,
-        amount: str,
+        amount: float,
         payment_method: str,
         status: Optional[str] = "completed"
     ) -> str:
@@ -34,13 +33,13 @@ class record_payment(Tool):
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
 
         payment_id = generate_id(payments)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
 
         new_payment = {
             "payment_id": str(payment_id),
             "invoice_id": invoice_id,
             "payment_date": payment_date,
-            "amount": amount,
+            "amount": round(float(amount), 2),
             "payment_method": payment_method,
             "status": status,
             "created_at": timestamp
@@ -71,7 +70,7 @@ class record_payment(Tool):
                             "description": "Payment date in YYYY-MM-DD or ISO format"
                         },
                         "amount": {
-                            "type": "string",
+                            "type": "number",
                             "description": "Payment amount"
                         },
                         "payment_method": {

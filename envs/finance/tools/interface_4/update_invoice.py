@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -8,7 +7,7 @@ class update_invoice(Tool):
     def invoke(
         data: Dict[str, Any],
         invoice_id: str,
-        amount: Optional[str] = None,
+        amount: Optional[float] = None,
         due_date: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
@@ -21,7 +20,7 @@ class update_invoice(Tool):
 
         # Update amount if provided
         if amount is not None:
-            invoice["amount"] = amount
+            invoice["amount"] = round(float(amount), 2)
 
         # Update due_date if provided
         if due_date is not None:
@@ -36,7 +35,7 @@ class update_invoice(Tool):
 
         # Bump updated_at only if any field changed
         if any(arg is not None for arg in (amount, due_date, status)):
-            invoice["updated_at"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+            invoice["updated_at"] = "2025-08-07T00:00:00Z"
 
         return json.dumps(invoice)
 
@@ -58,7 +57,7 @@ class update_invoice(Tool):
                             "description": "ID of the invoice to update"
                         },
                         "amount": {
-                            "type": "string",
+                            "type": "number",
                             "description": "New invoice amount (optional)"
                         },
                         "due_date": {

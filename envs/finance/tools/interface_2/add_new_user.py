@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
@@ -31,7 +30,7 @@ class add_new_user(Tool):
                 raise ValueError(f"User with email {email} already exists")
         
         user_id = generate_id(users)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
         
         new_user = {
             "user_id": str(user_id),

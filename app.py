@@ -667,6 +667,71 @@ def db_connections():
     # Handle GET requests
     return render_template('db_connections.html')
 
+@app.route('/database_utilities_prompt_generation', methods=["POST"])
+def database_utilities_prompt_generation():
+    """ Endpoint to generate prompts for database utilities """
+    data = request.get_json()
+    
+    action = data.get('action')
+    if not action:
+        return jsonify({
+            'status': 'error',
+            'message': 'Action is required'
+        }), 400
+    
+    if action == "generate_policy_prompt":
+        db_schema = data.get('db_schema', '')
+        example_policies = data.get('example_policies', '')
+        interface_apis = data.get('interface_apis', '')
+        initial_prompt = data.get('initial_prompt', '')
+        
+        prompt = initial_prompt.format(
+            db_schema=db_schema,
+            example_policy_document=example_policies,
+            apis_documentation=interface_apis
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
+    elif action == "generate_api_prompt":
+        db_schema = data.get('db_schema', '')
+        example_apis = data.get('example_apis', '')
+        initial_prompt = data.get('initial_apis', '')
+        interface_apis = data.get('interface_apis', '')
+        
+        prompt = initial_prompt.format(
+            db_schema=db_schema,
+            examples_tools=example_apis,
+            required_tools=interface_apis
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
+    elif action == "generate_database_seeding_prompt":
+        db_schema = data.get('db_schema', '')
+        example_data = data.get('example_data', '')
+        initial_prompt = data.get('initial_prompt', '')
+        
+        prompt = initial_prompt.format(
+            db_schema=db_schema,
+            example_data_document=example_data
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
+    else:
+        return jsonify({
+            'status': 'error',
+            'message': 'Invalid action'
+        }), 400
+    
+
 @app.route('/database_utilities', methods=["POST"])
 def database_utilities():
     data = request.get_json()
@@ -703,10 +768,32 @@ def database_utilities():
         
     elif action == 'api_implementation':
         # Handle API implementation logic here
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        
+        example_apis_file_path = f"prompts/{action}/examples_tools.txt" # aka example APIs
+        if not os.path.exists(example_apis_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example APIs file for {action} not found'
+            }), 404
+        
+        with open(example_apis_file_path, 'r') as file:
+            example_apis = file.read()
+        
         return jsonify({
             'status': 'success',
-            'message': 'API implemented successfully'
+            'initial_prompt': initial_prompt,
+            'example_apis': example_apis
         }), 200
+        
     elif action == 'database_seeding':
         # Handle database seeding logic here
         return jsonify({

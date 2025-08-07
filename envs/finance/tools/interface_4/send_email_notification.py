@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -42,7 +41,7 @@ class send_email_notification(Tool):
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
 
         notification_id = generate_id(notifications)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
 
         new_notification = {
             "notification_id": notification_id,

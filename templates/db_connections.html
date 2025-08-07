@@ -238,7 +238,7 @@
         .content-subheader {
             font-size: 1.2rem;
             color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 1rem;
+            margin: 1rem;
             text-align: center;
         }
 
@@ -281,6 +281,109 @@
         }
     </style>
     <script>
+        function sendContentLLM(feature){
+            if (feature == "policy_creation"){
+                const initialPrompt = document.getElementById('initial-prompt').value;
+                const dbSchema = document.getElementById('db-schema').value;
+                const examplePolicies = document.getElementById('example-policies').value;
+                const interfaceApis = document.getElementById('interface-apis').value;
+    
+                fetch('/database_utilities_prompt_generation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'generate_policy_prompt',
+                        initial_prompt: initialPrompt,
+                        db_schema: dbSchema,
+                        example_policies: examplePolicies,
+                        interface_apis: interfaceApis
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    // remove if they were present before
+                    const existingHeader = document.getElementById('output-header');
+                    const existingTextArea = document.getElementById('generated-policy');
+                    if (existingHeader) {
+                        existingHeader.remove();
+                    }
+                    if (existingTextArea) {
+                        existingTextArea.remove();
+                    }
+    
+                    outputHeader = document.createElement('h2');
+                    outputHeader.innerText = 'Generated Policy Prompt';
+                    outputHeader.id = 'output-header';
+                    document.getElementById('content').appendChild(outputHeader);
+    
+                    textAreaNode = document.createElement('textarea');
+                    textAreaNode.id = 'generated-policy';
+                    textAreaNode.style.width = '100%';
+                    textAreaNode.style.height = '200px';
+                    textAreaNode.value = data.prompt;
+                    document.getElementById('content').appendChild(textAreaNode);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while generating the policy.');
+                });
+
+            } else if (feature == "api_implementation"){
+                const initialPrompt = document.getElementById('initial-prompt').value;
+                const dbSchema = document.getElementById('db-schema').value;
+                const exampleApis = document.getElementById('example-apis').value;
+                const interfaceApis = document.getElementById('interface-apis').value;
+
+                fetch('/database_utilities_prompt_generation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'generate_api_prompt',
+                        initial_prompt: initialPrompt,
+                        db_schema: dbSchema,
+                        example_apis: exampleApis,
+                        interface_apis: interfaceApis
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    // remove if they were present before
+                    const existingHeader = document.getElementById('output-header');
+                    const existingTextArea = document.getElementById('generated-api');
+                    if (existingHeader) {
+                        existingHeader.remove();
+                    }
+                    if (existingTextArea) {
+                        existingTextArea.remove();
+                    }
+
+                    outputHeader = document.createElement('h2');
+                    outputHeader.innerText = 'Generated API Prompt';
+                    outputHeader.id = 'output-header';
+                    document.getElementById('content').appendChild(outputHeader);
+
+                    textAreaNode = document.createElement('textarea');
+                    textAreaNode.id = 'generated-api';
+                    textAreaNode.style.width = '100%';
+                    textAreaNode.style.height = '200px';
+                    textAreaNode.value = data.prompt;
+                    document.getElementById('content').appendChild(textAreaNode);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while generating the API.');
+                });
+            } else {
+                alert("This feature is not implemented yet.");
+            }
+        }
+
         async function policy_creation_handling(){
 
             const response = await fetch('/database_utilities', {
@@ -301,23 +404,67 @@
             document.getElementById('content').innerHTML = `
                 <h2 id="content-header">Policy Creation</h2>
                 <h3 class="content-subheader">Initial Prompt</h3>
-                <textarea>
-This utility allows you to create and manage database access policies, security rules, and permission frameworks.
-It provides a user-friendly interface to define roles, permissions, and access controls for your database domains.
-                </textarea>
+                <textarea id="initial-prompt"></textarea>
 
                 <h3 class="content-subheader">Database schema</h3>
-                <textarea>
-This utility allows you to create and manage database access policies, security rules, and permission frameworks.
-It provides a user-friendly interface to define roles, permissions, and access controls for your database domains.
-                </textarea>
+                <textarea id="db-schema"></textarea>
 
                 <h3 class="content-subheader">Example policies</h3>
-                <textarea>
-This utility allows you to create and manage database access policies, security rules, and permission frameworks.
-It provides a user-friendly interface to define roles, permissions, and access controls for your database domains.
-                </textarea>
+                <textarea id="example-policies"></textarea>
+
+                <h3 class="content-subheader">Interface APIs</h3>
+                <textarea id="interface-apis"></textarea>
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem;">
+                    <button id="generate-policy" onclick="sendContentLLM('policy_creation')" style="margin: 1rem; padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer;">Generate Policy Prompt</button>
+                </div>
             `;
+
+            document.getElementById('initial-prompt').value = data.initial_prompt;
+            // document.getElementById('db-schema').value = data.db_schema;
+            document.getElementById('example-policies').value = data.example_policies;
+
+        }
+
+        async function api_implementation_handling(){
+
+            const response = await fetch('/database_utilities', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    action: 'api_implementation'
+                })
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('content').innerHTML = '';
+            document.getElementById('content').innerHTML = `
+                <h2 id="content-header">API Implementation</h2>
+                <h3 class="content-subheader">Initial Prompt</h3>
+                <textarea id="initial-prompt"></textarea>
+
+                <h3 class="content-subheader">Database schema</h3>
+                <textarea id="db-schema"></textarea>
+
+                <h3 class="content-subheader">Example APIs</h3>
+                <textarea id="example-apis"></textarea>
+
+                <h3 class="content-subheader">Interface APIs</h3>
+                <textarea id="interface-apis"></textarea>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem;">
+                    <button id="generate-api" onclick="sendContentLLM('api_implementation')" style="margin: 1rem; padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer;">Generate API Prompt</button>
+                </div>
+            `;
+
+            document.getElementById('initial-prompt').value = data.initial_prompt;
+            // document.getElementById('db-schema').value = data.db_schema;
+            document.getElementById('example-apis').value = data.example_apis;
+
         }
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -390,7 +537,7 @@ It provides a user-friendly interface to define roles, permissions, and access c
             <h1>Database Domain Utilities</h1>
             <div class="subtitle-container">
                 <div class="subtitle-line"></div>
-                <span class="subtitle">Professional Database Management</span>
+                <span class="subtitle">Database Utilities Tooling</span>
                 <div class="subtitle-line"></div>
             </div>
             <p class="tracker-description">

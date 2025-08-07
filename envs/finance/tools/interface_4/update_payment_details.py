@@ -7,7 +7,7 @@ class update_payment_details(Tool):
     def invoke(
         data: Dict[str, Any],
         payment_id: str,
-        amount: Optional[str] = None,
+        amount: Optional[float] = None,
         payment_method: Optional[str] = None,
         status: Optional[str] = None
     ) -> str:
@@ -20,7 +20,7 @@ class update_payment_details(Tool):
 
         # Update amount if provided
         if amount is not None:
-            payment["amount"] = amount
+            payment["amount"] = round(float(amount), 2)
 
         # Update payment_method if provided
         if payment_method is not None:
@@ -53,7 +53,7 @@ class update_payment_details(Tool):
                             "description": "ID of the payment to update"
                         },
                         "amount": {
-                            "type": "string",
+                            "type": "number",
                             "description": "New payment amount (optional)"
                         },
                         "payment_method": {

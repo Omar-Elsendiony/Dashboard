@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -34,7 +33,7 @@ class assign_user_to_handle_investor_or_fund(Tool):
             
             # Update fund's manager_id
             funds[str(fund_id)]["manager_id"] = str(user_id)
-            funds[str(fund_id)]["updated_at"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+            funds[str(fund_id)]["updated_at"] = "2025-08-07T00:00:00Z"
             return json.dumps(funds[str(fund_id)])
         
         else:

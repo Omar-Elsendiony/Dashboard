@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
@@ -35,7 +34,7 @@ class create_investor(Tool):
             raise ValueError(f"Invalid accreditation_status. Must be one of {valid_statuses}")
         
         investor_id = generate_id(investors)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
         
         new_investor = {
             "investor_id": str(investor_id),

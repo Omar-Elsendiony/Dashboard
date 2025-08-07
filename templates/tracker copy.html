@@ -518,34 +518,6 @@
             populateTrainerDropdown();
             populateComplexityDropdown();
             populateDomainsDropDown();
-            populateCalibratorDropdown();
-            populateInterfaceDropdown();
-        }
-
-        function populateCalibratorDropdown(){
-            const calibratorSelect = document.getElementById('calibratorFilter');
-            const calibratorsList = Array.from(calibrators);
-            calibratorSelect.innerHTML = '<option value="all">All Calibrators</option>';
-            calibratorsList.forEach(calibrator => {
-                if (calibrator && calibrator.trim()) {
-                    const option = document.createElement('option');
-                    option.value = calibrator;
-                    option.textContent = calibrator;
-                    calibratorSelect.appendChild(option);
-                }
-            });
-        }
-
-        function populateInterfaceDropdown() {
-            const interfaceSelect = document.getElementById('interfaceFilter');
-            interfaceSelect.innerHTML = '<option value="all">All Interfaces</option>';
-
-            for (let i = 0; i < 5; i++){
-                const option = document.createElement('option');
-                option.value = i + 1;
-                option.textContent = i + 1;
-                interfaceSelect.appendChild(option);
-            };
         }
 
         function populateDomainsDropDown() {
@@ -672,6 +644,14 @@
             const trainerFilter = document.getElementById('trainerFilter').value;
             const complexityFilter = document.getElementById('complexityFilter').value;
 
+            /* console.log('Filters:', {
+                weekFilter,
+                podFilter,
+                trainerFilter,
+                complexityFilter
+            }); */
+
+
             // Filter tasks based on selected filters
             let filteredTasks = tasks_info.filter(task => {
                 if (github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter){
@@ -682,6 +662,9 @@
                        (trainerFilter === 'all' || github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter) &&
                        (complexityFilter === 'all' || task['Complexity'] === complexityFilter);
             });
+
+            console.log('Filtered Tasks:', trainerFilter);
+
 
             // Group by week, date, and user
             const groupedData = {};
@@ -778,9 +761,7 @@
         // Replace the existing renderTable function with this modified version
         // Replace the existing renderTable function with this modified version
 function renderTable(element) {
-    if (element !== null && element !== undefined) {
-        console.log(element.value)
-    }
+    console.log(element)
     const tableData = generateTableData(element);
     const tableContainer = document.getElementById('tasksDisplay');
     
@@ -935,7 +916,7 @@ function renderTable(element) {
             })
             .then(response => response.json())
             .then(data => {
-                // console.log('Tracker data reloaded:', data);
+                console.log('Tracker data reloaded:', data);
                 reloadBtn.innerHTML = 'Reloaded &#10003;';
                 tasks_info = data.tasks_info || [];
                 username_email_mapping = data.username_email_mapping || {};
@@ -946,6 +927,7 @@ function renderTable(element) {
                     }
                 }
                 console.log('GitHub Username to Name Mapping:', github_username_mapping);
+                
 
                 var show_trainer_pod = new Map();
                 for (const team_structure of data.team_structure) {
@@ -963,14 +945,17 @@ function renderTable(element) {
                     }
                     pod_trainers.set(team_structure['Pod Lead'], trainers_of_pod);
                 }
-                /* console.log('Pods:', pod_trainers);
-                console.log('Pods:', show_trainer_pod); */
 
+                console.log('Pods:', pod_trainers);
+                console.log('Pods:', show_trainer_pod);
 
                 for (const task of tasks_info) {
                     domains.add(task['Domain']);
                     if (!task['Lead'] || task['Lead'] === "Unknown Pod") {
-
+                        /* if (task['GitHub username'] == 'khomesh02') {
+                            console.log(github_username_mapping[task['GitHub username'].toLowerCase()])
+                            console.log(show_trainer_pod.get(github_username_mapping[task['GitHub username'].toLowerCase()]))
+                        } */
                         task['Lead'] = show_trainer_pod.get(github_username_mapping[task['GitHub username'].toLowerCase()]) || "Unknown Pod";
                     }
                 }
@@ -978,7 +963,7 @@ function renderTable(element) {
                 console.log('Tasks Info:', tasks_info);
 
                 // current_domain = tasks_info[0]['Domain'] // current domain is the last submitted domain as of now
-                current_domain = 'finance' // current domain is the last submitted domain as of now
+                current_domain = 'smart_home' // current domain is the last submitted domain as of now
                 document.getElementById('currentDomain').textContent = current_domain;
                 tasks_occurred = new Set();
                 tasks_completed = 0;
@@ -1202,13 +1187,6 @@ function renderTable(element) {
                     <label class="filter-label" for="weekFilter">Week</label>
                     <select id="weekFilter" class="filter-select">
                         <option value="all">All Weeks</option>
-                    </select>
-                </div>
-
-                <div class="filter-group">
-                    <label class="filter-label" for="calibratorFilter">Calibrator</label>
-                    <select id="calibratorFilter" class="filter-select">
-                        <option value="all">All Calibrators</option>
                     </select>
                 </div>
 

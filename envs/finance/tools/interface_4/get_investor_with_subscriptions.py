@@ -4,15 +4,17 @@ from tau_bench.envs.tool import Tool
 
 class get_investor_with_subscriptions(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], subscription_id: Optional[str] = None,
-               name: Optional[str] = None, contact_email: Optional[str] = None,
-               employee_id: Optional[str] = None) -> str:
+    def invoke(data: Dict[str, Any], investor_id: Optional[str] = None, 
+               subscription_id: Optional[str] = None,name: Optional[str] = None, 
+               contact_email: Optional[str] = None, employee_id: Optional[str] = None) -> str:
         investors = data.get("investors", {})
         subscriptions = data.get("subscriptions", {})
         results = []
         
         for investor in investors.values():
             # Apply filters
+            if investor_id and investor.get("investor_id") != investor_id:
+                continue
             if name and name.lower() not in investor.get("name", "").lower():
                 continue
             if contact_email and investor.get("contact_email", "").lower() != contact_email.lower():
@@ -48,6 +50,7 @@ class get_investor_with_subscriptions(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
+                        "investor_id": {"type": "string", "description": "Filter by investor ID"},
                         "subscription_id": {"type": "string", "description": "Filter by subscription ID"},
                         "name": {"type": "string", "description": "Filter by investor name"},
                         "contact_email": {"type": "string", "description": "Filter by contact email"},

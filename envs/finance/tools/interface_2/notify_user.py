@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
@@ -32,7 +31,7 @@ class notify_user(Tool):
             raise ValueError(f"Invalid class. Must be one of {valid_classes}")
 
         notification_id = generate_id(notifications)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
 
         new_notification = {
             "notification_id": notification_id,

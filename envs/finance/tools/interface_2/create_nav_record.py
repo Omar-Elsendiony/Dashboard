@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
@@ -21,7 +20,7 @@ class create_nav_record(Tool):
             raise ValueError(f"Fund with ID {fund_id} not found")
         
         nav_id = generate_id(nav_records)
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        timestamp = "2025-08-07T00:00:00Z"
         
         new_nav = {
             "nav_id": str(nav_id),
