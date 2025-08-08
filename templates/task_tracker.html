@@ -378,7 +378,7 @@
 
         .task-table td {
             color: rgba(255, 255, 255, 0.9);
-            font-size: 0.85rem;
+            font-size: 1rem;
         }
 
         .task-table tbody tr:hover {
@@ -408,17 +408,20 @@
         }
 
         .complexity-expert {
-            color: #ff6b6b;
+            // color: #ff6b6b;
+            color: #9a6bffff;
             font-weight: 600;
         }
 
         .complexity-hard {
-            color: #ffa726;
+            // color: #ffa726;
+            color: #9a6bffff;
             font-weight: 600;
         }
 
         .complexity-medium {
-            color: #66bb6a;
+            // color: #66bb6a;
+            color: #9a6bffff;
             font-weight: 600;
         }
 
@@ -512,8 +515,9 @@
         }
 
         .table-wrapper {
-            overflow-x: auto;
+            overflow: auto;
             border-radius: 15px;
+            // max-height: 800px;
         }
 
         .no-data {
@@ -913,11 +917,42 @@
                 sortedGroupedData[week] = groupedData[week];
             });
 
-            console.log('Grouped Stats Data:', groupedStatsData);
+            // console.log('Grouped Stats Data:', groupedStatsData);
+            trainerStats = [];
+            for (const trainer in groupedStatsData) {
+                const stats = groupedStatsData[trainer];
+                const totalTasks = stats.merged + stats.resubmitted + stats.discarded + stats.pending_review + stats.ready_to_merge + stats.needs_changes;
+                const mergedPercent = totalTasks > 0 ? (stats.merged / totalTasks * 100).toFixed(1) : 0;
+                const reworkPercent = totalTasks > 0 ? (stats.resubmitted / totalTasks * 100).toFixed(1) : 0;
+                const resubmittedPercent = totalTasks > 0 ? (stats.resubmitted / totalTasks * 100).toFixed(1) : 0;
+                const discardedPercent = totalTasks > 0 ? (stats.discarded / totalTasks * 100).toFixed(1) : 0;
+                const pending_reviewPercent = totalTasks > 0 ? (stats.pending_review / totalTasks * 100).toFixed(1) : 0;
+                const ready_to_mergePercent = totalTasks > 0 ? (stats.ready_to_merge / totalTasks * 100).toFixed(1) : 0;
+                const needs_changesPercent = totalTasks > 0 ? (stats.needs_changes / totalTasks * 100).toFixed(1) : 0;
+
+
+                trainerStats.push({
+                    trainer: trainer,
+                    merged: stats.merged,
+                    mergedPercent: parseFloat(mergedPercent),
+                    rework: stats.resubmitted,
+                    reworkPercent: parseFloat(reworkPercent),
+                    resubmitted: stats.resubmitted,
+                    resubmittedPercent: parseFloat(resubmittedPercent),
+                    discarded: stats.discarded,
+                    discardedPercent: parseFloat(discardedPercent),
+                    pending_review: stats.pending_review,
+                    pending_reviewPercent: parseFloat(pending_reviewPercent),
+                    ready_to_merge: stats.ready_to_merge,
+                    ready_to_mergePercent: parseFloat(ready_to_mergePercent),
+                    needs_changes: stats.needs_changes,
+                    needs_changesPercent: parseFloat(needs_changesPercent)
+                });
+            }
             return groupedData;
         }
 
-        var trainerStats = [
+        /* var trainerStats = [
             {
                 trainer: "Siddharth Balwant",
                 merged: 4,
@@ -929,7 +964,7 @@
                 discarded: 1,
                 discardedPercent: 20.0
             }
-        ]
+        ] */
         /*
             {
                 trainer: "Ashirwad Singh",
@@ -956,13 +991,15 @@
             // Calculate totals
             const totals = {
                 merged: trainerStats.reduce((sum, trainer) => sum + trainer.merged, 0),
-                rework: trainerStats.reduce((sum, trainer) => sum + trainer.rework, 0),
                 resubmitted: trainerStats.reduce((sum, trainer) => sum + trainer.resubmitted, 0),
-                discarded: trainerStats.reduce((sum, trainer) => sum + trainer.discarded, 0)
+                discarded: trainerStats.reduce((sum, trainer) => sum + trainer.discarded, 0),
+                pending_review: trainerStats.reduce((sum, trainer) => sum + (trainer.pending_review || 0), 0),
+                ready_to_merge: trainerStats.reduce((sum, trainer) => sum + (trainer.ready_to_merge || 0), 0),
+                needs_changes: trainerStats.reduce((sum, trainer) => sum + (trainer.needs_changes || 0), 0)
             };
 
-            const totalTasks = totals.merged + totals.rework + totals.resubmitted + totals.discarded;
-
+            const totalTasks = totals.merged + totals.resubmitted + totals.discarded + totals.pending_review + totals.ready_to_merge + totals.needs_changes;
+            console.log('Total Tasks:', totalTasks);
             let tableHTML = `
                 <div class="table-wrapper">
                     <table class="trainer-stats-table">
@@ -971,12 +1008,16 @@
                                 <th>Trainer</th>
                                 <th class="merged-stat">Merged</th>
                                 <th class="percentage-stat">Merged %</th>
-                                <th class="rework-stat">Rework</th>
-                                <th class="percentage-stat">Rework %</th>
                                 <th class="resubmitted-stat">Resubmitted</th>
                                 <th class="percentage-stat">Resubmitted %</th>
                                 <th class="discarded-stat">Discarded</th>
                                 <th class="percentage-stat">Discarded %</th>
+                                <th class="pending-review-stat">Pending Review</th>
+                                <th class="percentage-stat">Pending Review %</th>
+                                <th class="ready-to-merge-stat">Ready to Merge</th>
+                                <th class="percentage-stat">Ready to Merge %</th>
+                                <th class="needs-changes-stat">Needs Changes</th>
+                                <th class="percentage-stat">Needs Changes %</th>
                             </tr>
                         </thead>
                         <tbody>`;
@@ -988,12 +1029,16 @@
                         <td class="trainer-name">${trainer.trainer}</td>
                         <td class="merged-stat">${trainer.merged}</td>
                         <td class="percentage-stat">${trainer.mergedPercent.toFixed(1)}%</td>
-                        <td class="rework-stat">${trainer.rework}</td>
-                        <td class="percentage-stat">${trainer.reworkPercent.toFixed(1)}%</td>
                         <td class="resubmitted-stat">${trainer.resubmitted}</td>
                         <td class="percentage-stat">${trainer.resubmittedPercent.toFixed(1)}%</td>
                         <td class="discarded-stat">${trainer.discarded}</td>
                         <td class="percentage-stat">${trainer.discardedPercent.toFixed(1)}%</td>
+                        <td class="pending-review-stat">${trainer.pending_review}</td>
+                        <td class="percentage-stat">${trainer.pending_reviewPercent.toFixed(1)}%</td>
+                        <td class="ready-to-merge-stat">${trainer.ready_to_merge}</td>
+                        <td class="percentage-stat">${trainer.ready_to_mergePercent.toFixed(1)}%</td>
+                        <td class="needs-changes-stat">${trainer.needs_changes}</td>
+                        <td class="percentage-stat">${trainer.needs_changesPercent.toFixed(1)}%</td>
                     </tr>`;
             });
 
@@ -1002,18 +1047,25 @@
             const totalReworkPercent = totalTasks > 0 ? (totals.rework / totalTasks * 100).toFixed(1) : 0;
             const totalResubmittedPercent = totalTasks > 0 ? (totals.resubmitted / totalTasks * 100).toFixed(1) : 0;
             const totalDiscardedPercent = totalTasks > 0 ? (totals.discarded / totalTasks * 100).toFixed(1) : 0;
+            const totalPendingReviewPercent = totalTasks > 0 ? (totals.pending_review / totalTasks * 100).toFixed(1) : 0;
+            const totalReadyToMergePercent = totalTasks > 0 ? (totals.ready_to_merge / totalTasks * 100).toFixed(1) : 0;
+            const totalNeedsChangesPercent = totalTasks > 0 ? (totals.needs_changes / totalTasks * 100).toFixed(1) : 0;
 
             tableHTML += `
                     <tr class="total-row">
                         <td class="trainer-name">Total</td>
                         <td class="merged-stat">${totals.merged}</td>
                         <td class="percentage-stat">${totalMergedPercent}%</td>
-                        <td class="rework-stat">${totals.rework}</td>
-                        <td class="percentage-stat">${totalReworkPercent}%</td>
                         <td class="resubmitted-stat">${totals.resubmitted}</td>
                         <td class="percentage-stat">${totalResubmittedPercent}%</td>
                         <td class="discarded-stat">${totals.discarded}</td>
                         <td class="percentage-stat">${totalDiscardedPercent}%</td>
+                        <td class="pending-review-stat">${totals.pending_review}</td>
+                        <td class="percentage-stat">${totalPendingReviewPercent}%</td>
+                        <td class="ready-to-merge-stat">${totals.ready_to_merge}</td>
+                        <td class="percentage-stat">${totalReadyToMergePercent}%</td>
+                        <td class="needs-changes-stat">${totals.needs_changes}</td>
+                        <td class="percentage-stat">${totalNeedsChangesPercent}%</td>
                     </tr>
                         </tbody>
                     </table>
@@ -1134,9 +1186,9 @@
 
                 // Add distribution percentage row
                 tableHTML += `
-                    <tr class="week-distribution-row" style="border-top: 1px solid rgba(118, 75, 162, 0.6); background: linear-gradient(135deg, rgba(118, 75, 162, 0.15), rgba(102, 126, 234, 0.15)); font-style: italic;">
-                        <td class="week-cell" style="background: rgba(118, 75, 162, 0.25); color: #764ba2; font-weight: bold; font-style: italic;">${week.replace('_', ' ').toUpperCase()}</td>
-                        <td class="total-cell" style="background: rgba(118, 75, 162, 0.2); color: #764ba2; font-weight: bold; font-style: italic; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Distribution</td>`;
+                    <tr class="week-distribution-row" style="border-top: 1px solid rgba(118, 75, 162, 0.6); background: linear-gradient(135deg, rgba(118, 75, 162, 0.15), rgba(102, 126, 234, 0.15)); ">
+                        <td class="week-cell" style="background: rgba(118, 75, 162, 0.25); color: #764ba2; font-weight: bold; ">${week.replace('_', ' ').toUpperCase()}</td>
+                        <td class="total-cell" style="background: rgba(118, 75, 162, 0.2); color: #764ba2; font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Distribution</td>`;
 
                 users.forEach(user => {
                     const total = weekTotals[user].total;
@@ -1269,6 +1321,7 @@
                 // Populate dropdowns and render table
                 populateDropdowns();
                 renderTable();
+                renderTrainerStatsTable();
                 
                 setTimeout(() => {
                     reloadBtn.innerHTML = originalText;
@@ -1511,6 +1564,7 @@
             </div>
             <div id="trainerStatsDisplay" class="trainer-stats-display">
                 <!-- Trainer stats table will be rendered here -->
+                <div class="no-data">No trainer statistics available until data is fetched</div>
             </div>
     </section>
 </body>

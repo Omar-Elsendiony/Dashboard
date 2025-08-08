@@ -22,7 +22,7 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=8) 
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
 
 # app.config['SESSION_TYPE'] = 'filesystem' 
 
@@ -740,6 +740,40 @@ def database_utilities_prompt_generation():
             'status': 'success',
             'prompt': prompt
         }), 200
+    elif action == "check_scenario_realism":
+        from openai import OpenAI
+
+        client = OpenAI() 
+        db_schema = data.get('db_schema', '')
+        scenario = data.get('scenario', '')
+        
+        if not db_schema or not scenario:
+            return jsonify({
+                'status': 'error',
+                'message': 'db_schema and scenario are required'
+            }), 400
+        
+        prompt = f"Check the realism of the following scenario based on the provided database schema:\n\nDatabase Schema:\n{db_schema}\n\nScenario:\n{scenario}\n\nIs this scenario realistic? Please provide a detailed explanation."
+        
+        try:
+            response = client.chat.completions.create(
+                model="gpt-4",
+                messages=[
+                    {"role": "system", "content": "You are a helpful assistant."},
+                    {"role": "user", "content": prompt}
+                ]
+            )
+
+            realism_check = response.choices[0].message.content.strip()
+            return jsonify({
+                'status': 'success',
+                'realism_check': realism_check
+            }), 200
+        except Exception as e:
+            return jsonify({
+                'status': 'error',
+                'message': f'Failed to check scenario realism: {str(e)}'
+            }), 500
     else:
         return jsonify({
             'status': 'error',
@@ -844,26 +878,37 @@ def database_utilities():
         with open(initial_prompt_file_path, 'r') as file:
             initial_prompt = file.read()
         
-        example_scenarios_file_path = f"prompts/{action}/example_scenarios.txt"
-        if not os.path.exists(example_scenarios_file_path):
-            return jsonify({
-                'status': 'error',
-                'message': f'Example scenarios file for {action} not found'
-            }), 404
+        # example_scenarios_file_path = f"prompts/{action}/example_scenarios.txt"
+        # if not os.path.exists(example_scenarios_file_path):
+        #     return jsonify({
+        #         'status': 'error',
+        #         'message': f'Example scenarios file for {action} not found'
+        #     }), 404
         
-        with open(example_scenarios_file_path, 'r') as file:
-            example_scenarios = file.read()
+        # with open(example_scenarios_file_path, 'r') as file:
+        #     example_scenarios = file.read()
         
         return jsonify({
             'status': 'success',
             'initial_prompt': initial_prompt,
-            'example_scenarios': example_scenarios
+            # 'example_scenarios': example_scenarios
         }), 200
     else:
         return jsonify({
             'status': 'error',
             'message': 'Invalid action'
         }), 400
+
+@app.route('/instruction_validation', strict_slashes=False, methods=["GET", "POST"])
+def task_validation():
+    if request.method == "POST":
+        data = request.json
+        # Process the task validation request
+        return jsonify({
+            'status': 'success',
+            'message': 'Task validation initiated'
+        }), 200
+    return render_template('instruction_validation.html')
 
 if __name__ == "__main__":
     """ Main Function """
