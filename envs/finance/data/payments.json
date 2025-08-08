@@ -1567,7 +1567,7 @@
     },
     "175": {
       "amount": 46811.25,
-      "status": "draft",
+      "status": "failed",
       "created_at": "2025-08-04T23:41:12.446429",
       "invoice_id": "175",
       "payment_date": "2025-07-21T00:00:00",
@@ -2503,7 +2503,7 @@
     },
     "279": {
       "amount": 54000.1,
-      "status": "draft",
+      "status": "failed",
       "created_at": "2025-08-04T23:41:15.582594",
       "invoice_id": "279",
       "payment_date": "2025-07-15T00:00:00",
@@ -2791,7 +2791,7 @@
     },
     "311": {
       "amount": 43230.94,
-      "status": "draft",
+      "status": "failed",
       "created_at": "2025-08-04T23:41:16.664041",
       "invoice_id": "311",
       "payment_date": "2025-09-28T00:00:00",
@@ -3493,7 +3493,7 @@
     },
     "389": {
       "amount": 58588.29,
-      "status": "draft",
+      "status": "failed",
       "created_at": "2025-08-04T23:41:18.990438",
       "invoice_id": "389",
       "payment_date": "2025-06-28T00:00:00",

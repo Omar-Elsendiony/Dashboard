@@ -379,13 +379,100 @@
                     console.error('Error:', error);
                     alert('An error occurred while generating the API.');
                 });
+            } else if (feature == "database_seeding"){
+                const initialPrompt = document.getElementById('initial-prompt').value;
+                const dbSchema = document.getElementById('db-schema').value;
+
+                fetch('/database_utilities_prompt_generation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'generate_seed_prompt',
+                        initial_prompt: initialPrompt,
+                        db_schema: dbSchema
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    // remove if they were present before
+                    const existingHeader = document.getElementById('output-header');
+                    const existingTextArea = document.getElementById('generated-seed');
+                    if (existingHeader) {
+                        existingHeader.remove();
+                    }
+                    if (existingTextArea) {
+                        existingTextArea.remove();
+                    }
+
+                    outputHeader = document.createElement('h2');
+                    outputHeader.innerText = 'Generated Seed Prompt';
+                    outputHeader.id = 'output-header';
+                    document.getElementById('content').appendChild(outputHeader);
+
+                    textAreaNode = document.createElement('textarea');
+                    textAreaNode.id = 'generated-seed';
+                    textAreaNode.style.width = '100%';
+                    textAreaNode.style.height = '200px';
+                    textAreaNode.value = data.prompt;
+                    document.getElementById('content').appendChild(textAreaNode);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while generating the seed.');
+                });
+            } else if (feature == "scenario_realism"){
+                const initialPrompt = document.getElementById('initial-prompt').value;
+                const dbSchema = document.getElementById('db-schema').value;
+
+                fetch('/database_utilities_prompt_generation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'generate_scenario_prompt',
+                        initial_prompt: initialPrompt,
+                        db_schema: dbSchema
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    // remove if they were present before
+                    const existingHeader = document.getElementById('output-header');
+                    const existingTextArea = document.getElementById('generated-scenario');
+                    if (existingHeader) {
+                        existingHeader.remove();
+                    }
+                    if (existingTextArea) {
+                        existingTextArea.remove();
+                    }
+
+                    outputHeader = document.createElement('h2');
+                    outputHeader.innerText = 'Generated Scenario Prompt';
+                    outputHeader.id = 'output-header';
+                    document.getElementById('content').appendChild(outputHeader);
+
+                    textAreaNode = document.createElement('textarea');
+                    textAreaNode.id = 'generated-scenario';
+                    textAreaNode.style.width = '100%';
+                    textAreaNode.style.height = '200px';
+                    textAreaNode.value = data.prompt;
+                    document.getElementById('content').appendChild(textAreaNode);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while generating the scenario.');
+                });
             } else {
                 alert("This feature is not implemented yet.");
             }
         }
 
         async function policy_creation_handling(){
-
             const response = await fetch('/database_utilities', {
                 method: 'POST',
                 headers: {
@@ -422,7 +509,73 @@
             document.getElementById('initial-prompt').value = data.initial_prompt;
             // document.getElementById('db-schema').value = data.db_schema;
             document.getElementById('example-policies').value = data.example_policies;
+        }
 
+        async function database_seeding_handling(){
+            const response = await fetch('/database_utilities', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    action: 'database_seeding'
+                })
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('content').innerHTML = '';
+            document.getElementById('content').innerHTML = `
+                <h2 id="content-header">Database Seeding</h2>
+                <h3 class="content-subheader">Initial Prompt</h3>
+                <textarea id="initial-prompt"></textarea>
+
+                <h3 class="content-subheader">Database schema</h3>
+                <textarea id="db-schema"></textarea>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem;">
+                    <button id="generate-seed" onclick="sendContentLLM('database_seeding')" style="margin: 1rem; padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer;">Generate Seed Prompt</button>
+                </div>
+            `;
+
+            document.getElementById('initial-prompt').value = data.initial_prompt;
+            // document.getElementById('db-schema').value = data.db_schema;
+            // document.getElementById('example-data').value = data.example_data;
+        }
+
+        async function scenario_realism_handling(){
+            const response = await fetch('/database_utilities', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    action: 'scenario_realism'
+                })
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('content').innerHTML = '';
+            document.getElementById('content').innerHTML = `
+                <h2 id="content-header">Scenario Realism</h2>
+                <h3 class="content-subheader">Initial Prompt</h3>
+                <textarea id="initial-prompt"></textarea>
+
+                <h3 class="content-subheader">Database schema</h3>
+                <textarea id="db-schema"></textarea>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem;">
+                    <button id="generate-scenario" onclick="sendContentLLM('scenario_realism')" style="margin: 1rem; padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer;">Generate Scenario Prompt</button>
+                </div>
+            `;
+
+            document.getElementById('initial-prompt').value = data.initial_prompt;
+            // document.getElementById('db-schema').value = data.db_schema;
         }
 
         async function api_implementation_handling(){
@@ -481,8 +634,12 @@
                         } else if (utility === 'api-implementation') {
                             api_implementation_handling();
                         } else if (utility === 'database-seeding') {
-                            // database_seeding_handling();
+                            database_seeding_handling();
+                        } else if (utility === 'scenario-realism') {
+                            scenario_realism_handling();
                         }
+                    } else {
+                        console.warn('No utility data found for this card.');
                     }
                 });
             });
@@ -551,17 +708,22 @@
             <div class="analytics-card" data-utility="policy-creation">
                 <div class="utility-icon">🛡️</div>
                 <div class="utility-title">Policy Creation</div>
-                <div class="utility-description">Generate and configure database access policies, security rules, and permission frameworks</div>
+                <div class="utility-description">Generate and configure the policies that the agent LLM need to follow and adhere to in order to depict the desired behavior</div>
             </div>
             <div class="analytics-card" data-utility="api-implementation">
                 <div class="utility-icon">🔌</div>
                 <div class="utility-title">API Implementation</div>
-                <div class="utility-description">Build REST APIs, GraphQL endpoints, and database integration layers</div>
+                <div class="utility-description">Create the prompt needed for implementing the APIs within the interface</div>
             </div>
             <div class="analytics-card" data-utility="database-seeding">
                 <div class="utility-icon">🌱</div>
                 <div class="utility-title">Database Seeding</div>
-                <div class="utility-description">Populate databases with initial data, test datasets, and reference tables</div>
+                <div class="utility-description">Populate databases with initial data, and reference tables</div>
+            </div>
+            <div class="analytics-card" data-utility="scenario-realism">
+                <div class="utility-icon">🕶️</div>
+                <div class="utility-title">Scenario Realism</div>
+                <div class="utility-description">Check the realism of the scenarios presented</div>
             </div>
         </div>
 

@@ -422,6 +422,81 @@
             font-weight: 600;
         }
 
+        /* Trainer Statistics Table Styles */
+        .trainer-stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .trainer-stats-table th,
+        .trainer-stats-table td {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .trainer-stats-table th {
+            background: rgba(102, 126, 234, 0.2);
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .trainer-stats-table td {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.85rem;
+        }
+
+        .trainer-stats-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .trainer-name {
+            color: #4CAF50;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .merged-stat {
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
+        .rework-stat {
+            color: #ffa726;
+            font-weight: 600;
+        }
+
+        .resubmitted-stat {
+            color: #2196F3;
+            font-weight: 600;
+        }
+
+        .discarded-stat {
+            color: #ff6b6b;
+            font-weight: 600;
+        }
+
+        .percentage-stat {
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        .total-row {
+            background: rgba(102, 126, 234, 0.1);
+            border-top: 2px solid rgba(102, 126, 234, 0.3);
+        }
+
+        .total-row td {
+            font-weight: bold;
+            color: #667eea;
+        }
+
         .loading-spinner {
             display: inline-block;
             width: 20px;
@@ -483,7 +558,9 @@
             }
 
             .task-table th,
-            .task-table td {
+            .task-table td,
+            .trainer-stats-table th,
+            .trainer-stats-table td {
                 padding: 0.5rem;
                 font-size: 0.75rem;
             }
@@ -500,6 +577,8 @@
         var calibrators = new Set();
         var trainers = new Set();
         var pod_trainers = new Map();
+        var calibrator_pods = new Map();
+        ////////////////////////////////////////////////
         var podFiltered = false;
         var lastPodFilter = null;
         ////////// TEAM STRUCTURE CONSTANTS ////////////
@@ -635,18 +714,10 @@
             });
         }
 
-        // Function to generate table data based on filters
-        function generateTableData(element) {
-            if (!tasks_info || tasks_info.length === 0) {
-                return null;
-            }
-            
-            // Get filter values
-            const podFilter = document.getElementById('podFilter').value;
+        function podFilterPreprocessing(podFilter) {
             const trainerSelect = document.getElementById('trainerFilter');
-
             if (podFilter != 'all'){
-                if (!podFiltered || lastPodFilter !== podFilter) {
+                // if (lastPodFilter !== podFilter) {
                     trainerSelect.innerHTML = '';
                     trainerSelect.innerHTML = '<option value="all">All Trainers</option>';
                     const podTrainers = pod_trainers.get(podFilter) || new Set();
@@ -658,15 +729,68 @@
                             trainerSelect.appendChild(option);
                         }
                     });
-                    podFiltered = true;
-                    lastPodFilter = podFilter;
-                }
+                // }
             } else {
-                if (podFiltered) {
-                    populateTrainerDropdown();
-                    podFiltered = false;
-                }
+                populateTrainerDropdown();
             }
+        }
+
+        function calibratorFilterPreprocessing(calibratorFilter) {
+            const podSelect = document.getElementById('podFilter');
+            const trainerSelect = document.getElementById('trainerFilter');
+            trainerSelect.innerHTML = '<option value="all">All Trainers</option>';
+
+            if (calibratorFilter != 'all') {
+                podSelect.innerHTML = '';
+                podSelect.innerHTML = '<option value="all">All Pods</option>';
+                const calibratorPods = calibrator_pods.get(calibratorFilter) || new Set();
+                console.log('Calibrator Pods:', calibratorPods);
+                calibratorPods.forEach(pod => {
+                    if (pod && pod.trim()) {
+                        const option = document.createElement('option');
+                        option.value = pod;
+                        option.textContent = pod;
+                        podSelect.appendChild(option);
+                        const podTrainers = pod_trainers.get(pod) || new Set();
+                        podTrainers.forEach(trainer => {
+                        if (trainer && trainer.trim()) {
+                                const option = document.createElement('option');
+                                option.value = trainer;
+                                option.textContent = trainer;
+                                trainerSelect.appendChild(option);
+                            }
+                        });
+                    }
+                });
+            } else {
+                populatePodDropdown();
+                populateTrainerDropdown();
+            }
+        }
+
+        // Function to generate table data based on filters
+        function generateTableData(element) {
+            if (!tasks_info || tasks_info.length === 0) {
+                return null;
+            }
+            filterChanged = null;
+            if (element !== null && element !== undefined) {
+                filterChanged = element.id
+            }
+            const domainFilter = document.getElementById('domainFilter').value;
+            const interfaceFilter = document.getElementById('interfaceFilter').value;
+            
+            // Get filter values
+            const calibratorFilter = document.getElementById('calibratorFilter').value;
+            if (filterChanged !== null && filterChanged === 'calibratorFilter') {
+                calibratorFilterPreprocessing(calibratorFilter);
+            }
+            const podFilter = document.getElementById('podFilter').value;
+            if (filterChanged !== null && filterChanged === 'podFilter') {
+                podFilterPreprocessing(podFilter);
+            }
+
+            
 
             const weekFilter = document.getElementById('weekFilter').value;
             const trainerFilter = document.getElementById('trainerFilter').value;
@@ -674,20 +798,28 @@
 
             // Filter tasks based on selected filters
             let filteredTasks = tasks_info.filter(task => {
-                if (github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter){
+                /* if (github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter){
                     console.log('Trainer Filter Match:', task['GitHub username'], '->', github_username_mapping[task['GitHub username'].toLowerCase()]);
-                }
+                } */
                 return (weekFilter === 'all' || task['Week num'] === weekFilter) &&
-                       (podFilter === 'all' || task['Lead'] === podFilter) &&
-                       (trainerFilter === 'all' || github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter) &&
-                       (complexityFilter === 'all' || task['Complexity'] === complexityFilter);
+                    (podFilter === 'all' || task['Lead'] === podFilter) &&
+                    (trainerFilter === 'all' || github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter) &&
+                    (complexityFilter === 'all' || task['Complexity'] === complexityFilter) &&
+                    (domainFilter === 'all' || task['Domain'] === domainFilter) &&
+                    (calibratorFilter === 'all' || task['Calibrator'] === calibratorFilter) &&
+                    (interfaceFilter === 'all' || task['Interface'] === interfaceFilter) &&
+                    (weekFilter === 'all' || task['Week num'] === weekFilter);
             });
 
             // Group by week, date, and user
             const groupedData = {};
+            const groupedStatsData = {};
             
             filteredTasks.forEach(task => {
                 const week = task['Week num'] || 'Unknown Week';
+                if ('Unknown Week' === week) {
+                    return;
+                }
                 const createdDate = new Date(task['Created Date (completed)']);
                 const dateKey = createdDate.toISOString().split('T')[0]; // YYYY-MM-DD format
                 const dayName = getDayName(task['Created Date (completed)']);
@@ -695,6 +827,34 @@
                 const actual_name = github_username_mapping[username] || username;
                 const complexity = task['Complexity'] || 'unknown';
 
+
+                /////// GROUPING TRAINERS STATS DATA FOR RENDER TABLE //////////
+                if (!groupedStatsData[actual_name]) {
+                    groupedStatsData[actual_name] = {
+                        merged: 0,
+                        resubmitted: 0,
+                        discarded: 0,
+                        pending_review: 0,
+                        ready_to_merge: 0,
+                        needs_changes: 0
+                    };
+                }
+                if (task['Pull Request Status'] === 'Merged') {
+                    groupedStatsData[actual_name].merged++;
+                } else if (task['Pull Request Status'] === 'discarded') {
+                    groupedStatsData[actual_name].discarded++;
+                } else if (task['Pull Request Status'] === 'resubmitted') {
+                    groupedStatsData[actual_name].resubmitted++;
+                } else if (task['Pull Request Status'] === 'pending review') {
+                    groupedStatsData[actual_name].pending_review++;
+                } else if (task['Pull Request Status'] === 'ready to merge') {
+                    groupedStatsData[actual_name].ready_to_merge++;
+                } else if (task['Pull Request Status'] === 'needs changes') {
+                    groupedStatsData[actual_name].needs_changes++;
+                }
+
+
+                /////// GROUPING STATS DATA FOR RENDER TABLE //////////
                 if (!groupedData[week]) {
                     groupedData[week] = {};
                 }
@@ -717,24 +877,6 @@
                 groupedData[week][dayName].users[actual_name].total++;
             });
 
-            /* const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
-            for (const week in groupedData) {
-                for (const dayName of days) {
-                    if (!groupedData[week][dayName]) {
-                        groupedData[week][dayName] = {
-                            dayName: dayName,
-                            users: {}
-                        };
-                    }
-                }
-            }
-            // Sort weeks and dates
-            const sortedWeeks = Object.keys(groupedData).sort((a, b) => {
-                const weekA = a.replace('_', ' ').toUpperCase();
-                const weekB = b.replace('_', ' ').toUpperCase();
-                return weekA.localeCompare(weekB);
-            }); */
             const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
                     // Ensure all days exist for each week in the correct order
@@ -771,151 +913,256 @@
                 sortedGroupedData[week] = groupedData[week];
             });
 
+            console.log('Grouped Stats Data:', groupedStatsData);
             return groupedData;
         }
 
-        // Function to render the table
-        // Replace the existing renderTable function with this modified version
-        // Replace the existing renderTable function with this modified version
-function renderTable(element) {
-    if (element !== null && element !== undefined) {
-        console.log(element.value)
-    }
-    const tableData = generateTableData(element);
-    const tableContainer = document.getElementById('tasksDisplay');
-    
-    if (!tableData || Object.keys(tableData).length === 0) {
-        tableContainer.innerHTML = '<div class="no-data">No data available for the selected filters</div>';
-        return;
-    }
-
-    // Define days in correct order (Monday to Sunday)
-    const daysOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
-    // Get all unique users across all filtered data
-    const allUsers = new Set();
-    Object.values(tableData).forEach(weekData => {
-        Object.values(weekData).forEach(dateData => {
-            Object.keys(dateData.users).forEach(user => allUsers.add(user));
-        });
-    });
-
-    const users = Array.from(allUsers).sort();
-
-    let tableHTML = `
-        <div class="table-wrapper">
-            <table class="task-table">
-                <thead>
-                    <tr>
-                        <th>Week</th>
-                        <th>Date</th>`;
-
-    // Add user columns
-    users.forEach(user => {
-        tableHTML += `
-            <th colspan="4">${user}</th>`;
-    });
-
-    tableHTML += `</tr><tr>
-                        <th></th>
-                        <th></th>`;
-
-    // Add complexity headers for each user
-    users.forEach(user => {
-        tableHTML += `
-            <th class="complexity-expert">Expert</th>
-            <th class="complexity-hard">Hard</th>
-            <th class="complexity-medium">Medium</th>
-            <th class="total-cell">Total</th>`;
-    });
-
-    tableHTML += `</tr></thead><tbody>`;
-
-    // Add data rows
-    Object.keys(tableData).sort().forEach(week => {
-        const weekData = tableData[week];
-        let weekTotals = {};
-        users.forEach(user => {
-            weekTotals[user] = { expert: 0, hard: 0, medium: 0, total: 0 };
-        });
-
-        // Show all days (Monday to Sunday) for each week
-        daysOrder.forEach(dayName => {
-            // Get data for this day, or create empty structure if it doesn't exist
-            const dateData = weekData[dayName] || {
-                dayName: dayName,
-                users: {}
-            };
-            
-            tableHTML += `
-                <tr>
-                    <td class="week-cell">${week.replace('_', ' ').toUpperCase()}</td>
-                    <td class="date-cell">${dateData.dayName}</td>`;
-
-            users.forEach(user => {
-                const userData = dateData.users[user] || { expert: 0, hard: 0, medium: 0, total: 0 };
-                weekTotals[user].expert += userData.expert;
-                weekTotals[user].hard += userData.hard;
-                weekTotals[user].medium += userData.medium;
-                weekTotals[user].total += userData.total;
-
-                tableHTML += `
-                    <td class="complexity-expert">${userData.expert}</td>
-                    <td class="complexity-hard">${userData.hard}</td>
-                    <td class="complexity-medium">${userData.medium}</td>
-                    <td class="total-cell">${userData.total}</td>`;
-            });
-
-            tableHTML += `</tr>`;
-        });
-
-        // Add week total row
-        tableHTML += `
-            <tr class="week-total-row" style="border-top: 2px solid rgba(102, 126, 234, 0.8); background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2)); font-weight: bold;">
-                <td class="week-cell" style="background: rgba(102, 126, 234, 0.3); color: #667eea; font-weight: bold;">${week.replace('_', ' ').toUpperCase()}</td>
-                <td class="total-cell" style="background: rgba(102, 126, 234, 0.25); color: #667eea; font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Total</td>`;
-
-        users.forEach(user => {
-            tableHTML += `
-                <td class="complexity-expert" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; font-weight: bold; border: 1px solid rgba(255, 107, 107, 0.3);">${weekTotals[user].expert}</td>
-                <td class="complexity-hard" style="background: rgba(255, 167, 38, 0.2); color: #ffa726; font-weight: bold; border: 1px solid rgba(255, 167, 38, 0.3);">${weekTotals[user].hard}</td>
-                <td class="complexity-medium" style="background: rgba(102, 187, 106, 0.2); color: #66bb6a; font-weight: bold; border: 1px solid rgba(102, 187, 106, 0.3);">${weekTotals[user].medium}</td>
-                <td class="total-cell" style="background: rgba(102, 126, 234, 0.3); color: #667eea; font-weight: bold; border: 2px solid rgba(102, 126, 234, 0.5); text-shadow: 0 1px 2px rgba(0,0,0,0.3);">${weekTotals[user].total}</td>`;
-        });
-
-        tableHTML += `</tr>`;
-
-        // Add distribution percentage row
-        tableHTML += `
-            <tr class="week-distribution-row" style="border-top: 1px solid rgba(118, 75, 162, 0.6); background: linear-gradient(135deg, rgba(118, 75, 162, 0.15), rgba(102, 126, 234, 0.15)); font-style: italic;">
-                <td class="week-cell" style="background: rgba(118, 75, 162, 0.25); color: #764ba2; font-weight: bold; font-style: italic;">${week.replace('_', ' ').toUpperCase()}</td>
-                <td class="total-cell" style="background: rgba(118, 75, 162, 0.2); color: #764ba2; font-weight: bold; font-style: italic; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Distribution</td>`;
-
-        users.forEach(user => {
-            const total = weekTotals[user].total;
-            let expertPercent = '0.0%';
-            let hardPercent = '0.0%';
-            let mediumPercent = '0.0%';
-
-            if (total > 0) {
-                expertPercent = ((weekTotals[user].expert / total) * 100).toFixed(1) + '%';
-                hardPercent = ((weekTotals[user].hard / total) * 100).toFixed(1) + '%';
-                mediumPercent = ((weekTotals[user].medium / total) * 100).toFixed(1) + '%';
+        var trainerStats = [
+            {
+                trainer: "Siddharth Balwant",
+                merged: 4,
+                mergedPercent: 80.0,
+                rework: 0,
+                reworkPercent: 0.0,
+                resubmitted: 0,
+                resubmittedPercent: 0.0,
+                discarded: 1,
+                discardedPercent: 20.0
+            }
+        ]
+        /*
+            {
+                trainer: "Ashirwad Singh",
+                merged: 2,
+                mergedPercent: 33.3,
+                rework: 0,
+                reworkPercent: 0.0,
+                resubmitted: 0,
+                resubmittedPercent: 0.0,
+                discarded: 4,
+                discardedPercent: 66.7
             }
 
+        */
+
+        function renderTrainerStatsTable() {
+            const tableContainer = document.getElementById('trainerStatsDisplay');
+            
+            if (!trainerStats || trainerStats.length === 0) {
+                tableContainer.innerHTML = '<div class="no-data">No trainer statistics available</div>';
+                return;
+            }
+
+            // Calculate totals
+            const totals = {
+                merged: trainerStats.reduce((sum, trainer) => sum + trainer.merged, 0),
+                rework: trainerStats.reduce((sum, trainer) => sum + trainer.rework, 0),
+                resubmitted: trainerStats.reduce((sum, trainer) => sum + trainer.resubmitted, 0),
+                discarded: trainerStats.reduce((sum, trainer) => sum + trainer.discarded, 0)
+            };
+
+            const totalTasks = totals.merged + totals.rework + totals.resubmitted + totals.discarded;
+
+            let tableHTML = `
+                <div class="table-wrapper">
+                    <table class="trainer-stats-table">
+                        <thead>
+                            <tr>
+                                <th>Trainer</th>
+                                <th class="merged-stat">Merged</th>
+                                <th class="percentage-stat">Merged %</th>
+                                <th class="rework-stat">Rework</th>
+                                <th class="percentage-stat">Rework %</th>
+                                <th class="resubmitted-stat">Resubmitted</th>
+                                <th class="percentage-stat">Resubmitted %</th>
+                                <th class="discarded-stat">Discarded</th>
+                                <th class="percentage-stat">Discarded %</th>
+                            </tr>
+                        </thead>
+                        <tbody>`;
+
+            // Add data rows
+            trainerStats.forEach(trainer => {
+                tableHTML += `
+                    <tr>
+                        <td class="trainer-name">${trainer.trainer}</td>
+                        <td class="merged-stat">${trainer.merged}</td>
+                        <td class="percentage-stat">${trainer.mergedPercent.toFixed(1)}%</td>
+                        <td class="rework-stat">${trainer.rework}</td>
+                        <td class="percentage-stat">${trainer.reworkPercent.toFixed(1)}%</td>
+                        <td class="resubmitted-stat">${trainer.resubmitted}</td>
+                        <td class="percentage-stat">${trainer.resubmittedPercent.toFixed(1)}%</td>
+                        <td class="discarded-stat">${trainer.discarded}</td>
+                        <td class="percentage-stat">${trainer.discardedPercent.toFixed(1)}%</td>
+                    </tr>`;
+            });
+
+            // Add total row
+            const totalMergedPercent = totalTasks > 0 ? (totals.merged / totalTasks * 100).toFixed(1) : 0;
+            const totalReworkPercent = totalTasks > 0 ? (totals.rework / totalTasks * 100).toFixed(1) : 0;
+            const totalResubmittedPercent = totalTasks > 0 ? (totals.resubmitted / totalTasks * 100).toFixed(1) : 0;
+            const totalDiscardedPercent = totalTasks > 0 ? (totals.discarded / totalTasks * 100).toFixed(1) : 0;
+
             tableHTML += `
-                <td class="complexity-expert" style="background: rgba(255, 107, 107, 0.15); color: #ff8a80; font-weight: 600; font-style: italic; border: 1px solid rgba(255, 107, 107, 0.2); text-shadow: 0 1px 1px rgba(0,0,0,0.2);">${expertPercent}</td>
-                <td class="complexity-hard" style="background: rgba(255, 167, 38, 0.15); color: #ffb74d; font-weight: 600; font-style: italic; border: 1px solid rgba(255, 167, 38, 0.2); text-shadow: 0 1px 1px rgba(0,0,0,0.2);">${hardPercent}</td>
-                <td class="complexity-medium" style="background: rgba(102, 187, 106, 0.15); color: #81c784; font-weight: 600; font-style: italic; border: 1px solid rgba(102, 187, 106, 0.2); text-shadow: 0 1px 1px rgba(0,0,0,0.2);">${mediumPercent}</td>
-                <td class="total-cell" style="background: rgba(118, 75, 162, 0.25); color: #764ba2; font-weight: bold; font-style: italic; border: 2px solid rgba(118, 75, 162, 0.4); text-shadow: 0 1px 2px rgba(0,0,0,0.3);">100.0%</td>`;
-        });
+                    <tr class="total-row">
+                        <td class="trainer-name">Total</td>
+                        <td class="merged-stat">${totals.merged}</td>
+                        <td class="percentage-stat">${totalMergedPercent}%</td>
+                        <td class="rework-stat">${totals.rework}</td>
+                        <td class="percentage-stat">${totalReworkPercent}%</td>
+                        <td class="resubmitted-stat">${totals.resubmitted}</td>
+                        <td class="percentage-stat">${totalResubmittedPercent}%</td>
+                        <td class="discarded-stat">${totals.discarded}</td>
+                        <td class="percentage-stat">${totalDiscardedPercent}%</td>
+                    </tr>
+                        </tbody>
+                    </table>
+                </div>`;
 
-        tableHTML += `</tr>`;
-    });
+            tableContainer.innerHTML = tableHTML;
+        }
+        
+        // Function to render the table
+        function renderTable(element) {
+            if (element !== null && element !== undefined) {
+                console.log(element.value)
+                console.log(element.id)
+            }
+            const tableData = generateTableData(element);
+            const tableContainer = document.getElementById('tasksDisplay');
+            
+            if (!tableData || Object.keys(tableData).length === 0) {
+                tableContainer.innerHTML = '<div class="no-data">No data available for the selected filters</div>';
+                return;
+            }
 
-    tableHTML += `</tbody></table></div>`;
-    tableContainer.innerHTML = tableHTML;
-}
+            // Define days in correct order (Monday to Sunday)
+            const daysOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+            // Get all unique users across all filtered data
+            const allUsers = new Set();
+            Object.values(tableData).forEach(weekData => {
+                Object.values(weekData).forEach(dateData => {
+                    Object.keys(dateData.users).forEach(user => allUsers.add(user));
+                });
+            });
+
+            const users = Array.from(allUsers).sort();
+
+            let tableHTML = `
+                <div class="table-wrapper">
+                    <table class="task-table">
+                        <thead>
+                            <tr>
+                                <th>Week</th>
+                                <th>Date</th>`;
+
+            // Add user columns
+            users.forEach(user => {
+                tableHTML += `
+                    <th colspan="4">${user}</th>`;
+            });
+
+            tableHTML += `</tr><tr>
+                                <th></th>
+                                <th></th>`;
+
+            // Add complexity headers for each user
+            users.forEach(user => {
+                tableHTML += `
+                    <th class="complexity-expert">Expert</th>
+                    <th class="complexity-hard">Hard</th>
+                    <th class="complexity-medium">Medium</th>
+                    <th class="total-cell">Total</th>`;
+            });
+
+            tableHTML += `</tr></thead><tbody>`;
+
+            // Add data rows
+            Object.keys(tableData).sort().forEach(week => {
+                const weekData = tableData[week];
+                let weekTotals = {};
+                users.forEach(user => {
+                    weekTotals[user] = { expert: 0, hard: 0, medium: 0, total: 0 };
+                });
+
+                // Show all days (Monday to Sunday) for each week
+                daysOrder.forEach(dayName => {
+                    // Get data for this day, or create empty structure if it doesn't exist
+                    const dateData = weekData[dayName] || {
+                        dayName: dayName,
+                        users: {}
+                    };
+                    
+                    tableHTML += `
+                        <tr>
+                            <td class="week-cell">${week.replace('_', ' ').toUpperCase()}</td>
+                            <td class="date-cell">${dateData.dayName}</td>`;
+
+                    users.forEach(user => {
+                        const userData = dateData.users[user] || { expert: 0, hard: 0, medium: 0, total: 0 };
+                        weekTotals[user].expert += userData.expert;
+                        weekTotals[user].hard += userData.hard;
+                        weekTotals[user].medium += userData.medium;
+                        weekTotals[user].total += userData.total;
+
+                        tableHTML += `
+                            <td class="complexity-expert">${userData.expert}</td>
+                            <td class="complexity-hard">${userData.hard}</td>
+                            <td class="complexity-medium">${userData.medium}</td>
+                            <td class="total-cell">${userData.total}</td>`;
+                    });
+
+                    tableHTML += `</tr>`;
+                });
+
+                // Add week total row
+                tableHTML += `
+                    <tr class="week-total-row" style="border-top: 2px solid rgba(102, 126, 234, 0.8); background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2)); font-weight: bold;">
+                        <td class="week-cell" style="background: rgba(102, 126, 234, 0.3); color: #667eea; font-weight: bold;">${week.replace('_', ' ').toUpperCase()}</td>
+                        <td class="total-cell" style="background: rgba(102, 126, 234, 0.25); color: #667eea; font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Total</td>`;
+
+                users.forEach(user => {
+                    tableHTML += `
+                        <td class="complexity-expert" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; font-weight: bold; border: 1px solid rgba(255, 107, 107, 0.3);">${weekTotals[user].expert}</td>
+                        <td class="complexity-hard" style="background: rgba(255, 167, 38, 0.2); color: #ffa726; font-weight: bold; border: 1px solid rgba(255, 167, 38, 0.3);">${weekTotals[user].hard}</td>
+                        <td class="complexity-medium" style="background: rgba(102, 187, 106, 0.2); color: #66bb6a; font-weight: bold; border: 1px solid rgba(102, 187, 106, 0.3);">${weekTotals[user].medium}</td>
+                        <td class="total-cell" style="background: rgba(102, 126, 234, 0.3); color: #667eea; font-weight: bold; border: 2px solid rgba(102, 126, 234, 0.5); text-shadow: 0 1px 2px rgba(0,0,0,0.3);">${weekTotals[user].total}</td>`;
+                });
+
+                tableHTML += `</tr>`;
+
+                // Add distribution percentage row
+                tableHTML += `
+                    <tr class="week-distribution-row" style="border-top: 1px solid rgba(118, 75, 162, 0.6); background: linear-gradient(135deg, rgba(118, 75, 162, 0.15), rgba(102, 126, 234, 0.15)); font-style: italic;">
+                        <td class="week-cell" style="background: rgba(118, 75, 162, 0.25); color: #764ba2; font-weight: bold; font-style: italic;">${week.replace('_', ' ').toUpperCase()}</td>
+                        <td class="total-cell" style="background: rgba(118, 75, 162, 0.2); color: #764ba2; font-weight: bold; font-style: italic; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">Distribution</td>`;
+
+                users.forEach(user => {
+                    const total = weekTotals[user].total;
+                    let expertPercent = '0.0%';
+                    let hardPercent = '0.0%';
+                    let mediumPercent = '0.0%';
+
+                    if (total > 0) {
+                        expertPercent = ((weekTotals[user].expert / total) * 100).toFixed(1) + '%';
+                        hardPercent = ((weekTotals[user].hard / total) * 100).toFixed(1) + '%';
+                        mediumPercent = ((weekTotals[user].medium / total) * 100).toFixed(1) + '%';
+                    }
+
+                    tableHTML += `
+                        <td class="complexity-expert" style="background: rgba(255, 107, 107, 0.15); color: #ff8a80; font-weight: 600; font-style: italic; border: 1px solid rgba(255, 107, 107, 0.2); text-shadow: 0 1px 1px rgba(0,0,0,0.2);">${expertPercent}</td>
+                        <td class="complexity-hard" style="background: rgba(255, 167, 38, 0.15); color: #ffb74d; font-weight: 600; font-style: italic; border: 1px solid rgba(255, 167, 38, 0.2); text-shadow: 0 1px 1px rgba(0,0,0,0.2);">${hardPercent}</td>
+                        <td class="complexity-medium" style="background: rgba(102, 187, 106, 0.15); color: #81c784; font-weight: 600; font-style: italic; border: 1px solid rgba(102, 187, 106, 0.2); text-shadow: 0 1px 1px rgba(0,0,0,0.2);">${mediumPercent}</td>
+                        <td class="total-cell" style="background: rgba(118, 75, 162, 0.25); color: #764ba2; font-weight: bold; font-style: italic; border: 2px solid rgba(118, 75, 162, 0.4); text-shadow: 0 1px 2px rgba(0,0,0,0.3);">100.0%</td>`;
+                });
+
+                tableHTML += `</tr>`;
+            });
+
+            tableHTML += `</tbody></table></div>`;
+            tableContainer.innerHTML = tableHTML;
+        }
 
         // Function to reload tracker data
         function reloadTrackerData() {
@@ -945,13 +1192,20 @@ function renderTable(element) {
                         github_username_mapping[user['Github Username'].toLowerCase()] = user['Actual name'];
                     }
                 }
-                console.log('GitHub Username to Name Mapping:', github_username_mapping);
+                // console.log('GitHub Username to Name Mapping:', github_username_mapping);
 
-                var show_trainer_pod = new Map();
+                var show_trainer_pod = new Map(); // show trainer pod
+                var show_pod_calibrator = new Map(); // show pod calibrator
                 for (const team_structure of data.team_structure) {
                     pods.add(team_structure['Pod Lead']);
                     calibrators.add(team_structure['Calibrator']);
-                    
+                    if (calibrator_pods.get(team_structure['Calibrator']) !== undefined) {
+                        calibrator_pods.get(team_structure['Calibrator']).add(team_structure['Pod Lead']);
+                    } else {
+                        calibrator_pods.set(team_structure['Calibrator'], new Set([team_structure['Pod Lead']]));
+                    }
+                    // calibrator_pods.set(team_structure['Calibrator'], team_structure['Pod Lead']);
+                    show_pod_calibrator.set(team_structure['Pod Lead'], team_structure['Calibrator']);
                     trainers_of_pod = new Set();
                     const partialKey = 'Trainer';
                     for (const key in team_structure) {
@@ -970,8 +1224,8 @@ function renderTable(element) {
                 for (const task of tasks_info) {
                     domains.add(task['Domain']);
                     if (!task['Lead'] || task['Lead'] === "Unknown Pod") {
-
                         task['Lead'] = show_trainer_pod.get(github_username_mapping[task['GitHub username'].toLowerCase()]) || "Unknown Pod";
+                        task['Calibrator'] = show_pod_calibrator.get(task['Lead']) || "Unknown Calibrator";
                     }
                 }
                 
@@ -1056,6 +1310,7 @@ function renderTable(element) {
         // Function to apply filters
         function applyFilters(element) {
             renderTable(element);
+            renderTrainerStatsTable();
         }
 
         // Initialize page
@@ -1246,7 +1501,17 @@ function renderTable(element) {
             <div id="tasksDisplay" style="color: rgba(255, 255, 255, 0.6); text-align: center; padding: 2rem;">
                 Loading task data...
             </div>
+
         </div>
+        <!-- Trainer Stats Display -->
+        <div class="tasks-container">
+            <div class="tasks-header">
+                <span>Statistics based on filters</span>
+                <span style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">Performance metrics for trainers</span>
+            </div>
+            <div id="trainerStatsDisplay" class="trainer-stats-display">
+                <!-- Trainer stats table will be rendered here -->
+            </div>
     </section>
 </body>
 </html>

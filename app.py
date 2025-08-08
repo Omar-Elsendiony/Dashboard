@@ -530,7 +530,7 @@ def tracker():
             'team_structure': list_of_teams
         }), 200
         
-    return render_template('tracker.html')
+    return render_template('task_tracker.html')
 
 @app.route('/interface_connections', strict_slashes=False, methods=["GET", "POST"])
 def interface_connections():
@@ -698,7 +698,7 @@ def database_utilities_prompt_generation():
     elif action == "generate_api_prompt":
         db_schema = data.get('db_schema', '')
         example_apis = data.get('example_apis', '')
-        initial_prompt = data.get('initial_apis', '')
+        initial_prompt = data.get('initial_prompt', '')
         interface_apis = data.get('interface_apis', '')
         
         prompt = initial_prompt.format(
@@ -706,19 +706,34 @@ def database_utilities_prompt_generation():
             examples_tools=example_apis,
             required_tools=interface_apis
         )
+        print(prompt)
         
         return jsonify({
             'status': 'success',
             'prompt': prompt
         }), 200
-    elif action == "generate_database_seeding_prompt":
+    elif action == "generate_seed_prompt":
         db_schema = data.get('db_schema', '')
-        example_data = data.get('example_data', '')
+        # example_data = data.get('example_data', '')
         initial_prompt = data.get('initial_prompt', '')
         
         prompt = initial_prompt.format(
             db_schema=db_schema,
-            example_data_document=example_data
+            # example_data_document=example_data
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
+    elif action == "generate_scenario_prompt":
+        db_schema = data.get('db_schema', '')
+        # example_scenarios = data.get('example_scenarios', '')
+        initial_prompt = data.get('initial_prompt', '')
+        
+        prompt = initial_prompt.format(
+            db_schema=db_schema,
+            # example_scenarios=example_scenarios
         )
         
         return jsonify({
@@ -796,9 +811,53 @@ def database_utilities():
         
     elif action == 'database_seeding':
         # Handle database seeding logic here
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        # example_data_file_path = f"prompts/{action}/example_data.txt"
+        # if not os.path.exists(example_data_file_path):
+        #     return jsonify({
+        #         'status': 'error',
+        #         'message': f'Example data file for {action} not found'
+        #     }), 404
+        # with open(example_data_file_path, 'r') as file:
+        #     example_data = file.read()
+        
         return jsonify({
             'status': 'success',
-            'message': 'Database seeded successfully'
+            'initial_prompt': initial_prompt
+        }), 200
+    elif action == 'scenario_realism':
+        # Handle scenario realism logic here
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        
+        example_scenarios_file_path = f"prompts/{action}/example_scenarios.txt"
+        if not os.path.exists(example_scenarios_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example scenarios file for {action} not found'
+            }), 404
+        
+        with open(example_scenarios_file_path, 'r') as file:
+            example_scenarios = file.read()
+        
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'example_scenarios': example_scenarios
         }), 200
     else:
         return jsonify({
