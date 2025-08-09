@@ -283,6 +283,7 @@
             if (feature == "basic_validation"){
                 const initialPrompt = document.getElementById('initial-prompt').value;
                 const policy = document.getElementById('policy').value;
+                const instruction = document.getElementById('instruction').value;
     
                 fetch('/instruction_validation', {
                     method: 'POST',
@@ -292,7 +293,8 @@
                     body: JSON.stringify({
                         action: 'validate_instruction',
                         initial_prompt: initialPrompt,
-                        policy: policy
+                        policy: policy,
+                        instruction: instruction
                     })
                 })
                 .then(response => response.json())
@@ -490,6 +492,9 @@
             <h2 id="content-header">Instruction Validation</h2>
             <h3 class="content-subheader">Initial Prompt</h3>
             <textarea id="initial-prompt" placeholder="Enter the initial task prompt here..."></textarea>
+
+            <h3 class="content-subheader">Instruction</h3>
+            <textarea id="instruction" placeholder="Enter the instruction to validate..."></textarea>
 
             <h3 class="content-subheader">Policy</h3>
             <textarea id="policy" placeholder="Enter the policy to validate against..."></textarea>

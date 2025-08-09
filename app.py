@@ -929,6 +929,7 @@ def task_validation():
         elif action == "validate_instruction":
             initial_prompt = data.get('initial_prompt', '')
             policy = data.get('policy', '')
+            instruction = data.get('instruction', '')
             
             if not initial_prompt or not policy:
                 return jsonify({
@@ -938,7 +939,8 @@ def task_validation():
             
             
             prompt = initial_prompt.format(
-                policy=policy
+                policy=policy,
+                instruction=instruction
             )
             
             from openai import OpenAI
