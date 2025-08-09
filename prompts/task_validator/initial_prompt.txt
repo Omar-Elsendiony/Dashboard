@@ -22,29 +22,29 @@ Then provide an overall assessment:
 Format your response as JSON:
 
 ```json
-{
-  "user_facing": {
+{{
+  "user_facing": {{
     "result": "PASS/FAIL",
     "explanation": "..."
-  },
-  "output_oriented": {
+  }},
+  "output_oriented": {{
     "result": "PASS/FAIL", 
     "explanation": "..."
-  },
-  "single_outcome": {
+  }},
+  "single_outcome": {{
     "result": "PASS/FAIL",
     "explanation": "..."
-  },
-  "policy_compliant": {
+  }},
+  "policy_compliant": {{
     "result": "PASS/FAIL",
     "explanation": "..."
-  },
-  "overall": {
+  }},
+  "overall": {{
     "result": "PASS/FAIL",
     "summary": "...",
     "suggestions": ["...", "...", "..."]
-  }
-}
+  }}
+}}
 
 # Policy:
 {policy}

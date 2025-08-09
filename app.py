@@ -903,11 +903,72 @@ def database_utilities():
 def task_validation():
     if request.method == "POST":
         data = request.json
-        # Process the task validation request
-        return jsonify({
-            'status': 'success',
-            'message': 'Task validation initiated'
-        }), 200
+        action = data.get('action')
+        if not action:
+            return jsonify({
+                'status': 'error',
+                'message': 'Action is required'
+            }), 400
+        
+        if action == "fetch_initial_prompt":
+            initial_prompt_file_path = f"prompts/task_validator/initial_prompt.txt"
+            if not os.path.exists(initial_prompt_file_path):
+                return jsonify({
+                    'status': 'error',
+                    'message': f'Initial prompt file for {action} not found'
+                }), 404
+            
+            with open(initial_prompt_file_path, 'r') as file:
+                initial_prompt = file.read()
+            
+            return jsonify({
+                'status': 'success',
+                'initial_prompt': initial_prompt
+            }), 200
+        
+        elif action == "validate_instruction":
+            initial_prompt = data.get('initial_prompt', '')
+            policy = data.get('policy', '')
+            
+            if not initial_prompt or not policy:
+                return jsonify({
+                    'status': 'error',
+                    'message': 'Initial prompt and policy are required'
+                }), 400
+            
+            
+            prompt = initial_prompt.format(
+                policy=policy
+            )
+            
+            from openai import OpenAI
+            client = OpenAI() 
+            
+            try:
+                response = client.chat.completions.create(
+                    model="gpt-4",
+                    messages=[
+                        {"role": "system", "content": "You are a helpful assistant."},
+                        {"role": "user", "content": prompt}
+                    ]
+                )
+                
+                validation_result = response.choices[0].message.content.strip()
+                return jsonify({
+                    'status': 'success',
+                    'validation_result': validation_result
+                }), 200
+            except Exception as e:
+                return jsonify({
+                    'status': 'error',
+                    'message': f'Failed to validate instruction: {str(e)}'
+                }), 500
+        else:
+            return jsonify({
+                'status': 'error',
+                'message': 'Invalid action'
+            }), 400
+
     return render_template('instruction_validation.html')
 
 if __name__ == "__main__":
