@@ -704,11 +704,12 @@
             if (tasks_info) {
                 tasks_info.forEach(task => {
                     if (task['Complexity']) {
-                        complexities.add(task['Complexity']);
+                        complexities.add(task['Complexity'].trim().toLowerCase());
+                        task['Complexity'] = task['Complexity'].trim().toLowerCase();
                     }
                 });
             }
-
+            console.log(complexities)
             complexitySelect.innerHTML = '<option value="all">All Complexities</option>';
             Array.from(complexities).sort().forEach(complexity => {
                 const option = document.createElement('option');
@@ -748,7 +749,7 @@
                 podSelect.innerHTML = '';
                 podSelect.innerHTML = '<option value="all">All Pods</option>';
                 const calibratorPods = calibrator_pods.get(calibratorFilter) || new Set();
-                console.log('Calibrator Pods:', calibratorPods);
+                // console.log('Calibrator Pods:', calibratorPods);
                 calibratorPods.forEach(pod => {
                     if (pod && pod.trim()) {
                         const option = document.createElement('option');
@@ -782,6 +783,9 @@
                 filterChanged = element.id
             }
             const domainFilter = document.getElementById('domainFilter').value;
+            if (filterChanged !== null && filterChanged === 'domainFilter') {
+                updateDomainAnalytics(domainFilter);
+            }
             const interfaceFilter = document.getElementById('interfaceFilter').value;
             
             // Get filter values
@@ -802,9 +806,9 @@
 
             // Filter tasks based on selected filters
             let filteredTasks = tasks_info.filter(task => {
-                if (github_username_mapping[task['GitHub username'].toLowerCase()] === undefined){
+                /* if (github_username_mapping[task['GitHub username'].toLowerCase()] === undefined){
                     console.log('Trainer Filter Match:', task['GitHub username'], '->', github_username_mapping[task['GitHub username'].toLowerCase()]);
-                }
+                } */
                 // console.log('Filtering Task:', task['GitHub username'], '->', github_username_mapping[task['GitHub username'].toLowerCase()]);
                 // console.log('trainer filter:', trainerFilter);
 
@@ -955,33 +959,6 @@
             return groupedData;
         }
 
-        /* var trainerStats = [
-            {
-                trainer: "Siddharth Balwant",
-                merged: 4,
-                mergedPercent: 80.0,
-                rework: 0,
-                reworkPercent: 0.0,
-                resubmitted: 0,
-                resubmittedPercent: 0.0,
-                discarded: 1,
-                discardedPercent: 20.0
-            }
-        ] */
-        /*
-            {
-                trainer: "Ashirwad Singh",
-                merged: 2,
-                mergedPercent: 33.3,
-                rework: 0,
-                reworkPercent: 0.0,
-                resubmitted: 0,
-                resubmittedPercent: 0.0,
-                discarded: 4,
-                discardedPercent: 66.7
-            }
-
-        */
 
         function renderTrainerStatsTable() {
             const tableContainer = document.getElementById('trainerStatsDisplay');
@@ -1002,7 +979,7 @@
             };
 
             const totalTasks = totals.merged + totals.resubmitted + totals.discarded + totals.pending_review + totals.ready_to_merge + totals.needs_changes;
-            console.log('Total Tasks:', totalTasks);
+            // console.log('Total Tasks:', totalTasks);
             let tableHTML = `
                 <div class="table-wrapper">
                     <table class="trainer-stats-table">
@@ -1079,10 +1056,10 @@
         
         // Function to render the table
         function renderTable(element) {
-            if (element !== null && element !== undefined) {
+            /* if (element !== null && element !== undefined) {
                 console.log(element.value)
                 console.log(element.id)
-            }
+            } */
             const tableData = generateTableData(element);
             const tableContainer = document.getElementById('tasksDisplay');
             
@@ -1247,7 +1224,7 @@
                         github_username_mapping[user['Github Username'].toLowerCase()] = user['Actual name'].toLowerCase().trim();
                     }
                 }
-                console.log('GitHub Username to Name Mapping:', github_username_mapping);
+                // console.log('GitHub Username to Name Mapping:', github_username_mapping);
 
                 var show_trainer_pod = new Map(); // show trainer pod
                 var show_pod_calibrator = new Map(); // show pod calibrator
@@ -1272,8 +1249,8 @@
                     }
                     pod_trainers.set(team_structure['Pod Lead'], trainers_of_pod);
                 }
-                console.log('Pods:', pod_trainers);
-                console.log('Pods:', show_trainer_pod);
+                // console.log('Pods:', pod_trainers);
+                // console.log('Pods:', show_trainer_pod);
 
 
                 for (const task of tasks_info) {
@@ -1284,43 +1261,12 @@
                     }
                 }
                 
-                console.log('Tasks Info:', tasks_info);
+                // console.log('Tasks Info:', tasks_info);
 
                 // current_domain = tasks_info[0]['Domain'] // current domain is the last submitted domain as of now
                 current_domain = 'finance' // current domain is the last submitted domain as of now
-                document.getElementById('currentDomain').textContent = current_domain;
-                tasks_occurred = new Set();
-                tasks_completed = 0;
-                merged_tasks = 0;
-                discarded_tasks = 0;
-                ready_to_merge_tasks = 0;
-                for (const task of tasks_info) {
-                    if (task['Domain'] == current_domain && !tasks_occurred.has(task['Task'])) {
-                        tasks_completed += 1;
-                        if (task['Pull Request Status'] === 'Merged') {
-                            merged_tasks += 1;
-                        }
-                        if (task['Pull Request Status'] === 'ready to merge') {
-                            ready_to_merge_tasks += 1;
-                        }
-                        if (task['Pull Request Status'] === 'discarded') {
-                            discarded_tasks += 1;
-                        }
-                        tasks_occurred.add(task['Task']);
-                    }
-                }
 
-                const TASKS_TO_BE_COMPLETED = 200; 
-                analytics = {
-                    totalTasks: tasks_completed,
-                    activePods: pods.size,
-                    totalMergedTasks: merged_tasks,
-                    totalDiscardedTasks: discarded_tasks,
-                    readyToMergeTasks: ready_to_merge_tasks,
-                    completionRate: (merged_tasks / TASKS_TO_BE_COMPLETED * 100).toFixed(2)
-                };
-                updateAnalytics(analytics);
-
+                updateDomainAnalytics(current_domain)
                 // Populate dropdowns and render table
                 populateDropdowns();
                 renderTable();
@@ -1340,7 +1286,57 @@
                 }, 2000);
             });
         }
+        
+        function updateDomainAnalytics(current_domain) {
+            document.getElementById('currentDomain').textContent = current_domain;
+            tasks_occurred = new Set();
+            tasks_completed = 0;
+            merged_tasks = 0;
+            discarded_tasks = 0;
+            ready_to_merge_tasks = 0;
+            pending_review_tasks = 0;
+            needs_changes_tasks = 0;
+            resubmitted_tasks = 0;
+            for (const task of tasks_info) {
+                if (task['Domain'] == current_domain && !tasks_occurred.has(task['Task'])) {
+                    tasks_completed += 1;
+                    if (task['Pull Request Status'] === 'Merged') {
+                        merged_tasks += 1;
+                    }
+                    if (task['Pull Request Status'] === 'ready to merge') {
+                        ready_to_merge_tasks += 1;
+                    }
+                    if (task['Pull Request Status'] === 'discarded') {
+                        discarded_tasks += 1;
+                    }
+                    if (task['Pull Request Status'] === 'pending review') {
+                        pending_review_tasks += 1;
+                    }
+                    if (task['Pull Request Status'] === 'needs changes') {
+                        needs_changes_tasks += 1;
+                    }
+                    if (task['Pull Request Status'] === 'resubmitted') {
+                        resubmitted_tasks += 1;
+                    }
+                    tasks_occurred.add(task['Task']);
+                }
+            }
 
+            const TASKS_TO_BE_COMPLETED = 200; 
+            analytics = {
+                totalTasks: tasks_completed,
+                activePods: pods.size,
+                pendingReviewTasks: pending_review_tasks,
+                totalMergedTasks: merged_tasks,
+                totalNeedsChangesTasks: needs_changes_tasks,
+                totalResubmittedTasks: resubmitted_tasks,
+                totalDiscardedTasks: discarded_tasks,
+                readyToMergeTasks: ready_to_merge_tasks,
+                completionRate: (merged_tasks / TASKS_TO_BE_COMPLETED * 100).toFixed(2)
+            };
+
+            updateAnalytics(analytics);
+        }
         // Function to update analytics display
         function updateAnalytics(analytics) {
             if (analytics.totalTasks !== undefined) {
@@ -1348,6 +1344,15 @@
             }
             if (analytics.activePods !== undefined) {
                 document.getElementById('activePods').textContent = analytics.activePods;
+            }
+            if (analytics.totalResubmittedTasks !== undefined) {
+                document.getElementById('totalResubmittedTasks').textContent = analytics.totalResubmittedTasks;
+            }
+            if (analytics.totalNeedsChangesTasks !== undefined) {
+                document.getElementById('totalNeedsChangesTasks').textContent = analytics.totalNeedsChangesTasks;
+            }
+            if (analytics.pendingReviewTasks !== undefined) {
+                document.getElementById('pendingReviewTasks').textContent = analytics.pendingReviewTasks;
             }
             if (analytics.totalMergedTasks !== undefined) {
                 document.getElementById('totalMergedTasks').textContent = analytics.totalMergedTasks;
@@ -1463,6 +1468,22 @@
                 <div class="analytics-label">Total Merged Tasks</div>
                 <div class="analytics-description">Merged tasks across all pods</div>
             </div>
+            <div class="analytics-card">
+                <div class="analytics-number" id="pendingReviewTasks">?</div>
+                <div class="analytics-label">Total Pending Review Tasks</div>
+                <div class="analytics-description">Tasks pending review across all pods</div>
+            </div>
+            <div class="analytics-card">
+                <div class="analytics-number" id="totalNeedsChangesTasks">?</div>
+                <div class="analytics-label">Total Needs Changes Tasks</div>
+                <div class="analytics-description">Tasks needing changes across all pods</div>
+            </div>
+            <div class="analytics-card">
+                <div class="analytics-number" id="totalResubmittedTasks">?</div>
+                <div class="analytics-label">Total Resubmitted Tasks</div>
+                <div class="analytics-description">Resubmitted tasks across all pods</div>
+            </div>
+            
             <div class="analytics-card">
                 <div class="analytics-number" id="totalDiscardedTasks">?</div>
                 <div class="analytics-label">Total Discarded Tasks</div>
