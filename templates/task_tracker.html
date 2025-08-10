@@ -802,12 +802,15 @@
 
             // Filter tasks based on selected filters
             let filteredTasks = tasks_info.filter(task => {
-                /* if (github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter){
+                if (github_username_mapping[task['GitHub username'].toLowerCase()] === undefined){
                     console.log('Trainer Filter Match:', task['GitHub username'], '->', github_username_mapping[task['GitHub username'].toLowerCase()]);
-                } */
+                }
+                // console.log('Filtering Task:', task['GitHub username'], '->', github_username_mapping[task['GitHub username'].toLowerCase()]);
+                // console.log('trainer filter:', trainerFilter);
+
                 return (weekFilter === 'all' || task['Week num'] === weekFilter) &&
                     (podFilter === 'all' || task['Lead'] === podFilter) &&
-                    (trainerFilter === 'all' || github_username_mapping[task['GitHub username'].toLowerCase()] === trainerFilter) &&
+                    (trainerFilter === 'all' || github_username_mapping[task['GitHub username'].toLowerCase()] !== undefined && github_username_mapping[task['GitHub username'].toLowerCase()].toLowerCase() === trainerFilter.toLowerCase()) &&
                     (complexityFilter === 'all' || task['Complexity'] === complexityFilter) &&
                     (domainFilter === 'all' || task['Domain'] === domainFilter) &&
                     (calibratorFilter === 'all' || task['Calibrator'] === calibratorFilter) &&
@@ -1241,10 +1244,10 @@
                 
                 for (const user of username_email_mapping) {
                     if (user["Github Username"]) {
-                        github_username_mapping[user['Github Username'].toLowerCase()] = user['Actual name'];
+                        github_username_mapping[user['Github Username'].toLowerCase()] = user['Actual name'].toLowerCase().trim();
                     }
                 }
-                // console.log('GitHub Username to Name Mapping:', github_username_mapping);
+                console.log('GitHub Username to Name Mapping:', github_username_mapping);
 
                 var show_trainer_pod = new Map(); // show trainer pod
                 var show_pod_calibrator = new Map(); // show pod calibrator
@@ -1262,15 +1265,15 @@
                     const partialKey = 'Trainer';
                     for (const key in team_structure) {
                         if (key.startsWith(partialKey)) {
-                            trainers.add(team_structure[key]);
-                            show_trainer_pod.set(team_structure[key], team_structure['Pod Lead']);
-                            trainers_of_pod.add(team_structure[key])
+                            trainers.add(team_structure[key].toLowerCase().trim());
+                            show_trainer_pod.set(team_structure[key].toLowerCase().trim(), team_structure['Pod Lead']);
+                            trainers_of_pod.add(team_structure[key].toLowerCase().trim());
                         }
                     }
                     pod_trainers.set(team_structure['Pod Lead'], trainers_of_pod);
                 }
-                /* console.log('Pods:', pod_trainers);
-                console.log('Pods:', show_trainer_pod); */
+                console.log('Pods:', pod_trainers);
+                console.log('Pods:', show_trainer_pod);
 
 
                 for (const task of tasks_info) {
