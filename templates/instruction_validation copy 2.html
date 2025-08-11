@@ -231,31 +231,6 @@
             resize: none;
         }
 
-        .model-dropdown {
-            width: 100%;
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid rgba(102, 126, 234, 0.2);
-            background: rgba(255, 255, 255, 0.05);
-            color: rgba(255, 255, 255, 0.9);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .model-dropdown:focus {
-            outline: none;
-            border-color: rgba(102, 126, 234, 0.5);
-            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
-        }
-
-        .model-dropdown option {
-            background: rgba(0, 0, 0, 0.9);
-            color: white;
-            padding: 0.5rem;
-        }
-
         .validation-button {
             margin: 1rem;
             padding: 0.75rem 1.5rem;
@@ -309,7 +284,6 @@
                 const initialPrompt = document.getElementById('initial-prompt').value;
                 const policy = document.getElementById('policy').value;
                 const instruction = document.getElementById('instruction').value;
-                const selectedModel = document.getElementById('model-select').value;
     
                 fetch('/instruction_validation', {
                     method: 'POST',
@@ -320,8 +294,7 @@
                         action: 'validate_instruction',
                         initial_prompt: initialPrompt,
                         policy: policy,
-                        instruction: instruction,
-                        model: selectedModel
+                        instruction: instruction
                     })
                 })
                 .then(response => response.json())
@@ -522,17 +495,6 @@
 
         <div id="content">
             <h2 id="content-header">Instruction Validation</h2>
-            <h3 class="content-subheader">Select OpenAI Model</h3>
-            <select id="model-select" class="model-dropdown">
-                <option value="gpt-4o">GPT-4o</option>
-                <option value="gpt-4o-mini">GPT-4o Mini</option>
-                <option value="gpt-4-turbo">GPT-4 Turbo</option>
-                <option value="gpt-4">GPT-4</option>
-                <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
-                <option value="o1-preview">o1-preview</option>
-                <option value="o1-mini">o1-mini</option>
-            </select>
-            
             <h3 class="content-subheader">Initial Prompt</h3>
             <textarea id="initial-prompt" placeholder="Enter the initial task prompt here..."></textarea>
 
@@ -541,7 +503,6 @@
 
             <h3 class="content-subheader">Policy</h3>
             <textarea id="policy" placeholder="Enter the policy to validate against..."></textarea>
-
 
             <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem;">
                 <button class="validation-button" onclick="sendContentLLM('basic_validation')">Validate Instruction</button>

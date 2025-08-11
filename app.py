@@ -931,6 +931,7 @@ def task_validation():
             initial_prompt = data.get('initial_prompt', '')
             policy = data.get('policy', '')
             instruction = data.get('instruction', '')
+            model = data.get('model', '')
             
             if not initial_prompt or not policy:
                 return jsonify({
@@ -949,7 +950,7 @@ def task_validation():
             
             try:
                 response = client.chat.completions.create(
-                    model="gpt-4",
+                    model=model,
                     messages=[
                         {"role": "system", "content": "You are a helpful assistant."},
                         {"role": "user", "content": prompt}
