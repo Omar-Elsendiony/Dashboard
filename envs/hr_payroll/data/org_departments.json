@@ -1,0 +1,542 @@
+{
+    "d859b9df-779f-4840-886d-4e0d47f67990": {
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "name": "Product",
+        "manager_user_id": "7f6eee1e-118b-41c2-8f0e-44d89c21c946"
+    },
+    "bbb38644-ef0d-4462-bed9-6a451b4344d4": {
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "name": "Operations",
+        "manager_user_id": "65960de0-fa7e-4e94-a176-2bd92972d143"
+    },
+    "63c180a5-1bef-4dc2-bfe9-4a1d43d7ae2a": {
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "name": "Engineering",
+        "manager_user_id": "64a7bbc8-8e4a-4593-aae4-168cbc148fa6"
+    },
+    "85183851-0a34-442f-b905-f523ce1bcea4": {
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "name": "Operations",
+        "manager_user_id": "3468dacf-deb9-48eb-bea9-3b9fbfad7a13"
+    },
+    "55025543-e974-4451-a33c-2940beb232aa": {
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "name": "Customer Success",
+        "manager_user_id": "ee38c9b1-dcc5-44b0-ad9e-afa861bae70d"
+    },
+    "9d632f2f-e51e-43e7-9d5c-9c78dc4f0c24": {
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "name": "Product",
+        "manager_user_id": "1d17b818-a006-434c-96ec-8c813967c158"
+    },
+    "1a7fc334-9cb3-41e1-9144-be08ba3ccfcc": {
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "name": "Customer Success",
+        "manager_user_id": "b32f6678-ca6c-443f-a094-5c19b7df1c9b"
+    },
+    "adae068d-2a86-4e56-8870-1cca4c7be103": {
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "name": "HR",
+        "manager_user_id": "c57beb54-ec67-4d97-948b-a63abda95ade"
+    },
+    "011cd754-9d8f-4c99-a3fc-29fb2df71457": {
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "name": "Quality Assurance",
+        "manager_user_id": "fb7abc80-d9f6-4e3f-b914-3bb0cb0a5e5e"
+    },
+    "981a7e68-e719-4fa4-adba-c315b8bd2a79": {
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "name": "Product",
+        "manager_user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "c59ced3d-02e4-4f96-b5dd-8daf89b97728": {
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "name": "Sales",
+        "manager_user_id": "563754b0-77c9-4c54-817a-c0b971dead27"
+    },
+    "25c8f955-10c9-471a-be4c-0e68d13bd5ee": {
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "name": "Marketing",
+        "manager_user_id": "7f6eee1e-118b-41c2-8f0e-44d89c21c946"
+    },
+    "3f4fa926-b0ea-4e2f-a448-dfe771dd79c3": {
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "name": "Finance",
+        "manager_user_id": "ee38c9b1-dcc5-44b0-ad9e-afa861bae70d"
+    },
+    "06f42200-a499-452a-8e5e-fad1f93ce7a3": {
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "name": "Quality Assurance",
+        "manager_user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "7ebabe22-0224-44f8-9907-7f14cda16983": {
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "name": "Marketing",
+        "manager_user_id": "869c1e7c-9899-44a5-85c0-e3d53b1080c4"
+    },
+    "2d3b381a-6a8d-4ff0-9a85-5e7ff0e46488": {
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "name": "Quality Assurance",
+        "manager_user_id": "b32f6678-ca6c-443f-a094-5c19b7df1c9b"
+    },
+    "f01c6b06-1d14-44ca-812f-fed76cefc7fb": {
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "name": "Engineering",
+        "manager_user_id": "3468dacf-deb9-48eb-bea9-3b9fbfad7a13"
+    },
+    "3d827e0a-0656-4ce0-97af-55ced078f6cb": {
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "name": "Product",
+        "manager_user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "4bc8576b-58e3-4f75-ada6-82076f297ffe": {
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "name": "Operations",
+        "manager_user_id": "3468dacf-deb9-48eb-bea9-3b9fbfad7a13"
+    },
+    "43563681-33ac-437c-98cd-d92da0234701": {
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "name": "Quality Assurance",
+        "manager_user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "9219da3d-66dc-469b-b153-91557a7109c2": {
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "name": "Legal",
+        "manager_user_id": "eed51c68-4bca-4af4-88c8-df5990b2bf0d"
+    },
+    "145eb228-48ac-48f1-8e58-a06b47304f41": {
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "name": "Legal",
+        "manager_user_id": "ee38c9b1-dcc5-44b0-ad9e-afa861bae70d"
+    },
+    "518e9b8a-e0f6-4690-aac1-60bf65d710ff": {
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "name": "Customer Success",
+        "manager_user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d"
+    },
+    "13cb0911-c5fb-4fb2-a39f-a0a6b8b73ffe": {
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "name": "HR",
+        "manager_user_id": "c4dce683-a2ba-4c35-af2d-200e025864c4"
+    },
+    "f136a113-d0fb-4637-ade3-fdfd8d22f977": {
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "name": "Engineering",
+        "manager_user_id": "1d17b818-a006-434c-96ec-8c813967c158"
+    },
+    "3530a1f8-3d47-45a4-bed0-d8c72b35bced": {
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "name": "Engineering",
+        "manager_user_id": "65960de0-fa7e-4e94-a176-2bd92972d143"
+    },
+    "37ea4a02-e092-40e4-ae24-4057d6794db1": {
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "name": "Sales",
+        "manager_user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "56c59ab6-0168-4926-8abb-1b121a14c5ff": {
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "name": "Quality Assurance",
+        "manager_user_id": "fb7abc80-d9f6-4e3f-b914-3bb0cb0a5e5e"
+    },
+    "9644bcb9-01c1-4ac8-b73a-fb0f11721c44": {
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "name": "HR",
+        "manager_user_id": "3468dacf-deb9-48eb-bea9-3b9fbfad7a13"
+    },
+    "b86b235e-203e-4d57-be1f-efbfb93dc311": {
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "name": "Sales",
+        "manager_user_id": "b32f6678-ca6c-443f-a094-5c19b7df1c9b"
+    },
+    "8b859d59-a11f-4c1d-8c03-c3a7ac3a139e": {
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "name": "HR",
+        "manager_user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8"
+    },
+    "e25c6d7b-a65d-4634-a066-7667825c8485": {
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "name": "Finance",
+        "manager_user_id": "ac9b56de-618d-4d16-bdba-35687d925d34"
+    },
+    "11973fe6-1219-4b43-873b-583a790f78e3": {
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "name": "Design",
+        "manager_user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "e6f84c46-1139-4b15-af7c-2208cf8514f6": {
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "name": "Sales",
+        "manager_user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d"
+    },
+    "b4299fea-21e1-4c6e-8d9b-0c4f394d448d": {
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "name": "Sales",
+        "manager_user_id": "eed51c68-4bca-4af4-88c8-df5990b2bf0d"
+    },
+    "3e18aa6a-693e-4e31-a217-dae65f345b9e": {
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "name": "Product",
+        "manager_user_id": "d460cf71-3698-43dd-8098-6a12bc482a81"
+    },
+    "38910070-22fa-4477-a3bf-0d5e92a6b4c1": {
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "name": "Legal",
+        "manager_user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d"
+    },
+    "7f74a066-9782-4b04-8190-eedb57dd99d1": {
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "name": "HR",
+        "manager_user_id": "1892294b-038e-472d-87f0-b54fd28d30b9"
+    },
+    "4f72fa4a-d0a9-4ae0-a558-77f483009c82": {
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "name": "Sales",
+        "manager_user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "246c9dcc-0125-4353-837a-8674e613a6bb": {
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "name": "Quality Assurance",
+        "manager_user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "11fd713a-740a-46fe-b3fb-e5ba05ffd3d5": {
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "name": "Operations",
+        "manager_user_id": "563754b0-77c9-4c54-817a-c0b971dead27"
+    },
+    "7369f50f-69dc-4b8a-8d15-ebb6bbae55a9": {
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "name": "Engineering",
+        "manager_user_id": "ac9b56de-618d-4d16-bdba-35687d925d34"
+    },
+    "a7b4fd2e-2b0c-432d-b38c-ab81124cccc5": {
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "name": "Customer Success",
+        "manager_user_id": "ac9b56de-618d-4d16-bdba-35687d925d34"
+    },
+    "efc24321-b444-489a-9286-4fbdf797cfdf": {
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "name": "Product",
+        "manager_user_id": "869c1e7c-9899-44a5-85c0-e3d53b1080c4"
+    },
+    "c4aa2db6-53ec-412b-9e8d-e64c38358670": {
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "name": "IT",
+        "manager_user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d"
+    },
+    "d48564cb-d589-4b7c-a4ed-1e596a134a97": {
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "name": "Engineering",
+        "manager_user_id": "eed51c68-4bca-4af4-88c8-df5990b2bf0d"
+    },
+    "e9ed76f7-a643-4171-abfe-b93b3d2c7b8d": {
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "name": "Legal",
+        "manager_user_id": "7f6eee1e-118b-41c2-8f0e-44d89c21c946"
+    },
+    "e1197965-09ea-4195-b3be-0f6159de46b0": {
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "name": "HR",
+        "manager_user_id": "869c1e7c-9899-44a5-85c0-e3d53b1080c4"
+    },
+    "f6ad2ae1-fe23-4fb4-9152-ae9f836f567a": {
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "name": "Sales",
+        "manager_user_id": "65960de0-fa7e-4e94-a176-2bd92972d143"
+    },
+    "c300bd2d-4a35-4c26-8c74-fbad3e0a0b48": {
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "name": "Marketing",
+        "manager_user_id": "1d17b818-a006-434c-96ec-8c813967c158"
+    },
+    "9d1ecd65-eff4-49d3-b400-134549ce1691": {
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "name": "IT",
+        "manager_user_id": "64a7bbc8-8e4a-4593-aae4-168cbc148fa6"
+    },
+    "d7fdd213-d422-4075-a8b4-e230007c1992": {
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "name": "Quality Assurance",
+        "manager_user_id": "d460cf71-3698-43dd-8098-6a12bc482a81"
+    },
+    "71b7d87c-4704-4724-868b-8f422a27cf60": {
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "name": "Product",
+        "manager_user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d"
+    },
+    "4dec05fd-4af7-4118-bd01-2dd25933d516": {
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "name": "Finance",
+        "manager_user_id": "fb7abc80-d9f6-4e3f-b914-3bb0cb0a5e5e"
+    },
+    "a114007c-46ac-47f1-a89e-3407576dcc8a": {
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "name": "Operations",
+        "manager_user_id": "9bf08961-fe9b-4688-b338-883866379e86"
+    },
+    "88183934-4ca3-41fb-b291-0a72d1881ba7": {
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "name": "Finance",
+        "manager_user_id": "c57beb54-ec67-4d97-948b-a63abda95ade"
+    },
+    "f7b5edc6-6de5-4012-8756-328483f04477": {
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "name": "Quality Assurance",
+        "manager_user_id": "b32f6678-ca6c-443f-a094-5c19b7df1c9b"
+    },
+    "41cb5d0f-b3d0-49f6-864c-8498676049fb": {
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "name": "Marketing",
+        "manager_user_id": "c4dce683-a2ba-4c35-af2d-200e025864c4"
+    },
+    "f32cc8b0-a77b-4248-b38b-127b5872ce92": {
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "name": "Finance",
+        "manager_user_id": "7f6eee1e-118b-41c2-8f0e-44d89c21c946"
+    },
+    "49fd26da-f7e5-41a9-92b5-e07872b485d1": {
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "name": "Product",
+        "manager_user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "a4795da4-6666-4b73-bb24-6a1f554cbbb1": {
+        "manager_user_id": "bb294879-62c2-4867-b62d-903b33a06c53",
+        "name": "Monetize Ubiquitous Architectures Department",
+        "organization_id": "082d40e5-fa51-4cf3-b4b6-967336135fce",
+        "department_id": "a4795da4-6666-4b73-bb24-6a1f554cbbb1"
+    },
+    "456797c7-d876-4427-98ed-81c2fa5c668c": {
+        "manager_user_id": "007ab01d-7069-42ef-bd51-807c46ca3159",
+        "name": "Repurpose Dynamic Communities Department",
+        "organization_id": "817907fd-8072-443d-a4e9-04fd1fb66c22",
+        "department_id": "456797c7-d876-4427-98ed-81c2fa5c668c"
+    },
+    "2f25c45b-aed9-4ab1-b249-12849fc27e00": {
+        "manager_user_id": "485206e2-af07-4a12-ab99-e05295e30daf",
+        "name": "Transition Mission-Critical E-Services Department",
+        "organization_id": "7c90b2e3-f091-4e56-aad7-781f645b5c5d",
+        "department_id": "2f25c45b-aed9-4ab1-b249-12849fc27e00"
+    },
+    "9fdaf037-819a-4f29-ae44-b50a2bfabdae": {
+        "manager_user_id": "d8ed540a-08a0-440d-96d8-5985b9b0db69",
+        "name": "Embrace Front-End Supply-Chains Department",
+        "organization_id": "2cfd5d6a-b9b5-4933-894e-4ce50142877b",
+        "department_id": "9fdaf037-819a-4f29-ae44-b50a2bfabdae"
+    },
+    "b1979141-08b1-430d-9706-7dae8e00f286": {
+        "manager_user_id": "cea8a224-c6d7-4afd-aa0c-f1a006bc5b87",
+        "name": "Mesh Strategic E-Tailers Department",
+        "organization_id": "990fd3ae-dd84-458e-ad3a-aaab26f1a366",
+        "department_id": "b1979141-08b1-430d-9706-7dae8e00f286"
+    },
+    "14fae037-df75-43b9-8720-8d3b4379c0cb": {
+        "manager_user_id": "514d4801-c131-43b4-9d39-8c36c93e9d82",
+        "name": "Integrate One-To-One Metrics Department",
+        "organization_id": "31ffe93b-5468-4aaf-b1e2-936f3a16b792",
+        "department_id": "14fae037-df75-43b9-8720-8d3b4379c0cb"
+    },
+    "a6a0813e-0395-462d-9947-136988fe5fd7": {
+        "manager_user_id": "e63a990c-3570-4262-a2a4-aca626b873a4",
+        "name": "Target Ubiquitous Markets Department",
+        "organization_id": "05e6c75b-5a47-49f8-ae63-4dc94c8ee5ef",
+        "department_id": "a6a0813e-0395-462d-9947-136988fe5fd7"
+    },
+    "8fd111c4-2f36-4f2f-ba36-873ba50c9651": {
+        "manager_user_id": "ad42799c-67a6-4d2a-945e-923323b287b7",
+        "name": "Syndicate Intuitive Models Department",
+        "organization_id": "de1fa940-94c7-40d3-b9ac-129fe35d75c4",
+        "department_id": "8fd111c4-2f36-4f2f-ba36-873ba50c9651"
+    },
+    "9c001672-3053-487a-94e8-23991eaf7cbd": {
+        "manager_user_id": "54cb0d4d-6b7f-4e53-ab01-6c7cd8b8169c",
+        "name": "Implement Plug-And-Play Infrastructures Department",
+        "organization_id": "f7834d81-7666-4e30-ac4b-4b0f50fdd3f7",
+        "department_id": "9c001672-3053-487a-94e8-23991eaf7cbd"
+    },
+    "3dc0c4de-b65a-45ce-8f30-2e4703a29596": {
+        "manager_user_id": "3d22a700-24f4-4999-83a0-caa91f135b3a",
+        "name": "Harness Vertical Partnerships Department",
+        "organization_id": "cb14bd37-ae81-42fa-8cca-c0c76d80d2f1",
+        "department_id": "3dc0c4de-b65a-45ce-8f30-2e4703a29596"
+    },
+    "50267f47-2ca7-4a9b-b3d2-0045cced685f": {
+        "manager_user_id": "d6957794-4f5a-4fc9-a5c7-ffa86e86c05d",
+        "name": "Maximize Back-End Vortals Department",
+        "organization_id": "05a16bab-46d6-4254-898a-240ae93d0168",
+        "department_id": "50267f47-2ca7-4a9b-b3d2-0045cced685f"
+    },
+    "0139767e-ecf4-463d-af66-b1456d01933b": {
+        "manager_user_id": "9766aeff-5b8f-4118-9531-6c75b523c8f7",
+        "name": "Evolve Ubiquitous Action-Items Department",
+        "organization_id": "4a061533-83ec-4f63-8676-cee7292f91af",
+        "department_id": "0139767e-ecf4-463d-af66-b1456d01933b"
+    },
+    "254c5f29-6ec7-4a55-a836-2292c5f7c461": {
+        "manager_user_id": "376076fe-25ec-4185-9c8e-63ff4386a9e1",
+        "name": "Embrace Rich Interfaces Department",
+        "organization_id": "470ae3fd-e2cc-437a-9e5f-eba0a58fc93f",
+        "department_id": "254c5f29-6ec7-4a55-a836-2292c5f7c461"
+    },
+    "9966fd1a-1fde-496e-9276-ea9472f7648f": {
+        "manager_user_id": "ddefa834-465a-4cf2-ad90-0a337a722b66",
+        "name": "Synthesize Dot-Com Supply-Chains Department",
+        "organization_id": "cc105c41-5070-42b7-b277-e8d528a386c2",
+        "department_id": "9966fd1a-1fde-496e-9276-ea9472f7648f"
+    },
+    "6c48bb53-caf2-4e69-92b7-3fd8aee038f6": {
+        "manager_user_id": "7fa8f713-3b2a-41f0-8f69-dcb85bae5749",
+        "name": "E-Enable Frictionless Action-Items Department",
+        "organization_id": "eaa0f711-5d12-48dd-82e8-7949dd7cb91f",
+        "department_id": "6c48bb53-caf2-4e69-92b7-3fd8aee038f6"
+    },
+    "22a3265c-e0b0-47ac-a99a-0d4bf25f4d9c": {
+        "manager_user_id": "e23b196f-4747-4ab9-8f53-0bde76770cb5",
+        "name": "Maximize Impactful Applications Department",
+        "organization_id": "3e4cf7f8-677d-49ce-bb45-0f9d96f72ad8",
+        "department_id": "22a3265c-e0b0-47ac-a99a-0d4bf25f4d9c"
+    },
+    "442c92ad-2429-4a96-a48b-a17b590308f5": {
+        "manager_user_id": "c3373dee-8d2d-4351-b0d6-e34b70dcd5ae",
+        "name": "Expedite Bleeding-Edge E-Business Department",
+        "organization_id": "33353a59-b165-43fb-9d5f-6ca056bc3558",
+        "department_id": "442c92ad-2429-4a96-a48b-a17b590308f5"
+    },
+    "522a6808-31c4-4049-aa12-62a769a805a9": {
+        "manager_user_id": "41bde4e9-33a7-40e8-b06a-d93edfdc1492",
+        "name": "Repurpose Web-Enabled Markets Department",
+        "organization_id": "1fd5ff9a-37e1-4be6-b9dc-b0b1ef85c962",
+        "department_id": "522a6808-31c4-4049-aa12-62a769a805a9"
+    },
+    "796139ad-4440-44ee-9312-c9c1a1935ac7": {
+        "manager_user_id": "99f21dce-5345-4a82-8ee9-444d8e3dfe90",
+        "name": "Enhance Extensible Applications Department",
+        "organization_id": "6b1ab332-6210-4f68-8884-fa02fe40b358",
+        "department_id": "796139ad-4440-44ee-9312-c9c1a1935ac7"
+    },
+    "ed7c8103-a1f9-41e9-9359-f588cb3a417c": {
+        "manager_user_id": "0ded854f-0e54-4071-98bf-66644308ad18",
+        "name": "Morph Customized Markets Department",
+        "organization_id": "31ffe93b-5468-4aaf-b1e2-936f3a16b792",
+        "department_id": "ed7c8103-a1f9-41e9-9359-f588cb3a417c"
+    },
+    "1a3d52b2-2c7d-45c1-a639-4eaef30acd25": {
+        "manager_user_id": "fe4baac2-ff85-4cea-955e-c8bbd328729b",
+        "name": "Exploit Collaborative Synergies Department",
+        "organization_id": "11f0fa73-c77a-41d3-bc74-b70fc748dd50",
+        "department_id": "1a3d52b2-2c7d-45c1-a639-4eaef30acd25"
+    },
+    "fd278858-49a1-48d1-8766-37efef0a5193": {
+        "manager_user_id": "7dd891b7-5d40-4f7d-9c05-12ca10147e76",
+        "name": "Leverage Viral Methodologies Department",
+        "organization_id": "b62cc25b-22bb-4780-bfc3-b578aa4e9480",
+        "department_id": "fd278858-49a1-48d1-8766-37efef0a5193"
+    },
+    "7a378f63-d861-49ed-ab92-08040bb95f4b": {
+        "manager_user_id": "52c635b8-6de6-45f3-8c60-e074e59f9d2e",
+        "name": "Morph Proactive Markets Department",
+        "organization_id": "cc105c41-5070-42b7-b277-e8d528a386c2",
+        "department_id": "7a378f63-d861-49ed-ab92-08040bb95f4b"
+    },
+    "d0cd3b5b-c335-47eb-81b7-2d4f5b589799": {
+        "manager_user_id": "3436e1a8-7054-41cd-a0a0-5bf6865763ac",
+        "name": "Productize Compelling E-Services Department",
+        "organization_id": "6d973995-0146-44b4-927f-08b903bf03a6",
+        "department_id": "d0cd3b5b-c335-47eb-81b7-2d4f5b589799"
+    },
+    "9f4d0b1d-b919-47fb-b749-09705ce96926": {
+        "manager_user_id": "2b8e54b8-0bcf-4146-97d3-f70feba06063",
+        "name": "Repurpose Interactive Supply-Chains Department",
+        "organization_id": "ffe238d7-2a20-4b35-bc94-914b1ee11b88",
+        "department_id": "9f4d0b1d-b919-47fb-b749-09705ce96926"
+    },
+    "9d187fca-7d8a-4d0b-aca6-44bfd5c5f82f": {
+        "manager_user_id": "2e00ceb0-a066-48e0-ad36-32b6d7944af7",
+        "name": "Strategize Proactive Systems Department",
+        "organization_id": "2e00a413-d33e-4cf4-9019-db4b5c9694b2",
+        "department_id": "9d187fca-7d8a-4d0b-aca6-44bfd5c5f82f"
+    },
+    "bb497f84-a60c-4bbe-b61f-7c28f137d223": {
+        "manager_user_id": "c2e53277-a2e9-41df-b43f-c705d17c892d",
+        "name": "Productize Value-Added Schemas Department",
+        "organization_id": "70a7f710-08e7-4ec4-9195-9cdc06a8e2a8",
+        "department_id": "bb497f84-a60c-4bbe-b61f-7c28f137d223"
+    },
+    "11a3fffb-0f16-4f59-9fd2-7af30146f3b1": {
+        "manager_user_id": "e23b196f-4747-4ab9-8f53-0bde76770cb5",
+        "name": "Exploit Impactful Platforms Department",
+        "organization_id": "3e4cf7f8-677d-49ce-bb45-0f9d96f72ad8",
+        "department_id": "11a3fffb-0f16-4f59-9fd2-7af30146f3b1"
+    },
+    "cea5a1e3-0de1-435e-83c0-a98724ef4a96": {
+        "manager_user_id": "786ec9bb-024c-4d36-a938-b9a02959a82e",
+        "name": "Architect Out-Of-The-Box Applications Department",
+        "organization_id": "81cbe929-164c-42e2-b75c-ea35606e90de",
+        "department_id": "cea5a1e3-0de1-435e-83c0-a98724ef4a96"
+    },
+    "52510de8-eea1-4ecf-b30b-28fc50b03cd1": {
+        "manager_user_id": "53234df2-daf4-4a41-86b7-9d866f8e5f7a",
+        "name": "Harness 24/365 Communities Department",
+        "organization_id": "4a061533-83ec-4f63-8676-cee7292f91af",
+        "department_id": "52510de8-eea1-4ecf-b30b-28fc50b03cd1"
+    },
+    "01858409-45de-4cea-99e5-350a8bd38ac1": {
+        "manager_user_id": "e97af04d-899d-4ae0-a9e0-b8d99618c607",
+        "name": "Engineer Open-Source E-Tailers Department",
+        "organization_id": "9dc73c1a-960f-491f-a57c-47f1da41e84a",
+        "department_id": "01858409-45de-4cea-99e5-350a8bd38ac1"
+    },
+    "7e37a2ce-3c3f-4d0b-b583-1aa3022e514f": {
+        "manager_user_id": "078d6051-01ef-4057-8466-86b36a8dcfdd",
+        "name": "Integrate Distributed Platforms Department",
+        "organization_id": "6b4e730b-9f27-49ef-bb70-9c8e537facd2",
+        "department_id": "7e37a2ce-3c3f-4d0b-b583-1aa3022e514f"
+    },
+    "bc76deed-1682-43f1-a0f6-280a0dceb6c8": {
+        "manager_user_id": "9f06c5ab-6c02-4445-82d4-bc2328773595",
+        "name": "Monetize Dot-Com Content Department",
+        "organization_id": "9cf73b2c-1dd1-4d04-a60a-d92d33e2e8c8",
+        "department_id": "bc76deed-1682-43f1-a0f6-280a0dceb6c8"
+    },
+    "a16f77d6-f8a4-49a6-83fb-763e4a692062": {
+        "manager_user_id": "ddefa834-465a-4cf2-ad90-0a337a722b66",
+        "name": "Streamline Clicks-And-Mortar Communities Department",
+        "organization_id": "1f6e1daa-b370-4a93-bdbf-b50445426dfb",
+        "department_id": "a16f77d6-f8a4-49a6-83fb-763e4a692062"
+    },
+    "3596e26d-789c-4c15-87eb-a684577e31d1": {
+        "manager_user_id": "3f287e0f-6022-4de7-a8b9-4915bb546a54",
+        "name": "Extend Extensible Models Department",
+        "organization_id": "3fb47047-af81-4022-b4c5-7f1e2f74632e",
+        "department_id": "3596e26d-789c-4c15-87eb-a684577e31d1"
+    },
+    "dbb925d6-3634-4669-99be-52fca293173e": {
+        "manager_user_id": "3436e1a8-7054-41cd-a0a0-5bf6865763ac",
+        "name": "Seize Enterprise Supply-Chains Department",
+        "organization_id": "18be5dd3-98a3-4aab-bf16-df1fbc45a096",
+        "department_id": "dbb925d6-3634-4669-99be-52fca293173e"
+    },
+    "1f26b8d8-d6ae-4d38-a012-0e08f59d00ec": {
+        "manager_user_id": "510fe8e8-3871-443b-9381-122fa32e1f1a",
+        "name": "Deliver Front-End Roi Department",
+        "organization_id": "990fd3ae-dd84-458e-ad3a-aaab26f1a366",
+        "department_id": "1f26b8d8-d6ae-4d38-a012-0e08f59d00ec"
+    },
+    "ec6a99f8-35e5-4394-b6e1-81daa70e3a2c": {
+        "manager_user_id": "1e0dbd10-7268-4c89-87ce-e6bbf77f27ee",
+        "name": "Enhance Compelling Experiences Department",
+        "organization_id": "df355828-2515-461f-9c87-583e62c7c609",
+        "department_id": "ec6a99f8-35e5-4394-b6e1-81daa70e3a2c"
+    },
+    "fe1d2bae-7b49-4f55-bc35-0e1e495f31f9": {
+        "manager_user_id": "aa9a65a8-cc0a-4c5f-be7b-0eabe8b50c76",
+        "name": "Scale Proactive Models Department",
+        "organization_id": "e8ca8d58-df27-4e23-a2d2-9ce1b1fe4e58",
+        "department_id": "fe1d2bae-7b49-4f55-bc35-0e1e495f31f9"
+    },
+    "935a8092-44bf-4db8-9b1a-18cc6d87cd0e": {
+        "manager_user_id": "80eb82fc-49f1-4dd2-8739-0ff7e75ab812",
+        "name": "Engineer Clicks-And-Mortar Methodologies Department",
+        "organization_id": "b62cc25b-22bb-4780-bfc3-b578aa4e9480",
+        "department_id": "935a8092-44bf-4db8-9b1a-18cc6d87cd0e"
+    }
+}

@@ -1,4 +1,4 @@
-instruction_verification_prompt = """You are an instruction quality validator. Your task is to evaluate whether a given instruction meets specific criteria for being a well-formed, user-facing instruction.
+You are an instruction quality validator. Your task is to evaluate whether a given instruction meets specific criteria for being a well-formed, user-facing instruction.
 
 Evaluate the instruction against these 4 criteria:
 

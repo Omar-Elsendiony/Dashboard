@@ -1,0 +1,4902 @@
+{
+    "8b370f29-a75c-46fd-94f6-ae09f5d9bd64": {
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "EUR",
+        "limit": 6043.48,
+        "status": "expired"
+    },
+    "39cf4448-65ac-4245-8c61-3d2f6e4b8e66": {
+        "user_id": "259661e8-a13f-4acf-9042-7bbf2379a496",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "DKK",
+        "limit": 1918.83,
+        "status": "active"
+    },
+    "57c6b02a-ed96-473c-9db8-d8f1ffb185d2": {
+        "user_id": "fbbfef3b-52f5-482a-b274-7faf5d490b01",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "SEK",
+        "limit": 6042.8,
+        "status": "blocked"
+    },
+    "3219de21-8282-4f0c-b416-e49e3075cc5d": {
+        "user_id": "e272d8d9-67f8-45d0-b9a7-49be53e1a228",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "GBP",
+        "limit": 7512.69,
+        "status": "blocked"
+    },
+    "1b4fde15-73e7-4aee-a18c-00f42017f040": {
+        "user_id": "62b4e4f8-9ad7-4b8d-b54d-1aae80b10508",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "SEK",
+        "limit": 3103.45,
+        "status": "revoked"
+    },
+    "5ab9f5a4-06d8-42b7-af6a-7bd09a38d98e": {
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "CAD",
+        "limit": 8687.79,
+        "status": "blocked"
+    },
+    "b13837d0-cf66-46b1-a020-64113bdee0e3": {
+        "user_id": "65960de0-fa7e-4e94-a176-2bd92972d143",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "CAD",
+        "limit": 5211.17,
+        "status": "active"
+    },
+    "50301418-7ce2-44f0-b866-8467ede493d2": {
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "GBP",
+        "limit": 6557.83,
+        "status": "active"
+    },
+    "db3d3b36-d276-4374-9c11-c55da7bf53c9": {
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "AUD",
+        "limit": 8719.44,
+        "status": "active"
+    },
+    "cc9d8922-d64a-479b-8f5d-3491d49fde1b": {
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "DKK",
+        "limit": 5683.84,
+        "status": "revoked"
+    },
+    "94e49d4b-6357-488a-8892-94a855d8b860": {
+        "user_id": "4dfc0335-2492-41db-81c2-cc3e51dcb792",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "AUD",
+        "limit": 9417.38,
+        "status": "blocked"
+    },
+    "4a138329-e13f-4625-abb2-420163e334b8": {
+        "user_id": "07735f37-936f-43d6-a940-719e4483f19d",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "CAD",
+        "limit": 3646.92,
+        "status": "active"
+    },
+    "ea58a8e5-c010-40b5-83f4-5d754d6cb37a": {
+        "user_id": "869c1e7c-9899-44a5-85c0-e3d53b1080c4",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "USD",
+        "limit": 756.25,
+        "status": "blocked"
+    },
+    "0fb1475e-33d9-40ae-970f-67c70db25892": {
+        "user_id": "c8f87788-5cfc-4bfc-b208-60e37a1183e2",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "EUR",
+        "limit": 8322.24,
+        "status": "expired"
+    },
+    "ba15792c-465b-437b-a5d2-e29fa1237c5a": {
+        "user_id": "f7a3acb1-fd46-4694-8577-cd305266f87a",
+        "provider_id": "d559f268-9f53-467b-9ba2-37d3cba148bb",
+        "currency": "DKK",
+        "limit": 2569.13,
+        "status": "active"
+    },
+    "dace80e2-f19f-479b-8d54-1b4cb9b03381": {
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "GBP",
+        "limit": 6208.72,
+        "status": "active"
+    },
+    "a1b3fadf-92f3-4ed6-af4f-24bf6b2749c7": {
+        "user_id": "d77f1707-8ef4-4615-8bf3-f3c37a1615a2",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "NOK",
+        "limit": 5741.09,
+        "status": "active"
+    },
+    "8f510655-953a-4940-811c-88f0928d5d5a": {
+        "user_id": "b32f6678-ca6c-443f-a094-5c19b7df1c9b",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "SEK",
+        "limit": 7979.9,
+        "status": "active"
+    },
+    "1b30ac43-219e-4914-8404-8f64a2d164f3": {
+        "user_id": "56ec427e-5dd4-4b0d-8ade-2855f98eb063",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "SEK",
+        "limit": 1642.09,
+        "status": "active"
+    },
+    "8b4fe739-7a12-4c24-9588-ec72c52ca8a7": {
+        "user_id": "826c7f2b-007f-45aa-9df9-52c6c40f94f0",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "SEK",
+        "limit": 2716.23,
+        "status": "active"
+    },
+    "9ddf3e0c-b57a-492f-a502-01013a6a3fb3": {
+        "user_id": "26273078-a160-4617-a5cf-5915342ba871",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "NOK",
+        "limit": 7523.1,
+        "status": "active"
+    },
+    "00fcd357-7d6e-4c2f-94c6-26e959c532e3": {
+        "user_id": "259661e8-a13f-4acf-9042-7bbf2379a496",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "DKK",
+        "limit": 3440.34,
+        "status": "active"
+    },
+    "e1f51df7-4e21-416a-ae48-e607ccbeb232": {
+        "user_id": "23ef218b-7974-4172-83b3-708409807237",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "SEK",
+        "limit": 5177.78,
+        "status": "active"
+    },
+    "af74f977-0f66-4297-88ad-85a539e63d71": {
+        "user_id": "f0cf8c27-039f-4f2e-96c7-a443dabab9be",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "AUD",
+        "limit": 6660.14,
+        "status": "active"
+    },
+    "aa82816f-177d-4623-9e7b-23989782da39": {
+        "user_id": "5b7ff6ef-d3c6-4712-99da-945e579296f4",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "USD",
+        "limit": 6356.2,
+        "status": "active"
+    },
+    "5410d7d4-bc81-40d0-a5ce-84d2092f0a97": {
+        "user_id": "42dc2988-4585-40c9-b374-3ddfc7f2028d",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "CAD",
+        "limit": 821.08,
+        "status": "active"
+    },
+    "fdd090ba-188b-4d47-8cec-7c56e0592542": {
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "NOK",
+        "limit": 4337.42,
+        "status": "active"
+    },
+    "2f03ee3e-fb24-4484-bd68-84c065b418e9": {
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "EUR",
+        "limit": 2901.25,
+        "status": "active"
+    },
+    "1171b518-7643-41c0-849e-83ceedf766dd": {
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "DKK",
+        "limit": 7378.49,
+        "status": "active"
+    },
+    "6d1a5a1f-9cda-44fa-9c33-7f7c61f2f61e": {
+        "user_id": "8cd3a682-2a23-446b-87cf-2311281336e2",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "AUD",
+        "limit": 4613.56,
+        "status": "active"
+    },
+    "0d9d77b7-286d-4577-b7d4-a40cdfb5eb47": {
+        "user_id": "ee1366e4-4841-4dc3-8ee4-3916064d7c18",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "EUR",
+        "limit": 8432.28,
+        "status": "active"
+    },
+    "43cdb339-e71a-49cf-b2ef-e500597cb7c6": {
+        "user_id": "78ed3a14-8981-4abe-8eaa-cf6c8da18254",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "NOK",
+        "limit": 5921.21,
+        "status": "active"
+    },
+    "652757e2-2676-4d5e-89cb-74b2039013cd": {
+        "user_id": "e8a5294d-9311-4987-86b5-04ac331139d1",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "USD",
+        "limit": 2625.92,
+        "status": "active"
+    },
+    "2eb589fe-0033-442e-a1c3-9a2f4ccbe843": {
+        "user_id": "13a61b6f-2e1e-4a74-8f3d-84f8e6f5d7e0",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "AUD",
+        "limit": 975.44,
+        "status": "expired"
+    },
+    "d5f7b3fe-1305-4558-845c-abf560cd1c43": {
+        "user_id": "e8250a01-533d-4d04-815d-ec9e84338b60",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "DKK",
+        "limit": 9611.84,
+        "status": "active"
+    },
+    "00988ecf-282f-4944-a3fc-bf1c3dc0d8c6": {
+        "user_id": "f15f9da8-fde6-4420-84d7-6c60690b2251",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "GBP",
+        "limit": 2850.25,
+        "status": "active"
+    },
+    "f8ab4b0c-1ff4-4529-af4f-b3c507baa86b": {
+        "user_id": "050081f1-abd1-410d-b593-36a66d95c19c",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "GBP",
+        "limit": 2856.58,
+        "status": "active"
+    },
+    "4894c6d7-3f92-4aae-b069-39336daf9067": {
+        "user_id": "8092ce7f-407f-4991-9b12-91917be4c215",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "AUD",
+        "limit": 7173.66,
+        "status": "revoked"
+    },
+    "702d94cc-1abb-453a-aa97-94d4d89d62e4": {
+        "user_id": "ae85d72f-74e7-48de-9eb2-8c49b49be1b6",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "AUD",
+        "limit": 4556.58,
+        "status": "active"
+    },
+    "ae8dcea4-1698-491c-b5c0-e89f9d360131": {
+        "user_id": "fc010782-aa69-4008-b76e-d183b51ce1ed",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "EUR",
+        "limit": 3132.4,
+        "status": "active"
+    },
+    "abaafb1e-0f7f-442f-a89e-a9683556d960": {
+        "user_id": "9fe61da1-71a3-40db-acbc-bbba49b7db51",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "DKK",
+        "limit": 7095.02,
+        "status": "expired"
+    },
+    "14505885-db30-4425-8a04-a973a8e76a1f": {
+        "user_id": "e8250a01-533d-4d04-815d-ec9e84338b60",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "DKK",
+        "limit": 543.9,
+        "status": "expired"
+    },
+    "b79434d6-cc05-49cf-9ecf-da487c33d37f": {
+        "user_id": "d6de7528-0e5f-4302-9e2f-9456ad7eff5e",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "CAD",
+        "limit": 1548.82,
+        "status": "blocked"
+    },
+    "196d3191-70dd-41a5-9b60-c70bfeb7189c": {
+        "user_id": "e8ee4682-590b-4c7f-98c9-819fecfc5a77",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "CAD",
+        "limit": 2552.06,
+        "status": "active"
+    },
+    "ea2e2b33-79c4-4f24-ae94-137af70f50c7": {
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "DKK",
+        "limit": 2027.54,
+        "status": "expired"
+    },
+    "35a9f5a2-5fec-4bdb-82e3-107f51acfd9b": {
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "CAD",
+        "limit": 6639.97,
+        "status": "active"
+    },
+    "70516fc8-8fd3-4ff3-8726-4b8d622ac203": {
+        "user_id": "c8f87788-5cfc-4bfc-b208-60e37a1183e2",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "EUR",
+        "limit": 6850.93,
+        "status": "blocked"
+    },
+    "7c5b5669-f731-4ee3-80ed-30841ae842c4": {
+        "user_id": "1f5e50be-7846-4f54-976b-51a2d4fa92a7",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "DKK",
+        "limit": 8588.46,
+        "status": "active"
+    },
+    "654c9597-9a3e-4a0f-ae93-ee723874b2e3": {
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "EUR",
+        "limit": 8310.14,
+        "status": "active"
+    },
+    "6608e1ff-5d6c-4479-9625-1db6d69e94a2": {
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "EUR",
+        "limit": 1655.64,
+        "status": "active"
+    },
+    "14b1d4e1-56bc-4fb3-a658-1d42fdfa1271": {
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "EUR",
+        "limit": 487.26,
+        "status": "blocked"
+    },
+    "6deb6898-a3f9-4051-a995-2c9dd77dd6f5": {
+        "user_id": "fc2b34e3-916c-4c9b-bd0e-b3a96e70befb",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "SEK",
+        "limit": 8809.21,
+        "status": "active"
+    },
+    "a76c8c24-d350-4427-8c80-7ebf7d1acc84": {
+        "user_id": "a59c3ec3-b57a-4be1-b726-2eb3e5675948",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "EUR",
+        "limit": 8838.67,
+        "status": "active"
+    },
+    "d403ca57-251a-4380-a2c3-541131698f58": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "NOK",
+        "limit": 7973.17,
+        "status": "active"
+    },
+    "c84cbd3c-5135-4058-be62-808d51a5fbaf": {
+        "user_id": "5000b71f-a1ab-4673-81ac-0e68f9adad76",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "EUR",
+        "limit": 8221.69,
+        "status": "blocked"
+    },
+    "e748ae3d-899c-4737-bc75-0890d1da2502": {
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "GBP",
+        "limit": 8439.09,
+        "status": "active"
+    },
+    "9fe84dd4-724f-4394-8bd9-655495aa48cc": {
+        "user_id": "d8db5f28-4223-4a63-babf-4d3c91c7faa4",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "NOK",
+        "limit": 5896.18,
+        "status": "blocked"
+    },
+    "45006d4a-469c-42e8-b39d-8823c206cb20": {
+        "user_id": "1cc8d743-2134-4235-96e2-f633661eadc7",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "EUR",
+        "limit": 1367.71,
+        "status": "active"
+    },
+    "2c5cb585-bbe2-4b81-b1e8-d4806615a0f1": {
+        "user_id": "b1cac2f1-1809-43fc-ae97-0be01433a69d",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "DKK",
+        "limit": 1965.03,
+        "status": "active"
+    },
+    "73e4d9aa-41e3-4194-a230-0ba2e814c950": {
+        "user_id": "7b8db11f-2662-477f-b29a-2778d7f81595",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "AUD",
+        "limit": 2759.42,
+        "status": "active"
+    },
+    "2a44143a-54bc-4af2-98ac-80542d4cba0c": {
+        "user_id": "55b239fd-7ae2-4601-833a-b40ba2e46075",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "SEK",
+        "limit": 2164.3,
+        "status": "revoked"
+    },
+    "21ad3b11-bc7a-4302-a93c-8063b9f9fc65": {
+        "user_id": "fbbfef3b-52f5-482a-b274-7faf5d490b01",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "DKK",
+        "limit": 4134.6,
+        "status": "blocked"
+    },
+    "3c8e9b6f-e926-4c97-a36a-fb61e8ad7377": {
+        "user_id": "8f38494a-9831-4e7f-95ab-aca142288f2b",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "USD",
+        "limit": 3308.41,
+        "status": "blocked"
+    },
+    "23e70441-fd55-4c8c-b80b-7828705ae868": {
+        "user_id": "c528214a-f617-4ef3-bea5-7f6da9d91ba9",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "AUD",
+        "limit": 3239.42,
+        "status": "active"
+    },
+    "d19d7673-578d-4f9d-abca-844f27395e43": {
+        "user_id": "76d8f75a-4214-42aa-9412-ddc2ea394365",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "CAD",
+        "limit": 608.48,
+        "status": "active"
+    },
+    "15ba1205-8394-4153-b036-07da5a110705": {
+        "user_id": "d8db5f28-4223-4a63-babf-4d3c91c7faa4",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "DKK",
+        "limit": 2130.56,
+        "status": "active"
+    },
+    "6b530897-8156-4f7f-8c8f-edd9b453e408": {
+        "user_id": "5db6a332-d4d6-44d0-9474-4d12eb61c998",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "DKK",
+        "limit": 1011.77,
+        "status": "active"
+    },
+    "08930f3a-768f-4604-a066-d3aa1a43c33d": {
+        "user_id": "8d8c7239-23e9-40fc-8731-a16cebdb3c08",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "DKK",
+        "limit": 6564.81,
+        "status": "expired"
+    },
+    "e02893ff-59ac-4720-b036-977ea293f1c7": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "DKK",
+        "limit": 2850.32,
+        "status": "active"
+    },
+    "806f3b8e-3a9b-4497-8069-429eeaf90b05": {
+        "user_id": "ee38c9b1-dcc5-44b0-ad9e-afa861bae70d",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "SEK",
+        "limit": 8862.24,
+        "status": "active"
+    },
+    "aee6e122-459d-4d90-a401-11b73a19095c": {
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "EUR",
+        "limit": 6288.04,
+        "status": "active"
+    },
+    "fd914d3f-fc27-4987-a238-1c373dadb0c7": {
+        "user_id": "38979004-f97e-46fc-8c5f-ff1f965154ce",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "SEK",
+        "limit": 8213.34,
+        "status": "active"
+    },
+    "187cbc1a-90d6-43a3-80c3-4d421b774653": {
+        "user_id": "f15f9da8-fde6-4420-84d7-6c60690b2251",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "DKK",
+        "limit": 1851.44,
+        "status": "active"
+    },
+    "f3482da9-efa4-4ed1-b130-c401f629b10c": {
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "SEK",
+        "limit": 8906.4,
+        "status": "active"
+    },
+    "a5060807-796a-4496-b69f-e6554e4ae0e2": {
+        "user_id": "df501ffe-1115-4877-ad72-c4b9cc9dde22",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "NOK",
+        "limit": 9872.32,
+        "status": "blocked"
+    },
+    "09ec96ef-f889-4c9f-ab39-64b3dabbffbf": {
+        "user_id": "b1cac2f1-1809-43fc-ae97-0be01433a69d",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "EUR",
+        "limit": 2119.21,
+        "status": "expired"
+    },
+    "6e6b7a4d-b8c7-430b-86d2-90fc99317960": {
+        "user_id": "40cd7cc2-4bc3-4900-a126-c84e1cf20cdb",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "SEK",
+        "limit": 8053.81,
+        "status": "active"
+    },
+    "90e42500-ff7d-4a0e-b65f-95a24cb3f488": {
+        "user_id": "584ff1c5-b542-4902-a541-13ab75b948a3",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "DKK",
+        "limit": 132.18,
+        "status": "expired"
+    },
+    "f3e82b71-e631-4090-892b-f3b24c352278": {
+        "user_id": "b1905f38-af6c-4608-87b5-6f3f6669f1c6",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "AUD",
+        "limit": 5967.26,
+        "status": "active"
+    },
+    "d1050744-6060-4cc4-bee2-c779d5bf8035": {
+        "user_id": "e8250a01-533d-4d04-815d-ec9e84338b60",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "EUR",
+        "limit": 3054.68,
+        "status": "active"
+    },
+    "f0bf641b-5037-4be9-9b17-fd599e92d196": {
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "GBP",
+        "limit": 3958.3,
+        "status": "expired"
+    },
+    "8a16fae4-8d76-41bc-9451-52c33257e72a": {
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "CAD",
+        "limit": 8761.19,
+        "status": "blocked"
+    },
+    "5a21686b-9e2d-4010-929e-020073762a54": {
+        "user_id": "74376e71-e60d-4863-858f-37c36d666174",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "USD",
+        "limit": 9192.69,
+        "status": "active"
+    },
+    "d4e4cc26-4f50-4058-baf9-1aeb2b74f9ca": {
+        "user_id": "c4dce683-a2ba-4c35-af2d-200e025864c4",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "NOK",
+        "limit": 2579.11,
+        "status": "active"
+    },
+    "0a114c0a-3dca-4d1b-85e3-aec8acf3cb2f": {
+        "user_id": "d485e608-2057-4203-9717-cbce304ab718",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "GBP",
+        "limit": 9978.69,
+        "status": "active"
+    },
+    "32a27e07-ff07-41ab-8bdc-35e9c7f752ea": {
+        "user_id": "75be1cae-0abd-49ea-99f7-1132884ab3a2",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "DKK",
+        "limit": 8828.91,
+        "status": "active"
+    },
+    "87887632-1558-4b99-bd91-55f57a3d9cce": {
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "AUD",
+        "limit": 963.35,
+        "status": "active"
+    },
+    "8def6d0f-779b-4dca-9825-a9e2ef9913ad": {
+        "user_id": "65960de0-fa7e-4e94-a176-2bd92972d143",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "SEK",
+        "limit": 9883.58,
+        "status": "active"
+    },
+    "491f8cb1-17f8-4f54-ad0a-0e4cd3075440": {
+        "user_id": "050081f1-abd1-410d-b593-36a66d95c19c",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "DKK",
+        "limit": 7766.4,
+        "status": "active"
+    },
+    "2cbfbff0-05d3-4c04-b976-fd79f2a6e8d2": {
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "EUR",
+        "limit": 1858.16,
+        "status": "active"
+    },
+    "85bbb4dd-696d-406c-b89d-c146fefac718": {
+        "user_id": "cad48424-0c87-4eda-b332-f5a3eb24fbe9",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "NOK",
+        "limit": 8357.25,
+        "status": "expired"
+    },
+    "c6e6dde8-826a-4d30-a6e8-695d605785c6": {
+        "user_id": "2ed4c5c7-8612-4b72-9f0f-85c362687375",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "DKK",
+        "limit": 1540.49,
+        "status": "active"
+    },
+    "2024dff1-bd17-4edb-bbfd-abcad40c5c70": {
+        "user_id": "563754b0-77c9-4c54-817a-c0b971dead27",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "SEK",
+        "limit": 7903.97,
+        "status": "expired"
+    },
+    "4cc1a8db-5e5b-4c81-a251-2cdef02a2b6c": {
+        "user_id": "13a61b6f-2e1e-4a74-8f3d-84f8e6f5d7e0",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "SEK",
+        "limit": 4874.87,
+        "status": "active"
+    },
+    "1834dc12-8ae0-4fc8-8f4f-94f081b5a5b6": {
+        "user_id": "c5a58794-a52a-4fd2-8e3b-74d1a7ec68d0",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "NOK",
+        "limit": 3964.52,
+        "status": "active"
+    },
+    "eae50c1f-1862-4ceb-9334-99aca6361b56": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "NOK",
+        "limit": 768.45,
+        "status": "active"
+    },
+    "ddca1dfc-0864-410b-b0be-7a9baf4271b9": {
+        "user_id": "ce8f7591-76bc-4107-a492-05985ca1e81b",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "AUD",
+        "limit": 8577.08,
+        "status": "active"
+    },
+    "a3ed4baa-4e44-47b6-82c8-bfeb78303055": {
+        "user_id": "6357906a-7d1d-420e-9b3b-8a75beef6c19",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "GBP",
+        "limit": 5274.07,
+        "status": "active"
+    },
+    "9a92efce-82da-428b-8d06-bd73054fbbb4": {
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "AUD",
+        "limit": 7094.75,
+        "status": "active"
+    },
+    "a7f9f999-622d-4847-a703-fadeaac267dd": {
+        "user_id": "826c7f2b-007f-45aa-9df9-52c6c40f94f0",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "GBP",
+        "limit": 5993.88,
+        "status": "active"
+    },
+    "426eb954-f3d6-41b8-af18-9685e5324e28": {
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "CAD",
+        "limit": 216.77,
+        "status": "active"
+    },
+    "6dcc23bd-f6ba-454d-8430-a459e3c39df9": {
+        "user_id": "7a7d85cb-e53f-4e74-98aa-e7003ad57429",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "AUD",
+        "limit": 9255.66,
+        "status": "active"
+    },
+    "e67901c9-a333-4a1a-b2eb-b3676ec2765c": {
+        "user_id": "38979004-f97e-46fc-8c5f-ff1f965154ce",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "SEK",
+        "limit": 2506.09,
+        "status": "active"
+    },
+    "95c0fcfc-8178-48d3-b507-b53c64515bc2": {
+        "user_id": "e4965082-3fac-4241-bd3d-aa03fb27a31f",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "SEK",
+        "limit": 152.37,
+        "status": "active"
+    },
+    "052c24f7-57f3-4533-8272-3c4c1fd54a8a": {
+        "user_id": "2ed4c5c7-8612-4b72-9f0f-85c362687375",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "DKK",
+        "limit": 8967.22,
+        "status": "active"
+    },
+    "b7de17aa-f294-4ca0-af23-68425f99ee9b": {
+        "user_id": "23ef218b-7974-4172-83b3-708409807237",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "EUR",
+        "limit": 529.38,
+        "status": "active"
+    },
+    "6b274262-fa74-4aed-bc01-ec03dab517c8": {
+        "user_id": "fc010782-aa69-4008-b76e-d183b51ce1ed",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "AUD",
+        "limit": 9779.99,
+        "status": "active"
+    },
+    "b87908c2-2d1e-4a3a-89ae-af46da339f51": {
+        "user_id": "23ef218b-7974-4172-83b3-708409807237",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "DKK",
+        "limit": 618.92,
+        "status": "active"
+    },
+    "f3bf671d-ec02-4fc7-8060-5ea7f74a5556": {
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4",
+        "provider_id": "d559f268-9f53-467b-9ba2-37d3cba148bb",
+        "currency": "CAD",
+        "limit": 746.93,
+        "status": "blocked"
+    },
+    "77bce19b-d569-4d07-a740-0f8e852d4ef4": {
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "AUD",
+        "limit": 3028.96,
+        "status": "active"
+    },
+    "922d8431-fc52-4462-a57a-3f9317175dff": {
+        "user_id": "117ee2c7-a319-4efd-ab68-936114cce21d",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "USD",
+        "limit": 3527.05,
+        "status": "expired"
+    },
+    "449a6373-5dc4-48d2-a830-9f80a7008312": {
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "SEK",
+        "limit": 866.94,
+        "status": "active"
+    },
+    "a8f872f8-787d-4f6b-aad6-034231bdbbc9": {
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "USD",
+        "limit": 4686.11,
+        "status": "blocked"
+    },
+    "61416ed2-af2f-4bfd-a9dd-f15c297a9453": {
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "AUD",
+        "limit": 8862.98,
+        "status": "active"
+    },
+    "5c492593-8c3e-4e78-9893-81fd93d66647": {
+        "user_id": "e8250a01-533d-4d04-815d-ec9e84338b60",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "AUD",
+        "limit": 3306.1,
+        "status": "active"
+    },
+    "219b4e18-7421-4fd5-a177-eb2ed358d061": {
+        "user_id": "74376e71-e60d-4863-858f-37c36d666174",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "DKK",
+        "limit": 6985.05,
+        "status": "active"
+    },
+    "855b7b34-3fdc-4f5c-9fd5-59bfb0989284": {
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "DKK",
+        "limit": 2789.68,
+        "status": "active"
+    },
+    "bf1ec0d1-6a80-4348-a6a1-29aec1bdf62f": {
+        "user_id": "76d8f75a-4214-42aa-9412-ddc2ea394365",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "NOK",
+        "limit": 482.8,
+        "status": "active"
+    },
+    "127f1fb2-9044-4e19-ab2d-937f0ef6a66d": {
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "DKK",
+        "limit": 634.58,
+        "status": "blocked"
+    },
+    "ced2c35d-f80e-4124-8ab6-eab43f41f1c7": {
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "EUR",
+        "limit": 8251.41,
+        "status": "active"
+    },
+    "d4992429-8090-4d68-a1b9-cfb99eadf106": {
+        "user_id": "f4419fde-1e1f-4a05-b58c-8a96ddb1d670",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "SEK",
+        "limit": 6847.23,
+        "status": "active"
+    },
+    "786eb5cb-09b4-4ed0-8a82-b5ecb029eac1": {
+        "user_id": "879a910e-4d35-4900-9c34-8490eeaf3b6c",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "GBP",
+        "limit": 9843.13,
+        "status": "blocked"
+    },
+    "d0037088-1cc3-4bb3-97aa-bde0ff829008": {
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "GBP",
+        "limit": 3266.41,
+        "status": "active"
+    },
+    "90104940-e459-48b1-badc-b798595322fc": {
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "USD",
+        "limit": 3608.77,
+        "status": "active"
+    },
+    "a7949b93-2f0f-4625-9d58-007861466674": {
+        "user_id": "48a39021-2445-4a4f-b621-5a1a7ccd5e2d",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "NOK",
+        "limit": 259.57,
+        "status": "blocked"
+    },
+    "6c1505e6-0571-4862-a15a-a521b8296027": {
+        "user_id": "c5a58794-a52a-4fd2-8e3b-74d1a7ec68d0",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "GBP",
+        "limit": 4526.64,
+        "status": "active"
+    },
+    "4b92e751-1a0f-4afa-9b65-bb0e23603af2": {
+        "user_id": "76d8f75a-4214-42aa-9412-ddc2ea394365",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "EUR",
+        "limit": 8165.42,
+        "status": "active"
+    },
+    "9061be64-b13b-49cd-8d6c-ce48febc0bd0": {
+        "user_id": "7d9ae5f4-cde3-4c41-8f5d-2e0c87f9e8e7",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "CAD",
+        "limit": 4592.5,
+        "status": "active"
+    },
+    "1fea32fd-d81b-4c12-9422-b84131fd6795": {
+        "user_id": "c5a58794-a52a-4fd2-8e3b-74d1a7ec68d0",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "CAD",
+        "limit": 4434.82,
+        "status": "active"
+    },
+    "d5238018-dc3b-46c3-b49f-ac47a1157276": {
+        "user_id": "acd2dd6b-729f-4e94-a59d-fa313ffb366f",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "CAD",
+        "limit": 7398.82,
+        "status": "active"
+    },
+    "b4b4ea3b-6547-47d3-8879-b30e9430cd9d": {
+        "user_id": "04bc936b-198f-4860-9498-e45bcb515996",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "GBP",
+        "limit": 8679.07,
+        "status": "active"
+    },
+    "91694367-c79d-4625-9d5b-138869337853": {
+        "user_id": "4252cf81-abe5-45e8-9683-f09bd0cf005c",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "CAD",
+        "limit": 4277.86,
+        "status": "active"
+    },
+    "ff9eff82-3424-4169-91a8-5119389042c2": {
+        "user_id": "90aea329-4842-42df-bc97-ead79343ce9c",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "SEK",
+        "limit": 6187.48,
+        "status": "active"
+    },
+    "170c1eb1-2fb7-4a0e-8030-f7e6a6e545f7": {
+        "user_id": "dd78a929-a8ea-43c2-8e8b-620c29989629",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "NOK",
+        "limit": 725.64,
+        "status": "expired"
+    },
+    "668409e5-51c7-4c6a-af86-16f2def5bcb1": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "USD",
+        "limit": 3532.39,
+        "status": "expired"
+    },
+    "4e0493d4-41b8-4f45-85d6-4adba8d5aa33": {
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "GBP",
+        "limit": 5926.9,
+        "status": "revoked"
+    },
+    "d36303a4-33b8-4cb9-8451-ab3db8aa951c": {
+        "user_id": "6122271f-41ba-47dd-bc67-a02ba5efec38",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "DKK",
+        "limit": 6977.69,
+        "status": "revoked"
+    },
+    "83a9fd09-be22-4f72-80c1-b0dedaf78203": {
+        "user_id": "dafc0595-fee2-4791-844e-3734e20395a0",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "AUD",
+        "limit": 2218.94,
+        "status": "active"
+    },
+    "d769b251-64f3-4bcd-b61e-cf548f30a2d5": {
+        "user_id": "df501ffe-1115-4877-ad72-c4b9cc9dde22",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "CAD",
+        "limit": 5630.72,
+        "status": "revoked"
+    },
+    "afc61bb9-1870-4b60-9407-aa4349145ef3": {
+        "user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d",
+        "provider_id": "d559f268-9f53-467b-9ba2-37d3cba148bb",
+        "currency": "AUD",
+        "limit": 2060.39,
+        "status": "active"
+    },
+    "58822daf-9734-4580-b88c-3f57570c7a49": {
+        "user_id": "4db06005-a874-4bf7-aa9e-b466109bfa3b",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "SEK",
+        "limit": 6324.41,
+        "status": "revoked"
+    },
+    "952eeba6-b99c-46e1-a138-4f07c971c39c": {
+        "user_id": "a614589e-8ad2-4184-b5bd-d251a549b67e",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "GBP",
+        "limit": 6668.94,
+        "status": "blocked"
+    },
+    "79a6fc7b-ea39-42aa-9eb2-d611986a1e9e": {
+        "user_id": "26bce218-cda8-49eb-b1ef-0f9fb9da604e",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "USD",
+        "limit": 7505.6,
+        "status": "active"
+    },
+    "fdf4b3bd-eb24-464c-80be-86bdb1d4a6e4": {
+        "user_id": "6122271f-41ba-47dd-bc67-a02ba5efec38",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "NOK",
+        "limit": 6517.6,
+        "status": "active"
+    },
+    "fe5389a4-06d8-401f-a065-63679bb8982a": {
+        "user_id": "633c2e6f-6358-4a7b-976a-cff829edaea8",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "SEK",
+        "limit": 6556.86,
+        "status": "active"
+    },
+    "ea1c1343-ed35-4bf3-b71e-7031788b6bc0": {
+        "user_id": "3f5d5090-61c0-402b-bfef-4eee3138084d",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "USD",
+        "limit": 3798.78,
+        "status": "active"
+    },
+    "8a853eb7-686a-4999-aee5-2eaf5b768185": {
+        "user_id": "d582846e-44a7-467a-9a5e-0e33f7a6fe6f",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "EUR",
+        "limit": 9346.4,
+        "status": "active"
+    },
+    "83514f07-ac29-40ee-9fa3-c0ee0c07a739": {
+        "user_id": "e3dabc8a-4a70-4bba-af9c-ba15cc9503ff",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "EUR",
+        "limit": 768.7,
+        "status": "revoked"
+    },
+    "25998ce4-fc7d-4216-a1ce-63a82e8d7519": {
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "CAD",
+        "limit": 8022.57,
+        "status": "active"
+    },
+    "7c7eac9e-8fa5-49f3-9623-3c7241df9b40": {
+        "user_id": "a3c6d2d4-9676-4bd3-9c98-56f0c04c28e8",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "DKK",
+        "limit": 4108.09,
+        "status": "active"
+    },
+    "d031f618-c1a2-4aa2-afa1-5fdc78c6c4e5": {
+        "user_id": "e8ee4682-590b-4c7f-98c9-819fecfc5a77",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "CAD",
+        "limit": 4431.65,
+        "status": "expired"
+    },
+    "dbdd45e1-4818-403e-805e-a36754945d43": {
+        "user_id": "57948ff9-ac5f-4c6a-ab9e-722692d9e8ad",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "GBP",
+        "limit": 8282.72,
+        "status": "active"
+    },
+    "f54aabcc-b380-4a4a-909e-41523905bb6c": {
+        "user_id": "c4defd3c-4b97-4373-b531-0103cb565f07",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "SEK",
+        "limit": 7268.5,
+        "status": "active"
+    },
+    "75528bca-7358-412e-981f-de0ade44de3d": {
+        "user_id": "1f5e50be-7846-4f54-976b-51a2d4fa92a7",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "EUR",
+        "limit": 1412.0,
+        "status": "active"
+    },
+    "a11adcd3-6633-4c01-a110-2632444e9ba0": {
+        "user_id": "a17f9a3a-f1a0-47aa-89bb-4d95369643f6",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "AUD",
+        "limit": 7948.02,
+        "status": "active"
+    },
+    "8a3ff146-d16a-470b-80f0-5219c0538aae": {
+        "user_id": "3799f4e6-659e-4abe-b5fb-8513fb7e34fe",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "AUD",
+        "limit": 2288.6,
+        "status": "expired"
+    },
+    "4aeacf7e-063e-4bc4-8dee-696a5034cc4e": {
+        "user_id": "3ba37ced-9063-4447-bdbe-f650b5981f88",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "AUD",
+        "limit": 8727.96,
+        "status": "active"
+    },
+    "9ec4daad-1e5d-4ce5-972e-1c105087426e": {
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "GBP",
+        "limit": 7105.96,
+        "status": "active"
+    },
+    "5f436fe5-a7b5-42d3-94d7-6c8c81f66333": {
+        "user_id": "48a39021-2445-4a4f-b621-5a1a7ccd5e2d",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "USD",
+        "limit": 5189.17,
+        "status": "active"
+    },
+    "02561ede-22a0-48e4-9ca5-52935510fd35": {
+        "user_id": "c07118e4-18c3-4e84-8197-3cd9064e325e",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "AUD",
+        "limit": 9486.44,
+        "status": "expired"
+    },
+    "2cf8e468-f58d-4dff-ad4a-89b2d72b24aa": {
+        "user_id": "f83b92b2-f4e7-4240-b010-4a3a5ff3a801",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "EUR",
+        "limit": 7608.06,
+        "status": "active"
+    },
+    "d5fd351f-cc3b-4f6d-a894-bc0e9da16807": {
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "AUD",
+        "limit": 8000.81,
+        "status": "active"
+    },
+    "31f8d65c-0494-41e8-aad1-fb72e375338c": {
+        "user_id": "e8a5294d-9311-4987-86b5-04ac331139d1",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "AUD",
+        "limit": 5807.39,
+        "status": "active"
+    },
+    "8d8ba3f6-0cfb-4aed-a3bd-45412a9b0277": {
+        "user_id": "3799f4e6-659e-4abe-b5fb-8513fb7e34fe",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "USD",
+        "limit": 7239.77,
+        "status": "active"
+    },
+    "7ef104ef-8437-42d1-ad62-21842efe4c6d": {
+        "user_id": "b0406cf2-df55-4297-80b2-80b3fae13b61",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "USD",
+        "limit": 4423.99,
+        "status": "active"
+    },
+    "9729d4f5-268e-4da8-b679-76744bd85a6b": {
+        "user_id": "df2dff92-5ad8-4845-8448-fef7caada6cf",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "USD",
+        "limit": 9059.62,
+        "status": "expired"
+    },
+    "937034e0-ffe4-42e9-a53e-0767c35632f2": {
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "DKK",
+        "limit": 3231.04,
+        "status": "active"
+    },
+    "67798997-e07e-451f-af72-a2ac21162b39": {
+        "user_id": "d511bbe5-9e75-4246-9ac2-50f8e82ae113",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "EUR",
+        "limit": 573.27,
+        "status": "active"
+    },
+    "efd9bc86-5383-4b74-9a58-5736f910ff90": {
+        "user_id": "3ffe6ed4-c487-424b-9896-1ab8e36ec388",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "EUR",
+        "limit": 1639.49,
+        "status": "active"
+    },
+    "3624bf6a-fe92-442a-b0dd-fd8f8bec3dc5": {
+        "user_id": "4215e3c7-a84d-484f-87c6-92e355ffdb81",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "DKK",
+        "limit": 4728.77,
+        "status": "active"
+    },
+    "1b4e435a-53e5-443b-a1fd-aa6f4ad7c4dd": {
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "GBP",
+        "limit": 8462.72,
+        "status": "active"
+    },
+    "1181009c-9f5b-4f6b-9c25-6c706691935d": {
+        "user_id": "d1541b40-787a-42df-9178-424cf2127a7e",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "USD",
+        "limit": 2291.76,
+        "status": "active"
+    },
+    "145fa2de-b6a7-41e6-8b89-730169e18f64": {
+        "user_id": "a59c3ec3-b57a-4be1-b726-2eb3e5675948",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "DKK",
+        "limit": 5660.24,
+        "status": "active"
+    },
+    "0644f958-1a02-4e7e-a959-bee59284f8a5": {
+        "user_id": "77d4c53a-b091-49e9-9b28-5c6b2f1f8593",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "SEK",
+        "limit": 6840.52,
+        "status": "blocked"
+    },
+    "9159da4b-3cc5-4d76-9d0e-64079a34ad64": {
+        "user_id": "d9350b7c-ada1-4513-8857-0e47a32e12ea",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "NOK",
+        "limit": 9611.48,
+        "status": "blocked"
+    },
+    "c3e82ec8-d603-4042-962c-44a0f0bc48b1": {
+        "user_id": "fc2b34e3-916c-4c9b-bd0e-b3a96e70befb",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "USD",
+        "limit": 9900.44,
+        "status": "active"
+    },
+    "2aa26edb-223c-4f96-9f34-1a111f430bcc": {
+        "user_id": "d485e608-2057-4203-9717-cbce304ab718",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "NOK",
+        "limit": 6617.2,
+        "status": "revoked"
+    },
+    "2cf8d637-2775-45be-9ed9-c13fe3bcd9e6": {
+        "user_id": "76d8f75a-4214-42aa-9412-ddc2ea394365",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "GBP",
+        "limit": 2597.83,
+        "status": "active"
+    },
+    "c703207a-8706-4b2b-bc87-f7471970aaac": {
+        "user_id": "fc010782-aa69-4008-b76e-d183b51ce1ed",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "GBP",
+        "limit": 5479.61,
+        "status": "active"
+    },
+    "a575234a-b54e-45e9-8b07-6b015cef6737": {
+        "user_id": "81385637-400c-4905-8753-e4c14ae7aadc",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "NOK",
+        "limit": 1530.29,
+        "status": "active"
+    },
+    "27e47ffc-fe12-4678-bec8-25490f7028f1": {
+        "user_id": "b8ae9ae2-191b-4b47-bad3-81c5f3533296",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "USD",
+        "limit": 7016.93,
+        "status": "expired"
+    },
+    "1ee59e79-7293-49ef-a473-b64f378db003": {
+        "user_id": "1f5e50be-7846-4f54-976b-51a2d4fa92a7",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "USD",
+        "limit": 8285.49,
+        "status": "active"
+    },
+    "fc8d99b0-dc89-4129-abfb-f7dc399681f5": {
+        "user_id": "81385637-400c-4905-8753-e4c14ae7aadc",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "EUR",
+        "limit": 2892.11,
+        "status": "active"
+    },
+    "0bfdf5e7-813c-4fa3-98d1-4517c7742106": {
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "SEK",
+        "limit": 8160.25,
+        "status": "blocked"
+    },
+    "83cbca34-03b4-47c1-b922-c27a92b8a07f": {
+        "user_id": "75be1cae-0abd-49ea-99f7-1132884ab3a2",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "CAD",
+        "limit": 3897.28,
+        "status": "active"
+    },
+    "d7ae4e8f-a22e-4182-adf0-f339bea5250f": {
+        "user_id": "c4defd3c-4b97-4373-b531-0103cb565f07",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "SEK",
+        "limit": 8051.83,
+        "status": "active"
+    },
+    "2b39f849-3385-46dd-950c-8f12aa990428": {
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "NOK",
+        "limit": 6836.69,
+        "status": "active"
+    },
+    "24927401-a0c4-4039-92e2-4bf3c001556a": {
+        "user_id": "1892294b-038e-472d-87f0-b54fd28d30b9",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "AUD",
+        "limit": 8115.14,
+        "status": "expired"
+    },
+    "31205837-2f94-4e27-b09c-509290ffe951": {
+        "user_id": "7a7d85cb-e53f-4e74-98aa-e7003ad57429",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "NOK",
+        "limit": 6045.06,
+        "status": "active"
+    },
+    "4e9b9bca-24be-4e22-8f73-61a8e864792d": {
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "USD",
+        "limit": 2552.72,
+        "status": "active"
+    },
+    "71f03f16-ed29-4c6d-aa2a-67800948f770": {
+        "user_id": "b32f6678-ca6c-443f-a094-5c19b7df1c9b",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "GBP",
+        "limit": 4352.94,
+        "status": "blocked"
+    },
+    "03532db1-2661-48c1-8bdd-109089c070a5": {
+        "user_id": "7421025a-eefc-4c61-bdce-a7a70456b97e",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "NOK",
+        "limit": 7051.29,
+        "status": "active"
+    },
+    "bafa9893-c5a9-4a8c-8a7b-88655b003b81": {
+        "user_id": "a2a5c078-9362-4102-a219-52249f90dd37",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "USD",
+        "limit": 2914.65,
+        "status": "revoked"
+    },
+    "73f5cc1d-5b3e-403e-886b-8a6da107ff65": {
+        "user_id": "3790e664-ebf3-4f42-8ce8-970d5bc0c83e",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "USD",
+        "limit": 6240.54,
+        "status": "active"
+    },
+    "426e3177-1578-49cb-a2b0-dbb34ff1c972": {
+        "user_id": "deb22af8-b9e0-489e-9905-505a681d12d6",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "AUD",
+        "limit": 8228.56,
+        "status": "active"
+    },
+    "3f39b734-0358-4596-a0ef-883e54eee8ac": {
+        "user_id": "4ccd3f80-ae92-431d-b791-c65d9105caa2",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "SEK",
+        "limit": 2298.27,
+        "status": "active"
+    },
+    "ff8f714c-e4c8-4e25-b280-a4ce094af44c": {
+        "user_id": "8cd3a682-2a23-446b-87cf-2311281336e2",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "GBP",
+        "limit": 4517.62,
+        "status": "active"
+    },
+    "6c693544-4147-4ab6-8715-721e4a2c33c3": {
+        "user_id": "6756abfd-8d5d-4ad4-b7ee-2d56829e1dc0",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "EUR",
+        "limit": 3387.96,
+        "status": "active"
+    },
+    "55ae3aaf-0c5d-425c-9336-069a2637250f": {
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "SEK",
+        "limit": 2193.44,
+        "status": "active"
+    },
+    "e5e07235-f9a6-47d9-b680-b1e2ea96f27f": {
+        "user_id": "55b239fd-7ae2-4601-833a-b40ba2e46075",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "DKK",
+        "limit": 6189.02,
+        "status": "active"
+    },
+    "cee29ffb-d042-40e7-b525-7e9c6bd9b58a": {
+        "user_id": "65960de0-fa7e-4e94-a176-2bd92972d143",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "SEK",
+        "limit": 9427.85,
+        "status": "active"
+    },
+    "455abccc-4c88-46bd-99d7-0d297c0fcb3e": {
+        "user_id": "33902d5d-04e2-45e0-9ed7-c1c7f0a985a6",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "AUD",
+        "limit": 1284.61,
+        "status": "blocked"
+    },
+    "691a7687-0b4e-4153-acbc-69c4bf2cb88e": {
+        "user_id": "584ff1c5-b542-4902-a541-13ab75b948a3",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "NOK",
+        "limit": 2669.36,
+        "status": "active"
+    },
+    "3ae0c185-2962-4f7e-b6c9-2bc793a6fe1c": {
+        "user_id": "7d9ae5f4-cde3-4c41-8f5d-2e0c87f9e8e7",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "AUD",
+        "limit": 1128.41,
+        "status": "expired"
+    },
+    "c779afaa-a159-487d-b8ae-4ca137da55cc": {
+        "user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "AUD",
+        "limit": 7474.39,
+        "status": "blocked"
+    },
+    "2d7944fe-3c77-40f2-b4f3-9df84fb6d2f6": {
+        "user_id": "240b1bea-43af-4460-a4a0-7c0ee5234d75",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "EUR",
+        "limit": 3725.65,
+        "status": "active"
+    },
+    "32b434fc-4d4e-4a69-a7b8-f775236e0a57": {
+        "user_id": "4ccd3f80-ae92-431d-b791-c65d9105caa2",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "SEK",
+        "limit": 5545.86,
+        "status": "active"
+    },
+    "3716041b-0b52-4de7-8a78-ec2787d307d1": {
+        "user_id": "81385637-400c-4905-8753-e4c14ae7aadc",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "AUD",
+        "limit": 592.93,
+        "status": "active"
+    },
+    "92d2e00d-02bc-4f37-bab7-6014eca8a553": {
+        "user_id": "845c42db-a9eb-4bf2-925c-9e479ce4f6cf",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "AUD",
+        "limit": 4709.76,
+        "status": "active"
+    },
+    "1a369448-0dee-410c-b255-66c147877b92": {
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "USD",
+        "limit": 404.47,
+        "status": "blocked"
+    },
+    "050bf033-d7f4-493d-82a3-7cf85ecd24d7": {
+        "user_id": "050081f1-abd1-410d-b593-36a66d95c19c",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "CAD",
+        "limit": 9167.91,
+        "status": "blocked"
+    },
+    "0a2691fa-d8bd-406b-a24d-c56127c16f68": {
+        "user_id": "3468dacf-deb9-48eb-bea9-3b9fbfad7a13",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "AUD",
+        "limit": 6228.32,
+        "status": "active"
+    },
+    "82b1b026-9c4b-48b2-af91-9ba7d87c74cb": {
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "GBP",
+        "limit": 2354.04,
+        "status": "active"
+    },
+    "ef59748e-2d84-4785-8d97-0a94f6a03a00": {
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "GBP",
+        "limit": 9777.26,
+        "status": "active"
+    },
+    "41d3de7f-85c0-4af7-b17c-a004b85c56f0": {
+        "user_id": "eed51c68-4bca-4af4-88c8-df5990b2bf0d",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "SEK",
+        "limit": 2168.66,
+        "status": "active"
+    },
+    "7b921b66-b9c3-4bf4-951e-a0a1d6ddbdfa": {
+        "user_id": "8b5fea63-6f8f-4cf3-8f05-8221ee053bd0",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "SEK",
+        "limit": 1837.96,
+        "status": "active"
+    },
+    "60051fda-12a6-451d-8a08-1b527e534af7": {
+        "user_id": "d72400c8-ff17-4eaf-a14f-b7e637772730",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "CAD",
+        "limit": 9380.07,
+        "status": "active"
+    },
+    "954d7cbc-18a0-4c76-b47c-84e32eb5cd8b": {
+        "user_id": "23ef218b-7974-4172-83b3-708409807237",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "NOK",
+        "limit": 4294.59,
+        "status": "blocked"
+    },
+    "a3550aec-d44a-4881-b2da-cf06426491b4": {
+        "user_id": "38dce302-14b8-473b-8f80-d8202d11eab6",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "GBP",
+        "limit": 7182.09,
+        "status": "active"
+    },
+    "a15c10c3-04c2-4ea3-9722-3a28fe828ce4": {
+        "user_id": "6a2d085b-8cdc-4c21-9bea-0642fa3e2312",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "AUD",
+        "limit": 7152.73,
+        "status": "blocked"
+    },
+    "81c6acc3-78ac-4087-8089-487bed50654d": {
+        "user_id": "7d9ae5f4-cde3-4c41-8f5d-2e0c87f9e8e7",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "NOK",
+        "limit": 1543.11,
+        "status": "active"
+    },
+    "73efa618-2468-44eb-8a87-8188bce4553e": {
+        "user_id": "37b085e9-82f3-4af9-8fb7-2ef4705512a7",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "GBP",
+        "limit": 9892.28,
+        "status": "blocked"
+    },
+    "13f284df-98ba-4c0e-bb51-9cf8bfed0abe": {
+        "user_id": "36c4d01a-e5f3-4ffe-bca1-9bf4c640973d",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "GBP",
+        "limit": 4394.56,
+        "status": "blocked"
+    },
+    "ad6b691e-5daf-412d-a443-a74aaa26e2c9": {
+        "user_id": "ac56be74-d20d-41b6-9629-79f0c900b911",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "CAD",
+        "limit": 3462.41,
+        "status": "expired"
+    },
+    "aff5d50c-eb04-4509-a8bd-73c23ad2dcf3": {
+        "user_id": "b70c115f-32f4-4f9c-904f-cfc7e0954351",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "SEK",
+        "limit": 9547.14,
+        "status": "active"
+    },
+    "3160ad4b-8057-4a8d-ac2a-79ea30d83a7c": {
+        "user_id": "d582846e-44a7-467a-9a5e-0e33f7a6fe6f",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "CAD",
+        "limit": 9270.8,
+        "status": "revoked"
+    },
+    "da0affef-2f01-429c-bb99-30055608e014": {
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "GBP",
+        "limit": 8997.71,
+        "status": "active"
+    },
+    "b25f726a-7840-4765-bd5a-ffd6a8801ff4": {
+        "user_id": "ac56be74-d20d-41b6-9629-79f0c900b911",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "AUD",
+        "limit": 3586.37,
+        "status": "blocked"
+    },
+    "025bc085-4ac6-42f7-897f-695110555682": {
+        "user_id": "48a39021-2445-4a4f-b621-5a1a7ccd5e2d",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "USD",
+        "limit": 1671.01,
+        "status": "active"
+    },
+    "abd73381-27f0-4b3e-bb15-75b1a4a469e4": {
+        "user_id": "f408abb2-8e31-4af9-a494-021d43930ce4",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "CAD",
+        "limit": 1797.59,
+        "status": "blocked"
+    },
+    "9023f31c-a821-4364-adf7-aea4b915a897": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "DKK",
+        "limit": 9869.95,
+        "status": "active"
+    },
+    "5cd2dc87-75fb-465e-af1b-1f1d579a59e7": {
+        "user_id": "20ba9bbe-17ea-4d2c-883e-c2d8d4edb2f2",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "DKK",
+        "limit": 5341.43,
+        "status": "expired"
+    },
+    "93f8fbe0-69f2-4891-b1f7-2f24d9639a86": {
+        "user_id": "e4965082-3fac-4241-bd3d-aa03fb27a31f",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "GBP",
+        "limit": 6867.1,
+        "status": "active"
+    },
+    "3e11ebe4-83f0-433a-a3ca-a53de9c3ca4b": {
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "NOK",
+        "limit": 9952.13,
+        "status": "active"
+    },
+    "186d1886-3e32-46c2-a448-84cfdb42a9cb": {
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "DKK",
+        "limit": 8564.06,
+        "status": "blocked"
+    },
+    "519855f9-ee96-417f-a30d-2e335684f3ac": {
+        "user_id": "6863cb2c-7fb3-41ee-8b32-24aa7cf55f79",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "CAD",
+        "limit": 299.93,
+        "status": "active"
+    },
+    "1cdd96e5-b821-494a-82b8-c6a39fcea85b": {
+        "user_id": "64a7bbc8-8e4a-4593-aae4-168cbc148fa6",
+        "provider_id": "d559f268-9f53-467b-9ba2-37d3cba148bb",
+        "currency": "NOK",
+        "limit": 682.63,
+        "status": "expired"
+    },
+    "512a039d-1e65-48a7-b5df-4b3c067bbaf8": {
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "NOK",
+        "limit": 6088.32,
+        "status": "active"
+    },
+    "eeda6bf5-0fca-42d6-a931-2399432321e1": {
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "NOK",
+        "limit": 6247.44,
+        "status": "active"
+    },
+    "b5ec538a-3d49-4eb6-84a1-2f0fab846135": {
+        "user_id": "48a39021-2445-4a4f-b621-5a1a7ccd5e2d",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "EUR",
+        "limit": 2834.55,
+        "status": "active"
+    },
+    "b751af2e-ed95-4d54-a7b4-3e3c266c7980": {
+        "user_id": "74376e71-e60d-4863-858f-37c36d666174",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "NOK",
+        "limit": 9766.16,
+        "status": "expired"
+    },
+    "189ddb7a-ffd4-4e17-881c-d7eb6246ac7e": {
+        "user_id": "7a7d85cb-e53f-4e74-98aa-e7003ad57429",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "USD",
+        "limit": 9121.72,
+        "status": "blocked"
+    },
+    "0e5129b6-99be-4180-9c15-7d1944a0deb0": {
+        "user_id": "8202aad3-0725-41a2-b38d-85d2da03a912",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "CAD",
+        "limit": 7202.48,
+        "status": "active"
+    },
+    "d40abc3a-07e2-4826-9016-127eb5cd5fd4": {
+        "user_id": "2deedea3-7611-4959-b165-3f0ae065b567",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "EUR",
+        "limit": 4503.6,
+        "status": "active"
+    },
+    "dfb3d02d-46d4-40ef-97fc-a823034abf76": {
+        "user_id": "d460cf71-3698-43dd-8098-6a12bc482a81",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "EUR",
+        "limit": 2858.11,
+        "status": "active"
+    },
+    "b281d999-db2a-43a8-b36c-b08c26d0247a": {
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "GBP",
+        "limit": 2916.76,
+        "status": "active"
+    },
+    "bb018bd8-ed43-4205-bd19-f806fb6a4d52": {
+        "user_id": "482d4e4e-d93d-4f4e-bc19-bac492ef49b0",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "NOK",
+        "limit": 5879.42,
+        "status": "active"
+    },
+    "5b82dbb3-1163-490d-a361-800c5a38dff7": {
+        "user_id": "e14a6784-2f84-417b-8360-05b52e585808",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "SEK",
+        "limit": 6685.89,
+        "status": "active"
+    },
+    "7a3df042-f81a-4c22-be10-7bc678624bf3": {
+        "user_id": "3468dacf-deb9-48eb-bea9-3b9fbfad7a13",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "SEK",
+        "limit": 2358.31,
+        "status": "active"
+    },
+    "cb085956-37ee-4051-8943-7d3529a42eb3": {
+        "user_id": "8065ddef-8722-4a65-9b34-b00177daa82f",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "AUD",
+        "limit": 5172.38,
+        "status": "blocked"
+    },
+    "b90f068f-21ca-4f44-960a-efe7270dc197": {
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "SEK",
+        "limit": 815.08,
+        "status": "expired"
+    },
+    "9d5bc594-3b60-4cb6-90dc-39aeb3d88d9c": {
+        "user_id": "c528214a-f617-4ef3-bea5-7f6da9d91ba9",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "USD",
+        "limit": 8458.16,
+        "status": "active"
+    },
+    "1c04e293-2240-4602-a873-4fcd0fb97e7d": {
+        "user_id": "e8a5294d-9311-4987-86b5-04ac331139d1",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "AUD",
+        "limit": 5617.82,
+        "status": "active"
+    },
+    "31ba0b0d-54b2-4d43-8abe-fa62e930bcd4": {
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "SEK",
+        "limit": 4878.27,
+        "status": "active"
+    },
+    "b9746b1b-d87f-4c9c-bd9c-fd9eb92d328c": {
+        "user_id": "8065ddef-8722-4a65-9b34-b00177daa82f",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "NOK",
+        "limit": 7528.42,
+        "status": "active"
+    },
+    "d33438e5-7edc-467f-8d0a-62f10c148abe": {
+        "user_id": "f19040e5-9e7b-4fd7-aa84-3154b9fe982d",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "DKK",
+        "limit": 2732.32,
+        "status": "active"
+    },
+    "71d1ba0e-0488-4771-a388-61432fbb1a20": {
+        "user_id": "e8ee4682-590b-4c7f-98c9-819fecfc5a77",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "SEK",
+        "limit": 520.28,
+        "status": "expired"
+    },
+    "5d8d7eb2-b473-45e0-82a8-16ae14773a02": {
+        "user_id": "74f833b4-da79-4026-a228-1143580a9342",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "AUD",
+        "limit": 7751.87,
+        "status": "active"
+    },
+    "548484a0-ae19-40da-80e1-d53ff034c4bb": {
+        "user_id": "d77f1707-8ef4-4615-8bf3-f3c37a1615a2",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "GBP",
+        "limit": 5200.79,
+        "status": "active"
+    },
+    "64a2624c-5cff-474a-beb4-cfb9c23851ac": {
+        "user_id": "8d8c7239-23e9-40fc-8731-a16cebdb3c08",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "EUR",
+        "limit": 8729.43,
+        "status": "active"
+    },
+    "4e4daa0a-948e-47ac-859d-d4a31a1bd02d": {
+        "user_id": "1cc8d743-2134-4235-96e2-f633661eadc7",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "DKK",
+        "limit": 1338.22,
+        "status": "active"
+    },
+    "92d76bb3-c278-4c14-b88c-caccdde89692": {
+        "user_id": "7d9ae5f4-cde3-4c41-8f5d-2e0c87f9e8e7",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "SEK",
+        "limit": 5297.64,
+        "status": "expired"
+    },
+    "a95a48fe-c14c-487f-97e6-396e6ecfa69a": {
+        "user_id": "8b5fea63-6f8f-4cf3-8f05-8221ee053bd0",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "USD",
+        "limit": 1735.74,
+        "status": "active"
+    },
+    "fd74f186-7f18-48ca-90de-6535d6c8ca6f": {
+        "user_id": "90aea329-4842-42df-bc97-ead79343ce9c",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "EUR",
+        "limit": 6331.83,
+        "status": "active"
+    },
+    "6d4d85d0-688d-44e9-90a4-eea0963cc782": {
+        "user_id": "a614589e-8ad2-4184-b5bd-d251a549b67e",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "USD",
+        "limit": 1712.14,
+        "status": "active"
+    },
+    "1893d62d-f399-4e35-9cb2-d32af59989eb": {
+        "user_id": "6122271f-41ba-47dd-bc67-a02ba5efec38",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "EUR",
+        "limit": 4669.46,
+        "status": "active"
+    },
+    "3e13969c-cbb9-40de-a1a1-76e7e1fc1bd2": {
+        "user_id": "4103dd5e-7224-4f6c-bdc1-db4d89b292a2",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "SEK",
+        "limit": 1714.61,
+        "status": "expired"
+    },
+    "f423217c-822f-4cda-9357-8c6075d0edb4": {
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "DKK",
+        "limit": 8636.1,
+        "status": "revoked"
+    },
+    "81c2f5c2-447d-4abc-9003-e4d5246c455f": {
+        "user_id": "563754b0-77c9-4c54-817a-c0b971dead27",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "GBP",
+        "limit": 1939.34,
+        "status": "active"
+    },
+    "0fe34530-6bd5-444e-8a77-0edee1a9c408": {
+        "user_id": "df501ffe-1115-4877-ad72-c4b9cc9dde22",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "GBP",
+        "limit": 3274.86,
+        "status": "active"
+    },
+    "a42c7dd3-835e-4ab4-9417-589e2bfbf1de": {
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "CAD",
+        "limit": 8181.22,
+        "status": "active"
+    },
+    "4ab6d928-45d9-46a2-b89f-6db3ef72e791": {
+        "user_id": "7b8db11f-2662-477f-b29a-2778d7f81595",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "SEK",
+        "limit": 3855.16,
+        "status": "expired"
+    },
+    "d6053b62-f960-41b0-a541-1192ed2dd46d": {
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "CAD",
+        "limit": 7940.03,
+        "status": "active"
+    },
+    "7039f265-214e-44b5-b3f4-392e6a010ffd": {
+        "user_id": "d511bbe5-9e75-4246-9ac2-50f8e82ae113",
+        "provider_id": "d559f268-9f53-467b-9ba2-37d3cba148bb",
+        "currency": "NOK",
+        "limit": 9873.44,
+        "status": "active"
+    },
+    "f65e795b-23e6-4c20-97f4-46dea0aa2222": {
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "SEK",
+        "limit": 3758.37,
+        "status": "active"
+    },
+    "3fe3c933-39eb-4276-bbf4-7ecfa690cae4": {
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "CAD",
+        "limit": 2657.56,
+        "status": "active"
+    },
+    "935077ab-2135-4d31-af28-d05c095db1dc": {
+        "user_id": "23ef218b-7974-4172-83b3-708409807237",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "DKK",
+        "limit": 2785.38,
+        "status": "active"
+    },
+    "62894f83-d88c-4cb7-b4bb-f75abe76b34b": {
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "NOK",
+        "limit": 6412.28,
+        "status": "expired"
+    },
+    "04995684-2e1c-4176-ad06-16166b7a50b0": {
+        "user_id": "0c38eecc-0adb-48a3-b42a-f3d84d4d2f88",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "AUD",
+        "limit": 1395.73,
+        "status": "active"
+    },
+    "28e469ad-fd33-41ac-950a-90903c793a14": {
+        "user_id": "38979004-f97e-46fc-8c5f-ff1f965154ce",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "EUR",
+        "limit": 1269.34,
+        "status": "active"
+    },
+    "63cc72b5-1e01-4e15-90ef-c70842b88007": {
+        "user_id": "56ec427e-5dd4-4b0d-8ade-2855f98eb063",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "NOK",
+        "limit": 3278.31,
+        "status": "active"
+    },
+    "ee1e9a59-35c9-46f2-a322-12d52f4186b2": {
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "SEK",
+        "limit": 8713.19,
+        "status": "active"
+    },
+    "1c60ec69-2a14-4ceb-a929-9e77978abe01": {
+        "user_id": "6357906a-7d1d-420e-9b3b-8a75beef6c19",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "AUD",
+        "limit": 3960.61,
+        "status": "active"
+    },
+    "aa5fe8b2-e0c6-4b4a-978a-5595ce4af174": {
+        "user_id": "db2db34e-a192-4a70-aebd-31c9ba3b50c3",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "DKK",
+        "limit": 9857.82,
+        "status": "active"
+    },
+    "eae001f2-c694-4db9-a5c6-990cd7da452b": {
+        "user_id": "b8ae9ae2-191b-4b47-bad3-81c5f3533296",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "CAD",
+        "limit": 1299.67,
+        "status": "active"
+    },
+    "ec88f775-65c4-4371-8426-7b9de58e1cd6": {
+        "user_id": "ac56be74-d20d-41b6-9629-79f0c900b911",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "SEK",
+        "limit": 7458.94,
+        "status": "active"
+    },
+    "8c394e38-5355-4672-80f1-49a7225b72a2": {
+        "user_id": "d9350b7c-ada1-4513-8857-0e47a32e12ea",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "GBP",
+        "limit": 883.22,
+        "status": "active"
+    },
+    "2f97285a-da74-4f3e-bcfa-c6ad4613e6d5": {
+        "user_id": "3ffe6ed4-c487-424b-9896-1ab8e36ec388",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "GBP",
+        "limit": 4162.7,
+        "status": "active"
+    },
+    "1445afe1-53bf-4cc5-9b5b-ac2fcb7c9397": {
+        "user_id": "bcfa7940-6572-4c9b-8517-6d83075f744f",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "SEK",
+        "limit": 4845.49,
+        "status": "expired"
+    },
+    "c72abeae-3cff-4674-942b-1a14ebc36dac": {
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "EUR",
+        "limit": 8033.85,
+        "status": "blocked"
+    },
+    "ae077712-deb3-4700-b548-86eadb8ef0c1": {
+        "user_id": "d582846e-44a7-467a-9a5e-0e33f7a6fe6f",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "DKK",
+        "limit": 9318.0,
+        "status": "active"
+    },
+    "2d35c74b-5186-4ee3-87a2-da2b4ccff30e": {
+        "user_id": "38dce302-14b8-473b-8f80-d8202d11eab6",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "SEK",
+        "limit": 3719.04,
+        "status": "expired"
+    },
+    "5acc95e9-c383-4270-b060-90f2c07d28ad": {
+        "user_id": "57948ff9-ac5f-4c6a-ab9e-722692d9e8ad",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "AUD",
+        "limit": 5781.7,
+        "status": "active"
+    },
+    "6864a0ad-5f1f-4fd7-b743-de3530078fab": {
+        "user_id": "04bc936b-198f-4860-9498-e45bcb515996",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "GBP",
+        "limit": 7861.6,
+        "status": "active"
+    },
+    "87290bce-b040-4aa6-aa66-06308324b415": {
+        "user_id": "8f52a2cc-0353-415a-bab7-0ba026442a33",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "USD",
+        "limit": 9871.42,
+        "status": "active"
+    },
+    "b229da26-5e41-4891-b984-073ed87cf6d6": {
+        "user_id": "fff86559-87e2-413e-91d9-547e0f36a44f",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "AUD",
+        "limit": 5545.49,
+        "status": "blocked"
+    },
+    "983cb76f-a1f4-4aed-9441-21eda4854e46": {
+        "user_id": "74f833b4-da79-4026-a228-1143580a9342",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "USD",
+        "limit": 1596.77,
+        "status": "active"
+    },
+    "7cf6ad89-df0a-45f1-8e99-d6fc7bc3abdd": {
+        "user_id": "36c4d01a-e5f3-4ffe-bca1-9bf4c640973d",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "GBP",
+        "limit": 9951.74,
+        "status": "active"
+    },
+    "9e261588-b88d-47f1-bf8e-263402296136": {
+        "user_id": "238fd69a-63fe-47fe-854a-3b94739182ec",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "DKK",
+        "limit": 4004.28,
+        "status": "active"
+    },
+    "aa04c874-c210-4bd5-8e25-d72436c0ffc0": {
+        "user_id": "e4965082-3fac-4241-bd3d-aa03fb27a31f",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "CAD",
+        "limit": 6202.33,
+        "status": "active"
+    },
+    "fdbb91b3-85f8-4fae-ab35-483b39681609": {
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "SEK",
+        "limit": 7967.29,
+        "status": "blocked"
+    },
+    "b34a0092-1690-4ed2-96d0-247f15f5da95": {
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "CAD",
+        "limit": 5028.62,
+        "status": "active"
+    },
+    "1914faa1-145c-4859-8c6e-2ae1aa105f46": {
+        "user_id": "d511bbe5-9e75-4246-9ac2-50f8e82ae113",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "CAD",
+        "limit": 8045.61,
+        "status": "active"
+    },
+    "37bd08d2-980d-41f3-9bb0-f3868ab29d5a": {
+        "user_id": "f408abb2-8e31-4af9-a494-021d43930ce4",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "USD",
+        "limit": 635.2,
+        "status": "revoked"
+    },
+    "3f13aef0-a3e3-4b53-9412-5e1fb213efe0": {
+        "user_id": "238fd69a-63fe-47fe-854a-3b94739182ec",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "AUD",
+        "limit": 2469.48,
+        "status": "active"
+    },
+    "166fa97b-39da-4e7b-b63c-be84ef7bc4d6": {
+        "user_id": "31282187-b0b7-4e54-9e66-181737755978",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "NOK",
+        "limit": 7000.39,
+        "status": "active"
+    },
+    "5449c687-fc17-4a70-baa3-c2c1b0d933eb": {
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "EUR",
+        "limit": 8056.84,
+        "status": "blocked"
+    },
+    "a657b52f-3b13-41e1-9dd6-1bbbee9b6e82": {
+        "user_id": "66d9e91a-584d-401c-8a13-2a7382990605",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "NOK",
+        "limit": 8645.96,
+        "status": "active"
+    },
+    "c7f29418-37ce-45d2-9a16-f586fc9b39b9": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "GBP",
+        "limit": 4254.93,
+        "status": "active"
+    },
+    "e7057a76-9e88-44e8-9265-85230c86d972": {
+        "user_id": "8f52a2cc-0353-415a-bab7-0ba026442a33",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "CAD",
+        "limit": 7140.81,
+        "status": "blocked"
+    },
+    "fe54968e-185a-4d27-be83-3479e357fae3": {
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "CAD",
+        "limit": 1358.68,
+        "status": "blocked"
+    },
+    "6a49c362-c622-4251-85b2-b76018e2e68d": {
+        "user_id": "879a910e-4d35-4900-9c34-8490eeaf3b6c",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "EUR",
+        "limit": 2974.13,
+        "status": "expired"
+    },
+    "0279c537-2f49-4ded-8912-0c4853a9cf65": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "SEK",
+        "limit": 2863.46,
+        "status": "active"
+    },
+    "2ac2c05a-a145-4a96-a0b5-acee834bd090": {
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "AUD",
+        "limit": 608.32,
+        "status": "active"
+    },
+    "112a61ac-3ce1-4d0e-9df0-a1984d081deb": {
+        "user_id": "c6d33124-7acd-497c-91b1-5c9eb1c1c6fa",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "EUR",
+        "limit": 7843.22,
+        "status": "active"
+    },
+    "5e2639d7-acf5-48be-b65b-78657f293728": {
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "EUR",
+        "limit": 4741.92,
+        "status": "active"
+    },
+    "41fce403-f27b-418f-9f40-cb29bf06f300": {
+        "user_id": "8f38494a-9831-4e7f-95ab-aca142288f2b",
+        "provider_id": "aca38de2-891a-4fe5-9021-588b5828c85d",
+        "currency": "DKK",
+        "limit": 2470.02,
+        "status": "active"
+    },
+    "8d0bf2e4-64a0-44cd-a041-d2262700fb39": {
+        "user_id": "38dce302-14b8-473b-8f80-d8202d11eab6",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "AUD",
+        "limit": 1521.29,
+        "status": "active"
+    },
+    "cbb3f3bf-a822-408b-8b58-071c2b93f96f": {
+        "user_id": "845c42db-a9eb-4bf2-925c-9e479ce4f6cf",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "GBP",
+        "limit": 1866.18,
+        "status": "blocked"
+    },
+    "6081c943-fb9a-4b53-80fa-c8b63c9707b1": {
+        "user_id": "07735f37-936f-43d6-a940-719e4483f19d",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "DKK",
+        "limit": 2009.38,
+        "status": "active"
+    },
+    "a69807c2-1df9-44b1-a108-fc3cbb61059e": {
+        "user_id": "c8f87788-5cfc-4bfc-b208-60e37a1183e2",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "AUD",
+        "limit": 2067.04,
+        "status": "expired"
+    },
+    "9beadd4a-700c-4f5d-9e4d-1bd063cf08b8": {
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "NOK",
+        "limit": 5418.3,
+        "status": "revoked"
+    },
+    "5dc1c7ef-757f-4ceb-b329-98e6288a7cec": {
+        "user_id": "1fd1e42a-1457-41c4-8ba5-01c4ee7b7bf7",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "CAD",
+        "limit": 4232.82,
+        "status": "active"
+    },
+    "93fe932b-5815-4cf4-89d8-9a229818e972": {
+        "user_id": "f19040e5-9e7b-4fd7-aa84-3154b9fe982d",
+        "provider_id": "d559f268-9f53-467b-9ba2-37d3cba148bb",
+        "currency": "CAD",
+        "limit": 4297.72,
+        "status": "expired"
+    },
+    "587139ec-b147-418d-a264-27a9d333b42f": {
+        "user_id": "f01c7464-0868-4847-b81c-491db0efcff8",
+        "provider_id": "3311db5f-448c-489a-9471-64a3979ca0a6",
+        "currency": "AUD",
+        "limit": 4275.74,
+        "status": "active"
+    },
+    "72b5a8ca-29d8-4e46-bf37-ee4e4421f160": {
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "CAD",
+        "limit": 6456.27,
+        "status": "active"
+    },
+    "097049f1-bd9a-4358-b477-cb9363678255": {
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "DKK",
+        "limit": 6002.97,
+        "status": "active"
+    },
+    "6e899a82-634d-465a-85df-966dbb275502": {
+        "user_id": "40cd7cc2-4bc3-4900-a126-c84e1cf20cdb",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "EUR",
+        "limit": 1863.91,
+        "status": "active"
+    },
+    "12c02461-6228-4020-8969-0e5a88dae1d7": {
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "NOK",
+        "limit": 8718.52,
+        "status": "active"
+    },
+    "54deadf2-9b58-4d74-8ea7-bca9c69d7247": {
+        "user_id": "238fd69a-63fe-47fe-854a-3b94739182ec",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "AUD",
+        "limit": 7535.16,
+        "status": "active"
+    },
+    "2eaccc81-e3b5-4d89-846e-650551036871": {
+        "user_id": "f3feeaf3-6574-4d6c-89c0-3e1cac8481b9",
+        "provider_id": "a6ed27f5-dfbf-4122-b346-6553a208aa8a",
+        "currency": "AUD",
+        "limit": 7001.44,
+        "status": "blocked"
+    },
+    "cadece55-da9c-4fc3-b3c3-fd3ac3eceaf1": {
+        "user_id": "38a18aad-f2ec-45f3-b89b-7c061ae2967c",
+        "provider_id": "6c8b7b3d-6377-471d-a3f1-5c413cd389a7",
+        "currency": "CAD",
+        "limit": 9546.27,
+        "status": "blocked"
+    },
+    "bb960ef4-6a9a-46a3-9848-ba58d197ff87": {
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "AUD",
+        "limit": 2060.54,
+        "status": "active"
+    },
+    "cbe2bb3c-11c4-4f61-a564-77688204330a": {
+        "user_id": "31282187-b0b7-4e54-9e66-181737755978",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "EUR",
+        "limit": 972.01,
+        "status": "active"
+    },
+    "663d5b0e-a179-4414-800b-c9e97021e876": {
+        "user_id": "01a37a6a-d5a8-457c-bb19-81ea56cef382",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "SEK",
+        "limit": 5157.79,
+        "status": "active"
+    },
+    "b7e79392-bae2-4eb4-be17-6d6789665059": {
+        "user_id": "d72400c8-ff17-4eaf-a14f-b7e637772730",
+        "provider_id": "ff8ee646-d5f9-454a-ab22-e0c04a5d0619",
+        "currency": "USD",
+        "limit": 4614.27,
+        "status": "active"
+    },
+    "97ddcdcc-bf6c-408b-b128-7fd862c14312": {
+        "user_id": "55b239fd-7ae2-4601-833a-b40ba2e46075",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "USD",
+        "limit": 8526.65,
+        "status": "blocked"
+    },
+    "2a40d1dc-6da0-45b8-8789-38530ce4b68d": {
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "GBP",
+        "limit": 328.28,
+        "status": "revoked"
+    },
+    "9567b6d1-d503-46f4-a847-4321d7b0e59c": {
+        "user_id": "f4419fde-1e1f-4a05-b58c-8a96ddb1d670",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "SEK",
+        "limit": 5811.46,
+        "status": "active"
+    },
+    "cdc553ca-81f7-449e-8866-e1d6d3cc4dcc": {
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "DKK",
+        "limit": 9538.1,
+        "status": "active"
+    },
+    "2d468b0b-4638-4ffc-b6d2-229e72b2c556": {
+        "user_id": "56ec427e-5dd4-4b0d-8ade-2855f98eb063",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "NOK",
+        "limit": 6874.73,
+        "status": "revoked"
+    },
+    "32cc3c61-6962-4f8d-8826-ac0d7e1fdb1c": {
+        "user_id": "a9f41372-24b2-4a99-bd49-e28418bbb7c9",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "NOK",
+        "limit": 7153.31,
+        "status": "active"
+    },
+    "ea1c83f5-92f7-4289-9d16-038e49a33f4a": {
+        "user_id": "db2db34e-a192-4a70-aebd-31c9ba3b50c3",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "SEK",
+        "limit": 5705.72,
+        "status": "active"
+    },
+    "fb741d92-30de-4ae2-9d54-fadf10539f75": {
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "SEK",
+        "limit": 6621.18,
+        "status": "active"
+    },
+    "9c032871-4333-4627-8dc5-994b90869c44": {
+        "user_id": "ee38c9b1-dcc5-44b0-ad9e-afa861bae70d",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "DKK",
+        "limit": 7791.45,
+        "status": "active"
+    },
+    "1384d29a-54b0-4c27-8256-b7eaf851c7ad": {
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "CAD",
+        "limit": 9459.7,
+        "status": "active"
+    },
+    "483223bb-7dda-40ea-be02-e7b69946017b": {
+        "user_id": "84906dfe-e95b-4a28-a93b-e175aa6c6f6f",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "DKK",
+        "limit": 5745.9,
+        "status": "expired"
+    },
+    "a3917256-85cf-49b7-b41c-009ef0e0fd55": {
+        "user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "EUR",
+        "limit": 3926.94,
+        "status": "active"
+    },
+    "119bda3e-6468-4f42-ab06-35c5889cc47f": {
+        "user_id": "4c624dc6-543d-4ae6-8d0a-dab105252c4b",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "CAD",
+        "limit": 7799.03,
+        "status": "active"
+    },
+    "094156e5-fca8-4138-bac7-3c5d0ac20a37": {
+        "user_id": "40cd7cc2-4bc3-4900-a126-c84e1cf20cdb",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "CAD",
+        "limit": 9035.77,
+        "status": "active"
+    },
+    "d492115e-e0c5-487b-9cec-28c800c0210f": {
+        "user_id": "ee38c9b1-dcc5-44b0-ad9e-afa861bae70d",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "GBP",
+        "limit": 309.89,
+        "status": "expired"
+    },
+    "68bee430-68f2-4934-9082-33eb1b75623b": {
+        "user_id": "c654f2e6-8d31-4e9f-84fc-72981fbbfaa9",
+        "provider_id": "0c795018-adf7-4423-8373-5bf3ce470c44",
+        "currency": "AUD",
+        "limit": 3863.4,
+        "status": "active"
+    },
+    "3b078c4e-6915-42e9-93a5-16e8fa5cd2fd": {
+        "user_id": "388e3d0e-4fe0-44f6-9b28-de5196fbcf0f",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "CAD",
+        "limit": 6595.42,
+        "status": "active"
+    },
+    "bd167947-10af-4c8d-8ae5-2855639c6c64": {
+        "user_id": "78ed3a14-8981-4abe-8eaa-cf6c8da18254",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "EUR",
+        "limit": 6566.52,
+        "status": "active"
+    },
+    "ca8e6610-e317-45f2-a4f7-1771494e0dda": {
+        "user_id": "e4965082-3fac-4241-bd3d-aa03fb27a31f",
+        "provider_id": "fed61aac-4940-4dc3-937e-46d0434dac77",
+        "currency": "CAD",
+        "limit": 1168.12,
+        "status": "active"
+    },
+    "2f2c4466-ca94-4d1f-9cab-ff305c9dbbda": {
+        "user_id": "26bce218-cda8-49eb-b1ef-0f9fb9da604e",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "SEK",
+        "limit": 8710.46,
+        "status": "blocked"
+    },
+    "c3b99a80-0ffd-4ae2-9340-97e702e4b443": {
+        "user_id": "050081f1-abd1-410d-b593-36a66d95c19c",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "NOK",
+        "limit": 7839.2,
+        "status": "active"
+    },
+    "3e0bbccb-0195-42a9-a50c-2615db3552f2": {
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "EUR",
+        "limit": 8530.09,
+        "status": "active"
+    },
+    "38418f4f-8ec7-45b9-a777-59fc861bd06d": {
+        "user_id": "a9f41372-24b2-4a99-bd49-e28418bbb7c9",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "SEK",
+        "limit": 8647.43,
+        "status": "blocked"
+    },
+    "9cb73a94-cc78-4929-9351-0d80c40ab827": {
+        "user_id": "75be1cae-0abd-49ea-99f7-1132884ab3a2",
+        "provider_id": "2697b4ce-e73c-404f-b66b-b33154e510e9",
+        "currency": "GBP",
+        "limit": 6905.53,
+        "status": "blocked"
+    },
+    "cb320c6f-d99e-4023-bcf8-b45bb5403cd0": {
+        "user_id": "66d9e91a-584d-401c-8a13-2a7382990605",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "CAD",
+        "limit": 7562.79,
+        "status": "active"
+    },
+    "99f3dd0c-c26d-4d91-884b-301a009a433d": {
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "AUD",
+        "limit": 5794.62,
+        "status": "active"
+    },
+    "d50ca351-e401-4656-87ea-4ac396c70722": {
+        "user_id": "31282187-b0b7-4e54-9e66-181737755978",
+        "provider_id": "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4",
+        "currency": "DKK",
+        "limit": 395.45,
+        "status": "active"
+    },
+    "c31b9949-5689-41e3-8454-24c3e84d8073": {
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "AUD",
+        "limit": 5656.11,
+        "status": "active"
+    },
+    "8113119e-7387-438a-8448-aa9e3f91ad53": {
+        "user_id": "8f38494a-9831-4e7f-95ab-aca142288f2b",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "EUR",
+        "limit": 4532.7,
+        "status": "active"
+    },
+    "8dde98cc-5825-4f62-b19e-fb5696fbc5d8": {
+        "user_id": "7b8db11f-2662-477f-b29a-2778d7f81595",
+        "provider_id": "8e593b12-3c1a-4e52-8c8c-d181450d7b3e",
+        "currency": "SEK",
+        "limit": 2941.67,
+        "status": "active"
+    },
+    "0a0d0064-17d1-4c1d-bb3a-5ec9204a29ed": {
+        "user_id": "a6a5db37-4ce4-4569-96ba-0406abd29d45",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "EUR",
+        "limit": 4131.0,
+        "status": "active"
+    },
+    "3ad6e0a7-c13c-432f-9c49-31ad42471e9d": {
+        "user_id": "48a39021-2445-4a4f-b621-5a1a7ccd5e2d",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "NOK",
+        "limit": 5593.07,
+        "status": "blocked"
+    },
+    "9041b272-2b9c-4750-b715-f61e67f85a8e": {
+        "user_id": "4330add1-e769-4565-bd23-439940701639",
+        "provider_id": "0fa21ca0-a30e-4a56-af40-b0e4960275a9",
+        "currency": "CAD",
+        "limit": 2878.28,
+        "status": "active"
+    },
+    "7841dd38-63d9-440a-91e1-448db843cd1e": {
+        "user_id": "e8250a01-533d-4d04-815d-ec9e84338b60",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "EUR",
+        "limit": 1360.78,
+        "status": "expired"
+    },
+    "633d2ddf-b010-4c84-9582-7ae9bf9dcd29": {
+        "user_id": "df501ffe-1115-4877-ad72-c4b9cc9dde22",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "CAD",
+        "limit": 9259.56,
+        "status": "active"
+    },
+    "8b11b422-c6a1-4ee0-b590-4e6d27f2e92a": {
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40",
+        "provider_id": "0528afa7-848d-466b-b170-12c3aaa6adff",
+        "currency": "EUR",
+        "limit": 8773.09,
+        "status": "expired"
+    },
+    "42b2f3b8-d3cb-4916-86c8-a1251ffe837d": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "NOK",
+        "limit": 209.96,
+        "status": "active"
+    },
+    "07f441c2-0868-44dc-b131-4845bb2913ed": {
+        "user_id": "845c42db-a9eb-4bf2-925c-9e479ce4f6cf",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "GBP",
+        "limit": 844.17,
+        "status": "active"
+    },
+    "da25dcd4-01bb-4b26-891c-71af64b9bce6": {
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4",
+        "provider_id": "3d128f21-9b4b-4212-a11d-5df0215a94aa",
+        "currency": "USD",
+        "limit": 4333.07,
+        "status": "active"
+    },
+    "55dd715b-4520-42c2-bbed-99002199c91b": {
+        "user_id": "b8ae9ae2-191b-4b47-bad3-81c5f3533296",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "SEK",
+        "limit": 3728.75,
+        "status": "blocked"
+    },
+    "e8194477-8f74-4afe-a6fe-71c9826c3f64": {
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "NOK",
+        "limit": 3050.77,
+        "status": "active"
+    },
+    "92e67048-950e-4406-a303-c9f60d6c6699": {
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40",
+        "provider_id": "fc8e5726-b889-4376-950b-675e3961fc27",
+        "currency": "CAD",
+        "limit": 1603.37,
+        "status": "active"
+    },
+    "c973cd71-ce4b-4d0e-a446-d42000336b63": {
+        "user_id": "1892294b-038e-472d-87f0-b54fd28d30b9",
+        "provider_id": "547fd565-5911-4aa2-b000-02abce8d62c1",
+        "currency": "GBP",
+        "limit": 3132.91,
+        "status": "active"
+    },
+    "a7ae21e2-9988-4158-94e0-074e2ac1e199": {
+        "user_id": "13a61b6f-2e1e-4a74-8f3d-84f8e6f5d7e0",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "SEK",
+        "limit": 9019.17,
+        "status": "active"
+    },
+    "c9cbcf4d-d328-40d5-80c6-979c7488617d": {
+        "user_id": "62b4e4f8-9ad7-4b8d-b54d-1aae80b10508",
+        "provider_id": "d559f268-9f53-467b-9ba2-37d3cba148bb",
+        "currency": "EUR",
+        "limit": 4473.64,
+        "status": "active"
+    },
+    "1bb4e34b-cbb3-4274-9961-e6d277169bc2": {
+        "user_id": "050081f1-abd1-410d-b593-36a66d95c19c",
+        "provider_id": "52806812-6440-436f-8cd1-2c8a040031f1",
+        "currency": "NOK",
+        "limit": 8609.82,
+        "status": "active"
+    },
+    "86e491ea-e632-40f9-8f65-bf5ba72523b0": {
+        "user_id": "afd53dfb-0cb5-4662-83b8-bfdb8235aa9a",
+        "provider_id": "89ac7fc6-12f0-4beb-ae71-1ca009e79227",
+        "currency": "CAD",
+        "limit": 5768.16,
+        "status": "active"
+    },
+    "6290756f-c6f4-4849-825c-5829c925244a": {
+        "user_id": "d485e608-2057-4203-9717-cbce304ab718",
+        "provider_id": "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079",
+        "currency": "AUD",
+        "limit": 136.76,
+        "status": "active"
+    },
+    "82c52b63-d510-498a-8f87-c474b5c44395": {
+        "user_id": "6756abfd-8d5d-4ad4-b7ee-2d56829e1dc0",
+        "provider_id": "13d401e9-190d-424b-8ec1-0b39e6c422ce",
+        "currency": "SEK",
+        "limit": 1824.07,
+        "status": "active"
+    },
+    "e6f2d587-2b80-43ad-9f7c-67d81debdf29": {
+        "user_id": "8f52a2cc-0353-415a-bab7-0ba026442a33",
+        "provider_id": "0f850cf9-09b8-44bf-be9c-8eadaca1550f",
+        "currency": "SEK",
+        "limit": 4096.88,
+        "status": "expired"
+    },
+    "3c8f38ae-d3d1-4e0d-a924-db9a91f9dd09": {
+        "user_id": "74376e71-e60d-4863-858f-37c36d666174",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "CAD",
+        "limit": 5677.39,
+        "status": "active"
+    },
+    "94c8cee6-fdf4-4c06-8691-0f2af117e767": {
+        "user_id": "9294982a-2c1b-45ee-ba19-896576c90b6d",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "NOK",
+        "limit": 7667.92,
+        "status": "expired"
+    },
+    "5b8e028f-227f-41f9-a973-5c94067316d1": {
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937",
+        "provider_id": "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0",
+        "currency": "NOK",
+        "limit": 566.12,
+        "status": "active"
+    },
+    "68fbae6b-1b67-4196-a80a-54283fd876c2": {
+        "user_id": "f01c7464-0868-4847-b81c-491db0efcff8",
+        "provider_id": "7c6f3578-504d-4ed0-a241-ad17b790cda2",
+        "currency": "SEK",
+        "limit": 5872.76,
+        "status": "expired"
+    },
+    "fe440d24-181d-4fe2-b20b-4a2aa40ae50a": {
+        "user_id": "8520cfb7-0a76-4076-9f3b-5342410e33ab",
+        "provider_id": "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9",
+        "currency": "AUD",
+        "limit": 3173.14,
+        "status": "active"
+    },
+    "f94e61b5-00b6-4f08-910f-04c725a10f8e": {
+        "user_id": "240b1bea-43af-4460-a4a0-7c0ee5234d75",
+        "provider_id": "beb8f320-2ddf-4942-961a-492653840770",
+        "currency": "SEK",
+        "limit": 3324.02,
+        "status": "blocked"
+    },
+    "20311d03-edbd-467e-ac11-0b33d11e5ab6": {
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "EUR",
+        "limit": 6852.06,
+        "status": "active"
+    },
+    "87899f16-926d-47cf-affe-6b0cafd3fc03": {
+        "user_id": "fd82a5ec-b494-4236-aad2-56dad94faf9e",
+        "provider_id": "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe",
+        "currency": "SEK",
+        "limit": 8230.97,
+        "status": "active"
+    },
+    "9e5916d7-f960-497a-9345-8cecb0e812e5": {
+        "user_id": "c528214a-f617-4ef3-bea5-7f6da9d91ba9",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "USD",
+        "limit": 1531.48,
+        "status": "blocked"
+    },
+    "11707c47-23ac-4db5-b15a-a7b9230a1114": {
+        "user_id": "ee38c9b1-dcc5-44b0-ad9e-afa861bae70d",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "CAD",
+        "limit": 1667.77,
+        "status": "active"
+    },
+    "ef1d7080-4cce-4d24-853f-dc7b79ffbb38": {
+        "user_id": "8520cfb7-0a76-4076-9f3b-5342410e33ab",
+        "provider_id": "821b530c-fa1c-44c4-a759-cf4d17b055b6",
+        "currency": "USD",
+        "limit": 2968.77,
+        "status": "active"
+    },
+    "fe62fccd-88da-4d7f-866f-b5cf75fa3d7b": {
+        "user_id": "d08c4e28-257c-436a-9018-edaf50cf63d6",
+        "provider_id": "97f22b6d-4bda-43a1-b222-292c0ae45d0e",
+        "currency": "CAD",
+        "limit": 1763.62,
+        "status": "active"
+    },
+    "bc8a6bbb-d176-4052-8cf2-35a240de023e": {
+        "user_id": "845c42db-a9eb-4bf2-925c-9e479ce4f6cf",
+        "provider_id": "be5ff857-a723-4040-90cb-5a4c6a2ec210",
+        "currency": "USD",
+        "limit": 8224.29,
+        "status": "active"
+    },
+    "12a3f01f-dff1-46e1-ab5c-7393641f7fc2": {
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871",
+        "provider_id": "5175a6e7-e3a2-4482-a1dd-f965fc31aef2",
+        "currency": "GBP",
+        "limit": 1125.45,
+        "status": "active"
+    },
+    "b89f12ba-06a9-4dbe-b942-c4dacc61ee7d": {
+        "user_id": "82315df2-c3d6-4df6-85ec-48eab4bd4298",
+        "limit": 1876.06,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "active",
+        "currency": "INR"
+    },
+    "2d048cf3-3a89-41c8-a12b-8fcc5e94a809": {
+        "user_id": "35442c05-b698-478d-98a7-6f3ddd169b2d",
+        "limit": 3017.03,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "82cb91f3-3abf-4970-a602-102683af2f5e": {
+        "user_id": "3f287e0f-6022-4de7-a8b9-4915bb546a54",
+        "limit": 3385.17,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "5e2d99b6-f9bb-49ec-9186-09fc57939105": {
+        "user_id": "e4b4098f-5a50-4fff-a2cf-29a95f078ba0",
+        "limit": 1537.2,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "47c1d362-632d-4478-bb96-e34b1490c6d5": {
+        "user_id": "9859a02f-f494-44fc-afeb-7654538f63d5",
+        "limit": 1027.53,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "8580e839-946a-4bad-a526-c78537f9f7d9": {
+        "user_id": "7dd891b7-5d40-4f7d-9c05-12ca10147e76",
+        "limit": 2824.34,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "5e4394a8-a468-4ff0-a127-8813671488e5": {
+        "user_id": "f260b48e-c17b-43f5-a9e6-d349e9883c7c",
+        "limit": 4999.32,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "2c2a3373-c114-4ce3-b4ae-046532151110": {
+        "user_id": "159b8fac-80ee-4982-98d1-25868c865637",
+        "limit": 3035.57,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "e9b1517a-0ff9-4335-b878-be9cd9dcd84a": {
+        "user_id": "35619f18-8fb9-4f7b-88cb-884520774432",
+        "limit": 2742.24,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "51f6fc75-6cd7-4e8f-8445-72136b877c97": {
+        "user_id": "ad42799c-67a6-4d2a-945e-923323b287b7",
+        "limit": 2907.52,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "085fc6ed-6105-489c-b48c-1d7be98d4e24": {
+        "user_id": "aa9a65a8-cc0a-4c5f-be7b-0eabe8b50c76",
+        "limit": 3296.86,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "e2dd8934-367c-4f1f-b89f-61d80c0cec0e": {
+        "user_id": "2e00ceb0-a066-48e0-ad36-32b6d7944af7",
+        "limit": 4013.75,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "1aa62e19-1e2b-49db-ab8c-2f12e3a21b07": {
+        "user_id": "ee704752-40a1-46dc-928d-9557aaa7f6ab",
+        "limit": 3764.8,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "4df94dd7-e7c1-4f7f-9d1d-303374324cbc": {
+        "user_id": "cba9ffe8-7f95-4bd8-bb5e-205876d6d040",
+        "limit": 4180.53,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "392075ac-e16f-41c3-bdf7-7eb96120e7fd": {
+        "user_id": "0ddf67e2-cbfe-4d0a-8755-ea7f1091ff0a",
+        "limit": 3355.87,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "e6c06cc7-6012-42ed-a3b5-7cff20f0313f": {
+        "user_id": "56d51927-9218-41f7-8c1b-151eb1bf9892",
+        "limit": 2464.07,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "7aca19d4-62ab-478f-8962-91f69a755d34": {
+        "user_id": "7f26c253-2717-4346-80d7-9c1f0a849a61",
+        "limit": 1717.58,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "02060cdb-bda1-4db2-9ddd-c9df7e7ebcd4": {
+        "user_id": "873a9b35-8e9a-4113-b1ed-b8d58961a85c",
+        "limit": 2624.72,
+        "provider_id": "77fed23a-a8d5-4c5b-9892-7315741a4aab",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "15001f78-8af2-430c-b440-8407ce0376d0": {
+        "user_id": "50e8ee23-255b-4ab9-a3a6-cacba8d8b1ac",
+        "limit": 3480.49,
+        "provider_id": "ace54f3d-3bc9-4537-829c-899b2e20455d",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "e1fe3ff1-72d1-4e27-918c-610012f9f0aa": {
+        "user_id": "a90292c6-aad8-49b7-93ff-6a7e63f5a8e7",
+        "limit": 1871.36,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "e2a3dcbd-c5f9-4f35-9506-c86f52b46278": {
+        "user_id": "34efc7ad-bd43-4627-aff3-3e88a1254ccc",
+        "limit": 4756.04,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "112d184e-1abd-4ced-a173-7f5e8875ae1b": {
+        "user_id": "6d5ebe54-d65c-40a3-aa4e-dcb5102c6afc",
+        "limit": 3686.09,
+        "provider_id": "0d730360-4b9e-4555-9eee-690aac2c58bc",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "e9bc219a-fc15-4518-8ff3-11cb87e528ec": {
+        "user_id": "61bbb562-a492-4cc0-b99d-0c5f6b179c5c",
+        "limit": 4732.35,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "fa229ce8-ec7c-4a1b-92ec-b1518e29cdcd": {
+        "user_id": "e1250795-d1c5-4e75-9136-2aa0e8fcdcb0",
+        "limit": 1386.23,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "11337a39-787a-46a9-af22-3d47b7d12bef": {
+        "user_id": "357f2313-58b9-4fb0-b63b-797079800c9a",
+        "limit": 3706.17,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "active",
+        "currency": "INR"
+    },
+    "c29ffeea-5c1f-4095-a797-05dd4cf726f8": {
+        "user_id": "873a9b35-8e9a-4113-b1ed-b8d58961a85c",
+        "limit": 2845.91,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "584ee0d4-f96d-4b05-aa8f-6d176a8468e1": {
+        "user_id": "0f7de987-aa91-4e22-aad1-1ec599533102",
+        "limit": 1021.01,
+        "provider_id": "77fed23a-a8d5-4c5b-9892-7315741a4aab",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "68d3d99f-e812-412b-8ce1-47a9391d97ab": {
+        "user_id": "f5f2355b-a299-4e06-8cbf-59732649e705",
+        "limit": 3451.72,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "fc1b2f8b-457f-4fa8-bd2f-fc9064854803": {
+        "user_id": "89b4ac7a-cd82-402f-914b-b830c7838e5b",
+        "limit": 1101.78,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "75cc5b99-802b-4f6d-bae9-be6351657430": {
+        "user_id": "8368c31b-4bc5-4395-8d04-a20c9e6ac6f1",
+        "limit": 1520.66,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "e695a091-f40a-4554-bfbc-a6657ed37cdb": {
+        "user_id": "1b1be37f-9030-4643-8e3d-bdcff726e85e",
+        "limit": 2146.06,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "9349458b-f6a0-4165-81c1-b25012e39235": {
+        "user_id": "70d3a20f-1605-4c07-804c-908b68907f33",
+        "limit": 4939.78,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "1766327f-e6fc-4837-a871-09205403327c": {
+        "user_id": "b18b40db-9ac6-4593-855a-94d7ee76b815",
+        "limit": 4102.62,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "173a192d-6a57-44f9-a177-1a01bb9470d3": {
+        "user_id": "efd13f8b-a994-456d-9e17-f5065233a43f",
+        "limit": 2220.64,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "b0a997fd-0f05-46c7-a8a4-fabd3bfaf799": {
+        "user_id": "4a49b52d-8b13-43f0-b3e8-c4e12f654d44",
+        "limit": 4897.66,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "a128c1a6-1b06-465c-9c03-d7e6efc1ab12": {
+        "user_id": "5951ac93-750d-46d4-b1a7-39534a19e4d5",
+        "limit": 2752.2,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "23acc9b6-f4c3-4a53-b5b1-b64ea2704d31": {
+        "user_id": "b96c5db0-610f-4944-95a1-92a9b3670bb0",
+        "limit": 2043.0,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "f051e897-6271-4e9c-a1d4-6f858a47bcc2": {
+        "user_id": "32a0ae06-73c3-40bd-8f9e-4e9ff7966e0a",
+        "limit": 3725.95,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "f2350164-9e4f-4c55-a5fc-951fe4eb377a": {
+        "user_id": "c73aa2ac-8902-4e78-9983-caec467e8f8f",
+        "limit": 2706.56,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "active",
+        "currency": "INR"
+    },
+    "a4638edd-c615-4b57-9e0e-19055d5bb643": {
+        "user_id": "7f26c253-2717-4346-80d7-9c1f0a849a61",
+        "limit": 3849.16,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "ac9b3c03-d6db-4aac-8a37-e2622cac3c75": {
+        "user_id": "e7e1f2d6-069a-4219-8398-e79d7f9e4a2b",
+        "limit": 2511.53,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "active",
+        "currency": "INR"
+    },
+    "28e541a4-c46b-4d61-a0e4-26ccc4f1f7dc": {
+        "user_id": "3315fd47-2a67-45d9-b8fb-32972ed4be6c",
+        "limit": 3462.09,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "73fdcbe5-a7c0-40ba-88e9-b1fc3d770ff6": {
+        "user_id": "acbb0fe3-8bf9-4c8e-a2e2-4caa8f51a57f",
+        "limit": 3328.36,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "e6709b79-fee3-4c6e-a18f-6eed51a29fa9": {
+        "user_id": "4d860b11-6540-491e-9b7c-6eb843c42e9d",
+        "limit": 3466.8,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "a45b6c64-e9f9-4850-b605-5e1a9c062ba2": {
+        "user_id": "80eb82fc-49f1-4dd2-8739-0ff7e75ab812",
+        "limit": 1516.56,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "0d719a84-f55b-4852-810d-b834f08eae45": {
+        "user_id": "4d860b11-6540-491e-9b7c-6eb843c42e9d",
+        "limit": 2664.06,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "82e3d763-2f59-4267-bbba-6f70584c73c1": {
+        "user_id": "42560031-aba7-4ec0-9b15-75aeb2f0359f",
+        "limit": 1822.38,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "eb4b6be7-ec14-4b5f-9d4c-bc20bef0b21c": {
+        "user_id": "a4197056-c360-47fc-9a73-aedb1fe5b540",
+        "limit": 1780.63,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "dc00ccd0-2ad2-40c5-80c9-4e3101cdd6a7": {
+        "user_id": "3315fd47-2a67-45d9-b8fb-32972ed4be6c",
+        "limit": 1294.98,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "25e9485e-ded6-4e38-bbf9-4951602a5377": {
+        "user_id": "c3373dee-8d2d-4351-b0d6-e34b70dcd5ae",
+        "limit": 2464.34,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "a07d297f-68e6-45dc-a6ce-9dd3ea6313c1": {
+        "user_id": "6751e235-8049-4218-81c3-c72ba3cf1df0",
+        "limit": 4603.92,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "09d6242c-4bdf-415c-af1a-9620c0b6680e": {
+        "user_id": "c9f31224-9981-4681-9d42-49c60534af7a",
+        "limit": 3108.06,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "efbf4176-748c-498a-87c4-3505f0363978": {
+        "user_id": "82315df2-c3d6-4df6-85ec-48eab4bd4298",
+        "limit": 2350.9,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "acedf407-7640-43a9-afe3-2fcefed5d4c4": {
+        "user_id": "924003a3-cc53-4a07-90c1-dba32fcfc9db",
+        "limit": 4063.73,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "70ed475f-5f09-4b17-8aac-d0ba22a79690": {
+        "user_id": "ccc6294e-c7ab-4646-822b-b34b75004466",
+        "limit": 2569.04,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "c581a131-c63f-4160-9df9-8807b69095a8": {
+        "user_id": "434b05c9-e95a-466d-9dfc-057fca93ed12",
+        "limit": 2511.83,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "46eb6310-4663-4873-878f-a1cde24daf66": {
+        "user_id": "ffcab0e1-ca31-46f4-9ec2-c024b3625d1b",
+        "limit": 2978.3,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "c27b3b68-0b95-4415-8371-8c84a703773c": {
+        "user_id": "efd13f8b-a994-456d-9e17-f5065233a43f",
+        "limit": 2753.71,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "a3b7cfa8-36a9-4267-bdf0-55c026b84612": {
+        "user_id": "d5307aaa-5d05-49ea-a1e6-6e6ac39464f0",
+        "limit": 3414.41,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "b547e35b-9897-477a-bc0d-91d8fc869826": {
+        "user_id": "fae46c85-454c-4ffa-874c-74e3d725bbfd",
+        "limit": 3472.1,
+        "provider_id": "ace54f3d-3bc9-4537-829c-899b2e20455d",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "7b3b9109-9119-49f2-a7d5-85620019235c": {
+        "user_id": "367de9d5-a780-446c-a15d-958ba9e148d8",
+        "limit": 1429.07,
+        "provider_id": "0d730360-4b9e-4555-9eee-690aac2c58bc",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "e3b9ac72-06da-4b46-ab26-679542074420": {
+        "user_id": "5192a4f5-7ee9-4ae3-90a1-3f4c15103aff",
+        "limit": 3082.37,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "00105131-a381-4eb6-b012-41d4a20eede8": {
+        "user_id": "c6940033-f0e1-4f58-af3e-36d07b496e0a",
+        "limit": 4393.17,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "c2c51902-04dc-4ef2-aeb6-bbdba368178a": {
+        "user_id": "7f26c253-2717-4346-80d7-9c1f0a849a61",
+        "limit": 4480.45,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "497f88ee-3c28-4855-bc36-9355fdf5fa10": {
+        "user_id": "09072d8e-9979-4d6b-aff2-2201105f005f",
+        "limit": 3621.96,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "3405f775-d3fa-4a02-894a-dbf4480ee6c2": {
+        "user_id": "8f0d09b6-5ccb-4664-afe0-99ab08d3403c",
+        "limit": 3257.3,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "d394cbe3-2726-4783-8ad5-e1700d8eea14": {
+        "user_id": "b6f257e4-2366-4c8c-bff9-efc72cdd17c0",
+        "limit": 3900.78,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "31dc9e75-8525-45ae-8c03-c08ed6b45d80": {
+        "user_id": "e1250795-d1c5-4e75-9136-2aa0e8fcdcb0",
+        "limit": 1104.68,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "cd86dffd-039f-4903-82f0-b0014ebf9a63": {
+        "user_id": "434b05c9-e95a-466d-9dfc-057fca93ed12",
+        "limit": 1682.4,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "b1651cab-b630-459b-956a-b7f86c014804": {
+        "user_id": "8827e1ae-34f1-4399-bd91-a20deb933fe7",
+        "limit": 3379.1,
+        "provider_id": "0d730360-4b9e-4555-9eee-690aac2c58bc",
+        "status": "active",
+        "currency": "INR"
+    },
+    "360a8c4d-35db-4a03-a733-70fd3e85cf9c": {
+        "user_id": "8a665a64-4c32-4aa1-bdd7-f4a443e8ce1a",
+        "limit": 3761.87,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "active",
+        "currency": "USD"
+    },
+    "ba85d5f9-ae6f-4306-a0c8-2e44e8ea88f0": {
+        "user_id": "075d2093-4c45-48f8-a9f1-b1ea9831c3a9",
+        "limit": 4695.03,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "a434b77a-93fe-4f48-a5cc-3a0ac3e990c0": {
+        "user_id": "acbb0fe3-8bf9-4c8e-a2e2-4caa8f51a57f",
+        "limit": 3965.52,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "7effb5d2-7435-43fc-bf4b-466c438623f2": {
+        "user_id": "65838c0f-7b09-4543-a7e6-684cb737976b",
+        "limit": 2355.13,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "99055aea-f176-4cd2-9957-1f5126fea3fd": {
+        "user_id": "027dfa7d-83ce-4aac-89a1-3d4297e74043",
+        "limit": 4168.07,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "7bcf1ba7-4105-4e43-800a-34771a3e8a2b": {
+        "user_id": "84ef590f-e599-476d-a142-784e2ddc1377",
+        "limit": 3512.21,
+        "provider_id": "41f8a446-18e1-45a1-a78f-30314f3c2b72",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "2b97d9e6-edbd-4b74-a0ed-cfb5b5818c00": {
+        "user_id": "0a7e5444-3588-4e94-ae33-ab23e17751a9",
+        "limit": 2025.11,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "f2974e98-628c-438e-b330-b8829c94fcc3": {
+        "user_id": "acbb0fe3-8bf9-4c8e-a2e2-4caa8f51a57f",
+        "limit": 3401.91,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "39480dc3-29b2-419b-a5db-10c0a8bdb07d": {
+        "user_id": "6f4fded5-9a0d-4a90-9843-2a62ee6d5e50",
+        "limit": 4180.93,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "a551cbd9-5170-4f36-b7ce-5a96a9b0f284": {
+        "user_id": "b6f6f720-8579-4b2f-aa14-a72add7252bb",
+        "limit": 4785.82,
+        "provider_id": "ace54f3d-3bc9-4537-829c-899b2e20455d",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "5c6e2259-aadc-489d-a6a8-59a698e025ca": {
+        "user_id": "b4f4cd40-60ce-4dd9-b61e-80b90c216c9e",
+        "limit": 1476.23,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "9c94cd05-b3d1-4b73-8fe6-13b90d24e1b1": {
+        "user_id": "d1c1ea1e-1c30-42f6-a7d7-8f9de019659a",
+        "limit": 4941.86,
+        "provider_id": "0d730360-4b9e-4555-9eee-690aac2c58bc",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "7af25b37-86ed-4f39-97e6-6bc1442f550d": {
+        "user_id": "10cc0ce7-0b91-4073-8f53-d17d20959e57",
+        "limit": 3346.4,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "bb268d7d-0b98-4728-8f91-7fbe70d45dbd": {
+        "user_id": "8175c768-dd2e-457c-a07d-67292c31ebab",
+        "limit": 1291.34,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "68537e4d-3a1e-4739-a63b-c22057ae4b46": {
+        "user_id": "2d58d7b9-3f8d-43e8-969a-c3a9d8b99d8e",
+        "limit": 2174.42,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "93f77619-34b0-46f2-9276-c591c7072a83": {
+        "user_id": "6f92d41c-475f-4569-a069-0fc549e6a52b",
+        "limit": 1539.5,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "3fdb8a25-77a2-4c4a-9720-8c48ffd4eed4": {
+        "user_id": "d01977ea-d02a-4d33-a06e-f322486eccda",
+        "limit": 3395.01,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "d9db4863-a7a8-4d10-867c-1c1e9cb907fe": {
+        "user_id": "ada4f2fc-d7f7-4e15-90c1-2c481d1eda2f",
+        "limit": 4987.3,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "active",
+        "currency": "USD"
+    },
+    "e1f03c35-fb2b-4a96-9262-84e61ee44a3b": {
+        "user_id": "28f0d273-01c2-468b-a604-2486e434ff34",
+        "limit": 1677.54,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "05d9b8a5-4d19-4051-aa86-01aadb201d24": {
+        "user_id": "4eb1d22b-f8a7-4df1-858b-94bf5ab6906b",
+        "limit": 2130.7,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "2b603eec-ea85-4aef-aa30-b13ab1736e5b": {
+        "user_id": "f532e5f4-1d08-498f-83ef-f0bf874479df",
+        "limit": 3985.34,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "4701e799-9f82-4d22-bd4c-a50560c32836": {
+        "user_id": "16094021-25fc-4735-a71c-fd7cae7131ae",
+        "limit": 1746.14,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "266888eb-e422-4a66-a9b4-85ceb0922bba": {
+        "user_id": "62b9ce1d-7020-4642-b6c2-69301403a082",
+        "limit": 3421.93,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "active",
+        "currency": "USD"
+    },
+    "fd42807b-d06c-4891-bce0-c9d1d69ede54": {
+        "user_id": "482aa2fd-e041-493b-8b2e-6d65fa613bb6",
+        "limit": 2697.61,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "193f4aa3-d1b0-413f-80a5-99a91ed04a09": {
+        "user_id": "6f0a837c-9b1b-4706-a57c-035f27c2f5ba",
+        "limit": 3088.58,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "0e517499-ee8e-4cec-8b0b-0aaf0cfe7bb3": {
+        "user_id": "8c91aeb6-b7da-47ee-b2d5-dc1dbe8c0eea",
+        "limit": 2182.29,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "b474eaef-a8de-40b4-a917-c362ccc241c0": {
+        "user_id": "771b4a61-5b46-43c3-a3e5-70be6c120384",
+        "limit": 1626.28,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "2787fa94-d473-405c-88ec-3ec4a6e4561d": {
+        "user_id": "6f0a837c-9b1b-4706-a57c-035f27c2f5ba",
+        "limit": 3082.78,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "10d15bbe-c08e-412f-bf4b-6d41e38b1633": {
+        "user_id": "b6f6f720-8579-4b2f-aa14-a72add7252bb",
+        "limit": 4369.81,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "cd4413f9-1759-45f6-a622-70ecbcb41358": {
+        "user_id": "c4c5f372-9a4d-4671-8df1-e0257d471ab7",
+        "limit": 3478.66,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "6b8de856-b692-4f4d-a1f5-64357b15d9ad": {
+        "user_id": "b67973cb-a246-479b-9af4-8b28a10e6458",
+        "limit": 4434.3,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "e50de185-773f-44a0-a704-317914c86776": {
+        "user_id": "3d22a700-24f4-4999-83a0-caa91f135b3a",
+        "limit": 3201.18,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "29054024-3e49-403a-9b84-f079339eeb6d": {
+        "user_id": "b2e2f90d-8cba-484a-abd6-d704a2e97e6f",
+        "limit": 4172.24,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "d59b9a48-d1ae-4a52-995d-18960e7bb14f": {
+        "user_id": "8844d54d-2015-4553-a86e-76442c3ecadc",
+        "limit": 3253.59,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "d5e4f5fc-61a5-452a-be61-8f0c42358786": {
+        "user_id": "0ddf67e2-cbfe-4d0a-8755-ea7f1091ff0a",
+        "limit": 3366.66,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "02eb23fd-34c1-4b15-8ab8-91a562b372c8": {
+        "user_id": "4aad822a-ab56-49f7-9ade-6f9298e753d9",
+        "limit": 3784.6,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "cfc5a1a1-8361-4513-bdef-851fb14444dd": {
+        "user_id": "8c45741d-1324-42c0-96cf-5d321532c7e5",
+        "limit": 4460.76,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "e669d6f3-d530-4991-8df7-31873b3db2fc": {
+        "user_id": "c2e53277-a2e9-41df-b43f-c705d17c892d",
+        "limit": 3544.43,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "a72b8125-a51f-4f6d-a7b9-d5f6391057f2": {
+        "user_id": "3315fd47-2a67-45d9-b8fb-32972ed4be6c",
+        "limit": 3951.82,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "479658ef-008d-4c84-9173-c6d26bce25a8": {
+        "user_id": "7dd891b7-5d40-4f7d-9c05-12ca10147e76",
+        "limit": 3710.64,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "753236ce-aae4-4d9d-9dcc-44e0ec5fb807": {
+        "user_id": "af40c5cf-35c3-4da4-a7b8-c4f3a878064f",
+        "limit": 4072.5,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "5271befb-2067-46aa-abe9-f4ba44e3e7a5": {
+        "user_id": "c3373dee-8d2d-4351-b0d6-e34b70dcd5ae",
+        "limit": 2417.18,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "6902e640-30d9-4289-be0d-b4ad9b17d905": {
+        "user_id": "8c91aeb6-b7da-47ee-b2d5-dc1dbe8c0eea",
+        "limit": 4876.98,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "active",
+        "currency": "USD"
+    },
+    "3d150875-debc-4372-8673-001f3af85a83": {
+        "user_id": "db830118-7cbd-4f77-8b4c-c71e82a14e72",
+        "limit": 1471.4,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "27237f1e-46c5-4411-aa82-0f90c8595d0b": {
+        "user_id": "80d10144-8b57-43c8-9b90-0c70c1fee330",
+        "limit": 2990.82,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "9447285d-01de-467f-9259-e50916b2fc9a": {
+        "user_id": "4d860b11-6540-491e-9b7c-6eb843c42e9d",
+        "limit": 2894.96,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "709397d6-06be-4856-bb15-ae35b4eca50d": {
+        "user_id": "409a0da9-18aa-42f1-a1f1-3bd603770f8e",
+        "limit": 1496.36,
+        "provider_id": "ace54f3d-3bc9-4537-829c-899b2e20455d",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "45d1a57e-fc23-4715-b3d0-541c313763dc": {
+        "user_id": "e0cf2104-fdab-4e45-ae41-db4f73296ce3",
+        "limit": 4422.37,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "e3e65c2b-1110-4549-a2f9-18372b437a23": {
+        "user_id": "8368c31b-4bc5-4395-8d04-a20c9e6ac6f1",
+        "limit": 1184.57,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "9fc4d9d4-7aae-4906-8224-bf24ca864282": {
+        "user_id": "ffcab0e1-ca31-46f4-9ec2-c024b3625d1b",
+        "limit": 1409.66,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "8febdca9-880f-4d43-af4e-44b5d2b6997c": {
+        "user_id": "a1065330-1b34-456c-a4de-e262089fbe5d",
+        "limit": 4079.73,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "9a7dd263-6b33-4d48-aafd-aa80b595ac2c": {
+        "user_id": "02abba3f-3608-49cd-9967-7f78dc7d67bc",
+        "limit": 4495.84,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "active",
+        "currency": "INR"
+    },
+    "e9d9d834-a75c-4704-948b-f6f227f7eb51": {
+        "user_id": "c6940033-f0e1-4f58-af3e-36d07b496e0a",
+        "limit": 1724.79,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "8ea2d4d4-fc22-4956-90e7-d0a1c4700fbf": {
+        "user_id": "5c6c5a3b-aa94-4b08-88a2-ac89fdcadfea",
+        "limit": 1135.19,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "cb96ca16-61b7-4735-97bd-886f29ebedaa": {
+        "user_id": "a4197056-c360-47fc-9a73-aedb1fe5b540",
+        "limit": 2943.23,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "active",
+        "currency": "INR"
+    },
+    "acdf60d0-872f-4c4e-8419-1ad3b2e023ae": {
+        "user_id": "7c276b58-7004-4d9a-9916-273bc77da6e9",
+        "limit": 1153.4,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "8289ad23-f02f-4d3e-8751-58478e5cc045": {
+        "user_id": "a90292c6-aad8-49b7-93ff-6a7e63f5a8e7",
+        "limit": 3835.97,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "1a82c55f-727d-4e1b-8ea8-d6ea3d0b9b75": {
+        "user_id": "e881c073-28f7-4afb-9a4b-34d1bd19fe34",
+        "limit": 2428.93,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "32f9bdee-f82d-4663-af02-4ec794b6eabf": {
+        "user_id": "9859a02f-f494-44fc-afeb-7654538f63d5",
+        "limit": 3742.19,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "18e875b2-b7e6-4527-b0c8-22afcbdb3a9b": {
+        "user_id": "4d0cc2b8-e2bc-404f-8873-13ba04db9bcb",
+        "limit": 1716.78,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "d17048ac-5426-43ad-b8c4-854aa41f27ee": {
+        "user_id": "90e6891d-842c-46c2-b06b-8f10e0d1502d",
+        "limit": 3526.59,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "5fd9098e-1542-498e-ab52-d470f8964f96": {
+        "user_id": "0979c841-26e7-4f39-bbc8-3306b9e2ab87",
+        "limit": 3290.65,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "c3e87cbf-89ee-46ee-8d8f-6be03ef196cb": {
+        "user_id": "54cb0d4d-6b7f-4e53-ab01-6c7cd8b8169c",
+        "limit": 3889.98,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "99634ec1-5edf-4ef1-92f5-b2e064d875f6": {
+        "user_id": "c3373dee-8d2d-4351-b0d6-e34b70dcd5ae",
+        "limit": 2694.31,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "4f5f01ba-45b6-4a41-a82a-acfad215b231": {
+        "user_id": "9aa0a0da-e121-4020-9b4b-44ec77da4761",
+        "limit": 3747.23,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "2f763518-82b5-46c5-a601-fdcaa4279466": {
+        "user_id": "3be2e128-5f49-4987-8d62-e7f59b2434a5",
+        "limit": 3279.45,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "1eed318e-7cdc-482a-8592-7b383cc4a67c": {
+        "user_id": "e61216ea-f4fb-4673-84d1-017e598f506f",
+        "limit": 4992.07,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "b4fc3fcc-09e5-4107-9048-61052d1c6e6c": {
+        "user_id": "11734915-2eb9-4357-b172-78745acfbcdb",
+        "limit": 3533.83,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "39f053c8-64d1-4bd2-890a-515ff57f570e": {
+        "user_id": "4e4e85a9-19ce-42fe-b6af-e233f7af7bc4",
+        "limit": 3833.42,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "4bb22692-6aae-4f86-bffa-fe200fd17953": {
+        "user_id": "0c7ad3c1-01f4-4de4-a2d9-0c4259dce1a9",
+        "limit": 4347.55,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "b463b5ce-3361-40ff-ace9-498ed7a9c80d": {
+        "user_id": "8bc57c17-0db0-47e9-bd66-de9fa9f0dfe4",
+        "limit": 2744.15,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "377b27b1-d67a-48ff-aaad-6ccc395d6ec9": {
+        "user_id": "baa62b98-e07b-4e8c-8926-337750839c8f",
+        "limit": 1184.29,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "48bcc756-4f66-43c4-9cdf-056eed6a0b59": {
+        "user_id": "d6a72cc8-8507-49c3-8215-c6eaaf8a3bcf",
+        "limit": 4284.61,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "8f950fca-5c69-46d1-93b9-9311b5ffdb32": {
+        "user_id": "75a145c0-de6a-4cfe-8692-807d5ce35c59",
+        "limit": 2338.57,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "bb56ab5f-d3c2-4c43-abd8-3b7702b267c0": {
+        "user_id": "a936d83b-f78a-40b1-8863-169775ed3a9b",
+        "limit": 2692.83,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "4be09c4f-10c7-4a9e-a7fa-48da81c64445": {
+        "user_id": "f144437d-b0e8-489f-8786-a34bb1c8af54",
+        "limit": 2218.3,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "ce4e6dec-0298-4801-aa59-452ac45aba66": {
+        "user_id": "9fc6ba23-41e7-42c8-82f0-7bbc499d380c",
+        "limit": 1633.82,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "active",
+        "currency": "INR"
+    },
+    "7cbeefce-df0e-4620-a1a3-4fdb4cce2be7": {
+        "user_id": "afdf9235-f21f-4f60-bd57-f3b006be6078",
+        "limit": 2175.13,
+        "provider_id": "77fed23a-a8d5-4c5b-9892-7315741a4aab",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "743a041a-5a62-4875-abe6-9edc2481a304": {
+        "user_id": "0979c841-26e7-4f39-bbc8-3306b9e2ab87",
+        "limit": 4477.31,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "172f091a-db4c-41fe-8779-978b45e01f61": {
+        "user_id": "09707f33-d367-4a78-a0ff-0683b02017c2",
+        "limit": 3588.33,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "6b600d55-c372-46a8-abd6-f69b33636808": {
+        "user_id": "2efbfc50-1386-42ed-9d48-aceda74411d7",
+        "limit": 2829.19,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "12e4c2e8-eba9-4967-8890-8801102b7908": {
+        "user_id": "964d5d17-137a-4348-9f58-badc58987e68",
+        "limit": 1131.22,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "982bf79f-ec98-46dc-ab8f-17a55b8d1e79": {
+        "user_id": "0cefb664-dcb0-4a28-9a51-efd6f9b10849",
+        "limit": 4915.89,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "85eec8d2-f18c-4298-a705-1288bc874975": {
+        "user_id": "b86e8e93-0989-4f6c-bafa-4bf9de81ab57",
+        "limit": 4414.77,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "54d09540-19ca-48a5-9e4f-919074abe120": {
+        "user_id": "85599dd3-e3cf-4562-bfb3-2e0f0774a530",
+        "limit": 2304.0,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "28df4ddd-8e52-4774-b618-e3c0a56d9927": {
+        "user_id": "0d4fb04f-bc52-4e26-9cb6-45c75561dc3a",
+        "limit": 3159.27,
+        "provider_id": "ace54f3d-3bc9-4537-829c-899b2e20455d",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "2111b651-516f-4e08-95be-088f9309110e": {
+        "user_id": "c798a27a-d10e-40e6-9cdc-440fed870693",
+        "limit": 1307.52,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "6fbd39ad-96d7-48e1-931e-dffdf903b0f3": {
+        "user_id": "7d131b7a-00b1-4ed7-9048-15e5da534085",
+        "limit": 1201.25,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "cf2e34a3-c167-4575-b105-c9cf3259abce": {
+        "user_id": "05277603-5be6-4967-ba00-f4827a0d8792",
+        "limit": 3547.96,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "4b7390a8-0a19-4940-8c2b-28dfbc2b01ad": {
+        "user_id": "bd14319b-1898-4c1f-95c6-f5f2a064623b",
+        "limit": 1758.35,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "0611e859-344e-4f4c-9a2b-6b62277cdd5b": {
+        "user_id": "52c635b8-6de6-45f3-8c60-e074e59f9d2e",
+        "limit": 4404.41,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "150a9c1f-4595-4f1e-986a-8b4f3ad3fc43": {
+        "user_id": "8c19185d-1e69-4b6b-950f-a2967009c781",
+        "limit": 4091.55,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "7e4ce302-8702-4acb-bfea-5425db93f97b": {
+        "user_id": "1077c7c4-3011-4a8e-9083-9392c879f8da",
+        "limit": 3294.05,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "f4cb111c-24eb-4434-b45a-fc5b416eb9e6": {
+        "user_id": "38e6dd33-cea4-47c0-8a00-6e09114a0754",
+        "limit": 4534.2,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "5dc5aaba-2c78-4cc8-b4cc-d6b63941799b": {
+        "user_id": "fae46c85-454c-4ffa-874c-74e3d725bbfd",
+        "limit": 1066.11,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "4bdd9ceb-3cb3-4cf8-afaa-8455d9d33707": {
+        "user_id": "65e154c9-f72e-4c9d-b9ff-d364f0bb127a",
+        "limit": 4549.74,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "8c63b78f-6d01-431c-b8ad-31a3882dc134": {
+        "user_id": "3e1b114e-c6d4-49b8-9ea9-39f5399cc8df",
+        "limit": 2664.25,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "6a3a4c95-10c1-4aaa-8c4c-9479d899c423": {
+        "user_id": "bdeb0fc4-e7ed-4192-99f8-d54d8305b182",
+        "limit": 3558.65,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "c6b49ee3-505a-4fd7-97ea-ec32763f4a8d": {
+        "user_id": "ddfa4934-1b12-4f2a-bfb0-2df8bc340ccb",
+        "limit": 4897.84,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "2a6a3d6d-a771-4de0-ba9e-2aba5fab8ad4": {
+        "user_id": "16716cad-27af-40e3-a2c4-ad8cec39042e",
+        "limit": 4506.11,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "f1303428-7f62-4f63-b52e-d13b4a058cae": {
+        "user_id": "e9f3bd09-f5ac-4813-9b6d-dcbc5405f531",
+        "limit": 2827.39,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "be7ec756-1c2e-44cc-a410-9af592ec996a": {
+        "user_id": "76cbb787-85af-4312-8741-fa56874dcd4b",
+        "limit": 2830.22,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "6c02e363-1007-414b-b49f-a787e391159f": {
+        "user_id": "ac5feb6a-efc8-4574-9245-c20e0fd15fc1",
+        "limit": 2114.71,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "5e6fce05-8130-4f55-8ed5-dd17d4c391dd": {
+        "user_id": "f486ad4c-9da1-4c3d-aa73-64014755e3c9",
+        "limit": 2216.2,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "e979c502-ce58-445f-ad9d-229e2e3cd189": {
+        "user_id": "078d6051-01ef-4057-8466-86b36a8dcfdd",
+        "limit": 2517.31,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "0481e9d5-9beb-4516-a959-8643f4b27d48": {
+        "user_id": "d01977ea-d02a-4d33-a06e-f322486eccda",
+        "limit": 4299.12,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "35494d14-1405-4687-858b-485a4b4e2c6b": {
+        "user_id": "1ca291ae-544e-4856-8d88-754aaa253af2",
+        "limit": 1745.23,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "440eafe4-f8f1-46d2-9625-a1488608a309": {
+        "user_id": "ac5955e8-ffa1-4e48-a2a9-34236f2138df",
+        "limit": 1996.35,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "2d6cc27d-4f2b-45d8-bd8d-7436862cf060": {
+        "user_id": "ee704752-40a1-46dc-928d-9557aaa7f6ab",
+        "limit": 3508.32,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "fee5eea4-c070-4365-8052-fd048fc2c656": {
+        "user_id": "b6f257e4-2366-4c8c-bff9-efc72cdd17c0",
+        "limit": 4956.57,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "1f44d9b3-0994-4e23-bab4-59981f32c6cc": {
+        "user_id": "8c19185d-1e69-4b6b-950f-a2967009c781",
+        "limit": 4417.88,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "a0f62b3d-9b72-4cfd-b422-5bf4393139e1": {
+        "user_id": "5a25ba5a-a7b1-4509-ae98-4c5de14311d1",
+        "limit": 4492.73,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "3f1cafb0-4b75-484f-9130-0ab3a2032b2c": {
+        "user_id": "771b4a61-5b46-43c3-a3e5-70be6c120384",
+        "limit": 2728.27,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "d8a9ab9b-e6a3-4d01-875e-568e227d2039": {
+        "user_id": "1b1be37f-9030-4643-8e3d-bdcff726e85e",
+        "limit": 4860.95,
+        "provider_id": "41f8a446-18e1-45a1-a78f-30314f3c2b72",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "93fb201b-948e-4269-86f8-1e5dfc8b13bf": {
+        "user_id": "c283a44f-7d4e-42b4-80b1-89a6ebd773ab",
+        "limit": 3296.46,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "3ee6e4dd-31a7-4c34-bbd3-3d44fce1d305": {
+        "user_id": "77e630a8-5051-46ec-9b5e-b96b57160fbc",
+        "limit": 3701.85,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "a51ad4dc-36bf-4329-b976-019f0613eaa7": {
+        "user_id": "8c19185d-1e69-4b6b-950f-a2967009c781",
+        "limit": 4233.12,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "d8797b08-0874-48c2-a56b-e9a004ab9281": {
+        "user_id": "7ee61a0a-94c0-4bab-8ef1-5292ded5fa5b",
+        "limit": 1078.6,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "f187c692-f697-4d47-9537-25e900f0ae90": {
+        "user_id": "a1065330-1b34-456c-a4de-e262089fbe5d",
+        "limit": 2408.56,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "105e4c07-946d-4074-bd17-6bbf81cc7817": {
+        "user_id": "50e8ee23-255b-4ab9-a3a6-cacba8d8b1ac",
+        "limit": 3320.72,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "1ea2addb-7637-48df-af6b-4666dc2286d8": {
+        "user_id": "c0f0634f-1783-413f-8b3d-06b38bb653b9",
+        "limit": 1056.46,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "fa82f120-0563-482b-8499-5d387257546e": {
+        "user_id": "4d8cd62f-91c9-4ce6-a723-7c6fcd3d1c97",
+        "limit": 3620.36,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "0fa29591-1f9a-44ff-a3a7-a27c82a7f912": {
+        "user_id": "e4d3bddc-d931-410d-abf4-f14d1a7abf2f",
+        "limit": 4752.4,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "9bf8bdb3-4e54-4499-a0df-4355aba87024": {
+        "user_id": "0cefb664-dcb0-4a28-9a51-efd6f9b10849",
+        "limit": 2427.15,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "b55d9f21-c80e-45d9-adc6-36aa2a773331": {
+        "user_id": "d3acda62-4561-4bc3-a01a-5c8098fb989b",
+        "limit": 1565.35,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "3955d5bd-8c65-4dcf-9778-0a4cdc89256d": {
+        "user_id": "bb50d966-5db0-4621-b749-1df03e9bc616",
+        "limit": 2152.55,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "401dcfee-22a6-4184-977e-b0d16519ff9e": {
+        "user_id": "1e0dbd10-7268-4c89-87ce-e6bbf77f27ee",
+        "limit": 1913.69,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "d4306e7b-02dc-4b17-8676-bdc0525ff1a4": {
+        "user_id": "c3242d34-d228-4836-8c6f-1724c022f8c7",
+        "limit": 1111.33,
+        "provider_id": "41b14719-7053-4442-b5d5-a0213a1aa920",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "c876d94b-763e-44f2-b29e-50650d6adf4a": {
+        "user_id": "b92d7e56-4020-42fa-ae50-2f4f4d9cad62",
+        "limit": 1503.26,
+        "provider_id": "41f8a446-18e1-45a1-a78f-30314f3c2b72",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "966b382d-0fc7-4249-8011-d365d0ec343f": {
+        "user_id": "e231a713-9b54-43fa-8546-f2d8829b0960",
+        "limit": 1405.32,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "5c960f67-d339-4031-af64-410880166ac8": {
+        "user_id": "f169892e-aaa3-4c35-88f3-6c3375239718",
+        "limit": 1409.19,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "7f46dd41-4c0f-44ca-9edf-8f10c6022052": {
+        "user_id": "873a9b35-8e9a-4113-b1ed-b8d58961a85c",
+        "limit": 1282.63,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "851158e5-d158-47fb-8707-787b091acfb6": {
+        "user_id": "8bbd338c-9343-4678-94d0-ea3ea9e93d49",
+        "limit": 2495.2,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "c9e5fa8d-5794-404e-8f42-1fd9d08bd2bf": {
+        "user_id": "482aa2fd-e041-493b-8b2e-6d65fa613bb6",
+        "limit": 2928.63,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "f3b357fe-87d4-4976-9b29-5784489d261a": {
+        "user_id": "99f21dce-5345-4a82-8ee9-444d8e3dfe90",
+        "limit": 3725.83,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "84310ec4-0cd9-425c-9e4a-9fc58d2b13a0": {
+        "user_id": "3fff74cd-b3e7-4411-b201-351ac559743a",
+        "limit": 2254.52,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "f080f8c8-7255-4df7-b01e-3d90051ca465": {
+        "user_id": "4ced7cd9-6fde-4eb8-9f0c-4972d4dc58a8",
+        "limit": 2286.29,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "591f67b2-4429-446e-b6bf-814ef1d2f0c0": {
+        "user_id": "a189d555-b8c9-48d4-a250-14e64f9b6aa5",
+        "limit": 1823.84,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "389a7e26-294b-43bb-8cf5-1b62605325bb": {
+        "user_id": "4da81ad5-fabc-4e50-93e3-5d5a05d27f58",
+        "limit": 1787.28,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "789ce3a7-2f40-431b-a31d-b3d738259dfc": {
+        "user_id": "d55313b5-4c96-4fc4-9d5f-c20de6616f2c",
+        "limit": 4250.13,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "1385c84a-1cd4-43fd-8bf4-8c87126a6c3b": {
+        "user_id": "964d5d17-137a-4348-9f58-badc58987e68",
+        "limit": 3443.87,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "f747dfd8-152c-4267-ae5b-3a5119625de7": {
+        "user_id": "b96c5db0-610f-4944-95a1-92a9b3670bb0",
+        "limit": 1787.17,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "b8b4b155-cd26-4b9b-bdb7-11034cf55be5": {
+        "user_id": "b8514b4f-b7d2-4f85-b439-155b216b3e71",
+        "limit": 4581.16,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "cccb7fd0-2675-44cb-998c-b2902ac2cae1": {
+        "user_id": "baa62b98-e07b-4e8c-8926-337750839c8f",
+        "limit": 1674.9,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "e4d2c820-056d-4ab8-bdae-573af0342e51": {
+        "user_id": "b9b9409a-028b-445d-a054-d1287ecebc9f",
+        "limit": 2184.38,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "df96831d-47c8-4c7b-9901-56e1e2c6c911": {
+        "user_id": "62b9ce1d-7020-4642-b6c2-69301403a082",
+        "limit": 4192.5,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "70f304a1-23bc-4922-9f67-02295b4bfe6b": {
+        "user_id": "4d0cc2b8-e2bc-404f-8873-13ba04db9bcb",
+        "limit": 1900.22,
+        "provider_id": "0d730360-4b9e-4555-9eee-690aac2c58bc",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "6d5c30a4-b608-47a8-b865-568faac2aae4": {
+        "user_id": "3315fd47-2a67-45d9-b8fb-32972ed4be6c",
+        "limit": 2360.29,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "e3ecae17-f65d-498c-9b93-3c3a2531846f": {
+        "user_id": "54edbbe6-5369-48c5-8fc0-a8322155d037",
+        "limit": 3258.62,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "a868fd03-69e9-47fc-8524-641e29c6743c": {
+        "user_id": "a6f5a0e6-9b59-4dd9-bf24-28ee0c383e02",
+        "limit": 1928.86,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "e93d5299-1098-4629-b2c6-16a553390963": {
+        "user_id": "2ab8e028-f515-47ad-84c1-a25d64084732",
+        "limit": 4154.12,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "619a17bb-78b9-4904-a5c7-34abf8d07946": {
+        "user_id": "3ec860f5-ed1c-4b3e-a484-bd2655068e93",
+        "limit": 4378.99,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "cdf57c8f-a227-4f4d-b317-636fcb027f49": {
+        "user_id": "57c13dae-165d-4e20-9481-98d68ac39a53",
+        "limit": 4706.44,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "ebf13ee3-dd48-4309-b701-ea337f71b2b1": {
+        "user_id": "d6a72cc8-8507-49c3-8215-c6eaaf8a3bcf",
+        "limit": 3889.02,
+        "provider_id": "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "0b7e3fe5-be10-48e4-aeda-1041be29c108": {
+        "user_id": "e281d398-6f19-4cd4-8b4c-c4695796e2bd",
+        "limit": 2016.65,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "b5865844-1ed7-45bf-81c8-76946150dc97": {
+        "user_id": "365278c8-3645-450c-87b6-a418a8bd9be1",
+        "limit": 4966.36,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "4dfd4326-c681-48b8-be83-6756258c0c15": {
+        "user_id": "974d7fb5-f6e9-45e3-a523-463636fe6cbc",
+        "limit": 1063.72,
+        "provider_id": "c523e80a-759e-4103-9126-28ef2ea73863",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "202764c0-a2dc-4efe-b2f6-9c4207b2a1a5": {
+        "user_id": "44c5f273-2742-4f2a-8add-7af6d7351544",
+        "limit": 1551.12,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "3c665629-988f-4dd5-be44-7141277e9dfd": {
+        "user_id": "1f1f1e3c-e098-4066-b3cb-38e2e8afbff5",
+        "limit": 4815.51,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "c7e0c955-6c7c-4372-b0ba-8b891b9b898d": {
+        "user_id": "81890c98-d23d-4192-bcce-9fbd0320ea9b",
+        "limit": 4454.1,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "active",
+        "currency": "INR"
+    },
+    "0bf6fadc-18cd-44e5-8b32-d44259e34f1a": {
+        "user_id": "2e42ed5d-5301-430f-9b38-109017a1c9d4",
+        "limit": 4179.28,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "d4d5423b-0cd4-4cff-ad3b-efa0f28f9a86": {
+        "user_id": "4ff73b48-0afc-466f-a803-b8c9ccb073ca",
+        "limit": 4480.22,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "7a729868-e733-43bf-a0fa-e4e316df0218": {
+        "user_id": "bc8dd0fa-9ef2-4da8-930f-ecb9e4fc8d61",
+        "limit": 2527.09,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "9d28ad1c-30f1-41f9-88f2-3ff4ec781f48": {
+        "user_id": "434b05c9-e95a-466d-9dfc-057fca93ed12",
+        "limit": 2581.48,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "bef0cc48-cbf6-4b20-9b57-66036039ae41": {
+        "user_id": "feac879a-205f-4bf1-9eff-eaa136ff18dd",
+        "limit": 4138.6,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "6446cd54-304d-4ee3-b833-064f5d33160c": {
+        "user_id": "9480dcc0-4b25-4989-833f-7783510b5b4f",
+        "limit": 1677.19,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "553d0b26-d846-46b8-945c-4012097cb622": {
+        "user_id": "97286c59-1569-4681-af0e-5aef57d33e54",
+        "limit": 1468.88,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "expired",
+        "currency": "USD"
+    },
+    "459365f3-37d3-4b19-928f-7fe3a726ccdb": {
+        "user_id": "cd66988b-7741-4657-b2c6-45643adbe9d5",
+        "limit": 4458.49,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "expired",
+        "currency": "BRL"
+    },
+    "1148991d-5d66-4453-9f15-63be74d66035": {
+        "user_id": "df4cfc82-8404-44a2-a58e-0667e4df7ec2",
+        "limit": 2025.04,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "b75520b0-7a10-4165-8a6a-5edeb58d3c0f": {
+        "user_id": "ffff4e0b-4fe8-4df2-a74f-d633c1f801e2",
+        "limit": 3548.02,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "63d50bc5-2295-48fa-86da-024dee071115": {
+        "user_id": "2ab8e028-f515-47ad-84c1-a25d64084732",
+        "limit": 3736.57,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "active",
+        "currency": "USD"
+    },
+    "47b5e863-611a-49b6-ac2e-50a62533869c": {
+        "user_id": "cccf6c93-d2f4-4b39-937b-8c45d5febbe8",
+        "limit": 2293.29,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "active",
+        "currency": "USD"
+    },
+    "848bb3f7-71e7-405e-b6ff-86235fda6d6e": {
+        "user_id": "3468f0f9-c75e-4a82-8af7-1f743f834087",
+        "limit": 1237.91,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "c21c6443-91a7-45e2-baef-0adaacffd7e2": {
+        "user_id": "a827691b-a626-413a-ba62-ff6157c2f096",
+        "limit": 4585.99,
+        "provider_id": "41f8a446-18e1-45a1-a78f-30314f3c2b72",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "f6c4daf9-4551-48b2-b6bb-082be90966eb": {
+        "user_id": "d6957794-4f5a-4fc9-a5c7-ffa86e86c05d",
+        "limit": 3483.9,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "03c35abc-4865-4c0b-8cf8-04edda18f9a6": {
+        "user_id": "b6f6f720-8579-4b2f-aa14-a72add7252bb",
+        "limit": 3959.28,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "e3535c98-b3e3-450f-b2f0-7341985e4e31": {
+        "user_id": "a6f5a0e6-9b59-4dd9-bf24-28ee0c383e02",
+        "limit": 3937.64,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "1e49f4a6-165a-44d7-8bb1-47f915d0343b": {
+        "user_id": "bc9bd9b3-5ff1-45e3-ba5d-a99843cdc11d",
+        "limit": 3545.55,
+        "provider_id": "77fed23a-a8d5-4c5b-9892-7315741a4aab",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "7319a373-5051-4b03-ae4a-1834a22741ed": {
+        "user_id": "6f84b89e-0f57-4dba-88d6-86dfdf1c162e",
+        "limit": 4299.87,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "4e2ef0d1-845c-41b1-843d-d93dea5bff66": {
+        "user_id": "0979c841-26e7-4f39-bbc8-3306b9e2ab87",
+        "limit": 1910.25,
+        "provider_id": "ace54f3d-3bc9-4537-829c-899b2e20455d",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "da9ed07d-d13e-4575-bef8-c509151da4e4": {
+        "user_id": "98e4d089-6229-4451-b094-7fa2de5b1d96",
+        "limit": 1117.46,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "5a94565b-6a8a-4794-99de-ea21e06f4695": {
+        "user_id": "db085153-63d1-4acc-84eb-d83af6e7e86f",
+        "limit": 2929.59,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "bc3fbf3a-26da-4e6a-91d2-c7a2dfd617f5": {
+        "user_id": "bf5ac972-9c7d-4eb9-a28a-0a75961b315d",
+        "limit": 2610.74,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "baaeb3aa-b778-48f9-a7dc-a2acb948ef37": {
+        "user_id": "d55efcb1-a7ef-4ce4-84be-a02a9d01abab",
+        "limit": 1060.59,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "active",
+        "currency": "EUR"
+    },
+    "e5eb7e2b-6157-45c4-91fe-bbe7a97403ad": {
+        "user_id": "4e4e85a9-19ce-42fe-b6af-e233f7af7bc4",
+        "limit": 3820.62,
+        "provider_id": "77fed23a-a8d5-4c5b-9892-7315741a4aab",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "7b05cfb1-86d6-4369-a3cf-a5c9622a41ea": {
+        "user_id": "bb50d966-5db0-4621-b749-1df03e9bc616",
+        "limit": 4296.68,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "active",
+        "currency": "USD"
+    },
+    "ad9e3fb9-7531-4c9d-b7c5-4943b05e3443": {
+        "user_id": "947d5104-8176-4570-8c8f-a60b050e6b51",
+        "limit": 2503.21,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "cacfc7eb-a99c-4230-9e11-aebbeeab8328": {
+        "user_id": "3ec860f5-ed1c-4b3e-a484-bd2655068e93",
+        "limit": 2488.48,
+        "provider_id": "dc65c7d9-1ab7-4230-92f0-2233cf3db60f",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "9f5fc263-4e5e-45fe-86dd-f7757d28bbdd": {
+        "user_id": "6550e8c3-4f18-4ba8-8244-74a0fa283899",
+        "limit": 4399.83,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "1db7ede0-3dd4-46bb-9571-2baf159d39b5": {
+        "user_id": "c283a44f-7d4e-42b4-80b1-89a6ebd773ab",
+        "limit": 3910.55,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "d5f516ac-64bf-4243-8fd3-63c1d44281d1": {
+        "user_id": "c798a27a-d10e-40e6-9cdc-440fed870693",
+        "limit": 1655.98,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "bb744e0e-b5c9-45fd-b9b5-07c89ba3f653": {
+        "user_id": "9aa0a0da-e121-4020-9b4b-44ec77da4761",
+        "limit": 1357.98,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "376f2138-1ffe-46a7-99f0-bba998e851d0": {
+        "user_id": "3ad13cb3-c157-4c8f-8f66-c979cb6b31e4",
+        "limit": 3074.41,
+        "provider_id": "0d730360-4b9e-4555-9eee-690aac2c58bc",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "e33b7aef-752c-4125-b506-083839037326": {
+        "user_id": "b96c5db0-610f-4944-95a1-92a9b3670bb0",
+        "limit": 4333.64,
+        "provider_id": "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd",
+        "status": "expired",
+        "currency": "GBP"
+    },
+    "1a4f323a-13dc-4d86-bf73-8488c4ce91a5": {
+        "user_id": "249f983d-b4f5-49b5-9d5f-fda569d07966",
+        "limit": 3274.22,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "7470b19b-e2c6-427a-a655-976d7d05bc4b": {
+        "user_id": "8bbd338c-9343-4678-94d0-ea3ea9e93d49",
+        "limit": 2496.05,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "047d2a5b-bd08-4e98-b3ba-94bb5096f6bf": {
+        "user_id": "feac879a-205f-4bf1-9eff-eaa136ff18dd",
+        "limit": 3611.01,
+        "provider_id": "ad2b8ad1-2421-4d08-8403-03a44317f63f",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "49dbfde2-b662-4907-8de2-2bc949cd4e75": {
+        "user_id": "1b40dff5-3c6e-48f1-a31f-41cb5502c424",
+        "limit": 1134.29,
+        "provider_id": "41f8a446-18e1-45a1-a78f-30314f3c2b72",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "63b9ebe6-2d31-4930-8764-a0bce011cb6a": {
+        "user_id": "e881c073-28f7-4afb-9a4b-34d1bd19fe34",
+        "limit": 3198.97,
+        "provider_id": "adbc2b70-a6fb-41f3-a589-cff973c7a5d5",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "70095d98-ad1f-4ba9-b110-e13c7d1cc0e9": {
+        "user_id": "e2fbd376-489c-480e-8fea-9e0b5440b480",
+        "limit": 2379.12,
+        "provider_id": "ed0040b9-3524-4361-aaa0-a627ba873dc8",
+        "status": "active",
+        "currency": "GBP"
+    },
+    "1ce44544-fbba-4fe6-93ae-a475eb4df91a": {
+        "user_id": "8915ac03-b418-4a2b-b507-83e6c0490780",
+        "limit": 2393.47,
+        "provider_id": "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "e2298c0e-e63d-4bf5-b5bc-07cf624f8b61": {
+        "user_id": "6f84b89e-0f57-4dba-88d6-86dfdf1c162e",
+        "limit": 2201.41,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "e4fb7bcf-1570-414c-bd14-9ed869f41a6d": {
+        "user_id": "c2455966-8437-4adf-9b40-dacec1fa28d5",
+        "limit": 1112.67,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "ff850139-8832-4cf8-9018-c945100482b0": {
+        "user_id": "f25a7e1f-b237-4230-8699-7ebe506d072c",
+        "limit": 1969.32,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "86c8aece-d54e-41ef-8449-b0e9d374d613": {
+        "user_id": "09072d8e-9979-4d6b-aff2-2201105f005f",
+        "limit": 4954.7,
+        "provider_id": "4914da87-8e3d-40c7-88b6-26461b8170c8",
+        "status": "active",
+        "currency": "BRL"
+    },
+    "a2733b88-7eda-4d1f-ae73-a7c3da358270": {
+        "user_id": "b447a1eb-48c1-40cb-b0ab-d8e50c31268a",
+        "limit": 2924.11,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "blocked",
+        "currency": "AUD"
+    },
+    "6dcaeff3-484b-403e-8d58-ae20a07e73ee": {
+        "user_id": "ea4b5667-3c15-4a95-9b35-2ee8ab9ef06e",
+        "limit": 2162.08,
+        "provider_id": "43d83970-51f2-44a4-8124-9ad6c58f7620",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "d1511f39-2c7b-4f52-b92d-4a2aeb6082c7": {
+        "user_id": "e61216ea-f4fb-4673-84d1-017e598f506f",
+        "limit": 3006.72,
+        "provider_id": "ace54f3d-3bc9-4537-829c-899b2e20455d",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "d5f9a934-89a3-45e4-8d55-2fcedcee3b92": {
+        "user_id": "e11725f0-296f-4b75-a4b7-8744d4796042",
+        "limit": 3058.16,
+        "provider_id": "234265ae-92b0-48dc-89bd-83bbc390d460",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "3d01c815-9402-4c80-9e24-60e178a1d791": {
+        "user_id": "7ce604dd-7c1b-411b-baf5-1cf7e2bdb868",
+        "limit": 2768.1,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "blocked",
+        "currency": "CAD"
+    },
+    "2a6487e3-eb3a-487a-b421-07cf7ba70c23": {
+        "user_id": "98e4d089-6229-4451-b094-7fa2de5b1d96",
+        "limit": 4040.17,
+        "provider_id": "0d730360-4b9e-4555-9eee-690aac2c58bc",
+        "status": "blocked",
+        "currency": "BRL"
+    },
+    "e7ebada9-df6e-4761-b134-9a24b5af3f70": {
+        "user_id": "f25a7e1f-b237-4230-8699-7ebe506d072c",
+        "limit": 2079.02,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "expired",
+        "currency": "CAD"
+    },
+    "74a3883f-eed5-4462-b45d-418d22d35672": {
+        "user_id": "2c5c4688-27e5-4402-aea1-bdd8c60e59a8",
+        "limit": 2307.72,
+        "provider_id": "aea6e559-4258-4805-87bd-050f8968b3ea",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "b261cee1-7271-4906-b76e-13a07f3a6466": {
+        "user_id": "26983ed9-6581-455f-8cd0-afbcab00c9c6",
+        "limit": 4263.29,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "blocked",
+        "currency": "EUR"
+    },
+    "61b39f2e-7ff4-49c0-bf1b-74d228a2f865": {
+        "user_id": "2916a88e-4d76-427b-ab08-409be2c52161",
+        "limit": 4690.1,
+        "provider_id": "77fed23a-a8d5-4c5b-9892-7315741a4aab",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "e73553fb-1e18-49c3-ad90-ff450994b3e2": {
+        "user_id": "44c5f273-2742-4f2a-8add-7af6d7351544",
+        "limit": 2600.61,
+        "provider_id": "7b45eddd-03f6-456b-ae8c-21e590a0117e",
+        "status": "active",
+        "currency": "AUD"
+    },
+    "96137ab2-9495-43a2-aa2d-0e31c808ae26": {
+        "user_id": "9106d7d5-7aaa-45e4-8304-b77caaffe6c4",
+        "limit": 1725.4,
+        "provider_id": "41f8a446-18e1-45a1-a78f-30314f3c2b72",
+        "status": "expired",
+        "currency": "NGN"
+    },
+    "e859c520-98d3-4594-b59a-f1d7563972d6": {
+        "user_id": "0ded854f-0e54-4071-98bf-66644308ad18",
+        "limit": 3303.23,
+        "provider_id": "bf6b01bd-009c-44f3-aa8d-a57cf21b2880",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "a23d43f2-7d69-418a-8974-48083f15880a": {
+        "user_id": "f260b48e-c17b-43f5-a9e6-d349e9883c7c",
+        "limit": 1806.69,
+        "provider_id": "41f8a446-18e1-45a1-a78f-30314f3c2b72",
+        "status": "blocked",
+        "currency": "NGN"
+    },
+    "7da8b10e-cbff-482b-b318-510aaf0eab7b": {
+        "user_id": "11734915-2eb9-4357-b172-78745acfbcdb",
+        "limit": 2845.21,
+        "provider_id": "951dcaff-0115-4045-a430-53fb925e4eac",
+        "status": "expired",
+        "currency": "INR"
+    },
+    "33ead5be-5857-49c9-8d03-f6e428d0c5c4": {
+        "user_id": "ae6c964e-33e0-4758-936f-eabf687297cf",
+        "limit": 2779.26,
+        "provider_id": "6ccefe9e-01f8-4872-997e-605b522e79a9",
+        "status": "expired",
+        "currency": "AUD"
+    },
+    "31d0b141-2853-4ab2-a087-5ea5c6065952": {
+        "user_id": "3fff74cd-b3e7-4411-b201-351ac559743a",
+        "limit": 2162.54,
+        "provider_id": "5345befc-a578-4eed-b1e8-c2d72a2ca311",
+        "status": "active",
+        "currency": "CAD"
+    },
+    "c1f3f04a-e68c-4e25-af47-b258ff91ae9c": {
+        "user_id": "c94cb821-2ae1-4ce4-8a98-d6c6d1a4ca4e",
+        "limit": 2742.25,
+        "provider_id": "e3637490-33f8-4da3-9014-84eda25e62dc",
+        "status": "expired",
+        "currency": "EUR"
+    },
+    "07c4b8bd-3747-45f0-9356-0a6fa137fdd1": {
+        "user_id": "d0246abb-b46e-40cf-ac57-f97d0e48d2d6",
+        "limit": 2378.81,
+        "provider_id": "a8af1e97-3fe7-40c5-abee-122c2db9fed5",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "24ca7bb3-90f9-47d1-abfb-ce1c91c75feb": {
+        "user_id": "a21b71cb-34f6-414b-a7b4-fe9f903191c6",
+        "limit": 3140.99,
+        "provider_id": "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34",
+        "status": "active",
+        "currency": "NGN"
+    },
+    "68a9eeaa-c2cb-4385-b4c1-daa1448236c3": {
+        "user_id": "feac879a-205f-4bf1-9eff-eaa136ff18dd",
+        "limit": 4009.35,
+        "provider_id": "c13e9aa0-b4d9-4905-8649-f19a3daf3c76",
+        "status": "active",
+        "currency": "INR"
+    },
+    "127a060a-bf99-4257-ab23-60c1d1ca3f7d": {
+        "user_id": "feac879a-205f-4bf1-9eff-eaa136ff18dd",
+        "limit": 1936.15,
+        "provider_id": "7de07b99-acf6-4536-87ac-65e5a7e0676c",
+        "status": "blocked",
+        "currency": "GBP"
+    },
+    "4b524e89-0821-43ec-80df-37fe272915fe": {
+        "user_id": "f532e5f4-1d08-498f-83ef-f0bf874479df",
+        "limit": 2919.71,
+        "provider_id": "877c557b-53e0-40b8-a28a-1e6814726dcc",
+        "status": "blocked",
+        "currency": "USD"
+    },
+    "de448e47-0b18-4a9e-b62c-c2400e579e15": {
+        "user_id": "510fe8e8-3871-443b-9381-122fa32e1f1a",
+        "limit": 4409.13,
+        "provider_id": "f8203bbf-b4b8-45d9-a613-26ca3df38462",
+        "status": "blocked",
+        "currency": "INR"
+    },
+    "7f1a3d3f-c597-4458-8111-a578c6a4e772": {
+        "user_id": "c3242d34-d228-4836-8c6f-1724c022f8c7",
+        "limit": 2632.14,
+        "provider_id": "359aaa86-a346-4b30-bc6f-2ba0b370dce1",
+        "status": "blocked",
+        "currency": "NGN"
+    }
+}

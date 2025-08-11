@@ -1,0 +1,562 @@
+{
+    "c1278b03-b3c9-4d3b-b2d3-eb353b433fc9": {
+        "name": "Stripe",
+        "country": "US",
+        "supported_currencies": [
+            "USD",
+            "GBP",
+            "EUR",
+            "CAD"
+        ]
+    },
+    "2697b4ce-e73c-404f-b66b-b33154e510e9": {
+        "name": "PayPal",
+        "country": "UK",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "0fa21ca0-a30e-4a56-af40-b0e4960275a9": {
+        "name": "Wise",
+        "country": "Denmark",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP",
+            "CAD",
+            "AUD"
+        ]
+    },
+    "3311db5f-448c-489a-9471-64a3979ca0a6": {
+        "name": "Revolut",
+        "country": "Norway",
+        "supported_currencies": [
+            "USD",
+            "GBP",
+            "EUR",
+            "CAD"
+        ]
+    },
+    "fed61aac-4940-4dc3-937e-46d0434dac77": {
+        "name": "Payoneer",
+        "country": "Canada",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "89ac7fc6-12f0-4beb-ae71-1ca009e79227": {
+        "name": "Deel Financial",
+        "country": "Sweden",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP",
+            "CAD",
+            "AUD"
+        ]
+    },
+    "d559f268-9f53-467b-9ba2-37d3cba148bb": {
+        "name": "Adyen",
+        "country": "Norway",
+        "supported_currencies": [
+            "USD",
+            "CAD"
+        ]
+    },
+    "5175a6e7-e3a2-4482-a1dd-f965fc31aef2": {
+        "name": "Square",
+        "country": "Canada",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP",
+            "CAD",
+            "AUD"
+        ]
+    },
+    "fc7f9885-6dd6-48e8-bbcc-5ce371ab6abe": {
+        "name": "Braintree",
+        "country": "Germany",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "fc8e5726-b889-4376-950b-675e3961fc27": {
+        "name": "Klarna",
+        "country": "Netherlands",
+        "supported_currencies": [
+            "EUR",
+            "GBP",
+            "USD"
+        ]
+    },
+    "beb8f320-2ddf-4942-961a-492653840770": {
+        "name": "Stripe 2",
+        "country": "Italy",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "547fd565-5911-4aa2-b000-02abce8d62c1": {
+        "name": "PayPal 2",
+        "country": "France",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "0eae4eda-cd3f-41bf-89ad-cb2e6a71ddb4": {
+        "name": "Wise 2",
+        "country": "Australia",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "7c6f3578-504d-4ed0-a241-ad17b790cda2": {
+        "name": "Revolut 2",
+        "country": "UK",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "0528afa7-848d-466b-b170-12c3aaa6adff": {
+        "name": "Payoneer 2",
+        "country": "Sweden",
+        "supported_currencies": [
+            "EUR",
+            "GBP",
+            "USD"
+        ]
+    },
+    "0c795018-adf7-4423-8373-5bf3ce470c44": {
+        "name": "Deel Financial 2",
+        "country": "Netherlands",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "a6ed27f5-dfbf-4122-b346-6553a208aa8a": {
+        "name": "Adyen 2",
+        "country": "Spain",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "8e593b12-3c1a-4e52-8c8c-d181450d7b3e": {
+        "name": "Square 2",
+        "country": "Netherlands",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "821b530c-fa1c-44c4-a759-cf4d17b055b6": {
+        "name": "Braintree 2",
+        "country": "Germany",
+        "supported_currencies": [
+            "EUR",
+            "SEK",
+            "NOK",
+            "DKK"
+        ]
+    },
+    "97f22b6d-4bda-43a1-b222-292c0ae45d0e": {
+        "name": "Klarna 2",
+        "country": "Germany",
+        "supported_currencies": [
+            "EUR",
+            "USD",
+            "SEK",
+            "NOK"
+        ]
+    },
+    "3d128f21-9b4b-4212-a11d-5df0215a94aa": {
+        "name": "Stripe 3",
+        "country": "UK",
+        "supported_currencies": [
+            "EUR",
+            "GBP",
+            "USD"
+        ]
+    },
+    "6fcb9d05-9d2f-437f-8c3d-6b554c8cf079": {
+        "name": "PayPal 3",
+        "country": "UK",
+        "supported_currencies": [
+            "EUR",
+            "GBP",
+            "USD"
+        ]
+    },
+    "ff8ee646-d5f9-454a-ab22-e0c04a5d0619": {
+        "name": "Wise 3",
+        "country": "Italy",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "f12a6bc0-51bd-4fc3-91ca-c77bb12edda0": {
+        "name": "Revolut 3",
+        "country": "Denmark",
+        "supported_currencies": [
+            "USD",
+            "GBP",
+            "EUR",
+            "CAD"
+        ]
+    },
+    "13d401e9-190d-424b-8ec1-0b39e6c422ce": {
+        "name": "Payoneer 3",
+        "country": "Sweden",
+        "supported_currencies": [
+            "EUR",
+            "USD",
+            "SEK",
+            "NOK"
+        ]
+    },
+    "52806812-6440-436f-8cd1-2c8a040031f1": {
+        "name": "Deel Financial 3",
+        "country": "Denmark",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "be5ff857-a723-4040-90cb-5a4c6a2ec210": {
+        "name": "Adyen 3",
+        "country": "France",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "aca38de2-891a-4fe5-9021-588b5828c85d": {
+        "name": "Square 3",
+        "country": "France",
+        "supported_currencies": [
+            "USD",
+            "CAD"
+        ]
+    },
+    "0f850cf9-09b8-44bf-be9c-8eadaca1550f": {
+        "name": "Braintree 3",
+        "country": "Norway",
+        "supported_currencies": [
+            "USD",
+            "EUR"
+        ]
+    },
+    "6c8b7b3d-6377-471d-a3f1-5c413cd389a7": {
+        "name": "Klarna 3",
+        "country": "Denmark",
+        "supported_currencies": [
+            "USD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "c13e9aa0-b4d9-4905-8649-f19a3daf3c76": {
+        "country": "Bahamas",
+        "name": "Scott Group",
+        "supported_currencies": [
+            "INR",
+            "AUD",
+            "GBP",
+            "BRL"
+        ]
+    },
+    "6261b1ee-0c7e-4d1e-befd-5b5a6b6f3c34": {
+        "country": "Ukraine",
+        "name": "Osborn-Brown",
+        "supported_currencies": [
+            "CAD",
+            "AUD",
+            "EUR",
+            "GBP"
+        ]
+    },
+    "8e597ef3-bfd3-45e8-a570-2bcdae24fa9b": {
+        "country": "Guadeloupe",
+        "name": "Curtis LLC",
+        "supported_currencies": [
+            "AUD",
+            "BRL",
+            "GBP"
+        ]
+    },
+    "0d730360-4b9e-4555-9eee-690aac2c58bc": {
+        "country": "Ecuador",
+        "name": "Graham-Willis",
+        "supported_currencies": [
+            "BRL",
+            "AUD"
+        ]
+    },
+    "f8203bbf-b4b8-45d9-a613-26ca3df38462": {
+        "country": "Dominica",
+        "name": "Miller, Scott and Bailey",
+        "supported_currencies": [
+            "CAD",
+            "NGN",
+            "INR",
+            "USD"
+        ]
+    },
+    "aea6e559-4258-4805-87bd-050f8968b3ea": {
+        "country": "Montenegro",
+        "name": "Tapia PLC",
+        "supported_currencies": [
+            "AUD",
+            "NGN",
+            "BRL",
+            "USD"
+        ]
+    },
+    "77fed23a-a8d5-4c5b-9892-7315741a4aab": {
+        "country": "Korea",
+        "name": "Hill-Parks",
+        "supported_currencies": [
+            "BRL",
+            "USD",
+            "NGN",
+            "CAD"
+        ]
+    },
+    "ad2b8ad1-2421-4d08-8403-03a44317f63f": {
+        "country": "Faroe Islands",
+        "name": "White and Sons",
+        "supported_currencies": [
+            "INR",
+            "EUR",
+            "BRL",
+            "GBP",
+            "AUD"
+        ]
+    },
+    "ed0040b9-3524-4361-aaa0-a627ba873dc8": {
+        "country": "Russian Federation",
+        "name": "Smith LLC",
+        "supported_currencies": [
+            "NGN",
+            "GBP",
+            "AUD"
+        ]
+    },
+    "adbc2b70-a6fb-41f3-a589-cff973c7a5d5": {
+        "country": "Qatar",
+        "name": "Le-Ray",
+        "supported_currencies": [
+            "AUD",
+            "CAD",
+            "GBP",
+            "NGN"
+        ]
+    },
+    "41b14719-7053-4442-b5d5-a0213a1aa920": {
+        "country": "Barbados",
+        "name": "Schultz, Taylor and Jones",
+        "supported_currencies": [
+            "GBP",
+            "USD",
+            "CAD"
+        ]
+    },
+    "dc65c7d9-1ab7-4230-92f0-2233cf3db60f": {
+        "country": "New Zealand",
+        "name": "Schroeder-Wiley",
+        "supported_currencies": [
+            "INR",
+            "GBP",
+            "EUR"
+        ]
+    },
+    "c523e80a-759e-4103-9126-28ef2ea73863": {
+        "country": "Greenland",
+        "name": "Salinas Ltd",
+        "supported_currencies": [
+            "GBP",
+            "CAD",
+            "BRL",
+            "AUD"
+        ]
+    },
+    "5345befc-a578-4eed-b1e8-c2d72a2ca311": {
+        "country": "Nepal",
+        "name": "Higgins, Collins and Hamilton",
+        "supported_currencies": [
+            "BRL",
+            "EUR",
+            "USD",
+            "CAD",
+            "GBP"
+        ]
+    },
+    "83bc5c5d-fbd9-4fca-aa01-7e36d352aaf9": {
+        "country": "Sri Lanka",
+        "name": "Lopez PLC",
+        "supported_currencies": [
+            "USD",
+            "INR",
+            "EUR",
+            "NGN",
+            "CAD"
+        ]
+    },
+    "877c557b-53e0-40b8-a28a-1e6814726dcc": {
+        "country": "Taiwan",
+        "name": "Hopkins-Munoz",
+        "supported_currencies": [
+            "CAD",
+            "GBP",
+            "AUD",
+            "BRL"
+        ]
+    },
+    "7b45eddd-03f6-456b-ae8c-21e590a0117e": {
+        "country": "Turkmenistan",
+        "name": "Campbell, Scott and Rodriguez",
+        "supported_currencies": [
+            "NGN",
+            "INR"
+        ]
+    },
+    "951dcaff-0115-4045-a430-53fb925e4eac": {
+        "country": "Azerbaijan",
+        "name": "Martin-Wright",
+        "supported_currencies": [
+            "CAD",
+            "NGN"
+        ]
+    },
+    "6ccefe9e-01f8-4872-997e-605b522e79a9": {
+        "country": "Grenada",
+        "name": "Lewis-Williams",
+        "supported_currencies": [
+            "INR",
+            "GBP"
+        ]
+    },
+    "31ff4c92-dfe9-4eb0-9578-e84cf2d171fd": {
+        "country": "French Guiana",
+        "name": "Coleman, Ramos and Robinson",
+        "supported_currencies": [
+            "INR",
+            "USD",
+            "NGN",
+            "AUD"
+        ]
+    },
+    "41f8a446-18e1-45a1-a78f-30314f3c2b72": {
+        "country": "Greece",
+        "name": "Jones, Patrick and Carson",
+        "supported_currencies": [
+            "INR",
+            "EUR"
+        ]
+    },
+    "234265ae-92b0-48dc-89bd-83bbc390d460": {
+        "country": "Czech Republic",
+        "name": "Maddox PLC",
+        "supported_currencies": [
+            "AUD",
+            "EUR"
+        ]
+    },
+    "43d83970-51f2-44a4-8124-9ad6c58f7620": {
+        "country": "Pitcairn Islands",
+        "name": "Carpenter, Bryant and Smith",
+        "supported_currencies": [
+            "INR",
+            "EUR"
+        ]
+    },
+    "e3637490-33f8-4da3-9014-84eda25e62dc": {
+        "country": "Niue",
+        "name": "Casey, Wilson and White",
+        "supported_currencies": [
+            "GBP",
+            "AUD"
+        ]
+    },
+    "bf6b01bd-009c-44f3-aa8d-a57cf21b2880": {
+        "country": "Lebanon",
+        "name": "Thompson, Dixon and Mendoza",
+        "supported_currencies": [
+            "NGN",
+            "CAD",
+            "BRL",
+            "USD"
+        ]
+    },
+    "359aaa86-a346-4b30-bc6f-2ba0b370dce1": {
+        "country": "Portugal",
+        "name": "Pierce-Livingston",
+        "supported_currencies": [
+            "EUR",
+            "AUD",
+            "GBP"
+        ]
+    },
+    "a8af1e97-3fe7-40c5-abee-122c2db9fed5": {
+        "country": "Guadeloupe",
+        "name": "Harris-Clements",
+        "supported_currencies": [
+            "BRL",
+            "CAD",
+            "USD",
+            "NGN",
+            "GBP"
+        ]
+    },
+    "7de07b99-acf6-4536-87ac-65e5a7e0676c": {
+        "country": "Morocco",
+        "name": "Cook, Wright and Barnes",
+        "supported_currencies": [
+            "NGN",
+            "EUR"
+        ]
+    },
+    "ace54f3d-3bc9-4537-829c-899b2e20455d": {
+        "country": "Zimbabwe",
+        "name": "Peterson, Sanchez and Thompson",
+        "supported_currencies": [
+            "AUD",
+            "BRL",
+            "EUR",
+            "NGN",
+            "GBP"
+        ]
+    },
+    "4914da87-8e3d-40c7-88b6-26461b8170c8": {
+        "country": "Australia",
+        "name": "Garcia-Martin",
+        "supported_currencies": [
+            "CAD",
+            "USD",
+            "INR"
+        ]
+    }
+}

@@ -1,0 +1,4202 @@
+{
+    "20c5b32d-d7ef-42f6-aec9-c9b5ae37b1cd": {
+        "user_id": "fc010782-aa69-4008-b76e-d183b51ce1ed",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d0704d02-d6e5-419c-b0a8-14e3a9688a63": {
+        "user_id": "a59c3ec3-b57a-4be1-b726-2eb3e5675948",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "5b29bfa2-8ead-49d2-a332-ee85b7d4d7be": {
+        "user_id": "1fd1e42a-1457-41c4-8ba5-01c4ee7b7bf7",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "c35baad5-1a8d-49f9-87d5-82ad9adcc0d0": {
+        "user_id": "8202aad3-0725-41a2-b38d-85d2da03a912",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "3409f1d9-dfd8-47c2-91d2-05a8a1c43bab": {
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "0e72a8ad-48e1-4e5c-bef5-5b4939a9c4e4": {
+        "user_id": "42dc2988-4585-40c9-b374-3ddfc7f2028d",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ff1bf071-ca0e-419b-ba6f-52ff9c23a53a": {
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "d99adf37-d42e-4a7d-a09c-2ed3cf265c5a": {
+        "user_id": "117ee2c7-a319-4efd-ab68-936114cce21d",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "cfb2a862-e55e-45fa-9eff-baf2ccec3594": {
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "62deb26c-5383-408f-8095-a4a2be788174": {
+        "user_id": "f408abb2-8e31-4af9-a494-021d43930ce4",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "fbf94f67-3b2f-40f1-80ea-57ae08d18f14": {
+        "user_id": "1d17b818-a006-434c-96ec-8c813967c158",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "80740ca9-1ed0-49c3-8bc8-323af9e306b7": {
+        "user_id": "d77f1707-8ef4-4615-8bf3-f3c37a1615a2",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "a73cea81-b1f3-41f4-93a2-2d5e53fd3591": {
+        "user_id": "4330add1-e769-4565-bd23-439940701639",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ff074503-0a27-4d5b-bf15-c98d7547727e": {
+        "user_id": "78ed3a14-8981-4abe-8eaa-cf6c8da18254",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "24fda5b9-5bbc-4612-9d88-ad17537f3c4b": {
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a1430821-ad01-4cf9-805e-ab0f9b0cb31a": {
+        "user_id": "b25f7bbf-e136-4c03-bc82-5fcf5c4594d7",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "40c1f521-4ee7-4553-8f0f-d6c3506204b5": {
+        "user_id": "1fd1e42a-1457-41c4-8ba5-01c4ee7b7bf7",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "91ec6b1c-2d09-4b5e-bf2c-52a831550d30": {
+        "user_id": "dd78a929-a8ea-43c2-8e8b-620c29989629",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "6a95dbc4-5ff1-4c12-96fe-cf7715c5c2f3": {
+        "user_id": "4252cf81-abe5-45e8-9683-f09bd0cf005c",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "93123956-693c-4930-9964-e99719c29175": {
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "4a9548ed-cf8b-4029-9659-265a9f067949": {
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "fa9275d2-14c7-46b1-8c29-15f4195624e8": {
+        "user_id": "9fe61da1-71a3-40db-acbc-bbba49b7db51",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "407ed784-ed8b-4ef3-93ed-48d1a444b0bf": {
+        "user_id": "b41857f8-be21-4528-b007-59610a33b117",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "68ed1435-4cad-4828-b325-d14363c95bd5": {
+        "user_id": "fd82a5ec-b494-4236-aad2-56dad94faf9e",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "13a1b4b6-2279-411a-a7e7-7ae8ae81a9a4": {
+        "user_id": "a0bbaf42-9743-4102-b004-1fd00f41a97e",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "dcb49926-ef3c-443f-9d15-516d43c2d8c8": {
+        "user_id": "182919e5-c7ea-4dda-b096-cc51d6abbe82",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "7751f72b-bfd4-486a-a7ef-36f5efe20491": {
+        "user_id": "a0bbaf42-9743-4102-b004-1fd00f41a97e",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "d1ea2448-0524-4801-9296-dd0c05b1b108": {
+        "user_id": "388e3d0e-4fe0-44f6-9b28-de5196fbcf0f",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "7c291da2-b44c-4e6b-bfdc-24790c849111": {
+        "user_id": "563754b0-77c9-4c54-817a-c0b971dead27",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "c9ac0e9d-2afc-4d0b-950d-5580e2c0fcd6": {
+        "user_id": "e8ee4682-590b-4c7f-98c9-819fecfc5a77",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "7672d5ed-a5e6-4674-a61c-b68cf970db26": {
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "17c314b3-e96a-4b84-94ff-6ae3e749eb44": {
+        "user_id": "8cd3a682-2a23-446b-87cf-2311281336e2",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "f61ae148-9a82-448a-999a-21fc57ba6d5f": {
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "04e74ccc-9243-4eee-8205-88d8e4114665": {
+        "user_id": "c654f2e6-8d31-4e9f-84fc-72981fbbfaa9",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "3bb82b34-237a-4034-a2bf-ecfc0d5b3b56": {
+        "user_id": "584ff1c5-b542-4902-a541-13ab75b948a3",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "4535e177-abb0-4138-82ac-2a360a9c88d3": {
+        "user_id": "5000b71f-a1ab-4673-81ac-0e68f9adad76",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ad7611a5-c18c-4497-bb82-616137f5644f": {
+        "user_id": "6a2d085b-8cdc-4c21-9bea-0642fa3e2312",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "0b9f0ab9-c8e7-4bc7-b21b-e0d89b175d37": {
+        "user_id": "26bce218-cda8-49eb-b1ef-0f9fb9da604e",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "5f4ac719-4115-4345-899a-4d4c982472de": {
+        "user_id": "4374e70f-a97f-4cc6-b557-353efac07d78",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5b7db540-d0ce-4312-a5d6-3e54d1337d16": {
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "04c1ef97-91d5-4e71-8eba-2ee74f463538": {
+        "user_id": "f01c7464-0868-4847-b81c-491db0efcff8",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a6c0a390-1de4-4eb9-a5a3-0a70298ce1f3": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "8271079e-b0cf-4751-a2d0-4cc69ae9e2d9": {
+        "user_id": "9332955b-1a4b-4f45-bdec-98e9fd290192",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "2b2cb147-2fce-449b-a30a-bc66de8e93ff": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "df176550-72d1-44c0-8a37-27955c536845": {
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "cfdd1d2e-f572-4b97-a3a6-dbaaba88e6e3": {
+        "user_id": "e272d8d9-67f8-45d0-b9a7-49be53e1a228",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "dca0d955-b91d-424c-86b0-c3403ddbe0e2": {
+        "user_id": "388e3d0e-4fe0-44f6-9b28-de5196fbcf0f",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "9bd0de4a-13fa-417e-bda9-44fc1495b559": {
+        "user_id": "8d5748ec-f39d-48f0-a719-ea857d3d3a71",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5666d3bc-8428-4fdb-92c5-9ee181893526": {
+        "user_id": "1cc8d743-2134-4235-96e2-f633661eadc7",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "0c88d9db-f829-4eeb-8705-dca4e2c453a7": {
+        "user_id": "eed51c68-4bca-4af4-88c8-df5990b2bf0d",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "9da1ed80-f9f5-446b-874f-783eebfe60e7": {
+        "user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ef84a292-6219-4eb8-abd6-db165b61133d": {
+        "user_id": "74061b5d-9cf8-4018-ba64-39c5c36eb09b",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "835f33f7-dcc4-4063-94a2-5b91ca81f5d8": {
+        "user_id": "d08c4e28-257c-436a-9018-edaf50cf63d6",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "038375e9-3ed7-444d-85b3-ed28c459dc1b": {
+        "user_id": "8b715232-baee-437b-a807-ce6cf21bb815",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "f3ee5c5e-dc4e-4559-ac33-2045dce2469b": {
+        "user_id": "a160ef96-e68f-46cf-a602-bdf389fb4356",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "5e2a07de-e5f5-4db2-9fd4-c18829bd60ad": {
+        "user_id": "9bef0292-5f6c-4406-8dab-19804fd5456a",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "0d145a65-78bc-4b34-a6ae-2b1173b3a1f6": {
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "1ee94fc4-21ea-442b-b36c-866cee70d83a": {
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "45d9c5fa-9511-48f5-89a0-8d01a3924935": {
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5d2dce25-5f2d-40a7-9792-2851200f3f10": {
+        "user_id": "6011a897-7e3f-426e-883b-0febefcad764",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "fe34a6ec-3a4a-4904-b578-b6351bae891c": {
+        "user_id": "6a2d085b-8cdc-4c21-9bea-0642fa3e2312",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "c8a02327-dd49-491a-9261-8d4ee59cde57": {
+        "user_id": "74376e71-e60d-4863-858f-37c36d666174",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "9df759df-cbfd-4d71-a4b5-d2af1c6ff532": {
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "f9357a75-338d-4bd8-a3dc-2bc7756115ff": {
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "0284b364-88cd-47c8-a166-111bc3b118be": {
+        "user_id": "fff86559-87e2-413e-91d9-547e0f36a44f",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5b32b9d8-1330-4e6a-9f06-b44a94005e36": {
+        "user_id": "9bf08961-fe9b-4688-b338-883866379e86",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "52cfb0fc-a972-44e9-8567-57218982ecf7": {
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "f138f8e5-bdf8-4e74-9d13-02577e3d1d19": {
+        "user_id": "fc010782-aa69-4008-b76e-d183b51ce1ed",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "f5aebf12-36a8-4561-9768-a8665d11ba79": {
+        "user_id": "4e12da44-d9f6-4961-8554-2fb2ccfc3b73",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "db09b0c7-9d88-46c0-bc02-7b91bec906f2": {
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "7a269fd3-89d6-4e67-80f5-43f1331d4fbd": {
+        "user_id": "869c1e7c-9899-44a5-85c0-e3d53b1080c4",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "1dea525e-ddda-49af-82fd-996700bbd551": {
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "20ab2868-e781-4518-8243-f946029f8819": {
+        "user_id": "a160ef96-e68f-46cf-a602-bdf389fb4356",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e5c04bd2-4298-4d12-a0a5-01c26206513a": {
+        "user_id": "fa268f44-0c68-4167-91fb-4d19ea88d301",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "eb216817-caae-4f06-aff7-82c678675480": {
+        "user_id": "56ec427e-5dd4-4b0d-8ade-2855f98eb063",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "4517a102-5e31-44bf-9240-5f9f075b4ba4": {
+        "user_id": "df9450df-bba2-4bff-bc4b-983acae5da09",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "c7538193-f393-41cc-b6d8-4c62786f8f9a": {
+        "user_id": "84906dfe-e95b-4a28-a93b-e175aa6c6f6f",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "8ea6ebea-3672-4618-9e05-ca93fbffde88": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "a5d9c92d-9cbe-4234-9d5e-d87841cccfb9": {
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "ce8462f3-d6f4-4cbb-8518-90a579ddaf28": {
+        "user_id": "4215e3c7-a84d-484f-87c6-92e355ffdb81",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "1e192446-d1cb-4368-a639-ffaeae740512": {
+        "user_id": "02f0d1ef-527d-43dd-9b7d-bfdcff1ed11d",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "59448096-6d6a-4e27-8099-431ac4ad6821": {
+        "user_id": "e272d8d9-67f8-45d0-b9a7-49be53e1a228",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "62ae33b0-313c-449d-bff7-b63816fed6c6": {
+        "user_id": "04bc936b-198f-4860-9498-e45bcb515996",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "23a03b53-6fd8-419f-9085-5d065aca2cff": {
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "0bb52072-3c80-4038-b87d-44b27e5905f1": {
+        "user_id": "01a37a6a-d5a8-457c-bb19-81ea56cef382",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "bc7a69f9-7850-4632-834a-f4f96c8789d5": {
+        "user_id": "f7a3acb1-fd46-4694-8577-cd305266f87a",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e111559a-e979-417f-88a2-ea57ceb54981": {
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "adc568f7-bc60-4973-89cc-0b225964590d": {
+        "user_id": "4ccd3f80-ae92-431d-b791-c65d9105caa2",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "17465e3b-069d-45f9-961b-0bc7262b4951": {
+        "user_id": "74f833b4-da79-4026-a228-1143580a9342",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d345fab1-ee52-4dec-b66d-69944d113738": {
+        "user_id": "c07118e4-18c3-4e84-8197-3cd9064e325e",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5b54b417-3b19-49cf-b288-c7d13f6508ac": {
+        "user_id": "93d62845-c02a-4310-92e8-1150c09328a7",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "c36bbed8-2bfb-48d9-9716-391d9ff43faf": {
+        "user_id": "d8db5f28-4223-4a63-babf-4d3c91c7faa4",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "dfb38526-ca35-4ea3-a26d-e0da77953ac0": {
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "b1744ad1-88ca-4763-a0f9-2b4ca6cf152c": {
+        "user_id": "59ffb1e6-8c90-421e-8b8a-0650b27b7a31",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "09d731b1-1b40-44cd-b9fd-37460f164579": {
+        "user_id": "deb22af8-b9e0-489e-9905-505a681d12d6",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a0649896-f8ac-46b7-8cf7-d7f128a4b9e6": {
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "b31bdff5-58f8-4754-bd96-74e384b67289": {
+        "user_id": "df2dff92-5ad8-4845-8448-fef7caada6cf",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "23ec1923-37d1-4df8-9a9d-e4ee02d9108a": {
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "080747a5-bf8a-485e-aa2a-845a68aaf711": {
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "6ca3baf0-fdbe-43de-af3c-dcfd848acb7c": {
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5d68c883-760b-4917-9ced-d6904abad9db": {
+        "user_id": "4252cf81-abe5-45e8-9683-f09bd0cf005c",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "ce8ee55e-ad3d-43f9-b562-a6cd4229823a": {
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "aac00cb7-3c7b-4799-b734-be1e856ae5f5": {
+        "user_id": "6011a897-7e3f-426e-883b-0febefcad764",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e5a4cda5-bb42-4207-850d-af97f09705f7": {
+        "user_id": "2deedea3-7611-4959-b165-3f0ae065b567",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "f5b8d016-43e3-43ca-931e-0f9275dcd7bd": {
+        "user_id": "050081f1-abd1-410d-b593-36a66d95c19c",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "0330af9f-d068-4132-9eaf-de5e4a66c644": {
+        "user_id": "fd82a5ec-b494-4236-aad2-56dad94faf9e",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "3965e6e5-1cb5-4273-917f-bc10b2b868ed": {
+        "user_id": "7d9ae5f4-cde3-4c41-8f5d-2e0c87f9e8e7",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "f6913f68-816a-40fd-9564-40d10d70c9f9": {
+        "user_id": "fff86559-87e2-413e-91d9-547e0f36a44f",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "54d18e84-ecd2-444b-ae50-e12a8b7ce54e": {
+        "user_id": "23ef218b-7974-4172-83b3-708409807237",
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "51cd4691-a97f-4a8a-988e-67255d76bafa": {
+        "user_id": "fbbfef3b-52f5-482a-b274-7faf5d490b01",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "5fbe243e-73da-4d94-8ecd-fe693848b198": {
+        "user_id": "f01c7464-0868-4847-b81c-491db0efcff8",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "6420789f-44c3-4c1c-8448-d8c74d762964": {
+        "user_id": "afd53dfb-0cb5-4662-83b8-bfdb8235aa9a",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "b8c30912-9276-406b-b843-6c748a714fa8": {
+        "user_id": "fb7abc80-d9f6-4e3f-b914-3bb0cb0a5e5e",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "9cb421d0-c882-47ce-a83c-fa3351b73625": {
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "09bd91dd-6b39-4ba1-9c13-d5be198e727b": {
+        "user_id": "563754b0-77c9-4c54-817a-c0b971dead27",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "28a79f69-e0f9-4ab2-b37c-30d49f4008a4": {
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "37151fed-195a-492d-b005-9615356091d5": {
+        "user_id": "26273078-a160-4617-a5cf-5915342ba871",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "47549c10-ef3d-4971-9fa1-33886d63f8f0": {
+        "user_id": "90aea329-4842-42df-bc97-ead79343ce9c",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "1318040b-382c-4db4-9054-98eaac0824dd": {
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "b3376959-00c9-4664-85ee-b796a39bcba0": {
+        "user_id": "36c4d01a-e5f3-4ffe-bca1-9bf4c640973d",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "11d1419b-0b82-4289-930b-042bd2261cc1": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "78befaa4-f110-4a7a-b5f1-d2224caf3201": {
+        "user_id": "d1541b40-787a-42df-9178-424cf2127a7e",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "06ed0a9a-0419-48f6-8beb-a220277b75ab": {
+        "user_id": "33902d5d-04e2-45e0-9ed7-c1c7f0a985a6",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "e8d5ede9-4ecd-4065-a860-b1e3bbc2dac4": {
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "f40b845b-dad4-4ae7-9e94-cfe8206d04c6": {
+        "user_id": "f4419fde-1e1f-4a05-b58c-8a96ddb1d670",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "4e22a10e-3faa-47a3-aab6-34315fad0717": {
+        "user_id": "8065ddef-8722-4a65-9b34-b00177daa82f",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "b6571cf9-aed0-4c2f-83fb-c2c034b7760b": {
+        "user_id": "584ff1c5-b542-4902-a541-13ab75b948a3",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ef211c7f-88fd-4b7e-b737-9f839b55aacc": {
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "04b822fa-b564-4850-b456-3a1efc0b8b5f": {
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "3b095c42-ba3f-4028-8de2-69249ef41219": {
+        "user_id": "4215e3c7-a84d-484f-87c6-92e355ffdb81",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "9b440c1a-e95a-4da1-b24f-54148f289a99": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "1335f003-a29f-405a-9165-a16ce80b399c": {
+        "user_id": "37b085e9-82f3-4af9-8fb7-2ef4705512a7",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "394b878f-5aad-444e-88f2-b5ceb65a69c3": {
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "5bd1246d-a735-4a94-b646-6bcd0d52c870": {
+        "user_id": "8a7dff82-b745-4ddf-afdb-7c85af9a96e4",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "112a00eb-2fa1-447e-a190-f211fcff910a": {
+        "user_id": "b1905f38-af6c-4608-87b5-6f3f6669f1c6",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "962f8c9b-4178-4420-8143-7ae5a5afd559": {
+        "user_id": "42dc2988-4585-40c9-b374-3ddfc7f2028d",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "17627df7-eba7-470a-ac53-1cce642b2855": {
+        "user_id": "55b239fd-7ae2-4601-833a-b40ba2e46075",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "1c04538e-3a98-4ce6-8f05-c8b3c435f7cc": {
+        "user_id": "826c7f2b-007f-45aa-9df9-52c6c40f94f0",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "9486c0c6-3453-4143-b764-4909391101b9": {
+        "user_id": "6011a897-7e3f-426e-883b-0febefcad764",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5159aae1-30f5-4d8f-97ff-9cef75d66780": {
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "513359ef-6122-4427-8193-f7505c09ce79": {
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "095c4067-fece-49fd-885f-57fec459e10b": {
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "de4ca151-5446-44cd-9402-106788725790": {
+        "user_id": "d9350b7c-ada1-4513-8857-0e47a32e12ea",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "b47cc800-bd7c-49f7-9a02-daa3aeec583d": {
+        "user_id": "6657a987-42d9-4a58-97f2-5c35d3d5d325",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "2531dbec-7512-481e-afb2-42efc02ec50c": {
+        "user_id": "e8250a01-533d-4d04-815d-ec9e84338b60",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "3170237a-ab33-4d77-83c5-96f35a8fe008": {
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "be30fce0-d20b-457f-a114-89b1c15fd729": {
+        "user_id": "482d4e4e-d93d-4f4e-bc19-bac492ef49b0",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "920a742e-23b9-4797-ae02-295113008cf6": {
+        "user_id": "e8ee4682-590b-4c7f-98c9-819fecfc5a77",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "53a2aa24-320e-41ea-a2ff-68b914dcc894": {
+        "user_id": "8065ddef-8722-4a65-9b34-b00177daa82f",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "fdaab1b3-b141-4fa0-8cf4-2e231f6e2470": {
+        "user_id": "d77f1707-8ef4-4615-8bf3-f3c37a1615a2",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "06759a17-3633-4689-84b4-aa56c8bea82a": {
+        "user_id": "df2dff92-5ad8-4845-8448-fef7caada6cf",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "772f8528-cfbb-46a7-addb-8da48a820117": {
+        "user_id": "fa268f44-0c68-4167-91fb-4d19ea88d301",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "690bc74f-0e99-490e-b45a-066e20464296": {
+        "user_id": "4215e3c7-a84d-484f-87c6-92e355ffdb81",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "bc37a12e-b3e4-4e96-8903-78dbd853fe10": {
+        "user_id": "df9450df-bba2-4bff-bc4b-983acae5da09",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "2a70f266-0abb-4191-8624-008f15b3c165": {
+        "user_id": "02f0d1ef-527d-43dd-9b7d-bfdcff1ed11d",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d8479574-4c5d-42e4-9448-dab330aa5bf7": {
+        "user_id": "8b5fea63-6f8f-4cf3-8f05-8221ee053bd0",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "811c2e43-6e12-4e45-b0c8-1d9434b221fe": {
+        "user_id": "fa268f44-0c68-4167-91fb-4d19ea88d301",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "dc37f766-346e-4c6e-bc2a-6c54b465e3fb": {
+        "user_id": "93d62845-c02a-4310-92e8-1150c09328a7",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "cb7a7800-58a3-47b6-a31b-e4323d562229": {
+        "user_id": "55b239fd-7ae2-4601-833a-b40ba2e46075",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "ac6ecc68-1bb4-42d0-9944-a3327238d39b": {
+        "user_id": "a0bbaf42-9743-4102-b004-1fd00f41a97e",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "2991345a-95a8-4b9f-8459-abbeb0d75076": {
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d9fe4cce-5ca8-4fd5-9865-eed74b5227f3": {
+        "user_id": "a2a5c078-9362-4102-a219-52249f90dd37",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "4b06f521-3f3f-40ac-aa14-88a6afeaccc4": {
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "afb3da08-857a-482b-85ba-6b737f43730e": {
+        "user_id": "1cc8d743-2134-4235-96e2-f633661eadc7",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "27cbcbfa-eecd-4038-89a6-0de1b7346de5": {
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "e6aea77c-cca6-45cd-b031-919a2ee6fd0a": {
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "fe8834bc-3629-447d-a5e5-81017afe6ca4": {
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "6d55cf50-a179-41ed-bc17-f96cc097a357": {
+        "user_id": "d72400c8-ff17-4eaf-a14f-b7e637772730",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "b3980877-3dda-47b9-943c-40cc0e4b52f8": {
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "2494e4ce-4c4e-4f54-8ee7-5a35035f66e7": {
+        "user_id": "33902d5d-04e2-45e0-9ed7-c1c7f0a985a6",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "9895b222-870d-47d4-b865-3945bacfd7b1": {
+        "user_id": "6624afd9-1ccd-4992-879d-acc43c535377",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "c80c5b53-2c61-43c8-8b16-e07a417b2384": {
+        "user_id": "5000b71f-a1ab-4673-81ac-0e68f9adad76",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "4e3597df-89ff-405c-8d17-850745fb28f8": {
+        "user_id": "c07118e4-18c3-4e84-8197-3cd9064e325e",
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "b6d704d1-1320-4e62-bc6f-b7a5a1e2f511": {
+        "user_id": "78ed3a14-8981-4abe-8eaa-cf6c8da18254",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "18d2c694-8f33-461d-a0b1-50e8ad55fff3": {
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "6ef99e30-b794-4405-8c34-45f9f2ef4da5": {
+        "user_id": "06f76f35-a4ab-4df5-8a66-fe5891487957",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "ebe5c161-b965-4404-9fbd-fa5f8aaae68f": {
+        "user_id": "f7a3acb1-fd46-4694-8577-cd305266f87a",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "647a948a-0140-42e8-8ef2-eecc899d6df2": {
+        "user_id": "0b4ee37f-a7fe-4619-8b7c-b2af92eb930e",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "e38898a7-b174-4075-ba28-10731e422fe8": {
+        "user_id": "c4dce683-a2ba-4c35-af2d-200e025864c4",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "cdbdb95c-8601-4459-83ab-12caa6befb40": {
+        "user_id": "2db07351-ff57-4550-8c88-bf971f587dee",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ce5efc8e-9820-48f8-a3b4-0c3c49eef770": {
+        "user_id": "59ffb1e6-8c90-421e-8b8a-0650b27b7a31",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "971cdf80-adae-4bc7-9da0-7a0a5fdf1fa0": {
+        "user_id": "74f833b4-da79-4026-a228-1143580a9342",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "12e238e4-c128-450b-843c-2fb44f6a2649": {
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "b53ad403-3274-4424-ae5c-d9ddba7d67a6": {
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4",
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "17ba6ab9-8ef7-41dd-8afc-d8c05a03e5d4": {
+        "user_id": "38dce302-14b8-473b-8f80-d8202d11eab6",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "9302a258-88a3-4c15-aa60-5a71f6f26da7": {
+        "user_id": "d9350b7c-ada1-4513-8857-0e47a32e12ea",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "1414ce2e-1b02-410e-b5c2-54d78e307dc9": {
+        "user_id": "afd53dfb-0cb5-4662-83b8-bfdb8235aa9a",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "cbe198b2-ee13-4b42-a065-f9b7db15d337": {
+        "user_id": "3ffe6ed4-c487-424b-9896-1ab8e36ec388",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "0a540fd0-c708-47fe-bcf0-5c77675beda4": {
+        "user_id": "4db06005-a874-4bf7-aa9e-b466109bfa3b",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "105101bc-d977-41b4-bd00-c4e91a11d0e3": {
+        "user_id": "5157776b-a29c-4701-be64-79998b9b54b2",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "40f62391-1a73-4e6d-b816-f066eaeb4a79": {
+        "user_id": "7f6eee1e-118b-41c2-8f0e-44d89c21c946",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "30cb26c8-09f9-4bbe-92ab-79eb9b031ec8": {
+        "user_id": "9fe61da1-71a3-40db-acbc-bbba49b7db51",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "3fa70964-2418-4762-be01-4dab9ebff02d": {
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "7b030234-bb3e-48a1-8597-ec87a4ee143f": {
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d003aa57-49e2-45f9-a172-4929d12c3c88": {
+        "user_id": "94ac2916-107a-401f-8b89-7ae94f943a1d",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "c247eb28-ea65-4f91-9b4b-c145202490db": {
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ee0c75cd-adc6-40cd-af2a-4ab56eccc030": {
+        "user_id": "388e3d0e-4fe0-44f6-9b28-de5196fbcf0f",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "0d8465fc-bc9c-4e04-84c6-6a273207907f": {
+        "user_id": "e8ee4682-590b-4c7f-98c9-819fecfc5a77",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "3c075d92-fe99-487e-9cdd-cea9b41b9d30": {
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "fe1064f9-9532-4b6e-b482-e0ff9cc0916b": {
+        "user_id": "4e12da44-d9f6-4961-8554-2fb2ccfc3b73",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "8c61b2b1-161c-4d0b-a73e-c1344b84a3df": {
+        "user_id": "50ba4369-3ce8-42b2-9de1-c1b1d01e8497",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "e9a00169-73dc-4e1f-ac7b-0d8a76bf874b": {
+        "user_id": "ae85d72f-74e7-48de-9eb2-8c49b49be1b6",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "7c079758-1b30-4e25-ab95-2dd6b0c7cdcd": {
+        "user_id": "66d9e91a-584d-401c-8a13-2a7382990605",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "f66bf123-a1aa-4103-bb91-5cd6d874ebb1": {
+        "user_id": "8202aad3-0725-41a2-b38d-85d2da03a912",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "4d492556-19f5-4f59-b494-29c700fa0868": {
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "91b4a8fc-d50b-4a30-b3ec-1bfa9d5cdcc8": {
+        "user_id": "7fe32ad7-a98b-4441-a7db-edda1183140d",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "3ba225dc-89c1-485c-9c18-0fb947d701e0": {
+        "user_id": "4330add1-e769-4565-bd23-439940701639",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "1f10e52c-22db-4608-93d4-20ccf73fa096": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a2f39154-aadc-41ab-b7e3-a7904aa2a25b": {
+        "user_id": "584ff1c5-b542-4902-a541-13ab75b948a3",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "4674c109-6701-44e5-8d55-ae578628817f": {
+        "user_id": "b0406cf2-df55-4297-80b2-80b3fae13b61",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "929ff1e2-998b-446d-a065-2613e4d83869": {
+        "user_id": "0b4ee37f-a7fe-4619-8b7c-b2af92eb930e",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "9429a93f-89ff-44a5-b31a-8deb5b951340": {
+        "user_id": "db2db34e-a192-4a70-aebd-31c9ba3b50c3",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "29eea265-d5d1-41f8-9ca0-e1ec08146a0b": {
+        "user_id": "6657a987-42d9-4a58-97f2-5c35d3d5d325",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "7270f97d-19c0-4b40-89ab-cff9067c7c67": {
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "7de54630-1534-41d7-af58-c899b80f0ed2": {
+        "user_id": "dd78a929-a8ea-43c2-8e8b-620c29989629",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "f1992881-b13a-4642-95ed-4a4a25301da3": {
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "f6600815-44e3-49f7-a219-d14d6b78aa3b": {
+        "user_id": "4db06005-a874-4bf7-aa9e-b466109bfa3b",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "0537682e-0002-4c0f-bc0c-f5133e5948fd": {
+        "user_id": "8b715232-baee-437b-a807-ce6cf21bb815",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "1d897d1a-3dd6-4b3d-bc63-e51d9cac1ed3": {
+        "user_id": "6624afd9-1ccd-4992-879d-acc43c535377",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "96b005fa-6635-4ceb-9f0a-955492109d21": {
+        "user_id": "e14a6784-2f84-417b-8360-05b52e585808",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "91e65f3e-973d-45a6-a75d-6a8dff0f6774": {
+        "user_id": "a6a5db37-4ce4-4569-96ba-0406abd29d45",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "08f8c0a1-e363-4323-b320-aa25e014f9c5": {
+        "user_id": "75be1cae-0abd-49ea-99f7-1132884ab3a2",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "8cb6807e-454a-434d-a8d2-86ce699b667d": {
+        "user_id": "a614589e-8ad2-4184-b5bd-d251a549b67e",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "c8767856-3d81-4e04-b066-201de6047c4d": {
+        "user_id": "7e5102f1-64cd-4119-a8e5-7ab2fff78d0f",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "9f763b4a-459e-4c8a-8346-80eaa5e5ee14": {
+        "user_id": "6657a987-42d9-4a58-97f2-5c35d3d5d325",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "dedc60d9-dc3f-4cca-99eb-00443dac1c89": {
+        "user_id": "26bce218-cda8-49eb-b1ef-0f9fb9da604e",
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "cb3b7295-be02-473c-b58f-cd8c104e4771": {
+        "user_id": "d485e608-2057-4203-9717-cbce304ab718",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "0568f5e4-fa76-4b75-9bc2-3269881f4d72": {
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "3fa4264d-5b81-4e89-9dc0-d759e68c5953": {
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e342aeea-a20e-4701-899c-7ff7a6aaa727": {
+        "user_id": "3799f4e6-659e-4abe-b5fb-8513fb7e34fe",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "05db9378-d624-458f-9fa8-6f328cc38fb4": {
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "00f33de0-5402-42fc-a98e-da0d748beb90": {
+        "user_id": "6122271f-41ba-47dd-bc67-a02ba5efec38",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "46b6f296-45e2-4f95-8feb-e68fdd056b92": {
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "89ceba07-fd8e-468f-add6-3d219bc0c39f": {
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "e0992b18-a351-4e63-b930-322c4e20eb47": {
+        "user_id": "a0bbaf42-9743-4102-b004-1fd00f41a97e",
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "37c78802-b61f-49e9-b1e0-94050557d46e": {
+        "user_id": "b25f7bbf-e136-4c03-bc82-5fcf5c4594d7",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "63d98ea6-ba3e-4fb2-a0e2-f992ebb6e8e4": {
+        "user_id": "7d9ae5f4-cde3-4c41-8f5d-2e0c87f9e8e7",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "f870a780-efed-4dfd-aaaf-a55eecfa12bf": {
+        "user_id": "04bc936b-198f-4860-9498-e45bcb515996",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "612ed43d-ef60-4784-8ace-4f39999e9ab9": {
+        "user_id": "38a18aad-f2ec-45f3-b89b-7c061ae2967c",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "272ef2ae-e997-4cf5-b246-535c5f6317db": {
+        "user_id": "f15f9da8-fde6-4420-84d7-6c60690b2251",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "b5ea09b9-3bad-46b9-b1ac-0c5267aad34e": {
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "905e0d99-c3cc-474a-b631-4a12e8a3eab5": {
+        "user_id": "d08c4e28-257c-436a-9018-edaf50cf63d6",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "6e656a4c-c75b-4d3b-b39c-e2528148b5ff": {
+        "user_id": "b8ae9ae2-191b-4b47-bad3-81c5f3533296",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "0ad75bb6-e51f-4789-8ce0-574e693318ef": {
+        "user_id": "6863cb2c-7fb3-41ee-8b32-24aa7cf55f79",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "9f90539c-8f0a-43cf-9afa-098df65477dc": {
+        "user_id": "c6d33124-7acd-497c-91b1-5c9eb1c1c6fa",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e307c997-bb70-4eea-b225-3412f5828ca7": {
+        "user_id": "7a7d85cb-e53f-4e74-98aa-e7003ad57429",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "86c9ac60-7069-4181-a232-34be8562ea0e": {
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "35b1a2fe-4a1c-4ae7-b6dd-7bfecd429c30": {
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "a6027abc-76f7-4882-ac7b-7330c54eaf96": {
+        "user_id": "8a7dff82-b745-4ddf-afdb-7c85af9a96e4",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "26c64bbf-4e5c-4b3b-acbd-57b7a4cb0e0d": {
+        "user_id": "2596560e-ba40-4911-8f6a-9a3b5d07647c",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "b2a3d8a4-e089-4384-aeb9-59b22af8cca5": {
+        "user_id": "bcfa7940-6572-4c9b-8517-6d83075f744f",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "9201e24e-e282-417e-897f-4138a281d4ea": {
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "eabef33e-c604-49d1-b4d7-7d0d1583e4ca": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "15e44599-d38f-46d7-bcd2-805655e3b577": {
+        "user_id": "9332955b-1a4b-4f45-bdec-98e9fd290192",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "421b85f6-4150-4e71-9817-8c37d2b91677": {
+        "user_id": "9bef0292-5f6c-4406-8dab-19804fd5456a",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "a4588316-e36c-4b47-ba51-e271a040137c": {
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "1908ba82-004b-4796-bd51-1bcd273a58af": {
+        "user_id": "fff86559-87e2-413e-91d9-547e0f36a44f",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "ec78c9b2-2994-4294-a133-d3950633e935": {
+        "user_id": "a19b4a66-df6c-476e-b145-ab3e651fcdf6",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "54150e56-21dd-47b9-8d53-b7efd8b5ebd0": {
+        "user_id": "d6de7528-0e5f-4302-9e2f-9456ad7eff5e",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "b5bcee67-e069-4773-b26e-4c4e39b41c22": {
+        "user_id": "d77f1707-8ef4-4615-8bf3-f3c37a1615a2",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "a499aa3f-6f8b-4f47-a03d-ca7396475a67": {
+        "user_id": "d582846e-44a7-467a-9a5e-0e33f7a6fe6f",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "9e43ac3e-5aee-49d4-b9ed-2170e9f3ce1e": {
+        "user_id": "37b085e9-82f3-4af9-8fb7-2ef4705512a7",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "cc11fcf1-58fc-4886-ac93-5be5bb918f4e": {
+        "user_id": "7b8db11f-2662-477f-b29a-2778d7f81595",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a514c254-817f-4986-8afd-88bbf623a351": {
+        "user_id": "01a37a6a-d5a8-457c-bb19-81ea56cef382",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "86468f46-aaa4-4172-a6ba-d3c749d3d4bd": {
+        "user_id": "ae85d72f-74e7-48de-9eb2-8c49b49be1b6",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "25a36cfe-573a-4943-8bf4-d102eda2aa94": {
+        "user_id": "a3c6d2d4-9676-4bd3-9c98-56f0c04c28e8",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "9be0ee33-aea8-4b03-9b12-a7c67ee8bf53": {
+        "user_id": "7fe32ad7-a98b-4441-a7db-edda1183140d",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "2047df07-3cb0-4c32-80fb-986928deffa1": {
+        "user_id": "20ba9bbe-17ea-4d2c-883e-c2d8d4edb2f2",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "8de5a9eb-0fd9-443f-89d0-f40e6ed4b29b": {
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "76471c64-321e-4ead-9fe0-2a7e4692984e": {
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d1ebfc34-7d05-496e-8ec9-0d0280afc791": {
+        "user_id": "879a910e-4d35-4900-9c34-8490eeaf3b6c",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "ab5c17ab-7f7a-4cf0-9e18-ac91be8439db": {
+        "user_id": "fc2b34e3-916c-4c9b-bd0e-b3a96e70befb",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e8214c29-3daa-486c-a887-e3f3cb802a49": {
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "1d7d22ec-1953-420a-97db-e654ebb11ee7": {
+        "user_id": "23ef218b-7974-4172-83b3-708409807237",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "4e12180c-cb04-457f-90a5-63ffe59f81fe": {
+        "user_id": "2596560e-ba40-4911-8f6a-9a3b5d07647c",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "5b4a5ee5-cfbb-43fa-bb9a-095d61caf730": {
+        "user_id": "d8db5f28-4223-4a63-babf-4d3c91c7faa4",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "96fcdce2-2abe-40d0-a13e-e98b06f6942a": {
+        "user_id": "e8a5294d-9311-4987-86b5-04ac331139d1",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "374964ab-b7c6-44d0-9c10-f7bb37eba527": {
+        "user_id": "f15f9da8-fde6-4420-84d7-6c60690b2251",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "acb16dc5-e31f-458e-8eb6-00d143d0edd2": {
+        "user_id": "79b55883-c635-45a2-ae24-883f2e128116",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "cedf3dbb-2900-45fd-a3cf-bc65968dbb62": {
+        "user_id": "6863cb2c-7fb3-41ee-8b32-24aa7cf55f79",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "c0fbf6d2-b7b5-4337-b125-fad72b10ef59": {
+        "user_id": "bdb57c43-c269-440a-9f74-e0a97ffc4e90",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "3af6825e-42db-4807-a512-d410e74bd9ea": {
+        "user_id": "06f76f35-a4ab-4df5-8a66-fe5891487957",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "b6002fc7-2e35-4d25-81d2-4af8407e4a7b": {
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "6e980fce-bb63-4808-b4a4-6551a531758d": {
+        "user_id": "1fd1e42a-1457-41c4-8ba5-01c4ee7b7bf7",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "7e0f78bd-02f7-4646-a88f-a81ba90e1ed4": {
+        "user_id": "4252cf81-abe5-45e8-9683-f09bd0cf005c",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "8241bbfe-334b-4214-8eb5-e943ea49b5c6": {
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "be5e29d9-8bbb-4f24-ac7b-b5eb6e23ea23": {
+        "user_id": "e43ac873-3a41-4cbb-a49a-6e1df7218887",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "4aa2d2da-fda6-4bbd-8194-6115ef5d0948": {
+        "user_id": "f83b92b2-f4e7-4240-b010-4a3a5ff3a801",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e3f4a633-f62f-4a04-b7d8-b6e688c6a6e1": {
+        "user_id": "9332955b-1a4b-4f45-bdec-98e9fd290192",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ab6bfc05-72c4-4fa7-b3ac-490acabef5a2": {
+        "user_id": "8520cfb7-0a76-4076-9f3b-5342410e33ab",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "cc57c825-2dbf-43ed-9d2b-af77e36a069c": {
+        "user_id": "9332955b-1a4b-4f45-bdec-98e9fd290192",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "1aafe889-1ccf-43fa-8ee5-bc7e547609c6": {
+        "user_id": "38dce302-14b8-473b-8f80-d8202d11eab6",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "bb1fbd32-2292-4f00-8d91-633c1a88e97e": {
+        "user_id": "e8250a01-533d-4d04-815d-ec9e84338b60",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "9708a481-6801-4ccb-9c73-3c38fa061860": {
+        "user_id": "f7a3acb1-fd46-4694-8577-cd305266f87a",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "27ab1d06-d9c7-48fd-a10e-c816c8978321": {
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "3f8134c4-fee4-4dcb-9a5f-5fd427fa05fa": {
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d5dbf071-2fa4-4451-9585-d715886cbc5d": {
+        "user_id": "df2dff92-5ad8-4845-8448-fef7caada6cf",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d48aacf8-42ea-42bf-86f7-fd644c2558b9": {
+        "user_id": "879a910e-4d35-4900-9c34-8490eeaf3b6c",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a95b1938-8ff0-45a2-83a4-9932c05acce0": {
+        "user_id": "2596560e-ba40-4911-8f6a-9a3b5d07647c",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "c7268ff2-492f-4ffd-a10b-01860626bfb1": {
+        "user_id": "7421025a-eefc-4c61-bdce-a7a70456b97e",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "c9501a32-55d9-4e14-97ab-00efe9e38e76": {
+        "user_id": "4330add1-e769-4565-bd23-439940701639",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "7addaae2-5c44-436c-a423-54eb2f043a16": {
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "5cb31c2d-92fd-4e97-8fa6-b4d056ce8fd6": {
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "97f27445-8992-4654-8199-2f9bb6d268a1": {
+        "user_id": "33902d5d-04e2-45e0-9ed7-c1c7f0a985a6",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "bd73d41e-ba13-47d0-b102-d9432c54b866": {
+        "user_id": "36c4d01a-e5f3-4ffe-bca1-9bf4c640973d",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "5873623d-9bdb-4fc0-a536-d689430bdca5": {
+        "user_id": "d6de7528-0e5f-4302-9e2f-9456ad7eff5e",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "d4e39473-7214-4da6-bba3-4d5232bd9121": {
+        "user_id": "1892294b-038e-472d-87f0-b54fd28d30b9",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "524cd36f-fd7f-4f3b-85d3-55e48454607a": {
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "56d182ee-6d2e-44f7-ab93-54806ce95a3d": {
+        "user_id": "02f0d1ef-527d-43dd-9b7d-bfdcff1ed11d",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "3e0fac8b-6a0b-4c90-ad5d-d9c04807e465": {
+        "user_id": "8f536302-5849-4540-931d-f37774af583c",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "3cb57c6f-879d-42e6-9e12-f1227e88d253": {
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "fd77544e-9fa8-4b44-88a9-9187da8ba50c": {
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "f05570a0-6e85-4d2d-9e84-edc751042b35": {
+        "user_id": "7f6eee1e-118b-41c2-8f0e-44d89c21c946",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "0d520f13-a5ae-4a9f-824e-8295d3dccfab": {
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a45afb79-88b1-4419-aba6-8bd14f26644f": {
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "c417dd17-e0a4-41ff-80f5-0f620b8f6a45": {
+        "user_id": "5db6a332-d4d6-44d0-9474-4d12eb61c998",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e7ebd5fb-79e7-4f1d-a8e8-9e7a0c8f56e1": {
+        "user_id": "bcfa7940-6572-4c9b-8517-6d83075f744f",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "6cba7c0d-d630-4135-b257-9ec34b45c4c0": {
+        "user_id": "b41857f8-be21-4528-b007-59610a33b117",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "ef80af24-305a-4782-a832-ceea0863b7f6": {
+        "user_id": "a160ef96-e68f-46cf-a602-bdf389fb4356",
+        "organization_id": "ca438f03-b281-4577-bff7-b300e21445b9",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "c87a497a-fdf5-483b-a3b6-fc69121c286d": {
+        "user_id": "4dfc0335-2492-41db-81c2-cc3e51dcb792",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "8d806c29-6166-438f-b318-075b05e36521": {
+        "user_id": "d9350b7c-ada1-4513-8857-0e47a32e12ea",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "5a0d8ecd-8e2f-4b07-b9c2-c7440e4cbe5f": {
+        "user_id": "90aea329-4842-42df-bc97-ead79343ce9c",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "8d424ca4-6aa3-4fd6-a60f-990268137ac5": {
+        "user_id": "1f5e50be-7846-4f54-976b-51a2d4fa92a7",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "06e139da-afbb-4029-9ad6-33395d200d3f": {
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "753acce4-89dd-4cc3-a6d3-9fd30cbcbdd7": {
+        "user_id": "6a2d085b-8cdc-4c21-9bea-0642fa3e2312",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "892270f3-62f3-4e9d-9513-ef569e4f1859": {
+        "user_id": "c4defd3c-4b97-4373-b531-0103cb565f07",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "50ecc683-97a4-4a51-851d-6b41f530bc7c": {
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e",
+        "organization_id": "8f9133d3-03ad-410c-a749-91adb949cb72",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "464835d0-a453-47dc-bb84-7b1124f8cc11": {
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "076be9d2-826e-4657-b599-158f4e9df9de": {
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "1039cf25-ef6a-4e31-aabe-8514237afe94": {
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "5a7e6af7-a8d9-4e61-a20d-34592d262cd5": {
+        "user_id": "02f0d1ef-527d-43dd-9b7d-bfdcff1ed11d",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ad6d6d2b-dcfe-4730-b357-54db4736a2a0": {
+        "user_id": "a2a5c078-9362-4102-a219-52249f90dd37",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "b0c597fe-adb0-4c0d-8129-a7de7c369895": {
+        "user_id": "4e12da44-d9f6-4961-8554-2fb2ccfc3b73",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "2f28f36f-1ccf-4955-961e-8bf37b1f6bf6": {
+        "user_id": "db2db34e-a192-4a70-aebd-31c9ba3b50c3",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "fece30a4-4d89-4d28-a071-65a0b1ff0065": {
+        "user_id": "06f76f35-a4ab-4df5-8a66-fe5891487957",
+        "organization_id": "950b1f32-5074-486f-aa8d-591b3a1b4d4c",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "51b00e9b-8020-474d-ac78-fe61e0fcfbca": {
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "bac262a8-05e1-418b-9b48-6223385d8777": {
+        "user_id": "77d4c53a-b091-49e9-9b28-5c6b2f1f8593",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "a2f8c4b3-c931-412b-bdb5-2c83c8cfab94": {
+        "user_id": "7421025a-eefc-4c61-bdce-a7a70456b97e",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e4206d9d-02c1-49f0-ba2e-35e52f783bc2": {
+        "user_id": "bcfa7940-6572-4c9b-8517-6d83075f744f",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "fe1e3e5c-09bf-4aca-b8f1-69254995f08b": {
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "b5560415-6ebc-4978-b423-c3ceb754e7ad": {
+        "user_id": "ff244908-7a78-45b9-b38a-9d0cef5853dc",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "560f7073-0675-4586-be62-e46892bf7e1b": {
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "ceab2889-73e2-410a-8ccd-ab0b473d1cfd": {
+        "user_id": "76d8f75a-4214-42aa-9412-ddc2ea394365",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "f8ab3183-4f49-4d6f-901f-11f71c46a077": {
+        "user_id": "5b7ff6ef-d3c6-4712-99da-945e579296f4",
+        "organization_id": "8ebc6a33-9c35-4f65-a9ed-fadf2d21bc92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "87bd2b7d-b0a3-46f9-9f1e-af88e3fcc0c8": {
+        "user_id": "94ac2916-107a-401f-8b89-7ae94f943a1d",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "2e86da2d-5db4-4240-a959-905ca6b4cd70": {
+        "user_id": "3790e664-ebf3-4f42-8ce8-970d5bc0c83e",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "03d3b621-ddcb-4d65-a7b4-515172e31d61": {
+        "user_id": "1f5e50be-7846-4f54-976b-51a2d4fa92a7",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "2e1c8ecf-40aa-4e0d-b8ed-0391a0dec61e": {
+        "user_id": "4103dd5e-7224-4f6c-bdc1-db4d89b292a2",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "e8be8438-1043-4f87-ab78-811396ec599c": {
+        "user_id": "c4defd3c-4b97-4373-b531-0103cb565f07",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "23385611-223c-487e-ba7c-cdf9ff5cf91c": {
+        "user_id": "4e12da44-d9f6-4961-8554-2fb2ccfc3b73",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "3abd128b-b074-4497-a3c2-0832e22e19f5": {
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "41953454-9583-4be7-b103-d9cd9621be67": {
+        "user_id": "5db6a332-d4d6-44d0-9474-4d12eb61c998",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "46d99806-4ab1-4266-a6f7-836517903492": {
+        "user_id": "ac56be74-d20d-41b6-9629-79f0c900b911",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "e03d912c-cc21-4ee8-804d-572a88d4633e": {
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "4785512f-0cb9-44d7-a8b6-64f262b53352": {
+        "user_id": "4330add1-e769-4565-bd23-439940701639",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "b9a36f7e-bff8-485d-9000-749b18f7ebe6": {
+        "user_id": "a160ef96-e68f-46cf-a602-bdf389fb4356",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "64a9b824-37f2-42f1-a9c3-0f05a9eb3b65": {
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "0f8c9f67-42a8-47ee-ab7c-89fbbbf15abe": {
+        "user_id": "a160ef96-e68f-46cf-a602-bdf389fb4356",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "3a8457ef-1a6b-40f0-a4d6-87bb70e2bba4": {
+        "user_id": "fc2b34e3-916c-4c9b-bd0e-b3a96e70befb",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "fc755abe-10e7-486d-803f-f97211c5d007": {
+        "user_id": "ee1366e4-4841-4dc3-8ee4-3916064d7c18",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "c5c1ded1-11e8-4e1c-9dbf-ec9e3318f3b9": {
+        "user_id": "6624afd9-1ccd-4992-879d-acc43c535377",
+        "organization_id": "2e786155-9aad-4686-93c5-901ed1a4b4ec",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "7a9d388f-e0e3-44c4-891a-4eb619a65874": {
+        "user_id": "26bce218-cda8-49eb-b1ef-0f9fb9da604e",
+        "organization_id": "01896ea8-f628-4164-9039-8c47e86dece9",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "ed4aab56-1fd1-4271-a08e-85982ce3817e": {
+        "user_id": "879a910e-4d35-4900-9c34-8490eeaf3b6c",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "c3a32a21-586e-42a8-9e52-b9553db7ba65": {
+        "user_id": "fd82a5ec-b494-4236-aad2-56dad94faf9e",
+        "organization_id": "f95a73f0-4d7f-4a87-981b-24ffa1b9b66d",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "f120a239-96a8-4878-8def-abcc114ae20a": {
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "977c1cb2-b70a-466e-8cdf-a485575fb25f": {
+        "user_id": "4c0d3953-01f8-4c74-8f4d-576689bbcf1c",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "584e4751-2b90-49d9-8e13-506fd623684e": {
+        "user_id": "b6644b95-fa69-49d3-af2d-a9f478a711b3",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "16403cfe-3982-4208-be8b-82ac67821f49": {
+        "user_id": "ff244908-7a78-45b9-b38a-9d0cef5853dc",
+        "organization_id": "f9d224cd-f5cc-4e22-ad75-b8009f343910",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "7241ad74-223b-4405-be6f-0fa3aea843e4": {
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "contractor",
+        "status": "terminated"
+    },
+    "0baa0b03-ef3c-4f2b-be80-fdbfdf9706ec": {
+        "user_id": "df2dff92-5ad8-4845-8448-fef7caada6cf",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "2bddbb1f-6779-4e99-93c0-82bf515c2475": {
+        "user_id": "d1541b40-787a-42df-9178-424cf2127a7e",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "contractor",
+        "status": "suspended"
+    },
+    "2659c5b4-3129-4b2c-b95d-858e1bd9fbb5": {
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "5ea5710c-abeb-471b-987d-8b0d4fca8375": {
+        "user_id": "d6de7528-0e5f-4302-9e2f-9456ad7eff5e",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "22f89aec-15bb-4171-b553-4768e7f83410": {
+        "user_id": "b70c115f-32f4-4f9c-904f-cfc7e0954351",
+        "organization_id": "a1534368-1d43-440a-b589-d42425d47a96",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "86c9beb9-b091-4825-9692-058051bcce40": {
+        "user_id": "7fe32ad7-a98b-4441-a7db-edda1183140d",
+        "organization_id": "81f054d4-cdf2-4930-a0ac-883a2ff02978",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "c062bc1d-4689-435d-8b1d-635a9e97db14": {
+        "user_id": "a59c3ec3-b57a-4be1-b726-2eb3e5675948",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "a8cde27d-8200-4bb0-a9e8-df1126307402": {
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "788bbc8f-ed9d-49ca-9af6-e1a9ae6cc6ba": {
+        "user_id": "d72400c8-ff17-4eaf-a14f-b7e637772730",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "d2e42b98-046f-400e-9d9c-16dd9d53ad36": {
+        "user_id": "8a7dff82-b745-4ddf-afdb-7c85af9a96e4",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "bdff7b12-6dd9-4007-bebb-d2ab53a31484": {
+        "user_id": "a19b4a66-df6c-476e-b145-ab3e651fcdf6",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "d2af6209-7ef7-4939-b6e0-e10b54d7f4f6": {
+        "user_id": "3799f4e6-659e-4abe-b5fb-8513fb7e34fe",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "ee8178ac-67c4-4ca4-9d4d-45a3506c35fb": {
+        "user_id": "acd2dd6b-729f-4e94-a59d-fa313ffb366f",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "terminated"
+    },
+    "3dbdab10-429a-4ae7-b3cc-e4c841236a5b": {
+        "user_id": "a2a5c078-9362-4102-a219-52249f90dd37",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "contractor",
+        "status": "onboarding"
+    },
+    "32484044-2ea2-49fe-91da-c416213f5df7": {
+        "user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916",
+        "organization_id": "7212f974-a8a4-4b91-b3d3-681b360b0f5e",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "fb259635-dfd5-4be5-a401-0a017daa50da": {
+        "user_id": "2deedea3-7611-4959-b165-3f0ae065b567",
+        "organization_id": "deacb95a-ac0d-4f69-a8dd-10b4575aae7b",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "24a80615-cbc2-4e7a-a071-0ef3852fe6ac": {
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "46ce90d5-030b-498a-991b-c26a4db0ab69": {
+        "user_id": "c4dce683-a2ba-4c35-af2d-200e025864c4",
+        "organization_id": "a74a38f9-2b1b-42e1-bcb4-1776bfde0ae7",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "98b38281-f61e-4d12-88af-5206ba458560": {
+        "user_id": "84906dfe-e95b-4a28-a93b-e175aa6c6f6f",
+        "organization_id": "70fa337e-cb9a-4854-8a3e-6d65c9fb0238",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "accb5f01-d788-4693-a6b7-5ffe2a1888ed": {
+        "user_id": "3ba37ced-9063-4447-bdbe-f650b5981f88",
+        "organization_id": "162bf04a-8457-4a74-8140-71820cbc10c8",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "d74871fa-5662-4743-b31c-64f0dbb7697d": {
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149",
+        "organization_id": "eeff8891-e0d1-43b3-a983-0e50a30f9163",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "81e4cc3a-3f47-4a49-9152-d08c51d3c00b": {
+        "user_id": "b41857f8-be21-4528-b007-59610a33b117",
+        "organization_id": "e6c28e16-86f7-4fed-a348-4f83c722dfc7",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "1cd812e8-f185-4a16-b1c7-2eeffedc40c8": {
+        "user_id": "a6a5db37-4ce4-4569-96ba-0406abd29d45",
+        "organization_id": "57c7a92f-9ca0-4149-b207-dc6c8172a44e",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "8f2d6d46-41ad-4404-824b-7bf26765a1e4": {
+        "user_id": "df9450df-bba2-4bff-bc4b-983acae5da09",
+        "organization_id": "bfd2a770-f6c5-4734-a83b-cdad9f7ef5bc",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "3ff49022-0a9a-465b-8cba-c5aea3166550": {
+        "user_id": "d8db5f28-4223-4a63-babf-4d3c91c7faa4",
+        "organization_id": "76829f06-2630-4a73-bb7f-4c9448ec75e5",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "42901c2d-0193-40a0-964d-b3876c987493": {
+        "user_id": "2596560e-ba40-4911-8f6a-9a3b5d07647c",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "contractor",
+        "status": "active"
+    },
+    "a1680d9e-3245-49cc-bf35-23fbaa749139": {
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4",
+        "organization_id": "f22790bc-1627-444e-9ef0-2eada7e6db92",
+        "worker_type": "employee",
+        "status": "suspended"
+    },
+    "e68a5e53-04b3-4fa3-9529-a1c608f6d3b1": {
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0",
+        "organization_id": "40858653-f35c-4b3c-ba36-a5614190e789",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "605125ba-3765-4ecd-a101-22e9a904686b": {
+        "user_id": "b1cac2f1-1809-43fc-ae97-0be01433a69d",
+        "organization_id": "52c7b034-f171-4dbe-8638-9ccd63a0dd14",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "789ddbe5-f181-4403-b7e5-2f77313d03e6": {
+        "user_id": "c6be6d76-6a4d-4ed2-b505-be1a012ff6d0",
+        "organization_id": "b5ff5476-b3c6-4d43-963e-ef092755f3c4",
+        "worker_type": "employee",
+        "status": "active"
+    },
+    "c404f3ed-cc8f-49da-9c16-4b93c2b6bc5a": {
+        "user_id": "fa268f44-0c68-4167-91fb-4d19ea88d301",
+        "organization_id": "107a7226-83be-46ce-8b11-6a9cede03248",
+        "worker_type": "employee",
+        "status": "onboarding"
+    },
+    "ab7c8e41-2641-43ec-b4ad-c736c777d712": {
+        "user_id": "5a8d61a6-f32c-4d7b-b60e-4a660d407509",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "231470fb-9185-4987-b403-932abc01638a"
+    },
+    "31b847c4-c38d-4887-8a8e-185cec6d6aab": {
+        "user_id": "3468f0f9-c75e-4a82-8af7-1f743f834087",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "d90e1ff2-84ce-4ba9-8a71-bdb6918dfb98"
+    },
+    "76768439-791f-47dc-8a50-78cb4656d16d": {
+        "user_id": "6d5ebe54-d65c-40a3-aa4e-dcb5102c6afc",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "c08a134c-06cf-4252-a9cd-d582394ac46d"
+    },
+    "200008dd-565f-4fc5-920b-eff225bf9b1e": {
+        "user_id": "05eefd46-8c52-4802-9d1c-8f54af831c24",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "44ecc7ce-f22f-4a06-9665-ad0d75677000"
+    },
+    "9282bb02-e339-4788-b91e-68b4a330f192": {
+        "user_id": "947d5104-8176-4570-8c8f-a60b050e6b51",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "43e10764-a820-4322-b925-4f9ad3bd8759"
+    },
+    "af60822c-872b-4056-a673-878057941247": {
+        "user_id": "d01977ea-d02a-4d33-a06e-f322486eccda",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "a3b24c10-4fba-44dd-9cc9-81ec69b272d1"
+    },
+    "c566d14c-69bb-49a5-9112-5d843847e33b": {
+        "user_id": "2b9d0fd9-d0f0-4256-8f88-3eeedef48393",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "25778cbe-6e98-45f5-80a2-cc97a07fe241"
+    },
+    "35835fc7-892f-412a-95cd-065410f11bf9": {
+        "user_id": "3fff74cd-b3e7-4411-b201-351ac559743a",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "0b9df83c-f046-47aa-b892-0854692e81cb"
+    },
+    "390e0a29-1940-475d-8ddb-eaf55619702f": {
+        "user_id": "cdc27b45-5bec-43fe-a8a1-5969f17883ff",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "c1450bd2-cd19-40ad-8e18-65d5531b4212"
+    },
+    "5a0e07ea-bdbf-4bb8-acdc-4955d4404f72": {
+        "user_id": "37a91a0f-cdc4-4811-a6cc-b6778a6398f7",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "3c63872f-c282-4e00-9fe4-c1b329ded6f1"
+    },
+    "4a63f957-7685-44a4-817a-989df9ed7332": {
+        "user_id": "c892bf9d-d880-46e7-a061-cf5a70970d5c",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "4f9aeea4-583b-40a7-9e6f-4125b85b09b8"
+    },
+    "e374cf23-3204-426c-bbc3-82cff4e6c61b": {
+        "user_id": "442cf8ad-1f8a-4479-ac95-6b249b8dc0c8",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "3fb47047-af81-4022-b4c5-7f1e2f74632e"
+    },
+    "8a3fe07d-0b18-4910-91ee-637c5693ea00": {
+        "user_id": "386b8c5b-fdbd-4f70-91d7-f7cedc3393fb",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "25778cbe-6e98-45f5-80a2-cc97a07fe241"
+    },
+    "b04302e9-ad56-426b-a7b3-7b89cc70ba16": {
+        "user_id": "30424a69-58c6-445a-a868-33aacc2ffaf1",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "8edf78c4-0c93-4660-b213-5df304c149cd"
+    },
+    "aa68477e-0c54-489b-966a-35bef802c1ed": {
+        "user_id": "bf5ac972-9c7d-4eb9-a28a-0a75961b315d",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "0b065250-dc3e-47e8-b767-edbc8ce2987e"
+    },
+    "0d5b8040-5616-4a51-b4ff-dfc4f157cc81": {
+        "user_id": "27396651-44f0-4170-b617-d7654b216ab0",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "6578de78-f802-4f18-99f9-d45c1b00cbaf"
+    },
+    "41f4c5a6-56e9-4443-aa33-a6ea8a27f01f": {
+        "user_id": "0f5ceb5e-080f-4d6e-b6a2-6f3599fcb43c",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "d90e1ff2-84ce-4ba9-8a71-bdb6918dfb98"
+    },
+    "7928346a-0096-4afd-9da5-6522232cbf8b": {
+        "user_id": "76e20ec4-f7dc-491f-be16-7cb6fb8c869c",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "25778cbe-6e98-45f5-80a2-cc97a07fe241"
+    },
+    "b7f821c9-4b13-4f8c-adcd-d5cec52220ce": {
+        "user_id": "0979c841-26e7-4f39-bbc8-3306b9e2ab87",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "43e10764-a820-4322-b925-4f9ad3bd8759"
+    },
+    "4d524c85-855b-4d23-8d8c-d3365ce403c2": {
+        "user_id": "3436e1a8-7054-41cd-a0a0-5bf6865763ac",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "231470fb-9185-4987-b403-932abc01638a"
+    },
+    "f6582dd7-243a-4798-b9eb-c77d9a148956": {
+        "user_id": "de555280-1730-43a2-9a6d-df4e55b1ebd4",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "bd9f2ce7-e4cd-4552-a0ca-023674cfb00f"
+    },
+    "eb17309f-e6fd-4d4a-9eba-8e8371e05c82": {
+        "user_id": "ea4b5667-3c15-4a95-9b35-2ee8ab9ef06e",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "1fd5ff9a-37e1-4be6-b9dc-b0b1ef85c962"
+    },
+    "4ce265ea-8e20-479d-bcba-87c0669ae68b": {
+        "user_id": "a50ea5de-3db2-4b6d-a0a7-7966236dd8a6",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "0b9df83c-f046-47aa-b892-0854692e81cb"
+    },
+    "ee3642da-8dce-4d5d-a909-97190a9d143a": {
+        "user_id": "d433f5b8-a492-4be4-a977-9f0b3cbd0db7",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "0b065250-dc3e-47e8-b767-edbc8ce2987e"
+    },
+    "ea6e2728-ff4e-436b-98fe-e967716ed529": {
+        "user_id": "df4cfc82-8404-44a2-a58e-0667e4df7ec2",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "a77284b3-e0b3-45c9-bfd7-dedc8f042f57"
+    },
+    "849a2fba-4ef0-4b6a-8740-c82dc24ea81e": {
+        "user_id": "8bc57c17-0db0-47e9-bd66-de9fa9f0dfe4",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "1f6e1daa-b370-4a93-bdbf-b50445426dfb"
+    },
+    "d0a7a4c2-46f8-4784-bb48-1084f1b86dee": {
+        "user_id": "3ad13cb3-c157-4c8f-8f66-c979cb6b31e4",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "a3b24c10-4fba-44dd-9cc9-81ec69b272d1"
+    },
+    "1cfa9b52-9d00-4055-b78b-7b280d5872a9": {
+        "user_id": "63d47352-122d-4d7a-87af-b72442cc0251",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "6b4e730b-9f27-49ef-bb70-9c8e537facd2"
+    },
+    "ab8b8365-4a53-44f4-8dd9-9f6a1863f9ed": {
+        "user_id": "e4b4098f-5a50-4fff-a2cf-29a95f078ba0",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "6578de78-f802-4f18-99f9-d45c1b00cbaf"
+    },
+    "c9af229a-ea83-47fd-a29c-63bbee6dfb75": {
+        "user_id": "16716cad-27af-40e3-a2c4-ad8cec39042e",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "5daf1976-bedb-492d-91e6-3763ea8dd3d5"
+    },
+    "c9cb430d-d47c-44b6-bbde-d95468d05f12": {
+        "user_id": "fae46c85-454c-4ffa-874c-74e3d725bbfd",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "a3b24c10-4fba-44dd-9cc9-81ec69b272d1"
+    },
+    "8d583d06-05f4-4500-98cb-da8adc260915": {
+        "user_id": "8c91aeb6-b7da-47ee-b2d5-dc1dbe8c0eea",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "c47605dd-acc6-4605-ba84-6333b3a2ef67"
+    },
+    "416e3823-2c12-4633-923b-4b3e0ae52e56": {
+        "user_id": "5153c3a6-8ca9-4de9-92e3-fe43a3b70faf",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "afd432b0-f480-487f-b335-d5cb13a0b2be"
+    },
+    "1414e556-7436-4051-8a08-079d784ed44e": {
+        "user_id": "da5f25f2-fed3-45bb-ad35-fa4e39ad4151",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "911c5d88-73ee-4fe0-987c-d68734054587"
+    },
+    "3b2b8c28-3be7-4c6a-bd62-282e7481e996": {
+        "user_id": "ce2598ee-048b-4ce1-929b-3ba439a457b1",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "3c63872f-c282-4e00-9fe4-c1b329ded6f1"
+    },
+    "965bdcf4-9d03-43c2-8a4b-c8f724e4f81b": {
+        "user_id": "007ab01d-7069-42ef-bd51-807c46ca3159",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "34a5baae-e541-443f-ab12-551a2e3e703d"
+    },
+    "e2255d47-1df8-455e-a06d-ec28cac34ae9": {
+        "user_id": "2e256344-36d1-4a13-8825-131120c04b8d",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "31ffe93b-5468-4aaf-b1e2-936f3a16b792"
+    },
+    "154a0170-712b-4fe3-8037-52a66c2b7461": {
+        "user_id": "73880be9-7df4-4430-b15f-62807ced7777",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "afd432b0-f480-487f-b335-d5cb13a0b2be"
+    },
+    "9de7eb10-8139-4ace-922c-d4576e23cbeb": {
+        "user_id": "37c3a6a2-44a3-4977-8dee-82e3b67d4817",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "7c90b2e3-f091-4e56-aad7-781f645b5c5d"
+    },
+    "e24cb2e4-a683-489b-a845-441ee2da2aff": {
+        "user_id": "b86e8e93-0989-4f6c-bafa-4bf9de81ab57",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "6578de78-f802-4f18-99f9-d45c1b00cbaf"
+    },
+    "e9716482-f5ef-40a0-82ba-a524648e04de": {
+        "user_id": "b96c5db0-610f-4944-95a1-92a9b3670bb0",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "6d973995-0146-44b4-927f-08b903bf03a6"
+    },
+    "4ba8c472-5633-43c7-abbb-82c433bcacf0": {
+        "user_id": "c798a27a-d10e-40e6-9cdc-440fed870693",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "470ae3fd-e2cc-437a-9e5f-eba0a58fc93f"
+    },
+    "55bb9823-ed75-462a-8f4b-565efdc5fcff": {
+        "user_id": "f144437d-b0e8-489f-8786-a34bb1c8af54",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "69ad24fa-ac3f-4f9b-b4fa-86804b9e8487"
+    },
+    "17135e8d-c022-4de9-b6b4-e425e38ada1b": {
+        "user_id": "30424a69-58c6-445a-a868-33aacc2ffaf1",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "911c5d88-73ee-4fe0-987c-d68734054587"
+    },
+    "06ede281-b8ed-4959-b770-b290120b1615": {
+        "user_id": "fd8b6a62-52a0-4190-9b5a-9470f0942099",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "9dc73c1a-960f-491f-a57c-47f1da41e84a"
+    },
+    "0e112a40-5ec9-4b74-855b-764b52e63ebe": {
+        "user_id": "386b8c5b-fdbd-4f70-91d7-f7cedc3393fb",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "4a061533-83ec-4f63-8676-cee7292f91af"
+    },
+    "c42be8ad-b0f1-47da-ac8a-f29450f7f10b": {
+        "user_id": "8915ac03-b418-4a2b-b507-83e6c0490780",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "8a6e1986-a89d-4217-a4ac-556b9736b0a4"
+    },
+    "9ab7af03-c489-4b17-9dd3-32c86b5b91fd": {
+        "user_id": "51954bf0-dd92-4e8e-925f-06c6c227811a",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "d0cb986e-faf2-4488-ba69-dbd2fba569f6"
+    },
+    "a508af75-063f-43e2-b434-e58e1c7ed29a": {
+        "user_id": "aa0eea49-6a15-4136-b561-f40f0c9c37b1",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "27eead1b-1d2a-46f7-9218-bd14710ce36a"
+    },
+    "e1e0c30a-b742-4c5f-aeea-cfed71cdac83": {
+        "user_id": "302a365f-9967-44ac-b9ff-ad3becd449a2",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "33353a59-b165-43fb-9d5f-6ca056bc3558"
+    },
+    "056c8533-d288-4bac-8dfa-3f09bb83bb81": {
+        "user_id": "075d2093-4c45-48f8-a9f1-b1ea9831c3a9",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "43e10764-a820-4322-b925-4f9ad3bd8759"
+    },
+    "a37fc6e5-8fc8-4771-83e9-cf3e4677e94a": {
+        "user_id": "9399774f-6b16-4323-a1e6-1adf1222bc52",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "011729d2-c96a-4bb7-8cb1-2ea3396fee5e"
+    },
+    "0fa7cde7-cf8f-49d6-ab54-789b358fd243": {
+        "user_id": "36167344-dd08-4885-b7d7-fb84cef6e692",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "d0cb986e-faf2-4488-ba69-dbd2fba569f6"
+    },
+    "3ada9650-cdb5-48db-859a-6ce34d582929": {
+        "user_id": "18392a2a-68ec-44c2-a72d-89f93b885418",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "ec7ff45a-ad2d-47e6-ba5e-9d17621972ac"
+    },
+    "55942e5a-12b0-4a39-9682-93894effaf79": {
+        "user_id": "409a0da9-18aa-42f1-a1f1-3bd603770f8e",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "adddfb20-3555-443a-854e-18fb61b71c98"
+    },
+    "34d08d69-5509-4edc-83e3-d3f8ba0ecf22": {
+        "user_id": "fc6e208e-3a3c-4d6d-9a8c-c2ba47bebed9",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "3fb47047-af81-4022-b4c5-7f1e2f74632e"
+    },
+    "4a010645-0828-42e7-ab1c-6c4a48d3d227": {
+        "user_id": "6d88359c-6422-4b77-aeac-0b7cec96d4cc",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "6578de78-f802-4f18-99f9-d45c1b00cbaf"
+    },
+    "3f0aba96-7c9f-4b49-8234-ca0d1a483de0": {
+        "user_id": "e63a990c-3570-4262-a2a4-aca626b873a4",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "5824da03-bba1-4045-ab62-571b0858c82d"
+    },
+    "177d7f6c-bc3f-4ead-8d4a-76ca447dc765": {
+        "user_id": "6b8176cd-1bd8-49f9-9af9-0721ca708b5b",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "ec7ff45a-ad2d-47e6-ba5e-9d17621972ac"
+    },
+    "41b46ee7-b5cf-4350-bd92-101960f2e48b": {
+        "user_id": "2b8e54b8-0bcf-4146-97d3-f70feba06063",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "24428a37-3278-4148-b113-a6e2a575a3f7"
+    },
+    "d79ec527-1d2a-4e62-941c-f30423f8a024": {
+        "user_id": "56acc590-927e-4703-9230-ae1839390886",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "05e6c75b-5a47-49f8-ae63-4dc94c8ee5ef"
+    },
+    "0f87cfe5-b251-4fc5-a897-d8363207c484": {
+        "user_id": "e1250795-d1c5-4e75-9136-2aa0e8fcdcb0",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "4a5e4d6c-fdef-458e-8f9e-3c288b76bd72"
+    },
+    "a8e32d79-5361-4d4a-a488-0d0ae6ffa36f": {
+        "user_id": "4ced7cd9-6fde-4eb8-9f0c-4972d4dc58a8",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "011729d2-c96a-4bb7-8cb1-2ea3396fee5e"
+    },
+    "3e0bb883-af5e-405c-99b5-66ecd90f8549": {
+        "user_id": "6f4fded5-9a0d-4a90-9843-2a62ee6d5e50",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "1faf9df6-271c-4fce-894c-8abf0c521a62"
+    },
+    "45723649-e502-450e-8d6b-3125a54e09f1": {
+        "user_id": "53910d74-c275-431c-bc79-8c899ccce77f",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "4ba10309-444f-4af4-aeef-4bd8e57dfd31"
+    },
+    "0a5b7f1d-809c-4e44-871e-45e7e185cc1d": {
+        "user_id": "8c45741d-1324-42c0-96cf-5d321532c7e5",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "6dabd4d5-6c6f-443a-b633-ceafd5386ce0"
+    },
+    "67c9bdc9-96e3-43ef-b085-059a2dd56652": {
+        "user_id": "b2942101-4850-47ee-8ee6-4c6f101d5b13",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "31ffe93b-5468-4aaf-b1e2-936f3a16b792"
+    },
+    "6d78b492-fec2-4015-b1c7-c145a15c0774": {
+        "user_id": "8dc2062d-333c-4010-bcaf-b16e2f5c423a",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "6578de78-f802-4f18-99f9-d45c1b00cbaf"
+    },
+    "2823fe93-0569-47f4-8c12-28f909739274": {
+        "user_id": "7fa8f713-3b2a-41f0-8f69-dcb85bae5749",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "05e6c75b-5a47-49f8-ae63-4dc94c8ee5ef"
+    },
+    "823be443-3c6b-4bef-901c-27b1355d14a2": {
+        "user_id": "300d49c7-3918-4b0a-9248-5cbb90414e81",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "84ab9107-7cd2-4c06-bccd-d7fb3e475c96"
+    },
+    "9dfe8bc7-b538-4244-8b65-4ea28229ae9b": {
+        "user_id": "10d635c9-aa25-48ff-a578-da25c5a7712d",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "c694f4e0-51cc-4831-8276-c1806d96095c"
+    },
+    "714d3714-ce6d-412f-8359-d418f2ad375e": {
+        "user_id": "e37d6cb3-dc86-412c-b497-1458e08468d9",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "1fd5ff9a-37e1-4be6-b9dc-b0b1ef85c962"
+    },
+    "fb62dc32-ef89-4e6e-aa39-15a46504b48d": {
+        "user_id": "b18b40db-9ac6-4593-855a-94d7ee76b815",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "9dc73c1a-960f-491f-a57c-47f1da41e84a"
+    },
+    "948f7271-b47f-43c7-8b8c-8e62da753b93": {
+        "user_id": "e231a713-9b54-43fa-8546-f2d8829b0960",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "d90e1ff2-84ce-4ba9-8a71-bdb6918dfb98"
+    },
+    "9a7cbea4-5aa8-4d9e-880f-0fc949e67f7d": {
+        "user_id": "db830118-7cbd-4f77-8b4c-c71e82a14e72",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "cc853b23-bda0-45bf-ab5c-f07ed0075728"
+    },
+    "9eacdd72-c0cc-41a8-95a8-2fd0f39f511f": {
+        "user_id": "a50ea5de-3db2-4b6d-a0a7-7966236dd8a6",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "911c5d88-73ee-4fe0-987c-d68734054587"
+    },
+    "2206ade9-ad58-4198-b65a-65418d258130": {
+        "user_id": "38e6dd33-cea4-47c0-8a00-6e09114a0754",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "9fda654d-92c2-4a4f-a354-9e9b3499ae12"
+    },
+    "a36e9681-d59a-4630-adf0-1e3a5228e0e8": {
+        "user_id": "10ba8634-0737-4e16-9235-491f62200571",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "c9358835-db5d-4ca5-bd10-2b3dde2b2e06"
+    },
+    "07fa5384-1a3a-48ec-9f48-3e8185140859": {
+        "user_id": "b8514b4f-b7d2-4f85-b439-155b216b3e71",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "eee48af9-9770-4b8d-a6a4-27e8e0e4942d"
+    },
+    "04d67d7b-511b-49d2-8f6f-0c65124a4698": {
+        "user_id": "e7e1f2d6-069a-4219-8398-e79d7f9e4a2b",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "d2771e38-493d-4e35-84a0-fb3605729fe8"
+    },
+    "8f7b959c-b91a-4e1c-be0b-e180728595b0": {
+        "user_id": "41bde4e9-33a7-40e8-b06a-d93edfdc1492",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "05e6c75b-5a47-49f8-ae63-4dc94c8ee5ef"
+    },
+    "dd31d325-c5f5-4fdf-8cd6-fdd3d4b1f407": {
+        "user_id": "db830118-7cbd-4f77-8b4c-c71e82a14e72",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "b6334d80-e569-4d35-aa4c-49dfe9c99b89"
+    },
+    "957a15ac-2043-422b-8463-4f5aff26f2f1": {
+        "user_id": "7d2a0508-7303-40dc-aeef-2de7538ef47e",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "df355828-2515-461f-9c87-583e62c7c609"
+    },
+    "8ba493cc-b3b6-4348-99c6-9ee8903e7384": {
+        "user_id": "ad42799c-67a6-4d2a-945e-923323b287b7",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "1faf9df6-271c-4fce-894c-8abf0c521a62"
+    },
+    "825a0bd8-a9a6-40de-9160-ee652ec4b100": {
+        "user_id": "85599dd3-e3cf-4562-bfb3-2e0f0774a530",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "aad20bea-1125-4e22-9903-c904e16c958e"
+    },
+    "24eb7b0d-3d42-4de7-86b1-d1f3e75261b6": {
+        "user_id": "ee704752-40a1-46dc-928d-9557aaa7f6ab",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "3fb47047-af81-4022-b4c5-7f1e2f74632e"
+    },
+    "95af9ee9-d59a-42b2-92a2-0ded55d19586": {
+        "user_id": "8b01b491-5970-41ac-9da5-3bc97332d8c9",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "afd432b0-f480-487f-b335-d5cb13a0b2be"
+    },
+    "8fcc3074-0b8a-4f0b-ba06-0e55890aa898": {
+        "user_id": "16716cad-27af-40e3-a2c4-ad8cec39042e",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "d287723a-ef65-40d3-bcf9-d9499c0ee7e0"
+    },
+    "6b03629e-fd66-4c6f-ae12-9ddcf9aa9edf": {
+        "user_id": "0c90e2b2-51be-4538-8a7f-67bc7926c598",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "d287723a-ef65-40d3-bcf9-d9499c0ee7e0"
+    },
+    "3f9ea9a4-4eb8-4b99-b8a3-038b8b348a2f": {
+        "user_id": "078d6051-01ef-4057-8466-86b36a8dcfdd",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "0b9df83c-f046-47aa-b892-0854692e81cb"
+    },
+    "7b94a340-b69e-4fec-9ebd-7f3900549a9c": {
+        "user_id": "85599dd3-e3cf-4562-bfb3-2e0f0774a530",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "c08a134c-06cf-4252-a9cd-d582394ac46d"
+    },
+    "b86b5dc0-e397-4896-a979-8d912cb2359f": {
+        "user_id": "e4b4098f-5a50-4fff-a2cf-29a95f078ba0",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "05e6c75b-5a47-49f8-ae63-4dc94c8ee5ef"
+    },
+    "6f1bb850-b3a4-4cd6-9504-df5cd2be96b1": {
+        "user_id": "1b1be37f-9030-4643-8e3d-bdcff726e85e",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "6b4e730b-9f27-49ef-bb70-9c8e537facd2"
+    },
+    "6b63eae9-5a11-48a9-b906-72d313300c12": {
+        "user_id": "00ab8a35-0287-48e9-bad7-a3f50569c4d2",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "9a68ce6d-d0ba-4eb6-bcd4-7766caf0fd6f"
+    },
+    "64629466-8468-4fb8-9729-38fc521cd580": {
+        "user_id": "9f06c5ab-6c02-4445-82d4-bc2328773595",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "f00319d4-d194-408f-b9dd-7c9ba4247478"
+    },
+    "05b43f8e-849b-4569-ad54-232ec4cfeb47": {
+        "user_id": "d433f5b8-a492-4be4-a977-9f0b3cbd0db7",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "84ab9107-7cd2-4c06-bccd-d7fb3e475c96"
+    },
+    "28d0970a-83c2-4456-9a2c-b1668fd108bf": {
+        "user_id": "1077c7c4-3011-4a8e-9083-9392c879f8da",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "6032d387-90b4-4367-bc5e-501e38a093b5"
+    },
+    "e81821d5-d6bb-43e1-9deb-9af83cef289b": {
+        "user_id": "c892bf9d-d880-46e7-a061-cf5a70970d5c",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "c47605dd-acc6-4605-ba84-6333b3a2ef67"
+    },
+    "60988799-384b-4f1d-badd-caa161d9c918": {
+        "user_id": "8a76e28b-4918-44b9-a4f9-2d9016c780f1",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "6dabd4d5-6c6f-443a-b633-ceafd5386ce0"
+    },
+    "22d3a458-8195-4426-ab53-509d85ca41c5": {
+        "user_id": "42560031-aba7-4ec0-9b15-75aeb2f0359f",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "2f12c1ef-7a96-4e06-9ab4-964377388f54"
+    },
+    "4b40b420-087e-49f3-9c4f-082998582a10": {
+        "user_id": "ce2598ee-048b-4ce1-929b-3ba439a457b1",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "6032d387-90b4-4367-bc5e-501e38a093b5"
+    },
+    "3e30620c-3547-4382-8d66-973c3f1d170d": {
+        "user_id": "70d3a20f-1605-4c07-804c-908b68907f33",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "9cf73b2c-1dd1-4d04-a60a-d92d33e2e8c8"
+    },
+    "490553e3-9304-48c8-b7d3-1d921af86138": {
+        "user_id": "6f92d41c-475f-4569-a069-0fc549e6a52b",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "df355828-2515-461f-9c87-583e62c7c609"
+    },
+    "01eacc56-0ed5-4a45-9b77-9f1a6dfcb1a6": {
+        "user_id": "6f84b89e-0f57-4dba-88d6-86dfdf1c162e",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "1daf3ee7-835b-48d9-82c6-5cae012988d8"
+    },
+    "4b06008d-2156-4eec-b931-da5017061e32": {
+        "user_id": "300d49c7-3918-4b0a-9248-5cbb90414e81",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "7538fc90-a818-45dd-8f85-ca19581adc98"
+    },
+    "e472740d-2eb7-4528-8eb2-9ec66d293eb2": {
+        "user_id": "8b3fc035-119b-44de-b2c5-cf6927e352d4",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "470ae3fd-e2cc-437a-9e5f-eba0a58fc93f"
+    },
+    "c247edbc-97cd-40b5-bb60-9336bcb3b140": {
+        "user_id": "db085153-63d1-4acc-84eb-d83af6e7e86f",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "33353a59-b165-43fb-9d5f-6ca056bc3558"
+    },
+    "ac0c9157-217b-4bbc-b0d8-e8171562d0e9": {
+        "user_id": "5a25ba5a-a7b1-4509-ae98-4c5de14311d1",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "7538fc90-a818-45dd-8f85-ca19581adc98"
+    },
+    "9590c619-e546-4b58-af78-0057c1c8fb31": {
+        "user_id": "cea8a224-c6d7-4afd-aa0c-f1a006bc5b87",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "4a5e4d6c-fdef-458e-8f9e-3c288b76bd72"
+    },
+    "0c3e39ff-20e0-4ebf-b588-5b0b994c90b8": {
+        "user_id": "b322985b-376a-45fd-bbfd-8253b9504bdc",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "2f12c1ef-7a96-4e06-9ab4-964377388f54"
+    },
+    "faa56f80-513c-40a3-96ff-2e84894b1e84": {
+        "user_id": "0f7de987-aa91-4e22-aad1-1ec599533102",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "eaa0f711-5d12-48dd-82e8-7949dd7cb91f"
+    },
+    "e1fccef7-4d2d-48a6-923b-b3b468710ea6": {
+        "user_id": "84ef590f-e599-476d-a142-784e2ddc1377",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "4a061533-83ec-4f63-8676-cee7292f91af"
+    },
+    "603c9b95-f8b0-4541-98f0-867423116b17": {
+        "user_id": "3c33d6ce-223c-4c87-b213-37465978ef7f",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "6b1ab332-6210-4f68-8884-fa02fe40b358"
+    },
+    "9b08dc4a-bbb3-423f-aa85-9a413e972ad6": {
+        "user_id": "ecb26f14-ec02-464c-8fd8-2145c8e9060c",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "1fd5ff9a-37e1-4be6-b9dc-b0b1ef85c962"
+    },
+    "21f685bc-60bf-4a07-92eb-b467a70f708b": {
+        "user_id": "b67973cb-a246-479b-9af4-8b28a10e6458",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "22d3fdeb-7758-47ed-b62c-c83fe2693698"
+    },
+    "f883ef61-ddba-4335-a7d6-d1fcaa00b148": {
+        "user_id": "e11cb478-9941-4645-9e47-4d9769779d3b",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "9dc73c1a-960f-491f-a57c-47f1da41e84a"
+    },
+    "a27c15ab-a458-429b-95ef-2e9b30a5c102": {
+        "user_id": "a90292c6-aad8-49b7-93ff-6a7e63f5a8e7",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "5daf1976-bedb-492d-91e6-3763ea8dd3d5"
+    },
+    "d285dfc8-f1c0-4c00-a5bf-77122d21386d": {
+        "user_id": "6152e5c6-85a4-4ad6-aa5f-0f8919ad0f84",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "c1450bd2-cd19-40ad-8e18-65d5531b4212"
+    },
+    "218831a9-8ea9-4e9e-9611-36177c9fc516": {
+        "user_id": "f0561087-425f-4d0d-b002-6e0c41454a96",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "d287723a-ef65-40d3-bcf9-d9499c0ee7e0"
+    },
+    "e72874f5-8227-49e1-bd20-1a34cdcaf610": {
+        "user_id": "460d9d5a-6879-4b17-be9f-64af6c1c0f90",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "6b4e730b-9f27-49ef-bb70-9c8e537facd2"
+    },
+    "ab880528-75a1-48f9-a4bd-b1135e608203": {
+        "user_id": "d3acda62-4561-4bc3-a01a-5c8098fb989b",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "de1fa940-94c7-40d3-b9ac-129fe35d75c4"
+    },
+    "4dae488a-c4bc-4b6a-8bd7-75202d234380": {
+        "user_id": "9aa0a0da-e121-4020-9b4b-44ec77da4761",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "bd9f2ce7-e4cd-4552-a0ca-023674cfb00f"
+    },
+    "a40f3f29-d250-45f3-a3d6-4775250a5f29": {
+        "user_id": "af40c5cf-35c3-4da4-a7b8-c4f3a878064f",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "c9358835-db5d-4ca5-bd10-2b3dde2b2e06"
+    },
+    "196eed69-be6d-4986-9f49-3d8cfb6388d6": {
+        "user_id": "510fe8e8-3871-443b-9381-122fa32e1f1a",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "911c5d88-73ee-4fe0-987c-d68734054587"
+    },
+    "2415f173-707b-41ee-9f12-64fab607a400": {
+        "user_id": "32a0ae06-73c3-40bd-8f9e-4e9ff7966e0a",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "6578de78-f802-4f18-99f9-d45c1b00cbaf"
+    },
+    "d27b024a-7a4e-45d8-8ceb-8bb52bb06867": {
+        "user_id": "2d58d7b9-3f8d-43e8-969a-c3a9d8b99d8e",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "5824da03-bba1-4045-ab62-571b0858c82d"
+    },
+    "f1719842-07aa-4c54-9fa9-ac4903fb6ad9": {
+        "user_id": "50e8ee23-255b-4ab9-a3a6-cacba8d8b1ac",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "1faf9df6-271c-4fce-894c-8abf0c521a62"
+    },
+    "a2e1814f-9eea-439e-8107-ce33013b74d2": {
+        "user_id": "ce2598ee-048b-4ce1-929b-3ba439a457b1",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "2e00a413-d33e-4cf4-9019-db4b5c9694b2"
+    },
+    "c0a3da36-965e-4264-a162-8fa4e9917767": {
+        "user_id": "8844d54d-2015-4553-a86e-76442c3ecadc",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "bd9f2ce7-e4cd-4552-a0ca-023674cfb00f"
+    },
+    "d4dd436a-15cf-4cc4-9c48-5638d5c7e2ce": {
+        "user_id": "0244bbda-0d79-4e01-9db9-bebc4a04eab7",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "f00319d4-d194-408f-b9dd-7c9ba4247478"
+    },
+    "26a29e2e-9190-4bcc-94aa-cf0d83a6eaad": {
+        "user_id": "ac5955e8-ffa1-4e48-a2a9-34236f2138df",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "8edf78c4-0c93-4660-b213-5df304c149cd"
+    },
+    "c0397834-f956-4857-91d3-ab6a029365af": {
+        "user_id": "db085153-63d1-4acc-84eb-d83af6e7e86f",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "cb14bd37-ae81-42fa-8cca-c0c76d80d2f1"
+    },
+    "7a9086db-9d4a-4e16-958e-125c78fab6e6": {
+        "user_id": "e281d398-6f19-4cd4-8b4c-c4695796e2bd",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "e8ca8d58-df27-4e23-a2d2-9ce1b1fe4e58"
+    },
+    "b64e9f7c-1832-4e0b-a85c-76f25b3e810c": {
+        "user_id": "bc927df1-9e7a-47a1-bc89-876122cc7798",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "6b1ab332-6210-4f68-8884-fa02fe40b358"
+    },
+    "2e82eedd-ef48-4116-b285-fa3b901a1d3e": {
+        "user_id": "0244bbda-0d79-4e01-9db9-bebc4a04eab7",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "990fd3ae-dd84-458e-ad3a-aaab26f1a366"
+    },
+    "3deea188-3a25-40fc-bc75-98fe99db1127": {
+        "user_id": "3fff74cd-b3e7-4411-b201-351ac559743a",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "4f2901d1-668e-4c41-948f-47dd30c23764"
+    },
+    "3de53a4e-609f-4c64-b2ac-90ff1b48b548": {
+        "user_id": "6b8176cd-1bd8-49f9-9af9-0721ca708b5b",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "c1450bd2-cd19-40ad-8e18-65d5531b4212"
+    },
+    "5cdb09fb-ba84-489c-8485-661c39ea1f97": {
+        "user_id": "7f6c58df-6b8d-416d-949c-e7e14445aa8b",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "c9358835-db5d-4ca5-bd10-2b3dde2b2e06"
+    },
+    "10a44683-c3be-4dc3-baa1-b58d61858928": {
+        "user_id": "027dfa7d-83ce-4aac-89a1-3d4297e74043",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "43e10764-a820-4322-b925-4f9ad3bd8759"
+    },
+    "e6b18205-8e9f-410a-b912-c2473b55b8a3": {
+        "user_id": "d38a50dd-7183-4072-965e-1c0265587372",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "0b065250-dc3e-47e8-b767-edbc8ce2987e"
+    },
+    "94abdc92-5f31-4aa7-9a1d-b5600e0307ed": {
+        "user_id": "cba9ffe8-7f95-4bd8-bb5e-205876d6d040",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "911c5d88-73ee-4fe0-987c-d68734054587"
+    },
+    "1b3a9997-d9d9-4a11-9f1a-7052e00d3e9b": {
+        "user_id": "159b8fac-80ee-4982-98d1-25868c865637",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "4f2901d1-668e-4c41-948f-47dd30c23764"
+    },
+    "e0105209-878f-49d5-8e1b-12aeb5f36efb": {
+        "user_id": "3c33d6ce-223c-4c87-b213-37465978ef7f",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "24428a37-3278-4148-b113-a6e2a575a3f7"
+    },
+    "309400b1-8046-43bf-9f92-2d540928b55d": {
+        "user_id": "8a76e28b-4918-44b9-a4f9-2d9016c780f1",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "0b9df83c-f046-47aa-b892-0854692e81cb"
+    },
+    "d390f267-cb5c-4b5c-98d1-0f7a2d110f84": {
+        "user_id": "7f6c58df-6b8d-416d-949c-e7e14445aa8b",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "1fd5ff9a-37e1-4be6-b9dc-b0b1ef85c962"
+    },
+    "60115bae-d2d7-47fb-81fc-69401b32fa7c": {
+        "user_id": "ce2598ee-048b-4ce1-929b-3ba439a457b1",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "d588547a-68d9-4915-a8d8-057bae8ebba2"
+    },
+    "f39b561d-8a93-4fa9-8f8f-ec6a026ea089": {
+        "user_id": "b96c5db0-610f-4944-95a1-92a9b3670bb0",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "6b4e730b-9f27-49ef-bb70-9c8e537facd2"
+    },
+    "82b90659-6c63-4b8d-bfd5-926e85cf7bed": {
+        "user_id": "6ceb0268-bd0a-465f-85b7-08de4f12e849",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "afd432b0-f480-487f-b335-d5cb13a0b2be"
+    },
+    "0d008700-ea18-44b1-b692-e226ad40eb40": {
+        "user_id": "2916a88e-4d76-427b-ab08-409be2c52161",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "70a7f710-08e7-4ec4-9195-9cdc06a8e2a8"
+    },
+    "6cf3e5cb-9bcd-4572-bb70-939c228f9aa7": {
+        "user_id": "6d5ebe54-d65c-40a3-aa4e-dcb5102c6afc",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "e73f6354-5525-4f16-a10d-e9792406a9bd"
+    },
+    "14ac308c-245e-40f5-bb2c-ea2b576e869e": {
+        "user_id": "a965206f-e7b4-4d56-b685-9dc470c842fa",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "31ffe93b-5468-4aaf-b1e2-936f3a16b792"
+    },
+    "394b4874-d98f-4e0c-93f4-013b3f55c3fb": {
+        "user_id": "4b9ea72d-2bb1-4812-86c5-eb32236c6a43",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "adddfb20-3555-443a-854e-18fb61b71c98"
+    },
+    "a0af6f35-5d33-4b25-b4d7-0ce0d6ed2466": {
+        "user_id": "ccc6294e-c7ab-4646-822b-b34b75004466",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "470ae3fd-e2cc-437a-9e5f-eba0a58fc93f"
+    },
+    "cdfb6d54-faa2-4ae7-b6c6-79ac029faa3c": {
+        "user_id": "a6f5a0e6-9b59-4dd9-bf24-28ee0c383e02",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "911c5d88-73ee-4fe0-987c-d68734054587"
+    },
+    "6701a558-fffb-4b26-8981-d4bb039397f5": {
+        "user_id": "72fb8142-e811-4925-9859-b8a915ee9e76",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "cb14bd37-ae81-42fa-8cca-c0c76d80d2f1"
+    },
+    "c1bf97a5-cd5e-4aef-a3c8-6817be6250c1": {
+        "user_id": "d1c1ea1e-1c30-42f6-a7d7-8f9de019659a",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "eaa0f711-5d12-48dd-82e8-7949dd7cb91f"
+    },
+    "241958ed-672d-47f0-a389-ae6ff1278f4c": {
+        "user_id": "bc927df1-9e7a-47a1-bc89-876122cc7798",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "cb14bd37-ae81-42fa-8cca-c0c76d80d2f1"
+    },
+    "49c1c5f6-1c32-41a6-a250-1f13c8c87ff7": {
+        "user_id": "b94ef547-d1eb-49cc-a629-3e63a8cf39e2",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "9dc73c1a-960f-491f-a57c-47f1da41e84a"
+    },
+    "9c9f8366-995b-4bab-b81c-c9a3dc2179f9": {
+        "user_id": "3315fd47-2a67-45d9-b8fb-32972ed4be6c",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "0b065250-dc3e-47e8-b767-edbc8ce2987e"
+    },
+    "8c61bcec-c0ed-4693-813d-2165af21a1a2": {
+        "user_id": "0f7de987-aa91-4e22-aad1-1ec599533102",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "ec7ff45a-ad2d-47e6-ba5e-9d17621972ac"
+    },
+    "ab4008a4-8b5e-4228-9034-98f34b50779e": {
+        "user_id": "0cefb664-dcb0-4a28-9a51-efd6f9b10849",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "43e10764-a820-4322-b925-4f9ad3bd8759"
+    },
+    "a772ec24-4be6-458d-935b-7cca12204ebd": {
+        "user_id": "ed378726-d813-4401-9f20-522eecb77cf3",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "8edce99e-6214-47ac-9237-d71ee2042efc"
+    },
+    "796ec069-0551-45a4-947f-89eb2f7d1c7a": {
+        "user_id": "3ec860f5-ed1c-4b3e-a484-bd2655068e93",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "f7834d81-7666-4e30-ac4b-4b0f50fdd3f7"
+    },
+    "2073c7d4-c72d-4cd5-861b-f731fec511de": {
+        "user_id": "8bc57c17-0db0-47e9-bd66-de9fa9f0dfe4",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "cc105c41-5070-42b7-b277-e8d528a386c2"
+    },
+    "534bef72-2b0a-488f-8ab9-05dd713bc12f": {
+        "user_id": "ffb1355e-e166-4732-83a7-5a780d6b3e0e",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "0b9df83c-f046-47aa-b892-0854692e81cb"
+    },
+    "160694c4-7881-4ee7-b4cd-0924e4cfe154": {
+        "user_id": "2ab8e028-f515-47ad-84c1-a25d64084732",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "22d3fdeb-7758-47ed-b62c-c83fe2693698"
+    },
+    "6d13ad43-6157-4379-a2b9-ef9a448f65aa": {
+        "user_id": "4b9ea72d-2bb1-4812-86c5-eb32236c6a43",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "9cf73b2c-1dd1-4d04-a60a-d92d33e2e8c8"
+    },
+    "33ebb635-47bd-4939-b233-171285895cbd": {
+        "user_id": "6fadc331-a8ef-4ff2-bb35-38025a0098c8",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "9fda654d-92c2-4a4f-a354-9e9b3499ae12"
+    },
+    "9471c417-bef1-4a5f-96bc-4fba303c40f3": {
+        "user_id": "8bc57c17-0db0-47e9-bd66-de9fa9f0dfe4",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "c1450bd2-cd19-40ad-8e18-65d5531b4212"
+    },
+    "b761ec7c-d628-4667-bd8d-d982dfd2531f": {
+        "user_id": "947d5104-8176-4570-8c8f-a60b050e6b51",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "2cfd5d6a-b9b5-4933-894e-4ce50142877b"
+    },
+    "7ae13c84-d0a0-4901-a66d-29f8d7911e46": {
+        "user_id": "a827691b-a626-413a-ba62-ff6157c2f096",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "7538fc90-a818-45dd-8f85-ca19581adc98"
+    },
+    "14d0b46a-00f0-4233-b840-a4c0eb90ed1f": {
+        "user_id": "81115d58-e82a-4616-8df0-90849e26795a",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "24428a37-3278-4148-b113-a6e2a575a3f7"
+    },
+    "d398e2dd-e706-49da-93b3-f8da662734ef": {
+        "user_id": "16568c50-9992-4789-afc6-2b3ed70c34f9",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "231470fb-9185-4987-b403-932abc01638a"
+    },
+    "c0266387-85d9-4663-85f7-b48c861b264a": {
+        "user_id": "460d9d5a-6879-4b17-be9f-64af6c1c0f90",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "cc853b23-bda0-45bf-ab5c-f07ed0075728"
+    },
+    "48947157-7897-4df5-9bda-afafbf213337": {
+        "user_id": "b28ea10e-4583-4e0f-b778-075d129f88bd",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "6b4e730b-9f27-49ef-bb70-9c8e537facd2"
+    },
+    "43819039-94b9-410b-9bd6-66badf37362f": {
+        "user_id": "c5a8666f-d335-42bc-ae37-3a3297f85a3b",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "d37d2cdd-8804-4d09-9c3c-706a92d3c1b2"
+    },
+    "64b4b402-5745-4b12-8d86-7f307de4db09": {
+        "user_id": "d433f5b8-a492-4be4-a977-9f0b3cbd0db7",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "9a68ce6d-d0ba-4eb6-bcd4-7766caf0fd6f"
+    },
+    "ef7b9f99-374c-4a7f-bcbe-94c955758031": {
+        "user_id": "00ab8a35-0287-48e9-bad7-a3f50569c4d2",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "eee48af9-9770-4b8d-a6a4-27e8e0e4942d"
+    },
+    "e140d4d9-3066-4425-81fc-cdc5d5fc3245": {
+        "user_id": "6751e235-8049-4218-81c3-c72ba3cf1df0",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "7538fc90-a818-45dd-8f85-ca19581adc98"
+    },
+    "4b35d721-2e89-4902-95a0-dee8faafb6ce": {
+        "user_id": "b101324c-4061-4b4b-98a1-c467da6bbeb3",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "b62cc25b-22bb-4780-bfc3-b578aa4e9480"
+    },
+    "d7399dbd-37b2-4302-bd39-0d5cbc27e5e0": {
+        "user_id": "a50ea5de-3db2-4b6d-a0a7-7966236dd8a6",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "aad20bea-1125-4e22-9903-c904e16c958e"
+    },
+    "7c3b8ba3-a5ad-4025-9008-ee6c253570e8": {
+        "user_id": "c6940033-f0e1-4f58-af3e-36d07b496e0a",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "942c5113-b9a8-4af4-a9a2-bed53e6a1512"
+    },
+    "7933db1b-0d82-4179-8308-615ce2d2604a": {
+        "user_id": "2403982f-3294-43c2-8a44-32e514450b4c",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "e8ca8d58-df27-4e23-a2d2-9ce1b1fe4e58"
+    },
+    "95ce8516-aad1-4e19-be39-d37804cc6847": {
+        "user_id": "a70ab65a-bfbd-450e-8ceb-9a7ec4730c17",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "27eead1b-1d2a-46f7-9218-bd14710ce36a"
+    },
+    "253a992a-31bc-4a9a-8c1c-aee1939555e9": {
+        "user_id": "e4d3bddc-d931-410d-abf4-f14d1a7abf2f",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "18be5dd3-98a3-4aab-bf16-df1fbc45a096"
+    },
+    "cfb01f55-8fae-40af-b60c-97aee99252f5": {
+        "user_id": "85664b78-96fa-452b-9b6b-4a8f98e44b85",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "9fda654d-92c2-4a4f-a354-9e9b3499ae12"
+    },
+    "77ec2da8-70b4-400e-84f9-277e5a513824": {
+        "user_id": "9fd39913-8168-4d56-a8ae-e4d1893e494e",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "1f6e1daa-b370-4a93-bdbf-b50445426dfb"
+    },
+    "832b4f54-fb86-4a36-890c-c00f061ecdae": {
+        "user_id": "48e652ab-a74c-4207-86ab-4ab60d8f967e",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "e73f6354-5525-4f16-a10d-e9792406a9bd"
+    },
+    "1bd81f8c-9c0f-4d95-8d10-7a008cb93493": {
+        "user_id": "a6f5a0e6-9b59-4dd9-bf24-28ee0c383e02",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "24428a37-3278-4148-b113-a6e2a575a3f7"
+    },
+    "ed315b4e-be38-4c22-9d2e-7fe140baf4f3": {
+        "user_id": "29854fa2-3dc9-4ad4-b83c-a03038b3192a",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "3c63872f-c282-4e00-9fe4-c1b329ded6f1"
+    },
+    "7f1d3598-41d5-4f0b-b7b1-14d940da3225": {
+        "user_id": "aa0eea49-6a15-4136-b561-f40f0c9c37b1",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "0b065250-dc3e-47e8-b767-edbc8ce2987e"
+    },
+    "a5e72fa5-e4c9-4a36-a99c-5fb2d8f6a559": {
+        "user_id": "8d7f0fc8-4bfb-4ac1-814d-f99315d738d3",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "cc105c41-5070-42b7-b277-e8d528a386c2"
+    },
+    "b9abf2b0-5a31-4d79-ac1b-cc3090e7e5d6": {
+        "user_id": "b6f6f720-8579-4b2f-aa14-a72add7252bb",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "a3b24c10-4fba-44dd-9cc9-81ec69b272d1"
+    },
+    "64783ce7-f883-4e24-8d53-4c0a1ed9f1ac": {
+        "user_id": "c96478bc-2202-4913-af33-7c5dfec4639c",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "942c5113-b9a8-4af4-a9a2-bed53e6a1512"
+    },
+    "be73e79b-078c-4a68-849b-39615dc39603": {
+        "user_id": "63d47352-122d-4d7a-87af-b72442cc0251",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "231470fb-9185-4987-b403-932abc01638a"
+    },
+    "00a70059-c74e-465f-8676-8723b166b6a8": {
+        "user_id": "2916a88e-4d76-427b-ab08-409be2c52161",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "42cbeb78-4e25-469b-832d-3c5ae285dec3"
+    },
+    "bdb67cf9-f49b-4a87-b67a-af925ef6cb97": {
+        "user_id": "0c7ad3c1-01f4-4de4-a2d9-0c4259dce1a9",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "cc105c41-5070-42b7-b277-e8d528a386c2"
+    },
+    "655fb1c0-0ed6-44df-97a4-00b331497937": {
+        "user_id": "8d7f0fc8-4bfb-4ac1-814d-f99315d738d3",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "1faf9df6-271c-4fce-894c-8abf0c521a62"
+    },
+    "74e9f447-d397-47bb-bd06-bcace1e39a28": {
+        "user_id": "6fb1f1f8-f89f-4de0-805b-7c339e07f6c9",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "8edce99e-6214-47ac-9237-d71ee2042efc"
+    },
+    "15165d5c-09b6-4049-ba4c-1beba8148187": {
+        "user_id": "c2e53277-a2e9-41df-b43f-c705d17c892d",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "24428a37-3278-4148-b113-a6e2a575a3f7"
+    },
+    "d711bb54-d53f-4c6d-9eee-fdf6a67043f0": {
+        "user_id": "cdc27b45-5bec-43fe-a8a1-5969f17883ff",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "d37d2cdd-8804-4d09-9c3c-706a92d3c1b2"
+    },
+    "77024dc6-4cc0-436d-8ac4-caa46f65fc01": {
+        "user_id": "5153c3a6-8ca9-4de9-92e3-fe43a3b70faf",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "6b4e730b-9f27-49ef-bb70-9c8e537facd2"
+    },
+    "95a0c263-b7a6-45e6-83f7-bb702b02cdfa": {
+        "user_id": "786ec9bb-024c-4d36-a938-b9a02959a82e",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "42cbeb78-4e25-469b-832d-3c5ae285dec3"
+    },
+    "c0994e40-1fed-4e2f-b1d8-0a1367878a5b": {
+        "user_id": "b4f4cd40-60ce-4dd9-b61e-80b90c216c9e",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "a77284b3-e0b3-45c9-bfd7-dedc8f042f57"
+    },
+    "ea59498e-0f95-4a3a-99df-cbd038b08753": {
+        "user_id": "9970e658-3e73-49c0-9c7e-2f7dc4cdd770",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "eaa0f711-5d12-48dd-82e8-7949dd7cb91f"
+    },
+    "e85ae7e2-afe5-4afc-b630-20ec7169e59b": {
+        "user_id": "3f2c2ccc-37eb-4533-89b7-4a92d4cd6d34",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "84ab9107-7cd2-4c06-bccd-d7fb3e475c96"
+    },
+    "a83706ec-4769-4722-9742-e0e30611d5a5": {
+        "user_id": "fc61fc68-64e0-4d61-8270-1e810f27dcf3",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "6b1ab332-6210-4f68-8884-fa02fe40b358"
+    },
+    "12c65042-9718-4178-b86f-d8766fb37898": {
+        "user_id": "f260b48e-c17b-43f5-a9e6-d349e9883c7c",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "c9358835-db5d-4ca5-bd10-2b3dde2b2e06"
+    },
+    "b8813f35-382c-4619-9607-a529c06e100e": {
+        "user_id": "99dd281b-ce9f-4767-83e7-6a4bbf208887",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "817907fd-8072-443d-a4e9-04fd1fb66c22"
+    },
+    "394eab64-fdf6-4654-aace-6555d26c47b6": {
+        "user_id": "e924ff11-76e9-4f95-a0d4-d9883c895f13",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "24428a37-3278-4148-b113-a6e2a575a3f7"
+    },
+    "cfe04391-b54d-44e0-bf9f-9e60882c4243": {
+        "user_id": "d55313b5-4c96-4fc4-9d5f-c20de6616f2c",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "231470fb-9185-4987-b403-932abc01638a"
+    },
+    "6cbfb059-2d58-48cd-881d-d3d6086074c1": {
+        "user_id": "b6f6f720-8579-4b2f-aa14-a72add7252bb",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "de1fa940-94c7-40d3-b9ac-129fe35d75c4"
+    },
+    "f5461104-aa3e-486b-bd85-2baf13a528a8": {
+        "user_id": "9480dcc0-4b25-4989-833f-7783510b5b4f",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "75cc902a-0361-4958-a337-8bdcca3f45e2"
+    },
+    "34c2e79e-5b75-4a4a-9c09-e5a8f20d1dff": {
+        "user_id": "a8352ec9-049a-484b-9834-293ce87e1468",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "c694f4e0-51cc-4831-8276-c1806d96095c"
+    },
+    "13f59342-6cb9-4715-86d0-c93ad94a7692": {
+        "user_id": "bc9bd9b3-5ff1-45e3-ba5d-a99843cdc11d",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "2e00a413-d33e-4cf4-9019-db4b5c9694b2"
+    },
+    "346d95ed-13bf-42fe-ad16-0d83ac3c8120": {
+        "user_id": "e6968f9d-66d8-4c4c-928f-b5a886a4bf28",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "ffe238d7-2a20-4b35-bc94-914b1ee11b88"
+    },
+    "bfb02ec2-76d3-4606-be76-4a6b56d2d412": {
+        "user_id": "f144437d-b0e8-489f-8786-a34bb1c8af54",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "2e00a413-d33e-4cf4-9019-db4b5c9694b2"
+    },
+    "f16ed462-30dd-4299-8dd5-6be232588bdc": {
+        "user_id": "b322985b-376a-45fd-bbfd-8253b9504bdc",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "d90e1ff2-84ce-4ba9-8a71-bdb6918dfb98"
+    },
+    "49302373-66b9-4f13-b788-8c4859173fb6": {
+        "user_id": "700b5b75-fb39-4e4e-b1e3-8112add01486",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "4f2901d1-668e-4c41-948f-47dd30c23764"
+    },
+    "cbc3039c-021c-411d-9782-3fb12f162959": {
+        "user_id": "384f8d82-b9e8-42e6-9731-8eb2838ffda7",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "6dabd4d5-6c6f-443a-b633-ceafd5386ce0"
+    },
+    "4cd18f30-e3f2-4b17-8f2a-d275f8c6db2f": {
+        "user_id": "27396651-44f0-4170-b617-d7654b216ab0",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "df355828-2515-461f-9c87-583e62c7c609"
+    },
+    "f3f1e3e2-a1dc-4a12-8e84-668f93051387": {
+        "user_id": "3ca2c9fb-7e52-443b-93c0-200f63301ac3",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "c694f4e0-51cc-4831-8276-c1806d96095c"
+    },
+    "efe5246f-d8ee-42b0-9acc-4e8e76498d5a": {
+        "user_id": "e7ddd6cb-aefa-4f6c-9f73-93941ae51529",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "31ffe93b-5468-4aaf-b1e2-936f3a16b792"
+    },
+    "75682034-bcbd-49e4-9255-8c204174d86d": {
+        "user_id": "8827e1ae-34f1-4399-bd91-a20deb933fe7",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "d287723a-ef65-40d3-bcf9-d9499c0ee7e0"
+    },
+    "3ac57592-64c7-4cf7-aabc-fe51a0d0d60e": {
+        "user_id": "d38a50dd-7183-4072-965e-1c0265587372",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "cc853b23-bda0-45bf-ab5c-f07ed0075728"
+    },
+    "ce4b01d2-5c92-4393-8c8d-b589004acd86": {
+        "user_id": "3468f0f9-c75e-4a82-8af7-1f743f834087",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "7538fc90-a818-45dd-8f85-ca19581adc98"
+    },
+    "a9f96d6f-97e6-47b5-a830-ef5af2770726": {
+        "user_id": "3315fd47-2a67-45d9-b8fb-32972ed4be6c",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "27eead1b-1d2a-46f7-9218-bd14710ce36a"
+    },
+    "b82fea2b-b9b7-46d9-97e8-a00230bd04d3": {
+        "user_id": "078d6051-01ef-4057-8466-86b36a8dcfdd",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "de1fa940-94c7-40d3-b9ac-129fe35d75c4"
+    },
+    "d35dda04-ec2b-4f00-a7c7-915856796873": {
+        "user_id": "e2f16813-5dc9-4a90-8ad7-2bd7b26ce773",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "27eead1b-1d2a-46f7-9218-bd14710ce36a"
+    },
+    "4069bd1e-b852-45b9-b128-224dcaf901bb": {
+        "user_id": "111cfeaa-0b78-4fa8-b8b3-8affbb10fd5e",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "33353a59-b165-43fb-9d5f-6ca056bc3558"
+    },
+    "d4237e6f-3987-45d1-8f63-26402e124848": {
+        "user_id": "acc1acdf-9067-4b5a-9328-f7ef0017ff94",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "2f12c1ef-7a96-4e06-9ab4-964377388f54"
+    },
+    "5cb04b5d-2893-4ac4-ab94-4e34e29adf6a": {
+        "user_id": "b9b9409a-028b-445d-a054-d1287ecebc9f",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "e8ca8d58-df27-4e23-a2d2-9ce1b1fe4e58"
+    },
+    "29255230-e975-4c3a-ae0e-f7f51f0792a8": {
+        "user_id": "49b65b2e-083d-49ae-b05a-cd1ab263a879",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "14c0dcfe-3025-4cae-b09d-3285914b557e"
+    },
+    "64d66ef9-9414-4c8f-a007-ed8650bd7555": {
+        "user_id": "3e590926-28b8-4963-b7af-7220a29e1085",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "b5a0925e-0e02-4da7-82cd-21ba87f6ca10"
+    },
+    "e8881cb7-5231-4aef-9cb2-987ad4408e9f": {
+        "user_id": "ccc6294e-c7ab-4646-822b-b34b75004466",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "51602c5c-f94d-4810-b55c-6aa115526c46"
+    },
+    "038132cd-4d6e-4e91-a844-09d17b997882": {
+        "user_id": "fc61fc68-64e0-4d61-8270-1e810f27dcf3",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "43e10764-a820-4322-b925-4f9ad3bd8759"
+    },
+    "8ca1bb34-cc34-4cdb-9f8c-fa18276b54e0": {
+        "user_id": "c89d781c-bd20-40e7-8bf7-9d28fb7786ef",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "a77284b3-e0b3-45c9-bfd7-dedc8f042f57"
+    },
+    "747cbb00-41d5-4573-9a70-39411afd3c57": {
+        "user_id": "c283a44f-7d4e-42b4-80b1-89a6ebd773ab",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "1daf3ee7-835b-48d9-82c6-5cae012988d8"
+    },
+    "847184e5-ddf4-4d2b-9d89-1650f4cd1468": {
+        "user_id": "949c84f2-048b-4b8a-8248-199890f3c67b",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "231470fb-9185-4987-b403-932abc01638a"
+    },
+    "4835368e-5fa3-43db-ab0f-3092e9453f0e": {
+        "user_id": "c2e53277-a2e9-41df-b43f-c705d17c892d",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "cc105c41-5070-42b7-b277-e8d528a386c2"
+    },
+    "c3a92bac-9cc3-4abd-8d7a-505663d50cb7": {
+        "user_id": "bcd0a8ed-85a6-47d5-a2a6-4959ee1aa7bd",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "c47605dd-acc6-4605-ba84-6333b3a2ef67"
+    },
+    "60ace8f3-506e-4576-b1fd-d2c85c07314c": {
+        "user_id": "9e6eb70f-9f0f-42d5-9b24-5e02de9be09a",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "8edf78c4-0c93-4660-b213-5df304c149cd"
+    },
+    "4fd4b529-6235-4be3-9b10-552bea84a430": {
+        "user_id": "8b3fc035-119b-44de-b2c5-cf6927e352d4",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "49d361c0-9318-4977-b6a5-b855221a022c"
+    },
+    "25f166ba-f42b-4f0a-8573-8ab4427e621f": {
+        "user_id": "c73aa2ac-8902-4e78-9983-caec467e8f8f",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "e73f6354-5525-4f16-a10d-e9792406a9bd"
+    },
+    "ab33f8c1-0844-44d9-981c-a34e185415a3": {
+        "user_id": "b6f257e4-2366-4c8c-bff9-efc72cdd17c0",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "e73f6354-5525-4f16-a10d-e9792406a9bd"
+    },
+    "b828c3bd-f368-4ed6-8247-5991cabd32d8": {
+        "user_id": "d55efcb1-a7ef-4ce4-84be-a02a9d01abab",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "9cf73b2c-1dd1-4d04-a60a-d92d33e2e8c8"
+    },
+    "3de05056-09aa-43bf-91c1-4210f071aaf9": {
+        "user_id": "3e1b114e-c6d4-49b8-9ea9-39f5399cc8df",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "e8ca8d58-df27-4e23-a2d2-9ce1b1fe4e58"
+    },
+    "e4b82e4b-c827-439c-8e31-d169f6b40d90": {
+        "user_id": "29854fa2-3dc9-4ad4-b83c-a03038b3192a",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "81cbe929-164c-42e2-b75c-ea35606e90de"
+    },
+    "18a9ebfc-c38a-4b72-8874-8639dd0e1841": {
+        "user_id": "b8514b4f-b7d2-4f85-b439-155b216b3e71",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "f00319d4-d194-408f-b9dd-7c9ba4247478"
+    },
+    "8dea598c-5d2d-47c7-8a55-2f930c888b0e": {
+        "user_id": "2d58d7b9-3f8d-43e8-969a-c3a9d8b99d8e",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "6578de78-f802-4f18-99f9-d45c1b00cbaf"
+    },
+    "39c2dcfc-bd7b-427c-ae07-5987f8d5ca4f": {
+        "user_id": "c3373dee-8d2d-4351-b0d6-e34b70dcd5ae",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "d37d2cdd-8804-4d09-9c3c-706a92d3c1b2"
+    },
+    "33a088e8-eba1-4aaa-a58f-2382da84da3d": {
+        "user_id": "101b6b26-f359-4490-bb2c-b9c338edd6b2",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "6dabd4d5-6c6f-443a-b633-ceafd5386ce0"
+    },
+    "f686097b-e68c-48e2-a491-553f02ffd9c3": {
+        "user_id": "e54ed4df-e4d3-45db-b632-3687c4e4faa1",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "942c5113-b9a8-4af4-a9a2-bed53e6a1512"
+    },
+    "b604637d-b286-4eac-afa6-cb7c9cfd651f": {
+        "user_id": "c508f631-03bc-4c81-966e-bf7eb82571e5",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "4f9aeea4-583b-40a7-9e6f-4125b85b09b8"
+    },
+    "bc0b7308-6b7f-4870-8e79-69ee5b4c478d": {
+        "user_id": "a189d555-b8c9-48d4-a250-14e64f9b6aa5",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "05a16bab-46d6-4254-898a-240ae93d0168"
+    },
+    "21b70b27-1ce2-4a21-b8b9-8f58480e0e01": {
+        "user_id": "42560031-aba7-4ec0-9b15-75aeb2f0359f",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "eee48af9-9770-4b8d-a6a4-27e8e0e4942d"
+    },
+    "b78faef4-2bb9-446d-a3a7-5fcd31ae00e7": {
+        "user_id": "c96478bc-2202-4913-af33-7c5dfec4639c",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "2cfd5d6a-b9b5-4933-894e-4ce50142877b"
+    },
+    "cc75fd54-c28e-41bb-b812-b2195e087375": {
+        "user_id": "2403982f-3294-43c2-8a44-32e514450b4c",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "b6334d80-e569-4d35-aa4c-49dfe9c99b89"
+    },
+    "1aa12033-aeae-4cd3-a4b5-9e3edd28e440": {
+        "user_id": "6550e8c3-4f18-4ba8-8244-74a0fa283899",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "a77284b3-e0b3-45c9-bfd7-dedc8f042f57"
+    },
+    "8ebdbf42-ce60-4a95-9f53-07ce00c54bb3": {
+        "user_id": "67d8b65b-9160-4e8e-82ac-8c36dab24bf2",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "27eead1b-1d2a-46f7-9218-bd14710ce36a"
+    },
+    "78bacbe2-2ebd-479a-9207-e54552fb58d9": {
+        "user_id": "16568c50-9992-4789-afc6-2b3ed70c34f9",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "5824da03-bba1-4045-ab62-571b0858c82d"
+    },
+    "a9630b2c-ca3e-4c1f-86de-f35a8a63a97a": {
+        "user_id": "3468f0f9-c75e-4a82-8af7-1f743f834087",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "f7834d81-7666-4e30-ac4b-4b0f50fdd3f7"
+    },
+    "b3b3fe2f-9bc5-44d0-b460-1fe082d48574": {
+        "user_id": "2916a88e-4d76-427b-ab08-409be2c52161",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "d0cb986e-faf2-4488-ba69-dbd2fba569f6"
+    },
+    "a651ca36-498a-4c04-9b03-f0cf8e389bda": {
+        "user_id": "e24abc5b-4153-46ef-aca2-8993b020b86e",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "cb14bd37-ae81-42fa-8cca-c0c76d80d2f1"
+    },
+    "aebcb5e9-6d68-407f-b846-85c5cbb2d922": {
+        "user_id": "6fb1f1f8-f89f-4de0-805b-7c339e07f6c9",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "8a6e1986-a89d-4217-a4ac-556b9736b0a4"
+    },
+    "d9ff5115-f11e-4462-b989-36e5322886b4": {
+        "user_id": "66cb5214-2268-4873-9cce-d3d7793616ae",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "14c0dcfe-3025-4cae-b09d-3285914b557e"
+    },
+    "d80edf8a-d337-4a09-8bea-065021ebc52d": {
+        "user_id": "9f06c5ab-6c02-4445-82d4-bc2328773595",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "2e00a413-d33e-4cf4-9019-db4b5c9694b2"
+    },
+    "efcfce3c-c4c2-449f-b6b7-7615af0533e9": {
+        "user_id": "da1ae231-75e8-4f61-8a5c-5c873feb1137",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "afd432b0-f480-487f-b335-d5cb13a0b2be"
+    },
+    "3533c16e-f9c4-4b6b-910e-0dc737a1d7e8": {
+        "user_id": "29854fa2-3dc9-4ad4-b83c-a03038b3192a",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "d0cb986e-faf2-4488-ba69-dbd2fba569f6"
+    },
+    "a2e3b81c-10a0-41f4-8d28-dd23948a0b34": {
+        "user_id": "f169892e-aaa3-4c35-88f3-6c3375239718",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "14c0dcfe-3025-4cae-b09d-3285914b557e"
+    },
+    "148eb4bb-d389-4e88-8f16-1f4744eb7c49": {
+        "user_id": "0699be91-9ba8-41df-894b-1d74fe157ccf",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "2f12c1ef-7a96-4e06-9ab4-964377388f54"
+    },
+    "fd699a9f-5073-4a1b-b064-a492f390d39d": {
+        "user_id": "a8123c38-2340-4a77-96ff-4f0a9e87cc15",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "f7834d81-7666-4e30-ac4b-4b0f50fdd3f7"
+    },
+    "dd1a2699-2537-48d4-865e-260876e6e66b": {
+        "user_id": "7ae27d62-1bad-4f53-9491-a76b88b86d6a",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "cb14bd37-ae81-42fa-8cca-c0c76d80d2f1"
+    },
+    "a198ff23-8dc5-4753-a362-f04300a592c6": {
+        "user_id": "424419f2-f9ad-4c87-8950-f41a4c3d7257",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "3c63872f-c282-4e00-9fe4-c1b329ded6f1"
+    },
+    "9ecfe019-65e6-4588-a795-6a0dedee8aea": {
+        "user_id": "ed378726-d813-4401-9f20-522eecb77cf3",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "afd432b0-f480-487f-b335-d5cb13a0b2be"
+    },
+    "64203014-5389-4ac8-9e15-7ee51d987cc3": {
+        "user_id": "6f84b89e-0f57-4dba-88d6-86dfdf1c162e",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "4f9aeea4-583b-40a7-9e6f-4125b85b09b8"
+    },
+    "54e57f60-0a7d-4e9c-b929-8993f3b708c9": {
+        "user_id": "4d0cc2b8-e2bc-404f-8873-13ba04db9bcb",
+        "worker_type": "contractor",
+        "status": "on_leave",
+        "organization_id": "7c90b2e3-f091-4e56-aad7-781f645b5c5d"
+    },
+    "c4a79944-6a91-413c-9f26-dbbf03396b08": {
+        "user_id": "2b13bc76-df2e-4030-b829-53b1531317e0",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "eaa0f711-5d12-48dd-82e8-7949dd7cb91f"
+    },
+    "d21055bf-feda-454e-a738-411d2dbb899f": {
+        "user_id": "376076fe-25ec-4185-9c8e-63ff4386a9e1",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "cda6dbde-7dee-43bc-99f9-cde46f734c97"
+    },
+    "e06ff7b8-3b44-492d-8603-cee816066306": {
+        "user_id": "510fe8e8-3871-443b-9381-122fa32e1f1a",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "9dc73c1a-960f-491f-a57c-47f1da41e84a"
+    },
+    "d03d9843-adb6-4cf6-baae-56be8fbb025b": {
+        "user_id": "4ff73b48-0afc-466f-a803-b8c9ccb073ca",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "1f6e1daa-b370-4a93-bdbf-b50445426dfb"
+    },
+    "50fcae11-e2e5-49fa-bf58-eae921060ab5": {
+        "user_id": "58ff79cc-7b76-4a7f-adc5-694c37bc7b3b",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "2cfd5d6a-b9b5-4933-894e-4ce50142877b"
+    },
+    "6fd2ee7a-3bb0-421b-b5ab-67541c255504": {
+        "user_id": "16716cad-27af-40e3-a2c4-ad8cec39042e",
+        "worker_type": "employee",
+        "status": "active",
+        "organization_id": "4a5e4d6c-fdef-458e-8f9e-3c288b76bd72"
+    },
+    "0aee13f7-862f-4c18-837a-eb14914948e7": {
+        "user_id": "e37d6cb3-dc86-412c-b497-1458e08468d9",
+        "worker_type": "employee",
+        "status": "suspended",
+        "organization_id": "49d361c0-9318-4977-b6a5-b855221a022c"
+    },
+    "ccc6141d-f685-4abc-8685-4d32c0918b6f": {
+        "user_id": "8c91aeb6-b7da-47ee-b2d5-dc1dbe8c0eea",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "27eead1b-1d2a-46f7-9218-bd14710ce36a"
+    },
+    "aad84396-4ac2-41d8-b7f2-c729f5673d23": {
+        "user_id": "4696f1fc-980d-49f9-804b-f888a41249c6",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "c47605dd-acc6-4605-ba84-6333b3a2ef67"
+    },
+    "b8ef5234-49c7-4cc5-be44-4045511727c9": {
+        "user_id": "74ac2876-f452-4818-afed-bed3d7354e5a",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "d2771e38-493d-4e35-84a0-fb3605729fe8"
+    },
+    "2c080da3-6aa8-4d20-bdab-91287e5c8808": {
+        "user_id": "8915ac03-b418-4a2b-b507-83e6c0490780",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "de1fa940-94c7-40d3-b9ac-129fe35d75c4"
+    },
+    "5980b852-65c6-4b16-861f-bc87d3f40fcf": {
+        "user_id": "9d16bbef-c13f-4635-8633-e5882d5a4936",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "1fd5ff9a-37e1-4be6-b9dc-b0b1ef85c962"
+    },
+    "95b9ecb8-7e52-44e7-8941-de7bf935bf34": {
+        "user_id": "3dd9d04f-9532-4538-a1d9-694eceaf4de5",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "84ab9107-7cd2-4c06-bccd-d7fb3e475c96"
+    },
+    "9c720c5d-d9dd-42e1-af2f-afc90b0e25cf": {
+        "user_id": "b8fd4c99-af71-4418-9260-c5800e10258e",
+        "worker_type": "contractor",
+        "status": "active",
+        "organization_id": "9fda654d-92c2-4a4f-a354-9e9b3499ae12"
+    },
+    "730fad66-b7b6-4f88-9492-cd417e2eb6e0": {
+        "user_id": "e0cf2104-fdab-4e45-ae41-db4f73296ce3",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "14c0dcfe-3025-4cae-b09d-3285914b557e"
+    },
+    "b6f63f18-6d97-44cd-9966-a45b9d378b43": {
+        "user_id": "6152e5c6-85a4-4ad6-aa5f-0f8919ad0f84",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "911c5d88-73ee-4fe0-987c-d68734054587"
+    },
+    "0ed74c49-8cb5-48f6-bb8e-484ca4188b92": {
+        "user_id": "d0d53e8d-9b2d-4dee-a594-d0427c38c3e4",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "25778cbe-6e98-45f5-80a2-cc97a07fe241"
+    },
+    "30327598-28dd-4a17-b38c-d72fd97a2ce9": {
+        "user_id": "b2e2f90d-8cba-484a-abd6-d704a2e97e6f",
+        "worker_type": "contractor",
+        "status": "terminated",
+        "organization_id": "4a061533-83ec-4f63-8676-cee7292f91af"
+    },
+    "16542eed-1092-4f36-83c3-9c80348bd810": {
+        "user_id": "da1ae231-75e8-4f61-8a5c-5c873feb1137",
+        "worker_type": "employee",
+        "status": "on_leave",
+        "organization_id": "1faf9df6-271c-4fce-894c-8abf0c521a62"
+    },
+    "fb59413e-28b4-4ede-b4c6-23d66b21908d": {
+        "user_id": "1f1f1e3c-e098-4066-b3cb-38e2e8afbff5",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "69ad24fa-ac3f-4f9b-b4fa-86804b9e8487"
+    },
+    "b9e0ceb3-e688-41d6-a7a8-84d33410037a": {
+        "user_id": "007ab3bc-7c57-447f-8bee-41d6b9a13524",
+        "worker_type": "employee",
+        "status": "terminated",
+        "organization_id": "2cfd5d6a-b9b5-4933-894e-4ce50142877b"
+    },
+    "57d2f336-ab44-4ba0-9278-515ad01a76d9": {
+        "user_id": "ee6f9500-92e2-4efb-a1de-0d499bd936a0",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "470ae3fd-e2cc-437a-9e5f-eba0a58fc93f"
+    },
+    "46a864c5-92a6-4a85-90aa-364ce0a37191": {
+        "user_id": "3dd9d04f-9532-4538-a1d9-694eceaf4de5",
+        "worker_type": "contractor",
+        "status": "suspended",
+        "organization_id": "75cc902a-0361-4958-a337-8bdcca3f45e2"
+    }
+}
