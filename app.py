@@ -11,7 +11,7 @@ import re
 from flask import session, g
 from flask_session import Session
 from openai import OpenAI
-
+from anthropic import Anthropic
 # import gspread
 # from oauth2client.service_account import ServiceAccountCredentials
 from dotenv import load_dotenv
@@ -900,6 +900,41 @@ def database_utilities():
             'message': 'Invalid action'
         }), 400
 
+def get_claude_client():
+    """Initialize and return Claude client"""
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        raise ValueError("ANTHROPIC_API_KEY environment variable is required")
+    return Anthropic(api_key=api_key)
+
+# Helper function to call Claude
+def call_claude(prompt, model="claude-3-sonnet-20240229", max_tokens=4000, temperature=0.1):
+    """
+    Call Claude API with the given prompt
+    
+    Args:
+        prompt (str): The prompt to send to Claude
+        model (str): Claude model to use (default: claude-3-sonnet-20240229)
+        max_tokens (int): Maximum tokens to generate
+        temperature (float): Temperature for response generation
+    
+    Returns:
+        str: Claude's response content
+    """
+    client = get_claude_client()
+    
+    response = client.messages.create(
+        model=model,
+        max_tokens=max_tokens,
+        temperature=temperature,
+        messages=[
+            {"role": "user", "content": prompt}
+        ]
+    )
+    
+    return response.content[0].text
+
+
 @app.route('/instruction_validation', strict_slashes=False, methods=["GET", "POST"])
 def task_validation():
     if request.method == "POST":
@@ -945,20 +980,23 @@ def task_validation():
                 instruction=instruction
             )
             
-            from openai import OpenAI
-            client = OpenAI() 
+            # from openai import OpenAI
+            # client = OpenAI() 
             
             try:
-                response = client.chat.completions.create(
-                    model=model,
-                    messages=[
-                        {"role": "system", "content": "You are a helpful assistant."},
-                        {"role": "user", "content": prompt}
-                    ],
-                    temperature=0.1
-                )
+                # response = client.chat.completions.create(
+                #     model=model,
+                #     messages=[
+                #         {"role": "system", "content": "You are a helpful assistant."},
+                #         {"role": "user", "content": prompt}
+                #     ],
+                #     temperature=0.1
+                # )
                 
-                validation_result = response.choices[0].message.content.strip()
+                # validation_result = response.choices[0].message.content.strip()
+                
+                validation_result = call_claude(prompt, model=model)
+
                 return jsonify({
                     'status': 'success',
                     'validation_result': validation_result
