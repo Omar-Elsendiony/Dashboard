@@ -8,8 +8,10 @@ from flask_cors import CORS
 import ast
 from typing import Dict, Any
 import re
-from flask import Flask, session, g
+from flask import session, g
 from flask_session import Session
+from openai import OpenAI
+
 # import gspread
 # from oauth2client.service_account import ServiceAccountCredentials
 from dotenv import load_dotenv
@@ -741,7 +743,6 @@ def database_utilities_prompt_generation():
             'prompt': prompt
         }), 200
     elif action == "check_scenario_realism":
-        from openai import OpenAI
 
         client = OpenAI() 
         db_schema = data.get('db_schema', '')
@@ -952,7 +953,8 @@ def task_validation():
                     messages=[
                         {"role": "system", "content": "You are a helpful assistant."},
                         {"role": "user", "content": prompt}
-                    ]
+                    ],
+                    temperature=0.1
                 )
                 
                 validation_result = response.choices[0].message.content.strip()
