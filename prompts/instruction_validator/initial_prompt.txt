@@ -1,0 +1,73 @@
+I am creating an instruction to be provided to an LLM so that it imitates a user interacting/having a conversation with an agent LLM which in turn deals with a database using a set of actions/APIs that get/create/update and delete from a database. Those APIs are programmatic functions that interface with the database.
+
+The instruction would be in second person telling the user LLM what kind of persona it should imitate and what does this persona wants to do so that it interacts with the agent LLM through this persona. The instruction includes pre-specified information that may be needed during the multi-turn interaction between the user LLM and agent LLM.
+
+The agent LLM actions are controlled by what the policy entails. So, the policy is the mind of the LLM that determines if an action should be conducted or not. There will be a multi-turn interaction between the user LLM and agent LLM, however, I want the instruction to be in a way such that if I provided all of the instruction to the agent LLM, it will be able to conduct all the actions without returning back to the user LLM. So, a policy like "you should check with the user validation before taking any action" violates this constraint.
+
+Your task is to evaluate whether a given instruction meets the criteria/constraints or not. I am going to provide you the instruction that I want to check along with the policy that governs the agent LLM actions.
+
+Evaluate the instruction against these 3 criteria:
+
+1. **USER-FACING**: The instruction should be directed at an end user, not at a system, developer, or internal process. It should use "you" language or imperative form directed at the person who will follow it or in other words, it should be in second person. user-facing tasks describe what the user wants and doesn’t assume the user is executing the action or knows the implementation details of any action. 
+
+2. **OUTPUT/GOAL ORIENTED (not procedural)**: The instruction should focus on WHAT needs to be achieved or produced, not HOW to do it step-by-step. It should describe the desired end result rather than a detailed process. Take care that adding the attributes values needed to create/update an entity is fine. Otherwise, how the agent LLM is going to know what the user wants. However, mentioning the names of the attributes like `company_id` is wrong.
+
+Bad (“how”-focused)
+- “Go to Settings → Users → Find John Doe → Toggle the checkbox.”
+- “Select the date picker, choose last month, export CSV.”
+- “Click Inventory, enter SKU, update quantity, then hit Save.”
+
+Good (“what”-focused)
+- “Deactivate user accounts that have been inactive for over 90 days, to maintain system security.”
+- “Generate a monthly sales report covering complete transactions, formatted for archiving in our CRM.”
+- “Ensure on-hand inventory levels match physical counts within a 1% variance for all SKUs.”
+
+Furthermore, the instruction should not be spoon-feeding the user LLM with information on how the process would be done. Spoon-feeding means giving the agent overly detailed, step-by-step instructions — like programming instructions — which limits the agent’s reasoning role. It might extend to stating the names of the attributes of the API like `user_id` or the API prototype `get_user_info`. All of this is utterly wrong.
+
+Example:
+- First, fetch the list of boxes, then filter by status=open, then print the results...
+This approach is discouraged. Just state the goal, not how to achieve it.
+
+3. **POLICY COMPLIANT**: The instruction should align with existing policies without adding new constraints or restrictions that could conflict with established guidelines.
+
+For each criterion, respond with:
+- **PASS** or **FAIL**
+- Explanation and paraphrasing suggestions if needed
+
+Then provide an overall assessment:
+- **OVERALL**: PASS/FAIL
+- **SUMMARY**: Explanation of the overall decision
+- **SUGGESTIONS**: If failed, provide specific improvements
+
+Format your response as JSON:
+
+```json
+{{
+  "user_facing": {{
+    "result": "PASS/FAIL",
+    "explanation": "..."
+  }},
+  "output_oriented": {{
+    "result": "PASS/FAIL", 
+    "explanation": "..."
+  }},
+  "policy_compliant": {{
+    "result": "PASS/FAIL",
+    "explanation": "..."
+  }},
+  "overall": {{
+    "result": "PASS/FAIL",
+    "summary": "...",
+    "suggestions": ["...", "...", "..."]
+  }}
+}}
+
+
+# Instruction:
+{instruction}
+
+# Policy:
+{policy}
+
+# Here are some examples of entire good and bad instructions:
+{examples}

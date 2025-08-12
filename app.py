@@ -24,12 +24,12 @@ app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15) 
 
-# app.config['SESSION_TYPE'] = 'filesystem' 
+app.config['SESSION_TYPE'] = 'filesystem' 
 
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ###################### GLOBAL ENVIRONMENTS ##################################
@@ -947,7 +947,7 @@ def task_validation():
             }), 400
         
         if action == "fetch_initial_prompt":
-            initial_prompt_file_path = f"prompts/task_validator/initial_prompt.txt"
+            initial_prompt_file_path = f"prompts/instruction_validator/initial_prompt.txt"
             if not os.path.exists(initial_prompt_file_path):
                 return jsonify({
                     'status': 'error',
@@ -957,13 +957,19 @@ def task_validation():
             with open(initial_prompt_file_path, 'r') as file:
                 initial_prompt = file.read()
             
+            examples_file_path = f"prompts/instruction_validator/examples.txt"
+            with open(examples_file_path, 'r') as file:
+                examples = file.read()
+            
             return jsonify({
                 'status': 'success',
-                'initial_prompt': initial_prompt
+                'initial_prompt': initial_prompt,
+                'examples': examples
             }), 200
         
         elif action == "validate_instruction":
             initial_prompt = data.get('initial_prompt', '')
+            examples = data.get('examples', '')
             policy = data.get('policy', '')
             instruction = data.get('instruction', '')
             model = data.get('model', '')
@@ -977,7 +983,8 @@ def task_validation():
             
             prompt = initial_prompt.format(
                 policy=policy,
-                instruction=instruction
+                instruction=instruction,
+                examples=examples if examples else ""
             )
             
             # from openai import OpenAI

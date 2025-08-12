@@ -217,20 +217,21 @@
             color: rgba(255, 255, 255, 0.8);
             margin: 1rem;
             text-align: center;
+            font-weight: bold;
         }
 
         textarea {
             width: 100%;
-            height: 200px;
+            height: 300px;
             padding: 1rem;
             border-radius: 8px;
             border: 1px solid rgba(102, 126, 234, 0.2);
             // background: rgba(255, 255, 255, 0.05);
             // color: rgba(255, 255, 255, 0.9);
-            
+            // background: rgba(230, 218, 218, 0.24);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             resize: none;
-            // font-size: 1.2rem;
+            font-size: medium;
         }
 
         .model-dropdown {
@@ -285,7 +286,7 @@
             height: 20px;
             border: 2px solid transparent;
             border-radius: 50%;
-            border-top-color: #667eea;
+            border-top-color: #d8ddf0ff;
             animation: spin 1s ease-in-out infinite;
         }
         @media (max-width: 768px) {
@@ -318,22 +319,24 @@
         function sendContentLLM(feature){
             if (feature == "basic_validation"){
                 const initialPrompt = document.getElementById('initial-prompt').value;
+                const examples = document.getElementById('examples').value;
                 const policy = document.getElementById('policy').value;
                 const instruction = document.getElementById('instruction').value;
                 const selectedModel = document.getElementById('model-select').value;
                 const callLLMButton = document.getElementById('callButton');
                 if (!initialPrompt || !policy || !instruction) {
-                    alert("Please fill in all fields before validating.");
+                    // alert("Please fill in all fields before validating.");
+                    showWrongMessage("Please fill in all fields before validating.");
                     return;
                 }
                 if (!selectedModel) {
-                    alert("Please select a model before validating.");
+                    showWrongMessage("Please select a model before validating.");
                     return;
                 }
                 // Disable the button to prevent multiple clicks
                 callLLMButton.disabled = true;
                 const spinner = '<span class="loading-spinner"></span>';
-                callLLMButton.innerHTML = spinner + "Validating...";
+                callLLMButton.innerHTML = "Validating...";
                 fetch('/instruction_validation', {
                     method: 'POST',
                     headers: {
@@ -344,7 +347,8 @@
                         initial_prompt: initialPrompt,
                         policy: policy,
                         instruction: instruction,
-                        model: selectedModel
+                        model: selectedModel,
+                        examples: examples
                     })
                 })
                 .then(response => response.json())
@@ -391,7 +395,7 @@
             }
         }
 
-        async function get_LLM_response(prompt) {
+        /* async function get_LLM_response(prompt) {
             try {
                 const response = await fetch('/get_llm_response', {
                     method: 'POST',
@@ -413,7 +417,7 @@
                 console.error('Error fetching LLM response:', error);
                 return null;
             }
-        }
+        } */
 
         async function fetch_initial_prompt() {
 
@@ -439,6 +443,38 @@
                 console.warn('No initial prompt found in the response.');
                 document.getElementById('content').style.display = 'none';
             }
+            if (data.examples) {
+                document.getElementById('examples').value = data.examples;
+            } else {
+                console.warn('No examples found in the response.');
+            }
+        }
+
+        function showWrongMessage(text) {
+            const message = document.createElement('div');
+            message.textContent = text;
+            message.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #f44336;
+                color: white;
+                padding: 15px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                z-index: 1000;
+                font-family: Arial, sans-serif;
+                transition: all 0.3s ease;
+            `;
+            document.body.appendChild(message);
+
+            setTimeout(() => {
+                message.style.opacity = '0';
+                message.style.transform = 'translateY(-20px)';
+                setTimeout(() => {
+                    document.body.removeChild(message);
+                }, 300);
+            }, 3000);
         }
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -558,6 +594,9 @@
 
             <h3 class="content-subheader">Initial Prompt</h3>
             <textarea id="initial-prompt" placeholder="Enter the initial task prompt here..."></textarea>
+
+            <h3 class="content-subheader">Examples</h3>
+            <textarea id="examples" placeholder="Enter examples for validation..."></textarea>
 
             <h3 class="content-subheader">Instruction</h3>
             <textarea id="instruction" placeholder="Enter the instruction to validate..."></textarea>

@@ -1,0 +1,12 @@
+## Bad instruction example
+You are Natasha Hickman (email: natashahickman@protonmail.com), an administrator who needs to handle a comprehensive commitment management scenario for multiple investors. First, you need to verify your identity and then check if investor ID 15 has any existing commitments for fund ID 25. If no commitment exists, you need to create a new commitment for 500,000 GBP with a commitment date of September 10, 2025. Then, retrieve all commitments for this investor to verify the creation. Next, you need to update the commitment amount to 750,000 GBP due to increased investor interest. After the update, check the commitment fulfillment status and calculate the fulfillment percentage. Additionally, create another commitment for investor ID 30 to fund ID 25 for 300,000 GBP with a commitment date of September 15, 2025. Retrieve all commitments for fund ID 25 to see both commitments. However, investor ID 30 has decided to withdraw, so you need to delete their commitment. Finally, generate a holding report for fund ID 25 for investor ID 15 with a report date and export period end date of September 25, 2025, and send an email notification of type alert to investor ID 15 about their updated commitment status.
+- The instruction is agent-facing when it says "verify yourself" as this is an agent action, not the user's. Also, the instruction is not outcome-oriented
+- It's not designed to be a single-turn; this task requires multi-turn interaction, since it asks to create, then update or delete
+
+## Good instruction example
+You are James Shawn (jamesshawn@gmail.com). On 2025-08-07, you want to add a 100,000 EUR subscription to the 'Emerging Markets Equity Fund' for investor Lawson-Edwards, assign it to yourself, and send them a subscription update email. You also want to create an invoice for for half the subscription amount with due date 2025-08-31 and send an alert email for it.
+
+## Good instruction example
+You are Melissa Miller, an incident management agent at Adams-Lee. An employee whose registered email is katherine.watts@young.com wants to report a dysfunctional coffee machine in the cafeteria. They want the report to be titled 'Broken Coffee Machine' and to contain the following text: 'The coffee machine in the cafeteria is broken.'. You want a ticket to be created under the 'Cafeteria' subcategory of the 'Facilities' category.
+This is an example of an instruction that is user-facing, goal-oriented, and has a single outcome.
+
