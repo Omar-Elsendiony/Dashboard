@@ -1,0 +1,259 @@
+# Function Parameters and Returns Analysis
+
+## 1. acknowledge_or_resolve_alert
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `alert_id`: str - The ID of the emergency alert to update (required)
+- `acknowledged_at`: str = None - Timestamp when the alert was acknowledged
+- `acknowledged_by_user`: str = None - User ID who acknowledged the alert
+- `resolved_at`: str = None - Timestamp when the alert was resolved
+- `resolved_by_user`: str = None - User ID who resolved the alert
+
+**Returns:** JSON string of the updated alert object
+
+## 2. add_command
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_type`: str - Type of the device (e.g., 'bulb') (required)
+- `routine_id`: str - ID of the routine (required)
+- `device_id`: str - ID of the device (required)
+- `device_status`: str - Status to set the device to (e.g., 'on', 'off') (required)
+- `bulb_brightness_level`: str = None - Brightness level (optional, for bulbs only)
+- `bulb_color`: str = None - Color to set the bulb to (optional, for bulbs only)
+
+**Returns:** JSON string: `{"success": True}`
+
+## 3. add_device
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_type`: str - Type of the device (e.g., bulb) (required)
+- `room_id`: str - ID of the room where the device is installed (required)
+- `home_id`: str - ID of the home (required)
+- `width_ft`: float - Width of the device in feet (required)
+- `length_ft`: float - Length of the device in feet (required)
+- `price`: float - Price of the device (required)
+- `daily_rated_power_consumption_kWh`: float - Rated daily power consumption (required)
+- `brightness_level`: str = None - Brightness level (used only for bulbs)
+- `color`: str = None - Color (used only for bulbs)
+- `insurance_expiry_date`: Optional[str] = None - Optional insurance expiry date. Defaults to 2026-10-01
+
+**Returns:** JSON string: `{"device_id": str(device_id), "success": True}`
+
+## 4. add_feedback
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: str - ID of the user providing the feedback (required)
+- `device_id`: str - ID of the device being rated (required)
+- `rating`: int - Rating given to the device (typically 1 to 5) (required)
+
+**Returns:** JSON string: `{"user_feedback_id": feedback_id, "success": True}`
+
+## 5. create_address
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `house_number`: str - House number (required)
+- `building_name`: str - Building name (required)
+- `street`: str - Street name (required)
+- `city_name`: str - City name (required)
+- `state`: str - State (required)
+
+**Returns:** JSON string: `{"address_id": address_id, "success": True}`
+
+## 6. create_emergency_alert
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str - ID of the home where the alert was triggered (required)
+- `device_id`: str - ID of the device causing the alert (required)
+- `alert_type`: str - Type of alert, e.g. 'bulb_malfunction' (required)
+- `severity_level`: str - Severity of alert (low, medium, high, critical) (required)
+- `triggered_at`: str - ISO timestamp when the alert was triggered (required)
+
+**Returns:** JSON string: `{"alert_id": alert_id, "success": True}`
+
+## 7. create_routine
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: int - User ID for whom the routine is created (required)
+- `home_id`: int - Home ID where routine applies (required)
+- `action_time`: str - Time of day to perform the action (required)
+- `start_action_date`: str - Start date for the routine (required)
+- `action_interval`: str - How often the routine runs (e.g., daily, weekly) (required)
+
+**Returns:** JSON string: `{"routine_id": routine_id, "success": True}`
+
+## 8. get_address
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `address_id`: str = None - Exact ID of the address to look up
+- `house_number`: str = None - House number
+- `building_name`: str = None - Building name
+- `street`: str = None - Street name
+- `city_name`: str = None - City name
+- `state`: str = None - State name
+
+**Returns:** JSON string array of matching address objects (including address_id)
+
+## 9. get_commands
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `routine_id`: str = None - Filter commands by routine ID
+- `device_id`: str = None - Filter commands by device ID
+
+**Returns:** JSON string array of matching commands with their specific attributes
+
+## 10. get_devices_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_id`: str = None - Filter by device ID
+- `room_id`: str = None - Filter by room ID
+- `device_type`: str = None - Filter by device type
+- `status`: str = None - Filter by device status
+
+**Returns:** JSON string array of device objects (includes brightness/color if bulb)
+
+## 11. get_emergency_alerts
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: Optional[str] = None - Home ID to filter alerts
+- `device_id`: Optional[str] = None - Device ID to filter alerts
+- `alert_type`: Optional[str] = None - Alert type (e.g., 'thermostat_offline')
+- `severity_level`: Optional[str] = None - Severity of the alert (low/medium/high/critical)
+- `resolved_by_user`: Optional[str] = None - User ID who resolved the alert
+- `acknowledged_by_user`: Optional[str] = None - User ID who acknowledged the alert
+
+**Returns:** JSON string array of filtered alert objects
+
+## 12. get_energy_tariffs_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str - Home ID to fetch tariffs for (required)
+
+**Returns:** JSON string array of energy tariff records for the specified home
+
+## 13. get_historical_energy_consumption_by_device
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_id`: Optional[str] = None - ID of the device (as string)
+- `date`: Optional[str] = None - Format: YYYY-MM-DD
+- `month`: Optional[int] = None - Month as number, e.g., 5 for May
+
+**Returns:** JSON string: `{"total_power_used_kWh": float}`
+
+## 14. get_home_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str = None - Filter by home ID
+- `owner_id`: str = None - Filter by owner ID
+- `address_id`: str = None - Filter by address ID
+
+**Returns:** JSON string array of home objects with num_residents and num_rooms_occupied
+
+## 15. get_rooms_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `room_id`: str = None - Filter by room ID
+- `home_id`: str = None - Filter by home ID
+
+**Returns:** JSON string array of room objects
+
+## 16. get_routines
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `routine_id`: str = None - Filter by routine ID
+- `user_id`: str = None - Filter by user ID
+- `home_id`: str = None - Filter by home ID
+- `action_time`: str = None - Filter by action time
+- `action_interval`: str = None - Filter by action interval
+- `start_action_date`: str = None - Filter by start action date
+
+**Returns:** JSON string array of routine objects
+
+## 17. get_user_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: str = None - Filter by user ID
+- `phone_number`: str = None - Filter by phone number (suffix matching, formatting ignored)
+- `email`: str = None - Filter by email address (case-insensitive)
+
+**Returns:** JSON string array of user objects
+
+## 18. list_children
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `parent_id`: str - Parent user ID to find children for (required)
+
+**Returns:** JSON string array of user objects with the given parent_id
+
+## 19. update_device_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_id`: str - Device ID to update (required)
+- `room_id`: Optional[str] = None - New room ID
+- `installed_on`: Optional[str] = None - Installation date
+- `insurance_expiry_date`: Optional[str] = None - Insurance expiry date
+- `home_id`: Optional[str] = None - Home ID
+- `status`: Optional[str] = None - Device status
+- `width_ft`: Optional[float] = None - Width in feet
+- `length_ft`: Optional[float] = None - Length in feet
+- `price`: Optional[float] = None - Price
+- `scheduled_maintainance_date`: Optional[str] = None - Scheduled maintenance date
+- `last_maintainance_date`: Optional[str] = None - Last maintenance date
+- `daily_rated_power_consumption_kWh`: Optional[float] = None - Power consumption
+- `brightness_level`: Optional[str] = None - Brightness level (for bulbs)
+- `color`: Optional[str] = None - Color (for bulbs)
+
+**Returns:** JSON string of the updated device object (includes brightness/color if bulb)
+
+## 20. update_home_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str - Home ID to update (required)
+- `owner_id`: str = None - New owner ID
+- `address_id`: str = None - New address ID
+- `home_type`: str = None - New home type
+
+**Returns:** JSON string of the updated home object
+
+## 21. update_room_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `room_id`: str - Room ID to update (required)
+- `room_owner_id`: str = None - New room owner ID
+- `status`: str = None - New room status
+
+**Returns:** JSON string of the updated room object
+
+## 22. update_user_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: str - ID of the user to update (required)
+- `first_name`: Optional[str] = None - Updated first name
+- `last_name`: Optional[str] = None - Updated last name
+- `phone_number`: Optional[str] = None - Updated phone number
+- `role`: Optional[str] = None - Updated user role
+- `email`: Optional[str] = None - Updated email address
+- `primary_address_id`: Optional[str] = None - Updated address ID
+
+**Returns:** JSON string of the updated user object

@@ -1,0 +1,74 @@
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class CreateSubscription(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], investor_id: str, fund_id: str, amount: float,
+               payment_details: Dict[str, Any], compliance_officer_approval: bool) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        if not compliance_officer_approval:
+            return json.dumps({"error": "Compliance Officer approval required. Process halted."})
+        
+        investors = data.get("investors", {})
+        funds = data.get("funds", {})
+        subscriptions = data.get("subscriptions", {})
+        
+        # Validate entities exist
+        if str(investor_id) not in investors:
+            return json.dumps({"error": f"Investor {investor_id} not found"})
+        if str(fund_id) not in funds:
+            return json.dumps({"error": f"Fund {fund_id} not found"})
+        
+        # Check if fund is open
+        if funds[str(fund_id)].get("status") != "open":
+            return json.dumps({"error": "Fund is not open for subscriptions"})
+        
+        subscription_id = generate_id(subscriptions)
+        timestamp = "2025-10-01T00:00:00ZZ"
+        
+        # Determine status based on payment details
+        status = "approved" if payment_details.get("confirmed", False) else "pending"
+        
+        new_subscription = {
+            "subscription_id": subscription_id,
+            "fund_id": int(fund_id),
+            "investor_id": int(investor_id),
+            "amount": amount,
+            "status": status,
+            "request_assigned_to": 1,  # Default admin
+            "request_date": timestamp.split("T")[0],
+            "approval_date": timestamp.split("T")[0] if status == "approved" else None,
+            "updated_at": timestamp
+        }
+        
+        subscriptions[str(subscription_id)] = new_subscription
+        
+        return_status = "active" if status == "approved" else "funds_pending"
+        return json.dumps({"subscription_id": str(subscription_id), "success": True, "status": return_status})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_subscription",
+                "description": "Create a new fund subscription",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "investor_id": {"type": "string", "description": "ID of the investor"},
+                        "fund_id": {"type": "string", "description": "ID of the fund"},
+                        "amount": {"type": "number", "description": "Subscription amount"},
+                        "payment_details": {"type": "object", "description": "Payment details"},
+                        "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag"}
+                    },
+                    "required": ["investor_id", "fund_id", "amount", "payment_details", "compliance_officer_approval"]
+                }
+            }
+        }

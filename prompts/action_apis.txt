@@ -1,0 +1,242 @@
+# Fund Management Policy Actions Analysis
+
+## 1. investor_onboarding
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `legal_entity_name`: str - Legal entity name (required)
+- `incorporation_registration_number`: str - Incorporation/registration number (required)
+- `date_of_incorporation`: str - Date of incorporation (required)
+- `country_of_incorporation`: str - Country of incorporation (required)
+- `registered_business_address`: str - Registered business address (required)
+- `tax_identification_number`: str - Tax identification number (required)
+- `source_of_funds_declaration`: str - Source of funds declaration (required)
+- `aml_screening_results`: Dict[str, Any] - AML screening results for company, beneficial owners, and authorized signatories (required)
+- `compliance_officer_approval`: bool - Compliance Officer approval flag (required)
+
+**Returns:** JSON string: `{"investor_id": str, "success": True}` or error message with halt instruction
+
+## 2. investor_offboarding
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `investor_id`: str - ID of the investor to offboard (required)
+- `reason_code`: str - Reason code for offboarding (required)
+- `compliance_officer_approval`: bool - Compliance Officer approval for offboarding (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Offboarding complete"}` or error message with halt instruction
+
+## 3. create_fund
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `fund_name`: str - Name of the fund (required)
+- `fund_type`: str - Type of fund (e.g., equity, bond) (required)
+- `base_currency`: str - Base currency of the fund (required)
+- `initial_size`: float - Initial size of the fund (required)
+- `manager_id`: str - ID of the fund manager (required)
+- `strategy_outline`: str - Strategy outline (required)
+- `compliance_officer_review`: bool - Compliance Officer review flag (required)
+- `fund_manager_approval`: bool - Fund Manager approval flag (required)
+
+**Returns:** JSON string: `{"fund_id": str, "success": True}` or error message with halt instruction
+
+## 4. update_fund
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `fund_id`: str - ID of the fund to update (required)
+- `changes`: Dict[str, Any] - Dictionary of changes to apply (e.g., strategy, size) (required)
+- `compliance_review_required`: bool = None - Whether compliance review is required for this change
+- `compliance_officer_approval`: bool = None - Compliance Officer approval if required
+- `fund_manager_approval`: bool - Fund Manager approval flag (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Fund updated successfully"}` or error message with halt instruction
+
+## 5. delete_fund
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `fund_id`: str - ID of the fund to delete (required)
+- `compliance_officer_approval`: bool - Compliance Officer approval flag (required)
+- `fund_manager_approval`: bool - Fund Manager approval flag (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Fund deleted"}` or error message with halt instruction
+
+## 6. switch_funds
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `investor_id`: str - ID of the investor (required)
+- `current_fund_id`: str - ID of the current fund (required)
+- `target_fund_id`: str - ID of the target fund (required)
+- `switch_amount`: float - Amount to switch (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Switch complete"}` or error message with halt instruction
+
+## 7. create_subscription
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `investor_id`: str - ID of the investor (required)
+- `fund_id`: str - ID of the fund (required)
+- `amount`: float - Subscription amount (required)
+- `payment_details`: Dict[str, Any] - Payment details (required)
+- `compliance_officer_approval`: bool - Compliance Officer approval flag (required)
+
+**Returns:** JSON string: `{"subscription_id": str, "success": True, "status": "active|funds_pending"}` or error message with halt instruction
+
+## 8. update_subscription
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `subscription_id`: str - ID of the subscription to update (required)
+- `changes`: Dict[str, Any] - Dictionary of changes (e.g., amount increase) (required)
+- `compliance_officer_approval`: bool - Compliance Officer approval flag (required)
+- `finance_officer_approval`: bool - Finance Officer approval flag (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Subscription updated"}` or error message with halt instruction
+
+## 9. cancel_subscription
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `subscription_id`: str - ID of the subscription to cancel (required)
+- `reason`: str - Reason for cancellation (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Cancellation complete"}` or error message with halt instruction
+
+## 10. execute_trade
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `fund_id`: str - ID of the fund (required)
+- `asset_details`: Dict[str, Any] - Asset details (required)
+- `quantity`: float - Trade quantity (required)
+- `price_limit`: float - Price limit (required)
+- `trader_id`: str - ID of the trader (required)
+- `fund_manager_approval`: bool - Fund Manager approval flag (required)
+- `risk_manager_clearance`: bool - Risk Manager clearance flag (required)
+
+**Returns:** JSON string: `{"trade_id": str, "success": True, "message": "Trade executed"}` or error message with halt instruction
+
+## 11. process_redemption
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `investor_id`: str - ID of the investor (required)
+- `fund_id`: str - ID of the fund (required)
+- `amount_or_units`: float - Amount or units to redeem (required)
+- `reason`: str - Reason for redemption (required)
+- `compliance_approval`: bool - Compliance approval flag (required)
+- `finance_approval`: bool - Finance approval flag (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Redemption processed"}` or error message with halt instruction
+
+## 12. create_upload_document
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: str - ID of the user uploading the document (required)
+- `document_type`: str - Type of document (required)
+- `size_bytes`: int - Size of document in bytes (required)
+- `confidentiality_level`: str - Confidentiality level (required)
+- `file_name`: str - Name of the file (required)
+- `file_format`: str - File format (must be PDF, DOCX, XLSX, or CSV) (required)
+
+**Returns:** JSON string: `{"doc_id": str, "success": True, "status": "available"}` or error message with halt instruction
+
+## 13. create_commitment
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `investor_id`: str - ID of the investor (required)
+- `fund_id`: str - ID of the fund (required)
+- `amount`: float - Commitment amount (required)
+- `due_date`: str - Due date for the commitment (required)
+- `compliance_officer_approval`: bool - Compliance Officer approval flag (required)
+
+**Returns:** JSON string: `{"commitment_id": str, "success": True, "status": "Pending"}` or error message with halt instruction
+
+## 14. fulfill_commitment
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `commitment_id`: str - ID of the commitment (required)
+- `payment_receipt_amount`: float - Amount received (required)
+- `payment_date`: str - Date of payment (required)
+- `payment_method`: str - Method of payment (required)
+
+**Returns:** JSON string: `{"commitment_id": str, "success": True, "status": "Fulfilled|Pending", "amount": float}` or error message with halt instruction
+
+## 15. calculate_nav
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `fund_id`: str - ID of the fund (required)
+- `calculation_date`: str - Date for NAV calculation (required)
+
+**Returns:** JSON string: `{"nav_value": float, "success": True, "message": "NAV updated"}` or error message with halt instruction
+
+## 16. generate_report
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `report_type`: str - Type of report (performance, financial, holding) (required)
+- `fund_id`: str = None - ID of the fund (optional)
+- `investor_id`: str = None - ID of the investor (optional)
+- `period`: str - Reporting period (required)
+- `requester_role`: str - Role of the person requesting the report (required)
+
+**Returns:** JSON string: `{"report_id": str, "success": True}` or error message with halt instruction
+
+## 17. resolve_dispute
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `involved_ids`: List[str] - IDs of involved parties (required)
+- `description`: str - Description of the dispute (required)
+- `evidence`: Dict[str, Any] - Evidence related to the dispute (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Dispute resolved"}` or error message with halt instruction
+
+## 18. update_instrument
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `instrument_id`: str - ID of the instrument to update (required)
+- `proposed_changes`: Dict[str, Any] - Dictionary of proposed changes (required)
+- `compliance_review_required`: bool = None - Whether compliance review is required
+- `user_authorization`: bool - User authorization flag (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Instrument updated successfully"}` or error message with halt instruction
+
+## 19. deactivate_reactivate_instrument
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `instrument_id`: str - ID of the instrument (required)
+- `action`: str - Action to perform (deactivate or reactivate) (required)
+- `reason`: str - Reason for the action (required)
+- `fund_manager_approval`: bool - Fund Manager approval flag (required)
+- `compliance_officer_approval`: bool - Compliance Officer approval flag (required)
+
+**Returns:** JSON string: `{"success": True, "message": "Instrument [Deactivated|Reactivated]", "instrument_id": str}` or error message with halt instruction
+
+## 20. calculate_liabilities
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `instrument_closing_price`: float - Closing price of the instrument (required)
+
+**Returns:** JSON string: `{"liabilities": float}` (calculated as 1.5% of closing price)
+
+## 21. calculate_future_value
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `closing_price_or_nav`: float - Closing price of fund or NAV (required)
+- `growth_rate`: float - Growth rate (r) (required)
+- `number_of_years`: int - Number of years (n) (required)
+
+**Returns:** JSON string: `{"future_value": float}` (calculated as closing_price * (1 + r)^n)

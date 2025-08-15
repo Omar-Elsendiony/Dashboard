@@ -1,0 +1,1495 @@
+from .acknowledge_or_resolve_alert import AcknowledgeOrResolveAlert
+from .add_command import AddCommand
+from .add_device import AddDevice
+from .add_feedback import AddFeedback
+from .create_address import CreateAddress
+from .create_emergency_alert import CreateEmergencyAlert
+from .create_routine import CreateRoutine
+from .get_address import GetAddress
+from .get_commands import GetCommands
+from .get_devices_info import GetDevicesInfo
+from .get_emergency_alerts import GetEmergencyAlerts
+from .get_energy_tariffs_info import GetEnergyTariffsInfo
+from .get_historical_energy_consumption_by_device import GetHistoricalEnergyConsumptionByDevice
+from .get_home_info import GetHomeInfo
+from .get_rooms_info import GetRoomsInfo
+from .get_routines import GetRoutines
+from .get_user_info import GetUserInfo
+from .list_children import ListChildren
+from .update_device_info import UpdateDeviceInfo
+from .update_home_info import UpdateHomeInfo
+from .update_room_info import UpdateRoomInfo
+from .update_user_info import UpdateUserInfo
+
+
+ALL_TOOLS_INTERFACE_1 = [
+    AcknowledgeOrResolveAlert,
+    AddCommand,
+    AddDevice,
+    AddFeedback,
+    CreateAddress,
+    CreateEmergencyAlert,
+    CreateRoutine,
+    GetAddress,
+    GetCommands,
+    GetDevicesInfo,
+    GetEmergencyAlerts,
+    GetEnergyTariffsInfo,
+    GetHistoricalEnergyConsumptionByDevice,
+    GetHomeInfo,
+    GetRoomsInfo,
+    GetRoutines,
+    GetUserInfo,
+    ListChildren,
+    UpdateDeviceInfo,
+    UpdateHomeInfo,
+    UpdateRoomInfo,
+    UpdateUserInfo
+]
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class AcknowledgeOrResolveAlert(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               alert_id: str,
+               acknowledged_at: str = None,
+               acknowledged_by_user: str = None,
+               resolved_at: str = None,
+               resolved_by_user: str = None) -> str:
+        
+        alerts = data.get("emergency_alerts", {})
+        alert = alerts.get(alert_id)
+
+        if not alert:
+            raise ValueError(f"Alert with ID {alert_id} not found.")
+
+        default_time = "2025-10-01T00:00:00"
+
+        # Handle acknowledgment
+        if acknowledged_by_user is not None:
+            alert["acknowledged_by_user"] = acknowledged_by_user
+            alert["acknowledged_at"] = acknowledged_at or default_time
+
+        # Handle resolution
+        if resolved_by_user is not None:
+            alert["resolved_by_user"] = resolved_by_user
+            alert["resolved_at"] = resolved_at or default_time
+
+        return json.dumps(alert)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "acknowledge_or_resolve_alert",
+                "description": "Acknowledge or resolve an emergency alert by updating timestamps and user IDs. If timestamps are missing, default is 2025-10-01T00:00:00.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "alert_id": {
+                            "type": "string",
+                            "description": "The ID of the emergency alert to update"
+                        },
+                        "acknowledged_at": {
+                            "type": "string",
+                            "description": "Timestamp when the alert was acknowledged"
+                        },
+                        "acknowledged_by_user": {
+                            "type": "string",
+                            "description": "User ID who acknowledged the alert"
+                        },
+                        "resolved_at": {
+                            "type": "string",
+                            "description": "Timestamp when the alert was resolved"
+                        },
+                        "resolved_by_user": {
+                            "type": "string",
+                            "description": "User ID who resolved the alert"
+                        }
+                    },
+                    "required": ["alert_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class AddCommand(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               device_type: str,
+               routine_id: str,
+               device_id: str,
+               device_status: str,
+               bulb_brightness_level: str = None,
+               bulb_color: str = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> str:
+            if not table:
+                return "1"
+            return str(max(int(k) for k in table.keys()) + 1)
+
+        timestamp = "2025-10-01T00:00:00"
+
+        # Add to device_commands
+        device_commands = data.setdefault("device_commands", {})
+        dcid = generate_id(device_commands)
+        device_commands[dcid] = {
+            "device_command_id": dcid,
+            "routine_id": routine_id,
+            "device_id": device_id,
+            "status": device_status,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+
+        # If it's a bulb and both fields are provided, add to bulb_commands
+        if device_type == "bulb" and bulb_brightness_level and bulb_color:
+            bulb_commands = data.setdefault("bulb_commands", {})
+            bcid = generate_id(bulb_commands)
+            bulb_commands[bcid] = {
+                "bulb_command_id": bcid,
+                "routine_id": routine_id,
+                "device_id": device_id,
+                "brightness_level": bulb_brightness_level,
+                "color": bulb_color,
+                "created_at": timestamp,
+                "updated_at": timestamp
+            }
+
+        return json.dumps({"success": True})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_command",
+                "description": "Add a command to a routine. If the device is a bulb and brightness/color are provided, also adds a bulb command.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "device_type": {
+                            "type": "string",
+                            "description": "Type of the device (e.g., 'bulb')"
+                        },
+                        "routine_id": {
+                            "type": "string",
+                            "description": "ID of the routine"
+                        },
+                        "device_id": {
+                            "type": "string",
+                            "description": "ID of the device"
+                        },
+                        "device_status": {
+                            "type": "string",
+                            "description": "Status to set the device to (e.g., 'on', 'off')"
+                        },
+                        "bulb_brightness_level": {
+                            "type": "string",
+                            "description": "Brightness level (optional, for bulbs only)"
+                        },
+                        "bulb_color": {
+                            "type": "string",
+                            "description": "Color to set the bulb to (optional, for bulbs only)"
+                        }
+                    },
+                    "required": ["device_type", "routine_id", "device_id", "device_status"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class AddDevice(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               device_type: str,
+               room_id: str,
+               home_id: str,
+               width_ft: float,
+               length_ft: float,
+               price: float,
+               daily_rated_power_consumption_kWh: float,
+               brightness_level: str = None,
+               color: str = None,
+               insurance_expiry_date: Optional[str] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            return max([int(k) for k in table.keys()], default=0) + 1
+
+        timestamp = "2025-10-01T00:00:00"
+        devices = data.setdefault("devices", {})
+        smart_bulbs = data.setdefault("smart_bulbs", {})
+
+        device_id = generate_id(devices)
+
+        # Build device entry
+        new_device = {
+            "device_id": str(device_id),
+            "device_type": device_type,
+            "room_id": room_id,
+            "installed_on": timestamp,
+            "insurance_expiry_date": insurance_expiry_date or "2026-10-01",
+            "home_id": home_id,
+            "status": "off",
+            "width_ft": width_ft,
+            "length_ft": length_ft,
+            "price": price,
+            "scheduled_maintainance_date": None,
+            "last_maintainance_date": timestamp,
+            "daily_rated_power_consumption_kWh": daily_rated_power_consumption_kWh,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+
+        devices[str(device_id)] = new_device
+
+        # Add to smart_bulbs if device is a bulb
+        if device_type == "bulb":
+            smart_bulbs[str(device_id)] = {
+                "device_id": str(device_id),
+                "brightness_level": brightness_level,
+                "color": color,
+                "created_at": timestamp,
+                "updated_at": timestamp
+            }
+
+        return json.dumps({"device_id": str(device_id), "success": True})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_device",
+                "description": "Add a new device. If it's a bulb, also creates a smart_bulb record.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "device_type": {
+                            "type": "string",
+                            "description": "Type of the device (e.g., bulb)"
+                        },
+                        "room_id": {
+                            "type": "string",
+                            "description": "ID of the room where the device is installed"
+                        },
+                        "home_id": {
+                            "type": "string",
+                            "description": "ID of the home"
+                        },
+                        "width_ft": {
+                            "type": "number",
+                            "description": "Width of the device in feet"
+                        },
+                        "length_ft": {
+                            "type": "number",
+                            "description": "Length of the device in feet"
+                        },
+                        "price": {
+                            "type": "number",
+                            "description": "Price of the device"
+                        },
+                        "daily_rated_power_consumption_kWh": {
+                            "type": "number",
+                            "description": "Rated daily power consumption"
+                        },
+                        "brightness_level": {
+                            "type": "string",
+                            "description": "Brightness level (used only for bulbs)"
+                        },
+                        "color": {
+                            "type": "string",
+                            "description": "Color (used only for bulbs)"
+                        },
+                        "insurance_expiry_date": {
+                            "type": "string",
+                            "description": "Optional insurance expiry date. Defaults to 2026-10-01"
+                        }
+                    },
+                    "required": [
+                        "device_type", "room_id", "home_id", "width_ft",
+                        "length_ft", "price", "daily_rated_power_consumption_kWh"
+                    ]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class AddFeedback(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               user_id: str,
+               device_id: str,
+               rating: int) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> str:
+            if not table:
+                return "1"
+            return str(max(int(k) for k in table.keys()) + 1)
+
+        timestamp = "2025-10-01T00:00:00"
+        feedbacks = data.setdefault("user_feedbacks", {})
+        feedback_id = generate_id(feedbacks)
+
+        feedbacks[feedback_id] = {
+            "user_feedback_id": feedback_id,
+            "user_id": user_id,
+            "device_id": device_id,
+            "rating": rating,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+
+        return json.dumps({"user_feedback_id": feedback_id, "success": True})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_feedback",
+                "description": "Add feedback from a user for a device with a rating.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "user_id": {
+                            "type": "string",
+                            "description": "ID of the user providing the feedback"
+                        },
+                        "device_id": {
+                            "type": "string",
+                            "description": "ID of the device being rated"
+                        },
+                        "rating": {
+                            "type": "integer",
+                            "description": "Rating given to the device (typically 1 to 5)"
+                        }
+                    },
+                    "required": ["user_id", "device_id", "rating"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class CreateAddress(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               house_number: str,
+               building_name: str,
+               street: str,
+               city_name: str,
+               state: str) -> str:
+        
+        addresses = data.setdefault("addresses", {})
+
+        def generate_id(table: Dict[str, Any]) -> str:
+            return str(max([int(k) for k in table.keys()] or [0]) + 1)
+
+        address_id = generate_id(addresses)
+        timestamp = "2025-10-01T00:00:00"
+
+        new_address = {
+            "address_id": address_id,
+            "house_number": house_number,
+            "building_name": building_name,
+            "street": street,
+            "city_name": city_name,
+            "state": state,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+
+        addresses[address_id] = new_address
+        return json.dumps({"address_id": address_id, "success": True})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_address",
+                "description": "Create a new address record.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "house_number": {"type": "string", "description": "House number"},
+                        "building_name": {"type": "string", "description": "Building name"},
+                        "street": {"type": "string", "description": "Street name"},
+                        "city_name": {"type": "string", "description": "City name"},
+                        "state": {"type": "string", "description": "State"}
+                    },
+                    "required": ["house_number", "building_name", "street", "city_name", "state"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class CreateEmergencyAlert(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               home_id: str,
+               device_id: str,
+               alert_type: str,
+               severity_level: str,
+               triggered_at: str) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> str:
+            return str(max([int(k) for k in table.keys()] or [0]) + 1)
+
+        alerts = data.setdefault("emergency_alerts", {})
+        alert_id = generate_id(alerts)
+
+        alert_record = {
+            "home_id": home_id,
+            "device_id": device_id,
+            "alert_type": alert_type,
+            "severity_level": severity_level,
+            "triggered_at": triggered_at,
+            "acknowledged_at": None,
+            "acknowledged_by_user": None,
+            "resolved_at": None,
+            "resolved_by_user": None,
+            "created_at": triggered_at
+        }
+
+        alerts[alert_id] = alert_record
+
+        return json.dumps({"alert_id": alert_id, "success": True})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_emergency_alert",
+                "description": "Create a new emergency alert for a device in a home.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "home_id": {"type": "string", "description": "ID of the home where the alert was triggered"},
+                        "device_id": {"type": "string", "description": "ID of the device causing the alert"},
+                        "alert_type": {"type": "string", "description": "Type of alert, e.g. 'bulb_malfunction'"},
+                        "severity_level": {"type": "string", "description": "Severity of alert (low, medium, high, critical)"},
+                        "triggered_at": {"type": "string", "description": "ISO timestamp when the alert was triggered"}
+                    },
+                    "required": ["home_id", "device_id", "alert_type", "severity_level", "triggered_at"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class CreateRoutine(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               user_id: int,
+               home_id: int,
+               action_time: str,
+               start_action_date: str,
+               action_interval: str) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> str:
+            return str(max([int(k) for k in table.keys()] or [0]) + 1)
+
+        routines = data.setdefault("automated_routines", {})
+        routine_id = generate_id(routines)
+        timestamp = "2025-10-01T00:00:00"
+
+        new_routine = {
+            "routine_id": routine_id,
+            "user_id": str(user_id),
+            "home_id": str(home_id),
+            "action_time": action_time,
+            "start_action_date": start_action_date,
+            "action_interval": action_interval,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+
+        routines[routine_id] = new_routine
+
+        return json.dumps({
+            "routine_id": routine_id,
+            "success": True
+        })
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_routine",
+                "description": "Create a new automated routine for a user and home.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "user_id":           {"type": "integer", "description": "User ID for whom the routine is created"},
+                        "home_id":           {"type": "integer", "description": "Home ID where routine applies"},
+                        "action_time":       {"type": "string", "description": "Time of day to perform the action"},
+                        "start_action_date": {"type": "string", "description": "Start date for the routine"},
+                        "action_interval":   {"type": "string", "description": "How often the routine runs (e.g., daily, weekly)"}
+                    },
+                    "required": ["user_id", "home_id", "action_time", "start_action_date", "action_interval"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetAddress(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               address_id: str = None,
+               house_number: str = None,
+               building_name: str = None,
+               street: str = None,
+               city_name: str = None,
+               state: str = None) -> str:
+        """
+        Retrieve addresses matching any combination of the provided fields.
+        Returns a JSON array of matching address objects (including address_id).
+        """
+        addresses = data.get("addresses", {})
+        results = []
+
+        def norm(val: Any) -> str:
+            return str(val).strip().lower()
+
+        for addr in addresses.values():
+            # Filter by each provided field
+            if address_id and str(addr.get("address_id")) != address_id:
+                continue
+            if house_number and norm(addr.get("house_number")) != norm(house_number):
+                continue
+            if building_name and norm(addr.get("building_name")) != norm(building_name):
+                continue
+            if street and norm(addr.get("street")) != norm(street):
+                continue
+            if city_name and norm(addr.get("city_name")) != norm(city_name):
+                continue
+            if state and norm(addr.get("state")) != norm(state):
+                continue
+
+            # Build the result object
+            results.append({
+                "address_id": addr.get("address_id"),
+                "house_number": addr.get("house_number"),
+                "building_name": addr.get("building_name"),
+                "street": addr.get("street"),
+                "city_name": addr.get("city_name"),
+                "state": addr.get("state"),
+                "created_at": addr.get("created_at"),
+                "updated_at": addr.get("updated_at"),
+            })
+
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_address",
+                "description": "Retrieve addresses matching any combination of the provided fields, returning full address objects.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "address_id": {
+                            "type": "string",
+                            "description": "Exact ID of the address to look up"
+                        },
+                        "house_number": {
+                            "type": "string",
+                            "description": "House number"
+                        },
+                        "building_name": {
+                            "type": "string",
+                            "description": "Building name"
+                        },
+                        "street": {
+                            "type": "string",
+                            "description": "Street name"
+                        },
+                        "city_name": {
+                            "type": "string",
+                            "description": "City name"
+                        },
+                        "state": {
+                            "type": "string",
+                            "description": "State name"
+                        }
+                    },
+                    "required": []
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetCommands(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               routine_id: str = None,
+               device_id: str = None) -> str:
+        results = []
+        
+        # Define table configurations
+        tables = [
+            ("device_commands", "on_off_command", "device_command_id", {"status": "status"}),
+            ("bulb_commands", "bulb_command", "bulb_command_id", {"brightness_level": "brightness_level", "color": "color"}),
+            ("thermostat_commands", "thermostat_command", "thermostat_command_id", {"current_temperature": "current_temperature"})
+        ]
+        
+        for table_name, command_type, id_field, specific_fields in tables:
+            commands = data.get(table_name, {})
+            
+            for cmd in commands.values():
+                # Apply filters based on the three cases
+                if routine_id and device_id:
+                    # Case 3: Both parameters given
+                    if str(cmd.get("routine_id")) != routine_id or str(cmd.get("device_id")) != device_id:
+                        continue
+                elif routine_id:
+                    # Case 1: Only routine_id given
+                    if str(cmd.get("routine_id")) != routine_id:
+                        continue
+                elif device_id:
+                    # Case 2: Only device_id given
+                    if str(cmd.get("device_id")) != device_id:
+                        continue
+                else:
+                    # Case 4: No parameters - skip all
+                    continue
+                
+                # Build command info
+                command_info = {
+                    "command_type": command_type,
+                    "command_id": cmd.get(id_field),
+                    "routine_id": cmd.get("routine_id"),
+                    "device_id": cmd.get("device_id"),
+                    "created_at": cmd.get("created_at"),
+                    "updated_at": cmd.get("updated_at")
+                }
+                
+                # Add table-specific fields
+                command_info.update({k: cmd.get(v) for k, v in specific_fields.items()})
+                results.append(command_info)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_commands",
+                "description": "Retrieve commands from device_commands, bulb_commands, and thermostat_commands tables. Can filter by routine_id, device_id, or both. Returns all matching commands with their specific attributes.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "routine_id": {"type": "string", "description": "Filter commands by routine ID"},
+                        "device_id": {"type": "string", "description": "Filter commands by device ID"}
+                    },
+                    "required": []
+                }
+            }
+        }import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetDevicesInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               device_id: str = None,
+               room_id: str = None,
+               device_type: str = None,
+               status: str = None) -> str:
+        devices = data.get("devices", {})
+        smart_bulbs = data.get("smart_bulbs", {})
+        results = []
+
+        for d in devices.values():
+            if device_id and str(d.get("device_id")) != device_id:
+                continue
+            if room_id and d.get("room_id") != room_id:
+                continue
+            if device_type and d.get("device_type") != device_type:
+                continue
+            if status and d.get("status") != status:
+                continue
+
+            device_info = {
+                "device_id": d.get("device_id"),
+                "device_type": d.get("device_type"),
+                "room_id": d.get("room_id"),
+                "installed_on": d.get("installed_on"),
+                "insurance_expiry_date": d.get("insurance_expiry_date"),
+                "home_id": d.get("home_id"),
+                "status": d.get("status"),
+                "width_ft": d.get("width_ft"),
+                "length_ft": d.get("length_ft"),
+                "price": d.get("price"),
+                "scheduled_maintainance_date": d.get("scheduled_maintainance_date"),
+                "last_maintainance_date": d.get("last_maintainance_date"),
+                "daily_rated_power_consumption_kWh": d.get("daily_rated_power_consumption_kWh")
+            }
+
+            if d.get("device_type") == "bulb":
+                bulb_info = smart_bulbs.get(str(d.get("device_id")), {})
+                device_info["brightness_level"] = bulb_info.get("brightness_level")
+                device_info["color"] = bulb_info.get("color")
+
+            results.append(device_info)
+
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_devices_info",
+                "description": "Retrieve devices filtered by device_id, room_id, device_type, or status. Adds brightness/color if the device is a bulb.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "device_id":   {"type": "string"},
+                        "room_id":     {"type": "string"},
+                        "device_type": {"type": "string"},
+                        "status":      {"type": "string"}
+                    },
+                    "required": []
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class GetEmergencyAlerts(Tool):
+    @staticmethod
+    def invoke(
+        data: Dict[str, Any],
+        home_id: Optional[str] = None,
+        device_id: Optional[str] = None,
+        alert_type: Optional[str] = None,
+        severity_level: Optional[str] = None,
+        resolved_by_user: Optional[str] = None,
+        acknowledged_by_user: Optional[str] = None
+    ) -> str:
+        alerts = data.get("emergency_alerts", {})
+        results = []
+
+        for alert in alerts.values():
+            if home_id is not None and str(alert.get("home_id")) != home_id:
+                continue
+            if device_id is not None and str(alert.get("device_id")) != device_id:
+                continue
+            if alert_type is not None and alert.get("alert_type") != alert_type:
+                continue
+            if severity_level is not None and alert.get("severity_level") != severity_level:
+                continue
+            if resolved_by_user is not None and str(alert.get("resolved_by_user")) != resolved_by_user:
+                continue
+            if acknowledged_by_user is not None and str(alert.get("acknowledged_by_user")) != acknowledged_by_user:
+                continue
+
+            results.append(alert)
+
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_emergency_alerts",
+                "description": "Returns alerts filtered by home, device, type, severity, resolution, or acknowledgment user IDs.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "home_id": {"type": "string", "description": "Home ID to filter alerts"},
+                        "device_id": {"type": "string", "description": "Device ID to filter alerts"},
+                        "alert_type": {"type": "string", "description": "Alert type (e.g., 'thermostat_offline')"},
+                        "severity_level": {"type": "string", "description": "Severity of the alert (low/medium/high/critical)"},
+                        "resolved_by_user": {"type": "string", "description": "User ID who resolved the alert"},
+                        "acknowledged_by_user": {"type": "string", "description": "User ID who acknowledged the alert"}
+                    },
+                    "required": []
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetEnergyTariffsInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               home_id: str) -> str:
+        tariffs = data.get("energy_tariffs", {})
+        results = [t for t in tariffs.values() if t.get("home_id") == home_id]
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_energy_tariffs_info",
+                "description": "Fetch all energy tariff records for a specific home_id.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "home_id": {"type": "string"}
+                    },
+                    "required": ["home_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from datetime import datetime
+import calendar
+from tau_bench.envs.tool import Tool
+
+class GetHistoricalEnergyConsumptionByDevice(Tool):
+    @staticmethod
+    def invoke(
+        data: Dict[str, Any],
+        device_id: Optional[str] = None,
+        date: Optional[str] = None,
+        month: Optional[int] = None
+    ) -> str:
+        records = data.get("historical_energy_consumption", {})
+
+        if not device_id:
+            return json.dumps({"total_power_used_kWh": 0.0})
+
+        # Filter records by device_id (as string)
+        filtered = [
+            r for r in records.values()
+            if str(r.get("device_id")) == device_id
+        ]
+
+        if date:
+            try:
+                dt = datetime.strptime(date, "%Y-%m-%d")
+                year = dt.year
+                month = dt.month
+                day = dt.day
+
+                # Select either the 1st or 15th of the month
+                target_day = 1 if day <= 14 else 15
+                target_date = f"{year:04d}-{month:02d}-{target_day:02d}"
+
+                match = next((r for r in filtered if r["date"] == target_date), None)
+                return json.dumps({"total_power_used_kWh": match["power_used_kWh"] if match else 0.0})
+            except Exception:
+                return json.dumps({"total_power_used_kWh": 0.0})
+
+        elif month:
+            try:
+                # Use current year (2025) for all calculations
+                year = 2025
+                total_days = calendar.monthrange(year, month)[1]
+                first_val = None
+                fifteenth_val = None
+
+                for r in filtered:
+                    try:
+                        r_date = datetime.strptime(r["date"], "%Y-%m-%d")
+                        if r_date.month == month and r_date.year == year:
+                            if r_date.day == 1:
+                                first_val = r["power_used_kWh"]
+                            elif r_date.day == 15:
+                                fifteenth_val = r["power_used_kWh"]
+                    except Exception:
+                        continue
+
+                if first_val is not None and fifteenth_val is not None:
+                    approx = first_val * 14 + fifteenth_val * (total_days - 14)
+                elif first_val is not None:
+                    approx = first_val * total_days
+                elif fifteenth_val is not None:
+                    approx = fifteenth_val * total_days
+                else:
+                    approx = 0.0
+
+                return json.dumps({"total_power_used_kWh": round(approx, 2)})
+            except Exception:
+                return json.dumps({"total_power_used_kWh": 0.0})
+
+        return json.dumps({"total_power_used_kWh": 0.0})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_historical_energy_consumption_by_device",
+                "description": "Returns approximate power usage for a device. Uses the 1st or 15th of the month based on date, or weighted average for the full month.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "device_id": {"type": "string", "description": "ID of the device (as string)"},
+                        "date": {"type": "string", "description": "Format: YYYY-MM-DD"},
+                        "month": {"type": "integer", "description": "Month as number, e.g., 5 for May"},
+                    },
+                    "required": ["device_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetHomeInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               home_id: str = None,
+               owner_id: str = None,
+               address_id: str = None) -> str:
+        """Fetch homes filtered by home_id, owner_id, or address_id; include num_residents and num_rooms_occupied."""
+        homes = data.get("homes", {})
+        users = data.get("users", {})
+        rooms = data.get("rooms", {})
+        results = []
+
+        for h in homes.values():
+            if home_id and h.get("home_id") != home_id:
+                continue
+            if owner_id and h.get("owner_id") != owner_id:
+                continue
+            if address_id and h.get("address_id") != address_id:
+                continue
+
+            num_residents = sum(
+                1 for u in users.values()
+                if u.get("primary_address_id") == h.get("address_id")
+            )
+
+            num_rooms_occupied = sum(
+                1 for r in rooms.values()
+                if r.get("home_id") == h.get("home_id") and r.get("status") == "occupied"
+            )
+
+            results.append({
+                "home_id":             h.get("home_id"),
+                "owner_id":            h.get("owner_id"),
+                "address_id":          h.get("address_id"),
+                "home_type":           h.get("home_type"),
+                "num_residents":       num_residents,
+                "num_rooms_occupied":  num_rooms_occupied
+            })
+
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_home_info",
+                "description": "Filter homes by optional home_id, owner_id, or address_id; returns num_residents and num_rooms_occupied.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "home_id":    {"type": "string"},
+                        "owner_id":   {"type": "string"},
+                        "address_id": {"type": "string"}
+                    },
+                    "required": []
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetRoomsInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               room_id: str = None,
+               home_id: str = None) -> str:
+        rooms = data.get("rooms", {})
+        results = []
+
+        for r in rooms.values():
+            if room_id and r.get("room_id") != room_id:
+                continue
+            if home_id and r.get("home_id") != home_id:
+                continue
+
+            results.append({
+                "room_id":       r.get("room_id"),
+                "home_id":       r.get("home_id"),
+                "room_type":     r.get("room_type"),
+                "room_owner_id": r.get("room_owner_id"),
+                "status":        r.get("status"),
+                "width_ft":      r.get("width_ft"),
+                "length_ft":     r.get("length_ft")
+            })
+
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_rooms_info",
+                "description": "Retrieve room records filtered by optional room_id or home_id.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "room_id":  {"type": "string"},
+                        "home_id":  {"type": "string"}
+                    },
+                    "required": []
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetRoutines(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               routine_id: str = None,
+               user_id: str = None,
+               home_id: str = None,
+               action_time: str = None,
+               action_interval: str = None,
+               start_action_date: str = None) -> str:
+        routines = data.get("automated_routines", {})
+        results = []
+
+        for r in routines.values():
+            if routine_id and r.get("routine_id") != routine_id:
+                continue
+            if user_id and r.get("user_id") != user_id:
+                continue
+            if home_id and r.get("home_id") != home_id:
+                continue
+            if action_time and r.get("action_time") != action_time:
+                continue
+            if action_interval and r.get("action_interval") != action_interval:
+                continue
+            if start_action_date and r.get("start_action_date") != start_action_date:
+                continue
+            results.append(r)
+
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_routines",
+                "description": "Fetch automated routines filtered by any combination of routine_id, user_id, home_id, action_time, action_interval, or start_action_date.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "routine_id":         {"type": "string"},
+                        "user_id":            {"type": "string"},
+                        "home_id":            {"type": "string"},
+                        "action_time":        {"type": "string"},
+                        "action_interval":    {"type": "string"},
+                        "start_action_date":  {"type": "string"}
+                    },
+                    "required": []
+                }
+            }
+        }
+import json
+import re
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetUserInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               user_id: str = None,
+               phone_number: str = None,
+               email: str = None) -> str:
+        """
+        Retrieve user records matching optional filters: user_id, phone_number, or email.
+        Phone numbers are compared by digits only (ignoring formatting characters) and support suffix matching.
+        Email comparisons are case-insensitive.
+        """
+        users = data.get("users", {})
+        results = []
+
+        def normalize_phone(p) -> str:
+            if p is None:
+                return ""
+            return re.sub(r"\D", "", str(p))
+
+        target_phone = normalize_phone(phone_number)
+        target_email = email.lower() if email is not None else None
+
+        for user in users.values():
+            # Filter by user_id
+            if user_id is not None and user.get("user_id") != user_id:
+                continue
+
+            # Filter by phone_number (normalize digits, allow suffix match)
+            if target_phone:
+                user_phone = normalize_phone(user.get("phone_number"))
+                if not user_phone.endswith(target_phone):
+                    continue
+
+            # Filter by email (case-insensitive)
+            if target_email:
+                user_email = user.get("email", "").lower()
+                if user_email != target_email:
+                    continue
+
+            results.append(user)
+
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        """
+        Metadata for the get_user_info tool.
+        """
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_user_info",
+                "description": "Retrieve user records, filtered optionally by user_id, phone_number, or email",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "user_id": {
+                            "type": "string",
+                            "description": "Filter by user ID"
+                        },
+                        "phone_number": {
+                            "type": "string",
+                            "description": "Filter by phone number; formatting characters are ignored; suffix match supported"
+                        },
+                        "email": {
+                            "type": "string",
+                            "description": "Filter by email address (case-insensitive)"
+                        }
+                    },
+                    "required": []
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class ListChildren(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               parent_id: str) -> str:
+        users = data.get("users", {})
+        results = [u for u in users.values() if u.get("parent_id") == parent_id]
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "list_children",
+                "description": "List all users who have the given parent_id.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "parent_id": {"type": "string"}
+                    },
+                    "required": ["parent_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class UpdateDeviceInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               device_id: str,
+               room_id: Optional[str] = None,
+               installed_on: Optional[str] = None,
+               insurance_expiry_date: Optional[str] = None,
+               home_id: Optional[str] = None,
+               status: Optional[str] = None,
+               width_ft: Optional[float] = None,
+               length_ft: Optional[float] = None,
+               price: Optional[float] = None,
+               scheduled_maintainance_date: Optional[str] = None,
+               last_maintainance_date: Optional[str] = None,
+               daily_rated_power_consumption_kWh: Optional[float] = None,
+               brightness_level: Optional[str] = None,
+               color: Optional[str] = None) -> str:
+        """Update a device by ID. If bulb, update smart_bulbs if applicable and include brightness/color in output."""
+
+        devices = data.get("devices", {})
+        smart_bulbs = data.get("smart_bulbs", {})
+        timestamp = "2025-10-01T00:00:00"
+
+        device = devices.get(device_id)
+        if not device:
+            return json.dumps({"error": f"Device ID {device_id} not found"})
+
+        # Update general device fields
+        if room_id is not None:
+            device["room_id"] = room_id
+        if installed_on is not None:
+            device["installed_on"] = installed_on
+        if insurance_expiry_date is not None:
+            device["insurance_expiry_date"] = insurance_expiry_date
+        if home_id is not None:
+            device["home_id"] = home_id
+        if status is not None:
+            device["status"] = status
+        if width_ft is not None:
+            device["width_ft"] = width_ft
+        if length_ft is not None:
+            device["length_ft"] = length_ft
+        if price is not None:
+            device["price"] = price
+        if scheduled_maintainance_date is not None:
+            device["scheduled_maintainance_date"] = scheduled_maintainance_date
+        if last_maintainance_date is not None:
+            device["last_maintainance_date"] = last_maintainance_date
+        if daily_rated_power_consumption_kWh is not None:
+            device["daily_rated_power_consumption_kWh"] = daily_rated_power_consumption_kWh
+
+        device["updated_at"] = timestamp
+
+        # Prepare return data
+        result = dict(device)
+
+        # If bulb, update and include smart_bulb info
+        if device.get("device_type") == "bulb":
+            bulb = smart_bulbs.get(device_id)
+            if bulb:
+                if brightness_level is not None:
+                    bulb["brightness_level"] = brightness_level
+                if color is not None:
+                    bulb["color"] = color
+                bulb["updated_at"] = timestamp
+
+                result["brightness_level"] = bulb.get("brightness_level")
+                result["color"] = bulb.get("color")
+
+        return json.dumps(result)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "update_device_info",
+                "description": "Update a device by ID. If device is a bulb and brightness/color is provided, also update smart_bulbs and include them in the response.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "device_id": {"type": "string"},
+                        "room_id": {"type": "string"},
+                        "installed_on": {"type": "string"},
+                        "insurance_expiry_date": {"type": "string"},
+                        "home_id": {"type": "string"},
+                        "status": {"type": "string"},
+                        "width_ft": {"type": "number"},
+                        "length_ft": {"type": "number"},
+                        "price": {"type": "number"},
+                        "scheduled_maintainance_date": {"type": "string"},
+                        "last_maintainance_date": {"type": "string"},
+                        "daily_rated_power_consumption_kWh": {"type": "number"},
+                        "brightness_level": {"type": "string"},
+                        "color": {"type": "string"}
+                    },
+                    "required": ["device_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class UpdateHomeInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               home_id: str,
+               owner_id: str = None,
+               address_id: str = None,
+               home_type: str = None) -> str:
+        
+        homes = data.get("homes", {})
+        home = homes.get(str(home_id))
+        if not home:
+            raise ValueError(f"Home with ID {home_id} not found")
+
+        timestamp = "2025-10-01T00:00:00"
+        if owner_id is not None:
+            home["owner_id"] = owner_id
+        if address_id is not None:
+            home["address_id"] = address_id
+        if home_type is not None:
+            home["home_type"] = home_type
+
+        home["updated_at"] = timestamp
+        return json.dumps(home)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "update_home_info",
+                "description": "Update home details like owner, address, or home type",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "home_id": {"type": "string"},
+                        "owner_id": {"type": "string"},
+                        "address_id": {"type": "string"},
+                        "home_type": {"type": "string"}
+                    },
+                    "required": ["home_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class UpdateRoomInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               room_id: str,
+               room_owner_id: str = None,
+               status: str = None) -> str:
+        
+        rooms = data.get("rooms", {})
+        room = rooms.get(str(room_id))
+        if not room:
+            raise ValueError(f"Room with ID {room_id} not found")
+
+        timestamp = "2025-10-01T00:00:00"
+
+        # Handle status change to vacant → clear owner
+        if status == "vacant":
+            room["status"] = "vacant"
+            room["room_owner_id"] = None
+
+        # Handle assigning owner to vacant room → auto-occupy
+        elif room_owner_id is not None:
+            room["room_owner_id"] = room_owner_id
+            if room.get("status") == "vacant" and status is None:
+                room["status"] = "occupied"
+
+        # Update status if provided and not handled already
+        if status is not None and status != "vacant":
+            room["status"] = status
+
+        room["updated_at"] = timestamp
+        return json.dumps(room)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "update_room_info",
+                "description": "Update room details like owner or status. Assigning an owner auto-occupies the room. Setting status to 'vacant' clears owner.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "room_id": {"type": "string"},
+                        "room_owner_id": {"type": "string"},
+                        "status": {"type": "string"}
+                    },
+                    "required": ["room_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class UpdateUserInfo(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any],
+               user_id: str,
+               first_name: Optional[str] = None,
+               last_name: Optional[str] = None,
+               phone_number: Optional[str] = None,
+               role: Optional[str] = None,
+               email: Optional[str] = None,
+               primary_address_id: Optional[str] = None) -> str:
+        
+        users = data.get("users", {})
+        user = users.get(user_id)
+
+        if not user:
+            raise ValueError(f"User with ID {user_id} not found.")
+
+        # Update fields if provided
+        if first_name is not None:
+            user["first_name"] = first_name
+        if last_name is not None:
+            user["last_name"] = last_name
+        if phone_number is not None:
+            user["phone_number"] = phone_number
+        if role is not None:
+            user["role"] = role
+        if email is not None:
+            user["email"] = email
+        if primary_address_id is not None:
+            user["primary_address_id"] = primary_address_id
+
+        # Always update the timestamp
+        user["updated_at"] = "2025-10-01T00:00:00"
+
+        return json.dumps(user)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "update_user_info",
+                "description": "Update user information by user_id. Updates only the fields provided.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "user_id": {"type": "string", "description": "ID of the user to update"},
+                        "first_name": {"type": "string", "description": "Updated first name"},
+                        "last_name": {"type": "string", "description": "Updated last name"},
+                        "phone_number": {"type": "string", "description": "Updated phone number"},
+                        "role": {"type": "string", "description": "Updated user role"},
+                        "email": {"type": "string", "description": "Updated email address"},
+                        "primary_address_id": {"type": "string", "description": "Updated address ID"}
+                    },
+                    "required": ["user_id"]
+                }
+            }
+        }

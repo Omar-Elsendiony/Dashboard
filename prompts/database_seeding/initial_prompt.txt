@@ -52,3 +52,4 @@ Here is an example:
 
 Database Schema:
 {db_schema}
+
