@@ -283,7 +283,7 @@ def env_interface():
 
 def execute_api_utility(api_name, arguments):
     tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
-    print('executing ...')
+    # print('executing ...')
     arguments = arguments_processing(arguments)
     if hasattr(tools_instance, api_name):
         # try:
@@ -352,7 +352,7 @@ def execute_api():
                 g.data[data_file.split('.')[0]] = json.load(file)
     
     for action in session.get("actions", []):
-        print('session:', session.get("actions"))
+        # print('session:', session.get("actions"))
         api_name = action.get('api_name')
         execute_api_utility(api_name, action.get('arguments', {}))
     

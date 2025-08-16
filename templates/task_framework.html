@@ -361,9 +361,10 @@
             padding: 0.8rem 1rem;
             border: 2px solid #e1e5e9;
             border-radius: 8px;
-            font-size: 1rem;
+            font-size: 0.8rem;
             transition: all 0.3s ease;
             background: #fafbfc;
+            field-sizing: content;
         }
 
         .parameter-input:focus {
@@ -807,7 +808,7 @@
             console.log('Interface:', interface);
             
             try {
-                const response = await fetch('https://dashboard-omega-swart-74.vercel.app/choose_env_interface', {
+                const response = await fetch('/choose_env_interface', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -1021,7 +1022,7 @@
             responseDiv.className = 'api-response show';
             
             try {
-                const response = await fetch('https://dashboard-omega-swart-74.vercel.app/execute_api', {
+                const response = await fetch('/execute_api', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
