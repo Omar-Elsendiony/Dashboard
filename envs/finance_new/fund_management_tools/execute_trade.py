@@ -42,7 +42,7 @@ class ExecuteTrade(Tool):
             return json.dumps({"error": f"Instrument with ticker {ticker} not found"})
         
         trade_id = generate_id(trades)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         # Determine trade side
         side = "buy" if quantity > 0 else "sell"

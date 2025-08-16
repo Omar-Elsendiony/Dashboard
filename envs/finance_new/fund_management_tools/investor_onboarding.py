@@ -6,8 +6,7 @@ class InvestorOnboarding(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], legal_entity_name: str, incorporation_registration_number: str,
                date_of_incorporation: str, country_of_incorporation: str, registered_business_address: str,
-               tax_identification_number: str, source_of_funds_declaration: str, 
-               aml_screening_results: Dict[str, Any], compliance_officer_approval: bool) -> str:
+               tax_identification_number: str, source_of_funds_declaration: str, compliance_officer_approval: bool) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
@@ -27,7 +26,7 @@ class InvestorOnboarding(Tool):
             return json.dumps({"error": f"Invalid source of funds. Must be one of {valid_sources}"})
         
         investor_id = generate_id(investors)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_investor = {
             "investor_id": investor_id,
@@ -62,13 +61,12 @@ class InvestorOnboarding(Tool):
                         "country_of_incorporation": {"type": "string", "description": "Country of incorporation"},
                         "registered_business_address": {"type": "string", "description": "Registered business address"},
                         "tax_identification_number": {"type": "string", "description": "Tax identification number"},
-                        "source_of_funds_declaration": {"type": "string", "description": "Source of funds declaration"},
-                        "aml_screening_results": {"type": "object", "description": "AML screening results"},
-                        "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag"}
+                        "source_of_funds_declaration": {"type": "string", "description": "Source of funds declaration. It should be only one of the following: retained_earnings, shareholder_capital, asset_sale, loan_facility, external_investment, government_grant, merger_or_acquisition_proceeds, royalty_or_licensing_income, dividend_income, other"},
+                        "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"}
                     },
                     "required": ["legal_entity_name", "incorporation_registration_number", "date_of_incorporation", 
                                "country_of_incorporation", "registered_business_address", "tax_identification_number",
-                               "source_of_funds_declaration", "aml_screening_results", "compliance_officer_approval"]
+                               "source_of_funds_declaration", "compliance_officer_approval"]
                 }
             }
         }

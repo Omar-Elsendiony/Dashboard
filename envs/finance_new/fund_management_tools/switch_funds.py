@@ -40,7 +40,7 @@ class SwitchFunds(Tool):
         if current_subscription.get("amount", 0) < switch_amount:
             return json.dumps({"error": "Insufficient balance in current fund"})
         
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         # Create redemption from current fund
         redemption_id = generate_id(redemptions)

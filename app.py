@@ -908,13 +908,13 @@ def get_claude_client():
     return Anthropic(api_key=api_key)
 
 # Helper function to call Claude
-def call_claude(prompt, model="claude-3-sonnet-20240229", max_tokens=4000, temperature=0.1):
+def call_claude(prompt, model="claude-3-5-sonnet-20241022", max_tokens=4000, temperature=0.1):
     """
     Call Claude API with the given prompt
     
     Args:
         prompt (str): The prompt to send to Claude
-        model (str): Claude model to use (default: claude-3-sonnet-20240229)
+        model (str): Claude model to use (default: claude-3-5-sonnet-20241022)
         max_tokens (int): Maximum tokens to generate
         temperature (float): Temperature for response generation
     
@@ -936,7 +936,7 @@ def call_claude(prompt, model="claude-3-sonnet-20240229", max_tokens=4000, tempe
 
 
 @app.route('/instruction_validation', strict_slashes=False, methods=["GET", "POST"])
-def task_validation():
+def instruction_validation():
     if request.method == "POST":
         data = request.json
         action = data.get('action')

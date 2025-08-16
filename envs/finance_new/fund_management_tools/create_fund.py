@@ -4,10 +4,10 @@ from tau_bench.envs.tool import Tool
 
 class CreateFund(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], fund_name: str, fund_type: str, base_currency: str,
-               initial_size: float, manager_id: str, strategy_outline: str,
-               compliance_officer_review: bool, fund_manager_approval: bool) -> str:
-        
+    def invoke(data: Dict[str, Any], fund_name: str, fund_type: str,
+               initial_size: float, manager_id: str, 
+               compliance_officer_review: bool, fund_manager_approval: bool, strategy_outline: str = None) -> str:
+
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
                 return 1
@@ -34,7 +34,7 @@ class CreateFund(Tool):
             return json.dumps({"error": f"Invalid fund type. Must be one of {valid_types}"})
         
         fund_id = generate_id(funds)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_fund = {
             "fund_id": fund_id,
@@ -42,7 +42,7 @@ class CreateFund(Tool):
             "fund_type": fund_type,
             "manager_id": int(manager_id),
             "size": initial_size,
-            "status": "open",
+            "status": "open", # status can be open, closed, or suspended
             "created_at": timestamp,
             "updated_at": timestamp
         }
@@ -70,7 +70,7 @@ class CreateFund(Tool):
                         "fund_manager_approval": {"type": "boolean", "description": "Fund Manager approval flag"}
                     },
                     "required": ["fund_name", "fund_type", "base_currency", "initial_size", "manager_id", 
-                               "strategy_outline", "compliance_officer_review", "fund_manager_approval"]
+                            "strategy_outline", "compliance_officer_review", "fund_manager_approval"]
                 }
             }
         }

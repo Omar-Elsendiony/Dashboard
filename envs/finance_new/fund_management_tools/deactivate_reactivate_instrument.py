@@ -4,7 +4,7 @@ from tau_bench.envs.tool import Tool
 
 class DeactivateReactivateInstrument(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], instrument_id: str, action: str, reason: str,
+    def invoke(data: Dict[str, Any], instrument_id: str, action: str,
                fund_manager_approval: bool, compliance_officer_approval: bool) -> str:
         
         if not fund_manager_approval:
@@ -52,8 +52,8 @@ class DeactivateReactivateInstrument(Tool):
                         "instrument_id": {"type": "string", "description": "ID of the instrument"},
                         "action": {"type": "string", "description": "Action to perform (deactivate or reactivate)"},
                         "reason": {"type": "string", "description": "Reason for the action"},
-                        "fund_manager_approval": {"type": "boolean", "description": "Fund Manager approval flag"},
-                        "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag"}
+                        "fund_manager_approval": {"type": "boolean", "description": "Fund Manager approval flag (True/False)"},
+                        "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"}
                     },
                     "required": ["instrument_id", "action", "reason", "fund_manager_approval", "compliance_officer_approval"]
                 }

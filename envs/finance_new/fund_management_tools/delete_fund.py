@@ -22,7 +22,7 @@ class DeleteFund(Tool):
         
         # Check for active subscriptions
         active_subscriptions = [s for s in subscriptions.values() 
-                              if s.get("fund_id") == int(fund_id) and s.get("status") == "approved"]
+                            if s.get("fund_id") == int(fund_id) and s.get("status") == "approved"]
         
         if active_subscriptions:
             return json.dumps({"error": "Cannot delete fund with active subscriptions. Process halted."})

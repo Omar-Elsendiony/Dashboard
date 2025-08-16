@@ -20,7 +20,7 @@ class UpdateSubscription(Tool):
             return json.dumps({"error": f"Subscription {subscription_id} not found"})
         
         subscription = subscriptions[str(subscription_id)]
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         # Apply changes
         for key, value in changes.items():

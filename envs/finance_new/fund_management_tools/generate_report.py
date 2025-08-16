@@ -21,20 +21,20 @@ class GenerateReport(Tool):
         # Validate report type
         valid_types = ["performance", "financial", "holding"]
         if report_type.lower() not in valid_types:
-            return json.dumps({"success": False, "message": f"Invalid report type. Must be one of {valid_types}", "halt": True})
+            return json.dumps({"success": False, "message": f"Invalid report type. Must be one of {valid_types}"})
         
         # Validate requester role
-        valid_roles = ["admin", "employee"]
+        valid_roles = ["admin", "finance_officer"]
         if requester_role.lower() not in valid_roles:
-            return json.dumps({"success": False, "message": f"Invalid requester role. Must be one of {valid_roles}", "halt": True})
+            return json.dumps({"success": False, "message": f"Invalid requester role. Must be one of {valid_roles}"})
         
         # If fund_id provided, validate it exists
         if fund_id and str(fund_id) not in funds:
-            return json.dumps({"success": False, "message": "Fund not found", "halt": True})
+            return json.dumps({"success": False, "message": "Fund not found"})
         
         # If investor_id provided, validate it exists
         if investor_id and str(investor_id) not in investors:
-            return json.dumps({"success": False, "message": "Investor not found", "halt": True})
+            return json.dumps({"success": False, "message": "Investor not found"})
         
         # Find a user with the appropriate role to be the generator
         generated_by = None
@@ -44,7 +44,7 @@ class GenerateReport(Tool):
                 break
         
         if not generated_by:
-            return json.dumps({"success": False, "message": "No authorized user found to generate report", "halt": True})
+            return json.dumps({"success": False, "message": "No authorized user found to generate report"})
         
         report_id = generate_id(reports)
         timestamp = "2025-10-01T00:00:00"

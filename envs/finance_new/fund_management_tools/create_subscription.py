@@ -5,15 +5,15 @@ from tau_bench.envs.tool import Tool
 class CreateSubscription(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], investor_id: str, fund_id: str, amount: float,
-               payment_details: Dict[str, Any], compliance_officer_approval: bool) -> str:
+               compliance_officer_approval: bool) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
                 return 1
             return max(int(k) for k in table.keys()) + 1
         
-        if not compliance_officer_approval:
-            return json.dumps({"error": "Compliance Officer approval required. Process halted."})
+        # if not compliance_officer_approval:
+        #     return json.dumps({"error": "Compliance Officer approval required. Process halted."})
         
         investors = data.get("investors", {})
         funds = data.get("funds", {})
@@ -30,10 +30,10 @@ class CreateSubscription(Tool):
             return json.dumps({"error": "Fund is not open for subscriptions"})
         
         subscription_id = generate_id(subscriptions)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         # Determine status based on payment details
-        status = "approved" if payment_details.get("confirmed", False) else "pending"
+        status = "pending" if not compliance_officer_approval else "approved"
         
         new_subscription = {
             "subscription_id": subscription_id,
@@ -65,10 +65,9 @@ class CreateSubscription(Tool):
                         "investor_id": {"type": "string", "description": "ID of the investor"},
                         "fund_id": {"type": "string", "description": "ID of the fund"},
                         "amount": {"type": "number", "description": "Subscription amount"},
-                        "payment_details": {"type": "object", "description": "Payment details"},
                         "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag"}
                     },
-                    "required": ["investor_id", "fund_id", "amount", "payment_details", "compliance_officer_approval"]
+                    "required": ["investor_id", "fund_id", "amount", "compliance_officer_approval"]
                 }
             }
         }

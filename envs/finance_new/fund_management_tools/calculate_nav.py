@@ -60,7 +60,7 @@ class CalculateNav(Tool):
             "type": "function",
             "function": {
                 "name": "calculate_nav",
-                "description": "Calculate and update the Net Asset Value "NAV" for a fund",
+                "description": "Calculate and update the Net Asset Value 'NAV' for a fund",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -7,7 +7,7 @@ class UpdateFund(Tool):
     def invoke(data: Dict[str, Any], fund_id: str, changes: Dict[str, Any],
                fund_manager_approval: bool, compliance_review_required: Optional[bool] = None,
                compliance_officer_approval: Optional[bool] = None) -> str:
-        
+
         if not fund_manager_approval:
             return json.dumps({"error": "Fund Manager approval required. Process halted."})
         
@@ -35,7 +35,7 @@ class UpdateFund(Tool):
         if active_subscription.get("amount", 0) < amount_or_units:
             return json.dumps({"error": "Insufficient balance for redemption"})
         
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         # Create redemption record
         redemption_id = generate_id(redemptions)

@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class UpdateInstrument(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], instrument_id: str, proposed_changes: Dict[str, Any], 
-               user_authorization: bool, compliance_review_required: Optional[bool] = None) -> str:
+            action, updated_by, compliance_review_required: Optional[bool]) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
@@ -18,34 +18,24 @@ class UpdateInstrument(Tool):
         
         # Validate instrument exists
         if str(instrument_id) not in instruments:
-            return json.dumps({"success": False, "message": "Instrument not found", "halt": True})
+            return json.dumps({"success": False, "message": "Instrument not found"})
         
-        # Validate user authorization
-        if not user_authorization:
-            return json.dumps({"success": False, "message": "User authorization required", "halt": True})
-        
+
         # Validate proposed changes
         if not proposed_changes or not isinstance(proposed_changes, dict):
-            return json.dumps({"success": False, "message": "Valid proposed changes required", "halt": True})
+            return json.dumps({"success": False, "message": "Valid proposed changes required"})
         
         instrument = instruments[str(instrument_id)]
         
         # Check current status and validate action
         current_status = instrument.get("status", "active")
         if action.lower() == "deactivate" and current_status == "inactive":
-            return json.dumps({"success": False, "message": "Instrument is already inactive", "halt": True})
+            return json.dumps({"success": False, "message": "Instrument is already inactive"})
         elif action.lower() == "reactivate" and current_status == "active":
-            return json.dumps({"success": False, "message": "Instrument is already active", "halt": True})
-        
-        # Find an admin user to perform the action
-        admin_user = None
-        for user_id, user in users.items():
-            if user.get("role") == "admin":
-                admin_user = user_id
-                break
-        
-        if not admin_user:
-            return json.dumps({"success": False, "message": "No authorized user found to perform action", "halt": True})
+            return json.dumps({"success": False, "message": "Instrument is already active"})
+
+        if not updated_by:
+            return json.dumps({"success": False, "message": "No authorized user found to perform action"})
         
         # Update instrument status
         old_status = instrument.get("status")
@@ -60,8 +50,8 @@ class UpdateInstrument(Tool):
             "audit_trail_id": audit_id,
             "reference_id": instrument_id,
             "reference_type": "instrument",
-            "action": action.lower(),
-            "user_id": admin_user,
+            "action": 'update',
+            "user_id": updated_by,
             "field_name": "status",
             "old_value": old_status,
             "new_value": new_status,
