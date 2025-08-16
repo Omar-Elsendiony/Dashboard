@@ -581,7 +581,52 @@
             border-radius: 12px;
             background: #fafbfc;
         }
+.radio-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+    background: #fafbfc;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+}
 
+.radio-input {
+    display: none;
+}
+
+.radio-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    border: 2px solid #e1e5e9;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.radio-button:hover {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+    color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.radio-input:checked + .radio-button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-color: #667eea;
+    color: white;
+    font-weight: 600;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
+}
         @media (max-width: 768px) {
             .parameters-container {
                 grid-template-columns: 1fr;
@@ -826,19 +871,22 @@
                     <div class="api-action-title">Action</div>
                     <button class="remove-action-button" onclick="removeAction('${actionId}')">×</button>
                 </div>
-                
-                <div class="form-group">
-                    <label class="form-label">Select API</label>
-                    <div class="input-container">
-                        <span class="input-icon">🔌</span>
-                        <select class="form-select" onchange="selectAPI('${actionId}', this.value)">
-                            <option value="">Choose an API...</option>
-                            ${Array.from(APIs.keys()).map(apiKey => 
-                                `<option value="${apiKey}">${apiKey}</option>`
-                            ).join('')}
-                        </select>
-                    </div>
-                </div>
+                                
+<div class="form-group">
+    <label class="form-label">Select API</label>
+    <div class="radio-button-container" id="${actionId}_radio_container">
+        ${Array.from(APIs.keys()).map(apiKey => `
+            <input type="radio" 
+                   id="${actionId}_${apiKey}" 
+                   name="${actionId}_api" 
+                   value="${apiKey}" 
+                   class="radio-input"
+                   onchange="selectAPI('${actionId}', this.value)">
+            <label for="${actionId}_${apiKey}" class="radio-button">${apiKey}</label>
+        `).join('')}
+    </div>
+</div>
+
                 
                 <div id="${actionId}_description" class="api-description" style="display: none;"></div>
                 <div id="${actionId}_parameters" class="parameters-container"></div>
@@ -931,9 +979,9 @@
         async function executeAPI(actionId) {
             const environment = document.getElementById('environment').value.trim();
             const actionDiv = document.getElementById(actionId);
-            const apiSelect = actionDiv.querySelector('select');
-            const selectedAPI = apiSelect.value;
-            
+            const selectedRadio = actionDiv.querySelector('input[type="radio"]:checked');
+            const selectedAPI = selectedRadio ? selectedRadio.value : null;
+                        
             if (!selectedAPI) {
                 showWrongMessage('Please select an API first.');
                 return;
@@ -1194,7 +1242,10 @@
                             // added.add(action.name);
                             [actionID, actionDiv] = addAction();
                             if (actionID === null || actionDiv === null) return;
-                            actionDiv.querySelector('select').value = action.name;
+                            const radioButton = actionDiv.querySelector(`input[type="radio"][value="${action.name}"]`);
+                            if (radioButton) {
+                                radioButton.checked = true;
+                            }
                             selectAPI(actionID, action.name);
                             actionDiv.querySelectorAll('.parameter-input').forEach(input => {
                                 const paramName = input.dataset.param;
@@ -1227,8 +1278,8 @@
             const actionElements = document.querySelectorAll('.api-action');
             
             actionElements.forEach(actionEl => {
-                const apiSelect = actionEl.querySelector('select');
-                const selectedAPI = apiSelect.value;
+                const selectedRadio = actionEl.querySelector('input[type="radio"]:checked');
+                const selectedAPI = selectedRadio ? selectedRadio.value : null;
                 
                 if (!selectedAPI) return;
                 
