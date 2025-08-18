@@ -139,7 +139,7 @@ class ProcessInvestorRedemption(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "process_redemption",
+                "name": "process_investor_redemption",
                 "description": "Process a redemption request for an investor with balance validation across all subscriptions",
                 "parameters": {
                     "type": "object",

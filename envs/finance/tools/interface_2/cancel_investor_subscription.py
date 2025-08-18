@@ -26,7 +26,7 @@ class CancelInvestorSubscription(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "cancel_subscription",
+                "name": "cancel_investor_subscription",
                 "description": "Cancel a subscription",
                 "parameters": {
                     "type": "object",

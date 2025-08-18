@@ -44,7 +44,7 @@ class AddPortfolioHolding(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "add_new_holding",
+                "name": "add_portfolio_holding",
                 "description": "Add new holding for investment execution",
                 "parameters": {
                     "type": "object",

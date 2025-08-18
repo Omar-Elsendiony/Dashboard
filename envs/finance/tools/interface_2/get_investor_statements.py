@@ -62,7 +62,7 @@ class GetInvestorStatements(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_statements",
+                "name": "get_investor_statements",
                 "description": "Access periodic statements including performance, holdings, and transaction summaries",
                 "parameters": {
                     "type": "object",

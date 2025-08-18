@@ -82,7 +82,7 @@ class SwitchInvestorFunds(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "switch_funds",
+                "name": "switch_investor_funds",
                 "description": "Switch investor funds between two funds",
                 "parameters": {
                     "type": "object",

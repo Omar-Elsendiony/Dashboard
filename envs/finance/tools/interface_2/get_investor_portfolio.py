@@ -19,7 +19,7 @@ class GetInvestorPortfolio(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_portfolio",
+                "name": "get_investor_portfolio",
                 "description": "Get investor portfolio for client servicing and performance tracking",
                 "parameters": {
                     "type": "object",

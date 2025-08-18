@@ -19,7 +19,7 @@ class GetPortfolioHoldings(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_portfolio_holdings",
+                "name": "get_portfolio_holdings",
                 "description": "Get portfolio holdings for holdings analysis and risk management",
                 "parameters": {
                     "type": "object",

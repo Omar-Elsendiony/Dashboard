@@ -35,7 +35,7 @@ class UpdateInvestorSubscription(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "update_subscription",
+                "name": "update_investor_subscription",
                 "description": "Update subscription details with required approvals",
                 "parameters": {
                     "type": "object",

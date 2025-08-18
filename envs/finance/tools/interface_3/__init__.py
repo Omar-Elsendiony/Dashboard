@@ -1,53 +1,53 @@
-from .add_commitment_audit_trail import AddCommitmentAuditTrail
-from .add_commitment_user import AddCommitmentUser
-from .calculate_commitment_future_value import CalculateCommitmentFutureValue
-from .calculate_commitment_liabilities import CalculateCommitmentLiabilities
-from .calculate_commitment_nav import CalculateCommitmentNav
-from .create_investment_commitment import CreateInvestmentCommitment
-from .create_commitment_invoice import CreateCommitmentInvoice
-from .upload_commitment_document import UploadCommitmentDocument
-from .delete_commitment_invoice import DeleteCommitmentInvoice
-from .fulfill_investment_commitment import FulfillInvestmentCommitment
-from .generate_commitment_report import GenerateCommitmentReport
-from .get_commitment_approval import GetCommitmentApproval
-from .get_available_commitment_funds import GetAvailableCommitmentFunds
-from .get_commitment_list import GetCommitmentList
-from .get_filtered_commitment_investors import GetFilteredCommitmentInvestors
-from .get_investor_commitment_history import GetInvestorCommitmentHistory
-from .get_commitment_investor_profile import GetCommitmentInvestorProfile
-from .get_commitment_invoices import GetCommitmentInvoices
-from .get_commitment_notifications import GetCommitmentNotifications
-from .get_commitment_payment_history import GetCommitmentPaymentHistory
-from .get_commitment_reports import GetCommitmentReports
-from .register_commitment_payment import RegisterCommitmentPayment
-from .retrieve_commitment_invoices import RetrieveCommitmentInvoices
-from .send_commitment_notification import SendCommitmentNotification
-from .update_commitment_invoice import UpdateCommitmentInvoice
+from .create_new_audit_trail import CreateNewAuditTrail
+from .add_new_user import AddNewUser
+from .assess_future_value import AssessFutureValue
+from .evaluate_liabilities import EvaluateLiabilities
+from .calculate_nav import CalculateNav
+from .create_commitment import CreateCommitment
+from .create_invoice import CreateInvoice
+from .create_upload_document import CreateUploadDocument
+from .delete_invoice import DeleteInvoice
+from .fulfill_commitment import FulfillCommitment
+from .generate_report import GenerateReport
+from .confirm_approval import ConfirmApproval
+from .get_available_funds import GetAvailableFunds
+from .get_commitments import GetCommitments
+from .get_filtered_investors import GetFilteredInvestors
+from .get_investor_commitments import GetInvestorCommitments
+from .get_investor_profile import GetInvestorProfile
+from .get_invoices import GetInvoices
+from .get_notifications import GetNotifications
+from .get_payment_history import GetPaymentHistory
+from .acquire_reports import AcquireReports
+from .register_payment import RegisterPayment
+from .retrieve_invoices import RetrieveInvoices
+from .send_email_notification import SendEmailNotification
+from .update_invoice import UpdateInvoice
 
 ALL_TOOLS_INTERFACE_3 = [
-    AddCommitmentAuditTrail,
-    AddCommitmentUser,
-    CalculateCommitmentFutureValue,
-    CalculateCommitmentLiabilities,
-    CalculateCommitmentNav,
-    CreateInvestmentCommitment,
-    CreateCommitmentInvoice,
-    UploadCommitmentDocument,
-    DeleteCommitmentInvoice,
-    FulfillInvestmentCommitment,
-    GenerateCommitmentReport,
-    GetCommitmentApproval,
-    GetAvailableCommitmentFunds,
-    GetCommitmentList,
-    GetFilteredCommitmentInvestors,
-    GetInvestorCommitmentHistory,
-    GetCommitmentInvestorProfile,
-    GetCommitmentInvoices,
-    GetCommitmentNotifications,
-    GetCommitmentPaymentHistory,
-    GetCommitmentReports,
-    RegisterCommitmentPayment,
-    RetrieveCommitmentInvoices,
-    SendCommitmentNotification,
-    UpdateCommitmentInvoice
+    CreateNewAuditTrail,
+    AddNewUser,
+    AssessFutureValue,
+    EvaluateLiabilities,
+    CalculateNav,
+    CreateCommitment,
+    CreateInvoice,
+    CreateUploadDocument,
+    DeleteInvoice,
+    FulfillCommitment,
+    GenerateReport,
+    ConfirmApproval,
+    GetAvailableFunds,
+    GetCommitments,
+    GetFilteredInvestors,
+    GetInvestorCommitments,
+    GetInvestorProfile,
+    GetInvoices,
+    GetNotifications,
+    GetPaymentHistory,
+    AcquireReports,
+    RegisterPayment,
+    RetrieveInvoices,
+    SendEmailNotification,
+    UpdateInvoice
 ]

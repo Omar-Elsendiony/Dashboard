@@ -48,7 +48,7 @@ class GetInvestorRedemptions(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_redemptions",
+                "name": "get_investor_redemptions",
                 "description": "View all redemption requests including pending, approved, and processed transactions",
                 "parameters": {
                     "type": "object",

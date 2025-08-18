@@ -5,31 +5,26 @@ from tau_bench.envs.tool import Tool
 class CreateFund(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_name: str, fund_type: str,
-               initial_fund_size: float, fund_manager_id: str, 
-               fund_approval_code: str) -> str:
+               initial_size: float, manager_id: str, 
+               compliance_officer_review: bool, fund_manager_approval: bool) -> str:
 
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
                 return 1
             return max(int(k) for k in table.keys()) + 1
         
-        # Validate approval code exists
-        approvals = data.get("approvals", {})
-        approval_found = False
-        for approval_id, approval in approvals.items():
-            if approval.get("code") == fund_approval_code and approval.get("approver_role") == "fund_manager":
-                approval_found = True
-                break
+        if not compliance_officer_review:
+            return json.dumps({"error": "Compliance Officer review required. Process halted."})
         
-        if not approval_found:
-            return json.dumps({"error": f"Fund Manager approval code {fund_approval_code} not found or invalid. Process halted."})
+        if not fund_manager_approval:
+            return json.dumps({"error": "Fund Manager approval required. Process halted."})
         
         funds = data.get("funds", {})
         users = data.get("users", {})
         
         # Validate manager exists
-        if str(fund_manager_id) not in users:
-            return json.dumps({"error": f"Fund Manager {fund_manager_id} not found"})
+        if str(manager_id) not in users:
+            return json.dumps({"error": f"Manager {manager_id} not found"})
         
         # Validate fund type
         valid_types = ["mutual_funds", "exchange_traded_funds", "pension_funds", "private_equity_funds",
@@ -45,8 +40,8 @@ class CreateFund(Tool):
             "fund_id": fund_id,
             "name": fund_name,
             "fund_type": fund_type,
-            "manager_id": int(fund_manager_id),
-            "size": initial_fund_size,
+            "manager_id": int(manager_id),
+            "size": initial_size,
             "status": "open", # status can be open, closed, or suspended
             "created_at": timestamp,
             "updated_at": timestamp
@@ -61,18 +56,19 @@ class CreateFund(Tool):
             "type": "function",
             "function": {
                 "name": "create_fund",
-                "description": "Create a new fund with fund manager approval code verification for Fund Management & Trading Operations",
+                "description": "Create a new fund after approvals",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "fund_name": {"type": "string", "description": "Name of the fund to be created"},
+                        "fund_name": {"type": "string", "description": "Name of the fund"},
                         "fund_type": {"type": "string", "description": "Type of fund. Must be one of: 'mutual_funds', 'exchange_traded_funds', 'pension_funds', 'private_equity_funds', 'hedge_funds', 'sovereign_wealth_funds', 'money_market_funds', 'real_estate_investment_trusts', 'infrastructure_funds', 'multi_asset_funds'"},
-                        "initial_fund_size": {"type": "number", "description": "Initial size/assets under management of the fund"},
-                        "fund_manager_id": {"type": "string", "description": "ID of the designated fund manager"},
-                        "fund_approval_code": {"type": "string", "description": "Fund manager approval code for authorization"}
+                        "initial_size": {"type": "number", "description": "Initial size of the fund"},
+                        "manager_id": {"type": "string", "description": "ID of the fund manager"},
+                        "compliance_officer_review": {"type": "boolean", "description": "Compliance Officer review flag (True/False)"},
+                        "fund_manager_approval": {"type": "boolean", "description": "Fund Manager approval flag (True/False)"}
                     },
-                    "required": ["fund_name", "fund_type", "initial_fund_size", "fund_manager_id", 
-                            "fund_approval_code"]
+                    "required": ["fund_name", "fund_type", "initial_size", "manager_id", 
+                            "compliance_officer_review", "fund_manager_approval"]
                 }
             }
         }

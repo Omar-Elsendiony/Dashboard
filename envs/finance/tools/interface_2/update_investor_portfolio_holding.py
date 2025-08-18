@@ -28,7 +28,7 @@ class UpdateInvestorPortfolioHolding(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "update_investor_portfolio_holding",
+                "name": "update_investor_portfolio_holding",
                 "description": "Update investor portfolio holding for position adjustments",
                 "parameters": {
                     "type": "object",

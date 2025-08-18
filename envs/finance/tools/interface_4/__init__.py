@@ -1,53 +1,54 @@
-from .add_analysis_audit_trail import AddAnalysisAuditTrail
-from .add_analysis_user import AddAnalysisUser
-from .calculate_fund_future_value import CalculateFundFutureValue
-from .calculate_fund_nav import CalculateFundNav
-from .create_analysis_fund import CreateAnalysisFund
-from .upload_analysis_document import UploadAnalysisDocument
-from .delete_analysis_fund import DeleteAnalysisFund
-from .generate_analysis_report import GenerateAnalysisReport
-from .get_analysis_approval import GetAnalysisApproval
-from .get_available_analysis_funds import GetAvailableAnalysisFunds
-from .get_fund_commitments import GetFundCommitments
-from .get_daily_fund_profit_loss import GetDailyFundProfitLoss
-from .get_fund_instrument_analysis import GetFundInstrumentAnalysis
-from .get_fund_trade_analysis import GetFundTradeAnalysis
-from .get_fund_growth_rate import GetFundGrowthRate
-from .get_fund_instruments import GetFundInstruments
-from .get_instrument_price_analysis import GetInstrumentPriceAnalysis
-from .get_fund_nav_records import GetFundNavRecords
-from .get_fund_performance_history import GetFundPerformanceHistory
-from .list_funds_for_analysis import ListFundsForAnalysis
-from .summarize_instrument_analysis import SummarizeInstrumentAnalysis
-from .update_analysis_fund import UpdateAnalysisFund
-from .update_analysis_instrument import UpdateAnalysisInstrument
-from .update_analysis_instrument_price import UpdateAnalysisInstrumentPrice
-from .update_fund_nav_value import UpdateFundNavValue
+from .get_daily_profit_loss_by_fund import GetDailyProfitLossByFund
+from .adjust_fund import AdjustFund
+from .adjust_instrument import AdjustInstrument
+from .adjust_instrument_price import AdjustInstrumentPrice
+from .adjust_nav_record_value import AdjustNavRecordValue
+from .check_approval import CheckApproval
+from .compose_document import ComposeDocument
+from .compose_fund import ComposeFund
+from .construct_audit_trail import ConstructAuditTrail
+from .construct_user import ConstructUser
+from .delete_fund import DeleteFund
+from .evaluate_future_value import EvaluateFutureValue
+from .evaluate_nav import EvaluateNav
+from .generate_report import GenerateReport
+from .get_growth_rate import GetGrowthRate
+from .list_funds_with_filter import ListFundsWithFilter
+from .obtain_available_funds import ObtainAvailableFunds
+from .obtain_commitments import ObtainCommitments
+from .obtain_fund_instruments import ObtainFundInstruments
+from .obtain_fund_trade_details import ObtainFundTradeDetails
+from .obtain_instruments import ObtainInstruments
+from .obtain_instruments_prices import ObtainInstrumentsPrices
+from .obtain_nav_records import ObtainNavRecords
+from .obtain_performance_history import ObtainPerformanceHistory
+from .summary_of_instrument_types_by_prices import SummaryOfInstrumentTypesByPrices
+
 
 ALL_TOOLS_INTERFACE_4 = [
-    AddAnalysisAuditTrail,
-    AddAnalysisUser,
-    CalculateFundFutureValue,
-    CalculateFundNav,
-    CreateAnalysisFund,
-    UploadAnalysisDocument,
-    DeleteAnalysisFund,
-    GenerateAnalysisReport,
-    GetAnalysisApproval,
-    GetAvailableAnalysisFunds,
-    GetFundCommitments,
-    GetDailyFundProfitLoss,
-    GetFundInstrumentAnalysis,
-    GetFundTradeAnalysis,
-    GetFundGrowthRate,
-    GetFundInstruments,
-    GetInstrumentPriceAnalysis,
-    GetFundNavRecords,
-    GetFundPerformanceHistory,
-    ListFundsForAnalysis,
-    SummarizeInstrumentAnalysis,
-    UpdateAnalysisFund,
-    UpdateAnalysisInstrument,
-    UpdateAnalysisInstrumentPrice,
-    UpdateFundNavValue
+    GetDailyProfitLossByFund,
+    AdjustFund,
+    AdjustInstrument,
+    AdjustInstrumentPrice,
+    AdjustNavRecordValue,
+    CheckApproval,
+    ComposeDocument,
+    ComposeFund,
+    ConstructAuditTrail,
+    ConstructUser,
+    DeleteFund,
+    EvaluateFutureValue,
+    EvaluateNav,
+    GenerateReport,
+    GetGrowthRate,
+    ListFundsWithFilter,
+    ObtainAvailableFunds,
+    ObtainCommitments,
+    ObtainFundInstruments,
+    ObtainFundTradeDetails,
+    ObtainInstruments,
+    ObtainInstrumentsPrices,
+    ObtainNavRecords,
+    ObtainPerformanceHistory,
+    SummaryOfInstrumentTypesByPrices
 ]

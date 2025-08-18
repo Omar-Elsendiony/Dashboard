@@ -61,7 +61,7 @@ class GetInvestorDocuments(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_documents",
+                "name": "get_investor_documents",
                 "description": "Retrieve all documents related to the investor (agreements, reports, correspondence)",
                 "parameters": {
                     "type": "object",

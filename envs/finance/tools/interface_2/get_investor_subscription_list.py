@@ -28,7 +28,7 @@ class GetInvestorSubscriptionList(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_subscriptions",
+                "name": "get_investor_subscription_list",
                 "description": "Get subscriptions with optional filters",
                 "parameters": {
                     "type": "object",

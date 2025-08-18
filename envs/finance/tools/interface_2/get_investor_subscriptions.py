@@ -44,7 +44,7 @@ class GetInvestorSubscriptions(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_subscriptions",
+                "name": "get_investor_subscriptions",
                 "description": "List all subscription requests and their current investor_status (pending, approved, cancelled)",
                 "parameters": {
                     "type": "object",

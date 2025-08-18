@@ -125,7 +125,7 @@ class GetFilteredInvestors(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_filtered_investors",
+                "name": "get_filtered_investors",
                 "description": "Get filtered investors for CRM and marketing segmentation with comprehensive filtering options",
                 "parameters": {
                     "type": "object",

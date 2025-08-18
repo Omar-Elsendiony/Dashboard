@@ -114,7 +114,7 @@ class GetInvestorTransactionsHistory(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_transactions_history",
+                "name": "get_investor_transactions_history",
                 "description": "Comprehensive transaction history including all subscriptions, redemptions, switches, and payments",
                 "parameters": {
                     "type": "object",

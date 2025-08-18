@@ -1,55 +1,58 @@
-from .add_relations_audit_trail import AddRelationsAuditTrail
-from .cancel_relations_subscription import CancelRelationsSubscription
-from .create_relations_commitment import CreateRelationsCommitment
-from .create_relations_invoice import CreateRelationsInvoice
-from .create_relations_subscription import CreateRelationsSubscription
-from .manage_relations_instrument import ManageRelationsInstrument
-from .delete_relations_invoice import DeleteRelationsInvoice
-from .find_relations_user import FindRelationsUser
-from .get_relations_approval import GetRelationsApproval
-from .get_filtered_relations_investors import GetFilteredRelationsInvestors
-from .get_relations_investor_documents import GetRelationsInvestorDocuments
-from .get_relations_investor_portfolio import GetRelationsInvestorPortfolio
-from .get_relations_portfolio_holdings import GetRelationsPortfolioHoldings
-from .get_relations_investor_profile import GetRelationsInvestorProfile
-from .get_relations_investor_statements import GetRelationsInvestorStatements
-from .get_relations_transaction_history import GetRelationsTransactionHistory
-from .get_relations_notifications import GetRelationsNotifications
-from .get_relations_payment_history import GetRelationsPaymentHistory
-from .get_relations_reports import GetRelationsReports
-from .get_relations_subscriptions import GetRelationsSubscriptions
-from .relations_investor_offboarding import RelationsInvestorOffboarding
-from .relations_investor_onboarding import RelationsInvestorOnboarding
-from .modify_relations_invoice_config import ModifyRelationsInvoiceConfig
-from .send_relations_notification import SendRelationsNotification
-from .update_relations_investor_details import UpdateRelationsInvestorDetails
-from .update_relations_subscription import UpdateRelationsSubscription
+from .add_audit_trail import AddAuditTrail
+from .add_commitment import AddCommitment
+from .authenticate_approval import AuthenticateApproval
+from .deactivate_reactivate_instrument import DeactivateReactivateInstrument
+from .dispatch_email_notification import DispatchEmailNotification
+from .fetch_filtered_investors import FetchFilteredInvestors
+from .fetch_investor_documents import FetchInvestorDocuments
+from .fetch_investor_portfolio import FetchInvestorPortfolio
+from .fetch_investor_portfolio_holdings import FetchInvestorPortfolioHoldings
+from .fetch_investor_profile import FetchInvestorProfile
+from .fetch_investor_statements import FetchInvestorStatements
+from .fetch_investor_transactions_history import FetchInvestorTransactionsHistory
+from .fetch_notifications import FetchNotifications
+from .fetch_payment_history import FetchPaymentHistory
+from .fetch_portfolio_holdings import FetchPortfolioHoldings
+from .fetch_subscriptions import FetchSubscriptions
+from .generate_invoice import GenerateInvoice
+from .get_reports import GetReports
+from .investor_offboarding import InvestorOffboarding
+from .investor_onboarding import InvestorOnboarding
+from .locate_user import LocateUser
+from .modify_invoice_config import ModifyInvoiceConfig
+from .register_subscription import RegisterSubscription
+from .remove_invoice import RemoveInvoice
+from .revise_investor_details import ReviseInvestorDetails
+from .revise_subscription import ReviseSubscription
+from .terminate_subscription import TerminateSubscription
+
 
 ALL_TOOLS_INTERFACE_5 = [
-    AddRelationsAuditTrail,
-    CancelRelationsSubscription,
-    CreateRelationsCommitment,
-    CreateRelationsInvoice,
-    CreateRelationsSubscription,
-    ManageRelationsInstrument,
-    DeleteRelationsInvoice,
-    FindRelationsUser,
-    GetRelationsApproval,
-    GetFilteredRelationsInvestors,
-    GetRelationsInvestorDocuments,
-    GetRelationsInvestorPortfolio,
-    GetRelationsPortfolioHoldings,
-    GetRelationsInvestorProfile,
-    GetRelationsInvestorStatements,
-    GetRelationsTransactionHistory,
-    GetRelationsNotifications,
-    GetRelationsPaymentHistory,
-    GetRelationsReports,
-    GetRelationsSubscriptions,
-    RelationsInvestorOffboarding,
-    RelationsInvestorOnboarding,
-    ModifyRelationsInvoiceConfig,
-    SendRelationsNotification,
-    UpdateRelationsInvestorDetails,
-    UpdateRelationsSubscription
+    AddAuditTrail,
+    AddCommitment,
+    AuthenticateApproval,
+    DeactivateReactivateInstrument,
+    DispatchEmailNotification,
+    FetchFilteredInvestors,
+    FetchInvestorDocuments,
+    FetchInvestorPortfolio,
+    FetchInvestorPortfolioHoldings,
+    FetchInvestorProfile,
+    FetchInvestorStatements,
+    FetchInvestorTransactionsHistory,
+    FetchNotifications,
+    FetchPaymentHistory,
+    FetchPortfolioHoldings,
+    FetchSubscriptions,
+    GenerateInvoice,
+    GetReports,
+    InvestorOffboarding,
+    InvestorOnboarding,
+    LocateUser,
+    ModifyInvoiceConfig,
+    RegisterSubscription,
+    RemoveInvoice,
+    ReviseInvestorDetails,
+    ReviseSubscription,
+    TerminateSubscription
 ]

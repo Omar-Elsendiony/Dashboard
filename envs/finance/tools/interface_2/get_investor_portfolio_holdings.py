@@ -47,7 +47,7 @@ class GetInvestorPortfolioHoldings(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_portfolio_holdings",
+                "name": "get_investor_portfolio_holdings",
                 "description": "Retrieve detailed breakdown of all fund holdings within the investor's portfolio",
                 "parameters": {
                     "type": "object",

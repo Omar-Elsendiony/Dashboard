@@ -65,7 +65,7 @@ class UpdateInvestorDetails(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "update_investor_details",
+                "name": "update_investor_details",
                 "description": "Update investor details for regulatory updates and investor_address changes",
                 "parameters": {
                     "type": "object",

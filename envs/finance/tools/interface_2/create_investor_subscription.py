@@ -57,7 +57,7 @@ class CreateInvestorSubscription(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "create_subscription",
+                "name": "create_investor_subscription",
                 "description": "Create a new fund subscription",
                 "parameters": {
                     "type": "object",

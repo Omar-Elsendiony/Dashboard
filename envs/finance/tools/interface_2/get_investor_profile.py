@@ -19,7 +19,7 @@ class GetInvestorProfile(Tool):
         return {
             "type": "function",
             "function": {
-                "investor_name": "get_investor_profile",
+                "name": "get_investor_profile",
                 "description": "Retrieve complete investor profile information including KYC details, investor_status, and contact information",
                 "parameters": {
                     "type": "object",
