@@ -4,12 +4,12 @@ from tau_bench.envs.tool import Tool
 
 class UpdateInvestorDetails(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_id: str, investor_name: Optional[str] = None,
+    def invoke(data: Dict[str, Any], investor_id: str, name: Optional[str] = None,
                contact_email: Optional[str] = None, accreditation_status: Optional[str] = None,
                registration_number: Optional[int] = None, date_of_incorporation: Optional[str] = None,
-               investor_country: Optional[str] = None, investor_address: Optional[str] = None,
+               country: Optional[str] = None, address: Optional[str] = None,
                tax_id: Optional[str] = None, source_of_funds: Optional[str] = None,
-               investor_status: Optional[str] = None) -> str:
+               status: Optional[str] = None) -> str:
         
         investors = data.get("investors", {})
         
@@ -19,19 +19,19 @@ class UpdateInvestorDetails(Tool):
         
         investor = investors[str(investor_id)]
         
-        # Validate accreditation investor_status if provided
+        # Validate accreditation status if provided
         if accreditation_status:
             valid_accreditation = ["accredited", "non_accredited"]
             if accreditation_status not in valid_accreditation:
-                raise ValueError(f"Invalid accreditation investor_status. Must be one of {valid_accreditation}")
+                raise ValueError(f"Invalid accreditation status. Must be one of {valid_accreditation}")
             investor["accreditation_status"] = accreditation_status
         
-        # Validate investor_status if provided
-        if investor_status:
+        # Validate status if provided
+        if status:
             valid_statuses = ["onboarded", "offboarded"]
-            if investor_status not in valid_statuses:
-                raise ValueError(f"Invalid investor_status. Must be one of {valid_statuses}")
-            investor["status"] = investor_status
+            if status not in valid_statuses:
+                raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+            investor["status"] = status
         
         # Validate source of funds if provided
         if source_of_funds:
@@ -43,18 +43,18 @@ class UpdateInvestorDetails(Tool):
             investor["source_of_funds"] = source_of_funds
         
         # Update fields if provided
-        if investor_name is not None:
-            investor["name"] = investor_name
+        if name is not None:
+            investor["name"] = name
         if contact_email is not None:
             investor["contact_email"] = contact_email
         if registration_number is not None:
             investor["registration_number"] = registration_number
         if date_of_incorporation is not None:
             investor["date_of_incorporation"] = date_of_incorporation
-        if investor_country is not None:
-            investor["country"] = investor_country
-        if investor_address is not None:
-            investor["address"] = investor_address
+        if country is not None:
+            investor["country"] = country
+        if address is not None:
+            investor["address"] = address
         if tax_id is not None:
             investor["tax_id"] = tax_id
         
@@ -74,7 +74,7 @@ class UpdateInvestorDetails(Tool):
                             "type": "string",
                             "description": "ID of the investor"
                         },
-                        "investor_name": {
+                        "name": {
                             "type": "string",
                             "description": "Updated investor name"
                         },
@@ -95,11 +95,11 @@ class UpdateInvestorDetails(Tool):
                             "type": "string",
                             "description": "Updated date of incorporation (YYYY-MM-DD)"
                         },
-                        "investor_country": {
+                        "country": {
                             "type": "string",
                             "description": "Updated country"
                         },
-                        "investor_address": {
+                        "address": {
                             "type": "string",
                             "description": "Updated address"
                         },
@@ -116,7 +116,7 @@ class UpdateInvestorDetails(Tool):
                                 "royalty_or_licensing_income", "dividend_income", "other"
                             ]
                         },
-                        "investor_status": {
+                        "status": {
                             "type": "string",
                             "description": "Updated onboarding status",
                             "enum": ["onboarded", "offboarded"]

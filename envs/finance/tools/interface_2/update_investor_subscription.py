@@ -4,7 +4,7 @@ from tau_bench.envs.tool import Tool
 
 class UpdateInvestorSubscription(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_subscription_id: str, field_name: str, field_value: Union[str, int, float, bool],
+    def invoke(data: Dict[str, Any], subscription_id: str, field_name: str, field_value: Union[str, int, float, bool],
                compliance_officer_approval: bool, finance_officer_approval: bool) -> str:
         
         if not compliance_officer_approval:
@@ -16,10 +16,10 @@ class UpdateInvestorSubscription(Tool):
         subscriptions = data.get("subscriptions", {})
         
         # Validate subscription exists
-        if str(investor_subscription_id) not in subscriptions:
-            return json.dumps({"error": f"Subscription {investor_subscription_id} not found"})
+        if str(subscription_id) not in subscriptions:
+            return json.dumps({"error": f"Subscription {subscription_id} not found"})
         
-        subscription = subscriptions[str(investor_subscription_id)]
+        subscription = subscriptions[str(subscription_id)]
         timestamp = "2025-10-01T00:00:00"
         
         # Apply changes
@@ -40,7 +40,7 @@ class UpdateInvestorSubscription(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_subscription_id": {
+                        "subscription_id": {
                             "type": "string",
                             "description": "ID of the investor subscription to update"
                         },
@@ -63,7 +63,7 @@ class UpdateInvestorSubscription(Tool):
                         }
                     },
                     "required": [
-                        "investor_subscription_id",
+                        "subscription_id",
                         "field_name",
                         "field_value",
                         "compliance_officer_approval",

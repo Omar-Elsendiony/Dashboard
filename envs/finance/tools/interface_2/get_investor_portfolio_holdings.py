@@ -15,26 +15,26 @@ class GetInvestorPortfolioHoldings(Tool):
             raise ValueError(f"Investor {investor_id} not found")
         
         # Find investor's portfolio
-        investor_portfolio = None
+        portfolio = None
         for portfolio in portfolios.values():
             if portfolio.get("investor_id") == investor_id:
-                investor_portfolio = portfolio
+                portfolio = portfolio
                 break
         
-        if not investor_portfolio:
+        if not portfolio:
             return json.dumps([])
         
         # Get holdings for this portfolio
         holdings = []
         for holding in portfolio_holdings.values():
-            if holding.get("investor_portfolio_id") == investor_portfolio.get("investor_portfolio_id"):
+            if holding.get("portfolio_id") == portfolio.get("portfolio_id"):
                 # Enrich with fund details
                 target_fund_id = holding.get("target_fund_id")
                 fund_details = funds.get(str(target_fund_id), {})
                 
                 enriched_holding = {
                     **holding,
-                    "fund_name": fund_details.get("investor_name"),
+                    "fund_name": fund_details.get("name"),
                     "fund_type": fund_details.get("fund_type"),
                     "fund_status": fund_details.get("status")
                 }

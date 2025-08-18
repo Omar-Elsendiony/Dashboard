@@ -70,17 +70,17 @@ class ProcessInvestorRedemption(Tool):
             })
         
         # Additional validation: Check portfolio holdings if they exist
-        investor_portfolio = None
+        portfolio = None
         for portfolio in portfolios.values():
             if portfolio.get("investor_id") == investor_id:
-                investor_portfolio = portfolio
+                portfolio = portfolio
                 break
         
-        if investor_portfolio:
+        if portfolio:
             # Check portfolio holdings for this fund
             fund_holdings = 0
             for holding in portfolio_holdings.values():
-                if (holding.get("portfolio_id") == investor_portfolio.get("portfolio_id") and
+                if (holding.get("portfolio_id") == portfolio.get("portfolio_id") and
                     holding.get("target_fund_id") == target_fund_id):
                     fund_holdings += float(holding.get("quantity", 0))
             
@@ -111,9 +111,9 @@ class ProcessInvestorRedemption(Tool):
         redemptions[str(redemption_id)] = new_redemption
         
         # Update portfolio holdings if they exist
-        if investor_portfolio:
+        if portfolio:
             for portfolio_holding_id, holding in portfolio_holdings.items():
-                if (holding.get("portfolio_id") == investor_portfolio.get("portfolio_id") and
+                if (holding.get("portfolio_id") == portfolio.get("portfolio_id") and
                     holding.get("target_fund_id") == target_fund_id):
                     # Reduce the holding quantity
                     current_quantity = float(holding.get("quantity", 0))

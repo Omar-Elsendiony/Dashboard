@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class GetInvestorSubscriptions(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], investor_id: str, 
-               investor_status: Optional[str] = None, target_fund_id: Optional[str] = None) -> str:
+               status: Optional[str] = None, target_fund_id: Optional[str] = None) -> str:
         investors = data.get("investors", {})
         subscriptions = data.get("subscriptions", {})
         funds = data.get("funds", {})
@@ -15,11 +15,11 @@ class GetInvestorSubscriptions(Tool):
             raise ValueError(f"Investor {investor_id} not found")
         
         # Get subscriptions for this investor
-        investor_subscriptions = []
+        subscriptions = []
         for subscription in subscriptions.values():
             if subscription.get("investor_id") == investor_id:
-                # Filter by investor_status if specified
-                if investor_status and subscription.get("status") != investor_status:
+                # Filter by status if specified
+                if status and subscription.get("status") != status:
                     continue
                 
                 # Filter by fund if specified
@@ -32,12 +32,12 @@ class GetInvestorSubscriptions(Tool):
                 
                 enriched_subscription = {
                     **subscription,
-                    "fund_name": fund_details.get("investor_name"),
+                    "fund_name": fund_details.get("name"),
                     "fund_type": fund_details.get("fund_type")
                 }
-                investor_subscriptions.append(enriched_subscription)
+                subscriptions.append(enriched_subscription)
         
-        return json.dumps(investor_subscriptions)
+        return json.dumps(subscriptions)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -53,7 +53,7 @@ class GetInvestorSubscriptions(Tool):
                             "type": "string",
                             "description": "ID of the investor"
                         },
-                        "investor_status": {
+                        "status": {
                             "type": "string",
                             "description": "Filter by subscription status",
                             "enum": ["pending", "approved", "cancelled"]

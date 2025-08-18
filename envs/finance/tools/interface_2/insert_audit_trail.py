@@ -4,9 +4,9 @@ from tau_bench.envs.tool import Tool
 
 class InsertAuditTrail(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_reference_id: str, investor_reference_type: str,
-               investor_action: str, investor_field_name: Optional[str] = None,
-               investor_old_value: Optional[str] = None, investor_new_value: Optional[str] = None) -> str:
+    def invoke(data: Dict[str, Any], reference_id: str, reference_type: str,
+               action: str, field_name: Optional[str] = None,
+               old_value: Optional[str] = None, new_value: Optional[str] = None) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
@@ -21,22 +21,22 @@ class InsertAuditTrail(Tool):
             "trade", "portfolio", "holding", "instrument", "invoice", "payment",
             "document", "report", "nav", "notification"
         ]
-        if investor_reference_type not in valid_reference_types:
-            raise ValueError(f"Invalid reference_type '{investor_reference_type}'. Valid types: {valid_reference_types}")
+        if reference_type not in valid_reference_types:
+            raise ValueError(f"Invalid reference_type '{reference_type}'. Valid types: {valid_reference_types}")
         
         # Validate action is among allowed actions
         valid_actions = ["create", "update", "delete"]
-        if investor_action not in valid_actions:
-            raise ValueError(f"Invalid action '{investor_action}'. Valid actions: {valid_actions}")
+        if action not in valid_actions:
+            raise ValueError(f"Invalid action '{action}'. Valid actions: {valid_actions}")
         
         # Validate parameter consistency
-        if investor_action in ["create", "delete"] and investor_field_name is not None:
-            raise ValueError(f"field_name should be null for {investor_action} actions")
+        if action in ["create", "delete"] and field_name is not None:
+            raise ValueError(f"field_name should be null for {action} actions")
         
-        if investor_action == "create" and investor_old_value is not None:
+        if action == "create" and old_value is not None:
             raise ValueError("old_value should be null for create actions")
         
-        if investor_action == "delete" and investor_new_value is not None:
+        if action == "delete" and new_value is not None:
             raise ValueError("new_value should be null for delete actions")
         
         # Validate that the referenced entity exists based on reference_type
@@ -59,22 +59,22 @@ class InsertAuditTrail(Tool):
             "notification": "notifications"
         }
         
-        reference_table = reference_tables.get(investor_reference_type)
+        reference_table = reference_tables.get(reference_type)
         if reference_table:
-            if str(investor_reference_id) not in data[reference_table]:
-                raise ValueError(f"{investor_reference_type.title()} {investor_reference_id} not found")
+            if str(reference_id) not in data[reference_table]:
+                raise ValueError(f"{reference_type.title()} {reference_id} not found")
         
         audit_trail_id = generate_id(audit_trails)
         timestamp = "2025-10-01T00:00:00"
         
         new_audit_trail = {
             "audit_trail_id": audit_trail_id,
-            "reference_id": investor_reference_id,
-            "reference_type": investor_reference_type,
-            "action": investor_action,
-            "field_name": investor_field_name,
-            "old_value": investor_old_value,
-            "new_value": investor_new_value,
+            "reference_id": reference_id,
+            "reference_type": reference_type,
+            "action": action,
+            "field_name": field_name,
+            "old_value": old_value,
+            "new_value": new_value,
             "created_at": timestamp
         }
         
@@ -91,14 +91,14 @@ class InsertAuditTrail(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_reference_id": {"type": "string", "description": "ID of the record that was changed"},
-                        "investor_reference_type": {"type": "string", "description": "Type of record being audited (user, fund, investor, subscription, commitment, redemption, trade, portfolio, holding, instrument, invoice, payment, document, report, nav, notification)"},
-                        "investor_action": {"type": "string", "description": "Action performed (create, update, delete, approve, cancel, process)"},
-                        "investor_field_name": {"type": "string", "description": "Name of the field that was changed (null for create/delete actions)"},
-                        "investor_old_value": {"type": "string", "description": "Previous value of the field (null for create actions)"},
-                        "investor_new_value": {"type": "string", "description": "New value of the field (null for delete actions)"}
+                        "reference_id": {"type": "string", "description": "ID of the record that was changed"},
+                        "reference_type": {"type": "string", "description": "Type of record being audited (user, fund, investor, subscription, commitment, redemption, trade, portfolio, holding, instrument, invoice, payment, document, report, nav, notification)"},
+                        "action": {"type": "string", "description": "Action performed (create, update, delete, approve, cancel, process)"},
+                        "field_name": {"type": "string", "description": "Name of the field that was changed (null for create/delete actions)"},
+                        "old_value": {"type": "string", "description": "Previous value of the field (null for create actions)"},
+                        "new_value": {"type": "string", "description": "New value of the field (null for delete actions)"}
                     },
-                    "required": ["investor_reference_id", "investor_reference_type", "investor_action"]
+                    "required": ["reference_id", "reference_type", "action"]
                 }
             }
         }

@@ -6,7 +6,7 @@ class GetInvestorDocuments(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], investor_id: str, 
                document_format: Optional[str] = None, confidentiality_level: Optional[str] = None,
-               investor_status: Optional[str] = None) -> str:
+               status: Optional[str] = None) -> str:
         investors = data.get("investors", {})
         documents = data.get("documents", {})
         reports = data.get("reports", {})
@@ -17,20 +17,20 @@ class GetInvestorDocuments(Tool):
             raise ValueError(f"Investor {investor_id} not found")
         
         # Get documents related to this investor through reports
-        investor_documents = []
+        documents = []
         
         # First, find all reports for this investor
-        investor_report_ids = []
+        report_ids = []
         for report in reports.values():
             if report.get("investor_id") == investor_id:
-                investor_report_ids.append(report.get("report_id"))
+                report_ids.append(report.get("report_id"))
         
         # Then find documents associated with these reports
         for document in documents.values():
             report_id = document.get("report_id")
             
             # Include document if it's associated with investor's reports or if no report_id (general docs)
-            if report_id in investor_report_ids or not report_id:
+            if report_id in report_ids or not report_id:
                 # Filter by format if specified
                 if document_format and document.get("format") != document_format:
                     continue
@@ -39,8 +39,8 @@ class GetInvestorDocuments(Tool):
                 if confidentiality_level and document.get("confidentiality_level") != confidentiality_level:
                     continue
                 
-                # Filter by investor_status if specified
-                if investor_status and document.get("status") != investor_status:
+                # Filter by status if specified
+                if status and document.get("status") != status:
                     continue
                 
                 # Enrich with uploader details
@@ -49,12 +49,12 @@ class GetInvestorDocuments(Tool):
                 
                 enriched_document = {
                     **document,
-                    "uploader_name": f"{uploader.get('investor_first_name', '')} {uploader.get('investor_last_name', '')}".strip(),
+                    "uploader_name": f"{uploader.get('first_name', '')} {uploader.get('last_name', '')}".strip(),
                     "uploader_email": uploader.get("email")
                 }
-                investor_documents.append(enriched_document)
+                documents.append(enriched_document)
         
-        return json.dumps(investor_documents)
+        return json.dumps(documents)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -80,7 +80,7 @@ class GetInvestorDocuments(Tool):
                             "description": "Filter by confidentiality level",
                             "enum": ["public", "internal", "confidential", "restricted"]
                         },
-                        "investor_status": {
+                        "status": {
                             "type": "string",
                             "description": "Filter by document status",
                             "enum": ["available", "archived", "deleted"]

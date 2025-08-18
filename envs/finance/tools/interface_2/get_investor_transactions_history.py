@@ -37,10 +37,10 @@ class GetInvestorTransactionsHistory(Tool):
                     fund_details = funds.get(str(target_fund_id), {})
                     
                     transactions.append({
-                        "investor_transaction_id": subscription.get("subscription_id"),
+                        "transaction_id": subscription.get("subscription_id"),
                         "transaction_type": "subscription",
                         "target_fund_id": target_fund_id,
-                        "fund_name": fund_details.get("investor_name"),
+                        "fund_name": fund_details.get("name"),
                         "amount": subscription.get("amount"),
                         "status": subscription.get("status"),
                         "date": request_date,
@@ -50,8 +50,8 @@ class GetInvestorTransactionsHistory(Tool):
         # Get redemptions
         if not transaction_type or transaction_type == "redemption":
             for redemption in redemptions.values():
-                investor_subscription_id = redemption.get("subscription_id")
-                subscription = subscriptions.get(str(investor_subscription_id), {})
+                subscription_id = redemption.get("subscription_id")
+                subscription = subscriptions.get(str(subscription_id), {})
                 
                 if subscription.get("investor_id") == investor_id:
                     request_date = redemption.get("request_date")
@@ -67,10 +67,10 @@ class GetInvestorTransactionsHistory(Tool):
                     fund_details = funds.get(str(target_fund_id), {})
                     
                     transactions.append({
-                        "investor_transaction_id": redemption.get("redemption_id"),
+                        "transaction_id": redemption.get("redemption_id"),
                         "transaction_type": "redemption",
                         "target_fund_id": target_fund_id,
-                        "fund_name": fund_details.get("investor_name"),
+                        "fund_name": fund_details.get("name"),
                         "amount": redemption.get("redemption_amount"),
                         "status": redemption.get("status"),
                         "date": request_date,
@@ -95,10 +95,10 @@ class GetInvestorTransactionsHistory(Tool):
                     fund_details = funds.get(str(target_fund_id), {})
                     
                     transactions.append({
-                        "investor_transaction_id": commitment.get("commitment_id"),
+                        "transaction_id": commitment.get("commitment_id"),
                         "transaction_type": "commitment",
                         "target_fund_id": target_fund_id,
-                        "fund_name": fund_details.get("investor_name"),
+                        "fund_name": fund_details.get("name"),
                         "amount": commitment.get("commitment_amount"),
                         "status": commitment.get("status"),
                         "date": commitment_date

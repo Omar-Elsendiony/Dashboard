@@ -4,18 +4,18 @@ from tau_bench.envs.tool import Tool
 
 class CancelInvestorSubscription(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_subscription_id: str) -> str:
+    def invoke(data: Dict[str, Any], subscription_id: str) -> str:
         
         subscriptions = data.get("subscriptions", {})
         
         # Validate subscription exists
-        if str(investor_subscription_id) not in subscriptions:
-            return json.dumps({"error": f"Subscription {investor_subscription_id} not found"})
+        if str(subscription_id) not in subscriptions:
+            return json.dumps({"error": f"Subscription {subscription_id} not found"})
         
-        subscription = subscriptions[str(investor_subscription_id)]
+        subscription = subscriptions[str(subscription_id)]
         timestamp = "2025-10-01T00:00:00"
         
-        # Update subscription investor_status
+        # Update subscription status
         subscription["status"] = "cancelled"
         subscription["updated_at"] = timestamp
         
@@ -31,12 +31,12 @@ class CancelInvestorSubscription(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_subscription_id": {
+                        "subscription_id": {
                             "type": "string",
                             "description": "ID of the investor subscription to cancel"
                         }
                     },
-                    "required": ["investor_subscription_id"]
+                    "required": ["subscription_id"]
                 }
             }
         }

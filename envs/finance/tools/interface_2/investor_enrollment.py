@@ -30,11 +30,11 @@ class InvestorEnrollment(Tool):
         
         new_investor = {
             "investor_id": investor_id,
-            "investor_name": legal_entity_name,
+            "name": legal_entity_name,
             "registration_number": incorporation_registration_number,
             "date_of_incorporation": date_of_incorporation,
-            "investor_country": country_of_incorporation,
-            "investor_address": registered_business_address,
+            "country": country_of_incorporation,
+            "address": registered_business_address,
             "tax_id": tax_identification_number,
             "source_of_funds": source_of_funds_declaration,
             "contact_email": "",  # Will need to be provided separately
@@ -50,16 +50,16 @@ class InvestorEnrollment(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "investor_enrollment",
+                "name": "enrollment",
                 "description": "Onboard a new institutional investor after compliance checks",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "legal_entity_name": {"type": "string", "description": "Legal entity investor_name"},
+                        "legal_entity_name": {"type": "string", "description": "Legal entity name"},
                         "incorporation_registration_number": {"type": "string", "description": "Incorporation/registration number"},
                         "date_of_incorporation": {"type": "string", "description": "Date of incorporation (YYYY-MM-DD)"},
                         "country_of_incorporation": {"type": "string", "description": "Country of incorporation"},
-                        "registered_business_address": {"type": "string", "description": "Registered business investor_address"},
+                        "registered_business_address": {"type": "string", "description": "Registered business address"},
                         "tax_identification_number": {"type": "string", "description": "Tax identification number"},
                         "source_of_funds_declaration": {"type": "string", "description": "Source of funds declaration. It should be only one of the following: 'retained_earnings', 'shareholder_capital', 'asset_sale', 'loan_facility', 'external_investment', 'government_grant', 'merger_or_acquisition_proceeds', 'royalty_or_licensing_income', 'dividend_income', 'other'"},
                         "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"}

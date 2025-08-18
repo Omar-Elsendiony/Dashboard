@@ -16,7 +16,6 @@ from .get_investor_commitments import GetInvestorCommitments
 from .get_invoices import GetInvoices
 from .get_notifications import GetNotifications
 from .get_payment_history import GetPaymentHistory
-from .obtain_investor_profile import ObtainInvestorProfile
 from .acquire_reports import AcquireReports
 from .register_payment import RegisterPayment
 from .retrieve_filtered_investors import RetrieveFilteredInvestors

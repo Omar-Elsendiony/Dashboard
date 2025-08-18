@@ -4,8 +4,8 @@ from tau_bench.envs.tool import Tool
 
 class AddPortfolioHolding(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_portfolio_id: str, investor_fund_id: str,
-               investor_quantity: float, investor_cost_basis: float) -> str:
+    def invoke(data: Dict[str, Any], portfolio_id: str, fund_id: str,
+               quantity: float, cost_basis: float) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
@@ -17,22 +17,22 @@ class AddPortfolioHolding(Tool):
         funds = data.get("funds", {})
         
         # Validate portfolio exists
-        if str(investor_portfolio_id) not in portfolios:
-            raise ValueError(f"Portfolio {investor_portfolio_id} not found")
+        if str(portfolio_id) not in portfolios:
+            raise ValueError(f"Portfolio {portfolio_id} not found")
         
         # Validate fund exists
-        if str(investor_fund_id) not in funds:
-            raise ValueError(f"Fund {investor_fund_id} not found")
+        if str(fund_id) not in funds:
+            raise ValueError(f"Fund {fund_id} not found")
         
         portfolio_holding_id = generate_id(portfolio_holdings)
         timestamp = "2025-10-01T00:00:00"
         
         new_holding = {
             "portfolio_holding_id": str(portfolio_holding_id),
-            "portfolio_id": str(investor_portfolio_id),
-            "target_fund_id": str(investor_fund_id),
-            "quantity": investor_quantity,
-            "cost_basis": investor_cost_basis,
+            "portfolio_id": str(portfolio_id),
+            "target_fund_id": str(fund_id),
+            "quantity": quantity,
+            "cost_basis": cost_basis,
             "created_at": timestamp
         }
         
@@ -49,25 +49,25 @@ class AddPortfolioHolding(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_portfolio_id": {
+                        "portfolio_id": {
                             "type": "string",
                             "description": "ID of the investor's portfolio"
                         },
-                        "investor_fund_id": {
+                        "fund_id": {
                             "type": "string",
                             "description": "ID of the fund to add to the portfolio"
                         },
-                        "investor_quantity": {
+                        "quantity": {
                             "type": "number",
                             "description": "Quantity of units to add"
                         },
-                        "investor_cost_basis": {
+                        "cost_basis": {
                             "type": "number",
                             "description": "Cost basis (per unit or total, as expected by your system)"
                         }
                     },
                     "required": [
-                        "investor_portfolio_id", "investor_fund_id", "investor_quantity", "investor_cost_basis"
+                        "portfolio_id", "fund_id", "quantity", "cost_basis"
                     ]
                 }
             }

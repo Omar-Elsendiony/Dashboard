@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class GetInvestorSubscriptionList(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], target_fund_id: Optional[str] = None, 
-               investor_id: Optional[str] = None, investor_status: Optional[str] = None,
+               investor_id: Optional[str] = None, status: Optional[str] = None,
                request_assigned_to: Optional[str] = None) -> str:
         subscriptions = data.get("subscriptions", {})
         results = []
@@ -15,7 +15,7 @@ class GetInvestorSubscriptionList(Tool):
                 continue
             if investor_id and subscription.get("investor_id") != investor_id:
                 continue
-            if investor_status and subscription.get("status") != investor_status:
+            if status and subscription.get("status") != status:
                 continue
             if request_assigned_to and subscription.get("request_assigned_to") != request_assigned_to:
                 continue
@@ -41,7 +41,7 @@ class GetInvestorSubscriptionList(Tool):
                             "type": "string",
                             "description": "Filter by investor ID"
                         },
-                        "investor_status": {
+                        "status": {
                             "type": "string",
                             "description": "Filter by subscription status",
                             "enum": ["pending", "approved", "cancelled"]

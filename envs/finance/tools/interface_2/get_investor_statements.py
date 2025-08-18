@@ -17,7 +17,7 @@ class GetInvestorStatements(Tool):
             raise ValueError(f"Investor {investor_id} not found")
         
         # Get reports for this investor
-        investor_statements = []
+        statements = []
         for report in reports.values():
             if report.get("investor_id") == investor_id:
                 # Filter by report type if specified
@@ -41,8 +41,8 @@ class GetInvestorStatements(Tool):
                 for doc in documents.values():
                     if doc.get("report_id") == report_id:
                         associated_docs.append({
-                            "investor_document_id": doc.get("investor_document_id"),
-                            "investor_name": doc.get("investor_name"),
+                            "document_id": doc.get("document_id"),
+                            "name": doc.get("name"),
                             "format": doc.get("format"),
                             "size_bytes": doc.get("size_bytes"),
                             "upload_date": doc.get("upload_date")
@@ -50,12 +50,12 @@ class GetInvestorStatements(Tool):
                 
                 enriched_report = {
                     **report,
-                    "generator_name": f"{generator.get('investor_first_name', '')} {generator.get('investor_last_name', '')}".strip(),
+                    "generator_name": f"{generator.get('first_name', '')} {generator.get('last_name', '')}".strip(),
                     "documents": associated_docs
                 }
-                investor_statements.append(enriched_report)
+                statements.append(enriched_report)
         
-        return json.dumps(investor_statements)
+        return json.dumps(statements)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:

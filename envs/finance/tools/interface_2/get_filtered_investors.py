@@ -7,8 +7,8 @@ class GetFilteredInvestors(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], 
                accreditation_status: Optional[str] = None,
-               investor_status: Optional[str] = None, 
-               investor_country: Optional[str] = None,
+               status: Optional[str] = None, 
+               country: Optional[str] = None,
                source_of_funds: Optional[str] = None,
                name_contains: Optional[str] = None,
                registration_number: Optional[int] = None,
@@ -29,14 +29,14 @@ class GetFilteredInvestors(Tool):
             # Existing filters
             if accreditation_status and investor.get("accreditation_status") != accreditation_status:
                 continue
-            if investor_status and investor.get("status") != investor_status:
+            if status and investor.get("status") != status:
                 continue
-            if investor_country and investor.get("country") != investor_country:
+            if country and investor.get("country") != country:
                 continue
             if source_of_funds and investor.get("source_of_funds") != source_of_funds:
                 continue
             
-            # New investor_name filter
+            # New name filter
             if name_contains and name_contains.lower() not in investor.get("name", "").lower():
                 continue
             
@@ -106,14 +106,14 @@ class GetFilteredInvestors(Tool):
             
             # Email domain filter
             if email_domain:
-                investor_email = investor.get("contact_email", "")
-                if not investor_email or not investor_email.endswith(f"@{email_domain}"):
+                email = investor.get("contact_email", "")
+                if not email or not email.endswith(f"@{email_domain}"):
                     continue
             
             # Address contains filter
             if address_contains:
-                investor_address = investor.get("address", "")
-                if address_contains.lower() not in investor_address.lower():
+                address = investor.get("address", "")
+                if address_contains.lower() not in address.lower():
                     continue
             
             results.append(investor)
@@ -135,12 +135,12 @@ class GetFilteredInvestors(Tool):
                             "description": "Filter by accreditation status",
                             "enum": ["accredited", "non_accredited"]
                         },
-                        "investor_status": {
+                        "status": {
                             "type": "string",
                             "description": "Filter by investor status",
                             "enum": ["onboarded", "offboarded"]
                         },
-                        "investor_country": {
+                        "country": {
                             "type": "string",
                             "description": "Filter by a specific country"
                         },

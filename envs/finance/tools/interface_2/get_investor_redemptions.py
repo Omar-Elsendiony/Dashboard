@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class GetInvestorRedemptions(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], investor_id: str, 
-               investor_status: Optional[str] = None) -> str:
+               status: Optional[str] = None) -> str:
         investors = data.get("investors", {})
         redemptions = data.get("redemptions", {})
         subscriptions = data.get("subscriptions", {})
@@ -16,16 +16,16 @@ class GetInvestorRedemptions(Tool):
             raise ValueError(f"Investor {investor_id} not found")
         
         # Get redemptions for this investor
-        investor_redemptions = []
+        redemptions = []
         for redemption in redemptions.values():
             # Find the subscription this redemption relates to
-            investor_subscription_id = redemption.get("subscription_id")
-            subscription = subscriptions.get(str(investor_subscription_id), {})
+            subscription_id = redemption.get("subscription_id")
+            subscription = subscriptions.get(str(subscription_id), {})
             
             # Check if this subscription belongs to our investor
             if subscription.get("investor_id") == investor_id:
-                # Filter by investor_status if specified
-                if investor_status and redemption.get("status") != investor_status:
+                # Filter by status if specified
+                if status and redemption.get("status") != status:
                     continue
                 
                 # Enrich with fund details
@@ -39,9 +39,9 @@ class GetInvestorRedemptions(Tool):
                     "fund_type": fund_details.get("fund_type"),
                     "original_subscription_amount": subscription.get("amount")
                 }
-                investor_redemptions.append(enriched_redemption)
+                redemptions.append(enriched_redemption)
         
-        return json.dumps(investor_redemptions)
+        return json.dumps(redemptions)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -57,7 +57,7 @@ class GetInvestorRedemptions(Tool):
                             "type": "string",
                             "description": "ID of the investor"
                         },
-                        "investor_status": {
+                        "status": {
                             "type": "string",
                             "description": "Filter by redemption status",
                             "enum": ["pending", "approved", "processed", "cancelled"]

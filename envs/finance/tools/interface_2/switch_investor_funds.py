@@ -61,9 +61,9 @@ class SwitchInvestorFunds(Tool):
         current_subscription["updated_at"] = timestamp
         
         # Create new subscription in target fund
-        investor_subscription_id = generate_id(subscriptions)
+        subscription_id = generate_id(subscriptions)
         new_subscription = {
-            "subscription_id": investor_subscription_id,
+            "subscription_id": subscription_id,
             "target_fund_id": int(target_fund_id),
             "investor_id": int(investor_id),
             "amount": switch_amount,
@@ -73,7 +73,7 @@ class SwitchInvestorFunds(Tool):
             "approval_date": timestamp.split("T")[0],
             "updated_at": timestamp
         }
-        subscriptions[str(investor_subscription_id)] = new_subscription
+        subscriptions[str(subscription_id)] = new_subscription
         
         return json.dumps({"success": True, "message": "Switch complete"})
 
