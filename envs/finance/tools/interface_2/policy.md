@@ -194,7 +194,7 @@ This policy defines responsibilities, principles, and procedures for agents oper
 
 ## Standard Operating Procedures (SOPs)
 
-All SOPs are executed in a single turn. Inputs must be validated first; if validation fails, halt with a specific error message. Log all steps using add_audit_trail. If any operation fails, halt and provide specific error details.
+All SOPs are executed in a single turn. Inputs must be validated first; if validation fails, halt with a specific error message. Log all steps using append_audit_trail. If any operation fails, halt and provide specific error details.
 
 ### Investor Onboarding SOP
 
@@ -261,7 +261,7 @@ All SOPs are executed in a single turn. Inputs must be validated first; if valid
 
 - **Audit Trail Logging**:
 
-  - Every transaction, approval, and system change must be logged using add_audit_trail
+  - Every transaction, approval, and system change must be logged using append_audit_trail
   - Valid reference types: user, fund, investor, subscription, commitment, redemption, trade, portfolio, holding, instrument, invoice, payment, document, report, nav, notification
   - Valid actions: create, update, delete, approve, cancel, process
   - Business rules enforced:

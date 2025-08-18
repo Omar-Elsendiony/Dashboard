@@ -3,7 +3,7 @@ from .append_audit_trail import AppendAuditTrail
 from .authenticate_approval import AuthenticateApproval
 from .deactivate_reactivate_instrument import DeactivateReactivateInstrument
 from .dispatch_email_notification import DispatchEmailNotification
-from .fetch_filtered_investors import FetchFilteredInvestors
+from .query_investors import QueryInvestors
 from .fetch_investor_documents import FetchInvestorDocuments
 from .fetch_investor_portfolio import FetchInvestorPortfolio
 from .fetch_investor_portfolio_holdings import FetchInvestorPortfolioHoldings
@@ -35,7 +35,7 @@ ALL_TOOLS_INTERFACE_5 = [
     AuthenticateApproval,
     DeactivateReactivateInstrument,
     DispatchEmailNotification,
-    FetchFilteredInvestors,
+    QueryInvestors,
     FetchInvestorDocuments,
     FetchInvestorPortfolio,
     FetchInvestorPortfolioHoldings,
