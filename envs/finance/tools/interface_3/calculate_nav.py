@@ -52,7 +52,7 @@ class CalculateNav(Tool):
         
         nav_records[str(nav_id)] = new_nav_record
         
-        return json.dumps({"nav_value": nav_value, "success": True, "message": "NAV updated"})
+        return json.dumps({"new_nav_record": new_nav_record, "success": True, "message": "NAV updated"})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
