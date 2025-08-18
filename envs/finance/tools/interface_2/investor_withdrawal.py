@@ -34,7 +34,7 @@ class InvestorWithdrawal(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "withdrawal",
+                "name": "investor_withdrawal",
                 "description": "Offboard an investor after compliance approval",
                 "parameters": {
                     "type": "object",

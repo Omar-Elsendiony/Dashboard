@@ -4,134 +4,107 @@ from tau_bench.envs.tool import Tool
 
 class ProcessInvestorRedemption(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_id: str, target_fund_id: str, 
-               amount_or_units: float, compliance_approval: bool, 
+    def invoke(data: Dict[str, Any], subscription_id: str,
+               holding_units: float, compliance_approval: bool,
                finance_approval: bool) -> str:
 
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
                 return 1
             return max(int(k) for k in table.keys()) + 1
-        
+
+        subscriptions = data.get("subscriptions", {})
         investors = data.get("investors", {})
         funds = data.get("funds", {})
-        subscriptions = data.get("subscriptions", {})
-        redemptions = data.get("redemptions", {})
         portfolios = data.get("portfolios", {})
         portfolio_holdings = data.get("portfolio_holdings", {})
-        
-        # Validate investor exists
-        if str(investor_id) not in investors:
-            return json.dumps({"success": False, "message": "Investor not found"})
-        
-        # Validate fund exists
-        if str(target_fund_id) not in funds:
-            return json.dumps({"success": False, "message": "Fund not found"})
-        
-        # Check if fund is open
-        if funds[str(target_fund_id)].get("status") != "open":
-            return json.dumps({"success": False, "message": "Fund is not open for redemptions"})
-        
-        # Validate approvals
+        redemptions = data.get("redemptions", {})
+
+        # --- Validate approvals ---
         if not compliance_approval or not finance_approval:
             return json.dumps({"success": False, "message": "Required approvals not obtained"})
-        
-        # Find ALL subscriptions and calculate total (OPTION 1)
-        all_subscription_ids = []
-        all_subscriptions = []
-        total_subscription_amount = 0
 
-        for sub_id, sub in subscriptions.items():
-            if (sub.get("investor_id") == investor_id and 
-                sub.get("target_fund_id") == target_fund_id and 
-                sub.get("status") == "approved"):
-                all_subscription_ids.append(sub.get("subscription_id"))
-                all_subscriptions.append(sub)
-                total_subscription_amount += float(sub.get("amount", 0))
+        # --- Validate subscription ---
+        subscription = subscriptions.get(str(subscription_id))
+        if not subscription:
+            return json.dumps({"success": False, "message": "Subscription not found"})
+        if subscription.get("status") != "approved":
+            return json.dumps({"success": False, "message": "Subscription is not active/approved"})
 
-        if not all_subscription_ids:
-            return json.dumps({"success": False, "message": "No active subscription found for this investor and fund"})
+        investor_id = str(subscription.get("investor_id"))
+        fund_id = str(subscription.get("fund_id"))
 
-        # Check existing redemptions against ALL subscriptions
-        total_redeemed = 0
-        for redemption in redemptions.values():
-            if (redemption.get("subscription_id") in all_subscription_ids and
-                redemption.get("status") in ["approved", "processed"]):
-                total_redeemed += float(redemption.get("redemption_amount", 0))
-        
-        # Calculate available balance
-        available_balance = total_subscription_amount - total_redeemed
-        
-        # Validate sufficient balance
-        if available_balance < amount_or_units:
+        # --- Validate fund ---
+        fund = funds.get(fund_id)
+        if not fund:
+            return json.dumps({"success": False, "message": "Fund not found"})
+        if fund.get("status") != "open":
+            return json.dumps({"success": False, "message": "Fund is not open for redemptions"})
+
+        # --- Validate investor ---
+        if investor_id not in investors:
+            return json.dumps({"success": False, "message": "Investor not found"})
+
+        # --- Find investor's portfolio ---
+        investor_portfolio = next(
+            (p for p in portfolios.values() if str(p.get("investor_id")) == investor_id),
+            None
+        )
+        if not investor_portfolio:
+            return json.dumps({"success": False, "message": "No portfolio found for this investor"})
+
+        # --- Find portfolio holding for this fund ---
+        holding = next(
+            (h for h in portfolio_holdings.values()
+             if str(h.get("portfolio_id")) == str(investor_portfolio.get("portfolio_id"))
+             and str(h.get("fund_id")) == fund_id),
+            None
+        )
+        if not holding:
+            return json.dumps({"success": False, "message": "No holding found for this fund in the investor's portfolio"})
+
+        current_units = float(holding.get("quantity", 0))
+        cost_basis = float(holding.get("cost_basis", 0))
+
+        if holding_units > current_units:
             return json.dumps({
-                "success": False, 
-                "message": f"Insufficient balance. Available: {available_balance}, Requested: {amount_or_units}"
+                "success": False,
+                "message": f"Insufficient holdings. Available: {current_units}, Requested: {holding_units}"
             })
-        
-        # Additional validation: Check portfolio holdings if they exist
-        portfolio = None
-        for portfolio in portfolios.values():
-            if portfolio.get("investor_id") == investor_id:
-                portfolio = portfolio
-                break
-        
-        if portfolio:
-            # Check portfolio holdings for this fund
-            fund_holdings = 0
-            for holding in portfolio_holdings.values():
-                if (holding.get("portfolio_id") == portfolio.get("portfolio_id") and
-                    holding.get("target_fund_id") == target_fund_id):
-                    fund_holdings += float(holding.get("quantity", 0))
-            
-            # Validate against portfolio holdings if they exist
-            if fund_holdings > 0 and fund_holdings < amount_or_units:
-                return json.dumps({
-                    "success": False, 
-                    "message": f"Insufficient holdings in portfolio. Available: {fund_holdings}, Requested: {amount_or_units}"
-                })
-        
+
+        # --- Calculate redemption amount ---
+        redemption_amount = holding_units * cost_basis
+
+        # --- Create redemption record ---
         redemption_id = generate_id(redemptions)
         timestamp = "2025-10-01T00:00:00"
-        
-        # Use the first subscription for the redemption record (or you could choose differently)
-        primary_subscription = all_subscriptions[0]
-        
+
         new_redemption = {
             "redemption_id": redemption_id,
-            "subscription_id": primary_subscription.get("subscription_id"),
+            "subscription_id": subscription_id,
             "request_date": "2025-10-01",
-            "redemption_amount": amount_or_units,
-            "status": "approved",
+            "redemption_units": holding_units,
+            "redemption_amount": round(redemption_amount, 2),
+            "status": "processed",
             "processed_date": "2025-10-01",
             "updated_at": timestamp,
-            "redemption_fee": round(amount_or_units * 0.01, 2)  # 1% fee
+            "redemption_fee": round(redemption_amount * 0.01, 2)  # 1% fee
         }
-        
+
         redemptions[str(redemption_id)] = new_redemption
-        
-        # Update portfolio holdings if they exist
-        if portfolio:
-            for portfolio_holding_id, holding in portfolio_holdings.items():
-                if (holding.get("portfolio_id") == portfolio.get("portfolio_id") and
-                    holding.get("target_fund_id") == target_fund_id):
-                    # Reduce the holding quantity
-                    current_quantity = float(holding.get("quantity", 0))
-                    new_quantity = max(0, current_quantity - amount_or_units)
-                    holding["quantity"] = new_quantity
-                    break
-        
+
+        # --- Update portfolio holding quantity ---
+        holding["quantity"] = round(current_units - holding_units, 4)
+
         return json.dumps({
-            "success": True, 
+            "success": True,
             "message": "Redemption processed",
-            "redemption_id": redemption_id,
-            "remaining_balance": available_balance - amount_or_units,
-            "debug_info": {
-                "total_subscriptions_found": len(all_subscription_ids),
-                "total_subscription_amount": total_subscription_amount,
-                "total_redeemed_before": total_redeemed,
-                "available_balance_before": available_balance
-            }
+            "investor_id": investor_id,
+            "fund_id": fund_id,
+            "redemption": new_redemption,
+            "redeemed_units": holding_units,
+            "redeemed_amount": round(redemption_amount, 2),
+            "remaining_units": holding["quantity"]
         })
 
     @staticmethod
@@ -140,17 +113,28 @@ class ProcessInvestorRedemption(Tool):
             "type": "function",
             "function": {
                 "name": "process_investor_redemption",
-                "description": "Process a redemption request for an investor with balance validation across all subscriptions",
+                "description": "Process a redemption request for an investor based on subscription and portfolio holdings",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_id": {"type": "string", "description": "ID of the investor"},
-                        "target_fund_id": {"type": "string", "description": "ID of the fund"},
-                        "amount_or_units": {"type": "number", "description": "Amount or units to redeem"},
-                        "compliance_approval": {"type": "boolean", "description": "Compliance approval flag (True for approved/False for rejected)"},
-                        "finance_approval": {"type": "boolean", "description": "Finance approval flag (True for approved/False for rejected)"}
+                        "subscription_id": {
+                            "type": "string",
+                            "description": "ID of the investor's approved subscription linked to the fund"
+                        },
+                        "holding_units": {
+                            "type": "number",
+                            "description": "Number of units the investor requests to redeem (must not exceed portfolio holding)"
+                        },
+                        "compliance_approval": {
+                            "type": "boolean",
+                            "description": "Compliance approval flag (True for approved, False for rejected)"
+                        },
+                        "finance_approval": {
+                            "type": "boolean",
+                            "description": "Finance approval flag (True for approved, False for rejected)"
+                        }
                     },
-                    "required": ["investor_id", "target_fund_id", "amount_or_units", "compliance_approval", "finance_approval"]
+                    "required": ["subscription_id", "holding_units", "compliance_approval", "finance_approval"]
                 }
             }
         }

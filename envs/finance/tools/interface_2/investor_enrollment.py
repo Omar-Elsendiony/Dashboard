@@ -50,7 +50,7 @@ class InvestorEnrollment(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "enrollment",
+                "name": "investor_enrollment",
                 "description": "Onboard a new institutional investor after compliance checks",
                 "parameters": {
                     "type": "object",
