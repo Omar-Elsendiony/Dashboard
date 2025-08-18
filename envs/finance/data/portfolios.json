@@ -1,4482 +1,1227 @@
 {
-    "1": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.445031",
-      "updated_at": "2025-08-04T23:40:21.445031",
-      "investor_id": "1",
-      "base_currency": "GBP",
-      "portfolio_id": "1"
-    },
-    "2": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.447983",
-      "updated_at": "2025-08-04T23:40:21.447983",
-      "investor_id": "2",
-      "base_currency": "EUR",
-      "portfolio_id": "2"
-    },
-    "3": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.447983",
-      "updated_at": "2025-08-04T23:40:21.447983",
-      "investor_id": "3",
-      "base_currency": "NGN",
-      "portfolio_id": "3"
-    },
-    "4": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.44898",
-      "updated_at": "2025-08-04T23:40:21.44898",
-      "investor_id": "4",
-      "base_currency": "USD",
-      "portfolio_id": "4"
-    },
-    "5": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.44898",
-      "updated_at": "2025-08-04T23:40:21.44898",
-      "investor_id": "5",
-      "base_currency": "GBP",
-      "portfolio_id": "5"
-    },
-    "6": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.449979",
-      "updated_at": "2025-08-04T23:40:21.449979",
-      "investor_id": "6",
-      "base_currency": "NGN",
-      "portfolio_id": "6"
-    },
-    "7": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.449979",
-      "updated_at": "2025-08-04T23:40:21.451001",
-      "investor_id": "7",
-      "base_currency": "NGN",
-      "portfolio_id": "7"
-    },
-    "8": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.451001",
-      "updated_at": "2025-08-04T23:40:21.451001",
-      "investor_id": "8",
-      "base_currency": "GBP",
-      "portfolio_id": "8"
-    },
-    "9": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.451998",
-      "updated_at": "2025-08-04T23:40:21.451998",
-      "investor_id": "9",
-      "base_currency": "USD",
-      "portfolio_id": "9"
-    },
-    "10": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.451998",
-      "updated_at": "2025-08-04T23:40:21.451998",
-      "investor_id": "10",
-      "base_currency": "USD",
-      "portfolio_id": "10"
-    },
-    "11": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.45297",
-      "updated_at": "2025-08-04T23:40:21.45297",
-      "investor_id": "11",
-      "base_currency": "GBP",
-      "portfolio_id": "11"
-    },
-    "12": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.45297",
-      "updated_at": "2025-08-04T23:40:21.45297",
-      "investor_id": "12",
-      "base_currency": "NGN",
-      "portfolio_id": "12"
-    },
-    "13": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.453967",
-      "updated_at": "2025-08-04T23:40:21.453967",
-      "investor_id": "13",
-      "base_currency": "GBP",
-      "portfolio_id": "13"
-    },
-    "14": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.453967",
-      "updated_at": "2025-08-04T23:40:21.453967",
-      "investor_id": "14",
-      "base_currency": "GBP",
-      "portfolio_id": "14"
-    },
-    "15": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.454965",
-      "updated_at": "2025-08-04T23:40:21.454965",
-      "investor_id": "15",
-      "base_currency": "GBP",
-      "portfolio_id": "15"
-    },
-    "16": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.454965",
-      "updated_at": "2025-08-04T23:40:21.454965",
-      "investor_id": "16",
-      "base_currency": "GBP",
-      "portfolio_id": "16"
-    },
-    "17": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.455963",
-      "updated_at": "2025-08-04T23:40:21.455963",
-      "investor_id": "17",
-      "base_currency": "USD",
-      "portfolio_id": "17"
-    },
-    "18": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.455963",
-      "updated_at": "2025-08-04T23:40:21.455963",
-      "investor_id": "18",
-      "base_currency": "GBP",
-      "portfolio_id": "18"
-    },
-    "19": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.456958",
-      "updated_at": "2025-08-04T23:40:21.456958",
-      "investor_id": "19",
-      "base_currency": "NGN",
-      "portfolio_id": "19"
-    },
-    "20": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.456958",
-      "updated_at": "2025-08-04T23:40:21.456958",
-      "investor_id": "20",
-      "base_currency": "NGN",
-      "portfolio_id": "20"
-    },
-    "21": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.457957",
-      "updated_at": "2025-08-04T23:40:21.457957",
-      "investor_id": "21",
-      "base_currency": "EUR",
-      "portfolio_id": "21"
-    },
-    "22": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.457957",
-      "updated_at": "2025-08-04T23:40:21.457957",
-      "investor_id": "22",
-      "base_currency": "EUR",
-      "portfolio_id": "22"
-    },
-    "23": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.458953",
-      "updated_at": "2025-08-04T23:40:21.458953",
-      "investor_id": "23",
-      "base_currency": "GBP",
-      "portfolio_id": "23"
-    },
-    "24": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.459951",
-      "updated_at": "2025-08-04T23:40:21.459951",
-      "investor_id": "24",
-      "base_currency": "EUR",
-      "portfolio_id": "24"
-    },
-    "25": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.459951",
-      "updated_at": "2025-08-04T23:40:21.459951",
-      "investor_id": "25",
-      "base_currency": "GBP",
-      "portfolio_id": "25"
-    },
-    "26": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.460948",
-      "updated_at": "2025-08-04T23:40:21.460948",
-      "investor_id": "26",
-      "base_currency": "USD",
-      "portfolio_id": "26"
-    },
-    "27": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.460948",
-      "updated_at": "2025-08-04T23:40:21.460948",
-      "investor_id": "27",
-      "base_currency": "USD",
-      "portfolio_id": "27"
-    },
-    "28": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.461945",
-      "updated_at": "2025-08-04T23:40:21.461945",
-      "investor_id": "28",
-      "base_currency": "USD",
-      "portfolio_id": "28"
-    },
-    "29": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.461945",
-      "updated_at": "2025-08-04T23:40:21.461945",
-      "investor_id": "29",
-      "base_currency": "USD",
-      "portfolio_id": "29"
-    },
-    "30": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.462943",
-      "updated_at": "2025-08-04T23:40:21.462943",
-      "investor_id": "30",
-      "base_currency": "NGN",
-      "portfolio_id": "30"
-    },
-    "31": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.462943",
-      "updated_at": "2025-08-04T23:40:21.462943",
-      "investor_id": "31",
-      "base_currency": "USD",
-      "portfolio_id": "31"
-    },
-    "32": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.464089",
-      "updated_at": "2025-08-04T23:40:21.464089",
-      "investor_id": "32",
-      "base_currency": "USD",
-      "portfolio_id": "32"
-    },
-    "33": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.464089",
-      "updated_at": "2025-08-04T23:40:21.464089",
-      "investor_id": "33",
-      "base_currency": "NGN",
-      "portfolio_id": "33"
-    },
-    "34": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.465089",
-      "updated_at": "2025-08-04T23:40:21.465089",
-      "investor_id": "34",
-      "base_currency": "GBP",
-      "portfolio_id": "34"
-    },
-    "35": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.465089",
-      "updated_at": "2025-08-04T23:40:21.465089",
-      "investor_id": "35",
-      "base_currency": "EUR",
-      "portfolio_id": "35"
-    },
-    "36": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.466084",
-      "updated_at": "2025-08-04T23:40:21.466084",
-      "investor_id": "36",
-      "base_currency": "GBP",
-      "portfolio_id": "36"
-    },
-    "37": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.467081",
-      "updated_at": "2025-08-04T23:40:21.467081",
-      "investor_id": "37",
-      "base_currency": "GBP",
-      "portfolio_id": "37"
-    },
-    "38": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.467081",
-      "updated_at": "2025-08-04T23:40:21.467081",
-      "investor_id": "38",
-      "base_currency": "EUR",
-      "portfolio_id": "38"
-    },
-    "39": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.468078",
-      "updated_at": "2025-08-04T23:40:21.468078",
-      "investor_id": "39",
-      "base_currency": "USD",
-      "portfolio_id": "39"
-    },
-    "40": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.468078",
-      "updated_at": "2025-08-04T23:40:21.468078",
-      "investor_id": "40",
-      "base_currency": "USD",
-      "portfolio_id": "40"
-    },
-    "41": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.469021",
-      "updated_at": "2025-08-04T23:40:21.469021",
-      "investor_id": "41",
-      "base_currency": "USD",
-      "portfolio_id": "41"
-    },
-    "42": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.469538",
-      "updated_at": "2025-08-04T23:40:21.469538",
-      "investor_id": "42",
-      "base_currency": "USD",
-      "portfolio_id": "42"
-    },
-    "43": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.470055",
-      "updated_at": "2025-08-04T23:40:21.470055",
-      "investor_id": "43",
-      "base_currency": "EUR",
-      "portfolio_id": "43"
-    },
-    "44": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.470573",
-      "updated_at": "2025-08-04T23:40:21.470573",
-      "investor_id": "44",
-      "base_currency": "USD",
-      "portfolio_id": "44"
-    },
-    "45": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.471092",
-      "updated_at": "2025-08-04T23:40:21.471092",
-      "investor_id": "45",
-      "base_currency": "USD",
-      "portfolio_id": "45"
-    },
-    "46": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.471092",
-      "updated_at": "2025-08-04T23:40:21.471092",
-      "investor_id": "46",
-      "base_currency": "USD",
-      "portfolio_id": "46"
-    },
-    "47": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.472092",
-      "updated_at": "2025-08-04T23:40:21.472092",
-      "investor_id": "47",
-      "base_currency": "EUR",
-      "portfolio_id": "47"
-    },
-    "48": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.472652",
-      "updated_at": "2025-08-04T23:40:21.472652",
-      "investor_id": "48",
-      "base_currency": "NGN",
-      "portfolio_id": "48"
-    },
-    "49": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.473166",
-      "updated_at": "2025-08-04T23:40:21.473166",
-      "investor_id": "49",
-      "base_currency": "EUR",
-      "portfolio_id": "49"
-    },
-    "50": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.473678",
-      "updated_at": "2025-08-04T23:40:21.473678",
-      "investor_id": "50",
-      "base_currency": "USD",
-      "portfolio_id": "50"
-    },
-    "51": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.474189",
-      "updated_at": "2025-08-04T23:40:21.474189",
-      "investor_id": "51",
-      "base_currency": "EUR",
-      "portfolio_id": "51"
-    },
-    "52": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.474703",
-      "updated_at": "2025-08-04T23:40:21.474703",
-      "investor_id": "52",
-      "base_currency": "GBP",
-      "portfolio_id": "52"
-    },
-    "53": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.475217",
-      "updated_at": "2025-08-04T23:40:21.475217",
-      "investor_id": "53",
-      "base_currency": "GBP",
-      "portfolio_id": "53"
-    },
-    "54": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.475767",
-      "updated_at": "2025-08-04T23:40:21.475767",
-      "investor_id": "54",
-      "base_currency": "NGN",
-      "portfolio_id": "54"
-    },
-    "55": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.476289",
-      "updated_at": "2025-08-04T23:40:21.476289",
-      "investor_id": "55",
-      "base_currency": "USD",
-      "portfolio_id": "55"
-    },
-    "56": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.476811",
-      "updated_at": "2025-08-04T23:40:21.476811",
-      "investor_id": "56",
-      "base_currency": "NGN",
-      "portfolio_id": "56"
-    },
-    "57": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.477332",
-      "updated_at": "2025-08-04T23:40:21.477332",
-      "investor_id": "57",
-      "base_currency": "GBP",
-      "portfolio_id": "57"
-    },
-    "58": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.477859",
-      "updated_at": "2025-08-04T23:40:21.477859",
-      "investor_id": "58",
-      "base_currency": "NGN",
-      "portfolio_id": "58"
-    },
-    "59": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.478379",
-      "updated_at": "2025-08-04T23:40:21.478379",
-      "investor_id": "59",
-      "base_currency": "GBP",
-      "portfolio_id": "59"
-    },
-    "60": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.478901",
-      "updated_at": "2025-08-04T23:40:21.478901",
-      "investor_id": "60",
-      "base_currency": "GBP",
-      "portfolio_id": "60"
-    },
-    "61": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.479424",
-      "updated_at": "2025-08-04T23:40:21.479424",
-      "investor_id": "61",
-      "base_currency": "EUR",
-      "portfolio_id": "61"
-    },
-    "62": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.479949",
-      "updated_at": "2025-08-04T23:40:21.479949",
-      "investor_id": "62",
-      "base_currency": "USD",
-      "portfolio_id": "62"
-    },
-    "63": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.480471",
-      "updated_at": "2025-08-04T23:40:21.480471",
-      "investor_id": "63",
-      "base_currency": "GBP",
-      "portfolio_id": "63"
-    },
-    "64": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.480997",
-      "updated_at": "2025-08-04T23:40:21.480997",
-      "investor_id": "64",
-      "base_currency": "USD",
-      "portfolio_id": "64"
-    },
-    "65": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.480997",
-      "updated_at": "2025-08-04T23:40:21.480997",
-      "investor_id": "65",
-      "base_currency": "NGN",
-      "portfolio_id": "65"
-    },
-    "66": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.48221",
-      "updated_at": "2025-08-04T23:40:21.48221",
-      "investor_id": "66",
-      "base_currency": "NGN",
-      "portfolio_id": "66"
-    },
-    "67": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.48275",
-      "updated_at": "2025-08-04T23:40:21.48275",
-      "investor_id": "67",
-      "base_currency": "GBP",
-      "portfolio_id": "67"
-    },
-    "68": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.48275",
-      "updated_at": "2025-08-04T23:40:21.48275",
-      "investor_id": "68",
-      "base_currency": "USD",
-      "portfolio_id": "68"
-    },
-    "69": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.48275",
-      "updated_at": "2025-08-04T23:40:21.48275",
-      "investor_id": "69",
-      "base_currency": "GBP",
-      "portfolio_id": "69"
-    },
-    "70": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.484325",
-      "updated_at": "2025-08-04T23:40:21.484325",
-      "investor_id": "70",
-      "base_currency": "GBP",
-      "portfolio_id": "70"
-    },
-    "71": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.48487",
-      "updated_at": "2025-08-04T23:40:21.48487",
-      "investor_id": "71",
-      "base_currency": "EUR",
-      "portfolio_id": "71"
-    },
-    "72": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.485392",
-      "updated_at": "2025-08-04T23:40:21.485392",
-      "investor_id": "72",
-      "base_currency": "NGN",
-      "portfolio_id": "72"
-    },
-    "73": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.485926",
-      "updated_at": "2025-08-04T23:40:21.485926",
-      "investor_id": "73",
-      "base_currency": "USD",
-      "portfolio_id": "73"
-    },
-    "74": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.485926",
-      "updated_at": "2025-08-04T23:40:21.485926",
-      "investor_id": "74",
-      "base_currency": "NGN",
-      "portfolio_id": "74"
-    },
-    "75": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.485926",
-      "updated_at": "2025-08-04T23:40:21.485926",
-      "investor_id": "75",
-      "base_currency": "EUR",
-      "portfolio_id": "75"
-    },
-    "76": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.487395",
-      "updated_at": "2025-08-04T23:40:21.487395",
-      "investor_id": "76",
-      "base_currency": "NGN",
-      "portfolio_id": "76"
-    },
-    "77": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.488194",
-      "updated_at": "2025-08-04T23:40:21.488194",
-      "investor_id": "77",
-      "base_currency": "EUR",
-      "portfolio_id": "77"
-    },
-    "78": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.488194",
-      "updated_at": "2025-08-04T23:40:21.488194",
-      "investor_id": "78",
-      "base_currency": "NGN",
-      "portfolio_id": "78"
-    },
-    "79": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.489329",
-      "updated_at": "2025-08-04T23:40:21.489329",
-      "investor_id": "79",
-      "base_currency": "USD",
-      "portfolio_id": "79"
-    },
-    "80": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.489873",
-      "updated_at": "2025-08-04T23:40:21.489873",
-      "investor_id": "80",
-      "base_currency": "EUR",
-      "portfolio_id": "80"
-    },
-    "81": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.490421",
-      "updated_at": "2025-08-04T23:40:21.490421",
-      "investor_id": "81",
-      "base_currency": "NGN",
-      "portfolio_id": "81"
-    },
-    "82": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.490963",
-      "updated_at": "2025-08-04T23:40:21.490963",
-      "investor_id": "82",
-      "base_currency": "EUR",
-      "portfolio_id": "82"
-    },
-    "83": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.491504",
-      "updated_at": "2025-08-04T23:40:21.491504",
-      "investor_id": "83",
-      "base_currency": "USD",
-      "portfolio_id": "83"
-    },
-    "84": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.492051",
-      "updated_at": "2025-08-04T23:40:21.492051",
-      "investor_id": "84",
-      "base_currency": "NGN",
-      "portfolio_id": "84"
-    },
-    "85": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.492597",
-      "updated_at": "2025-08-04T23:40:21.492597",
-      "investor_id": "85",
-      "base_currency": "GBP",
-      "portfolio_id": "85"
-    },
-    "86": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.493157",
-      "updated_at": "2025-08-04T23:40:21.493157",
-      "investor_id": "86",
-      "base_currency": "USD",
-      "portfolio_id": "86"
-    },
-    "87": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.493679",
-      "updated_at": "2025-08-04T23:40:21.493679",
-      "investor_id": "87",
-      "base_currency": "USD",
-      "portfolio_id": "87"
-    },
-    "88": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.49421",
-      "updated_at": "2025-08-04T23:40:21.49421",
-      "investor_id": "88",
-      "base_currency": "USD",
-      "portfolio_id": "88"
-    },
-    "89": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.494731",
-      "updated_at": "2025-08-04T23:40:21.494731",
-      "investor_id": "89",
-      "base_currency": "USD",
-      "portfolio_id": "89"
-    },
-    "90": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.495248",
-      "updated_at": "2025-08-04T23:40:21.495248",
-      "investor_id": "90",
-      "base_currency": "GBP",
-      "portfolio_id": "90"
-    },
-    "91": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.49577",
-      "updated_at": "2025-08-04T23:40:21.49577",
-      "investor_id": "91",
-      "base_currency": "NGN",
-      "portfolio_id": "91"
-    },
-    "92": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.496294",
-      "updated_at": "2025-08-04T23:40:21.496294",
-      "investor_id": "92",
-      "base_currency": "USD",
-      "portfolio_id": "92"
-    },
-    "93": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.496814",
-      "updated_at": "2025-08-04T23:40:21.496814",
-      "investor_id": "93",
-      "base_currency": "NGN",
-      "portfolio_id": "93"
-    },
-    "94": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.497338",
-      "updated_at": "2025-08-04T23:40:21.497338",
-      "investor_id": "94",
-      "base_currency": "EUR",
-      "portfolio_id": "94"
-    },
-    "95": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.497706",
-      "updated_at": "2025-08-04T23:40:21.497706",
-      "investor_id": "95",
-      "base_currency": "USD",
-      "portfolio_id": "95"
-    },
-    "96": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.498707",
-      "updated_at": "2025-08-04T23:40:21.498707",
-      "investor_id": "96",
-      "base_currency": "USD",
-      "portfolio_id": "96"
-    },
-    "97": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.499207",
-      "updated_at": "2025-08-04T23:40:21.499207",
-      "investor_id": "97",
-      "base_currency": "NGN",
-      "portfolio_id": "97"
-    },
-    "98": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.499752",
-      "updated_at": "2025-08-04T23:40:21.499752",
-      "investor_id": "98",
-      "base_currency": "GBP",
-      "portfolio_id": "98"
-    },
-    "99": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.500277",
-      "updated_at": "2025-08-04T23:40:21.500277",
-      "investor_id": "99",
-      "base_currency": "EUR",
-      "portfolio_id": "99"
-    },
-    "100": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.500802",
-      "updated_at": "2025-08-04T23:40:21.500802",
-      "investor_id": "100",
-      "base_currency": "GBP",
-      "portfolio_id": "100"
-    },
-    "101": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.501335",
-      "updated_at": "2025-08-04T23:40:21.501335",
-      "investor_id": "101",
-      "base_currency": "NGN",
-      "portfolio_id": "101"
-    },
-    "102": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.501335",
-      "updated_at": "2025-08-04T23:40:21.501335",
-      "investor_id": "102",
-      "base_currency": "USD",
-      "portfolio_id": "102"
-    },
-    "103": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.501335",
-      "updated_at": "2025-08-04T23:40:21.501335",
-      "investor_id": "103",
-      "base_currency": "NGN",
-      "portfolio_id": "103"
-    },
-    "104": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.502809",
-      "updated_at": "2025-08-04T23:40:21.502809",
-      "investor_id": "104",
-      "base_currency": "NGN",
-      "portfolio_id": "104"
-    },
-    "105": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.502809",
-      "updated_at": "2025-08-04T23:40:21.502809",
-      "investor_id": "105",
-      "base_currency": "NGN",
-      "portfolio_id": "105"
-    },
-    "106": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.503809",
-      "updated_at": "2025-08-04T23:40:21.503809",
-      "investor_id": "106",
-      "base_currency": "NGN",
-      "portfolio_id": "106"
-    },
-    "107": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.504806",
-      "updated_at": "2025-08-04T23:40:21.504806",
-      "investor_id": "107",
-      "base_currency": "USD",
-      "portfolio_id": "107"
-    },
-    "108": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.505028",
-      "updated_at": "2025-08-04T23:40:21.505028",
-      "investor_id": "108",
-      "base_currency": "EUR",
-      "portfolio_id": "108"
-    },
-    "109": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.505616",
-      "updated_at": "2025-08-04T23:40:21.505616",
-      "investor_id": "109",
-      "base_currency": "USD",
-      "portfolio_id": "109"
-    },
-    "110": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.506134",
-      "updated_at": "2025-08-04T23:40:21.506134",
-      "investor_id": "110",
-      "base_currency": "NGN",
-      "portfolio_id": "110"
-    },
-    "111": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.50666",
-      "updated_at": "2025-08-04T23:40:21.50666",
-      "investor_id": "111",
-      "base_currency": "NGN",
-      "portfolio_id": "111"
-    },
-    "112": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.507177",
-      "updated_at": "2025-08-04T23:40:21.507177",
-      "investor_id": "112",
-      "base_currency": "USD",
-      "portfolio_id": "112"
-    },
-    "113": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.507697",
-      "updated_at": "2025-08-04T23:40:21.507697",
-      "investor_id": "113",
-      "base_currency": "GBP",
-      "portfolio_id": "113"
-    },
-    "114": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.508218",
-      "updated_at": "2025-08-04T23:40:21.508218",
-      "investor_id": "114",
-      "base_currency": "GBP",
-      "portfolio_id": "114"
-    },
-    "115": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.508736",
-      "updated_at": "2025-08-04T23:40:21.508736",
-      "investor_id": "115",
-      "base_currency": "GBP",
-      "portfolio_id": "115"
-    },
-    "116": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.509268",
-      "updated_at": "2025-08-04T23:40:21.509268",
-      "investor_id": "116",
-      "base_currency": "NGN",
-      "portfolio_id": "116"
-    },
-    "117": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.509788",
-      "updated_at": "2025-08-04T23:40:21.509788",
-      "investor_id": "117",
-      "base_currency": "USD",
-      "portfolio_id": "117"
-    },
-    "118": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.510309",
-      "updated_at": "2025-08-04T23:40:21.510309",
-      "investor_id": "118",
-      "base_currency": "USD",
-      "portfolio_id": "118"
-    },
-    "119": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.510839",
-      "updated_at": "2025-08-04T23:40:21.510839",
-      "investor_id": "119",
-      "base_currency": "GBP",
-      "portfolio_id": "119"
-    },
-    "120": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.511363",
-      "updated_at": "2025-08-04T23:40:21.511363",
-      "investor_id": "120",
-      "base_currency": "GBP",
-      "portfolio_id": "120"
-    },
-    "121": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.511882",
-      "updated_at": "2025-08-04T23:40:21.511882",
-      "investor_id": "121",
-      "base_currency": "USD",
-      "portfolio_id": "121"
-    },
-    "122": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.512401",
-      "updated_at": "2025-08-04T23:40:21.512401",
-      "investor_id": "122",
-      "base_currency": "NGN",
-      "portfolio_id": "122"
-    },
-    "123": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.512922",
-      "updated_at": "2025-08-04T23:40:21.512922",
-      "investor_id": "123",
-      "base_currency": "GBP",
-      "portfolio_id": "123"
-    },
-    "124": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.513443",
-      "updated_at": "2025-08-04T23:40:21.513443",
-      "investor_id": "124",
-      "base_currency": "EUR",
-      "portfolio_id": "124"
-    },
-    "125": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.513964",
-      "updated_at": "2025-08-04T23:40:21.513964",
-      "investor_id": "125",
-      "base_currency": "EUR",
-      "portfolio_id": "125"
-    },
-    "126": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.514338",
-      "updated_at": "2025-08-04T23:40:21.514338",
-      "investor_id": "126",
-      "base_currency": "USD",
-      "portfolio_id": "126"
-    },
-    "127": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.51534",
-      "updated_at": "2025-08-04T23:40:21.51534",
-      "investor_id": "127",
-      "base_currency": "NGN",
-      "portfolio_id": "127"
-    },
-    "128": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.515746",
-      "updated_at": "2025-08-04T23:40:21.515746",
-      "investor_id": "128",
-      "base_currency": "EUR",
-      "portfolio_id": "128"
-    },
-    "129": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.516272",
-      "updated_at": "2025-08-04T23:40:21.516272",
-      "investor_id": "129",
-      "base_currency": "GBP",
-      "portfolio_id": "129"
-    },
-    "130": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.516802",
-      "updated_at": "2025-08-04T23:40:21.516802",
-      "investor_id": "130",
-      "base_currency": "NGN",
-      "portfolio_id": "130"
-    },
-    "131": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.516802",
-      "updated_at": "2025-08-04T23:40:21.516802",
-      "investor_id": "131",
-      "base_currency": "USD",
-      "portfolio_id": "131"
-    },
-    "132": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.517802",
-      "updated_at": "2025-08-04T23:40:21.517802",
-      "investor_id": "132",
-      "base_currency": "GBP",
-      "portfolio_id": "132"
-    },
-    "133": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.517802",
-      "updated_at": "2025-08-04T23:40:21.517802",
-      "investor_id": "133",
-      "base_currency": "NGN",
-      "portfolio_id": "133"
-    },
-    "134": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.518799",
-      "updated_at": "2025-08-04T23:40:21.518799",
-      "investor_id": "134",
-      "base_currency": "USD",
-      "portfolio_id": "134"
-    },
-    "135": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.518799",
-      "updated_at": "2025-08-04T23:40:21.518799",
-      "investor_id": "135",
-      "base_currency": "NGN",
-      "portfolio_id": "135"
-    },
-    "136": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.519869",
-      "updated_at": "2025-08-04T23:40:21.519869",
-      "investor_id": "136",
-      "base_currency": "EUR",
-      "portfolio_id": "136"
-    },
-    "137": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.520389",
-      "updated_at": "2025-08-04T23:40:21.520389",
-      "investor_id": "137",
-      "base_currency": "EUR",
-      "portfolio_id": "137"
-    },
-    "138": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.521811",
-      "updated_at": "2025-08-04T23:40:21.521811",
-      "investor_id": "138",
-      "base_currency": "USD",
-      "portfolio_id": "138"
-    },
-    "139": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.52211",
-      "updated_at": "2025-08-04T23:40:21.52211",
-      "investor_id": "139",
-      "base_currency": "EUR",
-      "portfolio_id": "139"
-    },
-    "140": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.522639",
-      "updated_at": "2025-08-04T23:40:21.522639",
-      "investor_id": "140",
-      "base_currency": "USD",
-      "portfolio_id": "140"
-    },
-    "141": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.523158",
-      "updated_at": "2025-08-04T23:40:21.523158",
-      "investor_id": "141",
-      "base_currency": "EUR",
-      "portfolio_id": "141"
-    },
-    "142": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.523677",
-      "updated_at": "2025-08-04T23:40:21.523677",
-      "investor_id": "142",
-      "base_currency": "NGN",
-      "portfolio_id": "142"
-    },
-    "143": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.524055",
-      "updated_at": "2025-08-04T23:40:21.524055",
-      "investor_id": "143",
-      "base_currency": "NGN",
-      "portfolio_id": "143"
-    },
-    "144": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.524055",
-      "updated_at": "2025-08-04T23:40:21.524055",
-      "investor_id": "144",
-      "base_currency": "USD",
-      "portfolio_id": "144"
-    },
-    "145": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.52535",
-      "updated_at": "2025-08-04T23:40:21.52535",
-      "investor_id": "145",
-      "base_currency": "GBP",
-      "portfolio_id": "145"
-    },
-    "146": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.525818",
-      "updated_at": "2025-08-04T23:40:21.525818",
-      "investor_id": "146",
-      "base_currency": "NGN",
-      "portfolio_id": "146"
-    },
-    "147": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.526342",
-      "updated_at": "2025-08-04T23:40:21.526342",
-      "investor_id": "147",
-      "base_currency": "NGN",
-      "portfolio_id": "147"
-    },
-    "148": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.526863",
-      "updated_at": "2025-08-04T23:40:21.526863",
-      "investor_id": "148",
-      "base_currency": "USD",
-      "portfolio_id": "148"
-    },
-    "149": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.527383",
-      "updated_at": "2025-08-04T23:40:21.527383",
-      "investor_id": "149",
-      "base_currency": "USD",
-      "portfolio_id": "149"
-    },
-    "150": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.527906",
-      "updated_at": "2025-08-04T23:40:21.527906",
-      "investor_id": "150",
-      "base_currency": "GBP",
-      "portfolio_id": "150"
-    },
-    "151": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.528428",
-      "updated_at": "2025-08-04T23:40:21.528428",
-      "investor_id": "151",
-      "base_currency": "USD",
-      "portfolio_id": "151"
-    },
-    "152": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.528954",
-      "updated_at": "2025-08-04T23:40:21.528954",
-      "investor_id": "152",
-      "base_currency": "GBP",
-      "portfolio_id": "152"
-    },
-    "153": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.529475",
-      "updated_at": "2025-08-04T23:40:21.529475",
-      "investor_id": "153",
-      "base_currency": "USD",
-      "portfolio_id": "153"
-    },
-    "154": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.529998",
-      "updated_at": "2025-08-04T23:40:21.529998",
-      "investor_id": "154",
-      "base_currency": "NGN",
-      "portfolio_id": "154"
-    },
-    "155": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.530518",
-      "updated_at": "2025-08-04T23:40:21.530518",
-      "investor_id": "155",
-      "base_currency": "USD",
-      "portfolio_id": "155"
-    },
-    "156": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.531033",
-      "updated_at": "2025-08-04T23:40:21.531033",
-      "investor_id": "156",
-      "base_currency": "EUR",
-      "portfolio_id": "156"
-    },
-    "157": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.531033",
-      "updated_at": "2025-08-04T23:40:21.531033",
-      "investor_id": "157",
-      "base_currency": "NGN",
-      "portfolio_id": "157"
-    },
-    "158": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.532035",
-      "updated_at": "2025-08-04T23:40:21.532035",
-      "investor_id": "158",
-      "base_currency": "EUR",
-      "portfolio_id": "158"
-    },
-    "159": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.533031",
-      "updated_at": "2025-08-04T23:40:21.533031",
-      "investor_id": "159",
-      "base_currency": "EUR",
-      "portfolio_id": "159"
-    },
-    "160": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.533031",
-      "updated_at": "2025-08-04T23:40:21.533031",
-      "investor_id": "160",
-      "base_currency": "USD",
-      "portfolio_id": "160"
-    },
-    "161": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.534028",
-      "updated_at": "2025-08-04T23:40:21.534028",
-      "investor_id": "161",
-      "base_currency": "USD",
-      "portfolio_id": "161"
-    },
-    "162": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.534028",
-      "updated_at": "2025-08-04T23:40:21.534028",
-      "investor_id": "162",
-      "base_currency": "EUR",
-      "portfolio_id": "162"
-    },
-    "163": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.535039",
-      "updated_at": "2025-08-04T23:40:21.535039",
-      "investor_id": "163",
-      "base_currency": "NGN",
-      "portfolio_id": "163"
-    },
-    "164": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.535039",
-      "updated_at": "2025-08-04T23:40:21.535039",
-      "investor_id": "164",
-      "base_currency": "USD",
-      "portfolio_id": "164"
-    },
-    "165": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.536023",
-      "updated_at": "2025-08-04T23:40:21.536023",
-      "investor_id": "165",
-      "base_currency": "NGN",
-      "portfolio_id": "165"
-    },
-    "166": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.536023",
-      "updated_at": "2025-08-04T23:40:21.536023",
-      "investor_id": "166",
-      "base_currency": "USD",
-      "portfolio_id": "166"
-    },
-    "167": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.53702",
-      "updated_at": "2025-08-04T23:40:21.53702",
-      "investor_id": "167",
-      "base_currency": "EUR",
-      "portfolio_id": "167"
-    },
-    "168": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.53702",
-      "updated_at": "2025-08-04T23:40:21.53702",
-      "investor_id": "168",
-      "base_currency": "EUR",
-      "portfolio_id": "168"
-    },
-    "169": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.538058",
-      "updated_at": "2025-08-04T23:40:21.538058",
-      "investor_id": "169",
-      "base_currency": "USD",
-      "portfolio_id": "169"
-    },
-    "170": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.538058",
-      "updated_at": "2025-08-04T23:40:21.538058",
-      "investor_id": "170",
-      "base_currency": "EUR",
-      "portfolio_id": "170"
-    },
-    "171": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.539232",
-      "updated_at": "2025-08-04T23:40:21.539232",
-      "investor_id": "171",
-      "base_currency": "USD",
-      "portfolio_id": "171"
-    },
-    "172": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.539751",
-      "updated_at": "2025-08-04T23:40:21.539751",
-      "investor_id": "172",
-      "base_currency": "GBP",
-      "portfolio_id": "172"
-    },
-    "173": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.54027",
-      "updated_at": "2025-08-04T23:40:21.54027",
-      "investor_id": "173",
-      "base_currency": "USD",
-      "portfolio_id": "173"
-    },
-    "174": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.540792",
-      "updated_at": "2025-08-04T23:40:21.540792",
-      "investor_id": "174",
-      "base_currency": "NGN",
-      "portfolio_id": "174"
-    },
-    "175": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.541312",
-      "updated_at": "2025-08-04T23:40:21.541312",
-      "investor_id": "175",
-      "base_currency": "EUR",
-      "portfolio_id": "175"
-    },
-    "176": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.541834",
-      "updated_at": "2025-08-04T23:40:21.541834",
-      "investor_id": "176",
-      "base_currency": "USD",
-      "portfolio_id": "176"
-    },
-    "177": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.542353",
-      "updated_at": "2025-08-04T23:40:21.542353",
-      "investor_id": "177",
-      "base_currency": "USD",
-      "portfolio_id": "177"
-    },
-    "178": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.542877",
-      "updated_at": "2025-08-04T23:40:21.542877",
-      "investor_id": "178",
-      "base_currency": "USD",
-      "portfolio_id": "178"
-    },
-    "179": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.543395",
-      "updated_at": "2025-08-04T23:40:21.543395",
-      "investor_id": "179",
-      "base_currency": "NGN",
-      "portfolio_id": "179"
-    },
-    "180": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.543912",
-      "updated_at": "2025-08-04T23:40:21.543912",
-      "investor_id": "180",
-      "base_currency": "EUR",
-      "portfolio_id": "180"
-    },
-    "181": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.544285",
-      "updated_at": "2025-08-04T23:40:21.544285",
-      "investor_id": "181",
-      "base_currency": "USD",
-      "portfolio_id": "181"
-    },
-    "182": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.544285",
-      "updated_at": "2025-08-04T23:40:21.544285",
-      "investor_id": "182",
-      "base_currency": "EUR",
-      "portfolio_id": "182"
-    },
-    "183": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.545625",
-      "updated_at": "2025-08-04T23:40:21.545625",
-      "investor_id": "183",
-      "base_currency": "NGN",
-      "portfolio_id": "183"
-    },
-    "184": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.546027",
-      "updated_at": "2025-08-04T23:40:21.546027",
-      "investor_id": "184",
-      "base_currency": "GBP",
-      "portfolio_id": "184"
-    },
-    "185": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.546551",
-      "updated_at": "2025-08-04T23:40:21.546551",
-      "investor_id": "185",
-      "base_currency": "NGN",
-      "portfolio_id": "185"
-    },
-    "186": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.547071",
-      "updated_at": "2025-08-04T23:40:21.547071",
-      "investor_id": "186",
-      "base_currency": "GBP",
-      "portfolio_id": "186"
-    },
-    "187": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.547591",
-      "updated_at": "2025-08-04T23:40:21.547591",
-      "investor_id": "187",
-      "base_currency": "USD",
-      "portfolio_id": "187"
-    },
-    "188": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.547591",
-      "updated_at": "2025-08-04T23:40:21.547591",
-      "investor_id": "188",
-      "base_currency": "EUR",
-      "portfolio_id": "188"
-    },
-    "189": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.547591",
-      "updated_at": "2025-08-04T23:40:21.547591",
-      "investor_id": "189",
-      "base_currency": "GBP",
-      "portfolio_id": "189"
-    },
-    "190": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.549124",
-      "updated_at": "2025-08-04T23:40:21.549124",
-      "investor_id": "190",
-      "base_currency": "EUR",
-      "portfolio_id": "190"
-    },
-    "191": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.550124",
-      "updated_at": "2025-08-04T23:40:21.550124",
-      "investor_id": "191",
-      "base_currency": "USD",
-      "portfolio_id": "191"
-    },
-    "192": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.550124",
-      "updated_at": "2025-08-04T23:40:21.550124",
-      "investor_id": "192",
-      "base_currency": "EUR",
-      "portfolio_id": "192"
-    },
-    "193": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.551121",
-      "updated_at": "2025-08-04T23:40:21.551121",
-      "investor_id": "193",
-      "base_currency": "GBP",
-      "portfolio_id": "193"
-    },
-    "194": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.551121",
-      "updated_at": "2025-08-04T23:40:21.551121",
-      "investor_id": "194",
-      "base_currency": "USD",
-      "portfolio_id": "194"
-    },
-    "195": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.552119",
-      "updated_at": "2025-08-04T23:40:21.552119",
-      "investor_id": "195",
-      "base_currency": "USD",
-      "portfolio_id": "195"
-    },
-    "196": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.553115",
-      "updated_at": "2025-08-04T23:40:21.553115",
-      "investor_id": "196",
-      "base_currency": "GBP",
-      "portfolio_id": "196"
-    },
-    "197": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.553115",
-      "updated_at": "2025-08-04T23:40:21.553115",
-      "investor_id": "197",
-      "base_currency": "EUR",
-      "portfolio_id": "197"
-    },
-    "198": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.553945",
-      "updated_at": "2025-08-04T23:40:21.553945",
-      "investor_id": "198",
-      "base_currency": "NGN",
-      "portfolio_id": "198"
-    },
-    "199": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.554463",
-      "updated_at": "2025-08-04T23:40:21.554463",
-      "investor_id": "199",
-      "base_currency": "EUR",
-      "portfolio_id": "199"
-    },
-    "200": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.554975",
-      "updated_at": "2025-08-04T23:40:21.554975",
-      "investor_id": "200",
-      "base_currency": "GBP",
-      "portfolio_id": "200"
-    },
-    "201": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.555488",
-      "updated_at": "2025-08-04T23:40:21.555488",
-      "investor_id": "201",
-      "base_currency": "EUR",
-      "portfolio_id": "201"
-    },
-    "202": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.555999",
-      "updated_at": "2025-08-04T23:40:21.555999",
-      "investor_id": "202",
-      "base_currency": "NGN",
-      "portfolio_id": "202"
-    },
-    "203": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.556519",
-      "updated_at": "2025-08-04T23:40:21.556519",
-      "investor_id": "203",
-      "base_currency": "EUR",
-      "portfolio_id": "203"
-    },
-    "204": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.557032",
-      "updated_at": "2025-08-04T23:40:21.557032",
-      "investor_id": "204",
-      "base_currency": "USD",
-      "portfolio_id": "204"
-    },
-    "205": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.557546",
-      "updated_at": "2025-08-04T23:40:21.557546",
-      "investor_id": "205",
-      "base_currency": "EUR",
-      "portfolio_id": "205"
-    },
-    "206": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.558056",
-      "updated_at": "2025-08-04T23:40:21.558056",
-      "investor_id": "206",
-      "base_currency": "USD",
-      "portfolio_id": "206"
-    },
-    "207": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.558566",
-      "updated_at": "2025-08-04T23:40:21.558566",
-      "investor_id": "207",
-      "base_currency": "NGN",
-      "portfolio_id": "207"
-    },
-    "208": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.559077",
-      "updated_at": "2025-08-04T23:40:21.559077",
-      "investor_id": "208",
-      "base_currency": "EUR",
-      "portfolio_id": "208"
-    },
-    "209": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.559588",
-      "updated_at": "2025-08-04T23:40:21.559588",
-      "investor_id": "209",
-      "base_currency": "USD",
-      "portfolio_id": "209"
-    },
-    "210": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.560138",
-      "updated_at": "2025-08-04T23:40:21.560138",
-      "investor_id": "210",
-      "base_currency": "NGN",
-      "portfolio_id": "210"
-    },
-    "211": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.56066",
-      "updated_at": "2025-08-04T23:40:21.56066",
-      "investor_id": "211",
-      "base_currency": "USD",
-      "portfolio_id": "211"
-    },
-    "212": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.561187",
-      "updated_at": "2025-08-04T23:40:21.561187",
-      "investor_id": "212",
-      "base_currency": "USD",
-      "portfolio_id": "212"
-    },
-    "213": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.561705",
-      "updated_at": "2025-08-04T23:40:21.561705",
-      "investor_id": "213",
-      "base_currency": "USD",
-      "portfolio_id": "213"
-    },
-    "214": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.562225",
-      "updated_at": "2025-08-04T23:40:21.562225",
-      "investor_id": "214",
-      "base_currency": "EUR",
-      "portfolio_id": "214"
-    },
-    "215": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.562753",
-      "updated_at": "2025-08-04T23:40:21.562753",
-      "investor_id": "215",
-      "base_currency": "USD",
-      "portfolio_id": "215"
-    },
-    "216": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.563277",
-      "updated_at": "2025-08-04T23:40:21.563277",
-      "investor_id": "216",
-      "base_currency": "GBP",
-      "portfolio_id": "216"
-    },
-    "217": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.563277",
-      "updated_at": "2025-08-04T23:40:21.563277",
-      "investor_id": "217",
-      "base_currency": "NGN",
-      "portfolio_id": "217"
-    },
-    "218": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.564276",
-      "updated_at": "2025-08-04T23:40:21.564276",
-      "investor_id": "218",
-      "base_currency": "NGN",
-      "portfolio_id": "218"
-    },
-    "219": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.565275",
-      "updated_at": "2025-08-04T23:40:21.565275",
-      "investor_id": "219",
-      "base_currency": "EUR",
-      "portfolio_id": "219"
-    },
-    "220": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.565275",
-      "updated_at": "2025-08-04T23:40:21.565275",
-      "investor_id": "220",
-      "base_currency": "EUR",
-      "portfolio_id": "220"
-    },
-    "221": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.566419",
-      "updated_at": "2025-08-04T23:40:21.566419",
-      "investor_id": "221",
-      "base_currency": "EUR",
-      "portfolio_id": "221"
-    },
-    "222": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.566419",
-      "updated_at": "2025-08-04T23:40:21.566419",
-      "investor_id": "222",
-      "base_currency": "GBP",
-      "portfolio_id": "222"
-    },
-    "223": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.567372",
-      "updated_at": "2025-08-04T23:40:21.567372",
-      "investor_id": "223",
-      "base_currency": "NGN",
-      "portfolio_id": "223"
-    },
-    "224": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.567885",
-      "updated_at": "2025-08-04T23:40:21.567885",
-      "investor_id": "224",
-      "base_currency": "NGN",
-      "portfolio_id": "224"
-    },
-    "225": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.568398",
-      "updated_at": "2025-08-04T23:40:21.568398",
-      "investor_id": "225",
-      "base_currency": "EUR",
-      "portfolio_id": "225"
-    },
-    "226": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.568916",
-      "updated_at": "2025-08-04T23:40:21.568916",
-      "investor_id": "226",
-      "base_currency": "EUR",
-      "portfolio_id": "226"
-    },
-    "227": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.569427",
-      "updated_at": "2025-08-04T23:40:21.569427",
-      "investor_id": "227",
-      "base_currency": "USD",
-      "portfolio_id": "227"
-    },
-    "228": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.56994",
-      "updated_at": "2025-08-04T23:40:21.56994",
-      "investor_id": "228",
-      "base_currency": "EUR",
-      "portfolio_id": "228"
-    },
-    "229": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.570452",
-      "updated_at": "2025-08-04T23:40:21.570452",
-      "investor_id": "229",
-      "base_currency": "NGN",
-      "portfolio_id": "229"
-    },
-    "230": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.570963",
-      "updated_at": "2025-08-04T23:40:21.570963",
-      "investor_id": "230",
-      "base_currency": "USD",
-      "portfolio_id": "230"
-    },
-    "231": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.571475",
-      "updated_at": "2025-08-04T23:40:21.571475",
-      "investor_id": "231",
-      "base_currency": "GBP",
-      "portfolio_id": "231"
-    },
-    "232": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.571987",
-      "updated_at": "2025-08-04T23:40:21.571987",
-      "investor_id": "232",
-      "base_currency": "GBP",
-      "portfolio_id": "232"
-    },
-    "233": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.572511",
-      "updated_at": "2025-08-04T23:40:21.572511",
-      "investor_id": "233",
-      "base_currency": "NGN",
-      "portfolio_id": "233"
-    },
-    "234": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.573028",
-      "updated_at": "2025-08-04T23:40:21.573028",
-      "investor_id": "234",
-      "base_currency": "USD",
-      "portfolio_id": "234"
-    },
-    "235": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.573546",
-      "updated_at": "2025-08-04T23:40:21.573546",
-      "investor_id": "235",
-      "base_currency": "EUR",
-      "portfolio_id": "235"
-    },
-    "236": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.574064",
-      "updated_at": "2025-08-04T23:40:21.574064",
-      "investor_id": "236",
-      "base_currency": "EUR",
-      "portfolio_id": "236"
-    },
-    "237": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.574583",
-      "updated_at": "2025-08-04T23:40:21.574583",
-      "investor_id": "237",
-      "base_currency": "USD",
-      "portfolio_id": "237"
-    },
-    "238": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.575099",
-      "updated_at": "2025-08-04T23:40:21.575099",
-      "investor_id": "238",
-      "base_currency": "USD",
-      "portfolio_id": "238"
-    },
-    "239": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.575612",
-      "updated_at": "2025-08-04T23:40:21.575612",
-      "investor_id": "239",
-      "base_currency": "GBP",
-      "portfolio_id": "239"
-    },
-    "240": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.576165",
-      "updated_at": "2025-08-04T23:40:21.576165",
-      "investor_id": "240",
-      "base_currency": "EUR",
-      "portfolio_id": "240"
-    },
-    "241": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.576685",
-      "updated_at": "2025-08-04T23:40:21.576685",
-      "investor_id": "241",
-      "base_currency": "NGN",
-      "portfolio_id": "241"
-    },
-    "242": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.577205",
-      "updated_at": "2025-08-04T23:40:21.577205",
-      "investor_id": "242",
-      "base_currency": "EUR",
-      "portfolio_id": "242"
-    },
-    "243": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.577741",
-      "updated_at": "2025-08-04T23:40:21.577741",
-      "investor_id": "243",
-      "base_currency": "GBP",
-      "portfolio_id": "243"
-    },
-    "244": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.578113",
-      "updated_at": "2025-08-04T23:40:21.578113",
-      "investor_id": "244",
-      "base_currency": "USD",
-      "portfolio_id": "244"
-    },
-    "245": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.578113",
-      "updated_at": "2025-08-04T23:40:21.578113",
-      "investor_id": "245",
-      "base_currency": "EUR",
-      "portfolio_id": "245"
-    },
-    "246": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.578113",
-      "updated_at": "2025-08-04T23:40:21.578113",
-      "investor_id": "246",
-      "base_currency": "USD",
-      "portfolio_id": "246"
-    },
-    "247": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.579632",
-      "updated_at": "2025-08-04T23:40:21.579632",
-      "investor_id": "247",
-      "base_currency": "EUR",
-      "portfolio_id": "247"
-    },
-    "248": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.580632",
-      "updated_at": "2025-08-04T23:40:21.580632",
-      "investor_id": "248",
-      "base_currency": "NGN",
-      "portfolio_id": "248"
-    },
-    "249": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.580632",
-      "updated_at": "2025-08-04T23:40:21.580632",
-      "investor_id": "249",
-      "base_currency": "NGN",
-      "portfolio_id": "249"
-    },
-    "250": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.581631",
-      "updated_at": "2025-08-04T23:40:21.581631",
-      "investor_id": "250",
-      "base_currency": "EUR",
-      "portfolio_id": "250"
-    },
-    "251": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.58246",
-      "updated_at": "2025-08-04T23:40:21.58246",
-      "investor_id": "251",
-      "base_currency": "EUR",
-      "portfolio_id": "251"
-    },
-    "252": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.582992",
-      "updated_at": "2025-08-04T23:40:21.582992",
-      "investor_id": "252",
-      "base_currency": "USD",
-      "portfolio_id": "252"
-    },
-    "253": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.583511",
-      "updated_at": "2025-08-04T23:40:21.583511",
-      "investor_id": "253",
-      "base_currency": "USD",
-      "portfolio_id": "253"
-    },
-    "254": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.584037",
-      "updated_at": "2025-08-04T23:40:21.584037",
-      "investor_id": "254",
-      "base_currency": "GBP",
-      "portfolio_id": "254"
-    },
-    "255": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.584558",
-      "updated_at": "2025-08-04T23:40:21.584558",
-      "investor_id": "255",
-      "base_currency": "GBP",
-      "portfolio_id": "255"
-    },
-    "256": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.585087",
-      "updated_at": "2025-08-04T23:40:21.585087",
-      "investor_id": "256",
-      "base_currency": "EUR",
-      "portfolio_id": "256"
-    },
-    "257": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.585087",
-      "updated_at": "2025-08-04T23:40:21.585087",
-      "investor_id": "257",
-      "base_currency": "NGN",
-      "portfolio_id": "257"
-    },
-    "258": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.585087",
-      "updated_at": "2025-08-04T23:40:21.585087",
-      "investor_id": "258",
-      "base_currency": "GBP",
-      "portfolio_id": "258"
-    },
-    "259": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.586643",
-      "updated_at": "2025-08-04T23:40:21.586643",
-      "investor_id": "259",
-      "base_currency": "GBP",
-      "portfolio_id": "259"
-    },
-    "260": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.587213",
-      "updated_at": "2025-08-04T23:40:21.587213",
-      "investor_id": "260",
-      "base_currency": "NGN",
-      "portfolio_id": "260"
-    },
-    "261": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.587734",
-      "updated_at": "2025-08-04T23:40:21.587734",
-      "investor_id": "261",
-      "base_currency": "USD",
-      "portfolio_id": "261"
-    },
-    "262": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.588261",
-      "updated_at": "2025-08-04T23:40:21.588261",
-      "investor_id": "262",
-      "base_currency": "USD",
-      "portfolio_id": "262"
-    },
-    "263": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.588781",
-      "updated_at": "2025-08-04T23:40:21.588781",
-      "investor_id": "263",
-      "base_currency": "USD",
-      "portfolio_id": "263"
-    },
-    "264": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.589304",
-      "updated_at": "2025-08-04T23:40:21.589304",
-      "investor_id": "264",
-      "base_currency": "EUR",
-      "portfolio_id": "264"
-    },
-    "265": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.589834",
-      "updated_at": "2025-08-04T23:40:21.589834",
-      "investor_id": "265",
-      "base_currency": "EUR",
-      "portfolio_id": "265"
-    },
-    "266": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.590355",
-      "updated_at": "2025-08-04T23:40:21.590355",
-      "investor_id": "266",
-      "base_currency": "USD",
-      "portfolio_id": "266"
-    },
-    "267": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.590882",
-      "updated_at": "2025-08-04T23:40:21.590882",
-      "investor_id": "267",
-      "base_currency": "NGN",
-      "portfolio_id": "267"
-    },
-    "268": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.591402",
-      "updated_at": "2025-08-04T23:40:21.591402",
-      "investor_id": "268",
-      "base_currency": "USD",
-      "portfolio_id": "268"
-    },
-    "269": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.591925",
-      "updated_at": "2025-08-04T23:40:21.591925",
-      "investor_id": "269",
-      "base_currency": "USD",
-      "portfolio_id": "269"
-    },
-    "270": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.592444",
-      "updated_at": "2025-08-04T23:40:21.592444",
-      "investor_id": "270",
-      "base_currency": "EUR",
-      "portfolio_id": "270"
-    },
-    "271": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.592973",
-      "updated_at": "2025-08-04T23:40:21.592973",
-      "investor_id": "271",
-      "base_currency": "NGN",
-      "portfolio_id": "271"
-    },
-    "272": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.593493",
-      "updated_at": "2025-08-04T23:40:21.593493",
-      "investor_id": "272",
-      "base_currency": "GBP",
-      "portfolio_id": "272"
-    },
-    "273": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.593493",
-      "updated_at": "2025-08-04T23:40:21.593493",
-      "investor_id": "273",
-      "base_currency": "NGN",
-      "portfolio_id": "273"
-    },
-    "274": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.593493",
-      "updated_at": "2025-08-04T23:40:21.593493",
-      "investor_id": "274",
-      "base_currency": "EUR",
-      "portfolio_id": "274"
-    },
-    "275": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.594979",
-      "updated_at": "2025-08-04T23:40:21.594979",
-      "investor_id": "275",
-      "base_currency": "GBP",
-      "portfolio_id": "275"
-    },
-    "276": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.595723",
-      "updated_at": "2025-08-04T23:40:21.595723",
-      "investor_id": "276",
-      "base_currency": "EUR",
-      "portfolio_id": "276"
-    },
-    "277": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.596246",
-      "updated_at": "2025-08-04T23:40:21.596246",
-      "investor_id": "277",
-      "base_currency": "USD",
-      "portfolio_id": "277"
-    },
-    "278": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.59677",
-      "updated_at": "2025-08-04T23:40:21.59677",
-      "investor_id": "278",
-      "base_currency": "GBP",
-      "portfolio_id": "278"
-    },
-    "279": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.597288",
-      "updated_at": "2025-08-04T23:40:21.597288",
-      "investor_id": "279",
-      "base_currency": "EUR",
-      "portfolio_id": "279"
-    },
-    "280": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.597661",
-      "updated_at": "2025-08-04T23:40:21.597661",
-      "investor_id": "280",
-      "base_currency": "USD",
-      "portfolio_id": "280"
-    },
-    "281": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.598662",
-      "updated_at": "2025-08-04T23:40:21.598662",
-      "investor_id": "281",
-      "base_currency": "EUR",
-      "portfolio_id": "281"
-    },
-    "282": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.598662",
-      "updated_at": "2025-08-04T23:40:21.598662",
-      "investor_id": "282",
-      "base_currency": "NGN",
-      "portfolio_id": "282"
-    },
-    "283": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.599596",
-      "updated_at": "2025-08-04T23:40:21.599596",
-      "investor_id": "283",
-      "base_currency": "EUR",
-      "portfolio_id": "283"
-    },
-    "284": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.600117",
-      "updated_at": "2025-08-04T23:40:21.600117",
-      "investor_id": "284",
-      "base_currency": "NGN",
-      "portfolio_id": "284"
-    },
-    "285": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.600639",
-      "updated_at": "2025-08-04T23:40:21.600639",
-      "investor_id": "285",
-      "base_currency": "EUR",
-      "portfolio_id": "285"
-    },
-    "286": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.601165",
-      "updated_at": "2025-08-04T23:40:21.601165",
-      "investor_id": "286",
-      "base_currency": "USD",
-      "portfolio_id": "286"
-    },
-    "287": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.601688",
-      "updated_at": "2025-08-04T23:40:21.601688",
-      "investor_id": "287",
-      "base_currency": "NGN",
-      "portfolio_id": "287"
-    },
-    "288": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.602213",
-      "updated_at": "2025-08-04T23:40:21.602213",
-      "investor_id": "288",
-      "base_currency": "NGN",
-      "portfolio_id": "288"
-    },
-    "289": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.602733",
-      "updated_at": "2025-08-04T23:40:21.602733",
-      "investor_id": "289",
-      "base_currency": "USD",
-      "portfolio_id": "289"
-    },
-    "290": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.603257",
-      "updated_at": "2025-08-04T23:40:21.603257",
-      "investor_id": "290",
-      "base_currency": "NGN",
-      "portfolio_id": "290"
-    },
-    "291": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.603777",
-      "updated_at": "2025-08-04T23:40:21.603777",
-      "investor_id": "291",
-      "base_currency": "EUR",
-      "portfolio_id": "291"
-    },
-    "292": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.604294",
-      "updated_at": "2025-08-04T23:40:21.604294",
-      "investor_id": "292",
-      "base_currency": "EUR",
-      "portfolio_id": "292"
-    },
-    "293": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.604821",
-      "updated_at": "2025-08-04T23:40:21.604821",
-      "investor_id": "293",
-      "base_currency": "NGN",
-      "portfolio_id": "293"
-    },
-    "294": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.605341",
-      "updated_at": "2025-08-04T23:40:21.605341",
-      "investor_id": "294",
-      "base_currency": "EUR",
-      "portfolio_id": "294"
-    },
-    "295": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.605341",
-      "updated_at": "2025-08-04T23:40:21.605341",
-      "investor_id": "295",
-      "base_currency": "NGN",
-      "portfolio_id": "295"
-    },
-    "296": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.606648",
-      "updated_at": "2025-08-04T23:40:21.606648",
-      "investor_id": "296",
-      "base_currency": "GBP",
-      "portfolio_id": "296"
-    },
-    "297": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.606869",
-      "updated_at": "2025-08-04T23:40:21.606869",
-      "investor_id": "297",
-      "base_currency": "EUR",
-      "portfolio_id": "297"
-    },
-    "298": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.607441",
-      "updated_at": "2025-08-04T23:40:21.607441",
-      "investor_id": "298",
-      "base_currency": "NGN",
-      "portfolio_id": "298"
-    },
-    "299": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.607959",
-      "updated_at": "2025-08-04T23:40:21.607959",
-      "investor_id": "299",
-      "base_currency": "EUR",
-      "portfolio_id": "299"
-    },
-    "300": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.608485",
-      "updated_at": "2025-08-04T23:40:21.608485",
-      "investor_id": "300",
-      "base_currency": "GBP",
-      "portfolio_id": "300"
-    },
-    "301": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.609006",
-      "updated_at": "2025-08-04T23:40:21.609006",
-      "investor_id": "301",
-      "base_currency": "GBP",
-      "portfolio_id": "301"
-    },
-    "302": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.609006",
-      "updated_at": "2025-08-04T23:40:21.609006",
-      "investor_id": "302",
-      "base_currency": "EUR",
-      "portfolio_id": "302"
-    },
-    "303": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.609006",
-      "updated_at": "2025-08-04T23:40:21.609006",
-      "investor_id": "303",
-      "base_currency": "GBP",
-      "portfolio_id": "303"
-    },
-    "304": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.610491",
-      "updated_at": "2025-08-04T23:40:21.610491",
-      "investor_id": "304",
-      "base_currency": "EUR",
-      "portfolio_id": "304"
-    },
-    "305": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.610491",
-      "updated_at": "2025-08-04T23:40:21.610491",
-      "investor_id": "305",
-      "base_currency": "USD",
-      "portfolio_id": "305"
-    },
-    "306": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.61163",
-      "updated_at": "2025-08-04T23:40:21.61163",
-      "investor_id": "306",
-      "base_currency": "USD",
-      "portfolio_id": "306"
-    },
-    "307": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.612154",
-      "updated_at": "2025-08-04T23:40:21.612154",
-      "investor_id": "307",
-      "base_currency": "GBP",
-      "portfolio_id": "307"
-    },
-    "308": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.612675",
-      "updated_at": "2025-08-04T23:40:21.612675",
-      "investor_id": "308",
-      "base_currency": "EUR",
-      "portfolio_id": "308"
-    },
-    "309": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.613198",
-      "updated_at": "2025-08-04T23:40:21.613198",
-      "investor_id": "309",
-      "base_currency": "USD",
-      "portfolio_id": "309"
-    },
-    "310": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.613719",
-      "updated_at": "2025-08-04T23:40:21.613719",
-      "investor_id": "310",
-      "base_currency": "NGN",
-      "portfolio_id": "310"
-    },
-    "311": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.614245",
-      "updated_at": "2025-08-04T23:40:21.614245",
-      "investor_id": "311",
-      "base_currency": "NGN",
-      "portfolio_id": "311"
-    },
-    "312": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.614245",
-      "updated_at": "2025-08-04T23:40:21.614245",
-      "investor_id": "312",
-      "base_currency": "NGN",
-      "portfolio_id": "312"
-    },
-    "313": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.615434",
-      "updated_at": "2025-08-04T23:40:21.615434",
-      "investor_id": "313",
-      "base_currency": "EUR",
-      "portfolio_id": "313"
-    },
-    "314": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.615974",
-      "updated_at": "2025-08-04T23:40:21.615974",
-      "investor_id": "314",
-      "base_currency": "GBP",
-      "portfolio_id": "314"
-    },
-    "315": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.616494",
-      "updated_at": "2025-08-04T23:40:21.616494",
-      "investor_id": "315",
-      "base_currency": "EUR",
-      "portfolio_id": "315"
-    },
-    "316": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.617018",
-      "updated_at": "2025-08-04T23:40:21.617018",
-      "investor_id": "316",
-      "base_currency": "GBP",
-      "portfolio_id": "316"
-    },
-    "317": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.617541",
-      "updated_at": "2025-08-04T23:40:21.617541",
-      "investor_id": "317",
-      "base_currency": "EUR",
-      "portfolio_id": "317"
-    },
-    "318": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.618062",
-      "updated_at": "2025-08-04T23:40:21.618062",
-      "investor_id": "318",
-      "base_currency": "EUR",
-      "portfolio_id": "318"
-    },
-    "319": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.618586",
-      "updated_at": "2025-08-04T23:40:21.618586",
-      "investor_id": "319",
-      "base_currency": "EUR",
-      "portfolio_id": "319"
-    },
-    "320": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.619112",
-      "updated_at": "2025-08-04T23:40:21.619112",
-      "investor_id": "320",
-      "base_currency": "USD",
-      "portfolio_id": "320"
-    },
-    "321": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.619639",
-      "updated_at": "2025-08-04T23:40:21.619639",
-      "investor_id": "321",
-      "base_currency": "NGN",
-      "portfolio_id": "321"
-    },
-    "322": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.62017",
-      "updated_at": "2025-08-04T23:40:21.62017",
-      "investor_id": "322",
-      "base_currency": "NGN",
-      "portfolio_id": "322"
-    },
-    "323": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.62069",
-      "updated_at": "2025-08-04T23:40:21.62069",
-      "investor_id": "323",
-      "base_currency": "EUR",
-      "portfolio_id": "323"
-    },
-    "324": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.621226",
-      "updated_at": "2025-08-04T23:40:21.621226",
-      "investor_id": "324",
-      "base_currency": "NGN",
-      "portfolio_id": "324"
-    },
-    "325": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.621748",
-      "updated_at": "2025-08-04T23:40:21.621748",
-      "investor_id": "325",
-      "base_currency": "NGN",
-      "portfolio_id": "325"
-    },
-    "326": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.622268",
-      "updated_at": "2025-08-04T23:40:21.622268",
-      "investor_id": "326",
-      "base_currency": "GBP",
-      "portfolio_id": "326"
-    },
-    "327": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.622789",
-      "updated_at": "2025-08-04T23:40:21.622789",
-      "investor_id": "327",
-      "base_currency": "USD",
-      "portfolio_id": "327"
-    },
-    "328": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.62331",
-      "updated_at": "2025-08-04T23:40:21.62331",
-      "investor_id": "328",
-      "base_currency": "NGN",
-      "portfolio_id": "328"
-    },
-    "329": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.62383",
-      "updated_at": "2025-08-04T23:40:21.62383",
-      "investor_id": "329",
-      "base_currency": "EUR",
-      "portfolio_id": "329"
-    },
-    "330": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.624357",
-      "updated_at": "2025-08-04T23:40:21.624357",
-      "investor_id": "330",
-      "base_currency": "EUR",
-      "portfolio_id": "330"
-    },
-    "331": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.624357",
-      "updated_at": "2025-08-04T23:40:21.624357",
-      "investor_id": "331",
-      "base_currency": "GBP",
-      "portfolio_id": "331"
-    },
-    "332": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.62536",
-      "updated_at": "2025-08-04T23:40:21.62536",
-      "investor_id": "332",
-      "base_currency": "NGN",
-      "portfolio_id": "332"
-    },
-    "333": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.62536",
-      "updated_at": "2025-08-04T23:40:21.62536",
-      "investor_id": "333",
-      "base_currency": "EUR",
-      "portfolio_id": "333"
-    },
-    "334": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.626354",
-      "updated_at": "2025-08-04T23:40:21.626354",
-      "investor_id": "334",
-      "base_currency": "EUR",
-      "portfolio_id": "334"
-    },
-    "335": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.626354",
-      "updated_at": "2025-08-04T23:40:21.626354",
-      "investor_id": "335",
-      "base_currency": "USD",
-      "portfolio_id": "335"
-    },
-    "336": {
-      "status": "active",
-      "created_at": "2025-08-04T23:40:21.62749",
-      "updated_at": "2025-08-04T23:40:21.62749",
-      "investor_id": "336",
-      "base_currency": "NGN",
-      "portfolio_id": "336"
-    },
-    "337": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.628021",
-      "updated_at": "2025-08-04T23:40:21.628021",
-      "investor_id": "23",
-      "base_currency": "NGN",
-      "portfolio_id": "337"
-    },
-    "338": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.628558",
-      "updated_at": "2025-08-04T23:40:21.628558",
-      "investor_id": "259",
-      "base_currency": "NGN",
-      "portfolio_id": "338"
-    },
-    "339": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.629093",
-      "updated_at": "2025-08-04T23:40:21.629093",
-      "investor_id": "272",
-      "base_currency": "NGN",
-      "portfolio_id": "339"
-    },
-    "340": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.629624",
-      "updated_at": "2025-08-04T23:40:21.629624",
-      "investor_id": "51",
-      "base_currency": "NGN",
-      "portfolio_id": "340"
-    },
-    "341": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.630144",
-      "updated_at": "2025-08-04T23:40:21.630144",
-      "investor_id": "124",
-      "base_currency": "USD",
-      "portfolio_id": "341"
-    },
-    "342": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.630671",
-      "updated_at": "2025-08-04T23:40:21.630671",
-      "investor_id": "209",
-      "base_currency": "EUR",
-      "portfolio_id": "342"
-    },
-    "343": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.630671",
-      "updated_at": "2025-08-04T23:40:21.630671",
-      "investor_id": "184",
-      "base_currency": "EUR",
-      "portfolio_id": "343"
-    },
-    "344": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.631672",
-      "updated_at": "2025-08-04T23:40:21.631672",
-      "investor_id": "332",
-      "base_currency": "USD",
-      "portfolio_id": "344"
-    },
-    "345": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.63247",
-      "updated_at": "2025-08-04T23:40:21.63247",
-      "investor_id": "246",
-      "base_currency": "EUR",
-      "portfolio_id": "345"
-    },
-    "346": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.633007",
-      "updated_at": "2025-08-04T23:40:21.633007",
-      "investor_id": "236",
-      "base_currency": "NGN",
-      "portfolio_id": "346"
-    },
-    "347": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.633534",
-      "updated_at": "2025-08-04T23:40:21.633534",
-      "investor_id": "238",
-      "base_currency": "NGN",
-      "portfolio_id": "347"
-    },
-    "348": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.634061",
-      "updated_at": "2025-08-04T23:40:21.634061",
-      "investor_id": "95",
-      "base_currency": "NGN",
-      "portfolio_id": "348"
-    },
-    "349": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.634583",
-      "updated_at": "2025-08-04T23:40:21.634583",
-      "investor_id": "325",
-      "base_currency": "USD",
-      "portfolio_id": "349"
-    },
-    "350": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.63511",
-      "updated_at": "2025-08-04T23:40:21.63511",
-      "investor_id": "198",
-      "base_currency": "USD",
-      "portfolio_id": "350"
-    },
-    "351": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.635632",
-      "updated_at": "2025-08-04T23:40:21.635632",
-      "investor_id": "152",
-      "base_currency": "GBP",
-      "portfolio_id": "351"
-    },
-    "352": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.636163",
-      "updated_at": "2025-08-04T23:40:21.636163",
-      "investor_id": "314",
-      "base_currency": "USD",
-      "portfolio_id": "352"
-    },
-    "353": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.636687",
-      "updated_at": "2025-08-04T23:40:21.636687",
-      "investor_id": "318",
-      "base_currency": "USD",
-      "portfolio_id": "353"
-    },
-    "354": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.637208",
-      "updated_at": "2025-08-04T23:40:21.637208",
-      "investor_id": "264",
-      "base_currency": "USD",
-      "portfolio_id": "354"
-    },
-    "355": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.637733",
-      "updated_at": "2025-08-04T23:40:21.637733",
-      "investor_id": "57",
-      "base_currency": "GBP",
-      "portfolio_id": "355"
-    },
-    "356": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.638254",
-      "updated_at": "2025-08-04T23:40:21.638254",
-      "investor_id": "239",
-      "base_currency": "GBP",
-      "portfolio_id": "356"
-    },
-    "357": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.638778",
-      "updated_at": "2025-08-04T23:40:21.638778",
-      "investor_id": "188",
-      "base_currency": "USD",
-      "portfolio_id": "357"
-    },
-    "358": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.639309",
-      "updated_at": "2025-08-04T23:40:21.639309",
-      "investor_id": "288",
-      "base_currency": "EUR",
-      "portfolio_id": "358"
-    },
-    "359": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.639829",
-      "updated_at": "2025-08-04T23:40:21.639829",
-      "investor_id": "172",
-      "base_currency": "USD",
-      "portfolio_id": "359"
-    },
-    "360": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.640352",
-      "updated_at": "2025-08-04T23:40:21.640352",
-      "investor_id": "333",
-      "base_currency": "EUR",
-      "portfolio_id": "360"
-    },
-    "361": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.640352",
-      "updated_at": "2025-08-04T23:40:21.640352",
-      "investor_id": "116",
-      "base_currency": "GBP",
-      "portfolio_id": "361"
-    },
-    "362": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.641352",
-      "updated_at": "2025-08-04T23:40:21.641352",
-      "investor_id": "137",
-      "base_currency": "GBP",
-      "portfolio_id": "362"
-    },
-    "363": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.641352",
-      "updated_at": "2025-08-04T23:40:21.641352",
-      "investor_id": "28",
-      "base_currency": "GBP",
-      "portfolio_id": "363"
-    },
-    "364": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.642348",
-      "updated_at": "2025-08-04T23:40:21.642348",
-      "investor_id": "177",
-      "base_currency": "NGN",
-      "portfolio_id": "364"
-    },
-    "365": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.642348",
-      "updated_at": "2025-08-04T23:40:21.642348",
-      "investor_id": "257",
-      "base_currency": "NGN",
-      "portfolio_id": "365"
-    },
-    "366": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.643436",
-      "updated_at": "2025-08-04T23:40:21.643436",
-      "investor_id": "273",
-      "base_currency": "NGN",
-      "portfolio_id": "366"
-    },
-    "367": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.643959",
-      "updated_at": "2025-08-04T23:40:21.643959",
-      "investor_id": "318",
-      "base_currency": "USD",
-      "portfolio_id": "367"
-    },
-    "368": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.644481",
-      "updated_at": "2025-08-04T23:40:21.644481",
-      "investor_id": "97",
-      "base_currency": "USD",
-      "portfolio_id": "368"
-    },
-    "369": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.645002",
-      "updated_at": "2025-08-04T23:40:21.645002",
-      "investor_id": "42",
-      "base_currency": "EUR",
-      "portfolio_id": "369"
-    },
-    "370": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.645522",
-      "updated_at": "2025-08-04T23:40:21.645522",
-      "investor_id": "148",
-      "base_currency": "USD",
-      "portfolio_id": "370"
-    },
-    "371": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.64605",
-      "updated_at": "2025-08-04T23:40:21.64605",
-      "investor_id": "85",
-      "base_currency": "USD",
-      "portfolio_id": "371"
-    },
-    "372": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.646423",
-      "updated_at": "2025-08-04T23:40:21.646423",
-      "investor_id": "76",
-      "base_currency": "EUR",
-      "portfolio_id": "372"
-    },
-    "373": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.646423",
-      "updated_at": "2025-08-04T23:40:21.646423",
-      "investor_id": "105",
-      "base_currency": "GBP",
-      "portfolio_id": "373"
-    },
-    "374": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.647728",
-      "updated_at": "2025-08-04T23:40:21.647728",
-      "investor_id": "214",
-      "base_currency": "NGN",
-      "portfolio_id": "374"
-    },
-    "375": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.647728",
-      "updated_at": "2025-08-04T23:40:21.647728",
-      "investor_id": "178",
-      "base_currency": "NGN",
-      "portfolio_id": "375"
-    },
-    "376": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.64888",
-      "updated_at": "2025-08-04T23:40:21.64888",
-      "investor_id": "331",
-      "base_currency": "GBP",
-      "portfolio_id": "376"
-    },
-    "377": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.649411",
-      "updated_at": "2025-08-04T23:40:21.649411",
-      "investor_id": "97",
-      "base_currency": "USD",
-      "portfolio_id": "377"
-    },
-    "378": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.649934",
-      "updated_at": "2025-08-04T23:40:21.649934",
-      "investor_id": "119",
-      "base_currency": "NGN",
-      "portfolio_id": "378"
-    },
-    "379": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.649934",
-      "updated_at": "2025-08-04T23:40:21.649934",
-      "investor_id": "297",
-      "base_currency": "GBP",
-      "portfolio_id": "379"
-    },
-    "380": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.651",
-      "updated_at": "2025-08-04T23:40:21.651",
-      "investor_id": "249",
-      "base_currency": "NGN",
-      "portfolio_id": "380"
-    },
-    "381": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.651524",
-      "updated_at": "2025-08-04T23:40:21.651524",
-      "investor_id": "156",
-      "base_currency": "GBP",
-      "portfolio_id": "381"
-    },
-    "382": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.652048",
-      "updated_at": "2025-08-04T23:40:21.652048",
-      "investor_id": "88",
-      "base_currency": "EUR",
-      "portfolio_id": "382"
-    },
-    "383": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.652566",
-      "updated_at": "2025-08-04T23:40:21.652566",
-      "investor_id": "248",
-      "base_currency": "GBP",
-      "portfolio_id": "383"
-    },
-    "384": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.65309",
-      "updated_at": "2025-08-04T23:40:21.65309",
-      "investor_id": "25",
-      "base_currency": "GBP",
-      "portfolio_id": "384"
-    },
-    "385": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.653614",
-      "updated_at": "2025-08-04T23:40:21.653614",
-      "investor_id": "146",
-      "base_currency": "EUR",
-      "portfolio_id": "385"
-    },
-    "386": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.654138",
-      "updated_at": "2025-08-04T23:40:21.654138",
-      "investor_id": "317",
-      "base_currency": "GBP",
-      "portfolio_id": "386"
-    },
-    "387": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.654657",
-      "updated_at": "2025-08-04T23:40:21.654657",
-      "investor_id": "94",
-      "base_currency": "EUR",
-      "portfolio_id": "387"
-    },
-    "388": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.655182",
-      "updated_at": "2025-08-04T23:40:21.655182",
-      "investor_id": "83",
-      "base_currency": "USD",
-      "portfolio_id": "388"
-    },
-    "389": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.655705",
-      "updated_at": "2025-08-04T23:40:21.655705",
-      "investor_id": "22",
-      "base_currency": "EUR",
-      "portfolio_id": "389"
-    },
-    "390": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.656224",
-      "updated_at": "2025-08-04T23:40:21.656224",
-      "investor_id": "226",
-      "base_currency": "GBP",
-      "portfolio_id": "390"
-    },
-    "391": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.656224",
-      "updated_at": "2025-08-04T23:40:21.656224",
-      "investor_id": "95",
-      "base_currency": "USD",
-      "portfolio_id": "391"
-    },
-    "392": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.657223",
-      "updated_at": "2025-08-04T23:40:21.657223",
-      "investor_id": "163",
-      "base_currency": "EUR",
-      "portfolio_id": "392"
-    },
-    "393": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.657223",
-      "updated_at": "2025-08-04T23:40:21.657223",
-      "investor_id": "191",
-      "base_currency": "EUR",
-      "portfolio_id": "393"
-    },
-    "394": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.658221",
-      "updated_at": "2025-08-04T23:40:21.658221",
-      "investor_id": "274",
-      "base_currency": "USD",
-      "portfolio_id": "394"
-    },
-    "395": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.658713",
-      "updated_at": "2025-08-04T23:40:21.658713",
-      "investor_id": "13",
-      "base_currency": "NGN",
-      "portfolio_id": "395"
-    },
-    "396": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.659714",
-      "updated_at": "2025-08-04T23:40:21.659714",
-      "investor_id": "75",
-      "base_currency": "GBP",
-      "portfolio_id": "396"
-    },
-    "397": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.659714",
-      "updated_at": "2025-08-04T23:40:21.659714",
-      "investor_id": "80",
-      "base_currency": "GBP",
-      "portfolio_id": "397"
-    },
-    "398": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.660615",
-      "updated_at": "2025-08-04T23:40:21.660615",
-      "investor_id": "332",
-      "base_currency": "NGN",
-      "portfolio_id": "398"
-    },
-    "399": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.661136",
-      "updated_at": "2025-08-04T23:40:21.661136",
-      "investor_id": "149",
-      "base_currency": "NGN",
-      "portfolio_id": "399"
-    },
-    "400": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.661657",
-      "updated_at": "2025-08-04T23:40:21.661657",
-      "investor_id": "174",
-      "base_currency": "NGN",
-      "portfolio_id": "400"
-    },
-    "401": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.662179",
-      "updated_at": "2025-08-04T23:40:21.662179",
-      "investor_id": "21",
-      "base_currency": "USD",
-      "portfolio_id": "401"
-    },
-    "402": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.662699",
-      "updated_at": "2025-08-04T23:40:21.662699",
-      "investor_id": "158",
-      "base_currency": "NGN",
-      "portfolio_id": "402"
-    },
-    "403": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.663221",
-      "updated_at": "2025-08-04T23:40:21.663221",
-      "investor_id": "317",
-      "base_currency": "NGN",
-      "portfolio_id": "403"
-    },
-    "404": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.663742",
-      "updated_at": "2025-08-04T23:40:21.663742",
-      "investor_id": "183",
-      "base_currency": "GBP",
-      "portfolio_id": "404"
-    },
-    "405": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.664264",
-      "updated_at": "2025-08-04T23:40:21.664264",
-      "investor_id": "29",
-      "base_currency": "EUR",
-      "portfolio_id": "405"
-    },
-    "406": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.664264",
-      "updated_at": "2025-08-04T23:40:21.664264",
-      "investor_id": "143",
-      "base_currency": "USD",
-      "portfolio_id": "406"
-    },
-    "407": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.665265",
-      "updated_at": "2025-08-04T23:40:21.665265",
-      "investor_id": "43",
-      "base_currency": "USD",
-      "portfolio_id": "407"
-    },
-    "408": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.666084",
-      "updated_at": "2025-08-04T23:40:21.666084",
-      "investor_id": "263",
-      "base_currency": "EUR",
-      "portfolio_id": "408"
-    },
-    "409": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.666464",
-      "updated_at": "2025-08-04T23:40:21.666464",
-      "investor_id": "252",
-      "base_currency": "USD",
-      "portfolio_id": "409"
-    },
-    "410": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.667464",
-      "updated_at": "2025-08-04T23:40:21.667464",
-      "investor_id": "185",
-      "base_currency": "EUR",
-      "portfolio_id": "410"
-    },
-    "411": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.667464",
-      "updated_at": "2025-08-04T23:40:21.667464",
-      "investor_id": "219",
-      "base_currency": "NGN",
-      "portfolio_id": "411"
-    },
-    "412": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.668692",
-      "updated_at": "2025-08-04T23:40:21.668692",
-      "investor_id": "191",
-      "base_currency": "GBP",
-      "portfolio_id": "412"
-    },
-    "413": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.669085",
-      "updated_at": "2025-08-04T23:40:21.669085",
-      "investor_id": "177",
-      "base_currency": "GBP",
-      "portfolio_id": "413"
-    },
-    "414": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.669607",
-      "updated_at": "2025-08-04T23:40:21.669607",
-      "investor_id": "229",
-      "base_currency": "EUR",
-      "portfolio_id": "414"
-    },
-    "415": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.670133",
-      "updated_at": "2025-08-04T23:40:21.670133",
-      "investor_id": "228",
-      "base_currency": "NGN",
-      "portfolio_id": "415"
-    },
-    "416": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.670656",
-      "updated_at": "2025-08-04T23:40:21.670656",
-      "investor_id": "148",
-      "base_currency": "NGN",
-      "portfolio_id": "416"
-    },
-    "417": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.671181",
-      "updated_at": "2025-08-04T23:40:21.671181",
-      "investor_id": "213",
-      "base_currency": "USD",
-      "portfolio_id": "417"
-    },
-    "418": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.671717",
-      "updated_at": "2025-08-04T23:40:21.671717",
-      "investor_id": "74",
-      "base_currency": "GBP",
-      "portfolio_id": "418"
-    },
-    "419": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.672236",
-      "updated_at": "2025-08-04T23:40:21.672236",
-      "investor_id": "244",
-      "base_currency": "USD",
-      "portfolio_id": "419"
-    },
-    "420": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.672236",
-      "updated_at": "2025-08-04T23:40:21.672236",
-      "investor_id": "303",
-      "base_currency": "USD",
-      "portfolio_id": "420"
-    },
-    "421": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.672236",
-      "updated_at": "2025-08-04T23:40:21.672236",
-      "investor_id": "4",
-      "base_currency": "GBP",
-      "portfolio_id": "421"
-    },
-    "422": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.673721",
-      "updated_at": "2025-08-04T23:40:21.673721",
-      "investor_id": "213",
-      "base_currency": "NGN",
-      "portfolio_id": "422"
-    },
-    "423": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.674738",
-      "updated_at": "2025-08-04T23:40:21.674738",
-      "investor_id": "291",
-      "base_currency": "EUR",
-      "portfolio_id": "423"
-    },
-    "424": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.674738",
-      "updated_at": "2025-08-04T23:40:21.674738",
-      "investor_id": "96",
-      "base_currency": "GBP",
-      "portfolio_id": "424"
-    },
-    "425": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.675745",
-      "updated_at": "2025-08-04T23:40:21.675745",
-      "investor_id": "284",
-      "base_currency": "USD",
-      "portfolio_id": "425"
-    },
-    "426": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.676741",
-      "updated_at": "2025-08-04T23:40:21.676741",
-      "investor_id": "155",
-      "base_currency": "NGN",
-      "portfolio_id": "426"
-    },
-    "427": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.676741",
-      "updated_at": "2025-08-04T23:40:21.676741",
-      "investor_id": "287",
-      "base_currency": "EUR",
-      "portfolio_id": "427"
-    },
-    "428": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.677713",
-      "updated_at": "2025-08-04T23:40:21.677713",
-      "investor_id": "14",
-      "base_currency": "EUR",
-      "portfolio_id": "428"
-    },
-    "429": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.677713",
-      "updated_at": "2025-08-04T23:40:21.677713",
-      "investor_id": "135",
-      "base_currency": "NGN",
-      "portfolio_id": "429"
-    },
-    "430": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.67871",
-      "updated_at": "2025-08-04T23:40:21.67871",
-      "investor_id": "64",
-      "base_currency": "NGN",
-      "portfolio_id": "430"
-    },
-    "431": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.67871",
-      "updated_at": "2025-08-04T23:40:21.67871",
-      "investor_id": "92",
-      "base_currency": "EUR",
-      "portfolio_id": "431"
-    },
-    "432": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.679708",
-      "updated_at": "2025-08-04T23:40:21.679708",
-      "investor_id": "15",
-      "base_currency": "GBP",
-      "portfolio_id": "432"
-    },
-    "433": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.679708",
-      "updated_at": "2025-08-04T23:40:21.679708",
-      "investor_id": "253",
-      "base_currency": "GBP",
-      "portfolio_id": "433"
-    },
-    "434": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.680715",
-      "updated_at": "2025-08-04T23:40:21.680715",
-      "investor_id": "298",
-      "base_currency": "NGN",
-      "portfolio_id": "434"
-    },
-    "435": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.681702",
-      "updated_at": "2025-08-04T23:40:21.681702",
-      "investor_id": "133",
-      "base_currency": "USD",
-      "portfolio_id": "435"
-    },
-    "436": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.681702",
-      "updated_at": "2025-08-04T23:40:21.681702",
-      "investor_id": "192",
-      "base_currency": "GBP",
-      "portfolio_id": "436"
-    },
-    "437": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.682699",
-      "updated_at": "2025-08-04T23:40:21.682699",
-      "investor_id": "84",
-      "base_currency": "EUR",
-      "portfolio_id": "437"
-    },
-    "438": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.682699",
-      "updated_at": "2025-08-04T23:40:21.682699",
-      "investor_id": "164",
-      "base_currency": "EUR",
-      "portfolio_id": "438"
-    },
-    "439": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.683726",
-      "updated_at": "2025-08-04T23:40:21.683726",
-      "investor_id": "183",
-      "base_currency": "USD",
-      "portfolio_id": "439"
-    },
-    "440": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.683726",
-      "updated_at": "2025-08-04T23:40:21.683726",
-      "investor_id": "140",
-      "base_currency": "NGN",
-      "portfolio_id": "440"
-    },
-    "441": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.684694",
-      "updated_at": "2025-08-04T23:40:21.684694",
-      "investor_id": "326",
-      "base_currency": "USD",
-      "portfolio_id": "441"
-    },
-    "442": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.684694",
-      "updated_at": "2025-08-04T23:40:21.684694",
-      "investor_id": "149",
-      "base_currency": "USD",
-      "portfolio_id": "442"
-    },
-    "443": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.685692",
-      "updated_at": "2025-08-04T23:40:21.685692",
-      "investor_id": "264",
-      "base_currency": "EUR",
-      "portfolio_id": "443"
-    },
-    "444": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.685692",
-      "updated_at": "2025-08-04T23:40:21.685692",
-      "investor_id": "49",
-      "base_currency": "GBP",
-      "portfolio_id": "444"
-    },
-    "445": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.686689",
-      "updated_at": "2025-08-04T23:40:21.686689",
-      "investor_id": "162",
-      "base_currency": "GBP",
-      "portfolio_id": "445"
-    },
-    "446": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.686689",
-      "updated_at": "2025-08-04T23:40:21.686689",
-      "investor_id": "186",
-      "base_currency": "GBP",
-      "portfolio_id": "446"
-    },
-    "447": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.687685",
-      "updated_at": "2025-08-04T23:40:21.687685",
-      "investor_id": "74",
-      "base_currency": "EUR",
-      "portfolio_id": "447"
-    },
-    "448": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.688683",
-      "updated_at": "2025-08-04T23:40:21.688683",
-      "investor_id": "266",
-      "base_currency": "GBP",
-      "portfolio_id": "448"
-    },
-    "449": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.688683",
-      "updated_at": "2025-08-04T23:40:21.688683",
-      "investor_id": "249",
-      "base_currency": "GBP",
-      "portfolio_id": "449"
-    },
-    "450": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.689734",
-      "updated_at": "2025-08-04T23:40:21.689734",
-      "investor_id": "84",
-      "base_currency": "EUR",
-      "portfolio_id": "450"
-    },
-    "451": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.689854",
-      "updated_at": "2025-08-04T23:40:21.689854",
-      "investor_id": "80",
-      "base_currency": "EUR",
-      "portfolio_id": "451"
-    },
-    "452": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.690851",
-      "updated_at": "2025-08-04T23:40:21.690851",
-      "investor_id": "287",
-      "base_currency": "NGN",
-      "portfolio_id": "452"
-    },
-    "453": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.690851",
-      "updated_at": "2025-08-04T23:40:21.690851",
-      "investor_id": "236",
-      "base_currency": "USD",
-      "portfolio_id": "453"
-    },
-    "454": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.691848",
-      "updated_at": "2025-08-04T23:40:21.691848",
-      "investor_id": "68",
-      "base_currency": "NGN",
-      "portfolio_id": "454"
-    },
-    "455": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.691848",
-      "updated_at": "2025-08-04T23:40:21.691848",
-      "investor_id": "179",
-      "base_currency": "GBP",
-      "portfolio_id": "455"
-    },
-    "456": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.692846",
-      "updated_at": "2025-08-04T23:40:21.692846",
-      "investor_id": "72",
-      "base_currency": "GBP",
-      "portfolio_id": "456"
-    },
-    "457": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.692846",
-      "updated_at": "2025-08-04T23:40:21.692846",
-      "investor_id": "89",
-      "base_currency": "USD",
-      "portfolio_id": "457"
-    },
-    "458": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.693843",
-      "updated_at": "2025-08-04T23:40:21.693843",
-      "investor_id": "61",
-      "base_currency": "EUR",
-      "portfolio_id": "458"
-    },
-    "459": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.693843",
-      "updated_at": "2025-08-04T23:40:21.693843",
-      "investor_id": "73",
-      "base_currency": "GBP",
-      "portfolio_id": "459"
-    },
-    "460": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.69484",
-      "updated_at": "2025-08-04T23:40:21.69484",
-      "investor_id": "65",
-      "base_currency": "EUR",
-      "portfolio_id": "460"
-    },
-    "461": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.69484",
-      "updated_at": "2025-08-04T23:40:21.69484",
-      "investor_id": "41",
-      "base_currency": "USD",
-      "portfolio_id": "461"
-    },
-    "462": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.695838",
-      "updated_at": "2025-08-04T23:40:21.695838",
-      "investor_id": "40",
-      "base_currency": "NGN",
-      "portfolio_id": "462"
-    },
-    "463": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.695838",
-      "updated_at": "2025-08-04T23:40:21.695838",
-      "investor_id": "221",
-      "base_currency": "EUR",
-      "portfolio_id": "463"
-    },
-    "464": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.696835",
-      "updated_at": "2025-08-04T23:40:21.696835",
-      "investor_id": "56",
-      "base_currency": "USD",
-      "portfolio_id": "464"
-    },
-    "465": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.696835",
-      "updated_at": "2025-08-04T23:40:21.696835",
-      "investor_id": "241",
-      "base_currency": "GBP",
-      "portfolio_id": "465"
-    },
-    "466": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.697832",
-      "updated_at": "2025-08-04T23:40:21.697832",
-      "investor_id": "23",
-      "base_currency": "GBP",
-      "portfolio_id": "466"
-    },
-    "467": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.698832",
-      "updated_at": "2025-08-04T23:40:21.698832",
-      "investor_id": "6",
-      "base_currency": "USD",
-      "portfolio_id": "467"
-    },
-    "468": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.698832",
-      "updated_at": "2025-08-04T23:40:21.698832",
-      "investor_id": "309",
-      "base_currency": "EUR",
-      "portfolio_id": "468"
-    },
-    "469": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.699828",
-      "updated_at": "2025-08-04T23:40:21.699828",
-      "investor_id": "95",
-      "base_currency": "USD",
-      "portfolio_id": "469"
-    },
-    "470": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.699828",
-      "updated_at": "2025-08-04T23:40:21.699828",
-      "investor_id": "47",
-      "base_currency": "GBP",
-      "portfolio_id": "470"
-    },
-    "471": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.700835",
-      "updated_at": "2025-08-04T23:40:21.700835",
-      "investor_id": "297",
-      "base_currency": "GBP",
-      "portfolio_id": "471"
-    },
-    "472": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.700835",
-      "updated_at": "2025-08-04T23:40:21.700835",
-      "investor_id": "83",
-      "base_currency": "USD",
-      "portfolio_id": "472"
-    },
-    "473": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.701822",
-      "updated_at": "2025-08-04T23:40:21.701822",
-      "investor_id": "51",
-      "base_currency": "EUR",
-      "portfolio_id": "473"
-    },
-    "474": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.701822",
-      "updated_at": "2025-08-04T23:40:21.701822",
-      "investor_id": "99",
-      "base_currency": "EUR",
-      "portfolio_id": "474"
-    },
-    "475": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.702821",
-      "updated_at": "2025-08-04T23:40:21.702821",
-      "investor_id": "276",
-      "base_currency": "USD",
-      "portfolio_id": "475"
-    },
-    "476": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.70358",
-      "updated_at": "2025-08-04T23:40:21.70358",
-      "investor_id": "110",
-      "base_currency": "GBP",
-      "portfolio_id": "476"
-    },
-    "477": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.70358",
-      "updated_at": "2025-08-04T23:40:21.70358",
-      "investor_id": "302",
-      "base_currency": "NGN",
-      "portfolio_id": "477"
-    },
-    "478": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.704581",
-      "updated_at": "2025-08-04T23:40:21.704581",
-      "investor_id": "55",
-      "base_currency": "GBP",
-      "portfolio_id": "478"
-    },
-    "479": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.704581",
-      "updated_at": "2025-08-04T23:40:21.704581",
-      "investor_id": "195",
-      "base_currency": "EUR",
-      "portfolio_id": "479"
-    },
-    "480": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.705577",
-      "updated_at": "2025-08-04T23:40:21.705577",
-      "investor_id": "264",
-      "base_currency": "NGN",
-      "portfolio_id": "480"
-    },
-    "481": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.706621",
-      "updated_at": "2025-08-04T23:40:21.706621",
-      "investor_id": "58",
-      "base_currency": "USD",
-      "portfolio_id": "481"
-    },
-    "482": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.706621",
-      "updated_at": "2025-08-04T23:40:21.706621",
-      "investor_id": "239",
-      "base_currency": "EUR",
-      "portfolio_id": "482"
-    },
-    "483": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.70746",
-      "updated_at": "2025-08-04T23:40:21.70746",
-      "investor_id": "254",
-      "base_currency": "GBP",
-      "portfolio_id": "483"
-    },
-    "484": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.707997",
-      "updated_at": "2025-08-04T23:40:21.707997",
-      "investor_id": "286",
-      "base_currency": "USD",
-      "portfolio_id": "484"
-    },
-    "485": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.708519",
-      "updated_at": "2025-08-04T23:40:21.708519",
-      "investor_id": "168",
-      "base_currency": "USD",
-      "portfolio_id": "485"
-    },
-    "486": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.708519",
-      "updated_at": "2025-08-04T23:40:21.708519",
-      "investor_id": "198",
-      "base_currency": "NGN",
-      "portfolio_id": "486"
-    },
-    "487": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.708519",
-      "updated_at": "2025-08-04T23:40:21.708519",
-      "investor_id": "308",
-      "base_currency": "NGN",
-      "portfolio_id": "487"
-    },
-    "488": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.710071",
-      "updated_at": "2025-08-04T23:40:21.710071",
-      "investor_id": "116",
-      "base_currency": "GBP",
-      "portfolio_id": "488"
-    },
-    "489": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.710647",
-      "updated_at": "2025-08-04T23:40:21.710647",
-      "investor_id": "220",
-      "base_currency": "USD",
-      "portfolio_id": "489"
-    },
-    "490": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.711169",
-      "updated_at": "2025-08-04T23:40:21.711169",
-      "investor_id": "244",
-      "base_currency": "EUR",
-      "portfolio_id": "490"
-    },
-    "491": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.711703",
-      "updated_at": "2025-08-04T23:40:21.711703",
-      "investor_id": "7",
-      "base_currency": "USD",
-      "portfolio_id": "491"
-    },
-    "492": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.712236",
-      "updated_at": "2025-08-04T23:40:21.712236",
-      "investor_id": "203",
-      "base_currency": "USD",
-      "portfolio_id": "492"
-    },
-    "493": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.712757",
-      "updated_at": "2025-08-04T23:40:21.712757",
-      "investor_id": "62",
-      "base_currency": "NGN",
-      "portfolio_id": "493"
-    },
-    "494": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.713277",
-      "updated_at": "2025-08-04T23:40:21.713277",
-      "investor_id": "206",
-      "base_currency": "EUR",
-      "portfolio_id": "494"
-    },
-    "495": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.713796",
-      "updated_at": "2025-08-04T23:40:21.713796",
-      "investor_id": "34",
-      "base_currency": "EUR",
-      "portfolio_id": "495"
-    },
-    "496": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.714308",
-      "updated_at": "2025-08-04T23:40:21.714308",
-      "investor_id": "174",
-      "base_currency": "NGN",
-      "portfolio_id": "496"
-    },
-    "497": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.714814",
-      "updated_at": "2025-08-04T23:40:21.714814",
-      "investor_id": "63",
-      "base_currency": "NGN",
-      "portfolio_id": "497"
-    },
-    "498": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.715815",
-      "updated_at": "2025-08-04T23:40:21.715815",
-      "investor_id": "256",
-      "base_currency": "GBP",
-      "portfolio_id": "498"
-    },
-    "499": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.715815",
-      "updated_at": "2025-08-04T23:40:21.715815",
-      "investor_id": "330",
-      "base_currency": "GBP",
-      "portfolio_id": "499"
-    },
-    "500": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.716812",
-      "updated_at": "2025-08-04T23:40:21.716812",
-      "investor_id": "244",
-      "base_currency": "NGN",
-      "portfolio_id": "500"
-    },
-    "501": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.716812",
-      "updated_at": "2025-08-04T23:40:21.716812",
-      "investor_id": "262",
-      "base_currency": "EUR",
-      "portfolio_id": "501"
-    },
-    "502": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.717809",
-      "updated_at": "2025-08-04T23:40:21.717809",
-      "investor_id": "233",
-      "base_currency": "USD",
-      "portfolio_id": "502"
-    },
-    "503": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.717809",
-      "updated_at": "2025-08-04T23:40:21.717809",
-      "investor_id": "129",
-      "base_currency": "NGN",
-      "portfolio_id": "503"
-    },
-    "504": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.718806",
-      "updated_at": "2025-08-04T23:40:21.718806",
-      "investor_id": "119",
-      "base_currency": "USD",
-      "portfolio_id": "504"
-    },
-    "505": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.718806",
-      "updated_at": "2025-08-04T23:40:21.718806",
-      "investor_id": "51",
-      "base_currency": "USD",
-      "portfolio_id": "505"
-    },
-    "506": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.719804",
-      "updated_at": "2025-08-04T23:40:21.719804",
-      "investor_id": "256",
-      "base_currency": "EUR",
-      "portfolio_id": "506"
-    },
-    "507": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.719804",
-      "updated_at": "2025-08-04T23:40:21.719804",
-      "investor_id": "196",
-      "base_currency": "EUR",
-      "portfolio_id": "507"
-    },
-    "508": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.720801",
-      "updated_at": "2025-08-04T23:40:21.720801",
-      "investor_id": "156",
-      "base_currency": "USD",
-      "portfolio_id": "508"
-    },
-    "509": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.721484",
-      "updated_at": "2025-08-04T23:40:21.721484",
-      "investor_id": "267",
-      "base_currency": "NGN",
-      "portfolio_id": "509"
-    },
-    "510": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.722005",
-      "updated_at": "2025-08-04T23:40:21.722005",
-      "investor_id": "104",
-      "base_currency": "NGN",
-      "portfolio_id": "510"
-    },
-    "511": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.722519",
-      "updated_at": "2025-08-04T23:40:21.722519",
-      "investor_id": "252",
-      "base_currency": "GBP",
-      "portfolio_id": "511"
-    },
-    "512": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.723039",
-      "updated_at": "2025-08-04T23:40:21.723039",
-      "investor_id": "277",
-      "base_currency": "USD",
-      "portfolio_id": "512"
-    },
-    "513": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.723559",
-      "updated_at": "2025-08-04T23:40:21.723559",
-      "investor_id": "221",
-      "base_currency": "NGN",
-      "portfolio_id": "513"
-    },
-    "514": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.724074",
-      "updated_at": "2025-08-04T23:40:21.724074",
-      "investor_id": "231",
-      "base_currency": "NGN",
-      "portfolio_id": "514"
-    },
-    "515": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.724587",
-      "updated_at": "2025-08-04T23:40:21.724587",
-      "investor_id": "227",
-      "base_currency": "USD",
-      "portfolio_id": "515"
-    },
-    "516": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.725102",
-      "updated_at": "2025-08-04T23:40:21.725102",
-      "investor_id": "17",
-      "base_currency": "GBP",
-      "portfolio_id": "516"
-    },
-    "517": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.725623",
-      "updated_at": "2025-08-04T23:40:21.725623",
-      "investor_id": "85",
-      "base_currency": "NGN",
-      "portfolio_id": "517"
-    },
-    "518": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.726179",
-      "updated_at": "2025-08-04T23:40:21.726179",
-      "investor_id": "69",
-      "base_currency": "NGN",
-      "portfolio_id": "518"
-    },
-    "519": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.726699",
-      "updated_at": "2025-08-04T23:40:21.726699",
-      "investor_id": "250",
-      "base_currency": "NGN",
-      "portfolio_id": "519"
-    },
-    "520": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.726699",
-      "updated_at": "2025-08-04T23:40:21.726699",
-      "investor_id": "284",
-      "base_currency": "NGN",
-      "portfolio_id": "520"
-    },
-    "521": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.727787",
-      "updated_at": "2025-08-04T23:40:21.727787",
-      "investor_id": "288",
-      "base_currency": "USD",
-      "portfolio_id": "521"
-    },
-    "522": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.728316",
-      "updated_at": "2025-08-04T23:40:21.728316",
-      "investor_id": "201",
-      "base_currency": "NGN",
-      "portfolio_id": "522"
-    },
-    "523": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.728842",
-      "updated_at": "2025-08-04T23:40:21.728842",
-      "investor_id": "303",
-      "base_currency": "GBP",
-      "portfolio_id": "523"
-    },
-    "524": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.728842",
-      "updated_at": "2025-08-04T23:40:21.728842",
-      "investor_id": "146",
-      "base_currency": "USD",
-      "portfolio_id": "524"
-    },
-    "525": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.730074",
-      "updated_at": "2025-08-04T23:40:21.730074",
-      "investor_id": "15",
-      "base_currency": "EUR",
-      "portfolio_id": "525"
-    },
-    "526": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.730074",
-      "updated_at": "2025-08-04T23:40:21.730074",
-      "investor_id": "188",
-      "base_currency": "USD",
-      "portfolio_id": "526"
-    },
-    "527": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.731074",
-      "updated_at": "2025-08-04T23:40:21.731074",
-      "investor_id": "321",
-      "base_currency": "NGN",
-      "portfolio_id": "527"
-    },
-    "528": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.731074",
-      "updated_at": "2025-08-04T23:40:21.731074",
-      "investor_id": "50",
-      "base_currency": "GBP",
-      "portfolio_id": "528"
-    },
-    "529": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.732368",
-      "updated_at": "2025-08-04T23:40:21.732368",
-      "investor_id": "183",
-      "base_currency": "GBP",
-      "portfolio_id": "529"
-    },
-    "530": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.732969",
-      "updated_at": "2025-08-04T23:40:21.732969",
-      "investor_id": "29",
-      "base_currency": "EUR",
-      "portfolio_id": "530"
-    },
-    "531": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.733489",
-      "updated_at": "2025-08-04T23:40:21.733489",
-      "investor_id": "121",
-      "base_currency": "USD",
-      "portfolio_id": "531"
-    },
-    "532": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.734004",
-      "updated_at": "2025-08-04T23:40:21.734004",
-      "investor_id": "34",
-      "base_currency": "USD",
-      "portfolio_id": "532"
-    },
-    "533": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.734522",
-      "updated_at": "2025-08-04T23:40:21.734522",
-      "investor_id": "173",
-      "base_currency": "USD",
-      "portfolio_id": "533"
-    },
-    "534": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.734894",
-      "updated_at": "2025-08-04T23:40:21.734894",
-      "investor_id": "276",
-      "base_currency": "USD",
-      "portfolio_id": "534"
-    },
-    "535": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.734894",
-      "updated_at": "2025-08-04T23:40:21.734894",
-      "investor_id": "236",
-      "base_currency": "NGN",
-      "portfolio_id": "535"
-    },
-    "536": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.734894",
-      "updated_at": "2025-08-04T23:40:21.734894",
-      "investor_id": "137",
-      "base_currency": "NGN",
-      "portfolio_id": "536"
-    },
-    "537": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.736426",
-      "updated_at": "2025-08-04T23:40:21.736426",
-      "investor_id": "302",
-      "base_currency": "GBP",
-      "portfolio_id": "537"
-    },
-    "538": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.737425",
-      "updated_at": "2025-08-04T23:40:21.737425",
-      "investor_id": "194",
-      "base_currency": "GBP",
-      "portfolio_id": "538"
-    },
-    "539": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.73769",
-      "updated_at": "2025-08-04T23:40:21.73769",
-      "investor_id": "294",
-      "base_currency": "NGN",
-      "portfolio_id": "539"
-    },
-    "540": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.738209",
-      "updated_at": "2025-08-04T23:40:21.738209",
-      "investor_id": "52",
-      "base_currency": "GBP",
-      "portfolio_id": "540"
-    },
-    "541": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.738723",
-      "updated_at": "2025-08-04T23:40:21.738723",
-      "investor_id": "255",
-      "base_currency": "EUR",
-      "portfolio_id": "541"
-    },
-    "542": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.739242",
-      "updated_at": "2025-08-04T23:40:21.739242",
-      "investor_id": "315",
-      "base_currency": "GBP",
-      "portfolio_id": "542"
-    },
-    "543": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.739761",
-      "updated_at": "2025-08-04T23:40:21.739761",
-      "investor_id": "224",
-      "base_currency": "NGN",
-      "portfolio_id": "543"
-    },
-    "544": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.740277",
-      "updated_at": "2025-08-04T23:40:21.740277",
-      "investor_id": "326",
-      "base_currency": "EUR",
-      "portfolio_id": "544"
-    },
-    "545": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.740794",
-      "updated_at": "2025-08-04T23:40:21.740794",
-      "investor_id": "148",
-      "base_currency": "USD",
-      "portfolio_id": "545"
-    },
-    "546": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.741352",
-      "updated_at": "2025-08-04T23:40:21.741352",
-      "investor_id": "153",
-      "base_currency": "EUR",
-      "portfolio_id": "546"
-    },
-    "547": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.741864",
-      "updated_at": "2025-08-04T23:40:21.741864",
-      "investor_id": "320",
-      "base_currency": "USD",
-      "portfolio_id": "547"
-    },
-    "548": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.74238",
-      "updated_at": "2025-08-04T23:40:21.74238",
-      "investor_id": "304",
-      "base_currency": "GBP",
-      "portfolio_id": "548"
-    },
-    "549": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.742934",
-      "updated_at": "2025-08-04T23:40:21.742934",
-      "investor_id": "35",
-      "base_currency": "NGN",
-      "portfolio_id": "549"
-    },
-    "550": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.743458",
-      "updated_at": "2025-08-04T23:40:21.743458",
-      "investor_id": "108",
-      "base_currency": "USD",
-      "portfolio_id": "550"
-    },
-    "551": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.743979",
-      "updated_at": "2025-08-04T23:40:21.743979",
-      "investor_id": "334",
-      "base_currency": "GBP",
-      "portfolio_id": "551"
-    },
-    "552": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.744501",
-      "updated_at": "2025-08-04T23:40:21.744501",
-      "investor_id": "222",
-      "base_currency": "EUR",
-      "portfolio_id": "552"
-    },
-    "553": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.745022",
-      "updated_at": "2025-08-04T23:40:21.745022",
-      "investor_id": "213",
-      "base_currency": "GBP",
-      "portfolio_id": "553"
-    },
-    "554": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.745551",
-      "updated_at": "2025-08-04T23:40:21.745551",
-      "investor_id": "320",
-      "base_currency": "EUR",
-      "portfolio_id": "554"
-    },
-    "555": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.74608",
-      "updated_at": "2025-08-04T23:40:21.74608",
-      "investor_id": "10",
-      "base_currency": "NGN",
-      "portfolio_id": "555"
-    },
-    "556": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.746602",
-      "updated_at": "2025-08-04T23:40:21.746602",
-      "investor_id": "110",
-      "base_currency": "GBP",
-      "portfolio_id": "556"
-    },
-    "557": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.747138",
-      "updated_at": "2025-08-04T23:40:21.747138",
-      "investor_id": "327",
-      "base_currency": "USD",
-      "portfolio_id": "557"
-    },
-    "558": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.747514",
-      "updated_at": "2025-08-04T23:40:21.747514",
-      "investor_id": "268",
-      "base_currency": "GBP",
-      "portfolio_id": "558"
-    },
-    "559": {
-      "status": "inactive",
-      "created_at": "2025-08-04T23:40:21.748514",
-      "updated_at": "2025-08-04T23:40:21.748514",
-      "investor_id": "237",
-      "base_currency": "EUR",
-      "portfolio_id": "559"
-    },
-    "560": {
-      "status": "archived",
-      "created_at": "2025-08-04T23:40:21.748966",
-      "updated_at": "2025-08-04T23:40:21.748966",
-      "investor_id": "78",
-      "base_currency": "NGN",
-      "portfolio_id": "560"
-    }
+  "1": {
+    "portfolio_id": "1",
+    "investor_id": "1",
+    "status": "active",
+    "created_at": "2025-06-23T08:27:32",
+    "updated_at": "2025-07-31T18:45:36"
+  },
+  "2": {
+    "portfolio_id": "2",
+    "investor_id": "2",
+    "status": "active",
+    "created_at": "2022-09-16T01:08:55",
+    "updated_at": "2024-11-16T16:32:00"
+  },
+  "3": {
+    "portfolio_id": "3",
+    "investor_id": "3",
+    "status": "active",
+    "created_at": "2023-11-10T01:46:57",
+    "updated_at": "2024-11-26T09:33:49"
+  },
+  "4": {
+    "portfolio_id": "4",
+    "investor_id": "4",
+    "status": "active",
+    "created_at": "2022-09-22T15:52:34",
+    "updated_at": "2025-07-28T21:56:31"
+  },
+  "5": {
+    "portfolio_id": "5",
+    "investor_id": "5",
+    "status": "active",
+    "created_at": "2025-08-04T01:56:14",
+    "updated_at": "2025-08-09T02:47:48"
+  },
+  "6": {
+    "portfolio_id": "6",
+    "investor_id": "6",
+    "status": "active",
+    "created_at": "2024-12-18T13:53:17",
+    "updated_at": "2025-01-13T23:20:07"
+  },
+  "7": {
+    "portfolio_id": "7",
+    "investor_id": "7",
+    "status": "active",
+    "created_at": "2022-10-18T11:23:55",
+    "updated_at": "2023-08-25T08:34:37"
+  },
+  "8": {
+    "portfolio_id": "8",
+    "investor_id": "8",
+    "status": "active",
+    "created_at": "2025-02-18T03:41:03",
+    "updated_at": "2025-02-25T03:28:56"
+  },
+  "9": {
+    "portfolio_id": "9",
+    "investor_id": "9",
+    "status": "active",
+    "created_at": "2023-07-07T13:14:10",
+    "updated_at": "2024-01-01T19:32:16"
+  },
+  "10": {
+    "portfolio_id": "10",
+    "investor_id": "10",
+    "status": "active",
+    "created_at": "2025-02-07T09:20:04",
+    "updated_at": "2025-05-13T19:43:39"
+  },
+  "11": {
+    "portfolio_id": "11",
+    "investor_id": "11",
+    "status": "active",
+    "created_at": "2022-08-28T05:54:10",
+    "updated_at": "2024-02-21T23:47:25"
+  },
+  "12": {
+    "portfolio_id": "12",
+    "investor_id": "12",
+    "status": "inactive",
+    "created_at": "2025-08-11T09:08:46",
+    "updated_at": "2025-08-11T20:53:17"
+  },
+  "13": {
+    "portfolio_id": "13",
+    "investor_id": "13",
+    "status": "active",
+    "created_at": "2025-02-05T14:14:12",
+    "updated_at": "2025-07-26T19:00:33"
+  },
+  "14": {
+    "portfolio_id": "14",
+    "investor_id": "14",
+    "status": "archived",
+    "created_at": "2024-03-10T23:41:07",
+    "updated_at": "2025-04-10T10:54:13"
+  },
+  "15": {
+    "portfolio_id": "15",
+    "investor_id": "15",
+    "status": "active",
+    "created_at": "2023-04-29T04:17:11",
+    "updated_at": "2025-01-05T04:17:08"
+  },
+  "16": {
+    "portfolio_id": "16",
+    "investor_id": "16",
+    "status": "archived",
+    "created_at": "2023-07-13T16:11:39",
+    "updated_at": "2023-11-08T22:26:56"
+  },
+  "17": {
+    "portfolio_id": "17",
+    "investor_id": "17",
+    "status": "active",
+    "created_at": "2024-11-27T03:20:45",
+    "updated_at": "2024-11-29T23:51:08"
+  },
+  "18": {
+    "portfolio_id": "18",
+    "investor_id": "18",
+    "status": "active",
+    "created_at": "2025-04-18T04:50:30",
+    "updated_at": "2025-06-11T20:20:26"
+  },
+  "19": {
+    "portfolio_id": "19",
+    "investor_id": "19",
+    "status": "active",
+    "created_at": "2023-10-03T19:16:14",
+    "updated_at": "2024-12-08T20:45:33"
+  },
+  "20": {
+    "portfolio_id": "20",
+    "investor_id": "20",
+    "status": "active",
+    "created_at": "2024-03-20T14:10:48",
+    "updated_at": "2025-04-21T09:39:59"
+  },
+  "21": {
+    "portfolio_id": "21",
+    "investor_id": "21",
+    "status": "archived",
+    "created_at": "2024-04-11T12:34:56",
+    "updated_at": "2024-08-13T16:39:01"
+  },
+  "22": {
+    "portfolio_id": "22",
+    "investor_id": "22",
+    "status": "inactive",
+    "created_at": "2023-06-26T06:54:38",
+    "updated_at": "2024-07-28T09:39:19"
+  },
+  "23": {
+    "portfolio_id": "23",
+    "investor_id": "23",
+    "status": "active",
+    "created_at": "2024-01-18T17:46:31",
+    "updated_at": "2024-06-18T19:14:16"
+  },
+  "24": {
+    "portfolio_id": "24",
+    "investor_id": "24",
+    "status": "active",
+    "created_at": "2024-01-07T04:51:07",
+    "updated_at": "2024-07-27T09:58:32"
+  },
+  "25": {
+    "portfolio_id": "25",
+    "investor_id": "25",
+    "status": "active",
+    "created_at": "2024-04-18T01:38:29",
+    "updated_at": "2024-07-19T15:05:15"
+  },
+  "26": {
+    "portfolio_id": "26",
+    "investor_id": "26",
+    "status": "active",
+    "created_at": "2025-05-23T14:14:52",
+    "updated_at": "2025-06-20T07:14:07"
+  },
+  "27": {
+    "portfolio_id": "27",
+    "investor_id": "27",
+    "status": "inactive",
+    "created_at": "2024-07-18T17:58:01",
+    "updated_at": "2024-08-10T03:09:49"
+  },
+  "28": {
+    "portfolio_id": "28",
+    "investor_id": "28",
+    "status": "active",
+    "created_at": "2024-07-09T06:18:23",
+    "updated_at": "2025-08-10T19:02:42"
+  },
+  "29": {
+    "portfolio_id": "29",
+    "investor_id": "29",
+    "status": "inactive",
+    "created_at": "2024-05-08T08:29:35",
+    "updated_at": "2024-10-14T06:19:41"
+  },
+  "30": {
+    "portfolio_id": "30",
+    "investor_id": "30",
+    "status": "inactive",
+    "created_at": "2023-05-31T06:16:51",
+    "updated_at": "2023-11-22T07:47:55"
+  },
+  "31": {
+    "portfolio_id": "31",
+    "investor_id": "31",
+    "status": "inactive",
+    "created_at": "2022-10-20T20:26:37",
+    "updated_at": "2024-06-13T17:42:12"
+  },
+  "32": {
+    "portfolio_id": "32",
+    "investor_id": "32",
+    "status": "active",
+    "created_at": "2023-01-29T22:24:42",
+    "updated_at": "2023-12-15T07:06:30"
+  },
+  "33": {
+    "portfolio_id": "33",
+    "investor_id": "33",
+    "status": "active",
+    "created_at": "2023-06-24T01:06:04",
+    "updated_at": "2024-09-29T22:04:50"
+  },
+  "34": {
+    "portfolio_id": "34",
+    "investor_id": "34",
+    "status": "archived",
+    "created_at": "2025-07-23T14:58:48",
+    "updated_at": "2025-08-08T23:44:01"
+  },
+  "35": {
+    "portfolio_id": "35",
+    "investor_id": "35",
+    "status": "active",
+    "created_at": "2023-07-16T02:30:28",
+    "updated_at": "2025-06-03T18:54:06"
+  },
+  "36": {
+    "portfolio_id": "36",
+    "investor_id": "36",
+    "status": "active",
+    "created_at": "2025-02-23T17:30:38",
+    "updated_at": "2025-08-01T13:00:56"
+  },
+  "37": {
+    "portfolio_id": "37",
+    "investor_id": "37",
+    "status": "active",
+    "created_at": "2023-12-01T09:43:08",
+    "updated_at": "2024-09-06T18:05:48"
+  },
+  "38": {
+    "portfolio_id": "38",
+    "investor_id": "38",
+    "status": "active",
+    "created_at": "2024-08-06T14:12:22",
+    "updated_at": "2024-08-27T16:56:54"
+  },
+  "39": {
+    "portfolio_id": "39",
+    "investor_id": "39",
+    "status": "active",
+    "created_at": "2025-05-19T12:05:57",
+    "updated_at": "2025-07-19T07:03:32"
+  },
+  "40": {
+    "portfolio_id": "40",
+    "investor_id": "40",
+    "status": "inactive",
+    "created_at": "2023-08-09T03:10:57",
+    "updated_at": "2024-10-22T09:58:07"
+  },
+  "41": {
+    "portfolio_id": "41",
+    "investor_id": "41",
+    "status": "inactive",
+    "created_at": "2023-09-13T02:53:00",
+    "updated_at": "2024-02-28T12:26:28"
+  },
+  "42": {
+    "portfolio_id": "42",
+    "investor_id": "42",
+    "status": "active",
+    "created_at": "2024-10-19T02:24:33",
+    "updated_at": "2024-10-28T08:21:28"
+  },
+  "43": {
+    "portfolio_id": "43",
+    "investor_id": "43",
+    "status": "active",
+    "created_at": "2023-12-11T13:12:39",
+    "updated_at": "2023-12-21T03:37:27"
+  },
+  "44": {
+    "portfolio_id": "44",
+    "investor_id": "44",
+    "status": "active",
+    "created_at": "2023-07-19T08:05:52",
+    "updated_at": "2025-04-23T16:43:26"
+  },
+  "45": {
+    "portfolio_id": "45",
+    "investor_id": "45",
+    "status": "active",
+    "created_at": "2023-05-25T04:23:51",
+    "updated_at": "2024-10-24T22:17:07"
+  },
+  "46": {
+    "portfolio_id": "46",
+    "investor_id": "46",
+    "status": "active",
+    "created_at": "2023-07-03T16:37:45",
+    "updated_at": "2024-07-25T17:42:44"
+  },
+  "47": {
+    "portfolio_id": "47",
+    "investor_id": "47",
+    "status": "inactive",
+    "created_at": "2024-04-11T18:14:48",
+    "updated_at": "2024-12-22T00:39:24"
+  },
+  "48": {
+    "portfolio_id": "48",
+    "investor_id": "48",
+    "status": "active",
+    "created_at": "2024-07-28T10:24:29",
+    "updated_at": "2025-08-14T16:05:30"
+  },
+  "49": {
+    "portfolio_id": "49",
+    "investor_id": "49",
+    "status": "active",
+    "created_at": "2024-04-15T03:37:21",
+    "updated_at": "2025-07-26T14:13:46"
+  },
+  "50": {
+    "portfolio_id": "50",
+    "investor_id": "50",
+    "status": "active",
+    "created_at": "2023-04-30T20:28:52",
+    "updated_at": "2025-06-02T15:43:27"
+  },
+  "51": {
+    "portfolio_id": "51",
+    "investor_id": "51",
+    "status": "active",
+    "created_at": "2024-09-01T01:29:09",
+    "updated_at": "2025-04-06T20:47:56"
+  },
+  "52": {
+    "portfolio_id": "52",
+    "investor_id": "52",
+    "status": "active",
+    "created_at": "2025-03-01T03:20:12",
+    "updated_at": "2025-04-25T13:07:44"
+  },
+  "53": {
+    "portfolio_id": "53",
+    "investor_id": "53",
+    "status": "active",
+    "created_at": "2025-06-18T07:42:42",
+    "updated_at": "2025-07-12T10:48:05"
+  },
+  "54": {
+    "portfolio_id": "54",
+    "investor_id": "54",
+    "status": "active",
+    "created_at": "2022-12-15T19:08:39",
+    "updated_at": "2025-07-30T07:05:42"
+  },
+  "55": {
+    "portfolio_id": "55",
+    "investor_id": "55",
+    "status": "active",
+    "created_at": "2023-01-30T18:14:41",
+    "updated_at": "2023-01-31T04:20:18"
+  },
+  "56": {
+    "portfolio_id": "56",
+    "investor_id": "56",
+    "status": "active",
+    "created_at": "2022-10-04T14:27:39",
+    "updated_at": "2025-05-23T14:46:16"
+  },
+  "57": {
+    "portfolio_id": "57",
+    "investor_id": "57",
+    "status": "archived",
+    "created_at": "2022-11-02T20:25:24",
+    "updated_at": "2022-11-20T06:26:00"
+  },
+  "58": {
+    "portfolio_id": "58",
+    "investor_id": "58",
+    "status": "active",
+    "created_at": "2023-10-17T03:19:39",
+    "updated_at": "2023-10-17T03:30:15"
+  },
+  "59": {
+    "portfolio_id": "59",
+    "investor_id": "59",
+    "status": "active",
+    "created_at": "2023-12-01T12:33:01",
+    "updated_at": "2024-11-11T05:04:53"
+  },
+  "60": {
+    "portfolio_id": "60",
+    "investor_id": "60",
+    "status": "active",
+    "created_at": "2024-03-31T15:38:43",
+    "updated_at": "2025-06-15T22:00:00"
+  },
+  "61": {
+    "portfolio_id": "61",
+    "investor_id": "61",
+    "status": "inactive",
+    "created_at": "2023-04-21T21:21:24",
+    "updated_at": "2023-09-19T22:27:12"
+  },
+  "62": {
+    "portfolio_id": "62",
+    "investor_id": "62",
+    "status": "archived",
+    "created_at": "2022-11-08T07:16:42",
+    "updated_at": "2024-06-02T01:10:05"
+  },
+  "63": {
+    "portfolio_id": "63",
+    "investor_id": "63",
+    "status": "active",
+    "created_at": "2023-07-17T14:31:51",
+    "updated_at": "2024-11-30T04:35:44"
+  },
+  "64": {
+    "portfolio_id": "64",
+    "investor_id": "64",
+    "status": "active",
+    "created_at": "2023-06-09T12:14:23",
+    "updated_at": "2025-03-27T20:59:56"
+  },
+  "65": {
+    "portfolio_id": "65",
+    "investor_id": "65",
+    "status": "active",
+    "created_at": "2024-03-18T07:00:58",
+    "updated_at": "2024-05-16T09:36:49"
+  },
+  "66": {
+    "portfolio_id": "66",
+    "investor_id": "66",
+    "status": "inactive",
+    "created_at": "2023-10-26T01:36:17",
+    "updated_at": "2024-09-14T08:07:37"
+  },
+  "67": {
+    "portfolio_id": "67",
+    "investor_id": "67",
+    "status": "inactive",
+    "created_at": "2025-05-28T12:11:08",
+    "updated_at": "2025-05-30T16:22:06"
+  },
+  "68": {
+    "portfolio_id": "68",
+    "investor_id": "68",
+    "status": "active",
+    "created_at": "2023-11-22T05:43:32",
+    "updated_at": "2025-07-12T15:50:12"
+  },
+  "69": {
+    "portfolio_id": "69",
+    "investor_id": "69",
+    "status": "archived",
+    "created_at": "2022-10-10T11:52:02",
+    "updated_at": "2023-04-15T00:38:39"
+  },
+  "70": {
+    "portfolio_id": "70",
+    "investor_id": "70",
+    "status": "active",
+    "created_at": "2023-11-29T08:29:15",
+    "updated_at": "2024-03-18T12:32:27"
+  },
+  "71": {
+    "portfolio_id": "71",
+    "investor_id": "71",
+    "status": "active",
+    "created_at": "2023-09-29T06:21:55",
+    "updated_at": "2024-09-18T04:06:50"
+  },
+  "72": {
+    "portfolio_id": "72",
+    "investor_id": "72",
+    "status": "active",
+    "created_at": "2023-07-01T01:44:35",
+    "updated_at": "2024-01-03T23:47:05"
+  },
+  "73": {
+    "portfolio_id": "73",
+    "investor_id": "73",
+    "status": "inactive",
+    "created_at": "2025-05-02T05:30:15",
+    "updated_at": "2025-05-08T03:01:38"
+  },
+  "74": {
+    "portfolio_id": "74",
+    "investor_id": "74",
+    "status": "inactive",
+    "created_at": "2024-08-26T08:37:48",
+    "updated_at": "2024-11-02T03:50:44"
+  },
+  "75": {
+    "portfolio_id": "75",
+    "investor_id": "75",
+    "status": "active",
+    "created_at": "2022-09-08T10:01:39",
+    "updated_at": "2023-03-02T07:33:59"
+  },
+  "76": {
+    "portfolio_id": "76",
+    "investor_id": "76",
+    "status": "active",
+    "created_at": "2022-12-28T21:06:26",
+    "updated_at": "2023-12-28T15:11:27"
+  },
+  "77": {
+    "portfolio_id": "77",
+    "investor_id": "77",
+    "status": "active",
+    "created_at": "2024-07-24T07:59:27",
+    "updated_at": "2025-06-27T03:02:16"
+  },
+  "78": {
+    "portfolio_id": "78",
+    "investor_id": "78",
+    "status": "active",
+    "created_at": "2025-02-02T18:53:47",
+    "updated_at": "2025-05-19T20:41:41"
+  },
+  "79": {
+    "portfolio_id": "79",
+    "investor_id": "79",
+    "status": "active",
+    "created_at": "2023-10-10T16:03:52",
+    "updated_at": "2023-10-28T04:35:37"
+  },
+  "80": {
+    "portfolio_id": "80",
+    "investor_id": "80",
+    "status": "active",
+    "created_at": "2025-08-13T00:23:12",
+    "updated_at": "2025-08-15T22:15:06"
+  },
+  "81": {
+    "portfolio_id": "81",
+    "investor_id": "81",
+    "status": "active",
+    "created_at": "2022-11-23T10:38:08",
+    "updated_at": "2023-07-19T13:52:55"
+  },
+  "82": {
+    "portfolio_id": "82",
+    "investor_id": "82",
+    "status": "archived",
+    "created_at": "2023-07-17T20:45:17",
+    "updated_at": "2023-09-06T11:23:00"
+  },
+  "83": {
+    "portfolio_id": "83",
+    "investor_id": "83",
+    "status": "active",
+    "created_at": "2024-04-25T16:34:07",
+    "updated_at": "2025-02-12T20:16:51"
+  },
+  "84": {
+    "portfolio_id": "84",
+    "investor_id": "84",
+    "status": "inactive",
+    "created_at": "2022-10-02T13:55:32",
+    "updated_at": "2022-11-29T07:23:39"
+  },
+  "85": {
+    "portfolio_id": "85",
+    "investor_id": "85",
+    "status": "inactive",
+    "created_at": "2024-09-27T20:31:58",
+    "updated_at": "2025-03-14T19:36:31"
+  },
+  "86": {
+    "portfolio_id": "86",
+    "investor_id": "86",
+    "status": "inactive",
+    "created_at": "2024-08-09T13:51:23",
+    "updated_at": "2025-01-16T17:55:44"
+  },
+  "87": {
+    "portfolio_id": "87",
+    "investor_id": "87",
+    "status": "inactive",
+    "created_at": "2023-05-16T00:34:09",
+    "updated_at": "2023-06-05T15:16:32"
+  },
+  "88": {
+    "portfolio_id": "88",
+    "investor_id": "88",
+    "status": "active",
+    "created_at": "2025-01-29T02:26:23",
+    "updated_at": "2025-02-15T04:51:49"
+  },
+  "89": {
+    "portfolio_id": "89",
+    "investor_id": "89",
+    "status": "active",
+    "created_at": "2025-06-02T03:26:21",
+    "updated_at": "2025-06-08T06:15:49"
+  },
+  "90": {
+    "portfolio_id": "90",
+    "investor_id": "90",
+    "status": "active",
+    "created_at": "2023-10-27T09:04:49",
+    "updated_at": "2025-04-30T18:36:28"
+  },
+  "91": {
+    "portfolio_id": "91",
+    "investor_id": "91",
+    "status": "active",
+    "created_at": "2023-10-28T12:52:53",
+    "updated_at": "2025-05-08T21:36:18"
+  },
+  "92": {
+    "portfolio_id": "92",
+    "investor_id": "92",
+    "status": "active",
+    "created_at": "2024-08-30T12:02:22",
+    "updated_at": "2024-11-17T05:19:39"
+  },
+  "93": {
+    "portfolio_id": "93",
+    "investor_id": "93",
+    "status": "active",
+    "created_at": "2023-10-06T08:19:45",
+    "updated_at": "2023-10-25T07:25:05"
+  },
+  "94": {
+    "portfolio_id": "94",
+    "investor_id": "94",
+    "status": "inactive",
+    "created_at": "2025-06-24T20:58:46",
+    "updated_at": "2025-07-21T06:41:52"
+  },
+  "95": {
+    "portfolio_id": "95",
+    "investor_id": "95",
+    "status": "active",
+    "created_at": "2023-06-05T06:59:38",
+    "updated_at": "2024-06-04T01:39:43"
+  },
+  "96": {
+    "portfolio_id": "96",
+    "investor_id": "96",
+    "status": "active",
+    "created_at": "2025-07-23T12:11:53",
+    "updated_at": "2025-08-03T09:10:14"
+  },
+  "97": {
+    "portfolio_id": "97",
+    "investor_id": "97",
+    "status": "active",
+    "created_at": "2022-08-20T03:53:29",
+    "updated_at": "2025-05-26T04:26:29"
+  },
+  "98": {
+    "portfolio_id": "98",
+    "investor_id": "98",
+    "status": "active",
+    "created_at": "2022-10-24T16:16:17",
+    "updated_at": "2025-03-17T14:20:07"
+  },
+  "99": {
+    "portfolio_id": "99",
+    "investor_id": "99",
+    "status": "archived",
+    "created_at": "2024-06-23T10:03:44",
+    "updated_at": "2025-07-07T20:52:37"
+  },
+  "100": {
+    "portfolio_id": "100",
+    "investor_id": "100",
+    "status": "archived",
+    "created_at": "2023-08-11T18:58:01",
+    "updated_at": "2025-02-17T14:08:45"
+  },
+  "101": {
+    "portfolio_id": "101",
+    "investor_id": "101",
+    "status": "active",
+    "created_at": "2022-10-29T14:30:39",
+    "updated_at": "2024-01-17T16:38:34"
+  },
+  "102": {
+    "portfolio_id": "102",
+    "investor_id": "102",
+    "status": "active",
+    "created_at": "2024-03-04T15:26:38",
+    "updated_at": "2024-05-12T07:38:15"
+  },
+  "103": {
+    "portfolio_id": "103",
+    "investor_id": "103",
+    "status": "inactive",
+    "created_at": "2025-03-03T04:07:43",
+    "updated_at": "2025-05-13T11:51:26"
+  },
+  "104": {
+    "portfolio_id": "104",
+    "investor_id": "104",
+    "status": "archived",
+    "created_at": "2024-07-25T21:45:17",
+    "updated_at": "2025-06-09T15:21:55"
+  },
+  "105": {
+    "portfolio_id": "105",
+    "investor_id": "105",
+    "status": "inactive",
+    "created_at": "2024-08-20T02:23:40",
+    "updated_at": "2025-03-19T14:20:53"
+  },
+  "106": {
+    "portfolio_id": "106",
+    "investor_id": "106",
+    "status": "active",
+    "created_at": "2023-04-28T17:40:51",
+    "updated_at": "2024-11-28T14:06:01"
+  },
+  "107": {
+    "portfolio_id": "107",
+    "investor_id": "107",
+    "status": "inactive",
+    "created_at": "2025-06-05T05:40:50",
+    "updated_at": "2025-07-11T06:48:27"
+  },
+  "108": {
+    "portfolio_id": "108",
+    "investor_id": "108",
+    "status": "inactive",
+    "created_at": "2024-12-20T02:54:32",
+    "updated_at": "2025-07-18T03:13:22"
+  },
+  "109": {
+    "portfolio_id": "109",
+    "investor_id": "109",
+    "status": "archived",
+    "created_at": "2023-03-31T11:10:20",
+    "updated_at": "2024-08-10T16:09:13"
+  },
+  "110": {
+    "portfolio_id": "110",
+    "investor_id": "110",
+    "status": "inactive",
+    "created_at": "2025-05-06T06:36:12",
+    "updated_at": "2025-07-12T14:45:04"
+  },
+  "111": {
+    "portfolio_id": "111",
+    "investor_id": "111",
+    "status": "inactive",
+    "created_at": "2024-05-10T09:21:51",
+    "updated_at": "2024-09-22T12:15:52"
+  },
+  "112": {
+    "portfolio_id": "112",
+    "investor_id": "112",
+    "status": "active",
+    "created_at": "2025-02-03T11:06:23",
+    "updated_at": "2025-04-22T11:31:59"
+  },
+  "113": {
+    "portfolio_id": "113",
+    "investor_id": "113",
+    "status": "active",
+    "created_at": "2024-03-17T04:30:22",
+    "updated_at": "2025-03-15T07:02:33"
+  },
+  "114": {
+    "portfolio_id": "114",
+    "investor_id": "114",
+    "status": "active",
+    "created_at": "2024-02-07T20:38:15",
+    "updated_at": "2024-09-22T00:17:31"
+  },
+  "115": {
+    "portfolio_id": "115",
+    "investor_id": "115",
+    "status": "active",
+    "created_at": "2023-04-03T11:24:25",
+    "updated_at": "2025-05-10T16:06:04"
+  },
+  "116": {
+    "portfolio_id": "116",
+    "investor_id": "116",
+    "status": "inactive",
+    "created_at": "2025-07-01T19:33:49",
+    "updated_at": "2025-07-28T03:21:08"
+  },
+  "117": {
+    "portfolio_id": "117",
+    "investor_id": "117",
+    "status": "active",
+    "created_at": "2024-05-11T16:05:24",
+    "updated_at": "2025-02-15T13:06:23"
+  },
+  "118": {
+    "portfolio_id": "118",
+    "investor_id": "118",
+    "status": "active",
+    "created_at": "2024-06-17T18:36:29",
+    "updated_at": "2024-08-23T22:04:12"
+  },
+  "119": {
+    "portfolio_id": "119",
+    "investor_id": "119",
+    "status": "inactive",
+    "created_at": "2025-03-09T13:05:34",
+    "updated_at": "2025-04-27T17:05:30"
+  },
+  "120": {
+    "portfolio_id": "120",
+    "investor_id": "120",
+    "status": "active",
+    "created_at": "2023-03-18T22:53:23",
+    "updated_at": "2024-08-16T22:43:29"
+  },
+  "121": {
+    "portfolio_id": "121",
+    "investor_id": "121",
+    "status": "inactive",
+    "created_at": "2024-02-25T07:22:51",
+    "updated_at": "2025-07-10T15:42:16"
+  },
+  "122": {
+    "portfolio_id": "122",
+    "investor_id": "122",
+    "status": "inactive",
+    "created_at": "2024-08-10T21:40:50",
+    "updated_at": "2025-02-01T23:08:59"
+  },
+  "123": {
+    "portfolio_id": "123",
+    "investor_id": "123",
+    "status": "active",
+    "created_at": "2024-12-01T18:30:56",
+    "updated_at": "2025-02-03T13:40:48"
+  },
+  "124": {
+    "portfolio_id": "124",
+    "investor_id": "124",
+    "status": "active",
+    "created_at": "2022-10-22T13:17:32",
+    "updated_at": "2024-04-08T02:10:35"
+  },
+  "125": {
+    "portfolio_id": "125",
+    "investor_id": "125",
+    "status": "active",
+    "created_at": "2024-10-11T17:26:47",
+    "updated_at": "2025-06-11T11:27:14"
+  },
+  "126": {
+    "portfolio_id": "126",
+    "investor_id": "126",
+    "status": "inactive",
+    "created_at": "2023-03-30T11:07:02",
+    "updated_at": "2024-09-11T04:44:52"
+  },
+  "127": {
+    "portfolio_id": "127",
+    "investor_id": "127",
+    "status": "active",
+    "created_at": "2024-12-03T07:46:13",
+    "updated_at": "2025-08-06T00:56:16"
+  },
+  "128": {
+    "portfolio_id": "128",
+    "investor_id": "128",
+    "status": "active",
+    "created_at": "2023-04-21T19:08:54",
+    "updated_at": "2023-11-24T12:52:45"
+  },
+  "129": {
+    "portfolio_id": "129",
+    "investor_id": "129",
+    "status": "active",
+    "created_at": "2023-07-02T20:29:59",
+    "updated_at": "2025-04-03T09:45:06"
+  },
+  "130": {
+    "portfolio_id": "130",
+    "investor_id": "130",
+    "status": "active",
+    "created_at": "2025-07-29T00:09:51",
+    "updated_at": "2025-08-07T15:03:17"
+  },
+  "131": {
+    "portfolio_id": "131",
+    "investor_id": "131",
+    "status": "active",
+    "created_at": "2022-12-22T02:51:27",
+    "updated_at": "2024-10-02T23:25:02"
+  },
+  "132": {
+    "portfolio_id": "132",
+    "investor_id": "132",
+    "status": "archived",
+    "created_at": "2023-02-06T22:25:48",
+    "updated_at": "2025-03-26T19:22:01"
+  },
+  "133": {
+    "portfolio_id": "133",
+    "investor_id": "133",
+    "status": "inactive",
+    "created_at": "2024-12-09T04:54:41",
+    "updated_at": "2024-12-25T12:10:43"
+  },
+  "134": {
+    "portfolio_id": "134",
+    "investor_id": "134",
+    "status": "active",
+    "created_at": "2024-11-01T06:10:25",
+    "updated_at": "2024-12-11T13:48:08"
+  },
+  "135": {
+    "portfolio_id": "135",
+    "investor_id": "135",
+    "status": "active",
+    "created_at": "2025-01-27T02:07:05",
+    "updated_at": "2025-01-28T15:46:41"
+  },
+  "136": {
+    "portfolio_id": "136",
+    "investor_id": "136",
+    "status": "active",
+    "created_at": "2023-09-16T19:47:13",
+    "updated_at": "2024-11-17T08:53:30"
+  },
+  "137": {
+    "portfolio_id": "137",
+    "investor_id": "137",
+    "status": "active",
+    "created_at": "2025-06-14T14:42:14",
+    "updated_at": "2025-06-30T14:29:13"
+  },
+  "138": {
+    "portfolio_id": "138",
+    "investor_id": "138",
+    "status": "active",
+    "created_at": "2023-08-04T10:18:03",
+    "updated_at": "2025-01-16T17:11:03"
+  },
+  "139": {
+    "portfolio_id": "139",
+    "investor_id": "139",
+    "status": "active",
+    "created_at": "2024-01-19T09:12:36",
+    "updated_at": "2025-02-02T08:11:09"
+  },
+  "140": {
+    "portfolio_id": "140",
+    "investor_id": "140",
+    "status": "active",
+    "created_at": "2023-02-14T18:23:12",
+    "updated_at": "2024-07-04T09:25:57"
+  },
+  "141": {
+    "portfolio_id": "141",
+    "investor_id": "141",
+    "status": "inactive",
+    "created_at": "2024-03-19T01:42:02",
+    "updated_at": "2025-05-19T01:33:45"
+  },
+  "142": {
+    "portfolio_id": "142",
+    "investor_id": "142",
+    "status": "active",
+    "created_at": "2024-04-21T16:26:18",
+    "updated_at": "2025-06-02T00:07:15"
+  },
+  "143": {
+    "portfolio_id": "143",
+    "investor_id": "143",
+    "status": "active",
+    "created_at": "2025-06-02T13:56:52",
+    "updated_at": "2025-07-10T17:14:14"
+  },
+  "144": {
+    "portfolio_id": "144",
+    "investor_id": "144",
+    "status": "active",
+    "created_at": "2023-07-23T10:49:03",
+    "updated_at": "2024-10-13T15:14:21"
+  },
+  "145": {
+    "portfolio_id": "145",
+    "investor_id": "145",
+    "status": "inactive",
+    "created_at": "2024-02-13T14:28:50",
+    "updated_at": "2024-12-26T12:07:22"
+  },
+  "146": {
+    "portfolio_id": "146",
+    "investor_id": "146",
+    "status": "active",
+    "created_at": "2025-07-20T14:19:14",
+    "updated_at": "2025-07-25T18:18:59"
+  },
+  "147": {
+    "portfolio_id": "147",
+    "investor_id": "147",
+    "status": "archived",
+    "created_at": "2023-08-02T22:13:46",
+    "updated_at": "2024-12-12T09:26:36"
+  },
+  "148": {
+    "portfolio_id": "148",
+    "investor_id": "148",
+    "status": "active",
+    "created_at": "2025-05-13T09:39:34",
+    "updated_at": "2025-06-26T10:45:00"
+  },
+  "149": {
+    "portfolio_id": "149",
+    "investor_id": "149",
+    "status": "active",
+    "created_at": "2023-04-16T00:12:13",
+    "updated_at": "2024-02-02T13:41:49"
+  },
+  "150": {
+    "portfolio_id": "150",
+    "investor_id": "150",
+    "status": "active",
+    "created_at": "2022-08-18T01:28:04",
+    "updated_at": "2024-10-09T19:00:15"
+  },
+  "151": {
+    "portfolio_id": "151",
+    "investor_id": "151",
+    "status": "inactive",
+    "created_at": "2023-01-31T14:21:02",
+    "updated_at": "2025-03-10T20:51:12"
+  },
+  "152": {
+    "portfolio_id": "152",
+    "investor_id": "152",
+    "status": "active",
+    "created_at": "2023-03-29T09:12:28",
+    "updated_at": "2023-07-19T13:16:03"
+  },
+  "153": {
+    "portfolio_id": "153",
+    "investor_id": "153",
+    "status": "inactive",
+    "created_at": "2025-07-31T16:23:12",
+    "updated_at": "2025-08-08T02:58:06"
+  },
+  "154": {
+    "portfolio_id": "154",
+    "investor_id": "154",
+    "status": "active",
+    "created_at": "2023-08-27T19:26:37",
+    "updated_at": "2025-04-05T20:35:14"
+  },
+  "155": {
+    "portfolio_id": "155",
+    "investor_id": "155",
+    "status": "active",
+    "created_at": "2024-05-09T00:29:21",
+    "updated_at": "2024-12-30T06:09:50"
+  },
+  "156": {
+    "portfolio_id": "156",
+    "investor_id": "156",
+    "status": "active",
+    "created_at": "2023-07-08T04:25:32",
+    "updated_at": "2024-09-01T03:25:13"
+  },
+  "157": {
+    "portfolio_id": "157",
+    "investor_id": "157",
+    "status": "active",
+    "created_at": "2025-05-04T14:52:34",
+    "updated_at": "2025-05-23T09:00:18"
+  },
+  "158": {
+    "portfolio_id": "158",
+    "investor_id": "158",
+    "status": "active",
+    "created_at": "2023-06-09T20:29:03",
+    "updated_at": "2023-07-16T08:50:13"
+  },
+  "159": {
+    "portfolio_id": "159",
+    "investor_id": "159",
+    "status": "active",
+    "created_at": "2022-09-11T07:58:06",
+    "updated_at": "2022-10-29T15:21:54"
+  },
+  "160": {
+    "portfolio_id": "160",
+    "investor_id": "160",
+    "status": "active",
+    "created_at": "2023-11-19T14:52:21",
+    "updated_at": "2024-02-21T15:53:02"
+  },
+  "161": {
+    "portfolio_id": "161",
+    "investor_id": "161",
+    "status": "active",
+    "created_at": "2023-07-04T20:01:15",
+    "updated_at": "2023-11-26T01:58:58"
+  },
+  "162": {
+    "portfolio_id": "162",
+    "investor_id": "162",
+    "status": "active",
+    "created_at": "2025-07-09T05:25:58",
+    "updated_at": "2025-07-12T16:32:43"
+  },
+  "163": {
+    "portfolio_id": "163",
+    "investor_id": "163",
+    "status": "active",
+    "created_at": "2022-11-29T05:59:55",
+    "updated_at": "2023-12-27T22:41:57"
+  },
+  "164": {
+    "portfolio_id": "164",
+    "investor_id": "164",
+    "status": "active",
+    "created_at": "2024-07-20T05:22:12",
+    "updated_at": "2024-10-20T14:48:48"
+  },
+  "165": {
+    "portfolio_id": "165",
+    "investor_id": "165",
+    "status": "inactive",
+    "created_at": "2024-06-02T13:28:06",
+    "updated_at": "2025-03-07T06:01:03"
+  },
+  "166": {
+    "portfolio_id": "166",
+    "investor_id": "166",
+    "status": "active",
+    "created_at": "2025-06-09T20:55:17",
+    "updated_at": "2025-07-18T23:58:52"
+  },
+  "167": {
+    "portfolio_id": "167",
+    "investor_id": "167",
+    "status": "active",
+    "created_at": "2022-09-02T13:15:48",
+    "updated_at": "2025-03-18T19:56:49"
+  },
+  "168": {
+    "portfolio_id": "168",
+    "investor_id": "168",
+    "status": "active",
+    "created_at": "2023-11-26T12:05:14",
+    "updated_at": "2024-08-19T01:13:55"
+  },
+  "169": {
+    "portfolio_id": "169",
+    "investor_id": "169",
+    "status": "inactive",
+    "created_at": "2024-04-10T11:30:38",
+    "updated_at": "2025-01-26T16:27:00"
+  },
+  "170": {
+    "portfolio_id": "170",
+    "investor_id": "170",
+    "status": "active",
+    "created_at": "2023-07-06T22:45:46",
+    "updated_at": "2024-02-27T21:45:20"
+  },
+  "171": {
+    "portfolio_id": "171",
+    "investor_id": "171",
+    "status": "active",
+    "created_at": "2024-06-12T19:46:16",
+    "updated_at": "2025-06-19T10:31:46"
+  },
+  "172": {
+    "portfolio_id": "172",
+    "investor_id": "172",
+    "status": "active",
+    "created_at": "2025-04-29T21:56:46",
+    "updated_at": "2025-05-08T01:05:49"
+  },
+  "173": {
+    "portfolio_id": "173",
+    "investor_id": "173",
+    "status": "active",
+    "created_at": "2025-07-07T02:34:32",
+    "updated_at": "2025-07-30T23:01:13"
+  },
+  "174": {
+    "portfolio_id": "174",
+    "investor_id": "174",
+    "status": "active",
+    "created_at": "2022-10-05T02:19:14",
+    "updated_at": "2024-11-19T19:28:46"
+  },
+  "175": {
+    "portfolio_id": "175",
+    "investor_id": "175",
+    "status": "archived",
+    "created_at": "2023-12-26T15:58:55",
+    "updated_at": "2024-09-24T16:21:36"
   }
+}

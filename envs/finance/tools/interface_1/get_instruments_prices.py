@@ -2,40 +2,24 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class get_instruments_prices(Tool):
+class GetInstrumentsPrices(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], price_id: Optional[str] = None, instrument_id: Optional[str] = None,
-               price_date: Optional[str] = None, ticker: Optional[str] = None) -> str:
+    def invoke(data: Dict[str, Any], instrument_id: Optional[str] = None,
+               price_date: Optional[str] = None) -> str:
         instrument_prices = data.get("instrument_prices", {})
         instruments = data.get("instruments", {})
         results = []
         
+        # Validate instrument if provided
+        if instrument_id and str(instrument_id) not in instruments:
+            raise ValueError(f"Instrument {instrument_id} not found")
+        
         for price in instrument_prices.values():
-            if price_id and price.get("price_id") != price_id:
-                continue
             if instrument_id and price.get("instrument_id") != instrument_id:
                 continue
             if price_date and price.get("price_date") != price_date:
                 continue
-            
-            # If ticker filter is provided, need to check instrument data
-            if ticker:
-                instrument = None
-                for inst in instruments.values():
-                    if inst.get("instrument_id") == price.get("instrument_id"):
-                        instrument = inst
-                        break
-                if not instrument or instrument.get("ticker", "").lower() != ticker.lower():
-                    continue
-            
-            # Merge instrument data with price data
-            instrument_with_price = dict(price)
-            for inst in instruments.values():
-                if inst.get("instrument_id") == price.get("instrument_id"):
-                    instrument_with_price.update(inst)
-                    break
-            
-            results.append(instrument_with_price)
+            results.append(price)
         
         return json.dumps(results)
 
@@ -45,14 +29,12 @@ class get_instruments_prices(Tool):
             "type": "function",
             "function": {
                 "name": "get_instruments_prices",
-                "description": "Get instrument prices with optional filters",
+                "description": "Get instrument prices for pricing and valuation",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "price_id": {"type": "string", "description": "Filter by price ID"},
-                        "instrument_id": {"type": "string", "description": "Filter by instrument ID"},
-                        "price_date": {"type": "string", "description": "Filter by price date (YYYY-MM-DD)"},
-                        "ticker": {"type": "string", "description": "Filter by ticker symbol"}
+                        "instrument_id": {"type": "string", "description": "Filter by instrument ID (optional)"},
+                        "price_date": {"type": "string", "description": "Filter by price date (optional)"}
                     },
                     "required": []
                 }

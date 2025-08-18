@@ -5,46 +5,86 @@ INTERFACE_3_TEST = [
         annotator="0",
         user_id="1",
         instruction=(
-            "You are John Johnson with the email \"johnjohnson@gmail.com\", a financial analyst. "
-            "You need to manage portfolio holdings and instrument data. First, verify your user profile "
-            "and find information about available instruments. Then, add a new instrument to the system "
-            "called 'Microsoft Corporation' with symbol 'MSFT'. After that, add pricing information for this instrument, "
-            "create a new portfolio holding, and generate a performance report. Finally, email the user "
-            "with a summary of the portfolio activities."
+            "You are John Johnson, a finance officer. You need to manage commitments and financial "
+            "operations. First, add a new user to the system, then get available funds and create "
+            "a commitment for an investor. After that, create an invoice for the commitment and "
+            "register a payment. Finally, generate a report and send an email notification."
         ),
         actions=[
-            Action(name="find_user", kwargs={
-                "email": "johnjohnson@gmail.com"
-            }),
-            Action(name="retrieve_instruments", kwargs={
+            Action(name="add_new_user", kwargs={
+                "first_name": "Sarah",
+                "last_name": "Wilson",
+                "email": "sarah.wilson@investment.com",
+                "role": "finance_officer",
+                "timezone": "EST",
                 "status": "active"
             }),
-            Action(name="add_new_instrument", kwargs={
-                "symbol": "MSFT",
-                "name": "Microsoft Corporation",
-                "instrument_type": "stock",
-                "currency": "USD"
+            Action(name="get_available_funds", kwargs={}),
+            Action(name="create_commitment", kwargs={
+                "investor_id": "1",
+                "fund_id": "1",
+                "committed_amount": 750000.0,
+                "compliance_officer_approval": True
             }),
-            Action(name="add_new_instrument_price", kwargs={
-                "instrument_id": "1",
-                "price": 335.75,
-                "currency": "USD"
+            Action(name="create_invoice", kwargs={
+                "investor_id": "1",
+                "amount": 750000.0,
+                "due_date": "2025-09-17",
+                "description": "Investment commitment payment"
             }),
-            Action(name="add_new_holding", kwargs={
-                "portfolio_id": "1",
-                "instrument_id": "1",
-                "quantity": 50,
-                "unit_cost": 335.75
+            Action(name="register_payment", kwargs={
+                "invoice_id": "1",
+                "amount": 750000.0,
+                "payment_method": "wire_transfer",
+                "payment_date": "2025-08-17"
             }),
             Action(name="generate_report", kwargs={
-                "report_type": "performance",
-                "fund_id": "2",
-                "report_date": "2025-08-06"
+                "report_type": "financial",
+                "period": "2025-08",
+                "requester_role": "finance_officer"
             }),
-            Action(name="email_user", kwargs={
+            Action(name="send_email_notification", kwargs={
                 "user_id": "1",
-                "subject": "Portfolio Holdings Update",
-                "message": "New instrument added and portfolio holdings updated successfully"
+                "notification_type": "payment_confirmation",
+                "notification_class": "invoices"
+            })
+        ],
+        outputs=[]
+    ),
+    Task(
+        annotator="1",
+        user_id="2",
+        instruction=(
+            "You are William Robinson, a compliance officer. You need to manage investor commitments "
+            "and track fulfillment. First, get investor profile and commitments, then fulfill a "
+            "commitment and update invoice details. After that, get payment history and generate "
+            "a performance report with document upload."
+        ),
+        actions=[
+            Action(name="get_investor_profile", kwargs={"investor_id": "1"}),
+            Action(name="get_investor_commitments", kwargs={"investor_id": "1"}),
+            Action(name="fulfill_commitment", kwargs={
+                "commitment_id": "1",
+                "fulfillment_amount": 750000.0,
+                "fulfillment_date": "2025-08-17"
+            }),
+            Action(name="update_invoice", kwargs={
+                "invoice_id": "1",
+                "status": "paid"
+            }),
+            Action(name="get_payment_history", kwargs={"investor_id": "1"}),
+            Action(name="generate_report", kwargs={
+                "report_type": "performance",
+                "period": "2025-08",
+                "requester_role": "fund_manager",
+                "fund_id": "1"
+            }),
+            Action(name="create_upload_document", kwargs={
+                "user_id": "2",
+                "size_bytes": 2048576,
+                "confidentiality_level": "confidential",
+                "file_name": "commitment_report_august_2025.pdf",
+                "file_format": "pdf"
             })
         ],
         outputs=[]
