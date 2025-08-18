@@ -9,7 +9,7 @@ class GetInvestorSubscriptions(Tool):
         investors = data.get("investors", {})
         subscriptions = data.get("subscriptions", {})  # Back to dictionary with default {}
         funds = data.get("funds", {})
-        # print("subs", subscriptions)
+
         # Validate investor exists
         if str(investor_id) not in investors:
             raise ValueError(f"Investor {investor_id} not found")

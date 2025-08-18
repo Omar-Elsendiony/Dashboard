@@ -17,17 +17,28 @@ class InvestorWithdrawal(Tool):
         if str(investor_id) not in investors:
             return json.dumps({"error": f"Investor {investor_id} not found"})
         
-        # Check for active subscriptions
+        # Check for active subscriptions - fixed type consistency
         active_subscriptions = [s for s in subscriptions.values() 
-                              if s.get("investor_id") == int(investor_id) and s.get("status") == "approved"]
+                              if str(s.get("investor_id")) == str(investor_id) and s.get("status") == "approved"]
         
         if active_subscriptions:
-            return json.dumps({"error": "Cannot offboard investor with active subscriptions. Process halted."})
+            return json.dumps({
+                "error": "Cannot offboard investor with active subscriptions. Process halted.",
+                "active_subscriptions_count": len(active_subscriptions),
+                "active_subscription_ids": [s.get("subscription_id") for s in active_subscriptions]
+            })
         
-        # Remove investor (in practice, might just mark as inactive)
-        del investors[str(investor_id)]
+        # In a real system, you might want to mark as inactive instead of deleting
+        # For this implementation, we'll mark as inactive to preserve data integrity
+        investor = investors[str(investor_id)]
+        investor["status"] = "inactive"
+        investor["offboarded_date"] = "2024-01-01"  # In practice, use current date
         
-        return json.dumps({"message": "Offboarding complete"})
+        return json.dumps({
+            "message": "Offboarding complete",
+            "investor_id": investor_id,
+            "status": "inactive"
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
