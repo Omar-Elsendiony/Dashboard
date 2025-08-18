@@ -1,10 +1,10 @@
 import json
-from typing import Any, Dict
+from typing import Any, Dict, Union
 from tau_bench.envs.tool import Tool
 
 class ReviseSubscription(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], subscription_id: str, field_name, field_value,
+    def invoke(data: Dict[str, Any], subscription_id: str, field_name: str, field_value: Union[str, int, float, bool],
                compliance_officer_approval: bool, finance_officer_approval: bool) -> str:
         
         if not compliance_officer_approval:
@@ -46,7 +46,7 @@ class ReviseSubscription(Tool):
                             "description": "Field to update (e.g., 'amount', 'status')"
                         },
                         "field_value": {
-                            "type": "any",
+                            "type": ["string", "number", "boolean"],
                             "description": "New value for the field"
                         },
                         "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"},

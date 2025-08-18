@@ -28,11 +28,11 @@ INTERFACE_4_TEST = [
                 "compliance_officer_review": True,
                 "fund_manager_approval": True
             }),
-            Action(name="calculate_nav", kwargs={
+            Action(name="evaluate_nav", kwargs={
                 "fund_id": "1",
                 "calculation_date": "2025-08-17"
             }),
-            Action(name="get_performance_history", kwargs={
+            Action(name="obtain_performance_history", kwargs={
                 "fund_code": "1",
                 "start_date": "2025-07-01",
                 "end_date": "2025-08-17"
@@ -60,25 +60,25 @@ INTERFACE_4_TEST = [
             "and update instrument pricing data."
         ),
         actions=[
-            Action(name="get_fund_instruments", kwargs={"fund_id": "1"}),
-            Action(name="get_instruments_prices", kwargs={}),
+            Action(name="obtain_fund_instruments", kwargs={"fund_id": "1"}),
+            Action(name="obtain_instruments_prices", kwargs={}),
             Action(name="get_growth_rate", kwargs={
                 "fund_type": "mutual_funds",
                 "instrument_type": "equities"
             }),
-            Action(name="calculate_future_value", kwargs={
+            Action(name="evaluate_future_value", kwargs={
                 "closing_price_or_nav": 105.50,
                 "growth_rate": 0.08,
                 "years": 5
             }),
             Action(name="summary_of_instrument_types_by_prices", kwargs={}),
-            Action(name="update_instrument_price", kwargs={
+            Action(name="adjust_instrument_price", kwargs={
                 "instrument_id": "1",
                 "new_price": 160.25,
                 "price_date": "2025-08-17"
             }),
-            Action(name="get_nav_records", kwargs={"fund_id": "1"}),
-            Action(name="add_audit_trail", kwargs={
+            Action(name="obtain_nav_records", kwargs={"fund_id": "1"}),
+            Action(name="construct_audit_trail", kwargs={
                 "reference_id": "1",
                 "reference_type": "analytical_calculation",
                 "action": "analyze"

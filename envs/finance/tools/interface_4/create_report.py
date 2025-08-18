@@ -6,7 +6,7 @@ import re
 from tau_bench.envs.tool import Tool
 
 
-class GenerateReport(Tool):
+class CreateReport(Tool):
 
     @staticmethod
     def invoke(data: Dict[str, Any], report_type: str, period: str, 
@@ -134,8 +134,8 @@ class GenerateReport(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "generate_report",
-                "description": "Generate a report for funds or investors",
+                "name": "create_report",
+                "description": "Create a report for funds or investors",
                 "parameters": {
                     "type": "object",
                     "properties": {

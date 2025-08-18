@@ -30,7 +30,7 @@ class SwitchInvestorFunds(Tool):
         for sub in subscriptions.values():
             if (sub.get("investor_id") == (investor_id) and # compare a string with string
                 sub.get("target_fund_id") == (current_fund_id) and 
-                sub.get("investor_status") == "approved"):
+                sub.get("status") == "approved"):
                 current_subscription = sub
                 break
         
@@ -46,10 +46,10 @@ class SwitchInvestorFunds(Tool):
         redemption_id = generate_id(redemptions)
         new_redemption = {
             "redemption_id": redemption_id,
-            "investor_subscription_id": current_subscription["investor_subscription_id"],
+            "subscription_id": current_subscription["subscription_id"],
             "request_date": timestamp.split("T")[0],
             "redemption_amount": switch_amount,
-            "investor_status": "processed",
+            "status": "processed",
             "processed_date": timestamp.split("T")[0],
             "updated_at": timestamp,
             "redemption_fee": 0.0
@@ -63,11 +63,11 @@ class SwitchInvestorFunds(Tool):
         # Create new subscription in target fund
         investor_subscription_id = generate_id(subscriptions)
         new_subscription = {
-            "investor_subscription_id": investor_subscription_id,
+            "subscription_id": investor_subscription_id,
             "target_fund_id": int(target_fund_id),
             "investor_id": int(investor_id),
             "amount": switch_amount,
-            "investor_status": "approved",
+            "status": "approved",
             "request_assigned_to": 1,  # Default admin
             "request_date": timestamp.split("T")[0],
             "approval_date": timestamp.split("T")[0],

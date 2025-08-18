@@ -12,7 +12,7 @@ INTERFACE_1_TEST = [
             "for the new fund. Then calculate the NAV for the fund and add an audit trail for the operations."
         ),
         actions=[
-            Action(name="get_available_funds", kwargs={}),
+            Action(name="retrieve_available_funds", kwargs={}),
             Action(name="create_fund", kwargs={
                 "fund_name": "Tech Growth Fund",
                 "fund_type": "hedge_funds",
@@ -21,7 +21,7 @@ INTERFACE_1_TEST = [
                 "compliance_officer_review": True,
                 "fund_manager_approval": True
             }),
-            Action(name="get_instruments", kwargs={}),
+            Action(name="retrieve_instruments", kwargs={}),
             Action(name="execute_trade", kwargs={
                 "fund_id": "1",
                 "instrument_id": "1",
@@ -29,7 +29,7 @@ INTERFACE_1_TEST = [
                 "quantity": 1000,
                 "price": 150.50
             }),
-            Action(name="calculate_nav", kwargs={
+            Action(name="compute_nav", kwargs={
                 "fund_id": "1",
                 "calculation_date": "2025-08-17"
             }),
@@ -56,8 +56,8 @@ INTERFACE_1_TEST = [
                 "fund_id": "1",
                 "trade_date": "2025-08-17"
             }),
-            Action(name="get_fund_instruments", kwargs={"fund_id": "1"}),
-            Action(name="get_instruments_prices", kwargs={}),
+            Action(name="retrieve_fund_instruments", kwargs={"fund_id": "1"}),
+            Action(name="retrieve_instruments_prices", kwargs={}),
             Action(name="update_instrument_price", kwargs={
                 "instrument_id": "1",
                 "new_price": 155.75,

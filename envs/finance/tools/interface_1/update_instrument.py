@@ -1,10 +1,10 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, Union
 from tau_bench.envs.tool import Tool
 
 class UpdateInstrument(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], instrument_id: str, field_name: str, field_value: Any, 
+    def invoke(data: Dict[str, Any], instrument_id: str, field_name: str, field_value: Union[str, int, float, bool], 
                compliance_review_approved: Optional[bool] = None) -> str:
         
         instruments = data.get("instruments", {})

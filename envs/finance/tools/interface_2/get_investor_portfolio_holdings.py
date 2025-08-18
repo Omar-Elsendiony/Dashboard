@@ -36,7 +36,7 @@ class GetInvestorPortfolioHoldings(Tool):
                     **holding,
                     "fund_name": fund_details.get("investor_name"),
                     "fund_type": fund_details.get("fund_type"),
-                    "fund_status": fund_details.get("investor_status")
+                    "fund_status": fund_details.get("status")
                 }
                 holdings.append(enriched_holding)
         

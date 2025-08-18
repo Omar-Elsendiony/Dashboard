@@ -15,7 +15,7 @@ class GetInvestorSubscriptionList(Tool):
                 continue
             if investor_id and subscription.get("investor_id") != investor_id:
                 continue
-            if investor_status and subscription.get("investor_status") != investor_status:
+            if investor_status and subscription.get("status") != investor_status:
                 continue
             if request_assigned_to and subscription.get("request_assigned_to") != request_assigned_to:
                 continue
@@ -35,7 +35,7 @@ class GetInvestorSubscriptionList(Tool):
                     "properties": {
                         "target_fund_id": {"type": "string", "description": "Filter by fund ID"},
                         "investor_id": {"type": "string", "description": "Filter by investor ID"},
-                        "investor_status": {"type": "string", "description": "Filter by investor_status (pending, approved, cancelled)"},
+                        "status": {"type": "string", "description": "Filter by investor_status (pending, approved, cancelled)"},
                         "request_assigned_to": {"type": "string", "description": "Filter by assigned user ID"}
                     },
                     "required": []

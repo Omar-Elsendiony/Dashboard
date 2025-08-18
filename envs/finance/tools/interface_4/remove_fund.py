@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
-class DeleteFund(Tool):
+class RemoveFund(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_id: str, compliance_officer_approval: bool,
                fund_manager_approval: bool) -> str:
@@ -37,12 +37,12 @@ class DeleteFund(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "delete_fund",
-                "description": "Delete a fund after required approvals",
+                "name": "remove_fund",
+                "description": "Remove a fund after required approvals",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "fund_id": {"type": "string", "description": "ID of the fund to delete"},
+                        "fund_id": {"type": "string", "description": "ID of the fund to remove"},
                         "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"},
                         "fund_manager_approval": {"type": "boolean", "description": "Fund Manager approval flag (True/False)"}
                     },

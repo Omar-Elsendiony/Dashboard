@@ -19,7 +19,7 @@ INTERFACE_3_TEST = [
                 "timezone": "EST",
                 "status": "active"
             }),
-            Action(name="get_available_funds", kwargs={}),
+            Action(name="retrieve_available_funds", kwargs={}),
             Action(name="create_commitment", kwargs={
                 "investor_id": "1",
                 "fund_id": "1",

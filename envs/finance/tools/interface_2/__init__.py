@@ -1,8 +1,8 @@
-from .insert_audit_trail import AddInvestorAuditTrail
 from .add_portfolio_holding import AddPortfolioHolding
 from .cancel_investor_subscription import CancelInvestorSubscription
 from .create_investor_subscription import CreateInvestorSubscription
 from .create_new_user import CreateNewUser
+from .filter_funds import FilterFunds
 from .find_user import FindUser
 from .get_filtered_investors import GetFilteredInvestors
 from .get_investor_documents import GetInvestorDocuments
@@ -15,6 +15,7 @@ from .get_investor_subscription_list import GetInvestorSubscriptionList
 from .get_investor_subscriptions import GetInvestorSubscriptions
 from .get_investor_transactions_history import GetInvestorTransactionsHistory
 from .get_portfolio_holdings import GetPortfolioHoldings
+from .insert_audit_trail import InsertAuditTrail
 from .investor_withdrawal import InvestorWithdrawal
 from .investor_enrollment import InvestorEnrollment
 from .process_investor_redemption import ProcessInvestorRedemption
@@ -26,11 +27,11 @@ from .update_investor_subscription import UpdateInvestorSubscription
 from .approval_lookup import ApprovalLookup
 
 ALL_TOOLS_INTERFACE_2 = [
-    AddInvestorAuditTrail,
     AddPortfolioHolding,
     CancelInvestorSubscription,
     CreateInvestorSubscription,
     CreateNewUser,
+    FilterFunds,
     FindUser,
     GetFilteredInvestors,
     GetInvestorDocuments,
@@ -43,6 +44,7 @@ ALL_TOOLS_INTERFACE_2 = [
     GetInvestorSubscriptions,
     GetInvestorTransactionsHistory,
     GetPortfolioHoldings,
+    InsertAuditTrail,
     InvestorEnrollment,
     InvestorWithdrawal,
     ProcessInvestorRedemption,

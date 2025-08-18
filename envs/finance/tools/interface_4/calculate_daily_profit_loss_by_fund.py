@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetDailyProfitLossByFund(Tool):
+class CalculateDailyProfitLossByFund(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_id: str, trade_date: Optional[str] = None) -> str:
         trades = data.get("trades", {})
@@ -59,8 +59,8 @@ class GetDailyProfitLossByFund(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "get_daily_profit_loss_by_fund",
-                "description": "Get daily profit and loss for risk monitoring by fund",
+                "name": "calculate_daily_profit_loss_by_fund",
+                                "description": "Calculate the daily profit/loss for a specific fund based on trade activities",
                 "parameters": {
                     "type": "object",
                     "properties": {

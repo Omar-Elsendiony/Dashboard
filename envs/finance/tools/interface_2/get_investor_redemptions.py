@@ -19,13 +19,13 @@ class GetInvestorRedemptions(Tool):
         investor_redemptions = []
         for redemption in redemptions.values():
             # Find the subscription this redemption relates to
-            investor_subscription_id = redemption.get("investor_subscription_id")
+            investor_subscription_id = redemption.get("subscription_id")
             subscription = subscriptions.get(str(investor_subscription_id), {})
             
             # Check if this subscription belongs to our investor
             if subscription.get("investor_id") == investor_id:
                 # Filter by investor_status if specified
-                if investor_status and redemption.get("investor_status") != investor_status:
+                if investor_status and redemption.get("status") != investor_status:
                     continue
                 
                 # Enrich with fund details
@@ -35,7 +35,7 @@ class GetInvestorRedemptions(Tool):
                 enriched_redemption = {
                     **redemption,
                     "target_fund_id": target_fund_id,
-                    "fund_name": fund_details.get("investor_name"),
+                    "fund_name": fund_details.get("name"),
                     "fund_type": fund_details.get("fund_type"),
                     "original_subscription_amount": subscription.get("amount")
                 }
@@ -54,7 +54,7 @@ class GetInvestorRedemptions(Tool):
                     "type": "object",
                     "properties": {
                         "investor_id": {"type": "string", "description": "ID of the investor"},
-                        "investor_status": {"type": "string", "description": "Filter by redemption investor_status (pending, approved, processed, cancelled)"}
+                        "status": {"type": "string", "description": "Filter by redemption investor_status (pending, approved, processed, cancelled)"}
                     },
                     "required": ["investor_id"]
                 }

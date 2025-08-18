@@ -10,7 +10,7 @@ tasks = [
             "the NAV for the fund and add an audit trail for the operations."
         ),
         "actions": [
-            {"name": "get_available_funds", "arguments": {}},
+            {"name": "retrieve_available_funds", "arguments": {}},
             {"name": "create_fund", "arguments": {
                 "fund_name": "Tech Growth Fund",
                 "fund_type": "hedge_funds",
@@ -19,7 +19,7 @@ tasks = [
                 "compliance_officer_review": True,
                 "fund_manager_approval": True
             }},
-            {"name": "get_instruments", "arguments": {}},
+            {"name": "retrieve_instruments", "arguments": {}},
             {"name": "execute_trade", "arguments": {
                 "fund_id": "1",
                 "instrument_id": "1",
@@ -27,7 +27,7 @@ tasks = [
                 "quantity": 1000,
                 "price": 150.50
             }},
-            {"name": "calculate_nav", "arguments": {
+            {"name": "compute_nav", "arguments": {
                 "fund_id": "1",
                 "calculation_date": "2025-08-17"
             }},
@@ -53,8 +53,8 @@ tasks = [
                 "fund_id": "1",
                 "trade_date": "2025-08-17"
             }},
-            {"name": "get_fund_instruments", "arguments": {"fund_id": "1"}},
-            {"name": "get_instruments_prices", "arguments": {}},
+            {"name": "retrieve_fund_instruments", "arguments": {"fund_id": "1"}},
+            {"name": "retrieve_instruments_prices", "arguments": {}},
             {"name": "update_instrument_price", "arguments": {
                 "instrument_id": "1",
                 "new_price": 155.75,

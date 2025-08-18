@@ -16,7 +16,7 @@ class CancelInvestorSubscription(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         # Update subscription investor_status
-        subscription["investor_status"] = "cancelled"
+        subscription["status"] = "cancelled"
         subscription["updated_at"] = timestamp
         
         return json.dumps({"success": True, "message": "Cancellation complete"})
@@ -31,9 +31,9 @@ class CancelInvestorSubscription(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_subscription_id": {"type": "string", "description": "ID of the subscription to cancel"},
+                        "subscription_id": {"type": "string", "description": "ID of the subscription to cancel"},
                     },
-                    "required": ["investor_subscription_id"]
+                    "required": ["subscription_id"]
                 }
             }
         }

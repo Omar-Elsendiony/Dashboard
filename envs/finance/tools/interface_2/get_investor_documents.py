@@ -40,7 +40,7 @@ class GetInvestorDocuments(Tool):
                     continue
                 
                 # Filter by investor_status if specified
-                if investor_status and document.get("investor_status") != investor_status:
+                if investor_status and document.get("status") != investor_status:
                     continue
                 
                 # Enrich with uploader details
@@ -50,7 +50,7 @@ class GetInvestorDocuments(Tool):
                 enriched_document = {
                     **document,
                     "uploader_name": f"{uploader.get('investor_first_name', '')} {uploader.get('investor_last_name', '')}".strip(),
-                    "uploader_email": uploader.get("investor_email")
+                    "uploader_email": uploader.get("email")
                 }
                 investor_documents.append(enriched_document)
         
@@ -69,7 +69,7 @@ class GetInvestorDocuments(Tool):
                         "investor_id": {"type": "string", "description": "ID of the investor"},
                         "document_format": {"type": "string", "description": "Filter by document format (pdf, xlsx, docx, csv, other)"},
                         "confidentiality_level": {"type": "string", "description": "Filter by confidentiality level (public, internal, confidential, restricted)"},
-                        "investor_status": {"type": "string", "description": "Filter by document investor_status (available, archived, deleted)"}
+                        "status": {"type": "string", "description": "Filter by document investor_status (available, archived, deleted)"}
                     },
                     "required": ["investor_id"]
                 }

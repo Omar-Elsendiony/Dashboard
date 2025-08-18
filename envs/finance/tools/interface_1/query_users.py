@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class FindUser(Tool):
+class QueryUsers(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], user_id: Optional[str] = None, email: Optional[str] = None,
                role: Optional[str] = None, status: Optional[str] = None,
@@ -32,7 +32,7 @@ class FindUser(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "find_user",
+                "name": "query_users",
                 "description": "Find users for lookup and support",
                 "parameters": {
                     "type": "object",

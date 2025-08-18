@@ -29,7 +29,7 @@ class ProcessInvestorRedemption(Tool):
             return json.dumps({"success": False, "message": "Fund not found"})
         
         # Check if fund is open
-        if funds[str(target_fund_id)].get("investor_status") != "open":
+        if funds[str(target_fund_id)].get("status") != "open":
             return json.dumps({"success": False, "message": "Fund is not open for redemptions"})
         
         # Validate approvals
@@ -44,8 +44,8 @@ class ProcessInvestorRedemption(Tool):
         for sub_id, sub in subscriptions.items():
             if (sub.get("investor_id") == investor_id and 
                 sub.get("target_fund_id") == target_fund_id and 
-                sub.get("investor_status") == "approved"):
-                all_subscription_ids.append(sub.get("investor_subscription_id"))
+                sub.get("status") == "approved"):
+                all_subscription_ids.append(sub.get("subscription_id"))
                 all_subscriptions.append(sub)
                 total_subscription_amount += float(sub.get("amount", 0))
 
@@ -55,8 +55,8 @@ class ProcessInvestorRedemption(Tool):
         # Check existing redemptions against ALL subscriptions
         total_redeemed = 0
         for redemption in redemptions.values():
-            if (redemption.get("investor_subscription_id") in all_subscription_ids and
-                redemption.get("investor_status") in ["approved", "processed"]):
+            if (redemption.get("subscription_id") in all_subscription_ids and
+                redemption.get("status") in ["approved", "processed"]):
                 total_redeemed += float(redemption.get("redemption_amount", 0))
         
         # Calculate available balance
@@ -80,7 +80,7 @@ class ProcessInvestorRedemption(Tool):
             # Check portfolio holdings for this fund
             fund_holdings = 0
             for holding in portfolio_holdings.values():
-                if (holding.get("investor_portfolio_id") == investor_portfolio.get("investor_portfolio_id") and
+                if (holding.get("portfolio_id") == investor_portfolio.get("portfolio_id") and
                     holding.get("target_fund_id") == target_fund_id):
                     fund_holdings += float(holding.get("quantity", 0))
             
@@ -99,10 +99,10 @@ class ProcessInvestorRedemption(Tool):
         
         new_redemption = {
             "redemption_id": redemption_id,
-            "investor_subscription_id": primary_subscription.get("investor_subscription_id"),
+            "subscription_id": primary_subscription.get("subscription_id"),
             "request_date": "2025-10-01",
             "redemption_amount": amount_or_units,
-            "investor_status": "approved",
+            "status": "approved",
             "processed_date": "2025-10-01",
             "updated_at": timestamp,
             "redemption_fee": round(amount_or_units * 0.01, 2)  # 1% fee
@@ -113,7 +113,7 @@ class ProcessInvestorRedemption(Tool):
         # Update portfolio holdings if they exist
         if investor_portfolio:
             for portfolio_holding_id, holding in portfolio_holdings.items():
-                if (holding.get("investor_portfolio_id") == investor_portfolio.get("investor_portfolio_id") and
+                if (holding.get("portfolio_id") == investor_portfolio.get("portfolio_id") and
                     holding.get("target_fund_id") == target_fund_id):
                     # Reduce the holding quantity
                     current_quantity = float(holding.get("quantity", 0))

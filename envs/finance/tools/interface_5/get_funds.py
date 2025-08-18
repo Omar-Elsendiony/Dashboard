@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class ListFundsWithFilter(Tool):
+class GetFunds(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_type: Optional[str] = None,
                manager_id: Optional[str] = None, status: Optional[str] = None,
@@ -31,7 +31,7 @@ class ListFundsWithFilter(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "list_funds_with_filter",
+                "name": "get_funds",
                 "description": "List funds with filters for investment screening and selection",
                 "parameters": {
                     "type": "object",

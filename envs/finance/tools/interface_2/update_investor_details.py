@@ -31,7 +31,7 @@ class UpdateInvestorDetails(Tool):
             valid_statuses = ["onboarded", "offboarded"]
             if investor_status not in valid_statuses:
                 raise ValueError(f"Invalid investor_status. Must be one of {valid_statuses}")
-            investor["investor_status"] = investor_status
+            investor["status"] = investor_status
         
         # Validate source of funds if provided
         if source_of_funds:
@@ -44,7 +44,7 @@ class UpdateInvestorDetails(Tool):
         
         # Update fields if provided
         if investor_name is not None:
-            investor["investor_name"] = investor_name
+            investor["name"] = investor_name
         if contact_email is not None:
             investor["contact_email"] = contact_email
         if registration_number is not None:
@@ -52,9 +52,9 @@ class UpdateInvestorDetails(Tool):
         if date_of_incorporation is not None:
             investor["date_of_incorporation"] = date_of_incorporation
         if investor_country is not None:
-            investor["investor_country"] = investor_country
+            investor["country"] = investor_country
         if investor_address is not None:
-            investor["investor_address"] = investor_address
+            investor["address"] = investor_address
         if tax_id is not None:
             investor["tax_id"] = tax_id
         
@@ -80,7 +80,7 @@ class UpdateInvestorDetails(Tool):
                         "investor_address": {"type": "string", "description": "Address (optional)"},
                         "tax_id": {"type": "string", "description": "Tax ID (optional)"},
                         "source_of_funds": {"type": "string", "description": "Source of funds (optional)"},
-                        "investor_status": {"type": "string", "description": "Status (optional)"}
+                        "status": {"type": "string", "description": "Status (optional)"}
                     },
                     "required": ["investor_id"]
                 }

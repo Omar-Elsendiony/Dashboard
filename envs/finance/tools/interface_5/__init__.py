@@ -1,5 +1,5 @@
-from .add_audit_trail import AddAuditTrail
 from .add_commitment import AddCommitment
+from .append_audit_trail import AppendAuditTrail
 from .authenticate_approval import AuthenticateApproval
 from .deactivate_reactivate_instrument import DeactivateReactivateInstrument
 from .dispatch_email_notification import DispatchEmailNotification
@@ -25,11 +25,11 @@ from .remove_invoice import RemoveInvoice
 from .revise_investor_details import ReviseInvestorDetails
 from .revise_subscription import ReviseSubscription
 from .terminate_subscription import TerminateSubscription
-
+from .get_funds import GetFunds
 
 ALL_TOOLS_INTERFACE_5 = [
-    AddAuditTrail,
     AddCommitment,
+    AppendAuditTrail,
     AuthenticateApproval,
     DeactivateReactivateInstrument,
     DispatchEmailNotification,
@@ -54,5 +54,6 @@ ALL_TOOLS_INTERFACE_5 = [
     RemoveInvoice,
     ReviseInvestorDetails,
     ReviseSubscription,
-    TerminateSubscription
+    TerminateSubscription,
+    GetFunds
 ]

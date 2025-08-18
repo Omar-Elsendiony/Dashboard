@@ -86,19 +86,19 @@ class InsertAuditTrail(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "InsertAuditTrail",
+                "name": "insert_audit_trail",
                 "description": "Add an audit trail record to track changes made to database records",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "reference_id": {"type": "string", "description": "ID of the record that was changed"},
-                        "reference_type": {"type": "string", "description": "Type of record being audited (user, fund, investor, subscription, commitment, redemption, trade, portfolio, holding, instrument, invoice, payment, document, report, nav, notification)"},
-                        "action": {"type": "string", "description": "Action performed (create, update, delete, approve, cancel, process)"},
-                        "field_name": {"type": "string", "description": "Name of the field that was changed (null for create/delete actions)"},
-                        "old_value": {"type": "string", "description": "Previous value of the field (null for create actions)"},
-                        "new_value": {"type": "string", "description": "New value of the field (null for delete actions)"}
+                        "investor_reference_id": {"type": "string", "description": "ID of the record that was changed"},
+                        "investor_reference_type": {"type": "string", "description": "Type of record being audited (user, fund, investor, subscription, commitment, redemption, trade, portfolio, holding, instrument, invoice, payment, document, report, nav, notification)"},
+                        "investor_action": {"type": "string", "description": "Action performed (create, update, delete, approve, cancel, process)"},
+                        "investor_field_name": {"type": "string", "description": "Name of the field that was changed (null for create/delete actions)"},
+                        "investor_old_value": {"type": "string", "description": "Previous value of the field (null for create actions)"},
+                        "investor_new_value": {"type": "string", "description": "New value of the field (null for delete actions)"}
                     },
-                    "required": ["reference_id", "reference_type", "action"]
+                    "required": ["investor_reference_id", "investor_reference_type", "investor_action"]
                 }
             }
         }

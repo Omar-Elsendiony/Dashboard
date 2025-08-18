@@ -19,7 +19,7 @@ class InvestorWithdrawal(Tool):
         
         # Check for active subscriptions
         active_subscriptions = [s for s in subscriptions.values() 
-                              if s.get("investor_id") == int(investor_id) and s.get("investor_status") == "approved"]
+                              if s.get("investor_id") == int(investor_id) and s.get("status") == "approved"]
         
         if active_subscriptions:
             return json.dumps({"error": "Cannot offboard investor with active subscriptions. Process halted."})

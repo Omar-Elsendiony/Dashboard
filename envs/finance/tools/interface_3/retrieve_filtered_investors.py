@@ -3,7 +3,7 @@ from typing import Any, Dict, Optional, List
 from datetime import datetime
 from tau_bench.envs.tool import Tool
 
-class GetFilteredInvestors(Tool):
+class RetrieveFilteredInvestors(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], 
                accreditation_status: Optional[str] = None,
@@ -125,8 +125,8 @@ class GetFilteredInvestors(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "get_filtered_investors",
-                "description": "Get filtered investors for CRM and marketing segmentation with comprehensive filtering options",
+                "name": "retrieve_filtered_investors",
+                "description": "Retrieve filtered investors for CRM and marketing segmentation with comprehensive filtering options",
                 "parameters": {
                     "type": "object",
                     "properties": {

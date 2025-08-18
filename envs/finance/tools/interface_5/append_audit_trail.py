@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class AddAuditTrail(Tool):
+class AppendAuditTrail(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], reference_id: str, reference_type: str,
                action: str, field_name: Optional[str] = None,
@@ -86,8 +86,8 @@ class AddAuditTrail(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "add_audit_trail",
-                "description": "Add an audit trail record to track changes made to database records",
+                "name": "append_audit_trail",
+                "description": "Append an audit trail record to track changes made to database records",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -26,7 +26,7 @@ class CreateInvestorSubscription(Tool):
             return json.dumps({"error": f"Fund {target_fund_id} not found"})
         
         # Check if fund is open
-        if funds[str(target_fund_id)].get("investor_status") != "open":
+        if funds[str(target_fund_id)].get("status") != "open":
             return json.dumps({"error": "Fund is not open for subscriptions"})
         
         investor_subscription_id = generate_id(subscriptions)
@@ -36,11 +36,11 @@ class CreateInvestorSubscription(Tool):
         investor_status = "pending" if not compliance_officer_approval else "approved"
         
         new_subscription = {
-            "investor_subscription_id": investor_subscription_id,
+            "subscription_id": investor_subscription_id,
             "target_fund_id": int(target_fund_id),
-            "investor_id": int(investor_id),
+            "id": int(investor_id),
             "amount": amount,
-            "investor_status": investor_status,
+            "status": investor_status,
             "request_assigned_to": 1,  # Default admin
             "request_date": timestamp.split("T")[0],
             "approval_date": timestamp.split("T")[0] if investor_status == "approved" else None,
@@ -50,7 +50,7 @@ class CreateInvestorSubscription(Tool):
         subscriptions[str(investor_subscription_id)] = new_subscription
         
         return_status = "active" if investor_status == "approved" else "funds_pending"
-        return json.dumps({"new_subscription": new_subscription, "investor_status": return_status})
+        return json.dumps({"new_subscription": new_subscription, "status": return_status})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:

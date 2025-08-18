@@ -29,15 +29,15 @@ class GetFilteredInvestors(Tool):
             # Existing filters
             if accreditation_status and investor.get("accreditation_status") != accreditation_status:
                 continue
-            if investor_status and investor.get("investor_status") != investor_status:
+            if investor_status and investor.get("status") != investor_status:
                 continue
-            if investor_country and investor.get("investor_country") != investor_country:
+            if investor_country and investor.get("country") != investor_country:
                 continue
             if source_of_funds and investor.get("source_of_funds") != source_of_funds:
                 continue
             
             # New investor_name filter
-            if name_contains and name_contains.lower() not in investor.get("investor_name", "").lower():
+            if name_contains and name_contains.lower() not in investor.get("name", "").lower():
                 continue
             
             # Registration number filter
@@ -65,7 +65,7 @@ class GetFilteredInvestors(Tool):
                     continue
             
             # Multiple countries filter
-            if countries and investor.get("investor_country") not in countries:
+            if countries and investor.get("country") not in countries:
                 continue
             
             # Tax ID presence filter
@@ -112,7 +112,7 @@ class GetFilteredInvestors(Tool):
             
             # Address contains filter
             if address_contains:
-                investor_address = investor.get("investor_address", "")
+                investor_address = investor.get("address", "")
                 if address_contains.lower() not in investor_address.lower():
                     continue
             
@@ -135,12 +135,12 @@ class GetFilteredInvestors(Tool):
                             "description": "Filter by accreditation investor_status (accredited/non_accredited)",
                             "enum": ["accredited", "non_accredited"]
                         },
-                        "investor_status": {
+                        "status": {
                             "type": "string", 
                             "description": "Filter by investor investor_status (onboarded/offboarded)",
                             "enum": ["onboarded", "offboarded"]
                         },
-                        "investor_country": {
+                        "country": {
                             "type": "string", 
                             "description": "Filter by specific investor_country"
                         },

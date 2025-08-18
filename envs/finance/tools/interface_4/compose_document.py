@@ -61,7 +61,8 @@ class ComposeDocument(Tool):
                         "size_bytes": {"type": "integer", "description": "Size of document in bytes"},
                         "confidentiality_level": {"type": "string", "description": "Confidentiality levels: 'public', 'internal', 'confidential', 'restricted'"},
                         "file_name": {"type": "string", "description": "Name of the file"},
-                        "file_format": {"type": "string", "description": "File format: pdf, docx, xlsx, or csv"}
+                        "file_format": {"type": "string", "description": "File format: pdf, docx, xlsx, or csv"},
+                        "report_id": {"type": "string", "description": "ID of the related report (optional)"}
                     },
                     "required": ["user_id", "size_bytes", "confidentiality_level", "file_name", "file_format"]
                 }

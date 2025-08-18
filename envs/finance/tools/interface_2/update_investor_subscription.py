@@ -1,10 +1,10 @@
 import json
-from typing import Any, Dict
+from typing import Any, Dict, Union
 from tau_bench.envs.tool import Tool
 
 class UpdateInvestorSubscription(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_subscription_id: str, field_name, field_value,
+    def invoke(data: Dict[str, Any], investor_subscription_id: str, field_name: str, field_value: Union[str, int, float, bool],
                compliance_officer_approval: bool, finance_officer_approval: bool) -> str:
         
         if not compliance_officer_approval:
@@ -23,7 +23,7 @@ class UpdateInvestorSubscription(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         # Apply changes
-        if field_name in ["amount", "investor_status"]:
+        if field_name in ["amount", "status"]:
             subscription[field_name] = field_value
 
         subscription["updated_at"] = timestamp
@@ -40,19 +40,19 @@ class UpdateInvestorSubscription(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_subscription_id": {"type": "string", "description": "ID of the subscription to update"},
+                        "subscription_id": {"type": "string", "description": "ID of the subscription to update"},
                         "field_name": {
                             "type": "string",
-                            "description": "Field to update (e.g., 'amount', 'investor_status')"
+                            "description": "Field to update (e.g., 'amount', 'status')"
                         },
                         "field_value": {
-                            "type": "any",
+                            "type": ["string", "number", "boolean"],
                             "description": "New value for the field"
                         },
                         "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"},
                         "finance_officer_approval": {"type": "boolean", "description": "Finance Officer approval flag (True/False)"}
                     },
-                    "required": ["investor_subscription_id", "field_name", "field_value", "compliance_officer_approval", "finance_officer_approval"]
+                    "required": ["subscription_id", "field_name", "field_value", "compliance_officer_approval", "finance_officer_approval"]
                 }
             }
         }

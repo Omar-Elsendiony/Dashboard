@@ -37,6 +37,7 @@ class LocateUser(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
+                        "user_id": {"type": "string", "description": "Filter by user ID"},
                         "email": {"type": "string", "description": "Filter by email address"},
                         "role": {"type": "string", "description": "Filter by role (system_administrator, fund_manager, compliance_officer, finance_officer, trader)"},
                         "status": {"type": "string", "description": "Filter by status (active, inactive, suspended)"},

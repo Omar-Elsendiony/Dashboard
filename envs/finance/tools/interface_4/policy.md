@@ -33,71 +33,95 @@ This policy defines responsibilities, principles, and procedures for agents oper
 
 ### Performance Analysis
 
-- **get_performance_history**: Retrieve historical NAV data with optional date filtering (start_date, end_date)
+- **obtain_performance_history**: Retrieve historical NAV data with optional date filtering (start_date, end_date)
 - **get_growth_rate**: Fund-specific growth rates by instrument type for projections
-- **get_daily_profit_loss_by_fund**: Calculate daily P&L (total_sell_value - total_buy_value) with trade metrics
+- **calculate_daily_profit_loss_by_fund**: Calculate daily P&L (total_sell_value - total_buy_value) with trade metrics
 
 ### Fund Valuation & Analytics
 
-- **calculate_nav_fund**: Calculate NAV using base_nav × 1.05 + trade_adjustments formula
-- **get_fund_details**: Access fund information including type, size, status, instruments
-- **get_fund_performance_comparison**: Cross-fund comparative analysis
+- **evaluate_nav**: Calculate NAV using base_nav × 1.05 + trade_adjustments formula
+- **obtain_available_funds**: Access fund information including type, size, status, instruments
+- **filter_funds_with_criteria**: Fund filtering and comparative analysis
 
 ### Instrument Analysis
 
-- **get_instrument_statistics**: Price analytics by type (count, avg/min/max prices)
-- **get_instrument_details**: Ticker symbols, types, current market data
-- **get_instrument_price**: Historical price tracking with date filtering
+- **summary_of_instrument_types_by_prices**: Price analytics by type (count, avg/min/max prices)
+- **obtain_instruments**: Ticker symbols, types, current market data
+- **obtain_instruments_prices**: Historical price tracking with date filtering
+
+### Fund Management Operations
+
+- **compose_fund**: Create new fund with validation and audit trail
+- **adjust_fund**: Modify fund parameters with approval verification
+- **remove_fund**: Deactivate fund with proper authorization and audit logging
+
+### NAV & Trade Management
+
+- **adjust_nav_record_value**: Update NAV records with validation and audit trail
+- **obtain_nav_records**: Retrieve NAV history with date filtering
+- **obtain_fund_trade_details**: Access trade execution details and history
+
+### Instrument Operations
+
+- **adjust_instrument**: Modify instrument parameters with validation
+- **adjust_instrument_price**: Update instrument pricing data
+- **obtain_fund_instruments**: Retrieve fund's instrument holdings
 
 ### Reporting & Compliance
 
-- **create_fund_report**: Generate performance/financial/holding reports with period formats
-- **add_audit_trail**: Mandatory logging for all operations (user_id, action_type, entity_id, timestamp)
-- **get_approval_by_code**: Verify authorization for operations requiring approval
-- **add_new_user**: User management with role-based permissions
+- **create_report**: Generate performance/financial/holding reports with period formats
+- **construct_audit_trail**: Mandatory logging for all operations (user_id, action_type, entity_id, timestamp)
+- **check_approval**: Verify authorization for operations requiring approval
+- **construct_user**: User management with role-based permissions
+
+### Document & Commitment Management
+
+- **compose_document**: Create and manage fund-related documentation
+- **obtain_commitments**: Retrieve investor commitment data
+- **evaluate_future_value**: Calculate projected values and growth scenarios
 
 ## Standard Operating Procedures
 
-All operations execute in single-turn with input validation. Halt with specific error if validation fails. Log all operations using add_audit_trail.
+All operations execute in single-turn with input validation. Halt with specific error if validation fails. Log all operations using construct_audit_trail.
 
 ### Performance Analysis SOP
 
 1. Validate fund_code exists, date parameters in YYYY-MM-DD format, user permissions
-2. Retrieve NAV/trade data chronologically, apply date filters
-3. Calculate performance metrics using validated formulas and growth rate mappings
-4. Format results with metadata and create audit trail entry
+2. Use obtain_performance_history to retrieve NAV/trade data chronologically, apply date filters
+3. Calculate performance metrics using validated formulas and get_growth_rate mappings
+4. Format results with metadata and create audit trail entry using construct_audit_trail
 
 ### NAV Calculation SOP
 
-1. Verify fund_id exists, validate calculation_date against business calendar
-2. Calculate base_nav (fund_size × 1.05), apply trade adjustments
-3. Create timestamped NAV record, validate against limits
-4. Generate audit trail and distribute to stakeholders
+1. Verify fund_id exists using obtain_available_funds, validate calculation_date against business calendar
+2. Use evaluate_nav to calculate base_nav (fund_size × 1.05), apply trade adjustments
+3. Update using adjust_nav_record_value, validate against limits
+4. Generate audit trail using construct_audit_trail and distribute to stakeholders
 
 ### Daily P&L Analysis SOP
 
-1. Validate fund_id and trade_date, collect transaction data
-2. Calculate total_sell_value - total_buy_value with supporting metrics
+1. Validate fund_id using obtain_available_funds and trade_date, collect transaction data via obtain_fund_trade_details
+2. Use calculate_daily_profit_loss_by_fund to calculate total_sell_value - total_buy_value with supporting metrics
 3. Analyze variations against risk limits, generate alerts for thresholds
-4. Create audit trail and distribute reports
+4. Create audit trail using construct_audit_trail and distribute reports
 
 ### Report Generation SOP
 
-1. Validate requester role permissions and report parameters
-2. Collect data by report type, apply formatting and calculations
-3. Generate report with regulatory compliance and confidentiality markings
-4. Create audit trail, distribute securely, archive with retention metadata
+1. Validate requester role permissions and report parameters using check_approval
+2. Collect data by report type using appropriate obtain_* functions, apply formatting and calculations
+3. Use create_report to generate report with regulatory compliance and confidentiality markings
+4. Create audit trail using construct_audit_trail, distribute securely, archive with retention metadata
 
 ## Compliance Requirements
 
 **Regulatory**: SEC rules (Reg FD, Reg S-P, Rule 17a-4), GAAP ASC 946, Investment Advisers Act 1940.
 
-**Approvals**: Fund analysis operations require fund_manager_approval. Regulatory reports require compliance_officer_approval. Use get_approval_by_code tool.
+**Approvals**: Fund analysis operations require fund_manager_approval. Regulatory reports require compliance_officer_approval. Use check_approval tool.
 
-**Audit Trail**: Log all operations using add_audit_trail. Valid reference_types: user, fund, instrument, report, nav, analytical_calculation. Valid actions: create, update, delete, approve, calculate, analyze, generate.
+**Audit Trail**: Log all operations using construct_audit_trail. Valid reference_types: user, fund, instrument, report, nav, analytical_calculation. Valid actions: create, update, delete, approve, calculate, analyze, generate.
 
 **Role Permissions**: Performance reports (fund_manager only), financial/holding reports (finance_officer only). Unauthorized access denied and logged.
 
-**Data Validation**: Fund types restricted to predefined list. Positive values required for calculations. Entity existence verified before operations.
+**Data Validation**: Fund types restricted to predefined list. Positive values required for calculations. Entity existence verified before operations using obtain_available_funds.
 
 **Error Patterns**: Missing approvals: "Required approval not obtained." Entity not found: "[Entity] not found" Invalid data: "Invalid [field]: [details]" Authorization failures: "Unauthorized: [operation] requires [role]"

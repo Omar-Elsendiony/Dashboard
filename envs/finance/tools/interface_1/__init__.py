@@ -22,7 +22,7 @@ from .update_instrument import UpdateInstrument
 from .update_instrument_price import UpdateInstrumentPrice
 from .update_nav_record_value import UpdateNavRecordValue
 from .update_trade import UpdateTrade
-
+from .query_users import QueryUsers
 ALL_TOOLS_INTERFACE_1 = [
     AddAuditTrail,
     AddNewTradeForFund,
@@ -47,5 +47,6 @@ ALL_TOOLS_INTERFACE_1 = [
     UpdateInstrument,
     UpdateInstrumentPrice,
     UpdateNavRecordValue,
-    UpdateTrade
+    UpdateTrade,
+    QueryUsers
 ]

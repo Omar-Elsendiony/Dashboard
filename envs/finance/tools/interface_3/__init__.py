@@ -12,18 +12,18 @@ from .generate_report import GenerateReport
 from .confirm_approval import ConfirmApproval
 from .get_available_funds import GetAvailableFunds
 from .get_commitments import GetCommitments
-from .get_filtered_investors import GetFilteredInvestors
 from .get_investor_commitments import GetInvestorCommitments
-from .get_investor_profile import GetInvestorProfile
 from .get_invoices import GetInvoices
 from .get_notifications import GetNotifications
 from .get_payment_history import GetPaymentHistory
+from .obtain_investor_profile import ObtainInvestorProfile
 from .acquire_reports import AcquireReports
 from .register_payment import RegisterPayment
+from .retrieve_filtered_investors import RetrieveFilteredInvestors
 from .retrieve_invoices import RetrieveInvoices
 from .send_email_notification import SendEmailNotification
 from .update_invoice import UpdateInvoice
-
+from .search_users import SearchUsers
 ALL_TOOLS_INTERFACE_3 = [
     CreateNewAuditTrail,
     AddNewUser,
@@ -39,15 +39,16 @@ ALL_TOOLS_INTERFACE_3 = [
     ConfirmApproval,
     GetAvailableFunds,
     GetCommitments,
-    GetFilteredInvestors,
     GetInvestorCommitments,
-    GetInvestorProfile,
     GetInvoices,
     GetNotifications,
     GetPaymentHistory,
+    ObtainInvestorProfile,
     AcquireReports,
     RegisterPayment,
+    RetrieveFilteredInvestors,
     RetrieveInvoices,
     SendEmailNotification,
-    UpdateInvoice
+    UpdateInvoice,
+    SearchUsers
 ]
