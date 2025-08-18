@@ -8,7 +8,7 @@ class GetInvestorDocuments(Tool):
                document_format: Optional[str] = None, confidentiality_level: Optional[str] = None,
                status: Optional[str] = None) -> str:
         investors = data.get("investors", {})
-        documents = data.get("documents", {})
+        documents_data = data.get("documents", {})  # Renamed to avoid conflict
         reports = data.get("reports", {})
         users = data.get("users", {})
         
@@ -17,16 +17,16 @@ class GetInvestorDocuments(Tool):
             raise ValueError(f"Investor {investor_id} not found")
         
         # Get documents related to this investor through reports
-        documents = []
+        result_documents = []  # Renamed to avoid conflict
         
         # First, find all reports for this investor
         report_ids = []
         for report in reports.values():
-            if report.get("investor_id") == investor_id:
+            if str(report.get("investor_id")) == str(investor_id):  # Added str() conversion
                 report_ids.append(report.get("report_id"))
         
         # Then find documents associated with these reports
-        for document in documents.values():
+        for document in documents_data.values():  # Using renamed variable
             report_id = document.get("report_id")
             
             # Include document if it's associated with investor's reports or if no report_id (general docs)
@@ -52,9 +52,9 @@ class GetInvestorDocuments(Tool):
                     "uploader_name": f"{uploader.get('first_name', '')} {uploader.get('last_name', '')}".strip(),
                     "uploader_email": uploader.get("email")
                 }
-                documents.append(enriched_document)
+                result_documents.append(enriched_document)  # Using renamed variable
         
-        return json.dumps(documents)
+        return json.dumps(result_documents)  # Using renamed variable
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
