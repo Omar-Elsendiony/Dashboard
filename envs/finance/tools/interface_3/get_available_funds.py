@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class GetAvailableFunds(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_id: Optional[str] = None, investor_id: Optional[str] = None, 
-               fund_type: Optional[str] = None, status: Optional[str] = None) -> str:
+               fund_type: Optional[str] = None, status: Optional[str] = None, name: Optional[str] = None) -> str:
         """
         Get available funds for investment based on filters.
         
@@ -24,6 +24,7 @@ class GetAvailableFunds(Tool):
                 - infrastructure_funds
                 - multi_asset_funds
             status: Optional status filter (open, closed)
+            name: Optional fund name filter (case-insensitive partial match)
         
         Returns:
             JSON string of matching fund objects
@@ -79,6 +80,10 @@ class GetAvailableFunds(Tool):
             elif not status and fund.get("status") != "open":
                 continue
             
+            # Filter by name if specified (case-insensitive partial match)
+            if name and name.lower() not in fund.get("name", "").lower():
+                continue
+            
             results.append(fund)
         
         return json.dumps(results)
@@ -121,6 +126,10 @@ class GetAvailableFunds(Tool):
                             "type": "string", 
                             "description": "Filter by fund status",
                             "enum": ["open", "closed"]
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "Filter by fund name (case-insensitive partial match)"
                         }
                     },
                     "required": []

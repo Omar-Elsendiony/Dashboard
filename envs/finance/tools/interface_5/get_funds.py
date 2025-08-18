@@ -6,8 +6,23 @@ class GetFunds(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_type: Optional[str] = None,
                manager_id: Optional[str] = None, status: Optional[str] = None,
-               min_size: Optional[float] = None, max_size: Optional[float] = None) -> str:
+               min_size: Optional[float] = None, max_size: Optional[float] = None,
+               name: Optional[str] = None) -> str:
+        """
+        List funds with filters for investment screening and selection.
         
+        Args:
+            data: Main data dictionary containing funds
+            fund_type: Optional fund type filter
+            manager_id: Optional manager ID filter
+            status: Optional status filter
+            min_size: Optional minimum fund size filter
+            max_size: Optional maximum fund size filter
+            name: Optional fund name filter (case-insensitive partial match)
+        
+        Returns:
+            JSON string of matching fund objects
+        """
         funds = data.get("funds", {})
         results = []
         
@@ -22,6 +37,10 @@ class GetFunds(Tool):
                 continue
             if max_size is not None and (fund.get("size") is None or fund.get("size") > max_size):
                 continue
+            # Filter by name if specified (case-insensitive partial match)
+            if name and name.lower() not in fund.get("name", "").lower():
+                continue
+            
             results.append(fund)
         
         return json.dumps(results)
@@ -40,7 +59,8 @@ class GetFunds(Tool):
                         "manager_id": {"type": "string", "description": "Filter by manager ID"},
                         "status": {"type": "string", "description": "Filter by status"},
                         "min_size": {"type": "number", "description": "Minimum fund size"},
-                        "max_size": {"type": "number", "description": "Maximum fund size"}
+                        "max_size": {"type": "number", "description": "Maximum fund size"},
+                        "name": {"type": "string", "description": "Filter by fund name (case-insensitive partial match)"}
                     },
                     "required": []
                 }

@@ -25,7 +25,7 @@ class InsertAuditTrail(Tool):
             raise ValueError(f"Invalid reference_type '{reference_type}'. Valid types: {valid_reference_types}")
         
         # Validate action is among allowed actions
-        valid_actions = ["create", "update", "delete"]
+        valid_actions = ["create", "update", "delete", "approve", "cancel", "process"]
         if action not in valid_actions:
             raise ValueError(f"Invalid action '{action}'. Valid actions: {valid_actions}")
         

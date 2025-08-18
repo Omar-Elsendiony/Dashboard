@@ -2718,5 +2718,173 @@
     "content": "Instrument reactivation approved following compliance review. Market conditions assessed, regulatory status verified, risk parameters evaluated, meets all current trading requirements.",
     "approved_by": "29",
     "approver_role": "compliance_officer"
+  },
+  "341": {
+    "id": "341",
+    "code": "FUNDC0341",
+    "action_name": "Fund Creation",
+    "content": "Investment strategy validated, market opportunity confirmed. Initial portfolio composition aligns with fund objectives. Approved for launch.",
+    "approved_by": "4",
+    "approver_role": "fund_manager"
+  },
+  "342": {
+    "id": "342",
+    "code": "FUNDC0342",
+    "action_name": "Fund Creation",
+    "content": "The proposed fund's risk-reward profile is acceptable. Strategic allocation models reviewed and approved. Ready to proceed.",
+    "approved_by": "12",
+    "approver_role": "fund_manager"
+  },
+  "343": {
+    "id": "343",
+    "code": "FUNDC0343",
+    "action_name": "Fund Creation",
+    "content": "Market analysis complete and initial seed capital secured. The fund's objectives are clear and achievable. Approval granted.",
+    "approved_by": "17",
+    "approver_role": "fund_manager"
+  },
+  "344": {
+    "id": "344",
+    "code": "FUNDC0344",
+    "action_name": "Fund Creation",
+    "content": "Portfolio construction parameters finalized. The fund's goals align with our strategic market outlook. Approved for creation.",
+    "approved_by": "20",
+    "approver_role": "fund_manager"
+  },
+  "345": {
+    "id": "345",
+    "code": "FUNDC0345",
+    "action_name": "Fund Creation",
+    "content": "Thorough review of the investment mandate is complete. The strategy is sound and we are confident in its potential. Approved.",
+    "approved_by": "21",
+    "approver_role": "fund_manager"
+  },
+  "346": {
+    "id": "346",
+    "code": "FUNDC0346",
+    "action_name": "Fund Creation",
+    "content": "The fund's investment thesis has been rigorously tested and holds up to scrutiny. Go ahead with the launch.",
+    "approved_by": "27",
+    "approver_role": "fund_manager"
+  },
+  "347": {
+    "id": "347",
+    "code": "FUNDC0347",
+    "action_name": "Fund Creation",
+    "content": "All financial models and performance projections have been reviewed. The proposed fund meets our criteria. Approved.",
+    "approved_by": "31",
+    "approver_role": "fund_manager"
+  },
+  "348": {
+    "id": "348",
+    "code": "FUNDC0348",
+    "action_name": "Fund Creation",
+    "content": "Strategic fit confirmed. The fund addresses a clear market need and complements our existing offerings. Approval granted.",
+    "approved_by": "38",
+    "approver_role": "fund_manager"
+  },
+  "349": {
+    "id": "349",
+    "code": "FUNDC0349",
+    "action_name": "Fund Creation",
+    "content": "The management team's proposed strategy is robust and well-researched. I approve the creation of this fund.",
+    "approved_by": "39",
+    "approver_role": "fund_manager"
+  },
+  "350": {
+    "id": "350",
+    "code": "FUNDC0350",
+    "action_name": "Fund Creation",
+    "content": "Initial asset allocation is sound and the investment process is well-defined. Approved to move forward.",
+    "approved_by": "42",
+    "approver_role": "fund_manager"
+  },
+  "351": {
+    "id": "351",
+    "code": "FUNDC0351",
+    "action_name": "Fund Creation",
+    "content": "The fund's objectives and fee structure are satisfactory. Ready for establishment.",
+    "approved_by": "43",
+    "approver_role": "fund_manager"
+  },
+  "352": {
+    "id": "352",
+    "code": "FUNDC0352",
+    "action_name": "Fund Creation",
+    "content": "Competitive landscape analyzed. This fund is well-positioned for success. My approval is granted.",
+    "approved_by": "45",
+    "approver_role": "fund_manager"
+  },
+  "353": {
+    "id": "353",
+    "code": "FUNDC0353",
+    "action_name": "Fund Creation",
+    "content": "The investment case is compelling and aligns with our firm's long-term vision. Approved.",
+    "approved_by": "48",
+    "approver_role": "fund_manager"
+  },
+  "354": {
+    "id": "354",
+    "code": "FUNDC0354",
+    "action_name": "Fund Creation",
+    "content": "All strategic and financial due diligence has been completed and is satisfactory. Proceed with fund creation.",
+    "approved_by": "51",
+    "approver_role": "fund_manager"
+  },
+  "355": {
+    "id": "355",
+    "code": "FUNDC0355",
+    "action_name": "Fund Creation",
+    "content": "The fund's mandate is approved. The target assets and risk controls are appropriate. Sanctioned for creation.",
+    "approved_by": "63",
+    "approver_role": "fund_manager"
+  },
+  "356": {
+    "id": "356",
+    "code": "FUNDC0356",
+    "action_name": "Fund Creation",
+    "content": "I have reviewed the fund's charter and find it in order. The investment strategy is sound. Approved.",
+    "approved_by": "69",
+    "approver_role": "fund_manager"
+  },
+  "357": {
+    "id": "357",
+    "code": "FUNDC0357",
+    "action_name": "Fund Creation",
+    "content": "The proposed fund fills a strategic gap in our product lineup. Managerial oversight structure is approved.",
+    "approved_by": "73",
+    "approver_role": "fund_manager"
+  },
+  "358": {
+    "id": "358",
+    "code": "FUNDC0358",
+    "action_name": "Fund Creation",
+    "content": "Market conditions are favorable for this strategy. The fund proposal is robust. I grant my approval.",
+    "approved_by": "83",
+    "approver_role": "fund_manager"
+  },
+  "359": {
+    "id": "359",
+    "code": "FUNDC0359",
+    "action_name": "Fund Creation",
+    "content": "The research backing this fund's creation is thorough and convincing. Approved to proceed.",
+    "approved_by": "86",
+    "approver_role": "fund_manager"
+  },
+  "360": {
+    "id": "360",
+    "code": "FUNDC0360",
+    "action_name": "Fund Creation",
+    "content": "This fund's creation is approved. The investment team has my full confidence.",
+    "approved_by": "88",
+    "approver_role": "fund_manager"
+  },
+  "361": {
+    "id": "361",
+    "code": "FUNDC0361",
+    "action_name": "Fund Creation",
+    "content": "Final review of the fund's structure and strategy is complete. Everything is in order. Approved for creation.",
+    "approved_by": "95",
+    "approver_role": "fund_manager"
   }
 }
