@@ -45,13 +45,23 @@ class GetInvestorSubscriptions(Tool):
             "type": "function",
             "function": {
                 "name": "get_investor_subscriptions",
-                "description": "List all subscription requests and their current investor_status (pending, approved, cancelled)",
+                "description": "List all subscription requests and their current status",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_id": {"type": "string", "description": "ID of the investor"},
-                        "status": {"type": "string", "description": "Filter by subscription investor_status (pending, approved, cancelled)"},
-                        "target_fund_id": {"type": "string", "description": "Filter by fund ID"}
+                        "investor_id": {
+                            "type": "string",
+                            "description": "ID of the investor"
+                        },
+                        "investor_status": {
+                            "type": "string",
+                            "description": "Filter by subscription status",
+                            "enum": ["pending", "approved", "cancelled"]
+                        },
+                        "target_fund_id": {
+                            "type": "string",
+                            "description": "Filter by fund ID"
+                        }
                     },
                     "required": ["investor_id"]
                 }

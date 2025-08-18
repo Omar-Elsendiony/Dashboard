@@ -49,12 +49,19 @@ class GetInvestorRedemptions(Tool):
             "type": "function",
             "function": {
                 "name": "get_investor_redemptions",
-                "description": "View all redemption requests including pending, approved, and processed transactions",
+                "description": "View all redemption requests including pending, approved, processed, and cancelled transactions",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_id": {"type": "string", "description": "ID of the investor"},
-                        "status": {"type": "string", "description": "Filter by redemption investor_status (pending, approved, processed, cancelled)"}
+                        "investor_id": {
+                            "type": "string",
+                            "description": "ID of the investor"
+                        },
+                        "investor_status": {
+                            "type": "string",
+                            "description": "Filter by redemption status",
+                            "enum": ["pending", "approved", "processed", "cancelled"]
+                        }
                     },
                     "required": ["investor_id"]
                 }

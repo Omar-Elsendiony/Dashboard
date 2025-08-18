@@ -24,6 +24,8 @@ from .retrieve_invoices import RetrieveInvoices
 from .send_email_notification import SendEmailNotification
 from .update_invoice import UpdateInvoice
 from .search_users import SearchUsers
+from .obtain_investors import ObtainInvestors
+
 ALL_TOOLS_INTERFACE_3 = [
     CreateNewAuditTrail,
     AddNewUser,
@@ -43,7 +45,7 @@ ALL_TOOLS_INTERFACE_3 = [
     GetInvoices,
     GetNotifications,
     GetPaymentHistory,
-    ObtainInvestorProfile,
+    ObtainInvestors,
     AcquireReports,
     RegisterPayment,
     RetrieveFilteredInvestors,

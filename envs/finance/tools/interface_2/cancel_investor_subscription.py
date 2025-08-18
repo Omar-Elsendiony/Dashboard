@@ -31,9 +31,12 @@ class CancelInvestorSubscription(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "subscription_id": {"type": "string", "description": "ID of the subscription to cancel"},
+                        "investor_subscription_id": {
+                            "type": "string",
+                            "description": "ID of the investor subscription to cancel"
+                        }
                     },
-                    "required": ["subscription_id"]
+                    "required": ["investor_subscription_id"]
                 }
             }
         }

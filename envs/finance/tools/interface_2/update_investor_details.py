@@ -66,21 +66,61 @@ class UpdateInvestorDetails(Tool):
             "type": "function",
             "function": {
                 "name": "update_investor_details",
-                "description": "Update investor details for regulatory updates and investor_address changes",
+                "description": "Update investor details for regulatory updates and address/contact changes",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_id": {"type": "string", "description": "ID of the investor"},
-                        "investor_name": {"type": "string", "description": "Investor investor_name (optional)"},
-                        "contact_email": {"type": "string", "description": "Contact investor_email investor_address (optional)"},
-                        "accreditation_status": {"type": "string", "description": "Accreditation investor_status (optional)"},
-                        "registration_number": {"type": "integer", "description": "Registration number (optional)"},
-                        "date_of_incorporation": {"type": "string", "description": "Date of incorporation (optional)"},
-                        "investor_country": {"type": "string", "description": "Country (optional)"},
-                        "investor_address": {"type": "string", "description": "Address (optional)"},
-                        "tax_id": {"type": "string", "description": "Tax ID (optional)"},
-                        "source_of_funds": {"type": "string", "description": "Source of funds (optional)"},
-                        "status": {"type": "string", "description": "Status (optional)"}
+                        "investor_id": {
+                            "type": "string",
+                            "description": "ID of the investor"
+                        },
+                        "investor_name": {
+                            "type": "string",
+                            "description": "Updated investor name"
+                        },
+                        "contact_email": {
+                            "type": "string",
+                            "description": "Updated contact email"
+                        },
+                        "accreditation_status": {
+                            "type": "string",
+                            "description": "Accreditation status",
+                            "enum": ["accredited", "non_accredited"]
+                        },
+                        "registration_number": {
+                            "type": "integer",
+                            "description": "Updated registration/company number"
+                        },
+                        "date_of_incorporation": {
+                            "type": "string",
+                            "description": "Updated date of incorporation (YYYY-MM-DD)"
+                        },
+                        "investor_country": {
+                            "type": "string",
+                            "description": "Updated country"
+                        },
+                        "investor_address": {
+                            "type": "string",
+                            "description": "Updated address"
+                        },
+                        "tax_id": {
+                            "type": "string",
+                            "description": "Updated tax identifier"
+                        },
+                        "source_of_funds": {
+                            "type": "string",
+                            "description": "Updated source of funds",
+                            "enum": [
+                                "retained_earnings", "shareholder_capital", "asset_sale", "loan_facility",
+                                "external_investment", "government_grant", "merger_or_acquisition_proceeds",
+                                "royalty_or_licensing_income", "dividend_income", "other"
+                            ]
+                        },
+                        "investor_status": {
+                            "type": "string",
+                            "description": "Updated onboarding status",
+                            "enum": ["onboarded", "offboarded"]
+                        }
                     },
                     "required": ["investor_id"]
                 }

@@ -24,7 +24,7 @@ from .obtain_performance_history import ObtainPerformanceHistory
 from .remove_fund import RemoveFund
 from .summary_of_instrument_types_by_prices import SummaryOfInstrumentTypesByPrices
 from .identify_users import IdentifyUsers
-
+from .filter_investors import FilterInvestors
 ALL_TOOLS_INTERFACE_4 = [
     CalculateDailyProfitLossByFund,
     AdjustFund,
@@ -51,5 +51,6 @@ ALL_TOOLS_INTERFACE_4 = [
     ObtainNavRecords,
     ObtainPerformanceHistory,
     SummaryOfInstrumentTypesByPrices,
-    IdentifyUsers
+    IdentifyUsers,
+    FilterInvestors
 ]

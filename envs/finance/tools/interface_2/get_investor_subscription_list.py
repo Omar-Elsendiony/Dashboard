@@ -33,12 +33,26 @@ class GetInvestorSubscriptionList(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "target_fund_id": {"type": "string", "description": "Filter by fund ID"},
-                        "investor_id": {"type": "string", "description": "Filter by investor ID"},
-                        "status": {"type": "string", "description": "Filter by investor_status (pending, approved, cancelled)"},
-                        "request_assigned_to": {"type": "string", "description": "Filter by assigned user ID"}
+                        "target_fund_id": {
+                            "type": "string",
+                            "description": "Filter by fund ID"
+                        },
+                        "investor_id": {
+                            "type": "string",
+                            "description": "Filter by investor ID"
+                        },
+                        "investor_status": {
+                            "type": "string",
+                            "description": "Filter by subscription status",
+                            "enum": ["pending", "approved", "cancelled"]
+                        },
+                        "request_assigned_to": {
+                            "type": "string",
+                            "description": "Filter by assigned user ID"
+                        }
                     },
                     "required": []
                 }
             }
         }
+

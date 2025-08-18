@@ -66,10 +66,25 @@ class GetInvestorDocuments(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "investor_id": {"type": "string", "description": "ID of the investor"},
-                        "document_format": {"type": "string", "description": "Filter by document format (pdf, xlsx, docx, csv, other)"},
-                        "confidentiality_level": {"type": "string", "description": "Filter by confidentiality level (public, internal, confidential, restricted)"},
-                        "status": {"type": "string", "description": "Filter by document investor_status (available, archived, deleted)"}
+                        "investor_id": {
+                            "type": "string",
+                            "description": "ID of the investor"
+                        },
+                        "document_format": {
+                            "type": "string",
+                            "description": "Filter by document format",
+                            "enum": ["pdf", "xlsx", "docx", "csv", "other"]
+                        },
+                        "confidentiality_level": {
+                            "type": "string",
+                            "description": "Filter by confidentiality level",
+                            "enum": ["public", "internal", "confidential", "restricted"]
+                        },
+                        "investor_status": {
+                            "type": "string",
+                            "description": "Filter by document status",
+                            "enum": ["available", "archived", "deleted"]
+                        }
                     },
                     "required": ["investor_id"]
                 }

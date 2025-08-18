@@ -9,8 +9,8 @@ class ValidateApproval(Tool):
         
         for approval in approvals.values():
             if approval.get("code") == approval_code:
-                return json.dumps({"approval_valid": True})
-        
+                return json.dumps({"approval_valid": True, "approved_by": approval.get("approved_by")})
+
         return json.dumps({"approval_valid": False})
 
     @staticmethod
