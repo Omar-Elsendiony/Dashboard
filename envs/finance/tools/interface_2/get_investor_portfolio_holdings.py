@@ -29,8 +29,8 @@ class GetInvestorPortfolioHoldings(Tool):
         for holding in portfolio_holdings.values():
             if holding.get("portfolio_id") == portfolio.get("portfolio_id"):
                 # Enrich with fund details
-                target_fund_id = holding.get("target_fund_id")
-                fund_details = funds.get(str(target_fund_id), {})
+                fund_id = holding.get("fund_id")
+                fund_details = funds.get(str(fund_id), {})
                 
                 enriched_holding = {
                     **holding,

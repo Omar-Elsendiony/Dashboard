@@ -153,7 +153,7 @@ This policy defines responsibilities, principles, and procedures for agents oper
 ### Fund Switching Operations
 
 - **Switch Funds**
-  - Required fields: investor_id, current_fund_id, target_fund_id, switch_amount
+  - Required fields: investor_id, current_fund_id, fund_id, switch_amount
   - Validates all entity IDs exist and are accessible
   - Finds active subscription in current fund with sufficient balance
   - Creates redemption from current fund (redemption_fee=0.0 for switches)
@@ -231,7 +231,7 @@ All SOPs are executed in a single turn. Inputs must be validated first; if valid
 
 ### Fund Switching SOP
 
-1. Receive switch request with investor_id, current_fund_id, target_fund_id, switch_amount
+1. Receive switch request with investor_id, current_fund_id, fund_id, switch_amount
 2. Validate all entity IDs exist, otherwise halt with "Invalid IDs: [list]"
 3. Find active subscription in current fund, otherwise halt with "No active subscription found in current fund"
 4. Verify sufficient balance in current subscription, otherwise halt with "Insufficient balance in current fund"

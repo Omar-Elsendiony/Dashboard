@@ -30,7 +30,7 @@ class AddPortfolioHolding(Tool):
         new_holding = {
             "portfolio_holding_id": str(portfolio_holding_id),
             "portfolio_id": str(portfolio_id),
-            "target_fund_id": str(fund_id),
+            "fund_id": str(fund_id),
             "quantity": quantity,
             "cost_basis": cost_basis,
             "created_at": timestamp

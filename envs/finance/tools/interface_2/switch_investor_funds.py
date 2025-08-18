@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class SwitchInvestorFunds(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], investor_id: str, current_fund_id: str,
-               target_fund_id: str, switch_amount: float) -> str:
+               fund_id: str, switch_amount: float) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
@@ -22,14 +22,14 @@ class SwitchInvestorFunds(Tool):
             return json.dumps({"error": f"Investor {investor_id} not found"})
         if str(current_fund_id) not in funds:
             return json.dumps({"error": f"Current fund {current_fund_id} not found"})
-        if str(target_fund_id) not in funds:
-            return json.dumps({"error": f"Target fund {target_fund_id} not found"})
+        if str(fund_id) not in funds:
+            return json.dumps({"error": f"Target fund {fund_id} not found"})
         
         # Find current subscription
         current_subscription = None
         for sub in subscriptions.values():
             if (sub.get("investor_id") == (investor_id) and # compare a string with string
-                sub.get("target_fund_id") == (current_fund_id) and 
+                sub.get("fund_id") == (current_fund_id) and 
                 sub.get("status") == "approved"):
                 current_subscription = sub
                 break
@@ -64,7 +64,7 @@ class SwitchInvestorFunds(Tool):
         subscription_id = generate_id(subscriptions)
         new_subscription = {
             "subscription_id": subscription_id,
-            "target_fund_id": int(target_fund_id),
+            "fund_id": int(fund_id),
             "investor_id": int(investor_id),
             "amount": switch_amount,
             "status": "approved",
@@ -89,10 +89,10 @@ class SwitchInvestorFunds(Tool):
                     "properties": {
                         "investor_id": {"type": "string", "description": "ID of the investor"},
                         "current_fund_id": {"type": "string", "description": "ID of the current fund"},
-                        "target_fund_id": {"type": "string", "description": "ID of the target fund"},
+                        "fund_id": {"type": "string", "description": "ID of the target fund"},
                         "switch_amount": {"type": "number", "description": "Amount to switch"}
                     },
-                    "required": ["investor_id", "current_fund_id", "target_fund_id", "switch_amount"]
+                    "required": ["investor_id", "current_fund_id", "fund_id", "switch_amount"]
                 }
             }
         }

@@ -29,12 +29,12 @@ class GetInvestorRedemptions(Tool):
                     continue
                 
                 # Enrich with fund details
-                target_fund_id = subscription.get("target_fund_id")
-                fund_details = funds.get(str(target_fund_id), {})
+                fund_id = subscription.get("fund_id")
+                fund_details = funds.get(str(fund_id), {})
                 
                 enriched_redemption = {
                     **redemption,
-                    "target_fund_id": target_fund_id,
+                    "fund_id": fund_id,
                     "fund_name": fund_details.get("name"),
                     "fund_type": fund_details.get("fund_type"),
                     "original_subscription_amount": subscription.get("amount")

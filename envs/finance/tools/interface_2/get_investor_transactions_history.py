@@ -33,13 +33,13 @@ class GetInvestorTransactionsHistory(Tool):
                         continue
                     
                     # Enrich with fund details
-                    target_fund_id = subscription.get("target_fund_id")
-                    fund_details = funds.get(str(target_fund_id), {})
+                    fund_id = subscription.get("fund_id")
+                    fund_details = funds.get(str(fund_id), {})
                     
                     transactions.append({
                         "transaction_id": subscription.get("subscription_id"),
                         "transaction_type": "subscription",
-                        "target_fund_id": target_fund_id,
+                        "fund_id": fund_id,
                         "fund_name": fund_details.get("name"),
                         "amount": subscription.get("amount"),
                         "status": subscription.get("status"),
@@ -63,13 +63,13 @@ class GetInvestorTransactionsHistory(Tool):
                         continue
                     
                     # Enrich with fund details
-                    target_fund_id = subscription.get("target_fund_id")
-                    fund_details = funds.get(str(target_fund_id), {})
+                    fund_id = subscription.get("fund_id")
+                    fund_details = funds.get(str(fund_id), {})
                     
                     transactions.append({
                         "transaction_id": redemption.get("redemption_id"),
                         "transaction_type": "redemption",
-                        "target_fund_id": target_fund_id,
+                        "fund_id": fund_id,
                         "fund_name": fund_details.get("name"),
                         "amount": redemption.get("redemption_amount"),
                         "status": redemption.get("status"),
@@ -91,13 +91,13 @@ class GetInvestorTransactionsHistory(Tool):
                         continue
                     
                     # Enrich with fund details
-                    target_fund_id = commitment.get("target_fund_id")
-                    fund_details = funds.get(str(target_fund_id), {})
+                    fund_id = commitment.get("fund_id")
+                    fund_details = funds.get(str(fund_id), {})
                     
                     transactions.append({
                         "transaction_id": commitment.get("commitment_id"),
                         "transaction_type": "commitment",
-                        "target_fund_id": target_fund_id,
+                        "fund_id": fund_id,
                         "fund_name": fund_details.get("name"),
                         "amount": commitment.get("commitment_amount"),
                         "status": commitment.get("status"),

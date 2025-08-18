@@ -4,7 +4,7 @@ from tau_bench.envs.tool import Tool
 
 class CreateInvestorSubscription(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_id: str, target_fund_id: str, amount: float,
+    def invoke(data: Dict[str, Any], investor_id: str, fund_id: str, amount: float,
                compliance_officer_approval: bool) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
@@ -22,11 +22,11 @@ class CreateInvestorSubscription(Tool):
         # Validate entities exist
         if str(investor_id) not in investors:
             return json.dumps({"error": f"Investor {investor_id} not found"})
-        if str(target_fund_id) not in funds:
-            return json.dumps({"error": f"Fund {target_fund_id} not found"})
+        if str(fund_id) not in funds:
+            return json.dumps({"error": f"Fund {fund_id} not found"})
         
         # Check if fund is open
-        if funds[str(target_fund_id)].get("status") != "open":
+        if funds[str(fund_id)].get("status") != "open":
             return json.dumps({"error": "Fund is not open for subscriptions"})
         
         subscription_id = generate_id(subscriptions)
@@ -37,7 +37,7 @@ class CreateInvestorSubscription(Tool):
         
         new_subscription = {
             "subscription_id": subscription_id,
-            "target_fund_id": int(target_fund_id),
+            "fund_id": int(fund_id),
             "id": int(investor_id),
             "amount": amount,
             "status": status,
@@ -63,11 +63,11 @@ class CreateInvestorSubscription(Tool):
                     "type": "object",
                     "properties": {
                         "investor_id": {"type": "string", "description": "ID of the investor"},
-                        "target_fund_id": {"type": "string", "description": "ID of the fund"},
+                        "fund_id": {"type": "string", "description": "ID of the fund"},
                         "amount": {"type": "number", "description": "Subscription amount"},
                         "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"}
                     },
-                    "required": ["investor_id", "target_fund_id", "amount", "compliance_officer_approval"]
+                    "required": ["investor_id", "fund_id", "amount", "compliance_officer_approval"]
                 }
             }
         }
