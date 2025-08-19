@@ -83,7 +83,7 @@ class UpdateFund(Tool):
         return json.dumps({
             "success": True, 
             "message": "Fund updated successfully",
-            "fund_id": fund_id,
+            "fund_id": str(fund_id),
             "updated_field": field_name,
             "old_value": original_value,
             "new_value": field_value

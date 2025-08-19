@@ -110,13 +110,13 @@ class CreateReport(Tool):
         # timestamp = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S")
         timestamp = "2025-10-01T00:00:00"
         # Set fund_id to first available fund if not specified and needed
-        if not fund_id and funds:
-            fund_id = list(funds.keys())[0]
+        # if not fund_id and funds:
+        #     fund_id = list(funds.keys())[0]
         
         new_report = {
-            "report_id": report_id,
-            "fund_id": fund_id,
-            "investor_id": investor_id,
+            "report_id": str(report_id),
+            "fund_id": str(fund_id),
+            "investor_id": str(investor_id),
             "report_type": report_type,
             "report_start": start_date,
             "report_end": end_date,

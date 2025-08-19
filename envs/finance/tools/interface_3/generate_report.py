@@ -114,9 +114,9 @@ class GenerateReport(Tool):
             fund_id = list(funds.keys())[0]
         
         new_report = {
-            "report_id": report_id,
-            "fund_id": fund_id,
-            "investor_id": investor_id,
+            "report_id": str(report_id),
+            "fund_id": str(fund_id),
+            "investor_id": str(investor_id),
             "report_type": report_type,
             "report_start": start_date,
             "report_end": end_date,

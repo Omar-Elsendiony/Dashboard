@@ -36,7 +36,7 @@ class InvestorWithdrawal(Tool):
         
         return json.dumps({
             "message": "Offboarding complete",
-            "investor_id": investor_id,
+            "investor_id": str(investor_id),
             "status": "inactive"
         })
 

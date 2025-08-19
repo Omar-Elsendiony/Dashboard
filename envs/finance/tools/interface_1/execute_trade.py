@@ -37,8 +37,8 @@ class ExecuteTrade(Tool):
         side = "buy" if quantity > 0 else "sell"
         
         new_trade = {
-            "trade_id": trade_id,
-            "fund_id": int(fund_id),
+            "trade_id": str(trade_id),
+            "fund_id": str(fund_id),
             "instrument_id": int(instrument_id),
             "trade_date": timestamp,
             "quantity": abs(quantity),

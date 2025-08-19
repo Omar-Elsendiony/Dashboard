@@ -29,7 +29,7 @@ class CalculateFutureValue(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "closing_price_or_nav": {"type": "number", "description": "Closing price of fund or NAV"},
+                        "closing_price_or_nav": {"type": "number", "description": "Closing price of fund or instrument or NAV"},
                         "growth_rate": {"type": "number", "description": "Growth rate 'r'"},
                         "number_of_years": {"type": "integer", "description": "Number of years 'n'"}
                     },

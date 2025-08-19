@@ -44,7 +44,7 @@ class CalculateNav(Tool):
         
         new_nav_record = {
             "nav_id": str(nav_id),
-            "fund_id": fund_id,
+            "fund_id": str(fund_id),
             "nav_date": calculation_date,
             "nav_value": nav_value,
             "updated_at": timestamp

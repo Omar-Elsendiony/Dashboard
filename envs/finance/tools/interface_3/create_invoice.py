@@ -33,7 +33,7 @@ class CreateInvoice(Tool):
         
         new_invoice = {
             "invoice_id": str(invoice_id),
-            "commitment_id": commitment_id,
+            "commitment_id": str(commitment_id),
             "invoice_date": invoice_date,
             "due_date": due_date,
             "amount": amount,

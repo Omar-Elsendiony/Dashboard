@@ -34,7 +34,7 @@ class AddNewUser(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_user = {
-            "user_id": user_id,
+            "user_id": str(user_id),
             "first_name": first_name,
             "last_name": last_name,
             "email": email,

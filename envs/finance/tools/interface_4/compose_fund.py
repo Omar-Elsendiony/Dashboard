@@ -37,7 +37,7 @@ class ComposeFund(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_fund = {
-            "fund_id": fund_id,
+            "fund_id": str(fund_id),
             "name": fund_name,
             "fund_type": fund_type,
             "manager_id": int(manager_id),

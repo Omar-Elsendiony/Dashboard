@@ -36,12 +36,12 @@ class CreateInvestorSubscription(Tool):
         status = "pending" if not compliance_officer_approval else "approved"
         
         new_subscription = {
-            "subscription_id": subscription_id,
-            "fund_id": int(fund_id),
-            "id": int(investor_id),
+            "subscription_id": str(subscription_id),
+            "fund_id": fund_id,
+            "investor_id": investor_id,
             "amount": amount,
             "status": status,
-            "request_assigned_to": 1,  # Default admin
+            "request_assigned_to": "6",  # Default admin
             "request_date": timestamp.split("T")[0],
             "approval_date": timestamp.split("T")[0] if status == "approved" else None,
             "updated_at": timestamp
@@ -49,8 +49,8 @@ class CreateInvestorSubscription(Tool):
         
         subscriptions[str(subscription_id)] = new_subscription
         
-        return_status = "active" if status == "approved" else "funds_pending"
-        return json.dumps({"new_subscription": new_subscription, "status": return_status})
+        #return_status = "active" if status == "approved" else "funds_pending"
+        return json.dumps(new_subscription)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:

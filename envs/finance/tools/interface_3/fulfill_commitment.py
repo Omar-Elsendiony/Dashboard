@@ -42,7 +42,7 @@ class FulfillCommitment(Tool):
             invoice_id = generate_id(invoices)
             new_invoice = {
                 "invoice_id": invoice_id,
-                "commitment_id": commitment_id,
+                "commitment_id": str(commitment_id),
                 "invoice_date": payment_date,
                 "due_date": payment_date,
                 "amount": commitment["commitment_amount"],
@@ -82,7 +82,7 @@ class FulfillCommitment(Tool):
             invoices[str(invoice_id)]["updated_at"] = timestamp
         
         return json.dumps({
-            "commitment_id": commitment_id, 
+            "commitment_id": str(commitment_id), 
             "success": True, 
             "status": status, 
             "amount": payment_receipt_amount

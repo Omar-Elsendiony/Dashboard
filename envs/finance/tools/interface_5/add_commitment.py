@@ -36,9 +36,9 @@ class AddCommitment(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_commitment = {
-            "commitment_id": commitment_id,
-            "fund_id": fund_id,
-            "investor_id": investor_id,
+            "commitment_id": str(commitment_id),
+            "fund_id": str(fund_id),
+            "investor_id": str(investor_id),
             "commitment_amount": amount,
             "commitment_date": due_date,
             "status": "pending", # Initial status and the status can be updated later to fulfilled

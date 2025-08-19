@@ -68,7 +68,7 @@ class SwitchInvestorFunds(Tool):
             "investor_id": int(investor_id),
             "amount": switch_amount,
             "status": "approved",
-            "request_assigned_to": 1,  # Default admin
+            "request_assigned_to": "6",  # Default admin
             "request_date": timestamp.split("T")[0],
             "approval_date": timestamp.split("T")[0],
             "updated_at": timestamp

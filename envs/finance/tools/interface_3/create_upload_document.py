@@ -34,12 +34,12 @@ class CreateUploadDocument(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_document = {
-            "document_id": document_id,
+            "document_id": str(document_id),
             "name": file_name,
             "type": file_format.lower(),
             "uploaded_by": user_id,
             "upload_date": timestamp,
-            "report_id": report_id,
+            "report_id": str(report_id),
             "size_bytes": size_bytes,
             "status": "available"
         }

@@ -238,8 +238,8 @@ class AddNewTradeForFund(Tool):
         timestamp = "2025-10-01T00:00:00"  # In real system, use current timestamp
         
         new_trade = {
-            "trade_id": trade_id,
-            "fund_id": int(fund_id),
+            "trade_id": str(trade_id),
+            "fund_id": str(fund_id),
             "instrument_id": int(instrument_id), 
             "trade_date": timestamp,
             "quantity": quantity,

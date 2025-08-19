@@ -99,8 +99,8 @@ class ProcessInvestorRedemption(Tool):
         return json.dumps({
             "success": True,
             "message": "Redemption processed",
-            "investor_id": investor_id,
-            "fund_id": fund_id,
+            "investor_id": str(investor_id),
+            "fund_id": str(fund_id),
             "redemption": new_redemption,
             "redeemed_units": holding_units,
             "redeemed_amount": round(redemption_amount, 2),

@@ -39,7 +39,7 @@ class GetInvestorTransactionsHistory(Tool):
                     transactions.append({
                         "transaction_id": subscription.get("subscription_id"),
                         "transaction_type": "subscription",
-                        "fund_id": fund_id,
+                        "fund_id": str(fund_id),
                         "fund_name": fund_details.get("name"),
                         "amount": subscription.get("amount"),
                         "status": subscription.get("status"),
@@ -69,7 +69,7 @@ class GetInvestorTransactionsHistory(Tool):
                     transactions.append({
                         "transaction_id": redemption.get("redemption_id"),
                         "transaction_type": "redemption",
-                        "fund_id": fund_id,
+                        "fund_id": str(fund_id),
                         "fund_name": fund_details.get("name"),
                         "amount": redemption.get("redemption_amount"),
                         "status": redemption.get("status"),
@@ -97,7 +97,7 @@ class GetInvestorTransactionsHistory(Tool):
                     transactions.append({
                         "transaction_id": commitment.get("commitment_id"),
                         "transaction_type": "commitment",
-                        "fund_id": fund_id,
+                        "fund_id": str(fund_id),
                         "fund_name": fund_details.get("name"),
                         "amount": commitment.get("commitment_amount"),
                         "status": commitment.get("status"),

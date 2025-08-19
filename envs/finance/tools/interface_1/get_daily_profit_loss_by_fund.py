@@ -29,7 +29,7 @@ class GetDailyProfitLossByFund(Tool):
             if trade_day not in daily_pnl:
                 daily_pnl[trade_day] = {
                     "date": trade_day,
-                    "fund_id": fund_id,
+                    "fund_id": str(fund_id),
                     "total_buy_value": 0,
                     "total_sell_value": 0,
                     "net_pnl": 0,
