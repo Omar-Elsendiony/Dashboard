@@ -19,7 +19,7 @@ class UpdateNavRecordValue(Tool):
         nav_record["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps({
-            "nav_id": nav_id,
+            "nav_id": str(nav_id),
             "fund_id": nav_record.get("fund_id"),
             "nav_date": nav_record.get("nav_date"),
             "old_nav_value": old_value,

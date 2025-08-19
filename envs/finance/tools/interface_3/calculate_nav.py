@@ -43,7 +43,7 @@ class CalculateNav(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_nav_record = {
-            "nav_id": nav_id,
+            "nav_id": str(nav_id),
             "fund_id": fund_id,
             "nav_date": calculation_date,
             "nav_value": nav_value,
