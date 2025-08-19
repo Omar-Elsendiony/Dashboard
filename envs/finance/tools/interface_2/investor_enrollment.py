@@ -4,7 +4,7 @@ from tau_bench.envs.tool import Tool
 
 class InvestorEnrollment(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], legal_entity_name: str, incorporation_registration_number: str,
+    def invoke(data: Dict[str, Any], legal_entity_name: str, contact_email: str, incorporation_registration_number: str,
                date_of_incorporation: str, country_of_incorporation: str, registered_business_address: str,
                tax_identification_number: str, source_of_funds_declaration: str, compliance_officer_approval: bool) -> str:
         
@@ -37,7 +37,8 @@ class InvestorEnrollment(Tool):
             "address": registered_business_address,
             "tax_id": tax_identification_number,
             "source_of_funds": source_of_funds_declaration,
-            "contact_email": "",  # Will need to be provided separately
+            "contact_email": contact_email,  # Fixed: now uses the actual parameter
+            "status": "onboarded",
             "accreditation_status": "accredited",  # Default for institutional investors
             "created_at": timestamp
         }
@@ -56,6 +57,7 @@ class InvestorEnrollment(Tool):
                     "type": "object",
                     "properties": {
                         "legal_entity_name": {"type": "string", "description": "Legal entity name"},
+                        "contact_email": {"type": "string", "description": "Contact email address"},  # Fixed: added missing property
                         "incorporation_registration_number": {"type": "string", "description": "Incorporation/registration number"},
                         "date_of_incorporation": {"type": "string", "description": "Date of incorporation (YYYY-MM-DD)"},
                         "country_of_incorporation": {"type": "string", "description": "Country of incorporation"},
@@ -64,9 +66,9 @@ class InvestorEnrollment(Tool):
                         "source_of_funds_declaration": {"type": "string", "description": "Source of funds declaration. It should be only one of the following: 'retained_earnings', 'shareholder_capital', 'asset_sale', 'loan_facility', 'external_investment', 'government_grant', 'merger_or_acquisition_proceeds', 'royalty_or_licensing_income', 'dividend_income', 'other'"},
                         "compliance_officer_approval": {"type": "boolean", "description": "Compliance Officer approval flag (True/False)"}
                     },
-                    "required": ["legal_entity_name", "incorporation_registration_number", "date_of_incorporation", 
+                    "required": ["legal_entity_name", "contact_email", "incorporation_registration_number", "date_of_incorporation", 
                                "country_of_incorporation", "registered_business_address", "tax_identification_number",
-                               "source_of_funds_declaration", "compliance_officer_approval"]
+                               "source_of_funds_declaration", "compliance_officer_approval"]  # Fixed: added contact_email to required fields
                 }
             }
         }
