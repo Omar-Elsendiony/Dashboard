@@ -5,8 +5,8 @@ from tau_bench.envs.tool import Tool
 class ComposeDocument(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], user_id: str, 
-               size_bytes: int, confidentiality_level: str, file_name: str, 
-               file_format: str, report_id: str = None) -> str:
+                confidentiality_level: str, file_name: str, 
+                file_format: str, report_id: str = None) -> str:
 
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
@@ -40,7 +40,7 @@ class ComposeDocument(Tool):
             "uploaded_by": user_id,
             "upload_date": timestamp,
             "report_id": str(report_id),
-            "size_bytes": size_bytes,
+            "size_bytes": 2560000,
             "status": "available"
         }
         
@@ -58,13 +58,12 @@ class ComposeDocument(Tool):
                     "type": "object",
                     "properties": {
                         "user_id": {"type": "string", "description": "ID of the user uploading the document"},
-                        "size_bytes": {"type": "integer", "description": "Size of document in bytes"},
                         "confidentiality_level": {"type": "string", "description": "Confidentiality levels: 'public', 'internal', 'confidential', 'restricted'"},
                         "file_name": {"type": "string", "description": "Name of the file"},
                         "file_format": {"type": "string", "description": "File format: pdf, docx, xlsx, or csv"},
                         "report_id": {"type": "string", "description": "ID of the related report (optional)"}
                     },
-                    "required": ["user_id", "size_bytes", "confidentiality_level", "file_name", "file_format"]
+                    "required": ["user_id", "confidentiality_level", "file_name", "file_format"]
                 }
             }
         }

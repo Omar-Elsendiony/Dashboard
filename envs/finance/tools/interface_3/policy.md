@@ -106,7 +106,7 @@ This policy defines responsibilities, principles, and procedures for commitment 
 ### Document Management
 
 - **Create/Upload Document**
-  - Required fields: user_id, size_bytes, confidentiality_level, file_name, file_format
+  - Required fields: user_id, confidentiality_level, file_name, file_format
   - Optional report_id for linking to specific reports
   - Valid formats: pdf, docx, xlsx, csv
   - Valid confidentiality levels: public, internal, confidential, restricted
@@ -196,7 +196,7 @@ All SOPs are executed in a single turn. Inputs must be validated first; if valid
 
 ### Document Upload SOP
 
-1. Receive upload request with user_id, size_bytes, confidentiality_level, file_name, file_format
+1. Receive upload request with user_id, confidentiality_level, file_name, file_format
 2. Validate user exists, otherwise halt with "User not found"
 3. Validate file_format in approved list, otherwise halt with "Invalid file format"
 4. Validate confidentiality_level in valid levels, otherwise halt with "Invalid confidentiality level"

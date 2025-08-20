@@ -180,7 +180,7 @@ Support and issue tracking.
 
 Document management and storage.
 
-- **Fields:** document_id, name, type, uploaded_by, uploaded_date, report_id, size_bytes, status
+- **Fields:** document_id, name, type, uploaded_by, uploaded_date, report_id, status
 - **Types:** pdf, xlsx, docx, csv, other
 - **Status:** available, archived, deleted
 

@@ -81,7 +81,6 @@ INTERFACE_3_TEST = [
             }),
             Action(name="create_upload_document", kwargs={
                 "user_id": "2",
-                "size_bytes": 2048576,
                 "confidentiality_level": "confidential",
                 "file_name": "commitment_report_august_2025.pdf",
                 "file_format": "pdf"

@@ -44,7 +44,7 @@ class GetInvestorStatements(Tool):
                             "document_id": doc.get("document_id"),
                             "name": doc.get("name"),
                             "format": doc.get("format"),
-                            "size_bytes": doc.get("size_bytes"),
+                            "size_bytes": 2560000,
                             "upload_date": doc.get("upload_date")
                         })
                 
