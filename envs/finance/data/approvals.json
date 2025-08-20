@@ -2982,5 +2982,61 @@
     "content": "A well-timed move to capitalize on market volatility. My approval is granted for this trade.",
     "approved_by": "45",
     "approver_role": "fund_manager"
+  },
+  "374": {
+    "id": "374",
+    "code": "FUNDD0374",
+    "action_name": "Fund Deletion",
+    "content": "All assets have been successfully liquidated and final distributions to investors are confirmed. I approve the termination of this fund.",
+    "approved_by": "4",
+    "approver_role": "fund_manager"
+  },
+  "375": {
+    "id": "375",
+    "code": "FUNDD0375",
+    "action_name": "Fund Deletion",
+    "content": "The fund has served its strategic purpose and market conditions no longer favor its mandate. Approving termination.",
+    "approved_by": "12",
+    "approver_role": "fund_manager"
+  },
+  "376": {
+    "id": "376",
+    "code": "FUNDD0376",
+    "action_name": "Fund Deletion",
+    "content": "The fund's objectives have been met and its lifecycle is complete. I approve the final dissolution.",
+    "approved_by": "17",
+    "approver_role": "fund_manager"
+  },
+  "377": {
+    "id": "377",
+    "code": "FUNDD0377",
+    "action_name": "Fund Deletion",
+    "content": "The operational wind-down is complete and all liabilities have been settled. Approved for termination.",
+    "approved_by": "20",
+    "approver_role": "fund_manager"
+  },
+  "378": {
+    "id": "378",
+    "code": "FUNDD0378",
+    "action_name": "Fund Deletion",
+    "content": "Final audit is satisfactory and all investor accounts are closed. I authorize the fund termination.",
+    "approved_by": "21",
+    "approver_role": "fund_manager"
+  },
+  "379": {
+    "id": "379",
+    "code": "FUNDD0379",
+    "action_name": "Fund Deletion",
+    "content": "This fund has reached the end of its term as planned. The termination process is complete and approved.",
+    "approved_by": "27",
+    "approver_role": "fund_manager"
+  },
+  "380": {
+    "id": "380",
+    "code": "FUNDD0380",
+    "action_name": "Fund Deletion",
+    "content": "All regulatory and investor obligations have been fulfilled. The fund is clear for final dissolution.",
+    "approved_by": "31",
+    "approver_role": "fund_manager"
   }
 }
