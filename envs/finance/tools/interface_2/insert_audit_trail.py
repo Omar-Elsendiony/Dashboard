@@ -60,9 +60,9 @@ class InsertAuditTrail(Tool):
         }
         
         reference_table = reference_tables.get(reference_type)
-        if reference_table:
-            if str(reference_id) not in data[reference_table]:
-                raise ValueError(f"{reference_type.title()} {reference_id} not found")
+        # if reference_table:
+        #     if str(reference_id) not in data[reference_table]:
+        #         raise ValueError(f"{reference_type.title()} {reference_id} not found")
         
         audit_trail_id = generate_id(audit_trails)
         timestamp = "2025-10-01T00:00:00"
