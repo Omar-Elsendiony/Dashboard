@@ -930,7 +930,7 @@
                         errorCount++;
                     }
                     
-                    // Wait 5 seconds before next action (except for the last one)
+                    // Wait 1 seconds before next action (except for the last one)
                     if (i < actionElements.length - 1) {
                         await new Promise(resolve => setTimeout(resolve, 1000));
                     }
@@ -1644,24 +1644,25 @@
             // Initialize nodeList as an empty array
             let nodeList = [];
             
-            // Get the actions container
-            const actions = document.querySelector('#actions');
+            // Get all API action containers
+            const actionElements = document.querySelectorAll('.api-action');
             
-            // Extract values from all select elements
-            actions.querySelectorAll('select').forEach(select => {
-                if (select.value && select.value.trim() !== '') {
-                    nodeList.push(select.value);
+            // Extract selected API names from radio buttons
+            actionElements.forEach(actionEl => {
+                const selectedRadio = actionEl.querySelector('input[type="radio"]:checked');
+                if (selectedRadio && selectedRadio.value) {
+                    nodeList.push(selectedRadio.value);
                 }
             });
             
             // Check if we have any nodes to work with
             if (nodeList.length === 0) {
-                showWrongMessage('There are no actions to populate nodes from.');
+                showWrongMessage('No actions with selected APIs found. Please add actions and select APIs first.');
                 return;
             }
             
             try {
-                // Remove duplicates (optional - in case same node appears multiple times)
+                // Remove duplicates (optional - in case same API appears multiple times)
                 const uniqueNodeNames = [...new Set(nodeList)];
                 
                 // Clear existing nodes and edges
@@ -1682,18 +1683,39 @@
                         label: nodeName,
                         x: x,
                         y: y,
-                        fixed: false
+                        fixed: false,
+                        color: {
+                            background: '#667eea',
+                            border: '#764ba2',
+                            highlight: {
+                                background: '#764ba2',
+                                border: '#667eea'
+                            }
+                        },
+                        font: {
+                            color: 'white',
+                            size: 14,
+                            face: 'Arial'
+                        }
                     });
                 });
                 
                 // Update the network if it exists
                 if (network) {
                     network.setData({ nodes, edges });
+                    // Fit the network to show all nodes
+                    network.fit({
+                        animation: {
+                            duration: 1000,
+                            easingFunction: 'easeInOutQuad'
+                        }
+                    });
                 }
                 
-                showCorrectMessage(`Successfully populated ${uniqueNodeNames.length} nodes!`);
+                showCorrectMessage(`Successfully populated ${uniqueNodeNames.length} nodes from your actions!`);
                 
             } catch (error) {
+                console.error('Error creating nodes:', error);
                 showWrongMessage('Error creating nodes: ' + error.message);
             }
         }
