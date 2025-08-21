@@ -24,8 +24,8 @@ class RemoveFund(Tool):
         active_subscriptions = [s for s in subscriptions.values() 
                             if str(s.get("fund_id")) == str(fund_id) and s.get("status") == "approved"]
         
-        if active_subscriptions:
-            return json.dumps({"error": "Cannot delete fund with active subscriptions. Process halted."})
+        # if active_subscriptions:
+        #     return json.dumps({"error": "Cannot delete fund with active subscriptions. Process halted."})
         
         # Delete fund
         del funds[str(fund_id)]
