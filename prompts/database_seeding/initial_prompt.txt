@@ -17,6 +17,8 @@ Rules:
 14. The key of each entry in the JSON object should represent the primary ID of the record, and it must match the corresponding ID field inside the entry. For example, in the example below, the key '1' maps to a user object where 'user_id' is also '1'
 15. Do not ever add null in fields that can be filled with fake data unless there can be realistic cases where the field can be null.
 16. The script should generate data that is realistic and coherent, avoiding any obvious patterns or repetitions that would make the data look artificial.
+17. I want all IDs to be casted to string to ensure that they are strings even if the type hint is a string.
+
 
 Here is an example:
 {{

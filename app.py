@@ -26,7 +26,7 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15) 
 
-# app.config['SESSION_TYPE'] = 'filesystem' 
+app.config['SESSION_TYPE'] = 'filesystem' 
 
 app.config['SESSION_TYPE'] = 'redis'
 app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))

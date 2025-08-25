@@ -1,0 +1,2554 @@
+{
+    "e6754459-c695-41ca-bf86-899f82b95acd": {
+        "team_id": "511b6d12-b81f-4f7c-8718-6b6596aafc4d",
+        "worker_id": "04e74ccc-9243-4eee-8205-88d8e4114665",
+        "role": "member",
+        "joined_at": "2024-02-08",
+        "left_at": null,
+        "user_id": "c654f2e6-8d31-4e9f-84fc-72981fbbfaa9"
+    },
+    "c7f43c2a-0d22-4846-b3e8-e141d8a4e5b3": {
+        "team_id": "511b6d12-b81f-4f7c-8718-6b6596aafc4d",
+        "worker_id": "4d492556-19f5-4f59-b494-29c700fa0868",
+        "role": "member",
+        "joined_at": "2024-12-25",
+        "left_at": null,
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f"
+    },
+    "15803fd7-1ee0-4c2b-a92d-a4cd32ae7524": {
+        "team_id": "511b6d12-b81f-4f7c-8718-6b6596aafc4d",
+        "worker_id": "5a0d8ecd-8e2f-4b07-b9c2-c7440e4cbe5f",
+        "role": "member",
+        "joined_at": "2023-11-13",
+        "left_at": null,
+        "user_id": "90aea329-4842-42df-bc97-ead79343ce9c"
+    },
+    "19ee7d77-1606-47b5-a995-5068d14205dc": {
+        "team_id": "511b6d12-b81f-4f7c-8718-6b6596aafc4d",
+        "worker_id": "fa9275d2-14c7-46b1-8c29-15f4195624e8",
+        "role": "member",
+        "joined_at": "2024-03-10",
+        "left_at": null,
+        "user_id": "9fe61da1-71a3-40db-acbc-bbba49b7db51"
+    },
+    "aaa27911-3b5f-4ebe-afd3-bbbc7af5a929": {
+        "team_id": "511b6d12-b81f-4f7c-8718-6b6596aafc4d",
+        "worker_id": "c0fbf6d2-b7b5-4337-b125-fad72b10ef59",
+        "role": "member",
+        "joined_at": "2024-09-02",
+        "left_at": null,
+        "user_id": "bdb57c43-c269-440a-9f74-e0a97ffc4e90"
+    },
+    "f25a93a2-0147-4ed5-b895-d3b541d4e679": {
+        "team_id": "511b6d12-b81f-4f7c-8718-6b6596aafc4d",
+        "worker_id": "05db9378-d624-458f-9fa8-6f328cc38fb4",
+        "role": "member",
+        "joined_at": "2025-04-05",
+        "left_at": null,
+        "user_id": "dfd43c90-9b6b-479a-8a9e-a2c94e3cd772"
+    },
+    "4c61a34d-13b6-4b60-87c6-75f6b2257f65": {
+        "team_id": "511b6d12-b81f-4f7c-8718-6b6596aafc4d",
+        "worker_id": "560f7073-0675-4586-be62-e46892bf7e1b",
+        "role": "member",
+        "joined_at": "2024-01-14",
+        "left_at": null,
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5"
+    },
+    "9a634795-1ced-42a5-9bb6-0a8c464fceda": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "2659c5b4-3129-4b2c-b95d-858e1bd9fbb5",
+        "role": "admin",
+        "joined_at": "2024-02-06",
+        "left_at": "2025-01-18",
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42"
+    },
+    "2254df37-2e11-4e49-8dd7-2a841a96b20d": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "24fda5b9-5bbc-4612-9d88-ad17537f3c4b",
+        "role": "member",
+        "joined_at": "2023-11-16",
+        "left_at": null,
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8"
+    },
+    "e3640924-1c6e-47ed-8ecb-c86f4ac12c60": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "c87a497a-fdf5-483b-a3b6-fc69121c286d",
+        "role": "member",
+        "joined_at": "2024-11-15",
+        "left_at": null,
+        "user_id": "4dfc0335-2492-41db-81c2-cc3e51dcb792"
+    },
+    "c47ad314-4f8f-47a5-9e37-7756ecd67bd9": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "27cbcbfa-eecd-4038-89a6-0de1b7346de5",
+        "role": "admin",
+        "joined_at": "2024-06-05",
+        "left_at": "2025-01-31",
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c"
+    },
+    "4cae0653-8142-456c-92bd-a76160476e33": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "accb5f01-d788-4693-a6b7-5ffe2a1888ed",
+        "role": "lead",
+        "joined_at": "2024-08-31",
+        "left_at": null,
+        "user_id": "3ba37ced-9063-4447-bdbe-f650b5981f88"
+    },
+    "1c3453f4-f736-4b39-9fd7-0b965c916a38": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "374964ab-b7c6-44d0-9c10-f7bb37eba527",
+        "role": "lead",
+        "joined_at": "2024-08-12",
+        "left_at": "2024-11-27",
+        "user_id": "f15f9da8-fde6-4420-84d7-6c60690b2251"
+    },
+    "bc193093-f84d-4e6c-9741-b902eb32ec10": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "2f28f36f-1ccf-4955-961e-8bf37b1f6bf6",
+        "role": "member",
+        "joined_at": "2025-06-30",
+        "left_at": null,
+        "user_id": "db2db34e-a192-4a70-aebd-31c9ba3b50c3"
+    },
+    "30b8782b-fb24-4582-ba42-d9fe88c9fd9f": {
+        "team_id": "664e996c-4b35-4b16-bd9b-fe237cba7e78",
+        "worker_id": "8de5a9eb-0fd9-443f-89d0-f40e6ed4b29b",
+        "role": "member",
+        "joined_at": "2023-10-30",
+        "left_at": null,
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8"
+    },
+    "c1982267-00ab-4b30-9021-4df0102bb821": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "46d99806-4ab1-4266-a6f7-836517903492",
+        "role": "member",
+        "joined_at": "2023-07-25",
+        "left_at": null,
+        "user_id": "ac56be74-d20d-41b6-9629-79f0c900b911"
+    },
+    "cb43cb1c-188b-4a9f-aa28-745fd2ecff83": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "c7268ff2-492f-4ffd-a10b-01860626bfb1",
+        "role": "member",
+        "joined_at": "2023-12-14",
+        "left_at": null,
+        "user_id": "7421025a-eefc-4c61-bdce-a7a70456b97e"
+    },
+    "791900e5-55de-4a6c-bd19-ae5ee8efe2b1": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "8ea6ebea-3672-4618-9e05-ca93fbffde88",
+        "role": "member",
+        "joined_at": "2025-04-27",
+        "left_at": null,
+        "user_id": "8f536302-5849-4540-931d-f37774af583c"
+    },
+    "2dcc89aa-5612-4bcb-95e3-07abc091393d": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "09bd91dd-6b39-4ba1-9c13-d5be198e727b",
+        "role": "member",
+        "joined_at": "2023-08-08",
+        "left_at": null,
+        "user_id": "563754b0-77c9-4c54-817a-c0b971dead27"
+    },
+    "373bb84f-a8ac-4a6c-99be-129b1dc4c662": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "5f4ac719-4115-4345-899a-4d4c982472de",
+        "role": "member",
+        "joined_at": "2024-07-17",
+        "left_at": null,
+        "user_id": "4374e70f-a97f-4cc6-b557-353efac07d78"
+    },
+    "28316cf9-a85e-4bcf-9f18-7b47030bd15a": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "06e139da-afbb-4029-9ad6-33395d200d3f",
+        "role": "member",
+        "joined_at": "2023-10-29",
+        "left_at": null,
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf"
+    },
+    "f8db9ef2-d4c0-4c74-89cf-d97cbe293699": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "905e0d99-c3cc-474a-b631-4a12e8a3eab5",
+        "role": "member",
+        "joined_at": "2025-05-25",
+        "left_at": null,
+        "user_id": "d08c4e28-257c-436a-9018-edaf50cf63d6"
+    },
+    "54cbdfad-5b48-4ba9-8909-f616d7968785": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "22f89aec-15bb-4171-b553-4768e7f83410",
+        "role": "member",
+        "joined_at": "2024-01-04",
+        "left_at": null,
+        "user_id": "b70c115f-32f4-4f9c-904f-cfc7e0954351"
+    },
+    "f84b9854-4a83-4130-bfc8-f95d181e6850": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "584e4751-2b90-49d9-8e13-506fd623684e",
+        "role": "member",
+        "joined_at": "2025-06-02",
+        "left_at": null,
+        "user_id": "b6644b95-fa69-49d3-af2d-a9f478a711b3"
+    },
+    "43a73978-26f8-4721-b7ee-20b834981b85": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "5e2a07de-e5f5-4db2-9fd4-c18829bd60ad",
+        "role": "member",
+        "joined_at": "2024-03-15",
+        "left_at": null,
+        "user_id": "9bef0292-5f6c-4406-8dab-19804fd5456a"
+    },
+    "fed325c2-99af-413f-aff2-d4c29e483f22": {
+        "team_id": "09f3ef60-c06b-49ce-a6fe-1aacbb6c25c0",
+        "worker_id": "db09b0c7-9d88-46c0-bc02-7b91bec906f2",
+        "role": "member",
+        "joined_at": "2025-03-05",
+        "left_at": null,
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60"
+    },
+    "bba362bb-2f1f-4488-98eb-aba5f4f66abb": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "9f763b4a-459e-4c8a-8346-80eaa5e5ee14",
+        "role": "lead",
+        "joined_at": "2025-05-06",
+        "left_at": null,
+        "user_id": "6657a987-42d9-4a58-97f2-5c35d3d5d325"
+    },
+    "90fc84f6-99cb-42de-90d1-9617ad301446": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "11d1419b-0b82-4289-930b-042bd2261cc1",
+        "role": "lead",
+        "joined_at": "2024-05-29",
+        "left_at": null,
+        "user_id": "8f536302-5849-4540-931d-f37774af583c"
+    },
+    "c6e9de5a-4d2c-4748-a132-ab178ec1de8a": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "97f27445-8992-4654-8199-2f9bb6d268a1",
+        "role": "member",
+        "joined_at": "2024-06-02",
+        "left_at": null,
+        "user_id": "33902d5d-04e2-45e0-9ed7-c1c7f0a985a6"
+    },
+    "3d6ec91c-f9da-477f-905f-3a100170adbc": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "bdff7b12-6dd9-4007-bebb-d2ab53a31484",
+        "role": "lead",
+        "joined_at": "2023-11-25",
+        "left_at": null,
+        "user_id": "a19b4a66-df6c-476e-b145-ab3e651fcdf6"
+    },
+    "dfee6e2c-585f-4456-ac2a-aa39533e79f1": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "fb259635-dfd5-4be5-a401-0a017daa50da",
+        "role": "member",
+        "joined_at": "2023-07-25",
+        "left_at": null,
+        "user_id": "2deedea3-7611-4959-b165-3f0ae065b567"
+    },
+    "1efc8f7b-e440-483a-b3c0-c14c880475cc": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "c80c5b53-2c61-43c8-8b16-e07a417b2384",
+        "role": "lead",
+        "joined_at": "2024-04-29",
+        "left_at": "2024-10-14",
+        "user_id": "5000b71f-a1ab-4673-81ac-0e68f9adad76"
+    },
+    "46e5cfbe-a1db-42fe-8b23-637561d47f7d": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "1f10e52c-22db-4608-93d4-20ccf73fa096",
+        "role": "lead",
+        "joined_at": "2025-05-20",
+        "left_at": "2026-03-31",
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8"
+    },
+    "d2e3eac9-0a6c-4506-b1e2-5b3763784bc9": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "4aa2d2da-fda6-4bbd-8194-6115ef5d0948",
+        "role": "member",
+        "joined_at": "2025-02-26",
+        "left_at": null,
+        "user_id": "f83b92b2-f4e7-4240-b010-4a3a5ff3a801"
+    },
+    "9aaa0ab1-0f8c-4013-9a1c-c7e617a2c69f": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "cfdd1d2e-f572-4b97-a3a6-dbaaba88e6e3",
+        "role": "lead",
+        "joined_at": "2023-10-22",
+        "left_at": "2024-05-23",
+        "user_id": "e272d8d9-67f8-45d0-b9a7-49be53e1a228"
+    },
+    "ab65a869-d3a1-4b03-b1a6-945957d8d087": {
+        "team_id": "4f81cef9-5513-4be0-a187-a374f78ea8fe",
+        "worker_id": "28a79f69-e0f9-4ab2-b37c-30d49f4008a4",
+        "role": "lead",
+        "joined_at": "2025-03-27",
+        "left_at": null,
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c"
+    },
+    "4b65d162-d97f-4882-ac26-0ee6134e5972": {
+        "team_id": "de95f45b-8780-4668-8159-154717920959",
+        "worker_id": "d74871fa-5662-4743-b31c-64f0dbb7697d",
+        "role": "member",
+        "joined_at": "2023-07-13",
+        "left_at": null,
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149"
+    },
+    "a38917cc-aff6-48aa-8c46-719140234142": {
+        "team_id": "de95f45b-8780-4668-8159-154717920959",
+        "worker_id": "d0704d02-d6e5-419c-b0a8-14e3a9688a63",
+        "role": "lead",
+        "joined_at": "2025-04-14",
+        "left_at": null,
+        "user_id": "a59c3ec3-b57a-4be1-b726-2eb3e5675948"
+    },
+    "1d878475-9039-4d4c-b66e-a3c554364843": {
+        "team_id": "de95f45b-8780-4668-8159-154717920959",
+        "worker_id": "a499aa3f-6f8b-4f47-a03d-ca7396475a67",
+        "role": "member",
+        "joined_at": "2025-05-15",
+        "left_at": null,
+        "user_id": "d582846e-44a7-467a-9a5e-0e33f7a6fe6f"
+    },
+    "87e7f384-6663-47a0-bedb-bd4f2d90cdbb": {
+        "team_id": "de95f45b-8780-4668-8159-154717920959",
+        "worker_id": "513359ef-6122-4427-8193-f7505c09ce79",
+        "role": "member",
+        "joined_at": "2024-07-16",
+        "left_at": null,
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c"
+    },
+    "d35670cc-a834-48fd-9772-81bd4aac9dd9": {
+        "team_id": "de95f45b-8780-4668-8159-154717920959",
+        "worker_id": "a0649896-f8ac-46b7-8cf7-d7f128a4b9e6",
+        "role": "admin",
+        "joined_at": "2024-02-28",
+        "left_at": null,
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82"
+    },
+    "ff92d6af-8b84-4bbb-aba3-00369048ba84": {
+        "team_id": "de95f45b-8780-4668-8159-154717920959",
+        "worker_id": "7672d5ed-a5e6-4674-a61c-b68cf970db26",
+        "role": "lead",
+        "joined_at": "2024-03-05",
+        "left_at": null,
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871"
+    },
+    "d5a02d07-dcc0-481d-aa55-92c4d8693456": {
+        "team_id": "de95f45b-8780-4668-8159-154717920959",
+        "worker_id": "7b030234-bb3e-48a1-8597-ec87a4ee143f",
+        "role": "member",
+        "joined_at": "2024-06-28",
+        "left_at": null,
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8"
+    },
+    "f962d6a5-8025-49e8-9468-6cf557dc9cf8": {
+        "team_id": "ec035176-2f8e-4a4a-b7f8-7a56cc3a9947",
+        "worker_id": "8d424ca4-6aa3-4fd6-a60f-990268137ac5",
+        "role": "admin",
+        "joined_at": "2024-06-02",
+        "left_at": null,
+        "user_id": "1f5e50be-7846-4f54-976b-51a2d4fa92a7"
+    },
+    "a14cbfdf-7d3e-4b16-b74b-821c80f84d11": {
+        "team_id": "ec035176-2f8e-4a4a-b7f8-7a56cc3a9947",
+        "worker_id": "4d492556-19f5-4f59-b494-29c700fa0868",
+        "role": "member",
+        "joined_at": "2024-03-21",
+        "left_at": null,
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f"
+    },
+    "ac8ca60a-271f-4462-bcf7-fa3da98204cc": {
+        "team_id": "ec035176-2f8e-4a4a-b7f8-7a56cc3a9947",
+        "worker_id": "3965e6e5-1cb5-4273-917f-bc10b2b868ed",
+        "role": "lead",
+        "joined_at": "2024-03-23",
+        "left_at": null,
+        "user_id": "7d9ae5f4-cde3-4c41-8f5d-2e0c87f9e8e7"
+    },
+    "f5856e77-4eab-4a0a-b68b-f8fe7716a6c6": {
+        "team_id": "ec035176-2f8e-4a4a-b7f8-7a56cc3a9947",
+        "worker_id": "e9a00169-73dc-4e1f-ac7b-0d8a76bf874b",
+        "role": "member",
+        "joined_at": "2023-10-02",
+        "left_at": null,
+        "user_id": "ae85d72f-74e7-48de-9eb2-8c49b49be1b6"
+    },
+    "d9e216ae-557f-41ef-9fe6-8d728f25dc32": {
+        "team_id": "ec035176-2f8e-4a4a-b7f8-7a56cc3a9947",
+        "worker_id": "1318040b-382c-4db4-9054-98eaac0824dd",
+        "role": "member",
+        "joined_at": "2024-07-12",
+        "left_at": null,
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0"
+    },
+    "cac1ff90-333d-4f8d-9d12-5054445ec2fe": {
+        "team_id": "ec035176-2f8e-4a4a-b7f8-7a56cc3a9947",
+        "worker_id": "e7ebd5fb-79e7-4f1d-a8e8-9e7a0c8f56e1",
+        "role": "admin",
+        "joined_at": "2024-10-20",
+        "left_at": null,
+        "user_id": "bcfa7940-6572-4c9b-8517-6d83075f744f"
+    },
+    "2db54b08-dd6d-4fe0-9174-b2818e3e1235": {
+        "team_id": "ec035176-2f8e-4a4a-b7f8-7a56cc3a9947",
+        "worker_id": "51cd4691-a97f-4a8a-988e-67255d76bafa",
+        "role": "lead",
+        "joined_at": "2023-12-09",
+        "left_at": "2024-03-02",
+        "user_id": "fbbfef3b-52f5-482a-b274-7faf5d490b01"
+    },
+    "fd500aa9-8de9-4c21-8fd4-4d5d8ba1474c": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "cedf3dbb-2900-45fd-a3cf-bc65968dbb62",
+        "role": "member",
+        "joined_at": "2024-09-11",
+        "left_at": null,
+        "user_id": "6863cb2c-7fb3-41ee-8b32-24aa7cf55f79"
+    },
+    "9ea78013-bc72-4be9-88e6-3d698214d5d2": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "1039cf25-ef6a-4e31-aabe-8514237afe94",
+        "role": "lead",
+        "joined_at": "2025-01-04",
+        "left_at": null,
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251"
+    },
+    "5963213c-85f3-4011-a05c-88ceb6039e38": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "b5560415-6ebc-4978-b423-c3ceb754e7ad",
+        "role": "member",
+        "joined_at": "2025-04-22",
+        "left_at": null,
+        "user_id": "ff244908-7a78-45b9-b38a-9d0cef5853dc"
+    },
+    "eea57ff7-ba6f-40d8-af83-af8fccfa0bb7": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "37151fed-195a-492d-b005-9615356091d5",
+        "role": "lead",
+        "joined_at": "2025-02-01",
+        "left_at": null,
+        "user_id": "26273078-a160-4617-a5cf-5915342ba871"
+    },
+    "99d59b69-199d-4aa4-ae40-3776f1c1085a": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "04c1ef97-91d5-4e71-8eba-2ee74f463538",
+        "role": "admin",
+        "joined_at": "2024-06-12",
+        "left_at": null,
+        "user_id": "f01c7464-0868-4847-b81c-491db0efcff8"
+    },
+    "723df859-ee14-442a-9ad0-5113e8e54087": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "e111559a-e979-417f-88a2-ea57ceb54981",
+        "role": "member",
+        "joined_at": "2024-08-22",
+        "left_at": null,
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0"
+    },
+    "395a0093-0f92-4438-8bb8-bbbbbe634a71": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "6cba7c0d-d630-4135-b257-9ec34b45c4c0",
+        "role": "member",
+        "joined_at": "2023-12-05",
+        "left_at": null,
+        "user_id": "b41857f8-be21-4528-b007-59610a33b117"
+    },
+    "b4234d2d-80d5-4030-af03-37f830a3fe16": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "c404f3ed-cc8f-49da-9c16-4b93c2b6bc5a",
+        "role": "member",
+        "joined_at": "2024-04-06",
+        "left_at": null,
+        "user_id": "fa268f44-0c68-4167-91fb-4d19ea88d301"
+    },
+    "82885b5b-2044-46e0-b456-c9eb051f1143": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "6ca3baf0-fdbe-43de-af3c-dcfd848acb7c",
+        "role": "member",
+        "joined_at": "2024-06-30",
+        "left_at": null,
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4"
+    },
+    "acfd8e0b-a76e-4306-825e-67dd85bec6a6": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "9f90539c-8f0a-43cf-9afa-098df65477dc",
+        "role": "lead",
+        "joined_at": "2025-02-25",
+        "left_at": null,
+        "user_id": "c6d33124-7acd-497c-91b1-5c9eb1c1c6fa"
+    },
+    "94e75073-0d36-49b4-afb9-b8776310d0e5": {
+        "team_id": "85af6e72-53df-4059-afaf-d506887c8e3a",
+        "worker_id": "3a8457ef-1a6b-40f0-a4d6-87bb70e2bba4",
+        "role": "member",
+        "joined_at": "2025-04-06",
+        "left_at": null,
+        "user_id": "fc2b34e3-916c-4c9b-bd0e-b3a96e70befb"
+    },
+    "8b83fd94-783f-4dcb-8488-ebf678ecd59c": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "5e2a07de-e5f5-4db2-9fd4-c18829bd60ad",
+        "role": "member",
+        "joined_at": "2024-06-24",
+        "left_at": null,
+        "user_id": "9bef0292-5f6c-4406-8dab-19804fd5456a"
+    },
+    "6c101a17-266e-4108-8347-234787f744cd": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "3fa4264d-5b81-4e89-9dc0-d759e68c5953",
+        "role": "member",
+        "joined_at": "2024-09-12",
+        "left_at": null,
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871"
+    },
+    "a5ebda32-235c-4111-bd05-4534af086ae8": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "8ea6ebea-3672-4618-9e05-ca93fbffde88",
+        "role": "lead",
+        "joined_at": "2024-10-24",
+        "left_at": null,
+        "user_id": "8f536302-5849-4540-931d-f37774af583c"
+    },
+    "a7cb7eac-c3d0-4aef-93c5-0c4e19610014": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "2bddbb1f-6779-4e99-93c0-82bf515c2475",
+        "role": "member",
+        "joined_at": "2023-12-14",
+        "left_at": null,
+        "user_id": "d1541b40-787a-42df-9178-424cf2127a7e"
+    },
+    "64dcecd8-f73e-408d-a3bf-5ea6f003b219": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "22f89aec-15bb-4171-b553-4768e7f83410",
+        "role": "member",
+        "joined_at": "2024-11-09",
+        "left_at": null,
+        "user_id": "b70c115f-32f4-4f9c-904f-cfc7e0954351"
+    },
+    "69c29570-39f5-4f64-8ef0-5f80e23a13db": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "09bd91dd-6b39-4ba1-9c13-d5be198e727b",
+        "role": "member",
+        "joined_at": "2024-09-02",
+        "left_at": null,
+        "user_id": "563754b0-77c9-4c54-817a-c0b971dead27"
+    },
+    "9069edda-00da-42b1-a968-064da0b9605d": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "a4588316-e36c-4b47-ba51-e271a040137c",
+        "role": "member",
+        "joined_at": "2025-05-23",
+        "left_at": null,
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b"
+    },
+    "de2dc990-c6dd-4a8b-b7d8-55cd650b30e5": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "584e4751-2b90-49d9-8e13-506fd623684e",
+        "role": "admin",
+        "joined_at": "2025-02-12",
+        "left_at": "2025-09-26",
+        "user_id": "b6644b95-fa69-49d3-af2d-a9f478a711b3"
+    },
+    "dc0e012f-6a03-4f68-86bc-3138edac5450": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "06e139da-afbb-4029-9ad6-33395d200d3f",
+        "role": "member",
+        "joined_at": "2023-07-04",
+        "left_at": "2023-09-26",
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf"
+    },
+    "28acdaca-7576-42ef-9e6c-a808d94233db": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "5f4ac719-4115-4345-899a-4d4c982472de",
+        "role": "member",
+        "joined_at": "2024-06-26",
+        "left_at": null,
+        "user_id": "4374e70f-a97f-4cc6-b557-353efac07d78"
+    },
+    "84bdd923-bb31-412b-afc7-bc59f64ca4ea": {
+        "team_id": "b13553e1-9e8e-4fcc-804b-8916259c6842",
+        "worker_id": "1c04538e-3a98-4ce6-8f05-c8b3c435f7cc",
+        "role": "member",
+        "joined_at": "2025-04-19",
+        "left_at": null,
+        "user_id": "826c7f2b-007f-45aa-9df9-52c6c40f94f0"
+    },
+    "402ef7db-a297-4246-bd7f-5f8bec478c23": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "5a7e6af7-a8d9-4e61-a20d-34592d262cd5",
+        "role": "lead",
+        "joined_at": "2023-11-09",
+        "left_at": null,
+        "user_id": "02f0d1ef-527d-43dd-9b7d-bfdcff1ed11d"
+    },
+    "af05c271-86da-46de-900e-1e843c983ed0": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "a499aa3f-6f8b-4f47-a03d-ca7396475a67",
+        "role": "admin",
+        "joined_at": "2025-03-16",
+        "left_at": null,
+        "user_id": "d582846e-44a7-467a-9a5e-0e33f7a6fe6f"
+    },
+    "fcb80abe-684f-4060-84b3-4e5c60bc4fd7": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "d74871fa-5662-4743-b31c-64f0dbb7697d",
+        "role": "member",
+        "joined_at": "2024-09-17",
+        "left_at": null,
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149"
+    },
+    "f47abc75-6c51-40fd-9477-f7a7e6ba4312": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "7b030234-bb3e-48a1-8597-ec87a4ee143f",
+        "role": "member",
+        "joined_at": "2025-01-02",
+        "left_at": null,
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8"
+    },
+    "c9088372-f1e5-4185-8d0b-9977456ce1ac": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "cc11fcf1-58fc-4886-ac93-5be5bb918f4e",
+        "role": "member",
+        "joined_at": "2023-10-07",
+        "left_at": null,
+        "user_id": "7b8db11f-2662-477f-b29a-2778d7f81595"
+    },
+    "1cb02d4a-4184-408c-b8be-591ac1be4847": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "d0704d02-d6e5-419c-b0a8-14e3a9688a63",
+        "role": "lead",
+        "joined_at": "2023-11-05",
+        "left_at": null,
+        "user_id": "a59c3ec3-b57a-4be1-b726-2eb3e5675948"
+    },
+    "d059ad71-f865-43ed-8e1c-a02dd6c79f92": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "b31bdff5-58f8-4754-bd96-74e384b67289",
+        "role": "member",
+        "joined_at": "2024-03-09",
+        "left_at": null,
+        "user_id": "df2dff92-5ad8-4845-8448-fef7caada6cf"
+    },
+    "155da275-241b-4a04-afe5-e84e84cd60ad": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "407ed784-ed8b-4ef3-93ed-48d1a444b0bf",
+        "role": "member",
+        "joined_at": "2024-10-20",
+        "left_at": null,
+        "user_id": "b41857f8-be21-4528-b007-59610a33b117"
+    },
+    "55dce4d4-77d3-4f64-9ca1-c5c6fe717c5d": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "a0649896-f8ac-46b7-8cf7-d7f128a4b9e6",
+        "role": "admin",
+        "joined_at": "2024-08-25",
+        "left_at": null,
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82"
+    },
+    "dec46bc3-2a89-4f12-bcaa-af6b2f379432": {
+        "team_id": "15217e49-98c0-4831-97fc-4b5b7691d86f",
+        "worker_id": "78befaa4-f110-4a7a-b5f1-d2224caf3201",
+        "role": "member",
+        "joined_at": "2024-06-20",
+        "left_at": null,
+        "user_id": "d1541b40-787a-42df-9178-424cf2127a7e"
+    },
+    "0382f58b-6210-4470-9441-1626901b3687": {
+        "team_id": "0f26202b-d9bd-4466-b7b2-7eb7ef4f1008",
+        "worker_id": "ff1bf071-ca0e-419b-ba6f-52ff9c23a53a",
+        "role": "member",
+        "joined_at": "2025-03-29",
+        "left_at": "2026-02-27",
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8"
+    },
+    "fa18ef39-f3b7-4eaf-a078-872d9dda88ff": {
+        "team_id": "0f26202b-d9bd-4466-b7b2-7eb7ef4f1008",
+        "worker_id": "ceab2889-73e2-410a-8ccd-ab0b473d1cfd",
+        "role": "admin",
+        "joined_at": "2024-06-09",
+        "left_at": null,
+        "user_id": "76d8f75a-4214-42aa-9412-ddc2ea394365"
+    },
+    "82899411-2483-40e1-940b-39486c5bcdd7": {
+        "team_id": "0f26202b-d9bd-4466-b7b2-7eb7ef4f1008",
+        "worker_id": "b3980877-3dda-47b9-943c-40cc0e4b52f8",
+        "role": "lead",
+        "joined_at": "2025-04-12",
+        "left_at": null,
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937"
+    },
+    "7ebb94b1-9b2c-4165-a7f2-4fe86b323b95": {
+        "team_id": "d90be3ca-e65e-4f59-ad27-b09c5c94e40b",
+        "worker_id": "a1680d9e-3245-49cc-bf35-23fbaa749139",
+        "role": "member",
+        "joined_at": "2024-09-11",
+        "left_at": null,
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4"
+    },
+    "c8bdd53b-968c-4950-85a0-8e8cf750038d": {
+        "team_id": "d90be3ca-e65e-4f59-ad27-b09c5c94e40b",
+        "worker_id": "54150e56-21dd-47b9-8d53-b7efd8b5ebd0",
+        "role": "lead",
+        "joined_at": "2024-08-18",
+        "left_at": "2025-02-26",
+        "user_id": "d6de7528-0e5f-4302-9e2f-9456ad7eff5e"
+    },
+    "76a6fcf9-37ab-4c5c-a993-bab29af6fe5f": {
+        "team_id": "d90be3ca-e65e-4f59-ad27-b09c5c94e40b",
+        "worker_id": "ebe5c161-b965-4404-9fbd-fa5f8aaae68f",
+        "role": "member",
+        "joined_at": "2024-06-20",
+        "left_at": "2024-09-28",
+        "user_id": "f7a3acb1-fd46-4694-8577-cd305266f87a"
+    },
+    "d347c5e3-75cb-4fa4-9b00-3d3f2eaff989": {
+        "team_id": "d90be3ca-e65e-4f59-ad27-b09c5c94e40b",
+        "worker_id": "d2af6209-7ef7-4939-b6e0-e10b54d7f4f6",
+        "role": "lead",
+        "joined_at": "2025-03-18",
+        "left_at": null,
+        "user_id": "3799f4e6-659e-4abe-b5fb-8513fb7e34fe"
+    },
+    "c3e3c7ec-a4e7-4f8f-b721-d761d398f761": {
+        "team_id": "d90be3ca-e65e-4f59-ad27-b09c5c94e40b",
+        "worker_id": "cb3b7295-be02-473c-b58f-cd8c104e4771",
+        "role": "member",
+        "joined_at": "2024-04-19",
+        "left_at": null,
+        "user_id": "d485e608-2057-4203-9717-cbce304ab718"
+    },
+    "f60c04ca-a19a-4a0e-8c06-024aec7a5437": {
+        "team_id": "d90be3ca-e65e-4f59-ad27-b09c5c94e40b",
+        "worker_id": "4535e177-abb0-4138-82ac-2a360a9c88d3",
+        "role": "lead",
+        "joined_at": "2024-04-12",
+        "left_at": null,
+        "user_id": "5000b71f-a1ab-4673-81ac-0e68f9adad76"
+    },
+    "c1a0ef0e-e746-42ad-88ba-b78cd90aeb54": {
+        "team_id": "7c28e6b3-10c8-4ab9-aeb9-c4b69b25b00d",
+        "worker_id": "c0fbf6d2-b7b5-4337-b125-fad72b10ef59",
+        "role": "member",
+        "joined_at": "2025-05-24",
+        "left_at": "2026-02-27",
+        "user_id": "bdb57c43-c269-440a-9f74-e0a97ffc4e90"
+    },
+    "3a6183c5-e2c6-4137-aecf-947952349180": {
+        "team_id": "7c28e6b3-10c8-4ab9-aeb9-c4b69b25b00d",
+        "worker_id": "1318040b-382c-4db4-9054-98eaac0824dd",
+        "role": "admin",
+        "joined_at": "2023-12-18",
+        "left_at": null,
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0"
+    },
+    "365eacb2-5e11-4dfd-ac44-cbdf6b986570": {
+        "team_id": "7c28e6b3-10c8-4ab9-aeb9-c4b69b25b00d",
+        "worker_id": "e7ebd5fb-79e7-4f1d-a8e8-9e7a0c8f56e1",
+        "role": "member",
+        "joined_at": "2024-08-09",
+        "left_at": null,
+        "user_id": "bcfa7940-6572-4c9b-8517-6d83075f744f"
+    },
+    "fcd447e9-fe92-4e2d-baa9-63ab0f37f16c": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "25a36cfe-573a-4943-8bf4-d102eda2aa94",
+        "role": "member",
+        "joined_at": "2023-10-07",
+        "left_at": null,
+        "user_id": "a3c6d2d4-9676-4bd3-9c98-56f0c04c28e8"
+    },
+    "24d37e6e-da4a-4ce1-bc21-42cb15edb6ed": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "c5c1ded1-11e8-4e1c-9dbf-ec9e3318f3b9",
+        "role": "member",
+        "joined_at": "2024-01-06",
+        "left_at": null,
+        "user_id": "6624afd9-1ccd-4992-879d-acc43c535377"
+    },
+    "f32365d3-6f6b-46f2-aeaa-37b1e29d6895": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "ef84a292-6219-4eb8-abd6-db165b61133d",
+        "role": "lead",
+        "joined_at": "2024-12-02",
+        "left_at": null,
+        "user_id": "74061b5d-9cf8-4018-ba64-39c5c36eb09b"
+    },
+    "43bcc9b7-0c02-4e7e-bca9-77b2ab1c22fa": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "fe1e3e5c-09bf-4aca-b8f1-69254995f08b",
+        "role": "lead",
+        "joined_at": "2025-01-18",
+        "left_at": null,
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c"
+    },
+    "39307042-7ca8-4cca-a234-b14d82e8bd90": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "a6c0a390-1de4-4eb9-a5a3-0a70298ce1f3",
+        "role": "member",
+        "joined_at": "2025-02-20",
+        "left_at": null,
+        "user_id": "d4e534bd-5e85-4f68-a2f1-03ea2157a8e8"
+    },
+    "616ff771-8779-4a6f-bed6-add19c6ad406": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "6d55cf50-a179-41ed-bc17-f96cc097a357",
+        "role": "member",
+        "joined_at": "2023-10-07",
+        "left_at": "2024-09-21",
+        "user_id": "d72400c8-ff17-4eaf-a14f-b7e637772730"
+    },
+    "9da1ce5f-739d-4c3d-afc8-ee2c04805ba5": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "7a269fd3-89d6-4e67-80f5-43f1331d4fbd",
+        "role": "member",
+        "joined_at": "2025-04-04",
+        "left_at": null,
+        "user_id": "869c1e7c-9899-44a5-85c0-e3d53b1080c4"
+    },
+    "a9caa01d-dca4-4193-9400-321543c9f447": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "8d806c29-6166-438f-b318-075b05e36521",
+        "role": "member",
+        "joined_at": "2025-06-27",
+        "left_at": null,
+        "user_id": "d9350b7c-ada1-4513-8857-0e47a32e12ea"
+    },
+    "b9a99008-fc0d-402d-928b-39645e5a8a6a": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "aac00cb7-3c7b-4799-b734-be1e856ae5f5",
+        "role": "admin",
+        "joined_at": "2024-03-26",
+        "left_at": null,
+        "user_id": "6011a897-7e3f-426e-883b-0febefcad764"
+    },
+    "00ce0260-c024-4bc1-8367-c198dc8ec7fa": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "9be0ee33-aea8-4b03-9b12-a7c67ee8bf53",
+        "role": "admin",
+        "joined_at": "2025-02-26",
+        "left_at": null,
+        "user_id": "7fe32ad7-a98b-4441-a7db-edda1183140d"
+    },
+    "d467e110-82c4-4632-8e24-06c06e0f8972": {
+        "team_id": "cf102892-5a0a-4cc2-b199-d119156936d1",
+        "worker_id": "cbe198b2-ee13-4b42-a065-f9b7db15d337",
+        "role": "member",
+        "joined_at": "2024-03-30",
+        "left_at": "2025-03-14",
+        "user_id": "3ffe6ed4-c487-424b-9896-1ab8e36ec388"
+    },
+    "60a8922a-f597-42a2-b59b-0f1fbd62070d": {
+        "team_id": "f582da75-682b-4b30-b35e-a3879e90f763",
+        "worker_id": "c0fbf6d2-b7b5-4337-b125-fad72b10ef59",
+        "role": "lead",
+        "joined_at": "2024-08-02",
+        "left_at": null,
+        "user_id": "bdb57c43-c269-440a-9f74-e0a97ffc4e90"
+    },
+    "15727718-20be-4937-88dc-f90b6fa9990d": {
+        "team_id": "f582da75-682b-4b30-b35e-a3879e90f763",
+        "worker_id": "e7ebd5fb-79e7-4f1d-a8e8-9e7a0c8f56e1",
+        "role": "member",
+        "joined_at": "2024-05-15",
+        "left_at": null,
+        "user_id": "bcfa7940-6572-4c9b-8517-6d83075f744f"
+    },
+    "25ed2324-eeac-4f76-8576-4f6d8a3716ad": {
+        "team_id": "f582da75-682b-4b30-b35e-a3879e90f763",
+        "worker_id": "f9357a75-338d-4bd8-a3dc-2bc7756115ff",
+        "role": "lead",
+        "joined_at": "2025-03-14",
+        "left_at": null,
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62"
+    },
+    "af616057-7006-4492-8876-1879e99eb070": {
+        "team_id": "f582da75-682b-4b30-b35e-a3879e90f763",
+        "worker_id": "fa9275d2-14c7-46b1-8c29-15f4195624e8",
+        "role": "member",
+        "joined_at": "2023-10-30",
+        "left_at": null,
+        "user_id": "9fe61da1-71a3-40db-acbc-bbba49b7db51"
+    },
+    "9786fad4-7299-488e-9c21-a8dee63521ba": {
+        "team_id": "f582da75-682b-4b30-b35e-a3879e90f763",
+        "worker_id": "f8ab3183-4f49-4d6f-901f-11f71c46a077",
+        "role": "member",
+        "joined_at": "2024-11-16",
+        "left_at": "2025-08-26",
+        "user_id": "5b7ff6ef-d3c6-4712-99da-945e579296f4"
+    },
+    "1e112781-fd1e-4454-90dd-1191c69e735f": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "2659c5b4-3129-4b2c-b95d-858e1bd9fbb5",
+        "role": "member",
+        "joined_at": "2025-04-24",
+        "left_at": null,
+        "user_id": "dc60a7b4-6ada-4959-b8b4-808c1e4ddd42"
+    },
+    "67882663-372c-4ad5-8cd2-cbc187ba8aa5": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "374964ab-b7c6-44d0-9c10-f7bb37eba527",
+        "role": "member",
+        "joined_at": "2024-03-03",
+        "left_at": null,
+        "user_id": "f15f9da8-fde6-4420-84d7-6c60690b2251"
+    },
+    "27313ff2-b4b9-4939-bf75-0d1134414ddf": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "7241ad74-223b-4405-be6f-0fa3aea843e4",
+        "role": "member",
+        "joined_at": "2024-10-25",
+        "left_at": null,
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45"
+    },
+    "c047608f-8f48-4a95-92b9-b616f7817fd4": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "612ed43d-ef60-4784-8ace-4f39999e9ab9",
+        "role": "member",
+        "joined_at": "2025-04-23",
+        "left_at": null,
+        "user_id": "38a18aad-f2ec-45f3-b89b-7c061ae2967c"
+    },
+    "a890fca7-8176-4e7d-b84d-0fc7436557d6": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "17ba6ab9-8ef7-41dd-8afc-d8c05a03e5d4",
+        "role": "member",
+        "joined_at": "2025-06-18",
+        "left_at": null,
+        "user_id": "38dce302-14b8-473b-8f80-d8202d11eab6"
+    },
+    "0b990271-8b60-40e5-911e-4ea8e259fad4": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "29eea265-d5d1-41f8-9ca0-e1ec08146a0b",
+        "role": "member",
+        "joined_at": "2024-03-27",
+        "left_at": null,
+        "user_id": "6657a987-42d9-4a58-97f2-5c35d3d5d325"
+    },
+    "6f4349de-51b0-4800-91b2-0a02772bd02a": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "9da1ed80-f9f5-446b-874f-783eebfe60e7",
+        "role": "member",
+        "joined_at": "2025-06-27",
+        "left_at": null,
+        "user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "2ca9c126-e5fa-41f1-9aa3-817d36759c47": {
+        "team_id": "339a0aa5-a8a6-4569-ac03-eb736a75f6e8",
+        "worker_id": "e8d5ede9-4ecd-4065-a860-b1e3bbc2dac4",
+        "role": "admin",
+        "joined_at": "2024-02-22",
+        "left_at": null,
+        "user_id": "6715f29f-35be-4e7b-ab99-781c5c442fc5"
+    },
+    "95997d3e-c5b3-4ed5-9a9d-2f83c92493a7": {
+        "team_id": "ca9b44f8-c587-4c21-965a-5cd8819a70b8",
+        "worker_id": "9429a93f-89ff-44a5-b31a-8deb5b951340",
+        "role": "lead",
+        "joined_at": "2025-03-17",
+        "left_at": "2026-01-10",
+        "user_id": "db2db34e-a192-4a70-aebd-31c9ba3b50c3"
+    },
+    "5c23fdc6-5bf7-47b3-a569-31c742631b85": {
+        "team_id": "ca9b44f8-c587-4c21-965a-5cd8819a70b8",
+        "worker_id": "0d8465fc-bc9c-4e04-84c6-6a273207907f",
+        "role": "lead",
+        "joined_at": "2024-12-15",
+        "left_at": null,
+        "user_id": "e8ee4682-590b-4c7f-98c9-819fecfc5a77"
+    },
+    "5c549f03-2268-4806-8586-067f2af150fa": {
+        "team_id": "ca9b44f8-c587-4c21-965a-5cd8819a70b8",
+        "worker_id": "3e0fac8b-6a0b-4c90-ad5d-d9c04807e465",
+        "role": "member",
+        "joined_at": "2023-07-08",
+        "left_at": null,
+        "user_id": "8f536302-5849-4540-931d-f37774af583c"
+    },
+    "85c77584-8319-4eda-bef9-d4ac347edca6": {
+        "team_id": "ca9b44f8-c587-4c21-965a-5cd8819a70b8",
+        "worker_id": "a8cde27d-8200-4bb0-a9e8-df1126307402",
+        "role": "admin",
+        "joined_at": "2024-10-05",
+        "left_at": null,
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "7ccd3262-a10f-4746-97a5-3e5c2aa350e0": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "d2e42b98-046f-400e-9d9c-16dd9d53ad36",
+        "role": "member",
+        "joined_at": "2023-09-14",
+        "left_at": null,
+        "user_id": "8a7dff82-b745-4ddf-afdb-7c85af9a96e4"
+    },
+    "79afdbc2-e9b7-448f-be85-f4c346a46d07": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "96b005fa-6635-4ceb-9f0a-955492109d21",
+        "role": "lead",
+        "joined_at": "2024-09-30",
+        "left_at": null,
+        "user_id": "e14a6784-2f84-417b-8360-05b52e585808"
+    },
+    "c7ab117d-e538-4017-8fc6-c134ba91194d": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "23385611-223c-487e-ba7c-cdf9ff5cf91c",
+        "role": "lead",
+        "joined_at": "2025-01-02",
+        "left_at": null,
+        "user_id": "4e12da44-d9f6-4961-8554-2fb2ccfc3b73"
+    },
+    "d160888d-c56d-4ddc-9de5-91d34799ed0c": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "1cd812e8-f185-4a16-b1c7-2eeffedc40c8",
+        "role": "member",
+        "joined_at": "2024-02-28",
+        "left_at": null,
+        "user_id": "a6a5db37-4ce4-4569-96ba-0406abd29d45"
+    },
+    "840480a2-d4d7-4198-a041-1db1db2e6ca2": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "e03d912c-cc21-4ee8-804d-572a88d4633e",
+        "role": "lead",
+        "joined_at": "2023-12-05",
+        "left_at": null,
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82"
+    },
+    "91d01a69-cc6d-4ce7-94eb-fcc83f09ab13": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "93123956-693c-4930-9964-e99719c29175",
+        "role": "lead",
+        "joined_at": "2024-04-22",
+        "left_at": null,
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0"
+    },
+    "e51a1985-e8f9-4759-914a-124b6651db40": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "17627df7-eba7-470a-ac53-1cce642b2855",
+        "role": "member",
+        "joined_at": "2023-07-24",
+        "left_at": null,
+        "user_id": "55b239fd-7ae2-4601-833a-b40ba2e46075"
+    },
+    "17b89f3b-b295-4766-b4be-20f4c2a20db2": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "9895b222-870d-47d4-b865-3945bacfd7b1",
+        "role": "lead",
+        "joined_at": "2023-08-14",
+        "left_at": null,
+        "user_id": "6624afd9-1ccd-4992-879d-acc43c535377"
+    },
+    "424f678a-2377-4bc5-8075-b200818099a3": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "0d145a65-78bc-4b34-a6ae-2b1173b3a1f6",
+        "role": "admin",
+        "joined_at": "2023-07-15",
+        "left_at": null,
+        "user_id": "89f36dd7-669b-4838-9df8-eb28faf3ae45"
+    },
+    "e87c8fa6-eb3f-4877-8375-ed42d61263da": {
+        "team_id": "8623dd0a-8c51-4015-b19d-3a685073a5fa",
+        "worker_id": "1aafe889-1ccf-43fa-8ee5-bc7e547609c6",
+        "role": "lead",
+        "joined_at": "2024-05-25",
+        "left_at": "2024-07-18",
+        "user_id": "38dce302-14b8-473b-8f80-d8202d11eab6"
+    },
+    "371fc49f-21a1-44d7-b23d-240d7327f13d": {
+        "team_id": "20f74b9e-91e0-4115-904a-60cbea6fe005",
+        "worker_id": "e68a5e53-04b3-4fa3-9529-a1c608f6d3b1",
+        "role": "admin",
+        "joined_at": "2024-09-28",
+        "left_at": null,
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0"
+    },
+    "9f083d6e-08af-4d95-92f4-16c2a011268d": {
+        "team_id": "20f74b9e-91e0-4115-904a-60cbea6fe005",
+        "worker_id": "86468f46-aaa4-4172-a6ba-d3c749d3d4bd",
+        "role": "lead",
+        "joined_at": "2024-01-22",
+        "left_at": null,
+        "user_id": "ae85d72f-74e7-48de-9eb2-8c49b49be1b6"
+    },
+    "faf3879a-1583-4297-b986-6d8910f10d49": {
+        "team_id": "20f74b9e-91e0-4115-904a-60cbea6fe005",
+        "worker_id": "ff1bf071-ca0e-419b-ba6f-52ff9c23a53a",
+        "role": "member",
+        "joined_at": "2024-05-24",
+        "left_at": null,
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8"
+    },
+    "75eb5dc9-d7d9-4504-a675-abf7cd5a78ac": {
+        "team_id": "20f74b9e-91e0-4115-904a-60cbea6fe005",
+        "worker_id": "4674c109-6701-44e5-8d55-ae578628817f",
+        "role": "lead",
+        "joined_at": "2023-10-22",
+        "left_at": null,
+        "user_id": "b0406cf2-df55-4297-80b2-80b3fae13b61"
+    },
+    "a5c88526-db1c-4fe7-97e2-e511beff9ac1": {
+        "team_id": "20f74b9e-91e0-4115-904a-60cbea6fe005",
+        "worker_id": "929ff1e2-998b-446d-a065-2613e4d83869",
+        "role": "member",
+        "joined_at": "2024-03-16",
+        "left_at": null,
+        "user_id": "0b4ee37f-a7fe-4619-8b7c-b2af92eb930e"
+    },
+    "95df3202-b5fb-4a04-94f1-69853ab9bcb8": {
+        "team_id": "20f74b9e-91e0-4115-904a-60cbea6fe005",
+        "worker_id": "96fcdce2-2abe-40d0-a13e-e98b06f6942a",
+        "role": "lead",
+        "joined_at": "2024-10-17",
+        "left_at": null,
+        "user_id": "e8a5294d-9311-4987-86b5-04ac331139d1"
+    },
+    "06727ab9-e70d-4954-8c40-9127c7cb280b": {
+        "team_id": "20f74b9e-91e0-4115-904a-60cbea6fe005",
+        "worker_id": "5b4a5ee5-cfbb-43fa-bb9a-095d61caf730",
+        "role": "member",
+        "joined_at": "2024-07-01",
+        "left_at": null,
+        "user_id": "d8db5f28-4223-4a63-babf-4d3c91c7faa4"
+    },
+    "473277ee-b048-4f13-be33-0ddc5e553551": {
+        "team_id": "5da71f1b-57af-41f9-95ca-25067ad18622",
+        "worker_id": "9486c0c6-3453-4143-b764-4909391101b9",
+        "role": "member",
+        "joined_at": "2024-05-07",
+        "left_at": null,
+        "user_id": "6011a897-7e3f-426e-883b-0febefcad764"
+    },
+    "69e84dbc-bc59-4b5c-9770-5480e445107f": {
+        "team_id": "5da71f1b-57af-41f9-95ca-25067ad18622",
+        "worker_id": "ce8462f3-d6f4-4cbb-8518-90a579ddaf28",
+        "role": "lead",
+        "joined_at": "2023-12-21",
+        "left_at": null,
+        "user_id": "4215e3c7-a84d-484f-87c6-92e355ffdb81"
+    },
+    "4c8dfecd-b82a-4f1d-8589-78037af43eaa": {
+        "team_id": "5da71f1b-57af-41f9-95ca-25067ad18622",
+        "worker_id": "3cb57c6f-879d-42e6-9e12-f1227e88d253",
+        "role": "member",
+        "joined_at": "2025-05-08",
+        "left_at": null,
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0"
+    },
+    "28d6ebed-f249-4644-bcdc-66774406f71e": {
+        "team_id": "5da71f1b-57af-41f9-95ca-25067ad18622",
+        "worker_id": "62ae33b0-313c-449d-bff7-b63816fed6c6",
+        "role": "member",
+        "joined_at": "2024-04-14",
+        "left_at": null,
+        "user_id": "04bc936b-198f-4860-9498-e45bcb515996"
+    },
+    "7038a6d3-8217-4786-ade7-3a2611cbd715": {
+        "team_id": "5da71f1b-57af-41f9-95ca-25067ad18622",
+        "worker_id": "c8a02327-dd49-491a-9261-8d4ee59cde57",
+        "role": "member",
+        "joined_at": "2025-02-15",
+        "left_at": null,
+        "user_id": "74376e71-e60d-4863-858f-37c36d666174"
+    },
+    "15f28128-968c-42c2-b3d1-c98b6d0c77a2": {
+        "team_id": "5da71f1b-57af-41f9-95ca-25067ad18622",
+        "worker_id": "3fa70964-2418-4762-be01-4dab9ebff02d",
+        "role": "lead",
+        "joined_at": "2023-07-21",
+        "left_at": null,
+        "user_id": "5b19ccc6-0327-4d10-99fb-f7d750e72d40"
+    },
+    "37e4d5b5-2287-42f0-b33e-0452555ac1cd": {
+        "team_id": "bf8af466-1e5f-42a3-9f6d-ff3c93aacae5",
+        "worker_id": "9201e24e-e282-417e-897f-4138a281d4ea",
+        "role": "member",
+        "joined_at": "2024-07-05",
+        "left_at": "2024-08-04",
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "1189bcbe-16ee-495e-80a6-a3d6c51cacb9": {
+        "team_id": "bf8af466-1e5f-42a3-9f6d-ff3c93aacae5",
+        "worker_id": "c8767856-3d81-4e04-b066-201de6047c4d",
+        "role": "lead",
+        "joined_at": "2024-10-20",
+        "left_at": null,
+        "user_id": "7e5102f1-64cd-4119-a8e5-7ab2fff78d0f"
+    },
+    "0ba9cf18-3848-468c-bb4b-73267c329d8b": {
+        "team_id": "bf8af466-1e5f-42a3-9f6d-ff3c93aacae5",
+        "worker_id": "ef211c7f-88fd-4b7e-b737-9f839b55aacc",
+        "role": "member",
+        "joined_at": "2024-06-15",
+        "left_at": null,
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "0d7b9d57-3b93-432a-868a-10f4bd485516": {
+        "team_id": "bf8af466-1e5f-42a3-9f6d-ff3c93aacae5",
+        "worker_id": "b6002fc7-2e35-4d25-81d2-4af8407e4a7b",
+        "role": "member",
+        "joined_at": "2025-01-18",
+        "left_at": null,
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6"
+    },
+    "eef60600-87dd-49f3-8a9e-773a91267e5b": {
+        "team_id": "bf8af466-1e5f-42a3-9f6d-ff3c93aacae5",
+        "worker_id": "9429a93f-89ff-44a5-b31a-8deb5b951340",
+        "role": "member",
+        "joined_at": "2024-08-09",
+        "left_at": null,
+        "user_id": "db2db34e-a192-4a70-aebd-31c9ba3b50c3"
+    },
+    "7a0d3c1a-61f5-4eb1-bde1-32bc22681e55": {
+        "team_id": "bf8af466-1e5f-42a3-9f6d-ff3c93aacae5",
+        "worker_id": "a8cde27d-8200-4bb0-a9e8-df1126307402",
+        "role": "member",
+        "joined_at": "2025-01-26",
+        "left_at": null,
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "90cdde03-d92c-4d57-b863-99d0114a4ca3": {
+        "team_id": "02f7d313-5e28-40bf-9201-5ed3a56df76c",
+        "worker_id": "e342aeea-a20e-4701-899c-7ff7a6aaa727",
+        "role": "member",
+        "joined_at": "2024-11-23",
+        "left_at": null,
+        "user_id": "3799f4e6-659e-4abe-b5fb-8513fb7e34fe"
+    },
+    "268b6caa-24a2-46c5-af01-e6c05355ba1a": {
+        "team_id": "02f7d313-5e28-40bf-9201-5ed3a56df76c",
+        "worker_id": "272ef2ae-e997-4cf5-b246-535c5f6317db",
+        "role": "lead",
+        "joined_at": "2025-02-19",
+        "left_at": null,
+        "user_id": "f15f9da8-fde6-4420-84d7-6c60690b2251"
+    },
+    "8083e649-cfa0-4785-b85f-687199e5b6cc": {
+        "team_id": "02f7d313-5e28-40bf-9201-5ed3a56df76c",
+        "worker_id": "690bc74f-0e99-490e-b45a-066e20464296",
+        "role": "member",
+        "joined_at": "2025-01-11",
+        "left_at": null,
+        "user_id": "4215e3c7-a84d-484f-87c6-92e355ffdb81"
+    },
+    "de0053c3-05cf-449b-920b-75f1b01dd5f0": {
+        "team_id": "02f7d313-5e28-40bf-9201-5ed3a56df76c",
+        "worker_id": "1335f003-a29f-405a-9165-a16ce80b399c",
+        "role": "member",
+        "joined_at": "2024-03-10",
+        "left_at": null,
+        "user_id": "37b085e9-82f3-4af9-8fb7-2ef4705512a7"
+    },
+    "e34c52b8-b108-45fb-be12-4cbc92e298b9": {
+        "team_id": "02f7d313-5e28-40bf-9201-5ed3a56df76c",
+        "worker_id": "d345fab1-ee52-4dec-b66d-69944d113738",
+        "role": "lead",
+        "joined_at": "2023-12-20",
+        "left_at": null,
+        "user_id": "c07118e4-18c3-4e84-8197-3cd9064e325e"
+    },
+    "ddfacd26-ad96-4d3d-a47e-cb54b2dc719c": {
+        "team_id": "02f7d313-5e28-40bf-9201-5ed3a56df76c",
+        "worker_id": "962f8c9b-4178-4420-8143-7ae5a5afd559",
+        "role": "member",
+        "joined_at": "2024-04-01",
+        "left_at": null,
+        "user_id": "42dc2988-4585-40c9-b374-3ddfc7f2028d"
+    },
+    "e1cc47ea-763d-4deb-9924-b18b22093957": {
+        "team_id": "02f7d313-5e28-40bf-9201-5ed3a56df76c",
+        "worker_id": "3ba225dc-89c1-485c-9c18-0fb947d701e0",
+        "role": "lead",
+        "joined_at": "2025-06-21",
+        "left_at": null,
+        "user_id": "4330add1-e769-4565-bd23-439940701639"
+    },
+    "79cccf94-d183-4c57-aa04-bb4fa070483f": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "e68a5e53-04b3-4fa3-9529-a1c608f6d3b1",
+        "role": "member",
+        "joined_at": "2024-08-03",
+        "left_at": null,
+        "user_id": "c2d0c7f4-0d86-4ad0-a9b6-3d948b07bdc0"
+    },
+    "c3e36fa4-d6a8-4cda-a3e1-c9f459a89630": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "b3980877-3dda-47b9-943c-40cc0e4b52f8",
+        "role": "member",
+        "joined_at": "2023-07-22",
+        "left_at": null,
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937"
+    },
+    "0f4d9892-b228-462a-884f-228c3e76b754": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "ceab2889-73e2-410a-8ccd-ab0b473d1cfd",
+        "role": "lead",
+        "joined_at": "2023-12-25",
+        "left_at": "2024-10-17",
+        "user_id": "76d8f75a-4214-42aa-9412-ddc2ea394365"
+    },
+    "2c6a986e-c9bf-4e6d-a8fc-864833ac0f8f": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "96fcdce2-2abe-40d0-a13e-e98b06f6942a",
+        "role": "member",
+        "joined_at": "2025-04-07",
+        "left_at": null,
+        "user_id": "e8a5294d-9311-4987-86b5-04ac331139d1"
+    },
+    "ff4e01b9-c648-4568-9c96-d8cbadda8f0e": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "5b4a5ee5-cfbb-43fa-bb9a-095d61caf730",
+        "role": "member",
+        "joined_at": "2024-09-25",
+        "left_at": null,
+        "user_id": "d8db5f28-4223-4a63-babf-4d3c91c7faa4"
+    },
+    "6bf9d891-12f5-4328-8b08-11d1e256853a": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "ff1bf071-ca0e-419b-ba6f-52ff9c23a53a",
+        "role": "member",
+        "joined_at": "2024-07-09",
+        "left_at": null,
+        "user_id": "f71c1818-5427-44b0-bbee-bde99f3268b8"
+    },
+    "8709e603-ae5b-4708-9d02-dfcd813e5795": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "929ff1e2-998b-446d-a065-2613e4d83869",
+        "role": "member",
+        "joined_at": "2024-12-25",
+        "left_at": null,
+        "user_id": "0b4ee37f-a7fe-4619-8b7c-b2af92eb930e"
+    },
+    "19e81619-caff-47e8-a4a2-f3a3b0f45a10": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "f5b8d016-43e3-43ca-931e-0f9275dcd7bd",
+        "role": "member",
+        "joined_at": "2024-11-07",
+        "left_at": null,
+        "user_id": "050081f1-abd1-410d-b593-36a66d95c19c"
+    },
+    "fce2d50f-18b0-46fd-87a5-b5724c36d1b4": {
+        "team_id": "4bdabb0f-4fa1-4ccb-89e9-c291bf907ef4",
+        "worker_id": "86468f46-aaa4-4172-a6ba-d3c749d3d4bd",
+        "role": "member",
+        "joined_at": "2025-04-30",
+        "left_at": "2025-08-17",
+        "user_id": "ae85d72f-74e7-48de-9eb2-8c49b49be1b6"
+    },
+    "5bb78246-ea0b-4ece-a703-6684a2455e83": {
+        "team_id": "63523763-b4ab-4b23-a2a0-d4c27e9796ea",
+        "worker_id": "8241bbfe-334b-4214-8eb5-e943ea49b5c6",
+        "role": "member",
+        "joined_at": "2023-09-22",
+        "left_at": null,
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22"
+    },
+    "85cecc80-2916-448f-a47e-a59551ca9885": {
+        "team_id": "63523763-b4ab-4b23-a2a0-d4c27e9796ea",
+        "worker_id": "789ddbe5-f181-4403-b7e5-2f77313d03e6",
+        "role": "member",
+        "joined_at": "2024-03-15",
+        "left_at": null,
+        "user_id": "c6be6d76-6a4d-4ed2-b505-be1a012ff6d0"
+    },
+    "7a7cdea1-67af-4473-a32b-691043cd9d58": {
+        "team_id": "63523763-b4ab-4b23-a2a0-d4c27e9796ea",
+        "worker_id": "5bd1246d-a735-4a94-b646-6bcd0d52c870",
+        "role": "member",
+        "joined_at": "2024-01-23",
+        "left_at": null,
+        "user_id": "8a7dff82-b745-4ddf-afdb-7c85af9a96e4"
+    },
+    "b3015bdc-233b-4881-ac80-20c18e4e69d6": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "1e192446-d1cb-4368-a639-ffaeae740512",
+        "role": "member",
+        "joined_at": "2024-07-31",
+        "left_at": null,
+        "user_id": "02f0d1ef-527d-43dd-9b7d-bfdcff1ed11d"
+    },
+    "59768987-5bed-4909-b74d-621c3cacaebb": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "a95b1938-8ff0-45a2-83a4-9932c05acce0",
+        "role": "member",
+        "joined_at": "2024-08-11",
+        "left_at": null,
+        "user_id": "2596560e-ba40-4911-8f6a-9a3b5d07647c"
+    },
+    "6f094673-cbe7-4cc3-969d-b8c40a581cba": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "080747a5-bf8a-485e-aa2a-845a68aaf711",
+        "role": "member",
+        "joined_at": "2025-06-21",
+        "left_at": null,
+        "user_id": "b8e7af27-f99a-4d02-acb4-8ff077776e22"
+    },
+    "7def4a6a-d4ec-4f49-99d9-bea6cd72d957": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "f120a239-96a8-4878-8def-abcc114ae20a",
+        "role": "member",
+        "joined_at": "2024-06-08",
+        "left_at": null,
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316"
+    },
+    "6de20cde-8867-41f7-896e-072da6991ed1": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "23a03b53-6fd8-419f-9085-5d065aca2cff",
+        "role": "member",
+        "joined_at": "2025-02-12",
+        "left_at": null,
+        "user_id": "aaf31b45-2558-41b8-a1f6-7058b557d316"
+    },
+    "4e67b19a-11f1-4dd1-bd8a-a68c56620ac1": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "3c075d92-fe99-487e-9cdd-cea9b41b9d30",
+        "role": "member",
+        "joined_at": "2024-05-19",
+        "left_at": "2025-05-19",
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517"
+    },
+    "8d04cc62-ad21-4ce5-87d3-8a49e0d38500": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "5159aae1-30f5-4d8f-97ff-9cef75d66780",
+        "role": "member",
+        "joined_at": "2024-11-26",
+        "left_at": "2025-05-09",
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8"
+    },
+    "c3ce9f24-f6fe-4068-8c22-63781e9a713f": {
+        "team_id": "a504fba0-2847-4cf2-a861-651b12d79190",
+        "worker_id": "27ab1d06-d9c7-48fd-a10e-c816c8978321",
+        "role": "member",
+        "joined_at": "2025-04-08",
+        "left_at": null,
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c"
+    },
+    "a4555743-14af-44ae-a51d-f6968b2a4767": {
+        "team_id": "ba348db9-a444-4f9e-a05c-aaeec5acf723",
+        "worker_id": "9da1ed80-f9f5-446b-874f-783eebfe60e7",
+        "role": "member",
+        "joined_at": "2024-08-05",
+        "left_at": null,
+        "user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "27fce59c-0bfd-4a82-aab7-3fa0b6f17396": {
+        "team_id": "ba348db9-a444-4f9e-a05c-aaeec5acf723",
+        "worker_id": "52cfb0fc-a972-44e9-8567-57218982ecf7",
+        "role": "member",
+        "joined_at": "2025-02-02",
+        "left_at": null,
+        "user_id": "d9e7410f-fbef-4eea-8e5b-8e910d593517"
+    },
+    "bcbf0cfa-f27b-4bdd-97e0-9a542a6a1cc0": {
+        "team_id": "ba348db9-a444-4f9e-a05c-aaeec5acf723",
+        "worker_id": "accb5f01-d788-4693-a6b7-5ffe2a1888ed",
+        "role": "member",
+        "joined_at": "2024-01-14",
+        "left_at": "2024-09-25",
+        "user_id": "3ba37ced-9063-4447-bdbe-f650b5981f88"
+    },
+    "030cb55a-0dd8-4a17-93bd-857685842714": {
+        "team_id": "968d6ae3-529e-4b4f-a2c9-ef4bea0e9c44",
+        "worker_id": "753acce4-89dd-4cc3-a6d3-9fd30cbcbdd7",
+        "role": "member",
+        "joined_at": "2024-06-09",
+        "left_at": null,
+        "user_id": "6a2d085b-8cdc-4c21-9bea-0642fa3e2312"
+    },
+    "0959a434-00cb-48ad-84eb-9204a19159d5": {
+        "team_id": "968d6ae3-529e-4b4f-a2c9-ef4bea0e9c44",
+        "worker_id": "4e12180c-cb04-457f-90a5-63ffe59f81fe",
+        "role": "member",
+        "joined_at": "2025-03-18",
+        "left_at": null,
+        "user_id": "2596560e-ba40-4911-8f6a-9a3b5d07647c"
+    },
+    "de0c8063-bcbe-4ecf-8c28-cba3598c9581": {
+        "team_id": "968d6ae3-529e-4b4f-a2c9-ef4bea0e9c44",
+        "worker_id": "421b85f6-4150-4e71-9817-8c37d2b91677",
+        "role": "member",
+        "joined_at": "2024-03-23",
+        "left_at": "2024-08-22",
+        "user_id": "9bef0292-5f6c-4406-8dab-19804fd5456a"
+    },
+    "65120ce7-b7ce-418e-83e0-00d978e61fde": {
+        "team_id": "968d6ae3-529e-4b4f-a2c9-ef4bea0e9c44",
+        "worker_id": "1908ba82-004b-4796-bd51-1bcd273a58af",
+        "role": "member",
+        "joined_at": "2024-04-04",
+        "left_at": null,
+        "user_id": "fff86559-87e2-413e-91d9-547e0f36a44f"
+    },
+    "feacdf21-b03e-41db-9521-2151e1069d0a": {
+        "team_id": "968d6ae3-529e-4b4f-a2c9-ef4bea0e9c44",
+        "worker_id": "a45afb79-88b1-4419-aba6-8bd14f26644f",
+        "role": "admin",
+        "joined_at": "2024-10-13",
+        "left_at": null,
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4"
+    },
+    "411d1b56-f3a6-4e0c-bc70-cb774116c1ee": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "d74871fa-5662-4743-b31c-64f0dbb7697d",
+        "role": "member",
+        "joined_at": "2023-12-27",
+        "left_at": null,
+        "user_id": "0736f8f3-6d45-4b62-add5-ed8073ee4149"
+    },
+    "89ca2d38-e4cb-478e-b8a3-7f9924e5f367": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "5a7e6af7-a8d9-4e61-a20d-34592d262cd5",
+        "role": "member",
+        "joined_at": "2024-05-17",
+        "left_at": null,
+        "user_id": "02f0d1ef-527d-43dd-9b7d-bfdcff1ed11d"
+    },
+    "b57e5577-5f74-4100-b9e7-6e2b003993a8": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "407ed784-ed8b-4ef3-93ed-48d1a444b0bf",
+        "role": "member",
+        "joined_at": "2024-12-17",
+        "left_at": null,
+        "user_id": "b41857f8-be21-4528-b007-59610a33b117"
+    },
+    "f626139e-d058-4891-94ed-4a891329a668": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "7672d5ed-a5e6-4674-a61c-b68cf970db26",
+        "role": "admin",
+        "joined_at": "2024-12-04",
+        "left_at": null,
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871"
+    },
+    "03599727-aa96-42b6-96eb-70675dfe9e36": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "7b030234-bb3e-48a1-8597-ec87a4ee143f",
+        "role": "member",
+        "joined_at": "2023-09-14",
+        "left_at": null,
+        "user_id": "f0b6d835-43ab-47e2-a75d-e1be1b5804d8"
+    },
+    "841d7bbf-e943-47b3-aaac-4ae8ef43af0f": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "a0649896-f8ac-46b7-8cf7-d7f128a4b9e6",
+        "role": "member",
+        "joined_at": "2024-02-04",
+        "left_at": null,
+        "user_id": "1fdd0817-3e9a-4841-9782-2f178e2bef82"
+    },
+    "49ed1b0f-d79b-45c6-9074-279e237da828": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "cc11fcf1-58fc-4886-ac93-5be5bb918f4e",
+        "role": "lead",
+        "joined_at": "2024-06-09",
+        "left_at": null,
+        "user_id": "7b8db11f-2662-477f-b29a-2778d7f81595"
+    },
+    "b2b61028-7b52-4fa2-abdb-db4bb2b3745a": {
+        "team_id": "bcb5d86e-1a8b-4a6d-b64d-c68f437204cc",
+        "worker_id": "b31bdff5-58f8-4754-bd96-74e384b67289",
+        "role": "member",
+        "joined_at": "2024-02-04",
+        "left_at": null,
+        "user_id": "df2dff92-5ad8-4845-8448-fef7caada6cf"
+    },
+    "c22833df-bcfd-4646-91a2-d04c4e27444e": {
+        "team_id": "7cbc4139-2036-43e8-9c24-e85d309e91e0",
+        "worker_id": "3ba225dc-89c1-485c-9c18-0fb947d701e0",
+        "role": "member",
+        "joined_at": "2025-02-18",
+        "left_at": null,
+        "user_id": "4330add1-e769-4565-bd23-439940701639"
+    },
+    "fcd785bd-00eb-459d-95ff-c9e19009a29d": {
+        "team_id": "7cbc4139-2036-43e8-9c24-e85d309e91e0",
+        "worker_id": "adc568f7-bc60-4973-89cc-0b225964590d",
+        "role": "member",
+        "joined_at": "2024-11-28",
+        "left_at": null,
+        "user_id": "4ccd3f80-ae92-431d-b791-c65d9105caa2"
+    },
+    "2f3cfdad-ad5a-4398-9c91-02c712ad9e7e": {
+        "team_id": "7cbc4139-2036-43e8-9c24-e85d309e91e0",
+        "worker_id": "86c9ac60-7069-4181-a232-34be8562ea0e",
+        "role": "member",
+        "joined_at": "2024-12-20",
+        "left_at": null,
+        "user_id": "e27f33de-b29e-4805-acd5-7ac3f04476e4"
+    },
+    "3a5dad6d-aad2-43e0-9e40-88ef66dcfd97": {
+        "team_id": "7cbc4139-2036-43e8-9c24-e85d309e91e0",
+        "worker_id": "d345fab1-ee52-4dec-b66d-69944d113738",
+        "role": "member",
+        "joined_at": "2024-06-29",
+        "left_at": null,
+        "user_id": "c07118e4-18c3-4e84-8197-3cd9064e325e"
+    },
+    "54940f02-7c2c-49e3-be68-761c4d4abdf4": {
+        "team_id": "7cbc4139-2036-43e8-9c24-e85d309e91e0",
+        "worker_id": "038375e9-3ed7-444d-85b3-ed28c459dc1b",
+        "role": "member",
+        "joined_at": "2023-07-07",
+        "left_at": null,
+        "user_id": "8b715232-baee-437b-a807-ce6cf21bb815"
+    },
+    "2ec85050-bc1a-4208-bdfe-dee5a0797d3a": {
+        "team_id": "7cbc4139-2036-43e8-9c24-e85d309e91e0",
+        "worker_id": "a73cea81-b1f3-41f4-93a2-2d5e53fd3591",
+        "role": "member",
+        "joined_at": "2023-08-29",
+        "left_at": "2024-05-15",
+        "user_id": "4330add1-e769-4565-bd23-439940701639"
+    },
+    "6d0ab8f5-fa63-4dbf-9b4b-c5df30c7a390": {
+        "team_id": "7cbc4139-2036-43e8-9c24-e85d309e91e0",
+        "worker_id": "de4ca151-5446-44cd-9402-106788725790",
+        "role": "member",
+        "joined_at": "2024-10-29",
+        "left_at": null,
+        "user_id": "d9350b7c-ada1-4513-8857-0e47a32e12ea"
+    },
+    "fa7a8289-c855-4c23-8196-58b1b8c79de2": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "b1744ad1-88ca-4763-a0f9-2b4ca6cf152c",
+        "role": "member",
+        "joined_at": "2025-03-23",
+        "left_at": "2025-12-30",
+        "user_id": "59ffb1e6-8c90-421e-8b8a-0650b27b7a31"
+    },
+    "30598bfe-546f-449c-9dce-34605927a844": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "e8214c29-3daa-486c-a887-e3f3cb802a49",
+        "role": "member",
+        "joined_at": "2024-01-22",
+        "left_at": null,
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e"
+    },
+    "afe98cd5-44ed-4db5-a534-a0278839f65d": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "524cd36f-fd7f-4f3b-85d3-55e48454607a",
+        "role": "member",
+        "joined_at": "2023-10-04",
+        "left_at": null,
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b"
+    },
+    "f850da16-9f2e-4ccf-a979-1388bd706df7": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "4a9548ed-cf8b-4029-9659-265a9f067949",
+        "role": "member",
+        "joined_at": "2024-05-12",
+        "left_at": "2024-10-22",
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b"
+    },
+    "bb2c2cc8-17c3-4cdc-baa2-557fc6e005f3": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "32484044-2ea2-49fe-91da-c416213f5df7",
+        "role": "lead",
+        "joined_at": "2024-10-12",
+        "left_at": null,
+        "user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "16a7413a-372b-4180-853b-f0bc7f993324": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "9df759df-cbfd-4d71-a4b5-d2af1c6ff532",
+        "role": "member",
+        "joined_at": "2025-06-24",
+        "left_at": null,
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f"
+    },
+    "7226e3e9-6841-426f-8548-5997ab68f2ef": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "b6571cf9-aed0-4c2f-83fb-c2c034b7760b",
+        "role": "member",
+        "joined_at": "2024-10-22",
+        "left_at": null,
+        "user_id": "584ff1c5-b542-4902-a541-13ab75b948a3"
+    },
+    "93eda478-2ef1-4560-8420-f404b563c94e": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "5b54b417-3b19-49cf-b288-c7d13f6508ac",
+        "role": "member",
+        "joined_at": "2024-11-27",
+        "left_at": "2025-02-04",
+        "user_id": "93d62845-c02a-4310-92e8-1150c09328a7"
+    },
+    "bae2614a-9439-4792-b881-ccd7c19219ca": {
+        "team_id": "a787594a-cf6f-4a2e-8fb1-d801ae1e8770",
+        "worker_id": "bac262a8-05e1-418b-9b48-6223385d8777",
+        "role": "member",
+        "joined_at": "2024-05-29",
+        "left_at": "2024-07-28",
+        "user_id": "77d4c53a-b091-49e9-9b28-5c6b2f1f8593"
+    },
+    "f24ee0b6-9990-4773-8773-668ac398c6f2": {
+        "team_id": "d1f4fba9-d49c-45dc-9535-df03a70f5f8e",
+        "worker_id": "1d897d1a-3dd6-4b3d-bc63-e51d9cac1ed3",
+        "role": "lead",
+        "joined_at": "2024-07-19",
+        "left_at": null,
+        "user_id": "6624afd9-1ccd-4992-879d-acc43c535377"
+    },
+    "5753e64d-3dc1-4302-bc6b-716a98308eb4": {
+        "team_id": "d1f4fba9-d49c-45dc-9535-df03a70f5f8e",
+        "worker_id": "24a80615-cbc2-4e7a-a071-0ef3852fe6ac",
+        "role": "lead",
+        "joined_at": "2024-03-25",
+        "left_at": null,
+        "user_id": "657f59f4-0292-48c7-b7cb-0fca291c6937"
+    },
+    "efb1d161-8897-483d-b358-9bd6b0df707e": {
+        "team_id": "d1f4fba9-d49c-45dc-9535-df03a70f5f8e",
+        "worker_id": "5bd1246d-a735-4a94-b646-6bcd0d52c870",
+        "role": "member",
+        "joined_at": "2023-10-09",
+        "left_at": null,
+        "user_id": "8a7dff82-b745-4ddf-afdb-7c85af9a96e4"
+    },
+    "344e2229-cbe4-4141-8689-b05a6cf3fc7d": {
+        "team_id": "d1f4fba9-d49c-45dc-9535-df03a70f5f8e",
+        "worker_id": "3170237a-ab33-4d77-83c5-96f35a8fe008",
+        "role": "member",
+        "joined_at": "2024-08-14",
+        "left_at": null,
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd"
+    },
+    "d6bf07b6-1758-4ce2-b6e6-07de83156ebf": {
+        "team_id": "d1f4fba9-d49c-45dc-9535-df03a70f5f8e",
+        "worker_id": "f6600815-44e3-49f7-a219-d14d6b78aa3b",
+        "role": "admin",
+        "joined_at": "2024-11-17",
+        "left_at": null,
+        "user_id": "4db06005-a874-4bf7-aa9e-b466109bfa3b"
+    },
+    "6125dc91-872b-4c34-92ea-f91e5d4753e4": {
+        "team_id": "d1f4fba9-d49c-45dc-9535-df03a70f5f8e",
+        "worker_id": "12e238e4-c128-450b-843c-2fb44f6a2649",
+        "role": "member",
+        "joined_at": "2023-10-27",
+        "left_at": null,
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "fb84e606-5ec6-4ef0-b63f-64a592c7fea2": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "04c1ef97-91d5-4e71-8eba-2ee74f463538",
+        "role": "member",
+        "joined_at": "2024-03-05",
+        "left_at": null,
+        "user_id": "f01c7464-0868-4847-b81c-491db0efcff8"
+    },
+    "5eacbed2-b263-4da0-83d7-f8dd82f4d49e": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "6ca3baf0-fdbe-43de-af3c-dcfd848acb7c",
+        "role": "member",
+        "joined_at": "2023-11-20",
+        "left_at": null,
+        "user_id": "09cba7b2-4b39-481c-8da1-fceb2a3e3df4"
+    },
+    "3dfba36a-e45f-40ab-b7ff-9ec4df564349": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "6cba7c0d-d630-4135-b257-9ec34b45c4c0",
+        "role": "member",
+        "joined_at": "2024-05-28",
+        "left_at": "2024-10-29",
+        "user_id": "b41857f8-be21-4528-b007-59610a33b117"
+    },
+    "85b3e83d-d0c9-450a-9890-2abbdb7aa7a1": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "42901c2d-0193-40a0-964d-b3876c987493",
+        "role": "member",
+        "joined_at": "2024-06-11",
+        "left_at": null,
+        "user_id": "2596560e-ba40-4911-8f6a-9a3b5d07647c"
+    },
+    "c5de1915-5c62-4f65-9ddd-5e280d09e10a": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "9f90539c-8f0a-43cf-9afa-098df65477dc",
+        "role": "admin",
+        "joined_at": "2025-03-13",
+        "left_at": null,
+        "user_id": "c6d33124-7acd-497c-91b1-5c9eb1c1c6fa"
+    },
+    "4586e5be-bb6a-4e4d-8049-c8b7af7e3ad8": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "62deb26c-5383-408f-8095-a4a2be788174",
+        "role": "member",
+        "joined_at": "2025-03-30",
+        "left_at": null,
+        "user_id": "f408abb2-8e31-4af9-a494-021d43930ce4"
+    },
+    "3781338f-1788-48bb-a2d3-3a99a19a1140": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "3a8457ef-1a6b-40f0-a4d6-87bb70e2bba4",
+        "role": "member",
+        "joined_at": "2024-09-18",
+        "left_at": null,
+        "user_id": "fc2b34e3-916c-4c9b-bd0e-b3a96e70befb"
+    },
+    "d084398c-5f53-49b5-ba07-3fb1d3d480af": {
+        "team_id": "7e9330fc-6bdc-4b69-b104-0387325606f5",
+        "worker_id": "9bd0de4a-13fa-417e-bda9-44fc1495b559",
+        "role": "member",
+        "joined_at": "2023-07-05",
+        "left_at": null,
+        "user_id": "8d5748ec-f39d-48f0-a719-ea857d3d3a71"
+    },
+    "3204114e-645e-4b51-b1f0-f2ae20cdf775": {
+        "team_id": "4e68ec7f-1c07-4312-b0f7-de003ceedda8",
+        "worker_id": "e342aeea-a20e-4701-899c-7ff7a6aaa727",
+        "role": "lead",
+        "joined_at": "2024-06-13",
+        "left_at": "2024-10-28",
+        "user_id": "3799f4e6-659e-4abe-b5fb-8513fb7e34fe"
+    },
+    "beda422d-2457-446f-8515-5ff1ca47166c": {
+        "team_id": "4e68ec7f-1c07-4312-b0f7-de003ceedda8",
+        "worker_id": "6e656a4c-c75b-4d3b-b39c-e2528148b5ff",
+        "role": "admin",
+        "joined_at": "2023-12-09",
+        "left_at": null,
+        "user_id": "b8ae9ae2-191b-4b47-bad3-81c5f3533296"
+    },
+    "0f307469-9915-4420-9c95-937e7889fc82": {
+        "team_id": "4e68ec7f-1c07-4312-b0f7-de003ceedda8",
+        "worker_id": "3ba225dc-89c1-485c-9c18-0fb947d701e0",
+        "role": "member",
+        "joined_at": "2025-05-29",
+        "left_at": null,
+        "user_id": "4330add1-e769-4565-bd23-439940701639"
+    },
+    "eefdf8f7-18f1-4699-b797-b16e9cd84b33": {
+        "team_id": "4e68ec7f-1c07-4312-b0f7-de003ceedda8",
+        "worker_id": "cc57c825-2dbf-43ed-9d2b-af77e36a069c",
+        "role": "member",
+        "joined_at": "2025-04-01",
+        "left_at": null,
+        "user_id": "9332955b-1a4b-4f45-bdec-98e9fd290192"
+    },
+    "300dbc68-6e36-41e4-b3f3-4760e1913cbb": {
+        "team_id": "4e68ec7f-1c07-4312-b0f7-de003ceedda8",
+        "worker_id": "038375e9-3ed7-444d-85b3-ed28c459dc1b",
+        "role": "lead",
+        "joined_at": "2023-12-06",
+        "left_at": null,
+        "user_id": "8b715232-baee-437b-a807-ce6cf21bb815"
+    },
+    "37a09af8-d519-48dc-8ffb-19b6832443f9": {
+        "team_id": "4e68ec7f-1c07-4312-b0f7-de003ceedda8",
+        "worker_id": "1335f003-a29f-405a-9165-a16ce80b399c",
+        "role": "member",
+        "joined_at": "2024-09-05",
+        "left_at": null,
+        "user_id": "37b085e9-82f3-4af9-8fb7-2ef4705512a7"
+    },
+    "fe670b7e-9cb6-446a-9341-21a6fabf83cd": {
+        "team_id": "4e68ec7f-1c07-4312-b0f7-de003ceedda8",
+        "worker_id": "df176550-72d1-44c0-8a37-27955c536845",
+        "role": "member",
+        "joined_at": "2024-07-04",
+        "left_at": null,
+        "user_id": "f64043a0-407f-4e68-b42a-7d96e835b6ef"
+    },
+    "991151e6-e950-4b73-b580-57d7dabe73bc": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "5b54b417-3b19-49cf-b288-c7d13f6508ac",
+        "role": "lead",
+        "joined_at": "2024-07-29",
+        "left_at": "2025-06-30",
+        "user_id": "93d62845-c02a-4310-92e8-1150c09328a7"
+    },
+    "bbfe602d-0352-4ae0-91ed-34458194a114": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "32484044-2ea2-49fe-91da-c416213f5df7",
+        "role": "member",
+        "joined_at": "2023-11-25",
+        "left_at": null,
+        "user_id": "0d15b7aa-47c7-4448-b012-506e06dd1916"
+    },
+    "a2eb83cd-95cd-453b-b191-5e3729290daa": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "9df759df-cbfd-4d71-a4b5-d2af1c6ff532",
+        "role": "admin",
+        "joined_at": "2023-07-27",
+        "left_at": null,
+        "user_id": "3118d3ac-226e-45a6-915b-f42cbe4fba6f"
+    },
+    "90cd3b2f-4f94-48ce-8c7e-e4f80ed76c23": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "b6571cf9-aed0-4c2f-83fb-c2c034b7760b",
+        "role": "member",
+        "joined_at": "2023-07-16",
+        "left_at": null,
+        "user_id": "584ff1c5-b542-4902-a541-13ab75b948a3"
+    },
+    "42a3e777-8c48-469d-9ca9-23f8e44833fc": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "e8214c29-3daa-486c-a887-e3f3cb802a49",
+        "role": "member",
+        "joined_at": "2024-02-20",
+        "left_at": null,
+        "user_id": "34dafa00-b86e-4fcb-9599-b77894b9555e"
+    },
+    "ff18b11e-661d-4abd-a75e-5efc9ba5f812": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "b1744ad1-88ca-4763-a0f9-2b4ca6cf152c",
+        "role": "member",
+        "joined_at": "2025-04-23",
+        "left_at": null,
+        "user_id": "59ffb1e6-8c90-421e-8b8a-0650b27b7a31"
+    },
+    "55a71ca8-bda4-4cc0-8f39-e4891f27b179": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "524cd36f-fd7f-4f3b-85d3-55e48454607a",
+        "role": "member",
+        "joined_at": "2025-07-02",
+        "left_at": null,
+        "user_id": "0f99c11b-e842-4ab9-92ee-b74bf1dda09b"
+    },
+    "cab127fd-617b-40c4-870f-ff4fcdc47193": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "4a9548ed-cf8b-4029-9659-265a9f067949",
+        "role": "member",
+        "joined_at": "2024-04-07",
+        "left_at": null,
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b"
+    },
+    "8e74a7b1-9ecc-43d7-817e-e3b89954bf2b": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "b5ea09b9-3bad-46b9-b1ac-0c5267aad34e",
+        "role": "member",
+        "joined_at": "2025-01-16",
+        "left_at": null,
+        "user_id": "bf8dc93a-b789-45d2-b0ff-6e4a8c4e2acd"
+    },
+    "492cf9a8-c59a-421b-ab92-a8f9a6b93314": {
+        "team_id": "4a79d0d2-b37e-4dfd-9078-27777b9a1c4d",
+        "worker_id": "bac262a8-05e1-418b-9b48-6223385d8777",
+        "role": "member",
+        "joined_at": "2024-03-18",
+        "left_at": null,
+        "user_id": "77d4c53a-b091-49e9-9b28-5c6b2f1f8593"
+    },
+    "2c6200ac-24f8-4f33-b5e6-13209ee01422": {
+        "team_id": "3ddb0bbc-cb79-4bf0-88b9-7b0cb8828f36",
+        "worker_id": "98b38281-f61e-4d12-88af-5206ba458560",
+        "role": "lead",
+        "joined_at": "2024-04-27",
+        "left_at": null,
+        "user_id": "84906dfe-e95b-4a28-a93b-e175aa6c6f6f"
+    },
+    "aba0339f-bb78-4a46-a1ff-cc4c6ef01265": {
+        "team_id": "3ddb0bbc-cb79-4bf0-88b9-7b0cb8828f36",
+        "worker_id": "4517a102-5e31-44bf-9240-5f9f075b4ba4",
+        "role": "member",
+        "joined_at": "2024-04-26",
+        "left_at": null,
+        "user_id": "df9450df-bba2-4bff-bc4b-983acae5da09"
+    },
+    "3e0ed3e9-7ebd-48dc-86a4-072bf825b64e": {
+        "team_id": "3ddb0bbc-cb79-4bf0-88b9-7b0cb8828f36",
+        "worker_id": "89ceba07-fd8e-468f-add6-3d219bc0c39f",
+        "role": "member",
+        "joined_at": "2024-11-20",
+        "left_at": null,
+        "user_id": "5bff18c9-7559-4198-9ece-8c84e893f90c"
+    },
+    "5cf222e6-536e-4e17-a33d-2532ddc8686e": {
+        "team_id": "3ddb0bbc-cb79-4bf0-88b9-7b0cb8828f36",
+        "worker_id": "5873623d-9bdb-4fc0-a536-d689430bdca5",
+        "role": "member",
+        "joined_at": "2023-12-02",
+        "left_at": null,
+        "user_id": "d6de7528-0e5f-4302-9e2f-9456ad7eff5e"
+    },
+    "26aea0cc-c613-4973-86f1-3690a75683c0": {
+        "team_id": "3ddb0bbc-cb79-4bf0-88b9-7b0cb8828f36",
+        "worker_id": "394b878f-5aad-444e-88f2-b5ceb65a69c3",
+        "role": "member",
+        "joined_at": "2025-02-27",
+        "left_at": null,
+        "user_id": "cf9c80f1-f5b6-4382-8163-f3c418598c62"
+    },
+    "71a0fde7-dc91-43a8-96b3-69137785b9a9": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "b9a36f7e-bff8-485d-9000-749b18f7ebe6",
+        "role": "lead",
+        "joined_at": "2024-04-02",
+        "left_at": null,
+        "user_id": "a160ef96-e68f-46cf-a602-bdf389fb4356"
+    },
+    "8baecb7b-eb5b-4f56-a37a-32b000206fe6": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "cb3b7295-be02-473c-b58f-cd8c104e4771",
+        "role": "lead",
+        "joined_at": "2024-01-09",
+        "left_at": "2024-10-23",
+        "user_id": "d485e608-2057-4203-9717-cbce304ab718"
+    },
+    "f4f4b7ad-3fc7-4ca7-bf94-e66aaa4002d4": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "ab5c17ab-7f7a-4cf0-9e18-ac91be8439db",
+        "role": "member",
+        "joined_at": "2024-06-26",
+        "left_at": null,
+        "user_id": "fc2b34e3-916c-4c9b-bd0e-b3a96e70befb"
+    },
+    "9565994f-a3c9-418b-9e0e-ae1873695c82": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "6a95dbc4-5ff1-4c12-96fe-cf7715c5c2f3",
+        "role": "lead",
+        "joined_at": "2025-03-13",
+        "left_at": null,
+        "user_id": "4252cf81-abe5-45e8-9683-f09bd0cf005c"
+    },
+    "15d001bd-ec56-4559-8cc5-84a95cd0c2fb": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "095c4067-fece-49fd-885f-57fec459e10b",
+        "role": "lead",
+        "joined_at": "2025-03-29",
+        "left_at": null,
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "f1461e9a-ba0a-40aa-ae86-cffc3d0aa139": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "30cb26c8-09f9-4bbe-92ab-79eb9b031ec8",
+        "role": "member",
+        "joined_at": "2024-12-18",
+        "left_at": "2025-06-04",
+        "user_id": "9fe61da1-71a3-40db-acbc-bbba49b7db51"
+    },
+    "bedc1bc0-b87a-4633-95c0-11cc3732b0d4": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "ce5efc8e-9820-48f8-a3b4-0c3c49eef770",
+        "role": "member",
+        "joined_at": "2023-11-10",
+        "left_at": null,
+        "user_id": "59ffb1e6-8c90-421e-8b8a-0650b27b7a31"
+    },
+    "1bd1b007-a06d-4311-befd-5123672040d9": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "d48aacf8-42ea-42bf-86f7-fd644c2558b9",
+        "role": "member",
+        "joined_at": "2024-03-28",
+        "left_at": null,
+        "user_id": "879a910e-4d35-4900-9c34-8490eeaf3b6c"
+    },
+    "1c82069c-b25c-41f7-a957-bb7b651e0421": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "4535e177-abb0-4138-82ac-2a360a9c88d3",
+        "role": "admin",
+        "joined_at": "2024-07-03",
+        "left_at": null,
+        "user_id": "5000b71f-a1ab-4673-81ac-0e68f9adad76"
+    },
+    "f449a218-5dc2-4d08-8635-ddf3c5815595": {
+        "team_id": "3d1ede48-f213-4e78-a1ce-d1c7ef60caa1",
+        "worker_id": "ee8178ac-67c4-4ca4-9d4d-45a3506c35fb",
+        "role": "lead",
+        "joined_at": "2025-01-14",
+        "left_at": null,
+        "user_id": "acd2dd6b-729f-4e94-a59d-fa313ffb366f"
+    },
+    "837e55db-8a39-4dc0-a714-a6a7db02ed18": {
+        "team_id": "ba40ab91-050a-4817-8b8e-0226156c9f51",
+        "worker_id": "b47cc800-bd7c-49f7-9a02-daa3aeec583d",
+        "role": "lead",
+        "joined_at": "2024-07-02",
+        "left_at": null,
+        "user_id": "6657a987-42d9-4a58-97f2-5c35d3d5d325"
+    },
+    "29493708-258f-4ffc-b523-ee091230cb15": {
+        "team_id": "ba40ab91-050a-4817-8b8e-0226156c9f51",
+        "worker_id": "dfb38526-ca35-4ea3-a26d-e0da77953ac0",
+        "role": "member",
+        "joined_at": "2023-12-26",
+        "left_at": null,
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "426a14b9-2785-4d30-9999-eaa3fd1efaf1": {
+        "team_id": "ba40ab91-050a-4817-8b8e-0226156c9f51",
+        "worker_id": "76471c64-321e-4ead-9fe0-2a7e4692984e",
+        "role": "member",
+        "joined_at": "2025-01-28",
+        "left_at": null,
+        "user_id": "3a8bb7ab-59d5-4d44-812b-f3bb51bb0251"
+    },
+    "2df71e43-fed9-495a-80e6-5e4a4c88053b": {
+        "team_id": "ba40ab91-050a-4817-8b8e-0226156c9f51",
+        "worker_id": "b5bcee67-e069-4773-b26e-4c4e39b41c22",
+        "role": "lead",
+        "joined_at": "2024-06-03",
+        "left_at": null,
+        "user_id": "d77f1707-8ef4-4615-8bf3-f3c37a1615a2"
+    },
+    "73810537-0d37-4280-a820-e7270a97c1be": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "8ea6ebea-3672-4618-9e05-ca93fbffde88",
+        "role": "member",
+        "joined_at": "2024-10-21",
+        "left_at": "2025-08-18",
+        "user_id": "8f536302-5849-4540-931d-f37774af583c"
+    },
+    "b96081a9-9169-44c1-8c9b-795a8e5745c8": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "2bddbb1f-6779-4e99-93c0-82bf515c2475",
+        "role": "lead",
+        "joined_at": "2023-07-31",
+        "left_at": null,
+        "user_id": "d1541b40-787a-42df-9178-424cf2127a7e"
+    },
+    "195daf4e-b45d-4f2f-a342-a069396df977": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "09bd91dd-6b39-4ba1-9c13-d5be198e727b",
+        "role": "member",
+        "joined_at": "2024-05-19",
+        "left_at": null,
+        "user_id": "563754b0-77c9-4c54-817a-c0b971dead27"
+    },
+    "712d78be-dfe0-487e-89d8-f46686e1be9c": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "06e139da-afbb-4029-9ad6-33395d200d3f",
+        "role": "lead",
+        "joined_at": "2024-08-16",
+        "left_at": "2025-05-03",
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf"
+    },
+    "b1e97f1f-e3b6-466f-b818-d5b27c49c819": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "c7268ff2-492f-4ffd-a10b-01860626bfb1",
+        "role": "member",
+        "joined_at": "2023-08-28",
+        "left_at": null,
+        "user_id": "7421025a-eefc-4c61-bdce-a7a70456b97e"
+    },
+    "2db67e34-3b73-4c46-a371-b058629375e4": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "905e0d99-c3cc-474a-b631-4a12e8a3eab5",
+        "role": "lead",
+        "joined_at": "2024-07-03",
+        "left_at": null,
+        "user_id": "d08c4e28-257c-436a-9018-edaf50cf63d6"
+    },
+    "ab731b7a-db45-48ab-a6cb-491e1a979b20": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "5f4ac719-4115-4345-899a-4d4c982472de",
+        "role": "lead",
+        "joined_at": "2025-04-13",
+        "left_at": null,
+        "user_id": "4374e70f-a97f-4cc6-b557-353efac07d78"
+    },
+    "a18fb6f0-1724-47f8-b50b-b59297534385": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "3fa4264d-5b81-4e89-9dc0-d759e68c5953",
+        "role": "member",
+        "joined_at": "2024-05-12",
+        "left_at": null,
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871"
+    },
+    "140bce0d-4dfe-4386-9dca-60588c5c1f59": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "5e2a07de-e5f5-4db2-9fd4-c18829bd60ad",
+        "role": "lead",
+        "joined_at": "2024-04-07",
+        "left_at": null,
+        "user_id": "9bef0292-5f6c-4406-8dab-19804fd5456a"
+    },
+    "aef5f768-cf88-44b8-8004-2e4671a74fcc": {
+        "team_id": "64ae7155-8a22-4ece-af4e-3e66d30013f1",
+        "worker_id": "22f89aec-15bb-4171-b553-4768e7f83410",
+        "role": "lead",
+        "joined_at": "2024-06-24",
+        "left_at": null,
+        "user_id": "b70c115f-32f4-4f9c-904f-cfc7e0954351"
+    },
+    "a0683190-86e6-4a5e-bc7f-1a061b3dbea0": {
+        "team_id": "9915c2f8-808a-44c9-8cc3-5360dfedd7b8",
+        "worker_id": "584e4751-2b90-49d9-8e13-506fd623684e",
+        "role": "member",
+        "joined_at": "2024-10-30",
+        "left_at": null,
+        "user_id": "b6644b95-fa69-49d3-af2d-a9f478a711b3"
+    },
+    "01178e2d-b058-4816-90cb-05690b8e699b": {
+        "team_id": "9915c2f8-808a-44c9-8cc3-5360dfedd7b8",
+        "worker_id": "06e139da-afbb-4029-9ad6-33395d200d3f",
+        "role": "member",
+        "joined_at": "2023-10-23",
+        "left_at": "2024-08-11",
+        "user_id": "e1cdcc41-ba8c-4487-af5e-b3066d0a64bf"
+    },
+    "a4336740-4703-487c-be13-92c94a26756a": {
+        "team_id": "9915c2f8-808a-44c9-8cc3-5360dfedd7b8",
+        "worker_id": "3fa4264d-5b81-4e89-9dc0-d759e68c5953",
+        "role": "lead",
+        "joined_at": "2023-09-06",
+        "left_at": "2024-03-08",
+        "user_id": "4ceb71bf-220a-408d-9f68-0de7c8d6d871"
+    },
+    "bb4ef3fe-440a-4755-ba89-0740a2c8c0d3": {
+        "team_id": "9915c2f8-808a-44c9-8cc3-5360dfedd7b8",
+        "worker_id": "a4588316-e36c-4b47-ba51-e271a040137c",
+        "role": "member",
+        "joined_at": "2024-10-27",
+        "left_at": null,
+        "user_id": "32831d55-a6f5-435d-add7-972267781a5b"
+    },
+    "f174d837-3335-4d8a-8e7a-e4ea59e624bc": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "3e0fac8b-6a0b-4c90-ad5d-d9c04807e465",
+        "role": "member",
+        "joined_at": "2024-05-01",
+        "left_at": null,
+        "user_id": "8f536302-5849-4540-931d-f37774af583c"
+    },
+    "3c08b145-2399-4851-9760-e1c1dbfa5081": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "a8cde27d-8200-4bb0-a9e8-df1126307402",
+        "role": "member",
+        "joined_at": "2025-04-04",
+        "left_at": null,
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "44ccd30f-ba3e-4983-a153-b4ef10ff4bac": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "9201e24e-e282-417e-897f-4138a281d4ea",
+        "role": "lead",
+        "joined_at": "2024-05-03",
+        "left_at": null,
+        "user_id": "04cf1b47-3a5e-49f6-a9b8-bda5185d6445"
+    },
+    "566f9d5d-bef9-46af-8759-07182a8b83e7": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "ef211c7f-88fd-4b7e-b737-9f839b55aacc",
+        "role": "member",
+        "joined_at": "2024-01-24",
+        "left_at": null,
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "37003d40-e4a8-4906-b9ab-4c1bcbad8cb2": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "0d520f13-a5ae-4a9f-824e-8295d3dccfab",
+        "role": "member",
+        "joined_at": "2025-06-08",
+        "left_at": null,
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60"
+    },
+    "bd297dc3-9ce2-458a-9f09-d8a15dc95ee6": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "b6002fc7-2e35-4d25-81d2-4af8407e4a7b",
+        "role": "admin",
+        "joined_at": "2025-06-17",
+        "left_at": "2026-01-24",
+        "user_id": "c1157fdb-9b14-4627-8a02-d692680241e6"
+    },
+    "19f4bdce-5ef0-4f90-9b5a-fcffe10b1009": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "46ce90d5-030b-498a-991b-c26a4db0ab69",
+        "role": "member",
+        "joined_at": "2024-06-20",
+        "left_at": null,
+        "user_id": "c4dce683-a2ba-4c35-af2d-200e025864c4"
+    },
+    "d72a0cb2-a60f-410b-b86a-69038a5adf0d": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "971cdf80-adae-4bc7-9da0-7a0a5fdf1fa0",
+        "role": "member",
+        "joined_at": "2023-12-16",
+        "left_at": "2024-12-09",
+        "user_id": "74f833b4-da79-4026-a228-1143580a9342"
+    },
+    "c4f4bf2f-30d1-452a-affc-7f99b4d7ec92": {
+        "team_id": "03c80906-c3b8-46b7-b5bf-117f0d057b1f",
+        "worker_id": "c8767856-3d81-4e04-b066-201de6047c4d",
+        "role": "member",
+        "joined_at": "2023-07-30",
+        "left_at": null,
+        "user_id": "7e5102f1-64cd-4119-a8e5-7ab2fff78d0f"
+    },
+    "d9cede56-1c26-448d-9ae4-d9f730fa488c": {
+        "team_id": "6f7ca998-40ad-4da0-af4e-92bb782d8796",
+        "worker_id": "1908ba82-004b-4796-bd51-1bcd273a58af",
+        "role": "member",
+        "joined_at": "2025-05-21",
+        "left_at": null,
+        "user_id": "fff86559-87e2-413e-91d9-547e0f36a44f"
+    },
+    "6bd3508f-330e-4c39-8198-fcd632e92b99": {
+        "team_id": "6f7ca998-40ad-4da0-af4e-92bb782d8796",
+        "worker_id": "50ecc683-97a4-4a51-851d-6b41f530bc7c",
+        "role": "member",
+        "joined_at": "2024-02-23",
+        "left_at": null,
+        "user_id": "3e30bf78-f061-44a3-a4ff-5e7fa8a6563e"
+    },
+    "7bf7514e-5fda-436b-a5b7-b6038e58caed": {
+        "team_id": "6f7ca998-40ad-4da0-af4e-92bb782d8796",
+        "worker_id": "753acce4-89dd-4cc3-a6d3-9fd30cbcbdd7",
+        "role": "lead",
+        "joined_at": "2023-09-22",
+        "left_at": null,
+        "user_id": "6a2d085b-8cdc-4c21-9bea-0642fa3e2312"
+    },
+    "aac825de-1409-4188-8985-a124cd4ae266": {
+        "team_id": "6f7ca998-40ad-4da0-af4e-92bb782d8796",
+        "worker_id": "cb7a7800-58a3-47b6-a31b-e4323d562229",
+        "role": "member",
+        "joined_at": "2023-08-27",
+        "left_at": "2024-01-10",
+        "user_id": "55b239fd-7ae2-4601-833a-b40ba2e46075"
+    },
+    "83cc7444-b39f-48c3-a051-1957653a6ae1": {
+        "team_id": "6f7ca998-40ad-4da0-af4e-92bb782d8796",
+        "worker_id": "421b85f6-4150-4e71-9817-8c37d2b91677",
+        "role": "member",
+        "joined_at": "2025-06-24",
+        "left_at": "2025-09-01",
+        "user_id": "9bef0292-5f6c-4406-8dab-19804fd5456a"
+    },
+    "589a02f4-5eb2-4f6b-8b86-25547d7f1304": {
+        "team_id": "6f7ca998-40ad-4da0-af4e-92bb782d8796",
+        "worker_id": "35b1a2fe-4a1c-4ae7-b6dd-7bfecd429c30",
+        "role": "member",
+        "joined_at": "2024-06-23",
+        "left_at": null,
+        "user_id": "ee07b56d-764a-419b-b953-16a561383c60"
+    },
+    "e7c55c2b-7aa1-40f6-9796-6c3d6a1e660d": {
+        "user_id": "65e154c9-f72e-4c9d-b9ff-d364f0bb127a",
+        "worker_id": "d390f267-cb5c-4b5c-98d1-0f7a2d110f84",
+        "joined_at": "2025-01-16",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "48ee9ae0-1655-487f-9b6b-b35601c945d2"
+    },
+    "4415492f-586b-4c9c-966a-cbdb37cb17b1": {
+        "user_id": "fe92b14e-1996-4db1-8731-0a2846bc6c9d",
+        "worker_id": "d21055bf-feda-454e-a738-411d2dbb899f",
+        "joined_at": "2025-02-18",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "48ee9ae0-1655-487f-9b6b-b35601c945d2"
+    },
+    "caf9131d-1dc6-43a1-b6ae-1bb196d216f6": {
+        "user_id": "0ded854f-0e54-4071-98bf-66644308ad18",
+        "worker_id": "60115bae-d2d7-47fb-81fc-69401b32fa7c",
+        "joined_at": "2025-05-08",
+        "role": "member",
+        "left_at": null,
+        "team_id": "5081155b-ff8e-4851-a915-5c56dddd95f2"
+    },
+    "a7829b44-41f2-4e5d-9910-7e26a3ad8727": {
+        "user_id": "f97135ec-a319-42a7-b1d8-8256a49c6ce4",
+        "worker_id": "3b2b8c28-3be7-4c6a-bd62-282e7481e996",
+        "joined_at": "2025-01-21",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "41ad5a60-5b69-4aa6-b432-4faea2418930"
+    },
+    "4e0e23fb-594c-4a2e-8830-492a72d28ce8": {
+        "user_id": "81890c98-d23d-4192-bcce-9fbd0320ea9b",
+        "worker_id": "0c3e39ff-20e0-4ebf-b588-5b0b994c90b8",
+        "joined_at": "2025-01-29",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "472fae2e-d2ea-4777-ac02-711ecaac1a43"
+    },
+    "38c9ff1c-6992-43f8-af03-a6c7907aea9f": {
+        "user_id": "2b8e54b8-0bcf-4146-97d3-f70feba06063",
+        "worker_id": "4d524c85-855b-4d23-8d8c-d3365ce403c2",
+        "joined_at": "2025-02-02",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "abd46a17-a5f7-4237-ad54-22d3b07088e4"
+    },
+    "d5babc28-f18f-4291-8d83-0067ccf76c85": {
+        "user_id": "35619f18-8fb9-4f7b-88cb-884520774432",
+        "worker_id": "16542eed-1092-4f36-83c3-9c80348bd810",
+        "joined_at": "2025-03-14",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "474061ff-b2cb-498d-83bc-21f4429d9218"
+    },
+    "81d7412c-8578-41af-a44a-88f31cd47c07": {
+        "user_id": "b50eea7f-bd2c-403f-9470-c914f70e4ba9",
+        "worker_id": "12c65042-9718-4178-b86f-d8766fb37898",
+        "joined_at": "2025-01-05",
+        "role": "member",
+        "left_at": null,
+        "team_id": "5081155b-ff8e-4851-a915-5c56dddd95f2"
+    },
+    "38459dba-878b-471f-a085-f5bd94831de1": {
+        "user_id": "8eb058fc-8185-4d50-afd7-c63a6f3bd886",
+        "worker_id": "8c61bcec-c0ed-4693-813d-2165af21a1a2",
+        "joined_at": "2025-02-15",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "3a190a98-7e34-4c46-ab41-2b36325f1f19"
+    },
+    "714691cc-d388-4e6b-8b46-d3008d5120f1": {
+        "user_id": "f25a7e1f-b237-4230-8699-7ebe506d072c",
+        "worker_id": "4b35d721-2e89-4902-95a0-dee8faafb6ce",
+        "joined_at": "2025-03-06",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "48ee9ae0-1655-487f-9b6b-b35601c945d2"
+    },
+    "776801dc-0245-45a4-95a7-7b8f3510ee69": {
+        "user_id": "3a6e018b-e1bb-433f-b867-242fae459039",
+        "worker_id": "ab880528-75a1-48f9-a4bd-b1135e608203",
+        "joined_at": "2025-03-30",
+        "role": "member",
+        "left_at": null,
+        "team_id": "ade906a8-8646-44d1-9e22-48310bbb1ff1"
+    },
+    "0d1d51a1-0c12-448d-81ad-e9c274c53b0a": {
+        "user_id": "bc927df1-9e7a-47a1-bc89-876122cc7798",
+        "worker_id": "06ede281-b8ed-4959-b770-b290120b1615",
+        "joined_at": "2025-05-23",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "41ad5a60-5b69-4aa6-b432-4faea2418930"
+    },
+    "7be2b42c-1a22-4dda-92ce-5a41765b7cb1": {
+        "user_id": "f486ad4c-9da1-4c3d-aa73-64014755e3c9",
+        "worker_id": "5cb04b5d-2893-4ac4-ab94-4e34e29adf6a",
+        "joined_at": "2025-01-03",
+        "role": "member",
+        "left_at": null,
+        "team_id": "abd46a17-a5f7-4237-ad54-22d3b07088e4"
+    },
+    "35224af7-1a36-4bbc-9d2f-f91c5f8c4394": {
+        "user_id": "cccf6c93-d2f4-4b39-937b-8c45d5febbe8",
+        "worker_id": "d27b024a-7a4e-45d8-8ceb-8bb52bb06867",
+        "joined_at": "2025-02-01",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "0a69c7e9-9f98-4d23-bb78-4a900d3eb793"
+    },
+    "ded3b6b4-6ec5-4ca1-bd48-83eaf838e05e": {
+        "user_id": "734be9fd-867a-4ff5-a812-ccf520d2aba6",
+        "worker_id": "b6f63f18-6d97-44cd-9966-a45b9d378b43",
+        "joined_at": "2025-01-20",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "25bdac28-edbe-49e8-9333-1f34f869cac4"
+    },
+    "ffad72a7-5aa8-4ffc-b950-c6d257c6ed16": {
+        "user_id": "6cdb4165-1291-4e24-a3c0-5f3c31ebe3aa",
+        "worker_id": "3533c16e-f9c4-4b6b-910e-0dc737a1d7e8",
+        "joined_at": "2025-02-28",
+        "role": "member",
+        "left_at": null,
+        "team_id": "3a190a98-7e34-4c46-ab41-2b36325f1f19"
+    },
+    "1f1f2411-f12e-41f6-9b3a-7e85d82b8672": {
+        "user_id": "dcbca915-4f4b-4b3f-a75f-ba93573b43e8",
+        "worker_id": "d03d9843-adb6-4cf6-baae-56be8fbb025b",
+        "joined_at": "2025-06-20",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "5081155b-ff8e-4851-a915-5c56dddd95f2"
+    },
+    "a0ba6033-339c-468d-a114-c1ddce948373": {
+        "user_id": "2e42ed5d-5301-430f-9b38-109017a1c9d4",
+        "worker_id": "13f59342-6cb9-4715-86d0-c93ad94a7692",
+        "joined_at": "2025-03-14",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "3a190a98-7e34-4c46-ab41-2b36325f1f19"
+    },
+    "d9d46970-7fdb-4e62-ae03-1be8647a284f": {
+        "user_id": "d99a16bb-9b3d-43c5-8d8c-50d9e1589177",
+        "worker_id": "cfb01f55-8fae-40af-b60c-97aee99252f5",
+        "joined_at": "2025-02-06",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "ade906a8-8646-44d1-9e22-48310bbb1ff1"
+    },
+    "1b8d4484-2333-4d42-be75-cdd4054976c7": {
+        "user_id": "35442c05-b698-478d-98a7-6f3ddd169b2d",
+        "worker_id": "f883ef61-ddba-4335-a7d6-d1fcaa00b148",
+        "joined_at": "2025-03-13",
+        "role": "member",
+        "left_at": null,
+        "team_id": "0a69c7e9-9f98-4d23-bb78-4a900d3eb793"
+    },
+    "73ba2367-9145-4e2a-a22b-cf1c291874fb": {
+        "user_id": "b18b40db-9ac6-4593-855a-94d7ee76b815",
+        "worker_id": "6b63eae9-5a11-48a9-b906-72d313300c12",
+        "joined_at": "2025-05-06",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "48ee9ae0-1655-487f-9b6b-b35601c945d2"
+    },
+    "318b83fd-a3f8-40c0-af1a-e985ed5b8958": {
+        "user_id": "10ba8634-0737-4e16-9235-491f62200571",
+        "worker_id": "43819039-94b9-410b-9bd6-66badf37362f",
+        "joined_at": "2025-04-07",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "25bdac28-edbe-49e8-9333-1f34f869cac4"
+    },
+    "87533cb8-a85c-4947-a17e-286e0659cfcd": {
+        "user_id": "72fb8142-e811-4925-9859-b8a915ee9e76",
+        "worker_id": "15165d5c-09b6-4049-ba4c-1beba8148187",
+        "joined_at": "2025-01-15",
+        "role": "member",
+        "left_at": null,
+        "team_id": "3a190a98-7e34-4c46-ab41-2b36325f1f19"
+    },
+    "6cf8202a-a9d8-496e-89aa-f7d36424abb5": {
+        "user_id": "6b8176cd-1bd8-49f9-9af9-0721ca708b5b",
+        "worker_id": "05b43f8e-849b-4569-ad54-232ec4cfeb47",
+        "joined_at": "2025-05-18",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "474061ff-b2cb-498d-83bc-21f4429d9218"
+    },
+    "617d7704-59ea-4b4d-b8f9-68797cfffdf7": {
+        "user_id": "e924ff11-76e9-4f95-a0d4-d9883c895f13",
+        "worker_id": "06ede281-b8ed-4959-b770-b290120b1615",
+        "joined_at": "2025-01-28",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "48ee9ae0-1655-487f-9b6b-b35601c945d2"
+    },
+    "af386d43-66a7-4b68-b0ce-454e8e146f91": {
+        "user_id": "078d6051-01ef-4057-8466-86b36a8dcfdd",
+        "worker_id": "e6b18205-8e9f-410a-b912-c2473b55b8a3",
+        "joined_at": "2025-04-14",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "25bdac28-edbe-49e8-9333-1f34f869cac4"
+    },
+    "eb5014d3-bdf7-487f-9a08-052c6359452a": {
+        "user_id": "357f2313-58b9-4fb0-b63b-797079800c9a",
+        "worker_id": "ea6e2728-ff4e-436b-98fe-e967716ed529",
+        "joined_at": "2025-02-13",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "472fae2e-d2ea-4777-ac02-711ecaac1a43"
+    },
+    "ffa95e5f-7fdf-4ff2-a1ef-63f13cdc8285": {
+        "user_id": "6550e8c3-4f18-4ba8-8244-74a0fa283899",
+        "worker_id": "747cbb00-41d5-4573-9a70-39411afd3c57",
+        "joined_at": "2025-03-17",
+        "role": "lead",
+        "left_at": null,
+        "team_id": "25bdac28-edbe-49e8-9333-1f34f869cac4"
+    },
+    "79765066-ea4a-4991-a5af-7ec205b22149": {
+        "user_id": "09707f33-d367-4a78-a0ff-0683b02017c2",
+        "worker_id": "c1bf97a5-cd5e-4aef-a3c8-6817be6250c1",
+        "joined_at": "2025-06-15",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "48ee9ae0-1655-487f-9b6b-b35601c945d2"
+    },
+    "6865e0ea-4b2a-4201-a5d6-61ed9685fbf6": {
+        "user_id": "460d9d5a-6879-4b17-be9f-64af6c1c0f90",
+        "worker_id": "ccc6141d-f685-4abc-8685-4d32c0918b6f",
+        "joined_at": "2025-05-04",
+        "role": "admin",
+        "left_at": null,
+        "team_id": "3a190a98-7e34-4c46-ab41-2b36325f1f19"
+    }
+}
