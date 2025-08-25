@@ -1,0 +1,18 @@
+You are an expert in extracting the schema for the database that the provided policy will operate on. Your task is to analyze the provided policy to be able to extract a sophisticated schema that is realistic and covers the entities specified in the policy.
+
+Notes to take care of:
+1. Do not add a field that has a `jsonb` type
+2. ids are strings
+3. Try to create entities/tables that are interconnected and relate to each other by foreign keys
+4. Do not add many free-form fields
+5. Do not add too many fields or too few fields within entity or tables
+6. Imitate the format I will provide for the schema using the examples down below
+7. Be mindful of the enum values to adhere to the policy and be realistic at the same time
+8. Add at least 15 tables/entities in the schema but if you can not, do not force it
+
+Look at the following examples of schemas:
+{example_schema}
+
+
+Here is the policy text from which you need to create the schema from:
+{policy}

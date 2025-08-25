@@ -1692,10 +1692,17 @@
                         num_trials = obj["num_trials"]
                         temperature = obj["temperature"]
                         interface_num = obj["interface_num"]
-                        user_id = obj["task"]["user_id"]
-                        instruction = obj["task"]["instruction"]
-                        actionsBefore = obj["task"]["actions"]
-                        edgesBefore = obj["task"]["edges"]
+                        if (obj["task"]) {
+                            user_id = obj["task"]["user_id"]
+                            instruction = obj["task"]["instruction"]
+                            actionsBefore = obj["task"]["actions"]
+                            edgesBefore = obj["task"]["edges"]
+                        } else{
+                            user_id = obj["task"]
+                            instruction = obj["task"]
+                            actionsBefore = obj["actions"]
+                            edgesBefore = obj["edges"]
+                        }
 
                         console.log('Imported actions:', obj);
                         // const added = new Set();
@@ -2323,7 +2330,7 @@
 
         diffExpanded = false;
         function toggleDiff() {
-            if (env === null) {
+            if (actionsBefore === null) {
                 showWrongMessage('Please import a task first to compare it with the current task!');
                 return;
             }

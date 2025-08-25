@@ -1,0 +1,470 @@
+# Finance B2B schema:
+
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+// B2B Finance Database Schema
+// This schema represents a comprehensive database for managing investment funds, 
+// investors, portfolios, trading, and financial operations
+
+Table users {
+  user_id int [primary key]
+  first_name varchar(100) [not null]
+  last_name varchar(100) [not null]
+  email varchar(320) [not null, unique]
+  role enum('system_administrator','fund_manager','compliance_officer','finance_officer','trader') [not null]
+  timezone varchar(50) [not null]
+  status enum('active','inactive','suspended') [not null, default: 'active']
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table funds {
+  fund_id int [primary key]
+  name varchar(255) [not null]
+  fund_type enum('mutual_funds', 'exchange_traded_funds', 'pension_funds', 'private_equity_funds', 'hedge_funds', 'sovereign_wealth_funds', 'money_market_funds', 'real_estate_investment_trusts', 'infrastructure_funds', 'multi_asset_funds') [not null]
+  manager_id int [not null]
+  size decimal(18,2)
+  status enum('open','closed') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table investors {
+  investor_id int [primary key]
+  name varchar(255) [not null]
+  registration_number int
+  date_of_incorporation date
+  country string
+  address string
+  tax_id string
+  source_of_funds enum('retained_earnings', 'shareholder_capital', 'asset_sale', 'loan_facility', 'external_investment', 'government_grant', 'merger_or_acquisition_proceeds', 'royalty_or_licensing_income', 'dividend_income', 'other')
+  status enum('onboarded', 'offboarded')
+  // investor_type enum('organization','retail','high_net_worth') [not null]
+  contact_email varchar(320) [not null]
+  accreditation_status enum('accredited','non_accredited') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+Table subscriptions {
+  subscription_id int [primary key]
+  fund_id int [not null]
+  investor_id int [not null]
+  amount decimal(18,2) [not null]
+  status enum('pending','approved','cancelled') [not null]
+  request_assigned_to int [not null] // FK: user assigned to this subscription request
+  request_date date [not null]
+  approval_date date
+  updated_at timestamp [not null, default: `NOW()`]
+  // An investor can have only one subscription per fund
+}
+
+Table commitments {
+  commitment_id int [primary key]
+  fund_id int [not null]
+  investor_id int [not null]
+  commitment_amount decimal(18,2) [not null]
+  commitment_date date [not null]
+  status enum('pending','fulfilled') [not null]
+  updated_at timestamp [not null, default: `NOW()`]
+  // An investor can have only one commitment per fund
+}
+
+Table portfolios {
+  portfolio_id int [primary key]
+  investor_id int [not null]
+  status enum('active','inactive','archived') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  updated_at timestamp [not null, default: `NOW()`]
+
+  // Each investor's portfolio name must be unique for that investor
+}
+
+Table portfolio_holdings {
+  holding_id int [primary key]
+  portfolio_id int [not null]
+  fund_id int [not null]
+  quantity decimal(18,4) [not null]
+  cost_basis decimal(18,4) [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  // An instrument appears at most once in a given portfolio
+}
+
+Table instruments {
+  instrument_id int [primary key]
+  ticker varchar(20) [not null, unique] // Secondary unique code (e.g., stock symbol)
+  name varchar(255) [not null]
+  status enum('active', 'inactive')
+  // growth_rate int
+
+  instrument_type enum('equities_common_shares', 'equities_preferred_shares', 'equities_indexed', 'equities_domestic', 'equities_international', 'bonds_corporate', 'bonds_municipal', 'bonds_government', 'bonds_inflation_linked', 'bonds_high_yield', 'bonds_distressed', 'money_market_treasury_bills', 'money_market_commercial_paper', 'certificates_of_deposit', 'repurchase_agreements', 'short_term_municipal_notes', 'bankers_acceptances', 'commodities_gold_oil_futures', 'commodities_spot', 'commodities_futures', 'derivatives_options', 'derivatives_futures', 'derivatives_swaps', 'real_estate_direct_property', 'real_estate_reits', 'mortgage_backed_securities', 'property_development_loans', 'private_equity', 'equity_stakes_private_companies', 'equity_stakes_infrastructure_assets', 'mezzanine_financing', 'convertible_preferred_stock', 'leveraged_buyout_debt', 'distressed_debt', 'project_finance_debt', 'infrastructure_bonds', 'ppp_investments', 'infrastructure_debt_equity', 'infrastructure_projects', 'alternative_assets_hedge_funds', 'alternative_assets_commodities') [not null]
+}
+
+Table instrument_prices {
+  price_id int [primary key]
+  instrument_id int [not null]
+  price_date date [not null]
+  open_price decimal(18,4) [not null]
+  high_price decimal(18,4) [not null]
+  low_price decimal(18,4) [not null]
+  close_price decimal(18,4) [not null]
+  // (instrument_id, price_date) - Secondary unique One price per instrument per date
+}
+
+
+Table nav_records {
+  nav_id int [primary key]
+  fund_id int [not null]
+  nav_date date [not null]
+  nav_value decimal(18,4) [not null]
+  updated_at timestamp [not null, default: `NOW()`]
+  // (fund_id, nav_date) - Only one NAV record per fund per date
+}
+
+
+Table trades {
+  trade_id int [primary key]
+  fund_id int [not null]
+  instrument_id int [not null]
+  trade_date timestamp [not null]
+  quantity decimal(18,4) [not null]
+  price decimal(18,4) [not null]
+  side enum('buy','sell') [not null]
+  status enum('approved', 'executed','pending','failed') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+
+Table notifications {
+  notification_id int [primary key]
+  email varchar(320) // Email address of the recipient, either recipient_id or email must be set
+  type enum('alert','report','reminder','subscription_update') [not null]
+  class enum('funds','investors','portfolios','trades','invoices','reports', 'documents', 'subscriptions', 'commitments') [not null]
+  reference_id int // generic reference to a related entity (e.g., report_id, document_id, ticket_id)
+  status enum('pending','sent','failed') [not null]
+  sent_at timestamp
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+Table reports {
+  report_id int [primary key]
+  fund_id int [not null]
+  investor_id int // FK: related investor if applicable
+  report_date date [not null]
+  report_type enum('performance','holding','financial') [not null, default: 'performance']
+  generated_by int [not null]
+  status enum('pending','completed','failed') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+  export_period_end date [not null]  // As-of date or end of period the report covers
+
+  // (fund_id, report_type, report_period_end) - One report of a given type per fund per period
+}
+
+Table documents {
+  document_id int [primary key]
+  name varchar(255) [not null] // File name is also a unique key
+  format enum('pdf','xlsx','docx','csv','other') [not null]
+  uploaded_by int [not null]
+  upload_date timestamp [not null]
+  report_id int // FK: related report if applicable
+  size_bytes bigint
+  confidentiality_level enum('public', 'internal', 'confidential', 'restricted')
+  status enum('available','archived','deleted') [not null]
+}
+
+Table invoices {
+  invoice_id int [primary key]
+  commitment_id int // FK: related commitment if applicable
+  invoice_date date [not null]
+  due_date date [not null]
+  amount decimal(18,2) [not null]
+  status enum('issued','paid') [not null]
+  updated_at timestamp [not null, default: `NOW()`]
+}
+
+Table payments {
+  payment_id int [primary key]
+  invoice_id int [not null]
+  subscription_id int [not null]
+  payment_date timestamp [not null]
+  amount decimal(18,2) [not null]
+  payment_method enum('wire','cheque','credit_card','bank_transfer') [not null]
+  status enum('draft', 'completed','failed') [not null]
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+Table redemptions {
+  redemption_id int [primary key]
+  subscription_id int [not null] // FK: redemption linked to a subscription
+  request_date date [not null] // when investor requested redemption
+  redemption_amount decimal(18,2) [not null] // cash value to redeem
+  // redemption_units decimal(18,4) // optional: if units are tracked instead of just cash value
+  status enum('pending','approved','processed','cancelled') [not null, default: 'pending']
+  processed_date date // when the redemption was actually executed
+  updated_at timestamp [not null, default: `NOW()`]
+
+  // Optional: fee and NAV reference
+  // nav_id int // FK: NAV record used for redemption pricing if applicable
+  redemption_fee decimal(18,2) // fee charged for redemption, if any
+}
+
+// Relationships
+Ref: redemptions.subscription_id > subscriptions.subscription_id
+// Ref: redemptions.nav_id > nav_records.nav_id
+Ref:  payments.subscription_id > subscriptions.subscription_id
+Table audit_trails {
+  audit_trail_id int [primary key]
+  reference_id int [not null] // ID of the record that was changed
+  reference_type enum('user','fund','investor','subscription','commitment','redemption','trade','portfolio','holding','instrument','invoice','payment','document','report','nav','notification') [not null]
+  action enum('create','update','delete','approve','cancel','process') [not null]
+  user_id int [not null] // Who performed the action
+  field_name varchar(100) // Which field was changed (null for create/delete)
+  old_value text // Previous value (null for create)
+  new_value text // New value (null for delete)
+  created_at timestamp [not null, default: `NOW()`]
+}
+
+// Add the relationship
+Ref: audit_trails.user_id > users.user_id
+
+// RELATIONSHIPS - All relationships are properly defined as foreign keys
+
+// User Management Relationships
+Ref: funds.manager_id > users.user_id // many-to-one: funds managed by users
+Ref: reports.generated_by > users.user_id // many-to-one: reports generated by users
+Ref: documents.uploaded_by > users.user_id // many-to-one: documents uploaded by users
+
+// Fund-related Relationships
+Ref: subscriptions.fund_id > funds.fund_id // many-to-one: subscriptions belong to funds
+Ref: commitments.fund_id > funds.fund_id // many-to-one: commitments belong to funds
+Ref: nav_records.fund_id > funds.fund_id // many-to-one: NAV records belong to funds
+Ref: trades.fund_id > funds.fund_id // many-to-one: trades belong to funds
+Ref: reports.fund_id > funds.fund_id // many-to-one: reports belong to funds
+
+// Investor-related Relationships
+Ref: subscriptions.investor_id > investors.investor_id // many-to-one: subscriptions belong to investors
+Ref: commitments.investor_id > investors.investor_id // many-to-one: commitments belong to investors
+Ref: portfolios.investor_id > investors.investor_id // many-to-one: portfolios belong to investors
+
+// Portfolio and Holdings Relationships
+Ref: portfolio_holdings.portfolio_id > portfolios.portfolio_id // many-to-one: holdings belong to portfolios
+Ref: portfolio_holdings.fund_id > funds.fund_id // many-to-one: holdings reference instruments
+
+// Instrument and Pricing Relationships
+Ref: instrument_prices.instrument_id > instruments.instrument_id // many-to-one: prices belong to instruments
+Ref: trades.instrument_id > instruments.instrument_id // many-to-one: trades reference instruments
+
+// Invoice and Payment Relationships
+Ref: payments.invoice_id > invoices.invoice_id // many-to-one: payments belong to invoices
+
+// Subscription and Commitment Relationships
+Ref: subscriptions.request_assigned_to > users.user_id // many-to-one: subscription requests assigned to users
+Ref: invoices.commitment_id > commitments.commitment_id // many-to-one: invoices can reference commitments
+
+Ref: documents.report_id > reports.report_id // many-to-one: documents can be linked to reports
+
+#######################################################################################
+
+# Smart home Schema
+
+Table homes {
+  home_id integer [primary key]
+  owner_id integer
+  address_id integer [ref: > addresses.address_id]
+  home_type enum(Home,Apartment)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table users {
+  user_id integer [primary key]
+  first_name varchar
+  last_name varchar
+  phone_number varchar 
+  role enum(Owner, Partner,Child,Guest,Servant)
+  parent_id integer [ref :> users.user_id] //null for others, only valid for when role is Child
+  email varchar
+  primary_address_id integer [ref: > addresses.address_id]
+  date_of_birth date
+  status enum(active, inactive)
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+
+Table rooms {
+  room_id integer [primary key]
+  home_id integer
+  room_type enum(Bedroom,kitchen,lounge,store,diningroom)
+  room_owner_id integer
+  status enum(vacant,occupied)
+  width_ft  float
+  length_ft float
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table devices {
+  device_id integer [primary key]
+  device_type enum(camera,bulb,thermostat,speaker,tv,refrigerator,oven)
+  room_id integer
+  installed_on date
+  insurance_expiry_date date
+  home_id integer
+  status enum(on,off)
+  width_ft  float
+  length_ft float
+  price float
+  scheduled_maintainance_date date
+  last_maintainance_date date
+  daily_rated_power_consumption_kWh float
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+Table historical_energy_consumption {
+  consumption_id integer [primary key] 
+  device_id integer 
+  home_id integer
+  room_id integer
+  date date 
+  power_used_kWh float
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+Table automated_routines {
+  routine_id integer [primary key]
+  user_id integer
+  home_id integer
+  start_action_date date
+  action_time timestamp
+  action_interval enum(daily, one_time, every_hour)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table device_commands {
+  device_command_id integer [primary key]
+  routine_id integer [ref : > automated_routines.routine_id]
+  device_id integer [ref : > devices.device_id]
+  status enum(on,off)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table bulb_commands {
+  bulb_command_id integer [primary key]
+  routine_id integer [ref : > automated_routines.routine_id]
+  device_id integer [ref : > devices.device_id]
+  brightness_level enum(dim,half,full)
+  color enum(red, white, yellow, blue)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table thermostat_commands {
+  thermostat_command_id integer [primary key]
+  routine_id integer [ref : > automated_routines.routine_id]
+  device_id integer [ref : > devices.device_id]
+  current_temperature float
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+
+Table security_cameras {
+  device_id integer [primary key]
+  resolution enum(720p, 1080p, 2k)
+  last_activity_timestamp timestamp
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table smart_thermostats {
+  device_id integer [primary key]
+  current_temperate float
+  lowest_rated_temeprature float
+  highest_rated_temeprature float
+  last_adjustment_time timestamp
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table smart_bulbs {
+  device_id integer [primary key]
+  brightness_level enum(dim,half,full)
+  color enum(red,white,yellow,blue)
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+
+Table user_feedbacks{
+  user_feedback_id inetger [primary key]
+  user_id integer [ref: > users.user_id]
+  device_id integer [ref: > devices.device_id]
+  rating integer
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table addresses{
+  address_id integer [primary key]
+  house_number varchar
+  building_name varchar 
+  street varchar
+  city_name varchar
+  state varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+
+Ref room_device_historical: historical_energy_consumption.room_id > rooms.room_id
+Ref security_cameras_device: security_cameras.device_id > devices.device_id
+Ref smart_bulb_device: devices.device_id > smart_bulbs.device_id
+Ref smart_thermostats_device: devices.device_id > smart_thermostats.device_id
+Ref home_users: homes.owner_id > users.user_id 
+Ref home_rooms: homes.home_id > rooms.home_id
+Ref device_rooms: devices.room_id > rooms.room_id
+Ref device_homes: devices.home_id > homes.home_id
+Ref historical_consumption_devices: historical_energy_consumption.device_id > devices.device_id
+Ref historical_consumption_homes: historical_energy_consumption.home_id > homes.home_id
+Ref routines_users: automated_routines.user_id > users.user_id
+Ref routines_home_id: automated_routines.home_id > homes.home_id
+Ref room_owner_id_user: rooms.room_owner_id > users.user_id 
+
+Table emergency_alerts {
+  alert_id integer [primary key]
+  home_id integer [ref: > homes.home_id]
+  device_id integer [ref: > devices.device_id] // nullable
+  alert_type enum(camera_motion_detected, camera_offline, bulb_malfunction, thermostat_temperature_alert, thermostat_offline, speaker_offline, tv_malfunction, refrigerator_temperature_alert, refrigerator_malfunction, oven_overheating, oven_malfunction)
+  severity_level enum(low, medium, high, critical)
+  triggered_at timestamp
+  acknowledged_at timestamp // nullable
+  acknowledged_by_user int [ref :> users.user_id]
+  resolved_at timestamp // nullable
+  resolved_by_user int [ref :> users.user_id]
+  created_at timestamp
+}
+
+Table energy_tariffs {
+  tariff_id integer [primary key]
+  home_id integer [ref: > homes.home_id]
+  tariff_name varchar
+  rate_per_kWh float
+  peak_hours_start time
+  peak_hours_end time
+  peak_rate_multiplier float
+  effective_from date
+  effective_until date // nullable for current tariff
+  created_at timestamp
+  updated_at timestamp
+}

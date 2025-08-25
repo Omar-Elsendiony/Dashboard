@@ -1,0 +1,449 @@
+
+You are an expert in extracting policy actions from a given text. Your task is to analyze the provided policies and extract all the actions/APIs related to policies. Each action should be clearly defined and categorized based on its type (e.g., create, update, delete, get).
+
+Look at the following examples of policy actions:
+# Function Parameters and Returns Analysis
+
+## 1. acknowledge_or_resolve_alert
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `alert_id`: str - The ID of the emergency alert to update (required)
+- `acknowledged_at`: str = None - Timestamp when the alert was acknowledged
+- `acknowledged_by_user`: str = None - User ID who acknowledged the alert
+- `resolved_at`: str = None - Timestamp when the alert was resolved
+- `resolved_by_user`: str = None - User ID who resolved the alert
+
+**Returns:** JSON string of the updated alert object
+
+## 2. add_command
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_type`: str - Type of the device (e.g., 'bulb') (required)
+- `routine_id`: str - ID of the routine (required)
+- `device_id`: str - ID of the device (required)
+- `device_status`: str - Status to set the device to (e.g., 'on', 'off') (required)
+- `bulb_brightness_level`: str = None - Brightness level (optional, for bulbs only)
+- `bulb_color`: str = None - Color to set the bulb to (optional, for bulbs only)
+
+**Returns:** JSON string: `{"success": True}`
+
+## 3. add_device
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_type`: str - Type of the device (e.g., bulb) (required)
+- `room_id`: str - ID of the room where the device is installed (required)
+- `home_id`: str - ID of the home (required)
+- `width_ft`: float - Width of the device in feet (required)
+- `length_ft`: float - Length of the device in feet (required)
+- `price`: float - Price of the device (required)
+- `daily_rated_power_consumption_kWh`: float - Rated daily power consumption (required)
+- `brightness_level`: str = None - Brightness level (used only for bulbs)
+- `color`: str = None - Color (used only for bulbs)
+- `insurance_expiry_date`: Optional[str] = None - Optional insurance expiry date. Defaults to 2026-10-01
+
+**Returns:** JSON string: `{"device_id": str(device_id), "success": True}`
+
+## 4. add_feedback
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: str - ID of the user providing the feedback (required)
+- `device_id`: str - ID of the device being rated (required)
+- `rating`: int - Rating given to the device (typically 1 to 5) (required)
+
+**Returns:** JSON string: `{"user_feedback_id": feedback_id, "success": True}`
+
+## 5. create_address
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `house_number`: str - House number (required)
+- `building_name`: str - Building name (required)
+- `street`: str - Street name (required)
+- `city_name`: str - City name (required)
+- `state`: str - State (required)
+
+**Returns:** JSON string: `{"address_id": address_id, "success": True}`
+
+## 6. create_emergency_alert
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str - ID of the home where the alert was triggered (required)
+- `device_id`: str - ID of the device causing the alert (required)
+- `alert_type`: str - Type of alert, e.g. 'bulb_malfunction' (required)
+- `severity_level`: str - Severity of alert (low, medium, high, critical) (required)
+- `triggered_at`: str - ISO timestamp when the alert was triggered (required)
+
+**Returns:** JSON string: `{"alert_id": alert_id, "success": True}`
+
+## 7. create_routine
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: int - User ID for whom the routine is created (required)
+- `home_id`: int - Home ID where routine applies (required)
+- `action_time`: str - Time of day to perform the action (required)
+- `start_action_date`: str - Start date for the routine (required)
+- `action_interval`: str - How often the routine runs (e.g., daily, weekly) (required)
+
+**Returns:** JSON string: `{"routine_id": routine_id, "success": True}`
+
+## 8. get_address
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `address_id`: str = None - Exact ID of the address to look up
+- `house_number`: str = None - House number
+- `building_name`: str = None - Building name
+- `street`: str = None - Street name
+- `city_name`: str = None - City name
+- `state`: str = None - State name
+
+**Returns:** JSON string array of matching address objects (including address_id)
+
+## 9. get_commands
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `routine_id`: str = None - Filter commands by routine ID
+- `device_id`: str = None - Filter commands by device ID
+
+**Returns:** JSON string array of matching commands with their specific attributes
+
+## 10. get_devices_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_id`: str = None - Filter by device ID
+- `room_id`: str = None - Filter by room ID
+- `device_type`: str = None - Filter by device type
+- `status`: str = None - Filter by device status
+
+**Returns:** JSON string array of device objects (includes brightness/color if bulb)
+
+## 11. get_emergency_alerts
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: Optional[str] = None - Home ID to filter alerts
+- `device_id`: Optional[str] = None - Device ID to filter alerts
+- `alert_type`: Optional[str] = None - Alert type (e.g., 'thermostat_offline')
+- `severity_level`: Optional[str] = None - Severity of the alert (low/medium/high/critical)
+- `resolved_by_user`: Optional[str] = None - User ID who resolved the alert
+- `acknowledged_by_user`: Optional[str] = None - User ID who acknowledged the alert
+
+**Returns:** JSON string array of filtered alert objects
+
+## 12. get_energy_tariffs_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str - Home ID to fetch tariffs for (required)
+
+**Returns:** JSON string array of energy tariff records for the specified home
+
+## 13. get_historical_energy_consumption_by_device
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_id`: Optional[str] = None - ID of the device (as string)
+- `date`: Optional[str] = None - Format: YYYY-MM-DD
+- `month`: Optional[int] = None - Month as number, e.g., 5 for May
+
+**Returns:** JSON string: `{"total_power_used_kWh": float}`
+
+## 14. get_home_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str = None - Filter by home ID
+- `owner_id`: str = None - Filter by owner ID
+- `address_id`: str = None - Filter by address ID
+
+**Returns:** JSON string array of home objects with num_residents and num_rooms_occupied
+
+## 15. get_rooms_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `room_id`: str = None - Filter by room ID
+- `home_id`: str = None - Filter by home ID
+
+**Returns:** JSON string array of room objects
+
+## 16. get_routines
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `routine_id`: str = None - Filter by routine ID
+- `user_id`: str = None - Filter by user ID
+- `home_id`: str = None - Filter by home ID
+- `action_time`: str = None - Filter by action time
+- `action_interval`: str = None - Filter by action interval
+- `start_action_date`: str = None - Filter by start action date
+
+**Returns:** JSON string array of routine objects
+
+## 17. get_user_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: str = None - Filter by user ID
+- `phone_number`: str = None - Filter by phone number (suffix matching, formatting ignored)
+- `email`: str = None - Filter by email address (case-insensitive)
+
+**Returns:** JSON string array of user objects
+
+## 18. list_children
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `parent_id`: str - Parent user ID to find children for (required)
+
+**Returns:** JSON string array of user objects with the given parent_id
+
+## 19. update_device_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `device_id`: str - Device ID to update (required)
+- `room_id`: Optional[str] = None - New room ID
+- `installed_on`: Optional[str] = None - Installation date
+- `insurance_expiry_date`: Optional[str] = None - Insurance expiry date
+- `home_id`: Optional[str] = None - Home ID
+- `status`: Optional[str] = None - Device status
+- `width_ft`: Optional[float] = None - Width in feet
+- `length_ft`: Optional[float] = None - Length in feet
+- `price`: Optional[float] = None - Price
+- `scheduled_maintainance_date`: Optional[str] = None - Scheduled maintenance date
+- `last_maintainance_date`: Optional[str] = None - Last maintenance date
+- `daily_rated_power_consumption_kWh`: Optional[float] = None - Power consumption
+- `brightness_level`: Optional[str] = None - Brightness level (for bulbs)
+- `color`: Optional[str] = None - Color (for bulbs)
+
+**Returns:** JSON string of the updated device object (includes brightness/color if bulb)
+
+## 20. update_home_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `home_id`: str - Home ID to update (required)
+- `owner_id`: str = None - New owner ID
+- `address_id`: str = None - New address ID
+- `home_type`: str = None - New home type
+
+**Returns:** JSON string of the updated home object
+
+## 21. update_room_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `room_id`: str - Room ID to update (required)
+- `room_owner_id`: str = None - New room owner ID
+- `status`: str = None - New room status
+
+**Returns:** JSON string of the updated room object
+
+## 22. update_user_info
+
+**Parameters:**
+- `data`: Dict[str, Any] - The main data dictionary
+- `user_id`: str - ID of the user to update (required)
+- `first_name`: Optional[str] = None - Updated first name
+- `last_name`: Optional[str] = None - Updated last name
+- `phone_number`: Optional[str] = None - Updated phone number
+- `role`: Optional[str] = None - Updated user role
+- `email`: Optional[str] = None - Updated email address
+- `primary_address_id`: Optional[str] = None - Updated address ID
+
+**Returns:** JSON string of the updated user object
+
+
+Your job is to extract similar actions from the provided policy text. Ensure that you capture all relevant details such as action name, description, and any parameters associated with the action.
+Here is the policy text from which you need to extract actions:
+Fund Management Policy and SOPs - Expert’s Review
+Introduction
+This document is a comprehensive operational guide for an entity responsible for executing fund management processes in the finance domain. It defines roles with explicit permissions (Cans) and restrictions (Cannots) to ensure secure, compliant, and efficient operations. All Standard Operating Procedures (SOPs) are designed for single‑turn execution, meaning each procedure is self‑contained and completed in one interaction. Each SOP provides clear steps for proceeding when conditions are met, and explicit halt instructions with error reporting when conditions are not met. The framework emphasizes compliance with regulatory standards (e.g., AML/KYC, SEC guidelines), risk mitigation, and auditability. If any external integration (e.g., database or API) fails, the entity must halt and notify the appropriate role.
+All amounts/currencies are in USD and all policies applied are United States based.
+
+
+Entities
+Liabilities
+Liabilities are the fees (management or purchasing or commission or regulatory fees) that the investor is paying to purchase the instrument.
+All liabilities are calculated by 1.5% of the closing price of the instrument.
+Future Value of an Asset
+This is the forecasted value of a fund. It can be calculated by the closing price of the fund or NAV multiplied by the (1 + r)^n. 
+Where r = growth rate and n = number of years.
+
+Portfolio Holdings
+One investor is only allowed to have one portfolio, while one portfolio can have multiple portfolio holdings. Each portfolio holding can have only one fund attached to it. 
+
+
+Roles and Responsibilities
+System Administrator
+Can (Allowed):
+Create, update, and deactivate user accounts in the fund management system.
+Assign and update user permissions based on role definitions.
+Monitor and log system activity, including generating audit trails.
+
+Cannot (Disallowed):
+Approve financial transactions or investment decisions.
+Override compliance approvals or risk flags.
+Access or modify investor personal KYC data without a formal request from the Compliance Officer.
+Execute trades or alter fund structures.
+View or export sensitive financial reports without authorization.
+Fund Manager
+Can (Allowed):
+Approve or reject fund creation, updates, closures, and strategy changes.
+Approve trades, and investments.
+Review and sign off on performance reports.
+Cannot (Disallowed):
+Execute trades directly without involving a Trader.
+Bypass compliance checks or ignore regulatory flags.
+Access private investor data without clearance from the Compliance Officer.
+Modify NAV calculations or process payments.
+Override system logs or audit trails.
+Compliance Officer
+Can (Allowed):
+Approve or reject investor onboarding, offboarding, commitment, and KYC verifications.
+Approve fund structures, terms, and compliance-related updates.
+Flag transactions for review, conduct AML checks, and enforce regulatory compliance.
+Halt operations if violations are detected.
+Cannot (Disallowed):
+Execute trades or investment actions.
+Create, delete, or update funds without Fund Manager approval.
+Change NAV values or process financial transactions.
+Access trading systems or override risk management protocols.
+Communicate directly with investors without Investor Relations Officer involvement.
+Finance Officer
+Can (Allowed):
+Calculate and update Net Asset Value (NAV) based on verified data.
+To get the NAV, use the closing price of all the instruments minus all liabilities
+Process payments, subscription, switch requests, and redemptions.
+Generate financial reports.
+Forecast cash flows and liquidity needs.
+Cannot (Disallowed):
+Approve investor onboarding or compliance checks.
+Override compliance restrictions or risk flags.
+Create, update, or close funds.
+Execute trades or alter investment strategies.
+Access investor communications or personal data.
+Trader
+Can (Allowed):
+Execute approved trades in the market.
+Monitor market conditions and suggest trade opportunities to the Fund Manager.
+Record trade details, including timestamps, prices, and counterparties.
+
+Cannot (Disallowed):
+Approve trades or investment strategies.
+Access investor data or compliance records.
+Alter fund structures or NAV.
+Bypass risk checks or compliance flags.
+Standard Operating Procedures (SOPs)
+All SOPs are executed in a single turn. Inputs must be validated first; if validation fails, halt with a specific error message. Log all steps. If any external call (e.g., database update) fails, halt and notify the System Administrator.
+Investor Onboarding
+Receive structured onboarding data with KYC fields: legal entity name, incorporation/registration number, date of incorporation, country of incorporation, registered business address, tax identification number, and source-of-funds declaration. If all fields are present and valid (formats correct, no missing values), proceed; otherwise, reply “Missing/invalid KYC fields: [list]” and halt.
+Verify corporate AML screening results for the company, beneficial owners, and authorized signatories. If all screenings are clear, proceed; if any are flagged or missing, reply “AML screening failed or missing” and halt.
+Check for the Compliance Officer approval flag. If present and approved, proceed; otherwise, reply “Compliance approval missing” and halt.
+Create a company investor profile in the system. If creation succeeds, reply “Company investor onboarded successfully: [new ID]”; if it fails (e.g., duplicate registration number), log the error and reply “Profile creation failed: [reason]” and halt.
+Investor Offboarding
+Receive offboarding request with investor ID and reason code. If ID exists, proceed; otherwise reply “Investor not found” and halt.
+Ensure there are no pending transactions, subscriptions, or redemptions. If clear, proceed; otherwise reply “Pending items: [list]” and halt.
+Verify Compliance Officer approval for offboarding. If approved, proceed; otherwise reply “Compliance approval missing” and halt.
+Mark investors as inactive, archive data, and notify the Investor Relations Officer. If archival succeeds, reply “Offboarding complete”; if it fails, log the error and reply “Archival failed: [reason]” and halt.
+Creating a Fund
+Receive fund creation request with name, type (e.g., equity, bond), base currency, initial size, manager ID, and strategy outline. If all are valid, proceed; otherwise reply “Missing/invalid fund details: [list]” and halt.
+Confirm Compliance Officer review flag is approved. If yes, proceed; otherwise reply “Compliance review not confirmed” and halt.
+Verify Fund Manager approval flag. If approved, proceed; otherwise reply “Fund Manager approval missing” and halt.
+Create the fund record in the system. If successful, reply “Fund created: [new fund ID]”; if it fails, log the error and reply “Creation failed: [reason]” and halt.
+Updating a Fund
+Receive update request with fund ID and changes (e.g., strategy, size). If fund exists, proceed; otherwise reply “Fund not found” and halt.
+Determine if the change requires compliance review. If required and missing, reply “Compliance review needed but missing” and halt.
+Verify Fund Manager approval for the update. If approved, proceed; otherwise reply “Fund Manager approval missing” and halt.
+Apply updates to the fund record. If successful, reply “Fund updated successfully”; if it fails, log the error and reply “Update failed: [reason]” and halt.
+Deleting/Closing a Fund
+Receive delete request with fund ID. If fund exists, proceed; otherwise reply “Fund not found” and halt.
+Verify there are no active investors, pending trades, or open positions. If clear, proceed; otherwise reply “Active items prevent deletion: [list]” and halt.
+Confirm approvals from the Compliance Officer and Fund Manager. If both approved, proceed; otherwise reply “Approvals missing: [which]” and halt.
+Mark fund as closed, archive records, and notify stakeholders. If successful, reply “Fund deleted”; if it fails, log the error and reply “Deletion failed: [reason]” and halt.
+Switching Funds
+Receive switch request with investor ID, current fund ID, target fund ID, and switch amount. If all IDs exist, proceed; otherwise reply “Invalid IDs: [list]” and halt.
+Confirm investor eligibility for the target fund (e.g., accreditation status). If eligible, proceed; otherwise reply “Investor ineligible for target fund” and halt.
+Recalculate units, NAV impact, and fees. If calculation succeeds, proceed; otherwise log and reply “Calculation failed: [reason]” and halt.
+Generate updated agreements and process the switch. If successful, reply “Switch complete”; if it fails, log the error and reply “Switch failed: [reason]” and halt.
+Creating a Subscription
+Receive subscription request with investor ID, fund ID, amount, and payment details. If valid and IDs exist, log and proceed; otherwise reply “Invalid subscription details: [list]” and halt.
+Verify Compliance Officer approval for the subscription. If approved, proceed; otherwise reply “Compliance approval missing” and halt.
+Generate the subscription agreement for signature. If generation succeeds, dispatch to investor; if it fails, log the error and reply “Agreement generation failed” and halt.
+Upon receipt of funds and signed agreement, activate the subscription. If activation succeeds, reply “Subscription active”; if funds are pending, reply “Funds pending” and halt.
+Updating a Subscription
+Receive update request with subscription ID and changes (e.g., amount increase). If ID exists, log and proceed; otherwise reply “Subscription not found” and halt.
+Verify Compliance Officer and Finance Officer approvals/recalculations (e.g., new KYC if needed). If approved, proceed; otherwise reply “Approvals missing: [list]” and halt.
+Generate updated agreement. If successful, send for signature; if it fails, log and reply “Agreement update failed” and halt.
+Confirm changes in the system upon signature. If successful, reply “Subscription updated”; if it fails, log and reply “Confirmation failed: [reason]” and halt.
+Cancelling a Subscription
+Receive cancellation request with subscription ID and reason. If ID exists, verify and proceed; otherwise reply “Subscription not found” and halt.
+Ensure there are no outstanding commitments or payments. If clear, proceed; otherwise reply “Pending settlements: [list]” and halt.
+Update system status to Cancelled and notify the investor via the Investor Relations Officer. If update succeeds, reply “Cancellation complete”; if it fails, log and reply “Cancellation failed: [reason]” and halt.
+Archive records. If archival fails, log the error (cancellation remains effective).
+Executing a Trade
+Receive trade request with fund ID, asset details, quantity, price limit, and Trader ID. If all valid and fund exists, proceed; otherwise reply “Invalid trade details: [list]” and halt.
+Confirm Fund Manager approval and Risk Manager clearance (within limits). If both approved, proceed; otherwise reply “Approvals missing: [list]” and halt.
+Verify market availability and compliance flags. If clear, execute via trading system. If execution succeeds, log details and reply “Trade executed: [trade ID]”; if it fails, log and reply “Execution failed: [reason]” and halt.
+Update portfolio and notify the Finance Officer for NAV recalculation. If the update fails, log the error.
+Processing a Redemption
+Receive redemption request with investor ID, fund ID, amount/units, and reason. If valid, proceed; otherwise reply “Invalid redemption details” and halt.
+Check for lock‑up periods or restrictions. If eligible, proceed; otherwise reply “Redemption ineligible: [reason]” and halt.
+Verify Compliance and Finance approvals (e.g., no AML flags). If approved, calculate the payout. If the calculation fails, reply “Calculation failed” and halt.
+Process payment and update records. If successful, reply “Redemption processed”; if it fails, log and reply “Processing failed: [reason]”.
+Creating or Uploading a Document
+All documents must be in approved formats (PDF, DOCX, XLSX, CSV).
+Receive a request containing the user’s id who is uploading it, document type, size in bytes, confidentiality level, and the name of the file. If any required information is missing or invalid, the process stops with the message: “Invalid document metadata: [list missing/invalid items].”
+If all checks pass, the file is stored in the system, and a document record is created with status “available”.
+The system routes the document to assigned approvers and sends them a notification.
+If creation is successful, the system confirms with: “Document created: [doc_id].” If any error occurs, the process stops with: “Document creation failed: [reason].”
+Creating a Commitment
+Receives a request with the investor ID, fund ID, amount, and due date.
+If the investor or fund ID is invalid, the process stops with: “Invalid IDs: [list].”
+If the amount is zero or negative, the process stops with: “Invalid amount.”
+Check for the Compliance Officer approval flag. If present and approved, proceed, the process stops with: “Compliance approval missing.”
+A new record is created with status Pending, and a corresponding invoice is created with status of “issued”, the investor is notified, and payment reminders are scheduled.
+If successful, the system confirms with: “Commitment created: [commitment_id], status Pending.” If unsuccessful, it stops with: “Creation failed: [reason].”
+Fulfilling a Commitment
+Receive a request with the commitment ID, payment receipt amount, payment date, and payment method.
+If the commitment does not exist or is not in Pending status, the process stops with: “Commitment not found or invalid status.”
+The receipt is posted, the status is updated to Fulfilled or remains Pending, and any overpayment is refunded.
+If successful, the system confirms with: “Commitment updated: [commitment_id], status [status], commitment [amount].” If unsuccessful, it stops with: “Fulfillment failed: [reason].”
+Calculating NAV
+Receive NAV calculation request with fund ID and date. If fund exists, gather asset data; otherwise reply “Fund not found” and halt.
+Verify all asset or instrument prices and positions are active. If complete, proceed; otherwise reply “Data incomplete: [list]” and halt.
+Perform calculation using Finance Officer formulas. If successful, update the system and reply “NAV updated: [value]”; if errors occur, log and reply “Calculation error: [reason]” and halt.
+Notify stakeholders if NAV changes exceed thresholds.
+Generating Reports
+Receive report request with type (e.g., performance, financial, and holding), fund/investor ID, and period. If valid, proceed; otherwise reply “Invalid report parameters” and halt.
+Check requester permissions (e.g., Investor Relations for investor reports). If authorized, gather data; otherwise reply “Unauthorized access” and halt.
+Generate the report. If successful, deliver via a secure channel; if data is missing, reply “Data unavailable: [details]” and halt.
+Log report generation for audit.
+Dispute Resolution
+Receive dispute details with involved IDs, description, and evidence. If complete, log and proceed; otherwise reply “Incomplete dispute info” and halt.
+Escalate to the Compliance Officer for review. If resolved, update records; if unresolved, reply “Escalation needed” and notify stakeholders.
+Notify parties of the outcome. If notification succeeds, reply “Dispute resolved”; if it fails, log the failure.
+Archive all materials for audit.
+Updating an Instrument
+Receive a request with the instrument ID, proposed changes, and compliance review if required.
+If the instrument is not found, the process stops with: “Instrument not found.”
+If the user is unauthorized, the process stops with: “Unauthorized.”
+If compliance review is required but missing, the process stops with: “Compliance review needed but missing.”
+If successful, the system confirms with: “Instrument updated successfully.” If unsuccessful, it stops with: “Update failed: [reason].”
+Deactivating or Reactivating an Instrument
+Receive the instrument ID, the requested action (deactivate/reactivate), and the reason, along with approvals from the FM and CO.
+If the instrument has active positions and deactivation is requested, the process stops with: “Active positions prevent deactivation.”
+If approvals are missing, the process stops with: “Approvals missing: [which approvals].”
+The instrument’s status is changed, and relevant parties are notified.
+If successful, the system confirms with: “Instrument [Deactivated|Reactivated]: [instrument_id].” If unsuccessful, it stops with: “Operation failed: [reason].”
+
+

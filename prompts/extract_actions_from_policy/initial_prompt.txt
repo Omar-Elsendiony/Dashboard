@@ -1,0 +1,8 @@
+You are an expert in extracting policy actions from a given text. Your task is to analyze the provided policies and extract all the actions/APIs related to policies. Each action should be clearly defined and categorized based on its type (e.g., create, update, delete, get).
+
+Look at the following examples of policy actions:
+{actions}
+
+Your job is to extract similar actions from the provided policy text. Ensure that you capture all relevant details such as action name, description, and any parameters associated with the action.
+Here is the policy text from which you need to extract actions:
+{policy}

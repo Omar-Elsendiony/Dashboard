@@ -26,7 +26,7 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15) 
 
-app.config['SESSION_TYPE'] = 'filesystem' 
+# app.config['SESSION_TYPE'] = 'filesystem' 
 
 app.config['SESSION_TYPE'] = 'redis'
 app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
@@ -656,8 +656,8 @@ def get_session_info():
 ########## END CHAIN CONNECTOR ##########
 
 ############ DB UTILITIES APIs ##############
-@app.route('/db_connections', strict_slashes=False, methods=["GET", "POST"])
-def db_connections():
+@app.route('/db_utilities', strict_slashes=False, methods=["GET", "POST"])
+def db_utilities():
     """ Endpoint to render the DB connections page """
     if request.method == "POST":
         # Handle POST requests here if needed
@@ -667,7 +667,7 @@ def db_connections():
         }), 200
     
     # Handle GET requests
-    return render_template('db_connections.html')
+    return render_template('db_utilities.html')
 
 @app.route('/database_utilities_prompt_generation', methods=["POST"])
 def database_utilities_prompt_generation():
@@ -743,8 +743,7 @@ def database_utilities_prompt_generation():
             'prompt': prompt
         }), 200
     elif action == "check_scenario_realism":
-
-        client = OpenAI() 
+        # client = OpenAI() 
         db_schema = data.get('db_schema', '')
         scenario = data.get('scenario', '')
         
@@ -775,6 +774,28 @@ def database_utilities_prompt_generation():
                 'status': 'error',
                 'message': f'Failed to check scenario realism: {str(e)}'
             }), 500
+    elif action == "extract_policy_apis":
+        initial_prompt = data.get('initial_prompt', '')
+        policy = data.get('policy', '')
+        example_apis = data.get('example_apis', '')
+        
+        prompt = initial_prompt.format(actions=example_apis, policy=policy)
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
+    elif action == "extract_policy_schema":
+        example_schema = data.get('example_schema', '')
+        policy = data.get('policy', '')
+        initial_prompt = data.get('initial_prompt', '')
+
+        prompt = initial_prompt.format(example_schema=example_schema, policy=policy)
+
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
     else:
         return jsonify({
             'status': 'error',
@@ -894,6 +915,59 @@ def database_utilities():
             'initial_prompt': initial_prompt,
             # 'example_scenarios': example_scenarios
         }), 200
+    elif action == "extract_policy_apis":
+        initial_prompt_file_path = f"prompts/extract_actions_from_policy/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+
+        example_apis_file_path = f"prompts/extract_actions_from_policy/examples_policy_actions.txt"
+        if not os.path.exists(example_apis_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example APIs file for {action} not found'
+            }), 404
+
+        with open(example_apis_file_path, 'r') as file:
+            example_apis = file.read()
+
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'example_apis': example_apis
+        }), 200
+    elif action == "extract_policy_schema":
+        initial_prompt_file_path = f"prompts/extract_schema_from_policy/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+
+        example_schema_file_path = f"prompts/extract_schema_from_policy/examples_schema.txt"
+        if not os.path.exists(example_schema_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example schema file for {action} not found'
+            }), 404
+
+        with open(example_schema_file_path, 'r') as file:
+            example_schema = file.read()
+
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'example_schema': example_schema
+        }), 200
+
     else:
         return jsonify({
             'status': 'error',
