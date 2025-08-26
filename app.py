@@ -1095,6 +1095,36 @@ def instruction_validation():
 
     return render_template('instruction_validation.html')
 
+@app.route('/instruction_relevant_actions_or_policies', strict_slashes=False, methods=["GET", "POST"])
+def instruction_relevant_actions_or_policies():
+    if request.method == "POST":
+        data = request.json
+        instruction = data.get('instruction', '')
+        model = data.get('model', '')
+
+        if not instruction:
+            return jsonify({
+                'status': 'error',
+                'message': 'Instruction is required'
+            }), 400
+
+        prompt = f"Extract relevant actions and policies from the following instruction:\n\n{instruction}"
+
+        try:
+            validation_result = call_claude(prompt, model=model)
+
+            return jsonify({
+                'status': 'success',
+                'validation_result': validation_result
+            }), 200
+        except Exception as e:
+            return jsonify({
+                'status': 'error',
+                'message': f'Failed to extract actions or policies: {str(e)}'
+            }), 500
+    else:
+        return render_template('instruction_relevant_actions_or_policies.html')
+
 if __name__ == "__main__":
     """ Main Function """
     # host = '0.0.0.0'
