@@ -184,7 +184,7 @@ class UpdateBenefitsPlan(Tool):
                         "hr_director_approval": {"type": "boolean", "description": "HR Director approval (required)"},
                         "finance_officer_approval": {"type": "boolean", "description": "Finance Officer approval (required)"}
                     },
-                    "required": ["plan_id", "hr_director_approval", "finance_officer_approval"]
+                    "required": ["plan_id"]
                 }
             }
         }

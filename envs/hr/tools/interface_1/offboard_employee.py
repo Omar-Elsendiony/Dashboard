@@ -55,7 +55,3 @@ class OffboardEmployee(Tool):
                 }
             }
         }
-EOFd": ["first_name", "last_name", "email", "role"]
-                }
-            }
-        }

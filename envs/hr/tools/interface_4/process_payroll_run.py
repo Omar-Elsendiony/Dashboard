@@ -218,7 +218,7 @@ class ProcessPayrollRun(Tool):
                         "employee_ids": {"type": "array", "items": {"type": "string"}, "description": "Optional explicit employee IDs; defaults to all active"},
                         "finance_officer_approval": {"type": "boolean", "description": "Finance Officer approval (required)"}
                     },
-                    "required": ["pay_period_start", "pay_period_end", "finance_officer_approval"]
+                    "required": ["pay_period_start", "pay_period_end"]
                 }
             }
         }

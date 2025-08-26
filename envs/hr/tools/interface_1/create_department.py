@@ -67,7 +67,7 @@ class CreateDepartment(Tool):
                         "status": {"type": "string", "description": "Status: active, inactive (defaults to active)"},
                         "hr_director_approval": {"type": "boolean", "description": "HR Director approval required (True/False)"}
                     },
-                    "required": ["department_name", "manager_id", "budget", "hr_director_approval"]
+                    "required": ["department_name", "manager_id", "budget"]
                 }
             }
         }
