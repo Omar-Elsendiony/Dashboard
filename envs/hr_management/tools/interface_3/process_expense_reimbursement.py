@@ -42,7 +42,7 @@ class ProcessExpenseReimbursement(Tool):
                         "reimbursement_id": {"type": "string", "description": "ID of the expense reimbursement"},
                         "status": {"type": "string", "description": "New status (approved, rejected, paid)"},
                         "approved_by": {"type": "string", "description": "ID of the user approving the request"},
-                        "payment_date": {"type": "string", "description": "Payment date if status is paid"}
+                        "payment_date": {"type": "string", "description": "Payment date if status is paid (YYYY-MM-DD)"}
                     },
                     "required": ["reimbursement_id", "status"]
                 }

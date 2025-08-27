@@ -1,7 +1,7 @@
 # HR Policy - Performance, Learning & Development
 
 ## Introduction
-This document defines the operational guide for an HR Payroll automation agent. It is designed for single-turn execution: each procedure must be self-contained and completed in one interaction.
+This document defines the operational guide for an HR management automation agent. It is designed for single-turn execution: each procedure must be self-contained and completed in one interaction.
 
 - **Validation first**: All inputs must be validated. If any required element is missing or invalid, the process halts with a clear error message. Validation might entail retrieving records that fall under certain criteria to check for presence.
 - **Halt conditions**: If approvals are missing, compliance not satisfied, or external systems fail, the process halts with explicit instructions.

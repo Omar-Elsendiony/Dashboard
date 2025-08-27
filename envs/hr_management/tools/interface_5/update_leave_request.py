@@ -5,8 +5,7 @@ from tau_bench.envs.tool import Tool
 class UpdateLeaveRequest(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], leave_id: str, start_date: str = None, 
-               end_date: str = None, days_requested: float = None, 
-               reason: str = None) -> str:
+               end_date: str = None, days_requested: float = None) -> str:
         leave_requests = data.get("leave_requests", {})
         
         if leave_id not in leave_requests:
@@ -27,8 +26,6 @@ class UpdateLeaveRequest(Tool):
         if days_requested is not None:
             leave_request["days_requested"] = days_requested
         
-        if reason is not None:
-            leave_request["reason"] = reason
         
         leave_request["updated_at"] = "2025-10-01T00:00:00"
         
@@ -47,9 +44,7 @@ class UpdateLeaveRequest(Tool):
                         "leave_id": {"type": "string", "description": "ID of the leave request to update"},
                         "start_date": {"type": "string", "description": "Updated start date"},
                         "end_date": {"type": "string", "description": "Updated end date"},
-                        "days_requested": {"type": "number", "description": "Updated number of days requested"},
-                        "reason": {"type": "string", "description": "Updated reason for leave"}
-                    },
+                        "days_requested": {"type": "number", "description": "Updated number of days requested"}                    },
                     "required": ["leave_id"]
                 }
             }

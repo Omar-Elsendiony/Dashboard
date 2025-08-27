@@ -54,7 +54,7 @@ class CreateExpenseReimbursement(Tool):
                     "type": "object",
                     "properties": {
                         "employee_id": {"type": "string", "description": "ID of the employee"},
-                        "expense_date": {"type": "string", "description": "Date of the expense"},
+                        "expense_date": {"type": "string", "description": "Date of the expense (YYYY-MM-DD)"},
                         "amount": {"type": "number", "description": "Amount to be reimbursed"},
                         "expense_type": {"type": "string", "description": "Type of expense (travel, meals, equipment, training, other)"},
                         "receipt_file_path": {"type": "string", "description": "Path to receipt file (optional)"}
