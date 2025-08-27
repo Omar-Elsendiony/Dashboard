@@ -19,6 +19,7 @@ from .process_leave_request import ProcessLeaveRequest
 from .insert_document import InsertDocument
 from .adjust_document import AdjustDocument
 from .log_audit_event import LogAuditEvent
+from .authenticate_approval import AuthenticateApproval
 
 ALL_TOOLS_INTERFACE_5 = [
     LookupBenefitsPlans,
@@ -42,4 +43,5 @@ ALL_TOOLS_INTERFACE_5 = [
     InsertDocument,
     AdjustDocument,
     LogAuditEvent,
+    AuthenticateApproval
 ]
