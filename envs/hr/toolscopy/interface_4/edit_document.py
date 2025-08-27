@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class UpdateDocument(Tool):
+class EditDocument(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], document_id: str, document_name: Optional[str] = None,
                confidentiality_level: Optional[str] = None, retention_period_years: Optional[int] = None,

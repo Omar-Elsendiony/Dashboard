@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetPayrollDeductions(Tool):
+class RetrievePayrollDeductions(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], deduction_id: str = None, 
                payroll_id: str = None, deduction_type: str = None) -> str:

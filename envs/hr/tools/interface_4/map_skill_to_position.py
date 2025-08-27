@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
-class AssignSkillToPosition(Tool):
+class MapSkillToPosition(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], position_id: str, skill_id: str) -> str:
         job_positions = data.get("job_positions", {})

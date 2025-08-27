@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class CreateAuditLog(Tool):
+class RegisterAuditEntry(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], user_id: str, action: str, reference_type: str,
                reference_id: str, field_name: Optional[str] = None,

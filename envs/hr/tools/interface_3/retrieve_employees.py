@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetEmployees(Tool):
+class RetrieveEmployees(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], employee_id: Optional[str] = None,
                position_id: Optional[str] = None, employment_status: Optional[str] = None,

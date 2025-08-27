@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetBenefitsPlans(Tool):
+class ListBenefitsPlans(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], plan_id: Optional[str] = None,
                plan_type: Optional[str] = None, status: Optional[str] = None) -> str:

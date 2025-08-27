@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetSkills(Tool):
+class QuerySkills(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], skill_id: str = None, status: str = None) -> str:
         skills = data.get("skills", {})

@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetPerformanceReviews(Tool):
+class QueryPerformanceReviews(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], review_id: Optional[str] = None,
                employee_id: Optional[str] = None, reviewer_id: Optional[str] = None,

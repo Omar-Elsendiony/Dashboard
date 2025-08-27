@@ -3,7 +3,7 @@ from typing import Any, Dict, Optional
 from datetime import datetime
 from tau_bench.envs.tool import Tool
 
-class GetPayrollSummaryReport(Tool):
+class RetrievePayrollSummaryReport(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], pay_period_start: str = None, 
                pay_period_end: str = None, department_id: str = None) -> str:

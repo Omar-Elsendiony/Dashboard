@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetExpenseReimbursements(Tool):
+class ListExpenseReimbursements(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], reimbursement_id: str = None, 
                employee_id: str = None, expense_type: str = None, 

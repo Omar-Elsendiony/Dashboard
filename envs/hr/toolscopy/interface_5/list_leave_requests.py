@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetLeaveRequests(Tool):
+class ListLeaveRequests(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], leave_id: str = None, employee_id: str = None, 
                leave_type: str = None, status: str = None) -> str:

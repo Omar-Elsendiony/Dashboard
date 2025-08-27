@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetTrainingCompletionReport(Tool):
+class QueryTrainingCompletionReport(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], program_id: str = None, 
                department_id: str = None) -> str:

@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetPayrollRecords(Tool):
+class LookupPayrollRecords(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], payroll_id: Optional[str] = None,
                employee_id: Optional[str] = None, pay_period_start: Optional[str] = None,

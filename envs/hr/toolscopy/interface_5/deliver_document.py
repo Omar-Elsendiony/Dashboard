@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class UploadDocument(Tool):
+class DeliverDocument(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], document_name: str, document_type: str,
                file_path: str, uploaded_by: str, confidentiality_level: str,
