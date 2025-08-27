@@ -1,0 +1,770 @@
+{
+  "1": {
+    "id": "1",
+    "code": "USER0001",
+    "action_name": "User Provisioning - Elevated Roles",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "2": {
+    "id": "2",
+    "code": "USER0002",
+    "action_name": "User Provisioning - Elevated Roles",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "3": {
+    "id": "3",
+    "code": "USER0003",
+    "action_name": "User Provisioning - Elevated Roles",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "4": {
+    "id": "4",
+    "code": "USER0004",
+    "action_name": "User Provisioning - Elevated Roles",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "5": {
+    "id": "5",
+    "code": "USER0005",
+    "action_name": "User Provisioning - Elevated Roles",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "6": {
+    "id": "6",
+    "code": "USER0006",
+    "action_name": "User Provisioning - IT Admin Access",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "38",
+    "approver_role": "it_administrator"
+  },
+  "7": {
+    "id": "7",
+    "code": "USER0007",
+    "action_name": "User Provisioning - IT Admin Access",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "39",
+    "approver_role": "it_administrator"
+  },
+  "8": {
+    "id": "8",
+    "code": "USER0008",
+    "action_name": "User Provisioning - IT Admin Access",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "38",
+    "approver_role": "it_administrator"
+  },
+  "9": {
+    "id": "9",
+    "code": "USER0009",
+    "action_name": "User Provisioning - IT Admin Access",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "39",
+    "approver_role": "it_administrator"
+  },
+  "10": {
+    "id": "10",
+    "code": "USER0010",
+    "action_name": "User Provisioning - IT Admin Access",
+    "content": "User provisioning for elevated roles (admin/write to payroll/HRIS) approved following validation of email, role support, and non-duplication checks.",
+    "approved_by": "38",
+    "approver_role": "it_administrator"
+  },
+  "11": {
+    "id": "11",
+    "code": "DEPT0001",
+    "action_name": "Department Creation",
+    "content": "Department creation approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "12": {
+    "id": "12",
+    "code": "DEPT0002",
+    "action_name": "Department Creation",
+    "content": "Department creation approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "13": {
+    "id": "13",
+    "code": "DEPT0003",
+    "action_name": "Department Creation",
+    "content": "Department creation approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "14": {
+    "id": "14",
+    "code": "DEPT0004",
+    "action_name": "Department Creation",
+    "content": "Department creation approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "15": {
+    "id": "15",
+    "code": "DEPT0005",
+    "action_name": "Department Creation",
+    "content": "Department creation approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "16": {
+    "id": "16",
+    "code": "DEPT0006",
+    "action_name": "Department Update",
+    "content": "Department update approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "17": {
+    "id": "17",
+    "code": "DEPT0007",
+    "action_name": "Department Update",
+    "content": "Department update approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "18": {
+    "id": "18",
+    "code": "DEPT0008",
+    "action_name": "Department Update",
+    "content": "Department update approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "19": {
+    "id": "19",
+    "code": "DEPT0009",
+    "action_name": "Department Update",
+    "content": "Department update approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "20": {
+    "id": "20",
+    "code": "DEPT0010",
+    "action_name": "Department Update",
+    "content": "Department update approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "21": {
+    "id": "21",
+    "code": "DEPT0011",
+    "action_name": "Department Manager Change",
+    "content": "Department manager change approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "22": {
+    "id": "22",
+    "code": "DEPT0012",
+    "action_name": "Department Manager Change",
+    "content": "Department manager change approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "23": {
+    "id": "23",
+    "code": "DEPT0013",
+    "action_name": "Department Manager Change",
+    "content": "Department manager change approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "24": {
+    "id": "24",
+    "code": "DEPT0014",
+    "action_name": "Department Manager Change",
+    "content": "Department manager change approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "25": {
+    "id": "25",
+    "code": "DEPT0015",
+    "action_name": "Department Manager Change",
+    "content": "Department manager change approved following validation of manager ID existence and budget format compliance.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "26": {
+    "id": "26",
+    "code": "POS0001",
+    "action_name": "Job Position - Publishable (HR Director)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "27": {
+    "id": "27",
+    "code": "POS0002",
+    "action_name": "Job Position - Publishable (HR Director)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "28": {
+    "id": "28",
+    "code": "POS0003",
+    "action_name": "Job Position - Publishable (HR Director)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "29": {
+    "id": "29",
+    "code": "POS0004",
+    "action_name": "Job Position - Publishable (HR Director)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "30": {
+    "id": "30",
+    "code": "POS0005",
+    "action_name": "Job Position - Publishable (HR Director)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "31": {
+    "id": "31",
+    "code": "POS0006",
+    "action_name": "Job Position - Publishable (Hiring Manager)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "25",
+    "approver_role": "hiring_manager"
+  },
+  "32": {
+    "id": "32",
+    "code": "POS0007",
+    "action_name": "Job Position - Publishable (Hiring Manager)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "26",
+    "approver_role": "hiring_manager"
+  },
+  "33": {
+    "id": "33",
+    "code": "POS0008",
+    "action_name": "Job Position - Publishable (Hiring Manager)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "28",
+    "approver_role": "hiring_manager"
+  },
+  "34": {
+    "id": "34",
+    "code": "POS0009",
+    "action_name": "Job Position - Publishable (Hiring Manager)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "29",
+    "approver_role": "hiring_manager"
+  },
+  "35": {
+    "id": "35",
+    "code": "POS0010",
+    "action_name": "Job Position - Publishable (Hiring Manager)",
+    "content": "Publishable job position creation approved following validation of department ID and salary range consistency.",
+    "approved_by": "30",
+    "approver_role": "hiring_manager"
+  },
+  "36": {
+    "id": "36",
+    "code": "APP0001",
+    "action_name": "Application Stage Management - Recruiter",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "10",
+    "approver_role": "recruiter"
+  },
+  "37": {
+    "id": "37",
+    "code": "APP0002",
+    "action_name": "Application Stage Management - Recruiter",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "11",
+    "approver_role": "recruiter"
+  },
+  "38": {
+    "id": "38",
+    "code": "APP0003",
+    "action_name": "Application Stage Management - Recruiter",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "10",
+    "approver_role": "recruiter"
+  },
+  "39": {
+    "id": "39",
+    "code": "APP0004",
+    "action_name": "Application Stage Management - Recruiter",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "11",
+    "approver_role": "recruiter"
+  },
+  "40": {
+    "id": "40",
+    "code": "APP0005",
+    "action_name": "Application Stage Management - Recruiter",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "10",
+    "approver_role": "recruiter"
+  },
+  "41": {
+    "id": "41",
+    "code": "APP0006",
+    "action_name": "Application Stage Management - Hiring Manager",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "25",
+    "approver_role": "hiring_manager"
+  },
+  "42": {
+    "id": "42",
+    "code": "APP0007",
+    "action_name": "Application Stage Management - Hiring Manager",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "26",
+    "approver_role": "hiring_manager"
+  },
+  "43": {
+    "id": "43",
+    "code": "APP0008",
+    "action_name": "Application Stage Management - Hiring Manager",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "28",
+    "approver_role": "hiring_manager"
+  },
+  "44": {
+    "id": "44",
+    "code": "APP0009",
+    "action_name": "Application Stage Management - Hiring Manager",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "29",
+    "approver_role": "hiring_manager"
+  },
+  "45": {
+    "id": "45",
+    "code": "APP0010",
+    "action_name": "Application Stage Management - Hiring Manager",
+    "content": "Application stage transition approved per workflow following validation of application existence and stage transition validity.",
+    "approved_by": "30",
+    "approver_role": "hiring_manager"
+  },
+  "46": {
+    "id": "46",
+    "code": "APP0011",
+    "action_name": "AI Screening Adverse Action - Compliance Review",
+    "content": "AI screening adverse action approved following compliance review and audit requirements for automated screening decisions.",
+    "approved_by": "42",
+    "approver_role": "compliance_officer"
+  },
+  "47": {
+    "id": "47",
+    "code": "APP0012",
+    "action_name": "AI Screening Adverse Action - Compliance Review",
+    "content": "AI screening adverse action approved following compliance review and audit requirements for automated screening decisions.",
+    "approved_by": "43",
+    "approver_role": "compliance_officer"
+  },
+  "48": {
+    "id": "48",
+    "code": "APP0013",
+    "action_name": "AI Screening Adverse Action - Compliance Review",
+    "content": "AI screening adverse action approved following compliance review and audit requirements for automated screening decisions.",
+    "approved_by": "44",
+    "approver_role": "compliance_officer"
+  },
+  "49": {
+    "id": "49",
+    "code": "APP0014",
+    "action_name": "AI Screening Adverse Action - Compliance Review",
+    "content": "AI screening adverse action approved following compliance review and audit requirements for automated screening decisions.",
+    "approved_by": "45",
+    "approver_role": "compliance_officer"
+  },
+  "50": {
+    "id": "50",
+    "code": "APP0015",
+    "action_name": "AI Screening Adverse Action - Compliance Review",
+    "content": "AI screening adverse action approved following compliance review and audit requirements for automated screening decisions.",
+    "approved_by": "46",
+    "approver_role": "compliance_officer"
+  },
+  "51": {
+    "id": "51",
+    "code": "ONBD0001",
+    "action_name": "Employee Onboarding - HR Manager",
+    "content": "Employee onboarding approved following validation of required fields and completion of all onboarding requirements.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  },
+  "52": {
+    "id": "52",
+    "code": "ONBD0002",
+    "action_name": "Employee Onboarding - HR Manager",
+    "content": "Employee onboarding approved following validation of required fields and completion of all onboarding requirements.",
+    "approved_by": "7",
+    "approver_role": "hr_manager"
+  },
+  "53": {
+    "id": "53",
+    "code": "ONBD0003",
+    "action_name": "Employee Onboarding - HR Manager",
+    "content": "Employee onboarding approved following validation of required fields and completion of all onboarding requirements.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  },
+  "54": {
+    "id": "54",
+    "code": "ONBD0004",
+    "action_name": "Employee Onboarding - HR Manager",
+    "content": "Employee onboarding approved following validation of required fields and completion of all onboarding requirements.",
+    "approved_by": "7",
+    "approver_role": "hr_manager"
+  },
+  "55": {
+    "id": "55",
+    "code": "ONBD0005",
+    "action_name": "Employee Onboarding - HR Manager",
+    "content": "Employee onboarding approved following validation of required fields and completion of all onboarding requirements.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  },
+  "56": {
+    "id": "56",
+    "code": "ONBD0006",
+    "action_name": "Employee Onboarding - Compliance Verification",
+    "content": "Employee onboarding eligibility documents and compliance verification completed following thorough review of documentation.",
+    "approved_by": "42",
+    "approver_role": "compliance_officer"
+  },
+  "57": {
+    "id": "57",
+    "code": "ONBD0007",
+    "action_name": "Employee Onboarding - Compliance Verification",
+    "content": "Employee onboarding eligibility documents and compliance verification completed following thorough review of documentation.",
+    "approved_by": "43",
+    "approver_role": "compliance_officer"
+  },
+  "58": {
+    "id": "58",
+    "code": "ONBD0008",
+    "action_name": "Employee Onboarding - Compliance Verification",
+    "content": "Employee onboarding eligibility documents and compliance verification completed following thorough review of documentation.",
+    "approved_by": "44",
+    "approver_role": "compliance_officer"
+  },
+  "59": {
+    "id": "59",
+    "code": "ONBD0009",
+    "action_name": "Employee Onboarding - Compliance Verification",
+    "content": "Employee onboarding eligibility documents and compliance verification completed following thorough review of documentation.",
+    "approved_by": "45",
+    "approver_role": "compliance_officer"
+  },
+  "60": {
+    "id": "60",
+    "code": "ONBD0010",
+    "action_name": "Employee Onboarding - Compliance Verification",
+    "content": "Employee onboarding eligibility documents and compliance verification completed following thorough review of documentation.",
+    "approved_by": "46",
+    "approver_role": "compliance_officer"
+  },
+  "61": {
+    "id": "61",
+    "code": "OFFBD0001",
+    "action_name": "Employee Offboarding - HR Manager",
+    "content": "Employee offboarding approved following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  },
+  "62": {
+    "id": "62",
+    "code": "OFFBD0002",
+    "action_name": "Employee Offboarding - HR Manager",
+    "content": "Employee offboarding approved following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "7",
+    "approver_role": "hr_manager"
+  },
+  "63": {
+    "id": "63",
+    "code": "OFFBD0003",
+    "action_name": "Employee Offboarding - HR Manager",
+    "content": "Employee offboarding approved following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  },
+  "64": {
+    "id": "64",
+    "code": "OFFBD0004",
+    "action_name": "Employee Offboarding - HR Manager",
+    "content": "Employee offboarding approved following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "7",
+    "approver_role": "hr_manager"
+  },
+  "65": {
+    "id": "65",
+    "code": "OFFBD0005",
+    "action_name": "Employee Offboarding - HR Manager",
+    "content": "Employee offboarding approved following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  },
+  "66": {
+    "id": "66",
+    "code": "OFFBD0006",
+    "action_name": "Employee Offboarding - Compliance Officer",
+    "content": "Employee offboarding compliance review completed following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "42",
+    "approver_role": "compliance_officer"
+  },
+  "67": {
+    "id": "67",
+    "code": "OFFBD0007",
+    "action_name": "Employee Offboarding - Compliance Officer",
+    "content": "Employee offboarding compliance review completed following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "43",
+    "approver_role": "compliance_officer"
+  },
+  "68": {
+    "id": "68",
+    "code": "OFFBD0008",
+    "action_name": "Employee Offboarding - Compliance Officer",
+    "content": "Employee offboarding compliance review completed following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "44",
+    "approver_role": "compliance_officer"
+  },
+  "69": {
+    "id": "69",
+    "code": "OFFBD0009",
+    "action_name": "Employee Offboarding - Compliance Officer",
+    "content": "Employee offboarding compliance review completed following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "45",
+    "approver_role": "compliance_officer"
+  },
+  "70": {
+    "id": "70",
+    "code": "OFFBD0010",
+    "action_name": "Employee Offboarding - Compliance Officer",
+    "content": "Employee offboarding compliance review completed following validation of no pending payroll, benefits, or training obligations.",
+    "approved_by": "46",
+    "approver_role": "compliance_officer"
+  },
+  "71": {
+    "id": "71",
+    "code": "TIME0001",
+    "action_name": "Timesheet Approval - Payroll Admin",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "18",
+    "approver_role": "payroll_administrator"
+  },
+  "72": {
+    "id": "72",
+    "code": "TIME0002",
+    "action_name": "Timesheet Approval - Payroll Admin",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "20",
+    "approver_role": "payroll_administrator"
+  },
+  "73": {
+    "id": "73",
+    "code": "TIME0003",
+    "action_name": "Timesheet Approval - Payroll Admin",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "21",
+    "approver_role": "payroll_administrator"
+  },
+  "74": {
+    "id": "74",
+    "code": "TIME0004",
+    "action_name": "Timesheet Approval - Payroll Admin",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "22",
+    "approver_role": "payroll_administrator"
+  },
+  "75": {
+    "id": "75",
+    "code": "TIME0005",
+    "action_name": "Timesheet Approval - Payroll Admin",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "23",
+    "approver_role": "payroll_administrator"
+  },
+  "76": {
+    "id": "76",
+    "code": "TIME0006",
+    "action_name": "Timesheet Approval - Hiring Manager",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "25",
+    "approver_role": "hiring_manager"
+  },
+  "77": {
+    "id": "77",
+    "code": "TIME0007",
+    "action_name": "Timesheet Approval - Hiring Manager",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "26",
+    "approver_role": "hiring_manager"
+  },
+  "78": {
+    "id": "78",
+    "code": "TIME0008",
+    "action_name": "Timesheet Approval - Hiring Manager",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "28",
+    "approver_role": "hiring_manager"
+  },
+  "79": {
+    "id": "79",
+    "code": "TIME0009",
+    "action_name": "Timesheet Approval - Hiring Manager",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "29",
+    "approver_role": "hiring_manager"
+  },
+  "80": {
+    "id": "80",
+    "code": "TIME0010",
+    "action_name": "Timesheet Approval - Hiring Manager",
+    "content": "Timesheet entries approved by authorized manager following validation of work dates and overlap checks.",
+    "approved_by": "30",
+    "approver_role": "hiring_manager"
+  },
+  "81": {
+    "id": "81",
+    "code": "PAY0001",
+    "action_name": "Payroll Run Processing",
+    "content": "Payroll run approved following validation of required inputs (hours, deductions) and reconciliation procedures.",
+    "approved_by": "33",
+    "approver_role": "finance_officer"
+  },
+  "82": {
+    "id": "82",
+    "code": "PAY0002",
+    "action_name": "Payroll Run Processing",
+    "content": "Payroll run approved following validation of required inputs (hours, deductions) and reconciliation procedures.",
+    "approved_by": "34",
+    "approver_role": "finance_officer"
+  },
+  "83": {
+    "id": "83",
+    "code": "PAY0003",
+    "action_name": "Payroll Run Processing",
+    "content": "Payroll run approved following validation of required inputs (hours, deductions) and reconciliation procedures.",
+    "approved_by": "35",
+    "approver_role": "finance_officer"
+  },
+  "84": {
+    "id": "84",
+    "code": "PAY0004",
+    "action_name": "Payroll Run Processing",
+    "content": "Payroll run approved following validation of required inputs (hours, deductions) and reconciliation procedures.",
+    "approved_by": "36",
+    "approver_role": "finance_officer"
+  },
+  "85": {
+    "id": "85",
+    "code": "PAY0005",
+    "action_name": "Payroll Run Processing",
+    "content": "Payroll run approved following validation of required inputs (hours, deductions) and reconciliation procedures.",
+    "approved_by": "37",
+    "approver_role": "finance_officer"
+  },
+  "86": {
+    "id": "86",
+    "code": "PAY0006",
+    "action_name": "Payroll Correction",
+    "content": "Payroll correction approved following validation of payroll record existence and correction details review.",
+    "approved_by": "33",
+    "approver_role": "finance_officer"
+  },
+  "87": {
+    "id": "87",
+    "code": "PAY0007",
+    "action_name": "Payroll Correction",
+    "content": "Payroll correction approved following validation of payroll record existence and correction details review.",
+    "approved_by": "34",
+    "approver_role": "finance_officer"
+  },
+  "88": {
+    "id": "88",
+    "code": "PAY0008",
+    "action_name": "Payroll Correction",
+    "content": "Payroll correction approved following validation of payroll record existence and correction details review.",
+    "approved_by": "35",
+    "approver_role": "finance_officer"
+  },
+    "89": {
+    "id": "89",
+    "code": "BEN0001",
+    "action_name": "Benefits Plan Creation - HR Director",
+    "content": "Benefits plan creation approved following validation of plan type validity and date consistency checks.",
+    "approved_by": "1",
+    "approver_role": "hr_director"
+  },
+  "90": {
+    "id": "90",
+    "code": "BEN0002",
+    "action_name": "Benefits Plan Creation - Finance Officer",
+    "content": "Benefits plan creation approved following validation of plan type validity and date consistency checks.",
+    "approved_by": "33",
+    "approver_role": "finance_officer"
+  },
+  "91": {
+    "id": "91",
+    "code": "PERF0001",
+    "action_name": "Performance Review Cycle Final Approval",
+    "content": "Performance review cycle final approval completed following validation of reviewer and employee validity and review period overlap checks.",
+    "approved_by": "7",
+    "approver_role": "hr_manager"
+  },
+  "92": {
+    "id": "92",
+    "code": "BEN0001",
+    "action_name": "Benefits Plan Creation - HR Director",
+    "content": "Benefits plan creation approved following validation of plan type validity and date consistency checks.",
+    "approved_by": "2",
+    "approver_role": "hr_director"
+  },
+  "93": {
+    "id": "93",
+    "code": "BEN0002",
+    "action_name": "Benefits Plan Creation - Finance Officer",
+    "content": "Benefits plan creation approved following validation of plan type validity and date consistency checks.",
+    "approved_by": "34",
+    "approver_role": "finance_officer"
+  },
+  "94": {
+    "id": "94",
+    "code": "PERF0001",
+    "action_name": "Performance Review Cycle Final Approval",
+    "content": "Performance review cycle final approval completed following validation of reviewer and employee validity and review period overlap checks.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  },
+  "95": {
+    "id": "95",
+    "code": "PERF0001",
+    "action_name": "Performance Review Cycle Final Approval",
+    "content": "Performance review cycle final approval completed following validation of reviewer and employee validity and review period overlap checks.",
+    "approved_by": "7",
+    "approver_role": "hr_manager"
+  },
+  "96": {
+    "id": "96",
+    "code": "PERF0001",
+    "action_name": "Performance Review Cycle Final Approval",
+    "content": "Performance review cycle final approval completed following validation of reviewer and employee validity and review period overlap checks.",
+    "approved_by": "6",
+    "approver_role": "hr_manager"
+  }
+}
