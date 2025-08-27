@@ -2,901 +2,901 @@
   "1": {
     "department_id": "1",
     "department_name": "Engineering",
-    "manager_id": "43",
-    "budget": 550714.4206545653,
+    "manager_id": null,
+    "budget": 4771808.47,
     "status": "active",
-    "created_at": "2022-01-31T08:36:49",
-    "updated_at": "2024-12-29T21:15:38"
+    "created_at": "2022-10-01T03:53:36",
+    "updated_at": "2022-12-03T19:12:31"
   },
   "2": {
     "department_id": "2",
     "department_name": "Marketing",
-    "manager_id": "100",
-    "budget": 3392354.245384704,
+    "manager_id": "51",
+    "budget": 439492.33,
     "status": "active",
-    "created_at": "2023-06-19T19:31:12",
-    "updated_at": "2024-07-30T19:42:54"
+    "created_at": "2022-07-14T01:37:16",
+    "updated_at": "2023-11-05T07:11:03"
   },
   "3": {
     "department_id": "3",
     "department_name": "Sales",
     "manager_id": null,
-    "budget": 432790.97144274734,
+    "budget": 775555.55,
     "status": "active",
-    "created_at": "2020-07-01T04:30:43",
-    "updated_at": "2022-08-17T11:42:51"
+    "created_at": "2022-04-11T06:53:22",
+    "updated_at": "2025-02-05T01:19:22"
   },
   "4": {
     "department_id": "4",
     "department_name": "Human Resources",
-    "manager_id": "54",
-    "budget": 1600874.4969685753,
+    "manager_id": null,
+    "budget": 3259629.27,
     "status": "active",
-    "created_at": "2020-06-30T16:40:33",
-    "updated_at": "2025-02-20T05:53:18"
+    "created_at": "2023-01-30T13:00:01",
+    "updated_at": "2024-08-27T18:49:59"
   },
   "5": {
     "department_id": "5",
     "department_name": "Finance",
-    "manager_id": null,
-    "budget": 817305.2678862761,
+    "manager_id": "77",
+    "budget": 964494.19,
     "status": "active",
-    "created_at": "2022-05-22T06:51:05",
-    "updated_at": "2023-03-18T07:54:42"
+    "created_at": "2020-03-19T20:15:21",
+    "updated_at": "2020-08-16T17:09:53"
   },
   "6": {
     "department_id": "6",
     "department_name": "Operations",
-    "manager_id": "64",
-    "budget": 601019.6598820128,
+    "manager_id": null,
+    "budget": 2163170.85,
     "status": "active",
-    "created_at": "2024-05-08T02:19:20",
-    "updated_at": "2025-06-22T02:57:53"
+    "created_at": "2021-05-17T11:58:54",
+    "updated_at": "2023-07-30T14:27:46"
   },
   "7": {
     "department_id": "7",
     "department_name": "Information Technology",
-    "manager_id": "91",
-    "budget": 3742661.545208258,
+    "manager_id": "98",
+    "budget": 2755027.61,
     "status": "active",
-    "created_at": "2021-06-18T04:07:01",
-    "updated_at": "2022-07-25T05:28:39"
+    "created_at": "2023-09-17T21:47:25",
+    "updated_at": "2024-02-13T20:43:15"
   },
   "8": {
     "department_id": "8",
     "department_name": "Customer Service",
     "manager_id": null,
-    "budget": 1996398.6880122493,
+    "budget": 2549874.1,
     "status": "active",
-    "created_at": "2021-09-16T02:03:38",
-    "updated_at": "2021-10-15T13:50:02"
+    "created_at": "2024-04-25T20:13:43",
+    "updated_at": "2025-03-23T05:06:47"
   },
   "9": {
     "department_id": "9",
     "department_name": "Research and Development",
-    "manager_id": "10",
-    "budget": 2927020.5585879157,
+    "manager_id": "96",
+    "budget": 1262662.33,
     "status": "active",
-    "created_at": "2020-02-06T17:43:15",
-    "updated_at": "2022-09-09T06:35:08"
+    "created_at": "2022-09-08T02:03:39",
+    "updated_at": "2025-02-06T07:33:52"
   },
   "10": {
     "department_id": "10",
     "department_name": "Quality Assurance",
-    "manager_id": "69",
-    "budget": 3192006.1468164455,
+    "manager_id": "37",
+    "budget": 4569299.76,
     "status": "active",
-    "created_at": "2023-08-23T13:00:23",
-    "updated_at": "2023-10-03T09:41:29"
+    "created_at": "2024-03-19T08:03:18",
+    "updated_at": "2025-03-28T16:36:40"
   },
   "11": {
     "department_id": "11",
     "department_name": "Legal",
-    "manager_id": "92",
-    "budget": 2714736.005912972,
+    "manager_id": null,
+    "budget": 2659621.0,
     "status": "active",
-    "created_at": "2022-12-24T17:18:08",
-    "updated_at": "2024-04-03T16:21:56"
+    "created_at": "2021-02-10T12:54:57",
+    "updated_at": "2021-11-18T09:05:11"
   },
   "12": {
     "department_id": "12",
     "department_name": "Administration",
-    "manager_id": "38",
-    "budget": 2957096.807235882,
+    "manager_id": null,
+    "budget": 1959426.14,
     "status": "active",
-    "created_at": "2021-10-09T21:47:50",
-    "updated_at": "2023-01-10T13:55:23"
+    "created_at": "2021-01-03T08:19:52",
+    "updated_at": "2024-05-14T18:19:27"
   },
   "13": {
     "department_id": "13",
     "department_name": "Business Development",
-    "manager_id": "49",
-    "budget": 4556423.759559073,
+    "manager_id": null,
+    "budget": 1523292.6,
     "status": "active",
-    "created_at": "2023-09-20T06:42:27",
-    "updated_at": "2024-08-11T01:55:58"
+    "created_at": "2021-05-25T06:37:32",
+    "updated_at": "2022-01-03T14:02:50"
   },
   "14": {
     "department_id": "14",
     "department_name": "Product Management",
-    "manager_id": "28",
-    "budget": 3209278.146185059,
+    "manager_id": "85",
+    "budget": 4788704.07,
     "status": "active",
-    "created_at": "2021-12-16T16:06:25",
-    "updated_at": "2024-06-03T02:49:48"
+    "created_at": "2022-10-24T00:34:21",
+    "updated_at": "2025-03-03T21:11:59"
   },
   "15": {
     "department_id": "15",
     "department_name": "Data Science",
-    "manager_id": "33",
-    "budget": 4388010.919048404,
+    "manager_id": null,
+    "budget": 2139775.24,
     "status": "active",
-    "created_at": "2024-03-09T16:24:30",
-    "updated_at": "2024-08-05T11:25:17"
+    "created_at": "2021-11-27T13:45:57",
+    "updated_at": "2022-11-19T21:12:15"
   },
   "16": {
     "department_id": "16",
     "department_name": "Design",
-    "manager_id": null,
-    "budget": 2172394.773932822,
+    "manager_id": "50",
+    "budget": 4613205.59,
     "status": "active",
-    "created_at": "2021-12-27T09:24:13",
-    "updated_at": "2024-06-22T02:11:12"
+    "created_at": "2023-02-03T11:30:18",
+    "updated_at": "2023-12-29T14:19:55"
   },
   "17": {
     "department_id": "17",
     "department_name": "Security",
-    "manager_id": "31",
-    "budget": 4830822.368711986,
+    "manager_id": "61",
+    "budget": 692707.49,
     "status": "active",
-    "created_at": "2024-04-29T01:25:46",
-    "updated_at": "2025-03-25T22:52:53"
+    "created_at": "2023-03-11T11:53:50",
+    "updated_at": "2025-05-28T17:35:11"
   },
   "18": {
     "department_id": "18",
     "department_name": "Procurement",
-    "manager_id": "93",
-    "budget": 1277470.8173443347,
-    "status": "active",
-    "created_at": "2021-02-21T09:24:42",
-    "updated_at": "2021-07-18T14:42:14"
+    "manager_id": null,
+    "budget": 1566370.44,
+    "status": "inactive",
+    "created_at": "2020-04-05T10:00:35",
+    "updated_at": "2024-02-28T17:57:00"
   },
   "19": {
     "department_id": "19",
     "department_name": "Training and Development",
-    "manager_id": "57",
-    "budget": 1004159.6567740324,
+    "manager_id": null,
+    "budget": 733774.42,
     "status": "active",
-    "created_at": "2024-04-30T23:52:07",
-    "updated_at": "2025-08-11T14:33:27"
+    "created_at": "2021-09-19T14:24:56",
+    "updated_at": "2024-01-24T17:54:20"
   },
   "20": {
     "department_id": "20",
     "department_name": "Public Relations",
     "manager_id": null,
-    "budget": 194792.32840050742,
+    "budget": 2492662.47,
     "status": "active",
-    "created_at": "2021-05-16T08:51:47",
-    "updated_at": "2022-04-16T03:12:59"
+    "created_at": "2021-11-03T15:28:55",
+    "updated_at": "2024-08-16T20:32:30"
   },
   "21": {
     "department_id": "21",
     "department_name": "Compliance",
-    "manager_id": null,
-    "budget": 2319484.535267324,
+    "manager_id": "3",
+    "budget": 3902014.75,
     "status": "active",
-    "created_at": "2023-11-13T08:38:34",
-    "updated_at": "2025-01-24T04:14:52"
+    "created_at": "2021-08-09T12:07:45",
+    "updated_at": "2025-08-16T01:00:06"
   },
   "22": {
     "department_id": "22",
     "department_name": "Strategy",
-    "manager_id": null,
-    "budget": 3426066.682086951,
+    "manager_id": "68",
+    "budget": 202917.08,
     "status": "active",
-    "created_at": "2020-04-21T16:09:45",
-    "updated_at": "2023-11-16T10:55:36"
+    "created_at": "2021-03-14T16:25:13",
+    "updated_at": "2022-11-20T14:20:56"
   },
   "23": {
     "department_id": "23",
     "department_name": "Analytics",
-    "manager_id": "40",
-    "budget": 2919322.389118058,
+    "manager_id": null,
+    "budget": 4722929.12,
     "status": "active",
-    "created_at": "2021-05-04T11:50:39",
-    "updated_at": "2023-05-21T06:04:51"
+    "created_at": "2020-10-06T08:28:58",
+    "updated_at": "2023-08-06T09:57:10"
   },
   "24": {
     "department_id": "24",
     "department_name": "Support",
-    "manager_id": "70",
-    "budget": 1354217.8454433177,
+    "manager_id": "72",
+    "budget": 3739293.33,
     "status": "active",
-    "created_at": "2023-01-22T21:25:50",
-    "updated_at": "2024-09-01T15:11:10"
+    "created_at": "2023-06-21T09:49:05",
+    "updated_at": "2025-07-17T11:31:09"
   },
   "25": {
     "department_id": "25",
     "department_name": "Manufacturing",
     "manager_id": null,
-    "budget": 647031.6077234546,
-    "status": "inactive",
-    "created_at": "2020-02-11T20:14:35",
-    "updated_at": "2025-08-19T13:25:54"
+    "budget": 451257.74,
+    "status": "active",
+    "created_at": "2021-12-08T07:56:06",
+    "updated_at": "2025-03-14T02:05:21"
   },
   "26": {
     "department_id": "26",
     "department_name": "Supply Chain",
-    "manager_id": null,
-    "budget": 845863.3219158119,
+    "manager_id": "64",
+    "budget": 4571288.24,
     "status": "active",
-    "created_at": "2020-11-10T22:18:55",
-    "updated_at": "2023-04-13T18:06:59"
+    "created_at": "2022-07-19T16:13:40",
+    "updated_at": "2023-04-04T21:53:55"
   },
   "27": {
     "department_id": "27",
     "department_name": "Logistics",
-    "manager_id": "78",
-    "budget": 3944243.7163505675,
+    "manager_id": null,
+    "budget": 2783242.53,
     "status": "active",
-    "created_at": "2021-09-09T16:49:00",
-    "updated_at": "2023-08-01T07:21:57"
+    "created_at": "2020-04-14T23:59:37",
+    "updated_at": "2023-01-17T00:38:33"
   },
   "28": {
     "department_id": "28",
     "department_name": "Facilities",
     "manager_id": null,
-    "budget": 3582096.907975955,
+    "budget": 4889048.2,
     "status": "active",
-    "created_at": "2023-09-28T18:08:51",
-    "updated_at": "2025-06-23T04:09:12"
+    "created_at": "2023-04-25T03:30:05",
+    "updated_at": "2024-07-24T00:40:21"
   },
   "29": {
     "department_id": "29",
     "department_name": "Risk Management",
-    "manager_id": null,
-    "budget": 3164062.455129358,
-    "status": "inactive",
-    "created_at": "2022-01-01T17:06:47",
-    "updated_at": "2023-11-18T20:56:09"
+    "manager_id": "33",
+    "budget": 2411262.94,
+    "status": "active",
+    "created_at": "2022-11-06T05:49:15",
+    "updated_at": "2023-04-03T14:56:48"
   },
   "30": {
     "department_id": "30",
     "department_name": "Audit",
-    "manager_id": "51",
-    "budget": 1652295.9670789524,
+    "manager_id": "46",
+    "budget": 4254088.33,
     "status": "active",
-    "created_at": "2022-07-16T15:06:42",
-    "updated_at": "2024-07-03T15:02:36"
+    "created_at": "2023-01-29T14:37:50",
+    "updated_at": "2024-03-04T21:30:26"
   },
   "31": {
     "department_id": "31",
     "department_name": "Communications",
     "manager_id": null,
-    "budget": 2487015.7451259457,
+    "budget": 171934.78,
     "status": "active",
-    "created_at": "2020-01-23T17:08:09",
-    "updated_at": "2022-06-22T12:45:07"
+    "created_at": "2022-06-29T04:47:29",
+    "updated_at": "2023-10-30T11:21:37"
   },
   "32": {
     "department_id": "32",
     "department_name": "Talent Acquisition",
     "manager_id": null,
-    "budget": 3104853.1012256495,
-    "status": "inactive",
-    "created_at": "2024-01-02T09:58:04",
-    "updated_at": "2025-04-25T19:46:51"
+    "budget": 1995702.36,
+    "status": "active",
+    "created_at": "2020-08-20T17:18:01",
+    "updated_at": "2022-06-22T03:23:35"
   },
   "33": {
     "department_id": "33",
     "department_name": "Employee Relations",
-    "manager_id": "11",
-    "budget": 1476020.4284713704,
+    "manager_id": "79",
+    "budget": 4820087.89,
     "status": "active",
-    "created_at": "2023-04-06T16:52:46",
-    "updated_at": "2024-08-19T16:16:41"
+    "created_at": "2022-05-27T19:17:47",
+    "updated_at": "2025-02-16T01:42:51"
   },
   "34": {
     "department_id": "34",
     "department_name": "Compensation and Benefits",
-    "manager_id": null,
-    "budget": 364527.46131068224,
+    "manager_id": "4",
+    "budget": 4787030.49,
     "status": "active",
-    "created_at": "2022-06-15T02:28:00",
-    "updated_at": "2024-11-19T23:42:04"
+    "created_at": "2024-03-23T01:02:50",
+    "updated_at": "2025-07-14T13:10:29"
   },
   "35": {
     "department_id": "35",
     "department_name": "Digital Marketing",
     "manager_id": null,
-    "budget": 869882.5632450948,
+    "budget": 1906266.03,
     "status": "active",
-    "created_at": "2023-02-19T12:31:24",
-    "updated_at": "2024-06-04T02:14:08"
+    "created_at": "2022-08-21T04:12:46",
+    "updated_at": "2024-06-05T20:10:04"
   },
   "36": {
     "department_id": "36",
     "department_name": "Content Marketing",
-    "manager_id": "15",
-    "budget": 2690883.1620292375,
+    "manager_id": "59",
+    "budget": 3027148.53,
     "status": "active",
-    "created_at": "2020-09-20T16:06:34",
-    "updated_at": "2025-07-21T09:52:52"
+    "created_at": "2021-05-10T05:50:52",
+    "updated_at": "2022-07-31T12:48:52"
   },
   "37": {
     "department_id": "37",
     "department_name": "Social Media",
     "manager_id": null,
-    "budget": 1838333.3574768796,
+    "budget": 2871535.79,
     "status": "active",
-    "created_at": "2021-04-07T16:27:37",
-    "updated_at": "2024-07-25T17:09:37"
+    "created_at": "2023-10-07T13:10:59",
+    "updated_at": "2024-07-02T16:50:58"
   },
   "38": {
     "department_id": "38",
     "department_name": "Brand Management",
-    "manager_id": null,
-    "budget": 2038196.4650082183,
+    "manager_id": "41",
+    "budget": 2906676.71,
     "status": "active",
-    "created_at": "2021-05-09T11:46:43",
-    "updated_at": "2025-01-31T18:07:51"
+    "created_at": "2020-11-05T11:31:29",
+    "updated_at": "2020-11-19T17:28:08"
   },
   "39": {
     "department_id": "39",
     "department_name": "Event Management",
-    "manager_id": "45",
-    "budget": 1318284.9716271379,
+    "manager_id": "35",
+    "budget": 2450124.81,
     "status": "active",
-    "created_at": "2022-06-23T02:23:29",
-    "updated_at": "2024-07-16T18:11:00"
+    "created_at": "2020-01-29T17:55:02",
+    "updated_at": "2021-08-29T23:26:29"
   },
   "40": {
     "department_id": "40",
     "department_name": "Technical Writing",
-    "manager_id": "53",
-    "budget": 3830074.621916094,
+    "manager_id": "88",
+    "budget": 1121309.12,
     "status": "active",
-    "created_at": "2023-04-24T20:20:38",
-    "updated_at": "2025-06-12T18:00:20"
+    "created_at": "2024-04-01T00:13:50",
+    "updated_at": "2025-02-19T14:32:52"
   },
   "41": {
     "department_id": "41",
     "department_name": "User Experience",
     "manager_id": null,
-    "budget": 2646511.540225855,
+    "budget": 4659641.86,
     "status": "active",
-    "created_at": "2021-04-12T14:56:14",
-    "updated_at": "2022-04-26T16:55:49"
+    "created_at": "2023-08-23T05:01:49",
+    "updated_at": "2024-08-06T21:02:38"
   },
   "42": {
     "department_id": "42",
     "department_name": "Software Engineering",
-    "manager_id": "55",
-    "budget": 4834329.037637638,
+    "manager_id": "21",
+    "budget": 1532160.88,
     "status": "active",
-    "created_at": "2020-03-11T00:00:22",
-    "updated_at": "2023-04-16T11:21:40"
+    "created_at": "2022-04-10T00:31:48",
+    "updated_at": "2025-08-25T13:28:07"
   },
   "43": {
     "department_id": "43",
     "department_name": "DevOps",
-    "manager_id": "90",
-    "budget": 389536.1647236798,
+    "manager_id": "76",
+    "budget": 1542533.55,
     "status": "active",
-    "created_at": "2023-04-05T10:02:28",
-    "updated_at": "2024-12-12T23:06:52"
+    "created_at": "2020-06-17T00:44:31",
+    "updated_at": "2024-03-07T02:13:18"
   },
   "44": {
     "department_id": "44",
     "department_name": "Infrastructure",
-    "manager_id": null,
-    "budget": 3786022.746487213,
+    "manager_id": "24",
+    "budget": 489061.12,
     "status": "active",
-    "created_at": "2023-01-12T10:11:26",
-    "updated_at": "2024-04-26T23:06:38"
+    "created_at": "2023-09-20T11:47:59",
+    "updated_at": "2025-06-05T20:04:52"
   },
   "45": {
     "department_id": "45",
     "department_name": "Database Administration",
-    "manager_id": null,
-    "budget": 1424874.6896411653,
+    "manager_id": "32",
+    "budget": 1515823.7,
     "status": "active",
-    "created_at": "2020-10-18T04:20:52",
-    "updated_at": "2021-02-13T05:58:36"
+    "created_at": "2022-10-06T15:07:38",
+    "updated_at": "2023-06-30T11:08:16"
   },
   "46": {
     "department_id": "46",
     "department_name": "Network Administration",
-    "manager_id": null,
-    "budget": 600890.2160172754,
+    "manager_id": "81",
+    "budget": 1964468.2,
     "status": "active",
-    "created_at": "2024-01-16T08:34:29",
-    "updated_at": "2024-04-06T08:34:03"
+    "created_at": "2020-11-24T19:57:44",
+    "updated_at": "2022-05-14T04:48:13"
   },
   "47": {
     "department_id": "47",
     "department_name": "Help Desk",
     "manager_id": null,
-    "budget": 1275880.0946572127,
+    "budget": 1889993.54,
     "status": "active",
-    "created_at": "2024-05-14T20:18:33",
-    "updated_at": "2025-06-04T19:51:26"
+    "created_at": "2022-02-19T19:31:51",
+    "updated_at": "2022-06-04T00:56:48"
   },
   "48": {
     "department_id": "48",
     "department_name": "Project Management",
-    "manager_id": "59",
-    "budget": 4375738.529028657,
+    "manager_id": "19",
+    "budget": 984902.24,
     "status": "active",
-    "created_at": "2022-08-08T05:45:27",
-    "updated_at": "2025-05-07T00:02:29"
+    "created_at": "2024-04-15T05:31:11",
+    "updated_at": "2024-10-04T21:29:48"
   },
   "49": {
     "department_id": "49",
     "department_name": "Business Analysis",
-    "manager_id": null,
-    "budget": 3864936.8779496537,
+    "manager_id": "93",
+    "budget": 4602366.37,
     "status": "active",
-    "created_at": "2023-11-26T11:35:47",
-    "updated_at": "2024-11-22T23:12:52"
+    "created_at": "2022-05-23T18:12:53",
+    "updated_at": "2024-01-20T03:41:28"
   },
   "50": {
     "department_id": "50",
     "department_name": "Financial Planning",
-    "manager_id": null,
-    "budget": 3969583.0933404844,
+    "manager_id": "29",
+    "budget": 4263653.79,
     "status": "active",
-    "created_at": "2021-12-03T17:44:45",
-    "updated_at": "2025-04-23T05:21:44"
+    "created_at": "2020-05-31T10:02:56",
+    "updated_at": "2020-06-28T00:31:05"
   },
   "51": {
     "department_id": "51",
     "department_name": "Accounting",
-    "manager_id": "66",
-    "budget": 492394.69263013685,
+    "manager_id": "63",
+    "budget": 3395001.36,
     "status": "active",
-    "created_at": "2022-06-29T14:42:14",
-    "updated_at": "2023-02-24T04:20:05"
+    "created_at": "2020-04-03T01:53:27",
+    "updated_at": "2020-09-24T12:01:11"
   },
   "52": {
     "department_id": "52",
     "department_name": "Payroll",
-    "manager_id": "71",
-    "budget": 1165222.1003539558,
+    "manager_id": "70",
+    "budget": 106816.87,
     "status": "active",
-    "created_at": "2021-04-07T01:07:24",
-    "updated_at": "2022-03-15T07:15:32"
+    "created_at": "2023-06-18T04:08:17",
+    "updated_at": "2025-02-06T22:38:33"
   },
   "53": {
     "department_id": "53",
     "department_name": "Treasury",
     "manager_id": null,
-    "budget": 3899565.64262732,
+    "budget": 1365635.77,
     "status": "active",
-    "created_at": "2020-02-28T05:17:30",
-    "updated_at": "2024-06-18T01:12:37"
+    "created_at": "2020-11-07T06:54:04",
+    "updated_at": "2022-04-02T19:52:26"
   },
   "54": {
     "department_id": "54",
     "department_name": "Tax",
     "manager_id": null,
-    "budget": 596819.034083018,
-    "status": "inactive",
-    "created_at": "2020-08-27T12:58:27",
-    "updated_at": "2025-03-13T05:54:20"
+    "budget": 4290571.62,
+    "status": "active",
+    "created_at": "2024-02-07T21:02:45",
+    "updated_at": "2025-01-25T16:11:00"
   },
   "55": {
     "department_id": "55",
     "department_name": "Investor Relations",
     "manager_id": null,
-    "budget": 3115054.2004779554,
-    "status": "active",
-    "created_at": "2023-06-05T15:09:40",
-    "updated_at": "2023-09-04T03:14:16"
+    "budget": 389996.4,
+    "status": "inactive",
+    "created_at": "2023-04-05T05:00:14",
+    "updated_at": "2025-01-15T20:25:47"
   },
   "56": {
     "department_id": "56",
     "department_name": "Internal Audit",
-    "manager_id": null,
-    "budget": 4071862.1717858706,
+    "manager_id": "12",
+    "budget": 1051911.14,
     "status": "active",
-    "created_at": "2022-07-30T18:54:45",
-    "updated_at": "2022-09-29T10:12:19"
+    "created_at": "2020-06-21T14:11:27",
+    "updated_at": "2025-01-04T01:00:05"
   },
   "57": {
     "department_id": "57",
     "department_name": "External Relations",
-    "manager_id": null,
-    "budget": 4057635.2566876058,
-    "status": "inactive",
-    "created_at": "2020-05-04T16:46:55",
-    "updated_at": "2020-05-28T10:05:29"
+    "manager_id": "55",
+    "budget": 2734518.92,
+    "status": "active",
+    "created_at": "2022-08-21T14:36:28",
+    "updated_at": "2025-06-30T19:54:29"
   },
   "58": {
     "department_id": "58",
     "department_name": "Government Affairs",
-    "manager_id": null,
-    "budget": 3552000.3323959233,
+    "manager_id": "82",
+    "budget": 1650414.98,
     "status": "active",
-    "created_at": "2022-12-29T00:19:22",
-    "updated_at": "2023-05-13T15:08:24"
+    "created_at": "2023-11-12T03:04:16",
+    "updated_at": "2025-05-20T09:04:38"
   },
   "59": {
     "department_id": "59",
     "department_name": "Environmental Health and Safety",
-    "manager_id": "24",
-    "budget": 1212020.0137298203,
+    "manager_id": null,
+    "budget": 4915240.77,
     "status": "active",
-    "created_at": "2023-12-29T20:12:03",
-    "updated_at": "2024-04-19T08:56:00"
+    "created_at": "2020-12-12T12:47:16",
+    "updated_at": "2025-03-21T01:51:19"
   },
   "60": {
     "department_id": "60",
     "department_name": "Sustainability",
     "manager_id": null,
-    "budget": 3997568.328466597,
+    "budget": 3002764.29,
     "status": "active",
-    "created_at": "2020-08-12T21:21:01",
-    "updated_at": "2025-07-23T12:19:40"
+    "created_at": "2020-10-13T06:37:30",
+    "updated_at": "2024-04-28T22:33:47"
   },
   "61": {
     "department_id": "61",
     "department_name": "Corporate Social Responsibility",
     "manager_id": null,
-    "budget": 3869290.158429233,
+    "budget": 690618.29,
     "status": "active",
-    "created_at": "2023-06-06T16:57:31",
-    "updated_at": "2025-01-10T14:43:14"
+    "created_at": "2023-12-26T21:13:03",
+    "updated_at": "2024-07-20T00:40:09"
   },
   "62": {
     "department_id": "62",
     "department_name": "Innovation",
     "manager_id": null,
-    "budget": 2732718.1945763486,
+    "budget": 347432.52,
     "status": "active",
-    "created_at": "2021-07-13T22:09:36",
-    "updated_at": "2023-11-30T17:52:54"
+    "created_at": "2021-05-17T17:17:44",
+    "updated_at": "2022-05-15T00:56:22"
   },
   "63": {
     "department_id": "63",
     "department_name": "Partnerships",
-    "manager_id": null,
-    "budget": 3726996.807297085,
+    "manager_id": "58",
+    "budget": 3210398.55,
     "status": "active",
-    "created_at": "2022-10-16T15:15:37",
-    "updated_at": "2024-09-22T08:05:31"
+    "created_at": "2020-11-26T06:03:50",
+    "updated_at": "2024-04-12T06:51:30"
   },
   "64": {
     "department_id": "64",
     "department_name": "Vendor Management",
     "manager_id": null,
-    "budget": 1190232.406023371,
+    "budget": 348130.72,
     "status": "active",
-    "created_at": "2023-03-03T10:50:16",
-    "updated_at": "2024-02-28T20:30:22"
+    "created_at": "2020-11-16T23:19:29",
+    "updated_at": "2020-12-11T23:30:33"
   },
   "65": {
     "department_id": "65",
     "department_name": "Contract Management",
     "manager_id": null,
-    "budget": 4446931.71170509,
+    "budget": 3689231.66,
     "status": "active",
-    "created_at": "2020-10-15T01:43:43",
-    "updated_at": "2022-01-09T14:01:44"
+    "created_at": "2020-10-22T08:57:14",
+    "updated_at": "2021-10-16T16:00:18"
   },
   "66": {
     "department_id": "66",
     "department_name": "Real Estate",
-    "manager_id": "63",
-    "budget": 1670545.4605053994,
+    "manager_id": "62",
+    "budget": 4773308.11,
     "status": "active",
-    "created_at": "2022-05-10T14:11:21",
-    "updated_at": "2023-04-07T22:18:13"
+    "created_at": "2020-09-28T03:06:14",
+    "updated_at": "2021-10-26T05:49:03"
   },
   "67": {
     "department_id": "67",
     "department_name": "Travel Management",
     "manager_id": null,
-    "budget": 906516.6582152699,
+    "budget": 2679916.38,
     "status": "active",
-    "created_at": "2023-12-13T04:55:18",
-    "updated_at": "2025-05-29T06:00:47"
+    "created_at": "2021-10-19T12:53:30",
+    "updated_at": "2025-04-17T12:50:40"
   },
   "68": {
     "department_id": "68",
     "department_name": "Executive Support",
-    "manager_id": "72",
-    "budget": 1812727.7354429767,
+    "manager_id": "10",
+    "budget": 4227482.77,
     "status": "active",
-    "created_at": "2023-07-11T11:12:17",
-    "updated_at": "2024-04-09T18:07:51"
+    "created_at": "2023-09-06T02:08:33",
+    "updated_at": "2024-11-04T14:18:34"
   },
   "69": {
     "department_id": "69",
     "department_name": "Board Relations",
     "manager_id": null,
-    "budget": 3012741.2836443284,
+    "budget": 1023611.02,
     "status": "active",
-    "created_at": "2020-12-04T07:56:26",
-    "updated_at": "2023-10-14T19:10:58"
+    "created_at": "2022-02-12T11:19:32",
+    "updated_at": "2024-02-07T05:35:39"
   },
   "70": {
     "department_id": "70",
     "department_name": "Organizational Development",
-    "manager_id": "37",
-    "budget": 2320301.6600990724,
+    "manager_id": "73",
+    "budget": 4482859.16,
     "status": "active",
-    "created_at": "2024-04-16T20:40:55",
-    "updated_at": "2025-07-11T19:30:08"
+    "created_at": "2023-11-19T03:43:26",
+    "updated_at": "2024-07-05T10:14:19"
   },
   "71": {
     "department_id": "71",
     "department_name": "Change Management",
-    "manager_id": "61",
-    "budget": 2407186.1330689536,
+    "manager_id": null,
+    "budget": 3205238.97,
     "status": "active",
-    "created_at": "2020-07-10T05:38:45",
-    "updated_at": "2024-07-28T22:37:08"
+    "created_at": "2021-06-24T19:45:30",
+    "updated_at": "2023-11-17T02:20:28"
   },
   "72": {
     "department_id": "72",
     "department_name": "Knowledge Management",
     "manager_id": null,
-    "budget": 2635440.9399623703,
+    "budget": 3010901.43,
     "status": "active",
-    "created_at": "2022-02-23T00:56:47",
-    "updated_at": "2024-04-12T03:45:27"
+    "created_at": "2023-01-30T20:07:50",
+    "updated_at": "2025-06-14T12:42:22"
   },
   "73": {
     "department_id": "73",
     "department_name": "Document Management",
-    "manager_id": "46",
-    "budget": 1687246.8801843072,
+    "manager_id": "27",
+    "budget": 236876.91,
     "status": "active",
-    "created_at": "2024-01-19T00:42:50",
-    "updated_at": "2025-02-13T16:38:23"
+    "created_at": "2020-03-21T07:49:35",
+    "updated_at": "2020-04-20T23:20:51"
   },
   "74": {
     "department_id": "74",
     "department_name": "Records Management",
-    "manager_id": "67",
-    "budget": 1768172.5252279066,
-    "status": "active",
-    "created_at": "2022-09-08T09:44:57",
-    "updated_at": "2024-01-24T09:45:20"
+    "manager_id": null,
+    "budget": 2206895.43,
+    "status": "inactive",
+    "created_at": "2023-09-08T13:36:36",
+    "updated_at": "2024-12-07T04:33:21"
   },
   "75": {
     "department_id": "75",
     "department_name": "Information Security",
-    "manager_id": "96",
-    "budget": 2299822.08470041,
+    "manager_id": "36",
+    "budget": 3017132.91,
     "status": "active",
-    "created_at": "2023-09-30T06:12:29",
-    "updated_at": "2025-01-19T07:45:46"
+    "created_at": "2021-02-07T20:49:30",
+    "updated_at": "2022-10-19T09:36:56"
   },
   "76": {
     "department_id": "76",
     "department_name": "Privacy",
     "manager_id": null,
-    "budget": 4379179.644684781,
+    "budget": 649357.17,
     "status": "active",
-    "created_at": "2023-11-18T18:20:06",
-    "updated_at": "2025-03-08T00:10:27"
+    "created_at": "2020-07-23T11:22:55",
+    "updated_at": "2025-07-10T00:28:03"
   },
   "77": {
     "department_id": "77",
     "department_name": "Data Governance",
-    "manager_id": "79",
-    "budget": 803825.0098113205,
+    "manager_id": null,
+    "budget": 1638696.85,
     "status": "active",
-    "created_at": "2022-12-14T17:35:31",
-    "updated_at": "2023-01-31T18:59:43"
+    "created_at": "2023-01-29T07:53:38",
+    "updated_at": "2023-12-24T16:42:21"
   },
   "78": {
     "department_id": "78",
     "department_name": "Business Intelligence",
-    "manager_id": "84",
-    "budget": 502315.26866521506,
+    "manager_id": "28",
+    "budget": 4983158.43,
     "status": "active",
-    "created_at": "2022-02-02T12:48:21",
-    "updated_at": "2022-06-16T15:35:49"
+    "created_at": "2024-02-10T00:08:13",
+    "updated_at": "2025-01-29T21:00:13"
   },
   "79": {
     "department_id": "79",
     "department_name": "Reporting",
-    "manager_id": "34",
-    "budget": 2100128.4639154826,
+    "manager_id": "94",
+    "budget": 3219580.1,
     "status": "active",
-    "created_at": "2022-03-13T14:26:54",
-    "updated_at": "2024-12-31T06:43:10"
+    "created_at": "2021-09-07T16:17:37",
+    "updated_at": "2022-02-09T14:40:46"
   },
   "80": {
     "department_id": "80",
     "department_name": "Customer Success",
-    "manager_id": "75",
-    "budget": 1668146.6457859804,
+    "manager_id": "89",
+    "budget": 1626400.77,
     "status": "active",
-    "created_at": "2023-07-11T20:13:01",
-    "updated_at": "2023-08-11T22:07:49"
+    "created_at": "2020-05-11T21:01:02",
+    "updated_at": "2021-12-05T06:28:02"
   },
   "81": {
     "department_id": "81",
     "department_name": "Technical Support",
-    "manager_id": null,
-    "budget": 2259788.025910186,
-    "status": "inactive",
-    "created_at": "2020-05-30T22:54:30",
-    "updated_at": "2020-12-10T14:42:54"
+    "manager_id": "6",
+    "budget": 1917173.39,
+    "status": "active",
+    "created_at": "2022-04-20T11:51:04",
+    "updated_at": "2025-01-21T23:10:24"
   },
   "82": {
     "department_id": "82",
     "department_name": "Sales Operations",
-    "manager_id": "41",
-    "budget": 1521856.327474621,
+    "manager_id": "86",
+    "budget": 428759.26,
     "status": "active",
-    "created_at": "2020-12-03T11:30:49",
-    "updated_at": "2022-11-05T00:04:27"
+    "created_at": "2024-01-21T20:36:07",
+    "updated_at": "2025-02-26T00:51:51"
   },
   "83": {
     "department_id": "83",
     "department_name": "Marketing Operations",
     "manager_id": null,
-    "budget": 585396.8124826513,
+    "budget": 3084390.15,
     "status": "active",
-    "created_at": "2022-01-11T05:47:29",
-    "updated_at": "2024-11-08T19:32:08"
+    "created_at": "2024-05-01T13:24:17",
+    "updated_at": "2025-07-11T03:50:41"
   },
   "84": {
     "department_id": "84",
     "department_name": "Revenue Operations",
-    "manager_id": "26",
-    "budget": 4185837.454019239,
+    "manager_id": null,
+    "budget": 2004463.4,
     "status": "active",
-    "created_at": "2021-06-25T14:57:56",
-    "updated_at": "2022-12-05T14:55:47"
+    "created_at": "2024-02-15T07:50:32",
+    "updated_at": "2024-10-19T05:28:16"
   },
   "85": {
     "department_id": "85",
     "department_name": "Field Operations",
-    "manager_id": "44",
-    "budget": 106303.21786086103,
+    "manager_id": null,
+    "budget": 3669216.33,
     "status": "active",
-    "created_at": "2020-03-20T20:14:25",
-    "updated_at": "2021-01-12T06:08:55"
+    "created_at": "2021-01-16T15:50:43",
+    "updated_at": "2021-07-03T01:14:41"
   },
   "86": {
     "department_id": "86",
     "department_name": "Regional Operations",
-    "manager_id": "30",
-    "budget": 506396.34905608086,
-    "status": "active",
-    "created_at": "2022-12-02T05:51:47",
-    "updated_at": "2023-06-18T10:26:54"
+    "manager_id": null,
+    "budget": 4357981.21,
+    "status": "inactive",
+    "created_at": "2020-10-05T10:15:17",
+    "updated_at": "2022-08-22T13:51:28"
   },
   "87": {
     "department_id": "87",
     "department_name": "International Operations",
-    "manager_id": "42",
-    "budget": 3011480.517899899,
+    "manager_id": "13",
+    "budget": 267434.7,
     "status": "active",
-    "created_at": "2021-07-07T22:36:20",
-    "updated_at": "2024-02-21T07:31:14"
+    "created_at": "2020-03-24T21:58:52",
+    "updated_at": "2021-12-24T07:01:50"
   },
   "88": {
     "department_id": "88",
     "department_name": "Mergers and Acquisitions",
-    "manager_id": null,
-    "budget": 1677105.9248851587,
+    "manager_id": "22",
+    "budget": 1991409.33,
     "status": "active",
-    "created_at": "2022-07-19T17:25:26",
-    "updated_at": "2025-07-07T05:40:35"
+    "created_at": "2023-03-17T06:35:55",
+    "updated_at": "2023-10-02T16:25:57"
   },
   "89": {
     "department_id": "89",
     "department_name": "Integration",
     "manager_id": null,
-    "budget": 3941751.9630155102,
-    "status": "active",
-    "created_at": "2020-04-20T01:33:23",
-    "updated_at": "2022-03-08T00:24:06"
+    "budget": 522306.12,
+    "status": "inactive",
+    "created_at": "2022-08-19T11:45:52",
+    "updated_at": "2023-01-19T03:29:54"
   },
   "90": {
     "department_id": "90",
     "department_name": "Transformation",
     "manager_id": null,
-    "budget": 895541.5881862772,
+    "budget": 4885818.95,
     "status": "active",
-    "created_at": "2023-09-02T07:33:47",
-    "updated_at": "2024-12-22T14:49:54"
+    "created_at": "2020-09-06T17:27:48",
+    "updated_at": "2020-09-12T17:41:47"
   },
   "91": {
     "department_id": "91",
     "department_name": "Process Improvement",
-    "manager_id": null,
-    "budget": 2307651.169353573,
+    "manager_id": "100",
+    "budget": 3270521.89,
     "status": "active",
-    "created_at": "2021-12-15T23:17:28",
-    "updated_at": "2025-08-25T08:24:29"
+    "created_at": "2020-10-05T18:08:20",
+    "updated_at": "2025-07-16T17:22:57"
   },
   "92": {
     "department_id": "92",
     "department_name": "Continuous Improvement",
-    "manager_id": null,
-    "budget": 3138205.3479256025,
+    "manager_id": "74",
+    "budget": 4630971.51,
     "status": "active",
-    "created_at": "2021-02-18T14:32:39",
-    "updated_at": "2021-08-28T12:01:23"
+    "created_at": "2023-01-30T05:25:15",
+    "updated_at": "2025-06-23T08:32:49"
   },
   "93": {
     "department_id": "93",
     "department_name": "Lean Six Sigma",
-    "manager_id": null,
-    "budget": 4784609.584727014,
+    "manager_id": "71",
+    "budget": 2708640.48,
     "status": "active",
-    "created_at": "2020-05-23T07:59:38",
-    "updated_at": "2020-06-25T02:57:47"
+    "created_at": "2022-12-05T21:05:34",
+    "updated_at": "2025-08-20T14:21:58"
   },
   "94": {
     "department_id": "94",
     "department_name": "Agile",
-    "manager_id": null,
-    "budget": 4618992.101237396,
+    "manager_id": "54",
+    "budget": 2078197.35,
     "status": "active",
-    "created_at": "2020-03-02T00:57:27",
-    "updated_at": "2021-09-24T05:13:58"
+    "created_at": "2020-04-20T15:05:48",
+    "updated_at": "2022-12-13T04:34:17"
   },
   "95": {
     "department_id": "95",
     "department_name": "Scrum",
-    "manager_id": "97",
-    "budget": 1768429.827834593,
+    "manager_id": "91",
+    "budget": 4438563.48,
     "status": "active",
-    "created_at": "2022-05-07T23:32:12",
-    "updated_at": "2024-10-19T16:26:56"
+    "created_at": "2020-07-31T19:12:09",
+    "updated_at": "2022-04-30T13:37:51"
   },
   "96": {
     "department_id": "96",
     "department_name": "Portfolio Management",
-    "manager_id": null,
-    "budget": 796592.8752063437,
+    "manager_id": "17",
+    "budget": 4222675.29,
     "status": "active",
-    "created_at": "2022-07-14T00:00:30",
-    "updated_at": "2022-08-20T04:04:57"
+    "created_at": "2024-04-27T13:09:09",
+    "updated_at": "2024-05-16T13:16:02"
   },
   "97": {
     "department_id": "97",
     "department_name": "Program Management",
-    "manager_id": "77",
-    "budget": 1588500.566106677,
+    "manager_id": "1",
+    "budget": 1652061.25,
     "status": "active",
-    "created_at": "2022-03-21T22:17:07",
-    "updated_at": "2023-12-05T00:36:45"
+    "created_at": "2020-11-27T00:33:31",
+    "updated_at": "2022-02-07T15:44:30"
   },
   "98": {
     "department_id": "98",
     "department_name": "Resource Management",
     "manager_id": null,
-    "budget": 2993525.2081253976,
+    "budget": 3263202.75,
     "status": "active",
-    "created_at": "2021-02-07T10:57:39",
-    "updated_at": "2024-04-09T11:20:27"
+    "created_at": "2022-06-01T13:09:50",
+    "updated_at": "2023-05-04T02:54:01"
   },
   "99": {
     "department_id": "99",
     "department_name": "Capacity Planning",
-    "manager_id": "48",
-    "budget": 1363923.4253681633,
+    "manager_id": "25",
+    "budget": 2073686.12,
     "status": "active",
-    "created_at": "2020-04-20T07:59:44",
-    "updated_at": "2024-08-09T10:24:11"
+    "created_at": "2022-08-24T15:37:10",
+    "updated_at": "2023-09-30T12:17:45"
   },
   "100": {
     "department_id": "100",
     "department_name": "Workforce Planning",
-    "manager_id": "36",
-    "budget": 2525481.594315417,
+    "manager_id": "66",
+    "budget": 540803.01,
     "status": "active",
-    "created_at": "2023-05-16T23:55:40",
-    "updated_at": "2024-01-14T12:23:05"
+    "created_at": "2022-08-02T05:21:21",
+    "updated_at": "2024-12-25T05:12:33"
   }
 }

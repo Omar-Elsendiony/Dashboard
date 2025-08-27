@@ -17,12 +17,12 @@
   "4": {
     "skill_id": "4",
     "skill_name": "React",
-    "status": "inactive"
+    "status": "active"
   },
   "5": {
     "skill_id": "5",
     "skill_name": "Angular",
-    "status": "inactive"
+    "status": "active"
   },
   "6": {
     "skill_id": "6",
@@ -67,7 +67,7 @@
   "14": {
     "skill_id": "14",
     "skill_name": "Agile",
-    "status": "inactive"
+    "status": "active"
   },
   "15": {
     "skill_id": "15",
@@ -82,12 +82,12 @@
   "17": {
     "skill_id": "17",
     "skill_name": "Data Analysis",
-    "status": "active"
+    "status": "inactive"
   },
   "18": {
     "skill_id": "18",
     "skill_name": "Machine Learning",
-    "status": "inactive"
+    "status": "active"
   },
   "19": {
     "skill_id": "19",
@@ -112,7 +112,7 @@
   "23": {
     "skill_id": "23",
     "skill_name": "PowerBI",
-    "status": "active"
+    "status": "inactive"
   },
   "24": {
     "skill_id": "24",
@@ -127,22 +127,22 @@
   "26": {
     "skill_id": "26",
     "skill_name": "HubSpot",
-    "status": "inactive"
+    "status": "active"
   },
   "27": {
     "skill_id": "27",
     "skill_name": "Marketing Automation",
-    "status": "active"
+    "status": "inactive"
   },
   "28": {
     "skill_id": "28",
     "skill_name": "SEO",
-    "status": "active"
+    "status": "inactive"
   },
   "29": {
     "skill_id": "29",
     "skill_name": "SEM",
-    "status": "active"
+    "status": "inactive"
   },
   "30": {
     "skill_id": "30",
@@ -152,7 +152,7 @@
   "31": {
     "skill_id": "31",
     "skill_name": "Content Marketing",
-    "status": "inactive"
+    "status": "active"
   },
   "32": {
     "skill_id": "32",
@@ -172,7 +172,7 @@
   "35": {
     "skill_id": "35",
     "skill_name": "UI/UX Design",
-    "status": "inactive"
+    "status": "active"
   },
   "36": {
     "skill_id": "36",
@@ -227,7 +227,7 @@
   "46": {
     "skill_id": "46",
     "skill_name": "Financial Analysis",
-    "status": "active"
+    "status": "inactive"
   },
   "47": {
     "skill_id": "47",
@@ -252,7 +252,7 @@
   "51": {
     "skill_id": "51",
     "skill_name": "Legal Research",
-    "status": "active"
+    "status": "inactive"
   },
   "52": {
     "skill_id": "52",
@@ -297,7 +297,7 @@
   "60": {
     "skill_id": "60",
     "skill_name": "System Administration",
-    "status": "active"
+    "status": "inactive"
   },
   "61": {
     "skill_id": "61",
@@ -317,27 +317,27 @@
   "64": {
     "skill_id": "64",
     "skill_name": "Data Modeling",
-    "status": "active"
+    "status": "inactive"
   },
   "65": {
     "skill_id": "65",
     "skill_name": "ETL",
-    "status": "inactive"
+    "status": "active"
   },
   "66": {
     "skill_id": "66",
     "skill_name": "Business Intelligence",
-    "status": "active"
+    "status": "inactive"
   },
   "67": {
     "skill_id": "67",
     "skill_name": "Reporting",
-    "status": "inactive"
+    "status": "active"
   },
   "68": {
     "skill_id": "68",
     "skill_name": "Quality Assurance",
-    "status": "inactive"
+    "status": "active"
   },
   "69": {
     "skill_id": "69",
@@ -352,7 +352,7 @@
   "71": {
     "skill_id": "71",
     "skill_name": "Performance Testing",
-    "status": "active"
+    "status": "inactive"
   },
   "72": {
     "skill_id": "72",
@@ -397,6 +397,6 @@
   "80": {
     "skill_id": "80",
     "skill_name": "Android Development",
-    "status": "active"
+    "status": "inactive"
   }
 }

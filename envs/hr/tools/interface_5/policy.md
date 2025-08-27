@@ -1,4 +1,4 @@
-# HR Policy - Benefits, Leave & Compliance
+# HR Policy - Benefits and Leave
 
 ## Introduction
 This document defines the operational guide for an HR Payroll automation agent. It is designed for single-turn execution: each procedure must be self-contained and completed in one interaction.
