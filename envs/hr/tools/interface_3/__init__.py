@@ -1,47 +1,47 @@
-from .add_payroll_deduction import AddPayrollDeduction
-from .approve_correct_timesheet import ApproveCorrectTimesheet
-from .correct_payroll import CorrectPayroll
-from .create_audit_log import CreateAuditLog
-from .create_expense_reimbursement import CreateExpenseReimbursement
-from .get_audit_logs import GetAuditLogs
-from .get_departments import GetDepartments
-from .get_documents import GetDocuments
-from .get_employee_summary_report import GetEmployeeSummaryReport
-from .get_employee_timesheets import GetEmployeeTimesheets
-from .get_employees import GetEmployees
-from .get_expense_reimbursements import GetExpenseReimbursements
-from .get_payroll_deductions import GetPayrollDeductions
-from .get_payroll_records import GetPayrollRecords
-from .get_payroll_summary_report import GetPayrollSummaryReport
-from .get_users import GetUsers
-from .process_expense_reimbursement import ProcessExpenseReimbursement
-from .process_payroll_run import ProcessPayrollRun
+from .retrieve_employee_timesheets import RetrieveEmployeeTimesheets
+from .retrieve_payroll_records import RetrievePayrollRecords
+from .retrieve_payroll_deductions import RetrievePayrollDeductions
+from .retrieve_payroll_summary_report import RetrievePayrollSummaryReport
+from .retrieve_employees import RetrieveEmployees
+from .retrieve_users import RetrieveUsers
+from .retrieve_departments import RetrieveDepartments
+from .retrieve_expense_reimbursements import RetrieveExpenseReimbursements
+from .retrieve_documents import RetrieveDocuments
+from .retrieve_audit_logs import RetrieveAuditLogs
+from .retrieve_employee_summary_report import RetrieveEmployeeSummaryReport
 from .submit_timesheet import SubmitTimesheet
-from .update_document import UpdateDocument
+from .approve_correct_timesheet import ApproveCorrectTimesheet
+from .process_payroll_run import ProcessPayrollRun
+from .insert_payroll_deduction import InsertPayrollDeduction
+from .correct_payroll import CorrectPayroll
+from .create_expense_reimbursement import CreateExpenseReimbursement
+from .process_expense_reimbursement import ProcessExpenseReimbursement
 from .update_expense_reimbursement import UpdateExpenseReimbursement
-from .upload_document import UploadDocument
+from .attach_document import AttachDocument
+from .amend_document import AmendDocument
+from .record_audit_entry import RecordAuditEntry
 
 ALL_TOOLS_INTERFACE_3 = [
-    AddPayrollDeduction,
-    ApproveCorrectTimesheet,
-    CorrectPayroll,
-    CreateAuditLog,
-    CreateExpenseReimbursement,
-    GetAuditLogs,
-    GetDepartments,
-    GetDocuments,
-    GetEmployeeSummaryReport,
-    GetEmployeeTimesheets,
-    GetEmployees,
-    GetExpenseReimbursements,
-    GetPayrollDeductions,
-    GetPayrollRecords,
-    GetPayrollSummaryReport,
-    GetUsers,
-    ProcessExpenseReimbursement,
-    ProcessPayrollRun,
+    RetrieveEmployeeTimesheets,
+    RetrievePayrollRecords,
+    RetrievePayrollDeductions,
+    RetrievePayrollSummaryReport,
+    RetrieveEmployees,
+    RetrieveUsers,
+    RetrieveDepartments,
+    RetrieveExpenseReimbursements,
+    RetrieveDocuments,
+    RetrieveAuditLogs,
+    RetrieveEmployeeSummaryReport,
     SubmitTimesheet,
-    UpdateDocument,
+    ApproveCorrectTimesheet,
+    ProcessPayrollRun,
+    InsertPayrollDeduction,
+    CorrectPayroll,
+    CreateExpenseReimbursement,
+    ProcessExpenseReimbursement,
     UpdateExpenseReimbursement,
-    UploadDocument
+    AttachDocument,
+    AmendDocument,
+    RecordAuditEntry,
 ]

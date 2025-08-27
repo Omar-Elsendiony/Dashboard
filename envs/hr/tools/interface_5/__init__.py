@@ -1,47 +1,47 @@
+from .lookup_benefits_plans import LookupBenefitsPlans
+from .lookup_employee_benefits import LookupEmployeeBenefits
+from .lookup_leave_requests import LookupLeaveRequests
 from .calculate_leave_balance import CalculateLeaveBalance
-from .create_audit_log import CreateAuditLog
+from .lookup_employees import LookupEmployees
+from .lookup_users import LookupUsers
+from .lookup_documents import LookupDocuments
+from .lookup_audit_logs import LookupAuditLogs
+from .lookup_payroll_records import LookupPayrollRecords
+from .lookup_departments import LookupDepartments
+from .lookup_expense_reimbursements import LookupExpenseReimbursements
 from .create_benefits_plan import CreateBenefitsPlan
-from .create_compliance_record import CreateComplianceRecord
-from .create_leave_request import CreateLeaveRequest
-from .enroll_employee_benefits import EnrollEmployeeBenefits
-from .get_audit_logs import GetAuditLogs
-from .get_benefits_plans import GetBenefitsPlans
-from .get_departments import GetDepartments
-from .get_documents import GetDocuments
-from .get_employee_benefits import GetEmployeeBenefits
-from .get_employees import GetEmployees
-from .get_expense_reimbursements import GetExpenseReimbursements
-from .get_leave_requests import GetLeaveRequests
-from .get_payroll_records import GetPayrollRecords
-from .get_users import GetUsers
-from .process_leave_request import ProcessLeaveRequest
 from .update_benefits_plan import UpdateBenefitsPlan
-from .update_document import UpdateDocument
+from .enroll_employee_benefits import EnrollEmployeeBenefits
 from .update_employee_benefits import UpdateEmployeeBenefits
+from .create_leave_request import CreateLeaveRequest
 from .update_leave_request import UpdateLeaveRequest
-from .upload_document import UploadDocument
+from .process_leave_request import ProcessLeaveRequest
+from .insert_document import InsertDocument
+from .adjust_document import AdjustDocument
+from .log_audit_event import LogAuditEvent
+from .create_compliance_record import CreateComplianceRecord
 
 ALL_TOOLS_INTERFACE_5 = [
+    LookupBenefitsPlans,
+    LookupEmployeeBenefits,
+    LookupLeaveRequests,
     CalculateLeaveBalance,
-    CreateAuditLog,
+    LookupEmployees,
+    LookupUsers,
+    LookupDocuments,
+    LookupAuditLogs,
+    LookupPayrollRecords,
+    LookupDepartments,
+    LookupExpenseReimbursements,
     CreateBenefitsPlan,
-    CreateComplianceRecord,
-    CreateLeaveRequest,
-    EnrollEmployeeBenefits,
-    GetAuditLogs,
-    GetBenefitsPlans,
-    GetDepartments,
-    GetDocuments,
-    GetEmployeeBenefits,
-    GetEmployees,
-    GetExpenseReimbursements,
-    GetLeaveRequests,
-    GetPayrollRecords,
-    GetUsers,
-    ProcessLeaveRequest,
     UpdateBenefitsPlan,
-    UpdateDocument,
+    EnrollEmployeeBenefits,
     UpdateEmployeeBenefits,
+    CreateLeaveRequest,
     UpdateLeaveRequest,
-    UploadDocument
+    ProcessLeaveRequest,
+    InsertDocument,
+    AdjustDocument,
+    LogAuditEvent,
+    CreateComplianceRecord,
 ]
