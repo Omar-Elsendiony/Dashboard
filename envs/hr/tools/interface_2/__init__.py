@@ -15,7 +15,7 @@ from .onboard_employee import OnboardEmployee
 from .update_employee_profile import UpdateEmployeeProfile
 from .create_department import CreateDepartment
 from .update_department import UpdateDepartment
-from .update_job_position import UpdateJobPosition
+from .modify_job_position import ModifyJobPosition
 from .submit_document import SubmitDocument
 from .modify_document import ModifyDocument
 from .log_audit_entry import LogAuditEntry
@@ -40,7 +40,7 @@ ALL_TOOLS_INTERFACE_2 = [
     UpdateEmployeeProfile,
     CreateDepartment,
     UpdateDepartment,
-    UpdateJobPosition,
+    ModifyJobPosition,
     SubmitDocument,
     ModifyDocument,
     LogAuditEntry,

@@ -19,8 +19,9 @@ from .map_skill_to_position import MapSkillToPosition
 from .add_document import AddDocument
 from .edit_document import EditDocument
 from .register_audit_entry import RegisterAuditEntry
-from .update_employee_profile import UpdateEmployeeProfile
 from .check_approval import CheckApproval
+from .update_employee_info import UpdateEmployeeInfo
+
 ALL_TOOLS_INTERFACE_4 = [
     QueryPerformanceReviews,
     QueryTrainingPrograms,
@@ -43,6 +44,6 @@ ALL_TOOLS_INTERFACE_4 = [
     AddDocument,
     EditDocument,
     RegisterAuditEntry,
-    UpdateEmployeeProfile,
-    CheckApproval
+    CheckApproval,
+    UpdateEmployeeInfo
 ]

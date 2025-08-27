@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class UpdateEmployeeProfile(Tool):
+class UpdateEmployeeInfo(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], employee_id: str, position_id: Optional[str] = None,
                employment_status: Optional[str] = None, employment_type: Optional[str] = None,
@@ -64,7 +64,7 @@ class UpdateEmployeeProfile(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "update_employee_profile",
+                "name": "update_employee_info",
                 "description": "Update an employee's profile information",
                 "parameters": {
                     "type": "object",
