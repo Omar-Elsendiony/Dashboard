@@ -21,7 +21,7 @@ from .modify_document import ModifyDocument
 from .log_audit_entry import LogAuditEntry
 from .offboard_employee import OffboardEmployee
 from .bulk_update_employee_status import BulkUpdateEmployeeStatus
-
+from .approval_lookup import ApprovalLookup
 ALL_TOOLS_INTERFACE_2 = [
     FetchUsers,
     FetchEmployees,
@@ -46,4 +46,5 @@ ALL_TOOLS_INTERFACE_2 = [
     LogAuditEntry,
     OffboardEmployee,
     BulkUpdateEmployeeStatus,
+    ApprovalLookup
 ]

@@ -20,7 +20,7 @@ from .add_document import AddDocument
 from .edit_document import EditDocument
 from .register_audit_entry import RegisterAuditEntry
 from .update_employee_profile import UpdateEmployeeProfile
-
+from .check_approval import CheckApproval
 ALL_TOOLS_INTERFACE_4 = [
     QueryPerformanceReviews,
     QueryTrainingPrograms,
@@ -44,4 +44,5 @@ ALL_TOOLS_INTERFACE_4 = [
     EditDocument,
     RegisterAuditEntry,
     UpdateEmployeeProfile,
+    CheckApproval
 ]

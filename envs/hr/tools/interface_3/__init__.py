@@ -20,7 +20,7 @@ from .update_expense_reimbursement import UpdateExpenseReimbursement
 from .attach_document import AttachDocument
 from .amend_document import AmendDocument
 from .record_audit_entry import RecordAuditEntry
-
+from .confirm_approval import ConfirmApproval
 ALL_TOOLS_INTERFACE_3 = [
     RetrieveEmployeeTimesheets,
     RetrievePayrollRecords,
@@ -44,4 +44,5 @@ ALL_TOOLS_INTERFACE_3 = [
     AttachDocument,
     AmendDocument,
     RecordAuditEntry,
+    ConfirmApproval
 ]
