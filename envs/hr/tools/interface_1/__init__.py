@@ -21,7 +21,7 @@ from .assign_skill_to_position import AssignSkillToPosition
 from .post_job_opening import PostJobOpening
 from .close_job_opening import CloseJobOpening
 from .create_audit_log import CreateAuditLog
-
+from .validate_approval import ValidateApproval
 ALL_TOOLS_INTERFACE_1 = [
     GetUsers,
     GetDepartments,
@@ -46,4 +46,5 @@ ALL_TOOLS_INTERFACE_1 = [
     PostJobOpening,
     CloseJobOpening,
     CreateAuditLog,
+    ValidateApproval
 ]

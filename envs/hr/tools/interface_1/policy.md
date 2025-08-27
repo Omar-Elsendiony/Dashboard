@@ -90,3 +90,6 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - Validate that the audit log write operation is successful. If audit log write fails, then output 'Halt: Audit trail failure'
 - Insert audit log entry with user ID, table name, action type (create, read, update, delete, approve, reject, login, logout, export), record ID, field name (if applicable), old value, new value, and timestamp
 - In case of creating/deleting a record, field name, old value and new value would be null in the record since the operation is on the whole record and not a specific column
+
+### Approvals
+- When an action requires authorization, a verification code must be supplied to confirm that approval has been given. The system should validate that the person providing this approval has the appropriate user permissions or authority level to grant such authorization.
