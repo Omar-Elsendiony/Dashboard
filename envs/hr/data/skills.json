@@ -1,0 +1,402 @@
+{
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Python",
+    "status": "active"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Java",
+    "status": "active"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "JavaScript",
+    "status": "active"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "React",
+    "status": "inactive"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Angular",
+    "status": "inactive"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Node.js",
+    "status": "active"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "SQL",
+    "status": "active"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "MongoDB",
+    "status": "active"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "AWS",
+    "status": "active"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Azure",
+    "status": "active"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Docker",
+    "status": "active"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Kubernetes",
+    "status": "active"
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Git",
+    "status": "active"
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Agile",
+    "status": "inactive"
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Scrum",
+    "status": "active"
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Project Management",
+    "status": "active"
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Data Analysis",
+    "status": "active"
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Machine Learning",
+    "status": "inactive"
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Artificial Intelligence",
+    "status": "active"
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Data Science",
+    "status": "active"
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Statistics",
+    "status": "active"
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Excel",
+    "status": "active"
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "PowerBI",
+    "status": "active"
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Tableau",
+    "status": "active"
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Salesforce",
+    "status": "active"
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "HubSpot",
+    "status": "inactive"
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Marketing Automation",
+    "status": "active"
+  },
+  "28": {
+    "skill_id": "28",
+    "skill_name": "SEO",
+    "status": "active"
+  },
+  "29": {
+    "skill_id": "29",
+    "skill_name": "SEM",
+    "status": "active"
+  },
+  "30": {
+    "skill_id": "30",
+    "skill_name": "Social Media Marketing",
+    "status": "active"
+  },
+  "31": {
+    "skill_id": "31",
+    "skill_name": "Content Marketing",
+    "status": "inactive"
+  },
+  "32": {
+    "skill_id": "32",
+    "skill_name": "Email Marketing",
+    "status": "active"
+  },
+  "33": {
+    "skill_id": "33",
+    "skill_name": "Digital Marketing",
+    "status": "active"
+  },
+  "34": {
+    "skill_id": "34",
+    "skill_name": "Graphic Design",
+    "status": "active"
+  },
+  "35": {
+    "skill_id": "35",
+    "skill_name": "UI/UX Design",
+    "status": "inactive"
+  },
+  "36": {
+    "skill_id": "36",
+    "skill_name": "Adobe Creative Suite",
+    "status": "active"
+  },
+  "37": {
+    "skill_id": "37",
+    "skill_name": "Figma",
+    "status": "active"
+  },
+  "38": {
+    "skill_id": "38",
+    "skill_name": "Sketch",
+    "status": "active"
+  },
+  "39": {
+    "skill_id": "39",
+    "skill_name": "Leadership",
+    "status": "active"
+  },
+  "40": {
+    "skill_id": "40",
+    "skill_name": "Communication",
+    "status": "active"
+  },
+  "41": {
+    "skill_id": "41",
+    "skill_name": "Problem Solving",
+    "status": "inactive"
+  },
+  "42": {
+    "skill_id": "42",
+    "skill_name": "Critical Thinking",
+    "status": "active"
+  },
+  "43": {
+    "skill_id": "43",
+    "skill_name": "Team Management",
+    "status": "active"
+  },
+  "44": {
+    "skill_id": "44",
+    "skill_name": "Strategic Planning",
+    "status": "active"
+  },
+  "45": {
+    "skill_id": "45",
+    "skill_name": "Business Analysis",
+    "status": "active"
+  },
+  "46": {
+    "skill_id": "46",
+    "skill_name": "Financial Analysis",
+    "status": "active"
+  },
+  "47": {
+    "skill_id": "47",
+    "skill_name": "Budgeting",
+    "status": "active"
+  },
+  "48": {
+    "skill_id": "48",
+    "skill_name": "Forecasting",
+    "status": "active"
+  },
+  "49": {
+    "skill_id": "49",
+    "skill_name": "Risk Management",
+    "status": "active"
+  },
+  "50": {
+    "skill_id": "50",
+    "skill_name": "Compliance",
+    "status": "active"
+  },
+  "51": {
+    "skill_id": "51",
+    "skill_name": "Legal Research",
+    "status": "active"
+  },
+  "52": {
+    "skill_id": "52",
+    "skill_name": "Contract Negotiation",
+    "status": "active"
+  },
+  "53": {
+    "skill_id": "53",
+    "skill_name": "Public Speaking",
+    "status": "active"
+  },
+  "54": {
+    "skill_id": "54",
+    "skill_name": "Presentation Skills",
+    "status": "active"
+  },
+  "55": {
+    "skill_id": "55",
+    "skill_name": "Customer Service",
+    "status": "active"
+  },
+  "56": {
+    "skill_id": "56",
+    "skill_name": "Sales",
+    "status": "active"
+  },
+  "57": {
+    "skill_id": "57",
+    "skill_name": "Negotiation",
+    "status": "active"
+  },
+  "58": {
+    "skill_id": "58",
+    "skill_name": "Relationship Building",
+    "status": "active"
+  },
+  "59": {
+    "skill_id": "59",
+    "skill_name": "Network Administration",
+    "status": "active"
+  },
+  "60": {
+    "skill_id": "60",
+    "skill_name": "System Administration",
+    "status": "active"
+  },
+  "61": {
+    "skill_id": "61",
+    "skill_name": "Cybersecurity",
+    "status": "active"
+  },
+  "62": {
+    "skill_id": "62",
+    "skill_name": "Information Security",
+    "status": "active"
+  },
+  "63": {
+    "skill_id": "63",
+    "skill_name": "Database Management",
+    "status": "active"
+  },
+  "64": {
+    "skill_id": "64",
+    "skill_name": "Data Modeling",
+    "status": "active"
+  },
+  "65": {
+    "skill_id": "65",
+    "skill_name": "ETL",
+    "status": "inactive"
+  },
+  "66": {
+    "skill_id": "66",
+    "skill_name": "Business Intelligence",
+    "status": "active"
+  },
+  "67": {
+    "skill_id": "67",
+    "skill_name": "Reporting",
+    "status": "inactive"
+  },
+  "68": {
+    "skill_id": "68",
+    "skill_name": "Quality Assurance",
+    "status": "inactive"
+  },
+  "69": {
+    "skill_id": "69",
+    "skill_name": "Testing",
+    "status": "active"
+  },
+  "70": {
+    "skill_id": "70",
+    "skill_name": "Automation Testing",
+    "status": "active"
+  },
+  "71": {
+    "skill_id": "71",
+    "skill_name": "Performance Testing",
+    "status": "active"
+  },
+  "72": {
+    "skill_id": "72",
+    "skill_name": "DevOps",
+    "status": "active"
+  },
+  "73": {
+    "skill_id": "73",
+    "skill_name": "CI/CD",
+    "status": "active"
+  },
+  "74": {
+    "skill_id": "74",
+    "skill_name": "Infrastructure as Code",
+    "status": "active"
+  },
+  "75": {
+    "skill_id": "75",
+    "skill_name": "Cloud Computing",
+    "status": "active"
+  },
+  "76": {
+    "skill_id": "76",
+    "skill_name": "Microservices",
+    "status": "active"
+  },
+  "77": {
+    "skill_id": "77",
+    "skill_name": "API Development",
+    "status": "active"
+  },
+  "78": {
+    "skill_id": "78",
+    "skill_name": "Mobile Development",
+    "status": "active"
+  },
+  "79": {
+    "skill_id": "79",
+    "skill_name": "iOS Development",
+    "status": "active"
+  },
+  "80": {
+    "skill_id": "80",
+    "skill_name": "Android Development",
+    "status": "active"
+  }
+}
