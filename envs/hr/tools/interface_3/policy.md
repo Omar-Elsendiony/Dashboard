@@ -8,8 +8,16 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - **Logging**: All steps must be logged. Every create, update, approve, reject, delete, or execute action must generate an audit log entry.
 - **Role-based permissions**: Only the defined roles can perform specified actions.
 - **The elevated roles are**: HR director, payroll_administrator, finance_officer, it_administrator, compliance_officer
+- **Authorization**: Verify that the requesting user has the proper permissions to perform the action
 
 ## Roles & Responsibilities
+
+**HR Director**
+- Access all payroll and timesheet reports
+- Retrieve employee summary reports
+- Access department information
+- Manage payroll and expense-related documents
+- Oversee all time and attendance operations
 
 **Payroll Administrator**
 - Create, update, and process payroll records, bonuses, and deductions
@@ -19,6 +27,10 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - Process payroll corrections
 - Aggregate hours and compute gross pay, deductions, and net pay
 - Process timesheet submissions and corrections
+- Insert and manage payroll deductions
+- Access payroll summary reports
+- Create expense reimbursements on behalf of employees
+- Manage payroll-related documents
 
 **Finance Officer**
 - Validate payroll accuracy and statutory deductions; approve or reject payroll runs
@@ -29,6 +41,7 @@ This document defines the operational guide for an HR Payroll automation agent. 
 
 **Hiring Manager**
 - Can approve timesheet entries
+- Access timesheets for direct reports
 
 **Employee**
 - Provide accurate personal information; submit timesheets promptly

@@ -8,12 +8,25 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - **Logging**: All steps must be logged. Every create, update, approve, reject, delete, or execute action must generate an audit log entry.
 - **Role-based permissions**: Only the defined roles can perform specified actions.
 - **The elevated roles are**: HR director, payroll_administrator, finance_officer, it_administrator, compliance_officer
+- **Authorization**: Verify that the requesting user has the proper permissions to perform the action
 
 ## Roles & Responsibilities
+**HR Director**
+- Oversee all performance and learning operations
+- Access all performance and training reports
+- Manage skills database and job position mappings
+- Access department information
+- Manage training and performance documents
 
 **HR Manager**
 - Manage performance review cycles
 - Create and manage training programs
+- Update training programs
+- Conduct and update performance reviews
+- Access training completion reports
+- Update employee profiles for HR purposes
+- Manage training and performance documents
+- Access department information
 
 **Employee**
 - Acknowledge policies and participate in reviews and training as required

@@ -8,6 +8,7 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - **Logging**: All steps must be logged. Every create, update, approve, reject, delete, or execute action must generate an audit log entry.
 - **Role-based permissions**: Only the defined roles can perform specified actions.
 - **The elevated roles are**: HR director, payroll_administrator, finance_officer, it_administrator, compliance_officer
+- **Authorization**: Verify that the requesting user has the proper permissions to perform the action
 
 ## Roles & Responsibilities
 
@@ -17,6 +18,12 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - Escalation owner for compliance-critical HR actions
 - Create and update department records
 - Create and update benefits plans
+- Query and manage all employee records
+- Access all performance and training data
+- Manage job positions and organizational structure
+- Manage skills database and skill-to-position mappings
+- Access all HR documents and reports
+- Oversee user management for HR functions
 
 **HR Manager**
 - Oversee daily HR operations across recruitment, onboarding, leave, and employee records
@@ -25,8 +32,14 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - Process employee offboarding and terminations
 - Update employee profiles
 - Create and update department records
+- Query employee records for operational purposes
+- Access performance reviews and training data for their area
+- Create and manage training programs
+- Enroll employees in training and track completion
+- Manage HR operational documents
+- Access job positions for recruitment and placement
 
-**IT / System Administrator**
+**IT Administrator**
 - Configure RBAC, MFA, encryption; manage backups and audit logs
 - Provision/deprovision system access promptly upon status change
 
@@ -34,6 +47,7 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - Provide accurate personal information; submit timesheets promptly
 - Acknowledge policies and participate in reviews and training as required
 - Upload and manage personal documents
+- Complete assigned training programs
 
 ## Standard Operating Procedures
 

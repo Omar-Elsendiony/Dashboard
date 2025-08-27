@@ -8,6 +8,8 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - **Logging**: All steps must be logged. Every create, update, approve, reject, delete, or execute action must generate an audit log entry.
 - **Role-based permissions**: Only the defined roles can perform specified actions.
 - **The elevated roles are**: HR director, payroll administrator, finance officer, IT administrator and compliance officer
+- **Authorization**: Verify that the requesting user has the proper permissions to perform the action
+
 
 ## Roles & Responsibilities
 
@@ -30,14 +32,30 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - Add candidate records to the system
 - Create job positions
 - Post and close job openings
+- Access all recruiting data and reports
+- Assign skills to positions
+- Upload and manage recruiting documents
+- Access user information for interviewer coordination
 
 **HR Director**
 - Create job positions
 - Post and close job openings
+- Update job positions
+- Assign skills to positions and manage skills database
+- Access all recruiting reports and data
+- Access job applications, candidates, and interview records
+- Manage recruiting documents
+- Access department summary reports
+- Oversee talent acquisition strategy
 
 **HR Manager**
 - Create job positions
 - Post and close job openings
+- Update job positions
+- Access recruiting data for operational management
+- Access job applications and candidate records
+- Manage recruiting documents
+- Access department information for recruiting needs
 
 ## Standard Operating Procedures
 

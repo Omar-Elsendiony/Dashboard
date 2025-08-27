@@ -8,24 +8,47 @@ This document defines the operational guide for an HR Payroll automation agent. 
 - **Logging**: All steps must be logged. Every create, update, approve, reject, delete, or execute action must generate an audit log entry.
 - **Role-based permissions**: Only the defined roles can perform specified actions.
 - **The elevated roles are**: HR director, payroll_administrator, finance_officer, it_administrator, compliance_officer
+- **Authorization**: Verify that the requesting user has the proper permissions to perform the action
 
 ## Roles & Responsibilities
 
 **HR Director**
 - Create and update benefits plans
+- Access department information
+- Oversee all HR operations and policies
 
 **HR Manager**
 - Process leave requests
+- Process and approve/reject leave requests
+- Process expense reimbursements
+- Access department information
+- Manage day-to-day HR operations
 
 **Finance Officer**
 - Create and update benefits plans
+- Process expense reimbursements
+- Oversee financial aspects of HR operations
+
+**Payroll Administrator**
+- Process and manage payroll records
+- Access employee payroll information
+- Handle payroll-related compliance and reporting
+
+**IT Administrator**
+- Manage user accounts and permissions
+- Handle document system management
+- Maintain HR system security and access controls
+- Support technical aspects of HR automation
 
 **Compliance Officer**
 - Approve or reject compliance-sensitive actions (tax filings, terminations, incidents)
 - Halt operations if legal or regulatory violations are detected
+- Oversee regulatory compliance for all HR processes
 
 **Employee**
 - Submit leave requests with proper documentation
+- Enroll in and update benefits selections
+- Submit expense reimbursement requests
 
 ## Standard Operating Procedures
 
