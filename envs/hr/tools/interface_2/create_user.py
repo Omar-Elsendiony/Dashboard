@@ -92,7 +92,7 @@ class CreateUser(Tool):
                         "hr_director_approval": {"type": "boolean", "description": "HR Director approval for elevated roles (True/False)"},
                         "it_admin_approval": {"type": "boolean", "description": "IT Administrator approval for elevated roles (True/False)"}
                     },
-                    "required": ["candidate_id", "position_id", "application_date", "recruiter_id", "email", "first_name", "last_name"]
+                    "required": ["email", "first_name", "last_name"]
                 }
             }
         }
