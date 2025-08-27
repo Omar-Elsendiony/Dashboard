@@ -38,7 +38,7 @@ class CalculateLeaveBalance(Tool):
             "type": "function",
             "function": {
                 "name": "calculate_leave_balance",
-                "description": "Calculate remaining leave balance for an employee",
+                "description": "Calculate remaining leave balance for an employee. It can be used to calculate remaining balance without creating a request.",
                 "parameters": {
                     "type": "object",
                     "properties": {
