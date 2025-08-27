@@ -7,7 +7,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_1/other_1.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-08-26",
     "created_at": "2025-05-06T07:23:51",
     "updated_at": "2025-07-30T08:17:03"
@@ -20,7 +20,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_1/training_2.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-07-17",
     "created_at": "2025-04-27T01:29:32",
     "updated_at": "2025-08-18T14:48:55"
@@ -33,7 +33,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_1/equipment_3.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-03-20",
     "created_at": "2025-01-24T21:54:09",
     "updated_at": "2025-05-14T16:45:54"
@@ -46,7 +46,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_1/equipment_4.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-08-28T09:56:29",
     "updated_at": "2024-09-01T12:35:35"
@@ -59,7 +59,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_1/travel_5.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-09-25T08:40:53",
     "updated_at": "2024-09-26T01:07:02"
@@ -72,7 +72,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_2/other_6.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-08-10",
     "created_at": "2024-12-03T02:45:55",
     "updated_at": "2025-01-24T07:40:44"
@@ -85,7 +85,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_3/equipment_7.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-06-27T03:43:48",
     "updated_at": "2025-08-03T16:41:58"
@@ -98,7 +98,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_4/equipment_8.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-07-01T05:47:06",
     "updated_at": "2025-07-02T14:01:14"
@@ -111,7 +111,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_4/other_9.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-07-16",
     "created_at": "2025-07-12T09:00:54",
     "updated_at": "2025-07-18T22:08:37"
@@ -124,7 +124,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_4/equipment_10.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2024-09-05",
     "created_at": "2024-09-04T19:56:45",
     "updated_at": "2025-01-27T11:39:37"
@@ -137,7 +137,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_5/other_11.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-03-21T05:22:07",
     "updated_at": "2024-04-10T14:09:54"
@@ -150,7 +150,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_5/travel_12.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-03-21T03:53:24",
     "updated_at": "2024-06-17T22:39:41"
@@ -163,7 +163,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_5/meals_13.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-02-05T19:40:00",
     "updated_at": "2025-02-16T10:19:36"
@@ -176,7 +176,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_5/meals_14.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-07-17",
     "created_at": "2023-11-10T12:02:44",
     "updated_at": "2025-04-01T23:13:41"
@@ -189,7 +189,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_6/meals_15.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-04-04T03:50:26",
     "updated_at": "2025-04-16T16:00:52"
@@ -202,7 +202,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_6/other_16.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-03-29",
     "created_at": "2024-03-24T06:41:01",
     "updated_at": "2025-06-23T14:10:32"
@@ -215,7 +215,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_6/training_17.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2024-10-19",
     "created_at": "2024-06-16T08:54:17",
     "updated_at": "2024-09-01T13:30:25"
@@ -228,7 +228,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_6/equipment_18.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-09-11T02:22:02",
     "updated_at": "2025-02-20T09:31:49"
@@ -241,7 +241,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_7/travel_19.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-12-06T22:06:36",
     "updated_at": "2024-12-13T02:12:28"
@@ -254,7 +254,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_8/travel_20.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2020-08-16T06:41:56",
     "updated_at": "2025-03-12T19:46:17"
@@ -267,7 +267,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_8/training_21.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-08-16T02:06:21",
     "updated_at": "2023-11-14T23:41:05"
@@ -280,7 +280,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_8/meals_22.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-01-02",
     "created_at": "2022-04-10T03:40:48",
     "updated_at": "2024-09-25T17:00:43"
@@ -293,7 +293,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_9/equipment_23.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-06-13T04:07:26",
     "updated_at": "2025-02-28T02:38:45"
@@ -306,7 +306,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_9/equipment_24.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-10-23T20:10:12",
     "updated_at": "2025-03-26T18:44:37"
@@ -319,7 +319,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_10/travel_25.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-11-21T13:34:47",
     "updated_at": "2024-12-11T12:04:56"
@@ -332,7 +332,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_10/equipment_26.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-07-18T22:52:23",
     "updated_at": "2025-07-23T20:46:29"
@@ -345,7 +345,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_10/travel_27.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-04-16T08:01:21",
     "updated_at": "2025-04-17T17:55:25"
@@ -358,7 +358,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_11/equipment_28.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-10-24T15:19:23",
     "updated_at": "2025-02-11T12:45:30"
@@ -371,7 +371,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_11/other_29.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2024-07-02",
     "created_at": "2023-12-12T12:24:51",
     "updated_at": "2025-04-28T22:19:25"
@@ -384,7 +384,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_11/meals_30.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-04-07",
     "created_at": "2025-03-24T07:50:10",
     "updated_at": "2025-05-27T10:15:26"
@@ -397,7 +397,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_12/travel_31.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-01-23",
     "created_at": "2025-01-02T08:29:13",
     "updated_at": "2025-03-23T15:33:23"
@@ -410,7 +410,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_12/meals_32.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-07-25T18:00:58",
     "updated_at": "2025-08-11T22:52:44"
@@ -423,7 +423,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_12/other_33.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-08-13",
     "created_at": "2025-04-30T12:59:59",
     "updated_at": "2025-06-10T07:47:55"
@@ -436,7 +436,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_13/training_34.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-08-03",
     "created_at": "2025-07-09T13:02:57",
     "updated_at": "2025-07-19T05:42:35"
@@ -449,7 +449,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_13/training_35.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-06-08",
     "created_at": "2025-04-08T09:11:19",
     "updated_at": "2025-06-01T02:31:19"
@@ -462,7 +462,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_14/other_36.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-05-04T07:31:00",
     "updated_at": "2025-06-28T14:59:35"
@@ -475,7 +475,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_14/meals_37.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2024-07-25T13:44:51",
     "updated_at": "2024-09-09T10:07:24"
@@ -488,7 +488,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_14/other_38.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-07-17",
     "created_at": "2025-02-14T20:22:58",
     "updated_at": "2025-03-27T21:16:22"
@@ -501,7 +501,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_15/other_39.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-04-28T12:10:53",
     "updated_at": "2025-05-27T19:42:11"
@@ -514,7 +514,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_17/training_40.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-07-14T10:26:53",
     "updated_at": "2025-08-02T15:06:17"
@@ -527,7 +527,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_17/other_41.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-01-04T22:09:13",
     "updated_at": "2025-05-25T03:03:04"
@@ -540,7 +540,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_17/training_42.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-01-04T04:06:13",
     "updated_at": "2025-05-16T19:36:47"
@@ -553,7 +553,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_17/travel_43.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-07-28",
     "created_at": "2025-05-04T12:10:25",
     "updated_at": "2025-05-22T07:24:04"
@@ -566,7 +566,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_17/travel_44.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-07-03",
     "created_at": "2025-06-12T11:30:05",
     "updated_at": "2025-06-27T23:19:58"
@@ -579,7 +579,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_18/equipment_45.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-11-28T05:00:56",
     "updated_at": "2025-02-18T06:30:37"
@@ -592,7 +592,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_18/training_46.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-03-15T02:13:47",
     "updated_at": "2025-06-23T21:29:01"
@@ -605,7 +605,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_18/travel_47.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2024-02-06",
     "created_at": "2023-11-11T19:33:31",
     "updated_at": "2024-10-15T22:32:12"
@@ -618,7 +618,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_18/training_48.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2023-05-30T00:23:43",
     "updated_at": "2025-05-22T10:31:41"
@@ -631,7 +631,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_20/meals_49.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-08-13",
     "created_at": "2025-06-21T03:35:08",
     "updated_at": "2025-08-01T13:46:43"
@@ -644,7 +644,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_20/equipment_50.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-07-23",
     "created_at": "2025-07-23T00:34:27",
     "updated_at": "2025-08-01T18:09:47"
@@ -657,7 +657,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_20/equipment_51.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-04-19",
     "created_at": "2025-03-17T20:45:50",
     "updated_at": "2025-04-03T03:56:12"
@@ -670,7 +670,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_20/travel_52.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-06-26",
     "created_at": "2025-01-13T01:21:01",
     "updated_at": "2025-03-25T04:58:23"
@@ -683,7 +683,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_22/training_53.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-03-03T08:43:11",
     "updated_at": "2025-05-16T07:04:14"
@@ -696,7 +696,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_22/other_54.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-12-22T08:50:02",
     "updated_at": "2025-07-19T11:46:02"
@@ -709,7 +709,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_22/equipment_55.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-05-01T09:48:17",
     "updated_at": "2025-08-06T07:53:59"
@@ -722,7 +722,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_23/travel_56.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2022-12-21",
     "created_at": "2022-08-20T12:57:00",
     "updated_at": "2024-09-15T01:32:34"
@@ -735,7 +735,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_24/meals_57.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-05-28",
     "created_at": "2024-10-22T16:29:09",
     "updated_at": "2025-04-24T12:33:36"
@@ -748,7 +748,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_24/training_58.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-06-17",
     "created_at": "2025-03-28T14:24:48",
     "updated_at": "2025-05-06T05:17:36"
@@ -761,7 +761,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_24/equipment_59.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-02-27T05:26:20",
     "updated_at": "2025-06-11T06:49:57"
@@ -774,7 +774,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_25/equipment_60.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-11-09T23:38:26",
     "updated_at": "2025-05-30T20:18:38"
@@ -787,7 +787,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_25/training_61.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-08-22",
     "created_at": "2025-02-18T12:36:34",
     "updated_at": "2025-03-29T22:06:35"
@@ -800,7 +800,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_25/equipment_62.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2024-07-31T23:05:39",
     "updated_at": "2024-12-19T14:41:25"
@@ -813,7 +813,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_26/meals_63.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-07-02T02:04:16",
     "updated_at": "2025-08-16T01:53:07"
@@ -826,7 +826,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_26/travel_64.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-06-04",
     "created_at": "2025-04-02T03:15:16",
     "updated_at": "2025-04-25T08:45:50"
@@ -839,7 +839,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_26/travel_65.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-07-19",
     "created_at": "2024-12-31T19:00:24",
     "updated_at": "2025-04-25T11:04:33"
@@ -852,7 +852,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_27/training_66.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-07-07",
     "created_at": "2025-06-18T01:40:54",
     "updated_at": "2025-08-20T16:14:22"
@@ -865,7 +865,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_27/training_67.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-07-02T12:41:13",
     "updated_at": "2025-07-26T23:28:11"
@@ -878,7 +878,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_28/training_68.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-08-11T09:27:16",
     "updated_at": "2025-08-17T02:57:32"
@@ -891,7 +891,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_28/meals_69.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-04-17T14:46:47",
     "updated_at": "2025-05-04T16:33:57"
@@ -904,7 +904,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_28/travel_70.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-08-11",
     "created_at": "2024-11-09T14:32:16",
     "updated_at": "2025-02-06T01:37:16"
@@ -917,7 +917,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_28/other_71.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2024-12-22",
     "created_at": "2024-10-16T01:23:32",
     "updated_at": "2025-06-03T03:50:15"
@@ -930,7 +930,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_30/training_72.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-11-12T01:57:34",
     "updated_at": "2024-11-18T17:24:31"
@@ -943,7 +943,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_30/training_73.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-12-10T15:49:06",
     "updated_at": "2025-03-17T19:11:14"
@@ -956,7 +956,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_30/meals_74.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2024-08-04",
     "created_at": "2023-10-23T21:20:26",
     "updated_at": "2024-05-19T14:32:19"
@@ -969,7 +969,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_32/other_75.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-12-06T06:49:14",
     "updated_at": "2024-06-10T01:14:42"
@@ -982,7 +982,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_32/other_76.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-08-11T00:36:02",
     "updated_at": "2025-05-05T00:16:05"
@@ -995,7 +995,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_32/equipment_77.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-03-29T14:12:18",
     "updated_at": "2024-04-04T12:54:12"
@@ -1008,7 +1008,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_32/meals_78.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-09-05T17:53:45",
     "updated_at": "2024-02-22T13:34:08"
@@ -1021,7 +1021,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_32/training_79.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2022-04-26T10:40:59",
     "updated_at": "2024-03-08T14:58:08"
@@ -1034,7 +1034,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_33/equipment_80.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-06-25T21:18:16",
     "updated_at": "2024-10-31T10:54:59"
@@ -1047,7 +1047,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_34/meals_81.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-05-26T17:21:37",
     "updated_at": "2025-04-21T16:56:07"
@@ -1060,7 +1060,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_34/training_82.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-02-17",
     "created_at": "2024-10-29T06:25:10",
     "updated_at": "2025-08-18T22:55:34"
@@ -1073,7 +1073,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_34/meals_83.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-07-25",
     "created_at": "2025-03-12T15:49:09",
     "updated_at": "2025-07-25T17:22:04"
@@ -1086,7 +1086,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_35/meals_84.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2021-11-29T07:14:32",
     "updated_at": "2024-07-09T23:55:50"
@@ -1099,7 +1099,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_35/equipment_85.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2022-07-07T21:21:50",
     "updated_at": "2023-07-02T14:42:51"
@@ -1112,7 +1112,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_35/other_86.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-05-08",
     "created_at": "2025-05-04T06:08:44",
     "updated_at": "2025-05-14T11:37:40"
@@ -1125,7 +1125,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_35/equipment_87.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2024-06-30",
     "created_at": "2023-07-07T02:21:38",
     "updated_at": "2025-06-16T06:13:01"
@@ -1138,7 +1138,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_36/other_88.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-05-08",
     "created_at": "2025-02-15T22:05:58",
     "updated_at": "2025-03-06T22:55:16"
@@ -1151,7 +1151,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_36/training_89.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-03-08T08:00:52",
     "updated_at": "2025-08-01T11:26:00"
@@ -1164,7 +1164,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_37/training_90.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-07-31T06:31:02",
     "updated_at": "2023-08-04T08:11:59"
@@ -1177,7 +1177,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_38/meals_91.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-01-10",
     "created_at": "2024-10-04T11:29:47",
     "updated_at": "2025-03-17T20:08:08"
@@ -1190,7 +1190,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_38/training_92.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-07-22T16:17:15",
     "updated_at": "2025-08-10T10:32:31"
@@ -1203,7 +1203,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_39/equipment_93.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-06-19",
     "created_at": "2025-05-20T00:08:38",
     "updated_at": "2025-06-26T16:44:25"
@@ -1216,7 +1216,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_39/travel_94.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-06-23",
     "created_at": "2025-02-26T17:34:24",
     "updated_at": "2025-02-26T17:35:26"
@@ -1229,7 +1229,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_39/training_95.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-08-24",
     "created_at": "2025-07-05T22:38:47",
     "updated_at": "2025-08-06T11:56:36"
@@ -1242,7 +1242,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_40/equipment_96.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-07-26",
     "created_at": "2025-04-16T14:50:05",
     "updated_at": "2025-08-05T03:00:20"
@@ -1255,7 +1255,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_40/training_97.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-07-08T10:58:14",
     "updated_at": "2025-08-23T01:56:14"
@@ -1268,7 +1268,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_41/training_98.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2024-08-19",
     "created_at": "2024-06-24T17:16:55",
     "updated_at": "2025-07-29T15:43:11"
@@ -1281,7 +1281,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_41/other_99.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-06-22T04:05:09",
     "updated_at": "2025-06-23T18:42:01"
@@ -1294,7 +1294,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_41/travel_100.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-07-06T08:06:42",
     "updated_at": "2025-03-13T22:51:34"
@@ -1307,7 +1307,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_41/training_101.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-12-01T09:25:39",
     "updated_at": "2025-06-07T23:47:04"
@@ -1320,7 +1320,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_41/training_102.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-07-27T03:13:18",
     "updated_at": "2025-08-08T09:55:56"
@@ -1333,7 +1333,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_42/meals_103.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2021-09-01T10:33:16",
     "updated_at": "2022-05-16T01:08:50"
@@ -1346,7 +1346,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_42/equipment_104.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-06-12T19:48:58",
     "updated_at": "2023-07-17T11:46:09"
@@ -1359,7 +1359,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_42/training_105.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-03-12T00:27:48",
     "updated_at": "2025-04-13T02:35:46"
@@ -1372,7 +1372,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_42/training_106.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-10-02T21:09:41",
     "updated_at": "2025-02-16T19:14:00"
@@ -1385,7 +1385,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_42/meals_107.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2022-02-25",
     "created_at": "2021-07-14T20:49:28",
     "updated_at": "2024-09-14T17:13:14"
@@ -1398,7 +1398,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_43/training_108.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-05-23T16:34:56",
     "updated_at": "2025-08-15T22:45:10"
@@ -1411,7 +1411,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_43/other_109.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-06-10T06:49:16",
     "updated_at": "2025-06-27T08:06:21"
@@ -1424,7 +1424,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_43/other_110.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-06-02",
     "created_at": "2025-04-28T21:36:12",
     "updated_at": "2025-05-24T05:08:19"
@@ -1437,7 +1437,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_44/other_111.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2023-06-19T03:14:13",
     "updated_at": "2023-09-07T10:20:44"
@@ -1450,7 +1450,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_44/equipment_112.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-07-17",
     "created_at": "2024-07-27T15:37:18",
     "updated_at": "2025-06-15T12:04:40"
@@ -1463,7 +1463,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_45/travel_113.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-08-18T13:32:04",
     "updated_at": "2025-08-21T22:07:26"
@@ -1476,7 +1476,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_45/meals_114.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2023-12-30T23:45:16",
     "updated_at": "2024-11-14T15:21:43"
@@ -1489,7 +1489,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_45/equipment_115.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2023-05-05T23:28:32",
     "updated_at": "2024-04-20T20:29:27"
@@ -1502,7 +1502,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_46/meals_116.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-07-08",
     "created_at": "2024-11-26T04:19:55",
     "updated_at": "2025-05-11T17:08:18"
@@ -1515,7 +1515,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_46/travel_117.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-02-27T13:49:54",
     "updated_at": "2025-05-16T17:53:38"
@@ -1528,7 +1528,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_46/other_118.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2025-01-20T04:13:09",
     "updated_at": "2025-05-16T07:05:19"
@@ -1541,7 +1541,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_47/other_119.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2023-08-01T13:20:59",
     "updated_at": "2025-03-16T08:05:23"
@@ -1554,7 +1554,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_47/meals_120.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2023-09-18T05:56:50",
     "updated_at": "2025-01-23T12:09:55"
@@ -1567,7 +1567,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_47/meals_121.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2022-05-30T17:24:55",
     "updated_at": "2025-02-05T04:59:35"
@@ -1580,7 +1580,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_47/equipment_122.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2023-10-15T01:18:57",
     "updated_at": "2023-12-07T08:03:21"
@@ -1593,7 +1593,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_47/training_123.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2023-07-16",
     "created_at": "2023-07-05T15:50:47",
     "updated_at": "2025-04-12T06:30:47"
@@ -1606,7 +1606,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_49/meals_124.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2024-07-09T16:03:32",
     "updated_at": "2025-01-15T05:54:04"
@@ -1619,7 +1619,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_49/training_125.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-03-07T20:47:20",
     "updated_at": "2024-03-27T11:38:06"
@@ -1632,7 +1632,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_49/equipment_126.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-02-18",
     "created_at": "2023-06-11T10:01:05",
     "updated_at": "2025-05-21T12:50:35"
@@ -1645,7 +1645,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_50/other_127.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2024-11-10",
     "created_at": "2024-04-11T07:50:41",
     "updated_at": "2025-08-15T18:18:59"
@@ -1658,7 +1658,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_50/travel_128.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-06-16",
     "created_at": "2024-05-19T10:57:22",
     "updated_at": "2025-05-11T09:02:54"
@@ -1671,7 +1671,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_50/travel_129.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-03-03",
     "created_at": "2024-11-25T04:11:36",
     "updated_at": "2025-05-29T01:39:14"
@@ -1684,7 +1684,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_50/meals_130.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2024-07-23",
     "created_at": "2024-06-12T10:53:51",
     "updated_at": "2025-08-24T08:24:01"
@@ -1697,7 +1697,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_51/meals_131.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-06-06T18:32:33",
     "updated_at": "2025-08-23T01:16:11"
@@ -1710,7 +1710,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_55/other_132.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-09-19T23:32:08",
     "updated_at": "2025-04-29T10:57:03"
@@ -1723,7 +1723,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_55/other_133.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-08-21T21:32:52",
     "updated_at": "2025-08-25T23:24:58"
@@ -1736,7 +1736,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_56/equipment_134.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-10-07T18:12:08",
     "updated_at": "2025-07-05T20:58:44"
@@ -1749,7 +1749,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_57/travel_135.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-07-03T05:10:04",
     "updated_at": "2025-06-03T19:13:43"
@@ -1762,7 +1762,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_57/other_136.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-03-16T18:56:20",
     "updated_at": "2025-08-22T20:08:37"
@@ -1775,7 +1775,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_57/meals_137.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2024-10-21",
     "created_at": "2024-09-12T18:28:16",
     "updated_at": "2025-07-20T22:38:46"
@@ -1788,7 +1788,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_57/meals_138.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-03-25",
     "created_at": "2024-10-17T16:54:34",
     "updated_at": "2025-02-04T02:43:38"
@@ -1801,7 +1801,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_57/meals_139.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-07-04T11:37:14",
     "updated_at": "2025-07-29T16:31:28"
@@ -1814,7 +1814,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_58/other_140.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-01-11T11:47:59",
     "updated_at": "2025-01-11T17:52:03"
@@ -1827,7 +1827,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_58/meals_141.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2024-12-24T13:07:26",
     "updated_at": "2025-02-26T11:04:47"
@@ -1840,7 +1840,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_59/meals_142.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-12-14T07:52:38",
     "updated_at": "2025-05-22T20:28:02"
@@ -1853,7 +1853,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_59/meals_143.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2024-08-17T08:36:42",
     "updated_at": "2025-08-05T11:03:54"
@@ -1866,7 +1866,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_60/meals_144.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-11-26T09:55:40",
     "updated_at": "2025-04-26T02:04:13"
@@ -1879,7 +1879,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_61/meals_145.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2025-04-16T05:59:11",
     "updated_at": "2025-07-10T06:06:43"
@@ -1892,7 +1892,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_61/meals_146.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-06-19",
     "created_at": "2025-05-12T06:14:55",
     "updated_at": "2025-07-07T13:46:38"
@@ -1905,7 +1905,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_61/meals_147.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-07-14T11:00:59",
     "updated_at": "2025-07-20T15:33:35"
@@ -1918,7 +1918,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_61/training_148.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-04-02",
     "created_at": "2024-12-17T17:45:31",
     "updated_at": "2025-05-25T05:22:40"
@@ -1931,7 +1931,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_61/equipment_149.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-11-25T04:12:58",
     "updated_at": "2025-08-26T22:45:09"
@@ -1944,7 +1944,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_62/meals_150.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-05-11",
     "created_at": "2024-10-07T04:36:22",
     "updated_at": "2025-03-07T18:10:43"
@@ -1957,7 +1957,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_62/other_151.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2023-06-28",
     "created_at": "2022-08-29T13:34:40",
     "updated_at": "2024-09-03T07:16:10"
@@ -1970,7 +1970,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_62/travel_152.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2024-03-21",
     "created_at": "2022-12-27T14:59:37",
     "updated_at": "2023-02-17T02:38:03"
@@ -1983,7 +1983,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_63/meals_153.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-01-29",
     "created_at": "2024-12-06T16:21:21",
     "updated_at": "2025-06-08T19:46:16"
@@ -1996,7 +1996,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_63/meals_154.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-03-04",
     "created_at": "2025-02-08T06:22:23",
     "updated_at": "2025-08-18T19:46:23"
@@ -2009,7 +2009,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_63/other_155.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-07-30T03:58:58",
     "updated_at": "2024-10-04T00:42:43"
@@ -2022,7 +2022,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_63/travel_156.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-07-17T14:41:29",
     "updated_at": "2025-08-22T17:20:35"
@@ -2035,7 +2035,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_64/travel_157.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2023-03-10T13:43:26",
     "updated_at": "2024-01-07T02:28:44"
@@ -2048,7 +2048,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_64/training_158.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2024-11-18",
     "created_at": "2024-06-20T07:54:24",
     "updated_at": "2025-03-01T12:50:42"
@@ -2061,7 +2061,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_64/meals_159.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2023-08-10T13:08:08",
     "updated_at": "2024-08-03T13:27:18"
@@ -2074,7 +2074,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_64/equipment_160.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-10-27T16:26:01",
     "updated_at": "2024-12-28T21:21:53"
@@ -2087,7 +2087,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_66/other_161.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-07-11T17:18:17",
     "updated_at": "2025-08-16T22:29:31"
@@ -2100,7 +2100,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_66/travel_162.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-01-07T07:05:19",
     "updated_at": "2025-01-12T20:07:14"
@@ -2113,7 +2113,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_66/equipment_163.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-04-09T09:07:30",
     "updated_at": "2024-11-30T12:56:03"
@@ -2126,7 +2126,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_66/training_164.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-05-07T17:24:25",
     "updated_at": "2024-12-30T07:32:23"
@@ -2139,7 +2139,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_66/other_165.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-08-11",
     "created_at": "2025-08-13T17:21:49",
     "updated_at": "2025-08-13T21:26:23"
@@ -2152,7 +2152,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_68/travel_166.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-01-27T19:06:28",
     "updated_at": "2025-08-15T17:24:28"
@@ -2165,7 +2165,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_68/equipment_167.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-06-29",
     "created_at": "2025-02-12T05:00:07",
     "updated_at": "2025-07-29T16:40:01"
@@ -2178,7 +2178,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_69/equipment_168.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-04-30T16:57:39",
     "updated_at": "2025-07-24T21:14:43"
@@ -2191,7 +2191,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_69/equipment_169.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2021-12-15T13:37:13",
     "updated_at": "2024-10-19T18:54:40"
@@ -2204,7 +2204,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_70/meals_170.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2024-01-31",
     "created_at": "2022-12-26T14:43:56",
     "updated_at": "2025-05-29T05:39:43"
@@ -2217,7 +2217,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_70/meals_171.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-01-16T19:26:01",
     "updated_at": "2025-07-27T14:25:34"
@@ -2230,7 +2230,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_70/meals_172.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2025-02-10T09:28:42",
     "updated_at": "2025-03-04T17:41:29"
@@ -2243,7 +2243,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_70/other_173.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2023-03-13T06:20:46",
     "updated_at": "2024-04-12T07:01:51"
@@ -2256,7 +2256,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_70/other_174.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-04-09T12:00:49",
     "updated_at": "2025-06-06T00:26:25"
@@ -2269,7 +2269,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_71/training_175.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-07-21T11:56:51",
     "updated_at": "2025-07-27T07:00:21"
@@ -2282,7 +2282,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_71/meals_176.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-04-04",
     "created_at": "2025-03-24T23:32:19",
     "updated_at": "2025-07-31T02:03:26"
@@ -2295,7 +2295,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_72/equipment_177.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2024-09-24T20:24:31",
     "updated_at": "2025-04-10T20:32:25"
@@ -2308,7 +2308,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_72/meals_178.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-03-13T10:35:08",
     "updated_at": "2025-06-15T09:12:48"
@@ -2321,7 +2321,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_72/training_179.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-07-05",
     "created_at": "2025-07-06T07:13:30",
     "updated_at": "2025-07-08T13:54:24"
@@ -2334,7 +2334,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_72/training_180.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-04-19T21:18:47",
     "updated_at": "2025-07-03T10:29:49"
@@ -2347,7 +2347,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_73/training_181.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-11-19T13:40:04",
     "updated_at": "2024-01-02T19:42:15"
@@ -2360,7 +2360,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_73/equipment_182.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-04-27T17:29:14",
     "updated_at": "2025-03-01T12:01:37"
@@ -2373,7 +2373,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_73/training_183.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2025-04-20T14:17:36",
     "updated_at": "2025-06-02T11:11:07"
@@ -2386,7 +2386,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_74/meals_184.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2023-09-26T10:19:21",
     "updated_at": "2024-04-23T22:10:04"
@@ -2399,7 +2399,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_74/meals_185.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2024-08-17",
     "created_at": "2023-12-03T20:05:54",
     "updated_at": "2025-03-25T14:24:00"
@@ -2412,7 +2412,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_74/travel_186.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2024-09-24",
     "created_at": "2022-09-11T10:19:37",
     "updated_at": "2024-03-26T13:22:15"
@@ -2425,7 +2425,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_74/equipment_187.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2024-06-14",
     "created_at": "2023-12-03T08:44:05",
     "updated_at": "2024-12-02T22:03:25"
@@ -2438,7 +2438,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_75/travel_188.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-03-18",
     "created_at": "2024-12-02T09:20:55",
     "updated_at": "2025-02-04T21:53:40"
@@ -2451,7 +2451,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_76/other_189.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-08-12",
     "created_at": "2025-05-21T06:26:55",
     "updated_at": "2025-07-04T08:58:56"
@@ -2464,7 +2464,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_76/equipment_190.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-01-15T07:31:57",
     "updated_at": "2025-04-08T20:16:14"
@@ -2477,7 +2477,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_76/training_191.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-08-14",
     "created_at": "2025-01-20T16:31:02",
     "updated_at": "2025-06-29T17:04:15"
@@ -2490,7 +2490,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_76/training_192.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-11-16T03:52:50",
     "updated_at": "2025-05-21T11:07:25"
@@ -2503,7 +2503,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_78/travel_193.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-01-05T12:20:38",
     "updated_at": "2025-05-17T23:06:11"
@@ -2516,7 +2516,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_78/travel_194.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-04-24T16:46:46",
     "updated_at": "2025-05-14T22:42:40"
@@ -2529,7 +2529,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_78/other_195.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-08-11",
     "created_at": "2025-03-06T19:29:11",
     "updated_at": "2025-07-26T19:43:23"
@@ -2542,7 +2542,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_78/training_196.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2024-10-05",
     "created_at": "2024-06-17T16:57:29",
     "updated_at": "2024-09-04T19:33:17"
@@ -2555,7 +2555,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_79/travel_197.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-04-14T21:53:16",
     "updated_at": "2025-07-06T20:46:45"
@@ -2568,7 +2568,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_79/training_198.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-12-23T16:24:05",
     "updated_at": "2025-06-04T00:07:56"
@@ -2581,7 +2581,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_79/other_199.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-05-16",
     "created_at": "2025-02-15T03:35:27",
     "updated_at": "2025-06-22T13:01:04"
@@ -2594,7 +2594,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_80/other_200.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-05-01T22:53:31",
     "updated_at": "2024-09-25T18:14:38"
@@ -2607,7 +2607,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_81/travel_201.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2023-10-16",
     "created_at": "2021-07-03T06:28:45",
     "updated_at": "2023-03-04T07:43:15"
@@ -2620,7 +2620,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_81/equipment_202.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2023-11-01",
     "created_at": "2023-03-26T13:05:12",
     "updated_at": "2023-08-03T21:06:29"
@@ -2633,7 +2633,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_82/meals_203.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2025-08-22T16:13:10",
     "updated_at": "2025-08-24T18:46:12"
@@ -2646,7 +2646,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_82/training_204.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-12-16T17:12:45",
     "updated_at": "2025-02-05T18:47:37"
@@ -2659,7 +2659,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_82/training_205.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-03-06T22:08:26",
     "updated_at": "2025-07-03T18:40:29"
@@ -2672,7 +2672,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_82/meals_206.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-07-28T10:04:05",
     "updated_at": "2025-08-19T06:53:34"
@@ -2685,7 +2685,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_82/meals_207.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-07-08",
     "created_at": "2025-07-02T05:27:01",
     "updated_at": "2025-07-17T11:58:20"
@@ -2698,7 +2698,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_83/training_208.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-05-20T07:26:46",
     "updated_at": "2025-04-03T21:56:28"
@@ -2711,7 +2711,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_83/meals_209.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-05-16T19:53:03",
     "updated_at": "2025-07-28T23:30:59"
@@ -2724,7 +2724,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_83/meals_210.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-07-23T13:57:50",
     "updated_at": "2024-10-27T13:37:18"
@@ -2737,7 +2737,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_84/meals_211.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-04-15",
     "created_at": "2025-03-19T12:08:00",
     "updated_at": "2025-04-15T09:17:37"
@@ -2750,7 +2750,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_84/meals_212.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2023-11-11T21:41:57",
     "updated_at": "2025-01-23T02:42:27"
@@ -2763,7 +2763,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_84/meals_213.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2024-03-03T14:27:07",
     "updated_at": "2024-04-21T05:49:32"
@@ -2776,7 +2776,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_85/equipment_214.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-08-14T12:14:34",
     "updated_at": "2025-08-16T22:01:02"
@@ -2789,7 +2789,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_86/meals_215.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2024-12-20",
     "created_at": "2024-06-11T22:54:29",
     "updated_at": "2024-08-12T21:56:50"
@@ -2802,7 +2802,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_87/meals_216.pdf",
     "status": "approved",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": null,
     "created_at": "2024-09-30T21:33:20",
     "updated_at": "2025-06-03T04:24:09"
@@ -2815,7 +2815,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_89/equipment_217.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-08-20",
     "created_at": "2025-08-11T17:10:20",
     "updated_at": "2025-08-25T00:25:56"
@@ -2828,7 +2828,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_89/training_218.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-05-31",
     "created_at": "2025-04-27T00:53:07",
     "updated_at": "2025-05-07T19:31:58"
@@ -2841,7 +2841,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_89/meals_219.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-02-02T21:57:34",
     "updated_at": "2025-08-03T22:11:09"
@@ -2854,7 +2854,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_90/training_220.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-11-16T18:00:49",
     "updated_at": "2024-12-30T12:05:50"
@@ -2867,7 +2867,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_90/other_221.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2025-08-20",
     "created_at": "2024-05-05T01:10:54",
     "updated_at": "2025-06-29T06:57:44"
@@ -2880,7 +2880,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_90/travel_222.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2022-03-14T02:32:44",
     "updated_at": "2022-09-19T15:26:33"
@@ -2893,7 +2893,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_91/travel_223.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2024-10-16T13:23:50",
     "updated_at": "2024-11-29T05:34:52"
@@ -2906,7 +2906,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_91/training_224.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-06-23T16:49:16",
     "updated_at": "2025-07-03T08:26:36"
@@ -2919,7 +2919,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_92/other_225.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2022-01-14T14:46:52",
     "updated_at": "2023-12-15T03:34:22"
@@ -2932,7 +2932,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_92/other_226.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2021-09-21T03:41:29",
     "updated_at": "2022-06-11T22:26:25"
@@ -2945,7 +2945,7 @@
     "expense_type": "other",
     "receipt_file_path": "/receipts/emp_92/other_227.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-03-06",
     "created_at": "2023-01-03T18:31:01",
     "updated_at": "2023-01-22T13:34:04"
@@ -2958,7 +2958,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_92/training_228.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2023-04-06",
     "created_at": "2022-09-04T04:14:32",
     "updated_at": "2024-02-03T18:53:42"
@@ -2971,7 +2971,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_92/training_229.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2024-10-08T23:23:45",
     "updated_at": "2025-04-04T19:56:32"
@@ -2984,7 +2984,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_95/equipment_230.pdf",
     "status": "submitted",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-05-12T19:29:03",
     "updated_at": "2025-05-27T03:28:37"
@@ -2997,7 +2997,7 @@
     "expense_type": "training",
     "receipt_file_path": "/receipts/emp_95/training_231.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-03-20T13:29:24",
     "updated_at": "2025-05-07T22:34:47"
@@ -3010,7 +3010,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_95/meals_232.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-02-25",
     "created_at": "2024-08-16T23:17:37",
     "updated_at": "2024-08-28T06:54:37"
@@ -3023,7 +3023,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_95/equipment_233.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-02-21T00:42:43",
     "updated_at": "2025-07-09T22:10:06"
@@ -3036,7 +3036,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_96/equipment_234.pdf",
     "status": "approved",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": null,
     "created_at": "2025-06-02T17:20:41",
     "updated_at": "2025-08-18T04:15:24"
@@ -3049,7 +3049,7 @@
     "expense_type": "meals",
     "receipt_file_path": "/receipts/emp_96/meals_235.pdf",
     "status": "paid",
-    "processed_by": "31",
+    "approved_by": "31",
     "payment_date": "2025-04-25",
     "created_at": "2025-04-10T03:25:02",
     "updated_at": "2025-08-04T20:25:38"
@@ -3062,7 +3062,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_98/equipment_236.pdf",
     "status": "rejected",
-    "processed_by": null,
+    "approved_by": null,
     "payment_date": null,
     "created_at": "2025-06-10T19:33:23",
     "updated_at": "2025-08-26T12:27:50"
@@ -3075,7 +3075,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_98/equipment_237.pdf",
     "status": "paid",
-    "processed_by": "34",
+    "approved_by": "34",
     "payment_date": "2024-08-28",
     "created_at": "2024-04-23T12:45:29",
     "updated_at": "2025-03-03T10:51:59"
@@ -3088,7 +3088,7 @@
     "expense_type": "travel",
     "receipt_file_path": "/receipts/emp_99/travel_238.pdf",
     "status": "paid",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": "2025-03-13",
     "created_at": "2025-02-10T06:28:36",
     "updated_at": "2025-08-25T03:35:53"
@@ -3101,7 +3101,7 @@
     "expense_type": "equipment",
     "receipt_file_path": "/receipts/emp_99/equipment_239.pdf",
     "status": "approved",
-    "processed_by": "32",
+    "approved_by": "32",
     "payment_date": null,
     "created_at": "2025-07-29T03:12:10",
     "updated_at": "2025-08-03T06:56:08"
