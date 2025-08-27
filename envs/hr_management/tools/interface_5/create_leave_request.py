@@ -37,7 +37,7 @@ class CreateLeaveRequest(Tool):
         try:
             start_dt = parse_date(start_date)
             end_dt = parse_date(end_date)
-            current_date = datetime.now()
+            current_date = datetime(2025, 10, 1)
             
             # Check if start date is before end date
             if start_dt >= end_dt:
@@ -46,14 +46,7 @@ class CreateLeaveRequest(Tool):
             # Check if dates are not in the past
             if start_dt.date() < current_date.date():
                 return json.dumps("Halt: Invalid leave request details: [invalid dates]")
-            
-            # Calculate actual days between start and end date
-            actual_days = (end_dt - start_dt).days
-
-            # Validate that days_requested matches the calculated difference
-            if days_requested != actual_days:
-                return json.dumps("Halt: Invalid leave request details: [days requested does not match date range]")
-        
+                
         except ValueError:
             return json.dumps("Halt: Invalid leave request details: [invalid dates]")
         
