@@ -5,15 +5,15 @@ from tau_bench.envs.tool import Tool
 class ProcessLeaveRequest(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], leave_id: str, status: str, 
-               processed_by: str) -> str:
+               approved_by: str = None) -> str:
         leave_requests = data.get("leave_requests", {})
         users = data.get("users", {})
         
         if leave_id not in leave_requests:
             return json.dumps(f"Halt: Leave request {leave_id} not found")
         
-        if processed_by not in users:
-            return json.dumps(f"Halt: Approver user {processed_by} not found")
+        if approved_by and approved_by not in users:
+            return json.dumps(f"Halt: Approver user {approved_by} not found")
         
         valid_statuses = ["approved", "rejected", "cancelled"]
         if status not in valid_statuses:
@@ -51,8 +51,8 @@ class ProcessLeaveRequest(Tool):
             leave_request["remaining_balance"] = remaining_balance
         
         leave_request["status"] = status
-        leave_request["processed_by"] = processed_by
-        leave_request["processing_date"] = "2025-10-01T00:00:00"
+        leave_request["approved_by"] = approved_by
+        leave_request["approval_date"] = "2025-10-01T00:00:00"
         leave_request["updated_at"] = "2025-10-01T00:00:00"
 
         return json.dumps({"leave": leave_request})
@@ -69,9 +69,9 @@ class ProcessLeaveRequest(Tool):
                     "properties": {
                         "leave_id": {"type": "string", "description": "ID of the leave request"},
                         "status": {"type": "string", "description": "New status (approved, rejected, cancelled)"},
-                        "processed_by": {"type": "string", "description": "ID of the user processing the request"}
+                        "approved_by": {"type": "string", "description": "ID of the user approving the request"}
                     },
-                    "required": ["leave_id", "status", "processed_by"]
+                    "required": ["leave_id", "status"]
                 }
             }
         }
