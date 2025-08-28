@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class RetrieveDepartments(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], department_id: Optional[str] = None,
-               manager_id: Optional[str] = None, status: Optional[str] = None) -> str:
+               manager_id: Optional[str] = None, department_name: Optional[str] = None, status: Optional[str] = None) -> str:
         
         departments = data.get("departments", {})
         results = []
@@ -15,6 +15,9 @@ class RetrieveDepartments(Tool):
                 continue
             if manager_id and department.get("manager_id") != manager_id:
                 continue
+            if department_name:
+                if (department.get("department_name").lower() != department_name.lower()):
+                    continue
             if status and department.get("status") != status:
                 continue
             results.append(department)
@@ -32,6 +35,7 @@ class RetrieveDepartments(Tool):
                     "type": "object",
                     "properties": {
                         "department_id": {"type": "string", "description": "Filter by department ID"},
+                        "department_name": {"type": "string", "description": "Filter by department name case insensitively"},
                         "manager_id": {"type": "string", "description": "Filter by manager ID"},
                         "status": {"type": "string", "description": "Filter by status"}
                     },

@@ -22,6 +22,8 @@ from .post_job_opening import PostJobOpening
 from .close_job_opening import CloseJobOpening
 from .create_audit_log import CreateAuditLog
 from .validate_approval import ValidateApproval
+from .get_employees import GetEmployees
+
 ALL_TOOLS_INTERFACE_1 = [
     GetUsers,
     GetDepartments,
@@ -46,5 +48,6 @@ ALL_TOOLS_INTERFACE_1 = [
     PostJobOpening,
     CloseJobOpening,
     CreateAuditLog,
-    ValidateApproval
+    ValidateApproval,
+    GetEmployees
 ]

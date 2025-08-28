@@ -81,7 +81,7 @@ class UpdateUser(Tool):
                         },
                         "mfa_enabled": {
                             "type": "boolean",
-                            "description": "Enable/disable MFA (optional)",
+                            "description": "Enable/disable MFA (True/False)",
                         },
                         "phone_number": {
                             "type": "string",

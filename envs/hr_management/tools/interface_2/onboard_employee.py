@@ -4,12 +4,10 @@ from tau_bench.envs.tool import Tool
 
 class OnboardEmployee(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], employee_id: str, user_id: str, position_id: str,
+    def invoke(data: Dict[str, Any], user_id: str, position_id: str,
                hire_date: str, employment_type: str, hr_manager_approval: bool,
                compliance_verification: bool, manager_id: Optional[str] = None,
-               date_of_birth: Optional[str] = None, address: Optional[str] = None,
-               emergency_contact_name: Optional[str] = None,
-               emergency_contact_phone: Optional[str] = None) -> str:
+               date_of_birth: Optional[str] = None, address: Optional[str] = None) -> str:
         
         employees = data.get("employees", {})
         users = data.get("users", {})
@@ -45,10 +43,13 @@ class OnboardEmployee(Tool):
         if employment_type not in valid_types:
             raise ValueError(f"Invalid employment_type. Must be one of {valid_types}")
         
-        # Check if employee already exists
-        if str(employee_id) in employees:
-            raise ValueError(f"Employee {employee_id} already exists")
-        
+        def generate_id(table: Dict[str, Any]) -> str:
+            if not table:
+                return "1"
+            return str(max(int(k) for k in table.keys()) + 1)
+
+        employee_id = generate_id(employees)
+
         timestamp = "2025-10-01T00:00:00"
         
         new_employee = {
@@ -61,8 +62,6 @@ class OnboardEmployee(Tool):
             "manager_id": manager_id,
             "date_of_birth": date_of_birth,
             "address": address,
-            "emergency_contact_name": emergency_contact_name,
-            "emergency_contact_phone": emergency_contact_phone,
             "created_at": timestamp,
             "updated_at": timestamp
         }
@@ -80,7 +79,6 @@ class OnboardEmployee(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "employee_id": {"type": "string", "description": "Employee ID"},
                         "user_id": {"type": "string", "description": "Associated user ID"},
                         "position_id": {"type": "string", "description": "Position ID"},
                         "hire_date": {"type": "string", "description": "Hire date"},
@@ -88,12 +86,10 @@ class OnboardEmployee(Tool):
                         "manager_id": {"type": "string", "description": "Manager employee ID (optional)"},
                         "date_of_birth": {"type": "string", "description": "Date of birth (optional)"},
                         "address": {"type": "string", "description": "Address (optional)"},
-                        "emergency_contact_name": {"type": "string", "description": "Emergency contact name (optional)"},
-                        "emergency_contact_phone": {"type": "string", "description": "Emergency contact phone (optional)"},
                         "hr_manager_approval": {"type": "boolean", "description": "HR Manager approval (True/False)"},
                         "compliance_verification": {"type": "boolean", "description": "Compliance verification for eligibility documents (True/False)"}
                     },
-                    "required": ["employee_id", "user_id", "position_id", "hire_date", "employment_type", "hr_manager_approval", "compliance_verification"]
+                    "required": ["user_id", "position_id", "hire_date", "employment_type", "hr_manager_approval", "compliance_verification"]
                 }
             }
         }

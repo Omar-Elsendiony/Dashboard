@@ -4,10 +4,8 @@ from tau_bench.envs.tool import Tool
 
 class GetJobPositions(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], position_id: Optional[str] = None,
-               department_id: Optional[str] = None, job_level: Optional[str] = None,
-               status: Optional[str] = None) -> str:
-        
+    def invoke(data: Dict[str, Any], position_id: Optional[str] = None, title: Optional[str] = None, department_id: Optional[str] = None, job_level: Optional[str] = None, hourly_rate_min: Optional[str] = None, hourly_rate_max: Optional[str] = None, status: Optional[str] = None) -> str:
+
         job_positions = data.get("job_positions", {})
         results = []
         
@@ -19,6 +17,13 @@ class GetJobPositions(Tool):
             if job_level and position.get("job_level") != job_level:
                 continue
             if status and position.get("status") != status:
+                continue
+            if title:
+                if title.lower() != position.get("title").lower():
+                    continue
+            if hourly_rate_min and position.get("hourly_rate_min", 0) < float(hourly_rate_min):
+                continue
+            if hourly_rate_max and position.get("hourly_rate_max", 0) > float(hourly_rate_max):
                 continue
             results.append(position)
         
@@ -37,7 +42,10 @@ class GetJobPositions(Tool):
                         "position_id": {"type": "string", "description": "Filter by position ID"},
                         "department_id": {"type": "string", "description": "Filter by department ID"},
                         "job_level": {"type": "string", "description": "Filter by job level"},
-                        "status": {"type": "string", "description": "Filter by status"}
+                        "status": {"type": "string", "description": "Filter by status"},
+                        "hourly_rate_min": {"type": "string", "description": "Filter by the positions that have hourly rate greater than or equal to the hourly_rate_min"},
+                        "hourly_rate_max": {"type": "string", "description": "Filter by the positions that have hourly rate less than or equal to the hourly_rate_max"},
+                        "title": {"type": "string", "description": "Filter by title case insensitively"}
                     },
                     "required": []
                 }
