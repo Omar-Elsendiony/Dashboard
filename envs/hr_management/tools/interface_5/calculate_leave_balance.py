@@ -5,7 +5,7 @@ from tau_bench.envs.tool import Tool
 class CalculateLeaveBalance(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], employee_id: str, leave_type: str, 
-               annual_allocation: float) -> str:
+               annual_allocation: float = 15) -> str:
         employees = data.get("employees", {})
         leave_requests = data.get("leave_requests", {})
         
