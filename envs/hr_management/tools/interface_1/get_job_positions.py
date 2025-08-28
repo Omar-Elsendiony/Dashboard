@@ -4,7 +4,7 @@ from tau_bench.envs.tool import Tool
 
 class GetJobPositions(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], position_id: Optional[str] = None, title: Optional[str] = None, department_id: Optional[str] = None, job_level: Optional[str] = None, hourly_rate_min: Optional[str] = None, hourly_rate_max: Optional[str] = None, status: Optional[str] = None) -> str:
+    def invoke(data: Dict[str, Any], position_id: Optional[str] = None, title: Optional[str] = None, department_id: Optional[str] = None, job_level: Optional[str] = None, hourly_rate_min: Optional[float] = None, hourly_rate_max: Optional[float] = None, status: Optional[str] = None) -> str:
 
         job_positions = data.get("job_positions", {})
         results = []
@@ -43,8 +43,8 @@ class GetJobPositions(Tool):
                         "department_id": {"type": "string", "description": "Filter by department ID"},
                         "job_level": {"type": "string", "description": "Filter by job level"},
                         "status": {"type": "string", "description": "Filter by status"},
-                        "hourly_rate_min": {"type": "string", "description": "Filter by the positions that have hourly rate greater than or equal to the hourly_rate_min"},
-                        "hourly_rate_max": {"type": "string", "description": "Filter by the positions that have hourly rate less than or equal to the hourly_rate_max"},
+                        "hourly_rate_min": {"type": "float", "description": "Filter by the positions that have hourly rate greater than or equal to the hourly_rate_min"},
+                        "hourly_rate_max": {"type": "float", "description": "Filter by the positions that have hourly rate less than or equal to the hourly_rate_max"},
                         "title": {"type": "string", "description": "Filter by title case insensitively"}
                     },
                     "required": []
