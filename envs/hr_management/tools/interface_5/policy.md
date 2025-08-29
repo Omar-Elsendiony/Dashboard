@@ -70,6 +70,11 @@ This document defines the operational guide for an HR management automation agen
 - Create new leave request record with calculated remaining balance and set status to 'pending'
 - Log the leave request submission in the audit trail
 
+## Leave Request Date Calculation
+- Date Interpretation: The start date is included in the leave request days. The end date specified in the leave request is the day when the employee will return and is NOT included in the leave request days.
+- Example: A leave request from January 1st to January 5th means the employee is on leave for 4 days (January 1, 2, 3, 4) and returns to work on January 5th.
+- Calculate total leave days as: (end_date - start_date) where end_date is exclusive and start_date is inclusive.
+
 ### Leave Request Input Validation
 - Validate that the employee exists. If employee is not found, then output 'Halt: Invalid leave request details: [employee not found]'
 - Validate that leave type is valid (annual, sick, fmla, personal, bereavement, jury_duty). If leave type is invalid, then output 'Halt: Invalid leave request details: [invalid leave type]'
@@ -89,9 +94,10 @@ This document defines the operational guide for an HR management automation agen
 - Create new leave request record with calculated remaining balance and set status to 'pending'
 
 ### Audit Trail Logging (Global)
-- Validate that the audit log write operation is successful. If audit log write fails, then output 'Halt: Audit trail failure'
+
 - Insert audit log entry with user ID, table name, action type (create, read, update, delete, approve, reject, login, logout, export), record ID, field name (if applicable), old value, new value, and timestamp
 - In case of creating/deleting a record, field name, old value and new value would be null in the record since the operation is on the whole record and not a specific column
 
 ### Approvals
 - When an action requires authorization, a verification code must be supplied to confirm that approval has been given. The system should validate that the person providing this approval has the appropriate user permissions or authority level to grant such authorization.
+- Self-Approval Restriction: If an action requires approval from an individual with a certain role, and the person requesting the action has that same role, they cannot grant the approval to themselves and must obtain approval from another individual with the required role or authority level.

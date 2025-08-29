@@ -6,9 +6,7 @@ class UpdateEmployeeInfo(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], employee_id: str, position_id: Optional[str] = None,
                employment_status: Optional[str] = None, employment_type: Optional[str] = None,
-               manager_id: Optional[str] = None, address: Optional[str] = None,
-               emergency_contact_name: Optional[str] = None,
-               emergency_contact_phone: Optional[str] = None) -> str:
+               manager_id: Optional[str] = None, address: Optional[str] = None) -> str:
         
         employees = data.get("employees", {})
         job_positions = data.get("job_positions", {})
@@ -50,10 +48,6 @@ class UpdateEmployeeInfo(Tool):
             employee["manager_id"] = manager_id
         if address:
             employee["address"] = address
-        if emergency_contact_name:
-            employee["emergency_contact_name"] = emergency_contact_name
-        if emergency_contact_phone:
-            employee["emergency_contact_phone"] = emergency_contact_phone
         
         employee["updated_at"] = "2025-10-01T00:00:00"
         
@@ -74,9 +68,7 @@ class UpdateEmployeeInfo(Tool):
                         "employment_status": {"type": "string", "description": "Employment status: active, terminated, on_leave, suspended (optional)"},
                         "employment_type": {"type": "string", "description": "Employment type (optional)"},
                         "manager_id": {"type": "string", "description": "Updated manager employee ID (optional)"},
-                        "address": {"type": "string", "description": "Updated address (optional)"},
-                        "emergency_contact_name": {"type": "string", "description": "Updated emergency contact name (optional)"},
-                        "emergency_contact_phone": {"type": "string", "description": "Updated emergency contact phone (optional)"}
+                        "address": {"type": "string", "description": "Updated address (optional)"}
                     },
                     "required": ["employee_id"]
                 }

@@ -92,9 +92,10 @@ This document defines the operational guide for an HR management automation agen
 - If status is 'paid' and payment date is provided, set the payment date field
 
 ### Audit Trail Logging (Global)
-- Validate that the audit log write operation is successful. If audit log write fails, then output 'Halt: Audit trail failure'
+
 - Insert audit log entry with user ID, table name, action type (create, read, update, delete, approve, reject, login, logout, export), record ID, field name (if applicable), old value, new value, and timestamp
 - In case of creating/deleting a record, field name, old value and new value would be null in the record since the operation is on the whole record and not a specific column
 
 ### Approvals
 - When an action requires authorization, a verification code must be supplied to confirm that approval has been given. The system should validate that the person providing this approval has the appropriate user permissions or authority level to grant such authorization.
+- Self-Approval Restriction: If an action requires approval from an individual with a certain role, and the person requesting the action has that same role, they cannot grant the approval to themselves and must obtain approval from another individual with the required role or authority level.
