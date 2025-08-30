@@ -1,0 +1,5202 @@
+{
+  "1": {
+    "update_id": "1",
+    "incident_id": "1",
+    "updated_by_id": "505",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T19:43:34"
+  },
+  "2": {
+    "update_id": "2",
+    "incident_id": "1",
+    "updated_by_id": "14",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "527",
+    "created_at": "2025-08-29T08:39:37"
+  },
+  "3": {
+    "update_id": "3",
+    "incident_id": "2",
+    "updated_by_id": "494",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "49",
+    "created_at": "2025-08-29T06:25:37"
+  },
+  "4": {
+    "update_id": "4",
+    "incident_id": "3",
+    "updated_by_id": "466",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "99",
+    "created_at": "2025-08-29T15:13:29"
+  },
+  "5": {
+    "update_id": "5",
+    "incident_id": "3",
+    "updated_by_id": "477",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T09:50:15"
+  },
+  "6": {
+    "update_id": "6",
+    "incident_id": "4",
+    "updated_by_id": "56",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:57:43"
+  },
+  "7": {
+    "update_id": "7",
+    "incident_id": "4",
+    "updated_by_id": "516",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:57:20"
+  },
+  "8": {
+    "update_id": "8",
+    "incident_id": "4",
+    "updated_by_id": "502",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T20:39:59"
+  },
+  "9": {
+    "update_id": "9",
+    "incident_id": "5",
+    "updated_by_id": "49",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "19",
+    "created_at": "2025-08-29T05:41:09"
+  },
+  "10": {
+    "update_id": "10",
+    "incident_id": "6",
+    "updated_by_id": "466",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T17:27:18"
+  },
+  "11": {
+    "update_id": "11",
+    "incident_id": "6",
+    "updated_by_id": "432",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T07:46:51"
+  },
+  "12": {
+    "update_id": "12",
+    "incident_id": "6",
+    "updated_by_id": "463",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:11:21"
+  },
+  "13": {
+    "update_id": "13",
+    "incident_id": "6",
+    "updated_by_id": "519",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T06:09:13"
+  },
+  "14": {
+    "update_id": "14",
+    "incident_id": "7",
+    "updated_by_id": "105",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T12:04:29"
+  },
+  "15": {
+    "update_id": "15",
+    "incident_id": "8",
+    "updated_by_id": "118",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-30T08:30:08"
+  },
+  "16": {
+    "update_id": "16",
+    "incident_id": "8",
+    "updated_by_id": "475",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T21:41:34"
+  },
+  "17": {
+    "update_id": "17",
+    "incident_id": "9",
+    "updated_by_id": "15",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "425",
+    "created_at": "2025-08-29T15:21:25"
+  },
+  "18": {
+    "update_id": "18",
+    "incident_id": "9",
+    "updated_by_id": "468",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "427",
+    "created_at": "2025-08-29T07:16:15"
+  },
+  "19": {
+    "update_id": "19",
+    "incident_id": "9",
+    "updated_by_id": "453",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T05:45:13"
+  },
+  "20": {
+    "update_id": "20",
+    "incident_id": "9",
+    "updated_by_id": "110",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T11:51:06"
+  },
+  "21": {
+    "update_id": "21",
+    "incident_id": "10",
+    "updated_by_id": "55",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T15:29:48"
+  },
+  "22": {
+    "update_id": "22",
+    "incident_id": "10",
+    "updated_by_id": "511",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T19:58:21"
+  },
+  "23": {
+    "update_id": "23",
+    "incident_id": "10",
+    "updated_by_id": "17",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T16:35:16"
+  },
+  "24": {
+    "update_id": "24",
+    "incident_id": "10",
+    "updated_by_id": "451",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:02:00"
+  },
+  "25": {
+    "update_id": "25",
+    "incident_id": "11",
+    "updated_by_id": "434",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "478",
+    "created_at": "2025-08-29T10:01:13"
+  },
+  "26": {
+    "update_id": "26",
+    "incident_id": "11",
+    "updated_by_id": "438",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T08:07:24"
+  },
+  "27": {
+    "update_id": "27",
+    "incident_id": "11",
+    "updated_by_id": "472",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T17:18:35"
+  },
+  "28": {
+    "update_id": "28",
+    "incident_id": "12",
+    "updated_by_id": "495",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:42:31"
+  },
+  "29": {
+    "update_id": "29",
+    "incident_id": "12",
+    "updated_by_id": "60",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:12:16"
+  },
+  "30": {
+    "update_id": "30",
+    "incident_id": "12",
+    "updated_by_id": "430",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:27:37"
+  },
+  "31": {
+    "update_id": "31",
+    "incident_id": "13",
+    "updated_by_id": "26",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:07:34"
+  },
+  "32": {
+    "update_id": "32",
+    "incident_id": "13",
+    "updated_by_id": "31",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "47",
+    "created_at": "2025-08-29T13:07:41"
+  },
+  "33": {
+    "update_id": "33",
+    "incident_id": "13",
+    "updated_by_id": "538",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T09:22:37"
+  },
+  "34": {
+    "update_id": "34",
+    "incident_id": "14",
+    "updated_by_id": "499",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:55:30"
+  },
+  "35": {
+    "update_id": "35",
+    "incident_id": "14",
+    "updated_by_id": "469",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:23:00"
+  },
+  "36": {
+    "update_id": "36",
+    "incident_id": "14",
+    "updated_by_id": "502",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T11:10:34"
+  },
+  "37": {
+    "update_id": "37",
+    "incident_id": "14",
+    "updated_by_id": "47",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "107",
+    "created_at": "2025-08-29T07:06:46"
+  },
+  "38": {
+    "update_id": "38",
+    "incident_id": "15",
+    "updated_by_id": "117",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T22:08:22"
+  },
+  "39": {
+    "update_id": "39",
+    "incident_id": "15",
+    "updated_by_id": "76",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T10:48:26"
+  },
+  "40": {
+    "update_id": "40",
+    "incident_id": "15",
+    "updated_by_id": "99",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-31T11:10:34"
+  },
+  "41": {
+    "update_id": "41",
+    "incident_id": "15",
+    "updated_by_id": "25",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T10:59:08"
+  },
+  "42": {
+    "update_id": "42",
+    "incident_id": "16",
+    "updated_by_id": "44",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T10:30:21"
+  },
+  "43": {
+    "update_id": "43",
+    "incident_id": "17",
+    "updated_by_id": "90",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T08:44:24"
+  },
+  "44": {
+    "update_id": "44",
+    "incident_id": "17",
+    "updated_by_id": "14",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T09:15:19"
+  },
+  "45": {
+    "update_id": "45",
+    "incident_id": "18",
+    "updated_by_id": "460",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "120",
+    "created_at": "2025-08-29T06:07:12"
+  },
+  "46": {
+    "update_id": "46",
+    "incident_id": "18",
+    "updated_by_id": "439",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:29:18"
+  },
+  "47": {
+    "update_id": "47",
+    "incident_id": "18",
+    "updated_by_id": "457",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:05:07"
+  },
+  "48": {
+    "update_id": "48",
+    "incident_id": "18",
+    "updated_by_id": "439",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "454",
+    "created_at": "2025-08-29T06:30:39"
+  },
+  "49": {
+    "update_id": "49",
+    "incident_id": "19",
+    "updated_by_id": "462",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:53:44"
+  },
+  "50": {
+    "update_id": "50",
+    "incident_id": "19",
+    "updated_by_id": "522",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T07:58:35"
+  },
+  "51": {
+    "update_id": "51",
+    "incident_id": "19",
+    "updated_by_id": "530",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "455",
+    "created_at": "2025-08-29T08:03:23"
+  },
+  "52": {
+    "update_id": "52",
+    "incident_id": "19",
+    "updated_by_id": "447",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "116",
+    "created_at": "2025-08-29T06:18:43"
+  },
+  "53": {
+    "update_id": "53",
+    "incident_id": "20",
+    "updated_by_id": "23",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "499",
+    "created_at": "2025-08-30T04:10:26"
+  },
+  "54": {
+    "update_id": "54",
+    "incident_id": "20",
+    "updated_by_id": "566",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T19:17:43"
+  },
+  "55": {
+    "update_id": "55",
+    "incident_id": "20",
+    "updated_by_id": "533",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T23:23:57"
+  },
+  "56": {
+    "update_id": "56",
+    "incident_id": "20",
+    "updated_by_id": "82",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T01:23:15"
+  },
+  "57": {
+    "update_id": "57",
+    "incident_id": "21",
+    "updated_by_id": "488",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "429",
+    "created_at": "2025-08-30T04:40:34"
+  },
+  "58": {
+    "update_id": "58",
+    "incident_id": "21",
+    "updated_by_id": "486",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T11:49:17"
+  },
+  "59": {
+    "update_id": "59",
+    "incident_id": "21",
+    "updated_by_id": "555",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-30T02:43:21"
+  },
+  "60": {
+    "update_id": "60",
+    "incident_id": "21",
+    "updated_by_id": "479",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T05:47:08"
+  },
+  "61": {
+    "update_id": "61",
+    "incident_id": "22",
+    "updated_by_id": "57",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T10:20:12"
+  },
+  "62": {
+    "update_id": "62",
+    "incident_id": "22",
+    "updated_by_id": "13",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T06:51:37"
+  },
+  "63": {
+    "update_id": "63",
+    "incident_id": "22",
+    "updated_by_id": "444",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T11:19:43"
+  },
+  "64": {
+    "update_id": "64",
+    "incident_id": "22",
+    "updated_by_id": "103",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:37:21"
+  },
+  "65": {
+    "update_id": "65",
+    "incident_id": "23",
+    "updated_by_id": "445",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "115",
+    "created_at": "2025-08-29T16:48:25"
+  },
+  "66": {
+    "update_id": "66",
+    "incident_id": "23",
+    "updated_by_id": "472",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:21:45"
+  },
+  "67": {
+    "update_id": "67",
+    "incident_id": "23",
+    "updated_by_id": "71",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T00:23:16"
+  },
+  "68": {
+    "update_id": "68",
+    "incident_id": "23",
+    "updated_by_id": "523",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T05:46:44"
+  },
+  "69": {
+    "update_id": "69",
+    "incident_id": "24",
+    "updated_by_id": "483",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T06:05:27"
+  },
+  "70": {
+    "update_id": "70",
+    "incident_id": "24",
+    "updated_by_id": "545",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "107",
+    "created_at": "2025-08-29T07:24:21"
+  },
+  "71": {
+    "update_id": "71",
+    "incident_id": "24",
+    "updated_by_id": "56",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:49:20"
+  },
+  "72": {
+    "update_id": "72",
+    "incident_id": "24",
+    "updated_by_id": "548",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "119",
+    "created_at": "2025-08-29T05:38:52"
+  },
+  "73": {
+    "update_id": "73",
+    "incident_id": "25",
+    "updated_by_id": "75",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:10:53"
+  },
+  "74": {
+    "update_id": "74",
+    "incident_id": "25",
+    "updated_by_id": "428",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:17:49"
+  },
+  "75": {
+    "update_id": "75",
+    "incident_id": "26",
+    "updated_by_id": "439",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T07:32:01"
+  },
+  "76": {
+    "update_id": "76",
+    "incident_id": "26",
+    "updated_by_id": "462",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "35",
+    "created_at": "2025-08-29T11:03:53"
+  },
+  "77": {
+    "update_id": "77",
+    "incident_id": "26",
+    "updated_by_id": "455",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T09:22:44"
+  },
+  "78": {
+    "update_id": "78",
+    "incident_id": "26",
+    "updated_by_id": "65",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:21:26"
+  },
+  "79": {
+    "update_id": "79",
+    "incident_id": "27",
+    "updated_by_id": "556",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:25:47"
+  },
+  "80": {
+    "update_id": "80",
+    "incident_id": "28",
+    "updated_by_id": "477",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T19:18:21"
+  },
+  "81": {
+    "update_id": "81",
+    "incident_id": "28",
+    "updated_by_id": "16",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T20:11:54"
+  },
+  "82": {
+    "update_id": "82",
+    "incident_id": "28",
+    "updated_by_id": "461",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T07:45:15"
+  },
+  "83": {
+    "update_id": "83",
+    "incident_id": "29",
+    "updated_by_id": "113",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "434",
+    "created_at": "2025-08-29T14:11:04"
+  },
+  "84": {
+    "update_id": "84",
+    "incident_id": "30",
+    "updated_by_id": "428",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "92",
+    "created_at": "2025-08-29T19:49:23"
+  },
+  "85": {
+    "update_id": "85",
+    "incident_id": "30",
+    "updated_by_id": "117",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T10:38:57"
+  },
+  "86": {
+    "update_id": "86",
+    "incident_id": "30",
+    "updated_by_id": "499",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T20:45:31"
+  },
+  "87": {
+    "update_id": "87",
+    "incident_id": "31",
+    "updated_by_id": "511",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T11:24:41"
+  },
+  "88": {
+    "update_id": "88",
+    "incident_id": "31",
+    "updated_by_id": "449",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T22:10:21"
+  },
+  "89": {
+    "update_id": "89",
+    "incident_id": "31",
+    "updated_by_id": "472",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "535",
+    "created_at": "2025-08-29T18:33:17"
+  },
+  "90": {
+    "update_id": "90",
+    "incident_id": "32",
+    "updated_by_id": "14",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T16:08:22"
+  },
+  "91": {
+    "update_id": "91",
+    "incident_id": "33",
+    "updated_by_id": "62",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T00:08:07"
+  },
+  "92": {
+    "update_id": "92",
+    "incident_id": "34",
+    "updated_by_id": "118",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "522",
+    "created_at": "2025-08-29T12:10:20"
+  },
+  "93": {
+    "update_id": "93",
+    "incident_id": "34",
+    "updated_by_id": "531",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:15:11"
+  },
+  "94": {
+    "update_id": "94",
+    "incident_id": "34",
+    "updated_by_id": "492",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "57",
+    "created_at": "2025-08-29T15:15:08"
+  },
+  "95": {
+    "update_id": "95",
+    "incident_id": "35",
+    "updated_by_id": "62",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T11:46:26"
+  },
+  "96": {
+    "update_id": "96",
+    "incident_id": "35",
+    "updated_by_id": "26",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:49:58"
+  },
+  "97": {
+    "update_id": "97",
+    "incident_id": "35",
+    "updated_by_id": "468",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "502",
+    "created_at": "2025-08-29T18:36:02"
+  },
+  "98": {
+    "update_id": "98",
+    "incident_id": "35",
+    "updated_by_id": "495",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T11:33:59"
+  },
+  "99": {
+    "update_id": "99",
+    "incident_id": "36",
+    "updated_by_id": "56",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:09:06"
+  },
+  "100": {
+    "update_id": "100",
+    "incident_id": "36",
+    "updated_by_id": "89",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:46:51"
+  },
+  "101": {
+    "update_id": "101",
+    "incident_id": "36",
+    "updated_by_id": "547",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T09:36:44"
+  },
+  "102": {
+    "update_id": "102",
+    "incident_id": "36",
+    "updated_by_id": "78",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:59:54"
+  },
+  "103": {
+    "update_id": "103",
+    "incident_id": "37",
+    "updated_by_id": "44",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T05:30:59"
+  },
+  "104": {
+    "update_id": "104",
+    "incident_id": "38",
+    "updated_by_id": "550",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T09:25:58"
+  },
+  "105": {
+    "update_id": "105",
+    "incident_id": "38",
+    "updated_by_id": "51",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T16:44:01"
+  },
+  "106": {
+    "update_id": "106",
+    "incident_id": "39",
+    "updated_by_id": "476",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T16:04:51"
+  },
+  "107": {
+    "update_id": "107",
+    "incident_id": "39",
+    "updated_by_id": "469",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T12:34:54"
+  },
+  "108": {
+    "update_id": "108",
+    "incident_id": "39",
+    "updated_by_id": "26",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T14:03:39"
+  },
+  "109": {
+    "update_id": "109",
+    "incident_id": "40",
+    "updated_by_id": "521",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:11:04"
+  },
+  "110": {
+    "update_id": "110",
+    "incident_id": "40",
+    "updated_by_id": "101",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T14:15:22"
+  },
+  "111": {
+    "update_id": "111",
+    "incident_id": "40",
+    "updated_by_id": "559",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "564",
+    "created_at": "2025-08-29T08:06:05"
+  },
+  "112": {
+    "update_id": "112",
+    "incident_id": "41",
+    "updated_by_id": "28",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T09:25:04"
+  },
+  "113": {
+    "update_id": "113",
+    "incident_id": "42",
+    "updated_by_id": "516",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T17:29:27"
+  },
+  "114": {
+    "update_id": "114",
+    "incident_id": "42",
+    "updated_by_id": "108",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "452",
+    "created_at": "2025-08-29T12:36:26"
+  },
+  "115": {
+    "update_id": "115",
+    "incident_id": "42",
+    "updated_by_id": "562",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T23:57:33"
+  },
+  "116": {
+    "update_id": "116",
+    "incident_id": "43",
+    "updated_by_id": "499",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T11:24:24"
+  },
+  "117": {
+    "update_id": "117",
+    "incident_id": "44",
+    "updated_by_id": "528",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T09:35:41"
+  },
+  "118": {
+    "update_id": "118",
+    "incident_id": "44",
+    "updated_by_id": "522",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T07:54:43"
+  },
+  "119": {
+    "update_id": "119",
+    "incident_id": "45",
+    "updated_by_id": "69",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T10:56:53"
+  },
+  "120": {
+    "update_id": "120",
+    "incident_id": "46",
+    "updated_by_id": "555",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T08:21:44"
+  },
+  "121": {
+    "update_id": "121",
+    "incident_id": "46",
+    "updated_by_id": "102",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "506",
+    "created_at": "2025-08-29T11:01:57"
+  },
+  "122": {
+    "update_id": "122",
+    "incident_id": "46",
+    "updated_by_id": "107",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "543",
+    "created_at": "2025-08-29T08:28:08"
+  },
+  "123": {
+    "update_id": "123",
+    "incident_id": "46",
+    "updated_by_id": "463",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "563",
+    "created_at": "2025-08-29T10:35:47"
+  },
+  "124": {
+    "update_id": "124",
+    "incident_id": "47",
+    "updated_by_id": "475",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:23:38"
+  },
+  "125": {
+    "update_id": "125",
+    "incident_id": "47",
+    "updated_by_id": "563",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T09:45:36"
+  },
+  "126": {
+    "update_id": "126",
+    "incident_id": "47",
+    "updated_by_id": "565",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:22:25"
+  },
+  "127": {
+    "update_id": "127",
+    "incident_id": "47",
+    "updated_by_id": "559",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T14:08:21"
+  },
+  "128": {
+    "update_id": "128",
+    "incident_id": "48",
+    "updated_by_id": "30",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:08:22"
+  },
+  "129": {
+    "update_id": "129",
+    "incident_id": "48",
+    "updated_by_id": "562",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T07:22:24"
+  },
+  "130": {
+    "update_id": "130",
+    "incident_id": "49",
+    "updated_by_id": "527",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T16:06:34"
+  },
+  "131": {
+    "update_id": "131",
+    "incident_id": "49",
+    "updated_by_id": "53",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T11:20:08"
+  },
+  "132": {
+    "update_id": "132",
+    "incident_id": "49",
+    "updated_by_id": "68",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T06:10:17"
+  },
+  "133": {
+    "update_id": "133",
+    "incident_id": "49",
+    "updated_by_id": "565",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "444",
+    "created_at": "2025-08-29T05:38:29"
+  },
+  "134": {
+    "update_id": "134",
+    "incident_id": "50",
+    "updated_by_id": "101",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T16:28:42"
+  },
+  "135": {
+    "update_id": "135",
+    "incident_id": "51",
+    "updated_by_id": "427",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T08:54:00"
+  },
+  "136": {
+    "update_id": "136",
+    "incident_id": "52",
+    "updated_by_id": "509",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T05:47:39"
+  },
+  "137": {
+    "update_id": "137",
+    "incident_id": "52",
+    "updated_by_id": "30",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:47:24"
+  },
+  "138": {
+    "update_id": "138",
+    "incident_id": "52",
+    "updated_by_id": "429",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T11:08:33"
+  },
+  "139": {
+    "update_id": "139",
+    "incident_id": "53",
+    "updated_by_id": "23",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T11:37:57"
+  },
+  "140": {
+    "update_id": "140",
+    "incident_id": "53",
+    "updated_by_id": "545",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T21:30:28"
+  },
+  "141": {
+    "update_id": "141",
+    "incident_id": "53",
+    "updated_by_id": "60",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T22:00:46"
+  },
+  "142": {
+    "update_id": "142",
+    "incident_id": "54",
+    "updated_by_id": "115",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:46:08"
+  },
+  "143": {
+    "update_id": "143",
+    "incident_id": "54",
+    "updated_by_id": "117",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:19:39"
+  },
+  "144": {
+    "update_id": "144",
+    "incident_id": "54",
+    "updated_by_id": "541",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:37:47"
+  },
+  "145": {
+    "update_id": "145",
+    "incident_id": "54",
+    "updated_by_id": "521",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "523",
+    "created_at": "2025-08-29T15:46:10"
+  },
+  "146": {
+    "update_id": "146",
+    "incident_id": "55",
+    "updated_by_id": "89",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T08:49:03"
+  },
+  "147": {
+    "update_id": "147",
+    "incident_id": "55",
+    "updated_by_id": "496",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:24:18"
+  },
+  "148": {
+    "update_id": "148",
+    "incident_id": "55",
+    "updated_by_id": "424",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "431",
+    "created_at": "2025-08-29T07:28:14"
+  },
+  "149": {
+    "update_id": "149",
+    "incident_id": "55",
+    "updated_by_id": "432",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:28:35"
+  },
+  "150": {
+    "update_id": "150",
+    "incident_id": "56",
+    "updated_by_id": "111",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "492",
+    "created_at": "2025-08-29T22:38:08"
+  },
+  "151": {
+    "update_id": "151",
+    "incident_id": "56",
+    "updated_by_id": "569",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "64",
+    "created_at": "2025-08-29T15:21:38"
+  },
+  "152": {
+    "update_id": "152",
+    "incident_id": "57",
+    "updated_by_id": "26",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T09:57:05"
+  },
+  "153": {
+    "update_id": "153",
+    "incident_id": "57",
+    "updated_by_id": "459",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:53:31"
+  },
+  "154": {
+    "update_id": "154",
+    "incident_id": "57",
+    "updated_by_id": "69",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "435",
+    "created_at": "2025-08-29T10:40:38"
+  },
+  "155": {
+    "update_id": "155",
+    "incident_id": "58",
+    "updated_by_id": "89",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T18:59:17"
+  },
+  "156": {
+    "update_id": "156",
+    "incident_id": "58",
+    "updated_by_id": "437",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T15:36:17"
+  },
+  "157": {
+    "update_id": "157",
+    "incident_id": "59",
+    "updated_by_id": "61",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "475",
+    "created_at": "2025-08-29T21:44:00"
+  },
+  "158": {
+    "update_id": "158",
+    "incident_id": "59",
+    "updated_by_id": "100",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T15:42:38"
+  },
+  "159": {
+    "update_id": "159",
+    "incident_id": "59",
+    "updated_by_id": "35",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "15",
+    "created_at": "2025-08-29T18:06:18"
+  },
+  "160": {
+    "update_id": "160",
+    "incident_id": "59",
+    "updated_by_id": "508",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T19:48:29"
+  },
+  "161": {
+    "update_id": "161",
+    "incident_id": "60",
+    "updated_by_id": "14",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "5",
+    "created_at": "2025-08-30T06:41:44"
+  },
+  "162": {
+    "update_id": "162",
+    "incident_id": "61",
+    "updated_by_id": "444",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-30T05:36:55"
+  },
+  "163": {
+    "update_id": "163",
+    "incident_id": "62",
+    "updated_by_id": "81",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T12:12:45"
+  },
+  "164": {
+    "update_id": "164",
+    "incident_id": "62",
+    "updated_by_id": "469",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "519",
+    "created_at": "2025-08-29T11:00:04"
+  },
+  "165": {
+    "update_id": "165",
+    "incident_id": "62",
+    "updated_by_id": "545",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T08:37:54"
+  },
+  "166": {
+    "update_id": "166",
+    "incident_id": "63",
+    "updated_by_id": "534",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-30T07:38:33"
+  },
+  "167": {
+    "update_id": "167",
+    "incident_id": "63",
+    "updated_by_id": "455",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P2",
+    "created_at": "2025-08-30T02:41:59"
+  },
+  "168": {
+    "update_id": "168",
+    "incident_id": "63",
+    "updated_by_id": "515",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "513",
+    "created_at": "2025-08-29T10:16:27"
+  },
+  "169": {
+    "update_id": "169",
+    "incident_id": "63",
+    "updated_by_id": "75",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T20:33:55"
+  },
+  "170": {
+    "update_id": "170",
+    "incident_id": "64",
+    "updated_by_id": "424",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:24:17"
+  },
+  "171": {
+    "update_id": "171",
+    "incident_id": "64",
+    "updated_by_id": "96",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "42",
+    "created_at": "2025-08-29T07:14:55"
+  },
+  "172": {
+    "update_id": "172",
+    "incident_id": "64",
+    "updated_by_id": "537",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "119",
+    "created_at": "2025-08-29T07:10:04"
+  },
+  "173": {
+    "update_id": "173",
+    "incident_id": "65",
+    "updated_by_id": "473",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:36:26"
+  },
+  "174": {
+    "update_id": "174",
+    "incident_id": "65",
+    "updated_by_id": "80",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T13:27:01"
+  },
+  "175": {
+    "update_id": "175",
+    "incident_id": "66",
+    "updated_by_id": "35",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T06:17:06"
+  },
+  "176": {
+    "update_id": "176",
+    "incident_id": "66",
+    "updated_by_id": "500",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T15:07:28"
+  },
+  "177": {
+    "update_id": "177",
+    "incident_id": "66",
+    "updated_by_id": "80",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T20:20:21"
+  },
+  "178": {
+    "update_id": "178",
+    "incident_id": "66",
+    "updated_by_id": "423",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:35:28"
+  },
+  "179": {
+    "update_id": "179",
+    "incident_id": "67",
+    "updated_by_id": "559",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:46:05"
+  },
+  "180": {
+    "update_id": "180",
+    "incident_id": "67",
+    "updated_by_id": "476",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "454",
+    "created_at": "2025-08-29T19:22:21"
+  },
+  "181": {
+    "update_id": "181",
+    "incident_id": "68",
+    "updated_by_id": "12",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T14:50:38"
+  },
+  "182": {
+    "update_id": "182",
+    "incident_id": "69",
+    "updated_by_id": "45",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T10:25:37"
+  },
+  "183": {
+    "update_id": "183",
+    "incident_id": "69",
+    "updated_by_id": "18",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T21:48:29"
+  },
+  "184": {
+    "update_id": "184",
+    "incident_id": "70",
+    "updated_by_id": "436",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T19:08:10"
+  },
+  "185": {
+    "update_id": "185",
+    "incident_id": "70",
+    "updated_by_id": "107",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "508",
+    "created_at": "2025-08-30T02:27:14"
+  },
+  "186": {
+    "update_id": "186",
+    "incident_id": "70",
+    "updated_by_id": "540",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T06:46:03"
+  },
+  "187": {
+    "update_id": "187",
+    "incident_id": "70",
+    "updated_by_id": "534",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T16:01:20"
+  },
+  "188": {
+    "update_id": "188",
+    "incident_id": "71",
+    "updated_by_id": "471",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T11:54:23"
+  },
+  "189": {
+    "update_id": "189",
+    "incident_id": "71",
+    "updated_by_id": "21",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T11:56:46"
+  },
+  "190": {
+    "update_id": "190",
+    "incident_id": "71",
+    "updated_by_id": "496",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "26",
+    "created_at": "2025-08-29T13:50:13"
+  },
+  "191": {
+    "update_id": "191",
+    "incident_id": "71",
+    "updated_by_id": "37",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T07:17:22"
+  },
+  "192": {
+    "update_id": "192",
+    "incident_id": "72",
+    "updated_by_id": "472",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:26:55"
+  },
+  "193": {
+    "update_id": "193",
+    "incident_id": "72",
+    "updated_by_id": "90",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "528",
+    "created_at": "2025-08-29T07:48:46"
+  },
+  "194": {
+    "update_id": "194",
+    "incident_id": "72",
+    "updated_by_id": "509",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-30T05:26:19"
+  },
+  "195": {
+    "update_id": "195",
+    "incident_id": "73",
+    "updated_by_id": "87",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:07:25"
+  },
+  "196": {
+    "update_id": "196",
+    "incident_id": "73",
+    "updated_by_id": "15",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:02:44"
+  },
+  "197": {
+    "update_id": "197",
+    "incident_id": "73",
+    "updated_by_id": "542",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:58:55"
+  },
+  "198": {
+    "update_id": "198",
+    "incident_id": "73",
+    "updated_by_id": "84",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T09:24:32"
+  },
+  "199": {
+    "update_id": "199",
+    "incident_id": "74",
+    "updated_by_id": "82",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T07:27:57"
+  },
+  "200": {
+    "update_id": "200",
+    "incident_id": "75",
+    "updated_by_id": "507",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T20:09:03"
+  },
+  "201": {
+    "update_id": "201",
+    "incident_id": "75",
+    "updated_by_id": "58",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T14:23:21"
+  },
+  "202": {
+    "update_id": "202",
+    "incident_id": "75",
+    "updated_by_id": "118",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "101",
+    "created_at": "2025-08-29T09:46:06"
+  },
+  "203": {
+    "update_id": "203",
+    "incident_id": "75",
+    "updated_by_id": "83",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "92",
+    "created_at": "2025-08-29T16:05:11"
+  },
+  "204": {
+    "update_id": "204",
+    "incident_id": "76",
+    "updated_by_id": "114",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T20:02:20"
+  },
+  "205": {
+    "update_id": "205",
+    "incident_id": "76",
+    "updated_by_id": "110",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:09:30"
+  },
+  "206": {
+    "update_id": "206",
+    "incident_id": "76",
+    "updated_by_id": "565",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:42:01"
+  },
+  "207": {
+    "update_id": "207",
+    "incident_id": "76",
+    "updated_by_id": "449",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "521",
+    "created_at": "2025-08-29T11:24:18"
+  },
+  "208": {
+    "update_id": "208",
+    "incident_id": "77",
+    "updated_by_id": "513",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "535",
+    "created_at": "2025-08-29T11:42:31"
+  },
+  "209": {
+    "update_id": "209",
+    "incident_id": "78",
+    "updated_by_id": "6",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T12:14:38"
+  },
+  "210": {
+    "update_id": "210",
+    "incident_id": "79",
+    "updated_by_id": "562",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "557",
+    "created_at": "2025-08-29T08:10:36"
+  },
+  "211": {
+    "update_id": "211",
+    "incident_id": "79",
+    "updated_by_id": "73",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T14:33:26"
+  },
+  "212": {
+    "update_id": "212",
+    "incident_id": "79",
+    "updated_by_id": "27",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:37:45"
+  },
+  "213": {
+    "update_id": "213",
+    "incident_id": "79",
+    "updated_by_id": "13",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "467",
+    "created_at": "2025-08-29T05:35:33"
+  },
+  "214": {
+    "update_id": "214",
+    "incident_id": "80",
+    "updated_by_id": "2",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "477",
+    "created_at": "2025-08-29T08:22:37"
+  },
+  "215": {
+    "update_id": "215",
+    "incident_id": "80",
+    "updated_by_id": "103",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T05:53:01"
+  },
+  "216": {
+    "update_id": "216",
+    "incident_id": "81",
+    "updated_by_id": "431",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "81",
+    "created_at": "2025-08-30T01:23:14"
+  },
+  "217": {
+    "update_id": "217",
+    "incident_id": "81",
+    "updated_by_id": "475",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:35:58"
+  },
+  "218": {
+    "update_id": "218",
+    "incident_id": "81",
+    "updated_by_id": "459",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T13:04:58"
+  },
+  "219": {
+    "update_id": "219",
+    "incident_id": "82",
+    "updated_by_id": "69",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:57:47"
+  },
+  "220": {
+    "update_id": "220",
+    "incident_id": "82",
+    "updated_by_id": "553",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T18:12:38"
+  },
+  "221": {
+    "update_id": "221",
+    "incident_id": "82",
+    "updated_by_id": "54",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "80",
+    "created_at": "2025-08-29T09:04:25"
+  },
+  "222": {
+    "update_id": "222",
+    "incident_id": "82",
+    "updated_by_id": "489",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T20:34:28"
+  },
+  "223": {
+    "update_id": "223",
+    "incident_id": "83",
+    "updated_by_id": "112",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "491",
+    "created_at": "2025-08-29T05:57:53"
+  },
+  "224": {
+    "update_id": "224",
+    "incident_id": "83",
+    "updated_by_id": "438",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "82",
+    "created_at": "2025-08-29T05:49:44"
+  },
+  "225": {
+    "update_id": "225",
+    "incident_id": "84",
+    "updated_by_id": "507",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T12:51:31"
+  },
+  "226": {
+    "update_id": "226",
+    "incident_id": "84",
+    "updated_by_id": "487",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T13:54:24"
+  },
+  "227": {
+    "update_id": "227",
+    "incident_id": "84",
+    "updated_by_id": "73",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:43:50"
+  },
+  "228": {
+    "update_id": "228",
+    "incident_id": "85",
+    "updated_by_id": "518",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T06:01:18"
+  },
+  "229": {
+    "update_id": "229",
+    "incident_id": "86",
+    "updated_by_id": "101",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T16:22:09"
+  },
+  "230": {
+    "update_id": "230",
+    "incident_id": "86",
+    "updated_by_id": "424",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T23:51:02"
+  },
+  "231": {
+    "update_id": "231",
+    "incident_id": "87",
+    "updated_by_id": "541",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T21:09:39"
+  },
+  "232": {
+    "update_id": "232",
+    "incident_id": "88",
+    "updated_by_id": "509",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T21:11:53"
+  },
+  "233": {
+    "update_id": "233",
+    "incident_id": "89",
+    "updated_by_id": "118",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T07:58:12"
+  },
+  "234": {
+    "update_id": "234",
+    "incident_id": "89",
+    "updated_by_id": "43",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T05:06:17"
+  },
+  "235": {
+    "update_id": "235",
+    "incident_id": "89",
+    "updated_by_id": "546",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-30T08:00:22"
+  },
+  "236": {
+    "update_id": "236",
+    "incident_id": "90",
+    "updated_by_id": "519",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-30T06:06:38"
+  },
+  "237": {
+    "update_id": "237",
+    "incident_id": "91",
+    "updated_by_id": "5",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "446",
+    "created_at": "2025-08-29T14:45:12"
+  },
+  "238": {
+    "update_id": "238",
+    "incident_id": "92",
+    "updated_by_id": "47",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:44:03"
+  },
+  "239": {
+    "update_id": "239",
+    "incident_id": "93",
+    "updated_by_id": "547",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T18:51:49"
+  },
+  "240": {
+    "update_id": "240",
+    "incident_id": "94",
+    "updated_by_id": "479",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:26:50"
+  },
+  "241": {
+    "update_id": "241",
+    "incident_id": "94",
+    "updated_by_id": "59",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T15:24:03"
+  },
+  "242": {
+    "update_id": "242",
+    "incident_id": "95",
+    "updated_by_id": "58",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "73",
+    "created_at": "2025-08-29T15:26:16"
+  },
+  "243": {
+    "update_id": "243",
+    "incident_id": "96",
+    "updated_by_id": "519",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T11:29:25"
+  },
+  "244": {
+    "update_id": "244",
+    "incident_id": "96",
+    "updated_by_id": "475",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T18:25:08"
+  },
+  "245": {
+    "update_id": "245",
+    "incident_id": "97",
+    "updated_by_id": "65",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T15:16:16"
+  },
+  "246": {
+    "update_id": "246",
+    "incident_id": "97",
+    "updated_by_id": "41",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T12:49:10"
+  },
+  "247": {
+    "update_id": "247",
+    "incident_id": "97",
+    "updated_by_id": "487",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "71",
+    "created_at": "2025-08-30T01:01:10"
+  },
+  "248": {
+    "update_id": "248",
+    "incident_id": "98",
+    "updated_by_id": "428",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T10:24:48"
+  },
+  "249": {
+    "update_id": "249",
+    "incident_id": "98",
+    "updated_by_id": "480",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:49:42"
+  },
+  "250": {
+    "update_id": "250",
+    "incident_id": "98",
+    "updated_by_id": "535",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P2",
+    "created_at": "2025-08-29T09:08:39"
+  },
+  "251": {
+    "update_id": "251",
+    "incident_id": "99",
+    "updated_by_id": "55",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "552",
+    "created_at": "2025-08-29T07:35:42"
+  },
+  "252": {
+    "update_id": "252",
+    "incident_id": "99",
+    "updated_by_id": "544",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T10:41:07"
+  },
+  "253": {
+    "update_id": "253",
+    "incident_id": "99",
+    "updated_by_id": "17",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "559",
+    "created_at": "2025-08-29T10:34:05"
+  },
+  "254": {
+    "update_id": "254",
+    "incident_id": "100",
+    "updated_by_id": "28",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T20:09:19"
+  },
+  "255": {
+    "update_id": "255",
+    "incident_id": "100",
+    "updated_by_id": "110",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T11:30:59"
+  },
+  "256": {
+    "update_id": "256",
+    "incident_id": "100",
+    "updated_by_id": "564",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:19:25"
+  },
+  "257": {
+    "update_id": "257",
+    "incident_id": "100",
+    "updated_by_id": "515",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T07:02:17"
+  },
+  "258": {
+    "update_id": "258",
+    "incident_id": "101",
+    "updated_by_id": "518",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:29:18"
+  },
+  "259": {
+    "update_id": "259",
+    "incident_id": "101",
+    "updated_by_id": "38",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T08:03:17"
+  },
+  "260": {
+    "update_id": "260",
+    "incident_id": "101",
+    "updated_by_id": "444",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T08:56:34"
+  },
+  "261": {
+    "update_id": "261",
+    "incident_id": "101",
+    "updated_by_id": "54",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T08:45:32"
+  },
+  "262": {
+    "update_id": "262",
+    "incident_id": "102",
+    "updated_by_id": "39",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T16:30:07"
+  },
+  "263": {
+    "update_id": "263",
+    "incident_id": "102",
+    "updated_by_id": "80",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "68",
+    "created_at": "2025-08-29T09:16:21"
+  },
+  "264": {
+    "update_id": "264",
+    "incident_id": "103",
+    "updated_by_id": "39",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "22",
+    "created_at": "2025-08-29T18:37:36"
+  },
+  "265": {
+    "update_id": "265",
+    "incident_id": "104",
+    "updated_by_id": "478",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "526",
+    "created_at": "2025-08-31T04:54:28"
+  },
+  "266": {
+    "update_id": "266",
+    "incident_id": "104",
+    "updated_by_id": "546",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T18:02:20"
+  },
+  "267": {
+    "update_id": "267",
+    "incident_id": "104",
+    "updated_by_id": "513",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T12:24:41"
+  },
+  "268": {
+    "update_id": "268",
+    "incident_id": "105",
+    "updated_by_id": "89",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T14:30:41"
+  },
+  "269": {
+    "update_id": "269",
+    "incident_id": "106",
+    "updated_by_id": "501",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T10:56:37"
+  },
+  "270": {
+    "update_id": "270",
+    "incident_id": "106",
+    "updated_by_id": "494",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:15:19"
+  },
+  "271": {
+    "update_id": "271",
+    "incident_id": "106",
+    "updated_by_id": "466",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T12:43:51"
+  },
+  "272": {
+    "update_id": "272",
+    "incident_id": "107",
+    "updated_by_id": "94",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T08:27:36"
+  },
+  "273": {
+    "update_id": "273",
+    "incident_id": "107",
+    "updated_by_id": "560",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:55:56"
+  },
+  "274": {
+    "update_id": "274",
+    "incident_id": "107",
+    "updated_by_id": "425",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:35:43"
+  },
+  "275": {
+    "update_id": "275",
+    "incident_id": "107",
+    "updated_by_id": "487",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:40:11"
+  },
+  "276": {
+    "update_id": "276",
+    "incident_id": "108",
+    "updated_by_id": "445",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-30T03:47:09"
+  },
+  "277": {
+    "update_id": "277",
+    "incident_id": "108",
+    "updated_by_id": "505",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T13:26:06"
+  },
+  "278": {
+    "update_id": "278",
+    "incident_id": "108",
+    "updated_by_id": "455",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-30T10:31:09"
+  },
+  "279": {
+    "update_id": "279",
+    "incident_id": "108",
+    "updated_by_id": "97",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T22:02:59"
+  },
+  "280": {
+    "update_id": "280",
+    "incident_id": "109",
+    "updated_by_id": "493",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "498",
+    "created_at": "2025-08-29T12:00:26"
+  },
+  "281": {
+    "update_id": "281",
+    "incident_id": "109",
+    "updated_by_id": "493",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:21:45"
+  },
+  "282": {
+    "update_id": "282",
+    "incident_id": "109",
+    "updated_by_id": "19",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P2",
+    "created_at": "2025-08-29T23:34:23"
+  },
+  "283": {
+    "update_id": "283",
+    "incident_id": "110",
+    "updated_by_id": "565",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-30T08:40:11"
+  },
+  "284": {
+    "update_id": "284",
+    "incident_id": "111",
+    "updated_by_id": "432",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T23:29:08"
+  },
+  "285": {
+    "update_id": "285",
+    "incident_id": "111",
+    "updated_by_id": "79",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:06:43"
+  },
+  "286": {
+    "update_id": "286",
+    "incident_id": "112",
+    "updated_by_id": "424",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "443",
+    "created_at": "2025-08-29T19:15:48"
+  },
+  "287": {
+    "update_id": "287",
+    "incident_id": "112",
+    "updated_by_id": "13",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T20:50:10"
+  },
+  "288": {
+    "update_id": "288",
+    "incident_id": "113",
+    "updated_by_id": "56",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "448",
+    "created_at": "2025-08-30T22:05:43"
+  },
+  "289": {
+    "update_id": "289",
+    "incident_id": "113",
+    "updated_by_id": "520",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T09:20:08"
+  },
+  "290": {
+    "update_id": "290",
+    "incident_id": "114",
+    "updated_by_id": "431",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T18:04:37"
+  },
+  "291": {
+    "update_id": "291",
+    "incident_id": "114",
+    "updated_by_id": "61",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T20:32:29"
+  },
+  "292": {
+    "update_id": "292",
+    "incident_id": "114",
+    "updated_by_id": "11",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "110",
+    "created_at": "2025-08-30T05:32:47"
+  },
+  "293": {
+    "update_id": "293",
+    "incident_id": "114",
+    "updated_by_id": "16",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T05:52:05"
+  },
+  "294": {
+    "update_id": "294",
+    "incident_id": "115",
+    "updated_by_id": "448",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:36:23"
+  },
+  "295": {
+    "update_id": "295",
+    "incident_id": "115",
+    "updated_by_id": "520",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T16:01:35"
+  },
+  "296": {
+    "update_id": "296",
+    "incident_id": "115",
+    "updated_by_id": "546",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T08:03:22"
+  },
+  "297": {
+    "update_id": "297",
+    "incident_id": "115",
+    "updated_by_id": "92",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T05:51:05"
+  },
+  "298": {
+    "update_id": "298",
+    "incident_id": "116",
+    "updated_by_id": "94",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:46:53"
+  },
+  "299": {
+    "update_id": "299",
+    "incident_id": "116",
+    "updated_by_id": "451",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:06:49"
+  },
+  "300": {
+    "update_id": "300",
+    "incident_id": "116",
+    "updated_by_id": "534",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:10:58"
+  },
+  "301": {
+    "update_id": "301",
+    "incident_id": "117",
+    "updated_by_id": "490",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T09:53:08"
+  },
+  "302": {
+    "update_id": "302",
+    "incident_id": "118",
+    "updated_by_id": "477",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "569",
+    "created_at": "2025-08-29T09:19:50"
+  },
+  "303": {
+    "update_id": "303",
+    "incident_id": "118",
+    "updated_by_id": "12",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T05:43:24"
+  },
+  "304": {
+    "update_id": "304",
+    "incident_id": "118",
+    "updated_by_id": "3",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "35",
+    "created_at": "2025-08-29T06:03:14"
+  },
+  "305": {
+    "update_id": "305",
+    "incident_id": "118",
+    "updated_by_id": "36",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "69",
+    "created_at": "2025-08-29T12:04:15"
+  },
+  "306": {
+    "update_id": "306",
+    "incident_id": "119",
+    "updated_by_id": "535",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T18:32:56"
+  },
+  "307": {
+    "update_id": "307",
+    "incident_id": "120",
+    "updated_by_id": "101",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "463",
+    "created_at": "2025-08-29T08:38:10"
+  },
+  "308": {
+    "update_id": "308",
+    "incident_id": "120",
+    "updated_by_id": "493",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "504",
+    "created_at": "2025-08-29T13:29:13"
+  },
+  "309": {
+    "update_id": "309",
+    "incident_id": "121",
+    "updated_by_id": "440",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T07:25:22"
+  },
+  "310": {
+    "update_id": "310",
+    "incident_id": "121",
+    "updated_by_id": "567",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T17:46:12"
+  },
+  "311": {
+    "update_id": "311",
+    "incident_id": "121",
+    "updated_by_id": "66",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T21:10:38"
+  },
+  "312": {
+    "update_id": "312",
+    "incident_id": "121",
+    "updated_by_id": "32",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T18:14:53"
+  },
+  "313": {
+    "update_id": "313",
+    "incident_id": "122",
+    "updated_by_id": "512",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-30T02:15:10"
+  },
+  "314": {
+    "update_id": "314",
+    "incident_id": "123",
+    "updated_by_id": "68",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "446",
+    "created_at": "2025-08-30T14:34:17"
+  },
+  "315": {
+    "update_id": "315",
+    "incident_id": "123",
+    "updated_by_id": "474",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T23:14:27"
+  },
+  "316": {
+    "update_id": "316",
+    "incident_id": "123",
+    "updated_by_id": "431",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T02:08:35"
+  },
+  "317": {
+    "update_id": "317",
+    "incident_id": "124",
+    "updated_by_id": "488",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T18:46:48"
+  },
+  "318": {
+    "update_id": "318",
+    "incident_id": "124",
+    "updated_by_id": "510",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T15:27:18"
+  },
+  "319": {
+    "update_id": "319",
+    "incident_id": "124",
+    "updated_by_id": "22",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T06:18:18"
+  },
+  "320": {
+    "update_id": "320",
+    "incident_id": "124",
+    "updated_by_id": "469",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "4",
+    "created_at": "2025-08-29T16:15:52"
+  },
+  "321": {
+    "update_id": "321",
+    "incident_id": "125",
+    "updated_by_id": "46",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T12:31:18"
+  },
+  "322": {
+    "update_id": "322",
+    "incident_id": "126",
+    "updated_by_id": "552",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:08:09"
+  },
+  "323": {
+    "update_id": "323",
+    "incident_id": "126",
+    "updated_by_id": "50",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T09:20:15"
+  },
+  "324": {
+    "update_id": "324",
+    "incident_id": "126",
+    "updated_by_id": "539",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T10:13:28"
+  },
+  "325": {
+    "update_id": "325",
+    "incident_id": "126",
+    "updated_by_id": "8",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T15:01:09"
+  },
+  "326": {
+    "update_id": "326",
+    "incident_id": "127",
+    "updated_by_id": "448",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T07:48:16"
+  },
+  "327": {
+    "update_id": "327",
+    "incident_id": "127",
+    "updated_by_id": "54",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-30T06:37:15"
+  },
+  "328": {
+    "update_id": "328",
+    "incident_id": "128",
+    "updated_by_id": "428",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T14:37:51"
+  },
+  "329": {
+    "update_id": "329",
+    "incident_id": "128",
+    "updated_by_id": "449",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:14:40"
+  },
+  "330": {
+    "update_id": "330",
+    "incident_id": "128",
+    "updated_by_id": "21",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "492",
+    "created_at": "2025-08-29T16:39:55"
+  },
+  "331": {
+    "update_id": "331",
+    "incident_id": "129",
+    "updated_by_id": "503",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "434",
+    "created_at": "2025-08-29T07:34:29"
+  },
+  "332": {
+    "update_id": "332",
+    "incident_id": "129",
+    "updated_by_id": "18",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:53:01"
+  },
+  "333": {
+    "update_id": "333",
+    "incident_id": "129",
+    "updated_by_id": "52",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:03:53"
+  },
+  "334": {
+    "update_id": "334",
+    "incident_id": "129",
+    "updated_by_id": "451",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:33:09"
+  },
+  "335": {
+    "update_id": "335",
+    "incident_id": "130",
+    "updated_by_id": "30",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T11:12:54"
+  },
+  "336": {
+    "update_id": "336",
+    "incident_id": "130",
+    "updated_by_id": "32",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T10:12:00"
+  },
+  "337": {
+    "update_id": "337",
+    "incident_id": "130",
+    "updated_by_id": "67",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T20:54:48"
+  },
+  "338": {
+    "update_id": "338",
+    "incident_id": "131",
+    "updated_by_id": "479",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T11:53:03"
+  },
+  "339": {
+    "update_id": "339",
+    "incident_id": "132",
+    "updated_by_id": "100",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T03:02:01"
+  },
+  "340": {
+    "update_id": "340",
+    "incident_id": "133",
+    "updated_by_id": "513",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-30T00:05:56"
+  },
+  "341": {
+    "update_id": "341",
+    "incident_id": "133",
+    "updated_by_id": "48",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T07:47:25"
+  },
+  "342": {
+    "update_id": "342",
+    "incident_id": "134",
+    "updated_by_id": "546",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T12:08:34"
+  },
+  "343": {
+    "update_id": "343",
+    "incident_id": "134",
+    "updated_by_id": "452",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:23:37"
+  },
+  "344": {
+    "update_id": "344",
+    "incident_id": "134",
+    "updated_by_id": "496",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:09:47"
+  },
+  "345": {
+    "update_id": "345",
+    "incident_id": "134",
+    "updated_by_id": "472",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T06:38:55"
+  },
+  "346": {
+    "update_id": "346",
+    "incident_id": "135",
+    "updated_by_id": "72",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T13:45:22"
+  },
+  "347": {
+    "update_id": "347",
+    "incident_id": "135",
+    "updated_by_id": "536",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:27:54"
+  },
+  "348": {
+    "update_id": "348",
+    "incident_id": "136",
+    "updated_by_id": "548",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T06:21:10"
+  },
+  "349": {
+    "update_id": "349",
+    "incident_id": "137",
+    "updated_by_id": "544",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T14:52:20"
+  },
+  "350": {
+    "update_id": "350",
+    "incident_id": "137",
+    "updated_by_id": "27",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T09:29:24"
+  },
+  "351": {
+    "update_id": "351",
+    "incident_id": "137",
+    "updated_by_id": "427",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T17:24:32"
+  },
+  "352": {
+    "update_id": "352",
+    "incident_id": "138",
+    "updated_by_id": "518",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T13:27:33"
+  },
+  "353": {
+    "update_id": "353",
+    "incident_id": "138",
+    "updated_by_id": "93",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T14:29:48"
+  },
+  "354": {
+    "update_id": "354",
+    "incident_id": "139",
+    "updated_by_id": "458",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "566",
+    "created_at": "2025-08-29T12:49:07"
+  },
+  "355": {
+    "update_id": "355",
+    "incident_id": "139",
+    "updated_by_id": "49",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-30T03:23:01"
+  },
+  "356": {
+    "update_id": "356",
+    "incident_id": "139",
+    "updated_by_id": "528",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "23",
+    "created_at": "2025-08-30T01:42:14"
+  },
+  "357": {
+    "update_id": "357",
+    "incident_id": "139",
+    "updated_by_id": "503",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "444",
+    "created_at": "2025-08-29T15:53:51"
+  },
+  "358": {
+    "update_id": "358",
+    "incident_id": "140",
+    "updated_by_id": "538",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T08:39:45"
+  },
+  "359": {
+    "update_id": "359",
+    "incident_id": "141",
+    "updated_by_id": "526",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T09:35:28"
+  },
+  "360": {
+    "update_id": "360",
+    "incident_id": "141",
+    "updated_by_id": "515",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P2",
+    "created_at": "2025-08-29T08:13:22"
+  },
+  "361": {
+    "update_id": "361",
+    "incident_id": "141",
+    "updated_by_id": "104",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T13:10:14"
+  },
+  "362": {
+    "update_id": "362",
+    "incident_id": "141",
+    "updated_by_id": "473",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T14:53:50"
+  },
+  "363": {
+    "update_id": "363",
+    "incident_id": "142",
+    "updated_by_id": "483",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "5",
+    "created_at": "2025-08-30T22:19:34"
+  },
+  "364": {
+    "update_id": "364",
+    "incident_id": "142",
+    "updated_by_id": "530",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T19:18:10"
+  },
+  "365": {
+    "update_id": "365",
+    "incident_id": "143",
+    "updated_by_id": "462",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "109",
+    "created_at": "2025-08-29T15:33:16"
+  },
+  "366": {
+    "update_id": "366",
+    "incident_id": "143",
+    "updated_by_id": "59",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T18:24:20"
+  },
+  "367": {
+    "update_id": "367",
+    "incident_id": "143",
+    "updated_by_id": "66",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T13:21:22"
+  },
+  "368": {
+    "update_id": "368",
+    "incident_id": "143",
+    "updated_by_id": "7",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T18:03:46"
+  },
+  "369": {
+    "update_id": "369",
+    "incident_id": "144",
+    "updated_by_id": "95",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:08:24"
+  },
+  "370": {
+    "update_id": "370",
+    "incident_id": "145",
+    "updated_by_id": "35",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "507",
+    "created_at": "2025-08-29T06:51:28"
+  },
+  "371": {
+    "update_id": "371",
+    "incident_id": "145",
+    "updated_by_id": "85",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:17:53"
+  },
+  "372": {
+    "update_id": "372",
+    "incident_id": "145",
+    "updated_by_id": "51",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "89",
+    "created_at": "2025-08-29T05:40:19"
+  },
+  "373": {
+    "update_id": "373",
+    "incident_id": "145",
+    "updated_by_id": "442",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T05:37:32"
+  },
+  "374": {
+    "update_id": "374",
+    "incident_id": "146",
+    "updated_by_id": "118",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T09:53:01"
+  },
+  "375": {
+    "update_id": "375",
+    "incident_id": "146",
+    "updated_by_id": "101",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T12:55:13"
+  },
+  "376": {
+    "update_id": "376",
+    "incident_id": "147",
+    "updated_by_id": "543",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T13:01:52"
+  },
+  "377": {
+    "update_id": "377",
+    "incident_id": "147",
+    "updated_by_id": "18",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:56:38"
+  },
+  "378": {
+    "update_id": "378",
+    "incident_id": "147",
+    "updated_by_id": "477",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:08:50"
+  },
+  "379": {
+    "update_id": "379",
+    "incident_id": "147",
+    "updated_by_id": "468",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T13:26:16"
+  },
+  "380": {
+    "update_id": "380",
+    "incident_id": "148",
+    "updated_by_id": "19",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:30:01"
+  },
+  "381": {
+    "update_id": "381",
+    "incident_id": "149",
+    "updated_by_id": "548",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "80",
+    "created_at": "2025-08-29T12:23:25"
+  },
+  "382": {
+    "update_id": "382",
+    "incident_id": "150",
+    "updated_by_id": "7",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:01:48"
+  },
+  "383": {
+    "update_id": "383",
+    "incident_id": "151",
+    "updated_by_id": "67",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:19:11"
+  },
+  "384": {
+    "update_id": "384",
+    "incident_id": "151",
+    "updated_by_id": "16",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:14:00"
+  },
+  "385": {
+    "update_id": "385",
+    "incident_id": "151",
+    "updated_by_id": "22",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T05:59:53"
+  },
+  "386": {
+    "update_id": "386",
+    "incident_id": "151",
+    "updated_by_id": "506",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "457",
+    "created_at": "2025-08-29T09:19:30"
+  },
+  "387": {
+    "update_id": "387",
+    "incident_id": "152",
+    "updated_by_id": "24",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:33:15"
+  },
+  "388": {
+    "update_id": "388",
+    "incident_id": "152",
+    "updated_by_id": "66",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T10:46:57"
+  },
+  "389": {
+    "update_id": "389",
+    "incident_id": "152",
+    "updated_by_id": "498",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T10:35:58"
+  },
+  "390": {
+    "update_id": "390",
+    "incident_id": "153",
+    "updated_by_id": "43",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T12:11:43"
+  },
+  "391": {
+    "update_id": "391",
+    "incident_id": "154",
+    "updated_by_id": "520",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "432",
+    "created_at": "2025-08-29T20:13:55"
+  },
+  "392": {
+    "update_id": "392",
+    "incident_id": "154",
+    "updated_by_id": "519",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T16:44:45"
+  },
+  "393": {
+    "update_id": "393",
+    "incident_id": "154",
+    "updated_by_id": "98",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T11:56:10"
+  },
+  "394": {
+    "update_id": "394",
+    "incident_id": "155",
+    "updated_by_id": "91",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T06:09:00"
+  },
+  "395": {
+    "update_id": "395",
+    "incident_id": "155",
+    "updated_by_id": "78",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T05:43:19"
+  },
+  "396": {
+    "update_id": "396",
+    "incident_id": "155",
+    "updated_by_id": "16",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T05:42:56"
+  },
+  "397": {
+    "update_id": "397",
+    "incident_id": "155",
+    "updated_by_id": "75",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T05:23:04"
+  },
+  "398": {
+    "update_id": "398",
+    "incident_id": "156",
+    "updated_by_id": "543",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:35:56"
+  },
+  "399": {
+    "update_id": "399",
+    "incident_id": "157",
+    "updated_by_id": "100",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:20:02"
+  },
+  "400": {
+    "update_id": "400",
+    "incident_id": "157",
+    "updated_by_id": "24",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "43",
+    "created_at": "2025-08-29T11:58:52"
+  },
+  "401": {
+    "update_id": "401",
+    "incident_id": "157",
+    "updated_by_id": "43",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T11:43:12"
+  },
+  "402": {
+    "update_id": "402",
+    "incident_id": "158",
+    "updated_by_id": "449",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T13:20:35"
+  },
+  "403": {
+    "update_id": "403",
+    "incident_id": "158",
+    "updated_by_id": "116",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T15:53:41"
+  },
+  "404": {
+    "update_id": "404",
+    "incident_id": "158",
+    "updated_by_id": "441",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T14:44:33"
+  },
+  "405": {
+    "update_id": "405",
+    "incident_id": "159",
+    "updated_by_id": "449",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-30T11:34:07"
+  },
+  "406": {
+    "update_id": "406",
+    "incident_id": "160",
+    "updated_by_id": "425",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "539",
+    "created_at": "2025-08-29T06:14:48"
+  },
+  "407": {
+    "update_id": "407",
+    "incident_id": "161",
+    "updated_by_id": "110",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "551",
+    "created_at": "2025-08-29T07:07:24"
+  },
+  "408": {
+    "update_id": "408",
+    "incident_id": "161",
+    "updated_by_id": "510",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:28:12"
+  },
+  "409": {
+    "update_id": "409",
+    "incident_id": "161",
+    "updated_by_id": "551",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:58:17"
+  },
+  "410": {
+    "update_id": "410",
+    "incident_id": "161",
+    "updated_by_id": "511",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T11:08:51"
+  },
+  "411": {
+    "update_id": "411",
+    "incident_id": "162",
+    "updated_by_id": "494",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "34",
+    "created_at": "2025-08-29T10:33:23"
+  },
+  "412": {
+    "update_id": "412",
+    "incident_id": "162",
+    "updated_by_id": "459",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "523",
+    "created_at": "2025-08-29T11:02:53"
+  },
+  "413": {
+    "update_id": "413",
+    "incident_id": "162",
+    "updated_by_id": "111",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P2",
+    "created_at": "2025-08-29T10:17:18"
+  },
+  "414": {
+    "update_id": "414",
+    "incident_id": "162",
+    "updated_by_id": "32",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T08:30:44"
+  },
+  "415": {
+    "update_id": "415",
+    "incident_id": "163",
+    "updated_by_id": "477",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T11:16:44"
+  },
+  "416": {
+    "update_id": "416",
+    "incident_id": "163",
+    "updated_by_id": "26",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "471",
+    "created_at": "2025-08-29T15:34:36"
+  },
+  "417": {
+    "update_id": "417",
+    "incident_id": "163",
+    "updated_by_id": "548",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "507",
+    "created_at": "2025-08-29T08:47:06"
+  },
+  "418": {
+    "update_id": "418",
+    "incident_id": "163",
+    "updated_by_id": "460",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T22:34:12"
+  },
+  "419": {
+    "update_id": "419",
+    "incident_id": "164",
+    "updated_by_id": "470",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-30T02:00:42"
+  },
+  "420": {
+    "update_id": "420",
+    "incident_id": "164",
+    "updated_by_id": "507",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T02:30:03"
+  },
+  "421": {
+    "update_id": "421",
+    "incident_id": "164",
+    "updated_by_id": "468",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T06:21:32"
+  },
+  "422": {
+    "update_id": "422",
+    "incident_id": "165",
+    "updated_by_id": "490",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "70",
+    "created_at": "2025-08-29T23:18:41"
+  },
+  "423": {
+    "update_id": "423",
+    "incident_id": "165",
+    "updated_by_id": "473",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T18:18:38"
+  },
+  "424": {
+    "update_id": "424",
+    "incident_id": "165",
+    "updated_by_id": "31",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T09:40:07"
+  },
+  "425": {
+    "update_id": "425",
+    "incident_id": "165",
+    "updated_by_id": "120",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T09:03:56"
+  },
+  "426": {
+    "update_id": "426",
+    "incident_id": "166",
+    "updated_by_id": "32",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T08:35:53"
+  },
+  "427": {
+    "update_id": "427",
+    "incident_id": "166",
+    "updated_by_id": "551",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T18:18:36"
+  },
+  "428": {
+    "update_id": "428",
+    "incident_id": "166",
+    "updated_by_id": "503",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "457",
+    "created_at": "2025-08-29T07:03:28"
+  },
+  "429": {
+    "update_id": "429",
+    "incident_id": "167",
+    "updated_by_id": "495",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T03:46:26"
+  },
+  "430": {
+    "update_id": "430",
+    "incident_id": "167",
+    "updated_by_id": "114",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T11:02:59"
+  },
+  "431": {
+    "update_id": "431",
+    "incident_id": "168",
+    "updated_by_id": "561",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "33",
+    "created_at": "2025-08-29T18:04:21"
+  },
+  "432": {
+    "update_id": "432",
+    "incident_id": "168",
+    "updated_by_id": "61",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "37",
+    "created_at": "2025-08-29T09:43:43"
+  },
+  "433": {
+    "update_id": "433",
+    "incident_id": "168",
+    "updated_by_id": "566",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T17:12:21"
+  },
+  "434": {
+    "update_id": "434",
+    "incident_id": "168",
+    "updated_by_id": "20",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T05:39:59"
+  },
+  "435": {
+    "update_id": "435",
+    "incident_id": "169",
+    "updated_by_id": "518",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:41:11"
+  },
+  "436": {
+    "update_id": "436",
+    "incident_id": "170",
+    "updated_by_id": "493",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:02:54"
+  },
+  "437": {
+    "update_id": "437",
+    "incident_id": "170",
+    "updated_by_id": "557",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T07:00:35"
+  },
+  "438": {
+    "update_id": "438",
+    "incident_id": "170",
+    "updated_by_id": "516",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:13:19"
+  },
+  "439": {
+    "update_id": "439",
+    "incident_id": "170",
+    "updated_by_id": "430",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T05:52:20"
+  },
+  "440": {
+    "update_id": "440",
+    "incident_id": "171",
+    "updated_by_id": "463",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T10:39:15"
+  },
+  "441": {
+    "update_id": "441",
+    "incident_id": "171",
+    "updated_by_id": "73",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "506",
+    "created_at": "2025-08-29T14:59:45"
+  },
+  "442": {
+    "update_id": "442",
+    "incident_id": "171",
+    "updated_by_id": "523",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "466",
+    "created_at": "2025-08-29T23:55:46"
+  },
+  "443": {
+    "update_id": "443",
+    "incident_id": "172",
+    "updated_by_id": "493",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T11:12:22"
+  },
+  "444": {
+    "update_id": "444",
+    "incident_id": "172",
+    "updated_by_id": "565",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "10",
+    "created_at": "2025-08-29T11:50:19"
+  },
+  "445": {
+    "update_id": "445",
+    "incident_id": "172",
+    "updated_by_id": "24",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T13:33:56"
+  },
+  "446": {
+    "update_id": "446",
+    "incident_id": "172",
+    "updated_by_id": "567",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T12:50:18"
+  },
+  "447": {
+    "update_id": "447",
+    "incident_id": "173",
+    "updated_by_id": "98",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-30T20:45:11"
+  },
+  "448": {
+    "update_id": "448",
+    "incident_id": "174",
+    "updated_by_id": "502",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T17:53:50"
+  },
+  "449": {
+    "update_id": "449",
+    "incident_id": "174",
+    "updated_by_id": "41",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "501",
+    "created_at": "2025-08-29T17:37:27"
+  },
+  "450": {
+    "update_id": "450",
+    "incident_id": "174",
+    "updated_by_id": "505",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T19:11:55"
+  },
+  "451": {
+    "update_id": "451",
+    "incident_id": "175",
+    "updated_by_id": "12",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "46",
+    "created_at": "2025-08-29T07:26:57"
+  },
+  "452": {
+    "update_id": "452",
+    "incident_id": "175",
+    "updated_by_id": "91",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T08:50:35"
+  },
+  "453": {
+    "update_id": "453",
+    "incident_id": "175",
+    "updated_by_id": "423",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "509",
+    "created_at": "2025-08-29T08:44:34"
+  },
+  "454": {
+    "update_id": "454",
+    "incident_id": "175",
+    "updated_by_id": "49",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:12:51"
+  },
+  "455": {
+    "update_id": "455",
+    "incident_id": "176",
+    "updated_by_id": "538",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "509",
+    "created_at": "2025-08-29T10:14:10"
+  },
+  "456": {
+    "update_id": "456",
+    "incident_id": "176",
+    "updated_by_id": "476",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T15:57:01"
+  },
+  "457": {
+    "update_id": "457",
+    "incident_id": "176",
+    "updated_by_id": "491",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:15:02"
+  },
+  "458": {
+    "update_id": "458",
+    "incident_id": "176",
+    "updated_by_id": "544",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T09:37:55"
+  },
+  "459": {
+    "update_id": "459",
+    "incident_id": "177",
+    "updated_by_id": "452",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "467",
+    "created_at": "2025-08-29T17:18:20"
+  },
+  "460": {
+    "update_id": "460",
+    "incident_id": "177",
+    "updated_by_id": "456",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T21:06:37"
+  },
+  "461": {
+    "update_id": "461",
+    "incident_id": "178",
+    "updated_by_id": "47",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:50:27"
+  },
+  "462": {
+    "update_id": "462",
+    "incident_id": "178",
+    "updated_by_id": "490",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "52",
+    "created_at": "2025-08-29T08:25:09"
+  },
+  "463": {
+    "update_id": "463",
+    "incident_id": "178",
+    "updated_by_id": "72",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:38:06"
+  },
+  "464": {
+    "update_id": "464",
+    "incident_id": "178",
+    "updated_by_id": "459",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T08:10:08"
+  },
+  "465": {
+    "update_id": "465",
+    "incident_id": "179",
+    "updated_by_id": "492",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T22:32:02"
+  },
+  "466": {
+    "update_id": "466",
+    "incident_id": "179",
+    "updated_by_id": "60",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "563",
+    "created_at": "2025-08-29T21:12:29"
+  },
+  "467": {
+    "update_id": "467",
+    "incident_id": "179",
+    "updated_by_id": "533",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-30T14:15:22"
+  },
+  "468": {
+    "update_id": "468",
+    "incident_id": "179",
+    "updated_by_id": "495",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T13:00:24"
+  },
+  "469": {
+    "update_id": "469",
+    "incident_id": "180",
+    "updated_by_id": "530",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "95",
+    "created_at": "2025-08-29T22:16:25"
+  },
+  "470": {
+    "update_id": "470",
+    "incident_id": "180",
+    "updated_by_id": "524",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T18:17:15"
+  },
+  "471": {
+    "update_id": "471",
+    "incident_id": "180",
+    "updated_by_id": "490",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-30T09:35:28"
+  },
+  "472": {
+    "update_id": "472",
+    "incident_id": "180",
+    "updated_by_id": "461",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-30T13:24:31"
+  },
+  "473": {
+    "update_id": "473",
+    "incident_id": "181",
+    "updated_by_id": "92",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P1",
+    "created_at": "2025-08-29T08:30:11"
+  },
+  "474": {
+    "update_id": "474",
+    "incident_id": "181",
+    "updated_by_id": "535",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P1",
+    "created_at": "2025-08-29T08:09:53"
+  },
+  "475": {
+    "update_id": "475",
+    "incident_id": "182",
+    "updated_by_id": "476",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T09:10:10"
+  },
+  "476": {
+    "update_id": "476",
+    "incident_id": "182",
+    "updated_by_id": "434",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "32",
+    "created_at": "2025-08-29T11:58:55"
+  },
+  "477": {
+    "update_id": "477",
+    "incident_id": "182",
+    "updated_by_id": "503",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T11:58:44"
+  },
+  "478": {
+    "update_id": "478",
+    "incident_id": "183",
+    "updated_by_id": "116",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "60",
+    "created_at": "2025-08-29T09:26:38"
+  },
+  "479": {
+    "update_id": "479",
+    "incident_id": "183",
+    "updated_by_id": "57",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "490",
+    "created_at": "2025-08-29T07:42:27"
+  },
+  "480": {
+    "update_id": "480",
+    "incident_id": "183",
+    "updated_by_id": "71",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T12:55:31"
+  },
+  "481": {
+    "update_id": "481",
+    "incident_id": "183",
+    "updated_by_id": "118",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P2",
+    "created_at": "2025-08-29T14:51:16"
+  },
+  "482": {
+    "update_id": "482",
+    "incident_id": "184",
+    "updated_by_id": "65",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T03:13:54"
+  },
+  "483": {
+    "update_id": "483",
+    "incident_id": "185",
+    "updated_by_id": "477",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:01:00"
+  },
+  "484": {
+    "update_id": "484",
+    "incident_id": "185",
+    "updated_by_id": "46",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T06:04:31"
+  },
+  "485": {
+    "update_id": "485",
+    "incident_id": "185",
+    "updated_by_id": "44",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "42",
+    "created_at": "2025-08-29T06:15:20"
+  },
+  "486": {
+    "update_id": "486",
+    "incident_id": "185",
+    "updated_by_id": "527",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T06:09:35"
+  },
+  "487": {
+    "update_id": "487",
+    "incident_id": "186",
+    "updated_by_id": "515",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T11:25:27"
+  },
+  "488": {
+    "update_id": "488",
+    "incident_id": "186",
+    "updated_by_id": "98",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T15:26:18"
+  },
+  "489": {
+    "update_id": "489",
+    "incident_id": "186",
+    "updated_by_id": "426",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T11:08:58"
+  },
+  "490": {
+    "update_id": "490",
+    "incident_id": "186",
+    "updated_by_id": "10",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "83",
+    "created_at": "2025-08-29T13:47:42"
+  },
+  "491": {
+    "update_id": "491",
+    "incident_id": "187",
+    "updated_by_id": "88",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T17:14:16"
+  },
+  "492": {
+    "update_id": "492",
+    "incident_id": "187",
+    "updated_by_id": "426",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T14:08:10"
+  },
+  "493": {
+    "update_id": "493",
+    "incident_id": "187",
+    "updated_by_id": "441",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P3",
+    "new_value": "P3",
+    "created_at": "2025-08-29T20:15:24"
+  },
+  "494": {
+    "update_id": "494",
+    "incident_id": "188",
+    "updated_by_id": "101",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "472",
+    "created_at": "2025-08-29T11:01:40"
+  },
+  "495": {
+    "update_id": "495",
+    "incident_id": "189",
+    "updated_by_id": "19",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T07:13:42"
+  },
+  "496": {
+    "update_id": "496",
+    "incident_id": "190",
+    "updated_by_id": "499",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T05:55:56"
+  },
+  "497": {
+    "update_id": "497",
+    "incident_id": "190",
+    "updated_by_id": "34",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P3",
+    "created_at": "2025-08-29T11:30:46"
+  },
+  "498": {
+    "update_id": "498",
+    "incident_id": "191",
+    "updated_by_id": "36",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "in_progress",
+    "new_value": "closed",
+    "created_at": "2025-08-29T23:24:31"
+  },
+  "499": {
+    "update_id": "499",
+    "incident_id": "191",
+    "updated_by_id": "562",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "566",
+    "created_at": "2025-08-29T16:42:17"
+  },
+  "500": {
+    "update_id": "500",
+    "incident_id": "192",
+    "updated_by_id": "52",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P2",
+    "created_at": "2025-08-29T19:32:33"
+  },
+  "501": {
+    "update_id": "501",
+    "incident_id": "192",
+    "updated_by_id": "441",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T16:09:29"
+  },
+  "502": {
+    "update_id": "502",
+    "incident_id": "193",
+    "updated_by_id": "459",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "104",
+    "created_at": "2025-08-29T22:02:39"
+  },
+  "503": {
+    "update_id": "503",
+    "incident_id": "193",
+    "updated_by_id": "441",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "491",
+    "created_at": "2025-08-29T18:00:59"
+  },
+  "504": {
+    "update_id": "504",
+    "incident_id": "193",
+    "updated_by_id": "17",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "60",
+    "created_at": "2025-08-29T13:32:15"
+  },
+  "505": {
+    "update_id": "505",
+    "incident_id": "193",
+    "updated_by_id": "118",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T23:22:21"
+  },
+  "506": {
+    "update_id": "506",
+    "incident_id": "194",
+    "updated_by_id": "508",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T20:04:22"
+  },
+  "507": {
+    "update_id": "507",
+    "incident_id": "194",
+    "updated_by_id": "120",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T08:42:23"
+  },
+  "508": {
+    "update_id": "508",
+    "incident_id": "194",
+    "updated_by_id": "435",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "34",
+    "created_at": "2025-08-29T17:49:36"
+  },
+  "509": {
+    "update_id": "509",
+    "incident_id": "195",
+    "updated_by_id": "483",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T13:00:09"
+  },
+  "510": {
+    "update_id": "510",
+    "incident_id": "195",
+    "updated_by_id": "2",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T12:42:25"
+  },
+  "511": {
+    "update_id": "511",
+    "incident_id": "196",
+    "updated_by_id": "79",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T13:20:55"
+  },
+  "512": {
+    "update_id": "512",
+    "incident_id": "197",
+    "updated_by_id": "4",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P2",
+    "new_value": "P1",
+    "created_at": "2025-08-29T14:23:51"
+  },
+  "513": {
+    "update_id": "513",
+    "incident_id": "197",
+    "updated_by_id": "1",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T08:54:08"
+  },
+  "514": {
+    "update_id": "514",
+    "incident_id": "198",
+    "updated_by_id": "488",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "closed",
+    "created_at": "2025-08-29T05:46:12"
+  },
+  "515": {
+    "update_id": "515",
+    "incident_id": "198",
+    "updated_by_id": "501",
+    "update_type": "status_change",
+    "field_name": "status",
+    "old_value": "open",
+    "new_value": "in_progress",
+    "created_at": "2025-08-29T06:26:56"
+  },
+  "516": {
+    "update_id": "516",
+    "incident_id": "198",
+    "updated_by_id": "63",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-29T05:49:42"
+  },
+  "517": {
+    "update_id": "517",
+    "incident_id": "199",
+    "updated_by_id": "45",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "6",
+    "created_at": "2025-08-29T05:27:20"
+  },
+  "518": {
+    "update_id": "518",
+    "incident_id": "199",
+    "updated_by_id": "105",
+    "update_type": "communication",
+    "field_name": "communication_sent",
+    "old_value": "false",
+    "new_value": "true",
+    "created_at": "2025-08-30T07:07:14"
+  },
+  "519": {
+    "update_id": "519",
+    "incident_id": "199",
+    "updated_by_id": "492",
+    "update_type": "assignment",
+    "field_name": "assigned_manager_id",
+    "old_value": null,
+    "new_value": "547",
+    "created_at": "2025-08-29T19:40:51"
+  },
+  "520": {
+    "update_id": "520",
+    "incident_id": "200",
+    "updated_by_id": "500",
+    "update_type": "severity_change",
+    "field_name": "severity",
+    "old_value": "P4",
+    "new_value": "P3",
+    "created_at": "2025-08-29T21:13:59"
+  }
+}

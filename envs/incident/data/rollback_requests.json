@@ -1,0 +1,211 @@
+{
+  "1": {
+    "rollback_id": "1",
+    "change_id": "7",
+    "incident_id": "8",
+    "requested_by_id": "66",
+    "approved_by_id": "52",
+    "executed_at": "2023-12-21T04:03:24",
+    "validation_completed": false,
+    "status": "in_progress",
+    "created_at": "2025-03-21T18:07:59"
+  },
+  "2": {
+    "rollback_id": "2",
+    "change_id": "9",
+    "incident_id": "13",
+    "requested_by_id": "49",
+    "approved_by_id": null,
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "requested",
+    "created_at": "2024-04-30T15:26:44"
+  },
+  "3": {
+    "rollback_id": "3",
+    "change_id": "14",
+    "incident_id": "21",
+    "requested_by_id": "107",
+    "approved_by_id": "69",
+    "executed_at": "2025-06-28T08:06:17",
+    "validation_completed": true,
+    "status": "completed",
+    "created_at": "2025-03-04T19:59:01"
+  },
+  "4": {
+    "rollback_id": "4",
+    "change_id": "16",
+    "incident_id": "23",
+    "requested_by_id": "118",
+    "approved_by_id": "87",
+    "executed_at": "2025-02-15T07:53:21",
+    "validation_completed": false,
+    "status": "in_progress",
+    "created_at": "2025-07-26T19:21:52"
+  },
+  "5": {
+    "rollback_id": "5",
+    "change_id": "20",
+    "incident_id": "28",
+    "requested_by_id": "46",
+    "approved_by_id": null,
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "requested",
+    "created_at": "2025-02-17T13:46:44"
+  },
+  "6": {
+    "rollback_id": "6",
+    "change_id": "34",
+    "incident_id": "48",
+    "requested_by_id": "50",
+    "approved_by_id": null,
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "requested",
+    "created_at": "2024-03-02T10:25:33"
+  },
+  "7": {
+    "rollback_id": "7",
+    "change_id": "35",
+    "incident_id": "50",
+    "requested_by_id": "108",
+    "approved_by_id": "17",
+    "executed_at": "2024-06-16T11:42:39",
+    "validation_completed": false,
+    "status": "completed",
+    "created_at": "2023-09-12T20:55:22"
+  },
+  "8": {
+    "rollback_id": "8",
+    "change_id": "36",
+    "incident_id": "51",
+    "requested_by_id": "21",
+    "approved_by_id": "73",
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "approved",
+    "created_at": "2024-04-13T05:34:13"
+  },
+  "9": {
+    "rollback_id": "9",
+    "change_id": "39",
+    "incident_id": "55",
+    "requested_by_id": "12",
+    "approved_by_id": "64",
+    "executed_at": "2024-08-14T07:19:48",
+    "validation_completed": false,
+    "status": "in_progress",
+    "created_at": "2024-07-16T08:11:17"
+  },
+  "10": {
+    "rollback_id": "10",
+    "change_id": "53",
+    "incident_id": "79",
+    "requested_by_id": "47",
+    "approved_by_id": null,
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "requested",
+    "created_at": "2025-01-15T00:52:26"
+  },
+  "11": {
+    "rollback_id": "11",
+    "change_id": "54",
+    "incident_id": "82",
+    "requested_by_id": "41",
+    "approved_by_id": "95",
+    "executed_at": "2024-12-18T06:57:41",
+    "validation_completed": false,
+    "status": "in_progress",
+    "created_at": "2024-08-22T06:00:06"
+  },
+  "12": {
+    "rollback_id": "12",
+    "change_id": "59",
+    "incident_id": "92",
+    "requested_by_id": "54",
+    "approved_by_id": "9",
+    "executed_at": "2024-12-17T18:16:46",
+    "validation_completed": false,
+    "status": "failed",
+    "created_at": "2023-09-02T17:55:38"
+  },
+  "13": {
+    "rollback_id": "13",
+    "change_id": "61",
+    "incident_id": "96",
+    "requested_by_id": "72",
+    "approved_by_id": null,
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "requested",
+    "created_at": "2024-08-26T04:15:03"
+  },
+  "14": {
+    "rollback_id": "14",
+    "change_id": "67",
+    "incident_id": "103",
+    "requested_by_id": "46",
+    "approved_by_id": "89",
+    "executed_at": "2025-07-01T21:41:48",
+    "validation_completed": false,
+    "status": "failed",
+    "created_at": "2024-01-28T01:20:00"
+  },
+  "15": {
+    "rollback_id": "15",
+    "change_id": "74",
+    "incident_id": "116",
+    "requested_by_id": "10",
+    "approved_by_id": null,
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "requested",
+    "created_at": "2024-07-20T01:09:32"
+  },
+  "16": {
+    "rollback_id": "16",
+    "change_id": "84",
+    "incident_id": "140",
+    "requested_by_id": "12",
+    "approved_by_id": "33",
+    "executed_at": "2025-03-28T06:29:48",
+    "validation_completed": false,
+    "status": "failed",
+    "created_at": "2024-09-20T00:38:12"
+  },
+  "17": {
+    "rollback_id": "17",
+    "change_id": "91",
+    "incident_id": "150",
+    "requested_by_id": "91",
+    "approved_by_id": "19",
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "approved",
+    "created_at": "2024-11-08T15:27:35"
+  },
+  "18": {
+    "rollback_id": "18",
+    "change_id": "106",
+    "incident_id": "177",
+    "requested_by_id": "11",
+    "approved_by_id": null,
+    "executed_at": null,
+    "validation_completed": false,
+    "status": "requested",
+    "created_at": "2024-01-10T19:36:22"
+  },
+  "19": {
+    "rollback_id": "19",
+    "change_id": "110",
+    "incident_id": "184",
+    "requested_by_id": "84",
+    "approved_by_id": "65",
+    "executed_at": "2025-08-13T06:04:50",
+    "validation_completed": true,
+    "status": "completed",
+    "created_at": "2025-05-27T03:08:36"
+  }
+}

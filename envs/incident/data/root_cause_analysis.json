@@ -1,0 +1,1082 @@
+{
+  "1": {
+    "rca_id": "1",
+    "incident_id": "2",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "84",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-11-25T04:49:07"
+  },
+  "2": {
+    "rca_id": "2",
+    "incident_id": "3",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "2",
+    "completed_at": "2025-08-29T15:57:40",
+    "status": "completed",
+    "created_at": "2023-11-26T06:56:21"
+  },
+  "3": {
+    "rca_id": "3",
+    "incident_id": "4",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "109",
+    "completed_at": "2025-08-29T09:35:41",
+    "status": "approved",
+    "created_at": "2024-12-27T00:33:34"
+  },
+  "4": {
+    "rca_id": "4",
+    "incident_id": "5",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "27",
+    "completed_at": "2025-08-29T12:10:22",
+    "status": "completed",
+    "created_at": "2024-03-05T17:32:07"
+  },
+  "5": {
+    "rca_id": "5",
+    "incident_id": "6",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "59",
+    "completed_at": "2025-08-29T09:24:48",
+    "status": "approved",
+    "created_at": "2024-11-01T06:13:57"
+  },
+  "6": {
+    "rca_id": "6",
+    "incident_id": "7",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "1",
+    "completed_at": "2025-08-29T10:57:58",
+    "status": "completed",
+    "created_at": "2023-10-16T06:36:54"
+  },
+  "7": {
+    "rca_id": "7",
+    "incident_id": "8",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "66",
+    "completed_at": "2025-08-31T02:40:25",
+    "status": "approved",
+    "created_at": "2024-11-05T03:39:02"
+  },
+  "8": {
+    "rca_id": "8",
+    "incident_id": "12",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "32",
+    "completed_at": "2025-08-29T12:41:40",
+    "status": "completed",
+    "created_at": "2025-08-19T22:11:17"
+  },
+  "9": {
+    "rca_id": "9",
+    "incident_id": "13",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "48",
+    "completed_at": "2025-08-29T08:00:42",
+    "status": "completed",
+    "created_at": "2025-01-16T23:40:06"
+  },
+  "10": {
+    "rca_id": "10",
+    "incident_id": "14",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "61",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-05-10T23:49:44"
+  },
+  "11": {
+    "rca_id": "11",
+    "incident_id": "16",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "72",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-04-10T00:47:14"
+  },
+  "12": {
+    "rca_id": "12",
+    "incident_id": "19",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "83",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-08-12T18:02:30"
+  },
+  "13": {
+    "rca_id": "13",
+    "incident_id": "20",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "34",
+    "completed_at": "2025-08-29T17:08:29",
+    "status": "completed",
+    "created_at": "2025-06-02T03:42:07"
+  },
+  "14": {
+    "rca_id": "14",
+    "incident_id": "21",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "46",
+    "completed_at": "2025-08-29T08:14:03",
+    "status": "completed",
+    "created_at": "2024-06-19T15:08:35"
+  },
+  "15": {
+    "rca_id": "15",
+    "incident_id": "22",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "20",
+    "completed_at": "2025-08-29T14:49:03",
+    "status": "completed",
+    "created_at": "2024-10-01T22:00:02"
+  },
+  "16": {
+    "rca_id": "16",
+    "incident_id": "23",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "36",
+    "completed_at": "2025-08-30T06:30:59",
+    "status": "approved",
+    "created_at": "2024-10-19T19:34:56"
+  },
+  "17": {
+    "rca_id": "17",
+    "incident_id": "24",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "19",
+    "completed_at": "2025-08-29T06:57:09",
+    "status": "completed",
+    "created_at": "2024-10-20T22:15:49"
+  },
+  "18": {
+    "rca_id": "18",
+    "incident_id": "26",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "26",
+    "completed_at": "2025-08-29T19:32:07",
+    "status": "completed",
+    "created_at": "2025-05-05T08:59:52"
+  },
+  "19": {
+    "rca_id": "19",
+    "incident_id": "27",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "18",
+    "completed_at": "2025-08-29T07:33:50",
+    "status": "completed",
+    "created_at": "2025-02-05T00:56:09"
+  },
+  "20": {
+    "rca_id": "20",
+    "incident_id": "28",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "109",
+    "completed_at": "2025-08-29T21:37:32",
+    "status": "completed",
+    "created_at": "2023-10-29T23:07:41"
+  },
+  "21": {
+    "rca_id": "21",
+    "incident_id": "29",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "100",
+    "completed_at": "2025-08-29T20:27:42",
+    "status": "approved",
+    "created_at": "2025-08-20T19:10:24"
+  },
+  "22": {
+    "rca_id": "22",
+    "incident_id": "31",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "89",
+    "completed_at": "2025-08-29T08:20:58",
+    "status": "completed",
+    "created_at": "2023-09-23T23:02:45"
+  },
+  "23": {
+    "rca_id": "23",
+    "incident_id": "32",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "24",
+    "completed_at": "2025-08-30T04:27:24",
+    "status": "completed",
+    "created_at": "2024-09-20T19:05:02"
+  },
+  "24": {
+    "rca_id": "24",
+    "incident_id": "33",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "45",
+    "completed_at": "2025-08-30T02:02:20",
+    "status": "completed",
+    "created_at": "2024-10-09T16:58:20"
+  },
+  "25": {
+    "rca_id": "25",
+    "incident_id": "34",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "1",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2023-11-01T02:31:11"
+  },
+  "26": {
+    "rca_id": "26",
+    "incident_id": "37",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "100",
+    "completed_at": "2025-08-29T11:06:05",
+    "status": "completed",
+    "created_at": "2024-11-07T02:19:25"
+  },
+  "27": {
+    "rca_id": "27",
+    "incident_id": "38",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "45",
+    "completed_at": "2025-08-29T06:54:23",
+    "status": "completed",
+    "created_at": "2024-09-29T02:06:06"
+  },
+  "28": {
+    "rca_id": "28",
+    "incident_id": "39",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "62",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-08-02T18:09:12"
+  },
+  "29": {
+    "rca_id": "29",
+    "incident_id": "41",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "36",
+    "completed_at": "2025-08-30T02:44:57",
+    "status": "completed",
+    "created_at": "2025-03-27T01:58:21"
+  },
+  "30": {
+    "rca_id": "30",
+    "incident_id": "44",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "73",
+    "completed_at": "2025-08-29T06:20:21",
+    "status": "completed",
+    "created_at": "2024-12-12T13:33:00"
+  },
+  "31": {
+    "rca_id": "31",
+    "incident_id": "45",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "36",
+    "completed_at": "2025-08-30T21:25:35",
+    "status": "approved",
+    "created_at": "2025-06-17T03:51:40"
+  },
+  "32": {
+    "rca_id": "32",
+    "incident_id": "46",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "81",
+    "completed_at": "2025-08-29T09:44:17",
+    "status": "completed",
+    "created_at": "2024-07-15T06:07:46"
+  },
+  "33": {
+    "rca_id": "33",
+    "incident_id": "47",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "34",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-09-21T11:19:14"
+  },
+  "34": {
+    "rca_id": "34",
+    "incident_id": "48",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "89",
+    "completed_at": "2025-08-29T08:44:55",
+    "status": "completed",
+    "created_at": "2024-12-19T17:44:55"
+  },
+  "35": {
+    "rca_id": "35",
+    "incident_id": "50",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "66",
+    "completed_at": "2025-08-29T17:03:23",
+    "status": "approved",
+    "created_at": "2025-06-15T07:44:01"
+  },
+  "36": {
+    "rca_id": "36",
+    "incident_id": "51",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "32",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-03-31T18:17:58"
+  },
+  "37": {
+    "rca_id": "37",
+    "incident_id": "53",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "70",
+    "completed_at": "2025-08-29T22:46:23",
+    "status": "completed",
+    "created_at": "2024-07-28T10:38:02"
+  },
+  "38": {
+    "rca_id": "38",
+    "incident_id": "54",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "75",
+    "completed_at": "2025-08-29T08:51:04",
+    "status": "completed",
+    "created_at": "2024-02-18T04:59:53"
+  },
+  "39": {
+    "rca_id": "39",
+    "incident_id": "55",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "27",
+    "completed_at": "2025-08-29T08:28:13",
+    "status": "approved",
+    "created_at": "2024-12-05T12:52:39"
+  },
+  "40": {
+    "rca_id": "40",
+    "incident_id": "56",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "1",
+    "completed_at": "2025-08-30T01:43:24",
+    "status": "approved",
+    "created_at": "2024-04-08T02:12:51"
+  },
+  "41": {
+    "rca_id": "41",
+    "incident_id": "58",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "40",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-12-19T08:33:35"
+  },
+  "42": {
+    "rca_id": "42",
+    "incident_id": "59",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "94",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2023-11-13T04:08:02"
+  },
+  "43": {
+    "rca_id": "43",
+    "incident_id": "60",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "62",
+    "completed_at": "2025-08-29T07:13:03",
+    "status": "approved",
+    "created_at": "2025-01-27T15:51:06"
+  },
+  "44": {
+    "rca_id": "44",
+    "incident_id": "61",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "43",
+    "completed_at": "2025-08-29T12:32:25",
+    "status": "completed",
+    "created_at": "2025-01-13T10:14:29"
+  },
+  "45": {
+    "rca_id": "45",
+    "incident_id": "62",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "70",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-07-18T10:35:04"
+  },
+  "46": {
+    "rca_id": "46",
+    "incident_id": "63",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "50",
+    "completed_at": "2025-08-29T19:52:04",
+    "status": "approved",
+    "created_at": "2025-08-13T17:53:40"
+  },
+  "47": {
+    "rca_id": "47",
+    "incident_id": "65",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "19",
+    "completed_at": "2025-08-29T11:27:30",
+    "status": "completed",
+    "created_at": "2024-07-11T10:21:05"
+  },
+  "48": {
+    "rca_id": "48",
+    "incident_id": "67",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "20",
+    "completed_at": "2025-08-29T09:45:57",
+    "status": "approved",
+    "created_at": "2025-01-12T01:11:40"
+  },
+  "49": {
+    "rca_id": "49",
+    "incident_id": "68",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "32",
+    "completed_at": "2025-08-29T14:26:31",
+    "status": "approved",
+    "created_at": "2024-09-13T07:15:47"
+  },
+  "50": {
+    "rca_id": "50",
+    "incident_id": "70",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "14",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-02-16T09:51:08"
+  },
+  "51": {
+    "rca_id": "51",
+    "incident_id": "74",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "65",
+    "completed_at": "2025-08-30T03:26:06",
+    "status": "approved",
+    "created_at": "2023-11-15T14:13:44"
+  },
+  "52": {
+    "rca_id": "52",
+    "incident_id": "78",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "89",
+    "completed_at": "2025-08-29T08:48:57",
+    "status": "approved",
+    "created_at": "2025-06-04T10:26:52"
+  },
+  "53": {
+    "rca_id": "53",
+    "incident_id": "79",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "118",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-05-01T03:18:36"
+  },
+  "54": {
+    "rca_id": "54",
+    "incident_id": "82",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "15",
+    "completed_at": "2025-08-30T02:19:25",
+    "status": "completed",
+    "created_at": "2025-02-17T15:18:05"
+  },
+  "55": {
+    "rca_id": "55",
+    "incident_id": "83",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "8",
+    "completed_at": "2025-08-29T06:05:29",
+    "status": "completed",
+    "created_at": "2025-07-31T07:52:16"
+  },
+  "56": {
+    "rca_id": "56",
+    "incident_id": "84",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "26",
+    "completed_at": "2025-08-29T07:10:46",
+    "status": "approved",
+    "created_at": "2024-04-22T11:52:01"
+  },
+  "57": {
+    "rca_id": "57",
+    "incident_id": "86",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "49",
+    "completed_at": "2025-08-30T01:25:10",
+    "status": "completed",
+    "created_at": "2025-06-17T22:57:56"
+  },
+  "58": {
+    "rca_id": "58",
+    "incident_id": "90",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "43",
+    "completed_at": "2025-08-29T08:18:36",
+    "status": "completed",
+    "created_at": "2024-12-12T20:51:40"
+  },
+  "59": {
+    "rca_id": "59",
+    "incident_id": "92",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "4",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2023-12-27T21:09:11"
+  },
+  "60": {
+    "rca_id": "60",
+    "incident_id": "93",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "46",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-07-20T17:05:52"
+  },
+  "61": {
+    "rca_id": "61",
+    "incident_id": "96",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "29",
+    "completed_at": "2025-08-29T14:08:40",
+    "status": "completed",
+    "created_at": "2024-02-24T03:57:45"
+  },
+  "62": {
+    "rca_id": "62",
+    "incident_id": "97",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "48",
+    "completed_at": "2025-08-29T07:21:31",
+    "status": "completed",
+    "created_at": "2025-04-13T14:51:05"
+  },
+  "63": {
+    "rca_id": "63",
+    "incident_id": "98",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "65",
+    "completed_at": "2025-08-29T15:05:49",
+    "status": "completed",
+    "created_at": "2024-06-16T08:29:05"
+  },
+  "64": {
+    "rca_id": "64",
+    "incident_id": "100",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "15",
+    "completed_at": "2025-08-29T09:58:04",
+    "status": "completed",
+    "created_at": "2024-07-11T15:37:07"
+  },
+  "65": {
+    "rca_id": "65",
+    "incident_id": "101",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "9",
+    "completed_at": "2025-08-29T06:54:47",
+    "status": "completed",
+    "created_at": "2025-06-05T05:31:19"
+  },
+  "66": {
+    "rca_id": "66",
+    "incident_id": "102",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "94",
+    "completed_at": "2025-08-30T00:57:40",
+    "status": "approved",
+    "created_at": "2024-05-17T17:16:54"
+  },
+  "67": {
+    "rca_id": "67",
+    "incident_id": "103",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "23",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-10-07T07:43:57"
+  },
+  "68": {
+    "rca_id": "68",
+    "incident_id": "106",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "103",
+    "completed_at": "2025-08-29T12:30:54",
+    "status": "completed",
+    "created_at": "2024-03-06T04:03:55"
+  },
+  "69": {
+    "rca_id": "69",
+    "incident_id": "107",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "32",
+    "completed_at": "2025-08-29T06:00:55",
+    "status": "completed",
+    "created_at": "2025-01-21T22:16:29"
+  },
+  "70": {
+    "rca_id": "70",
+    "incident_id": "109",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "9",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2023-11-14T05:24:17"
+  },
+  "71": {
+    "rca_id": "71",
+    "incident_id": "110",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "64",
+    "completed_at": "2025-08-30T08:12:47",
+    "status": "approved",
+    "created_at": "2024-09-24T02:11:30"
+  },
+  "72": {
+    "rca_id": "72",
+    "incident_id": "111",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "89",
+    "completed_at": "2025-08-29T17:22:03",
+    "status": "completed",
+    "created_at": "2023-09-21T09:08:20"
+  },
+  "73": {
+    "rca_id": "73",
+    "incident_id": "114",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "93",
+    "completed_at": "2025-08-30T05:06:52",
+    "status": "completed",
+    "created_at": "2024-07-04T19:56:49"
+  },
+  "74": {
+    "rca_id": "74",
+    "incident_id": "116",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "32",
+    "completed_at": "2025-08-29T07:46:06",
+    "status": "completed",
+    "created_at": "2024-01-27T03:44:08"
+  },
+  "75": {
+    "rca_id": "75",
+    "incident_id": "124",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "29",
+    "completed_at": "2025-08-29T08:51:02",
+    "status": "approved",
+    "created_at": "2024-11-10T09:30:17"
+  },
+  "76": {
+    "rca_id": "76",
+    "incident_id": "125",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "103",
+    "completed_at": "2025-08-29T11:54:40",
+    "status": "approved",
+    "created_at": "2023-11-06T20:09:30"
+  },
+  "77": {
+    "rca_id": "77",
+    "incident_id": "128",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "103",
+    "completed_at": "2025-08-29T12:53:39",
+    "status": "approved",
+    "created_at": "2024-04-11T13:25:14"
+  },
+  "78": {
+    "rca_id": "78",
+    "incident_id": "131",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "65",
+    "completed_at": "2025-08-29T08:38:52",
+    "status": "completed",
+    "created_at": "2025-07-12T07:23:30"
+  },
+  "79": {
+    "rca_id": "79",
+    "incident_id": "132",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "91",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-10-26T06:09:47"
+  },
+  "80": {
+    "rca_id": "80",
+    "incident_id": "134",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "20",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-05-18T03:21:42"
+  },
+  "81": {
+    "rca_id": "81",
+    "incident_id": "135",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "32",
+    "completed_at": "2025-08-29T07:55:37",
+    "status": "approved",
+    "created_at": "2025-03-28T18:35:36"
+  },
+  "82": {
+    "rca_id": "82",
+    "incident_id": "136",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "104",
+    "completed_at": "2025-08-29T16:35:35",
+    "status": "completed",
+    "created_at": "2025-07-21T19:26:07"
+  },
+  "83": {
+    "rca_id": "83",
+    "incident_id": "137",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "41",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2023-10-27T20:28:37"
+  },
+  "84": {
+    "rca_id": "84",
+    "incident_id": "140",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "36",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-01-17T18:31:30"
+  },
+  "85": {
+    "rca_id": "85",
+    "incident_id": "141",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "29",
+    "completed_at": "2025-08-29T09:53:27",
+    "status": "completed",
+    "created_at": "2025-03-05T16:49:23"
+  },
+  "86": {
+    "rca_id": "86",
+    "incident_id": "144",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "73",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-03-21T17:39:07"
+  },
+  "87": {
+    "rca_id": "87",
+    "incident_id": "145",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "27",
+    "completed_at": "2025-08-29T06:27:03",
+    "status": "completed",
+    "created_at": "2024-08-11T17:42:29"
+  },
+  "88": {
+    "rca_id": "88",
+    "incident_id": "146",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "109",
+    "completed_at": "2025-08-30T05:26:35",
+    "status": "completed",
+    "created_at": "2024-05-21T00:33:46"
+  },
+  "89": {
+    "rca_id": "89",
+    "incident_id": "148",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "42",
+    "completed_at": "2025-08-29T09:02:03",
+    "status": "approved",
+    "created_at": "2025-07-04T02:10:47"
+  },
+  "90": {
+    "rca_id": "90",
+    "incident_id": "149",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "116",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-02-06T15:19:23"
+  },
+  "91": {
+    "rca_id": "91",
+    "incident_id": "150",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "15",
+    "completed_at": "2025-08-29T09:07:17",
+    "status": "completed",
+    "created_at": "2024-09-22T11:33:22"
+  },
+  "92": {
+    "rca_id": "92",
+    "incident_id": "151",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "62",
+    "completed_at": "2025-08-29T10:04:28",
+    "status": "approved",
+    "created_at": "2025-04-23T22:53:29"
+  },
+  "93": {
+    "rca_id": "93",
+    "incident_id": "153",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "120",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2023-11-20T23:14:58"
+  },
+  "94": {
+    "rca_id": "94",
+    "incident_id": "155",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "113",
+    "completed_at": "2025-08-29T05:49:54",
+    "status": "approved",
+    "created_at": "2024-10-25T09:32:30"
+  },
+  "95": {
+    "rca_id": "95",
+    "incident_id": "157",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "88",
+    "completed_at": "2025-08-30T20:19:40",
+    "status": "approved",
+    "created_at": "2024-10-09T06:01:15"
+  },
+  "96": {
+    "rca_id": "96",
+    "incident_id": "158",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "23",
+    "completed_at": "2025-08-29T13:00:15",
+    "status": "approved",
+    "created_at": "2025-08-08T11:53:11"
+  },
+  "97": {
+    "rca_id": "97",
+    "incident_id": "160",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "113",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-05-20T12:37:13"
+  },
+  "98": {
+    "rca_id": "98",
+    "incident_id": "161",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "89",
+    "completed_at": "2025-08-29T09:56:30",
+    "status": "completed",
+    "created_at": "2025-05-19T04:00:45"
+  },
+  "99": {
+    "rca_id": "99",
+    "incident_id": "162",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "59",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-01-11T00:49:31"
+  },
+  "100": {
+    "rca_id": "100",
+    "incident_id": "165",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "89",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-04-24T18:45:42"
+  },
+  "101": {
+    "rca_id": "101",
+    "incident_id": "166",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "107",
+    "completed_at": "2025-08-29T10:47:47",
+    "status": "completed",
+    "created_at": "2023-12-09T10:59:33"
+  },
+  "102": {
+    "rca_id": "102",
+    "incident_id": "167",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "46",
+    "completed_at": "2025-08-30T07:03:07",
+    "status": "completed",
+    "created_at": "2024-02-16T06:00:17"
+  },
+  "103": {
+    "rca_id": "103",
+    "incident_id": "168",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "107",
+    "completed_at": "2025-08-30T02:50:48",
+    "status": "approved",
+    "created_at": "2023-09-30T11:01:00"
+  },
+  "104": {
+    "rca_id": "104",
+    "incident_id": "171",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "37",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-12-10T04:53:00"
+  },
+  "105": {
+    "rca_id": "105",
+    "incident_id": "175",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "83",
+    "completed_at": "2025-08-29T08:03:53",
+    "status": "completed",
+    "created_at": "2024-01-01T17:36:05"
+  },
+  "106": {
+    "rca_id": "106",
+    "incident_id": "177",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "83",
+    "completed_at": "2025-08-29T13:05:49",
+    "status": "completed",
+    "created_at": "2025-07-28T12:11:40"
+  },
+  "107": {
+    "rca_id": "107",
+    "incident_id": "178",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "29",
+    "completed_at": "2025-08-29T06:28:20",
+    "status": "approved",
+    "created_at": "2025-06-26T19:41:54"
+  },
+  "108": {
+    "rca_id": "108",
+    "incident_id": "179",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "26",
+    "completed_at": "2025-08-30T07:00:28",
+    "status": "completed",
+    "created_at": "2025-02-20T09:38:37"
+  },
+  "109": {
+    "rca_id": "109",
+    "incident_id": "181",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "63",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2024-03-02T14:40:44"
+  },
+  "110": {
+    "rca_id": "110",
+    "incident_id": "184",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "69",
+    "completed_at": "2025-08-30T01:40:42",
+    "status": "completed",
+    "created_at": "2025-04-13T20:23:00"
+  },
+  "111": {
+    "rca_id": "111",
+    "incident_id": "185",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "40",
+    "completed_at": "2025-08-29T05:35:42",
+    "status": "completed",
+    "created_at": "2024-07-26T16:30:06"
+  },
+  "112": {
+    "rca_id": "112",
+    "incident_id": "188",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "23",
+    "completed_at": "2025-08-29T09:43:45",
+    "status": "approved",
+    "created_at": "2024-10-17T11:34:40"
+  },
+  "113": {
+    "rca_id": "113",
+    "incident_id": "189",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "114",
+    "completed_at": null,
+    "status": "in_progress",
+    "created_at": "2025-04-27T18:27:37"
+  },
+  "114": {
+    "rca_id": "114",
+    "incident_id": "190",
+    "analysis_method": "five_whys",
+    "conducted_by_id": "104",
+    "completed_at": "2025-08-29T09:27:28",
+    "status": "completed",
+    "created_at": "2025-08-20T19:00:16"
+  },
+  "115": {
+    "rca_id": "115",
+    "incident_id": "192",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "113",
+    "completed_at": "2025-08-30T07:31:57",
+    "status": "completed",
+    "created_at": "2024-10-02T19:47:04"
+  },
+  "116": {
+    "rca_id": "116",
+    "incident_id": "193",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "102",
+    "completed_at": "2025-08-29T21:14:24",
+    "status": "completed",
+    "created_at": "2025-06-25T20:09:59"
+  },
+  "117": {
+    "rca_id": "117",
+    "incident_id": "194",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "24",
+    "completed_at": "2025-08-30T10:08:53",
+    "status": "approved",
+    "created_at": "2024-12-10T08:21:28"
+  },
+  "118": {
+    "rca_id": "118",
+    "incident_id": "195",
+    "analysis_method": "timeline_analysis",
+    "conducted_by_id": "27",
+    "completed_at": "2025-08-29T12:15:51",
+    "status": "approved",
+    "created_at": "2024-09-27T10:46:20"
+  },
+  "119": {
+    "rca_id": "119",
+    "incident_id": "197",
+    "analysis_method": "fault_tree",
+    "conducted_by_id": "50",
+    "completed_at": "2025-08-30T00:55:00",
+    "status": "approved",
+    "created_at": "2024-10-12T16:16:52"
+  },
+  "120": {
+    "rca_id": "120",
+    "incident_id": "199",
+    "analysis_method": "fishbone",
+    "conducted_by_id": "48",
+    "completed_at": "2025-08-30T04:03:50",
+    "status": "completed",
+    "created_at": "2025-08-06T21:03:21"
+  }
+}
