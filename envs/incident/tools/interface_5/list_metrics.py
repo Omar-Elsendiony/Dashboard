@@ -5,13 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListMetrics(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         metric_id: str = None,
@@ -21,11 +14,18 @@ class ListMetrics(Tool):
         recorded_until: str = None
     ) -> str:
         try:
+            # Helper kept inside invoke per requirements
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                ts_local = ts.replace("Z", "+00:00")
+                return datetime.fromisoformat(ts_local)
+
             metrics: Dict[str, Any] = data.get("metrics", {})
             results: List[Dict[str, Any]] = []
 
-            since_dt = ListMetrics._parse_iso(recorded_since) if recorded_since else None
-            until_dt = ListMetrics._parse_iso(recorded_until) if recorded_until else None
+            since_dt = parse_iso(recorded_since) if recorded_since else None
+            until_dt = parse_iso(recorded_until) if recorded_until else None
 
             for m in metrics.values():
                 if metric_id and m.get("metric_id") != metric_id:
@@ -40,7 +40,7 @@ class ListMetrics(Tool):
                     if not ra:
                         continue
                     try:
-                        ra_dt = ListMetrics._parse_iso(ra)
+                        ra_dt = parse_iso(ra)
                     except Exception:
                         continue
                     if since_dt and ra_dt < since_dt:

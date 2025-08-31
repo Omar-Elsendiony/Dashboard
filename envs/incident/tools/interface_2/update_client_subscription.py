@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdateClientSubscription(Tool):
     @staticmethod
-    def _is_iso_date(d: str) -> bool:
-        try:
-            datetime.fromisoformat(d)
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         subscription_id: str,
@@ -26,6 +18,14 @@ class UpdateClientSubscription(Tool):
         status: str = None              # active|expired|cancelled|suspended
     ) -> str:
         try:
+            # Helper kept inside invoke per requirement
+            def is_iso_date(d: str) -> bool:
+                try:
+                    datetime.fromisoformat(d)
+                    return True
+                except Exception:
+                    return False
+
             subs = data.get("client_subscriptions", {})
             if subscription_id not in subs:
                 return json.dumps({"success": False, "error": f"Subscription {subscription_id} not found"})
@@ -42,10 +42,10 @@ class UpdateClientSubscription(Tool):
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
             if rto_hours is not None and rto_hours < 0:
                 return json.dumps({"success": False, "error": "rto_hours must be non-negative"})
-            if start_date is not None and not UpdateClientSubscription._is_iso_date(start_date):
-                return json.dumps({"success": False, "error": "start_date must be ISO date"})
-            if end_date is not None and not UpdateClientSubscription._is_iso_date(end_date):
-                return json.dumps({"success": False, "error": "end_date must be ISO date"})
+            if start_date is not None and not is_iso_date(start_date):
+                return json.dumps({"success": False, "error": "start_date must be an ISO date (e.g., 2025-09-01)"})
+            if end_date is not None and not is_iso_date(end_date):
+                return json.dumps({"success": False, "error": "end_date must be an ISO date (e.g., 2025-09-30)"})
 
             s = subs[subscription_id]
             if client_id is not None: s["client_id"] = client_id
@@ -63,26 +63,26 @@ class UpdateClientSubscription(Tool):
             return json.dumps({"success": False, "error": str(e)})
 
     @staticmethod
-    def get_info()->Dict[str,Any]:
-        return{
-            "type":"function",
-            "function":{
-                "name":"update_client_subscription",
-                "description":"Update a client subscription; validates enums/dates; sets updated_at",
-                "parameters":{
-                    "type":"object",
-                    "properties":{
-                        "subscription_id":{"type":"string"},
-                        "client_id":{"type":"string"},
-                        "product_id":{"type":"string"},
-                        "subscription_type":{"type":"string","description":"full_service|limited_service|trial|custom"},
-                        "sla_tier":{"type":"string","description":"premium|standard|basic"},
-                        "rto_hours":{"type":"integer"},
-                        "start_date":{"type":"string","description":"ISO date"},
-                        "end_date":{"type":"string","description":"ISO date"},
-                        "status":{"type":"string","description":"active|expired|cancelled|suspended"}
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "update_client_subscription",
+                "description": "Update a client subscription; validates enums/dates; sets updated_at. Date format: ISO date YYYY-MM-DD (e.g., 2025-09-01).",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "subscription_id": {"type": "string"},
+                        "client_id": {"type": "string"},
+                        "product_id": {"type": "string"},
+                        "subscription_type": {"type": "string", "description": "full_service|limited_service|trial|custom"},
+                        "sla_tier": {"type": "string", "description": "premium|standard|basic"},
+                        "rto_hours": {"type": "integer"},
+                        "start_date": {"type": "string", "description": "ISO date YYYY-MM-DD (e.g., 2025-09-01)"},
+                        "end_date": {"type": "string", "description": "ISO date YYYY-MM-DD (e.g., 2025-09-30)"},
+                        "status": {"type": "string", "description": "active|expired|cancelled|suspended"}
                     },
-                    "required":["subscription_id"]
+                    "required": ["subscription_id"]
                 }
             }
         }

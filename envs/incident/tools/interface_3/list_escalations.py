@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListEscalations(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        # Support "Z" suffix
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         escalation_id: str = None,
@@ -30,13 +22,20 @@ class ListEscalations(Tool):
         created_at_to: str = None        # ISO 8601
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                ts_local = ts.replace("Z", "+00:00")
+                return datetime.fromisoformat(ts_local)
+
             escalations: Dict[str, Any] = data.get("escalations", {})
             results: List[Dict[str, Any]] = []
 
-            esc_from = ListEscalations._parse_iso(escalated_at_from) if escalated_at_from else None
-            esc_to = ListEscalations._parse_iso(escalated_at_to) if escalated_at_to else None
-            crt_from = ListEscalations._parse_iso(created_at_from) if created_at_from else None
-            crt_to = ListEscalations._parse_iso(created_at_to) if created_at_to else None
+            esc_from = parse_iso(escalated_at_from) if escalated_at_from else None
+            esc_to = parse_iso(escalated_at_to) if escalated_at_to else None
+            crt_from = parse_iso(created_at_from) if created_at_from else None
+            crt_to = parse_iso(created_at_to) if created_at_to else None
 
             for e in escalations.values():
                 if escalation_id and e.get("escalation_id") != escalation_id:
@@ -60,8 +59,10 @@ class ListEscalations(Tool):
                     if not esc_at_raw:
                         continue
                     try:
-                        esc_at = ListEscalations._parse_iso(esc_at_raw)
+                        esc_at = parse_iso(esc_at_raw)
                     except Exception:
+                        continue
+                    if esc_at is None:
                         continue
                     if esc_from and esc_at < esc_from:
                         continue
@@ -71,17 +72,17 @@ class ListEscalations(Tool):
                 # acknowledged filter
                 if acknowledged is not None:
                     has_ack = bool(e.get("acknowledged_at"))
-                    if acknowledged is True and not has_ack:
+                    if acknowledged and not has_ack:
                         continue
-                    if acknowledged is False and has_ack:
+                    if not acknowledged and has_ack:
                         continue
 
                 # resolved filter
                 if resolved is not None:
                     has_res = bool(e.get("resolved_at"))
-                    if resolved is True and not has_res:
+                    if resolved and not has_res:
                         continue
-                    if resolved is False and has_res:
+                    if not resolved and has_res:
                         continue
 
                 # Time window: created_at
@@ -90,8 +91,10 @@ class ListEscalations(Tool):
                     if not ca_raw:
                         continue
                     try:
-                        ca = ListEscalations._parse_iso(ca_raw)
+                        ca = parse_iso(ca_raw)
                     except Exception:
+                        continue
+                    if ca is None:
                         continue
                     if crt_from and ca < crt_from:
                         continue

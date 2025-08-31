@@ -5,13 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListRollbackRequests(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         rollback_id: str = None,
@@ -22,10 +15,17 @@ class ListRollbackRequests(Tool):
         executed_since: str = None
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                ts_local = ts.replace("Z", "+00:00")
+                return datetime.fromisoformat(ts_local)
+
             rollbacks: Dict[str, Any] = data.get("rollback_requests", {})
             results: List[Dict[str, Any]] = []
 
-            since_dt = ListRollbackRequests._parse_iso(executed_since) if executed_since else None
+            since_dt = parse_iso(executed_since) if executed_since else None
 
             for rb in rollbacks.values():
                 if rollback_id and rb.get("rollback_id") != rollback_id:
@@ -44,7 +44,8 @@ class ListRollbackRequests(Tool):
                     if not ex:
                         continue
                     try:
-                        if ListRollbackRequests._parse_iso(ex) < since_dt:
+                        ex_dt = parse_iso(ex)
+                        if ex_dt is None or ex_dt < since_dt:
                             continue
                     except Exception:
                         continue

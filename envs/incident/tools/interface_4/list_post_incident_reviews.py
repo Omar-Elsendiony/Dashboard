@@ -5,13 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListPostIncidentReviews(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         pir_id: str = None,
@@ -22,11 +15,18 @@ class ListPostIncidentReviews(Tool):
         scheduled_to: str = None       # ISO
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                ts_local = ts.replace("Z", "+00:00")
+                return datetime.fromisoformat(ts_local)
+
             pirs: Dict[str, Any] = data.get("post_incident_reviews", {})
             results: List[Dict[str, Any]] = []
 
-            from_dt = ListPostIncidentReviews._parse_iso(scheduled_from) if scheduled_from else None
-            to_dt = ListPostIncidentReviews._parse_iso(scheduled_to) if scheduled_to else None
+            from_dt = parse_iso(scheduled_from) if scheduled_from else None
+            to_dt = parse_iso(scheduled_to) if scheduled_to else None
 
             for p in pirs.values():
                 if pir_id and p.get("pir_id") != pir_id:
@@ -43,7 +43,9 @@ class ListPostIncidentReviews(Tool):
                     if not sched:
                         continue
                     try:
-                        sched_dt = ListPostIncidentReviews._parse_iso(sched)
+                        sched_dt = parse_iso(sched)
+                        if sched_dt is None:
+                            continue
                     except Exception:
                         continue
                     if from_dt and sched_dt < from_dt:

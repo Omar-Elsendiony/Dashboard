@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdateWorkaround(Tool):
     @staticmethod
-    def _is_iso(ts: str) -> bool:
-        try:
-            datetime.fromisoformat(ts.replace("Z","+00:00"))
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         workaround_id: str,
@@ -23,6 +15,14 @@ class UpdateWorkaround(Tool):
         implemented_at: str = None
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def is_iso(ts: str) -> bool:
+                try:
+                    datetime.fromisoformat(ts.replace("Z", "+00:00"))
+                    return True
+                except Exception:
+                    return False
+
             wars = data.get("workarounds", {})
             if workaround_id not in wars:
                 return json.dumps({"success": False, "error": f"Workaround {workaround_id} not found"})
@@ -34,7 +34,7 @@ class UpdateWorkaround(Tool):
                 return json.dumps({"success": False, "error": f"Invalid effectiveness. Must be one of {sorted(valid_eff)}"})
             if status and status not in valid_status:
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
-            if implemented_at is not None and not UpdateWorkaround._is_iso(implemented_at):
+            if implemented_at is not None and not is_iso(implemented_at):
                 return json.dumps({"success": False, "error": "implemented_at must be ISO timestamp"})
 
             w = wars[workaround_id]

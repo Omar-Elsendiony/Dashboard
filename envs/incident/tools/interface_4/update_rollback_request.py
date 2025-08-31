@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdateRollbackRequest(Tool):
     @staticmethod
-    def _is_iso(ts: str) -> bool:
-        try:
-            datetime.fromisoformat(ts.replace("Z","+00:00"))
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         rollback_id: str,
@@ -25,6 +17,14 @@ class UpdateRollbackRequest(Tool):
         status: str = None            # requested|approved|in_progress|completed|failed
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def is_iso(ts: str) -> bool:
+                try:
+                    datetime.fromisoformat(ts.replace("Z", "+00:00"))
+                    return True
+                except Exception:
+                    return False
+
             rolls = data.get("rollback_requests", {})
             if rollback_id not in rolls:
                 return json.dumps({"success": False, "error": f"Rollback request {rollback_id} not found"})
@@ -32,7 +32,7 @@ class UpdateRollbackRequest(Tool):
             valid_status = {"requested","approved","in_progress","completed","failed"}
             if status and status not in valid_status:
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
-            if executed_at is not None and not UpdateRollbackRequest._is_iso(executed_at):
+            if executed_at is not None and not is_iso(executed_at):
                 return json.dumps({"success": False, "error": "executed_at must be ISO timestamp"})
 
             r = rolls[rollback_id]

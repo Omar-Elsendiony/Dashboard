@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdatePostIncidentReview(Tool):
     @staticmethod
-    def _is_iso(ts: str) -> bool:
-        try:
-            datetime.fromisoformat(ts.replace("Z","+00:00"))
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         pir_id: str,
@@ -25,21 +17,28 @@ class UpdatePostIncidentReview(Tool):
         status: str = None          # scheduled|completed|cancelled
     ) -> str:
         try:
+            # Local ISO validator (accepts trailing 'Z')
+            def is_iso(ts: str) -> bool:
+                try:
+                    datetime.fromisoformat(ts.strip().replace("Z", "+00:00"))
+                    return True
+                except Exception:
+                    return False
+
             pirs = data.get("post_incident_reviews", {})
             if pir_id not in pirs:
                 return json.dumps({"success": False, "error": f"Post-incident review {pir_id} not found"})
 
             valid_status = {"scheduled","completed","cancelled"}
-
             if status and status not in valid_status:
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
-            if scheduled_date is not None and not UpdatePostIncidentReview._is_iso(scheduled_date):
+            if scheduled_date is not None and not is_iso(scheduled_date):
                 return json.dumps({"success": False, "error": "scheduled_date must be ISO timestamp"})
 
             for name, val in [
                 ("timeline_accuracy_rating", timeline_accuracy_rating),
                 ("communication_effectiveness_rating", communication_effectiveness_rating),
-                ("technical_response_rating", technical_response_rating)
+                ("technical_response_rating", technical_response_rating),
             ]:
                 if val is not None and val < 0:
                     return json.dumps({"success": False, "error": f"{name} must be non-negative"})

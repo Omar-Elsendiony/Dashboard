@@ -5,13 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListIncidentReports(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         report_id: str = None,
@@ -21,9 +14,16 @@ class ListIncidentReports(Tool):
         generated_since: str = None
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                ts_local = ts.replace("Z", "+00:00")
+                return datetime.fromisoformat(ts_local)
+
             reports: Dict[str, Any] = data.get("incident_reports", {})
             results: List[Dict[str, Any]] = []
-            since_dt = ListIncidentReports._parse_iso(generated_since) if generated_since else None
+            since_dt = parse_iso(generated_since) if generated_since else None
 
             for r in reports.values():
                 if report_id and r.get("report_id") != report_id:
@@ -40,8 +40,8 @@ class ListIncidentReports(Tool):
                     if not ga:
                         continue
                     try:
-                        ga_dt = ListIncidentReports._parse_iso(ga)
-                        if ga_dt < since_dt:
+                        ga_dt = parse_iso(ga)
+                        if ga_dt is None or ga_dt < since_dt:
                             continue
                     except Exception:
                         continue

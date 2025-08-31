@@ -22,8 +22,7 @@ Pre-checks:
 
 Steps:
 - Request incident title, category, severity, and impact level
-- Check for existing open incidents with similar characteristics
-- Set detection timestamp and initial status
+- Set detection timestamp 
 - Associate with specified client and infrastructure component records
 - Create incident record and return incident identifier
 
@@ -64,7 +63,7 @@ Request user confirmation for each condition to determine severity level:
   If user confirms No, then set severity as P4 and continue to incident creation
 
 Set detection timestamp and initial status as open  
-Associate with specified client and infrastructure component records  
+Associate with specified client and reporter.  
 Create incident record with determined severity level and return incident identifier
 
 ### Updating Incident Status
@@ -73,7 +72,6 @@ Who can perform: Incident managers, technical support, executive
 Pre-checks:
 - Verify incident exists and is accessible to user
 - Check user's role allows incident modifications
-- Confirm new status exists in allowed status enumeration
 
 Steps:
 - Retrieve current incident record
@@ -125,7 +123,6 @@ Pre-checks:
 - Confirm effectiveness level exists in allowed enumeration
 
 Steps:
-- Request workaround description and effectiveness assessment
 - Set implementation timestamp to current time
 - Record implementing user from current session
 - Create workaround record linked to incident

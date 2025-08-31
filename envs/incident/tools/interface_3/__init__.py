@@ -23,7 +23,7 @@ from .update_workaround import UpdateWorkaround
 from .create_root_cause_analysis import CreateRootCauseAnalysis
 from .update_root_cause_analysis import UpdateRootCauseAnalysis
 from .create_change_request import CreateChangeRequest
-
+from .create_incident_record import CreateIncidentRecord
 
 ALL_TOOLS_INTERFACE_3 = [
     # GET
@@ -50,4 +50,5 @@ ALL_TOOLS_INTERFACE_3 = [
     CreateRootCauseAnalysis,
     UpdateRootCauseAnalysis,
     CreateChangeRequest,
+    CreateIncidentRecord,
 ]

@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdateChangeRequest(Tool):
     @staticmethod
-    def _is_iso(ts: str) -> bool:
-        try:
-            datetime.fromisoformat(ts.replace("Z","+00:00"))
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         change_id: str,
@@ -29,6 +21,14 @@ class UpdateChangeRequest(Tool):
         status: str = None           # requested|approved|scheduled|in_progress|completed|failed|rolled_back
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def is_iso(ts: str) -> bool:
+                try:
+                    datetime.fromisoformat(ts.replace("Z", "+00:00"))
+                    return True
+                except Exception:
+                    return False
+
             changes = data.get("change_requests", {})
             if change_id not in changes:
                 return json.dumps({"success": False, "error": f"Change request {change_id} not found"})
@@ -45,7 +45,7 @@ class UpdateChangeRequest(Tool):
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
 
             for ts in [scheduled_start, scheduled_end, actual_start, actual_end]:
-                if ts is not None and not UpdateChangeRequest._is_iso(ts):
+                if ts is not None and not is_iso(ts):
                     return json.dumps({"success": False, "error": "All timestamp fields must be ISO format"})
 
             c = changes[change_id]
@@ -64,7 +64,7 @@ class UpdateChangeRequest(Tool):
             return json.dumps(c)
         except Exception as e:
             return json.dumps({"success": False, "error": str(e)})
-    
+
     @staticmethod
     def get_info()->Dict[str,Any]:
         return{

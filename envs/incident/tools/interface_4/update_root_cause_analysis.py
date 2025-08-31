@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdateRootCauseAnalysis(Tool):
     @staticmethod
-    def _is_iso(ts: str) -> bool:
-        try:
-            datetime.fromisoformat(ts.replace("Z","+00:00"))
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         rca_id: str,
@@ -23,6 +15,14 @@ class UpdateRootCauseAnalysis(Tool):
         status: str = None             # in_progress|completed|approved
     ) -> str:
         try:
+            # Helper kept inside invoke per requirement
+            def is_iso(ts: str) -> bool:
+                try:
+                    datetime.fromisoformat(ts.replace("Z", "+00:00"))
+                    return True
+                except Exception:
+                    return False
+
             rcas = data.get("root_cause_analysis", {})
             if rca_id not in rcas:
                 return json.dumps({"success": False, "error": f"RCA {rca_id} not found"})
@@ -34,7 +34,7 @@ class UpdateRootCauseAnalysis(Tool):
                 return json.dumps({"success": False, "error": f"Invalid analysis_method. Must be one of {sorted(valid_methods)}"})
             if status and status not in valid_status:
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
-            if completed_at is not None and not UpdateRootCauseAnalysis._is_iso(completed_at):
+            if completed_at is not None and not is_iso(completed_at):
                 return json.dumps({"success": False, "error": "completed_at must be ISO timestamp"})
 
             r = rcas[rca_id]
@@ -47,7 +47,7 @@ class UpdateRootCauseAnalysis(Tool):
             return json.dumps(r)
         except Exception as e:
             return json.dumps({"success": False, "error": str(e)})
-    
+
     @staticmethod
     def get_info()->Dict[str,Any]:
         return{

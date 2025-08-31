@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdateCommunication(Tool):
     @staticmethod
-    def _is_iso(ts: str) -> bool:
-        try:
-            datetime.fromisoformat(ts.replace("Z","+00:00"))
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         communication_id: str,
@@ -25,6 +17,14 @@ class UpdateCommunication(Tool):
         delivery_status: str = None     # sent|delivered|failed|pending
     ) -> str:
         try:
+            # Helper inside invoke per requirement
+            def is_iso(ts: str) -> bool:
+                try:
+                    datetime.fromisoformat(ts.replace("Z", "+00:00"))
+                    return True
+                except Exception:
+                    return False
+
             comms = data.get("communications", {})
             if communication_id not in comms:
                 return json.dumps({"success": False, "error": f"Communication {communication_id} not found"})
@@ -39,7 +39,7 @@ class UpdateCommunication(Tool):
                 return json.dumps({"success": False, "error": f"Invalid communication_type. Must be one of {sorted(valid_comm_type)}"})
             if delivery_status and delivery_status not in valid_delivery:
                 return json.dumps({"success": False, "error": f"Invalid delivery_status. Must be one of {sorted(valid_delivery)}"})
-            if sent_at is not None and not UpdateCommunication._is_iso(sent_at):
+            if sent_at is not None and not is_iso(sent_at):
                 return json.dumps({"success": False, "error": "sent_at must be ISO timestamp"})
 
             c = comms[communication_id]
@@ -51,11 +51,11 @@ class UpdateCommunication(Tool):
             if sent_at is not None: c["sent_at"] = sent_at
             if delivery_status is not None: c["delivery_status"] = delivery_status
 
-            # No updated_at
+            # No updated_at per original behavior
             return json.dumps(c)
         except Exception as e:
             return json.dumps({"success": False, "error": str(e)})
-    
+
     @staticmethod
     def get_info()->Dict[str,Any]:
         return{

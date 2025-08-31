@@ -5,13 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class CreateMetric(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         incident_id: str,
@@ -19,6 +12,13 @@ class CreateMetric(Tool):
         value_minutes: int = None,
         target_minutes: int = None
     ) -> str:
+        # Helpers kept inside invoke per requirement
+        def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+            if not ts:
+                return None
+            ts_local = ts.replace("Z", "+00:00")
+            return datetime.fromisoformat(ts_local)
+
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
                 return "1"
@@ -27,6 +27,7 @@ class CreateMetric(Tool):
         try:
             metrics = data.setdefault("metrics", {})
             incidents = data.get("incidents", {})
+
             valid_types = {"MTTA","MTTD","MTTR","MTTM","FTR"}
             if metric_type not in valid_types:
                 return json.dumps({"success": False, "error": f"Invalid metric_type. Must be one of {sorted(valid_types)}"})
@@ -35,11 +36,9 @@ class CreateMetric(Tool):
             computed_value = value_minutes
             if computed_value is None and metric_type == "MTTR":
                 inc = None
-                # incidents may be dict keyed by id; values have 'incident_id'
                 if incident_id in incidents:
                     inc = incidents[incident_id]
                 else:
-                    # try to find by scanning
                     for v in incidents.values():
                         if v.get("incident_id") == incident_id:
                             inc = v
@@ -47,8 +46,8 @@ class CreateMetric(Tool):
                 if not inc:
                     return json.dumps({"success": False, "error": f"Incident {incident_id} not found to compute MTTR"})
 
-                detected_at = CreateMetric._parse_iso(inc.get("detected_at"))
-                end_at = CreateMetric._parse_iso(inc.get("resolved_at") or inc.get("closed_at"))
+                detected_at = parse_iso(inc.get("detected_at"))
+                end_at = parse_iso(inc.get("resolved_at") or inc.get("closed_at"))
                 if not detected_at or not end_at:
                     return json.dumps({"success": False, "error": "Cannot compute MTTR without detected_at and (resolved_at or closed_at)"})
                 delta_minutes = int((end_at - detected_at).total_seconds() // 60)

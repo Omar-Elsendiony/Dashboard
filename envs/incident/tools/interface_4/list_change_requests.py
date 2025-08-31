@@ -5,13 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListChangeRequests(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         change_id: str = None,
@@ -24,11 +17,18 @@ class ListChangeRequests(Tool):
         scheduled_end_to: str = None
     ) -> str:
         try:
+            # Helper kept inside invoke per requirement
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                ts_local = ts.replace("Z", "+00:00")
+                return datetime.fromisoformat(ts_local)
+
             changes: Dict[str, Any] = data.get("change_requests", {})
             results: List[Dict[str, Any]] = []
 
-            start_from_dt = ListChangeRequests._parse_iso(scheduled_start_from) if scheduled_start_from else None
-            end_to_dt = ListChangeRequests._parse_iso(scheduled_end_to) if scheduled_end_to else None
+            start_from_dt = parse_iso(scheduled_start_from) if scheduled_start_from else None
+            end_to_dt = parse_iso(scheduled_end_to) if scheduled_end_to else None
 
             for cr in changes.values():
                 if change_id and cr.get("change_id") != change_id:
@@ -50,7 +50,7 @@ class ListChangeRequests(Tool):
                     if not cr_start:
                         continue
                     try:
-                        if ListChangeRequests._parse_iso(cr_start) < start_from_dt:
+                        if parse_iso(cr_start) < start_from_dt:
                             continue
                     except Exception:
                         continue
@@ -60,7 +60,7 @@ class ListChangeRequests(Tool):
                     if not cr_end:
                         continue
                     try:
-                        if ListChangeRequests._parse_iso(cr_end) > end_to_dt:
+                        if parse_iso(cr_end) > end_to_dt:
                             continue
                     except Exception:
                         continue

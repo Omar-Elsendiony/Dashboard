@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class UpdateMetric(Tool):
     @staticmethod
-    def _is_iso(ts: str) -> bool:
-        try:
-            datetime.fromisoformat(ts.replace("Z","+00:00"))
-            return True
-        except Exception:
-            return False
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         metric_id: str,
@@ -23,6 +15,14 @@ class UpdateMetric(Tool):
         recorded_at: str = None
     ) -> str:
         try:
+            # Local ISO validator (accepts trailing 'Z')
+            def is_iso(ts: str) -> bool:
+                try:
+                    datetime.fromisoformat(ts.strip().replace("Z", "+00:00"))
+                    return True
+                except Exception:
+                    return False
+
             metrics = data.get("metrics", {})
             if metric_id not in metrics:
                 return json.dumps({"success": False, "error": f"Metric {metric_id} not found"})
@@ -34,7 +34,7 @@ class UpdateMetric(Tool):
                 return json.dumps({"success": False, "error": "value_minutes must be non-negative"})
             if target_minutes is not None and target_minutes < 0:
                 return json.dumps({"success": False, "error": "target_minutes must be non-negative"})
-            if recorded_at is not None and not UpdateMetric._is_iso(recorded_at):
+            if recorded_at is not None and not is_iso(recorded_at):
                 return json.dumps({"success": False, "error": "recorded_at must be ISO timestamp"})
 
             m = metrics[metric_id]

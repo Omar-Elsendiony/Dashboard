@@ -5,13 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListCommunications(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         communication_id: str = None,
@@ -24,10 +17,17 @@ class ListCommunications(Tool):
         sent_since: str = None
     ) -> str:
         try:
+            # Helper kept inside invoke per requirement
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                ts_local = ts.replace("Z", "+00:00")
+                return datetime.fromisoformat(ts_local)
+
             comms: Dict[str, Any] = data.get("communications", {})
             results: List[Dict[str, Any]] = []
 
-            since_dt = ListCommunications._parse_iso(sent_since) if sent_since else None
+            since_dt = parse_iso(sent_since) if sent_since else None
 
             for c in comms.values():
                 if communication_id and c.get("communication_id") != communication_id:
@@ -50,8 +50,8 @@ class ListCommunications(Tool):
                     if not sent_at:
                         continue
                     try:
-                        sent_dt = ListCommunications._parse_iso(sent_at)
-                        if sent_dt < since_dt:
+                        sent_dt = parse_iso(sent_at)
+                        if sent_dt is None or sent_dt < since_dt:
                             continue
                     except Exception:
                         continue
