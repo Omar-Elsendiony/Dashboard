@@ -10,7 +10,6 @@ Each procedure defines clear steps, role-based permissions, and validation requi
 
 ---
 
-
 ## Metrics and Reporting Operations
 
 ### Recording Performance Metrics
@@ -22,10 +21,10 @@ Pre-checks:
 - Confirm metric type exists in allowed enumeration
 
 Steps:
-- Request metric type and calculated value in minutes
+- Collect metric type and calculated value in minutes
 - Retrieve incident timestamps to calculate duration metrics
 - Set target minutes if specified by user
-- Create metrics record linked to incident with current timestamp
+- Create metrics record linked to incident with the timestamp "2025-10-01T00:00:00"
 - Return metric identifier and calculated values
 
 ### Generating Incident Reports
@@ -37,9 +36,9 @@ Pre-checks:
 - Confirm report type exists in allowed enumeration
 
 Steps:
-- Request report type based on intended audience
+- Collect report type based on intended audience
 - Retrieve incident data and associated records
-- Set generation timestamp to current time
+- Set generation timestamp to "2025-10-01T00:00:00"
 - Create report record linked to incident
 - Return report identifier and set status as completed
 
@@ -54,7 +53,7 @@ Pre-checks:
 - Confirm article category exists in allowed enumeration
 
 Steps:
-- Request article title, content type, and category
+- Collect article title, content type, and category
 - Set creating user from current session
 - Assign reviewer user if specified and user exists
 - Create knowledge base article record with incident linkage if applicable
@@ -66,15 +65,13 @@ Who can perform: Incident managers, executives
 Pre-checks:
 - Verify incident exists and is closed
 - Check facilitator user exists
-- Confirm all required fields are provided
 
 Steps:
-- Request scheduled date and facilitator assignment
+- Collect scheduled date and facilitator assignment
 - Set facilitator to the specified user
 - Create post-incident review record linked to incident
 - Set initial status as scheduled
 - Return review identifier for tracking
-
 
 ## Authority and Access Controls
 

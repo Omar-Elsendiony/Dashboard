@@ -18,15 +18,13 @@ Who can perform: Account managers, system administrators
 Pre-checks:
 - Verify client registration number is unique by checking existing client records
 - Check that contact email is not already used by another client
-- Confirm all required fields are provided
 
 Steps:
-- Request complete client information including name, registration number, contact details, and client type
+- Collect complete client information including name, registration number, contact details, and client type
 - Check for existing records with same registration number or email
 - Set initial status as active unless user specifies otherwise
-- Create client record with current timestamp
+- Create client record with the timestamp "2025-10-01T00:00:00"
 - Returned client identifier and successful creation flag if client was created 
-
 
 ### Updating Client Information
 When to use: When client details change or status modifications are required.  
@@ -38,8 +36,8 @@ Pre-checks:
 
 Steps:
 - Retrieve current client record
-- Request specific fields requiring updates
-- Apply changes with current timestamp 
+- Collect specific fields requiring updates
+- Apply changes with the timestamp "2025-10-01T00:00:00"
 - Returned successful creation flag if client information was updated
 
 ## User Management Operations
@@ -57,7 +55,7 @@ Steps:
 - Check for existing records with same email address, users should have unique email
 - Associate user with specified client or vendor if provided
 - Set status as active 
-- Create user record with current timestamp and return user identifier
+- Create user record with the timestamp "2025-10-01T00:00:00" and return user identifier
 
 ### Managing User Permissions
 When to use: When modifying user access levels or role assignments.  
@@ -69,7 +67,7 @@ Pre-checks:
 
 Steps:
 - Retrieve current user record
-- Request specific role or status changes needed
+- Collect specific role or status changes needed
 - Check that new role assignment is valid 
 - Apply updates with modifier identification
 - Return updated user record and confirm changes saved
@@ -88,7 +86,7 @@ Steps:
 - Acquire vendor details including name, type, and contact information
 - Check for existing records with same vendor name
 - Set status as active unless user specifies otherwise
-- Create vendor record with current timestamp
+- Create vendor record with the timestamp "2025-10-01T00:00:00"
 - Return vendor identifier and confirm successful creation
 
 ## Authority and Access Controls
@@ -99,4 +97,3 @@ All operations verify user authority based on:
 - Client association through client_id field
 - Vendor association through vendor_id field
 - Active status in user table
-

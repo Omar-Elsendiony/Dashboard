@@ -21,8 +21,8 @@ Pre-checks:
 - Confirm change type exists in allowed enumeration
 
 Steps:
-- Request change details including title, type, and risk level
-- Set requested timestamp to current time
+- Collect change details including title, type, and risk level
+- Set requested timestamp to "2025-10-01T00:00:00"
 - Record requesting user from current session
 - Create change request record with incident linkage if applicable
 - Set initial status as requested and return change identifier
@@ -36,9 +36,9 @@ Pre-checks:
 - Confirm incident exists if rollback is incident-related
 
 Steps:
-- Request rollback justification and scope details
+- Collect rollback justification and scope details
 - Link rollback to original change request record
-- Set requested timestamp to current time
+- Set requested timestamp to "2025-10-01T00:00:00"
 - Create rollback request record with proper associations
 - Set initial status as requested and return rollback identifier
 
@@ -53,8 +53,8 @@ Pre-checks:
 - Confirm effectiveness level exists in allowed enumeration
 
 Steps:
-- Request workaround description and effectiveness assessment
-- Set implementation timestamp to current time
+- Collect workaround description and effectiveness assessment
+- Set implementation timestamp to "2025-10-01T00:00:00"
 - Record implementing user from current session
 - Create workaround record linked to incident
 - Set status as active and return workaround identifier
@@ -68,8 +68,8 @@ Pre-checks:
 - Confirm analysis method exists in allowed enumeration
 
 Steps:
-- Request analysis method selection and timeline
-- Set current timestamp for analysis initiation
+- Collect analysis method selection and timeline
+- Set analysis initiation timestamp to "2025-10-01T00:00:00"
 - Create root cause analysis record linked to incident
 - Set status as in progress
 - Return analysis identifier for tracking progress
@@ -85,9 +85,9 @@ Pre-checks:
 - Confirm recipient user exists if specified, or recipient type is valid enum value
 
 Steps:
-- Request communication details including type, recipient, and delivery method
+- Collect communication details including type, recipient, and delivery method
 - Check that sender and recipient (if specified) exist
-- Set sent timestamp to current time
+- Set sent timestamp to "2025-10-01T00:00:00"
 - Create communication record linked to incident
 - Set initial delivery status and return communication identifier
 
@@ -99,4 +99,3 @@ All operations verify user authority based on:
 - Client association through client_id field
 - Vendor association through vendor_id field
 - Active status in user table
-
