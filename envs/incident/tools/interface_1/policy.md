@@ -28,7 +28,7 @@ Steps:
 
 ### Updating Client Information
 When to use: When client details change or status modifications are required.  
-Who can perform: Account managers assigned to the client and system administrators  
+Who can perform: Account managers and system administrators  
 Pre-checks:
 - Verify client record exists
 - Check user has permission to modify this client's information based on their role and client association
