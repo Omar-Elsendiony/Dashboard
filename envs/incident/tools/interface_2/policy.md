@@ -35,11 +35,11 @@ Pre-checks:
 - Confirm all required fields are provided
 
 Steps:
-- Acquire component details including name, type, environment, and location
+- Acquire component details including name, type, environment, and staus
 - Check for existing components with same name under same product
 - Set operational status based on user input
-- Record port numbers and connection details if provided
-- Create component record linked to product with timestamp
+- Record port numbers if provided
+- Create component record linked to product
 
 ## Subscription and Service Level Management
 

@@ -7,8 +7,8 @@ class CreateProduct(Tool):
     def invoke(
         data: Dict[str, Any],
         product_name: str,
-        product_type: str = None,
-        version: str = None,
+        product_type: str,
+        version: str,
         vendor_support_id: str = None,
         internal_team_lead_id: str = None,
         status: str = "active"
@@ -70,7 +70,7 @@ class CreateProduct(Tool):
                         "internal_team_lead_id": {"type": "string"},
                         "status": {"type": "string", "description": "active|deprecated|maintenance (default active)"}
                     },
-                    "required": ["product_name"]
+                    "required": ["product_name", "product_type", "version"]
                 }
             }
         }

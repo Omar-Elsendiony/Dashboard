@@ -9,8 +9,8 @@ class CreateVendor(Tool):
         data: Dict[str, Any],
         vendor_name: str,
         vendor_type: str,
-        contact_email: str = None,
-        contact_phone: str = None,
+        contact_email: str,
+        contact_phone: str,
         status: str = "active",
     ) -> str:
         vendors = data.setdefault("vendors", {})
@@ -57,7 +57,7 @@ class CreateVendor(Tool):
                         "contact_phone": {"type": "string"},
                         "status": {"type": "string", "description": "active|inactive|suspended (default active)"}
                     },
-                    "required": ["data", "vendor_name", "vendor_type"]
+                    "required": ["data", "vendor_name", "vendor_type", "contact_email", "contact_phone"]
                 }
             }
         }

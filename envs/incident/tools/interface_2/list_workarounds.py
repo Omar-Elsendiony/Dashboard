@@ -1,16 +1,9 @@
 import json
 from typing import Any, Dict, Optional, List
-from datetime import datetime
+from datetime import datetime, timezone
 from tau_bench.envs.tool import Tool
 
 class ListWorkarounds(Tool):
-    @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -25,7 +18,19 @@ class ListWorkarounds(Tool):
             workarounds: Dict[str, Any] = data.get("workarounds", {})
             results: List[Dict[str, Any]] = []
 
-            since_dt = ListWorkarounds._parse_iso(implemented_since) if implemented_since else None
+            # Local ISO parser -> always return UTC-aware datetime
+            def parse_iso_utc(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                s = ts.strip()
+                if s.endswith("Z"):
+                    s = s[:-1] + "+00:00"
+                dt = datetime.fromisoformat(s)
+                if dt.tzinfo is None:
+                    return dt.replace(tzinfo=timezone.utc)
+                return dt.astimezone(timezone.utc)
+
+            since_dt = parse_iso_utc(implemented_since) if implemented_since else None
 
             for w in workarounds.values():
                 if workaround_id and w.get("workaround_id") != workaround_id:
@@ -44,7 +49,8 @@ class ListWorkarounds(Tool):
                     if not ts:
                         continue
                     try:
-                        dt = ListWorkarounds._parse_iso(ts)
+                        dt = parse_iso_utc(ts)
+                        # inclusive lower bound: keep only dt >= since_dt
                         if dt < since_dt:
                             continue
                     except Exception:
@@ -71,7 +77,10 @@ class ListWorkarounds(Tool):
                         "implemented_by_id": {"type": "string"},
                         "effectiveness": {"type": "string", "description": "complete|partial|minimal"},
                         "status": {"type": "string", "description": "active|inactive|replaced"},
-                        "implemented_since": {"type": "string", "description": "ISO timestamp"}
+                        "implemented_since": {
+                            "type": "string",
+                            "description": "ISO timestamp (UTC assumed if no offset)"
+                        }
                     },
                     "required": []
                 }

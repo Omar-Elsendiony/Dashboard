@@ -63,7 +63,8 @@ class CreateIncident(Tool):
         p3_localized_or_non_critical: bool = None,
         p3_moderate_deg_minimal_workaround: bool = None,
         urgency: str = None,
-        assigned_manager_id: str = None
+        assigned_manager_id: str = None,
+        detected_at: Optional[str] = None,  # NEW: optional override
     ) -> str:
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
@@ -95,8 +96,9 @@ class CreateIncident(Tool):
             if sev == "__INVALID__":
                 return json.dumps({"success": False, "error": "Invalid severity. Must be one of ['P1','P2','P3','P4']"})
 
-            timestamp = "2025-10-01T00:00:00"  # used for created_at/updated_at and detected_at as NOW surrogate
+            ts = "2025-10-01T00:00:00"  # standard timestamp for created_at/updated_at; default for detected_at
             incident_id = generate_id(incidents)
+            detected_ts = (detected_at.strip() if isinstance(detected_at, str) and detected_at.strip() else ts)
 
             new_incident = {
                 "incident_id": incident_id,
@@ -108,17 +110,17 @@ class CreateIncident(Tool):
                 "severity": sev,
                 "status": "open",
                 "impact": impact,
-                "urgency": urgency if urgency else impact,  # default urgency to impact to satisfy NOT NULL
+                "urgency": urgency if urgency else impact,  # default urgency to impact
                 "category": category,
-                "detected_at": timestamp,
+                "detected_at": detected_ts,  # uses provided value or default ts
                 "resolved_at": None,
                 "closed_at": None,
                 "rto_breach": False,
                 "sla_breach": False,
                 "is_recurring": False,
                 "downtime_minutes": None,
-                "created_at": timestamp,
-                "updated_at": timestamp
+                "created_at": ts,
+                "updated_at": ts
             }
 
             incidents[incident_id] = new_incident
@@ -133,7 +135,7 @@ class CreateIncident(Tool):
             "type": "function",
             "function": {
                 "name": "create_incident",
-                "description": "Create a new incident; sets detected_at and status=open; computes severity if not provided from flags",
+                "description": "Create a new incident; sets status=open; computes severity if not provided. detected_at can be provided; otherwise defaults.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -154,7 +156,8 @@ class CreateIncident(Tool):
                         "p3_localized_or_non_critical": {"type": "boolean"},
                         "p3_moderate_deg_minimal_workaround": {"type": "boolean"},
                         "urgency": {"type": "string", "description": "critical|high|medium|low"},
-                        "assigned_manager_id": {"type": "string"}
+                        "assigned_manager_id": {"type": "string"},
+                        "detected_at": {"type": "string", "description": "ISO timestamp; default is 2025-10-01T00:00:00"}
                     },
                     "required": ["title","category","impact","client_id","reporter_id"]
                 }

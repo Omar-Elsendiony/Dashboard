@@ -69,7 +69,7 @@ class ListUsers(Tool):
                         "first_name": {"type": "string"},
                         "last_name": {"type": "string"}
                     },
-                    "required": ["data"]
+                    "required": []
                 }
             }
         }

@@ -25,9 +25,8 @@ Steps:
 - Check for existing records with same registration number or email
 - Set initial status as active unless user specifies otherwise
 - Create client record with current timestamp
-- Return client identifier and confirm successful creation
+- Returned client identifier and successful creation flag if client was created 
 
-What to do: Ensure all required fields are completed before saving client record.
 
 ### Updating Client Information
 When to use: When client details change or status modifications are required.  
@@ -40,9 +39,8 @@ Pre-checks:
 Steps:
 - Retrieve current client record
 - Request specific fields requiring updates
-- Check uniqueness constraints for any identifying fields being changed
-- Apply changes with current timestamp and user identification
-- Confirm changes saved successfully
+- Apply changes with current timestamp 
+- Returned successful creation flag if client information was updated
 
 ## User Management Operations
 
@@ -56,9 +54,9 @@ Pre-checks:
 
 Steps:
 - Acquire complete user information including name, email, role, and department
-- Check for existing records with same email address
+- Check for existing records with same email address, users should have unique email
 - Associate user with specified client or vendor if provided
-- Set status as active and record timezone information
+- Set status as active 
 - Create user record with current timestamp and return user identifier
 
 ### Managing User Permissions
@@ -82,7 +80,7 @@ Steps:
 When to use: When adding external service providers to the incident management ecosystem.  
 Who can perform: System administrators, incident managers, and executives.  
 Pre-checks:
-- Check that vendor name is unique
+- Check that vendor name, contact phone and emails are unique
 - Verify all required fields are provided
 - Confirm vendor type exists in allowed enumeration values
 

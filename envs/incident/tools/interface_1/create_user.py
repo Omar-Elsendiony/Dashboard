@@ -11,9 +11,9 @@ class CreateUser(Tool):
         last_name: str,
         email: str,
         role: str,
-        timezone: str,
+        department: str,
+        timezone: str = None,
         phone: str = None,
-        department: str = None,
         client_id: str = None,
         vendor_id: str = None,
         status: str = "active",
@@ -73,7 +73,7 @@ class CreateUser(Tool):
                         "vendor_id": {"type": "string"},
                         "status": {"type": "string", "description": "active|inactive|on_leave (default active)"}
                     },
-                    "required": ["data", "first_name", "last_name", "email", "role", "timezone"]
+                    "required": ["data", "first_name", "last_name", "email", "role", "department"]
                 }
             }
         }

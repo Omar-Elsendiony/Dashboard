@@ -5,10 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListClientSubscriptions(Tool):
     @staticmethod
-    def _parse_date(s: str):
-        return datetime.strptime(s, "%Y-%m-%d").date()
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         subscription_id: str = None,
@@ -17,18 +13,28 @@ class ListClientSubscriptions(Tool):
         subscription_type: str = None,
         sla_tier: str = None,
         status: str = None,
-        start_date_from: str = None,
-        start_date_to: str = None
+        start_date_from: str = None,  # YYYY-MM-DD
+        start_date_to: str = None     # YYYY-MM-DD
     ) -> str:
         subs = data.get("client_subscriptions", {})
         results = []
 
-        # Pre-parse dates if supplied
+        # Local, strict YYYY-MM-DD parser (no ISO datetimes)
+        def parse_ymd(s: str):
+            try:
+                return datetime.strptime(s.strip(), "%Y-%m-%d").date()
+            except Exception:
+                raise ValueError(f"Expected YYYY-MM-DD, got {s!r}")
+
+        # Pre-parse bounds (strict format)
         try:
-            start_from = ListClientSubscriptions._parse_date(start_date_from) if start_date_from else None
-            start_to   = ListClientSubscriptions._parse_date(start_date_to) if start_date_to else None
-        except Exception as e:
-            return json.dumps({"error": f"Invalid date format: {e}"})
+            start_from = parse_ymd(start_date_from) if start_date_from else None
+            start_to   = parse_ymd(start_date_to) if start_date_to else None
+        except ValueError as e:
+            return json.dumps({"error": str(e)})
+
+        if start_from and start_to and start_from > start_to:
+            return json.dumps({"error": "start_date_from must be <= start_date_to"})
 
         for sub in subs.values():
             if subscription_id and sub.get("subscription_id") != subscription_id:
@@ -44,11 +50,15 @@ class ListClientSubscriptions(Tool):
             if status and sub.get("status") != status:
                 continue
 
+            # Apply start_date range if provided (inclusive)
             if start_from or start_to:
+                sub_start_str = sub.get("start_date")
+                if not isinstance(sub_start_str, str):
+                    continue
                 try:
-                    sub_start = ListClientSubscriptions._parse_date(sub.get("start_date"))
-                except Exception:
-                    # If stored value is malformed, exclude from results
+                    sub_start = parse_ymd(sub_start_str)
+                except ValueError:
+                    # Skip malformed start_date entries
                     continue
                 if start_from and sub_start < start_from:
                     continue
@@ -75,8 +85,8 @@ class ListClientSubscriptions(Tool):
                         "subscription_type": {"type": "string", "description": "full_service|limited_service|trial|custom"},
                         "sla_tier": {"type": "string", "description": "premium|standard|basic"},
                         "status": {"type": "string", "description": "active|expired|cancelled|suspended"},
-                        "start_date_from": {"type": "string", "description": "YYYY-MM-DD"},
-                        "start_date_to": {"type": "string", "description": "YYYY-MM-DD"}
+                        "start_date_from": {"type": "string", "description": "YYYY-MM-DD (inclusive lower bound)"},
+                        "start_date_to": {"type": "string", "description": "YYYY-MM-DD (inclusive upper bound)"}
                     },
                     "required": []
                 }

@@ -5,14 +5,6 @@ from tau_bench.envs.tool import Tool
 
 class ListIncidents(Tool):
     @staticmethod
-    def _parse_iso(ts: Optional[str]) -> Optional[datetime]:
-        if not ts:
-            return None
-        # Support trailing 'Z'
-        ts = ts.replace("Z", "+00:00")
-        return datetime.fromisoformat(ts)
-
-    @staticmethod
     def invoke(
         data: Dict[str, Any],
         incident_id: str = None,
@@ -42,12 +34,37 @@ class ListIncidents(Tool):
             incidents = data.get("incidents", {})
             results = []
 
-            ds = ListIncidents._parse_iso(detected_since)
-            du = ListIncidents._parse_iso(detected_until)
-            rs = ListIncidents._parse_iso(resolved_since)
-            ru = ListIncidents._parse_iso(resolved_until)
-            cs = ListIncidents._parse_iso(closed_since)
-            cu = ListIncidents._parse_iso(closed_until)
+            # Local ISO8601 parser (handles trailing 'Z')
+            def parse_iso(ts: Optional[str]) -> Optional[datetime]:
+                if not ts:
+                    return None
+                s = ts.strip().replace("Z", "+00:00")
+                return datetime.fromisoformat(s)
+
+            # Pre-parse time bounds
+            ds = parse_iso(detected_since)
+            du = parse_iso(detected_until)
+            rs = parse_iso(resolved_since)
+            ru = parse_iso(resolved_until)
+            cs = parse_iso(closed_since)
+            cu = parse_iso(closed_until)
+
+            def within_range(value_ts: Optional[str],
+                             start: Optional[datetime],
+                             end: Optional[datetime]) -> bool:
+                if start is None and end is None:
+                    return True
+                if not value_ts:
+                    return False
+                try:
+                    dt = parse_iso(value_ts)
+                except Exception:
+                    return False
+                if start and dt < start:
+                    return False
+                if end and dt > end:
+                    return False
+                return True
 
             for inc in incidents.values():
                 if incident_id and inc.get("incident_id") != incident_id:
@@ -79,22 +96,7 @@ class ListIncidents(Tool):
                 if title_contains and title_contains.lower() not in (inc.get("title", "").lower()):
                     continue
 
-                # Time filters
-                def within_range(value_ts: Optional[str], start: Optional[datetime], end: Optional[datetime]) -> bool:
-                    if start is None and end is None:
-                        return True
-                    if not value_ts:
-                        return False
-                    try:
-                        dt = ListIncidents._parse_iso(value_ts)
-                    except Exception:
-                        return False
-                    if start and dt < start:
-                        return False
-                    if end and dt > end:
-                        return False
-                    return True
-
+                # Time filters (inclusive bounds)
                 if not within_range(inc.get("detected_at"), ds, du):
                     continue
                 if not within_range(inc.get("resolved_at"), rs, ru):
@@ -104,12 +106,10 @@ class ListIncidents(Tool):
 
                 # Numeric ranges
                 dm = inc.get("downtime_minutes")
-                if downtime_minutes_min is not None:
-                    if dm is None or dm < downtime_minutes_min:
-                        continue
-                if downtime_minutes_max is not None:
-                    if dm is None or dm > downtime_minutes_max:
-                        continue
+                if downtime_minutes_min is not None and (dm is None or dm < downtime_minutes_min):
+                    continue
+                if downtime_minutes_max is not None and (dm is None or dm > downtime_minutes_max):
+                    continue
 
                 results.append(inc)
 
@@ -141,7 +141,7 @@ class ListIncidents(Tool):
                         "sla_breach": {"type": "boolean"},
                         "is_recurring": {"type": "boolean"},
                         "title_contains": {"type": "string", "description": "Case-insensitive contains"},
-                        "detected_since": {"type": "string", "description": "ISO timestamp"},
+                        "detected_since": {"type": "string", "description": "ISO timestamp (e.g., 2025-08-30T12:00:00Z)"},
                         "detected_until": {"type": "string", "description": "ISO timestamp"},
                         "resolved_since": {"type": "string", "description": "ISO timestamp"},
                         "resolved_until": {"type": "string", "description": "ISO timestamp"},

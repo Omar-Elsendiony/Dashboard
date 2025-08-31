@@ -61,7 +61,7 @@ class ListClients(Tool):
                         "client_type": {"type": "string", "description": "enterprise|mid_market|small_business|startup"},
                         "status": {"type": "string", "description": "active|inactive|suspended"}
                     },
-                    "required": ["data"]
+                    "required": []
                 }
             }
         }

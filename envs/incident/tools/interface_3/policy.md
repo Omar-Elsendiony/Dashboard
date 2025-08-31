@@ -21,7 +21,7 @@ Pre-checks:
 - Check that component exists if specified
 
 Steps:
-- Request incident title, description, category, severity, and impact level
+- Request incident title, category, severity, and impact level
 - Check for existing open incidents with similar characteristics
 - Set detection timestamp and initial status
 - Associate with specified client and infrastructure component records
