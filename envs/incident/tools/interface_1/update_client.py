@@ -37,7 +37,7 @@ class UpdateClient(Tool):
         if country is not None: c["country"] = country
         if status is not None: c["status"] = status
 
-        c["updated_at"] = "2025-10-01T00:00:00"
+        c["updated_at"] = "2025-09-02T23:59:59"
         return json.dumps({"success": True, "data": c})
 
     @staticmethod

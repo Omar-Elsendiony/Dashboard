@@ -40,7 +40,7 @@ class AddClientSubscription(Tool):
                 return json.dumps({"success": False, "error": "rto_hours must be an integer"})
 
             subscription_id = generate_id(subscriptions)
-            timestamp = "2025-10-01T00:00:00"
+            timestamp = "2025-09-02T23:59:59"
 
             new_sub = {
                 "subscription_id": subscription_id,

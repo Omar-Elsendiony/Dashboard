@@ -31,7 +31,7 @@ class CreateUser(Tool):
             return str(max([int(k) for k in table.keys()] + [0]) + 1)
 
         user_id = generate_id(users)
-        ts = "2025-10-01T00:00:00"
+        ts = "2025-09-02T23:59:59"
 
         new_user = {
             "user_id": user_id,

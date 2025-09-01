@@ -40,7 +40,7 @@ class UpdateUser(Tool):
         if vendor_id is not None: u["vendor_id"] = vendor_id
         if timezone is not None: u["timezone"] = timezone
 
-        u["updated_at"] = "2025-10-01T00:00:00"
+        u["updated_at"] = "2025-09-02T23:59:59"
         return json.dumps(u)
 
     @staticmethod

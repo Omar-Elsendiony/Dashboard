@@ -26,7 +26,7 @@ class CreateVendor(Tool):
             return str(max([int(k) for k in table.keys()] + [0]) + 1)
 
         vendor_id = generate_id(vendors)
-        ts = "2025-10-01T00:00:00"
+        ts = "2025-09-02T23:59:59"
 
         new_vendor = {
             "vendor_id": vendor_id,

@@ -23,7 +23,7 @@ class RecordPostIncidentReview(Tool):
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
 
             pir_id = generate_id(pirs)
-            timestamp = "2025-10-01T00:00:00"
+            timestamp = "2025-09-02T23:59:59"
 
             new_pir = {
                 "pir_id": pir_id,

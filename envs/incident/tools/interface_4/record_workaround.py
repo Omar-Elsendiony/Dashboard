@@ -25,7 +25,7 @@ class RecordWorkaround(Tool):
             return str(max([int(k) for k in table.keys()] + [0]) + 1)
 
         workaround_id = generate_id(workarounds)
-        ts = "2025-10-01T00:00:00"
+        ts = "2025-09-02T23:59:59"
 
         new_workaround = {
             "workaround_id": workaround_id,
@@ -54,7 +54,7 @@ class RecordWorkaround(Tool):
                         "implemented_by_id": {"type": "string"},
                         "effectiveness": {"type": "string", "description": "complete|partial|minimal"},
                         "status": {"type": "string", "description": "active|inactive|replaced (default active)"},
-                        "implemented_at": {"type": "string", "description": "ISO timestamp; if omitted, defaults to 2025-10-01T00:00:00"}
+                        "implemented_at": {"type": "string", "description": "ISO timestamp; if omitted, defaults to 2025-09-02T23:59:59"}
                     },
                     "required": ["incident_id", "implemented_by_id", "effectiveness"]
                 }

@@ -57,7 +57,7 @@ class ModifyClientSubscription(Tool):
             if end_date is not None: s["end_date"] = end_date
             if status is not None: s["status"] = status
 
-            s["updated_at"] = "2025-10-01T00:00:00"
+            s["updated_at"] = "2025-09-02T23:59:59"
             return json.dumps(s)
         except Exception as e:
             return json.dumps({"success": False, "error": str(e)})
