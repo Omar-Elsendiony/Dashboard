@@ -1,53 +1,52 @@
-#interface_2/__init__.py
+# interface_2/__init__.py
 
-from .list_products import ListProducts
-from .list_components import ListComponents
-from .list_client_subscriptions import ListClientSubscriptions
-from .list_sla_agreements import ListSlaAgreements
-from .list_clients import ListClients
-from .list_users import ListUsers
-from .list_vendors import ListVendors
-from .list_incidents import ListIncidents
-from .list_workarounds import ListWorkarounds
-from .list_change_requests import ListChangeRequests
-from .list_knowledge_base_articles import ListKnowledgeBaseArticles
+from .fetch_clients import FetchClients
+from .fetch_users import FetchUsers
+from .fetch_vendors import FetchVendors
+from .fetch_products import FetchProducts
+from .fetch_components import FetchComponents
+from .fetch_client_subscriptions import FetchClientSubscriptions
+from .fetch_sla_agreements import FetchSlaAgreements
+from .fetch_incidents import FetchIncidents
+from .fetch_change_requests import FetchChangeRequests
+from .fetch_workarounds import FetchWorkarounds
+from .fetch_knowledge_base_articles import FetchKnowledgeBaseArticles
 
-from .create_product import CreateProduct
-from .update_product import UpdateProduct
-from .create_component import CreateComponent
-from .update_component import UpdateComponent
-from .create_client_subscription import CreateClientSubscription
-from .update_client_subscription import UpdateClientSubscription
-from .create_sla_agreement import CreateSlaAgreement
-from .update_sla_agreement import UpdateSlaAgreement
-from .create_knowledge_base_article import CreateKnowledgeBaseArticle
-from .create_change_request import CreateChangeRequest
-from .create_workaround import CreateWorkaround
-
+from .add_change_request import AddChangeRequest
+from .add_client_subscription import AddClientSubscription
+from .add_component import AddComponent
+from .add_knowledge_base_article import AddKnowledgeBaseArticle
+from .add_product import AddProduct
+from .add_sla_agreement import AddSlaAgreement
+from .add_workaround import AddWorkaround
+from .modify_client_subscription import ModifyClientSubscription
+from .modify_component import ModifyComponent
+from .modify_product import ModifyProduct
+from .modify_sla_agreement import ModifySlaAgreement
 
 ALL_TOOLS_INTERFACE_2 = [
     # GET
-    ListProducts,
-    ListComponents,
-    ListClientSubscriptions,
-    ListSlaAgreements,
-    ListClients,
-    ListUsers,
-    ListVendors,
-    ListIncidents,
-    ListWorkarounds,
-    ListChangeRequests,
-    ListKnowledgeBaseArticles,
+    FetchClients,
+    FetchUsers,
+    FetchVendors,
+    FetchProducts,
+    FetchComponents,
+    FetchClientSubscriptions,
+    FetchSlaAgreements,
+    FetchIncidents,
+    FetchChangeRequests,
+    FetchWorkarounds,
+    FetchKnowledgeBaseArticles,
     # SET
-    CreateProduct,
-    UpdateProduct,
-    CreateComponent,
-    UpdateComponent,
-    CreateClientSubscription,
-    UpdateClientSubscription,
-    CreateSlaAgreement,
-    UpdateSlaAgreement,
-    CreateKnowledgeBaseArticle,
-    CreateChangeRequest,
-    CreateWorkaround,
+    AddChangeRequest,
+    AddClientSubscription,
+    AddComponent,
+    AddKnowledgeBaseArticle,
+    AddProduct,
+    AddSlaAgreement,
+    AddWorkaround,
+    ModifyClientSubscription,
+    ModifyComponent,
+    ModifyProduct,
+    ModifySlaAgreement,
 ]

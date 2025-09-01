@@ -1,4 +1,4 @@
-#interface_5/__init__.py
+# interface_5/__init__.py
 
 from .list_metrics import ListMetrics
 from .list_incident_reports import ListIncidentReports
@@ -12,18 +12,17 @@ from .list_root_cause_analyses import ListRootCauseAnalyses
 from .list_change_requests import ListChangeRequests
 from .list_workarounds import ListWorkarounds
 
-from .create_metric import CreateMetric
-from .update_metric import UpdateMetric
-from .create_incident_report import CreateIncidentReport
-from .update_incident_report import UpdateIncidentReport
-from .create_knowledge_base_article import CreateKnowledgeBaseArticle
-from .update_knowledge_base_article import UpdateKnowledgeBaseArticle
-from .create_post_incident_review import CreatePostIncidentReview
-from .update_post_incident_review import UpdatePostIncidentReview
-from .create_communication import CreateCommunication
-from .create_root_cause_analysis import CreateRootCauseAnalysis
-from .create_workaround import CreateWorkaround
-
+from .log_metric import LogMetric
+from .revise_metric import ReviseMetric
+from .log_incident_report import LogIncidentReport
+from .revise_incident_report import ReviseIncidentReport
+from .log_knowledge_base_article import LogKnowledgeBaseArticle
+from .revise_knowledge_base_article import ReviseKnowledgeBaseArticle
+from .log_post_incident_review import LogPostIncidentReview
+from .revise_post_incident_review import RevisePostIncidentReview
+from .log_communication import LogCommunication
+from .log_root_cause_analysis import LogRootCauseAnalysis
+from .log_workaround import LogWorkaround
 
 ALL_TOOLS_INTERFACE_5 = [
     # GET
@@ -39,15 +38,15 @@ ALL_TOOLS_INTERFACE_5 = [
     ListChangeRequests,
     ListWorkarounds,
     # SET
-    CreateMetric,
-    UpdateMetric,
-    CreateIncidentReport,
-    UpdateIncidentReport,
-    CreateKnowledgeBaseArticle,
-    UpdateKnowledgeBaseArticle,
-    CreatePostIncidentReview,
-    UpdatePostIncidentReview,
-    CreateCommunication,
-    CreateRootCauseAnalysis,
-    CreateWorkaround,
+    LogMetric,
+    ReviseMetric,
+    LogIncidentReport,
+    ReviseIncidentReport,
+    LogKnowledgeBaseArticle,
+    ReviseKnowledgeBaseArticle,
+    LogPostIncidentReview,
+    RevisePostIncidentReview,
+    LogCommunication,
+    LogRootCauseAnalysis,
+    LogWorkaround,
 ]

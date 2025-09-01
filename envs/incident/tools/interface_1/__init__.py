@@ -1,15 +1,15 @@
-#interface_1/__init__.py
+# interface_1/__init__.py
 
-from .list_clients import ListClients
-from .list_users import ListUsers
-from .list_vendors import ListVendors
-from .list_products import ListProducts
-from .list_components import ListComponents
-from .list_client_subscriptions import ListClientSubscriptions
-from .list_sla_agreements import ListSlaAgreements
-from .list_incidents import ListIncidents
-from .list_metrics import ListMetrics
-from .list_knowledge_base_articles import ListKnowledgeBaseArticles
+from .get_clients import GetClients
+from .get_users import GetUsers
+from .get_vendors import GetVendors
+from .get_products import GetProducts
+from .get_components import GetComponents
+from .get_client_subscriptions import GetClientSubscriptions
+from .get_sla_agreements import GetSlaAgreements
+from .get_incidents import GetIncidents
+from .get_metrics import GetMetrics
+from .get_knowledge_base_articles import GetKnowledgeBaseArticles
 
 from .create_client import CreateClient
 from .update_client import UpdateClient
@@ -22,19 +22,18 @@ from .update_client_subscription import UpdateClientSubscription
 from .create_sla_agreement import CreateSlaAgreement
 from .update_sla_agreement import UpdateSlaAgreement
 
-
 ALL_TOOLS_INTERFACE_1 = [
     # GET
-    ListClients,
-    ListUsers,
-    ListVendors,
-    ListProducts,
-    ListComponents,
-    ListClientSubscriptions,
-    ListSlaAgreements,
-    ListIncidents,
-    ListMetrics,
-    ListKnowledgeBaseArticles,
+    GetClients,
+    GetUsers,
+    GetVendors,
+    GetProducts,
+    GetComponents,
+    GetClientSubscriptions,
+    GetSlaAgreements,
+    GetIncidents,
+    GetMetrics,
+    GetKnowledgeBaseArticles,
     # SET
     CreateClient,
     UpdateClient,
