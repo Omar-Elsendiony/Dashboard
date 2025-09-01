@@ -141,7 +141,7 @@ class GetIncidents(Tool):
                         "sla_breach": {"type": "boolean"},
                         "is_recurring": {"type": "boolean"},
                         "title_contains": {"type": "string", "description": "Case-insensitive contains"},
-                        "detected_since": {"type": "string", "description": "ISO timestamp (e.g., 2025-08-30T12:00:00Z)"},
+                        "detected_since": {"type": "string", "description": "ISO timestamp (e.g., 2025-08-30T12:00:00)"},
                         "detected_until": {"type": "string", "description": "ISO timestamp"},
                         "resolved_since": {"type": "string", "description": "ISO timestamp"},
                         "resolved_until": {"type": "string", "description": "ISO timestamp"},

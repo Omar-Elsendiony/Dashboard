@@ -60,9 +60,9 @@ Pre-checks:
 Steps:
 - Retrieve current incident record
 - Collect specific status changes or field updates needed
-- Check that new status value matches allowed enum values
-- Create incident update record documenting the change
-- Apply changes to incident with the timestamp "2025-10-01T00:00:00" and user identifier
+- Check that new status value matches allowed enum values (if there is any)
+- Create incident update record(s) documenting the change(s) along with logging the user who conducted the change
+- Apply changes to incident with the user identifier
 - Return updated incident information
 
 ### Managing Incident Escalations

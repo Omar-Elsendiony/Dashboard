@@ -68,7 +68,6 @@ This document defines the operational guide for an HR management automation agen
 - Check that HR Manager approval is obtained and Compliance verification for eligibility documents is completed. If approvals are missing, then output 'Halt: Approval or compliance verification missing'
 - Create active user account and employee record with all provided details (ex: position, start date, salary)
 - Generate and store welcome documents in the document storage system
-- Log all onboarding actions in the audit log
 
 ### Update Employee Profile
 - Validate that the employee exists and manager chain is valid. If employee is not found or manager chain is invalid, then output 'Halt: Invalid employee update: [details]'
@@ -80,7 +79,6 @@ This document defines the operational guide for an HR management automation agen
 - Check that HR Manager and Compliance Officer approvals are obtained. If approvals are missing, then output 'Halt: Required approvals missing'
 - Set employee status to 'terminated' and update user status to 'inactive'
 - Generate termination documents and archive them in the document storage system
-- Log all offboarding steps in the audit logs
 
 ### Document Upload & Management
 - Validate that the document type is supported and all required metadata is provided. If document type is unsupported or metadata is missing, then output 'Halt: Invalid document metadata: [list]'

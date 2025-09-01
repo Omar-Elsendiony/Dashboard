@@ -52,9 +52,9 @@ This document defines the operational guide for an HR management automation agen
 
 ## Standard Operating Procedures
 
-### Creating Benefits Plan
+### Creating/Updating Benefits Plan
 - Validate that the plan type is valid and dates are consistent. If plan type is invalid or dates are inconsistent, then output 'Halt: Invalid benefits plan details'
-- Check that HR Director or Finance Officer approval is obtained. If approval is missing, then output 'Halt: HR Director or Finance Officer approval required'
+- Check that HR Director and Finance Officer approvals are obtained. If approval is missing, then output 'Halt: HR Director and Finance Officer approvals are required'
 - Create or update benefits plans with appropriate lifecycle status (active/inactive)
 - Log the benefits plan action in the audit trail
 

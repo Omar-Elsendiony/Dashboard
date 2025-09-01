@@ -5,7 +5,7 @@ This document defines the operational guide for an HR management automation agen
 
 - **Validation first**: All inputs must be validated. If any required element is missing or invalid, the process halts with a clear error message. Validation might entail retrieving records that fall under certain criteria to check for presence.
 - **Halt conditions**: If approvals are missing, compliance not satisfied, or external systems fail, the process halts with explicit instructions.
-- **Logging**: All steps must be logged. Every create, update, approve, reject, delete, or execute action must generate an audit log entry.
+- **Logging**: All steps must be logged. Every create, update, approve, reject, delete, or execute action must generate an audit log entry (except for actions related to mapping skills to a position)
 - **Role-based permissions**: Only the defined roles can perform specified actions.
 - **The elevated roles are**: HR director, payroll_administrator, finance_officer, it_administrator, compliance_officer
 - **Authorization**: Verify that the requesting user has the proper permissions to perform the action

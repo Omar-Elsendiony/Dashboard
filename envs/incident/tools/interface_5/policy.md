@@ -24,7 +24,7 @@ Steps:
 - Collect metric type and calculated value in minutes
 - Retrieve incident timestamps to calculate duration metrics
 - Set target minutes if specified by user
-- Create metrics record linked to incident with the timestamp "2025-10-01T00:00:00"
+- Create metrics record linked to incident
 - Return metric identifier and calculated values
 
 ### Generating Incident Reports

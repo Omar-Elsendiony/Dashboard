@@ -23,8 +23,8 @@ Steps:
 - Collect complete client information including name, registration number, contact details, and client type
 - Check for existing records with same registration number or email
 - Set initial status as active unless user specifies otherwise
-- Create client record with the timestamp "2025-10-01T00:00:00"
-- Returned client identifier and successful creation flag if client was created 
+- Create client record
+- Return client identifier and successful creation flag if client was created 
 
 ### Updating Client Information
 When to use: When client details change or status modifications are required.  
@@ -37,8 +37,8 @@ Pre-checks:
 Steps:
 - Retrieve current client record
 - Collect specific fields requiring updates
-- Apply changes with the timestamp "2025-10-01T00:00:00"
-- Returned successful creation flag if client information was updated
+- Apply the changes requested
+- Return successful creation flag if client information was updated
 
 ## User Management Operations
 
@@ -55,7 +55,7 @@ Steps:
 - Check for existing records with same email address, users should have unique email
 - Associate user with specified client or vendor if provided
 - Set status as active 
-- Create user record with the timestamp "2025-10-01T00:00:00" and return user identifier
+- Create user record and return user identifier
 
 ### Managing User Permissions
 When to use: When modifying user access levels or role assignments.  
@@ -86,7 +86,7 @@ Steps:
 - Acquire vendor details including name, type, and contact information
 - Check for existing records with same vendor name
 - Set status as active unless user specifies otherwise
-- Create vendor record with the timestamp "2025-10-01T00:00:00"
+- Create vendor record
 - Return vendor identifier and confirm successful creation
 
 ## Authority and Access Controls

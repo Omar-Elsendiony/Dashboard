@@ -24,7 +24,7 @@ Steps:
 - Acquire product information including name, type, and version
 - Check for existing products with same name
 - Link to vendor record if external support required
-- Create product record with the timestamp "2025-10-01T00:00:00" and return product identifier
+- Create product record and return product identifier
 
 ### Managing Infrastructure Components
 When to use: When documenting system components that support products and services.  
@@ -54,7 +54,7 @@ Steps:
 - Set recovery time objectives based on user input
 - Define start and end dates as specified
 - Link subscription to specified client and product records
-- Create subscription record with active status and the timestamp "2025-10-01T00:00:00"
+- Create subscription record with active status
 
 ### Managing Service Level Agreements
 When to use: When defining response and resolution requirements for different incident severities.  
@@ -68,7 +68,7 @@ Steps:
 - Set response time requirements in minutes as specified
 - Define resolution time objectives in hours as specified
 - Set availability percentage targets if provided
-- Create SLA record linked to subscription with the timestamp "2025-10-01T00:00:00"
+- Create SLA record linked to subscription
   
 
 ## Authority and Access Controls
