@@ -1,0 +1,2504 @@
+{
+  "1": {
+    "workaround_id": "1",
+    "incident_id": "3",
+    "implemented_by_id": "114",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-08-15T07:15:08.436400",
+    "created_at": "2024-08-15T07:15:08.436400"
+  },
+  "2": {
+    "workaround_id": "2",
+    "incident_id": "6",
+    "implemented_by_id": "20",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-01-28T15:49:50.125922",
+    "created_at": "2025-01-28T15:49:50.125922"
+  },
+  "3": {
+    "workaround_id": "3",
+    "incident_id": "9",
+    "implemented_by_id": "51",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-30T13:20:12.831815",
+    "created_at": "2025-08-30T13:20:12.831815"
+  },
+  "4": {
+    "workaround_id": "4",
+    "incident_id": "12",
+    "implemented_by_id": "20",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-30T02:53:57.849641",
+    "created_at": "2025-08-30T02:53:57.849641"
+  },
+  "5": {
+    "workaround_id": "5",
+    "incident_id": "24",
+    "implemented_by_id": "71",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-06-24T13:02:06.263643",
+    "created_at": "2025-06-24T13:02:06.263643"
+  },
+  "6": {
+    "workaround_id": "6",
+    "incident_id": "32",
+    "implemented_by_id": "75",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-30T03:38:32.039699",
+    "created_at": "2025-08-30T03:38:32.039699"
+  },
+  "7": {
+    "workaround_id": "7",
+    "incident_id": "39",
+    "implemented_by_id": "75",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-04-10T22:11:21.314826",
+    "created_at": "2025-04-10T22:11:21.314826"
+  },
+  "8": {
+    "workaround_id": "8",
+    "incident_id": "43",
+    "implemented_by_id": "4",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-03-16T16:59:12.925450",
+    "created_at": "2024-03-16T16:59:12.925450"
+  },
+  "9": {
+    "workaround_id": "9",
+    "incident_id": "45",
+    "implemented_by_id": "31",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-11-25T19:33:49.315206",
+    "created_at": "2024-11-25T19:33:49.315206"
+  },
+  "10": {
+    "workaround_id": "10",
+    "incident_id": "51",
+    "implemented_by_id": "51",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-05-28T05:12:46.074476",
+    "created_at": "2024-05-28T05:12:46.074476"
+  },
+  "11": {
+    "workaround_id": "11",
+    "incident_id": "73",
+    "implemented_by_id": "18",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-04-25T23:19:18.297796",
+    "created_at": "2025-04-25T23:19:18.297796"
+  },
+  "12": {
+    "workaround_id": "12",
+    "incident_id": "81",
+    "implemented_by_id": "7",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-26T10:51:21.317116",
+    "created_at": "2025-08-26T10:51:21.317116"
+  },
+  "13": {
+    "workaround_id": "13",
+    "incident_id": "85",
+    "implemented_by_id": "110",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-06-08T05:10:42.416078",
+    "created_at": "2025-06-08T05:10:42.416078"
+  },
+  "14": {
+    "workaround_id": "14",
+    "incident_id": "86",
+    "implemented_by_id": "20",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-26T17:50:23.265703",
+    "created_at": "2025-08-26T17:50:23.265703"
+  },
+  "15": {
+    "workaround_id": "15",
+    "incident_id": "91",
+    "implemented_by_id": "77",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-07-11T05:48:51.720529",
+    "created_at": "2024-07-11T05:48:51.720529"
+  },
+  "16": {
+    "workaround_id": "16",
+    "incident_id": "96",
+    "implemented_by_id": "81",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-08-31T04:19:36.923647",
+    "created_at": "2025-08-31T04:19:36.923647"
+  },
+  "17": {
+    "workaround_id": "17",
+    "incident_id": "108",
+    "implemented_by_id": "110",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-08-25T20:42:00.121336",
+    "created_at": "2024-08-25T20:42:00.121336"
+  },
+  "18": {
+    "workaround_id": "18",
+    "incident_id": "112",
+    "implemented_by_id": "13",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-25T13:25:32.354472",
+    "created_at": "2025-08-25T13:25:32.354472"
+  },
+  "19": {
+    "workaround_id": "19",
+    "incident_id": "132",
+    "implemented_by_id": "20",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-09-10T09:12:18.941132",
+    "created_at": "2024-09-10T09:12:18.941132"
+  },
+  "20": {
+    "workaround_id": "20",
+    "incident_id": "135",
+    "implemented_by_id": "62",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-25T07:57:59.161629",
+    "created_at": "2025-08-25T07:57:59.161629"
+  },
+  "21": {
+    "workaround_id": "21",
+    "incident_id": "143",
+    "implemented_by_id": "10",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-28T11:32:39.674349",
+    "created_at": "2025-08-28T11:32:39.674349"
+  },
+  "22": {
+    "workaround_id": "22",
+    "incident_id": "149",
+    "implemented_by_id": "77",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-25T16:33:28.103134",
+    "created_at": "2025-08-25T16:33:28.103134"
+  },
+  "23": {
+    "workaround_id": "23",
+    "incident_id": "154",
+    "implemented_by_id": "9",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-04-15T12:52:41.103912",
+    "created_at": "2024-04-15T12:52:41.103912"
+  },
+  "24": {
+    "workaround_id": "24",
+    "incident_id": "164",
+    "implemented_by_id": "91",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-06-12T05:59:59.627776",
+    "created_at": "2024-06-12T05:59:59.627776"
+  },
+  "25": {
+    "workaround_id": "25",
+    "incident_id": "165",
+    "implemented_by_id": "22",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-11-05T07:29:41.455492",
+    "created_at": "2024-11-05T07:29:41.455492"
+  },
+  "26": {
+    "workaround_id": "26",
+    "incident_id": "166",
+    "implemented_by_id": "28",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-05-13T08:49:12.768377",
+    "created_at": "2025-05-13T08:49:12.768377"
+  },
+  "27": {
+    "workaround_id": "27",
+    "incident_id": "176",
+    "implemented_by_id": "22",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-25T07:22:29.290510",
+    "created_at": "2025-08-25T07:22:29.290510"
+  },
+  "28": {
+    "workaround_id": "28",
+    "incident_id": "182",
+    "implemented_by_id": "67",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-05-28T15:30:28.283134",
+    "created_at": "2025-05-28T15:30:28.283134"
+  },
+  "29": {
+    "workaround_id": "29",
+    "incident_id": "187",
+    "implemented_by_id": "28",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-01-27T08:13:55.554110",
+    "created_at": "2025-01-27T08:13:55.554110"
+  },
+  "30": {
+    "workaround_id": "30",
+    "incident_id": "190",
+    "implemented_by_id": "63",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-01-20T03:42:26.889835",
+    "created_at": "2025-01-20T03:42:26.889835"
+  },
+  "31": {
+    "workaround_id": "31",
+    "incident_id": "196",
+    "implemented_by_id": "102",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-08-15T01:29:40.718681",
+    "created_at": "2024-08-15T01:29:40.718681"
+  },
+  "32": {
+    "workaround_id": "32",
+    "incident_id": "202",
+    "implemented_by_id": "96",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-07-14T23:45:28.583899",
+    "created_at": "2025-07-14T23:45:28.583899"
+  },
+  "33": {
+    "workaround_id": "33",
+    "incident_id": "235",
+    "implemented_by_id": "110",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-03-26T08:35:18.893378",
+    "created_at": "2024-03-26T08:35:18.893378"
+  },
+  "34": {
+    "workaround_id": "34",
+    "incident_id": "237",
+    "implemented_by_id": "12",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-09-28T19:54:25.206589",
+    "created_at": "2024-09-28T19:54:25.206589"
+  },
+  "35": {
+    "workaround_id": "35",
+    "incident_id": "238",
+    "implemented_by_id": "51",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-06-15T04:26:28.059327",
+    "created_at": "2025-06-15T04:26:28.059327"
+  },
+  "36": {
+    "workaround_id": "36",
+    "incident_id": "245",
+    "implemented_by_id": "119",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-28T23:34:57.731393",
+    "created_at": "2025-08-28T23:34:57.731393"
+  },
+  "37": {
+    "workaround_id": "37",
+    "incident_id": "248",
+    "implemented_by_id": "12",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-06-27T09:51:35.991339",
+    "created_at": "2025-06-27T09:51:35.991339"
+  },
+  "38": {
+    "workaround_id": "38",
+    "incident_id": "250",
+    "implemented_by_id": "38",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-25T11:30:50.955752",
+    "created_at": "2025-08-25T11:30:50.955752"
+  },
+  "39": {
+    "workaround_id": "39",
+    "incident_id": "256",
+    "implemented_by_id": "90",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-07-20T09:58:31.027652",
+    "created_at": "2025-07-20T09:58:31.027652"
+  },
+  "40": {
+    "workaround_id": "40",
+    "incident_id": "281",
+    "implemented_by_id": "72",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-26T13:09:09.606245",
+    "created_at": "2025-08-26T13:09:09.606245"
+  },
+  "41": {
+    "workaround_id": "41",
+    "incident_id": "283",
+    "implemented_by_id": "23",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-30T12:51:04.033092",
+    "created_at": "2025-08-30T12:51:04.033092"
+  },
+  "42": {
+    "workaround_id": "42",
+    "incident_id": "286",
+    "implemented_by_id": "101",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-06-13T02:02:23.378289",
+    "created_at": "2025-06-13T02:02:23.378289"
+  },
+  "43": {
+    "workaround_id": "43",
+    "incident_id": "287",
+    "implemented_by_id": "13",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-25T19:22:34.431965",
+    "created_at": "2025-08-25T19:22:34.431965"
+  },
+  "44": {
+    "workaround_id": "44",
+    "incident_id": "288",
+    "implemented_by_id": "67",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-25T21:46:02.954614",
+    "created_at": "2025-08-25T21:46:02.954614"
+  },
+  "45": {
+    "workaround_id": "45",
+    "incident_id": "290",
+    "implemented_by_id": "49",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-08-30T00:30:49.154329",
+    "created_at": "2025-08-30T00:30:49.154329"
+  },
+  "46": {
+    "workaround_id": "46",
+    "incident_id": "294",
+    "implemented_by_id": "56",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-02-15T09:22:20.332445",
+    "created_at": "2025-02-15T09:22:20.332445"
+  },
+  "47": {
+    "workaround_id": "47",
+    "incident_id": "296",
+    "implemented_by_id": "106",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-29T07:50:47.672120",
+    "created_at": "2025-08-29T07:50:47.672120"
+  },
+  "48": {
+    "workaround_id": "48",
+    "incident_id": "297",
+    "implemented_by_id": "7",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-08-31T07:58:46.772494",
+    "created_at": "2025-08-31T07:58:46.772494"
+  },
+  "49": {
+    "workaround_id": "49",
+    "incident_id": "312",
+    "implemented_by_id": "26",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-29T01:48:29.413746",
+    "created_at": "2025-08-29T01:48:29.413746"
+  },
+  "50": {
+    "workaround_id": "50",
+    "incident_id": "316",
+    "implemented_by_id": "67",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-28T18:48:24.312763",
+    "created_at": "2025-08-28T18:48:24.312763"
+  },
+  "51": {
+    "workaround_id": "51",
+    "incident_id": "318",
+    "implemented_by_id": "47",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-04-02T19:02:42.801137",
+    "created_at": "2025-04-02T19:02:42.801137"
+  },
+  "52": {
+    "workaround_id": "52",
+    "incident_id": "327",
+    "implemented_by_id": "21",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-03-21T05:58:13.273893",
+    "created_at": "2025-03-21T05:58:13.273893"
+  },
+  "53": {
+    "workaround_id": "53",
+    "incident_id": "329",
+    "implemented_by_id": "38",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-08-07T16:35:41.610401",
+    "created_at": "2024-08-07T16:35:41.610401"
+  },
+  "54": {
+    "workaround_id": "54",
+    "incident_id": "334",
+    "implemented_by_id": "49",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-29T01:23:09.144662",
+    "created_at": "2025-08-29T01:23:09.144662"
+  },
+  "55": {
+    "workaround_id": "55",
+    "incident_id": "335",
+    "implemented_by_id": "7",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-30T21:57:41.886789",
+    "created_at": "2025-08-30T21:57:41.886789"
+  },
+  "56": {
+    "workaround_id": "56",
+    "incident_id": "338",
+    "implemented_by_id": "13",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-27T20:14:42.180578",
+    "created_at": "2025-08-27T20:14:42.180578"
+  },
+  "57": {
+    "workaround_id": "57",
+    "incident_id": "348",
+    "implemented_by_id": "69",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-26T23:29:25.978358",
+    "created_at": "2025-08-26T23:29:25.978358"
+  },
+  "58": {
+    "workaround_id": "58",
+    "incident_id": "358",
+    "implemented_by_id": "63",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-26T15:51:42.735688",
+    "created_at": "2025-08-26T15:51:42.735688"
+  },
+  "59": {
+    "workaround_id": "59",
+    "incident_id": "361",
+    "implemented_by_id": "24",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-09-23T13:40:36.009462",
+    "created_at": "2024-09-23T13:40:36.009462"
+  },
+  "60": {
+    "workaround_id": "60",
+    "incident_id": "362",
+    "implemented_by_id": "23",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-07-09T18:02:15.182855",
+    "created_at": "2025-07-09T18:02:15.182855"
+  },
+  "61": {
+    "workaround_id": "61",
+    "incident_id": "367",
+    "implemented_by_id": "26",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-10-14T09:27:48.955738",
+    "created_at": "2024-10-14T09:27:48.955738"
+  },
+  "62": {
+    "workaround_id": "62",
+    "incident_id": "369",
+    "implemented_by_id": "42",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-02-26T14:08:05.899688",
+    "created_at": "2025-02-26T14:08:05.899688"
+  },
+  "63": {
+    "workaround_id": "63",
+    "incident_id": "374",
+    "implemented_by_id": "27",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-07-01T19:30:00.626691",
+    "created_at": "2024-07-01T19:30:00.626691"
+  },
+  "64": {
+    "workaround_id": "64",
+    "incident_id": "377",
+    "implemented_by_id": "81",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-26T01:29:45.564162",
+    "created_at": "2025-08-26T01:29:45.564162"
+  },
+  "65": {
+    "workaround_id": "65",
+    "incident_id": "381",
+    "implemented_by_id": "27",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-31T13:54:57.003437",
+    "created_at": "2025-08-31T13:54:57.003437"
+  },
+  "66": {
+    "workaround_id": "66",
+    "incident_id": "399",
+    "implemented_by_id": "18",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-02-15T15:17:44.929306",
+    "created_at": "2025-02-15T15:17:44.929306"
+  },
+  "67": {
+    "workaround_id": "67",
+    "incident_id": "400",
+    "implemented_by_id": "75",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-25T22:50:49.524422",
+    "created_at": "2025-08-25T22:50:49.524422"
+  },
+  "68": {
+    "workaround_id": "68",
+    "incident_id": "403",
+    "implemented_by_id": "90",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-07-02T09:34:06.820726",
+    "created_at": "2024-07-02T09:34:06.820726"
+  },
+  "69": {
+    "workaround_id": "69",
+    "incident_id": "405",
+    "implemented_by_id": "64",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-04-18T03:50:44.103639",
+    "created_at": "2025-04-18T03:50:44.103639"
+  },
+  "70": {
+    "workaround_id": "70",
+    "incident_id": "413",
+    "implemented_by_id": "12",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-26T17:38:17.762737",
+    "created_at": "2025-08-26T17:38:17.762737"
+  },
+  "71": {
+    "workaround_id": "71",
+    "incident_id": "414",
+    "implemented_by_id": "22",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-27T22:10:14.997222",
+    "created_at": "2025-08-27T22:10:14.997222"
+  },
+  "72": {
+    "workaround_id": "72",
+    "incident_id": "426",
+    "implemented_by_id": "75",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-29T01:20:32.811518",
+    "created_at": "2025-08-29T01:20:32.811518"
+  },
+  "73": {
+    "workaround_id": "73",
+    "incident_id": "428",
+    "implemented_by_id": "22",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-09-15T06:23:10.446051",
+    "created_at": "2024-09-15T06:23:10.446051"
+  },
+  "74": {
+    "workaround_id": "74",
+    "incident_id": "430",
+    "implemented_by_id": "26",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-03-04T16:41:39.350584",
+    "created_at": "2025-03-04T16:41:39.350584"
+  },
+  "75": {
+    "workaround_id": "75",
+    "incident_id": "436",
+    "implemented_by_id": "41",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-28T03:39:22.823095",
+    "created_at": "2025-08-28T03:39:22.823095"
+  },
+  "76": {
+    "workaround_id": "76",
+    "incident_id": "447",
+    "implemented_by_id": "62",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-11-02T06:22:52.770998",
+    "created_at": "2024-11-02T06:22:52.770998"
+  },
+  "77": {
+    "workaround_id": "77",
+    "incident_id": "449",
+    "implemented_by_id": "106",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-08-26T04:49:29.932595",
+    "created_at": "2025-08-26T04:49:29.932595"
+  },
+  "78": {
+    "workaround_id": "78",
+    "incident_id": "452",
+    "implemented_by_id": "28",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-04-23T02:35:29.297141",
+    "created_at": "2024-04-23T02:35:29.297141"
+  },
+  "79": {
+    "workaround_id": "79",
+    "incident_id": "455",
+    "implemented_by_id": "20",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-07-05T14:05:15.636603",
+    "created_at": "2025-07-05T14:05:15.636603"
+  },
+  "80": {
+    "workaround_id": "80",
+    "incident_id": "458",
+    "implemented_by_id": "48",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-05-14T06:37:39.477929",
+    "created_at": "2024-05-14T06:37:39.477929"
+  },
+  "81": {
+    "workaround_id": "81",
+    "incident_id": "468",
+    "implemented_by_id": "7",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-29T22:45:26.147041",
+    "created_at": "2025-08-29T22:45:26.147041"
+  },
+  "82": {
+    "workaround_id": "82",
+    "incident_id": "471",
+    "implemented_by_id": "27",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-07-04T17:56:33.621418",
+    "created_at": "2024-07-04T17:56:33.621418"
+  },
+  "83": {
+    "workaround_id": "83",
+    "incident_id": "480",
+    "implemented_by_id": "22",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-28T04:36:29.524954",
+    "created_at": "2025-08-28T04:36:29.524954"
+  },
+  "84": {
+    "workaround_id": "84",
+    "incident_id": "483",
+    "implemented_by_id": "42",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-05-18T19:30:42.076777",
+    "created_at": "2025-05-18T19:30:42.076777"
+  },
+  "85": {
+    "workaround_id": "85",
+    "incident_id": "486",
+    "implemented_by_id": "81",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-06-08T12:46:05.358841",
+    "created_at": "2025-06-08T12:46:05.358841"
+  },
+  "86": {
+    "workaround_id": "86",
+    "incident_id": "492",
+    "implemented_by_id": "9",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-29T18:00:11.752216",
+    "created_at": "2025-08-29T18:00:11.752216"
+  },
+  "87": {
+    "workaround_id": "87",
+    "incident_id": "495",
+    "implemented_by_id": "75",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-08-20T01:12:38.165398",
+    "created_at": "2024-08-20T01:12:38.165398"
+  },
+  "88": {
+    "workaround_id": "88",
+    "incident_id": "500",
+    "implemented_by_id": "22",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-03-14T21:09:15.801675",
+    "created_at": "2024-03-14T21:09:15.801675"
+  },
+  "89": {
+    "workaround_id": "89",
+    "incident_id": "502",
+    "implemented_by_id": "90",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-07-19T17:47:52.213889",
+    "created_at": "2024-07-19T17:47:52.213889"
+  },
+  "90": {
+    "workaround_id": "90",
+    "incident_id": "514",
+    "implemented_by_id": "100",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-26T14:13:02.012080",
+    "created_at": "2025-08-26T14:13:02.012080"
+  },
+  "91": {
+    "workaround_id": "91",
+    "incident_id": "530",
+    "implemented_by_id": "111",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-30T01:02:18.558532",
+    "created_at": "2025-08-30T01:02:18.558532"
+  },
+  "92": {
+    "workaround_id": "92",
+    "incident_id": "533",
+    "implemented_by_id": "4",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-08-27T20:18:13.159569",
+    "created_at": "2025-08-27T20:18:13.159569"
+  },
+  "93": {
+    "workaround_id": "93",
+    "incident_id": "541",
+    "implemented_by_id": "92",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-27T20:20:54.117911",
+    "created_at": "2025-08-27T20:20:54.117911"
+  },
+  "94": {
+    "workaround_id": "94",
+    "incident_id": "542",
+    "implemented_by_id": "69",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-07-23T12:58:41.578356",
+    "created_at": "2024-07-23T12:58:41.578356"
+  },
+  "95": {
+    "workaround_id": "95",
+    "incident_id": "544",
+    "implemented_by_id": "13",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-29T00:29:43.318344",
+    "created_at": "2025-08-29T00:29:43.318344"
+  },
+  "96": {
+    "workaround_id": "96",
+    "incident_id": "545",
+    "implemented_by_id": "110",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-04-18T22:20:09.255190",
+    "created_at": "2024-04-18T22:20:09.255190"
+  },
+  "97": {
+    "workaround_id": "97",
+    "incident_id": "547",
+    "implemented_by_id": "77",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-05-27T01:14:37.455388",
+    "created_at": "2025-05-27T01:14:37.455388"
+  },
+  "98": {
+    "workaround_id": "98",
+    "incident_id": "556",
+    "implemented_by_id": "24",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-10-05T04:28:17.666030",
+    "created_at": "2024-10-05T04:28:17.666030"
+  },
+  "99": {
+    "workaround_id": "99",
+    "incident_id": "560",
+    "implemented_by_id": "88",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-30T17:08:51.389179",
+    "created_at": "2025-08-30T17:08:51.389179"
+  },
+  "100": {
+    "workaround_id": "100",
+    "incident_id": "563",
+    "implemented_by_id": "12",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-05-22T08:16:59.070449",
+    "created_at": "2024-05-22T08:16:59.070449"
+  },
+  "101": {
+    "workaround_id": "101",
+    "incident_id": "564",
+    "implemented_by_id": "74",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2024-11-01T01:42:55.860364",
+    "created_at": "2024-11-01T01:42:55.860364"
+  },
+  "102": {
+    "workaround_id": "102",
+    "incident_id": "571",
+    "implemented_by_id": "63",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-01-20T19:18:01.127361",
+    "created_at": "2025-01-20T19:18:01.127361"
+  },
+  "103": {
+    "workaround_id": "103",
+    "incident_id": "572",
+    "implemented_by_id": "111",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-06-22T03:31:53.589652",
+    "created_at": "2025-06-22T03:31:53.589652"
+  },
+  "104": {
+    "workaround_id": "104",
+    "incident_id": "577",
+    "implemented_by_id": "90",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-07-31T16:57:09.039191",
+    "created_at": "2024-07-31T16:57:09.039191"
+  },
+  "105": {
+    "workaround_id": "105",
+    "incident_id": "579",
+    "implemented_by_id": "22",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-06-24T00:14:33.146907",
+    "created_at": "2025-06-24T00:14:33.146907"
+  },
+  "106": {
+    "workaround_id": "106",
+    "incident_id": "585",
+    "implemented_by_id": "3",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-29T05:30:14.347015",
+    "created_at": "2025-08-29T05:30:14.347015"
+  },
+  "107": {
+    "workaround_id": "107",
+    "incident_id": "589",
+    "implemented_by_id": "20",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-04-29T23:32:50.857270",
+    "created_at": "2025-04-29T23:32:50.857270"
+  },
+  "108": {
+    "workaround_id": "108",
+    "incident_id": "594",
+    "implemented_by_id": "13",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-31T16:46:22.714925",
+    "created_at": "2025-08-31T16:46:22.714925"
+  },
+  "109": {
+    "workaround_id": "109",
+    "incident_id": "608",
+    "implemented_by_id": "92",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-04-04T22:23:51.132418",
+    "created_at": "2025-04-04T22:23:51.132418"
+  },
+  "110": {
+    "workaround_id": "110",
+    "incident_id": "610",
+    "implemented_by_id": "72",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-25T22:27:30.164090",
+    "created_at": "2025-08-25T22:27:30.164090"
+  },
+  "111": {
+    "workaround_id": "111",
+    "incident_id": "612",
+    "implemented_by_id": "106",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-27T20:13:56.914055",
+    "created_at": "2025-08-27T20:13:56.914055"
+  },
+  "112": {
+    "workaround_id": "112",
+    "incident_id": "613",
+    "implemented_by_id": "19",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-28T03:45:33.253005",
+    "created_at": "2025-08-28T03:45:33.253005"
+  },
+  "113": {
+    "workaround_id": "113",
+    "incident_id": "614",
+    "implemented_by_id": "77",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-28T12:25:16.276365",
+    "created_at": "2025-08-28T12:25:16.276365"
+  },
+  "114": {
+    "workaround_id": "114",
+    "incident_id": "618",
+    "implemented_by_id": "41",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-06-21T14:37:27.045408",
+    "created_at": "2025-06-21T14:37:27.045408"
+  },
+  "115": {
+    "workaround_id": "115",
+    "incident_id": "621",
+    "implemented_by_id": "23",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-26T04:40:28.891814",
+    "created_at": "2025-08-26T04:40:28.891814"
+  },
+  "116": {
+    "workaround_id": "116",
+    "incident_id": "632",
+    "implemented_by_id": "72",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-03-13T00:38:22.048974",
+    "created_at": "2024-03-13T00:38:22.048974"
+  },
+  "117": {
+    "workaround_id": "117",
+    "incident_id": "633",
+    "implemented_by_id": "67",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-04-11T07:19:38.872438",
+    "created_at": "2025-04-11T07:19:38.872438"
+  },
+  "118": {
+    "workaround_id": "118",
+    "incident_id": "635",
+    "implemented_by_id": "100",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-26T10:15:43.350591",
+    "created_at": "2025-08-26T10:15:43.350591"
+  },
+  "119": {
+    "workaround_id": "119",
+    "incident_id": "639",
+    "implemented_by_id": "22",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-31T08:46:56.053497",
+    "created_at": "2025-08-31T08:46:56.053497"
+  },
+  "120": {
+    "workaround_id": "120",
+    "incident_id": "651",
+    "implemented_by_id": "79",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-08-26T07:00:39.215063",
+    "created_at": "2025-08-26T07:00:39.215063"
+  },
+  "121": {
+    "workaround_id": "121",
+    "incident_id": "652",
+    "implemented_by_id": "56",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-09-01T00:07:47.465989",
+    "created_at": "2025-09-01T00:07:47.465989"
+  },
+  "122": {
+    "workaround_id": "122",
+    "incident_id": "663",
+    "implemented_by_id": "48",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-06-02T14:45:49.104070",
+    "created_at": "2024-06-02T14:45:49.104070"
+  },
+  "123": {
+    "workaround_id": "123",
+    "incident_id": "664",
+    "implemented_by_id": "10",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-05-22T13:39:32.477920",
+    "created_at": "2025-05-22T13:39:32.477920"
+  },
+  "124": {
+    "workaround_id": "124",
+    "incident_id": "679",
+    "implemented_by_id": "9",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-07-09T11:27:24.060061",
+    "created_at": "2024-07-09T11:27:24.060061"
+  },
+  "125": {
+    "workaround_id": "125",
+    "incident_id": "690",
+    "implemented_by_id": "41",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-07-25T23:04:28.362129",
+    "created_at": "2024-07-25T23:04:28.362129"
+  },
+  "126": {
+    "workaround_id": "126",
+    "incident_id": "697",
+    "implemented_by_id": "90",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-04-03T20:44:47.378360",
+    "created_at": "2024-04-03T20:44:47.378360"
+  },
+  "127": {
+    "workaround_id": "127",
+    "incident_id": "701",
+    "implemented_by_id": "18",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-06-25T20:52:10.120959",
+    "created_at": "2025-06-25T20:52:10.120959"
+  },
+  "128": {
+    "workaround_id": "128",
+    "incident_id": "708",
+    "implemented_by_id": "69",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-08-30T11:13:49.065167",
+    "created_at": "2024-08-30T11:13:49.065167"
+  },
+  "129": {
+    "workaround_id": "129",
+    "incident_id": "710",
+    "implemented_by_id": "41",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-10-31T05:41:49.283191",
+    "created_at": "2024-10-31T05:41:49.283191"
+  },
+  "130": {
+    "workaround_id": "130",
+    "incident_id": "728",
+    "implemented_by_id": "3",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-28T13:02:08.442537",
+    "created_at": "2025-08-28T13:02:08.442537"
+  },
+  "131": {
+    "workaround_id": "131",
+    "incident_id": "730",
+    "implemented_by_id": "63",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-09-05T17:35:37.562433",
+    "created_at": "2024-09-05T17:35:37.562433"
+  },
+  "132": {
+    "workaround_id": "132",
+    "incident_id": "741",
+    "implemented_by_id": "56",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-05-03T12:54:14.569440",
+    "created_at": "2024-05-03T12:54:14.569440"
+  },
+  "133": {
+    "workaround_id": "133",
+    "incident_id": "743",
+    "implemented_by_id": "19",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-06-27T03:55:27.013170",
+    "created_at": "2025-06-27T03:55:27.013170"
+  },
+  "134": {
+    "workaround_id": "134",
+    "incident_id": "761",
+    "implemented_by_id": "117",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-04-27T18:40:08.244210",
+    "created_at": "2024-04-27T18:40:08.244210"
+  },
+  "135": {
+    "workaround_id": "135",
+    "incident_id": "762",
+    "implemented_by_id": "47",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-08-05T04:03:15.486244",
+    "created_at": "2024-08-05T04:03:15.486244"
+  },
+  "136": {
+    "workaround_id": "136",
+    "incident_id": "765",
+    "implemented_by_id": "64",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-01-28T10:33:57.667452",
+    "created_at": "2025-01-28T10:33:57.667452"
+  },
+  "137": {
+    "workaround_id": "137",
+    "incident_id": "774",
+    "implemented_by_id": "72",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-04-22T01:25:40.755353",
+    "created_at": "2024-04-22T01:25:40.755353"
+  },
+  "138": {
+    "workaround_id": "138",
+    "incident_id": "779",
+    "implemented_by_id": "27",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-30T06:21:47.509187",
+    "created_at": "2025-08-30T06:21:47.509187"
+  },
+  "139": {
+    "workaround_id": "139",
+    "incident_id": "787",
+    "implemented_by_id": "38",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-12-15T20:40:25.500926",
+    "created_at": "2024-12-15T20:40:25.500926"
+  },
+  "140": {
+    "workaround_id": "140",
+    "incident_id": "790",
+    "implemented_by_id": "59",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-07-19T11:57:08.944087",
+    "created_at": "2025-07-19T11:57:08.944087"
+  },
+  "141": {
+    "workaround_id": "141",
+    "incident_id": "805",
+    "implemented_by_id": "69",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-06-05T21:13:40.154412",
+    "created_at": "2025-06-05T21:13:40.154412"
+  },
+  "142": {
+    "workaround_id": "142",
+    "incident_id": "808",
+    "implemented_by_id": "69",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-30T04:13:48.312050",
+    "created_at": "2025-08-30T04:13:48.312050"
+  },
+  "143": {
+    "workaround_id": "143",
+    "incident_id": "818",
+    "implemented_by_id": "56",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-08-03T03:21:03.701443",
+    "created_at": "2024-08-03T03:21:03.701443"
+  },
+  "144": {
+    "workaround_id": "144",
+    "incident_id": "825",
+    "implemented_by_id": "75",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-06-17T00:55:50.556751",
+    "created_at": "2025-06-17T00:55:50.556751"
+  },
+  "145": {
+    "workaround_id": "145",
+    "incident_id": "846",
+    "implemented_by_id": "21",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-03-19T22:58:08.872079",
+    "created_at": "2024-03-19T22:58:08.872079"
+  },
+  "146": {
+    "workaround_id": "146",
+    "incident_id": "861",
+    "implemented_by_id": "21",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-08-15T19:32:42.044486",
+    "created_at": "2024-08-15T19:32:42.044486"
+  },
+  "147": {
+    "workaround_id": "147",
+    "incident_id": "873",
+    "implemented_by_id": "106",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-07-21T14:02:54.932834",
+    "created_at": "2025-07-21T14:02:54.932834"
+  },
+  "148": {
+    "workaround_id": "148",
+    "incident_id": "877",
+    "implemented_by_id": "117",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-05-10T01:16:48.946942",
+    "created_at": "2025-05-10T01:16:48.946942"
+  },
+  "149": {
+    "workaround_id": "149",
+    "incident_id": "878",
+    "implemented_by_id": "53",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-29T09:26:42.641806",
+    "created_at": "2025-08-29T09:26:42.641806"
+  },
+  "150": {
+    "workaround_id": "150",
+    "incident_id": "889",
+    "implemented_by_id": "106",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-10-21T10:36:03.417822",
+    "created_at": "2024-10-21T10:36:03.417822"
+  },
+  "151": {
+    "workaround_id": "151",
+    "incident_id": "891",
+    "implemented_by_id": "96",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-05-12T20:18:44.964113",
+    "created_at": "2024-05-12T20:18:44.964113"
+  },
+  "152": {
+    "workaround_id": "152",
+    "incident_id": "894",
+    "implemented_by_id": "92",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-06-26T11:43:13.239764",
+    "created_at": "2024-06-26T11:43:13.239764"
+  },
+  "153": {
+    "workaround_id": "153",
+    "incident_id": "897",
+    "implemented_by_id": "9",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-08-26T09:08:07.327454",
+    "created_at": "2025-08-26T09:08:07.327454"
+  },
+  "154": {
+    "workaround_id": "154",
+    "incident_id": "902",
+    "implemented_by_id": "41",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-07-30T07:47:35.879440",
+    "created_at": "2024-07-30T07:47:35.879440"
+  },
+  "155": {
+    "workaround_id": "155",
+    "incident_id": "903",
+    "implemented_by_id": "18",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-05-22T15:14:25.477638",
+    "created_at": "2025-05-22T15:14:25.477638"
+  },
+  "156": {
+    "workaround_id": "156",
+    "incident_id": "911",
+    "implemented_by_id": "49",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-01-16T19:56:49.836120",
+    "created_at": "2025-01-16T19:56:49.836120"
+  },
+  "157": {
+    "workaround_id": "157",
+    "incident_id": "914",
+    "implemented_by_id": "56",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-03-24T05:12:14.286098",
+    "created_at": "2025-03-24T05:12:14.286098"
+  },
+  "158": {
+    "workaround_id": "158",
+    "incident_id": "915",
+    "implemented_by_id": "51",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-05-11T21:53:18.894271",
+    "created_at": "2025-05-11T21:53:18.894271"
+  },
+  "159": {
+    "workaround_id": "159",
+    "incident_id": "922",
+    "implemented_by_id": "4",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-29T04:51:15.872066",
+    "created_at": "2025-08-29T04:51:15.872066"
+  },
+  "160": {
+    "workaround_id": "160",
+    "incident_id": "924",
+    "implemented_by_id": "72",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-03-05T16:56:50.341146",
+    "created_at": "2025-03-05T16:56:50.341146"
+  },
+  "161": {
+    "workaround_id": "161",
+    "incident_id": "928",
+    "implemented_by_id": "69",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-28T02:31:09.052615",
+    "created_at": "2025-08-28T02:31:09.052615"
+  },
+  "162": {
+    "workaround_id": "162",
+    "incident_id": "935",
+    "implemented_by_id": "41",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-27T06:47:28.913776",
+    "created_at": "2025-08-27T06:47:28.913776"
+  },
+  "163": {
+    "workaround_id": "163",
+    "incident_id": "949",
+    "implemented_by_id": "49",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-05-19T23:21:38.981292",
+    "created_at": "2024-05-19T23:21:38.981292"
+  },
+  "164": {
+    "workaround_id": "164",
+    "incident_id": "953",
+    "implemented_by_id": "110",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-11-27T12:27:49.589664",
+    "created_at": "2024-11-27T12:27:49.589664"
+  },
+  "165": {
+    "workaround_id": "165",
+    "incident_id": "962",
+    "implemented_by_id": "110",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-31T18:31:06.069344",
+    "created_at": "2025-08-31T18:31:06.069344"
+  },
+  "166": {
+    "workaround_id": "166",
+    "incident_id": "974",
+    "implemented_by_id": "31",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-26T01:30:37.121119",
+    "created_at": "2025-08-26T01:30:37.121119"
+  },
+  "167": {
+    "workaround_id": "167",
+    "incident_id": "985",
+    "implemented_by_id": "79",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-26T10:22:51.760014",
+    "created_at": "2025-08-26T10:22:51.760014"
+  },
+  "168": {
+    "workaround_id": "168",
+    "incident_id": "991",
+    "implemented_by_id": "111",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-26T21:03:03.418894",
+    "created_at": "2025-08-26T21:03:03.418894"
+  },
+  "169": {
+    "workaround_id": "169",
+    "incident_id": "996",
+    "implemented_by_id": "63",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-05-24T04:54:33.951902",
+    "created_at": "2024-05-24T04:54:33.951902"
+  },
+  "170": {
+    "workaround_id": "170",
+    "incident_id": "1009",
+    "implemented_by_id": "23",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-28T08:50:32.322331",
+    "created_at": "2025-08-28T08:50:32.322331"
+  },
+  "171": {
+    "workaround_id": "171",
+    "incident_id": "1025",
+    "implemented_by_id": "111",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-12-22T01:07:37.914055",
+    "created_at": "2024-12-22T01:07:37.914055"
+  },
+  "172": {
+    "workaround_id": "172",
+    "incident_id": "1033",
+    "implemented_by_id": "48",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-03-05T08:10:48.798692",
+    "created_at": "2025-03-05T08:10:48.798692"
+  },
+  "173": {
+    "workaround_id": "173",
+    "incident_id": "1034",
+    "implemented_by_id": "12",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-07-05T15:22:35.536333",
+    "created_at": "2025-07-05T15:22:35.536333"
+  },
+  "174": {
+    "workaround_id": "174",
+    "incident_id": "1040",
+    "implemented_by_id": "49",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-25T07:57:28.083632",
+    "created_at": "2025-08-25T07:57:28.083632"
+  },
+  "175": {
+    "workaround_id": "175",
+    "incident_id": "1041",
+    "implemented_by_id": "41",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-29T03:04:21.884506",
+    "created_at": "2025-08-29T03:04:21.884506"
+  },
+  "176": {
+    "workaround_id": "176",
+    "incident_id": "1045",
+    "implemented_by_id": "67",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-07-05T23:28:20.902356",
+    "created_at": "2024-07-05T23:28:20.902356"
+  },
+  "177": {
+    "workaround_id": "177",
+    "incident_id": "1047",
+    "implemented_by_id": "20",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-28T01:03:26.114079",
+    "created_at": "2025-08-28T01:03:26.114079"
+  },
+  "178": {
+    "workaround_id": "178",
+    "incident_id": "1054",
+    "implemented_by_id": "79",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-06-08T10:22:12.444495",
+    "created_at": "2024-06-08T10:22:12.444495"
+  },
+  "179": {
+    "workaround_id": "179",
+    "incident_id": "1061",
+    "implemented_by_id": "26",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-11-09T03:25:25.622390",
+    "created_at": "2024-11-09T03:25:25.622390"
+  },
+  "180": {
+    "workaround_id": "180",
+    "incident_id": "1062",
+    "implemented_by_id": "9",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-09-01T03:43:43.558470",
+    "created_at": "2025-09-01T03:43:43.558470"
+  },
+  "181": {
+    "workaround_id": "181",
+    "incident_id": "1075",
+    "implemented_by_id": "92",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-10-26T06:54:38.975371",
+    "created_at": "2024-10-26T06:54:38.975371"
+  },
+  "182": {
+    "workaround_id": "182",
+    "incident_id": "1079",
+    "implemented_by_id": "62",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-27T20:46:56.808180",
+    "created_at": "2025-08-27T20:46:56.808180"
+  },
+  "183": {
+    "workaround_id": "183",
+    "incident_id": "1081",
+    "implemented_by_id": "64",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-30T08:25:49.074552",
+    "created_at": "2025-08-30T08:25:49.074552"
+  },
+  "184": {
+    "workaround_id": "184",
+    "incident_id": "1082",
+    "implemented_by_id": "63",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-08-31T05:47:11.063853",
+    "created_at": "2025-08-31T05:47:11.063853"
+  },
+  "185": {
+    "workaround_id": "185",
+    "incident_id": "1084",
+    "implemented_by_id": "21",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-09-26T03:22:20.652174",
+    "created_at": "2024-09-26T03:22:20.652174"
+  },
+  "186": {
+    "workaround_id": "186",
+    "incident_id": "1088",
+    "implemented_by_id": "28",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-26T07:45:02.816406",
+    "created_at": "2025-08-26T07:45:02.816406"
+  },
+  "187": {
+    "workaround_id": "187",
+    "incident_id": "1089",
+    "implemented_by_id": "100",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-08-27T12:47:26.481171",
+    "created_at": "2025-08-27T12:47:26.481171"
+  },
+  "188": {
+    "workaround_id": "188",
+    "incident_id": "1090",
+    "implemented_by_id": "19",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-05-11T00:45:12.109688",
+    "created_at": "2024-05-11T00:45:12.109688"
+  },
+  "189": {
+    "workaround_id": "189",
+    "incident_id": "1094",
+    "implemented_by_id": "24",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-07-12T01:58:32.585388",
+    "created_at": "2025-07-12T01:58:32.585388"
+  },
+  "190": {
+    "workaround_id": "190",
+    "incident_id": "1106",
+    "implemented_by_id": "13",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-04-04T13:03:26.354246",
+    "created_at": "2024-04-04T13:03:26.354246"
+  },
+  "191": {
+    "workaround_id": "191",
+    "incident_id": "1108",
+    "implemented_by_id": "63",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-04-26T14:02:03.599877",
+    "created_at": "2025-04-26T14:02:03.599877"
+  },
+  "192": {
+    "workaround_id": "192",
+    "incident_id": "1115",
+    "implemented_by_id": "27",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-06-10T19:52:50.341540",
+    "created_at": "2024-06-10T19:52:50.341540"
+  },
+  "193": {
+    "workaround_id": "193",
+    "incident_id": "1118",
+    "implemented_by_id": "49",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-29T16:06:00.432981",
+    "created_at": "2025-08-29T16:06:00.432981"
+  },
+  "194": {
+    "workaround_id": "194",
+    "incident_id": "1127",
+    "implemented_by_id": "92",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-28T00:58:33.720330",
+    "created_at": "2025-08-28T00:58:33.720330"
+  },
+  "195": {
+    "workaround_id": "195",
+    "incident_id": "1129",
+    "implemented_by_id": "42",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-05-14T15:25:25.285889",
+    "created_at": "2025-05-14T15:25:25.285889"
+  },
+  "196": {
+    "workaround_id": "196",
+    "incident_id": "1135",
+    "implemented_by_id": "3",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-06-26T12:54:44.818137",
+    "created_at": "2025-06-26T12:54:44.818137"
+  },
+  "197": {
+    "workaround_id": "197",
+    "incident_id": "1138",
+    "implemented_by_id": "59",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-29T07:50:16.459375",
+    "created_at": "2025-08-29T07:50:16.459375"
+  },
+  "198": {
+    "workaround_id": "198",
+    "incident_id": "1144",
+    "implemented_by_id": "81",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-07-04T00:38:49.053288",
+    "created_at": "2025-07-04T00:38:49.053288"
+  },
+  "199": {
+    "workaround_id": "199",
+    "incident_id": "1149",
+    "implemented_by_id": "66",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-28T11:58:53.005338",
+    "created_at": "2025-08-28T11:58:53.005338"
+  },
+  "200": {
+    "workaround_id": "200",
+    "incident_id": "1151",
+    "implemented_by_id": "88",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-31T01:16:41.433238",
+    "created_at": "2025-08-31T01:16:41.433238"
+  },
+  "201": {
+    "workaround_id": "201",
+    "incident_id": "1164",
+    "implemented_by_id": "106",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-09-01T00:26:21.986720",
+    "created_at": "2025-09-01T00:26:21.986720"
+  },
+  "202": {
+    "workaround_id": "202",
+    "incident_id": "1167",
+    "implemented_by_id": "22",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-01-20T17:53:16.565508",
+    "created_at": "2025-01-20T17:53:16.565508"
+  },
+  "203": {
+    "workaround_id": "203",
+    "incident_id": "1178",
+    "implemented_by_id": "74",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-05-19T09:13:59.931187",
+    "created_at": "2024-05-19T09:13:59.931187"
+  },
+  "204": {
+    "workaround_id": "204",
+    "incident_id": "1184",
+    "implemented_by_id": "18",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-06-19T21:22:34.545041",
+    "created_at": "2024-06-19T21:22:34.545041"
+  },
+  "205": {
+    "workaround_id": "205",
+    "incident_id": "1187",
+    "implemented_by_id": "49",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-28T03:31:06.571623",
+    "created_at": "2025-08-28T03:31:06.571623"
+  },
+  "206": {
+    "workaround_id": "206",
+    "incident_id": "1189",
+    "implemented_by_id": "91",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-31T15:17:40.999823",
+    "created_at": "2025-08-31T15:17:40.999823"
+  },
+  "207": {
+    "workaround_id": "207",
+    "incident_id": "1190",
+    "implemented_by_id": "102",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-08-31T06:25:20.530888",
+    "created_at": "2024-08-31T06:25:20.530888"
+  },
+  "208": {
+    "workaround_id": "208",
+    "incident_id": "1191",
+    "implemented_by_id": "47",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-05-26T06:43:51.517353",
+    "created_at": "2025-05-26T06:43:51.517353"
+  },
+  "209": {
+    "workaround_id": "209",
+    "incident_id": "1195",
+    "implemented_by_id": "117",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-09-28T13:16:20.022176",
+    "created_at": "2024-09-28T13:16:20.022176"
+  },
+  "210": {
+    "workaround_id": "210",
+    "incident_id": "1199",
+    "implemented_by_id": "63",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-05-24T08:55:50.647844",
+    "created_at": "2025-05-24T08:55:50.647844"
+  },
+  "211": {
+    "workaround_id": "211",
+    "incident_id": "1201",
+    "implemented_by_id": "25",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-27T21:06:13.192572",
+    "created_at": "2025-08-27T21:06:13.192572"
+  },
+  "212": {
+    "workaround_id": "212",
+    "incident_id": "1204",
+    "implemented_by_id": "117",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-06-30T20:04:21.916079",
+    "created_at": "2024-06-30T20:04:21.916079"
+  },
+  "213": {
+    "workaround_id": "213",
+    "incident_id": "1206",
+    "implemented_by_id": "63",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-02-02T19:31:07.480473",
+    "created_at": "2025-02-02T19:31:07.480473"
+  },
+  "214": {
+    "workaround_id": "214",
+    "incident_id": "1225",
+    "implemented_by_id": "75",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-06-10T21:20:40.242756",
+    "created_at": "2025-06-10T21:20:40.242756"
+  },
+  "215": {
+    "workaround_id": "215",
+    "incident_id": "1227",
+    "implemented_by_id": "90",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-06-27T17:40:37.929213",
+    "created_at": "2025-06-27T17:40:37.929213"
+  },
+  "216": {
+    "workaround_id": "216",
+    "incident_id": "1237",
+    "implemented_by_id": "23",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-03-06T00:35:27.160860",
+    "created_at": "2025-03-06T00:35:27.160860"
+  },
+  "217": {
+    "workaround_id": "217",
+    "incident_id": "1256",
+    "implemented_by_id": "20",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-04-17T00:58:30.894366",
+    "created_at": "2025-04-17T00:58:30.894366"
+  },
+  "218": {
+    "workaround_id": "218",
+    "incident_id": "1259",
+    "implemented_by_id": "26",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-26T19:49:58.027995",
+    "created_at": "2025-08-26T19:49:58.027995"
+  },
+  "219": {
+    "workaround_id": "219",
+    "incident_id": "1262",
+    "implemented_by_id": "96",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-31T13:47:50.062933",
+    "created_at": "2025-08-31T13:47:50.062933"
+  },
+  "220": {
+    "workaround_id": "220",
+    "incident_id": "1269",
+    "implemented_by_id": "69",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-08-30T23:55:57.805215",
+    "created_at": "2025-08-30T23:55:57.805215"
+  },
+  "221": {
+    "workaround_id": "221",
+    "incident_id": "1280",
+    "implemented_by_id": "72",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-10-11T23:13:52.316514",
+    "created_at": "2024-10-11T23:13:52.316514"
+  },
+  "222": {
+    "workaround_id": "222",
+    "incident_id": "1286",
+    "implemented_by_id": "18",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-06-03T15:31:16.924216",
+    "created_at": "2024-06-03T15:31:16.924216"
+  },
+  "223": {
+    "workaround_id": "223",
+    "incident_id": "1289",
+    "implemented_by_id": "111",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-31T15:09:23.231924",
+    "created_at": "2025-08-31T15:09:23.231924"
+  },
+  "224": {
+    "workaround_id": "224",
+    "incident_id": "1290",
+    "implemented_by_id": "90",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2024-06-23T12:03:30.409029",
+    "created_at": "2024-06-23T12:03:30.409029"
+  },
+  "225": {
+    "workaround_id": "225",
+    "incident_id": "1294",
+    "implemented_by_id": "67",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2024-04-27T00:27:44.018626",
+    "created_at": "2024-04-27T00:27:44.018626"
+  },
+  "226": {
+    "workaround_id": "226",
+    "incident_id": "1308",
+    "implemented_by_id": "59",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-26T11:02:57.351704",
+    "created_at": "2025-08-26T11:02:57.351704"
+  },
+  "227": {
+    "workaround_id": "227",
+    "incident_id": "1313",
+    "implemented_by_id": "41",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-01-27T01:52:58.547438",
+    "created_at": "2025-01-27T01:52:58.547438"
+  },
+  "228": {
+    "workaround_id": "228",
+    "incident_id": "1314",
+    "implemented_by_id": "114",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-05-13T12:01:45.416588",
+    "created_at": "2025-05-13T12:01:45.416588"
+  },
+  "229": {
+    "workaround_id": "229",
+    "incident_id": "1328",
+    "implemented_by_id": "48",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-02-28T10:29:58.476539",
+    "created_at": "2025-02-28T10:29:58.476539"
+  },
+  "230": {
+    "workaround_id": "230",
+    "incident_id": "1336",
+    "implemented_by_id": "64",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-30T16:35:31.778349",
+    "created_at": "2025-08-30T16:35:31.778349"
+  },
+  "231": {
+    "workaround_id": "231",
+    "incident_id": "1345",
+    "implemented_by_id": "42",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-29T04:57:08.795859",
+    "created_at": "2025-08-29T04:57:08.795859"
+  },
+  "232": {
+    "workaround_id": "232",
+    "incident_id": "1347",
+    "implemented_by_id": "92",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-08-30T06:40:13.970244",
+    "created_at": "2025-08-30T06:40:13.970244"
+  },
+  "233": {
+    "workaround_id": "233",
+    "incident_id": "1364",
+    "implemented_by_id": "110",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-28T12:01:32.690346",
+    "created_at": "2025-08-28T12:01:32.690346"
+  },
+  "234": {
+    "workaround_id": "234",
+    "incident_id": "1366",
+    "implemented_by_id": "48",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-09-17T05:26:57.420736",
+    "created_at": "2024-09-17T05:26:57.420736"
+  },
+  "235": {
+    "workaround_id": "235",
+    "incident_id": "1372",
+    "implemented_by_id": "28",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-30T23:57:07.045085",
+    "created_at": "2025-08-30T23:57:07.045085"
+  },
+  "236": {
+    "workaround_id": "236",
+    "incident_id": "1381",
+    "implemented_by_id": "71",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-03-19T14:49:37.188960",
+    "created_at": "2025-03-19T14:49:37.188960"
+  },
+  "237": {
+    "workaround_id": "237",
+    "incident_id": "1387",
+    "implemented_by_id": "41",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-26T04:32:37.976339",
+    "created_at": "2025-08-26T04:32:37.976339"
+  },
+  "238": {
+    "workaround_id": "238",
+    "incident_id": "1408",
+    "implemented_by_id": "27",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-04-21T18:04:42.655032",
+    "created_at": "2025-04-21T18:04:42.655032"
+  },
+  "239": {
+    "workaround_id": "239",
+    "incident_id": "1409",
+    "implemented_by_id": "91",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-06-18T17:03:55.329883",
+    "created_at": "2025-06-18T17:03:55.329883"
+  },
+  "240": {
+    "workaround_id": "240",
+    "incident_id": "1412",
+    "implemented_by_id": "41",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-28T21:23:11.307027",
+    "created_at": "2025-08-28T21:23:11.307027"
+  },
+  "241": {
+    "workaround_id": "241",
+    "incident_id": "1416",
+    "implemented_by_id": "111",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-02-19T04:09:45.720340",
+    "created_at": "2025-02-19T04:09:45.720340"
+  },
+  "242": {
+    "workaround_id": "242",
+    "incident_id": "1418",
+    "implemented_by_id": "72",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-27T14:49:48.340019",
+    "created_at": "2025-08-27T14:49:48.340019"
+  },
+  "243": {
+    "workaround_id": "243",
+    "incident_id": "1429",
+    "implemented_by_id": "49",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-04-27T15:12:32.303043",
+    "created_at": "2024-04-27T15:12:32.303043"
+  },
+  "244": {
+    "workaround_id": "244",
+    "incident_id": "1435",
+    "implemented_by_id": "79",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-06-17T14:18:38.746129",
+    "created_at": "2024-06-17T14:18:38.746129"
+  },
+  "245": {
+    "workaround_id": "245",
+    "incident_id": "1447",
+    "implemented_by_id": "59",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-09-27T02:57:02.247411",
+    "created_at": "2024-09-27T02:57:02.247411"
+  },
+  "246": {
+    "workaround_id": "246",
+    "incident_id": "1448",
+    "implemented_by_id": "20",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-11-09T00:46:20.804445",
+    "created_at": "2024-11-09T00:46:20.804445"
+  },
+  "247": {
+    "workaround_id": "247",
+    "incident_id": "1460",
+    "implemented_by_id": "47",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-03-22T11:53:18.961533",
+    "created_at": "2025-03-22T11:53:18.961533"
+  },
+  "248": {
+    "workaround_id": "248",
+    "incident_id": "1467",
+    "implemented_by_id": "110",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-01-30T16:58:27.368160",
+    "created_at": "2025-01-30T16:58:27.368160"
+  },
+  "249": {
+    "workaround_id": "249",
+    "incident_id": "1473",
+    "implemented_by_id": "64",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-10-03T11:24:37.098722",
+    "created_at": "2024-10-03T11:24:37.098722"
+  },
+  "250": {
+    "workaround_id": "250",
+    "incident_id": "1498",
+    "implemented_by_id": "42",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2024-08-29T23:23:53.580088",
+    "created_at": "2024-08-29T23:23:53.580088"
+  },
+  "251": {
+    "workaround_id": "251",
+    "incident_id": "1506",
+    "implemented_by_id": "19",
+    "effectiveness": "minimal",
+    "status": "active",
+    "implemented_at": "2025-08-25T14:29:42.229426",
+    "created_at": "2025-08-25T14:29:42.229426"
+  },
+  "252": {
+    "workaround_id": "252",
+    "incident_id": "1530",
+    "implemented_by_id": "9",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-08-26T15:15:35.484411",
+    "created_at": "2025-08-26T15:15:35.484411"
+  },
+  "253": {
+    "workaround_id": "253",
+    "incident_id": "1537",
+    "implemented_by_id": "22",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-06-01T08:02:12.983893",
+    "created_at": "2025-06-01T08:02:12.983893"
+  },
+  "254": {
+    "workaround_id": "254",
+    "incident_id": "1538",
+    "implemented_by_id": "13",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-06-05T14:01:50.301280",
+    "created_at": "2025-06-05T14:01:50.301280"
+  },
+  "255": {
+    "workaround_id": "255",
+    "incident_id": "1543",
+    "implemented_by_id": "117",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2024-11-06T07:39:21.279489",
+    "created_at": "2024-11-06T07:39:21.279489"
+  },
+  "256": {
+    "workaround_id": "256",
+    "incident_id": "1544",
+    "implemented_by_id": "13",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-02-14T10:16:32.533887",
+    "created_at": "2025-02-14T10:16:32.533887"
+  },
+  "257": {
+    "workaround_id": "257",
+    "incident_id": "1547",
+    "implemented_by_id": "59",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-29T11:47:36.742558",
+    "created_at": "2025-08-29T11:47:36.742558"
+  },
+  "258": {
+    "workaround_id": "258",
+    "incident_id": "1548",
+    "implemented_by_id": "110",
+    "effectiveness": "partial",
+    "status": "active",
+    "implemented_at": "2025-08-30T14:21:05.916182",
+    "created_at": "2025-08-30T14:21:05.916182"
+  },
+  "259": {
+    "workaround_id": "259",
+    "incident_id": "1550",
+    "implemented_by_id": "41",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-06-02T23:01:33.026883",
+    "created_at": "2024-06-02T23:01:33.026883"
+  },
+  "260": {
+    "workaround_id": "260",
+    "incident_id": "1551",
+    "implemented_by_id": "27",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-09-30T05:39:58.732968",
+    "created_at": "2024-09-30T05:39:58.732968"
+  },
+  "261": {
+    "workaround_id": "261",
+    "incident_id": "1565",
+    "implemented_by_id": "13",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-05-07T14:11:07.374841",
+    "created_at": "2025-05-07T14:11:07.374841"
+  },
+  "262": {
+    "workaround_id": "262",
+    "incident_id": "1569",
+    "implemented_by_id": "66",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-29T19:06:25.374238",
+    "created_at": "2025-08-29T19:06:25.374238"
+  },
+  "263": {
+    "workaround_id": "263",
+    "incident_id": "1571",
+    "implemented_by_id": "26",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2024-05-24T19:48:18.457662",
+    "created_at": "2024-05-24T19:48:18.457662"
+  },
+  "264": {
+    "workaround_id": "264",
+    "incident_id": "1595",
+    "implemented_by_id": "41",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2025-08-25T03:50:19.259635",
+    "created_at": "2025-08-25T03:50:19.259635"
+  },
+  "265": {
+    "workaround_id": "265",
+    "incident_id": "1605",
+    "implemented_by_id": "79",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2025-08-30T01:38:59.394228",
+    "created_at": "2025-08-30T01:38:59.394228"
+  },
+  "266": {
+    "workaround_id": "266",
+    "incident_id": "1612",
+    "implemented_by_id": "20",
+    "effectiveness": "partial",
+    "status": "inactive",
+    "implemented_at": "2025-05-06T16:28:41.483640",
+    "created_at": "2025-05-06T16:28:41.483640"
+  },
+  "267": {
+    "workaround_id": "267",
+    "incident_id": "1616",
+    "implemented_by_id": "42",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-11-09T16:29:57.311008",
+    "created_at": "2024-11-09T16:29:57.311008"
+  },
+  "268": {
+    "workaround_id": "268",
+    "incident_id": "1619",
+    "implemented_by_id": "69",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-31T09:24:14.016148",
+    "created_at": "2025-08-31T09:24:14.016148"
+  },
+  "269": {
+    "workaround_id": "269",
+    "incident_id": "1623",
+    "implemented_by_id": "66",
+    "effectiveness": "complete",
+    "status": "active",
+    "implemented_at": "2025-08-28T00:01:19.510245",
+    "created_at": "2025-08-28T00:01:19.510245"
+  },
+  "270": {
+    "workaround_id": "270",
+    "incident_id": "1625",
+    "implemented_by_id": "106",
+    "effectiveness": "complete",
+    "status": "replaced",
+    "implemented_at": "2025-04-12T18:06:02.887750",
+    "created_at": "2025-04-12T18:06:02.887750"
+  },
+  "271": {
+    "workaround_id": "271",
+    "incident_id": "1632",
+    "implemented_by_id": "91",
+    "effectiveness": "complete",
+    "status": "inactive",
+    "implemented_at": "2024-12-16T12:14:04.507091",
+    "created_at": "2024-12-16T12:14:04.507091"
+  },
+  "272": {
+    "workaround_id": "272",
+    "incident_id": "1642",
+    "implemented_by_id": "38",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2025-08-27T16:41:53.747892",
+    "created_at": "2025-08-27T16:41:53.747892"
+  },
+  "273": {
+    "workaround_id": "273",
+    "incident_id": "1646",
+    "implemented_by_id": "25",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-07-31T17:32:11.636519",
+    "created_at": "2024-07-31T17:32:11.636519"
+  },
+  "274": {
+    "workaround_id": "274",
+    "incident_id": "1649",
+    "implemented_by_id": "117",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-02-11T11:46:30.012298",
+    "created_at": "2025-02-11T11:46:30.012298"
+  },
+  "275": {
+    "workaround_id": "275",
+    "incident_id": "1652",
+    "implemented_by_id": "119",
+    "effectiveness": "minimal",
+    "status": "replaced",
+    "implemented_at": "2025-08-31T16:06:34.289934",
+    "created_at": "2025-08-31T16:06:34.289934"
+  },
+  "276": {
+    "workaround_id": "276",
+    "incident_id": "1653",
+    "implemented_by_id": "56",
+    "effectiveness": "partial",
+    "status": "replaced",
+    "implemented_at": "2024-10-08T14:57:03.355411",
+    "created_at": "2024-10-08T14:57:03.355411"
+  },
+  "277": {
+    "workaround_id": "277",
+    "incident_id": "1654",
+    "implemented_by_id": "81",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-12-22T03:38:03.660533",
+    "created_at": "2024-12-22T03:38:03.660533"
+  },
+  "278": {
+    "workaround_id": "278",
+    "incident_id": "1668",
+    "implemented_by_id": "19",
+    "effectiveness": "minimal",
+    "status": "inactive",
+    "implemented_at": "2024-12-13T03:53:31.203769",
+    "created_at": "2024-12-13T03:53:31.203769"
+  }
+}
