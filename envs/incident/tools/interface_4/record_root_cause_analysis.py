@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 class RecordRootCauseAnalysis(Tool):
@@ -9,8 +9,7 @@ class RecordRootCauseAnalysis(Tool):
         incident_id: str,
         conducted_by_id: str,
         analysis_method: str,
-        status: str = "in_progress",
-        planned_completion: str = None
+        status: str = "in_progress"
     ) -> str:
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
@@ -38,9 +37,7 @@ class RecordRootCauseAnalysis(Tool):
                 "conducted_by_id": conducted_by_id,
                 "completed_at": None,
                 "status": status,
-                "created_at": timestamp,
-                # Extra planning field for agent convenience (not in strict SQL schema but useful in-memory)
-                "planned_completion": planned_completion
+                "created_at": timestamp
             }
 
             rcas[rca_id] = new_rca
@@ -54,15 +51,14 @@ class RecordRootCauseAnalysis(Tool):
             "type": "function",
             "function": {
                 "name": "record_root_cause_analysis",
-                "description": "Create an RCA record; sets created_at; optionally stores planned completion",
+                "description": "Create an RCA record; sets created_at",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "incident_id": {"type": "string"},
                         "conducted_by_id": {"type": "string"},
                         "analysis_method": {"type": "string", "description": "five_whys|fishbone|timeline_analysis|fault_tree"},
-                        "status": {"type": "string", "description": "in_progress|completed|approved (default in_progress)"},
-                        "planned_completion": {"type": "string", "description": "ISO timestamp target date (optional)"}
+                        "status": {"type": "string", "description": "in_progress|completed|approved (default in_progress)"}
                     },
                     "required": ["incident_id","conducted_by_id","analysis_method"]
                 }

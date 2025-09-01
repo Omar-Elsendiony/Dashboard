@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 class LogCommunication(Tool):
@@ -11,8 +11,7 @@ class LogCommunication(Tool):
         recipient_type: str,
         communication_type: str,
         recipient_id: str = None,
-        delivery_status: str = "sent",
-        metadata: Dict[str, Any] = None
+        delivery_status: str = "sent"
     ) -> str:
         def generate_id(table: Dict[str, Any]) -> str:
             if not table:
@@ -46,8 +45,7 @@ class LogCommunication(Tool):
                 "communication_type": communication_type,
                 "sent_at": timestamp,           # NOW surrogate
                 "delivery_status": delivery_status,
-                "created_at": timestamp,
-                "metadata": metadata
+                "created_at": timestamp
             }
 
             communications[communication_id] = new_comm
@@ -70,8 +68,7 @@ class LogCommunication(Tool):
                         "recipient_type": {"type": "string", "description": "client|internal_team|executive|vendor|regulatory"},
                         "communication_type": {"type": "string", "description": "email|sms|phone_call|status_page|portal_update"},
                         "recipient_id": {"type": "string"},
-                        "delivery_status": {"type": "string", "description": "sent|delivered|failed|pending (default sent)"},
-                        "metadata": {"type": "object", "description": "Optional metadata such as subject, channel IDs, etc."}
+                        "delivery_status": {"type": "string", "description": "sent|delivered|failed|pending (default sent)"}
                     },
                     "required": ["incident_id","sender_id","recipient_type","communication_type"]
                 }

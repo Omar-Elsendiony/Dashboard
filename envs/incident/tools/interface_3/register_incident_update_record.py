@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class RegisterIncidentRecord(Tool):
+class RegisterIncidentUpdateRecord(Tool):
     """
     Create an audit record in incident_updates documenting an incident change.
     Does NOT modify the incident itself. No ID existence validations (agent handles that).
@@ -57,7 +57,7 @@ class RegisterIncidentRecord(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "register_incident_record",
+                "name": "register_incident_update_record",
                 "description": "Create an audit record in incident_updates documenting an incident change. Does not modify the incident.",
                 "parameters": {
                     "type": "object",

@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 class RecordChangeRequest(Tool):
@@ -47,7 +47,8 @@ class RecordChangeRequest(Tool):
                 "actual_start": None,
                 "actual_end": None,
                 "status": "requested",
-                "created_at": timestamp
+                "created_at": timestamp,
+                "updated_at": timestamp  # same as created_at on insert
             }
 
             changes[change_id] = new_change
@@ -61,7 +62,7 @@ class RecordChangeRequest(Tool):
             "type": "function",
             "function": {
                 "name": "record_change_request",
-                "description": "Create a change request; default status 'requested'; sets created_at",
+                "description": "Create a change request; default status 'requested'; sets created_at and updated_at",
                 "parameters": {
                     "type": "object",
                     "properties": {

@@ -23,7 +23,7 @@ from .amend_workaround import AmendWorkaround
 from .register_root_cause_analysis import RegisterRootCauseAnalysis
 from .amend_root_cause_analysis import AmendRootCauseAnalysis
 from .register_change_request import RegisterChangeRequest
-from .register_incident_record import RegisterIncidentRecord
+from .register_incident_update_record import RegisterIncidentUpdateRecord
 
 ALL_TOOLS_INTERFACE_3 = [
     # GET
@@ -50,5 +50,5 @@ ALL_TOOLS_INTERFACE_3 = [
     RegisterRootCauseAnalysis,
     AmendRootCauseAnalysis,
     RegisterChangeRequest,
-    RegisterIncidentRecord,
+    RegisterIncidentUpdateRecord,
 ]

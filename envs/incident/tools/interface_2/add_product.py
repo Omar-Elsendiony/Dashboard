@@ -10,7 +10,6 @@ class AddProduct(Tool):
         product_type: str,
         version: str,
         vendor_support_id: str = None,
-        internal_team_lead_id: str = None,
         status: str = "active"
     ) -> str:
         def generate_id(table: Dict[str, Any]) -> str:
@@ -42,7 +41,6 @@ class AddProduct(Tool):
                 "product_type": product_type,
                 "version":  version,
                 "vendor_support_id": vendor_support_id,
-                "internal_team_lead_id": internal_team_lead_id,
                 "status": status,
                 "created_at": timestamp,
                 "updated_at": timestamp
@@ -67,7 +65,6 @@ class AddProduct(Tool):
                         "product_type": {"type": "string", "description": "payment_processing|banking_system|api_gateway|data_integration|reporting_platform|security_service|backup_service|monitoring_tool"},
                         "version": {"type": "string"},
                         "vendor_support_id": {"type": "string"},
-                        "internal_team_lead_id": {"type": "string"},
                         "status": {"type": "string", "description": "active|deprecated|maintenance (default active)"}
                     },
                     "required": ["product_name", "product_type", "version"]
