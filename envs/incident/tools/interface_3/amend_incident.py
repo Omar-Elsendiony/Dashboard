@@ -39,7 +39,7 @@ class AmendIncident(Tool):
         if urgency is not None and urgency not in valid_level:
             return json.dumps({"success": False, "error": f"Invalid urgency. Must be one of {sorted(valid_level)}"})
 
-        ts = "2025-10-01T00:00:00"
+        ts = "2025-09-02T23:59:59"
 
         # Apply changes (no audit rows here)
         if status is not None:

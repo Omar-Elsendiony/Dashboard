@@ -59,7 +59,7 @@ class LogMetric(Tool):
                 return json.dumps({"success": False, "error": "value_minutes is required for this metric_type or cannot be computed automatically"})
 
             metric_id = generate_id(metrics)
-            timestamp = "2025-10-01T00:00:00"
+            timestamp = "2025-09-02T23:59:59"
 
             new_metric = {
                 "metric_id": metric_id,

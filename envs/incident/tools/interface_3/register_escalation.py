@@ -35,7 +35,7 @@ class RegisterEscalation(Tool):
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
 
             escalation_id = generate_id(escalations)
-            timestamp = "2025-10-01T00:00:00"
+            timestamp = "2025-09-02T23:59:59"
 
             new_escalation = {
                 "escalation_id": escalation_id,

@@ -34,7 +34,7 @@ class RegisterCommunication(Tool):
                 return json.dumps({"success": False, "error": f"Invalid delivery_status. Must be one of {sorted(valid_delivery)}"})
 
             communication_id = generate_id(communications)
-            timestamp = "2025-10-01T00:00:00"
+            timestamp = "2025-09-02T23:59:59"
 
             new_comm = {
                 "communication_id": communication_id,

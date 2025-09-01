@@ -49,6 +49,73 @@ If none of the P1/P2/P3 conditions apply, set severity as **P4**.
 - Associate with specified client and reporter.  
 - Create incident record with determined severity level and return incident identifier
 
+### Updating Incident Status
+When to use: When incident conditions change requiring status modifications or progress updates.  
+Who can perform: Incident managers, technical support, executive  
+Pre-checks:
+- Verify incident exists and is accessible to user
+- Check user's role allows incident modifications
+
+Steps:
+- Retrieve current incident record
+- Collect specific status changes or field updates needed
+- Check that new status value matches allowed enum values (if there is any)
+- Create incident update record(s) documenting the change(s) along with logging the user who conducted the change
+- Apply changes to incident with the user identifier
+- Return updated incident information
+
+
+#### subscription tier values and metrics
+**Premium Tier**
+Target clients: Enterprise customers with mission-critical operations
+Response times by severity:
+- P1 (Critical): 15-30 minutes initial response
+- P2 (High): 1-2 hours initial response
+- P3 (Medium): 4-8 hours initial response
+- P4 (Low): 24-48 hours initial response
+
+Resolution times:
+- P1: 2-4 hours resolution target
+- P2: 8-24 hours resolution target
+- P3: 48-72 hours resolution target
+- P4: 128 hours resolution target
+Availability guarantee: 99.9% uptime
+Support coverage: 24/7/365
+
+**Standard Tier**
+Target clients: Mid-market businesses with important but less critical operations
+Response times by severity:
+- P1: 1-2 hours initial response
+- P2: 4-8 hours initial response
+- P3: 24 hours initial response
+- P4: 48-72 hours initial response
+
+Resolution times:
+- P1: 8-24 hours resolution target
+- P2: 24-48 hours resolution target
+- P3: 72-120 hours resolution target
+- P4: 168 hours resolution target
+Availability guarantee: 99.5% uptime
+Support coverage: Business hours with on-call for critical issues
+
+**Basic Tier**
+
+Target clients: Small businesses and startups with standard operational needs
+Response times by severity:
+- P1: 4-8 hours initial response
+- P2: 24 hours initial response
+- P3: 48-72 hours initial response
+- P4: 5-7 business days initial response
+
+Resolution times:
+- P1: 24-48 hours resolution target
+- P2: 72-120 hours resolution target
+- P3: 5-10 business days resolution target
+- P4: 2 weeks
+
+Availability guarantee: 99.0% uptime
+Support coverage: Business hours only
+
 
 ## Change Management Operations
 
@@ -62,7 +129,7 @@ Pre-checks:
 
 Steps:
 - Collect change details including title, type, and risk level
-- Set requested timestamp to "2025-10-01T00:00:00"
+- Set requested timestamp to "2025-09-02T23:59:59"
 - Record requesting user from current session
 - Create change request record with incident linkage if applicable
 - Set initial status as requested and return change identifier
@@ -78,7 +145,7 @@ Pre-checks:
 Steps:
 - Collect rollback justification and scope details
 - Link rollback to original change request record
-- Set requested timestamp to "2025-10-01T00:00:00"
+- Set requested timestamp to "2025-09-02T23:59:59"
 - Create rollback request record with proper associations
 - Set initial status as requested and return rollback identifier
 
@@ -94,7 +161,7 @@ Pre-checks:
 
 Steps:
 - Collect workaround description and effectiveness assessment
-- Set implementation timestamp to "2025-10-01T00:00:00"
+- Set implementation timestamp to "2025-09-02T23:59:59"
 - Record implementing user from current session
 - Create workaround record linked to incident
 - Set status as active and return workaround identifier
@@ -109,7 +176,7 @@ Pre-checks:
 
 Steps:
 - Collect analysis method selection and timeline
-- Set analysis initiation timestamp to "2025-10-01T00:00:00"
+- Set analysis initiation timestamp to "2025-09-02T23:59:59"
 - Create root cause analysis record linked to incident
 - Set status as in progress
 - Return analysis identifier for tracking progress
@@ -127,7 +194,7 @@ Pre-checks:
 Steps:
 - Collect communication details including type, recipient, and delivery method
 - Check that sender and recipient (if specified) exist
-- Set sent timestamp to "2025-10-01T00:00:00"
+- Set sent timestamp to "2025-09-02T23:59:59"
 - Create communication record linked to incident
 - Set initial delivery status and return communication identifier
 

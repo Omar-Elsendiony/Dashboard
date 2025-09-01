@@ -41,7 +41,7 @@ class ReviseKnowledgeBaseArticle(Tool):
             if view_count is not None: a["view_count"] = view_count
             if status is not None: a["status"] = status
 
-            a["updated_at"] = "2025-10-01T00:00:00"
+            a["updated_at"] = "2025-09-02T23:59:59"
             return json.dumps(a)
         except Exception as e:
             return json.dumps({"success": False, "error": str(e)})

@@ -32,7 +32,7 @@ class RegisterChangeRequest(Tool):
                 return json.dumps({"success": False, "error": f"Invalid risk_level. Must be one of {sorted(valid_risk)}"})
 
             change_id = generate_id(changes)
-            timestamp = "2025-10-01T00:00:00"
+            timestamp = "2025-09-02T23:59:59"
 
             new_change = {
                 "change_id": change_id,

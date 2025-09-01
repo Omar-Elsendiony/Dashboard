@@ -24,7 +24,7 @@ class RecordRollbackRequest(Tool):
                 return json.dumps({"success": False, "error": f"Invalid status. Must be one of {sorted(valid_status)}"})
 
             rollback_id = generate_id(rollbacks)
-            timestamp = "2025-10-01T00:00:00"
+            timestamp = "2025-09-02T23:59:59"
 
             new_rb = {
                 "rollback_id": rollback_id,

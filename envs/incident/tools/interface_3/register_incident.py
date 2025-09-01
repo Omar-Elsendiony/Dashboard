@@ -76,7 +76,7 @@ class RegisterIncident(Tool):
             if sev == "__INVALID__":
                 return json.dumps({"success": False, "error": "Invalid severity. Must be one of ['P1','P2','P3','P4']"})
 
-            ts = "2025-10-01T00:00:00"
+            ts = "2025-09-02T23:59:59"
             incident_id = generate_id(incidents)
 
             new_incident = {

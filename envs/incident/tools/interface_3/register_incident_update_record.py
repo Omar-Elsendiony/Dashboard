@@ -37,7 +37,7 @@ class RegisterIncidentUpdateRecord(Tool):
             return str(max([int(k) for k in table.keys()] + [0]) + 1)
 
         update_id = generate_id(updates)
-        timestamp = "2025-10-01T00:00:00"  # fixed timestamp for create APIs
+        timestamp = "2025-09-02T23:59:59"  # fixed timestamp for create APIs
 
         updates[update_id] = {
             "update_id": update_id,

@@ -45,7 +45,7 @@ class ModifyComponent(Tool):
             if port_number is not None: c["port_number"] = port_number
             if status is not None: c["status"] = status
 
-            c["updated_at"] = "2025-10-01T00:00:00"
+            c["updated_at"] = "2025-09-02T23:59:59"
             return json.dumps(c)
         except Exception as e:
             return json.dumps({"success": False, "error": str(e)})
