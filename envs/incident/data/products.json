@@ -1,0 +1,1342 @@
+{
+  "1": {
+    "product_id": "1",
+    "product_name": "VMwere Stratus Matrix",
+    "product_type": "monitoring_tool",
+    "version": "2.2.6",
+    "vendor_support_id": "1",
+    "status": "maintenance",
+    "created_at": "2024-03-11T10:10:45",
+    "updated_at": "2024-10-18T22:11:36"
+  },
+  "2": {
+    "product_id": "2",
+    "product_name": "Azurian Core Flow",
+    "product_type": "api_gateway",
+    "version": "2.5.1",
+    "vendor_support_id": "2",
+    "status": "maintenance",
+    "created_at": "2024-08-03T15:10:34",
+    "updated_at": "2025-04-04T17:03:06"
+  },
+  "3": {
+    "product_id": "3",
+    "product_name": "Symantix Apex Engine",
+    "product_type": "security_service",
+    "version": "3.8.7",
+    "vendor_support_id": "3",
+    "status": "active",
+    "created_at": "2025-06-12T06:13:03",
+    "updated_at": "2025-07-09T00:02:16"
+  },
+  "4": {
+    "product_id": "4",
+    "product_name": "Symantix Pulse Service",
+    "product_type": "security_service",
+    "version": "1.2.9",
+    "vendor_support_id": "3",
+    "status": "active",
+    "created_at": "2024-06-26T06:48:50",
+    "updated_at": "2024-07-25T00:05:37"
+  },
+  "5": {
+    "product_id": "5",
+    "product_name": "CrowdStrik3 Lumen Hub",
+    "product_type": "monitoring_tool",
+    "version": "4.1.4",
+    "vendor_support_id": "4",
+    "status": "active",
+    "created_at": "2023-11-16T12:53:02",
+    "updated_at": "2023-12-10T03:58:45"
+  },
+  "6": {
+    "product_id": "6",
+    "product_name": "IBM Vector Flow",
+    "product_type": "data_integration",
+    "version": "1.9.1",
+    "vendor_support_id": "6",
+    "status": "maintenance",
+    "created_at": "2024-09-06T15:15:19",
+    "updated_at": "2024-12-31T17:35:15"
+  },
+  "7": {
+    "product_id": "7",
+    "product_name": "IBM Catalyst Hub",
+    "product_type": "backup_service",
+    "version": "3.3.8",
+    "vendor_support_id": "6",
+    "status": "deprecated",
+    "created_at": "2024-10-15T14:06:15",
+    "updated_at": "2025-01-09T19:44:48"
+  },
+  "8": {
+    "product_id": "8",
+    "product_name": "Orcale Stream Suite",
+    "product_type": "backup_service",
+    "version": "3.3.1",
+    "vendor_support_id": "7",
+    "status": "active",
+    "created_at": "2025-02-20T22:13:04",
+    "updated_at": "2025-04-20T08:39:49"
+  },
+  "9": {
+    "product_id": "9",
+    "product_name": "SalesForza Vector Fabric",
+    "product_type": "reporting_platform",
+    "version": "2.8.0",
+    "vendor_support_id": "8",
+    "status": "active",
+    "created_at": "2025-08-31T04:02:46",
+    "updated_at": "2025-08-31T22:19:15"
+  },
+  "10": {
+    "product_id": "10",
+    "product_name": "Klarno Horizon Suite",
+    "product_type": "api_gateway",
+    "version": "5.0.7",
+    "vendor_support_id": "9",
+    "status": "maintenance",
+    "created_at": "2024-06-07T21:38:39",
+    "updated_at": "2024-10-11T12:34:34"
+  },
+  "11": {
+    "product_id": "11",
+    "product_name": "Worldpayz Core Hub",
+    "product_type": "api_gateway",
+    "version": "3.9.5",
+    "vendor_support_id": "10",
+    "status": "maintenance",
+    "created_at": "2024-02-14T00:58:21",
+    "updated_at": "2024-07-01T09:07:21"
+  },
+  "12": {
+    "product_id": "12",
+    "product_name": "Worldpayz Stream Fabric",
+    "product_type": "api_gateway",
+    "version": "4.7.6",
+    "vendor_support_id": "10",
+    "status": "active",
+    "created_at": "2025-08-26T08:31:21",
+    "updated_at": "2025-08-29T02:56:34"
+  },
+  "13": {
+    "product_id": "13",
+    "product_name": "Squarix Stratus Cloud",
+    "product_type": "payment_processing",
+    "version": "2.5.7",
+    "vendor_support_id": "11",
+    "status": "active",
+    "created_at": "2024-02-04T17:56:46",
+    "updated_at": "2024-07-26T12:26:01"
+  },
+  "14": {
+    "product_id": "14",
+    "product_name": "Microcraft Apex Flow",
+    "product_type": "banking_system",
+    "version": "2.0.5",
+    "vendor_support_id": "12",
+    "status": "active",
+    "created_at": "2025-08-13T17:45:57",
+    "updated_at": "2025-08-29T21:54:37"
+  },
+  "15": {
+    "product_id": "15",
+    "product_name": "Microcraft Zenith Service",
+    "product_type": "data_integration",
+    "version": "2.2.3",
+    "vendor_support_id": "12",
+    "status": "active",
+    "created_at": "2024-12-29T23:02:34",
+    "updated_at": "2025-08-30T01:17:43"
+  },
+  "16": {
+    "product_id": "16",
+    "product_name": "Symantix Nimbus Portal",
+    "product_type": "security_service",
+    "version": "5.9.8",
+    "vendor_support_id": "13",
+    "status": "active",
+    "created_at": "2023-11-15T13:31:41",
+    "updated_at": "2024-08-30T23:07:00"
+  },
+  "17": {
+    "product_id": "17",
+    "product_name": "Symantix Nimbus Matrix",
+    "product_type": "monitoring_tool",
+    "version": "2.3.3",
+    "vendor_support_id": "13",
+    "status": "active",
+    "created_at": "2025-04-22T06:36:38",
+    "updated_at": "2025-05-09T03:09:09"
+  },
+  "18": {
+    "product_id": "18",
+    "product_name": "DigitalOceanic Pulse Flow",
+    "product_type": "monitoring_tool",
+    "version": "2.8.3",
+    "vendor_support_id": "14",
+    "status": "maintenance",
+    "created_at": "2025-04-30T17:56:33",
+    "updated_at": "2025-07-21T09:22:11"
+  },
+  "19": {
+    "product_id": "19",
+    "product_name": "Atlasian Horizon Cloud",
+    "product_type": "reporting_platform",
+    "version": "3.8.7",
+    "vendor_support_id": "15",
+    "status": "active",
+    "created_at": "2024-08-26T08:29:51",
+    "updated_at": "2024-10-29T21:32:40"
+  },
+  "20": {
+    "product_id": "20",
+    "product_name": "Atlasian Horizon Hub",
+    "product_type": "banking_system",
+    "version": "1.3.3",
+    "vendor_support_id": "15",
+    "status": "active",
+    "created_at": "2024-07-14T19:02:13",
+    "updated_at": "2024-10-21T04:44:28"
+  },
+  "21": {
+    "product_id": "21",
+    "product_name": "HashyCorp Fusion Matrix",
+    "product_type": "backup_service",
+    "version": "4.9.9",
+    "vendor_support_id": "16",
+    "status": "active",
+    "created_at": "2023-12-03T22:52:15",
+    "updated_at": "2024-11-02T23:13:09"
+  },
+  "22": {
+    "product_id": "22",
+    "product_name": "Authorize.NetX Apex Service",
+    "product_type": "api_gateway",
+    "version": "4.3.6",
+    "vendor_support_id": "17",
+    "status": "active",
+    "created_at": "2025-01-27T10:24:40",
+    "updated_at": "2025-06-16T11:36:47"
+  },
+  "23": {
+    "product_id": "23",
+    "product_name": "SAPhia Helix Core",
+    "product_type": "data_integration",
+    "version": "1.3.8",
+    "vendor_support_id": "18",
+    "status": "deprecated",
+    "created_at": "2023-11-28T23:03:43",
+    "updated_at": "2024-10-18T02:03:44"
+  },
+  "24": {
+    "product_id": "24",
+    "product_name": "Kubernetix Nimbus Stream",
+    "product_type": "security_service",
+    "version": "5.3.7",
+    "vendor_support_id": "19",
+    "status": "maintenance",
+    "created_at": "2025-06-04T14:48:48",
+    "updated_at": "2025-06-23T23:49:45"
+  },
+  "25": {
+    "product_id": "25",
+    "product_name": "Kubernetix Echo Core",
+    "product_type": "monitoring_tool",
+    "version": "3.9.8",
+    "vendor_support_id": "19",
+    "status": "maintenance",
+    "created_at": "2024-05-10T17:17:00",
+    "updated_at": "2024-10-01T15:14:12"
+  },
+  "26": {
+    "product_id": "26",
+    "product_name": "ServiceNowo Pulse Cloud",
+    "product_type": "reporting_platform",
+    "version": "5.8.7",
+    "vendor_support_id": "20",
+    "status": "active",
+    "created_at": "2025-05-28T05:38:13",
+    "updated_at": "2025-07-16T15:19:01"
+  },
+  "27": {
+    "product_id": "27",
+    "product_name": "ServiceNowo Quantum Edge",
+    "product_type": "reporting_platform",
+    "version": "5.1.0",
+    "vendor_support_id": "20",
+    "status": "active",
+    "created_at": "2024-05-27T23:51:24",
+    "updated_at": "2025-04-18T09:01:31"
+  },
+  "28": {
+    "product_id": "28",
+    "product_name": "Palo Fusion Matrix",
+    "product_type": "monitoring_tool",
+    "version": "1.9.4",
+    "vendor_support_id": "21",
+    "status": "active",
+    "created_at": "2025-03-05T18:18:09",
+    "updated_at": "2025-06-08T15:48:01"
+  },
+  "29": {
+    "product_id": "29",
+    "product_name": "Orcale Nova Flow",
+    "product_type": "reporting_platform",
+    "version": "1.3.4",
+    "vendor_support_id": "22",
+    "status": "active",
+    "created_at": "2023-12-08T18:52:28",
+    "updated_at": "2025-08-17T07:48:52"
+  },
+  "30": {
+    "product_id": "30",
+    "product_name": "Orcale Apex Edge",
+    "product_type": "banking_system",
+    "version": "3.8.8",
+    "vendor_support_id": "22",
+    "status": "active",
+    "created_at": "2023-11-04T16:03:38",
+    "updated_at": "2025-02-13T17:20:26"
+  },
+  "31": {
+    "product_id": "31",
+    "product_name": "McAfree Stratus Stream",
+    "product_type": "monitoring_tool",
+    "version": "4.3.7",
+    "vendor_support_id": "23",
+    "status": "active",
+    "created_at": "2023-10-04T19:39:02",
+    "updated_at": "2024-10-05T14:11:06"
+  },
+  "32": {
+    "product_id": "32",
+    "product_name": "McAfree Orion Hub",
+    "product_type": "monitoring_tool",
+    "version": "4.7.7",
+    "vendor_support_id": "23",
+    "status": "active",
+    "created_at": "2024-10-15T18:06:30",
+    "updated_at": "2025-07-03T07:13:16"
+  },
+  "33": {
+    "product_id": "33",
+    "product_name": "Symantix Fusion Engine",
+    "product_type": "monitoring_tool",
+    "version": "1.7.0",
+    "vendor_support_id": "24",
+    "status": "active",
+    "created_at": "2024-11-10T07:21:56",
+    "updated_at": "2025-04-05T16:20:42"
+  },
+  "34": {
+    "product_id": "34",
+    "product_name": "SAPhia Axis Cloud",
+    "product_type": "data_integration",
+    "version": "1.6.8",
+    "vendor_support_id": "25",
+    "status": "active",
+    "created_at": "2024-02-19T19:59:01",
+    "updated_at": "2024-12-03T19:37:41"
+  },
+  "35": {
+    "product_id": "35",
+    "product_name": "Red Apex Engine",
+    "product_type": "monitoring_tool",
+    "version": "5.9.1",
+    "vendor_support_id": "26",
+    "status": "active",
+    "created_at": "2025-08-11T03:07:27",
+    "updated_at": "2025-08-11T10:31:31"
+  },
+  "36": {
+    "product_id": "36",
+    "product_name": "Red Vertex Matrix",
+    "product_type": "security_service",
+    "version": "1.5.7",
+    "vendor_support_id": "26",
+    "status": "active",
+    "created_at": "2025-03-27T03:34:53",
+    "updated_at": "2025-05-18T11:05:08"
+  },
+  "37": {
+    "product_id": "37",
+    "product_name": "CheckPoynt Forge Portal",
+    "product_type": "security_service",
+    "version": "3.2.3",
+    "vendor_support_id": "27",
+    "status": "active",
+    "created_at": "2024-05-24T04:48:15",
+    "updated_at": "2024-10-25T03:32:13"
+  },
+  "38": {
+    "product_id": "38",
+    "product_name": "Goggle Horizon Suite",
+    "product_type": "api_gateway",
+    "version": "3.6.1",
+    "vendor_support_id": "28",
+    "status": "active",
+    "created_at": "2023-09-23T12:44:27",
+    "updated_at": "2023-11-17T05:38:27"
+  },
+  "39": {
+    "product_id": "39",
+    "product_name": "Squarix Lumen Edge",
+    "product_type": "payment_processing",
+    "version": "4.9.4",
+    "vendor_support_id": "29",
+    "status": "active",
+    "created_at": "2023-10-24T03:29:13",
+    "updated_at": "2024-09-14T11:44:03"
+  },
+  "40": {
+    "product_id": "40",
+    "product_name": "Squarix Stratus Engine",
+    "product_type": "payment_processing",
+    "version": "4.7.6",
+    "vendor_support_id": "29",
+    "status": "active",
+    "created_at": "2024-10-26T08:10:18",
+    "updated_at": "2025-07-29T07:02:46"
+  },
+  "41": {
+    "product_id": "41",
+    "product_name": "Adyant Forge Service",
+    "product_type": "api_gateway",
+    "version": "4.4.7",
+    "vendor_support_id": "30",
+    "status": "maintenance",
+    "created_at": "2024-03-28T03:26:40",
+    "updated_at": "2025-06-10T16:12:22"
+  },
+  "42": {
+    "product_id": "42",
+    "product_name": "Dockar Catalyst Suite",
+    "product_type": "backup_service",
+    "version": "2.6.8",
+    "vendor_support_id": "31",
+    "status": "active",
+    "created_at": "2025-01-30T19:10:13",
+    "updated_at": "2025-05-25T07:07:29"
+  },
+  "43": {
+    "product_id": "43",
+    "product_name": "Workdaze Quantum Service",
+    "product_type": "data_integration",
+    "version": "1.0.6",
+    "vendor_support_id": "32",
+    "status": "active",
+    "created_at": "2025-05-30T03:47:53",
+    "updated_at": "2025-08-12T12:48:00"
+  },
+  "44": {
+    "product_id": "44",
+    "product_name": "Authorize.NetX Nimbus Suite",
+    "product_type": "api_gateway",
+    "version": "2.7.3",
+    "vendor_support_id": "33",
+    "status": "deprecated",
+    "created_at": "2023-12-16T22:16:26",
+    "updated_at": "2023-12-28T21:59:03"
+  },
+  "45": {
+    "product_id": "45",
+    "product_name": "McAfree Zenith Service",
+    "product_type": "monitoring_tool",
+    "version": "1.9.5",
+    "vendor_support_id": "34",
+    "status": "active",
+    "created_at": "2023-11-10T12:20:30",
+    "updated_at": "2024-07-03T13:58:48"
+  },
+  "46": {
+    "product_id": "46",
+    "product_name": "HashyCorp Quantum Portal",
+    "product_type": "backup_service",
+    "version": "3.4.8",
+    "vendor_support_id": "35",
+    "status": "active",
+    "created_at": "2025-06-05T03:33:04",
+    "updated_at": "2025-07-16T23:18:06"
+  },
+  "47": {
+    "product_id": "47",
+    "product_name": "HashyCorp Horizon Cloud",
+    "product_type": "backup_service",
+    "version": "4.5.6",
+    "vendor_support_id": "35",
+    "status": "maintenance",
+    "created_at": "2025-03-05T17:00:28",
+    "updated_at": "2025-03-13T19:12:03"
+  },
+  "48": {
+    "product_id": "48",
+    "product_name": "CheckPoynt Stream Edge",
+    "product_type": "monitoring_tool",
+    "version": "1.4.1",
+    "vendor_support_id": "36",
+    "status": "active",
+    "created_at": "2025-06-08T21:55:36",
+    "updated_at": "2025-07-09T01:34:45"
+  },
+  "49": {
+    "product_id": "49",
+    "product_name": "Dockar Core Flow",
+    "product_type": "monitoring_tool",
+    "version": "1.2.8",
+    "vendor_support_id": "37",
+    "status": "active",
+    "created_at": "2025-06-25T19:59:30",
+    "updated_at": "2025-07-12T21:04:22"
+  },
+  "50": {
+    "product_id": "50",
+    "product_name": "Dockar Horizon Cloud",
+    "product_type": "security_service",
+    "version": "5.3.2",
+    "vendor_support_id": "37",
+    "status": "active",
+    "created_at": "2023-09-24T19:08:45",
+    "updated_at": "2024-08-06T12:12:17"
+  },
+  "51": {
+    "product_id": "51",
+    "product_name": "LinodeX Fusion Core",
+    "product_type": "data_integration",
+    "version": "2.0.5",
+    "vendor_support_id": "38",
+    "status": "maintenance",
+    "created_at": "2024-07-16T18:30:33",
+    "updated_at": "2024-12-19T07:40:57"
+  },
+  "52": {
+    "product_id": "52",
+    "product_name": "LinodeX Axis Hub",
+    "product_type": "api_gateway",
+    "version": "3.8.0",
+    "vendor_support_id": "38",
+    "status": "active",
+    "created_at": "2024-06-16T03:17:21",
+    "updated_at": "2025-01-19T11:05:50"
+  },
+  "53": {
+    "product_id": "53",
+    "product_name": "Terrafirm Core Fabric",
+    "product_type": "monitoring_tool",
+    "version": "5.3.2",
+    "vendor_support_id": "39",
+    "status": "active",
+    "created_at": "2025-03-10T03:44:02",
+    "updated_at": "2025-04-24T15:40:38"
+  },
+  "54": {
+    "product_id": "54",
+    "product_name": "Cysco Core Core",
+    "product_type": "backup_service",
+    "version": "3.6.1",
+    "vendor_support_id": "40",
+    "status": "active",
+    "created_at": "2024-10-05T14:52:11",
+    "updated_at": "2024-10-09T08:10:02"
+  },
+  "55": {
+    "product_id": "55",
+    "product_name": "Cysco Horizon Fabric",
+    "product_type": "monitoring_tool",
+    "version": "5.1.2",
+    "vendor_support_id": "40",
+    "status": "active",
+    "created_at": "2024-03-24T21:12:52",
+    "updated_at": "2025-03-21T13:10:47"
+  },
+  "56": {
+    "product_id": "56",
+    "product_name": "CheckPoynt Nova Flow",
+    "product_type": "security_service",
+    "version": "1.0.6",
+    "vendor_support_id": "41",
+    "status": "active",
+    "created_at": "2024-02-04T19:38:44",
+    "updated_at": "2024-03-27T05:01:59"
+  },
+  "57": {
+    "product_id": "57",
+    "product_name": "VMwere Forge Stream",
+    "product_type": "backup_service",
+    "version": "5.4.7",
+    "vendor_support_id": "42",
+    "status": "active",
+    "created_at": "2024-08-17T04:02:24",
+    "updated_at": "2025-03-07T22:20:13"
+  },
+  "58": {
+    "product_id": "58",
+    "product_name": "Oktra Fusion Core",
+    "product_type": "security_service",
+    "version": "1.7.9",
+    "vendor_support_id": "43",
+    "status": "active",
+    "created_at": "2024-01-19T04:22:29",
+    "updated_at": "2025-08-05T05:59:07"
+  },
+  "59": {
+    "product_id": "59",
+    "product_name": "Kubernetix Core Matrix",
+    "product_type": "monitoring_tool",
+    "version": "2.9.2",
+    "vendor_support_id": "44",
+    "status": "active",
+    "created_at": "2025-06-24T02:41:38",
+    "updated_at": "2025-08-30T16:44:00"
+  },
+  "60": {
+    "product_id": "60",
+    "product_name": "Kubernetix Apex Engine",
+    "product_type": "monitoring_tool",
+    "version": "5.7.4",
+    "vendor_support_id": "44",
+    "status": "active",
+    "created_at": "2025-02-18T06:36:44",
+    "updated_at": "2025-03-08T16:02:29"
+  },
+  "61": {
+    "product_id": "61",
+    "product_name": "Palo Helix Core",
+    "product_type": "security_service",
+    "version": "2.9.8",
+    "vendor_support_id": "45",
+    "status": "deprecated",
+    "created_at": "2024-02-28T21:35:51",
+    "updated_at": "2024-04-24T05:19:04"
+  },
+  "62": {
+    "product_id": "62",
+    "product_name": "Palo Helix Stream",
+    "product_type": "monitoring_tool",
+    "version": "2.5.9",
+    "vendor_support_id": "45",
+    "status": "active",
+    "created_at": "2025-01-12T20:05:11",
+    "updated_at": "2025-03-07T15:50:20"
+  },
+  "63": {
+    "product_id": "63",
+    "product_name": "Stripee Echo Stream",
+    "product_type": "api_gateway",
+    "version": "3.3.9",
+    "vendor_support_id": "47",
+    "status": "active",
+    "created_at": "2024-12-04T01:46:37",
+    "updated_at": "2025-03-20T15:29:49"
+  },
+  "64": {
+    "product_id": "64",
+    "product_name": "PayPole Vertex Engine",
+    "product_type": "payment_processing",
+    "version": "1.2.3",
+    "vendor_support_id": "48",
+    "status": "active",
+    "created_at": "2024-11-25T04:30:14",
+    "updated_at": "2024-12-01T15:44:52"
+  },
+  "65": {
+    "product_id": "65",
+    "product_name": "PayPole Catalyst Suite",
+    "product_type": "api_gateway",
+    "version": "2.6.1",
+    "vendor_support_id": "48",
+    "status": "active",
+    "created_at": "2025-03-15T06:20:27",
+    "updated_at": "2025-03-24T05:43:05"
+  },
+  "66": {
+    "product_id": "66",
+    "product_name": "SalesForza Nimbus Stream",
+    "product_type": "reporting_platform",
+    "version": "1.2.6",
+    "vendor_support_id": "49",
+    "status": "active",
+    "created_at": "2025-08-26T02:35:56",
+    "updated_at": "2025-08-29T17:29:54"
+  },
+  "67": {
+    "product_id": "67",
+    "product_name": "SalesForza Pulse Stream",
+    "product_type": "reporting_platform",
+    "version": "3.7.0",
+    "vendor_support_id": "49",
+    "status": "active",
+    "created_at": "2024-05-18T15:32:19",
+    "updated_at": "2024-08-18T18:23:50"
+  },
+  "68": {
+    "product_id": "68",
+    "product_name": "Symantix Nova Suite",
+    "product_type": "security_service",
+    "version": "3.9.6",
+    "vendor_support_id": "51",
+    "status": "active",
+    "created_at": "2024-11-17T23:29:15",
+    "updated_at": "2025-01-26T00:20:18"
+  },
+  "69": {
+    "product_id": "69",
+    "product_name": "Atlasian Pulse Suite",
+    "product_type": "banking_system",
+    "version": "1.7.6",
+    "vendor_support_id": "52",
+    "status": "active",
+    "created_at": "2024-08-05T03:42:18",
+    "updated_at": "2025-06-16T21:14:40"
+  },
+  "70": {
+    "product_id": "70",
+    "product_name": "CrowdStrik3 Vector Portal",
+    "product_type": "monitoring_tool",
+    "version": "4.6.4",
+    "vendor_support_id": "53",
+    "status": "active",
+    "created_at": "2024-08-12T19:38:51",
+    "updated_at": "2025-07-24T12:29:28"
+  },
+  "71": {
+    "product_id": "71",
+    "product_name": "CrowdStrik3 Fusion Service",
+    "product_type": "monitoring_tool",
+    "version": "4.2.5",
+    "vendor_support_id": "53",
+    "status": "active",
+    "created_at": "2025-07-27T17:53:37",
+    "updated_at": "2025-08-24T16:52:18"
+  },
+  "72": {
+    "product_id": "72",
+    "product_name": "SAPhia Apex Portal",
+    "product_type": "data_integration",
+    "version": "2.5.7",
+    "vendor_support_id": "54",
+    "status": "active",
+    "created_at": "2023-11-21T16:00:50",
+    "updated_at": "2024-05-29T23:44:50"
+  },
+  "73": {
+    "product_id": "73",
+    "product_name": "ServiceNowo Quantum Engine",
+    "product_type": "data_integration",
+    "version": "4.2.2",
+    "vendor_support_id": "55",
+    "status": "maintenance",
+    "created_at": "2024-06-22T03:20:10",
+    "updated_at": "2024-07-05T21:10:47"
+  },
+  "74": {
+    "product_id": "74",
+    "product_name": "ServiceNowo Vector Matrix",
+    "product_type": "banking_system",
+    "version": "4.6.2",
+    "vendor_support_id": "55",
+    "status": "active",
+    "created_at": "2025-04-14T09:59:03",
+    "updated_at": "2025-06-29T04:38:29"
+  },
+  "75": {
+    "product_id": "75",
+    "product_name": "Fortanett Orion Flow",
+    "product_type": "monitoring_tool",
+    "version": "5.3.4",
+    "vendor_support_id": "56",
+    "status": "active",
+    "created_at": "2024-04-12T07:20:07",
+    "updated_at": "2024-12-24T00:25:08"
+  },
+  "76": {
+    "product_id": "76",
+    "product_name": "Fortanett Pulse Fabric",
+    "product_type": "monitoring_tool",
+    "version": "3.9.1",
+    "vendor_support_id": "56",
+    "status": "active",
+    "created_at": "2025-08-09T21:25:59",
+    "updated_at": "2025-08-25T15:04:09"
+  },
+  "77": {
+    "product_id": "77",
+    "product_name": "Azurian Quantum Cloud",
+    "product_type": "backup_service",
+    "version": "5.6.6",
+    "vendor_support_id": "57",
+    "status": "active",
+    "created_at": "2023-09-06T10:16:10",
+    "updated_at": "2024-11-16T16:25:50"
+  },
+  "78": {
+    "product_id": "78",
+    "product_name": "CrowdStrik3 Pulse Engine",
+    "product_type": "monitoring_tool",
+    "version": "3.1.4",
+    "vendor_support_id": "58",
+    "status": "active",
+    "created_at": "2025-07-03T19:49:48",
+    "updated_at": "2025-07-20T04:43:07"
+  },
+  "79": {
+    "product_id": "79",
+    "product_name": "CrowdStrik3 Core Engine",
+    "product_type": "security_service",
+    "version": "1.3.7",
+    "vendor_support_id": "58",
+    "status": "active",
+    "created_at": "2024-08-04T23:24:56",
+    "updated_at": "2025-07-10T14:59:25"
+  },
+  "80": {
+    "product_id": "80",
+    "product_name": "Squarix Fusion Service",
+    "product_type": "payment_processing",
+    "version": "2.9.9",
+    "vendor_support_id": "59",
+    "status": "maintenance",
+    "created_at": "2024-11-09T22:04:58",
+    "updated_at": "2025-08-05T10:12:00"
+  },
+  "81": {
+    "product_id": "81",
+    "product_name": "Fortanett Pulse Service",
+    "product_type": "monitoring_tool",
+    "version": "1.6.0",
+    "vendor_support_id": "60",
+    "status": "active",
+    "created_at": "2024-03-20T03:42:17",
+    "updated_at": "2024-10-24T17:29:31"
+  },
+  "82": {
+    "product_id": "82",
+    "product_name": "Stripee Vector Cloud",
+    "product_type": "payment_processing",
+    "version": "4.1.1",
+    "vendor_support_id": "63",
+    "status": "active",
+    "created_at": "2025-06-09T23:39:57",
+    "updated_at": "2025-06-17T22:10:03"
+  },
+  "83": {
+    "product_id": "83",
+    "product_name": "LinodeX Apex Matrix",
+    "product_type": "monitoring_tool",
+    "version": "1.4.8",
+    "vendor_support_id": "64",
+    "status": "active",
+    "created_at": "2025-03-04T08:28:46",
+    "updated_at": "2025-08-26T07:31:07"
+  },
+  "84": {
+    "product_id": "84",
+    "product_name": "LinodeX Apex Suite",
+    "product_type": "data_integration",
+    "version": "1.3.0",
+    "vendor_support_id": "64",
+    "status": "deprecated",
+    "created_at": "2024-09-12T17:16:43",
+    "updated_at": "2025-04-12T02:21:39"
+  },
+  "85": {
+    "product_id": "85",
+    "product_name": "Microcraft Vector Cloud",
+    "product_type": "data_integration",
+    "version": "5.5.3",
+    "vendor_support_id": "66",
+    "status": "active",
+    "created_at": "2024-03-12T18:13:52",
+    "updated_at": "2025-08-09T12:59:41"
+  },
+  "86": {
+    "product_id": "86",
+    "product_name": "PayPole Stratus Flow",
+    "product_type": "api_gateway",
+    "version": "2.7.9",
+    "vendor_support_id": "67",
+    "status": "active",
+    "created_at": "2024-01-09T15:33:24",
+    "updated_at": "2024-10-02T08:57:25"
+  },
+  "87": {
+    "product_id": "87",
+    "product_name": "Terrafirm Zenith Fabric",
+    "product_type": "backup_service",
+    "version": "1.5.1",
+    "vendor_support_id": "68",
+    "status": "active",
+    "created_at": "2024-08-08T07:20:23",
+    "updated_at": "2024-10-18T23:45:22"
+  },
+  "88": {
+    "product_id": "88",
+    "product_name": "Terrafirm Axis Matrix",
+    "product_type": "monitoring_tool",
+    "version": "4.6.1",
+    "vendor_support_id": "69",
+    "status": "active",
+    "created_at": "2024-01-25T03:41:06",
+    "updated_at": "2024-11-15T03:46:29"
+  },
+  "89": {
+    "product_id": "89",
+    "product_name": "Terrafirm Quantum Hub",
+    "product_type": "monitoring_tool",
+    "version": "5.2.2",
+    "vendor_support_id": "69",
+    "status": "active",
+    "created_at": "2023-11-01T01:01:16",
+    "updated_at": "2024-06-30T23:01:59"
+  },
+  "90": {
+    "product_id": "90",
+    "product_name": "Symantix Forge Service",
+    "product_type": "monitoring_tool",
+    "version": "4.5.1",
+    "vendor_support_id": "70",
+    "status": "active",
+    "created_at": "2025-03-22T07:01:59",
+    "updated_at": "2025-08-08T06:02:42"
+  },
+  "91": {
+    "product_id": "91",
+    "product_name": "AOS Apex Fabric",
+    "product_type": "backup_service",
+    "version": "1.2.1",
+    "vendor_support_id": "72",
+    "status": "active",
+    "created_at": "2025-04-07T02:49:29",
+    "updated_at": "2025-05-15T19:01:34"
+  },
+  "92": {
+    "product_id": "92",
+    "product_name": "Stripee Axis Flow",
+    "product_type": "api_gateway",
+    "version": "5.3.7",
+    "vendor_support_id": "73",
+    "status": "active",
+    "created_at": "2025-03-06T05:41:04",
+    "updated_at": "2025-07-01T14:16:29"
+  },
+  "93": {
+    "product_id": "93",
+    "product_name": "Stripee Catalyst Service",
+    "product_type": "api_gateway",
+    "version": "5.0.8",
+    "vendor_support_id": "73",
+    "status": "maintenance",
+    "created_at": "2025-07-03T23:57:05",
+    "updated_at": "2025-07-13T15:10:45"
+  },
+  "94": {
+    "product_id": "94",
+    "product_name": "DigitalOceanic Vertex Cloud",
+    "product_type": "backup_service",
+    "version": "3.9.2",
+    "vendor_support_id": "74",
+    "status": "active",
+    "created_at": "2024-11-21T09:29:33",
+    "updated_at": "2025-03-31T21:03:13"
+  },
+  "95": {
+    "product_id": "95",
+    "product_name": "DigitalOceanic Horizon Flow",
+    "product_type": "backup_service",
+    "version": "3.1.5",
+    "vendor_support_id": "74",
+    "status": "active",
+    "created_at": "2025-03-21T03:30:24",
+    "updated_at": "2025-04-28T16:07:44"
+  },
+  "96": {
+    "product_id": "96",
+    "product_name": "Palo Pulse Cloud",
+    "product_type": "monitoring_tool",
+    "version": "4.3.3",
+    "vendor_support_id": "77",
+    "status": "maintenance",
+    "created_at": "2025-05-14T04:33:19",
+    "updated_at": "2025-07-18T15:52:49"
+  },
+  "97": {
+    "product_id": "97",
+    "product_name": "Palo Nova Matrix",
+    "product_type": "security_service",
+    "version": "5.4.4",
+    "vendor_support_id": "77",
+    "status": "maintenance",
+    "created_at": "2025-01-18T01:03:06",
+    "updated_at": "2025-07-04T02:49:11"
+  },
+  "98": {
+    "product_id": "98",
+    "product_name": "Adobix Fusion Matrix",
+    "product_type": "banking_system",
+    "version": "4.9.6",
+    "vendor_support_id": "78",
+    "status": "deprecated",
+    "created_at": "2025-08-20T23:53:59",
+    "updated_at": "2025-08-28T08:21:34"
+  },
+  "99": {
+    "product_id": "99",
+    "product_name": "Adobix Apex Engine",
+    "product_type": "banking_system",
+    "version": "3.4.6",
+    "vendor_support_id": "78",
+    "status": "maintenance",
+    "created_at": "2025-03-31T13:22:54",
+    "updated_at": "2025-08-01T10:57:17"
+  },
+  "100": {
+    "product_id": "100",
+    "product_name": "Squarix Helix Fabric",
+    "product_type": "payment_processing",
+    "version": "1.9.2",
+    "vendor_support_id": "79",
+    "status": "active",
+    "created_at": "2024-12-17T16:48:10",
+    "updated_at": "2025-08-29T07:27:54"
+  },
+  "101": {
+    "product_id": "101",
+    "product_name": "Squarix Nimbus Hub",
+    "product_type": "api_gateway",
+    "version": "4.6.7",
+    "vendor_support_id": "79",
+    "status": "active",
+    "created_at": "2023-09-11T07:09:35",
+    "updated_at": "2024-04-12T03:46:28"
+  },
+  "102": {
+    "product_id": "102",
+    "product_name": "Squarix Stream Suite",
+    "product_type": "payment_processing",
+    "version": "5.5.9",
+    "vendor_support_id": "80",
+    "status": "active",
+    "created_at": "2024-06-19T02:01:22",
+    "updated_at": "2024-10-25T10:38:49"
+  },
+  "103": {
+    "product_id": "103",
+    "product_name": "Vulturis Fusion Portal",
+    "product_type": "backup_service",
+    "version": "5.2.8",
+    "vendor_support_id": "81",
+    "status": "active",
+    "created_at": "2025-03-13T16:01:02",
+    "updated_at": "2025-05-23T06:40:07"
+  },
+  "104": {
+    "product_id": "104",
+    "product_name": "Goggle Vector Stream",
+    "product_type": "data_integration",
+    "version": "5.7.1",
+    "vendor_support_id": "82",
+    "status": "active",
+    "created_at": "2025-07-08T15:21:44",
+    "updated_at": "2025-08-08T02:57:15"
+  },
+  "105": {
+    "product_id": "105",
+    "product_name": "Orcale Orion Engine",
+    "product_type": "banking_system",
+    "version": "1.0.8",
+    "vendor_support_id": "83",
+    "status": "deprecated",
+    "created_at": "2024-05-27T06:09:41",
+    "updated_at": "2025-07-12T13:04:45"
+  },
+  "106": {
+    "product_id": "106",
+    "product_name": "Cysco Vertex Hub",
+    "product_type": "monitoring_tool",
+    "version": "4.4.5",
+    "vendor_support_id": "84",
+    "status": "active",
+    "created_at": "2024-08-30T13:31:35",
+    "updated_at": "2025-05-28T13:00:51"
+  },
+  "107": {
+    "product_id": "107",
+    "product_name": "Cysco Quantum Flow",
+    "product_type": "monitoring_tool",
+    "version": "5.8.7",
+    "vendor_support_id": "84",
+    "status": "active",
+    "created_at": "2024-02-21T18:16:36",
+    "updated_at": "2025-04-20T13:21:29"
+  },
+  "108": {
+    "product_id": "108",
+    "product_name": "Symantix Catalyst Flow",
+    "product_type": "security_service",
+    "version": "5.7.3",
+    "vendor_support_id": "85",
+    "status": "active",
+    "created_at": "2024-11-06T01:27:25",
+    "updated_at": "2025-06-05T13:18:12"
+  },
+  "109": {
+    "product_id": "109",
+    "product_name": "Symantix Axis Matrix",
+    "product_type": "security_service",
+    "version": "1.2.9",
+    "vendor_support_id": "85",
+    "status": "active",
+    "created_at": "2023-09-05T09:55:37",
+    "updated_at": "2025-03-07T22:31:34"
+  },
+  "110": {
+    "product_id": "110",
+    "product_name": "Palo Pulse Hub",
+    "product_type": "security_service",
+    "version": "2.4.9",
+    "vendor_support_id": "86",
+    "status": "active",
+    "created_at": "2025-05-22T05:33:10",
+    "updated_at": "2025-06-08T17:33:21"
+  },
+  "111": {
+    "product_id": "111",
+    "product_name": "Palo Apex Fabric",
+    "product_type": "monitoring_tool",
+    "version": "1.0.0",
+    "vendor_support_id": "86",
+    "status": "active",
+    "created_at": "2024-06-01T13:44:27",
+    "updated_at": "2025-01-16T16:49:00"
+  },
+  "112": {
+    "product_id": "112",
+    "product_name": "PayPole Apex Stream",
+    "product_type": "payment_processing",
+    "version": "3.3.1",
+    "vendor_support_id": "87",
+    "status": "active",
+    "created_at": "2024-02-09T18:10:28",
+    "updated_at": "2024-10-17T23:26:19"
+  },
+  "113": {
+    "product_id": "113",
+    "product_name": "Cysco Orion Cloud",
+    "product_type": "security_service",
+    "version": "5.6.3",
+    "vendor_support_id": "88",
+    "status": "active",
+    "created_at": "2024-06-08T14:31:06",
+    "updated_at": "2025-05-30T15:11:31"
+  },
+  "114": {
+    "product_id": "114",
+    "product_name": "Fortanett Fusion Fabric",
+    "product_type": "security_service",
+    "version": "4.4.5",
+    "vendor_support_id": "89",
+    "status": "active",
+    "created_at": "2025-05-12T08:56:53",
+    "updated_at": "2025-07-22T12:12:04"
+  },
+  "115": {
+    "product_id": "115",
+    "product_name": "Ansiblee Core Core",
+    "product_type": "backup_service",
+    "version": "4.0.9",
+    "vendor_support_id": "91",
+    "status": "active",
+    "created_at": "2024-02-17T16:28:34",
+    "updated_at": "2024-12-18T21:01:54"
+  },
+  "116": {
+    "product_id": "116",
+    "product_name": "Ansiblee Nimbus Stream",
+    "product_type": "security_service",
+    "version": "1.3.7",
+    "vendor_support_id": "91",
+    "status": "active",
+    "created_at": "2025-08-23T10:30:15",
+    "updated_at": "2025-08-24T16:59:37"
+  },
+  "117": {
+    "product_id": "117",
+    "product_name": "Splonq Orion Flow",
+    "product_type": "security_service",
+    "version": "4.6.5",
+    "vendor_support_id": "92",
+    "status": "active",
+    "created_at": "2025-03-26T20:42:33",
+    "updated_at": "2025-07-06T22:24:36"
+  },
+  "118": {
+    "product_id": "118",
+    "product_name": "Cysco Echo Hub",
+    "product_type": "backup_service",
+    "version": "3.5.0",
+    "vendor_support_id": "93",
+    "status": "deprecated",
+    "created_at": "2024-10-27T09:14:13",
+    "updated_at": "2024-11-01T05:53:41"
+  },
+  "119": {
+    "product_id": "119",
+    "product_name": "Cysco Forge Cloud",
+    "product_type": "security_service",
+    "version": "1.7.3",
+    "vendor_support_id": "93",
+    "status": "active",
+    "created_at": "2023-12-18T11:26:36",
+    "updated_at": "2024-11-11T01:34:23"
+  },
+  "120": {
+    "product_id": "120",
+    "product_name": "Klarno Stratus Matrix",
+    "product_type": "api_gateway",
+    "version": "3.5.5",
+    "vendor_support_id": "95",
+    "status": "active",
+    "created_at": "2024-10-01T20:46:51",
+    "updated_at": "2025-04-02T12:36:23"
+  },
+  "121": {
+    "product_id": "121",
+    "product_name": "Worldpayz Horizon Flow",
+    "product_type": "api_gateway",
+    "version": "3.4.0",
+    "vendor_support_id": "96",
+    "status": "active",
+    "created_at": "2025-01-03T19:07:57",
+    "updated_at": "2025-06-13T00:21:27"
+  },
+  "122": {
+    "product_id": "122",
+    "product_name": "ServiceNowo Fusion Edge",
+    "product_type": "data_integration",
+    "version": "5.2.0",
+    "vendor_support_id": "98",
+    "status": "active",
+    "created_at": "2025-07-09T01:40:37",
+    "updated_at": "2025-08-01T10:48:49"
+  },
+  "123": {
+    "product_id": "123",
+    "product_name": "McAfree Vector Matrix",
+    "product_type": "monitoring_tool",
+    "version": "3.2.4",
+    "vendor_support_id": "99",
+    "status": "active",
+    "created_at": "2023-10-04T20:37:31",
+    "updated_at": "2024-04-29T22:03:36"
+  },
+  "124": {
+    "product_id": "124",
+    "product_name": "Klarno Vertex Hub",
+    "product_type": "payment_processing",
+    "version": "1.8.4",
+    "vendor_support_id": "100",
+    "status": "active",
+    "created_at": "2024-03-29T15:11:39",
+    "updated_at": "2024-08-04T13:21:08"
+  },
+  "125": {
+    "product_id": "125",
+    "product_name": "Braintreee Vertex Engine",
+    "product_type": "payment_processing",
+    "version": "2.2.6",
+    "vendor_support_id": "5",
+    "status": "deprecated",
+    "created_at": "2025-02-14T13:25:14",
+    "updated_at": "2025-08-18T02:39:11"
+  },
+  "126": {
+    "product_id": "126",
+    "product_name": "Vulturis Nimbus Matrix",
+    "product_type": "data_integration",
+    "version": "3.5.9",
+    "vendor_support_id": "46",
+    "status": "deprecated",
+    "created_at": "2024-01-15T09:40:14",
+    "updated_at": "2024-02-09T01:57:22"
+  },
+  "127": {
+    "product_id": "127",
+    "product_name": "Adobix Orion Fabric",
+    "product_type": "banking_system",
+    "version": "1.0.8",
+    "vendor_support_id": "50",
+    "status": "deprecated",
+    "created_at": "2025-08-19T00:18:57",
+    "updated_at": "2025-08-20T03:59:56"
+  },
+  "128": {
+    "product_id": "128",
+    "product_name": "AOS Core Flow",
+    "product_type": "monitoring_tool",
+    "version": "1.2.8",
+    "vendor_support_id": "61",
+    "status": "deprecated",
+    "created_at": "2025-06-13T03:13:04",
+    "updated_at": "2025-08-16T04:18:07"
+  },
+  "129": {
+    "product_id": "129",
+    "product_name": "AOS Horizon Fabric",
+    "product_type": "backup_service",
+    "version": "3.9.5",
+    "vendor_support_id": "62",
+    "status": "deprecated",
+    "created_at": "2024-08-09T15:07:47",
+    "updated_at": "2024-11-08T12:36:21"
+  },
+  "130": {
+    "product_id": "130",
+    "product_name": "Microcraft Nova Cloud",
+    "product_type": "data_integration",
+    "version": "2.7.1",
+    "vendor_support_id": "65",
+    "status": "deprecated",
+    "created_at": "2024-07-11T09:52:04",
+    "updated_at": "2025-02-23T16:33:50"
+  },
+  "131": {
+    "product_id": "131",
+    "product_name": "Adyant Horizon Portal",
+    "product_type": "payment_processing",
+    "version": "2.0.6",
+    "vendor_support_id": "71",
+    "status": "deprecated",
+    "created_at": "2024-12-23T20:25:41",
+    "updated_at": "2025-08-08T18:05:34"
+  },
+  "132": {
+    "product_id": "132",
+    "product_name": "Splonq Stratus Suite",
+    "product_type": "security_service",
+    "version": "2.1.5",
+    "vendor_support_id": "75",
+    "status": "deprecated",
+    "created_at": "2024-11-17T01:49:27",
+    "updated_at": "2025-08-29T09:54:12"
+  },
+  "133": {
+    "product_id": "133",
+    "product_name": "Kubernetix Stratus Flow",
+    "product_type": "security_service",
+    "version": "2.6.9",
+    "vendor_support_id": "76",
+    "status": "deprecated",
+    "created_at": "2025-02-03T18:04:07",
+    "updated_at": "2025-03-01T05:28:33"
+  },
+  "134": {
+    "product_id": "134",
+    "product_name": "HashyCorp Vector Edge",
+    "product_type": "backup_service",
+    "version": "1.2.0",
+    "vendor_support_id": "90",
+    "status": "deprecated",
+    "created_at": "2023-11-17T19:34:04",
+    "updated_at": "2025-07-03T23:43:04"
+  }
+}

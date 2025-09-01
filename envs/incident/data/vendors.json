@@ -1,0 +1,902 @@
+{
+  "1": {
+    "vendor_id": "1",
+    "vendor_name": "VMwere Services",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "sales@vmwere.com",
+    "contact_phone": "+16178247334",
+    "status": "active",
+    "created_at": "2024-01-08T12:33:20"
+  },
+  "2": {
+    "vendor_id": "2",
+    "vendor_name": "Azurian Cloud Services",
+    "vendor_type": "cloud_provider",
+    "contact_email": "admin@azuriancloudservices.com",
+    "contact_phone": "+12123952480",
+    "status": "active",
+    "created_at": "2025-08-04T00:16:02"
+  },
+  "3": {
+    "vendor_id": "3",
+    "vendor_name": "Symantix Solutions",
+    "vendor_type": "security_vendor",
+    "contact_email": "contact@symantix.com",
+    "contact_phone": "+12145736210",
+    "status": "active",
+    "created_at": "2023-09-01T18:12:26"
+  },
+  "4": {
+    "vendor_id": "4",
+    "vendor_name": "CrowdStrik3 Technologies",
+    "vendor_type": "security_vendor",
+    "contact_email": "admin@crowdstrik3.com",
+    "contact_phone": "+14154506980",
+    "status": "active",
+    "created_at": "2024-03-26T06:05:51"
+  },
+  "5": {
+    "vendor_id": "5",
+    "vendor_name": "Braintreee",
+    "vendor_type": "payment_processor",
+    "contact_email": "contact@braintreee.com",
+    "contact_phone": "+12142157194",
+    "status": "inactive",
+    "created_at": "2024-04-04T23:06:16"
+  },
+  "6": {
+    "vendor_id": "6",
+    "vendor_name": "IBM Nimbus",
+    "vendor_type": "cloud_provider",
+    "contact_email": "support@ibmnimbus.com",
+    "contact_phone": "+12133985699",
+    "status": "active",
+    "created_at": "2024-03-02T16:02:14"
+  },
+  "7": {
+    "vendor_id": "7",
+    "vendor_name": "Orcale Cloud",
+    "vendor_type": "cloud_provider",
+    "contact_email": "admin@orcalecloud.com",
+    "contact_phone": "+12124715507",
+    "status": "active",
+    "created_at": "2024-08-19T10:53:45"
+  },
+  "8": {
+    "vendor_id": "8",
+    "vendor_name": "SalesForza",
+    "vendor_type": "software_vendor",
+    "contact_email": "info@salesforza.com",
+    "contact_phone": "+12137754910",
+    "status": "active",
+    "created_at": "2024-05-27T19:34:06"
+  },
+  "9": {
+    "vendor_id": "9",
+    "vendor_name": "Klarno",
+    "vendor_type": "payment_processor",
+    "contact_email": "contact@klarno.com",
+    "contact_phone": "+12024062284",
+    "status": "active",
+    "created_at": "2024-03-04T15:04:47"
+  },
+  "10": {
+    "vendor_id": "10",
+    "vendor_name": "Worldpayz",
+    "vendor_type": "payment_processor",
+    "contact_email": "admin@worldpayz.com",
+    "contact_phone": "+13055749978",
+    "status": "active",
+    "created_at": "2023-10-08T12:19:32"
+  },
+  "11": {
+    "vendor_id": "11",
+    "vendor_name": "Squarix Payments Networks",
+    "vendor_type": "payment_processor",
+    "contact_email": "admin@squarixpayments.com",
+    "contact_phone": "+13059125974",
+    "status": "active",
+    "created_at": "2024-03-18T15:46:31"
+  },
+  "12": {
+    "vendor_id": "12",
+    "vendor_name": "Microcraft Technologies",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales@microcraft.com",
+    "contact_phone": "+14042318266",
+    "status": "active",
+    "created_at": "2024-07-03T20:06:45"
+  },
+  "13": {
+    "vendor_id": "13",
+    "vendor_name": "Symantix Systems",
+    "vendor_type": "security_vendor",
+    "contact_email": "admin@symantix.com",
+    "contact_phone": "+14042219394",
+    "status": "active",
+    "created_at": "2024-08-31T17:01:03"
+  },
+  "14": {
+    "vendor_id": "14",
+    "vendor_name": "DigitalOceanic",
+    "vendor_type": "cloud_provider",
+    "contact_email": "info@digitaloceanic.com",
+    "contact_phone": "+13123767714",
+    "status": "active",
+    "created_at": "2025-07-10T06:10:00"
+  },
+  "15": {
+    "vendor_id": "15",
+    "vendor_name": "Atlasian",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales@atlasian.com",
+    "contact_phone": "+12024308438",
+    "status": "active",
+    "created_at": "2024-08-18T10:11:02"
+  },
+  "16": {
+    "vendor_id": "16",
+    "vendor_name": "HashyCorp",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "support@hashycorp.com",
+    "contact_phone": "+13129931933",
+    "status": "active",
+    "created_at": "2024-09-16T00:45:02"
+  },
+  "17": {
+    "vendor_id": "17",
+    "vendor_name": "Authorize.NetX",
+    "vendor_type": "payment_processor",
+    "contact_email": "admin@authorizenetx.com",
+    "contact_phone": "+14157422563",
+    "status": "active",
+    "created_at": "2023-10-27T06:16:31"
+  },
+  "18": {
+    "vendor_id": "18",
+    "vendor_name": "SAPhia Solutions",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales@saphiasolutions.com",
+    "contact_phone": "+12135026360",
+    "status": "active",
+    "created_at": "2024-01-14T18:52:14"
+  },
+  "19": {
+    "vendor_id": "19",
+    "vendor_name": "Kubernetix Technologies",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "admin@kubernetix.com",
+    "contact_phone": "+13129156622",
+    "status": "active",
+    "created_at": "2023-09-02T09:56:05"
+  },
+  "20": {
+    "vendor_id": "20",
+    "vendor_name": "ServiceNowo Solutions",
+    "vendor_type": "software_vendor",
+    "contact_email": "support@servicenowo.com",
+    "contact_phone": "+17184077096",
+    "status": "active",
+    "created_at": "2025-05-09T18:32:10"
+  },
+  "21": {
+    "vendor_id": "21",
+    "vendor_name": "Palo Alto Netwerks Solutions",
+    "vendor_type": "security_vendor",
+    "contact_email": "info@paloaltonetwerks.com",
+    "contact_phone": "+17186892626",
+    "status": "active",
+    "created_at": "2024-09-24T18:26:59"
+  },
+  "22": {
+    "vendor_id": "22",
+    "vendor_name": "Orcale Systems",
+    "vendor_type": "software_vendor",
+    "contact_email": "contact@orcalesystems.com",
+    "contact_phone": "+18324409518",
+    "status": "active",
+    "created_at": "2025-06-03T18:07:10"
+  },
+  "23": {
+    "vendor_id": "23",
+    "vendor_name": "McAfree Networks",
+    "vendor_type": "security_vendor",
+    "contact_email": "support@mcafree.com",
+    "contact_phone": "+13127698279",
+    "status": "active",
+    "created_at": "2025-03-30T05:59:47"
+  },
+  "24": {
+    "vendor_id": "24",
+    "vendor_name": "Symantix",
+    "vendor_type": "security_vendor",
+    "contact_email": "info@symantix.com",
+    "contact_phone": "+12133639560",
+    "status": "active",
+    "created_at": "2024-05-29T08:32:26"
+  },
+  "25": {
+    "vendor_id": "25",
+    "vendor_name": "SAPhia Solutions Technologies",
+    "vendor_type": "software_vendor",
+    "contact_email": "support@saphiasolutions.com",
+    "contact_phone": "+14047734055",
+    "status": "active",
+    "created_at": "2024-12-02T06:23:14"
+  },
+  "26": {
+    "vendor_id": "26",
+    "vendor_name": "Red Hatchet",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "support@redhatchet.com",
+    "contact_phone": "+12028092000",
+    "status": "active",
+    "created_at": "2025-03-23T02:43:48"
+  },
+  "27": {
+    "vendor_id": "27",
+    "vendor_name": "CheckPoynt Solutions",
+    "vendor_type": "security_vendor",
+    "contact_email": "support@checkpoynt.com",
+    "contact_phone": "+16177574855",
+    "status": "active",
+    "created_at": "2024-09-30T21:21:31"
+  },
+  "28": {
+    "vendor_id": "28",
+    "vendor_name": "Goggle Cloud Platform",
+    "vendor_type": "cloud_provider",
+    "contact_email": "contact@gogglecloudplatform.com",
+    "contact_phone": "+12027929030",
+    "status": "active",
+    "created_at": "2024-11-30T02:40:36"
+  },
+  "29": {
+    "vendor_id": "29",
+    "vendor_name": "Squarix Payments Solutions",
+    "vendor_type": "payment_processor",
+    "contact_email": "sales@squarixpayments.com",
+    "contact_phone": "+13059562629",
+    "status": "active",
+    "created_at": "2023-10-04T05:18:02"
+  },
+  "30": {
+    "vendor_id": "30",
+    "vendor_name": "Adyant",
+    "vendor_type": "payment_processor",
+    "contact_email": "admin@adyant.com",
+    "contact_phone": "+14156369354",
+    "status": "active",
+    "created_at": "2023-12-07T19:42:42"
+  },
+  "31": {
+    "vendor_id": "31",
+    "vendor_name": "Dockar Inc Solutions",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "admin@dockarinc.com",
+    "contact_phone": "+12146682687",
+    "status": "active",
+    "created_at": "2024-06-07T14:02:10"
+  },
+  "32": {
+    "vendor_id": "32",
+    "vendor_name": "Workdaze",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales@workdaze.com",
+    "contact_phone": "+12128777009",
+    "status": "active",
+    "created_at": "2024-10-23T19:35:27"
+  },
+  "33": {
+    "vendor_id": "33",
+    "vendor_name": "Authorize.NetX Technologies",
+    "vendor_type": "payment_processor",
+    "contact_email": "admin158@authorizenetx.com",
+    "contact_phone": "+12129048647",
+    "status": "active",
+    "created_at": "2024-03-25T23:47:47"
+  },
+  "34": {
+    "vendor_id": "34",
+    "vendor_name": "McAfree",
+    "vendor_type": "security_vendor",
+    "contact_email": "support728@mcafree.com",
+    "contact_phone": "+14153176511",
+    "status": "active",
+    "created_at": "2024-07-09T16:11:42"
+  },
+  "35": {
+    "vendor_id": "35",
+    "vendor_name": "HashyCorp Services",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "support376@hashycorp.com",
+    "contact_phone": "+18324151102",
+    "status": "active",
+    "created_at": "2025-07-11T19:39:24"
+  },
+  "36": {
+    "vendor_id": "36",
+    "vendor_name": "CheckPoynt Systems",
+    "vendor_type": "security_vendor",
+    "contact_email": "sales@checkpoynt.com",
+    "contact_phone": "+14047768729",
+    "status": "active",
+    "created_at": "2025-05-02T18:19:57"
+  },
+  "37": {
+    "vendor_id": "37",
+    "vendor_name": "Dockar Inc",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@dockarinc.com",
+    "contact_phone": "+14042161376",
+    "status": "active",
+    "created_at": "2024-11-09T20:21:06"
+  },
+  "38": {
+    "vendor_id": "38",
+    "vendor_name": "LinodeX",
+    "vendor_type": "cloud_provider",
+    "contact_email": "sales@linodex.com",
+    "contact_phone": "+13052016685",
+    "status": "active",
+    "created_at": "2024-07-19T07:21:40"
+  },
+  "39": {
+    "vendor_id": "39",
+    "vendor_name": "Terrafirm Solutions",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "sales@terrafirm.com",
+    "contact_phone": "+12132513787",
+    "status": "active",
+    "created_at": "2025-03-02T20:02:50"
+  },
+  "40": {
+    "vendor_id": "40",
+    "vendor_name": "Cysco Systems",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "support@cyscosystems.com",
+    "contact_phone": "+13126909621",
+    "status": "active",
+    "created_at": "2024-01-28T04:42:19"
+  },
+  "41": {
+    "vendor_id": "41",
+    "vendor_name": "CheckPoynt",
+    "vendor_type": "security_vendor",
+    "contact_email": "admin@checkpoynt.com",
+    "contact_phone": "+12137645742",
+    "status": "active",
+    "created_at": "2024-11-27T17:59:02"
+  },
+  "42": {
+    "vendor_id": "42",
+    "vendor_name": "VMwere",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@vmwere.com",
+    "contact_phone": "+17184789778",
+    "status": "active",
+    "created_at": "2024-02-28T17:45:24"
+  },
+  "43": {
+    "vendor_id": "43",
+    "vendor_name": "Oktra",
+    "vendor_type": "security_vendor",
+    "contact_email": "admin@oktra.com",
+    "contact_phone": "+13052016216",
+    "status": "active",
+    "created_at": "2024-04-27T03:13:57"
+  },
+  "44": {
+    "vendor_id": "44",
+    "vendor_name": "Kubernetix Networks",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@kubernetix.com",
+    "contact_phone": "+12137005521",
+    "status": "active",
+    "created_at": "2024-11-27T01:21:16"
+  },
+  "45": {
+    "vendor_id": "45",
+    "vendor_name": "Palo Alto Netwerks Networks",
+    "vendor_type": "security_vendor",
+    "contact_email": "contact@paloaltonetwerks.com",
+    "contact_phone": "+13052818549",
+    "status": "active",
+    "created_at": "2025-08-20T00:04:20"
+  },
+  "46": {
+    "vendor_id": "46",
+    "vendor_name": "Vulturis",
+    "vendor_type": "cloud_provider",
+    "contact_email": "contact@vulturis.com",
+    "contact_phone": "+13127105668",
+    "status": "inactive",
+    "created_at": "2024-09-26T01:10:48"
+  },
+  "47": {
+    "vendor_id": "47",
+    "vendor_name": "Stripee Services",
+    "vendor_type": "payment_processor",
+    "contact_email": "support@stripee.com",
+    "contact_phone": "+15039575052",
+    "status": "active",
+    "created_at": "2023-10-18T02:37:54"
+  },
+  "48": {
+    "vendor_id": "48",
+    "vendor_name": "PayPole Systems",
+    "vendor_type": "payment_processor",
+    "contact_email": "contact@paypole.com",
+    "contact_phone": "+14047417058",
+    "status": "active",
+    "created_at": "2024-06-22T10:19:32"
+  },
+  "49": {
+    "vendor_id": "49",
+    "vendor_name": "SalesForza Networks",
+    "vendor_type": "software_vendor",
+    "contact_email": "info130@salesforza.com",
+    "contact_phone": "+14159278131",
+    "status": "active",
+    "created_at": "2024-07-30T08:44:33"
+  },
+  "50": {
+    "vendor_id": "50",
+    "vendor_name": "Adobix",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales@adobix.com",
+    "contact_phone": "+12023774911",
+    "status": "suspended",
+    "created_at": "2023-10-22T10:38:47"
+  },
+  "51": {
+    "vendor_id": "51",
+    "vendor_name": "Symantix Technologies",
+    "vendor_type": "security_vendor",
+    "contact_email": "contact246@symantix.com",
+    "contact_phone": "+15034699279",
+    "status": "active",
+    "created_at": "2024-09-12T19:42:55"
+  },
+  "52": {
+    "vendor_id": "52",
+    "vendor_name": "Atlasian Services",
+    "vendor_type": "software_vendor",
+    "contact_email": "contact@atlasian.com",
+    "contact_phone": "+12029645959",
+    "status": "active",
+    "created_at": "2024-03-14T09:01:05"
+  },
+  "53": {
+    "vendor_id": "53",
+    "vendor_name": "CrowdStrik3 Solutions",
+    "vendor_type": "security_vendor",
+    "contact_email": "contact@crowdstrik3.com",
+    "contact_phone": "+14044757537",
+    "status": "active",
+    "created_at": "2024-10-11T02:07:27"
+  },
+  "54": {
+    "vendor_id": "54",
+    "vendor_name": "SAPhia Solutions Services",
+    "vendor_type": "software_vendor",
+    "contact_email": "admin@saphiasolutions.com",
+    "contact_phone": "+18324188705",
+    "status": "active",
+    "created_at": "2025-07-27T17:04:03"
+  },
+  "55": {
+    "vendor_id": "55",
+    "vendor_name": "ServiceNowo",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales@servicenowo.com",
+    "contact_phone": "+12023759289",
+    "status": "active",
+    "created_at": "2023-12-22T13:00:55"
+  },
+  "56": {
+    "vendor_id": "56",
+    "vendor_name": "Fortanett",
+    "vendor_type": "security_vendor",
+    "contact_email": "admin@fortanett.com",
+    "contact_phone": "+15039684273",
+    "status": "active",
+    "created_at": "2025-03-28T09:41:41"
+  },
+  "57": {
+    "vendor_id": "57",
+    "vendor_name": "Azurian Cloud Services Technologies",
+    "vendor_type": "cloud_provider",
+    "contact_email": "sales@azuriancloudservices.com",
+    "contact_phone": "+16175161733",
+    "status": "active",
+    "created_at": "2023-11-23T12:54:45"
+  },
+  "58": {
+    "vendor_id": "58",
+    "vendor_name": "CrowdStrik3",
+    "vendor_type": "security_vendor",
+    "contact_email": "sales@crowdstrik3.com",
+    "contact_phone": "+13055054287",
+    "status": "active",
+    "created_at": "2024-05-15T06:44:39"
+  },
+  "59": {
+    "vendor_id": "59",
+    "vendor_name": "Squarix Payments",
+    "vendor_type": "payment_processor",
+    "contact_email": "support@squarixpayments.com",
+    "contact_phone": "+15039477737",
+    "status": "active",
+    "created_at": "2024-03-06T23:09:22"
+  },
+  "60": {
+    "vendor_id": "60",
+    "vendor_name": "Fortanett Networks",
+    "vendor_type": "security_vendor",
+    "contact_email": "support@fortanett.com",
+    "contact_phone": "+16175584725",
+    "status": "active",
+    "created_at": "2024-05-04T15:28:24"
+  },
+  "61": {
+    "vendor_id": "61",
+    "vendor_name": "AOS Cloud",
+    "vendor_type": "cloud_provider",
+    "contact_email": "info@aoscloud.com",
+    "contact_phone": "+13055908490",
+    "status": "inactive",
+    "created_at": "2024-04-21T09:58:08"
+  },
+  "62": {
+    "vendor_id": "62",
+    "vendor_name": "AOS Cloud Solutions",
+    "vendor_type": "cloud_provider",
+    "contact_email": "support@aoscloud.com",
+    "contact_phone": "+16172578877",
+    "status": "inactive",
+    "created_at": "2024-02-23T22:34:44"
+  },
+  "63": {
+    "vendor_id": "63",
+    "vendor_name": "Stripee",
+    "vendor_type": "payment_processor",
+    "contact_email": "support319@stripee.com",
+    "contact_phone": "+14157232894",
+    "status": "active",
+    "created_at": "2024-06-05T16:13:39"
+  },
+  "64": {
+    "vendor_id": "64",
+    "vendor_name": "LinodeX Services",
+    "vendor_type": "cloud_provider",
+    "contact_email": "sales544@linodex.com",
+    "contact_phone": "+13124667348",
+    "status": "active",
+    "created_at": "2024-10-10T17:05:33"
+  },
+  "65": {
+    "vendor_id": "65",
+    "vendor_name": "Microcraft Systems",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales623@microcraft.com",
+    "contact_phone": "+15032618518",
+    "status": "suspended",
+    "created_at": "2024-07-23T02:17:02"
+  },
+  "66": {
+    "vendor_id": "66",
+    "vendor_name": "Microcraft",
+    "vendor_type": "software_vendor",
+    "contact_email": "admin@microcraft.com",
+    "contact_phone": "+13125194420",
+    "status": "active",
+    "created_at": "2025-01-01T10:54:55"
+  },
+  "67": {
+    "vendor_id": "67",
+    "vendor_name": "PayPole",
+    "vendor_type": "payment_processor",
+    "contact_email": "admin@paypole.com",
+    "contact_phone": "+14045205459",
+    "status": "active",
+    "created_at": "2025-07-17T20:07:25"
+  },
+  "68": {
+    "vendor_id": "68",
+    "vendor_name": "Terrafirm",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@terrafirm.com",
+    "contact_phone": "+15032149750",
+    "status": "active",
+    "created_at": "2025-01-15T16:29:44"
+  },
+  "69": {
+    "vendor_id": "69",
+    "vendor_name": "Terrafirm Systems",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "support@terrafirm.com",
+    "contact_phone": "+13125023535",
+    "status": "active",
+    "created_at": "2025-03-08T04:55:11"
+  },
+  "70": {
+    "vendor_id": "70",
+    "vendor_name": "Symantix Networks",
+    "vendor_type": "security_vendor",
+    "contact_email": "contact897@symantix.com",
+    "contact_phone": "+15038642924",
+    "status": "active",
+    "created_at": "2025-02-24T18:46:30"
+  },
+  "71": {
+    "vendor_id": "71",
+    "vendor_name": "Adyant Systems",
+    "vendor_type": "payment_processor",
+    "contact_email": "contact@adyant.com",
+    "contact_phone": "+15037438261",
+    "status": "inactive",
+    "created_at": "2023-10-07T05:05:00"
+  },
+  "72": {
+    "vendor_id": "72",
+    "vendor_name": "AOS Cloud Technologies",
+    "vendor_type": "cloud_provider",
+    "contact_email": "info881@aoscloud.com",
+    "contact_phone": "+17184539065",
+    "status": "active",
+    "created_at": "2025-08-07T06:50:16"
+  },
+  "73": {
+    "vendor_id": "73",
+    "vendor_name": "Stripee Solutions",
+    "vendor_type": "payment_processor",
+    "contact_email": "contact@stripee.com",
+    "contact_phone": "+14047046499",
+    "status": "active",
+    "created_at": "2024-01-14T06:49:58"
+  },
+  "74": {
+    "vendor_id": "74",
+    "vendor_name": "DigitalOceanic Services",
+    "vendor_type": "cloud_provider",
+    "contact_email": "support@digitaloceanic.com",
+    "contact_phone": "+13129891882",
+    "status": "active",
+    "created_at": "2024-05-21T06:52:45"
+  },
+  "75": {
+    "vendor_id": "75",
+    "vendor_name": "Splonq",
+    "vendor_type": "security_vendor",
+    "contact_email": "support@splonq.com",
+    "contact_phone": "+12125937462",
+    "status": "inactive",
+    "created_at": "2024-07-03T01:29:20"
+  },
+  "76": {
+    "vendor_id": "76",
+    "vendor_name": "Kubernetix",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact462@kubernetix.com",
+    "contact_phone": "+12128351198",
+    "status": "inactive",
+    "created_at": "2024-08-04T05:58:21"
+  },
+  "77": {
+    "vendor_id": "77",
+    "vendor_name": "Palo Alto Netwerks Systems",
+    "vendor_type": "security_vendor",
+    "contact_email": "admin@paloaltonetwerks.com",
+    "contact_phone": "+18323119746",
+    "status": "active",
+    "created_at": "2023-11-25T15:36:33"
+  },
+  "78": {
+    "vendor_id": "78",
+    "vendor_name": "Adobix Technologies",
+    "vendor_type": "software_vendor",
+    "contact_email": "sales885@adobix.com",
+    "contact_phone": "+12147026407",
+    "status": "active",
+    "created_at": "2023-12-20T02:24:10"
+  },
+  "79": {
+    "vendor_id": "79",
+    "vendor_name": "Squarix Payments Services",
+    "vendor_type": "payment_processor",
+    "contact_email": "info@squarixpayments.com",
+    "contact_phone": "+13129646046",
+    "status": "active",
+    "created_at": "2024-04-14T13:48:35"
+  },
+  "80": {
+    "vendor_id": "80",
+    "vendor_name": "Squarix Payments Technologies",
+    "vendor_type": "payment_processor",
+    "contact_email": "info659@squarixpayments.com",
+    "contact_phone": "+12136968873",
+    "status": "active",
+    "created_at": "2024-08-01T02:59:59"
+  },
+  "81": {
+    "vendor_id": "81",
+    "vendor_name": "Vulturis Services",
+    "vendor_type": "cloud_provider",
+    "contact_email": "contact822@vulturis.com",
+    "contact_phone": "+12135893111",
+    "status": "active",
+    "created_at": "2024-12-05T04:29:45"
+  },
+  "82": {
+    "vendor_id": "82",
+    "vendor_name": "Goggle Cloud Platform Solutions",
+    "vendor_type": "cloud_provider",
+    "contact_email": "sales@gogglecloudplatform.com",
+    "contact_phone": "+12149425441",
+    "status": "active",
+    "created_at": "2024-11-08T13:20:28"
+  },
+  "83": {
+    "vendor_id": "83",
+    "vendor_name": "Orcale Systems Solutions",
+    "vendor_type": "software_vendor",
+    "contact_email": "info@orcalesystems.com",
+    "contact_phone": "+18329904320",
+    "status": "active",
+    "created_at": "2025-06-07T00:34:15"
+  },
+  "84": {
+    "vendor_id": "84",
+    "vendor_name": "Cysco Systems Systems",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@cyscosystems.com",
+    "contact_phone": "+12023851988",
+    "status": "active",
+    "created_at": "2024-10-01T07:42:06"
+  },
+  "85": {
+    "vendor_id": "85",
+    "vendor_name": "Symantix Services",
+    "vendor_type": "security_vendor",
+    "contact_email": "admin502@symantix.com",
+    "contact_phone": "+12029736614",
+    "status": "active",
+    "created_at": "2023-10-26T21:05:02"
+  },
+  "86": {
+    "vendor_id": "86",
+    "vendor_name": "Palo Alto Netwerks",
+    "vendor_type": "security_vendor",
+    "contact_email": "sales@paloaltonetwerks.com",
+    "contact_phone": "+13053475909",
+    "status": "active",
+    "created_at": "2023-11-20T23:46:21"
+  },
+  "87": {
+    "vendor_id": "87",
+    "vendor_name": "PayPole Services",
+    "vendor_type": "payment_processor",
+    "contact_email": "sales@paypole.com",
+    "contact_phone": "+13124404777",
+    "status": "active",
+    "created_at": "2025-04-10T16:57:09"
+  },
+  "88": {
+    "vendor_id": "88",
+    "vendor_name": "Cysco Systems Networks",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "sales@cyscosystems.com",
+    "contact_phone": "+12026995112",
+    "status": "active",
+    "created_at": "2024-03-20T08:11:22"
+  },
+  "89": {
+    "vendor_id": "89",
+    "vendor_name": "Fortanett Services",
+    "vendor_type": "security_vendor",
+    "contact_email": "support828@fortanett.com",
+    "contact_phone": "+12138216200",
+    "status": "active",
+    "created_at": "2023-09-26T22:21:28"
+  },
+  "90": {
+    "vendor_id": "90",
+    "vendor_name": "HashyCorp Networks",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "support74@hashycorp.com",
+    "contact_phone": "+12023422106",
+    "status": "inactive",
+    "created_at": "2024-12-24T09:26:27"
+  },
+  "91": {
+    "vendor_id": "91",
+    "vendor_name": "Ansiblee",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "admin@ansiblee.com",
+    "contact_phone": "+17187409658",
+    "status": "active",
+    "created_at": "2024-08-19T10:53:13"
+  },
+  "92": {
+    "vendor_id": "92",
+    "vendor_name": "Splonq Solutions",
+    "vendor_type": "security_vendor",
+    "contact_email": "support25@splonq.com",
+    "contact_phone": "+12147768098",
+    "status": "active",
+    "created_at": "2025-07-01T17:51:36"
+  },
+  "93": {
+    "vendor_id": "93",
+    "vendor_name": "Cysco Systems Solutions",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "admin@cyscosystems.com",
+    "contact_phone": "+16173261447",
+    "status": "active",
+    "created_at": "2025-03-19T14:15:42"
+  },
+  "94": {
+    "vendor_id": "94",
+    "vendor_name": "ServiceNowo Networks",
+    "vendor_type": "software_vendor",
+    "contact_email": "admin@servicenowo.com",
+    "contact_phone": "+14158819004",
+    "status": "inactive",
+    "created_at": "2024-12-19T16:32:05"
+  },
+  "95": {
+    "vendor_id": "95",
+    "vendor_name": "Klarno Networks",
+    "vendor_type": "payment_processor",
+    "contact_email": "admin@klarno.com",
+    "contact_phone": "+18324994005",
+    "status": "active",
+    "created_at": "2023-09-13T06:04:10"
+  },
+  "96": {
+    "vendor_id": "96",
+    "vendor_name": "Worldpayz Networks",
+    "vendor_type": "payment_processor",
+    "contact_email": "support@worldpayz.com",
+    "contact_phone": "+14043962204",
+    "status": "active",
+    "created_at": "2024-11-10T18:41:40"
+  },
+  "97": {
+    "vendor_id": "97",
+    "vendor_name": "Terrafirm Networks",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "info@terrafirm.com",
+    "contact_phone": "+13129394865",
+    "status": "inactive",
+    "created_at": "2024-08-04T13:18:00"
+  },
+  "98": {
+    "vendor_id": "98",
+    "vendor_name": "ServiceNowo Technologies",
+    "vendor_type": "software_vendor",
+    "contact_email": "admin87@servicenowo.com",
+    "contact_phone": "+12133821638",
+    "status": "active",
+    "created_at": "2025-04-08T07:15:53"
+  },
+  "99": {
+    "vendor_id": "99",
+    "vendor_name": "McAfree Services",
+    "vendor_type": "security_vendor",
+    "contact_email": "sales@mcafree.com",
+    "contact_phone": "+16172896820",
+    "status": "active",
+    "created_at": "2025-05-17T19:45:34"
+  },
+  "100": {
+    "vendor_id": "100",
+    "vendor_name": "Klarno Technologies",
+    "vendor_type": "payment_processor",
+    "contact_email": "sales@klarno.com",
+    "contact_phone": "+16178751484",
+    "status": "active",
+    "created_at": "2023-12-18T15:49:25"
+  }
+}
