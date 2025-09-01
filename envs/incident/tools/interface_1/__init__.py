@@ -21,6 +21,7 @@ from .create_client_subscription import CreateClientSubscription
 from .update_client_subscription import UpdateClientSubscription
 from .create_sla_agreement import CreateSlaAgreement
 from .update_sla_agreement import UpdateSlaAgreement
+from .record_incident import RecordIncident
 
 ALL_TOOLS_INTERFACE_1 = [
     # GET
@@ -45,4 +46,5 @@ ALL_TOOLS_INTERFACE_1 = [
     UpdateClientSubscription,
     CreateSlaAgreement,
     UpdateSlaAgreement,
+    RecordIncident
 ]

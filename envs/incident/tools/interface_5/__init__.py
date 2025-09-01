@@ -23,7 +23,7 @@ from .revise_post_incident_review import RevisePostIncidentReview
 from .log_communication import LogCommunication
 from .log_root_cause_analysis import LogRootCauseAnalysis
 from .log_workaround import LogWorkaround
-
+from .add_incident import AddIncident
 ALL_TOOLS_INTERFACE_5 = [
     # GET
     ListMetrics,
@@ -49,4 +49,5 @@ ALL_TOOLS_INTERFACE_5 = [
     LogCommunication,
     LogRootCauseAnalysis,
     LogWorkaround,
+    AddIncident
 ]

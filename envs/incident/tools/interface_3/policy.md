@@ -17,7 +17,6 @@ Who can perform: Incident managers, technical support, and system administrators
 Pre-checks:
 - Check that reporter user exists and has active status
 - Verify client exists
-- Search for similar open incidents in last 24 hours to avoid duplicates
 - Check that component exists if specified
 
 Steps:
@@ -26,8 +25,8 @@ Steps:
 - Associate with specified client and infrastructure component records
 - Create incident record and return incident identifier
 
-Severity Classification Process during Incident Creation:  
-Evaluate the following conditions and set the corresponding boolean flags (`p1_*`, `p2_*`, `p3_*`) to **True** for every condition that applies based on the available data. Compute severity as **P1** if any P1 condition is True; otherwise **P2** if any P2 condition is True; otherwise **P3** if any P3 condition is True; otherwise **P4**.
+#### Severity Classification Process during Incident Creation:  
+Evaluate the following conditions and set the corresponding boolean flags (`p1_*`, `p2_*`, `p3_*`) to **True** for every condition that applies based on the available data. Compute severity as **P1** if any P1 condition is `True`; otherwise **P2** if any P2 condition is `True`; otherwise **P3** if any P3 condition is `True`; otherwise **P4**.
 
 **P1 Evaluation:**
 - Evaluate whether the incident causes complete outage of business-critical service with no workaround available.
@@ -46,9 +45,9 @@ Evaluate the following conditions and set the corresponding boolean flags (`p1_*
 
 If none of the P1/P2/P3 conditions apply, set severity as **P4**.
 
-Set detection timestamp and initial status as open  
-Associate with specified client and reporter.  
-Create incident record with determined severity level and return incident identifier
+- Set detection timestamp and initial status as open  
+- Associate with specified client and reporter.  
+- Create incident record with determined severity level and return incident identifier
 
 ### Updating Incident Status
 When to use: When incident conditions change requiring status modifications or progress updates.  

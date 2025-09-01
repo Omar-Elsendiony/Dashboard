@@ -23,6 +23,7 @@ from .edit_root_cause_analysis import EditRootCauseAnalysis
 from .record_communication import RecordCommunication
 from .edit_communication import EditCommunication
 from .record_post_incident_review import RecordPostIncidentReview
+from .create_incident import CreateIncident
 
 ALL_TOOLS_INTERFACE_4 = [
     # GET
@@ -49,4 +50,5 @@ ALL_TOOLS_INTERFACE_4 = [
     RecordCommunication,
     EditCommunication,
     RecordPostIncidentReview,
+    CreateIncident
 ]

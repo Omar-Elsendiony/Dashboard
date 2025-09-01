@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class RegisterIncident(Tool):
+class AddIncident(Tool):
     @staticmethod
     def invoke(
         data: Dict[str, Any],
@@ -112,8 +112,8 @@ class RegisterIncident(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "register_incident",
-                "description": "Create a new incident; initial status is set to 'open' per SOP; computes severity if not provided.",
+                "name": "add_incident",
+                "description": "Add a new incident; initial status is set to 'open' per SOP; computes severity if not provided.",
                 "parameters": {
                     "type": "object",
                     "properties": {
