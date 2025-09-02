@@ -29,7 +29,7 @@ from .log_workaround import LogWorkaround
 from .add_incident import AddIncident
 from .revise_incident import ReviseIncident
 from .log_incident_update_record import LogIncidentUpdateRecord
-
+from .list_client_subscriptions import ListClientSubscriptions
 
 ALL_TOOLS_INTERFACE_5 = [
     # GET
@@ -61,5 +61,6 @@ ALL_TOOLS_INTERFACE_5 = [
     LogWorkaround,
     AddIncident,
     ReviseIncident,
-    LogIncidentUpdateRecord
+    LogIncidentUpdateRecord,
+    ListClientSubscriptions
 ]

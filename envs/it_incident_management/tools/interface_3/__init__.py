@@ -25,7 +25,7 @@ from .register_root_cause_analysis import RegisterRootCauseAnalysis
 from .amend_root_cause_analysis import AmendRootCauseAnalysis
 from .register_change_request import RegisterChangeRequest
 from .register_incident_update_record import RegisterIncidentUpdateRecord
-
+from .retrieve_client_subscriptions import RetrieveClientSubscriptions
 ALL_TOOLS_INTERFACE_3 = [
     # GET
     RetrieveIncidents,
@@ -53,4 +53,5 @@ ALL_TOOLS_INTERFACE_3 = [
     AmendRootCauseAnalysis,
     RegisterChangeRequest,
     RegisterIncidentUpdateRecord,
+    RetrieveClientSubscriptions
 ]

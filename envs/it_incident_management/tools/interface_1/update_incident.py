@@ -78,7 +78,7 @@ class UpdateIncident(Tool):
             "type": "function",
             "function": {
                 "name": "update_incident",
-                "description": "Apply field updates to an incident. Call create_incident_record first per SOP.",
+                "description": "Apply field updates to an incident . Call create_incident_record first per SOP.",
                 "parameters": {
                     "type": "object",
                     "properties": {

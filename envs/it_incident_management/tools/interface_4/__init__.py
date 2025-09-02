@@ -28,7 +28,7 @@ from .record_post_incident_review import RecordPostIncidentReview
 from .create_incident import CreateIncident
 from .record_incident_update_record import RecordIncidentUpdateRecord
 from .edit_incident import EditIncident
-
+from .query_client_subscriptions import QueryClientSubscriptions
 ALL_TOOLS_INTERFACE_4 = [
     # GET
     QueryChangeRequests,
@@ -58,5 +58,6 @@ ALL_TOOLS_INTERFACE_4 = [
     RecordPostIncidentReview,
     CreateIncident,
     RecordIncidentUpdateRecord,
-    EditIncident
+    EditIncident,
+    QueryClientSubscriptions
 ]
