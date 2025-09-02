@@ -66,7 +66,7 @@ class CreateClient(Tool):
                         "country": {"type": "string"},
                         "status": {"type": "string", "description": "active|inactive|suspended (default active)"}
                     },
-                    "required": ["data", "client_name", "registration_number", "contact_email", "client_type"]
+                    "required": ["client_name", "registration_number", "contact_email", "client_type"]
                 }
             }
         }

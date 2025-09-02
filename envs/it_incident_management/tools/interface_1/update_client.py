@@ -59,7 +59,7 @@ class UpdateClient(Tool):
                         "country": {"type": "string"},
                         "status": {"type": "string", "description": "active|inactive|suspended"}
                     },
-                    "required": ["data", "client_id"]
+                    "required": ["client_id"]
                 }
             }
         }
