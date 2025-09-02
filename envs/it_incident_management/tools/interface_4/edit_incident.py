@@ -78,7 +78,7 @@ class EditIncident(Tool):
             "type": "function",
             "function": {
                 "name": "edit_incident",
-                "description": "Apply field updates to an incident (no audit logging). Call create_incident_record first per SOP.",
+                "description": "Apply field updates to an incident. Call create_incident_record first per SOP.",
                 "parameters": {
                     "type": "object",
                     "properties": {

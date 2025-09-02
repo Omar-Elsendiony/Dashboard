@@ -73,7 +73,7 @@ class CreateUser(Tool):
                         "vendor_id": {"type": "string"},
                         "status": {"type": "string", "description": "active|inactive|on_leave (default active)"}
                     },
-                    "required": ["data", "first_name", "last_name", "email", "role", "department"]
+                    "required": ["first_name", "last_name", "email", "role", "department"]
                 }
             }
         }

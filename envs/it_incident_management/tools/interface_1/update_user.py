@@ -64,7 +64,7 @@ class UpdateUser(Tool):
                         "vendor_id": {"type": "string"},
                         "timezone": {"type": "string"}
                     },
-                    "required": ["data", "user_id"]
+                    "required": ["user_id"]
                 }
             }
         }
