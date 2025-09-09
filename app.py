@@ -23,7 +23,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 
 app.config["SESSION_PERMANENT"] = True
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15) 
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
 
 # app.config['SESSION_TYPE'] = 'filesystem' 
 
@@ -36,12 +36,39 @@ app.register_blueprint(task_tracker_bp)
 app.register_blueprint(task_framework_bp)
 # app.register_blueprint(login_bp)
 
+PUBLIC_ROUTES = {
+    '/',
+    '/login',
+    '/login/callback',
+    '/logout',
+    '/static'  # for static files
+}
 
 @app.before_request
 def load_session_data():
     g.environment = session.get("environment")
     g.interface = session.get("interface")
     g.data = session.get("data", {})
+    
+    if request.endpoint in ['static'] or request.path not in PUBLIC_ROUTES:
+        return
+    
+    # Skip authentication check for static files
+    if request.path.startswith('/static/'):
+        return
+    
+    # Check if user is authenticated for protected routes
+    if not current_user.is_authenticated:
+        # For API calls (JSON requests), return JSON error
+        # if request.is_json or request.path in API_ROUTES:
+        #     return jsonify({
+        #         'status': 'error',
+        #         'message': 'Authentication required',
+        #         'redirect': url_for('index')
+        #     }), 401
+        
+        # For regular requests, redirect to login
+        return redirect(url_for('index'))
 
 ######################## OUTHENTICATION WITH GOOGLE ########################
 # Python standard libraries
