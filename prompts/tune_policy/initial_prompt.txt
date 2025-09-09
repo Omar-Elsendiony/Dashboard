@@ -19,4 +19,4 @@ Here is the policy:
 {policy}
 
 Here are some examples of good policies
-{good_policies}
+{example_policies}
