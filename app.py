@@ -796,6 +796,34 @@ def database_utilities_prompt_generation():
             'status': 'success',
             'prompt': prompt
         }), 200
+    elif action == "tune_policy":
+        initial_prompt = data.get('initial_prompt', '')
+        policy = data.get('policy', '')
+        example_policies = data.get('example_policies', '')
+        
+        prompt = initial_prompt.format(
+            policy=policy,
+            example_policies=example_policies
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
+    elif action == "validate_policy":
+        initial_prompt = data.get('initial_prompt', '')
+        policy = data.get('policy', '')
+        example_policies = data.get('example_policies', '')
+        
+        prompt = initial_prompt.format(
+            policy=policy,
+            example_policies=example_policies
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'prompt': prompt
+        }), 200
     else:
         return jsonify({
             'status': 'error',
@@ -806,7 +834,6 @@ def database_utilities_prompt_generation():
 @app.route('/database_utilities', methods=["POST"])
 def database_utilities():
     data = request.get_json()
-    
     action = data.get('action')
     if action == 'policy_creation':
         # Handle policy creation logic here
@@ -829,8 +856,6 @@ def database_utilities():
         
         with open(example_policies_file_path, 'r') as file:
             example_policies = file.read()
-        
-        
         return jsonify({
             'status': 'success',
             'initial_prompt': initial_prompt,
@@ -848,7 +873,6 @@ def database_utilities():
         
         with open(initial_prompt_file_path, 'r') as file:
             initial_prompt = file.read()
-        
         example_apis_file_path = f"prompts/{action}/examples_tools.txt" # aka example APIs
         if not os.path.exists(example_apis_file_path):
             return jsonify({
@@ -967,7 +991,59 @@ def database_utilities():
             'initial_prompt': initial_prompt,
             'example_schema': example_schema
         }), 200
+    elif action == 'tune_policy':
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        
+        example_policies_file_path = f"prompts/{action}/example_policies.txt"
+        if not os.path.exists(example_policies_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example policies file for {action} not found'
+            }), 404
+        
+        with open(example_policies_file_path, 'r') as file:
+            example_policies = file.read()
+        
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'example_policies': example_policies
+        }), 200
 
+    elif action == 'policy_validator':
+        initial_prompt_file_path = f"prompts/{action}/initial_prompt.txt"
+        if not os.path.exists(initial_prompt_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Initial prompt file for {action} not found'
+            }), 404
+        
+        with open(initial_prompt_file_path, 'r') as file:
+            initial_prompt = file.read()
+        
+        example_policies_file_path = f"prompts/{action}/example_policies.txt"
+        if not os.path.exists(example_policies_file_path):
+            return jsonify({
+                'status': 'error',
+                'message': f'Example policies file for {action} not found'
+            }), 404
+        
+        with open(example_policies_file_path, 'r') as file:
+            example_policies = file.read()
+        
+        return jsonify({
+            'status': 'success',
+            'initial_prompt': initial_prompt,
+            'example_policies': example_policies
+        }), 200
     else:
         return jsonify({
             'status': 'error',
@@ -1127,6 +1203,4 @@ def instruction_relevant_actions_or_policies():
 
 if __name__ == "__main__":
     """ Main Function """
-    # host = '0.0.0.0'
-    # port = 5000
     app.run()

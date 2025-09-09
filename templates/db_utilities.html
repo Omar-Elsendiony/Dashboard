@@ -635,6 +635,98 @@
                     console.error('Error:', error);
                     alert('An error occurred while extracting policy schema.');
                 });
+            } else if (feature == "tune_policy"){
+                const initialPrompt = document.getElementById('initial-prompt').value;
+                const policy = document.getElementById('policy').value;
+                const examplePolicies = document.getElementById('example-policies').value;
+
+                fetch('/database_utilities_prompt_generation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'tune_policy',
+                        initial_prompt: initialPrompt,
+                        policy: policy,
+                        example_policies: examplePolicies
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    // remove if they were present before
+                    const existingHeader = document.getElementById('output-header');
+                    const existingTextArea = document.getElementById('generated-tuned-policy');
+                    if (existingHeader) {
+                        existingHeader.remove();
+                    }
+                    if (existingTextArea) {
+                        existingTextArea.remove();
+                    }
+
+                    outputHeader = document.createElement('h2');
+                    outputHeader.innerText = 'Tuned Policy';
+                    outputHeader.id = 'output-header';
+                    document.getElementById('content').appendChild(outputHeader);
+
+                    textAreaNode = document.createElement('textarea');
+                    textAreaNode.id = 'generated-tuned-policy';
+                    textAreaNode.style.width = '100%';
+                    textAreaNode.style.height = '200px';
+                    textAreaNode.value = data.prompt;
+                    document.getElementById('content').appendChild(textAreaNode);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while tuning the policy.');
+                });
+            } else if (feature == "policy_validator"){
+                const initialPrompt = document.getElementById('initial-prompt').value;
+                const policy = document.getElementById('policy').value;
+                const examplePolicies = document.getElementById('example-policies').value;
+
+                fetch('/database_utilities_prompt_generation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        action: 'validate_policy',
+                        initial_prompt: initialPrompt,
+                        policy: policy,
+                        example_policies: examplePolicies
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    // remove if they were present before
+                    const existingHeader = document.getElementById('output-header');
+                    const existingTextArea = document.getElementById('generated-validation');
+                    if (existingHeader) {
+                        existingHeader.remove();
+                    }
+                    if (existingTextArea) {
+                        existingTextArea.remove();
+                    }
+
+                    outputHeader = document.createElement('h2');
+                    outputHeader.innerText = 'Policy Validation Results';
+                    outputHeader.id = 'output-header';
+                    document.getElementById('content').appendChild(outputHeader);
+
+                    textAreaNode = document.createElement('textarea');
+                    textAreaNode.id = 'generated-validation';
+                    textAreaNode.style.width = '100%';
+                    textAreaNode.style.height = '200px';
+                    textAreaNode.value = data.prompt;
+                    document.getElementById('content').appendChild(textAreaNode);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while validating the policy.');
+                });
             } else {
                 alert("This feature is not implemented yet.");
             }
@@ -890,6 +982,11 @@
                         } else if (utility === 'extract-policy-schema') {
                             extract_policy_schema_handling();
                         }
+                        else if (utility === 'tune-policy') {
+                            tune_policy_handling();
+                        } else if (utility === 'policy-validator') {
+                            policy_validator_handling();
+                        }
                     } else {
                         console.warn('No utility data found for this card.');
                     }
@@ -986,6 +1083,16 @@
                 <div class="utility-icon">📋</div>
                 <div class="utility-title">Extract Policy Schema</div>
                 <div class="utility-description">Extract database schema information from policies using initial prompts and example schema references</div>
+            </div>
+            <div class="analytics-card" data-utility="tune-policy">
+                <div class="utility-icon">🎛️</div>
+                <div class="utility-title">Tune Policy</div>
+                <div class="utility-description">Fine-tune and optimize existing policies using reference examples and best practices</div>
+            </div>
+            <div class="analytics-card" data-utility="policy-validator">
+                <div class="utility-icon">✅</div>
+                <div class="utility-title">Policy Validator</div>
+                <div class="utility-description">Validate policy structure, completeness, and compliance against example policies</div>
             </div>
         </div>
 
