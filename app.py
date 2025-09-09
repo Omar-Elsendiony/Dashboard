@@ -41,7 +41,6 @@ PUBLIC_ROUTES = {
     '/login',
     '/login/callback',
     '/logout',
-    '/static'  # for static files
 }
 
 @app.before_request
@@ -51,10 +50,6 @@ def load_session_data():
     g.data = session.get("data", {})
     
     if request.endpoint in ['static'] or request.path not in PUBLIC_ROUTES:
-        return
-    
-    # Skip authentication check for static files
-    if request.path.startswith('/static/'):
         return
     
     # Check if user is authenticated for protected routes
