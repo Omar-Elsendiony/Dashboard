@@ -1,4 +1,8 @@
+requests
 Flask
+oauthlib
+pyOpenSSL
+Flask-Login
 Flask-Cors
 Flask-Session
 python-dateutil
@@ -12,6 +16,8 @@ gspread
 oauth2client
 openai
 anthropic
+sqlite3
+
 # streamlit>=1.28.0
 # matplotlib>=3.7.0
 # networkx>=3.1
