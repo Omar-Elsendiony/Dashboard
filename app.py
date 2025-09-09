@@ -12,12 +12,13 @@ from anthropic import Anthropic
 # import gspread
 # from oauth2client.service_account import ServiceAccountCredentials
 from datetime import timedelta
-from task_framework_utils import extract_file_info, create_tools_class, arguments_processing
 from dotenv import load_dotenv
 load_dotenv()
 
 from modules.database_utilities import db_utilities_bp
 from modules.task_tracker import task_tracker_bp
+from modules.task_framework import task_framework_bp
+
 
 app = Flask(__name__ , static_url_path='')
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
@@ -33,7 +34,8 @@ app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 app.register_blueprint(db_utilities_bp)
-
+app.register_blueprint(task_tracker_bp)
+app.register_blueprint(task_framework_bp)
 
 
 @app.before_request
@@ -45,204 +47,6 @@ def load_session_data():
     # print(g.data)
 
 
-@app.route('/task-framework', strict_slashes=False, methods=["POST", "GET"])
-def task_framework():
-    return render_template('task_framework.html')
-
-
-
-@app.route('/choose_env_interface', strict_slashes=False, methods=["POST", "GET"])
-def env_interface():
-    """ Endpoint to handle environment and interface selection """
-    if request.method == "POST":
-        try:
-            passed_inputs = request.get_json()
-            
-            environment = passed_inputs.get('environment') if passed_inputs else None
-            interface = passed_inputs.get('interface') if passed_inputs else None
-            
-            # global last_environment, last_interface, data
-            
-            # print(environment, session.get("environment"))
-            if environment != session.get("environment"):
-                g.data.clear()
-                # ENVS_PATH = "envs"
-                # DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-                # data_files = os.listdir(DATA_PATH)
-                # # print("Loaded data:")
-                # for data_file in data_files:
-                #     if data_file.endswith(".json"):
-                #         data_file_path = os.path.join(DATA_PATH, data_file)
-                #         with open(data_file_path, "r") as file:
-                #             g.data[data_file.split('.')[0]] = json.load(file)
-                session["environment"] = environment
-                session["interface"] = interface
-                # session["data"] = g.data
-                # print("data", g.data)
-            
-            # print(session["environment"], session["interface"])
-            if environment and interface:
-                # last_interface = interface
-                # last_environment = environment
-                ENVS_PATH = "envs"
-                TOOLS_PATH = f"{ENVS_PATH}/{environment}/tools"
-                INTERFACE_PATH = f"{TOOLS_PATH}/interface_{interface}"
-                API_files = os.listdir(INTERFACE_PATH)
-                invoke_methods = []
-                functionsInfo = []
-                importsSet = set()
-                for api_file in API_files:
-                    if api_file.endswith(".py") and not api_file.startswith("__"):
-                        file_path = os.path.join(INTERFACE_PATH, api_file)
-                        try:
-                            function_info, invoke_method, imports = extract_file_info(file_path)
-                            # print(f"Extracted function info: {function_info}")
-                            # if not function_info:
-                            #     print(f"No function info found in {api_file}, skipping.")
-                            #     continue
-                            importsSet.update(imports)
-                            invoke_method = invoke_method.replace("invoke", function_info.get('name', 'invoke')+"_invoke")
-                            invoke_methods.append(invoke_method)
-                            functionsInfo.append(function_info)
-
-                        except SyntaxError as e:
-                            print(f"Syntax error in {api_file}: {e}")
-                        except Exception as e:
-                            print(f"Error processing {api_file}: {e}")
-                
-                # temp_dir = "/tmp"
-                # tools_file_path = os.path.join(temp_dir, "tools.py")
-                # with open(tools_file_path, "w") as new_file:
-                #     new_file.write('\n'.join(sorted(importsSet)) + "\n\n")
-                #     new_file.write("class Tools:\n")
-                #     for invoke_method in invoke_methods:
-                #         new_file.write("    @staticmethod\n" + invoke_method + "\n\n")
-                session["imports_set"] = (importsSet)
-                session["invoke_methods"] = invoke_methods
-                session["actions"] = []
-                # print("Imports set:", session["imports_set"])
-                return jsonify({
-                    'status': 'success',
-                    'message': 'Environment and interface selected successfully',
-                    'functions_info': functionsInfo,
-                }), 200
-            else:
-                return jsonify({
-                    'status': 'error',
-                    'message': 'Missing environment or interface data'
-                }), 400
-                
-        except Exception as e:
-            print(f"Error processing request: {str(e)}")
-            return jsonify({
-                'status': 'error',
-                'message': f'{str(e)}'
-            }), 500
-    
-    # Handle GET requests
-    elif request.method == "GET":
-        return jsonify({
-            'status': 'success',
-            'message': 'Choose environment and interface endpoint is working'
-        })
-
-def execute_api_utility(api_name, arguments):
-    tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
-    # print('executing ...')
-    arguments = arguments_processing(arguments)
-    if hasattr(tools_instance, api_name):
-        # try:
-            # print(g.data)
-            # Dynamically call the method with the provided arguments
-            result = getattr(tools_instance, api_name)(data=g.data, **arguments)
-            # print(f"Result from API {api_name}: {result}")
-            # session["actions"].append({
-            #     'api_name': api_name,
-            #     'arguments': arguments
-            # })
-    #         return jsonify({
-    #             'output': json.loads(result) if isinstance(result, str) else result
-    #         }), 200
-    #     except Exception as e:
-    #         print(f"Error executing API {api_name}: {str(e)}")
-    #         return jsonify({
-    #             'status': 'error',
-    #             'message': f'Failed to execute API: {str(e)}'
-    #         }), 500
-    # else:
-    #     return jsonify({
-    #         'status': 'error',
-    #         'message': f'API {api_name} not found'
-    #     }), 404
-
-
-@app.route('/execute_api', strict_slashes=False, methods=["GET", "POST"])
-def execute_api():
-    # global data, last_environment, last_interface  # Add global declaration
-    if request.method != "POST":
-        return jsonify({
-            'status': 'error',
-            'message': 'Only POST requests are allowed'
-        }), 405
-
-    passed_data = request.get_json()
-    # print(passed_data.get('environment'))
-    environment = passed_data.get('environment', session.get("environment"))
-    ENVS_PATH = "envs"
-    DATA_PATH = f"{ENVS_PATH}/{environment}/data"
-    data_files = os.listdir(DATA_PATH)
-    # print("Loaded data:")
-    for data_file in data_files:
-        if data_file.endswith(".json"):
-            data_file_path = os.path.join(DATA_PATH, data_file)
-            with open(data_file_path, "r") as file:
-                g.data[data_file.split('.')[0]] = json.load(file)
-    
-    for action in session.get("actions", []):
-        # print('session:', session.get("actions"))
-        api_name = action.get('api_name')
-        execute_api_utility(api_name, action.get('arguments', {}))
-    
-    api_name = passed_data.get('api_name')
-    api_name = api_name + "_invoke" if api_name else None
-    if not api_name:
-        return jsonify({
-            'status': 'error',
-            'message': 'API name is required'
-        }), 400
-
-    
-    arguments = passed_data.get('parameters', {})
-    cleaned_arguments = arguments_processing(arguments)
-    arguments = cleaned_arguments
-    
-    
-    tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
-
-    if hasattr(tools_instance, api_name):
-        try:
-            # print(g.data)
-            # Dynamically call the method with the provided arguments
-            result = getattr(tools_instance, api_name)(data=g.data, **arguments)
-            # print(f"Result from API {api_name}: {result}")
-            session["actions"].append({
-                'api_name': api_name,
-                'arguments': arguments
-            })
-            return jsonify({
-                'output': json.loads(result) if isinstance(result, str) else result
-            }), 200
-        except Exception as e:
-            print(f"Error executing API {api_name}: {str(e)}")
-            return jsonify({
-                'status': 'error',
-                'message': f'Failed to execute API: {str(e)}'
-            }), 500
-    else:
-        return jsonify({
-            'status': 'error',
-            'message': f'API {api_name} not found'
-        }), 404
 
 @app.route('/interface_connections', strict_slashes=False, methods=["GET", "POST"])
 def interface_connections():

@@ -1,15 +1,11 @@
-
-
-
-
 ############# TASK TRACKER LOGIC ####################
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 import threading
 import base64
 import os
 import json
 from flask import Blueprint, render_template, request, jsonify
+from oauth2client.service_account import ServiceAccountCredentials
 
 task_tracker_bp = Blueprint('task_tracker', __name__)
 
