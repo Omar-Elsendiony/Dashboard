@@ -49,9 +49,9 @@ def load_session_data():
     g.interface = session.get("interface")
     g.data = session.get("data", {})
     
-    if request.endpoint in ['static'] or request.path not in PUBLIC_ROUTES:
+    if request.path in PUBLIC_ROUTES:
         return
-    
+
     # Check if user is authenticated for protected routes
     if not current_user.is_authenticated:
         # For API calls (JSON requests), return JSON error
@@ -120,14 +120,6 @@ def load_user(user_id):
 def index():
     if current_user.is_authenticated:
         return render_template('main.html')
-        # return (
-        #     "<p>Hello, {}! You're logged in! Email: {}</p>"
-        #     "<div><p>Google Profile Picture:</p>"
-        #     '<img src="{}" alt="Google profile pic"></img></div>'
-        #     '<a class="button" href="/logout">Logout</a>'.format(
-        #         current_user.name, current_user.email, current_user.profile_pic
-        #     )
-        # )
     else:
         return render_template('login.html')
     
