@@ -16,7 +16,7 @@ gspread
 oauth2client
 openai
 anthropic
-sqlite3
+sqlite
 
 # streamlit>=1.28.0
 # matplotlib>=3.7.0
