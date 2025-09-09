@@ -15,7 +15,7 @@ load_dotenv()
 from modules.database_utilities import db_utilities_bp
 from modules.task_tracker import task_tracker_bp
 from modules.task_framework import task_framework_bp
-from modules.login import login_bp
+# from modules.login import login_bp
 
 
 app = Flask(__name__ , static_url_path='')
@@ -25,16 +25,16 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15) 
 
-app.config['SESSION_TYPE'] = 'filesystem' 
+# app.config['SESSION_TYPE'] = 'filesystem' 
 
-# app.config['SESSION_TYPE'] = 'redis'
-# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+app.config['SESSION_TYPE'] = 'redis'
+app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 app.register_blueprint(db_utilities_bp)
 app.register_blueprint(task_tracker_bp)
 app.register_blueprint(task_framework_bp)
-app.register_blueprint(login_bp)
+# app.register_blueprint(login_bp)
 
 
 @app.before_request
@@ -66,10 +66,6 @@ load_dotenv()
 # Internal imports
 from modules.login_utils.db import init_db_command
 from modules.login_utils.user import User
-
-# Creating Blueprint for login module
-from flask import Blueprint
-login_bp = Blueprint('login_blueprint', __name__)
 
 # Configuration
 GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", None)
