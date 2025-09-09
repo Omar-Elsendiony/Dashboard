@@ -193,7 +193,7 @@
         .utility-icon {
             font-size: 4rem;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            // background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -919,6 +919,80 @@
             document.getElementById('initial-prompt').value = data.initial_prompt || '';
             document.getElementById('policy').value = data.policy || '';
             document.getElementById('example-apis').value = data.example_apis || '';
+        }
+
+        async function tune_policy_handling(){
+            const response = await fetch('/database_utilities', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    action: 'tune_policy'
+                })
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('content').innerHTML = '';
+            document.getElementById('content').innerHTML = `
+                <h2 id="content-header">Tune Policy</h2>
+                <h3 class="content-subheader">Initial Prompt</h3>
+                <textarea id="initial-prompt"></textarea>
+
+                <h3 class="content-subheader">Policy</h3>
+                <textarea id="policy"></textarea>
+
+                <h3 class="content-subheader">Example Policies</h3>
+                <textarea id="example-policies"></textarea>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem;">
+                    <button id="tune-policy" onclick="sendContentLLM('tune_policy')" style="margin: 1rem; padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer;">Tune Policy</button>
+                </div>
+            `;
+
+            document.getElementById('initial-prompt').value = data.initial_prompt || '';
+            document.getElementById('policy').value = data.policy || '';
+            document.getElementById('example-policies').value = data.example_policies || '';
+        }
+
+        async function policy_validator_handling(){
+            const response = await fetch('/database_utilities', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    action: 'policy_validator'
+                })
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('content').innerHTML = '';
+            document.getElementById('content').innerHTML = `
+                <h2 id="content-header">Policy Validator</h2>
+                <h3 class="content-subheader">Initial Prompt</h3>
+                <textarea id="initial-prompt"></textarea>
+
+                <h3 class="content-subheader">Policy</h3>
+                <textarea id="policy"></textarea>
+
+                <h3 class="content-subheader">Example Policies</h3>
+                <textarea id="example-policies"></textarea>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem;">
+                    <button id="validate-policy" onclick="sendContentLLM('policy_validator')" style="margin: 1rem; padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer;">Validate Policy</button>
+                </div>
+            `;
+
+            document.getElementById('initial-prompt').value = data.initial_prompt || '';
+            document.getElementById('policy').value = data.policy || '';
+            document.getElementById('example-policies').value = data.example_policies || '';
         }
 
         async function extract_policy_schema_handling(){
