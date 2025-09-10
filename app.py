@@ -2,13 +2,17 @@
 """ Flask Application """
 import os
 import redis
-from flask import Flask, render_template, jsonify, request
+import requests
+import json
+import sqlite3
+# Third-party libraries
 from flask_cors import CORS
-from flask import session, g
-from flask_session import Session
 from anthropic import Anthropic
 from datetime import timedelta
-
+from functools import lru_cache
+from flask_session import Session
+from oauthlib.oauth2 import WebApplicationClient
+from flask import Flask, render_template, jsonify, request, redirect, url_for, session, g
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -41,6 +45,7 @@ PUBLIC_ROUTES = {
     '/login',
     '/login/callback',
     '/logout',
+    '/static',
 }
 
 @app.before_request
@@ -49,7 +54,7 @@ def load_session_data():
     g.interface = session.get("interface")
     g.data = session.get("data", {})
     
-    if request.path in PUBLIC_ROUTES:
+    if request.path.startswith('/static/') or request.path in ['static'] or request.path in PUBLIC_ROUTES:
         return
 
     # Check if user is authenticated for protected routes
@@ -66,13 +71,7 @@ def load_session_data():
         return redirect(url_for('index'))
 
 ######################## OUTHENTICATION WITH GOOGLE ########################
-# Python standard libraries
-import json
-import os
-import sqlite3
 
-# Third-party libraries
-from flask import Flask, redirect, request, url_for
 from flask_login import (
     LoginManager,
     current_user,
@@ -80,10 +79,7 @@ from flask_login import (
     login_user,
     logout_user,
 )
-from oauthlib.oauth2 import WebApplicationClient
-import requests
-from dotenv import load_dotenv
-load_dotenv()
+
 
 # Internal imports
 from modules.login_utils.db import init_db_command
@@ -123,8 +119,6 @@ def index():
     else:
         return render_template('login.html')
     
-import time
-from functools import lru_cache
 
 @lru_cache(maxsize=1)
 def get_google_provider_cfg():
@@ -216,9 +210,6 @@ def logout():
     logout_user()
     return render_template('login.html')
 
-
-# if __name__ == "__main__":
-#     app.run(ssl_context="adhoc")
 ######################## END OF OUTHENTICATION WITH GOOGLE ########################
 
 
