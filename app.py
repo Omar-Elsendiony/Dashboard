@@ -65,10 +65,9 @@ def load_session_data():
     g.interface = session.get("interface")
     g.data = session.get("data", {})
     
-    if request.path.startswith('/static/') or request.path in ['static'] or request.path in PUBLIC_ROUTES:
+    if request.path.startswith('/static/') or request.path in ['static'] or request.path in PUBLIC_ROUTES or 'google' in request.path:
         return
 
-    # Check if user is authenticated for protected routes
     if not current_user.is_authenticated:
         if request.path not in ['/login', '/login/callback', '/logout']:
             return redirect(url_for('index'))
