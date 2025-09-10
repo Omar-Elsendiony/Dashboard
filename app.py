@@ -364,6 +364,11 @@ def instruction_relevant_actions_or_policies():
     else:
         return render_template('instruction_relevant_actions_or_policies.html')
 
+# Add this route to your Flask app
+@app.route('/google0798b17d9d33abf1.html')  # Replace with your actual filename
+def google_verification():
+    return 'google-site-verification: google0798b17d9d33abf1.html'  # Replace with actual content
+
 if __name__ == "__main__":
     """ Main Function """
     # app.run(ssl_context="adhoc")
