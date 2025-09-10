@@ -366,4 +366,5 @@ def instruction_relevant_actions_or_policies():
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run(ssl_context="adhoc")
+    # app.run(ssl_context="adhoc")
+    app.run()
