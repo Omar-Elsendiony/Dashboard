@@ -13,12 +13,23 @@ from functools import lru_cache
 from flask_session import Session
 from oauthlib.oauth2 import WebApplicationClient
 from flask import Flask, render_template, jsonify, request, redirect, url_for, session, g
-from dotenv import load_dotenv
-load_dotenv()
+from flask_login import (
+    LoginManager,
+    current_user,
+    login_required,
+    login_user,
+    logout_user,
+)
+# Internal imports
+from modules.login_utils.db import init_db_command
+from modules.login_utils.user import User
+
 
 from modules.database_utilities import db_utilities_bp
 from modules.task_tracker import task_tracker_bp
 from modules.task_framework import task_framework_bp
+from dotenv import load_dotenv
+load_dotenv()
 # from modules.login import login_bp
 
 
@@ -29,10 +40,10 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
 
-app.config['SESSION_TYPE'] = 'filesystem' 
+# app.config['SESSION_TYPE'] = 'filesystem' 
 
-# app.config['SESSION_TYPE'] = 'redis'
-# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+app.config['SESSION_TYPE'] = 'redis'
+app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 app.register_blueprint(db_utilities_bp)
@@ -59,22 +70,10 @@ def load_session_data():
 
     # Check if user is authenticated for protected routes
     if not current_user.is_authenticated:
-        return redirect(url_for('index'))
+        if request.path not in ['/login', '/login/callback', '/logout']:
+            return redirect(url_for('index'))
 
 ######################## OUTHENTICATION WITH GOOGLE ########################
-
-from flask_login import (
-    LoginManager,
-    current_user,
-    login_required,
-    login_user,
-    logout_user,
-)
-
-
-# Internal imports
-from modules.login_utils.db import init_db_command
-from modules.login_utils.user import User
 
 # Configuration
 GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", None)
