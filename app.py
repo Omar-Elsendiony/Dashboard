@@ -4,7 +4,6 @@ import os
 import redis
 import requests
 import json
-import sqlite3
 # Third-party libraries
 from flask_cors import CORS
 from anthropic import Anthropic
@@ -21,7 +20,7 @@ from flask_login import (
     logout_user,
 )
 # Internal imports
-from modules.login_utils.db import init_db_command
+# from modules.login_utils.db import init_db_command
 from modules.login_utils.user import User
 
 
