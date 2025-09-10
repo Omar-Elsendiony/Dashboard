@@ -1,0 +1,22 @@
+I am developing an AI agent for a system that caters for the users of that system by interacting with a database and applying (create, read, update, and delete) operations to satisfy the user needs. This includes ensuring that the user has the permission to do such an action. This agent has a policy/system prompt that entails instructions to be done in some cases like how a real policy would be. However, I want this policy to be targeted to the Agent. So, some constraints must be present. I created an initial policy, however I want you to evaluate the policy based on the criteria that I am going to provide. I want you to pinpoint the problematic parts along with providing the reasoning and the paraphrasing to fix this as much as you can while imitating the examples that I am going to provide for good policies to do so. However, try to not change the original phrasing or words as much as possible.
+
+Criteria
+The policy is targeted towards the agent. So, the reference to LLMs/Agents explicitly in the policy is not right.
+The agent serves the roles that are in the policy so it must know the roles that the user can take and responsibilities.
+The agent does not conduct offline actions but help the user interactively. So, only online actions are permissible. The agent does not make actions on its own like monitor but may perform subsidiary actions to reach the end goal that the user wants. These actions might entail updating the database by creating a new entry or modifying one or fetching a record that will help in the end goal/outcome.
+The policy must be close to the examples I provided for good policies.
+The Agent interacts only with the user on one side and the database on the other side throughout tools. But it can not access any external resources that can not be in an internal database like a GUI or use external API.
+The policy should be structured in natural language without referring to backend implementation details related to the APIs or the DB schema technically. The policy should not mention any function or table in the process.
+The policy should be comprehensive and cover all necessary aspects of the agent's interaction within the database.
+The policy should not resort to the human agent, even if it is in the example policy documents. The agent should be able to operate independently without human intervention.
+The Agent should not make assumptions or generate information independently.
+
+The policy should include primarily:
+Roles and responsibilities of each role
+Standard operating procedures when encountering the actions specified (refer to the good policies to understand)
+
+Here is the policy:
+{policy}
+
+Here are some examples of good policies
+{example_policies}
