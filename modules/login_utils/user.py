@@ -27,14 +27,14 @@ class User(UserMixin):
             return None
 
     @staticmethod
-    def create(id_, name, email, profile_pic):
+    def create(id_, name, email):
         try:
             redis_client = current_app.config['SESSION_REDIS']
             user_data = {
                 'id_': id_,
                 'name': name,
                 'email': email,
-                'profile_pic': profile_pic
+                # 'profile_pic': profile_pic
             }
             # Store user data in Redis with key "user:{id}"
             redis_client.set(f"user:{id_}", json.dumps(user_data))
