@@ -173,8 +173,8 @@ def callback():
     else:
         return "User email not available or not verified by Google.", 400
 
-    # if not users_email.endswith("@turing.com"):
-    #     return "Unauthorized domain", 403
+    if not users_email.endswith("@turing.com"):
+        return "Unauthorized domain", 403
     # Create a user in your db with the information provided
     # by Google
     user = User(
