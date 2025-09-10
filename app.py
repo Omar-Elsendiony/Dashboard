@@ -72,7 +72,7 @@ def load_session_data():
         if request.path not in ['/login', '/login/callback', '/logout']:
             return redirect(url_for('index'))
 
-######################## OUTHENTICATION WITH GOOGLE ########################
+######################## AUTHENTICATION WITH GOOGLE ########################
 
 # Configuration
 GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", None)
@@ -87,11 +87,11 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 # Naive database setup
-try:
-    init_db_command()
-except sqlite3.OperationalError:
-    # Assume it's already been created
-    pass
+# try:
+#     init_db_command()
+# except sqlite3.OperationalError:
+#     # Assume it's already been created
+#     pass
 
 # OAuth 2 client setup
 client = WebApplicationClient(GOOGLE_CLIENT_ID)
@@ -183,9 +183,9 @@ def callback():
         id_=unique_id, name=users_name, email=users_email, profile_pic=picture
     )
 
-    # Doesn't exist? Add it to the database.
-    if not User.get(unique_id):
-        User.create(unique_id, users_name, users_email, picture)
+    # # Doesn't exist? Add it to the database.
+    # if not User.get(unique_id):
+    #     User.create(unique_id, users_name, users_email, picture)
 
     # Begin user session by logging the user in
     login_user(user)
