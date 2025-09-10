@@ -22,17 +22,17 @@ from modules.task_framework import task_framework_bp
 # from modules.login import login_bp
 
 
-app = Flask(__name__ , static_url_path='')
+app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 cors = CORS(app)
 
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
 
-# app.config['SESSION_TYPE'] = 'filesystem' 
+app.config['SESSION_TYPE'] = 'filesystem' 
 
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 app.register_blueprint(db_utilities_bp)
@@ -59,15 +59,6 @@ def load_session_data():
 
     # Check if user is authenticated for protected routes
     if not current_user.is_authenticated:
-        # For API calls (JSON requests), return JSON error
-        # if request.is_json or request.path in API_ROUTES:
-        #     return jsonify({
-        #         'status': 'error',
-        #         'message': 'Authentication required',
-        #         'redirect': url_for('index')
-        #     }), 401
-        
-        # For regular requests, redirect to login
         return redirect(url_for('index'))
 
 ######################## OUTHENTICATION WITH GOOGLE ########################
