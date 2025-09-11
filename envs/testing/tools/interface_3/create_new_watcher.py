@@ -42,7 +42,7 @@ class CreateSubscription(Tool):
                 watcher.get("watch_type") == "watching"):
                 return json.dumps({"error": "Subscription already exists"})
         
-        subscription_id = generate_id(watchers)
+        watcher_id = generate_id(watchers)
         timestamp = "2025-10-01T00:00:00"
         
         notifications_enabled = True
@@ -50,7 +50,7 @@ class CreateSubscription(Tool):
             notifications_enabled = notification_preferences.get("notifications_enabled", True)
         
         new_subscription = {
-            "watcher_id": subscription_id,
+            "watcher_id": watcher_id,
             "user_id": requesting_user_id,
             "target_type": target_type,
             "target_id": target_id,
@@ -59,16 +59,16 @@ class CreateSubscription(Tool):
             "created_at": timestamp
         }
         
-        watchers[str(subscription_id)] = new_subscription
-        return json.dumps({"subscription_id": str(subscription_id), "success": True})
+        watchers[str(watcher_id)] = new_subscription
+        return json.dumps({"watcher_id": str(watcher_id),"watcher_details":new_subscription, "success": True})
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
         return {
             "type": "function",
             "function": {
-                "name": "create_subscription",
-                "description": "Create a subscription for a user to watch a space, page, or user",
+                "name": "create_new_watcher",
+                "description": "Create a new watcher for a user to watch a space, page, or user",
                 "parameters": {
                     "type": "object",
                     "properties": {

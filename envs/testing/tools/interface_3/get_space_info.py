@@ -1,5 +1,6 @@
 import json
 from typing import Any, Dict, Optional
+from collections import defaultdict
 from tau_bench.envs.tool import Tool
 
 class GetSpaceInfo(Tool):
@@ -11,28 +12,38 @@ class GetSpaceInfo(Tool):
         users = data.get("users", {})
         pages = data.get("pages", {})
         space_permissions = data.get("space_permissions", {})
+
+        # ✅ Preprocess pages by space_id (only current pages)
+        pages_by_space = defaultdict(list)
+        for page in pages.values():
+            if page.get("status") == "current":
+                pages_by_space[str(page.get("space_id"))].append(page)
+
+        # ✅ Preprocess permissions by space_id
+        perms_by_space = defaultdict(list)
+        for perm in space_permissions.values():
+            perms_by_space[str(perm.get("space_id"))].append(perm)
+
         results = []
-        
-        # Filter spaces based on criteria
+
         for space in spaces.values():
+            # ✅ Filtering (O(1) checks)
             if space_id and str(space.get("space_id")) != str(space_id):
                 continue
             if space_name and space_name.lower() not in space.get("name", "").lower():
                 continue
             if owner_id and str(space.get("created_by_user_id")) != str(owner_id):
                 continue
-            
-            # Get space owner info
+
+            sid = str(space.get("space_id"))
+
+            # ✅ Owner lookup (O(1))
             owner = users.get(str(space.get("created_by_user_id")), {})
-            
-            # Count pages in space
-            page_count = 0
-            for page in pages.values():
-                if (str(page.get("space_id")) == str(space.get("space_id")) and 
-                    page.get("status") == "current"):
-                    page_count += 1
-            
-            # Get homepage info
+
+            # ✅ Page count from preprocessed dictionary (O(1))
+            page_count = len(pages_by_space.get(sid, []))
+
+            # ✅ Homepage info lookup (O(1))
             homepage_info = None
             if space.get("homepage_id"):
                 homepage = pages.get(str(space.get("homepage_id")))
@@ -41,24 +52,19 @@ class GetSpaceInfo(Tool):
                         "page_id": space.get("homepage_id"),
                         "title": homepage.get("title")
                     }
-            
-            # Get space permissions summary
-            permissions_summary = {
-                "view_permissions": 0,
-                "contribute_permissions": 0,
-                "moderate_permissions": 0
-            }
-            
-            for perm in space_permissions.values():
-                if str(perm.get("space_id")) == str(space.get("space_id")):
-                    perm_type = perm.get("permission_type")
-                    if perm_type == "view":
-                        permissions_summary["view_permissions"] += 1
-                    elif perm_type == "contribute":
-                        permissions_summary["contribute_permissions"] += 1
-                    elif perm_type == "moderate":
-                        permissions_summary["moderate_permissions"] += 1
-            
+
+            # ✅ Permissions summary from preprocessed dictionary (O(n_perms_for_space))
+            permissions_summary = {"view_permissions": 0, "contribute_permissions": 0, "moderate_permissions": 0}
+            for perm in perms_by_space.get(sid, []):
+                perm_type = perm.get("permission_type")
+                if perm_type == "view":
+                    permissions_summary["view_permissions"] += 1
+                elif perm_type == "contribute":
+                    permissions_summary["contribute_permissions"] += 1
+                elif perm_type == "moderate":
+                    permissions_summary["moderate_permissions"] += 1
+
+            # ✅ Build final space info object
             space_info = {
                 "space_id": space.get("space_id"),
                 "space_key": space.get("space_key"),
@@ -81,10 +87,10 @@ class GetSpaceInfo(Tool):
                 "created_at": space.get("created_at"),
                 "updated_at": space.get("updated_at")
             }
-            
+
             results.append(space_info)
-        
-        return json.dumps(results)
+
+        return json.dumps(results, ensure_ascii=False, indent=2)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
