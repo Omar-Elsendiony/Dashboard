@@ -1,0 +1,1595 @@
+{
+  "1": {
+    "space_permission_id": "1",
+    "space_id": "1",
+    "user_id": "19",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-27T03:04:41.917172",
+    "granted_by_user_id": "3"
+  },
+  "2": {
+    "space_permission_id": "2",
+    "space_id": "1",
+    "user_id": "34",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-11T23:27:38.515357",
+    "granted_by_user_id": "15"
+  },
+  "3": {
+    "space_permission_id": "3",
+    "space_id": "1",
+    "user_id": "68",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-02T18:05:40.512955",
+    "granted_by_user_id": "15"
+  },
+  "4": {
+    "space_permission_id": "4",
+    "space_id": "1",
+    "user_id": "49",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-29T08:05:55.628309",
+    "granted_by_user_id": "4"
+  },
+  "5": {
+    "space_permission_id": "5",
+    "space_id": "2",
+    "user_id": "26",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-04T02:44:48.126928",
+    "granted_by_user_id": "8"
+  },
+  "6": {
+    "space_permission_id": "6",
+    "space_id": "2",
+    "user_id": "67",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-07T17:42:59.305473",
+    "granted_by_user_id": "2"
+  },
+  "7": {
+    "space_permission_id": "7",
+    "space_id": "2",
+    "user_id": "83",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-06T04:50:02.430489",
+    "granted_by_user_id": "7"
+  },
+  "8": {
+    "space_permission_id": "8",
+    "space_id": "2",
+    "user_id": "6",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-06T21:25:05.679488",
+    "granted_by_user_id": "2"
+  },
+  "9": {
+    "space_permission_id": "9",
+    "space_id": "2",
+    "user_id": null,
+    "group_id": "25",
+    "permission_type": "view",
+    "granted_at": "2025-08-25T22:51:40.263237",
+    "granted_by_user_id": "3"
+  },
+  "10": {
+    "space_permission_id": "10",
+    "space_id": "2",
+    "user_id": null,
+    "group_id": "27",
+    "permission_type": "view",
+    "granted_at": "2025-08-24T15:24:49.304050",
+    "granted_by_user_id": "2"
+  },
+  "11": {
+    "space_permission_id": "11",
+    "space_id": "2",
+    "user_id": "50",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-08-31T01:27:45.248260",
+    "granted_by_user_id": "4"
+  },
+  "12": {
+    "space_permission_id": "12",
+    "space_id": "2",
+    "user_id": "73",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-28T09:36:30.599815",
+    "granted_by_user_id": "15"
+  },
+  "13": {
+    "space_permission_id": "13",
+    "space_id": "2",
+    "user_id": "70",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-26T00:53:08.768782",
+    "granted_by_user_id": "11"
+  },
+  "14": {
+    "space_permission_id": "14",
+    "space_id": "3",
+    "user_id": null,
+    "group_id": "13",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-03T10:08:18.663827",
+    "granted_by_user_id": "8"
+  },
+  "15": {
+    "space_permission_id": "15",
+    "space_id": "3",
+    "user_id": "31",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-09T19:49:02.599252",
+    "granted_by_user_id": "14"
+  },
+  "16": {
+    "space_permission_id": "16",
+    "space_id": "3",
+    "user_id": null,
+    "group_id": "23",
+    "permission_type": "view",
+    "granted_at": "2025-06-12T21:25:41.277204",
+    "granted_by_user_id": "1"
+  },
+  "17": {
+    "space_permission_id": "17",
+    "space_id": "3",
+    "user_id": "39",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-24T17:38:07.993336",
+    "granted_by_user_id": "3"
+  },
+  "18": {
+    "space_permission_id": "18",
+    "space_id": "3",
+    "user_id": null,
+    "group_id": "25",
+    "permission_type": "view",
+    "granted_at": "2025-08-22T06:59:55.415167",
+    "granted_by_user_id": "6"
+  },
+  "19": {
+    "space_permission_id": "19",
+    "space_id": "3",
+    "user_id": "87",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-07-16T00:37:09.356983",
+    "granted_by_user_id": "9"
+  },
+  "20": {
+    "space_permission_id": "20",
+    "space_id": "4",
+    "user_id": "3",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-09T23:28:46.692129",
+    "granted_by_user_id": "8"
+  },
+  "21": {
+    "space_permission_id": "21",
+    "space_id": "4",
+    "user_id": null,
+    "group_id": "10",
+    "permission_type": "view",
+    "granted_at": "2025-09-09T00:59:31.281575",
+    "granted_by_user_id": "14"
+  },
+  "22": {
+    "space_permission_id": "22",
+    "space_id": "4",
+    "user_id": "83",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-04T01:07:18.254920",
+    "granted_by_user_id": "7"
+  },
+  "23": {
+    "space_permission_id": "23",
+    "space_id": "4",
+    "user_id": "23",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-02T05:34:14.305526",
+    "granted_by_user_id": "10"
+  },
+  "24": {
+    "space_permission_id": "24",
+    "space_id": "4",
+    "user_id": "54",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-08T10:43:09.906563",
+    "granted_by_user_id": "12"
+  },
+  "25": {
+    "space_permission_id": "25",
+    "space_id": "4",
+    "user_id": "59",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-07T16:01:38.235853",
+    "granted_by_user_id": "8"
+  },
+  "26": {
+    "space_permission_id": "26",
+    "space_id": "4",
+    "user_id": "16",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-09T05:19:30.874490",
+    "granted_by_user_id": "13"
+  },
+  "27": {
+    "space_permission_id": "27",
+    "space_id": "5",
+    "user_id": "55",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-05-19T20:39:59.664023",
+    "granted_by_user_id": "14"
+  },
+  "28": {
+    "space_permission_id": "28",
+    "space_id": "5",
+    "user_id": "37",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-28T13:20:02.025199",
+    "granted_by_user_id": "15"
+  },
+  "29": {
+    "space_permission_id": "29",
+    "space_id": "5",
+    "user_id": "22",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-06-01T09:29:34.494204",
+    "granted_by_user_id": "13"
+  },
+  "30": {
+    "space_permission_id": "30",
+    "space_id": "6",
+    "user_id": "11",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-29T08:58:51.499176",
+    "granted_by_user_id": "11"
+  },
+  "31": {
+    "space_permission_id": "31",
+    "space_id": "6",
+    "user_id": "68",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-07-11T01:57:33.366121",
+    "granted_by_user_id": "13"
+  },
+  "32": {
+    "space_permission_id": "32",
+    "space_id": "6",
+    "user_id": "13",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-27T12:09:32.738063",
+    "granted_by_user_id": "9"
+  },
+  "33": {
+    "space_permission_id": "33",
+    "space_id": "6",
+    "user_id": null,
+    "group_id": "7",
+    "permission_type": "view",
+    "granted_at": "2025-08-17T14:28:24.164524",
+    "granted_by_user_id": "1"
+  },
+  "34": {
+    "space_permission_id": "34",
+    "space_id": "6",
+    "user_id": null,
+    "group_id": "11",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-18T17:45:23.221909",
+    "granted_by_user_id": "11"
+  },
+  "35": {
+    "space_permission_id": "35",
+    "space_id": "6",
+    "user_id": "69",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-24T18:55:18.733402",
+    "granted_by_user_id": "11"
+  },
+  "36": {
+    "space_permission_id": "36",
+    "space_id": "6",
+    "user_id": "2",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-09T04:42:45.111541",
+    "granted_by_user_id": "12"
+  },
+  "37": {
+    "space_permission_id": "37",
+    "space_id": "6",
+    "user_id": "51",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-06T06:37:34.607758",
+    "granted_by_user_id": "1"
+  },
+  "38": {
+    "space_permission_id": "38",
+    "space_id": "7",
+    "user_id": null,
+    "group_id": "8",
+    "permission_type": "contribute",
+    "granted_at": "2025-07-14T13:11:46.183692",
+    "granted_by_user_id": "9"
+  },
+  "39": {
+    "space_permission_id": "39",
+    "space_id": "7",
+    "user_id": null,
+    "group_id": "8",
+    "permission_type": "moderate",
+    "granted_at": "2025-09-04T14:13:20.798436",
+    "granted_by_user_id": "13"
+  },
+  "40": {
+    "space_permission_id": "40",
+    "space_id": "7",
+    "user_id": "73",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-06-15T02:14:17.030871",
+    "granted_by_user_id": "1"
+  },
+  "41": {
+    "space_permission_id": "41",
+    "space_id": "7",
+    "user_id": null,
+    "group_id": "4",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-06T22:42:23.235487",
+    "granted_by_user_id": "15"
+  },
+  "42": {
+    "space_permission_id": "42",
+    "space_id": "7",
+    "user_id": null,
+    "group_id": "20",
+    "permission_type": "contribute",
+    "granted_at": "2025-06-27T12:21:23.237707",
+    "granted_by_user_id": "10"
+  },
+  "43": {
+    "space_permission_id": "43",
+    "space_id": "7",
+    "user_id": null,
+    "group_id": "20",
+    "permission_type": "view",
+    "granted_at": "2025-09-04T09:44:39.753748",
+    "granted_by_user_id": "11"
+  },
+  "44": {
+    "space_permission_id": "44",
+    "space_id": "7",
+    "user_id": null,
+    "group_id": "17",
+    "permission_type": "view",
+    "granted_at": "2025-07-08T21:25:01.227277",
+    "granted_by_user_id": "3"
+  },
+  "45": {
+    "space_permission_id": "45",
+    "space_id": "8",
+    "user_id": null,
+    "group_id": "14",
+    "permission_type": "view",
+    "granted_at": "2025-09-09T18:38:37.044281",
+    "granted_by_user_id": "11"
+  },
+  "46": {
+    "space_permission_id": "46",
+    "space_id": "8",
+    "user_id": "36",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-07-09T18:02:20.729898",
+    "granted_by_user_id": "2"
+  },
+  "47": {
+    "space_permission_id": "47",
+    "space_id": "8",
+    "user_id": "97",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-07-03T19:52:01.866054",
+    "granted_by_user_id": "14"
+  },
+  "48": {
+    "space_permission_id": "48",
+    "space_id": "9",
+    "user_id": null,
+    "group_id": "19",
+    "permission_type": "contribute",
+    "granted_at": "2025-07-27T02:49:34.598326",
+    "granted_by_user_id": "6"
+  },
+  "49": {
+    "space_permission_id": "49",
+    "space_id": "9",
+    "user_id": "25",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-08-03T13:27:39.126739",
+    "granted_by_user_id": "11"
+  },
+  "50": {
+    "space_permission_id": "50",
+    "space_id": "9",
+    "user_id": null,
+    "group_id": "17",
+    "permission_type": "moderate",
+    "granted_at": "2025-07-12T23:04:17.771665",
+    "granted_by_user_id": "6"
+  },
+  "51": {
+    "space_permission_id": "51",
+    "space_id": "9",
+    "user_id": "13",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-10T07:46:07.438845",
+    "granted_by_user_id": "1"
+  },
+  "52": {
+    "space_permission_id": "52",
+    "space_id": "9",
+    "user_id": "11",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-24T07:55:45.451385",
+    "granted_by_user_id": "10"
+  },
+  "53": {
+    "space_permission_id": "53",
+    "space_id": "9",
+    "user_id": "14",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-07-23T12:23:24.287072",
+    "granted_by_user_id": "1"
+  },
+  "54": {
+    "space_permission_id": "54",
+    "space_id": "10",
+    "user_id": null,
+    "group_id": "22",
+    "permission_type": "view",
+    "granted_at": "2025-08-26T12:52:09.133111",
+    "granted_by_user_id": "15"
+  },
+  "55": {
+    "space_permission_id": "55",
+    "space_id": "10",
+    "user_id": null,
+    "group_id": "26",
+    "permission_type": "moderate",
+    "granted_at": "2025-09-04T01:23:45.399105",
+    "granted_by_user_id": "14"
+  },
+  "56": {
+    "space_permission_id": "56",
+    "space_id": "10",
+    "user_id": "94",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-07T18:30:12.460802",
+    "granted_by_user_id": "11"
+  },
+  "57": {
+    "space_permission_id": "57",
+    "space_id": "10",
+    "user_id": "79",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-07-08T23:17:33.136955",
+    "granted_by_user_id": "2"
+  },
+  "58": {
+    "space_permission_id": "58",
+    "space_id": "11",
+    "user_id": "30",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-05T15:38:09.960455",
+    "granted_by_user_id": "14"
+  },
+  "59": {
+    "space_permission_id": "59",
+    "space_id": "11",
+    "user_id": null,
+    "group_id": "6",
+    "permission_type": "contribute",
+    "granted_at": "2025-09-03T23:39:19.775306",
+    "granted_by_user_id": "11"
+  },
+  "60": {
+    "space_permission_id": "60",
+    "space_id": "11",
+    "user_id": "84",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-03T07:18:43.406614",
+    "granted_by_user_id": "9"
+  },
+  "61": {
+    "space_permission_id": "61",
+    "space_id": "11",
+    "user_id": null,
+    "group_id": "7",
+    "permission_type": "view",
+    "granted_at": "2025-09-08T20:00:06.934217",
+    "granted_by_user_id": "7"
+  },
+  "62": {
+    "space_permission_id": "62",
+    "space_id": "11",
+    "user_id": "34",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-10T04:28:29.674024",
+    "granted_by_user_id": "6"
+  },
+  "63": {
+    "space_permission_id": "63",
+    "space_id": "11",
+    "user_id": "46",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-05T15:44:45.657780",
+    "granted_by_user_id": "2"
+  },
+  "64": {
+    "space_permission_id": "64",
+    "space_id": "11",
+    "user_id": "41",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-24T03:38:09.030728",
+    "granted_by_user_id": "3"
+  },
+  "65": {
+    "space_permission_id": "65",
+    "space_id": "11",
+    "user_id": "84",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-29T17:38:20.018916",
+    "granted_by_user_id": "1"
+  },
+  "66": {
+    "space_permission_id": "66",
+    "space_id": "12",
+    "user_id": "74",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-31T07:49:55.247535",
+    "granted_by_user_id": "7"
+  },
+  "67": {
+    "space_permission_id": "67",
+    "space_id": "12",
+    "user_id": null,
+    "group_id": "15",
+    "permission_type": "view",
+    "granted_at": "2025-08-09T15:28:09.843940",
+    "granted_by_user_id": "8"
+  },
+  "68": {
+    "space_permission_id": "68",
+    "space_id": "12",
+    "user_id": "97",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-31T11:20:56.278870",
+    "granted_by_user_id": "13"
+  },
+  "69": {
+    "space_permission_id": "69",
+    "space_id": "12",
+    "user_id": "78",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-08-23T05:25:57.160176",
+    "granted_by_user_id": "10"
+  },
+  "70": {
+    "space_permission_id": "70",
+    "space_id": "12",
+    "user_id": "73",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-01T22:44:13.778944",
+    "granted_by_user_id": "11"
+  },
+  "71": {
+    "space_permission_id": "71",
+    "space_id": "12",
+    "user_id": null,
+    "group_id": "17",
+    "permission_type": "view",
+    "granted_at": "2025-08-08T17:30:14.670408",
+    "granted_by_user_id": "13"
+  },
+  "72": {
+    "space_permission_id": "72",
+    "space_id": "13",
+    "user_id": null,
+    "group_id": "27",
+    "permission_type": "moderate",
+    "granted_at": "2025-08-01T08:25:55.884901",
+    "granted_by_user_id": "9"
+  },
+  "73": {
+    "space_permission_id": "73",
+    "space_id": "13",
+    "user_id": "35",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-05T17:58:51.687207",
+    "granted_by_user_id": "12"
+  },
+  "74": {
+    "space_permission_id": "74",
+    "space_id": "13",
+    "user_id": "15",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-14T10:30:24.779197",
+    "granted_by_user_id": "13"
+  },
+  "75": {
+    "space_permission_id": "75",
+    "space_id": "14",
+    "user_id": "85",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-08T18:16:20.459191",
+    "granted_by_user_id": "1"
+  },
+  "76": {
+    "space_permission_id": "76",
+    "space_id": "14",
+    "user_id": null,
+    "group_id": "20",
+    "permission_type": "view",
+    "granted_at": "2025-09-09T23:29:34.096915",
+    "granted_by_user_id": "4"
+  },
+  "77": {
+    "space_permission_id": "77",
+    "space_id": "14",
+    "user_id": null,
+    "group_id": "19",
+    "permission_type": "view",
+    "granted_at": "2025-09-10T21:36:26.189578",
+    "granted_by_user_id": "9"
+  },
+  "78": {
+    "space_permission_id": "78",
+    "space_id": "14",
+    "user_id": "92",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-09T19:40:25.904171",
+    "granted_by_user_id": "12"
+  },
+  "79": {
+    "space_permission_id": "79",
+    "space_id": "14",
+    "user_id": null,
+    "group_id": "26",
+    "permission_type": "view",
+    "granted_at": "2025-09-07T23:27:47.899946",
+    "granted_by_user_id": "10"
+  },
+  "80": {
+    "space_permission_id": "80",
+    "space_id": "14",
+    "user_id": "83",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-10T09:03:18.588074",
+    "granted_by_user_id": "1"
+  },
+  "81": {
+    "space_permission_id": "81",
+    "space_id": "14",
+    "user_id": "44",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-10T11:44:45.665531",
+    "granted_by_user_id": "10"
+  },
+  "82": {
+    "space_permission_id": "82",
+    "space_id": "14",
+    "user_id": "39",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-08T05:09:03.452785",
+    "granted_by_user_id": "2"
+  },
+  "83": {
+    "space_permission_id": "83",
+    "space_id": "14",
+    "user_id": "29",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-10T14:26:55.815656",
+    "granted_by_user_id": "3"
+  },
+  "84": {
+    "space_permission_id": "84",
+    "space_id": "14",
+    "user_id": null,
+    "group_id": "3",
+    "permission_type": "moderate",
+    "granted_at": "2025-09-10T18:58:23.225760",
+    "granted_by_user_id": "7"
+  },
+  "85": {
+    "space_permission_id": "85",
+    "space_id": "15",
+    "user_id": null,
+    "group_id": "24",
+    "permission_type": "view",
+    "granted_at": "2025-07-26T13:30:48.665927",
+    "granted_by_user_id": "3"
+  },
+  "86": {
+    "space_permission_id": "86",
+    "space_id": "15",
+    "user_id": "87",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-17T12:53:18.044804",
+    "granted_by_user_id": "13"
+  },
+  "87": {
+    "space_permission_id": "87",
+    "space_id": "15",
+    "user_id": "5",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-01T21:23:17.695194",
+    "granted_by_user_id": "7"
+  },
+  "88": {
+    "space_permission_id": "88",
+    "space_id": "15",
+    "user_id": "31",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-09T22:27:46.927461",
+    "granted_by_user_id": "3"
+  },
+  "89": {
+    "space_permission_id": "89",
+    "space_id": "15",
+    "user_id": "16",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-04T06:40:37.197603",
+    "granted_by_user_id": "7"
+  },
+  "90": {
+    "space_permission_id": "90",
+    "space_id": "16",
+    "user_id": "56",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-28T00:56:10.544385",
+    "granted_by_user_id": "13"
+  },
+  "91": {
+    "space_permission_id": "91",
+    "space_id": "16",
+    "user_id": null,
+    "group_id": "27",
+    "permission_type": "view",
+    "granted_at": "2025-07-21T18:15:32.634841",
+    "granted_by_user_id": "14"
+  },
+  "92": {
+    "space_permission_id": "92",
+    "space_id": "16",
+    "user_id": null,
+    "group_id": "20",
+    "permission_type": "view",
+    "granted_at": "2025-09-10T08:21:51.138906",
+    "granted_by_user_id": "1"
+  },
+  "93": {
+    "space_permission_id": "93",
+    "space_id": "16",
+    "user_id": "88",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-07T15:14:38.496610",
+    "granted_by_user_id": "4"
+  },
+  "94": {
+    "space_permission_id": "94",
+    "space_id": "17",
+    "user_id": "36",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-08-25T07:22:05.796519",
+    "granted_by_user_id": "9"
+  },
+  "95": {
+    "space_permission_id": "95",
+    "space_id": "17",
+    "user_id": "31",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-09T17:06:34.739166",
+    "granted_by_user_id": "1"
+  },
+  "96": {
+    "space_permission_id": "96",
+    "space_id": "17",
+    "user_id": null,
+    "group_id": "3",
+    "permission_type": "view",
+    "granted_at": "2025-09-03T01:00:20.038085",
+    "granted_by_user_id": "10"
+  },
+  "97": {
+    "space_permission_id": "97",
+    "space_id": "17",
+    "user_id": "98",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-06T15:03:52.655552",
+    "granted_by_user_id": "15"
+  },
+  "98": {
+    "space_permission_id": "98",
+    "space_id": "17",
+    "user_id": null,
+    "group_id": "27",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-09T17:07:03.117280",
+    "granted_by_user_id": "11"
+  },
+  "99": {
+    "space_permission_id": "99",
+    "space_id": "17",
+    "user_id": "23",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-26T03:32:57.279465",
+    "granted_by_user_id": "1"
+  },
+  "100": {
+    "space_permission_id": "100",
+    "space_id": "17",
+    "user_id": null,
+    "group_id": "6",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-06T04:17:58.775080",
+    "granted_by_user_id": "14"
+  },
+  "101": {
+    "space_permission_id": "101",
+    "space_id": "17",
+    "user_id": null,
+    "group_id": "20",
+    "permission_type": "moderate",
+    "granted_at": "2025-07-30T20:50:05.103075",
+    "granted_by_user_id": "10"
+  },
+  "102": {
+    "space_permission_id": "102",
+    "space_id": "18",
+    "user_id": "7",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-06-01T09:05:57.346808",
+    "granted_by_user_id": "7"
+  },
+  "103": {
+    "space_permission_id": "103",
+    "space_id": "18",
+    "user_id": "58",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-10T05:12:13.526307",
+    "granted_by_user_id": "15"
+  },
+  "104": {
+    "space_permission_id": "104",
+    "space_id": "18",
+    "user_id": "35",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-18T22:37:08.789085",
+    "granted_by_user_id": "12"
+  },
+  "105": {
+    "space_permission_id": "105",
+    "space_id": "18",
+    "user_id": "28",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-20T13:17:38.791579",
+    "granted_by_user_id": "15"
+  },
+  "106": {
+    "space_permission_id": "106",
+    "space_id": "19",
+    "user_id": null,
+    "group_id": "10",
+    "permission_type": "view",
+    "granted_at": "2025-08-28T23:43:36.714999",
+    "granted_by_user_id": "4"
+  },
+  "107": {
+    "space_permission_id": "107",
+    "space_id": "19",
+    "user_id": "20",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-24T20:07:24.990889",
+    "granted_by_user_id": "2"
+  },
+  "108": {
+    "space_permission_id": "108",
+    "space_id": "19",
+    "user_id": "61",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-19T00:48:06.503113",
+    "granted_by_user_id": "2"
+  },
+  "109": {
+    "space_permission_id": "109",
+    "space_id": "19",
+    "user_id": "30",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-20T08:14:36.823642",
+    "granted_by_user_id": "15"
+  },
+  "110": {
+    "space_permission_id": "110",
+    "space_id": "19",
+    "user_id": "55",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-06T04:33:16.381668",
+    "granted_by_user_id": "15"
+  },
+  "111": {
+    "space_permission_id": "111",
+    "space_id": "20",
+    "user_id": "19",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-06T11:09:27.993142",
+    "granted_by_user_id": "11"
+  },
+  "112": {
+    "space_permission_id": "112",
+    "space_id": "20",
+    "user_id": "98",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-06T14:48:35.962176",
+    "granted_by_user_id": "9"
+  },
+  "113": {
+    "space_permission_id": "113",
+    "space_id": "20",
+    "user_id": "93",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-19T16:49:30.639752",
+    "granted_by_user_id": "4"
+  },
+  "114": {
+    "space_permission_id": "114",
+    "space_id": "20",
+    "user_id": "76",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-30T11:05:32.140322",
+    "granted_by_user_id": "7"
+  },
+  "115": {
+    "space_permission_id": "115",
+    "space_id": "20",
+    "user_id": "82",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-31T19:27:47.287948",
+    "granted_by_user_id": "4"
+  },
+  "116": {
+    "space_permission_id": "116",
+    "space_id": "20",
+    "user_id": "78",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-19T15:21:41.718790",
+    "granted_by_user_id": "8"
+  },
+  "117": {
+    "space_permission_id": "117",
+    "space_id": "20",
+    "user_id": "27",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-29T20:11:47.332815",
+    "granted_by_user_id": "13"
+  },
+  "118": {
+    "space_permission_id": "118",
+    "space_id": "20",
+    "user_id": null,
+    "group_id": "28",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-24T00:45:58.397588",
+    "granted_by_user_id": "7"
+  },
+  "119": {
+    "space_permission_id": "119",
+    "space_id": "20",
+    "user_id": "99",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-04T22:22:32.555297",
+    "granted_by_user_id": "13"
+  },
+  "120": {
+    "space_permission_id": "120",
+    "space_id": "20",
+    "user_id": "36",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-04T11:25:35.294805",
+    "granted_by_user_id": "14"
+  },
+  "121": {
+    "space_permission_id": "121",
+    "space_id": "21",
+    "user_id": "27",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-08-25T04:17:32.119347",
+    "granted_by_user_id": "11"
+  },
+  "122": {
+    "space_permission_id": "122",
+    "space_id": "21",
+    "user_id": null,
+    "group_id": "26",
+    "permission_type": "view",
+    "granted_at": "2025-09-08T05:43:39.669034",
+    "granted_by_user_id": "8"
+  },
+  "123": {
+    "space_permission_id": "123",
+    "space_id": "21",
+    "user_id": "92",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-18T10:26:59.717714",
+    "granted_by_user_id": "8"
+  },
+  "124": {
+    "space_permission_id": "124",
+    "space_id": "21",
+    "user_id": "83",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-06T05:36:47.170731",
+    "granted_by_user_id": "7"
+  },
+  "125": {
+    "space_permission_id": "125",
+    "space_id": "22",
+    "user_id": null,
+    "group_id": "2",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-31T12:39:26.990824",
+    "granted_by_user_id": "9"
+  },
+  "126": {
+    "space_permission_id": "126",
+    "space_id": "22",
+    "user_id": "48",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-21T11:26:37.700877",
+    "granted_by_user_id": "13"
+  },
+  "127": {
+    "space_permission_id": "127",
+    "space_id": "22",
+    "user_id": "36",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-29T19:49:56.938704",
+    "granted_by_user_id": "13"
+  },
+  "128": {
+    "space_permission_id": "128",
+    "space_id": "22",
+    "user_id": "56",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-03T19:04:02.256138",
+    "granted_by_user_id": "13"
+  },
+  "129": {
+    "space_permission_id": "129",
+    "space_id": "22",
+    "user_id": "49",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-26T00:07:58.358166",
+    "granted_by_user_id": "7"
+  },
+  "130": {
+    "space_permission_id": "130",
+    "space_id": "23",
+    "user_id": "6",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-27T03:52:03.630595",
+    "granted_by_user_id": "9"
+  },
+  "131": {
+    "space_permission_id": "131",
+    "space_id": "23",
+    "user_id": "27",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-07T18:11:22.187723",
+    "granted_by_user_id": "13"
+  },
+  "132": {
+    "space_permission_id": "132",
+    "space_id": "23",
+    "user_id": "49",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-28T08:57:01.255071",
+    "granted_by_user_id": "1"
+  },
+  "133": {
+    "space_permission_id": "133",
+    "space_id": "23",
+    "user_id": null,
+    "group_id": "2",
+    "permission_type": "contribute",
+    "granted_at": "2025-08-03T22:24:05.107360",
+    "granted_by_user_id": "2"
+  },
+  "134": {
+    "space_permission_id": "134",
+    "space_id": "24",
+    "user_id": "93",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-06-30T22:11:30.836634",
+    "granted_by_user_id": "2"
+  },
+  "135": {
+    "space_permission_id": "135",
+    "space_id": "24",
+    "user_id": "12",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-31T19:13:04.041144",
+    "granted_by_user_id": "4"
+  },
+  "136": {
+    "space_permission_id": "136",
+    "space_id": "24",
+    "user_id": "7",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-05T07:50:28.586163",
+    "granted_by_user_id": "6"
+  },
+  "137": {
+    "space_permission_id": "137",
+    "space_id": "24",
+    "user_id": null,
+    "group_id": "9",
+    "permission_type": "contribute",
+    "granted_at": "2025-07-04T22:23:20.343347",
+    "granted_by_user_id": "14"
+  },
+  "138": {
+    "space_permission_id": "138",
+    "space_id": "24",
+    "user_id": "39",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-12T16:32:36.317493",
+    "granted_by_user_id": "4"
+  },
+  "139": {
+    "space_permission_id": "139",
+    "space_id": "25",
+    "user_id": "42",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-07-14T15:00:01.026469",
+    "granted_by_user_id": "1"
+  },
+  "140": {
+    "space_permission_id": "140",
+    "space_id": "25",
+    "user_id": null,
+    "group_id": "13",
+    "permission_type": "contribute",
+    "granted_at": "2025-07-11T02:37:00.860022",
+    "granted_by_user_id": "4"
+  },
+  "141": {
+    "space_permission_id": "141",
+    "space_id": "25",
+    "user_id": null,
+    "group_id": "28",
+    "permission_type": "view",
+    "granted_at": "2025-09-02T07:54:52.939523",
+    "granted_by_user_id": "14"
+  },
+  "142": {
+    "space_permission_id": "142",
+    "space_id": "25",
+    "user_id": null,
+    "group_id": "22",
+    "permission_type": "view",
+    "granted_at": "2025-08-11T23:38:19.330816",
+    "granted_by_user_id": "8"
+  },
+  "143": {
+    "space_permission_id": "143",
+    "space_id": "25",
+    "user_id": null,
+    "group_id": "17",
+    "permission_type": "view",
+    "granted_at": "2025-08-04T07:37:22.795549",
+    "granted_by_user_id": "8"
+  },
+  "144": {
+    "space_permission_id": "144",
+    "space_id": "26",
+    "user_id": null,
+    "group_id": "14",
+    "permission_type": "view",
+    "granted_at": "2025-09-09T04:41:56.821960",
+    "granted_by_user_id": "13"
+  },
+  "145": {
+    "space_permission_id": "145",
+    "space_id": "26",
+    "user_id": null,
+    "group_id": "21",
+    "permission_type": "view",
+    "granted_at": "2025-09-06T08:21:27.675580",
+    "granted_by_user_id": "14"
+  },
+  "146": {
+    "space_permission_id": "146",
+    "space_id": "26",
+    "user_id": "52",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-08T04:41:29.088598",
+    "granted_by_user_id": "6"
+  },
+  "147": {
+    "space_permission_id": "147",
+    "space_id": "26",
+    "user_id": "75",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-29T05:10:18.123755",
+    "granted_by_user_id": "1"
+  },
+  "148": {
+    "space_permission_id": "148",
+    "space_id": "26",
+    "user_id": "57",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-27T14:53:35.378916",
+    "granted_by_user_id": "3"
+  },
+  "149": {
+    "space_permission_id": "149",
+    "space_id": "26",
+    "user_id": "94",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-08-30T07:40:03.456891",
+    "granted_by_user_id": "10"
+  },
+  "150": {
+    "space_permission_id": "150",
+    "space_id": "26",
+    "user_id": "11",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-26T05:45:10.048312",
+    "granted_by_user_id": "15"
+  },
+  "151": {
+    "space_permission_id": "151",
+    "space_id": "26",
+    "user_id": null,
+    "group_id": "29",
+    "permission_type": "view",
+    "granted_at": "2025-09-09T21:13:26.475377",
+    "granted_by_user_id": "12"
+  },
+  "152": {
+    "space_permission_id": "152",
+    "space_id": "26",
+    "user_id": "56",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-09-08T07:51:48.685297",
+    "granted_by_user_id": "14"
+  },
+  "153": {
+    "space_permission_id": "153",
+    "space_id": "26",
+    "user_id": null,
+    "group_id": "20",
+    "permission_type": "view",
+    "granted_at": "2025-09-10T20:38:34.186185",
+    "granted_by_user_id": "7"
+  },
+  "154": {
+    "space_permission_id": "154",
+    "space_id": "27",
+    "user_id": "98",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-28T04:23:37.130390",
+    "granted_by_user_id": "10"
+  },
+  "155": {
+    "space_permission_id": "155",
+    "space_id": "27",
+    "user_id": "20",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-07-31T06:51:52.318881",
+    "granted_by_user_id": "4"
+  },
+  "156": {
+    "space_permission_id": "156",
+    "space_id": "27",
+    "user_id": "66",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-01T21:54:22.826922",
+    "granted_by_user_id": "9"
+  },
+  "157": {
+    "space_permission_id": "157",
+    "space_id": "27",
+    "user_id": "25",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-15T08:02:21.544884",
+    "granted_by_user_id": "8"
+  },
+  "158": {
+    "space_permission_id": "158",
+    "space_id": "28",
+    "user_id": "31",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-09-10T03:58:12.010900",
+    "granted_by_user_id": "8"
+  },
+  "159": {
+    "space_permission_id": "159",
+    "space_id": "28",
+    "user_id": "21",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-08-12T23:55:21.454365",
+    "granted_by_user_id": "13"
+  },
+  "160": {
+    "space_permission_id": "160",
+    "space_id": "28",
+    "user_id": null,
+    "group_id": "5",
+    "permission_type": "moderate",
+    "granted_at": "2025-09-10T18:28:41.189623",
+    "granted_by_user_id": "4"
+  },
+  "161": {
+    "space_permission_id": "161",
+    "space_id": "28",
+    "user_id": "40",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-10T23:22:38.680825",
+    "granted_by_user_id": "9"
+  },
+  "162": {
+    "space_permission_id": "162",
+    "space_id": "28",
+    "user_id": null,
+    "group_id": "28",
+    "permission_type": "contribute",
+    "granted_at": "2025-09-10T10:40:01.730978",
+    "granted_by_user_id": "8"
+  },
+  "163": {
+    "space_permission_id": "163",
+    "space_id": "29",
+    "user_id": "34",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-07T13:13:16.613681",
+    "granted_by_user_id": "8"
+  },
+  "164": {
+    "space_permission_id": "164",
+    "space_id": "29",
+    "user_id": null,
+    "group_id": "7",
+    "permission_type": "moderate",
+    "granted_at": "2025-07-29T23:40:32.956783",
+    "granted_by_user_id": "15"
+  },
+  "165": {
+    "space_permission_id": "165",
+    "space_id": "29",
+    "user_id": "34",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-06T01:40:23.712363",
+    "granted_by_user_id": "6"
+  },
+  "166": {
+    "space_permission_id": "166",
+    "space_id": "29",
+    "user_id": "71",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-08-11T08:31:49.039153",
+    "granted_by_user_id": "8"
+  },
+  "167": {
+    "space_permission_id": "167",
+    "space_id": "29",
+    "user_id": "80",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-07T09:46:07.791620",
+    "granted_by_user_id": "2"
+  },
+  "168": {
+    "space_permission_id": "168",
+    "space_id": "29",
+    "user_id": null,
+    "group_id": "12",
+    "permission_type": "moderate",
+    "granted_at": "2025-09-05T14:53:09.760103",
+    "granted_by_user_id": "4"
+  },
+  "169": {
+    "space_permission_id": "169",
+    "space_id": "29",
+    "user_id": "100",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-13T12:02:46.397936",
+    "granted_by_user_id": "10"
+  },
+  "170": {
+    "space_permission_id": "170",
+    "space_id": "29",
+    "user_id": "67",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-25T23:25:13.942317",
+    "granted_by_user_id": "4"
+  },
+  "171": {
+    "space_permission_id": "171",
+    "space_id": "30",
+    "user_id": "35",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-07-01T11:47:49.255090",
+    "granted_by_user_id": "13"
+  },
+  "172": {
+    "space_permission_id": "172",
+    "space_id": "30",
+    "user_id": "36",
+    "group_id": null,
+    "permission_type": "moderate",
+    "granted_at": "2025-07-15T09:49:16.223507",
+    "granted_by_user_id": "14"
+  },
+  "173": {
+    "space_permission_id": "173",
+    "space_id": "30",
+    "user_id": "62",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-26T03:31:07.694042",
+    "granted_by_user_id": "6"
+  },
+  "174": {
+    "space_permission_id": "174",
+    "space_id": "30",
+    "user_id": "50",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-09T08:17:51.898312",
+    "granted_by_user_id": "6"
+  },
+  "175": {
+    "space_permission_id": "175",
+    "space_id": "30",
+    "user_id": "62",
+    "group_id": null,
+    "permission_type": "contribute",
+    "granted_at": "2025-09-02T19:02:46.274355",
+    "granted_by_user_id": "11"
+  },
+  "176": {
+    "space_permission_id": "176",
+    "space_id": "30",
+    "user_id": null,
+    "group_id": "25",
+    "permission_type": "contribute",
+    "granted_at": "2025-09-06T08:43:29.518315",
+    "granted_by_user_id": "13"
+  },
+  "177": {
+    "space_permission_id": "177",
+    "space_id": "30",
+    "user_id": "43",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-06-22T12:43:12.489347",
+    "granted_by_user_id": "12"
+  }
+}
