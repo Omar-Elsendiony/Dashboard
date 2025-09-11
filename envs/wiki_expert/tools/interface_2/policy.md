@@ -159,12 +159,24 @@ The roles are structured in a hierarchy for decision-making:
 - Space Administrators have full authority within their assigned spaces.  
 - Content Owners have final say over their assigned content (within organizational standards).  
 
+## Permission Inheritance Matrix
+
+| Role                 | Space Admin Access | Page Owner Access | Group Member Access | Direct Grant Access |
+|----------------------|--------------------|-------------------|---------------------|---------------------|
+| **Platform Owner**   | Always             | Always            | Always              | Always              |
+| **Wiki Program Manager** | If assigned        | Always            | If member           | If granted          |
+| **Space Administrator**  | If assigned        | Within space      | If member           | If granted          |
+| **Content Owner**    | No                 | If owner          | If member           | If granted          |
+| **Contributor**      | No                 | No                | If member           | If granted          |
+| **Consumer**         | No                 | No                | If member           | If granted          |
+
+
 ---
 
 ## Standard Operating Procedures
 
 ### Add User to Group
-**Authority Required:** Platform Owner or designated Group Administrator
+**Authority Required:** Platform Owner (for all groups) or Wiki Program Manager (for organizational groups) or Space Administrator (for space-specific groups within assigned spaces only)
 
 **Process:**
 1. Validate user has group management permissions
@@ -281,7 +293,7 @@ Record all content creation, modification, and deletion activities. Track user a
 3. Filter results based on user's viewing permissions
 
 ### Retrieve User Profile
-**Authority Required:** Self-access or Platform Owner or WikiProgramManager
+**Authority Required:** Self-access or Platform Owner or Wiki Program Manager
 
 **Process:**
 1. Validate user is requesting own profile or has administrative access
@@ -289,3 +301,42 @@ Record all content creation, modification, and deletion activities. Track user a
 3. Return profile data
 
 **Note:** Space Administrator have access to retrieve user profiles for users within their spaces for administrative purposes.
+
+## Permission Ruleset Specification
+
+### 1. Space Permissions (baseline)
+
+`permission_type ENUM('view','contribute','moderate')`
+
+- **view** → read-only across all pages in the space.  
+- **contribute** → can create and edit content in the space, including pages and attachments.  
+- **moderate** → full control over the space and all its pages, including content governance and permissions.  
+
+---
+
+### 2. Page Permissions (granular)
+
+`permission_type ENUM('view','create','edit','delete','admin')`
+
+- **view** → read-only on the page.  
+- **create** → create new child pages/content under this page.  
+- **edit** → edit existing content on this page.  
+- **delete** → delete the page or its content.  
+- **admin** → manage permissions, ownership, and structure for this page.  
+
+---
+
+### 3. Mapping: Space → Page Inheritance
+
+| Space Permission | Implied Page Permissions         |
+|------------------|----------------------------------|
+| **view**         | view                             |
+| **contribute**   | view, create, edit               |
+| **moderate**     | view, create, edit, delete, admin |
+
+---
+
+### 4. Effective Permissions Resolution
+
+- **Baseline**: A user inherits permissions from their space role.  
+- **Overrides**: Page-level grants may give additional permissions.  

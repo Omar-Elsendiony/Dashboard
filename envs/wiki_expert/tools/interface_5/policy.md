@@ -128,6 +128,17 @@ The roles are structured in a hierarchy for decision-making:
 - Space Administrators have full authority within their assigned spaces.  
 - Content Owners have final say over their assigned content (within organizational standards).  
 
+## Permission Inheritance Matrix
+
+| Role                 | Space Admin Access | Page Owner Access | Group Member Access | Direct Grant Access |
+|----------------------|--------------------|-------------------|---------------------|---------------------|
+| **Platform Owner**   | Always             | Always            | Always              | Always              |
+| **Wiki Program Manager** | If assigned        | Always            | If member           | If granted          |
+| **Space Administrator**  | If assigned        | Within space      | If member           | If granted          |
+| **Content Owner**    | No                 | If owner          | If member           | If granted          |
+| **Contributor**      | No                 | No                | If member           | If granted          |
+| **Consumer**         | No                 | No                | If member           | If granted          |
+
 ---
 
 ## Standard Operating Procedures
