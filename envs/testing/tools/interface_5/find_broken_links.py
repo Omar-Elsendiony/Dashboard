@@ -7,30 +7,36 @@ class FindBrokenLinks(Tool):
     def invoke(data: Dict[str, Any], space_id: Optional[str] = None) -> str:
         
         page_links = data.get("page_links", {})
-        spaces = data.get("spaces", {})
         pages = data.get("pages", {})
+        result = []
         
-        # Validate space if provided
-        if space_id and str(space_id) not in spaces:
-            return json.dumps({"error": f"Space {space_id} not found"})
-        
-        # Find broken links
-        broken_links = []
-        
-        for link in page_links.values():
-            # Check if link is marked as broken
-            if link.get("is_broken", False):
-                # If space_id is specified, filter by space
-                if space_id:
-                    source_page_id = link.get("source_page_id")
-                    if str(source_page_id) in pages:
-                        source_page = pages[str(source_page_id)]
-                        if source_page.get("space_id") == space_id:
-                            broken_links.append(link)
+        for link_id, link in page_links.items():
+            # Only return broken links
+            if not link.get("is_broken", False):
+                continue
+            
+            # If space_id filter is provided, check if source page is in that space
+            if space_id:
+                source_page_id = link.get("source_page_id")
+                if source_page_id and str(source_page_id) in pages:
+                    page = pages[str(source_page_id)]
+                    if page.get("space_id") != space_id:
+                        continue
                 else:
-                    broken_links.append(link)
+                    continue
+            
+            result.append({
+                "link_id": link_id,
+                "source_page_id": link.get("source_page_id"),
+                "target_url": link.get("target_url"),
+                "link_text": link.get("link_text"),
+                "link_type": link.get("link_type"),
+                "is_broken": link.get("is_broken"),
+                "last_checked_at": link.get("last_checked_at"),
+                "created_at": link.get("created_at")
+            })
         
-        return json.dumps(broken_links)
+        return json.dumps(result)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -38,11 +44,11 @@ class FindBrokenLinks(Tool):
             "type": "function",
             "function": {
                 "name": "find_broken_links",
-                "description": "Find all broken links, optionally filtered by space",
+                "description": "Find broken links, optionally filtered by space",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "space_id": {"type": "string", "description": "ID of the space to filter broken links (optional)"}
+                        "space_id": {"type": "string", "description": "ID of the space to search for broken links (optional)"}
                     },
                     "required": []
                 }
