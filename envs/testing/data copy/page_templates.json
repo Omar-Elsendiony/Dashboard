@@ -2,7 +2,7 @@
   "1": {
     "template_id": "1",
     "name": "Meeting Notes",
-    "description": "Pretty summer growth live man receive focus.",
+    "description": "A meeting notes template with welcome content and important information for documenting discussions and decisions",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "html",
     "space_id": "22",
@@ -16,7 +16,7 @@
   "2": {
     "template_id": "2",
     "name": "Project Plan",
-    "description": "",
+    "description": "A project planning template with important notes and guidelines for organizing project milestones and deliverables",
     "content": "=== Important Notes ===\n\nPlease review the following guidelines...",
     "content_format": "html",
     "space_id": null,
@@ -30,7 +30,7 @@
   "3": {
     "template_id": "3",
     "name": "API Documentation",
-    "description": "Watch quite brother middle three way.",
+    "description": "An API documentation template serving as a central hub for organizing technical documentation and development resources",
     "content": "This page serves as a central hub for documentation related to...",
     "content_format": "wiki",
     "space_id": null,
@@ -44,7 +44,7 @@
   "4": {
     "template_id": "4",
     "name": "How-to Guide",
-    "description": "",
+    "description": "A how-to guide template with getting started section and step-by-step instructions for creating procedural documentation",
     "content": "## Getting Started\n\n1. First step\n2. Second step\n3. Third step",
     "content_format": "html",
     "space_id": "25",
@@ -58,7 +58,7 @@
   "5": {
     "template_id": "5",
     "name": "FAQ",
-    "description": "Their for sort write.",
+    "description": "A frequently asked questions template serving as a central hub for organizing common questions and answers",
     "content": "This page serves as a central hub for documentation related to...",
     "content_format": "wiki",
     "space_id": "18",
@@ -72,7 +72,7 @@
   "6": {
     "template_id": "6",
     "name": "Product Spec",
-    "description": "",
+    "description": "A product specification template with welcome content and important information for documenting product requirements and features",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "html",
     "space_id": "17",
@@ -86,7 +86,7 @@
   "7": {
     "template_id": "7",
     "name": "Bug Report",
-    "description": "Arrive response effort late.",
+    "description": "A bug report template with getting started section and step-by-step instructions for documenting and tracking software issues",
     "content": "## Getting Started\n\n1. First step\n2. Second step\n3. Third step",
     "content_format": "wiki",
     "space_id": null,
@@ -100,7 +100,7 @@
   "8": {
     "template_id": "8",
     "name": "User Story",
-    "description": "Several happen fall radio performance beat.",
+    "description": "A user story template with project overview structure for documenting user requirements and acceptance criteria",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "html",
     "space_id": "22",
@@ -114,7 +114,7 @@
   "9": {
     "template_id": "9",
     "name": "Release Notes",
-    "description": "",
+    "description": "A release notes template with welcome content and important information for documenting software updates and version changes",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "html",
     "space_id": "23",
@@ -128,7 +128,7 @@
   "10": {
     "template_id": "10",
     "name": "Team Update",
-    "description": "",
+    "description": "A team update template with project overview structure for communicating team progress and organizational changes",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "wiki",
     "space_id": "1",
@@ -142,7 +142,7 @@
   "11": {
     "template_id": "11",
     "name": "Code Review",
-    "description": "",
+    "description": "A code review template with project overview structure for documenting code analysis and development feedback",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "wiki",
     "space_id": "2",
@@ -156,7 +156,7 @@
   "12": {
     "template_id": "12",
     "name": "Design Document",
-    "description": "",
+    "description": "A design document template serving as a central hub for organizing design specifications and architectural decisions",
     "content": "This page serves as a central hub for documentation related to...",
     "content_format": "html",
     "space_id": "21",
@@ -170,7 +170,7 @@
   "13": {
     "template_id": "13",
     "name": "Training Material",
-    "description": "Drive answer stuff need art to bit.",
+    "description": "A training material template with project overview structure for educational resources and learning guides",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "wiki",
     "space_id": "29",
@@ -184,7 +184,7 @@
   "14": {
     "template_id": "14",
     "name": "Policy Document",
-    "description": "",
+    "description": "A policy document template with important notes and guidelines for documenting organizational policies and procedures",
     "content": "=== Important Notes ===\n\nPlease review the following guidelines...",
     "content_format": "markdown",
     "space_id": "27",
@@ -198,7 +198,7 @@
   "15": {
     "template_id": "15",
     "name": "Troubleshooting",
-    "description": "",
+    "description": "A troubleshooting template with getting started section and step-by-step instructions for diagnosing and resolving technical issues",
     "content": "## Getting Started\n\n1. First step\n2. Second step\n3. Third step",
     "content_format": "markdown",
     "space_id": null,
@@ -212,7 +212,7 @@
   "16": {
     "template_id": "16",
     "name": "Writer Template",
-    "description": "",
+    "description": "A writer template with project overview structure for creating and organizing written content and documentation",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "markdown",
     "space_id": "20",
@@ -226,7 +226,7 @@
   "17": {
     "template_id": "17",
     "name": "Up Template",
-    "description": "Role raise across leave between guess.",
+    "description": "An up template serving as a central hub for organizing and managing upward-facing documentation and resources",
     "content": "This page serves as a central hub for documentation related to...",
     "content_format": "wiki",
     "space_id": "15",
@@ -240,7 +240,7 @@
   "18": {
     "template_id": "18",
     "name": "Add Template",
-    "description": "Cause enough stand yard particular go.",
+    "description": "An add template with welcome content and important information for creating new entries and additions",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "markdown",
     "space_id": null,
@@ -254,7 +254,7 @@
   "19": {
     "template_id": "19",
     "name": "Doctor Template",
-    "description": "",
+    "description": "A doctor template with project overview structure for medical documentation and healthcare-related content",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "markdown",
     "space_id": "22",
@@ -268,7 +268,7 @@
   "20": {
     "template_id": "20",
     "name": "Hand Template",
-    "description": "Stuff wrong under carry thousand.",
+    "description": "A hand template with project overview structure for manual processes and hands-on documentation",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "wiki",
     "space_id": "23",
@@ -282,7 +282,7 @@
   "21": {
     "template_id": "21",
     "name": "Gun Template",
-    "description": "Truth personal former beyond they shake enjoy.",
+    "description": "A gun template with welcome content and important information for specialized equipment or security documentation",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "markdown",
     "space_id": "10",
@@ -296,7 +296,7 @@
   "22": {
     "template_id": "22",
     "name": "Their Template",
-    "description": "Your run present defense wall.",
+    "description": "A their template with getting started section and step-by-step instructions for collaborative or shared documentation",
     "content": "## Getting Started\n\n1. First step\n2. Second step\n3. Third step",
     "content_format": "wiki",
     "space_id": null,
@@ -310,7 +310,7 @@
   "23": {
     "template_id": "23",
     "name": "Not Template",
-    "description": "",
+    "description": "A not template serving as a central hub for organizing negative cases or exclusion documentation",
     "content": "This page serves as a central hub for documentation related to...",
     "content_format": "markdown",
     "space_id": "29",
@@ -324,7 +324,7 @@
   "24": {
     "template_id": "24",
     "name": "Character Template",
-    "description": "Success subject way heavy.",
+    "description": "A character template with welcome content and important information for documenting personas, profiles, or character-based content",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "wiki",
     "space_id": "23",
@@ -338,7 +338,7 @@
   "25": {
     "template_id": "25",
     "name": "Line Template",
-    "description": "Wind less best kid particularly ten.",
+    "description": "A line template with welcome content and important information for linear processes or sequential documentation",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "html",
     "space_id": "15",
@@ -352,7 +352,7 @@
   "26": {
     "template_id": "26",
     "name": "Blood Template",
-    "description": "Into recent usually political car write.",
+    "description": "A blood template with project overview structure for medical, laboratory, or health-related documentation",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "wiki",
     "space_id": "6",
@@ -366,7 +366,7 @@
   "27": {
     "template_id": "27",
     "name": "Phone Template",
-    "description": "",
+    "description": "A phone template with project overview structure for telecommunications or contact-related documentation",
     "content": "# Project Overview\n\nThis document outlines the key aspects of...",
     "content_format": "html",
     "space_id": "6",
@@ -380,7 +380,7 @@
   "28": {
     "template_id": "28",
     "name": "Music Template",
-    "description": "Region across check.",
+    "description": "A music template with getting started section and step-by-step instructions for audio or music-related documentation",
     "content": "## Getting Started\n\n1. First step\n2. Second step\n3. Third step",
     "content_format": "markdown",
     "space_id": null,
@@ -394,7 +394,7 @@
   "29": {
     "template_id": "29",
     "name": "Back Template",
-    "description": "Example office store car both.",
+    "description": "A back template with welcome content and important information for backup processes or retrospective documentation",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "markdown",
     "space_id": "15",
@@ -408,7 +408,7 @@
   "30": {
     "template_id": "30",
     "name": "Mother Template",
-    "description": "Point issue information couple yourself.",
+    "description": "A mother template with welcome content and important information for parent-level or foundational documentation",
     "content": "Welcome to our wiki! This page contains important information about...",
     "content_format": "markdown",
     "space_id": "22",
