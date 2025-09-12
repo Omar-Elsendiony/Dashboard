@@ -39,10 +39,10 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
 
-app.config['SESSION_TYPE'] = 'filesystem' 
+# app.config['SESSION_TYPE'] = 'filesystem' 
 
-# app.config['SESSION_TYPE'] = 'redis'
-# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+app.config['SESSION_TYPE'] = 'redis'
+app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 app.register_blueprint(db_utilities_bp)
@@ -102,10 +102,10 @@ def load_user(user_id):
 
 @app.route("/", strict_slashes=False)
 def index():
-    # if current_user.is_authenticated:
-    return render_template('main.html')
-    # else:
-    #     return render_template('login.html')
+    if current_user.is_authenticated:
+        return render_template('main.html')
+    else:
+        return render_template('login.html')
     
 
 @lru_cache(maxsize=1)
