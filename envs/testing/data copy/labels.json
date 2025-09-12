@@ -1,0 +1,502 @@
+{
+  "1": {
+    "label_id": "1",
+    "name": "urgent",
+    "color": "#33FFF5",
+    "description": "Indicates a task or issue requiring immediate attention and resolution.",
+    "space_id": "24",
+    "created_by_user_id": "69",
+    "usage_count": 19,
+    "created_at": "2025-09-06T08:13:28.004504"
+  },
+  "2": {
+    "label_id": "2",
+    "name": "bug",
+    "color": "#33FFF5",
+    "description": "Marks a defect or error in the software or system that needs to be fixed.",
+    "space_id": "28",
+    "created_by_user_id": "8",
+    "usage_count": 0,
+    "created_at": "2025-08-09T03:55:27.786747"
+  },
+  "3": {
+    "label_id": "3",
+    "name": "feature",
+    "color": "#FF5733",
+    "description": "Designates a new functionality or enhancement to be added to the product.",
+    "space_id": null,
+    "created_by_user_id": "7",
+    "usage_count": 3,
+    "created_at": "2025-05-25T23:10:35.481579"
+  },
+  "4": {
+    "label_id": "4",
+    "name": "documentation",
+    "color": "#FF33F5",
+    "description": "Categorizes tasks or content related to creating, updating, or reviewing documentation.",
+    "space_id": "5",
+    "created_by_user_id": "11",
+    "usage_count": 4,
+    "created_at": "2025-08-21T11:55:15.628923"
+  },
+  "5": {
+    "label_id": "5",
+    "name": "api",
+    "color": "#FF8C33",
+    "description": "Relates to tasks, issues, or discussions concerning Application Programming Interfaces.",
+    "space_id": null,
+    "created_by_user_id": "6",
+    "usage_count": 9,
+    "created_at": "2025-06-04T00:18:09.671689"
+  },
+  "6": {
+    "label_id": "6",
+    "name": "frontend",
+    "color": "#FF33F5",
+    "description": "Applies to work on the user interface and client-side development.",
+    "space_id": "11",
+    "created_by_user_id": "4",
+    "usage_count": 1,
+    "created_at": "2025-08-28T12:36:51.330346"
+  },
+  "7": {
+    "label_id": "7",
+    "name": "backend",
+    "color": "#FF33F5",
+    "description": "Pertains to server-side development, databases, and application logic.",
+    "space_id": "2",
+    "created_by_user_id": "70",
+    "usage_count": 20,
+    "created_at": "2025-09-03T09:50:08.551710"
+  },
+  "8": {
+    "label_id": "8",
+    "name": "security",
+    "color": "#FF33F5",
+    "description": "Highlights issues or tasks related to system security, vulnerabilities, or compliance.",
+    "space_id": "27",
+    "created_by_user_id": "7",
+    "usage_count": 22,
+    "created_at": "2025-06-09T23:07:30.962327"
+  },
+  "9": {
+    "label_id": "9",
+    "name": "performance",
+    "color": "#3357FF",
+    "description": "Identifies tasks focused on improving speed, efficiency, and resource utilization.",
+    "space_id": "27",
+    "created_by_user_id": "13",
+    "usage_count": 21,
+    "created_at": "2025-05-26T10:16:02.323291"
+  },
+  "10": {
+    "label_id": "10",
+    "name": "ui",
+    "color": "#FF33F5",
+    "description": "Refers to design and implementation aspects of the User Interface.",
+    "space_id": "21",
+    "created_by_user_id": "14",
+    "usage_count": 15,
+    "created_at": "2025-06-30T06:48:30.201301"
+  },
+  "11": {
+    "label_id": "11",
+    "name": "ux",
+    "color": "#33FFF5",
+    "description": "Covers tasks related to User Experience design, research, and usability.",
+    "space_id": "30",
+    "created_by_user_id": "6",
+    "usage_count": 4,
+    "created_at": "2025-08-22T11:02:30.115760"
+  },
+  "12": {
+    "label_id": "12",
+    "name": "testing",
+    "color": "#F5FF33",
+    "description": "Used for tasks involving quality assurance, test case creation, or execution.",
+    "space_id": "13",
+    "created_by_user_id": "11",
+    "usage_count": 2,
+    "created_at": "2025-08-24T20:55:33.288086"
+  },
+  "13": {
+    "label_id": "13",
+    "name": "deployment",
+    "color": "#FF8C33",
+    "description": "Marks activities related to releasing software to production or staging environments.",
+    "space_id": "4",
+    "created_by_user_id": "6",
+    "usage_count": 0,
+    "created_at": "2025-09-10T15:00:25.442261"
+  },
+  "14": {
+    "label_id": "14",
+    "name": "review",
+    "color": "#FF33F5",
+    "description": "Designates content or code that requires a formal review process.",
+    "space_id": null,
+    "created_by_user_id": "1",
+    "usage_count": 22,
+    "created_at": "2025-06-27T01:36:01.280420"
+  },
+  "15": {
+    "label_id": "15",
+    "name": "approved",
+    "color": "#33FF57",
+    "description": "Indicates that an item, proposal, or change has received official approval.",
+    "space_id": "30",
+    "created_by_user_id": "3",
+    "usage_count": 19,
+    "created_at": "2025-08-14T08:40:55.476258"
+  },
+  "16": {
+    "label_id": "16",
+    "name": "draft",
+    "color": "#33FF57",
+    "description": "Marks content or work that is in progress and not yet finalized.",
+    "space_id": "6",
+    "created_by_user_id": "10",
+    "usage_count": 9,
+    "created_at": "2025-08-04T05:00:57.341812"
+  },
+  "17": {
+    "label_id": "17",
+    "name": "archived",
+    "color": "#FF33F5",
+    "description": "Used for items that are no longer active but kept for historical reference.",
+    "space_id": null,
+    "created_by_user_id": "4",
+    "usage_count": 12,
+    "created_at": "2025-06-04T09:07:16.633947"
+  },
+  "18": {
+    "label_id": "18",
+    "name": "public",
+    "color": "#33FFF5",
+    "description": "Designates content or features accessible to all users or the general public.",
+    "space_id": "19",
+    "created_by_user_id": "13",
+    "usage_count": 4,
+    "created_at": "2025-08-24T12:14:10.503352"
+  },
+  "19": {
+    "label_id": "19",
+    "name": "private",
+    "color": "#8C33FF",
+    "description": "Indicates content or features restricted to specific internal users or groups.",
+    "space_id": "21",
+    "created_by_user_id": "11",
+    "usage_count": 5,
+    "created_at": "2025-07-30T11:23:12.417965"
+  },
+  "20": {
+    "label_id": "20",
+    "name": "internal",
+    "color": "#8C33FF",
+    "description": "Applies to internal-facing documentation, tools, or processes for employees only.",
+    "space_id": null,
+    "created_by_user_id": "13",
+    "usage_count": 25,
+    "created_at": "2025-06-23T08:48:38.851931"
+  },
+  "21": {
+    "label_id": "21",
+    "name": "external",
+    "color": "#33FF57",
+    "description": "Used for content or features intended for external stakeholders or customers.",
+    "space_id": null,
+    "created_by_user_id": "9",
+    "usage_count": 16,
+    "created_at": "2025-03-18T16:17:44.060810"
+  },
+  "22": {
+    "label_id": "22",
+    "name": "deprecated",
+    "color": "#FF5733",
+    "description": "Marks features, APIs, or content that are outdated and will be removed in the future.",
+    "space_id": null,
+    "created_by_user_id": "6",
+    "usage_count": 12,
+    "created_at": "2025-05-06T07:21:06.082120"
+  },
+  "23": {
+    "label_id": "23",
+    "name": "new",
+    "color": "#FF5733",
+    "description": "Highlights recently added items, features, or content.",
+    "space_id": "6",
+    "created_by_user_id": "11",
+    "usage_count": 2,
+    "created_at": "2025-08-06T02:40:18.310107"
+  },
+  "24": {
+    "label_id": "24",
+    "name": "updated",
+    "color": "#33FF57",
+    "description": "Indicates that an item, document, or feature has been recently modified.",
+    "space_id": null,
+    "created_by_user_id": "1",
+    "usage_count": 4,
+    "created_at": "2025-03-27T07:42:58.883795"
+  },
+  "25": {
+    "label_id": "25",
+    "name": "hotfix",
+    "color": "#33FF57",
+    "description": "Used for urgent bug fixes deployed quickly to production.",
+    "space_id": "5",
+    "created_by_user_id": "12",
+    "usage_count": 21,
+    "created_at": "2025-08-11T19:40:49.176242"
+  },
+  "26": {
+    "label_id": "26",
+    "name": "low-priority",
+    "color": "#FF8C33",
+    "description": "Designates tasks or issues that can be addressed at a later time.",
+    "space_id": "16",
+    "created_by_user_id": "6",
+    "usage_count": 23,
+    "created_at": "2025-07-02T02:23:35.979562"
+  },
+  "27": {
+    "label_id": "27",
+    "name": "high-priority",
+    "color": "#FF33F5",
+    "description": "Marks tasks or issues that are critical and need to be completed soon.",
+    "space_id": "4",
+    "created_by_user_id": "9",
+    "usage_count": 4,
+    "created_at": "2025-09-09T19:12:24.436882"
+  },
+  "28": {
+    "label_id": "28",
+    "name": "optimization",
+    "color": "#33FF57",
+    "description": "Focuses on improving efficiency, resource use, or overall system performance.",
+    "space_id": "21",
+    "created_by_user_id": "8",
+    "usage_count": 4,
+    "created_at": "2025-08-03T21:23:39.719566"
+  },
+  "29": {
+    "label_id": "29",
+    "name": "refactor",
+    "color": "#3357FF",
+    "description": "Indicates code restructuring or redesign to improve maintainability without changing external behavior.",
+    "space_id": "21",
+    "created_by_user_id": "27",
+    "usage_count": 3,
+    "created_at": "2025-09-05T00:31:46.052267"
+  },
+  "30": {
+    "label_id": "30",
+    "name": "design",
+    "color": "#FF8C33",
+    "description": "Pertains to visual, architectural, or functional design tasks.",
+    "space_id": "6",
+    "created_by_user_id": "81",
+    "usage_count": 5,
+    "created_at": "2025-07-14T08:23:17.384542"
+  },
+  "31": {
+    "label_id": "31",
+    "name": "content",
+    "color": "#FF33F5",
+    "description": "Categorizes tasks related to text, media, or information management.",
+    "space_id": "8",
+    "created_by_user_id": "10",
+    "usage_count": 22,
+    "created_at": "2025-06-23T08:23:15.566845"
+  },
+  "32": {
+    "label_id": "32",
+    "name": "workflow",
+    "color": "#FF8C33",
+    "description": "Refers to tasks concerning process automation, improvement, or definition.",
+    "space_id": "4",
+    "created_by_user_id": "54",
+    "usage_count": 9,
+    "created_at": "2025-09-03T17:12:39.007888"
+  },
+  "33": {
+    "label_id": "33",
+    "name": "integration",
+    "color": "#F5FF33",
+    "description": "Used for tasks involving connecting different systems or modules.",
+    "space_id": "26",
+    "created_by_user_id": "8",
+    "usage_count": 10,
+    "created_at": "2025-08-29T01:05:35.857653"
+  },
+  "34": {
+    "label_id": "34",
+    "name": "experimental",
+    "color": "#33FF57",
+    "description": "Designates features or projects that are in an exploratory or proof-of-concept phase.",
+    "space_id": "5",
+    "created_by_user_id": "1",
+    "usage_count": 22,
+    "created_at": "2025-06-16T16:46:03.070028"
+  },
+  "35": {
+    "label_id": "35",
+    "name": "stable",
+    "color": "#FF5733",
+    "description": "Indicates a version or feature that is robust, reliable, and production-ready.",
+    "space_id": null,
+    "created_by_user_id": "6",
+    "usage_count": 4,
+    "created_at": "2025-06-10T12:34:11.467769"
+  },
+  "36": {
+    "label_id": "36",
+    "name": "release",
+    "color": "#33FF57",
+    "description": "Pertains to activities leading up to and including a software release.",
+    "space_id": "19",
+    "created_by_user_id": "10",
+    "usage_count": 12,
+    "created_at": "2025-09-05T23:54:36.317004"
+  },
+  "37": {
+    "label_id": "37",
+    "name": "alpha",
+    "color": "#FF33F5",
+    "description": "Marks a very early, often internal, version of a product or feature for initial testing.",
+    "space_id": null,
+    "created_by_user_id": "12",
+    "usage_count": 10,
+    "created_at": "2025-08-15T10:03:54.922640"
+  },
+  "38": {
+    "label_id": "38",
+    "name": "beta",
+    "color": "#FF33F5",
+    "description": "Designates a pre-release version for external testing and feedback.",
+    "space_id": "3",
+    "created_by_user_id": "10",
+    "usage_count": 0,
+    "created_at": "2025-06-05T03:56:43.594303"
+  },
+  "39": {
+    "label_id": "39",
+    "name": "candidate",
+    "color": "#FF33F5",
+    "description": "Identifies a version or item that is being considered for final release or approval.",
+    "space_id": "15",
+    "created_by_user_id": "4",
+    "usage_count": 10,
+    "created_at": "2025-08-02T23:55:23.369895"
+  },
+  "40": {
+    "label_id": "40",
+    "name": "final",
+    "color": "#33FFF5",
+    "description": "Indicates the definitive and approved version of a document, design, or product.",
+    "space_id": "8",
+    "created_by_user_id": "15",
+    "usage_count": 14,
+    "created_at": "2025-08-15T10:52:48.749988"
+  },
+  "41": {
+    "label_id": "41",
+    "name": "support",
+    "color": "#FF5733",
+    "description": "Relates to customer assistance, troubleshooting, or help desk activities.",
+    "space_id": "17",
+    "created_by_user_id": "41",
+    "usage_count": 23,
+    "created_at": "2025-08-20T00:18:48.268506"
+  },
+  "42": {
+    "label_id": "42",
+    "name": "customer",
+    "color": "#FF5733",
+    "description": "Highlights tasks or issues directly impacting or originating from customers.",
+    "space_id": "18",
+    "created_by_user_id": "1",
+    "usage_count": 10,
+    "created_at": "2025-04-17T09:21:32.096663"
+  },
+  "43": {
+    "label_id": "43",
+    "name": "partner",
+    "color": "#33FF57",
+    "description": "Used for tasks or collaborations involving external partners.",
+    "space_id": "20",
+    "created_by_user_id": "13",
+    "usage_count": 22,
+    "created_at": "2025-07-31T03:49:25.597459"
+  },
+  "44": {
+    "label_id": "44",
+    "name": "learning",
+    "color": "#8C33FF",
+    "description": "Categorizes resources or tasks related to skill development and knowledge acquisition.",
+    "space_id": "26",
+    "created_by_user_id": "11",
+    "usage_count": 12,
+    "created_at": "2025-08-29T04:27:52.883710"
+  },
+  "45": {
+    "label_id": "45",
+    "name": "training",
+    "color": "#33FF57",
+    "description": "Applies to materials or sessions designed for educating users or employees.",
+    "space_id": "2",
+    "created_by_user_id": "8",
+    "usage_count": 10,
+    "created_at": "2025-08-24T13:19:24.165102"
+  },
+  "46": {
+    "label_id": "46",
+    "name": "research",
+    "color": "#F5FF33",
+    "description": "Designates tasks involving investigation, data gathering, or exploratory studies.",
+    "space_id": "29",
+    "created_by_user_id": "13",
+    "usage_count": 14,
+    "created_at": "2025-08-16T18:02:08.252069"
+  },
+  "47": {
+    "label_id": "47",
+    "name": "analysis",
+    "color": "#8C33FF",
+    "description": "Used for tasks involving data interpretation, problem breakdown, or solution evaluation.",
+    "space_id": null,
+    "created_by_user_id": "11",
+    "usage_count": 2,
+    "created_at": "2025-09-09T03:44:12.969177"
+  },
+  "48": {
+    "label_id": "48",
+    "name": "planning",
+    "color": "#3357FF",
+    "description": "Covers activities related to strategizing, scheduling, and resource allocation.",
+    "space_id": "7",
+    "created_by_user_id": "15",
+    "usage_count": 15,
+    "created_at": "2025-07-10T14:28:15.024577"
+  },
+  "49": {
+    "label_id": "49",
+    "name": "roadmap",
+    "color": "#3357FF",
+    "description": "Indicates items related to product or project future direction and strategic initiatives.",
+    "space_id": null,
+    "created_by_user_id": "13",
+    "usage_count": 19,
+    "created_at": "2025-06-02T22:09:45.254832"
+  },
+  "50": {
+    "label_id": "50",
+    "name": "idea",
+    "color": "#FF33F5",
+    "description": "Marks initial concepts or suggestions that require further exploration.",
+    "space_id": "3",
+    "created_by_user_id": "1",
+    "usage_count": 23,
+    "created_at": "2025-07-22T16:02:25.686029"
+  }
+}

@@ -1,0 +1,151 @@
+I have a set of actions that are interconnected, and I need to see these connection in terms of edges represented in JSON format. The edges should be realistic and represent how the output(s) of one action connect to the input(s) of other actions. I am going to give you the instructions that will help you decide the edges as well as some example tasks that have the actions and their corresponding edges and your task is to generate for me the new set of edges for the actions I will present. Please, look at the things from logical perspective.
+
+## Edge Mapping Instructions
+
+### 1. **One-to-One Edge Rule**
+- **Only one edge** between any two functions (A→B)
+- If function B needs multiple inputs from function A, combine them in a **single edge** with comma-separated values
+- Example:
+```json
+{{
+    "from": "get_user_details",
+    "to": "create_profile", 
+    "connection": {{
+        "output": "first_name, last_name, email",
+        "input": "name, surname, contact_email"
+    }}
+}}
+```
+
+### 2. **Execution Order Consistency**
+- In the `actions` array: Function A must be executed **before** Function B
+- In the `edges` array: Edge A→B must exist if B depends on A's output
+- The edge list should reflect the **actual execution path only**
+
+### 3. **Instruction-to-Function Edges**
+- Add edges from `"instruction"` when a function needs inputs **not provided by upstream functions**
+- Common cases:
+  - Static values from the task description
+  - User-provided parameters
+  - Configuration values
+
+### 4. **List Output Handling**
+
+#### **Single Item Selection:**
+```json
+{{
+    "from": "get_applications",
+    "to": "schedule_interview",
+    "connection": {{
+        "output": "output[0].application_id",  // First item
+        "input": "application_id"
+    }}
+}}
+```
+
+#### **Multiple Items Selection:**
+```json
+{{
+    "from": "get_candidates", 
+    "to": "batch_update_status",
+    "connection": {{
+        "output": "output[0,1,2].candidate_id",  // First 3 items
+        "input": "candidate_ids"
+    }}
+}}
+```
+
+#### **All Items:**
+```json
+{{
+    "from": "get_all_invoices",
+    "to": "process_batch",
+    "connection": {{
+        "output": "output[].invoice_id",  // All items
+        "input": "invoice_ids"
+    }}
+}}
+```
+
+### 5. **Formula/Calculation Edges**
+When outputs need to be combined or calculated:
+```json
+{{
+    "from": "get_user_info",
+    "to": "create_display_name", 
+    "connection": {{
+        "output": "first_name + ' ' + last_name",
+        "input": "full_name"
+    }}
+}}
+```
+
+### 6. **Multi-Source Dependencies**
+If a function needs inputs from **multiple sources**, create separate edges:
+```json
+// Edge 1: From previous function
+{{
+    "from": "get_investor",
+    "to": "create_subscription",
+    "connection": {{
+        "output": "investor_id",
+        "input": "investor_id" 
+    }}
+}},
+// Edge 2: From instruction
+{{
+    "from": "instruction",
+    "to": "create_subscription", 
+    "connection": {{
+        "output": "amount",
+        "input": "subscription_amount"
+    }}
+}}
+```
+
+### 7. **Validation Rules**
+- ✅ **Do**: Map only the **executed path** shown in actions
+- ✅ **Do**: Ensure chronological consistency (A executes before B if A→B edge exists)
+- ❌ **Don't**: Create edges for alternate branches not taken
+- ❌ **Don't**: Duplicate edges between the same two functions
+- ❌ **Don't**: Create circular dependencies
+
+### 8. **Special Cases**
+
+#### **Conditional Flows:**
+Only map the path that was actually executed based on the actions sequence.
+
+#### **Approval Validations:**
+```json
+{{
+    "from": "validate_approval",
+    "to": "update_subscription",
+    "connection": {{
+        "output": "approval_valid, approval_valid",  // Same validation used twice
+        "input": "compliance_approval, finance_approval"
+    }}
+}}
+```
+
+#### **Audit Trail Creation:**
+Map both the reference ID and any changed values:
+```json
+{{
+    "from": "update_record",
+    "to": "create_audit_log",
+    "connection": {{
+        "output": "record_id, new_status", 
+        "input": "reference_id, new_value"
+    }}
+}}
+```
+
+These instructions ensure the edge mapping accurately reflects the **actual execution flow** while maintaining logical consistency and avoiding redundant connections.
+
+## Examples of actions + corresponding edges:
+
+{examples}
+
+## Actions that I want their edges in JSON format.
+
+{actions}

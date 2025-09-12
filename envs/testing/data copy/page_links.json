@@ -1,0 +1,802 @@
+{
+  "1": {
+    "link_id": "1",
+    "source_page_id": "80",
+    "target_url": "/pages/46",
+    "link_text": "See Page Training Materials",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-09T12:47:45.069324"
+  },
+  "2": {
+    "link_id": "2",
+    "source_page_id": "69",
+    "target_url": "/pages/90",
+    "link_text": "See Page Compliance Guidelines",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T15:03:18.914635",
+    "created_at": "2025-08-11T06:56:01.311231"
+  },
+  "3": {
+    "link_id": "3",
+    "source_page_id": "33",
+    "target_url": "/pages/36",
+    "link_text": "See Page Project Gamma",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-06T08:40:44.274378",
+    "created_at": "2025-09-06T08:07:37.599000"
+  },
+  "4": {
+    "link_id": "4",
+    "source_page_id": "68",
+    "target_url": "/pages/98",
+    "link_text": "See Page Onboarding Guide",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T05:06:36.102840",
+    "created_at": "2025-09-07T22:54:10.552166"
+  },
+  "5": {
+    "link_id": "5",
+    "source_page_id": "49",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T22:32:49.288769",
+    "created_at": "2025-09-07T01:34:49.222441"
+  },
+  "6": {
+    "link_id": "6",
+    "source_page_id": "40",
+    "target_url": "/pages/65",
+    "link_text": "See Page Support FAQ",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-08T19:29:54.527189"
+  },
+  "7": {
+    "link_id": "7",
+    "source_page_id": "82",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-11T00:59:08.074314",
+    "created_at": "2025-09-11T00:14:39.849106"
+  },
+  "8": {
+    "link_id": "8",
+    "source_page_id": "45",
+    "target_url": "/pages/88",
+    "link_text": "See Page Leadership Handbook",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T06:56:46.904027",
+    "created_at": "2025-09-09T10:33:31.700968"
+  },
+  "9": {
+    "link_id": "9",
+    "source_page_id": "81",
+    "target_url": "https://api.example.com/docs",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T07:58:36.303834",
+    "created_at": "2025-09-07T00:14:57.558654"
+  },
+  "10": {
+    "link_id": "10",
+    "source_page_id": "99",
+    "target_url": "https://github.com/example/repo",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-08-30T21:29:19.080882"
+  },
+  "11": {
+    "link_id": "11",
+    "source_page_id": "61",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-05T04:50:01.579535",
+    "created_at": "2025-09-05T02:01:39.817682"
+  },
+  "12": {
+    "link_id": "12",
+    "source_page_id": "23",
+    "target_url": "/pages/80",
+    "link_text": "See Page Project Beta",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-08T19:46:07.739186"
+  },
+  "13": {
+    "link_id": "13",
+    "source_page_id": "94",
+    "target_url": "/pages/98",
+    "link_text": "See Page Onboarding Guide",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-24T14:46:30.288457",
+    "created_at": "2025-07-09T01:21:33.222785"
+  },
+  "14": {
+    "link_id": "14",
+    "source_page_id": "54",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-08-30T10:49:15.358614",
+    "created_at": "2025-08-22T04:43:13.697267"
+  },
+  "15": {
+    "link_id": "15",
+    "source_page_id": "1",
+    "target_url": "/pages/99",
+    "link_text": "See Page Engineering Wiki",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T12:02:02.962872",
+    "created_at": "2025-09-06T23:44:52.436471"
+  },
+  "16": {
+    "link_id": "16",
+    "source_page_id": "97",
+    "target_url": "/pages/87",
+    "link_text": "See Page Partnership Docs",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T15:14:31.480130",
+    "created_at": "2025-09-10T02:47:57.693666"
+  },
+  "17": {
+    "link_id": "17",
+    "source_page_id": "49",
+    "target_url": "https://github.com/example/repo",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-07-27T12:15:35.885415",
+    "created_at": "2025-07-25T09:59:19.392733"
+  },
+  "18": {
+    "link_id": "18",
+    "source_page_id": "28",
+    "target_url": "https://stackoverflow.com/questions/example",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T15:40:31.737717",
+    "created_at": "2025-09-10T05:44:18.615226"
+  },
+  "19": {
+    "link_id": "19",
+    "source_page_id": "77",
+    "target_url": "/pages/90",
+    "link_text": "See Page Compliance Guidelines",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T04:32:33.486421",
+    "created_at": "2025-09-09T21:32:03.026646"
+  },
+  "20": {
+    "link_id": "20",
+    "source_page_id": "87",
+    "target_url": "/pages/91",
+    "link_text": "See Page OKR Tracking",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T18:27:53.886805",
+    "created_at": "2025-09-08T18:29:15.359141"
+  },
+  "21": {
+    "link_id": "21",
+    "source_page_id": "29",
+    "target_url": "/pages/12",
+    "link_text": "See Page Research Papers",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T03:03:56.579090",
+    "created_at": "2025-09-07T05:58:46.163321"
+  },
+  "22": {
+    "link_id": "22",
+    "source_page_id": "89",
+    "target_url": "/pages/30",
+    "link_text": "See Page Leadership Handbook",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-08-27T21:37:05.981074"
+  },
+  "23": {
+    "link_id": "23",
+    "source_page_id": "73",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-08-27T02:31:14.419988",
+    "created_at": "2025-08-20T17:16:44.526732"
+  },
+  "24": {
+    "link_id": "24",
+    "source_page_id": "6",
+    "target_url": "/pages/89",
+    "link_text": "See Page OKR Tracking",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T17:45:45.710382",
+    "created_at": "2025-09-08T00:16:05.523599"
+  },
+  "25": {
+    "link_id": "25",
+    "source_page_id": "92",
+    "target_url": "/pages/16",
+    "link_text": "See Page User Guides",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-10T17:56:40.716265",
+    "created_at": "2025-06-13T04:05:14.877599"
+  },
+  "26": {
+    "link_id": "26",
+    "source_page_id": "38",
+    "target_url": "/pages/60",
+    "link_text": "See Page Engineering Wiki",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-23T03:55:56.572318",
+    "created_at": "2025-08-20T16:32:14.644173"
+  },
+  "27": {
+    "link_id": "27",
+    "source_page_id": "80",
+    "target_url": "https://api.example.com/docs",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-11T00:47:16.838423",
+    "created_at": "2025-09-09T14:02:26.763811"
+  },
+  "28": {
+    "link_id": "28",
+    "source_page_id": "96",
+    "target_url": "/pages/19",
+    "link_text": "See Page Design System",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-01T21:35:56.747690",
+    "created_at": "2025-08-19T09:52:13.803632"
+  },
+  "29": {
+    "link_id": "29",
+    "source_page_id": "39",
+    "target_url": "https://api.example.com/docs",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-06T09:51:56.831874",
+    "created_at": "2025-08-28T10:35:20.594882"
+  },
+  "30": {
+    "link_id": "30",
+    "source_page_id": "71",
+    "target_url": "https://github.com/example/repo",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-06-21T05:42:54.360646",
+    "created_at": "2025-06-09T21:35:26.313931"
+  },
+  "31": {
+    "link_id": "31",
+    "source_page_id": "56",
+    "target_url": "https://api.example.com/docs",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-07T00:28:19.218928",
+    "created_at": "2025-09-06T11:35:05.397807"
+  },
+  "32": {
+    "link_id": "32",
+    "source_page_id": "98",
+    "target_url": "/pages/81",
+    "link_text": "See Page API Documentation",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T23:33:38.343645",
+    "created_at": "2025-09-07T11:25:40.359828"
+  },
+  "33": {
+    "link_id": "33",
+    "source_page_id": "30",
+    "target_url": "/pages/16",
+    "link_text": "See Page User Guides",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-05T21:20:49.862132",
+    "created_at": "2025-09-04T02:50:27.487386"
+  },
+  "34": {
+    "link_id": "34",
+    "source_page_id": "26",
+    "target_url": "https://stackoverflow.com/questions/example",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-08-21T21:55:05.103704"
+  },
+  "35": {
+    "link_id": "35",
+    "source_page_id": "16",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T21:29:25.969337",
+    "created_at": "2025-09-08T11:49:03.275808"
+  },
+  "36": {
+    "link_id": "36",
+    "source_page_id": "21",
+    "target_url": "/pages/49",
+    "link_text": "See Page HR Policies",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-09T22:41:14.583351"
+  },
+  "37": {
+    "link_id": "37",
+    "source_page_id": "73",
+    "target_url": "/pages/20",
+    "link_text": "See Page Engineering Wiki",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-01T07:15:06.010363",
+    "created_at": "2025-08-17T07:50:24.802768"
+  },
+  "38": {
+    "link_id": "38",
+    "source_page_id": "85",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-11T00:50:43.938170",
+    "created_at": "2025-09-10T03:05:17.671427"
+  },
+  "39": {
+    "link_id": "39",
+    "source_page_id": "4",
+    "target_url": "/pages/30",
+    "link_text": "See Page Leadership Handbook",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-10T16:10:06.562747"
+  },
+  "40": {
+    "link_id": "40",
+    "source_page_id": "56",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-08-30T07:53:48.971615"
+  },
+  "41": {
+    "link_id": "41",
+    "source_page_id": "26",
+    "target_url": "/pages/64",
+    "link_text": "See Page Security Policies",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-29T17:46:03.994864",
+    "created_at": "2025-08-18T06:29:37.475663"
+  },
+  "42": {
+    "link_id": "42",
+    "source_page_id": "13",
+    "target_url": "https://stackoverflow.com/questions/example",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-06-19T17:14:15.463801"
+  },
+  "43": {
+    "link_id": "43",
+    "source_page_id": "39",
+    "target_url": "https://stackoverflow.com/questions/example",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-03T02:54:23.658508"
+  },
+  "44": {
+    "link_id": "44",
+    "source_page_id": "23",
+    "target_url": "/pages/65",
+    "link_text": "See Page Support FAQ",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T08:38:04.427060",
+    "created_at": "2025-09-09T06:25:34.872125"
+  },
+  "45": {
+    "link_id": "45",
+    "source_page_id": "74",
+    "target_url": "https://github.com/example/repo",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T22:25:55.077011",
+    "created_at": "2025-09-10T13:28:29.622630"
+  },
+  "46": {
+    "link_id": "46",
+    "source_page_id": "34",
+    "target_url": "/pages/86",
+    "link_text": "See Page Company Handbook",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-05T05:33:37.470163",
+    "created_at": "2025-08-15T14:27:02.181110"
+  },
+  "47": {
+    "link_id": "47",
+    "source_page_id": "7",
+    "target_url": "https://stackoverflow.com/questions/example",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-04T07:58:57.870703",
+    "created_at": "2025-08-18T23:08:06.473504"
+  },
+  "48": {
+    "link_id": "48",
+    "source_page_id": "36",
+    "target_url": "https://github.com/example/repo",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T02:36:08.706969",
+    "created_at": "2025-09-07T10:57:23.144514"
+  },
+  "49": {
+    "link_id": "49",
+    "source_page_id": "54",
+    "target_url": "/pages/52",
+    "link_text": "See Page Project Alpha",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-29T00:20:15.493426",
+    "created_at": "2025-08-26T02:51:51.868624"
+  },
+  "50": {
+    "link_id": "50",
+    "source_page_id": "12",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T22:42:19.202315",
+    "created_at": "2025-09-08T04:28:47.427382"
+  },
+  "51": {
+    "link_id": "51",
+    "source_page_id": "92",
+    "target_url": "/pages/48",
+    "link_text": "See Page Leadership Handbook",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-29T05:49:15.190260",
+    "created_at": "2025-08-07T16:49:36.808091"
+  },
+  "52": {
+    "link_id": "52",
+    "source_page_id": "78",
+    "target_url": "/pages/70",
+    "link_text": "See Page Project Beta",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-01T20:33:21.875043",
+    "created_at": "2025-08-26T08:34:21.190908"
+  },
+  "53": {
+    "link_id": "53",
+    "source_page_id": "55",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-08-13T09:47:52.009077",
+    "created_at": "2025-08-05T10:05:58.054491"
+  },
+  "54": {
+    "link_id": "54",
+    "source_page_id": "14",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T01:49:59.364477",
+    "created_at": "2025-09-06T22:45:07.766201"
+  },
+  "55": {
+    "link_id": "55",
+    "source_page_id": "45",
+    "target_url": "/pages/92",
+    "link_text": "See Page Support FAQ",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T14:02:30.725961",
+    "created_at": "2025-08-30T07:33:07.167842"
+  },
+  "56": {
+    "link_id": "56",
+    "source_page_id": "100",
+    "target_url": "/pages/66",
+    "link_text": "See Page Legal Documents",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T23:34:53.352951",
+    "created_at": "2025-09-03T18:13:05.027652"
+  },
+  "57": {
+    "link_id": "57",
+    "source_page_id": "29",
+    "target_url": "https://github.com/example/repo",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-07T05:16:44.410993"
+  },
+  "58": {
+    "link_id": "58",
+    "source_page_id": "75",
+    "target_url": "https://stackoverflow.com/questions/example",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-07T03:25:50.269368",
+    "created_at": "2025-08-31T22:55:11.081127"
+  },
+  "59": {
+    "link_id": "59",
+    "source_page_id": "42",
+    "target_url": "/pages/83",
+    "link_text": "See Page Design System",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T03:56:27.400952",
+    "created_at": "2025-09-03T20:55:25.716798"
+  },
+  "60": {
+    "link_id": "60",
+    "source_page_id": "81",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-03T20:54:04.613564",
+    "created_at": "2025-08-29T23:03:48.322723"
+  },
+  "61": {
+    "link_id": "61",
+    "source_page_id": "79",
+    "target_url": "/pages/33",
+    "link_text": "See Page HR Policies",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T03:19:00.751791",
+    "created_at": "2025-09-01T14:26:50.573449"
+  },
+  "62": {
+    "link_id": "62",
+    "source_page_id": "100",
+    "target_url": "/pages/25",
+    "link_text": "See Page Customer Support",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-02T10:50:57.688163",
+    "created_at": "2025-08-25T20:18:54.701696"
+  },
+  "63": {
+    "link_id": "63",
+    "source_page_id": "83",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-08-15T15:08:23.576152",
+    "created_at": "2025-08-01T02:02:49.516687"
+  },
+  "64": {
+    "link_id": "64",
+    "source_page_id": "84",
+    "target_url": "/pages/30",
+    "link_text": "See Page Leadership Handbook",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-10T22:34:55.217155"
+  },
+  "65": {
+    "link_id": "65",
+    "source_page_id": "28",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-03T02:55:24.705677",
+    "created_at": "2025-08-31T06:35:30.983179"
+  },
+  "66": {
+    "link_id": "66",
+    "source_page_id": "35",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-09-04T13:51:48.407924"
+  },
+  "67": {
+    "link_id": "67",
+    "source_page_id": "74",
+    "target_url": "/pages/75",
+    "link_text": "See Page Training Materials",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T19:27:27.003766",
+    "created_at": "2025-09-09T12:59:00.431460"
+  },
+  "68": {
+    "link_id": "68",
+    "source_page_id": "84",
+    "target_url": "/pages/43",
+    "link_text": "See Page Compliance Guidelines",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T20:55:26.103203",
+    "created_at": "2025-09-10T18:25:09.011087"
+  },
+  "69": {
+    "link_id": "69",
+    "source_page_id": "57",
+    "target_url": "/pages/21",
+    "link_text": "See Page Compliance Guidelines",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-23T13:46:56.720872",
+    "created_at": "2025-08-18T08:36:01.948139"
+  },
+  "70": {
+    "link_id": "70",
+    "source_page_id": "39",
+    "target_url": "/pages/63",
+    "link_text": "See Page Content Guidelines",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-09T22:27:46.728245",
+    "created_at": "2025-09-07T19:26:34.882104"
+  },
+  "71": {
+    "link_id": "71",
+    "source_page_id": "5",
+    "target_url": "/pages/89",
+    "link_text": "See Page OKR Tracking",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T06:56:14.469395",
+    "created_at": "2025-08-30T09:10:21.774653"
+  },
+  "72": {
+    "link_id": "72",
+    "source_page_id": "68",
+    "target_url": "https://github.com/example/repo",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-11T00:02:08.224722",
+    "created_at": "2025-09-10T07:31:03.933822"
+  },
+  "73": {
+    "link_id": "73",
+    "source_page_id": "16",
+    "target_url": "https://stackoverflow.com/questions/example",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": true,
+    "last_checked_at": "2025-09-10T04:01:36.395245",
+    "created_at": "2025-09-09T04:54:41.096223"
+  },
+  "74": {
+    "link_id": "74",
+    "source_page_id": "49",
+    "target_url": "/pages/92",
+    "link_text": "See Page Support FAQ",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-11T10:02:48.635249",
+    "created_at": "2025-07-28T05:22:59.484540"
+  },
+  "75": {
+    "link_id": "75",
+    "source_page_id": "23",
+    "target_url": "https://api.example.com/docs",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T07:56:06.284375",
+    "created_at": "2025-09-07T09:51:11.905039"
+  },
+  "76": {
+    "link_id": "76",
+    "source_page_id": "13",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": null,
+    "created_at": "2025-06-22T09:50:18.372833"
+  },
+  "77": {
+    "link_id": "77",
+    "source_page_id": "95",
+    "target_url": "/pages/37",
+    "link_text": "See Page Training Materials",
+    "link_type": "internal",
+    "is_broken": false,
+    "last_checked_at": "2025-08-31T00:58:42.775779",
+    "created_at": "2025-08-24T07:17:13.364252"
+  },
+  "78": {
+    "link_id": "78",
+    "source_page_id": "5",
+    "target_url": "https://www.example.com/documentation",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-08T07:14:58.001725",
+    "created_at": "2025-08-30T19:48:39.356769"
+  },
+  "79": {
+    "link_id": "79",
+    "source_page_id": "25",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T01:48:28.432458",
+    "created_at": "2025-09-08T14:03:14.644547"
+  },
+  "80": {
+    "link_id": "80",
+    "source_page_id": "91",
+    "target_url": "https://docs.python.org/3/",
+    "link_text": "External Documentation",
+    "link_type": "external",
+    "is_broken": false,
+    "last_checked_at": "2025-09-10T05:51:18.246472",
+    "created_at": "2025-09-10T05:20:35.291147"
+  }
+}

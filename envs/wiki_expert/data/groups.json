@@ -1,0 +1,242 @@
+{
+  "1": {
+    "group_id": "1",
+    "name": "Developers",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-07-16T18:17:36",
+    "created_by_user_id": "37"
+  },
+  "2": {
+    "group_id": "2",
+    "name": "Content Writers",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-02-12T04:47:19",
+    "created_by_user_id": "25"
+  },
+  "3": {
+    "group_id": "3",
+    "name": "Administrators",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-03-31T02:07:05",
+    "created_by_user_id": "100"
+  },
+  "4": {
+    "group_id": "4",
+    "name": "Project Managers",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-07-31T08:14:05",
+    "created_by_user_id": "11"
+  },
+  "5": {
+    "group_id": "5",
+    "name": "QA Team",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-08-28T15:24:14",
+    "created_by_user_id": "18"
+  },
+  "6": {
+    "group_id": "6",
+    "name": "Marketing",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-08-31T08:28:56",
+    "created_by_user_id": "72"
+  },
+  "7": {
+    "group_id": "7",
+    "name": "Support",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-08-06T14:33:01",
+    "created_by_user_id": "11"
+  },
+  "8": {
+    "group_id": "8",
+    "name": "Designers",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-05-25T08:11:52",
+    "created_by_user_id": "100"
+  },
+  "9": {
+    "group_id": "9",
+    "name": "Data Analysts",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-03-28T06:40:04",
+    "created_by_user_id": "100"
+  },
+  "10": {
+    "group_id": "10",
+    "name": "Research Team",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-08-16T14:24:05",
+    "created_by_user_id": "54"
+  },
+  "11": {
+    "group_id": "11",
+    "name": "HR",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-08-07T01:06:50",
+    "created_by_user_id": "53"
+  },
+  "12": {
+    "group_id": "12",
+    "name": "Finance",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-06-11T17:26:36",
+    "created_by_user_id": "11"
+  },
+  "13": {
+    "group_id": "13",
+    "name": "Legal",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-06-04T13:58:36",
+    "created_by_user_id": "61"
+  },
+  "14": {
+    "group_id": "14",
+    "name": "Product Owners",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-06-19T01:21:25",
+    "created_by_user_id": "11"
+  },
+  "15": {
+    "group_id": "15",
+    "name": "Scrum Masters",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-07-23T20:26:06",
+    "created_by_user_id": "54"
+  },
+  "16": {
+    "group_id": "16",
+    "name": "DevOps",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-08-25T16:49:58",
+    "created_by_user_id": "25"
+  },
+  "17": {
+    "group_id": "17",
+    "name": "Security",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-07-22T07:29:26",
+    "created_by_user_id": "53"
+  },
+  "18": {
+    "group_id": "18",
+    "name": "Sales",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-07-23T15:26:06",
+    "created_by_user_id": "11"
+  },
+  "19": {
+    "group_id": "19",
+    "name": "Customer Success",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-02-26T22:43:48",
+    "created_by_user_id": "13"
+  },
+  "20": {
+    "group_id": "20",
+    "name": "Operations",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-06-13T06:28:33",
+    "created_by_user_id": "2"
+  },
+  "21": {
+    "group_id": "21",
+    "name": "Business Analysts",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-03-16T23:01:44",
+    "created_by_user_id": "75"
+  },
+  "22": {
+    "group_id": "22",
+    "name": "Innovation Lab",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-05-20T03:06:09",
+    "created_by_user_id": "61"
+  },
+  "23": {
+    "group_id": "23",
+    "name": "Training",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-09-02T04:14:02",
+    "created_by_user_id": "18"
+  },
+  "24": {
+    "group_id": "24",
+    "name": "Documentation",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-07-07T01:43:11",
+    "created_by_user_id": "11"
+  },
+  "25": {
+    "group_id": "25",
+    "name": "Community Managers",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-08-08T08:45:24",
+    "created_by_user_id": "50"
+  },
+  "26": {
+    "group_id": "26",
+    "name": "IT Helpdesk",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-07-22T15:25:14",
+    "created_by_user_id": "75"
+  },
+  "27": {
+    "group_id": "27",
+    "name": "Content Reviewers",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-06-10T03:52:50",
+    "created_by_user_id": "100"
+  },
+  "28": {
+    "group_id": "28",
+    "name": "UX Researchers",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-08-20T07:45:26",
+    "created_by_user_id": "72"
+  },
+  "29": {
+    "group_id": "29",
+    "name": "Engineering Leads",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-03-12T00:48:25",
+    "created_by_user_id": "75"
+  },
+  "30": {
+    "group_id": "30",
+    "name": "Executive Board",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-08-22T03:51:41",
+    "created_by_user_id": "72"
+  }
+}
