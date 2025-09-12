@@ -1,0 +1,1430 @@
+{
+  "1": {
+    "space_admin_id": "1",
+    "space_id": "1",
+    "user_id": "33",
+    "assigned_at": "2025-07-12T18:53:53",
+    "assigned_by_user_id": "53"
+  },
+  "2": {
+    "space_admin_id": "2",
+    "space_id": "1",
+    "user_id": "81",
+    "assigned_at": "2025-05-24T18:36:16",
+    "assigned_by_user_id": "2"
+  },
+  "3": {
+    "space_admin_id": "3",
+    "space_id": "2",
+    "user_id": "3",
+    "assigned_at": "2025-08-20T13:41:43",
+    "assigned_by_user_id": "50"
+  },
+  "4": {
+    "space_admin_id": "4",
+    "space_id": "2",
+    "user_id": "63",
+    "assigned_at": "2025-05-30T13:16:08",
+    "assigned_by_user_id": "13"
+  },
+  "5": {
+    "space_admin_id": "5",
+    "space_id": "3",
+    "user_id": "86",
+    "assigned_at": "2025-09-01T07:29:19",
+    "assigned_by_user_id": "75"
+  },
+  "6": {
+    "space_admin_id": "6",
+    "space_id": "4",
+    "user_id": "92",
+    "assigned_at": "2025-07-26T20:16:09",
+    "assigned_by_user_id": "53"
+  },
+  "7": {
+    "space_admin_id": "7",
+    "space_id": "4",
+    "user_id": "45",
+    "assigned_at": "2025-07-15T20:55:38",
+    "assigned_by_user_id": "53"
+  },
+  "8": {
+    "space_admin_id": "8",
+    "space_id": "5",
+    "user_id": "7",
+    "assigned_at": "2025-08-19T21:04:35",
+    "assigned_by_user_id": "75"
+  },
+  "9": {
+    "space_admin_id": "9",
+    "space_id": "5",
+    "user_id": "5",
+    "assigned_at": "2025-08-29T17:51:42",
+    "assigned_by_user_id": "72"
+  },
+  "10": {
+    "space_admin_id": "10",
+    "space_id": "6",
+    "user_id": "33",
+    "assigned_at": "2025-07-24T12:08:21",
+    "assigned_by_user_id": "53"
+  },
+  "11": {
+    "space_admin_id": "11",
+    "space_id": "7",
+    "user_id": "55",
+    "assigned_at": "2025-09-02T02:07:54",
+    "assigned_by_user_id": "11"
+  },
+  "12": {
+    "space_admin_id": "12",
+    "space_id": "8",
+    "user_id": "63",
+    "assigned_at": "2025-07-01T21:59:30",
+    "assigned_by_user_id": "100"
+  },
+  "13": {
+    "space_admin_id": "13",
+    "space_id": "8",
+    "user_id": "81",
+    "assigned_at": "2025-08-24T05:41:09",
+    "assigned_by_user_id": "54"
+  },
+  "14": {
+    "space_admin_id": "14",
+    "space_id": "9",
+    "user_id": "24",
+    "assigned_at": "2025-07-15T01:21:23",
+    "assigned_by_user_id": "75"
+  },
+  "15": {
+    "space_admin_id": "15",
+    "space_id": "9",
+    "user_id": "16",
+    "assigned_at": "2025-06-23T13:14:36",
+    "assigned_by_user_id": "25"
+  },
+  "16": {
+    "space_admin_id": "16",
+    "space_id": "10",
+    "user_id": "7",
+    "assigned_at": "2025-08-31T19:22:41",
+    "assigned_by_user_id": "18"
+  },
+  "17": {
+    "space_admin_id": "17",
+    "space_id": "11",
+    "user_id": "7",
+    "assigned_at": "2025-08-30T13:08:47",
+    "assigned_by_user_id": "53"
+  },
+  "18": {
+    "space_admin_id": "18",
+    "space_id": "11",
+    "user_id": "55",
+    "assigned_at": "2025-08-29T20:58:23",
+    "assigned_by_user_id": "25"
+  },
+  "19": {
+    "space_admin_id": "19",
+    "space_id": "12",
+    "user_id": "33",
+    "assigned_at": "2025-08-02T19:08:17",
+    "assigned_by_user_id": "13"
+  },
+  "20": {
+    "space_admin_id": "20",
+    "space_id": "12",
+    "user_id": "59",
+    "assigned_at": "2025-08-26T06:12:52",
+    "assigned_by_user_id": "25"
+  },
+  "21": {
+    "space_admin_id": "21",
+    "space_id": "13",
+    "user_id": "70",
+    "assigned_at": "2025-06-18T22:39:47",
+    "assigned_by_user_id": "61"
+  },
+  "22": {
+    "space_admin_id": "22",
+    "space_id": "13",
+    "user_id": "14",
+    "assigned_at": "2025-08-13T00:58:18",
+    "assigned_by_user_id": "11"
+  },
+  "23": {
+    "space_admin_id": "23",
+    "space_id": "13",
+    "user_id": "3",
+    "assigned_at": "2025-06-26T01:56:00",
+    "assigned_by_user_id": "37"
+  },
+  "24": {
+    "space_admin_id": "24",
+    "space_id": "14",
+    "user_id": "3",
+    "assigned_at": "2025-09-02T10:46:29",
+    "assigned_by_user_id": "75"
+  },
+  "25": {
+    "space_admin_id": "25",
+    "space_id": "14",
+    "user_id": "7",
+    "assigned_at": "2025-09-02T09:29:25",
+    "assigned_by_user_id": "13"
+  },
+  "26": {
+    "space_admin_id": "26",
+    "space_id": "14",
+    "user_id": "52",
+    "assigned_at": "2025-09-01T13:16:04",
+    "assigned_by_user_id": "2"
+  },
+  "27": {
+    "space_admin_id": "27",
+    "space_id": "15",
+    "user_id": "85",
+    "assigned_at": "2025-08-26T04:26:19",
+    "assigned_by_user_id": "37"
+  },
+  "28": {
+    "space_admin_id": "28",
+    "space_id": "15",
+    "user_id": "63",
+    "assigned_at": "2025-09-02T06:53:32",
+    "assigned_by_user_id": "100"
+  },
+  "29": {
+    "space_admin_id": "29",
+    "space_id": "15",
+    "user_id": "92",
+    "assigned_at": "2025-08-25T20:06:06",
+    "assigned_by_user_id": "25"
+  },
+  "30": {
+    "space_admin_id": "30",
+    "space_id": "16",
+    "user_id": "81",
+    "assigned_at": "2025-08-28T03:58:16",
+    "assigned_by_user_id": "75"
+  },
+  "31": {
+    "space_admin_id": "31",
+    "space_id": "16",
+    "user_id": "45",
+    "assigned_at": "2025-08-26T20:28:04",
+    "assigned_by_user_id": "50"
+  },
+  "32": {
+    "space_admin_id": "32",
+    "space_id": "16",
+    "user_id": "52",
+    "assigned_at": "2025-08-31T14:44:42",
+    "assigned_by_user_id": "53"
+  },
+  "33": {
+    "space_admin_id": "33",
+    "space_id": "17",
+    "user_id": "86",
+    "assigned_at": "2025-08-27T09:51:31",
+    "assigned_by_user_id": "75"
+  },
+  "34": {
+    "space_admin_id": "34",
+    "space_id": "18",
+    "user_id": "24",
+    "assigned_at": "2025-06-29T18:18:03",
+    "assigned_by_user_id": "11"
+  },
+  "35": {
+    "space_admin_id": "35",
+    "space_id": "18",
+    "user_id": "10",
+    "assigned_at": "2025-07-28T16:37:07",
+    "assigned_by_user_id": "11"
+  },
+  "36": {
+    "space_admin_id": "36",
+    "space_id": "18",
+    "user_id": "81",
+    "assigned_at": "2025-06-20T22:11:12",
+    "assigned_by_user_id": "11"
+  },
+  "37": {
+    "space_admin_id": "37",
+    "space_id": "19",
+    "user_id": "24",
+    "assigned_at": "2025-08-18T10:17:41",
+    "assigned_by_user_id": "37"
+  },
+  "38": {
+    "space_admin_id": "38",
+    "space_id": "19",
+    "user_id": "86",
+    "assigned_at": "2025-08-28T02:19:02",
+    "assigned_by_user_id": "100"
+  },
+  "39": {
+    "space_admin_id": "39",
+    "space_id": "19",
+    "user_id": "5",
+    "assigned_at": "2025-08-19T13:27:31",
+    "assigned_by_user_id": "72"
+  },
+  "40": {
+    "space_admin_id": "40",
+    "space_id": "20",
+    "user_id": "10",
+    "assigned_at": "2025-08-10T15:09:35",
+    "assigned_by_user_id": "50"
+  },
+  "41": {
+    "space_admin_id": "41",
+    "space_id": "20",
+    "user_id": "3",
+    "assigned_at": "2025-08-27T05:26:35",
+    "assigned_by_user_id": "100"
+  },
+  "42": {
+    "space_admin_id": "42",
+    "space_id": "21",
+    "user_id": "5",
+    "assigned_at": "2025-08-31T08:33:41",
+    "assigned_by_user_id": "37"
+  },
+  "43": {
+    "space_admin_id": "43",
+    "space_id": "21",
+    "user_id": "52",
+    "assigned_at": "2025-08-30T11:34:05",
+    "assigned_by_user_id": "13"
+  },
+  "44": {
+    "space_admin_id": "44",
+    "space_id": "22",
+    "user_id": "3",
+    "assigned_at": "2025-08-23T19:53:43",
+    "assigned_by_user_id": "61"
+  },
+  "45": {
+    "space_admin_id": "45",
+    "space_id": "23",
+    "user_id": "33",
+    "assigned_at": "2025-07-04T18:09:55",
+    "assigned_by_user_id": "61"
+  },
+  "46": {
+    "space_admin_id": "46",
+    "space_id": "23",
+    "user_id": "81",
+    "assigned_at": "2025-07-21T03:50:14",
+    "assigned_by_user_id": "11"
+  },
+  "47": {
+    "space_admin_id": "47",
+    "space_id": "24",
+    "user_id": "3",
+    "assigned_at": "2025-07-07T20:13:17",
+    "assigned_by_user_id": "2"
+  },
+  "48": {
+    "space_admin_id": "48",
+    "space_id": "24",
+    "user_id": "59",
+    "assigned_at": "2025-08-05T08:01:38",
+    "assigned_by_user_id": "2"
+  },
+  "49": {
+    "space_admin_id": "49",
+    "space_id": "24",
+    "user_id": "16",
+    "assigned_at": "2025-08-21T19:33:16",
+    "assigned_by_user_id": "72"
+  },
+  "50": {
+    "space_admin_id": "50",
+    "space_id": "25",
+    "user_id": "92",
+    "assigned_at": "2025-08-29T16:56:58",
+    "assigned_by_user_id": "53"
+  },
+  "51": {
+    "space_admin_id": "51",
+    "space_id": "25",
+    "user_id": "81",
+    "assigned_at": "2025-08-31T11:13:25",
+    "assigned_by_user_id": "54"
+  },
+  "52": {
+    "space_admin_id": "52",
+    "space_id": "25",
+    "user_id": "10",
+    "assigned_at": "2025-06-23T17:14:57",
+    "assigned_by_user_id": "37"
+  },
+  "53": {
+    "space_admin_id": "53",
+    "space_id": "26",
+    "user_id": "33",
+    "assigned_at": "2025-08-01T23:48:17",
+    "assigned_by_user_id": "75"
+  },
+  "54": {
+    "space_admin_id": "54",
+    "space_id": "27",
+    "user_id": "59",
+    "assigned_at": "2025-08-30T15:53:18",
+    "assigned_by_user_id": "72"
+  },
+  "55": {
+    "space_admin_id": "55",
+    "space_id": "28",
+    "user_id": "70",
+    "assigned_at": "2025-09-02T20:55:18",
+    "assigned_by_user_id": "11"
+  },
+  "56": {
+    "space_admin_id": "56",
+    "space_id": "28",
+    "user_id": "45",
+    "assigned_at": "2025-08-22T13:27:21",
+    "assigned_by_user_id": "2"
+  },
+  "57": {
+    "space_admin_id": "57",
+    "space_id": "29",
+    "user_id": "59",
+    "assigned_at": "2025-08-11T03:52:51",
+    "assigned_by_user_id": "2"
+  },
+  "58": {
+    "space_admin_id": "58",
+    "space_id": "29",
+    "user_id": "85",
+    "assigned_at": "2025-09-02T17:37:34",
+    "assigned_by_user_id": "18"
+  },
+  "59": {
+    "space_admin_id": "59",
+    "space_id": "29",
+    "user_id": "10",
+    "assigned_at": "2025-07-07T15:16:31",
+    "assigned_by_user_id": "61"
+  },
+  "60": {
+    "space_admin_id": "60",
+    "space_id": "30",
+    "user_id": "45",
+    "assigned_at": "2025-08-31T05:24:44",
+    "assigned_by_user_id": "50"
+  },
+  "61": {
+    "space_admin_id": "61",
+    "space_id": "30",
+    "user_id": "5",
+    "assigned_at": "2025-09-01T16:33:16",
+    "assigned_by_user_id": "54"
+  },
+  "62": {
+    "space_admin_id": "62",
+    "space_id": "31",
+    "user_id": "70",
+    "assigned_at": "2025-09-02T01:52:47",
+    "assigned_by_user_id": "13"
+  },
+  "63": {
+    "space_admin_id": "63",
+    "space_id": "31",
+    "user_id": "7",
+    "assigned_at": "2025-06-25T02:16:05",
+    "assigned_by_user_id": "50"
+  },
+  "64": {
+    "space_admin_id": "64",
+    "space_id": "31",
+    "user_id": "33",
+    "assigned_at": "2025-07-27T12:03:20",
+    "assigned_by_user_id": "2"
+  },
+  "65": {
+    "space_admin_id": "65",
+    "space_id": "32",
+    "user_id": "3",
+    "assigned_at": "2025-08-29T14:02:04",
+    "assigned_by_user_id": "37"
+  },
+  "66": {
+    "space_admin_id": "66",
+    "space_id": "33",
+    "user_id": "85",
+    "assigned_at": "2025-08-29T21:52:12",
+    "assigned_by_user_id": "18"
+  },
+  "67": {
+    "space_admin_id": "67",
+    "space_id": "33",
+    "user_id": "33",
+    "assigned_at": "2025-07-18T05:53:48",
+    "assigned_by_user_id": "11"
+  },
+  "68": {
+    "space_admin_id": "68",
+    "space_id": "34",
+    "user_id": "16",
+    "assigned_at": "2025-08-11T11:24:13",
+    "assigned_by_user_id": "2"
+  },
+  "69": {
+    "space_admin_id": "69",
+    "space_id": "35",
+    "user_id": "33",
+    "assigned_at": "2025-09-02T10:28:21",
+    "assigned_by_user_id": "11"
+  },
+  "70": {
+    "space_admin_id": "70",
+    "space_id": "36",
+    "user_id": "24",
+    "assigned_at": "2025-09-02T19:58:53",
+    "assigned_by_user_id": "61"
+  },
+  "71": {
+    "space_admin_id": "71",
+    "space_id": "36",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T21:31:58",
+    "assigned_by_user_id": "75"
+  },
+  "72": {
+    "space_admin_id": "72",
+    "space_id": "36",
+    "user_id": "16",
+    "assigned_at": "2025-09-02T20:18:15",
+    "assigned_by_user_id": "72"
+  },
+  "73": {
+    "space_admin_id": "73",
+    "space_id": "37",
+    "user_id": "5",
+    "assigned_at": "2025-09-02T07:41:15",
+    "assigned_by_user_id": "72"
+  },
+  "74": {
+    "space_admin_id": "74",
+    "space_id": "37",
+    "user_id": "70",
+    "assigned_at": "2025-09-02T17:57:18",
+    "assigned_by_user_id": "75"
+  },
+  "75": {
+    "space_admin_id": "75",
+    "space_id": "38",
+    "user_id": "92",
+    "assigned_at": "2025-09-02T20:25:14",
+    "assigned_by_user_id": "37"
+  },
+  "76": {
+    "space_admin_id": "76",
+    "space_id": "39",
+    "user_id": "24",
+    "assigned_at": "2025-06-10T02:36:33",
+    "assigned_by_user_id": "25"
+  },
+  "77": {
+    "space_admin_id": "77",
+    "space_id": "39",
+    "user_id": "16",
+    "assigned_at": "2025-05-29T21:12:45",
+    "assigned_by_user_id": "2"
+  },
+  "78": {
+    "space_admin_id": "78",
+    "space_id": "39",
+    "user_id": "81",
+    "assigned_at": "2025-07-25T14:29:21",
+    "assigned_by_user_id": "11"
+  },
+  "79": {
+    "space_admin_id": "79",
+    "space_id": "40",
+    "user_id": "24",
+    "assigned_at": "2025-09-01T19:59:28",
+    "assigned_by_user_id": "18"
+  },
+  "80": {
+    "space_admin_id": "80",
+    "space_id": "40",
+    "user_id": "5",
+    "assigned_at": "2025-09-01T22:30:40",
+    "assigned_by_user_id": "2"
+  },
+  "81": {
+    "space_admin_id": "81",
+    "space_id": "40",
+    "user_id": "7",
+    "assigned_at": "2025-09-01T09:53:40",
+    "assigned_by_user_id": "37"
+  },
+  "82": {
+    "space_admin_id": "82",
+    "space_id": "41",
+    "user_id": "16",
+    "assigned_at": "2025-08-11T23:15:16",
+    "assigned_by_user_id": "13"
+  },
+  "83": {
+    "space_admin_id": "83",
+    "space_id": "41",
+    "user_id": "70",
+    "assigned_at": "2025-08-14T00:07:40",
+    "assigned_by_user_id": "54"
+  },
+  "84": {
+    "space_admin_id": "84",
+    "space_id": "42",
+    "user_id": "81",
+    "assigned_at": "2025-08-24T14:34:07",
+    "assigned_by_user_id": "37"
+  },
+  "85": {
+    "space_admin_id": "85",
+    "space_id": "42",
+    "user_id": "63",
+    "assigned_at": "2025-08-14T09:18:53",
+    "assigned_by_user_id": "53"
+  },
+  "86": {
+    "space_admin_id": "86",
+    "space_id": "42",
+    "user_id": "33",
+    "assigned_at": "2025-08-21T04:30:12",
+    "assigned_by_user_id": "50"
+  },
+  "87": {
+    "space_admin_id": "87",
+    "space_id": "43",
+    "user_id": "85",
+    "assigned_at": "2025-08-24T08:33:27",
+    "assigned_by_user_id": "37"
+  },
+  "88": {
+    "space_admin_id": "88",
+    "space_id": "43",
+    "user_id": "14",
+    "assigned_at": "2025-08-07T16:02:20",
+    "assigned_by_user_id": "13"
+  },
+  "89": {
+    "space_admin_id": "89",
+    "space_id": "43",
+    "user_id": "16",
+    "assigned_at": "2025-08-07T03:46:03",
+    "assigned_by_user_id": "25"
+  },
+  "90": {
+    "space_admin_id": "90",
+    "space_id": "44",
+    "user_id": "85",
+    "assigned_at": "2025-08-09T16:38:00",
+    "assigned_by_user_id": "2"
+  },
+  "91": {
+    "space_admin_id": "91",
+    "space_id": "44",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T17:16:02",
+    "assigned_by_user_id": "11"
+  },
+  "92": {
+    "space_admin_id": "92",
+    "space_id": "44",
+    "user_id": "3",
+    "assigned_at": "2025-08-28T19:43:28",
+    "assigned_by_user_id": "72"
+  },
+  "93": {
+    "space_admin_id": "93",
+    "space_id": "45",
+    "user_id": "16",
+    "assigned_at": "2025-08-27T16:54:31",
+    "assigned_by_user_id": "100"
+  },
+  "94": {
+    "space_admin_id": "94",
+    "space_id": "46",
+    "user_id": "10",
+    "assigned_at": "2025-08-11T00:28:21",
+    "assigned_by_user_id": "50"
+  },
+  "95": {
+    "space_admin_id": "95",
+    "space_id": "46",
+    "user_id": "52",
+    "assigned_at": "2025-08-26T09:09:21",
+    "assigned_by_user_id": "18"
+  },
+  "96": {
+    "space_admin_id": "96",
+    "space_id": "47",
+    "user_id": "3",
+    "assigned_at": "2025-09-01T06:20:50",
+    "assigned_by_user_id": "54"
+  },
+  "97": {
+    "space_admin_id": "97",
+    "space_id": "48",
+    "user_id": "3",
+    "assigned_at": "2025-09-02T19:02:35",
+    "assigned_by_user_id": "18"
+  },
+  "98": {
+    "space_admin_id": "98",
+    "space_id": "48",
+    "user_id": "70",
+    "assigned_at": "2025-09-02T20:05:41",
+    "assigned_by_user_id": "72"
+  },
+  "99": {
+    "space_admin_id": "99",
+    "space_id": "48",
+    "user_id": "63",
+    "assigned_at": "2025-09-02T19:57:03",
+    "assigned_by_user_id": "54"
+  },
+  "100": {
+    "space_admin_id": "100",
+    "space_id": "49",
+    "user_id": "59",
+    "assigned_at": "2025-08-31T10:27:18",
+    "assigned_by_user_id": "18"
+  },
+  "101": {
+    "space_admin_id": "101",
+    "space_id": "49",
+    "user_id": "92",
+    "assigned_at": "2025-09-01T07:41:05",
+    "assigned_by_user_id": "18"
+  },
+  "102": {
+    "space_admin_id": "102",
+    "space_id": "49",
+    "user_id": "10",
+    "assigned_at": "2025-08-19T18:44:42",
+    "assigned_by_user_id": "100"
+  },
+  "103": {
+    "space_admin_id": "103",
+    "space_id": "50",
+    "user_id": "86",
+    "assigned_at": "2025-09-02T19:29:42",
+    "assigned_by_user_id": "50"
+  },
+  "104": {
+    "space_admin_id": "104",
+    "space_id": "50",
+    "user_id": "7",
+    "assigned_at": "2025-08-29T08:49:12",
+    "assigned_by_user_id": "2"
+  },
+  "105": {
+    "space_admin_id": "105",
+    "space_id": "50",
+    "user_id": "45",
+    "assigned_at": "2025-08-31T00:51:27",
+    "assigned_by_user_id": "100"
+  },
+  "106": {
+    "space_admin_id": "106",
+    "space_id": "51",
+    "user_id": "86",
+    "assigned_at": "2025-07-20T03:00:01",
+    "assigned_by_user_id": "53"
+  },
+  "107": {
+    "space_admin_id": "107",
+    "space_id": "51",
+    "user_id": "81",
+    "assigned_at": "2025-07-30T12:07:17",
+    "assigned_by_user_id": "37"
+  },
+  "108": {
+    "space_admin_id": "108",
+    "space_id": "51",
+    "user_id": "33",
+    "assigned_at": "2025-08-27T21:58:39",
+    "assigned_by_user_id": "37"
+  },
+  "109": {
+    "space_admin_id": "109",
+    "space_id": "52",
+    "user_id": "45",
+    "assigned_at": "2025-08-27T00:20:58",
+    "assigned_by_user_id": "75"
+  },
+  "110": {
+    "space_admin_id": "110",
+    "space_id": "53",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T12:02:59",
+    "assigned_by_user_id": "72"
+  },
+  "111": {
+    "space_admin_id": "111",
+    "space_id": "54",
+    "user_id": "92",
+    "assigned_at": "2025-09-01T14:43:04",
+    "assigned_by_user_id": "100"
+  },
+  "112": {
+    "space_admin_id": "112",
+    "space_id": "54",
+    "user_id": "86",
+    "assigned_at": "2025-08-24T16:01:35",
+    "assigned_by_user_id": "13"
+  },
+  "113": {
+    "space_admin_id": "113",
+    "space_id": "55",
+    "user_id": "70",
+    "assigned_at": "2025-08-24T20:44:27",
+    "assigned_by_user_id": "53"
+  },
+  "114": {
+    "space_admin_id": "114",
+    "space_id": "56",
+    "user_id": "70",
+    "assigned_at": "2025-09-02T20:48:16",
+    "assigned_by_user_id": "72"
+  },
+  "115": {
+    "space_admin_id": "115",
+    "space_id": "56",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T20:39:40",
+    "assigned_by_user_id": "61"
+  },
+  "116": {
+    "space_admin_id": "116",
+    "space_id": "56",
+    "user_id": "3",
+    "assigned_at": "2025-09-02T21:17:19",
+    "assigned_by_user_id": "37"
+  },
+  "117": {
+    "space_admin_id": "117",
+    "space_id": "57",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T08:43:02",
+    "assigned_by_user_id": "75"
+  },
+  "118": {
+    "space_admin_id": "118",
+    "space_id": "57",
+    "user_id": "86",
+    "assigned_at": "2025-09-01T14:34:51",
+    "assigned_by_user_id": "37"
+  },
+  "119": {
+    "space_admin_id": "119",
+    "space_id": "57",
+    "user_id": "63",
+    "assigned_at": "2025-09-02T10:28:53",
+    "assigned_by_user_id": "61"
+  },
+  "120": {
+    "space_admin_id": "120",
+    "space_id": "58",
+    "user_id": "3",
+    "assigned_at": "2025-08-31T05:03:20",
+    "assigned_by_user_id": "75"
+  },
+  "121": {
+    "space_admin_id": "121",
+    "space_id": "58",
+    "user_id": "70",
+    "assigned_at": "2025-07-21T12:33:49",
+    "assigned_by_user_id": "13"
+  },
+  "122": {
+    "space_admin_id": "122",
+    "space_id": "58",
+    "user_id": "24",
+    "assigned_at": "2025-08-26T23:31:12",
+    "assigned_by_user_id": "61"
+  },
+  "123": {
+    "space_admin_id": "123",
+    "space_id": "59",
+    "user_id": "24",
+    "assigned_at": "2025-09-02T12:25:58",
+    "assigned_by_user_id": "75"
+  },
+  "124": {
+    "space_admin_id": "124",
+    "space_id": "60",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T18:57:05",
+    "assigned_by_user_id": "75"
+  },
+  "125": {
+    "space_admin_id": "125",
+    "space_id": "61",
+    "user_id": "59",
+    "assigned_at": "2025-08-18T22:06:41",
+    "assigned_by_user_id": "61"
+  },
+  "126": {
+    "space_admin_id": "126",
+    "space_id": "61",
+    "user_id": "5",
+    "assigned_at": "2025-04-11T09:26:24",
+    "assigned_by_user_id": "25"
+  },
+  "127": {
+    "space_admin_id": "127",
+    "space_id": "62",
+    "user_id": "16",
+    "assigned_at": "2025-07-29T23:28:40",
+    "assigned_by_user_id": "100"
+  },
+  "128": {
+    "space_admin_id": "128",
+    "space_id": "63",
+    "user_id": "14",
+    "assigned_at": "2025-08-28T16:59:23",
+    "assigned_by_user_id": "53"
+  },
+  "129": {
+    "space_admin_id": "129",
+    "space_id": "63",
+    "user_id": "55",
+    "assigned_at": "2025-08-29T22:22:10",
+    "assigned_by_user_id": "72"
+  },
+  "130": {
+    "space_admin_id": "130",
+    "space_id": "64",
+    "user_id": "3",
+    "assigned_at": "2025-08-04T20:53:24",
+    "assigned_by_user_id": "53"
+  },
+  "131": {
+    "space_admin_id": "131",
+    "space_id": "65",
+    "user_id": "92",
+    "assigned_at": "2025-07-08T13:57:38",
+    "assigned_by_user_id": "13"
+  },
+  "132": {
+    "space_admin_id": "132",
+    "space_id": "65",
+    "user_id": "14",
+    "assigned_at": "2025-07-23T04:31:42",
+    "assigned_by_user_id": "75"
+  },
+  "133": {
+    "space_admin_id": "133",
+    "space_id": "65",
+    "user_id": "5",
+    "assigned_at": "2025-08-22T04:24:54",
+    "assigned_by_user_id": "2"
+  },
+  "134": {
+    "space_admin_id": "134",
+    "space_id": "66",
+    "user_id": "24",
+    "assigned_at": "2025-08-03T08:08:32",
+    "assigned_by_user_id": "25"
+  },
+  "135": {
+    "space_admin_id": "135",
+    "space_id": "66",
+    "user_id": "33",
+    "assigned_at": "2025-08-21T05:09:33",
+    "assigned_by_user_id": "61"
+  },
+  "136": {
+    "space_admin_id": "136",
+    "space_id": "67",
+    "user_id": "81",
+    "assigned_at": "2025-08-24T07:31:13",
+    "assigned_by_user_id": "2"
+  },
+  "137": {
+    "space_admin_id": "137",
+    "space_id": "67",
+    "user_id": "45",
+    "assigned_at": "2025-08-29T04:53:19",
+    "assigned_by_user_id": "54"
+  },
+  "138": {
+    "space_admin_id": "138",
+    "space_id": "67",
+    "user_id": "92",
+    "assigned_at": "2025-08-27T00:34:57",
+    "assigned_by_user_id": "18"
+  },
+  "139": {
+    "space_admin_id": "139",
+    "space_id": "68",
+    "user_id": "92",
+    "assigned_at": "2025-08-27T20:40:22",
+    "assigned_by_user_id": "61"
+  },
+  "140": {
+    "space_admin_id": "140",
+    "space_id": "68",
+    "user_id": "52",
+    "assigned_at": "2025-08-22T18:27:15",
+    "assigned_by_user_id": "2"
+  },
+  "141": {
+    "space_admin_id": "141",
+    "space_id": "69",
+    "user_id": "10",
+    "assigned_at": "2025-08-26T23:07:27",
+    "assigned_by_user_id": "18"
+  },
+  "142": {
+    "space_admin_id": "142",
+    "space_id": "69",
+    "user_id": "85",
+    "assigned_at": "2025-07-28T15:10:00",
+    "assigned_by_user_id": "54"
+  },
+  "143": {
+    "space_admin_id": "143",
+    "space_id": "69",
+    "user_id": "45",
+    "assigned_at": "2025-08-11T07:41:58",
+    "assigned_by_user_id": "2"
+  },
+  "144": {
+    "space_admin_id": "144",
+    "space_id": "70",
+    "user_id": "16",
+    "assigned_at": "2025-07-05T19:04:44",
+    "assigned_by_user_id": "11"
+  },
+  "145": {
+    "space_admin_id": "145",
+    "space_id": "70",
+    "user_id": "85",
+    "assigned_at": "2025-08-02T17:09:16",
+    "assigned_by_user_id": "37"
+  },
+  "146": {
+    "space_admin_id": "146",
+    "space_id": "71",
+    "user_id": "59",
+    "assigned_at": "2025-09-02T13:51:58",
+    "assigned_by_user_id": "25"
+  },
+  "147": {
+    "space_admin_id": "147",
+    "space_id": "71",
+    "user_id": "86",
+    "assigned_at": "2025-09-02T02:19:40",
+    "assigned_by_user_id": "54"
+  },
+  "148": {
+    "space_admin_id": "148",
+    "space_id": "71",
+    "user_id": "55",
+    "assigned_at": "2025-08-31T22:50:22",
+    "assigned_by_user_id": "2"
+  },
+  "149": {
+    "space_admin_id": "149",
+    "space_id": "72",
+    "user_id": "33",
+    "assigned_at": "2025-09-01T21:41:31",
+    "assigned_by_user_id": "53"
+  },
+  "150": {
+    "space_admin_id": "150",
+    "space_id": "72",
+    "user_id": "14",
+    "assigned_at": "2025-08-31T18:16:36",
+    "assigned_by_user_id": "37"
+  },
+  "151": {
+    "space_admin_id": "151",
+    "space_id": "72",
+    "user_id": "45",
+    "assigned_at": "2025-08-29T18:20:18",
+    "assigned_by_user_id": "25"
+  },
+  "152": {
+    "space_admin_id": "152",
+    "space_id": "73",
+    "user_id": "85",
+    "assigned_at": "2025-06-22T22:28:39",
+    "assigned_by_user_id": "13"
+  },
+  "153": {
+    "space_admin_id": "153",
+    "space_id": "73",
+    "user_id": "24",
+    "assigned_at": "2025-08-23T19:34:27",
+    "assigned_by_user_id": "72"
+  },
+  "154": {
+    "space_admin_id": "154",
+    "space_id": "73",
+    "user_id": "55",
+    "assigned_at": "2025-08-10T01:53:32",
+    "assigned_by_user_id": "61"
+  },
+  "155": {
+    "space_admin_id": "155",
+    "space_id": "74",
+    "user_id": "85",
+    "assigned_at": "2025-08-31T13:16:08",
+    "assigned_by_user_id": "11"
+  },
+  "156": {
+    "space_admin_id": "156",
+    "space_id": "74",
+    "user_id": "52",
+    "assigned_at": "2025-08-13T12:46:32",
+    "assigned_by_user_id": "25"
+  },
+  "157": {
+    "space_admin_id": "157",
+    "space_id": "74",
+    "user_id": "3",
+    "assigned_at": "2025-08-30T01:06:16",
+    "assigned_by_user_id": "50"
+  },
+  "158": {
+    "space_admin_id": "158",
+    "space_id": "75",
+    "user_id": "86",
+    "assigned_at": "2025-08-14T23:32:27",
+    "assigned_by_user_id": "11"
+  },
+  "159": {
+    "space_admin_id": "159",
+    "space_id": "75",
+    "user_id": "7",
+    "assigned_at": "2025-08-07T05:54:07",
+    "assigned_by_user_id": "61"
+  },
+  "160": {
+    "space_admin_id": "160",
+    "space_id": "76",
+    "user_id": "5",
+    "assigned_at": "2025-07-28T04:32:45",
+    "assigned_by_user_id": "2"
+  },
+  "161": {
+    "space_admin_id": "161",
+    "space_id": "77",
+    "user_id": "14",
+    "assigned_at": "2025-07-24T04:55:35",
+    "assigned_by_user_id": "53"
+  },
+  "162": {
+    "space_admin_id": "162",
+    "space_id": "78",
+    "user_id": "16",
+    "assigned_at": "2025-03-13T05:18:10",
+    "assigned_by_user_id": "25"
+  },
+  "163": {
+    "space_admin_id": "163",
+    "space_id": "79",
+    "user_id": "92",
+    "assigned_at": "2025-05-30T22:03:20",
+    "assigned_by_user_id": "61"
+  },
+  "164": {
+    "space_admin_id": "164",
+    "space_id": "80",
+    "user_id": "7",
+    "assigned_at": "2025-09-02T05:35:42",
+    "assigned_by_user_id": "61"
+  },
+  "165": {
+    "space_admin_id": "165",
+    "space_id": "81",
+    "user_id": "86",
+    "assigned_at": "2025-08-31T17:15:52",
+    "assigned_by_user_id": "50"
+  },
+  "166": {
+    "space_admin_id": "166",
+    "space_id": "81",
+    "user_id": "24",
+    "assigned_at": "2025-08-29T21:01:31",
+    "assigned_by_user_id": "100"
+  },
+  "167": {
+    "space_admin_id": "167",
+    "space_id": "82",
+    "user_id": "10",
+    "assigned_at": "2025-07-25T05:23:10",
+    "assigned_by_user_id": "75"
+  },
+  "168": {
+    "space_admin_id": "168",
+    "space_id": "82",
+    "user_id": "70",
+    "assigned_at": "2025-07-23T22:20:40",
+    "assigned_by_user_id": "13"
+  },
+  "169": {
+    "space_admin_id": "169",
+    "space_id": "83",
+    "user_id": "86",
+    "assigned_at": "2025-08-10T22:23:40",
+    "assigned_by_user_id": "100"
+  },
+  "170": {
+    "space_admin_id": "170",
+    "space_id": "84",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T05:36:20",
+    "assigned_by_user_id": "54"
+  },
+  "171": {
+    "space_admin_id": "171",
+    "space_id": "84",
+    "user_id": "24",
+    "assigned_at": "2025-09-02T06:46:08",
+    "assigned_by_user_id": "11"
+  },
+  "172": {
+    "space_admin_id": "172",
+    "space_id": "85",
+    "user_id": "3",
+    "assigned_at": "2025-07-26T01:44:43",
+    "assigned_by_user_id": "11"
+  },
+  "173": {
+    "space_admin_id": "173",
+    "space_id": "85",
+    "user_id": "55",
+    "assigned_at": "2025-08-23T11:13:23",
+    "assigned_by_user_id": "75"
+  },
+  "174": {
+    "space_admin_id": "174",
+    "space_id": "86",
+    "user_id": "10",
+    "assigned_at": "2025-08-27T10:09:17",
+    "assigned_by_user_id": "18"
+  },
+  "175": {
+    "space_admin_id": "175",
+    "space_id": "87",
+    "user_id": "81",
+    "assigned_at": "2025-08-22T02:46:09",
+    "assigned_by_user_id": "54"
+  },
+  "176": {
+    "space_admin_id": "176",
+    "space_id": "87",
+    "user_id": "86",
+    "assigned_at": "2025-08-30T16:22:49",
+    "assigned_by_user_id": "75"
+  },
+  "177": {
+    "space_admin_id": "177",
+    "space_id": "88",
+    "user_id": "70",
+    "assigned_at": "2025-09-01T09:54:20",
+    "assigned_by_user_id": "18"
+  },
+  "178": {
+    "space_admin_id": "178",
+    "space_id": "88",
+    "user_id": "16",
+    "assigned_at": "2025-08-20T16:16:49",
+    "assigned_by_user_id": "75"
+  },
+  "179": {
+    "space_admin_id": "179",
+    "space_id": "88",
+    "user_id": "85",
+    "assigned_at": "2025-08-12T16:45:05",
+    "assigned_by_user_id": "13"
+  },
+  "180": {
+    "space_admin_id": "180",
+    "space_id": "89",
+    "user_id": "70",
+    "assigned_at": "2025-08-28T10:08:09",
+    "assigned_by_user_id": "18"
+  },
+  "181": {
+    "space_admin_id": "181",
+    "space_id": "89",
+    "user_id": "3",
+    "assigned_at": "2025-08-07T07:45:09",
+    "assigned_by_user_id": "75"
+  },
+  "182": {
+    "space_admin_id": "182",
+    "space_id": "90",
+    "user_id": "59",
+    "assigned_at": "2025-08-29T00:54:54",
+    "assigned_by_user_id": "18"
+  },
+  "183": {
+    "space_admin_id": "183",
+    "space_id": "91",
+    "user_id": "52",
+    "assigned_at": "2025-08-22T08:16:58",
+    "assigned_by_user_id": "25"
+  },
+  "184": {
+    "space_admin_id": "184",
+    "space_id": "91",
+    "user_id": "3",
+    "assigned_at": "2025-08-28T07:08:37",
+    "assigned_by_user_id": "18"
+  },
+  "185": {
+    "space_admin_id": "185",
+    "space_id": "91",
+    "user_id": "59",
+    "assigned_at": "2025-09-02T05:14:29",
+    "assigned_by_user_id": "11"
+  },
+  "186": {
+    "space_admin_id": "186",
+    "space_id": "92",
+    "user_id": "59",
+    "assigned_at": "2025-09-02T15:58:06",
+    "assigned_by_user_id": "61"
+  },
+  "187": {
+    "space_admin_id": "187",
+    "space_id": "92",
+    "user_id": "55",
+    "assigned_at": "2025-09-02T10:48:08",
+    "assigned_by_user_id": "50"
+  },
+  "188": {
+    "space_admin_id": "188",
+    "space_id": "92",
+    "user_id": "45",
+    "assigned_at": "2025-08-30T20:41:32",
+    "assigned_by_user_id": "100"
+  },
+  "189": {
+    "space_admin_id": "189",
+    "space_id": "93",
+    "user_id": "52",
+    "assigned_at": "2025-08-30T10:46:56",
+    "assigned_by_user_id": "72"
+  },
+  "190": {
+    "space_admin_id": "190",
+    "space_id": "93",
+    "user_id": "10",
+    "assigned_at": "2025-08-28T19:33:24",
+    "assigned_by_user_id": "37"
+  },
+  "191": {
+    "space_admin_id": "191",
+    "space_id": "94",
+    "user_id": "92",
+    "assigned_at": "2025-08-02T16:59:49",
+    "assigned_by_user_id": "37"
+  },
+  "192": {
+    "space_admin_id": "192",
+    "space_id": "95",
+    "user_id": "14",
+    "assigned_at": "2025-08-24T09:00:29",
+    "assigned_by_user_id": "11"
+  },
+  "193": {
+    "space_admin_id": "193",
+    "space_id": "96",
+    "user_id": "10",
+    "assigned_at": "2025-09-02T04:29:40",
+    "assigned_by_user_id": "72"
+  },
+  "194": {
+    "space_admin_id": "194",
+    "space_id": "96",
+    "user_id": "52",
+    "assigned_at": "2025-09-02T15:06:20",
+    "assigned_by_user_id": "61"
+  },
+  "195": {
+    "space_admin_id": "195",
+    "space_id": "96",
+    "user_id": "14",
+    "assigned_at": "2025-09-01T23:13:34",
+    "assigned_by_user_id": "50"
+  },
+  "196": {
+    "space_admin_id": "196",
+    "space_id": "97",
+    "user_id": "16",
+    "assigned_at": "2025-09-02T20:47:19",
+    "assigned_by_user_id": "61"
+  },
+  "197": {
+    "space_admin_id": "197",
+    "space_id": "98",
+    "user_id": "14",
+    "assigned_at": "2025-08-20T05:01:58",
+    "assigned_by_user_id": "72"
+  },
+  "198": {
+    "space_admin_id": "198",
+    "space_id": "98",
+    "user_id": "92",
+    "assigned_at": "2025-08-25T19:57:58",
+    "assigned_by_user_id": "53"
+  },
+  "199": {
+    "space_admin_id": "199",
+    "space_id": "98",
+    "user_id": "59",
+    "assigned_at": "2025-07-27T11:29:51",
+    "assigned_by_user_id": "11"
+  },
+  "200": {
+    "space_admin_id": "200",
+    "space_id": "99",
+    "user_id": "55",
+    "assigned_at": "2025-06-08T11:48:04",
+    "assigned_by_user_id": "61"
+  },
+  "201": {
+    "space_admin_id": "201",
+    "space_id": "99",
+    "user_id": "81",
+    "assigned_at": "2025-08-30T11:57:27",
+    "assigned_by_user_id": "18"
+  },
+  "202": {
+    "space_admin_id": "202",
+    "space_id": "99",
+    "user_id": "63",
+    "assigned_at": "2025-05-04T10:42:47",
+    "assigned_by_user_id": "13"
+  },
+  "203": {
+    "space_admin_id": "203",
+    "space_id": "100",
+    "user_id": "3",
+    "assigned_at": "2025-08-29T01:57:55",
+    "assigned_by_user_id": "18"
+  },
+  "204": {
+    "space_admin_id": "204",
+    "space_id": "100",
+    "user_id": "16",
+    "assigned_at": "2025-08-31T03:37:23",
+    "assigned_by_user_id": "72"
+  }
+}

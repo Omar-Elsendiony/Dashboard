@@ -1,0 +1,502 @@
+{
+  "1": {
+    "label_id": "1",
+    "name": "urgent",
+    "color": "#33FFF5",
+    "description": "Begin company nor compare machine within them.",
+    "space_id": "24",
+    "created_by_user_id": "69",
+    "usage_count": 19,
+    "created_at": "2025-09-06T08:13:28.004504"
+  },
+  "2": {
+    "label_id": "2",
+    "name": "bug",
+    "color": "#33FFF5",
+    "description": "",
+    "space_id": "28",
+    "created_by_user_id": "8",
+    "usage_count": 0,
+    "created_at": "2025-08-09T03:55:27.786747"
+  },
+  "3": {
+    "label_id": "3",
+    "name": "feature",
+    "color": "#FF5733",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "7",
+    "usage_count": 3,
+    "created_at": "2025-05-25T23:10:35.481579"
+  },
+  "4": {
+    "label_id": "4",
+    "name": "documentation",
+    "color": "#FF33F5",
+    "description": "Ever who president season issue police.",
+    "space_id": "5",
+    "created_by_user_id": "11",
+    "usage_count": 4,
+    "created_at": "2025-08-21T11:55:15.628923"
+  },
+  "5": {
+    "label_id": "5",
+    "name": "api",
+    "color": "#FF8C33",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "6",
+    "usage_count": 9,
+    "created_at": "2025-06-04T00:18:09.671689"
+  },
+  "6": {
+    "label_id": "6",
+    "name": "frontend",
+    "color": "#FF33F5",
+    "description": "",
+    "space_id": "11",
+    "created_by_user_id": "4",
+    "usage_count": 1,
+    "created_at": "2025-08-28T12:36:51.330346"
+  },
+  "7": {
+    "label_id": "7",
+    "name": "backend",
+    "color": "#FF33F5",
+    "description": "Save court method woman walk.",
+    "space_id": "2",
+    "created_by_user_id": "70",
+    "usage_count": 20,
+    "created_at": "2025-09-03T09:50:08.551710"
+  },
+  "8": {
+    "label_id": "8",
+    "name": "security",
+    "color": "#FF33F5",
+    "description": "",
+    "space_id": "27",
+    "created_by_user_id": "7",
+    "usage_count": 22,
+    "created_at": "2025-06-09T23:07:30.962327"
+  },
+  "9": {
+    "label_id": "9",
+    "name": "performance",
+    "color": "#3357FF",
+    "description": "Main particularly race happy person.",
+    "space_id": "27",
+    "created_by_user_id": "13",
+    "usage_count": 21,
+    "created_at": "2025-05-26T10:16:02.323291"
+  },
+  "10": {
+    "label_id": "10",
+    "name": "ui",
+    "color": "#FF33F5",
+    "description": "End our people culture our value model.",
+    "space_id": "21",
+    "created_by_user_id": "14",
+    "usage_count": 15,
+    "created_at": "2025-06-30T06:48:30.201301"
+  },
+  "11": {
+    "label_id": "11",
+    "name": "ux",
+    "color": "#33FFF5",
+    "description": "",
+    "space_id": "30",
+    "created_by_user_id": "6",
+    "usage_count": 4,
+    "created_at": "2025-08-22T11:02:30.115760"
+  },
+  "12": {
+    "label_id": "12",
+    "name": "testing",
+    "color": "#F5FF33",
+    "description": "",
+    "space_id": "13",
+    "created_by_user_id": "11",
+    "usage_count": 2,
+    "created_at": "2025-08-24T20:55:33.288086"
+  },
+  "13": {
+    "label_id": "13",
+    "name": "deployment",
+    "color": "#FF8C33",
+    "description": "Rock outside argue radio pressure wind.",
+    "space_id": "4",
+    "created_by_user_id": "6",
+    "usage_count": 0,
+    "created_at": "2025-09-10T15:00:25.442261"
+  },
+  "14": {
+    "label_id": "14",
+    "name": "review",
+    "color": "#FF33F5",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "1",
+    "usage_count": 22,
+    "created_at": "2025-06-27T01:36:01.280420"
+  },
+  "15": {
+    "label_id": "15",
+    "name": "approved",
+    "color": "#33FF57",
+    "description": "",
+    "space_id": "30",
+    "created_by_user_id": "3",
+    "usage_count": 19,
+    "created_at": "2025-08-14T08:40:55.476258"
+  },
+  "16": {
+    "label_id": "16",
+    "name": "draft",
+    "color": "#33FF57",
+    "description": "Stop you report current however thus.",
+    "space_id": "6",
+    "created_by_user_id": "10",
+    "usage_count": 9,
+    "created_at": "2025-08-04T05:00:57.341812"
+  },
+  "17": {
+    "label_id": "17",
+    "name": "archived",
+    "color": "#FF33F5",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "4",
+    "usage_count": 12,
+    "created_at": "2025-06-04T09:07:16.633947"
+  },
+  "18": {
+    "label_id": "18",
+    "name": "public",
+    "color": "#33FFF5",
+    "description": "",
+    "space_id": "19",
+    "created_by_user_id": "13",
+    "usage_count": 4,
+    "created_at": "2025-08-24T12:14:10.503352"
+  },
+  "19": {
+    "label_id": "19",
+    "name": "private",
+    "color": "#8C33FF",
+    "description": "To sense modern enjoy.",
+    "space_id": "21",
+    "created_by_user_id": "11",
+    "usage_count": 5,
+    "created_at": "2025-07-30T11:23:12.417965"
+  },
+  "20": {
+    "label_id": "20",
+    "name": "internal",
+    "color": "#8C33FF",
+    "description": "Medical smile special financial billion wonder note.",
+    "space_id": null,
+    "created_by_user_id": "13",
+    "usage_count": 25,
+    "created_at": "2025-06-23T08:48:38.851931"
+  },
+  "21": {
+    "label_id": "21",
+    "name": "external",
+    "color": "#33FF57",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "9",
+    "usage_count": 16,
+    "created_at": "2025-03-18T16:17:44.060810"
+  },
+  "22": {
+    "label_id": "22",
+    "name": "deprecated",
+    "color": "#FF5733",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "6",
+    "usage_count": 12,
+    "created_at": "2025-05-06T07:21:06.082120"
+  },
+  "23": {
+    "label_id": "23",
+    "name": "new",
+    "color": "#FF5733",
+    "description": "Identify make TV that know.",
+    "space_id": "6",
+    "created_by_user_id": "11",
+    "usage_count": 2,
+    "created_at": "2025-08-06T02:40:18.310107"
+  },
+  "24": {
+    "label_id": "24",
+    "name": "updated",
+    "color": "#33FF57",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "1",
+    "usage_count": 4,
+    "created_at": "2025-03-27T07:42:58.883795"
+  },
+  "25": {
+    "label_id": "25",
+    "name": "hotfix",
+    "color": "#33FF57",
+    "description": "",
+    "space_id": "5",
+    "created_by_user_id": "12",
+    "usage_count": 21,
+    "created_at": "2025-08-11T19:40:49.176242"
+  },
+  "26": {
+    "label_id": "26",
+    "name": "low-priority",
+    "color": "#FF8C33",
+    "description": "",
+    "space_id": "16",
+    "created_by_user_id": "6",
+    "usage_count": 23,
+    "created_at": "2025-07-02T02:23:35.979562"
+  },
+  "27": {
+    "label_id": "27",
+    "name": "high-priority",
+    "color": "#FF33F5",
+    "description": "Pick thing sit shoulder production challenge Mrs rise.",
+    "space_id": "4",
+    "created_by_user_id": "9",
+    "usage_count": 4,
+    "created_at": "2025-09-09T19:12:24.436882"
+  },
+  "28": {
+    "label_id": "28",
+    "name": "optimization",
+    "color": "#33FF57",
+    "description": "",
+    "space_id": "21",
+    "created_by_user_id": "8",
+    "usage_count": 4,
+    "created_at": "2025-08-03T21:23:39.719566"
+  },
+  "29": {
+    "label_id": "29",
+    "name": "refactor",
+    "color": "#3357FF",
+    "description": "Sister either sense find onto change.",
+    "space_id": "21",
+    "created_by_user_id": "27",
+    "usage_count": 3,
+    "created_at": "2025-09-05T00:31:46.052267"
+  },
+  "30": {
+    "label_id": "30",
+    "name": "design",
+    "color": "#FF8C33",
+    "description": "",
+    "space_id": "6",
+    "created_by_user_id": "81",
+    "usage_count": 5,
+    "created_at": "2025-07-14T08:23:17.384542"
+  },
+  "31": {
+    "label_id": "31",
+    "name": "content",
+    "color": "#FF33F5",
+    "description": "",
+    "space_id": "8",
+    "created_by_user_id": "10",
+    "usage_count": 22,
+    "created_at": "2025-06-23T08:23:15.566845"
+  },
+  "32": {
+    "label_id": "32",
+    "name": "workflow",
+    "color": "#FF8C33",
+    "description": "Practice ten religious value society painting decide.",
+    "space_id": "4",
+    "created_by_user_id": "54",
+    "usage_count": 9,
+    "created_at": "2025-09-03T17:12:39.007888"
+  },
+  "33": {
+    "label_id": "33",
+    "name": "integration",
+    "color": "#F5FF33",
+    "description": "Two every reduce affect.",
+    "space_id": "26",
+    "created_by_user_id": "8",
+    "usage_count": 10,
+    "created_at": "2025-08-29T01:05:35.857653"
+  },
+  "34": {
+    "label_id": "34",
+    "name": "experimental",
+    "color": "#33FF57",
+    "description": "",
+    "space_id": "5",
+    "created_by_user_id": "1",
+    "usage_count": 22,
+    "created_at": "2025-06-16T16:46:03.070028"
+  },
+  "35": {
+    "label_id": "35",
+    "name": "stable",
+    "color": "#FF5733",
+    "description": "Early religious someone better cold weight during throw.",
+    "space_id": null,
+    "created_by_user_id": "6",
+    "usage_count": 4,
+    "created_at": "2025-06-10T12:34:11.467769"
+  },
+  "36": {
+    "label_id": "36",
+    "name": "release",
+    "color": "#33FF57",
+    "description": "Receive break clearly everyone black.",
+    "space_id": "19",
+    "created_by_user_id": "10",
+    "usage_count": 12,
+    "created_at": "2025-09-05T23:54:36.317004"
+  },
+  "37": {
+    "label_id": "37",
+    "name": "alpha",
+    "color": "#FF33F5",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "12",
+    "usage_count": 10,
+    "created_at": "2025-08-15T10:03:54.922640"
+  },
+  "38": {
+    "label_id": "38",
+    "name": "beta",
+    "color": "#FF33F5",
+    "description": "Project coach especially stage future mission star.",
+    "space_id": "3",
+    "created_by_user_id": "10",
+    "usage_count": 0,
+    "created_at": "2025-06-05T03:56:43.594303"
+  },
+  "39": {
+    "label_id": "39",
+    "name": "candidate",
+    "color": "#FF33F5",
+    "description": "I push security attack water suddenly.",
+    "space_id": "15",
+    "created_by_user_id": "4",
+    "usage_count": 10,
+    "created_at": "2025-08-02T23:55:23.369895"
+  },
+  "40": {
+    "label_id": "40",
+    "name": "final",
+    "color": "#33FFF5",
+    "description": "They nice near the make direction travel.",
+    "space_id": "8",
+    "created_by_user_id": "15",
+    "usage_count": 14,
+    "created_at": "2025-08-15T10:52:48.749988"
+  },
+  "41": {
+    "label_id": "41",
+    "name": "support",
+    "color": "#FF5733",
+    "description": "Traditional face sing use heavy child.",
+    "space_id": "17",
+    "created_by_user_id": "41",
+    "usage_count": 23,
+    "created_at": "2025-08-20T00:18:48.268506"
+  },
+  "42": {
+    "label_id": "42",
+    "name": "customer",
+    "color": "#FF5733",
+    "description": "",
+    "space_id": "18",
+    "created_by_user_id": "1",
+    "usage_count": 10,
+    "created_at": "2025-04-17T09:21:32.096663"
+  },
+  "43": {
+    "label_id": "43",
+    "name": "partner",
+    "color": "#33FF57",
+    "description": "Win mission may order poor culture different.",
+    "space_id": "20",
+    "created_by_user_id": "13",
+    "usage_count": 22,
+    "created_at": "2025-07-31T03:49:25.597459"
+  },
+  "44": {
+    "label_id": "44",
+    "name": "learning",
+    "color": "#8C33FF",
+    "description": "Option red fish meet thing situation statement.",
+    "space_id": "26",
+    "created_by_user_id": "11",
+    "usage_count": 12,
+    "created_at": "2025-08-29T04:27:52.883710"
+  },
+  "45": {
+    "label_id": "45",
+    "name": "training",
+    "color": "#33FF57",
+    "description": "",
+    "space_id": "2",
+    "created_by_user_id": "8",
+    "usage_count": 10,
+    "created_at": "2025-08-24T13:19:24.165102"
+  },
+  "46": {
+    "label_id": "46",
+    "name": "research",
+    "color": "#F5FF33",
+    "description": "Bar need tax investment could yes.",
+    "space_id": "29",
+    "created_by_user_id": "13",
+    "usage_count": 14,
+    "created_at": "2025-08-16T18:02:08.252069"
+  },
+  "47": {
+    "label_id": "47",
+    "name": "analysis",
+    "color": "#8C33FF",
+    "description": "",
+    "space_id": null,
+    "created_by_user_id": "11",
+    "usage_count": 2,
+    "created_at": "2025-09-09T03:44:12.969177"
+  },
+  "48": {
+    "label_id": "48",
+    "name": "planning",
+    "color": "#3357FF",
+    "description": "",
+    "space_id": "7",
+    "created_by_user_id": "15",
+    "usage_count": 15,
+    "created_at": "2025-07-10T14:28:15.024577"
+  },
+  "49": {
+    "label_id": "49",
+    "name": "roadmap",
+    "color": "#3357FF",
+    "description": "Writer lead bit control else resource.",
+    "space_id": null,
+    "created_by_user_id": "13",
+    "usage_count": 19,
+    "created_at": "2025-06-02T22:09:45.254832"
+  },
+  "50": {
+    "label_id": "50",
+    "name": "idea",
+    "color": "#FF33F5",
+    "description": "Within property run door billion.",
+    "space_id": "3",
+    "created_by_user_id": "1",
+    "usage_count": 23,
+    "created_at": "2025-07-22T16:02:25.686029"
+  }
+}

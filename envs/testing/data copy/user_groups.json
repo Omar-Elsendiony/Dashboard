@@ -1,0 +1,1129 @@
+{
+  "1": {
+    "user_group_id": "1",
+    "user_id": "1",
+    "group_id": "21",
+    "added_at": "2025-09-02T11:25:30.038857",
+    "added_by_user_id": "12"
+  },
+  "2": {
+    "user_group_id": "2",
+    "user_id": "1",
+    "group_id": "13",
+    "added_at": "2025-07-31T20:45:58.485447",
+    "added_by_user_id": "11"
+  },
+  "3": {
+    "user_group_id": "3",
+    "user_id": "3",
+    "group_id": "12",
+    "added_at": "2025-07-22T08:32:47.984294",
+    "added_by_user_id": "4"
+  },
+  "4": {
+    "user_group_id": "4",
+    "user_id": "4",
+    "group_id": "10",
+    "added_at": "2025-07-03T17:02:20.031188",
+    "added_by_user_id": "13"
+  },
+  "5": {
+    "user_group_id": "5",
+    "user_id": "4",
+    "group_id": "20",
+    "added_at": "2025-07-08T05:14:48.206181",
+    "added_by_user_id": "10"
+  },
+  "6": {
+    "user_group_id": "6",
+    "user_id": "7",
+    "group_id": "28",
+    "added_at": "2025-05-31T19:27:37.922876",
+    "added_by_user_id": "3"
+  },
+  "7": {
+    "user_group_id": "7",
+    "user_id": "8",
+    "group_id": "11",
+    "added_at": "2025-08-28T09:49:45.999844",
+    "added_by_user_id": "1"
+  },
+  "8": {
+    "user_group_id": "8",
+    "user_id": "8",
+    "group_id": "25",
+    "added_at": "2025-09-01T06:45:11.174413",
+    "added_by_user_id": "15"
+  },
+  "9": {
+    "user_group_id": "9",
+    "user_id": "8",
+    "group_id": "15",
+    "added_at": "2025-09-03T04:39:50.878076",
+    "added_by_user_id": "2"
+  },
+  "10": {
+    "user_group_id": "10",
+    "user_id": "10",
+    "group_id": "22",
+    "added_at": "2025-08-19T06:09:27.584411",
+    "added_by_user_id": "14"
+  },
+  "11": {
+    "user_group_id": "11",
+    "user_id": "12",
+    "group_id": "30",
+    "added_at": "2025-06-20T03:12:12.299510",
+    "added_by_user_id": "3"
+  },
+  "12": {
+    "user_group_id": "12",
+    "user_id": "13",
+    "group_id": "9",
+    "added_at": "2025-08-20T17:45:56.714069",
+    "added_by_user_id": "3"
+  },
+  "13": {
+    "user_group_id": "13",
+    "user_id": "13",
+    "group_id": "5",
+    "added_at": "2025-08-22T18:11:33.966612",
+    "added_by_user_id": "4"
+  },
+  "14": {
+    "user_group_id": "14",
+    "user_id": "13",
+    "group_id": "3",
+    "added_at": "2025-08-24T17:19:29.470265",
+    "added_by_user_id": "13"
+  },
+  "15": {
+    "user_group_id": "15",
+    "user_id": "16",
+    "group_id": "2",
+    "added_at": "2025-06-06T10:40:22.570849",
+    "added_by_user_id": "2"
+  },
+  "16": {
+    "user_group_id": "16",
+    "user_id": "16",
+    "group_id": "17",
+    "added_at": "2025-07-18T15:58:55.445997",
+    "added_by_user_id": "9"
+  },
+  "17": {
+    "user_group_id": "17",
+    "user_id": "17",
+    "group_id": "12",
+    "added_at": "2025-06-20T02:28:17.514651",
+    "added_by_user_id": "3"
+  },
+  "18": {
+    "user_group_id": "18",
+    "user_id": "18",
+    "group_id": "19",
+    "added_at": "2025-07-09T12:12:58.813416",
+    "added_by_user_id": "2"
+  },
+  "19": {
+    "user_group_id": "19",
+    "user_id": "19",
+    "group_id": "19",
+    "added_at": "2025-07-26T16:23:28.277863",
+    "added_by_user_id": "6"
+  },
+  "20": {
+    "user_group_id": "20",
+    "user_id": "20",
+    "group_id": "7",
+    "added_at": "2025-06-04T21:06:44.042521",
+    "added_by_user_id": "6"
+  },
+  "21": {
+    "user_group_id": "21",
+    "user_id": "21",
+    "group_id": "7",
+    "added_at": "2025-08-04T18:12:24.587419",
+    "added_by_user_id": "7"
+  },
+  "22": {
+    "user_group_id": "22",
+    "user_id": "21",
+    "group_id": "25",
+    "added_at": "2025-08-31T06:31:11.423854",
+    "added_by_user_id": "13"
+  },
+  "23": {
+    "user_group_id": "23",
+    "user_id": "21",
+    "group_id": "23",
+    "added_at": "2025-07-21T01:43:34.877495",
+    "added_by_user_id": "13"
+  },
+  "24": {
+    "user_group_id": "24",
+    "user_id": "23",
+    "group_id": "20",
+    "added_at": "2025-07-03T22:54:50.258305",
+    "added_by_user_id": "10"
+  },
+  "25": {
+    "user_group_id": "25",
+    "user_id": "23",
+    "group_id": "25",
+    "added_at": "2025-09-08T21:58:57.510217",
+    "added_by_user_id": "15"
+  },
+  "26": {
+    "user_group_id": "26",
+    "user_id": "25",
+    "group_id": "30",
+    "added_at": "2025-09-03T09:56:39.150431",
+    "added_by_user_id": "1"
+  },
+  "27": {
+    "user_group_id": "27",
+    "user_id": "25",
+    "group_id": "27",
+    "added_at": "2025-07-11T00:22:12.793324",
+    "added_by_user_id": "2"
+  },
+  "28": {
+    "user_group_id": "28",
+    "user_id": "25",
+    "group_id": "8",
+    "added_at": "2025-07-24T17:14:22.360303",
+    "added_by_user_id": "10"
+  },
+  "29": {
+    "user_group_id": "29",
+    "user_id": "26",
+    "group_id": "23",
+    "added_at": "2025-08-19T01:27:54.437361",
+    "added_by_user_id": "14"
+  },
+  "30": {
+    "user_group_id": "30",
+    "user_id": "27",
+    "group_id": "15",
+    "added_at": "2025-09-02T05:12:21.492106",
+    "added_by_user_id": "11"
+  },
+  "31": {
+    "user_group_id": "31",
+    "user_id": "28",
+    "group_id": "7",
+    "added_at": "2025-07-29T08:30:54.215024",
+    "added_by_user_id": "8"
+  },
+  "32": {
+    "user_group_id": "32",
+    "user_id": "28",
+    "group_id": "28",
+    "added_at": "2025-07-23T08:31:19.898100",
+    "added_by_user_id": "14"
+  },
+  "33": {
+    "user_group_id": "33",
+    "user_id": "28",
+    "group_id": "4",
+    "added_at": "2025-07-12T01:17:58.804117",
+    "added_by_user_id": "4"
+  },
+  "34": {
+    "user_group_id": "34",
+    "user_id": "29",
+    "group_id": "3",
+    "added_at": "2025-08-01T08:15:46.044180",
+    "added_by_user_id": "8"
+  },
+  "35": {
+    "user_group_id": "35",
+    "user_id": "29",
+    "group_id": "14",
+    "added_at": "2025-09-10T23:29:57.960174",
+    "added_by_user_id": "13"
+  },
+  "36": {
+    "user_group_id": "36",
+    "user_id": "29",
+    "group_id": "21",
+    "added_at": "2025-09-03T11:27:56.577885",
+    "added_by_user_id": "14"
+  },
+  "37": {
+    "user_group_id": "37",
+    "user_id": "30",
+    "group_id": "2",
+    "added_at": "2025-07-08T07:41:47.460492",
+    "added_by_user_id": "10"
+  },
+  "38": {
+    "user_group_id": "38",
+    "user_id": "30",
+    "group_id": "1",
+    "added_at": "2025-09-10T01:42:01.853086",
+    "added_by_user_id": "13"
+  },
+  "39": {
+    "user_group_id": "39",
+    "user_id": "32",
+    "group_id": "10",
+    "added_at": "2025-08-23T05:57:55.395576",
+    "added_by_user_id": "9"
+  },
+  "40": {
+    "user_group_id": "40",
+    "user_id": "33",
+    "group_id": "13",
+    "added_at": "2025-07-29T00:05:11.659614",
+    "added_by_user_id": "14"
+  },
+  "41": {
+    "user_group_id": "41",
+    "user_id": "35",
+    "group_id": "16",
+    "added_at": "2025-07-23T07:34:13.279826",
+    "added_by_user_id": "10"
+  },
+  "42": {
+    "user_group_id": "42",
+    "user_id": "35",
+    "group_id": "18",
+    "added_at": "2025-08-17T02:49:21.425659",
+    "added_by_user_id": "11"
+  },
+  "43": {
+    "user_group_id": "43",
+    "user_id": "36",
+    "group_id": "1",
+    "added_at": "2025-08-27T22:45:32.065986",
+    "added_by_user_id": "2"
+  },
+  "44": {
+    "user_group_id": "44",
+    "user_id": "37",
+    "group_id": "9",
+    "added_at": "2025-07-29T15:28:57.046886",
+    "added_by_user_id": "13"
+  },
+  "45": {
+    "user_group_id": "45",
+    "user_id": "37",
+    "group_id": "15",
+    "added_at": "2025-08-05T17:05:11.126345",
+    "added_by_user_id": "11"
+  },
+  "46": {
+    "user_group_id": "46",
+    "user_id": "38",
+    "group_id": "2",
+    "added_at": "2025-08-31T23:24:30.473126",
+    "added_by_user_id": "13"
+  },
+  "47": {
+    "user_group_id": "47",
+    "user_id": "38",
+    "group_id": "22",
+    "added_at": "2025-08-15T13:00:54.482796",
+    "added_by_user_id": "11"
+  },
+  "48": {
+    "user_group_id": "48",
+    "user_id": "39",
+    "group_id": "29",
+    "added_at": "2025-09-07T14:17:26.017265",
+    "added_by_user_id": "13"
+  },
+  "49": {
+    "user_group_id": "49",
+    "user_id": "39",
+    "group_id": "24",
+    "added_at": "2025-07-31T09:39:26.583461",
+    "added_by_user_id": "9"
+  },
+  "50": {
+    "user_group_id": "50",
+    "user_id": "39",
+    "group_id": "1",
+    "added_at": "2025-07-07T00:05:09.276062",
+    "added_by_user_id": "12"
+  },
+  "51": {
+    "user_group_id": "51",
+    "user_id": "41",
+    "group_id": "25",
+    "added_at": "2025-09-01T05:33:07.652598",
+    "added_by_user_id": "14"
+  },
+  "52": {
+    "user_group_id": "52",
+    "user_id": "41",
+    "group_id": "28",
+    "added_at": "2025-05-20T08:52:18.515476",
+    "added_by_user_id": "6"
+  },
+  "53": {
+    "user_group_id": "53",
+    "user_id": "41",
+    "group_id": "6",
+    "added_at": "2025-05-28T14:18:35.994850",
+    "added_by_user_id": "8"
+  },
+  "54": {
+    "user_group_id": "54",
+    "user_id": "42",
+    "group_id": "23",
+    "added_at": "2025-08-13T16:19:52.982934",
+    "added_by_user_id": "4"
+  },
+  "55": {
+    "user_group_id": "55",
+    "user_id": "42",
+    "group_id": "18",
+    "added_at": "2025-08-25T12:06:25.899906",
+    "added_by_user_id": "6"
+  },
+  "56": {
+    "user_group_id": "56",
+    "user_id": "43",
+    "group_id": "18",
+    "added_at": "2025-09-02T15:50:22.325566",
+    "added_by_user_id": "10"
+  },
+  "57": {
+    "user_group_id": "57",
+    "user_id": "44",
+    "group_id": "20",
+    "added_at": "2025-08-24T01:40:12.847109",
+    "added_by_user_id": "10"
+  },
+  "58": {
+    "user_group_id": "58",
+    "user_id": "44",
+    "group_id": "4",
+    "added_at": "2025-09-01T16:45:59.728025",
+    "added_by_user_id": "15"
+  },
+  "59": {
+    "user_group_id": "59",
+    "user_id": "45",
+    "group_id": "18",
+    "added_at": "2025-08-13T22:11:07.708956",
+    "added_by_user_id": "7"
+  },
+  "60": {
+    "user_group_id": "60",
+    "user_id": "45",
+    "group_id": "8",
+    "added_at": "2025-08-27T09:54:09.163392",
+    "added_by_user_id": "12"
+  },
+  "61": {
+    "user_group_id": "61",
+    "user_id": "46",
+    "group_id": "15",
+    "added_at": "2025-08-14T04:09:51.926149",
+    "added_by_user_id": "13"
+  },
+  "62": {
+    "user_group_id": "62",
+    "user_id": "47",
+    "group_id": "15",
+    "added_at": "2025-04-20T13:22:21.386114",
+    "added_by_user_id": "3"
+  },
+  "63": {
+    "user_group_id": "63",
+    "user_id": "48",
+    "group_id": "2",
+    "added_at": "2025-07-20T21:37:53.536265",
+    "added_by_user_id": "9"
+  },
+  "64": {
+    "user_group_id": "64",
+    "user_id": "48",
+    "group_id": "12",
+    "added_at": "2025-07-23T23:25:44.487062",
+    "added_by_user_id": "4"
+  },
+  "65": {
+    "user_group_id": "65",
+    "user_id": "49",
+    "group_id": "29",
+    "added_at": "2025-06-01T13:27:50.349473",
+    "added_by_user_id": "7"
+  },
+  "66": {
+    "user_group_id": "66",
+    "user_id": "51",
+    "group_id": "16",
+    "added_at": "2025-05-17T21:16:19.688076",
+    "added_by_user_id": "10"
+  },
+  "67": {
+    "user_group_id": "67",
+    "user_id": "51",
+    "group_id": "12",
+    "added_at": "2025-08-19T02:44:54.491432",
+    "added_by_user_id": "11"
+  },
+  "68": {
+    "user_group_id": "68",
+    "user_id": "52",
+    "group_id": "21",
+    "added_at": "2025-09-05T16:59:29.215284",
+    "added_by_user_id": "14"
+  },
+  "69": {
+    "user_group_id": "69",
+    "user_id": "52",
+    "group_id": "9",
+    "added_at": "2025-08-27T13:23:45.778931",
+    "added_by_user_id": "2"
+  },
+  "70": {
+    "user_group_id": "70",
+    "user_id": "53",
+    "group_id": "11",
+    "added_at": "2025-08-27T04:24:26.979800",
+    "added_by_user_id": "3"
+  },
+  "71": {
+    "user_group_id": "71",
+    "user_id": "53",
+    "group_id": "1",
+    "added_at": "2025-08-08T03:35:00.807734",
+    "added_by_user_id": "8"
+  },
+  "72": {
+    "user_group_id": "72",
+    "user_id": "54",
+    "group_id": "16",
+    "added_at": "2025-08-26T18:20:17.353975",
+    "added_by_user_id": "11"
+  },
+  "73": {
+    "user_group_id": "73",
+    "user_id": "54",
+    "group_id": "3",
+    "added_at": "2025-09-07T05:32:42.533477",
+    "added_by_user_id": "1"
+  },
+  "74": {
+    "user_group_id": "74",
+    "user_id": "54",
+    "group_id": "19",
+    "added_at": "2025-09-03T10:01:14.604032",
+    "added_by_user_id": "6"
+  },
+  "75": {
+    "user_group_id": "75",
+    "user_id": "55",
+    "group_id": "26",
+    "added_at": "2025-08-11T18:52:34.621802",
+    "added_by_user_id": "1"
+  },
+  "76": {
+    "user_group_id": "76",
+    "user_id": "55",
+    "group_id": "6",
+    "added_at": "2025-05-11T08:37:19.674314",
+    "added_by_user_id": "3"
+  },
+  "77": {
+    "user_group_id": "77",
+    "user_id": "55",
+    "group_id": "24",
+    "added_at": "2025-06-27T06:43:20.676756",
+    "added_by_user_id": "10"
+  },
+  "78": {
+    "user_group_id": "78",
+    "user_id": "56",
+    "group_id": "9",
+    "added_at": "2025-08-24T04:01:52.698786",
+    "added_by_user_id": "8"
+  },
+  "79": {
+    "user_group_id": "79",
+    "user_id": "57",
+    "group_id": "29",
+    "added_at": "2025-06-09T06:08:22.727805",
+    "added_by_user_id": "6"
+  },
+  "80": {
+    "user_group_id": "80",
+    "user_id": "57",
+    "group_id": "17",
+    "added_at": "2025-07-10T01:39:09.493787",
+    "added_by_user_id": "2"
+  },
+  "81": {
+    "user_group_id": "81",
+    "user_id": "57",
+    "group_id": "26",
+    "added_at": "2025-07-23T11:40:10.174477",
+    "added_by_user_id": "12"
+  },
+  "82": {
+    "user_group_id": "82",
+    "user_id": "58",
+    "group_id": "10",
+    "added_at": "2025-07-27T03:56:45.926667",
+    "added_by_user_id": "15"
+  },
+  "83": {
+    "user_group_id": "83",
+    "user_id": "58",
+    "group_id": "16",
+    "added_at": "2025-09-09T12:16:21.657060",
+    "added_by_user_id": "12"
+  },
+  "84": {
+    "user_group_id": "84",
+    "user_id": "59",
+    "group_id": "22",
+    "added_at": "2025-08-12T11:05:14.196078",
+    "added_by_user_id": "8"
+  },
+  "85": {
+    "user_group_id": "85",
+    "user_id": "59",
+    "group_id": "23",
+    "added_at": "2025-08-15T02:13:18.527367",
+    "added_by_user_id": "10"
+  },
+  "86": {
+    "user_group_id": "86",
+    "user_id": "61",
+    "group_id": "28",
+    "added_at": "2025-08-27T12:29:36.896201",
+    "added_by_user_id": "4"
+  },
+  "87": {
+    "user_group_id": "87",
+    "user_id": "61",
+    "group_id": "3",
+    "added_at": "2025-08-30T16:16:26.658647",
+    "added_by_user_id": "1"
+  },
+  "88": {
+    "user_group_id": "88",
+    "user_id": "62",
+    "group_id": "16",
+    "added_at": "2025-07-11T21:31:11.503558",
+    "added_by_user_id": "15"
+  },
+  "89": {
+    "user_group_id": "89",
+    "user_id": "62",
+    "group_id": "25",
+    "added_at": "2025-08-25T14:15:17.357000",
+    "added_by_user_id": "1"
+  },
+  "90": {
+    "user_group_id": "90",
+    "user_id": "62",
+    "group_id": "17",
+    "added_at": "2025-08-21T07:56:15.853911",
+    "added_by_user_id": "10"
+  },
+  "91": {
+    "user_group_id": "91",
+    "user_id": "64",
+    "group_id": "10",
+    "added_at": "2025-06-29T09:57:40.124947",
+    "added_by_user_id": "13"
+  },
+  "92": {
+    "user_group_id": "92",
+    "user_id": "65",
+    "group_id": "10",
+    "added_at": "2025-08-12T14:55:08.641079",
+    "added_by_user_id": "4"
+  },
+  "93": {
+    "user_group_id": "93",
+    "user_id": "65",
+    "group_id": "2",
+    "added_at": "2025-07-09T11:54:45.159989",
+    "added_by_user_id": "12"
+  },
+  "94": {
+    "user_group_id": "94",
+    "user_id": "65",
+    "group_id": "1",
+    "added_at": "2025-09-06T03:34:16.567028",
+    "added_by_user_id": "15"
+  },
+  "95": {
+    "user_group_id": "95",
+    "user_id": "66",
+    "group_id": "11",
+    "added_at": "2025-06-01T08:08:33.317198",
+    "added_by_user_id": "4"
+  },
+  "96": {
+    "user_group_id": "96",
+    "user_id": "66",
+    "group_id": "14",
+    "added_at": "2025-09-09T16:31:40.762497",
+    "added_by_user_id": "2"
+  },
+  "97": {
+    "user_group_id": "97",
+    "user_id": "66",
+    "group_id": "23",
+    "added_at": "2025-06-05T08:11:13.571962",
+    "added_by_user_id": "4"
+  },
+  "98": {
+    "user_group_id": "98",
+    "user_id": "67",
+    "group_id": "21",
+    "added_at": "2025-08-02T18:43:23.359874",
+    "added_by_user_id": "11"
+  },
+  "99": {
+    "user_group_id": "99",
+    "user_id": "67",
+    "group_id": "26",
+    "added_at": "2025-07-05T20:20:26.490774",
+    "added_by_user_id": "2"
+  },
+  "100": {
+    "user_group_id": "100",
+    "user_id": "67",
+    "group_id": "13",
+    "added_at": "2025-07-14T04:14:12.502001",
+    "added_by_user_id": "2"
+  },
+  "101": {
+    "user_group_id": "101",
+    "user_id": "68",
+    "group_id": "12",
+    "added_at": "2025-06-16T13:11:25.433129",
+    "added_by_user_id": "8"
+  },
+  "102": {
+    "user_group_id": "102",
+    "user_id": "68",
+    "group_id": "10",
+    "added_at": "2025-07-06T02:57:56.442510",
+    "added_by_user_id": "8"
+  },
+  "103": {
+    "user_group_id": "103",
+    "user_id": "68",
+    "group_id": "20",
+    "added_at": "2025-06-11T06:38:56.616246",
+    "added_by_user_id": "3"
+  },
+  "104": {
+    "user_group_id": "104",
+    "user_id": "69",
+    "group_id": "14",
+    "added_at": "2025-09-07T10:51:24.015238",
+    "added_by_user_id": "9"
+  },
+  "105": {
+    "user_group_id": "105",
+    "user_id": "69",
+    "group_id": "24",
+    "added_at": "2025-05-29T13:27:04.445798",
+    "added_by_user_id": "2"
+  },
+  "106": {
+    "user_group_id": "106",
+    "user_id": "69",
+    "group_id": "9",
+    "added_at": "2025-09-10T18:25:19.239833",
+    "added_by_user_id": "11"
+  },
+  "107": {
+    "user_group_id": "107",
+    "user_id": "70",
+    "group_id": "26",
+    "added_at": "2025-07-09T04:40:23.808777",
+    "added_by_user_id": "13"
+  },
+  "108": {
+    "user_group_id": "108",
+    "user_id": "70",
+    "group_id": "6",
+    "added_at": "2025-06-10T14:55:51.096573",
+    "added_by_user_id": "9"
+  },
+  "109": {
+    "user_group_id": "109",
+    "user_id": "70",
+    "group_id": "20",
+    "added_at": "2025-06-20T02:25:21.560028",
+    "added_by_user_id": "6"
+  },
+  "110": {
+    "user_group_id": "110",
+    "user_id": "71",
+    "group_id": "1",
+    "added_at": "2025-08-11T21:38:16.630502",
+    "added_by_user_id": "10"
+  },
+  "111": {
+    "user_group_id": "111",
+    "user_id": "71",
+    "group_id": "25",
+    "added_at": "2025-09-03T19:41:17.449379",
+    "added_by_user_id": "1"
+  },
+  "112": {
+    "user_group_id": "112",
+    "user_id": "71",
+    "group_id": "11",
+    "added_at": "2025-08-29T21:54:46.168806",
+    "added_by_user_id": "8"
+  },
+  "113": {
+    "user_group_id": "113",
+    "user_id": "72",
+    "group_id": "16",
+    "added_at": "2025-07-25T08:42:08.904020",
+    "added_by_user_id": "12"
+  },
+  "114": {
+    "user_group_id": "114",
+    "user_id": "72",
+    "group_id": "7",
+    "added_at": "2025-08-30T11:21:52.077110",
+    "added_by_user_id": "10"
+  },
+  "115": {
+    "user_group_id": "115",
+    "user_id": "72",
+    "group_id": "12",
+    "added_at": "2025-07-06T19:43:17.923131",
+    "added_by_user_id": "8"
+  },
+  "116": {
+    "user_group_id": "116",
+    "user_id": "74",
+    "group_id": "21",
+    "added_at": "2025-09-10T09:13:44.289175",
+    "added_by_user_id": "8"
+  },
+  "117": {
+    "user_group_id": "117",
+    "user_id": "74",
+    "group_id": "3",
+    "added_at": "2025-08-31T00:37:27.051299",
+    "added_by_user_id": "2"
+  },
+  "118": {
+    "user_group_id": "118",
+    "user_id": "75",
+    "group_id": "14",
+    "added_at": "2025-09-10T08:39:50.459329",
+    "added_by_user_id": "11"
+  },
+  "119": {
+    "user_group_id": "119",
+    "user_id": "75",
+    "group_id": "26",
+    "added_at": "2025-08-13T16:09:20.332672",
+    "added_by_user_id": "6"
+  },
+  "120": {
+    "user_group_id": "120",
+    "user_id": "75",
+    "group_id": "16",
+    "added_at": "2025-06-20T17:05:25.123333",
+    "added_by_user_id": "2"
+  },
+  "121": {
+    "user_group_id": "121",
+    "user_id": "76",
+    "group_id": "9",
+    "added_at": "2025-07-02T03:33:28.735483",
+    "added_by_user_id": "6"
+  },
+  "122": {
+    "user_group_id": "122",
+    "user_id": "76",
+    "group_id": "20",
+    "added_at": "2025-07-24T22:58:44.833611",
+    "added_by_user_id": "13"
+  },
+  "123": {
+    "user_group_id": "123",
+    "user_id": "77",
+    "group_id": "29",
+    "added_at": "2025-06-24T13:47:42.699250",
+    "added_by_user_id": "10"
+  },
+  "124": {
+    "user_group_id": "124",
+    "user_id": "77",
+    "group_id": "16",
+    "added_at": "2025-08-07T15:10:29.656894",
+    "added_by_user_id": "9"
+  },
+  "125": {
+    "user_group_id": "125",
+    "user_id": "78",
+    "group_id": "12",
+    "added_at": "2025-05-18T20:17:51.110207",
+    "added_by_user_id": "6"
+  },
+  "126": {
+    "user_group_id": "126",
+    "user_id": "79",
+    "group_id": "10",
+    "added_at": "2025-07-30T17:11:27.890733",
+    "added_by_user_id": "9"
+  },
+  "127": {
+    "user_group_id": "127",
+    "user_id": "79",
+    "group_id": "29",
+    "added_at": "2025-06-19T23:12:43.185962",
+    "added_by_user_id": "4"
+  },
+  "128": {
+    "user_group_id": "128",
+    "user_id": "79",
+    "group_id": "5",
+    "added_at": "2025-09-05T03:36:25.187764",
+    "added_by_user_id": "7"
+  },
+  "129": {
+    "user_group_id": "129",
+    "user_id": "80",
+    "group_id": "19",
+    "added_at": "2025-06-29T13:20:56.988149",
+    "added_by_user_id": "12"
+  },
+  "130": {
+    "user_group_id": "130",
+    "user_id": "80",
+    "group_id": "2",
+    "added_at": "2025-07-31T00:27:42.549659",
+    "added_by_user_id": "8"
+  },
+  "131": {
+    "user_group_id": "131",
+    "user_id": "81",
+    "group_id": "13",
+    "added_at": "2025-09-09T01:22:51.043043",
+    "added_by_user_id": "4"
+  },
+  "132": {
+    "user_group_id": "132",
+    "user_id": "81",
+    "group_id": "11",
+    "added_at": "2025-05-22T09:56:26.826577",
+    "added_by_user_id": "1"
+  },
+  "133": {
+    "user_group_id": "133",
+    "user_id": "82",
+    "group_id": "24",
+    "added_at": "2025-09-04T02:50:27.093724",
+    "added_by_user_id": "8"
+  },
+  "134": {
+    "user_group_id": "134",
+    "user_id": "83",
+    "group_id": "4",
+    "added_at": "2025-09-06T07:14:18.305999",
+    "added_by_user_id": "11"
+  },
+  "135": {
+    "user_group_id": "135",
+    "user_id": "85",
+    "group_id": "5",
+    "added_at": "2025-08-08T02:49:57.676138",
+    "added_by_user_id": "13"
+  },
+  "136": {
+    "user_group_id": "136",
+    "user_id": "85",
+    "group_id": "14",
+    "added_at": "2025-09-08T03:46:48.362341",
+    "added_by_user_id": "12"
+  },
+  "137": {
+    "user_group_id": "137",
+    "user_id": "86",
+    "group_id": "5",
+    "added_at": "2025-09-09T13:07:26.611279",
+    "added_by_user_id": "10"
+  },
+  "138": {
+    "user_group_id": "138",
+    "user_id": "86",
+    "group_id": "7",
+    "added_at": "2025-07-05T03:26:02.367758",
+    "added_by_user_id": "2"
+  },
+  "139": {
+    "user_group_id": "139",
+    "user_id": "87",
+    "group_id": "27",
+    "added_at": "2025-07-22T12:30:18.748316",
+    "added_by_user_id": "10"
+  },
+  "140": {
+    "user_group_id": "140",
+    "user_id": "87",
+    "group_id": "10",
+    "added_at": "2025-08-18T22:38:00.390732",
+    "added_by_user_id": "15"
+  },
+  "141": {
+    "user_group_id": "141",
+    "user_id": "89",
+    "group_id": "8",
+    "added_at": "2025-08-15T19:02:29.573648",
+    "added_by_user_id": "9"
+  },
+  "142": {
+    "user_group_id": "142",
+    "user_id": "89",
+    "group_id": "12",
+    "added_at": "2025-05-26T05:10:33.220184",
+    "added_by_user_id": "13"
+  },
+  "143": {
+    "user_group_id": "143",
+    "user_id": "90",
+    "group_id": "20",
+    "added_at": "2025-08-14T02:32:47.220948",
+    "added_by_user_id": "13"
+  },
+  "144": {
+    "user_group_id": "144",
+    "user_id": "90",
+    "group_id": "24",
+    "added_at": "2025-09-06T00:58:07.216433",
+    "added_by_user_id": "15"
+  },
+  "145": {
+    "user_group_id": "145",
+    "user_id": "90",
+    "group_id": "17",
+    "added_at": "2025-09-02T07:42:13.546998",
+    "added_by_user_id": "11"
+  },
+  "146": {
+    "user_group_id": "146",
+    "user_id": "91",
+    "group_id": "29",
+    "added_at": "2025-08-14T00:29:08.086739",
+    "added_by_user_id": "2"
+  },
+  "147": {
+    "user_group_id": "147",
+    "user_id": "92",
+    "group_id": "27",
+    "added_at": "2025-07-13T04:42:03.311589",
+    "added_by_user_id": "14"
+  },
+  "148": {
+    "user_group_id": "148",
+    "user_id": "92",
+    "group_id": "15",
+    "added_at": "2025-06-25T10:04:52.329700",
+    "added_by_user_id": "8"
+  },
+  "149": {
+    "user_group_id": "149",
+    "user_id": "93",
+    "group_id": "15",
+    "added_at": "2025-06-12T14:13:51.570771",
+    "added_by_user_id": "1"
+  },
+  "150": {
+    "user_group_id": "150",
+    "user_id": "93",
+    "group_id": "1",
+    "added_at": "2025-06-16T01:59:30.398746",
+    "added_by_user_id": "9"
+  },
+  "151": {
+    "user_group_id": "151",
+    "user_id": "93",
+    "group_id": "4",
+    "added_at": "2025-08-06T16:40:10.017816",
+    "added_by_user_id": "2"
+  },
+  "152": {
+    "user_group_id": "152",
+    "user_id": "94",
+    "group_id": "1",
+    "added_at": "2025-09-02T21:47:27.989449",
+    "added_by_user_id": "11"
+  },
+  "153": {
+    "user_group_id": "153",
+    "user_id": "94",
+    "group_id": "15",
+    "added_at": "2025-03-28T21:35:17.297958",
+    "added_by_user_id": "14"
+  },
+  "154": {
+    "user_group_id": "154",
+    "user_id": "95",
+    "group_id": "4",
+    "added_at": "2025-08-30T23:38:35.674899",
+    "added_by_user_id": "6"
+  },
+  "155": {
+    "user_group_id": "155",
+    "user_id": "96",
+    "group_id": "25",
+    "added_at": "2025-09-11T00:03:39.313232",
+    "added_by_user_id": "3"
+  },
+  "156": {
+    "user_group_id": "156",
+    "user_id": "96",
+    "group_id": "17",
+    "added_at": "2025-07-19T16:15:06.350084",
+    "added_by_user_id": "7"
+  },
+  "157": {
+    "user_group_id": "157",
+    "user_id": "96",
+    "group_id": "22",
+    "added_at": "2025-08-25T13:21:30.824207",
+    "added_by_user_id": "7"
+  },
+  "158": {
+    "user_group_id": "158",
+    "user_id": "97",
+    "group_id": "2",
+    "added_at": "2025-08-01T07:48:20.763913",
+    "added_by_user_id": "8"
+  },
+  "159": {
+    "user_group_id": "159",
+    "user_id": "97",
+    "group_id": "22",
+    "added_at": "2025-08-17T02:37:39.866647",
+    "added_by_user_id": "13"
+  },
+  "160": {
+    "user_group_id": "160",
+    "user_id": "98",
+    "group_id": "1",
+    "added_at": "2025-09-03T17:59:35.373599",
+    "added_by_user_id": "4"
+  },
+  "161": {
+    "user_group_id": "161",
+    "user_id": "99",
+    "group_id": "9",
+    "added_at": "2025-07-13T13:23:26.932688",
+    "added_by_user_id": "2"
+  }
+}

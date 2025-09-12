@@ -1,0 +1,40 @@
+{
+  "generation_timestamp": "2025-09-02T16:19:59.895621",
+  "summary": {
+    "users": 50,
+    "groups": 8,
+    "spaces": 12,
+    "pages": 100,
+    "comments": 80,
+    "attachments": 40,
+    "labels": 25,
+    "notifications": 120
+  },
+  "user_roles": {
+    "WikiProgramManager": 11,
+    "SpaceAdministrator": 13,
+    "ContentOwner": 7,
+    "Consumer": 5,
+    "Contributor": 9,
+    "PlatformOwner": 5
+  },
+  "space_types": {
+    "personal": 6,
+    "global": 2,
+    "private": 4
+  },
+  "page_statuses": {
+    "current": 82,
+    "historical": 5,
+    "draft": 7,
+    "deleted": 6
+  },
+  "email_domains": {
+    "yahoo.com": 8,
+    "gmail.com": 11,
+    "wiki.org": 7,
+    "example.com": 7,
+    "company.com": 9,
+    "outlook.com": 8
+  }
+}

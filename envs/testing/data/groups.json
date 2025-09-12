@@ -1,0 +1,242 @@
+{
+  "1": {
+    "group_id": "1",
+    "name": "Developers",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-06-10T22:52:34.283354",
+    "created_by_user_id": "1"
+  },
+  "2": {
+    "group_id": "2",
+    "name": "Content Writers",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-06-04T07:25:20.538028",
+    "created_by_user_id": "3"
+  },
+  "3": {
+    "group_id": "3",
+    "name": "Administrators",
+    "description": "Then executive heavy focus south standard.",
+    "type": "custom",
+    "created_at": "2025-07-30T22:39:59.774173",
+    "created_by_user_id": "3"
+  },
+  "4": {
+    "group_id": "4",
+    "name": "Project Managers",
+    "description": "Respond want television just bag else.",
+    "type": "system",
+    "created_at": "2025-06-28T12:10:35.300922",
+    "created_by_user_id": "4"
+  },
+  "5": {
+    "group_id": "5",
+    "name": "QA Team",
+    "description": "North need west cell meet kind.",
+    "type": "system",
+    "created_at": "2025-08-07T16:46:53.564399",
+    "created_by_user_id": "2"
+  },
+  "6": {
+    "group_id": "6",
+    "name": "Marketing",
+    "description": "Strategy radio easy ago born.",
+    "type": "system",
+    "created_at": "2025-04-24T02:17:03.807417",
+    "created_by_user_id": "1"
+  },
+  "7": {
+    "group_id": "7",
+    "name": "Support",
+    "description": "Lot never manage necessary themselves have put.",
+    "type": "system",
+    "created_at": "2025-05-25T06:39:02.875042",
+    "created_by_user_id": "3"
+  },
+  "8": {
+    "group_id": "8",
+    "name": "Designers",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-07-03T14:28:10.763851",
+    "created_by_user_id": "2"
+  },
+  "9": {
+    "group_id": "9",
+    "name": "Data Analysts",
+    "description": "Nice by skill make finally interesting treatment.",
+    "type": "system",
+    "created_at": "2025-03-13T18:40:03.825820",
+    "created_by_user_id": "1"
+  },
+  "10": {
+    "group_id": "10",
+    "name": "Research Team",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-04-21T15:00:42.352337",
+    "created_by_user_id": "4"
+  },
+  "11": {
+    "group_id": "11",
+    "name": "HR",
+    "description": "Step least personal management police through look.",
+    "type": "system",
+    "created_at": "2025-01-21T11:09:37.105783",
+    "created_by_user_id": "3"
+  },
+  "12": {
+    "group_id": "12",
+    "name": "Finance",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-02-28T19:50:07.640835",
+    "created_by_user_id": "3"
+  },
+  "13": {
+    "group_id": "13",
+    "name": "Legal",
+    "description": "To get right.",
+    "type": "custom",
+    "created_at": "2025-07-08T08:40:27.581171",
+    "created_by_user_id": "2"
+  },
+  "14": {
+    "group_id": "14",
+    "name": "Product Owners",
+    "description": "Indicate expert why sometimes.",
+    "type": "custom",
+    "created_at": "2025-09-07T09:36:57.967167",
+    "created_by_user_id": "2"
+  },
+  "15": {
+    "group_id": "15",
+    "name": "Scrum Masters",
+    "description": "Your significant guy idea consider way.",
+    "type": "system",
+    "created_at": "2025-03-22T04:24:31.288616",
+    "created_by_user_id": "3"
+  },
+  "16": {
+    "group_id": "16",
+    "name": "DevOps",
+    "description": "Media evening other soldier perform name they.",
+    "type": "system",
+    "created_at": "2025-03-26T07:40:57.620115",
+    "created_by_user_id": "1"
+  },
+  "17": {
+    "group_id": "17",
+    "name": "Security",
+    "description": "Likely card single.",
+    "type": "custom",
+    "created_at": "2025-06-07T20:06:15.951058",
+    "created_by_user_id": "4"
+  },
+  "18": {
+    "group_id": "18",
+    "name": "Sales",
+    "description": "Whatever professional note house consumer ground respond series.",
+    "type": "custom",
+    "created_at": "2025-07-22T06:55:48.369019",
+    "created_by_user_id": "3"
+  },
+  "19": {
+    "group_id": "19",
+    "name": "Customer Success",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-06-23T21:57:24.588262",
+    "created_by_user_id": "1"
+  },
+  "20": {
+    "group_id": "20",
+    "name": "Operations",
+    "description": "Without avoid free serious from standard hard.",
+    "type": "custom",
+    "created_at": "2025-06-01T06:51:43.940549",
+    "created_by_user_id": "1"
+  },
+  "21": {
+    "group_id": "21",
+    "name": "Business Analysts",
+    "description": "Out morning result hand threat.",
+    "type": "custom",
+    "created_at": "2025-06-19T07:09:14.616433",
+    "created_by_user_id": "4"
+  },
+  "22": {
+    "group_id": "22",
+    "name": "Innovation Lab",
+    "description": "Forget follow party yes term that.",
+    "type": "custom",
+    "created_at": "2025-08-08T00:57:13.036713",
+    "created_by_user_id": "4"
+  },
+  "23": {
+    "group_id": "23",
+    "name": "Training",
+    "description": "Evening southern or night.",
+    "type": "system",
+    "created_at": "2025-04-17T00:42:30.993574",
+    "created_by_user_id": "3"
+  },
+  "24": {
+    "group_id": "24",
+    "name": "Documentation",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-05-26T23:42:24.876515",
+    "created_by_user_id": "2"
+  },
+  "25": {
+    "group_id": "25",
+    "name": "Community Managers",
+    "description": "",
+    "type": "system",
+    "created_at": "2025-08-22T01:28:17.989082",
+    "created_by_user_id": "3"
+  },
+  "26": {
+    "group_id": "26",
+    "name": "IT Helpdesk",
+    "description": "Seek soon building.",
+    "type": "system",
+    "created_at": "2025-06-28T10:35:19.977297",
+    "created_by_user_id": "1"
+  },
+  "27": {
+    "group_id": "27",
+    "name": "Content Reviewers",
+    "description": "Public call quality federal.",
+    "type": "custom",
+    "created_at": "2025-06-30T11:28:40.573470",
+    "created_by_user_id": "3"
+  },
+  "28": {
+    "group_id": "28",
+    "name": "UX Researchers",
+    "description": "Window particular record owner tough.",
+    "type": "system",
+    "created_at": "2025-02-02T15:30:32.916385",
+    "created_by_user_id": "1"
+  },
+  "29": {
+    "group_id": "29",
+    "name": "Engineering Leads",
+    "description": "",
+    "type": "custom",
+    "created_at": "2025-05-26T13:49:22.558974",
+    "created_by_user_id": "4"
+  },
+  "30": {
+    "group_id": "30",
+    "name": "Executive Board",
+    "description": "Natural get follow.",
+    "type": "system",
+    "created_at": "2025-05-20T21:09:02.294714",
+    "created_by_user_id": "3"
+  }
+}

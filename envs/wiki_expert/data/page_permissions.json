@@ -1,0 +1,614 @@
+{
+  "1": {
+    "page_permission_id": "1",
+    "page_id": "71",
+    "user_id": null,
+    "group_id": "25",
+    "permission_type": "view",
+    "granted_at": "2024-10-14T01:36:28",
+    "granted_by_user_id": "45"
+  },
+  "2": {
+    "page_permission_id": "2",
+    "page_id": "71",
+    "user_id": "58",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-11-19T05:22:11",
+    "granted_by_user_id": "88"
+  },
+  "3": {
+    "page_permission_id": "3",
+    "page_id": "71",
+    "user_id": "100",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-05-17T08:39:59",
+    "granted_by_user_id": "4"
+  },
+  "4": {
+    "page_permission_id": "4",
+    "page_id": "92",
+    "user_id": null,
+    "group_id": "17",
+    "permission_type": "admin",
+    "granted_at": "2025-01-30T19:04:42",
+    "granted_by_user_id": "94"
+  },
+  "5": {
+    "page_permission_id": "5",
+    "page_id": "81",
+    "user_id": "45",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-04-29T17:58:04",
+    "granted_by_user_id": "42"
+  },
+  "6": {
+    "page_permission_id": "6",
+    "page_id": "81",
+    "user_id": "80",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-11-18T09:36:24",
+    "granted_by_user_id": "25"
+  },
+  "7": {
+    "page_permission_id": "7",
+    "page_id": "75",
+    "user_id": null,
+    "group_id": "29",
+    "permission_type": "admin",
+    "granted_at": "2025-02-07T08:45:52",
+    "granted_by_user_id": "43"
+  },
+  "8": {
+    "page_permission_id": "8",
+    "page_id": "75",
+    "user_id": "84",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2024-12-30T02:32:16",
+    "granted_by_user_id": "77"
+  },
+  "9": {
+    "page_permission_id": "9",
+    "page_id": "36",
+    "user_id": "82",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-08-16T14:07:42",
+    "granted_by_user_id": "42"
+  },
+  "10": {
+    "page_permission_id": "10",
+    "page_id": "36",
+    "user_id": "72",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-10-06T02:14:43",
+    "granted_by_user_id": "14"
+  },
+  "11": {
+    "page_permission_id": "11",
+    "page_id": "36",
+    "user_id": "10",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-01-22T07:48:07",
+    "granted_by_user_id": "14"
+  },
+  "12": {
+    "page_permission_id": "12",
+    "page_id": "57",
+    "user_id": null,
+    "group_id": "27",
+    "permission_type": "delete",
+    "granted_at": "2025-07-25T10:50:48",
+    "granted_by_user_id": "6"
+  },
+  "13": {
+    "page_permission_id": "13",
+    "page_id": "57",
+    "user_id": null,
+    "group_id": "28",
+    "permission_type": "edit",
+    "granted_at": "2024-11-11T12:54:56",
+    "granted_by_user_id": "27"
+  },
+  "14": {
+    "page_permission_id": "14",
+    "page_id": "57",
+    "user_id": "28",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2024-11-14T13:34:12",
+    "granted_by_user_id": "61"
+  },
+  "15": {
+    "page_permission_id": "15",
+    "page_id": "69",
+    "user_id": "59",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2024-12-21T17:02:11",
+    "granted_by_user_id": "55"
+  },
+  "16": {
+    "page_permission_id": "16",
+    "page_id": "5",
+    "user_id": "28",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-02-05T15:27:40",
+    "granted_by_user_id": "42"
+  },
+  "17": {
+    "page_permission_id": "17",
+    "page_id": "87",
+    "user_id": "68",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-05-02T21:48:59",
+    "granted_by_user_id": "67"
+  },
+  "18": {
+    "page_permission_id": "18",
+    "page_id": "87",
+    "user_id": "7",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-05-30T19:31:48",
+    "granted_by_user_id": "33"
+  },
+  "19": {
+    "page_permission_id": "19",
+    "page_id": "87",
+    "user_id": "77",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-03-08T18:04:26",
+    "granted_by_user_id": "4"
+  },
+  "20": {
+    "page_permission_id": "20",
+    "page_id": "54",
+    "user_id": null,
+    "group_id": "25",
+    "permission_type": "edit",
+    "granted_at": "2025-04-06T20:16:42",
+    "granted_by_user_id": "51"
+  },
+  "21": {
+    "page_permission_id": "21",
+    "page_id": "54",
+    "user_id": "19",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-07-02T19:01:09",
+    "granted_by_user_id": "75"
+  },
+  "22": {
+    "page_permission_id": "22",
+    "page_id": "42",
+    "user_id": null,
+    "group_id": "6",
+    "permission_type": "delete",
+    "granted_at": "2024-10-01T23:17:53",
+    "granted_by_user_id": "69"
+  },
+  "23": {
+    "page_permission_id": "23",
+    "page_id": "42",
+    "user_id": "10",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-06-20T22:47:18",
+    "granted_by_user_id": "79"
+  },
+  "24": {
+    "page_permission_id": "24",
+    "page_id": "42",
+    "user_id": "92",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2025-02-11T05:12:30",
+    "granted_by_user_id": "3"
+  },
+  "25": {
+    "page_permission_id": "25",
+    "page_id": "42",
+    "user_id": null,
+    "group_id": "22",
+    "permission_type": "admin",
+    "granted_at": "2025-01-24T08:20:40",
+    "granted_by_user_id": "74"
+  },
+  "26": {
+    "page_permission_id": "26",
+    "page_id": "97",
+    "user_id": "54",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-02-27T06:41:03",
+    "granted_by_user_id": "65"
+  },
+  "27": {
+    "page_permission_id": "27",
+    "page_id": "97",
+    "user_id": "92",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-04-03T08:27:15",
+    "granted_by_user_id": "42"
+  },
+  "28": {
+    "page_permission_id": "28",
+    "page_id": "73",
+    "user_id": "25",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-09T16:02:51",
+    "granted_by_user_id": "83"
+  },
+  "29": {
+    "page_permission_id": "29",
+    "page_id": "73",
+    "user_id": "45",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-12-30T08:58:31",
+    "granted_by_user_id": "79"
+  },
+  "30": {
+    "page_permission_id": "30",
+    "page_id": "73",
+    "user_id": "84",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-03-24T01:15:40",
+    "granted_by_user_id": "45"
+  },
+  "31": {
+    "page_permission_id": "31",
+    "page_id": "62",
+    "user_id": "10",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-09-24T07:25:08",
+    "granted_by_user_id": "52"
+  },
+  "32": {
+    "page_permission_id": "32",
+    "page_id": "62",
+    "user_id": "9",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-03-23T13:51:09",
+    "granted_by_user_id": "92"
+  },
+  "33": {
+    "page_permission_id": "33",
+    "page_id": "62",
+    "user_id": "38",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-11-14T09:16:38",
+    "granted_by_user_id": "44"
+  },
+  "34": {
+    "page_permission_id": "34",
+    "page_id": "62",
+    "user_id": "95",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2025-01-22T16:09:38",
+    "granted_by_user_id": "75"
+  },
+  "35": {
+    "page_permission_id": "35",
+    "page_id": "98",
+    "user_id": "59",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2025-01-09T11:28:56",
+    "granted_by_user_id": "35"
+  },
+  "36": {
+    "page_permission_id": "36",
+    "page_id": "98",
+    "user_id": "78",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-08-24T06:45:34",
+    "granted_by_user_id": "8"
+  },
+  "37": {
+    "page_permission_id": "37",
+    "page_id": "98",
+    "user_id": "24",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-02-14T09:04:02",
+    "granted_by_user_id": "62"
+  },
+  "38": {
+    "page_permission_id": "38",
+    "page_id": "98",
+    "user_id": "41",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-04-03T16:15:15",
+    "granted_by_user_id": "17"
+  },
+  "39": {
+    "page_permission_id": "39",
+    "page_id": "74",
+    "user_id": "33",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2025-04-02T05:42:10",
+    "granted_by_user_id": "46"
+  },
+  "40": {
+    "page_permission_id": "40",
+    "page_id": "78",
+    "user_id": null,
+    "group_id": "10",
+    "permission_type": "view",
+    "granted_at": "2025-08-11T03:16:25",
+    "granted_by_user_id": "13"
+  },
+  "41": {
+    "page_permission_id": "41",
+    "page_id": "22",
+    "user_id": null,
+    "group_id": "30",
+    "permission_type": "admin",
+    "granted_at": "2025-07-11T17:43:49",
+    "granted_by_user_id": "79"
+  },
+  "42": {
+    "page_permission_id": "42",
+    "page_id": "22",
+    "user_id": null,
+    "group_id": "21",
+    "permission_type": "view",
+    "granted_at": "2025-03-21T18:10:50",
+    "granted_by_user_id": "99"
+  },
+  "43": {
+    "page_permission_id": "43",
+    "page_id": "22",
+    "user_id": null,
+    "group_id": "14",
+    "permission_type": "delete",
+    "granted_at": "2025-01-12T22:48:33",
+    "granted_by_user_id": "74"
+  },
+  "44": {
+    "page_permission_id": "44",
+    "page_id": "22",
+    "user_id": null,
+    "group_id": "20",
+    "permission_type": "admin",
+    "granted_at": "2024-12-20T10:40:53",
+    "granted_by_user_id": "22"
+  },
+  "45": {
+    "page_permission_id": "45",
+    "page_id": "52",
+    "user_id": "45",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-06-02T05:32:03",
+    "granted_by_user_id": "46"
+  },
+  "46": {
+    "page_permission_id": "46",
+    "page_id": "34",
+    "user_id": "93",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2025-03-31T07:22:48",
+    "granted_by_user_id": "32"
+  },
+  "47": {
+    "page_permission_id": "47",
+    "page_id": "28",
+    "user_id": "54",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2024-12-27T20:01:30",
+    "granted_by_user_id": "27"
+  },
+  "48": {
+    "page_permission_id": "48",
+    "page_id": "16",
+    "user_id": "47",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-09-30T12:18:21",
+    "granted_by_user_id": "27"
+  },
+  "49": {
+    "page_permission_id": "49",
+    "page_id": "16",
+    "user_id": null,
+    "group_id": "29",
+    "permission_type": "view",
+    "granted_at": "2024-11-28T17:46:41",
+    "granted_by_user_id": "43"
+  },
+  "50": {
+    "page_permission_id": "50",
+    "page_id": "16",
+    "user_id": "100",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-01-06T11:40:32",
+    "granted_by_user_id": "8"
+  },
+  "51": {
+    "page_permission_id": "51",
+    "page_id": "39",
+    "user_id": "90",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-08-08T15:34:07",
+    "granted_by_user_id": "51"
+  },
+  "52": {
+    "page_permission_id": "52",
+    "page_id": "39",
+    "user_id": "38",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2024-11-21T14:24:47",
+    "granted_by_user_id": "66"
+  },
+  "53": {
+    "page_permission_id": "53",
+    "page_id": "26",
+    "user_id": "43",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2024-10-11T18:38:06",
+    "granted_by_user_id": "67"
+  },
+  "54": {
+    "page_permission_id": "54",
+    "page_id": "47",
+    "user_id": "59",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-07-11T03:57:09",
+    "granted_by_user_id": "39"
+  },
+  "55": {
+    "page_permission_id": "55",
+    "page_id": "47",
+    "user_id": "88",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-06-15T05:20:46",
+    "granted_by_user_id": "43"
+  },
+  "56": {
+    "page_permission_id": "56",
+    "page_id": "47",
+    "user_id": null,
+    "group_id": "14",
+    "permission_type": "admin",
+    "granted_at": "2025-02-09T03:43:32",
+    "granted_by_user_id": "64"
+  },
+  "57": {
+    "page_permission_id": "57",
+    "page_id": "40",
+    "user_id": "24",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2024-09-24T19:58:22",
+    "granted_by_user_id": "37"
+  },
+  "58": {
+    "page_permission_id": "58",
+    "page_id": "18",
+    "user_id": "64",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-03-05T21:17:50",
+    "granted_by_user_id": "86"
+  },
+  "59": {
+    "page_permission_id": "59",
+    "page_id": "18",
+    "user_id": "86",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2025-07-31T14:26:22",
+    "granted_by_user_id": "33"
+  },
+  "60": {
+    "page_permission_id": "60",
+    "page_id": "49",
+    "user_id": null,
+    "group_id": "25",
+    "permission_type": "admin",
+    "granted_at": "2025-01-23T17:35:58",
+    "granted_by_user_id": "92"
+  },
+  "61": {
+    "page_permission_id": "61",
+    "page_id": "49",
+    "user_id": null,
+    "group_id": "30",
+    "permission_type": "view",
+    "granted_at": "2024-10-21T15:25:15",
+    "granted_by_user_id": "48"
+  },
+  "62": {
+    "page_permission_id": "62",
+    "page_id": "49",
+    "user_id": "84",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2024-12-14T06:13:30",
+    "granted_by_user_id": "2"
+  },
+  "63": {
+    "page_permission_id": "63",
+    "page_id": "27",
+    "user_id": null,
+    "group_id": "21",
+    "permission_type": "view",
+    "granted_at": "2024-09-14T03:06:38",
+    "granted_by_user_id": "54"
+  },
+  "64": {
+    "page_permission_id": "64",
+    "page_id": "27",
+    "user_id": "95",
+    "group_id": null,
+    "permission_type": "admin",
+    "granted_at": "2025-02-11T07:24:50",
+    "granted_by_user_id": "10"
+  },
+  "65": {
+    "page_permission_id": "65",
+    "page_id": "27",
+    "user_id": "7",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-01-10T11:26:05",
+    "granted_by_user_id": "48"
+  },
+  "66": {
+    "page_permission_id": "66",
+    "page_id": "45",
+    "user_id": "13",
+    "group_id": null,
+    "permission_type": "edit",
+    "granted_at": "2025-06-28T01:29:48",
+    "granted_by_user_id": "17"
+  },
+  "67": {
+    "page_permission_id": "67",
+    "page_id": "45",
+    "user_id": "57",
+    "group_id": null,
+    "permission_type": "delete",
+    "granted_at": "2025-08-30T19:46:06",
+    "granted_by_user_id": "40"
+  },
+  "68": {
+    "page_permission_id": "68",
+    "page_id": "45",
+    "user_id": "93",
+    "group_id": null,
+    "permission_type": "view",
+    "granted_at": "2025-03-10T08:02:06",
+    "granted_by_user_id": "43"
+  }
+}

@@ -1,0 +1,1256 @@
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class AddComment(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], page_id: str, requesting_user_id: str,
+               comment_text: str, parent_comment_id: Optional[str] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        pages = data.get("pages", {})
+        users = data.get("users", {})
+        comments = data.get("comments", {})
+        spaces = data.get("spaces", {})
+        space_permissions = data.get("space_permissions", {})
+        page_permissions = data.get("page_permissions", {})
+        
+        # Validate page exists
+        if str(page_id) not in pages:
+            return json.dumps({"success": False, "error": f"Page {page_id} not found"})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"success": False, "error": f"User {requesting_user_id} not found"})
+        
+        # Validate parent comment if provided
+        if parent_comment_id and str(parent_comment_id) not in comments:
+            return json.dumps({"success": False, "error": f"Parent comment {parent_comment_id} not found"})
+        
+        page = pages[str(page_id)]
+        user = users[str(requesting_user_id)]
+        space_id = page.get("space_id")
+        
+        # Check permissions - user needs view permission to comment
+        has_permission = False
+        
+        # Check if user is Platform Owner
+        if user.get("role") == "PlatformOwner":
+            has_permission = True
+        
+        # Check page-level permissions
+        else:
+            for perm in page_permissions.values():
+                if (perm.get("page_id") == page_id and 
+                    perm.get("user_id") == requesting_user_id and 
+                    perm.get("permission_type") in ["view", "edit", "admin"]):
+                    has_permission = True
+                    break
+        
+        # Check space-level permissions if no page-level permissions
+        if not has_permission and space_id:
+            for perm in space_permissions.values():
+                if (perm.get("space_id") == space_id and 
+                    perm.get("user_id") == requesting_user_id and 
+                    perm.get("permission_type") in ["view", "contribute", "moderate"]):
+                    has_permission = True
+                    break
+        
+        if not has_permission:
+            return json.dumps({"success": False, "error": "Insufficient permissions to comment on page"})
+        
+        # Calculate thread level
+        thread_level = 0
+        if parent_comment_id:
+            parent_comment = comments[str(parent_comment_id)]
+            thread_level = parent_comment.get("thread_level", 0) + 1
+        
+        # Create comment
+        comment_id = str(generate_id(comments))
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_comment = {
+            "comment_id": int(comment_id),
+            "page_id": page_id,
+            "parent_comment_id": parent_comment_id,
+            "content": comment_text,
+            "content_format": "wiki",
+            "status": "active",
+            "thread_level": thread_level,
+            "created_at": timestamp,
+            "updated_at": timestamp,
+            "created_by_user_id": requesting_user_id
+        }
+        
+        comments[comment_id] = new_comment
+        
+        return json.dumps({
+            "comment_id": comment_id,
+            "success": True
+        })
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_comment",
+                "description": "Add a comment to a page",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "page_id": {"type": "string", "description": "ID of the page to comment on"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user adding the comment"},
+                        "comment_text": {"type": "string", "description": "Content of the comment"},
+                        "parent_comment_id": {"type": "string", "description": "ID of parent comment if replying (optional)"}
+                    },
+                    "required": ["page_id", "requesting_user_id", "comment_text"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class AddPermission(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], requesting_user_id: str,
+               permission_type: str, space_id: Optional[str] = None, 
+               page_id: Optional[str] = None, target_user_id: str = None, group_id: Optional[str] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> str:
+            if not table:
+                return "1"
+            return str(max(int(k) for k in table.keys()) + 1)
+        
+        users = data.get("users", {})
+        spaces = data.get("spaces", {})
+        pages = data.get("pages", {})
+        groups = data.get("groups", {})
+        space_permissions = data.get("space_permissions", {})
+        page_permissions = data.get("page_permissions", {})
+        
+        # Validate requesting user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": "Requesting user not found"})
+        
+        # Validate target user exists (unless adding group permission)
+        if target_user_id and str(target_user_id) not in users:
+            return json.dumps({"error": "Target user not found"})
+        
+        # Validate group exists (if group permission)
+        if group_id and str(group_id) not in groups:
+            return json.dumps({"error": "Group not found"})
+        
+        requesting_user = users[str(requesting_user_id)]
+        requesting_user_role = requesting_user.get("role", "User")
+        
+        # Authority verification
+        def has_permission_authority(requesting_role: str, space_id: str = None, page_id: str = None) -> bool:
+            # Platform Owner can manage any permissions
+            if requesting_role == "PlatformOwner":
+                return True
+            
+            # Space Administrator can manage permissions in their space
+            if space_id:
+                for perm in space_permissions.values():
+                    if (perm.get("user_id") == requesting_user_id and 
+                        perm.get("space_id") == space_id and 
+                        perm.get("permission_type") == "moderate"):
+                        return True
+            
+            # Content Owner can manage permissions on their page
+            if page_id:
+                for perm in page_permissions.values():
+                    if (perm.get("user_id") == requesting_user_id and 
+                        perm.get("page_id") == page_id and 
+                        perm.get("permission_type") == "admin"):
+                        return True
+                
+                # Check if user created the page
+                if str(page_id) in pages:
+                    page = pages[str(page_id)]
+                    if page.get("created_by_user_id") == requesting_user_id:
+                        return True
+            
+            return False
+        
+        if not has_permission_authority(requesting_user_role, space_id, page_id):
+            return json.dumps({"error": "Insufficient authority to add permissions"})
+        
+        # Validate permission type
+        if space_id:
+            valid_space_permissions = ["view", "contribute", "moderate"]
+            if permission_type not in valid_space_permissions:
+                return json.dumps({"error": f"Invalid space permission type. Must be one of {valid_space_permissions}"})
+            
+            # Validate space exists
+            if str(space_id) not in spaces:
+                return json.dumps({"error": "Space not found"})
+            
+            # Check if permission already exists
+            for perm in space_permissions.values():
+                if (perm.get("user_id") == target_user_id and 
+                    perm.get("group_id") == group_id and
+                    perm.get("space_id") == space_id and 
+                    perm.get("permission_type") == permission_type):
+                    return json.dumps({"error": "Permission already exists"})
+            
+            # Create space permission
+            permission_id = generate_id(space_permissions)
+            timestamp = "2025-10-01T00:00:00"
+            
+            new_permission = {
+                "space_permission_id": permission_id,
+                "space_id": space_id,
+                "user_id": target_user_id,
+                "group_id": group_id,
+                "permission_type": permission_type,
+                "granted_at": timestamp,
+                "granted_by_user_id": requesting_user_id
+            }
+            
+            space_permissions[permission_id] = new_permission
+            return json.dumps({
+                "permission_id": permission_id,
+                "success": True,
+                "permission_type": "space",
+                "granted_to": "user" if target_user_id else "group"
+            })
+        
+        elif page_id:
+            valid_page_permissions = ["view", "create", "edit", "delete", "admin"]
+            if permission_type not in valid_page_permissions:
+                return json.dumps({"error": f"Invalid page permission type. Must be one of {valid_page_permissions}"})
+            
+            # Validate page exists
+            if str(page_id) not in pages:
+                return json.dumps({"error": "Page not found"})
+            
+            # Check if permission already exists
+            for perm in page_permissions.values():
+                if (perm.get("user_id") == target_user_id and 
+                    perm.get("group_id") == group_id and
+                    perm.get("page_id") == page_id and 
+                    perm.get("permission_type") == permission_type):
+                    return json.dumps({"error": "Permission already exists"})
+            
+            # Create page permission
+            permission_id = generate_id(page_permissions)
+            timestamp = "2025-10-01T00:00:00"
+            
+            new_permission = {
+                "page_permission_id": permission_id,
+                "page_id": page_id,
+                "user_id": target_user_id,
+                "group_id": group_id,
+                "permission_type": permission_type,
+                "granted_at": timestamp,
+                "granted_by_user_id": requesting_user_id
+            }
+            
+            page_permissions[permission_id] = new_permission
+            return json.dumps({
+                "permission_id": permission_id,
+                "success": True,
+                "permission_type": "page",
+                "granted_to": "user" if target_user_id else "group"
+            })
+        
+        else:
+            return json.dumps({"error": "Must specify either space_id or page_id"})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_permission",
+                "description": "Add a permission for a user or group on a space or page",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "target_user_id": {"type": "string", "description": "ID of the user to grant permission to (required if not group permission)"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user requesting to add the permission"},
+                        "permission_type": {"type": "string", "description": "Type of permission (space: view/contribute/moderate, page: view/create/edit/delete/admin)"},
+                        "space_id": {"type": "string", "description": "ID of the space (for space permissions)"},
+                        "page_id": {"type": "string", "description": "ID of the page (for page permissions)"},
+                        "group_id": {"type": "string", "description": "ID of the group (for group permissions instead of user)"}
+                    },
+                    "required": ["requesting_user_id", "permission_type"]
+                }
+            }
+        }import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class AddUserToGroup(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], group_id: str, target_user_id: str, requesting_user_id: str,
+               space_id: Optional[str] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        users = data.get("users", {})
+        groups = data.get("groups", {})
+        user_groups = data.get("user_groups", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate entities exist
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": f"Requesting user {requesting_user_id} not found"})
+        
+        if str(target_user_id) not in users:
+            return json.dumps({"error": f"Target user {target_user_id} not found"})
+        
+        if str(group_id) not in groups:
+            return json.dumps({"error": f"Group {group_id} not found"})
+        
+        user = users[str(requesting_user_id)]
+        
+        # Check if user is already in group
+        for ug in user_groups.values():
+            if ug.get("user_id") == target_user_id and ug.get("group_id") == group_id:
+                return json.dumps({"error": "User is already in the group"})
+        
+        # Check authority
+        has_authority = False
+        
+        # Platform Owner can add any user to any group
+        if user.get("role") == "PlatformOwner":
+            has_authority = True
+        
+        # Wiki Program Manager can add users to groups
+        elif user.get("role") == "WikiProgramManager":
+            has_authority = True
+        
+        # Space Administrator can add users to groups in their space
+        elif space_id:
+            for perm in space_permissions.values():
+                if (perm.get("space_id") == space_id and 
+                    perm.get("user_id") == requesting_user_id and 
+                    perm.get("permission_type") == "moderate"):
+                    has_authority = True
+                    break
+        
+        if not has_authority:
+            return json.dumps({"error": "Insufficient authority to add user to group"})
+        
+        # Add user to group
+        user_group_id = generate_id(user_groups)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_user_group = {
+            "user_group_id": user_group_id,
+            "user_id": target_user_id,
+            "group_id": group_id,
+            "added_at": timestamp,
+            "added_by_user_id": requesting_user_id
+        }
+        
+        user_groups[str(user_group_id)] = new_user_group
+        
+        return json.dumps({"success": True, "message": "User added to group"})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_user_to_group",
+                "description": "Add a user to a group",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "group_id": {"type": "string", "description": "ID of the group"},
+                        "target_user_id": {"type": "string", "description": "ID of the user to add"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user making the request"},
+                        "space_id": {"type": "string", "description": "Space ID if Space Administrator is making the request"}
+                    },
+                    "required": ["group_id", "target_user_id", "requesting_user_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class ArchiveSpace(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], space_id: str, requesting_user_id: str) -> str:
+        
+        spaces = data.get("spaces", {})
+        users = data.get("users", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate space exists
+        if str(space_id) not in spaces:
+            return json.dumps({"error": "Space not found"})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": "Requesting user not found"})
+        
+        user = users[str(requesting_user_id)]
+        user_role = user.get("role", "User")
+        space = spaces[str(space_id)]
+        
+        # Check if user has space admin permissions
+        has_space_admin = False
+        for perm in space_permissions.values():
+            if (perm.get("space_id") == space_id and 
+                perm.get("user_id") == requesting_user_id and
+                perm.get("permission_type") == "moderate"):
+                has_space_admin = True
+                break
+        
+        # Authority verification - Platform Owner or Space Administrator
+        if user_role not in ["PlatformOwner"] and not has_space_admin:
+            return json.dumps({"error": "Insufficient authority to archive space"})
+        
+        # Archive the space
+        timestamp = "2025-10-01T00:00:00"
+        space["status"] = "archived"
+        space["updated_at"] = timestamp
+        
+        return json.dumps({"success": True, "message": "Space archived", "status": "read-only"})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "archive_space",
+                "description": "Archive a space making it read-only",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "space_id": {"type": "string", "description": "ID of the space to archive"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user requesting archival"}
+                    },
+                    "required": ["space_id", "requesting_user_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class AttachFile(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], target_type: str, target_id: str, requesting_user_id: str,
+               file_name: str, file_content: bytes, file_size_bytes: int) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        users = data.get("users", {})
+        pages = data.get("pages", {})
+        comments = data.get("comments", {})
+        attachments = data.get("attachments", {})
+        page_permissions = data.get("page_permissions", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": f"User {requesting_user_id} not found"})
+        
+        # Validate target type
+        if target_type not in ["page", "comment"]:
+            return json.dumps({"error": "Target type must be 'page' or 'comment'"})
+        
+        # Validate target exists and check permissions
+        if target_type == "page":
+            if str(target_id) not in pages:
+                return json.dumps({"error": f"Page {target_id} not found"})
+            
+            page = pages[str(target_id)]
+            space_id = page.get("space_id")
+            
+            # Check if user can edit the page
+            has_permission = False
+            
+            # Check page permissions
+            for perm in page_permissions.values():
+                if (perm.get("page_id") == target_id and 
+                    perm.get("user_id") == requesting_user_id and 
+                    perm.get("permission_type") in ["edit", "admin"]):
+                    has_permission = True
+                    break
+            
+            # Check space permissions
+            if not has_permission:
+                for perm in space_permissions.values():
+                    if (perm.get("space_id") == space_id and 
+                        perm.get("user_id") == requesting_user_id and 
+                        perm.get("permission_type") in ["contribute", "moderate"]):
+                        has_permission = True
+                        break
+            
+            if not has_permission:
+                return json.dumps({"error": "Insufficient permissions to attach file to page"})
+        
+        elif target_type == "comment":
+            if str(target_id) not in comments:
+                return json.dumps({"error": f"Comment {target_id} not found"})
+            
+            comment = comments[str(target_id)]
+            if comment.get("created_by_user_id") != requesting_user_id:
+                return json.dumps({"error": "Can only attach files to your own comments"})
+        
+        # Create attachment
+        attachment_id = generate_id(attachments)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_attachment = {
+            "attachment_id": attachment_id,
+            "page_id": target_id if target_type == "page" else None,
+            "comment_id": target_id if target_type == "comment" else None,
+            "filename": file_name,
+            "original_filename": file_name,
+            "mime_type": "application/octet-stream",
+            "file_size": file_size_bytes,
+            "storage_path": f"/attachments/{attachment_id}/{file_name}",
+            "storage_type": "local",
+            "version": 1,
+            "created_at": timestamp,
+            "uploaded_by_user_id": requesting_user_id
+        }
+        
+        attachments[str(attachment_id)] = new_attachment
+        
+        return json.dumps({"attachment_id": str(attachment_id), "success": True})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "attach_file",
+                "description": "Attach a file to a page or comment",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "target_type": {"type": "string", "description": "Type of target (page or comment)"},
+                        "target_id": {"type": "string", "description": "ID of the page or comment"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user attaching the file"},
+                        "file_name": {"type": "string", "description": "Name of the file"},
+                        "file_content": {"type": "string", "description": "File content"},
+                        "file_size_bytes": {"type": "integer", "description": "Size of file in bytes"}
+                    },
+                    "required": ["target_type", "target_id", "requesting_user_id", "file_name", "file_content", "file_size_bytes"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional, List
+from tau_bench.envs.tool import Tool
+
+class CreatePage(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], page_title: str, space_id: str, requesting_user_id: str,
+               parent_page_id: Optional[str] = None, content: Optional[str] = None,
+               labels: Optional[List[str]] = None, template_id: Optional[str] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> str:
+            if not table:
+                return "1"
+            return str(max(int(k) for k in table.keys()) + 1)
+        
+        pages = data.get("pages", {})
+        spaces = data.get("spaces", {})
+        users = data.get("users", {})
+        space_permissions = data.get("space_permissions", {})
+        page_permissions = data.get("page_permissions", {})
+        page_labels = data.get("page_labels", {})
+        labels_table = data.get("labels", {})
+        
+        # Validate space exists
+        if str(space_id) not in spaces:
+            return json.dumps({"error": "Space not found"})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": "Requesting user not found"})
+        
+        # Validate parent page if specified
+        if parent_page_id and str(parent_page_id) not in pages:
+            return json.dumps({"error": "Parent page not found"})
+        
+        # Check user permissions - need contribute permission in space or create permission on parent page
+        has_permission = False
+        
+        # Check space permissions
+        for perm in space_permissions.values():
+            if (perm.get("space_id") == space_id and 
+                perm.get("user_id") == requesting_user_id and
+                perm.get("permission_type") in ["contribute", "moderate"]):
+                has_permission = True
+                break
+        
+        # Check parent page permissions if creating subpage
+        if parent_page_id and not has_permission:
+            for perm in page_permissions.values():
+                if (perm.get("page_id") == parent_page_id and 
+                    perm.get("user_id") == requesting_user_id and
+                    perm.get("permission_type") in ["create", "admin"]):
+                    has_permission = True
+                    break
+        
+        if not has_permission:
+            return json.dumps({"error": "Insufficient permissions to create page"})
+        
+        page_id = generate_id(pages)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_page = {
+            "page_id": page_id,
+            "space_id": space_id,
+            "title": page_title,
+            "content": content,
+            "content_format": "wiki",
+            "parent_page_id": parent_page_id,
+            "position": 0,
+            "status": "current",
+            "version": 1,
+            "template_id": template_id,
+            "created_at": timestamp,
+            "updated_at": timestamp,
+            "published_at": timestamp,
+            "created_by_user_id": requesting_user_id,
+            "last_modified_by_user_id": requesting_user_id
+        }
+        
+        pages[page_id] = new_page
+        
+        # Create content owner permission
+        owner_permission_id = generate_id(page_permissions)
+        owner_permission = {
+            "page_permission_id": owner_permission_id,
+            "page_id": page_id,
+            "user_id": requesting_user_id,
+            "group_id": None,
+            "permission_type": "admin",
+            "granted_at": timestamp,
+            "granted_by_user_id": requesting_user_id
+        }
+        
+        page_permissions[owner_permission_id] = owner_permission
+        
+        # Add labels if specified
+        if labels:
+            for label_name in labels:
+                # Find or create label
+                label_id = None
+                for lid, label in labels_table.items():
+                    if label.get("name") == label_name and label.get("space_id") == space_id:
+                        label_id = lid
+                        break
+                
+                if label_id:
+                    page_label_id = generate_id(page_labels)
+                    page_label = {
+                        "page_label_id": page_label_id,
+                        "page_id": page_id,
+                        "label_id": label_id,
+                        "added_at": timestamp,
+                        "added_by_user_id": requesting_user_id
+                    }
+                    page_labels[str(page_label_id)] = page_label
+        
+        return json.dumps({
+            "page_id": page_id,
+            "success": True,
+            "content_owner_id": requesting_user_id
+        })
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_page",
+                "description": "Create a new wiki page",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "page_title": {"type": "string", "description": "Title of the page"},
+                        "space_id": {"type": "string", "description": "ID of the target space"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user creating the page"},
+                        "parent_page_id": {"type": "string", "description": "ID of parent page if creating subpage"},
+                        "content": {"type": "string", "description": "Initial page content"},
+                        "labels": {"type": "array", "items": {"type": "string"}, "description": "Initial labels for the page"},
+                        "template_id": {"type": "string", "description": "Template to use for page creation"}
+                    },
+                    "required": ["page_title", "space_id", "requesting_user_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class CreateSpace(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], space_name: str, requesting_user_id: str,
+               space_type: Optional[str] = None, default_template_id: Optional[str] = None,
+               permission_set: Optional[Dict[str, Any]] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> str:
+            if not table:
+                return "1"
+            return str(max(int(k) for k in table.keys()) + 1)
+        
+        spaces = data.get("spaces", {})
+        users = data.get("users", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": "Requesting user not found"})
+        
+        user = users[str(requesting_user_id)]
+        user_role = user.get("role", "User")
+        
+        # Authority verification - only certain roles can create spaces
+        if user_role not in ["PlatformOwner", "WikiProgramManager"]:
+            return json.dumps({"error": "Insufficient authority to create space"})
+        
+        # Check if space name already exists
+        for space in spaces.values():
+            if space.get("name") == space_name:
+                return json.dumps({"error": "Space name already exists"})
+        
+        # Validate space type
+        if space_type and space_type not in ["global", "personal", "private"]:
+            return json.dumps({"error": "Invalid space type"})
+        
+        space_id = generate_id(spaces)
+        timestamp = "2025-10-01T00:00:00"
+        
+        # Generate space key from name (simplified)
+        space_key = space_name.lower().replace(" ", "_")[:50]
+        
+        new_space = {
+            "space_id": space_id,
+            "space_key": space_key,
+            "name": space_name,
+            "description": None,
+            "type": space_type or "global",
+            "status": "current",
+            "homepage_id": None,
+            "theme": None,
+            "logo_url": None,
+            "anonymous_access": False,
+            "public_signup": False,
+            "created_at": timestamp,
+            "updated_at": timestamp,
+            "created_by_user_id": requesting_user_id
+        }
+        
+        spaces[space_id] = new_space
+        
+        # Create space administrator permission
+        # admin_permission_id = generate_id(space_permissions)
+        # admin_permission = {
+        #     "space_permission_id": admin_permission_id,
+        #     "space_id": space_id,
+        #     "user_id": requesting_user_id,
+        #     "group_id": None,
+        #     "permission_type": "moderate",
+        #     "granted_at": timestamp,
+        #     "granted_by_user_id": requesting_user_id
+        # }
+        
+        # space_permissions[admin_permission_id] = admin_permission
+        
+        return json.dumps({
+            "space_id": space_id,
+            "success": True,
+            # "space_administrator_id": requesting_user_id
+        })
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_space",
+                "description": "Create a new wiki space",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "space_name": {"type": "string", "description": "Unique name for the space"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user requesting space creation"},
+                        "space_type": {"type": "string", "description": "Type of space (global, personal, private)"},
+                        "default_template_id": {"type": "string", "description": "Template to apply to the space"},
+                    },
+                    "required": ["space_name", "requesting_user_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class CreateTemplate(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], template_name: str, template_content: str,
+               requesting_user_id: str, is_global: bool, space_id: Optional[str] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        users = data.get("users", {})
+        spaces = data.get("spaces", {})
+        templates = data.get("page_templates", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"success": False, "error": f"User {requesting_user_id} not found"})
+        
+        user = users[str(requesting_user_id)]
+        
+        # Check permissions based on template type
+        has_permission = False
+        
+        if is_global:
+            # Only Platform Owner can create global templates
+            if user.get("role") == "PlatformOwner":
+                has_permission = True
+        else:
+            # For space-specific templates, validate space exists
+            if not space_id:
+                return json.dumps({"success": False, "error": "Space ID required for space-specific templates"})
+            
+            if str(space_id) not in spaces:
+                return json.dumps({"success": False, "error": f"Space {space_id} not found"})
+            
+            # Check if user is Platform Owner, WikiProgramManager, or Space Administrator
+            if user.get("role") in ["PlatformOwner", "WikiProgramManager"]:
+                has_permission = True
+            else:
+                # Check if user is Space Administrator
+                for perm in space_permissions.values():
+                    if (perm.get("space_id") == space_id and 
+                        perm.get("user_id") == requesting_user_id and 
+                        perm.get("permission_type") == "moderate"):
+                        has_permission = True
+                        break
+        
+        if not has_permission:
+            return json.dumps({"success": False, "error": "Insufficient permissions to create template"})
+        
+        # Create template
+        template_id = str(generate_id(templates))
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_template = {
+            "template_id": int(template_id),
+            "name": template_name,
+            "description": None,
+            "content": template_content,
+            "content_format": "wiki",
+            "space_id": space_id if not is_global else None,
+            "is_global": is_global,
+            "category": None,
+            "usage_count": 0,
+            "created_at": timestamp,
+            "updated_at": timestamp,
+            "created_by_user_id": requesting_user_id
+        }
+        
+        templates[template_id] = new_template
+        
+        scope = "global" if is_global else "space-specific"
+        
+        return json.dumps({
+            "template_id": template_id,
+            "success": True,
+            "scope": scope
+        })
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_template",
+                "description": "Create a new page template",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "template_name": {"type": "string", "description": "Name of the template"},
+                        "template_content": {"type": "string", "description": "Content of the template"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user creating the template"},
+                        "is_global": {"type": "boolean", "description": "True for global template, False for space-specific (True/False)"},
+                        "space_id": {"type": "string", "description": "Space ID if creating space-specific template (optional)"}
+                    },
+                    "required": ["template_name", "template_content", "requesting_user_id", "is_global"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class CreateUserGroup(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], group_name: str, requesting_user_id: str,
+               group_description: Optional[str] = None) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        users = data.get("users", {})
+        groups = data.get("groups", {})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": f"User {requesting_user_id} not found"})
+        
+        user = users[str(requesting_user_id)]
+        
+        # Check authority - only Platform Owner can create user groups
+        if user.get("role") != "PlatformOwner":
+            return json.dumps({"error": "Only Platform Owner can create user groups"})
+        
+        # Check if group name already exists
+        for group in groups.values():
+            if group.get("name").lower() == group_name.lower():
+                return json.dumps({"error": f"Group with name '{group_name}' already exists"})
+        
+        # Create group
+        group_id = generate_id(groups)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_group = {
+            "group_id": group_id,
+            "name": group_name,
+            "description": group_description,
+            "type": "custom",
+            "created_at": timestamp,
+            "created_by_user_id": requesting_user_id
+        }
+        
+        groups[str(group_id)] = new_group
+        
+        return json.dumps({"group_id": str(group_id), "success": True})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_user_group",
+                "description": "Create a new user group",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "group_name": {"type": "string", "description": "Name of the user group"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user creating the group"},
+                        "group_description": {"type": "string", "description": "Description of the group"},
+                    },
+                    "required": ["group_name", "requesting_user_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class DeleteFile(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], attachment_id: str, requesting_user_id: str,
+               target_type: str, target_id: str) -> str:
+        
+        users = data.get("users", {})
+        attachments = data.get("attachments", {})
+        pages = data.get("pages", {})
+        comments = data.get("comments", {})
+        page_permissions = data.get("page_permissions", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": f"User {requesting_user_id} not found"})
+        
+        # Validate attachment exists
+        if str(attachment_id) not in attachments:
+            return json.dumps({"error": f"Attachment {attachment_id} not found"})
+        
+        attachment = attachments[str(attachment_id)]
+        user = users[str(requesting_user_id)]
+        
+        # Check authority
+        has_authority = False
+        
+        # Platform Owner can delete any file
+        if user.get("role") == "PlatformOwner":
+            has_authority = True
+        
+        # File uploader can delete their own file
+        elif attachment.get("uploaded_by_user_id") == requesting_user_id:
+            has_authority = True
+        
+        # Page owner or admin can delete files on their page
+        elif target_type == "page" and str(target_id) in pages:
+            page = pages[str(target_id)]
+            space_id = page.get("space_id")
+            
+            # Check if user created the page
+            if page.get("created_by_user_id") == requesting_user_id:
+                has_authority = True
+            
+            # Check page admin permissions
+            if not has_authority:
+                for perm in page_permissions.values():
+                    if (perm.get("page_id") == target_id and 
+                        perm.get("user_id") == requesting_user_id and 
+                        perm.get("permission_type") == "admin"):
+                        has_authority = True
+                        break
+            
+            # Check space admin permissions
+            if not has_authority:
+                for perm in space_permissions.values():
+                    if (perm.get("space_id") == space_id and 
+                        perm.get("user_id") == requesting_user_id and 
+                        perm.get("permission_type") == "moderate"):
+                        has_authority = True
+                        break
+        
+        # Comment owner can delete files on their comment
+        elif target_type == "comment" and str(target_id) in comments:
+            comment = comments[str(target_id)]
+            if comment.get("created_by_user_id") == requesting_user_id:
+                has_authority = True
+        
+        if not has_authority:
+            return json.dumps({"error": "Insufficient authority to delete file"})
+        
+        # Delete attachment
+        del attachments[str(attachment_id)]
+        
+        return json.dumps({"success": True, "message": "File deleted"})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "delete_file",
+                "description": "Delete an attachment file",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "attachment_id": {"type": "string", "description": "ID of the attachment to delete"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user deleting the file"},
+                        "target_type": {"type": "string", "description": "Type of target (page or comment)"},
+                        "target_id": {"type": "string", "description": "ID of the page or comment"}
+                    },
+                    "required": ["attachment_id", "requesting_user_id", "target_type", "target_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class DeletePage(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], page_id: str, requesting_user_id: str,
+               content_owner_approval: Optional[bool] = None,
+               space_administrator_approval: Optional[bool] = None,
+               force_delete: bool = False) -> str:
+        
+        pages = data.get("pages", {})
+        users = data.get("users", {})
+        page_permissions = data.get("page_permissions", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate page exists
+        if str(page_id) not in pages:
+            return json.dumps({"error": "Page not found"})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"error": "Requesting user not found"})
+        
+        page = pages[str(page_id)]
+        space_id = page.get("space_id")
+        
+        # Check for child pages (dependencies)
+        child_pages = []
+        for p in pages.values():
+            if p.get("parent_page_id") == page_id:
+                child_pages.append(p)
+        
+        if child_pages and not force_delete:
+            return json.dumps({"error": "Cannot delete page with child pages. Use force_delete or remove child pages first"})
+        
+        # Check user permissions
+        has_delete_permission = False
+        is_content_owner = False
+        is_space_admin = False
+        
+        # Check if user is content owner (has admin permission on page)
+        for perm in page_permissions.values():
+            if (perm.get("page_id") == page_id and 
+                perm.get("user_id") == requesting_user_id and
+                perm.get("permission_type") == "admin"):
+                is_content_owner = True
+                break
+        
+        # Check if user is space administrator
+        for perm in space_permissions.values():
+            if (perm.get("space_id") == space_id and 
+                perm.get("user_id") == requesting_user_id and
+                perm.get("permission_type") == "moderate"):
+                is_space_admin = True
+                break
+        
+        # Check if user has delete permission
+        for perm in page_permissions.values():
+            if (perm.get("page_id") == page_id and 
+                perm.get("user_id") == requesting_user_id and
+                perm.get("permission_type") in ["delete", "admin"]):
+                has_delete_permission = True
+                break
+        
+        # Authority verification
+        if is_content_owner and content_owner_approval:
+            pass
+        elif is_space_admin and space_administrator_approval:
+            pass
+        elif has_delete_permission:
+            pass
+        else:
+            return json.dumps({"error": "Insufficient authority to delete page"})
+        
+        # Delete the page (mark as deleted)
+        timestamp = "2025-10-01T00:00:00"
+        page["status"] = "deleted"
+        page["updated_at"] = timestamp
+        
+        # Delete child pages if force_delete is True
+        if force_delete:
+            for child in child_pages:
+                child["status"] = "deleted"
+                child["updated_at"] = timestamp
+        
+        return json.dumps({"success": True, "message": "Page deleted"})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "delete_page",
+                "description": "Delete a wiki page with dependency checking",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "page_id": {"type": "string", "description": "ID of the page to delete"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user requesting deletion"},
+                        "content_owner_approval": {"type": "boolean", "description": "Content Owner approval if user is Content Owner (True/False)"},
+                        "space_administrator_approval": {"type": "boolean", "description": "Space Administrator approval if user is Space Admin (True/False)"},
+                        "force_delete": {"type": "boolean", "description": "Force deletion despite dependencies (True/False)"}
+                    },
+                    "required": ["page_id", "requesting_user_id"]
+                }
+            }
+        }
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class DeleteTemplate(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], template_id: str, requesting_user_id: str) -> str:
+        
+        users = data.get("users", {})
+        templates = data.get("page_templates", {})
+        space_permissions = data.get("space_permissions", {})
+        
+        # Validate template exists
+        if str(template_id) not in templates:
+            return json.dumps({"success": False, "error": f"Template {template_id} not found"})
+        
+        # Validate user exists
+        if str(requesting_user_id) not in users:
+            return json.dumps({"success": False, "error": f"User {requesting_user_id} not found"})
+        
+        template = templates[str(template_id)]
+        user = users[str(requesting_user_id)]
+        
+        # Check permissions
+        has_permission = False
+        
+        if template.get("is_global"):
+            # For global templates, only Platform Owner can delete
+            if user.get("role") == "PlatformOwner":
+                has_permission = True
+        else:
+            # For space-specific templates
+            space_id = template.get("space_id")
+            
+            # Check if user is Platform Owner or WikiProgramManager
+            if user.get("role") in ["PlatformOwner", "WikiProgramManager"]:
+                has_permission = True
+            
+            # Check if user is template creator
+            elif template.get("created_by_user_id") == requesting_user_id:
+                has_permission = True
+            
+            # Check if user is Space Administrator
+            elif space_id:
+                for perm in space_permissions.values():
+                    if (perm.get("space_id") == space_id and 
+                        perm.get("user_id") == requesting_user_id and 
+                        perm.get("permission_type") == "moderate"):
+                        has_permission = True
+                        break
+        
+        if not has_permission:
+            return json.dumps({"success": False, "error": "Insufficient permissions to delete template"})
+        
+        # Delete template directly
+        del templates[str(template_id)]
+        
+        return json.dumps({
+            "success": True,
+            "message": "Template deleted"
+        })
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "delete_template",
+                "description": "Delete a template",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "template_id": {"type": "string", "description": "ID of the template to delete"},
+                        "requesting_user_id": {"type": "string", "description": "ID of the user deleting the template"}
+                    },
+                    "required": ["template_id", "requesting_user_id"]
+                }
+            }
+        }
