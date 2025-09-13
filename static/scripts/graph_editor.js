@@ -1,4 +1,65 @@
 
+// Graph Editor Variables
+const nodes = new vis.DataSet([]);
+const edges = new vis.DataSet([]);
+let network = null;
+let graphExpanded = false;
+
+const defaultOptions = {
+    manipulation: {
+        enabled: true,
+        initiallyActive: true,
+        addNode: function (data, callback) {
+            const label = prompt("Enter node label:", data.id);
+            if (label !== null) {
+                data.label = label;
+                data.id = label;
+                callback(data);
+            }
+        },
+        addEdge: function (data, callback) {
+            if (data.from === data.to) {
+                alert("Self-loops not allowed.");
+                return;
+            }
+            const label = prompt("Enter edge connection (input->output):", "");
+            if (label !== null && label !== '') {
+                data.label = label;
+            }
+            callback(data);
+        },
+        editNode: function (data, callback) {
+            const label = prompt("Edit node label:", data.label);
+            if (label !== null) {
+                data.label = label;
+                nodes.update({ id: data.id, label: label });
+                callback(data);
+            }
+        },
+        editEdge: function (data, callback) {
+            const label = prompt("Edit edge connection (input->output):", data.label);
+            if (label !== null) {
+                data.label = label;
+                callback(data);
+            }
+        },
+        deleteNode: true,
+        deleteEdge: true
+    },
+    nodes: {
+        shape: 'circle'
+    },
+    edges: { arrows: 'to' },
+    physics: false,
+    layout: { improvedLayout: false }
+};
+
+function createNetwork(options = defaultOptions) {
+    if (network) network.destroy();
+    const container = document.getElementById('network');
+    network = new vis.Network(container, { nodes, edges }, options);
+}
+
 function toggleGraphEditor() {
     const content = document.getElementById('graph-editor-content');
     const toggle = document.getElementById('graph-toggle');
