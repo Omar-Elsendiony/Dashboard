@@ -51,7 +51,7 @@ if not app.secret_key:
 # )
 
 # CORS configuration - be more specific in production
-cors = CORS(app, origins=["http://localhost:5000", "https://dashboard-omega-swart-74.vercel.app"], supports_credentials=True) 
+cors = CORS(app) 
 
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
