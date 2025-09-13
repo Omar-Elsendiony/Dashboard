@@ -16,7 +16,8 @@ gspread
 oauth2client
 openai
 anthropic
-
+flask-talisman
+flask-limiter
 # streamlit>=1.28.0
 # matplotlib>=3.7.0
 # networkx>=3.1
