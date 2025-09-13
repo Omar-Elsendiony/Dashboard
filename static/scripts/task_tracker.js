@@ -274,7 +274,10 @@ function generateTableData(element) {
                 discarded: 0,
                 pending_review: 0,
                 ready_to_merge: 0,
-                needs_changes: 0
+                needs_changes: 0,
+                expert_review_pending_tasks: 0,
+                expert_reject_tasks: 0,
+                expert_approved_tasks: 0
             };
         }
         if (task['Pull Request Status'] === 'Merged') {
@@ -289,6 +292,12 @@ function generateTableData(element) {
             groupedStatsData[actual_name].ready_to_merge++;
         } else if (task['Pull Request Status'] === 'needs changes') {
             groupedStatsData[actual_name].needs_changes++;
+        } else if (task['Pull Request Review'] === 'expert review pending') {
+            expert_review_pending_tasks++;
+        } else if (task['Pull Request Review'] === 'expert rejected') {
+            expert_reject_tasks++;
+        } else if (task['Pull Request Review'] === 'expert approved') {
+            expert_approved_tasks++;
         }
 
 
@@ -363,7 +372,9 @@ function generateTableData(element) {
         const pending_reviewPercent = totalTasks > 0 ? (stats.pending_review / totalTasks * 100).toFixed(1) : 0;
         const ready_to_mergePercent = totalTasks > 0 ? (stats.ready_to_merge / totalTasks * 100).toFixed(1) : 0;
         const needs_changesPercent = totalTasks > 0 ? (stats.needs_changes / totalTasks * 100).toFixed(1) : 0;
-
+        const expert_review_pendingPercent = totalTasks > 0 ? (stats.expert_review_pending_tasks / totalTasks * 100).toFixed(1) : 0;
+        const expert_rejectPercent = totalTasks > 0 ? (stats.expert_reject_tasks / totalTasks * 100).toFixed(1) : 0;
+        const expert_approvedPercent = totalTasks > 0 ? (stats.expert_approved_tasks / totalTasks * 100).toFixed(1) : 0;
 
         trainerStats.push({
             trainer: trainer,
@@ -380,7 +391,13 @@ function generateTableData(element) {
             ready_to_merge: stats.ready_to_merge,
             ready_to_mergePercent: parseFloat(ready_to_mergePercent),
             needs_changes: stats.needs_changes,
-            needs_changesPercent: parseFloat(needs_changesPercent)
+            needs_changesPercent: parseFloat(needs_changesPercent),
+            expert_review_pending: stats.expert_review_pending_tasks,   
+            expert_review_pendingPercent: parseFloat(expert_review_pendingPercent),
+            expert_reject: stats.expert_reject_tasks,
+            expert_rejectPercent: parseFloat(expert_rejectPercent),
+            expert_approved: stats.expert_approved_tasks,
+            expert_approvedPercent: parseFloat(expert_approvedPercent)
         });
     }
     return groupedData;
@@ -402,7 +419,10 @@ function renderTrainerStatsTable() {
         discarded: trainerStats.reduce((sum, trainer) => sum + trainer.discarded, 0),
         pending_review: trainerStats.reduce((sum, trainer) => sum + (trainer.pending_review || 0), 0),
         ready_to_merge: trainerStats.reduce((sum, trainer) => sum + (trainer.ready_to_merge || 0), 0),
-        needs_changes: trainerStats.reduce((sum, trainer) => sum + (trainer.needs_changes || 0), 0)
+        needs_changes: trainerStats.reduce((sum, trainer) => sum + (trainer.needs_changes || 0), 0),
+        expert_review_pending: trainerStats.reduce((sum, trainer) => sum + (trainer.expert_review_pending || 0), 0),
+        expert_reject: trainerStats.reduce((sum, trainer) => sum + (trainer.expert_reject || 0), 0),
+        expert_approved: trainerStats.reduce((sum, trainer) => sum + (trainer.expert_approved || 0), 0),
     };
 
     const totalTasks = totals.merged + totals.resubmitted + totals.discarded + totals.pending_review + totals.ready_to_merge + totals.needs_changes;
@@ -425,6 +445,12 @@ function renderTrainerStatsTable() {
                         <th class="percentage-stat">Ready to Merge %</th>
                         <th class="needs-changes-stat">Needs Changes</th>
                         <th class="percentage-stat">Needs Changes %</th>
+                        <th class="expert-review-pending-stat">Expert Review Pending</th>
+                        <th class="percentage-stat">Expert Review Pending %</th>
+                        <th class="expert-reject-stat">Expert Reject</th>
+                        <th class="percentage-stat">Expert Reject %</th>
+                        <th class="expert-approved-stat">Expert Approved</th>
+                        <th class="percentage-stat">Expert Approved %</th>
                     </tr>
                 </thead>
                 <tbody>`;
@@ -446,17 +472,25 @@ function renderTrainerStatsTable() {
                 <td class="percentage-stat">${trainer.ready_to_mergePercent.toFixed(1)}%</td>
                 <td class="needs-changes-stat">${trainer.needs_changes}</td>
                 <td class="percentage-stat">${trainer.needs_changesPercent.toFixed(1)}%</td>
+                <td class="expert-review-pending-stat">${trainer.expert_review_pending || 0}</td>
+                <td class="percentage-stat">${(trainer.expert_review_pendingPercent || 0).toFixed(1)}%</td>
+                <td class="expert-reject-stat">${trainer.expert_reject || 0}</td>
+                <td class="percentage-stat">${(trainer.expert_rejectPercent || 0).toFixed(1)}%</td>
+                <td class="expert-approved-stat">${trainer.expert_approved || 0}</td>
+                <td class="percentage-stat">${(trainer.expert_approvedPercent || 0).toFixed(1)}%</td>
             </tr>`;
     });
 
     // Add total row
     const totalMergedPercent = totalTasks > 0 ? (totals.merged / totalTasks * 100).toFixed(1) : 0;
-    const totalReworkPercent = totalTasks > 0 ? (totals.rework / totalTasks * 100).toFixed(1) : 0;
     const totalResubmittedPercent = totalTasks > 0 ? (totals.resubmitted / totalTasks * 100).toFixed(1) : 0;
     const totalDiscardedPercent = totalTasks > 0 ? (totals.discarded / totalTasks * 100).toFixed(1) : 0;
     const totalPendingReviewPercent = totalTasks > 0 ? (totals.pending_review / totalTasks * 100).toFixed(1) : 0;
     const totalReadyToMergePercent = totalTasks > 0 ? (totals.ready_to_merge / totalTasks * 100).toFixed(1) : 0;
     const totalNeedsChangesPercent = totalTasks > 0 ? (totals.needs_changes / totalTasks * 100).toFixed(1) : 0;
+    const totalExpertReviewPendingPercent = totalTasks > 0 ? (totals.expert_review_pending / totalTasks * 100).toFixed(1) : 0;
+    const totalExpertRejectPercent = totalTasks > 0 ? (totals.expert_reject / totalTasks * 100).toFixed(1) : 0;
+    const totalExpertApprovedPercent = totalTasks > 0 ? (totals.expert_approved / totalTasks * 100).toFixed(1) : 0;
 
     tableHTML += `
             <tr class="total-row">
@@ -473,6 +507,12 @@ function renderTrainerStatsTable() {
                 <td class="percentage-stat">${totalReadyToMergePercent}%</td>
                 <td class="needs-changes-stat">${totals.needs_changes}</td>
                 <td class="percentage-stat">${totalNeedsChangesPercent}%</td>
+                <td class="expert-review-pending-stat">${totals.expert_review_pending}</td>
+                <td class="percentage-stat">${totalExpertReviewPendingPercent}%</td>
+                <td class="expert-reject-stat">${totals.expert_reject}</td>
+                <td class="percentage-stat">${totalExpertRejectPercent}%</td>
+                <td class="expert-approved-stat">${totals.expert_approved}</td>
+                <td class="percentage-stat">${totalExpertApprovedPercent}%</td>
             </tr>
                 </tbody>
             </table>
@@ -724,6 +764,9 @@ function updateDomainAnalytics(current_domain) {
     pending_review_tasks = 0;
     needs_changes_tasks = 0;
     resubmitted_tasks = 0;
+    expert_review_pending_tasks = 0;
+    expert_reject_tasks = 0;
+    expert_approved_tasks = 0;
     for (const task of tasks_info) {
         if (task['Domain'] == current_domain && !tasks_occurred.has(task['Task'])) {
             tasks_completed += 1;
@@ -744,6 +787,15 @@ function updateDomainAnalytics(current_domain) {
             }
             if (task['Pull Request Status'] === 'resubmitted') {
                 resubmitted_tasks += 1;
+            }
+            if (task['Pull Request Review'] === 'expert review pending') {
+                expert_review_pending_tasks += 1;
+            }
+            if (task['Pull Request Review'] === 'expert rejected') {
+                expert_reject_tasks += 1;
+            }
+            if (task['Pull Request Review'] === 'expert approved') {
+                expert_approved_tasks += 1;
             }
             tasks_occurred.add(task['Task']);
         }
