@@ -153,5 +153,13 @@ img {
 }
 
 img[alt="Turing Logo"] {
-  width: 200px; 
+  width: 100px; 
+}
+
+.partition.left {
+  overflow: hidden;
+}
+
+.logo-container a {
+  text-align: start;
 }
