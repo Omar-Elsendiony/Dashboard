@@ -27,7 +27,6 @@ from modules.task_tracker import task_tracker_bp
 from modules.task_framework import task_framework_bp
 from dotenv import load_dotenv
 load_dotenv()
-# from modules.login import login_bp
 
 
 app = Flask(__name__)
@@ -35,21 +34,21 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY")
 if not app.secret_key:
     raise ValueError("FLASK_SECRET_KEY environment variable must be set")
 
-Talisman(app, 
-    force_https=True,
-    strict_transport_security=True,
-    content_security_policy={
-        'default-src': "'self'",
-        'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
-        'style-src': "'self' 'unsafe-inline'",
-        'img-src': "'self' data: https:",
-        'font-src': "'self' https:",
-        'connect-src': "'self' https:",
-        'frame-src': "'none'",
-        'object-src': "'none'",
-        'base-uri': "'self'"
-    }
-)
+# Talisman(app, 
+#     force_https=True,
+#     strict_transport_security=True,
+#     content_security_policy={
+#         'default-src': "'self'",
+#         'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
+#         'style-src': "'self' 'unsafe-inline'",
+#         'img-src': "'self' data: https:",
+#         'font-src': "'self' https:",
+#         'connect-src': "'self' https:",
+#         'frame-src': "'none'",
+#         'object-src': "'none'",
+#         'base-uri': "'self'"
+#     }
+# )
 
 # CORS configuration - be more specific in production
 cors = CORS(app, origins=["http://localhost:5000", "https://dashboard-omega-swart-74.vercel.app"], supports_credentials=True) 
@@ -105,8 +104,13 @@ def load_session_data():
 ######################## AUTHENTICATION WITH GOOGLE ########################
 
 # Configuration
-GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", None)
-GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", None)
+if "https://dashboard-omega-swart-74.vercel.app" in request.host:
+    GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", None)
+    GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", None)
+else:
+    GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID_2", None)
+    GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET_2", None)
+    
 GOOGLE_DISCOVERY_URL = (
     "https://accounts.google.com/.well-known/openid-configuration"
 )
