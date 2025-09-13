@@ -1,3 +1,4 @@
+
 function computeLineDiff(text1, text2) {
     const lines1 = text1.split('\n');
     const lines2 = text2.split('\n');

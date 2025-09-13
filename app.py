@@ -58,6 +58,16 @@ PUBLIC_ROUTES = {
     '/static',
 }
 
+REDIRECT_ROUTES = {
+    '/interface_connections',
+    '/instruction_validation',
+    '/instruction_relevant_actions_or_policies',
+    '/index',
+    '/tracker',
+    '/tasks-framework',
+    'db_utilities'
+}
+
 @app.before_request
 def load_session_data():
     g.environment = session.get("environment")
@@ -66,6 +76,9 @@ def load_session_data():
     
     if request.path.startswith('/static/') or request.path in ['static'] or request.path in PUBLIC_ROUTES or 'google' in request.path:
         return
+
+    if request.path in REDIRECT_ROUTES and not current_user.is_authenticated:
+        return redirect(url_for('index'))
 
     # if not current_user.is_authenticated:
     #     if request.path not in ['/', '/login', '/login/callback', '/logout']:
@@ -106,7 +119,7 @@ def index():
         return render_template('main.html')
     else:
         return render_template('login.html')
-    
+
 
 @lru_cache(maxsize=1)
 def get_google_provider_cfg():
@@ -116,7 +129,7 @@ def get_google_provider_cfg():
     except requests.RequestException as e:
         print(f"Failed to get Google provider config: {e}")
         return None
-    
+
 @app.route("/login")
 def login():
     # Find out what URL to hit for Google login
