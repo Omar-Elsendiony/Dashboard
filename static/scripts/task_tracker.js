@@ -728,7 +728,7 @@ function reloadTrackerData() {
             }
         }
         
-        // console.log('Tasks Info:', tasks_info);
+        console.log('Tasks Info:', tasks_info);
 
         // current_domain = tasks_info[0]['Domain'] // current domain is the last submitted domain as of now
         current_domain = 'finance' // current domain is the last submitted domain as of now
