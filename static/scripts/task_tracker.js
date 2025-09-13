@@ -293,11 +293,11 @@ function generateTableData(element) {
         } else if (task['Pull Request Status'] === 'needs changes') {
             groupedStatsData[actual_name].needs_changes++;
         } else if (task['Pull Request Review'] === 'expert review pending') {
-            expert_review_pending_tasks++;
+            groupedStatsData[actual_name].expert_review_pending_tasks++;
         } else if (task['Pull Request Review'] === 'expert rejected') {
-            expert_reject_tasks++;
+            groupedStatsData[actual_name].expert_reject_tasks++;
         } else if (task['Pull Request Review'] === 'expert approved') {
-            expert_approved_tasks++;
+            groupedStatsData[actual_name].expert_approved_tasks++;
         }
 
 
