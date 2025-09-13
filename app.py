@@ -19,8 +19,6 @@ from flask_login import (
     login_user,
     logout_user,
 )
-# Internal imports
-# from modules.login_utils.db import init_db_command
 from modules.login_utils.user import User
 from flask_talisman import Talisman
 
@@ -33,8 +31,25 @@ load_dotenv()
 
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
-# Talisman(app, force_https=False, strict_transport_security=True)
+app.secret_key = os.environ.get("FLASK_SECRET_KEY")
+if not app.secret_key:
+    raise ValueError("FLASK_SECRET_KEY environment variable must be set")
+
+Talisman(app, 
+    force_https=True,
+    strict_transport_security=True,
+    content_security_policy={
+        'default-src': "'self'",
+        'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
+        'style-src': "'self' 'unsafe-inline'",
+        'img-src': "'self' data: https:",
+        'font-src': "'self' https:",
+        'connect-src': "'self' https:",
+        'frame-src': "'none'",
+        'object-src': "'none'",
+        'base-uri': "'self'"
+    }
+)
 
 # CORS configuration - be more specific in production
 cors = CORS(app, origins=["http://localhost:5000", "https://dashboard-omega-swart-74.vercel.app"], supports_credentials=True) 
@@ -118,10 +133,10 @@ def load_user(user_id):
 
 @app.route("/", strict_slashes=False)
 def index():
-    # if current_user.is_authenticated:
-    return render_template('main.html')
-    # else:
-    #     return render_template('login.html')
+    if current_user.is_authenticated:
+        return render_template('main.html')
+    else:
+        return render_template('login.html')
 
 
 @lru_cache(maxsize=1)
@@ -387,5 +402,4 @@ def google_verification():
 
 if __name__ == "__main__":
     """ Main Function """
-    # app.run(ssl_context="adhoc")
     app.run()
