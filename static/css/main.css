@@ -44,20 +44,28 @@ body {
     display: flex;
     align-items: center;
     padding: 2rem;
+    background: url("{{ url_for('static', filename='images/home-page-image.avif') }}") no-repeat center center/cover;
 }
 
 .hero-container {
     height: 100vh;
-    max-width: 1200px;
+    /* max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem;
+    padding-bottom: 0%;
+    padding-right: 6rem;
     gap: 4rem;
-    align-items: center;
+    max-width: 800px;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     margin-bottom: 1.5rem;
@@ -218,7 +226,7 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .cards-grid {
@@ -226,6 +234,14 @@ body {
     }
 
     .functionalities-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-container {
+        padding: 0;
+    }
+
+    .hero-container p{
+        font-size: 0.9rem;
     }
 }

@@ -7,6 +7,8 @@
     <title>Turing Tooling</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
+
+
 <body>
     <header class="dashboard-header">
         <div class="logo">
@@ -15,20 +17,19 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Welcome to Turing <div id="amazon-word">Amazon</div> Tooling</h1>
-                <p>Turing Amazon Tooling is your comprehensive suite for managing and optimizing the Amazon agentic project workflow. Whether you're looking to streamline your processes, gain insights from your data, or enhance collaboration, Turing Amazon Tooling has you covered.</p>
-            </div>
+                <p>Streamline your Amazon agentic workflows with our comprehensive management platform. Optimize processes, extract actionable insights, and enhance team collaboration—all from a single, integrated dashboard.</p>            </div>
             <!-- <div class="hero-image">
                 <div class="turing-logo">
                     TURING
                 </div>
-            </div> -->
+            </div>
             <div>
                 <img src="{{ url_for('static', filename='images/amazon_logo.svg') }}" alt="Turing Logo" style="display: block; margin: 0 auto; width: 400px; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);">
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -96,10 +97,15 @@
 
             </div>
 
-            <div class="cta-section">
+            <!-- <div class="cta-section">
                 <a href="#" class="cta-button">Get Started with Turing Tooling</a>
-            </div>
+            </div> -->
         </div>
     </section>
+
+    <script>
+        document.getElementById('hero').style.backgroundImage = 
+            "url('{{ url_for('static', filename='images/home-page-image.avif') }}')";
+    </script>
 </body>
 </html>
