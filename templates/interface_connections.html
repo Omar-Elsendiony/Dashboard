@@ -4,273 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/svg-viewer.css') }}">
   <title>Interactive SVG Viewer</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: white;
-    }
-    
-    #container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-    
-    #svg-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    #svg-display {
-      max-width: 100%;
-      max-height: 100%;
-      transform-origin: 0 0;
-    }
-    
-    #controls {
-      position: absolute;
-      top: 40px;
-      left: 15px;
-      z-index: 100;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
-      padding: 10px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      color: white;
-    }
-    
-    button {
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      margin: 0 8px 8px 0;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    }
-    
-    button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-    }
-    
-    button:active {
-      transform: translateY(0);
-    }
-    
-    #file-input {
-      display: none;
-    }
-    
-    .file-input-label {
-      display: inline-block;
-      background: linear-gradient(135deg, #4CAF50, #45a049);
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      margin: 0 8px 8px 0;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-    }
-    
-    .file-input-label:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
-    }
-    
-    .file-input-label:active {
-      transform: translateY(0);
-    }
-    
-    #status {
-      margin-top: 15px;
-      font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.8);
-      font-style: italic;
-      padding: 8px 12px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-            .dashboard-header {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 1rem 2rem;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-  </style>
 </head>
 <body>
   <div id="container">
     <header class="dashboard-header">
-        <div class="logo">
-            <a href='/'><img id="image-logo" src="{{ url_for('static', filename='images/turing-logo-new.jpg') }}" alt="turing image"
-                style="width: 100px; scale: 2; display: block; margin: 0 auto;"></a>
-        </div>
+      <div class="logo">
+        <a href="/">
+          <img id="image-logo" src="{{ url_for('static', filename='images/turing-logo-new.jpg') }}" alt="Turing Logo">
+        </a>
+      </div>
     </header>
+    
     <div id="controls">
       <label for="file-input" class="file-input-label">📁 Load SVG</label>
-      <input type="file" id="file-input" accept=".svg">
-      <button id="zoom-in">🔍+ Zoom In</button>
-      <button id="zoom-out">🔍- Zoom Out</button>
-      <!-- <button id="reset-view">🔄 Reset View</button> -->
-      <!-- <div id="status">No file loaded</div> -->
+      <input type="file" id="file-input" accept=".svg" aria-label="Select SVG file">
+      <button id="zoom-in" aria-label="Zoom in">🔍+ Zoom In</button>
+      <button id="zoom-out" aria-label="Zoom out">🔍- Zoom Out</button>
+      <button id="reset-view" aria-label="Reset view">🔄 Reset View</button>
+      <div id="status" role="status" aria-live="polite">No file loaded</div>
     </div>
-    <div id="svg-container">
+    
+    <div id="svg-container" role="img" aria-label="SVG display area">
       <div id="svg-display"></div>
     </div>
   </div>
 
-  <script>
-    // Global variables
-    let currentScale = 1;
-    let offsetX = 0;
-    let offsetY = 0;
-    let isDragging = false;
-    let startX, startY;
-    let svgElement = null;
-    
-    // DOM elements
-    const svgDisplay = document.getElementById('svg-display');
-    const fileInput = document.getElementById('file-input');
-    const statusDisplay = document.getElementById('status');
-    const zoomInBtn = document.getElementById('zoom-in');
-    const zoomOutBtn = document.getElementById('zoom-out');
-    // const resetViewBtn = document.getElementById('reset-view');
-    const svgContainer = document.getElementById('svg-container');
-    
-    // Event listeners
-    fileInput.addEventListener('change', handleFileSelect);
-    zoomInBtn.addEventListener('click', () => zoom(1.2));
-    zoomOutBtn.addEventListener('click', () => zoom(0.8));
-    // resetViewBtn.addEventListener('click', resetView);
-    
-    // Mouse events for panning
-    svgContainer.addEventListener('mousedown', startDrag);
-    document.addEventListener('mousemove', drag);
-    document.addEventListener('mouseup', endDrag);
-    
-    // Touch events for mobile
-    svgContainer.addEventListener('touchstart', handleTouchStart);
-    svgContainer.addEventListener('touchmove', handleTouchMove);
-    svgContainer.addEventListener('touchend', handleTouchEnd);
-    
-    // Handle file selection
-    function handleFileSelect(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-      
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        svgDisplay.innerHTML = e.target.result;
-        svgElement = svgDisplay.querySelector('svg');
-        
-        if (svgElement) {
-          statusDisplay.textContent = `✅ Loaded: ${file.name}`;
-        } else {
-          statusDisplay.textContent = '❌ Error: Not a valid SVG file';
-        }
-      };
-      reader.readAsText(file);
-    }
-    
-    // Zoom function
-    function zoom(scaleFactor) {
-      currentScale *= scaleFactor;
-      updateTransform();
-    }
-    
-    // Reset view
-    function resetView() {
-      currentScale = 1;
-      offsetX = 0;
-      offsetY = 0;
-      updateTransform();
-    }
-    
-    // Update SVG transform
-    function updateTransform() {
-      svgDisplay.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${currentScale})`;
-    }
-    
-    // Dragging functions
-    function startDrag(e) {
-      if (!svgElement) return;
-      isDragging = true;
-      startX = e.clientX - offsetX;
-      startY = e.clientY - offsetY;
-      svgContainer.style.cursor = 'grabbing';
-    }
-    
-    function drag(e) {
-      if (!isDragging) return;
-      offsetX = e.clientX - startX;
-      offsetY = e.clientY - startY;
-      updateTransform();
-    }
-    
-    function endDrag() {
-      isDragging = false;
-      svgContainer.style.cursor = 'grab';
-    }
-    
-    // Touch event handlers
-    function handleTouchStart(e) {
-      if (!svgElement) return;
-      if (e.touches.length === 1) {
-        isDragging = true;
-        startX = e.touches[0].clientX - offsetX;
-        startY = e.touches[0].clientY - offsetY;
-      }
-      e.preventDefault();
-    }
-    
-    function handleTouchMove(e) {
-      if (!isDragging || e.touches.length !== 1) return;
-      offsetX = e.touches[0].clientX - startX;
-      offsetY = e.touches[0].clientY - startY;
-      updateTransform();
-      e.preventDefault();
-    }
-    
-    function handleTouchEnd() {
-      isDragging = false;
-    }
-    
-    // Initialize
-    svgContainer.style.cursor = 'grab';
-  </script>
+  <script src="{{ url_for('static', filename='js/svg-viewer.js') }}"></script>
 </body>
 </html>
