@@ -1,12 +1,12 @@
-@font-face {
+/* @font-face {
     font-family: 'MozillaHeadline-VariableFont_wdth,wght';
     src: url("{{ url_for('static', filename='fonts/MozillaHeadline-VariableFont_wdth,wght.ttf') }}") format('truetype')
-}
+} */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'MozillaHeadline-VariableFont_wdth,wght', sans-serif;
+    /* font-family: 'MozillaHeadline-VariableFont_wdth,wght', sans-serif; */
 }
 
 h1, h2 {
