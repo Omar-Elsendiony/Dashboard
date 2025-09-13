@@ -34,7 +34,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
-Talisman(app, force_https=False, strict_transport_security=True)
+# Talisman(app, force_https=False, strict_transport_security=True)
 
 # CORS configuration - be more specific in production
 cors = CORS(app) 
