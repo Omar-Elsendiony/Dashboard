@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="go-button-container">
-                    <button class="go-button" onclick="handleGo()">
+                    <button id="go-button" class="go-button">
                         🚀 GO
                     </button>
                 </div>
@@ -59,7 +59,7 @@
 
             <div id="actions">
                 <div class="add-action-container">
-                    <button class="add-action-button" onclick="addAction()">
+                    <button id="add-action-button" class="add-action-button">
                         +
                     </button>
                     <span class="add-action-text">Add Action</span>
@@ -72,18 +72,18 @@
                 <div class="import-export-container">
                     <div>
                         <input type="file" id="fileInput" accept=".json" class="hidden-file-input">
-                        <button class="import-button" onclick="importActions()">
+                        <button id="import-button" class="import-button">
                             Import Actions
                         </button>
                     </div>
 
                     <div>
-                        <button class="export-button" onclick="exportActions()">
+                        <button id="export-button" class="export-button">
                             Export Actions
                         </button>
                     </div>
                     <div>
-                        <button class="run-all-button" onclick="runAllActions()" id="run-all-btn">
+                        <button id="run-all-btn" class="run-all-button">
                             🚀 Run All Actions
                         </button>
                     </div>
@@ -92,7 +92,7 @@
 
             <!-- Difference between actions -->
             <div class="diff-container">
-                <div class="diff-header" onclick="toggleDiff()">
+                <div class="diff-header" id="diff-header">
                     <div class="diff-title">
                         Task Difference Analyzer
                     </div>
@@ -120,9 +120,9 @@
                     </div>
                     
                     <div class="controls-diff">
-                        <button class="button-diff" onclick="compareDiff()">🔍 Compare Texts</button>
-                        <button class="button-diff" onclick="clearAll()">🗑️ Clear All</button>
-                        <button class="button-diff" onclick="swapTexts()">🔄 Swap Texts</button>
+                        <button id="compare-button" class="button-diff">🔍 Compare Texts</button>
+                        <button id="clear-all-button" class="button-diff">🗑️ Clear All</button>
+                        <button id="swap-texts-button" class="button-diff">🔄 Swap Texts</button>
                     </div>
                     
                     <div class="stats stats-hidden" id="stats">
@@ -160,7 +160,7 @@
 
             <!-- Edge Creation Section -->
             <div class="edge-creation-container">
-                <div class="edge-creation-header" onclick="toggleEdgeCreation()">
+                <div class="edge-creation-header" id="edge-creation-header">
                     <div class="edge-creation-title">
                         Edge Creation Playground
                     </div>
@@ -176,7 +176,7 @@
 
             <!-- Graph Editor Section -->
             <div class="graph-editor-container">
-                <div class="graph-editor-header" onclick="toggleGraphEditor()">
+                <div class="graph-editor-header" id="graph-editor-header">
                     <div class="graph-editor-title">
                         Graph Editor Playground
                     </div>
@@ -186,13 +186,13 @@
                 </div>
                 <div class="graph-editor-content" id="graph-editor-content">
                     <div class="graph-controls">
-                        <button class="graph-import-button" onclick="importGraphJSON()">
+                        <button id="graph-import-button" class="graph-import-button">
                             📥 Import Graph
                         </button>
-                        <button class="graph-export-button" onclick="exportGraphJSON()">
+                        <button id="graph-export-button" class="graph-export-button">
                             📤 Export Graph
                         </button>
-                        <button class="graph-import-button" onclick="populateNodesFromActions()">
+                        <button id="populate-nodes-button" class="graph-import-button">
                             📝 Populate Nodes from Actions
                         </button>
                     </div>
@@ -202,7 +202,7 @@
             </div>
 
             <div class="save-button-container">
-                <button class="save-button" onclick="saveFilteredHTML()">
+                <button id="save-page-button" class="save-button">
                     Save Page
                 </button>
             </div>
@@ -210,30 +210,34 @@
     </div>
     
     <script>
-        /* function testClick() {
-            alert("Test button clicked!");
-            apis = document.querySelectorAll('.api-action')
+        // Event Listeners - implementations to be added
+        document.addEventListener('DOMContentLoaded', function() {
+            // Main action buttons
+            document.getElementById('go-button').addEventListener('click', handleGo);
+            document.getElementById('add-action-button').addEventListener('click', addAction);
+            document.getElementById('import-button').addEventListener('click', importActions);
+            document.getElementById('export-button').addEventListener('click', exportActions);
+            document.getElementById('run-all-btn').addEventListener('click', runAllActions);
             
-            actions = [];
-            for (const api of apis) {
-                action = {};
-                var api_name = api.getElementsByClassName("form-select")[0];
-                var api_name = api_name.options[api_name.selectedIndex].text;
-                action["name"] = api_name;
+            // Diff analyzer buttons
+            document.getElementById('diff-header').addEventListener('click', toggleDiff);
+            document.getElementById('compare-button').addEventListener('click', compareDiff);
+            document.getElementById('clear-all-button').addEventListener('click', clearAll);
+            document.getElementById('swap-texts-button').addEventListener('click', swapTexts);
+            
+            // Edge creation section
+            document.getElementById('edge-creation-header').addEventListener('click', toggleEdgeCreation);
+            
+            // Graph editor buttons
+            document.getElementById('graph-editor-header').addEventListener('click', toggleGraphEditor);
+            document.getElementById('graph-import-button').addEventListener('click', importGraphJSON);
+            document.getElementById('graph-export-button').addEventListener('click', exportGraphJSON);
+            document.getElementById('populate-nodes-button').addEventListener('click', populateNodesFromActions);
+            
+            // Save button
+            document.getElementById('save-page-button').addEventListener('click', saveFilteredHTML);
+        });
 
-                
-                const argumentsKeyValue = {};
-                const arguments = api.querySelectorAll('input');
-                arguments.forEach(argument => {
-                    const paramName = argument.dataset.param;
-                    argumentsKeyValue[paramName] = argument.value.trim();
-                });
-                action["arguments"] =argumentsKeyValue;
-
-                actions.push(action);
-            }
-            console.log("API actions:", actions);
-        } */
     </script>
 
     <script src="{{ url_for('static', filename='scripts/actions_processing.js') }}"></script>
