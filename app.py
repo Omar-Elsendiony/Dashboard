@@ -37,7 +37,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super-secret-key")
 Talisman(app, force_https=False, strict_transport_security=True)
 
 # CORS configuration - be more specific in production
-cors = CORS(app, origins=["https://dashboard-omega-swart-74.vercel.app"])  # Rep
+cors = CORS(app) 
 
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
