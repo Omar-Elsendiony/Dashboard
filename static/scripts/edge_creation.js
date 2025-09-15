@@ -14,6 +14,28 @@ function toggleEdgeCreation() {
         promptText.textContent = `
 I have a set of actions that are interconnected, and I need to see these connection in terms of edges represented in JSON format. The edges should be realistic and represent how the output(s) of one action connect to the input(s) of other actions. I am going to give you the instructions that will help you decide the edges as well as some example tasks that have the actions and their corresponding edges and your task is to generate for me the new set of edges for the actions I will present along with their number. Please, look at the things from logical perspective. If a value that is provided to an action is not present in the output of a previous action, then that value should come from the "instruction" node (which I will explain more later). You have to take care if it does come from the output of a previous action so you can create the edge from that action to the current action and do not mistakenly create an edge from the "instruction" node. Look multiple times in the output of the actions to be sure. Also, DO NOT REPEAT ANY EDGE. Please, follow the instructions below carefully.
 
+## General Instructions
+
+**Field-by-Field Verification Protocol:**
+- For each input parameter in every action, systematically check ALL previous action outputs to determine if that exact value exists
+- Do not assume multiple inputs come from the same source - verify each field individually
+- Only assign an input to "instruction" source AFTER confirming it does not exist in any prior action output
+- Create a mental checklist: "Does input X exist in output of action 1? Action 2? Action 3?" etc.
+
+**Complete Output Structure Analysis:**
+- Before creating any edges, thoroughly examine the full output structure of each action
+- Read through all fields, nested objects, and arrays in each output to understand what data is available
+- Look for exact value matches between action outputs and subsequent action inputs
+- Pay special attention to fields that might be easily overlooked
+- When you find a matching value, immediately note it as a potential connection before moving to the next action
+
+**Verification Before Assignment:**
+- Default assumption should be: "This input probably comes from a previous action output"
+- Only assign to "instruction" source as a last resort after systematic verification
+- Double-check any edge where multiple inputs come from "instruction" - this should be relatively rare
+
+These instructions enforce the systematic, methodical approach needed to avoid missing obvious connections between action outputs and inputs.
+
 ## Edge Mapping Instructions
 
 ### 1. **One-to-One Edge Rule**
