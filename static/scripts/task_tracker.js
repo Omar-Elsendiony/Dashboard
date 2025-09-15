@@ -209,21 +209,21 @@ function generateTableData(element) {
     if (element !== null && element !== undefined) {
         filterChanged = element.id
     }
-    // const domainFilter = document.getElementById('domainFilter').value;
-    if (filterChanged !== null && filterChanged === 'domainFilter') {
-        updateDomainAnalytics(domainFilter);
-    }
+    const domainFilter = document.getElementById('domainFilter').value;
+    // if (filterChanged !== null && filterChanged === 'domainFilter') {
+    //     updateDomainAnalytics(domainFilter);
+    // }
     const interfaceFilter = document.getElementById('interfaceFilter').value;
     
     // Get filter values
     const calibratorFilter = document.getElementById('calibratorFilter').value;
-    if (filterChanged !== null && filterChanged === 'calibratorFilter') {
-        calibratorFilterPreprocessing(calibratorFilter);
-    }
-    const podFilter = document.getElementById('podFilter').value;
-    if (filterChanged !== null && filterChanged === 'podFilter') {
-        podFilterPreprocessing(podFilter);
-    }
+    // if (filterChanged !== null && filterChanged === 'calibratorFilter') {
+    //     calibratorFilterPreprocessing(calibratorFilter);
+    // }
+    // const podFilter = document.getElementById('podFilter').value;
+    // if (filterChanged !== null && filterChanged === 'podFilter') {
+    //     podFilterPreprocessing(podFilter);
+    // }
 
     
 
@@ -245,8 +245,7 @@ function generateTableData(element) {
             (complexityFilter === 'all' || task['Complexity'] === complexityFilter) &&
             (domainFilter === 'all' || task['Domain'] === domainFilter) &&
             (calibratorFilter === 'all' || task['Calibrator'] === calibratorFilter) &&
-            (interfaceFilter === 'all' || task['Interface'] === interfaceFilter) &&
-            (weekFilter === 'all' || task['Week num'] === weekFilter);
+            (interfaceFilter === 'all' || task['Interface'] === interfaceFilter);
     });
 
     // Group by week, date, and user
@@ -848,16 +847,16 @@ function updateAnalytics(analytics) {
 
 // Function to apply filters
 function applyFilters(element) {
-    // if (element.id === 'calibratorFilter') {
-    //     calibratorFilterPreprocessing(element.value);
-    // }
-    // if (element.id === 'podFilter') {
-    //     podFilterPreprocessing(element.value);
-    // }
-    // if (element.id === 'domainFilter') {
-    //     // Also, add logic to handle the 'all' case here
-    //     updateDomainAnalytics(element.value);
-    // }
+    if (element.id === 'calibratorFilter') {
+        calibratorFilterPreprocessing(element.value);
+    }
+    if (element.id === 'podFilter') {
+        podFilterPreprocessing(element.value);
+    }
+    if (element.id === 'domainFilter') {
+        // Also, add logic to handle the 'all' case here
+        updateDomainAnalytics(element.value);
+    }
     renderTable(element);
     renderTrainerStatsTable();
 }
