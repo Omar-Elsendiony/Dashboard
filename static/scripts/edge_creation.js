@@ -12,7 +12,7 @@ function toggleEdgeCreation() {
         actions = getTaskActions()
         toggle.textContent = '▲';
         promptText.textContent = `
-I have a set of actions that are interconnected, and I need to see these connection in terms of edges represented in JSON format. The edges should be realistic and represent how the output(s) of one action connect to the input(s) of other actions. I am going to give you the instructions that will help you decide the edges as well as some example tasks that have the actions and their corresponding edges and your task is to generate for me the new set of edges for the actions I will present along with their number. Please, look at the things from logical perspective. If a value that is provided to an action is not present in the output of a previous action, then that value should come from the "instruction" node (which I will explain more later). You have to take care if it does come from the output of a previous action so you can create the edge from that action to the current action and do not mistakenly create an edge from the "instruction" node. Please, follow the instructions below carefully.
+I have a set of actions that are interconnected, and I need to see these connection in terms of edges represented in JSON format. The edges should be realistic and represent how the output(s) of one action connect to the input(s) of other actions. I am going to give you the instructions that will help you decide the edges as well as some example tasks that have the actions and their corresponding edges and your task is to generate for me the new set of edges for the actions I will present along with their number. Please, look at the things from logical perspective. If a value that is provided to an action is not present in the output of a previous action, then that value should come from the "instruction" node (which I will explain more later). You have to take care if it does come from the output of a previous action so you can create the edge from that action to the current action and do not mistakenly create an edge from the "instruction" node. Look multiple times in the output of the actions to be sure. Also, DO NOT REPEAT ANY EDGE. Please, follow the instructions below carefully.
 
 ## Edge Mapping Instructions
 
@@ -1014,7 +1014,7 @@ ${JSON.stringify(actions, null, 2)}
 `;
 
         // promptText.textContent = `Based on the following actions, create edges in JSON format. Actions: ${JSON.stringify(actions, null, 2)}`;
-        
+
     } else {
         content.classList.remove('expanded');
         toggle.textContent = '▼';
