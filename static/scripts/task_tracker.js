@@ -220,7 +220,7 @@ function generateTableData(element) {
     // if (filterChanged !== null && filterChanged === 'calibratorFilter') {
     //     calibratorFilterPreprocessing(calibratorFilter);
     // }
-    // const podFilter = document.getElementById('podFilter').value;
+    const podFilter = document.getElementById('podFilter').value;
     // if (filterChanged !== null && filterChanged === 'podFilter') {
     //     podFilterPreprocessing(podFilter);
     // }
@@ -238,7 +238,7 @@ function generateTableData(element) {
         } */
         // console.log('Filtering Task:', task['GitHub username'], '->', github_username_mapping[task['GitHub username'].toLowerCase()]);
         // console.log('trainer filter:', trainerFilter);
-
+        // return true;
         return (weekFilter === 'all' || task['Week num'] === weekFilter) &&
             (podFilter === 'all' || task['Lead'] === podFilter) &&
             (trainerFilter === 'all' || github_username_mapping[task['GitHub username'].toLowerCase()] !== undefined && github_username_mapping[task['GitHub username'].toLowerCase()].toLowerCase() === trainerFilter.toLowerCase()) &&
