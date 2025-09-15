@@ -209,21 +209,21 @@ function generateTableData(element) {
     if (element !== null && element !== undefined) {
         filterChanged = element.id
     }
-    const domainFilter = document.getElementById('domainFilter').value;
-    if (filterChanged !== null && filterChanged === 'domainFilter') {
-        updateDomainAnalytics(domainFilter);
-    }
+    // const domainFilter = document.getElementById('domainFilter').value;
+    // if (filterChanged !== null && filterChanged === 'domainFilter') {
+    //     updateDomainAnalytics(domainFilter);
+    // }
     const interfaceFilter = document.getElementById('interfaceFilter').value;
     
     // Get filter values
-    const calibratorFilter = document.getElementById('calibratorFilter').value;
-    if (filterChanged !== null && filterChanged === 'calibratorFilter') {
-        calibratorFilterPreprocessing(calibratorFilter);
-    }
-    const podFilter = document.getElementById('podFilter').value;
-    if (filterChanged !== null && filterChanged === 'podFilter') {
-        podFilterPreprocessing(podFilter);
-    }
+    // const calibratorFilter = document.getElementById('calibratorFilter').value;
+    // if (filterChanged !== null && filterChanged === 'calibratorFilter') {
+    //     calibratorFilterPreprocessing(calibratorFilter);
+    // }
+    // const podFilter = document.getElementById('podFilter').value;
+    // if (filterChanged !== null && filterChanged === 'podFilter') {
+    //     podFilterPreprocessing(podFilter);
+    // }
 
     
 
@@ -364,9 +364,10 @@ function generateTableData(element) {
     trainerStats = [];
     for (const trainer in groupedStatsData) {
         const stats = groupedStatsData[trainer];
-        const totalTasks = stats.merged + stats.resubmitted + stats.discarded + stats.pending_review + stats.ready_to_merge + stats.needs_changes;
+        const totalTasks = stats.merged + stats.resubmitted + stats.discarded + 
+                   stats.pending_review + stats.ready_to_merge + stats.needs_changes +
+                   stats.expert_review_pending_tasks + stats.expert_reject_tasks + stats.expert_approved_tasks;
         const mergedPercent = totalTasks > 0 ? (stats.merged / totalTasks * 100).toFixed(1) : 0;
-        const reworkPercent = totalTasks > 0 ? (stats.resubmitted / totalTasks * 100).toFixed(1) : 0;
         const resubmittedPercent = totalTasks > 0 ? (stats.resubmitted / totalTasks * 100).toFixed(1) : 0;
         const discardedPercent = totalTasks > 0 ? (stats.discarded / totalTasks * 100).toFixed(1) : 0;
         const pending_reviewPercent = totalTasks > 0 ? (stats.pending_review / totalTasks * 100).toFixed(1) : 0;
@@ -380,8 +381,6 @@ function generateTableData(element) {
             trainer: trainer,
             merged: stats.merged,
             mergedPercent: parseFloat(mergedPercent),
-            rework: stats.resubmitted,
-            reworkPercent: parseFloat(reworkPercent),
             resubmitted: stats.resubmitted,
             resubmittedPercent: parseFloat(resubmittedPercent),
             discarded: stats.discarded,
@@ -425,7 +424,7 @@ function renderTrainerStatsTable() {
         expert_approved: trainerStats.reduce((sum, trainer) => sum + (trainer.expert_approved || 0), 0),
     };
 
-    const totalTasks = totals.merged + totals.resubmitted + totals.discarded + totals.pending_review + totals.ready_to_merge + totals.needs_changes;
+    const totalTasks = totals.merged + totals.resubmitted + totals.discarded + totals.pending_review + totals.ready_to_merge + totals.needs_changes + totals.expert_review_pending + totals.expert_reject + totals.expert_approved;
     // console.log('Total Tasks:', totalTasks);
     let tableHTML = `
         <div class="table-wrapper">
@@ -788,13 +787,13 @@ function updateDomainAnalytics(current_domain) {
             if (task['Pull Request Status'] === 'resubmitted') {
                 resubmitted_tasks += 1;
             }
-            if (task['Pull Request Review'] === 'expert review pending') {
+            if (task['Pull Request Status'] === 'expert review pending') {
                 expert_review_pending_tasks += 1;
             }
-            if (task['Pull Request Review'] === 'expert rejected') {
+            if (task['Pull Request Status'] === 'expert rejected') {
                 expert_reject_tasks += 1;
             }
-            if (task['Pull Request Review'] === 'expert approved') {
+            if (task['Pull Request Status'] === 'expert approved') {
                 expert_approved_tasks += 1;
             }
             tasks_occurred.add(task['Task']);
@@ -849,6 +848,16 @@ function updateAnalytics(analytics) {
 
 // Function to apply filters
 function applyFilters(element) {
+    if (element.id === 'calibratorFilter') {
+        calibratorFilterPreprocessing(element.value);
+    }
+    if (element.id === 'podFilter') {
+        podFilterPreprocessing(element.value);
+    }
+    if (element.id === 'domainFilter') {
+        // Also, add logic to handle the 'all' case here
+        updateDomainAnalytics(element.value);
+    }
     renderTable(element);
     renderTrainerStatsTable();
 }
