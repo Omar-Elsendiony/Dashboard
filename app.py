@@ -81,7 +81,7 @@ REDIRECT_ROUTES = {
     '/instruction_relevant_actions_or_policies',
     '/index',
     '/tracker',
-    '/tasks-framework',
+    '/task-framework',
     '/db_utilities'
 }
 
