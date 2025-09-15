@@ -292,11 +292,11 @@ function generateTableData(element) {
             groupedStatsData[actual_name].ready_to_merge++;
         } else if (task['Pull Request Status'] === 'needs changes') {
             groupedStatsData[actual_name].needs_changes++;
-        } else if (task['Pull Request Status'] === 'expert review pending') {
+        } else if (task['Pull Request Review'] === 'expert review pending') {
             groupedStatsData[actual_name].expert_review_pending_tasks++;
-        } else if (task['Pull Request Status'] === 'expert rejected') {
+        } else if (task['Pull Request Review'] === 'expert rejected') {
             groupedStatsData[actual_name].expert_reject_tasks++;
-        } else if (task['Pull Request Status'] === 'expert approved') {
+        } else if (task['Pull Request Review'] === 'expert approved') {
             groupedStatsData[actual_name].expert_approved_tasks++;
         }
 
@@ -787,13 +787,13 @@ function updateDomainAnalytics(current_domain) {
             if (task['Pull Request Status'] === 'resubmitted') {
                 resubmitted_tasks += 1;
             }
-            if (task['Pull Request Status'] === 'expert review pending') {
+            if (task['Pull Request Review'] === 'expert review pending') {
                 expert_review_pending_tasks += 1;
             }
-            if (task['Pull Request Status'] === 'expert rejected') {
+            if (task['Pull Request Review'] === 'expert rejected') {
                 expert_reject_tasks += 1;
             }
-            if (task['Pull Request Status'] === 'expert approved') {
+            if (task['Pull Request Review'] === 'expert approved') {
                 expert_approved_tasks += 1;
             }
             tasks_occurred.add(task['Task']);
