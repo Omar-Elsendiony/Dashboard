@@ -210,20 +210,20 @@ function generateTableData(element) {
         filterChanged = element.id
     }
     // const domainFilter = document.getElementById('domainFilter').value;
-    // if (filterChanged !== null && filterChanged === 'domainFilter') {
-    //     updateDomainAnalytics(domainFilter);
-    // }
+    if (filterChanged !== null && filterChanged === 'domainFilter') {
+        updateDomainAnalytics(domainFilter);
+    }
     const interfaceFilter = document.getElementById('interfaceFilter').value;
     
     // Get filter values
-    // const calibratorFilter = document.getElementById('calibratorFilter').value;
-    // if (filterChanged !== null && filterChanged === 'calibratorFilter') {
-    //     calibratorFilterPreprocessing(calibratorFilter);
-    // }
-    // const podFilter = document.getElementById('podFilter').value;
-    // if (filterChanged !== null && filterChanged === 'podFilter') {
-    //     podFilterPreprocessing(podFilter);
-    // }
+    const calibratorFilter = document.getElementById('calibratorFilter').value;
+    if (filterChanged !== null && filterChanged === 'calibratorFilter') {
+        calibratorFilterPreprocessing(calibratorFilter);
+    }
+    const podFilter = document.getElementById('podFilter').value;
+    if (filterChanged !== null && filterChanged === 'podFilter') {
+        podFilterPreprocessing(podFilter);
+    }
 
     
 
@@ -292,11 +292,11 @@ function generateTableData(element) {
             groupedStatsData[actual_name].ready_to_merge++;
         } else if (task['Pull Request Status'] === 'needs changes') {
             groupedStatsData[actual_name].needs_changes++;
-        } else if (task['Pull Request Review'] === 'expert review pending') {
+        } else if (task['Pull Request Status'] === 'expert review pending') {
             groupedStatsData[actual_name].expert_review_pending_tasks++;
-        } else if (task['Pull Request Review'] === 'expert rejected') {
+        } else if (task['Pull Request Status'] === 'expert rejected') {
             groupedStatsData[actual_name].expert_reject_tasks++;
-        } else if (task['Pull Request Review'] === 'expert approved') {
+        } else if (task['Pull Request Status'] === 'expert approved') {
             groupedStatsData[actual_name].expert_approved_tasks++;
         }
 
@@ -787,13 +787,13 @@ function updateDomainAnalytics(current_domain) {
             if (task['Pull Request Status'] === 'resubmitted') {
                 resubmitted_tasks += 1;
             }
-            if (task['Pull Request Review'] === 'expert review pending') {
+            if (task['Pull Request Status'] === 'expert review pending') {
                 expert_review_pending_tasks += 1;
             }
-            if (task['Pull Request Review'] === 'expert rejected') {
+            if (task['Pull Request Status'] === 'expert rejected') {
                 expert_reject_tasks += 1;
             }
-            if (task['Pull Request Review'] === 'expert approved') {
+            if (task['Pull Request Status'] === 'expert approved') {
                 expert_approved_tasks += 1;
             }
             tasks_occurred.add(task['Task']);
@@ -848,16 +848,16 @@ function updateAnalytics(analytics) {
 
 // Function to apply filters
 function applyFilters(element) {
-    if (element.id === 'calibratorFilter') {
-        calibratorFilterPreprocessing(element.value);
-    }
-    if (element.id === 'podFilter') {
-        podFilterPreprocessing(element.value);
-    }
-    if (element.id === 'domainFilter') {
-        // Also, add logic to handle the 'all' case here
-        updateDomainAnalytics(element.value);
-    }
+    // if (element.id === 'calibratorFilter') {
+    //     calibratorFilterPreprocessing(element.value);
+    // }
+    // if (element.id === 'podFilter') {
+    //     podFilterPreprocessing(element.value);
+    // }
+    // if (element.id === 'domainFilter') {
+    //     // Also, add logic to handle the 'all' case here
+    //     updateDomainAnalytics(element.value);
+    // }
     renderTable(element);
     renderTrainerStatsTable();
 }
