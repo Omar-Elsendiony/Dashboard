@@ -292,11 +292,11 @@ function generateTableData(element) {
             groupedStatsData[actual_name].ready_to_merge++;
         } else if (task['Pull Request Status'] === 'needs changes') {
             groupedStatsData[actual_name].needs_changes++;
-        } else if (task['Pull Request Review'] === 'expert review pending') {
+        } else if (task['Pull Request Status'] === 'expert review pending') {
             groupedStatsData[actual_name].expert_review_pending_tasks++;
-        } else if (task['Pull Request Review'] === 'expert rejected') {
+        } else if (task['Pull Request Status'] === 'expert rejected') {
             groupedStatsData[actual_name].expert_reject_tasks++;
-        } else if (task['Pull Request Review'] === 'expert approved') {
+        } else if (task['Pull Request Status'] === 'expert approved') {
             groupedStatsData[actual_name].expert_approved_tasks++;
         }
 
