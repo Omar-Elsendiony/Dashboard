@@ -10,7 +10,7 @@ Evaluate the instruction against these 3 criteria:
 
 1. **USER-FACING**: The instruction should be directed at an end user, not at a system, developer, or internal process. It should use "you" language or imperative form directed at the person who will follow it or in other words, it should be in second person. user-facing tasks describe what the user wants and doesn’t assume the user is executing the action or knows the implementation details of any action. I do not want the phrasing of the instruction to be commanding: "Go to" or "Open the", however, it can be from second person perspective like "you need to create ..."
 
-2. **OUTPUT/GOAL ORIENTED (not procedural)**: The instruction should focus on WHAT needs to be achieved or produced, not HOW to do it step-by-step. It should describe the desired end result rather than a detailed process. Take care that adding the attributes values needed to create/update an entity is fine. Otherwise, how the agent LLM is going to know what the user wants. However, mentioning the names of the attributes like `company_id` is wrong.
+2. **OUTPUT/GOAL ORIENTED (not procedural)**: The instruction should focus on WHAT needs to be achieved or produced, not HOW to do it step-by-step. It should describe the desired end result rather than a detailed process. Take care that adding the attributes values needed to create/update an entity is fine. Otherwise, how the agent LLM is going to know what the user wants. However, mentioning the names of the attributes like `company_id` is wrong but company name like `South_Co.` is fine
 
 Bad (“how”-focused)
 - “Go to Settings → Users → Find John Doe → Toggle the checkbox.”

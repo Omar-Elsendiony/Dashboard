@@ -4,7 +4,7 @@ Notes to take care of:
 1. Do not add a field that has a `jsonb` type
 2. ids are strings
 3. Try to create entities/tables that are interconnected and relate to each other by foreign keys
-4. Do not add many free-form fields
+4. Do not add free-form fields (fields that have the field types text or varchar with a large number unless it is necessary)
 5. Do not add too many fields or too few fields within entity or tables
 6. Imitate the format I will provide for the schema using the examples down below
 7. Be mindful of the enum values to adhere to the policy and be realistic at the same time

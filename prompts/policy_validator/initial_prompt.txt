@@ -10,6 +10,7 @@ The policy should be structured in natural language without referring to backend
 The policy should be comprehensive and cover all necessary aspects of the agent's interaction within the database.
 The policy should not resort to the human agent, even if it is in the example policy documents. The agent should be able to operate independently without human intervention.
 The Agent should not make assumptions or generate information independently.
+The policy should include the checks to be done like checking the status is active and other things as well as identifying the authorized roles if any
 
 The policy should include primarily:
 Roles and responsibilities of each role
