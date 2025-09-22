@@ -4,7 +4,7 @@ from tau_bench.envs.tool import Tool
 
 class ApprovalLookup(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], action: str, requester_email: str) -> str:
+    def invoke(data: Dict[str, Any], action: str, role_conducting_action: str, requester_id: str) -> str:
         # Define role authorization mapping
         role_authorizations = {
             "compliance_officer": [
@@ -46,17 +46,6 @@ class ApprovalLookup(Tool):
             "portfolio_creation": ["fund_manager", "finance_officer"]
         }
         
-        users = data.get("users", {})
-        for user in users.values():
-            if user.get("email") == requester_email:
-                role_conducting_action = user.get("role")
-                requester_id = user.get("id")
-                break
-        else:
-            return json.dumps({
-                "approval_valid": False,
-                "error": f"No user found with email: {requester_email}"
-            })
         # Check if role is directly authorized for the action
         authorized_roles = role_authorizations.get(role_conducting_action, [])
         if action in authorized_roles:
@@ -80,11 +69,11 @@ class ApprovalLookup(Tool):
             if approval.get("code") == calculated_approval_code:
                 approvals_found_for_code.append(approval)
                 # break
-        # print(f"Approvals found for code '{calculated_approval_code}': {approvals_found_for_code}")
+        print(f"Approvals found for code '{calculated_approval_code}': {approvals_found_for_code}")
         if not approvals_found_for_code:
             return json.dumps({
                 "approval_valid": False,
-                "error": f"No approval found"
+                # "error": f"No approval found for calculated code: {calculated_approval_code}"
             })
 
         approvals_approved_by = [ approvals_found.get("approved_by") for approvals_found in approvals_found_for_code if "approved_by" in approvals_found ]
@@ -126,7 +115,7 @@ class ApprovalLookup(Tool):
             for role, actions in role_authorizations.items():
                 approved_by = approvals_found_for_code[0].get("approved_by")
                 if action in actions and approved_by == role:
-                    # print("single approver match found")
+                    print("single approver match found")
                     return json.dumps({
                         "approval_valid": True,
                         "approved_by": approved_by,
@@ -151,12 +140,16 @@ class ApprovalLookup(Tool):
                             "type": "string",
                             "description": "The action being performed: investor_onboarding, investor_offboarding, fund_management_setup, fund_management_maintenance, subscription_management, commitments_create, commitments_fulfill, trade_execution, nav_valuation, redemption_processing, portfolio_creation, portfolio_update, portfolio_holding_management, instrument_creation, invoice_management, payment_processing, nav_record_creation, nav_record_updates, instrument_price_updates, reporting_performance, reporting_financial, reporting_holding, user_account_management, system_monitoring"
                         },
-                        "requester_email": {
+                        "role_conducting_action": {
                             "type": "string",
-                            "description": "Email of the user requesting the action"
+                            "description": "Role of the person conducting the action: compliance_officer, fund_manager, finance_officer, trader, system_administrator"
+                        },
+                        "requester_id": {
+                            "type": "string",
+                            "description": "ID of the person making the request. Used to calculate approval code as 'action_requester_id'"
                         }
                     },
-                    "required": ["action", "requester_email"]
+                    "required": ["action", "role_conducting_action", "requester_id"]
                 }
             }
         }
