@@ -11,9 +11,9 @@ class ManageSubscription(Tool):
         Create, update, or cancel subscription records.
         
         Actions:
-        - create: Create new subscription (requires subscription_data with fund_id, investor_id, amount, request_assigned_to, request_date, fund_manager_approval)
-        - update: Update existing subscription (requires subscription_id and subscription_data with changes, fund_manager_approval)
-        - cancel: Cancel subscription (requires subscription_id and fund_manager_approval)
+        - create: Create new subscription (requires subscription_data with fund_id, investor_id, amount, request_assigned_to, request_date, fund_manager_approval, compliance_officer_approval)
+        - update: Update existing subscription (requires subscription_id and subscription_data with changes, fund_manager_approval, compliance_officer_approval)
+        - cancel: Cancel subscription (requires subscription_id, fund_manager_approval, compliance_officer_approval)
         """
         
         if isinstance(subscription_data, str):
@@ -68,17 +68,17 @@ class ManageSubscription(Tool):
                     "error": "subscription_data is required for create action"
                 })
             
-            # MODIFIED: Require only one approval
-            required_fields = ["fund_id", "investor_id", "amount", "request_assigned_to", "request_date", "fund_manager_approval"]
+            # Require both Fund Manager and Compliance Officer approvals
+            required_fields = ["fund_id", "investor_id", "amount", "request_assigned_to", "request_date", "fund_manager_approval", "compliance_officer_approval"]
             missing_fields = [field for field in required_fields if field not in subscription_data]
             if missing_fields:
                 return json.dumps({
                     "success": False,
-                    "error": f"Missing required fields for subscription creation: {', '.join(missing_fields)}. Fund Manager approval is required."
+                    "error": f"Missing required fields for subscription creation: {', '.join(missing_fields)}. Both Fund Manager and Compliance Officer approvals are required."
                 })
             
-            # MODIFIED: Update allowed fields
-            allowed_fields = ["fund_id", "investor_id", "amount", "request_assigned_to", "request_date", "status", "approval_date", "notify_investor", "fund_manager_approval"]
+            # Updated allowed fields to include compliance_officer_approval
+            allowed_fields = ["fund_id", "investor_id", "amount", "request_assigned_to", "request_date", "status", "approval_date", "notify_investor", "fund_manager_approval", "compliance_officer_approval"]
             invalid_fields = [field for field in subscription_data.keys() if field not in allowed_fields]
             if invalid_fields:
                 return json.dumps({
@@ -136,8 +136,12 @@ class ManageSubscription(Tool):
                 if date_error:
                     return json.dumps({"success": False, "error": date_error})
             
-            # Validate boolean fields
+            # Validate both approval fields
             bool_error = validate_boolean_field(subscription_data["fund_manager_approval"], "fund_manager_approval")
+            if bool_error:
+                return json.dumps({"success": False, "error": bool_error})
+            
+            bool_error = validate_boolean_field(subscription_data["compliance_officer_approval"], "compliance_officer_approval")
             if bool_error:
                 return json.dumps({"success": False, "error": bool_error})
             
@@ -169,11 +173,25 @@ class ManageSubscription(Tool):
             if not subscription_data:
                 return json.dumps({"success": False, "error": "subscription_data is required for update action"})
             
-            # MODIFIED: Require only one approval
+            # Require both approvals for updates
+            missing_approvals = []
             if "fund_manager_approval" not in subscription_data:
-                return json.dumps({"success": False, "error": "Missing required approval: fund_manager_approval"})
+                missing_approvals.append("fund_manager_approval")
+            if "compliance_officer_approval" not in subscription_data:
+                missing_approvals.append("compliance_officer_approval")
             
+            if missing_approvals:
+                return json.dumps({
+                    "success": False, 
+                    "error": f"Missing required approvals: {', '.join(missing_approvals)}. Both Fund Manager and Compliance Officer approvals are required."
+                })
+            
+            # Validate both approval fields
             bool_error = validate_boolean_field(subscription_data["fund_manager_approval"], "fund_manager_approval")
+            if bool_error:
+                return json.dumps({"success": False, "error": bool_error})
+            
+            bool_error = validate_boolean_field(subscription_data["compliance_officer_approval"], "compliance_officer_approval")
             if bool_error:
                 return json.dumps({"success": False, "error": bool_error})
             
@@ -181,7 +199,7 @@ class ManageSubscription(Tool):
             current_subscription = subscriptions[subscription_id]
             updated_subscription = current_subscription.copy()
             for key, value in subscription_data.items():
-                if key != "fund_manager_approval":
+                if key not in ["fund_manager_approval", "compliance_officer_approval"]:
                     updated_subscription[key] = value
             
             updated_subscription["updated_at"] = "2025-10-01T00:00:00"
@@ -197,11 +215,31 @@ class ManageSubscription(Tool):
             if not subscription_id or subscription_id not in subscriptions:
                 return json.dumps({"success": False, "error": f"Subscription {subscription_id} not found"})
             
-            # MODIFIED: Require only one approval
-            if not subscription_data or "fund_manager_approval" not in subscription_data:
-                return json.dumps({"success": False, "error": "fund_manager_approval is required for cancel action"})
+            # Require both approvals for cancellation
+            if not subscription_data:
+                return json.dumps({
+                    "success": False,
+                    "error": "subscription_data with fund_manager_approval and compliance_officer_approval is required for cancel action"
+                })
+            
+            missing_approvals = []
+            if "fund_manager_approval" not in subscription_data:
+                missing_approvals.append("fund_manager_approval")
+            if "compliance_officer_approval" not in subscription_data:
+                missing_approvals.append("compliance_officer_approval")
+            
+            if missing_approvals:
+                return json.dumps({
+                    "success": False,
+                    "error": f"Missing required approvals: {', '.join(missing_approvals)}. Both Fund Manager and Compliance Officer approvals are required for cancellation."
+                })
 
+            # Validate both approval fields
             bool_error = validate_boolean_field(subscription_data["fund_manager_approval"], "fund_manager_approval")
+            if bool_error:
+                return json.dumps({"success": False, "error": bool_error})
+            
+            bool_error = validate_boolean_field(subscription_data["compliance_officer_approval"], "compliance_officer_approval")
             if bool_error:
                 return json.dumps({"success": False, "error": bool_error})
             
@@ -220,41 +258,68 @@ class ManageSubscription(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        # MODIFIED: Entire get_info section updated to reflect single approval
         return {
             "type": "function",
             "function": {
                 "name": "manage_subscription",
-                "description": "Create, update, or cancel subscription records. All operations require Fund Manager approval.",
+                "description": "Create, update, or cancel subscription records in the fund management system. This tool manages investor subscription lifecycle from initial requests to final processing. For creation, establishes new subscription records with comprehensive validation to ensure regulatory compliance and prevents duplicate subscriptions for the same investor-fund combination. For updates, modifies existing subscription records while maintaining data integrity and audit trails. For cancellation, processes subscription termination with proper status management. All operations require dual approval from Fund Manager and Compliance Officer as mandated by regulatory requirements. Validates business rules including positive amounts, valid fund and investor existence, and proper status transitions. Essential for investor onboarding, capital raising activities, and regulatory compliance reporting. Supports the complete subscription lifecycle from initial request through approval to cancellation.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "Action to perform: 'create', 'update', or 'cancel'.",
+                            "description": "Action to perform: 'create' to establish new subscription record, 'update' to modify existing subscription, 'cancel' to terminate subscription",
                             "enum": ["create", "update", "cancel"]
                         },
                         "subscription_data": {
                             "type": "object",
-                            "description": "Data for the subscription. Requires 'fund_manager_approval'. For 'create', also requires 'fund_id', 'investor_id', 'amount', etc.",
+                            "description": "Subscription data object. For create: requires fund_id, investor_id, amount (positive), request_assigned_to (valid user), request_date (YYYY-MM-DD), fund_manager_approval (approval presence), compliance_officer_approval (approval presence). For update: includes fields to change with both approval codes. For cancel: requires both approval codes. SYNTAX: {\"key\": \"value\"}",
                             "properties": {
-                                "fund_id": {"type": "string", "description": "Unique identifier of the fund."},
-                                "investor_id": {"type": "string", "description": "Unique identifier of the investor."},
-                                "amount": {"type": "string", "description": "Subscription amount (must be positive)."},
-                                "request_assigned_to": {"type": "string", "description": "User ID assigned to the request."},
-                                "request_date": {"type": "string", "description": "Date of the request in YYYY-MM-DD format."},
-                                "status": {"type": "string", "description": "Status: 'pending', 'approved', or 'cancelled'."},
-                                "approval_date": {"type": "string", "description": "Date of approval in YYYY-MM-DD format."},
-                                "notify_investor": {"type": "boolean", "description": "Notify the investor of changes."},
+                                "fund_id": {
+                                    "type": "string",
+                                    "description": "Unique identifier of the fund (required for create only, must exist in system, unique with investor_id for subscription)"
+                                },
+                                "investor_id": {
+                                    "type": "string",
+                                    "description": "Unique identifier of the investor (required for create only, must exist in system, unique with fund_id for subscription)"
+                                },
+                                "amount": {
+                                    "type": "string",
+                                    "description": "Subscription amount in USD (required for create, must be positive number, validates against fund minimums)"
+                                },
+                                "request_assigned_to": {
+                                    "type": "string",
+                                    "description": "User ID assigned to process the request (required for create only, must be valid user in system)"
+                                },
+                                "request_date": {
+                                    "type": "string",
+                                    "description": "Date of the subscription request in YYYY-MM-DD format (required for create only, cannot be future date)"
+                                },
+                                "status": {
+                                    "type": "string",
+                                    "description": "Subscription status: 'pending' (default), 'approved', or 'cancelled' (validates status transitions)"
+                                },
+                                "approval_date": {
+                                    "type": "string",
+                                    "description": "Date of approval in YYYY-MM-DD format (optional, must be valid date format if provided)"
+                                },
+                                "notify_investor": {
+                                    "type": "boolean",
+                                    "description": "Flag to notify investor of subscription changes (optional, True/False)"
+                                },
                                 "fund_manager_approval": {
                                     "type": "boolean",
-                                    "description": "Fund Manager approval (True/False). Required for all operations."
+                                    "description": "Fund Manager approval presence (True/False) (required for all operations - create, update, cancel)"
+                                },
+                                "compliance_officer_approval": {
+                                    "type": "boolean",
+                                    "description": "Compliance Officer approval presence (True/False) (required for all operations - create, update, cancel)"
                                 }
                             }
                         },
                         "subscription_id": {
                             "type": "string",
-                            "description": "Unique identifier of the subscription (required for 'update' and 'cancel')."
+                            "description": "Unique identifier of the subscription (required for 'update' and 'cancel' actions only, must exist in system)"
                         }
                     },
                     "required": ["action", "subscription_data"]
