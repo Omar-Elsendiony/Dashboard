@@ -9,8 +9,8 @@ class HandlePortfolio(Tool):
         Create or update portfolio records.
         
         Actions:
-        - create: Create new portfolio (requires portfolio_data with investor_id, fund_manager_approval, compliance_officer_approval, optional status)
-        - update: Update existing portfolio (requires portfolio_id and portfolio_data with changes like status, fund_manager_approval, compliance_officer_approval)
+        - create: Create new portfolio (requires portfolio_data with investor_id, fund_manager_approval OR finance_officer_approval, optional status)
+        - update: Update existing portfolio (requires portfolio_id and portfolio_data with changes like status, fund_manager_approval)
         """
         
         def generate_id(table: Dict[str, Any]) -> int:
@@ -42,22 +42,26 @@ class HandlePortfolio(Tool):
                 })
             
             # Validate required fields for creation
-            required_fields = ["investor_id", "fund_manager_approval", "compliance_officer_approval"]
+            required_fields = ["investor_id"]
             missing_fields = [field for field in required_fields if field not in portfolio_data]
             if missing_fields:
                 return json.dumps({
                     "success": False,
-                    "error": f"Missing required fields for portfolio creation: {', '.join(missing_fields)}. Both Fund Manager and Compliance Officer approvals are required."
+                    "error": f"Missing required fields for portfolio creation: {', '.join(missing_fields)}"
                 })
             
-            if not (portfolio_data.get("fund_manager_approval") and portfolio_data.get("compliance_officer_approval")):
+            # Validate approval - Fund Manager OR Finance Officer approval required
+            has_fund_manager_approval = portfolio_data.get("fund_manager_approval", False)
+            has_finance_officer_approval = portfolio_data.get("finance_officer_approval", False)
+            
+            if not (has_fund_manager_approval or has_finance_officer_approval):
                 return json.dumps({
                     "success": False,
-                    "error": "Both Fund Manager and Compliance Officer approvals are required for portfolio creation"
+                    "error": "Either Fund Manager approval or Finance Officer approval is required for portfolio creation"
                 })
             
             # Validate only allowed fields are present
-            allowed_fields = ["investor_id", "status", "fund_manager_approval", "compliance_officer_approval"]
+            allowed_fields = ["investor_id", "status", "fund_manager_approval", "finance_officer_approval"]
             invalid_fields = [field for field in portfolio_data.keys() if field not in allowed_fields]
             if invalid_fields:
                 return json.dumps({
@@ -125,23 +129,15 @@ class HandlePortfolio(Tool):
                     "error": "portfolio_data is required for update action"
                 })
             
-            # Validate required approvals for updates
-            required_approvals = ["fund_manager_approval", "compliance_officer_approval"]
-            missing_approvals = [field for field in required_approvals if field not in portfolio_data]
-            if missing_approvals:
+            # Validate required approvals for updates - Fund Manager approval required
+            if not portfolio_data.get("fund_manager_approval", False):
                 return json.dumps({
                     "success": False,
-                    "error": f"Missing required approvals for portfolio update: {', '.join(missing_approvals)}. Both Fund Manager and Compliance Officer approvals are required."
-                })
-            
-            if not (portfolio_data.get("fund_manager_approval") and portfolio_data.get("compliance_officer_approval")):
-                return json.dumps({
-                    "success": False,
-                    "error": "Both Fund Manager and Compliance Officer approvals are required for portfolio update"
+                    "error": "Fund Manager approval is required for portfolio update"
                 })
             
             # Validate only allowed fields are present for updates
-            allowed_update_fields = ["status", "fund_manager_approval", "compliance_officer_approval"]
+            allowed_update_fields = ["status", "fund_manager_approval"]
             invalid_fields = [field for field in portfolio_data.keys() if field not in allowed_update_fields]
             if invalid_fields:
                 return json.dumps({
@@ -178,7 +174,7 @@ class HandlePortfolio(Tool):
             # Update portfolio record
             updated_portfolio = portfolios[portfolio_id].copy()
             for key, value in portfolio_data.items():
-                if key not in ["fund_manager_approval", "compliance_officer_approval"]:
+                if key not in ["fund_manager_approval"]:
                     updated_portfolio[key] = value
             
             updated_portfolio["updated_at"] = "2025-10-01T12:00:00"
@@ -198,7 +194,7 @@ class HandlePortfolio(Tool):
             "type": "function",
             "function": {
                 "name": "handle_portfolio",
-                "description": "Create or update portfolio records in the fund management system. This tool manages investor portfolio lifecycle, ensuring compliance with investment policies and regulatory requirements. For creation, establishes new portfolio records with validation to enforce the one-investor-one-portfolio constraint. For updates, modifies existing portfolio records while preventing closure when active holdings exist. Both operations require dual approval from Fund Manager and Compliance Officer as mandated by regulatory requirements. Validates portfolio status transitions and maintains audit trails. Essential for proper investor account management, portfolio tracking, and regulatory compliance. Supports the complete portfolio lifecycle from initial creation through status changes to archival.",
+                "description": "Create or update portfolio records in the fund management system. This tool manages investor portfolio lifecycle, ensuring compliance with investment policies and regulatory requirements. For creation, establishes new portfolio records with validation to enforce the one-investor-one-portfolio constraint and requires either Fund Manager or Finance Officer approval. For updates, modifies existing portfolio records while preventing closure when active holdings exist and requires Fund Manager approval. Validates portfolio status transitions and maintains audit trails. Essential for proper investor account management, portfolio tracking, and regulatory compliance. Supports the complete portfolio lifecycle from initial creation through status changes to archival.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -209,7 +205,7 @@ class HandlePortfolio(Tool):
                         },
                         "portfolio_data": {
                             "type": "object",
-                            "description": "Portfolio data object. For create: requires investor_id, status (optional, defaults to 'active'), fund_manager_approval (approval code), compliance_officer_approval (approval code). For update: includes status changes with both approval codes (investor_id cannot be updated). SYNTAX: {\"key\": \"value\"}",
+                            "description": "Portfolio data object. For create: requires investor_id, status (optional, defaults to 'active'), and either fund_manager_approval OR finance_officer_approval. For update: includes status changes with fund_manager_approval (investor_id cannot be updated). SYNTAX: {\"key\": \"value\"}",
                             "properties": {
                                 "investor_id": {
                                     "type": "integer",
@@ -222,11 +218,11 @@ class HandlePortfolio(Tool):
                                 },
                                 "fund_manager_approval": {
                                     "type": "boolean",
-                                    "description": "Fund Manager approval presence (True/False) (required for both create and update operations)"
+                                    "description": "Fund Manager approval presence (True/False) (for create: either this OR finance_officer_approval required; for update: this is required)"
                                 },
-                                "compliance_officer_approval": {
+                                "finance_officer_approval": {
                                     "type": "boolean",
-                                    "description": "Compliance Officer approval presence (True/False) (required for both create and update operations)"
+                                    "description": "Finance Officer approval presence (True/False) (for create only: either this OR fund_manager_approval required)"
                                 }
                             }
                         },
