@@ -9,11 +9,17 @@ class ManageFund(Tool):
         Create or update fund records.
         
         Actions:
-        - create: Create new fund (requires fund_data with fund_name, fund_type, manager_id, approval_code, 
-                 optional , size)
-        - update: Update existing fund (requires fund_id and fund_data with change_set, fund_manager_approval, 
+        - create: Create new fund (requires fund_data with name, fund_type, manager_id, fund_manager_approval, compliance_officer_approval, 
+                 optional size, base_currency, status)
+        - update: Update existing fund (requires fund_id and fund_data with changes, fund_manager_approval, 
                  compliance_officer_approval)
         """
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
         if action not in ["create", "update"]:
             return json.dumps({
                 "success": False,
@@ -37,16 +43,23 @@ class ManageFund(Tool):
                 })
             
             # Validate required fields for creation
-            required_fields = ["name", "fund_type", "manager_id", "approval_code"]
+            required_fields = ["name", "fund_type", "manager_id", "fund_manager_approval", "compliance_officer_approval"]
             missing_fields = [field for field in required_fields if field not in fund_data]
             if missing_fields:
                 return json.dumps({
                     "success": False,
-                    "error": f"Missing required fields for fund creation: {', '.join(missing_fields)}"
+                    "error": f"Missing required fields for fund creation: {', '.join(missing_fields)}. Both Fund Manager and Compliance Officer approvals are required."
+                })
+            
+            # Validate both approvals are present and true
+            if not (fund_data.get("fund_manager_approval") and fund_data.get("compliance_officer_approval")):
+                return json.dumps({
+                    "success": False,
+                    "error": "Both Fund Manager and Compliance Officer approvals are required for fund creation"
                 })
             
             # Validate only allowed fields are present
-            allowed_fields = ["name", "fund_type", "size", "manager_id", "approval_code", "status"]
+            allowed_fields = ["name", "fund_type", "size", "base_currency", "manager_id", "status", "fund_manager_approval", "compliance_officer_approval"]
             invalid_fields = [field for field in fund_data.keys() if field not in allowed_fields]
             if invalid_fields:
                 return json.dumps({
@@ -79,7 +92,7 @@ class ManageFund(Tool):
             
             # Validate status if provided
             if "status" in fund_data:
-                valid_statuses = ["active", "inactive", "closed", "liquidating"]
+                valid_statuses = ["open", "closed"]
                 if fund_data["status"] not in valid_statuses:
                     return json.dumps({
                         "success": False,
@@ -95,29 +108,29 @@ class ManageFund(Tool):
                         "error": f"Fund with name '{fund_name}' already exists"
                     })
             
-            # Generate new fund ID
-            existing_ids = [int(fid) for fid in funds.keys() if fid.isdigit()]
-            new_fund_id = str(max(existing_ids, default=0) + 1)
+            # Generate new fund ID using the same pattern as manage_instrument_price
+            new_fund_id = generate_id(funds)
             
             # Create new fund record
             new_fund = {
-                "fund_id": new_fund_id,
+                "fund_id": str(new_fund_id),
                 "name": fund_data["name"],
                 "fund_type": fund_data["fund_type"],
                 "size": fund_data.get("size"),
+                "base_currency": fund_data.get("base_currency", "USD"),
                 "manager_id": fund_data["manager_id"],
-                "status": fund_data.get("status", "active"),
+                "status": fund_data.get("status", "open"),
                 "created_at": "2025-10-01T12:00:00",
                 "updated_at": "2025-10-01T12:00:00"
             }
             
-            funds[new_fund_id] = new_fund
+            funds[str(new_fund_id)] = new_fund
             
             return json.dumps({
                 "success": True,
                 "action": "create",
-                "fund_id": new_fund_id,
-                "message": f"Fund {new_fund_id} created successfully",
+                "fund_id": str(new_fund_id),
+                "message": f"Fund {new_fund_id} created successfully with name '{fund_data['name']}'",
                 "fund_data": new_fund
             })
         
@@ -140,17 +153,24 @@ class ManageFund(Tool):
                     "error": "fund_data is required for update action"
                 })
             
-            # Validate required approvals for update
+            # Validate required approvals for updates
             required_approvals = ["fund_manager_approval", "compliance_officer_approval"]
             missing_approvals = [field for field in required_approvals if field not in fund_data]
             if missing_approvals:
                 return json.dumps({
                     "success": False,
-                    "error": f"Required approvals not provided: {', '.join(missing_approvals)}"
+                    "error": f"Missing required approvals for fund update: {', '.join(missing_approvals)}. Both Fund Manager and Compliance Officer approvals are required."
+                })
+            
+            # Validate both approvals are present and true
+            if not (fund_data.get("fund_manager_approval") and fund_data.get("compliance_officer_approval")):
+                return json.dumps({
+                    "success": False,
+                    "error": "Both Fund Manager and Compliance Officer approvals are required for fund update"
                 })
             
             # Validate only allowed fields are present for updates
-            allowed_update_fields = ["name", "fund_type", "size", "manager_id", "status", 
+            allowed_update_fields = ["name", "fund_type", "size", "base_currency", "manager_id", "status", 
                                    "fund_manager_approval", "compliance_officer_approval"]
             invalid_fields = [field for field in fund_data.keys() if field not in allowed_update_fields]
             if invalid_fields:
@@ -185,10 +205,10 @@ class ManageFund(Tool):
             
             # Validate status transitions
             current_fund = funds[fund_id]
-            current_status = current_fund.get("status", "active")
+            current_status = current_fund.get("status", "open")
             if "status" in fund_data:
                 new_status = fund_data["status"]
-                valid_statuses = ["active", "inactive", "closed", "liquidating"]
+                valid_statuses = ["open", "closed"]
                 
                 if new_status not in valid_statuses:
                     return json.dumps({
@@ -198,8 +218,7 @@ class ManageFund(Tool):
                 
                 # Define invalid status transitions
                 invalid_transitions = {
-                    "closed": ["active", "inactive"],  # Cannot reactivate closed fund
-                    "liquidating": ["active", "inactive"]  # Cannot reactivate liquidating fund
+                    "closed": ["open"]  # Cannot reopen closed fund
                 }
                 
                 if current_status in invalid_transitions and new_status in invalid_transitions[current_status]:
@@ -242,21 +261,58 @@ class ManageFund(Tool):
             "type": "function",
             "function": {
                 "name": "manage_fund",
-                "description": "Create or update fund records in the fund management system. For creation, requires fund_name, fund_type, manager_id, and approval_code with optional size. For updates, requires fund_id, change_set, and both Fund Manager and Compliance Officer approvals. Validates business rules and status transitions.",
+                "description": "Create or update fund records in the fund management system. This tool manages the complete fund lifecycle including creation of new investment funds and updates to existing fund configurations. For creation, establishes new fund records with comprehensive validation to ensure regulatory compliance and business rule adherence. For updates, modifies existing fund records while maintaining data integrity and enforcing valid status transitions. Both operations require dual approval from Fund Manager and Compliance Officer as mandated by regulatory requirements and internal governance policies. Validates fund types, enforces positive sizing constraints, prevents duplicate fund names, and manages fund status transitions according to business rules. Essential for fund administration, regulatory compliance, and investment management operations. Supports the complete fund management lifecycle from initial fund establishment to ongoing fund administration and eventual fund closure.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "Action to perform: 'create' or 'update'"
+                            "description": "Action to perform: 'create' to establish new fund record, 'update' to modify existing fund record",
+                            "enum": ["create", "update"]
                         },
                         "fund_data": {
                             "type": "object",
-                            "description": "Fund data. For create: fund_name, fund_type, manager_id, approval_code, optional  size, status. For update: change_set with fund_manager_approval and compliance_officer_approval"
+                            "description": "Fund data object. For create: requires name (unique fund name), fund_type (from valid enum), manager_id (fund manager identifier), fund_manager_approval (approval code), compliance_officer_approval (approval code), optional size (positive number), base_currency (defaults to USD), status (defaults to active). For update: includes fund fields to change with both approval codes. SYNTAX: {\"key\": \"value\"}",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "Fund name (must be unique across all funds, required for create)"
+                                },
+                                "fund_type": {
+                                    "type": "string",
+                                    "description": "Type of fund from valid enum (required for create)",
+                                    "enum": ["equity_funds", "bond_funds", "multi_asset_funds", "money_market_funds", "hedge_funds", "private_equity_funds", "real_estate_funds"]
+                                },
+                                "size": {
+                                    "type": "number",
+                                    "description": "Initial fund size in base currency (must be positive number, optional)"
+                                },
+                                "base_currency": {
+                                    "type": "string",
+                                    "description": "Base currency for fund operations (optional, defaults to USD)"
+                                },
+                                "manager_id": {
+                                    "type": "string",
+                                    "description": "Unique identifier of the fund manager (required for create)"
+                                },
+                                "status": {
+                                    "type": "string",
+                                    "description": "Fund operational status (optional, defaults to open)",
+                                    "enum": ["open", "closed"]
+                                },
+                                "fund_manager_approval": {
+                                    "type": "boolean",
+                                    "description": "Fund Manager approval presence (True/False) (required for both create and update operations)"
+                                },
+                                "compliance_officer_approval": {
+                                    "type": "boolean",
+                                    "description": "Compliance Officer approval presence (True/False) (required for both create and update operations)"
+                                }
+                            }
                         },
                         "fund_id": {
                             "type": "string",
-                            "description": "Fund ID (required for update action)"
+                            "description": "Unique identifier of the fund (required for update action only)"
                         }
                     },
                     "required": ["action"]
