@@ -1,0 +1,74 @@
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class AddCommitment(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], fund_id: str, investor_id: str, 
+               commitment_amount: float, commitment_date: str, 
+               status: str = "pending") -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        funds = data.get("funds", {})
+        investors = data.get("investors", {})
+        commitments = data.get("commitments", {})
+        
+        # Validate fund exists
+        if str(fund_id) not in funds:
+            return json.dumps({"error": f"Fund {fund_id} not found"})
+        
+        # Validate investor exists  
+        if str(investor_id) not in investors:
+            return json.dumps({"error": f"Investor {investor_id} not found"})
+        
+        # Validate status
+        valid_statuses = ["pending", "fulfilled"]
+        if status not in valid_statuses:
+            return json.dumps({"error": f"Invalid status. Must be one of {valid_statuses}"})
+        
+        # Check if commitment already exists for this investor-fund combination
+        for commitment in commitments.values():
+            if (commitment.get("fund_id") == fund_id and 
+                commitment.get("investor_id") == investor_id):
+                return json.dumps({"error": "An investor can have only one commitment per fund"})
+        
+        commitment_id = generate_id(commitments)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_commitment = {
+            "commitment_id": str(commitment_id),
+            "fund_id": fund_id,
+            "investor_id": investor_id,
+            "commitment_amount": commitment_amount,
+            "commitment_date": commitment_date,
+            "status": status,
+            "updated_at": timestamp
+        }
+        
+        commitments[str(commitment_id)] = new_commitment
+        return json.dumps(new_commitment)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_commitment",
+                "description": "Create a new commitment for an investor to a fund",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "fund_id": {"type": "string", "description": "ID of the fund"},
+                        "investor_id": {"type": "string", "description": "ID of the investor"},
+                        "commitment_amount": {"type": "number", "description": "Amount of the commitment"},
+                        "commitment_date": {"type": "string", "description": "Date of commitment (YYYY-MM-DD)"},
+                        "status": {"type": "string", "description": "Status of commitment (pending, fulfilled), defaults to pending"}
+                    },
+                    "required": ["fund_id", "investor_id", "commitment_amount", "commitment_date"]
+                }
+            }
+        }
