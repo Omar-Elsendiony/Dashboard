@@ -50,7 +50,7 @@ class ValidateApproval(Tool):
         for user in users.values():
             if user.get("email") == requester_email:
                 role_conducting_action = user.get("role")
-                requester_id = user.get("id")
+                requester_id = user.get("user_id")
                 break
         else:
             return json.dumps({
