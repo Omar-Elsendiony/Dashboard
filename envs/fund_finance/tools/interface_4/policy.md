@@ -424,7 +424,7 @@ Create an audit entry for price update using record_new_audit_trail.
 ## Notification Management
 
 For creation:  
-obtain email, type, class, reference_id (optional), and approval.  
+obtain email, type, class, reference_id (optional).  
 Validate type-class combination using the following rules:
 
 - Alert notifications are valid for: funds, investors, portfolios, trades, invoices, subscriptions, commitments
@@ -435,7 +435,7 @@ Validate type-class combination using the following rules:
 create using address_notifications.
 
 For updates:  
-obtain notification_id, change set (e.g., status), and approval.  
+obtain notification_id, change set (e.g., status).  
 List notification to ensure that its status is in pending state and not sent or failed using lookup_system_entities.  
 update using alter_notification.
 

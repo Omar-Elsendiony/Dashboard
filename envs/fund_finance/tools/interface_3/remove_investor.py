@@ -4,7 +4,8 @@ from tau_bench.envs.tool import Tool
 
 class RemoveInvestor(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], investor_id: str, reason: str = None) -> str:
+    def invoke(data: Dict[str, Any], investor_id: str, 
+               compliance_officer_approval: bool, reason: str = None) -> str:
         # Access investors data
         if not isinstance(data, dict):
             return json.dumps({
@@ -13,6 +14,13 @@ class RemoveInvestor(Tool):
             })
         
         investors = data.get("investors", {})
+        
+        # Validate required approval first
+        if not compliance_officer_approval:
+            return json.dumps({
+                "success": False,
+                "error": "Compliance Officer approval is required for investor offboarding"
+            })
         
         # Validate required parameters
         if not investor_id:
@@ -60,7 +68,6 @@ class RemoveInvestor(Tool):
                 "name": investor.get("name"),
                 "status": investor.get("status"),
                 "contact_email": investor.get("contact_email"),
-                "created_at": investor.get("created_at")
             }
         })
     
@@ -70,20 +77,24 @@ class RemoveInvestor(Tool):
             "type": "function",
             "function": {
                 "name": "remove_investor",
-                "description": "Deactivates and archives an investor profile during the offboarding process. This tool should only be used after active subscriptions have been cancelled.",
+                "description": "Deactivates and archives an investor profile during the offboarding process in the fund management system. This tool manages the investor lifecycle termination with comprehensive validation and regulatory compliance checks. Validates investor existence and current status to prevent duplicate offboarding operations. Updates investor status to 'offboarded' and maintains audit trail with timestamps and reasons. Requires Compliance Officer approval as mandated by regulatory offboarding procedures to ensure proper authorization and compliance with investor protection regulations. Essential for investor relationship lifecycle management, regulatory compliance, and maintaining accurate investor records. Note: This tool should only be called after active subscriptions have been properly cancelled through the subscription management process.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "investor_id": {
                             "type": "string",
-                            "description": "investor ID to be offboarded"
+                            "description": "Unique identifier of the investor to be offboarded (required, must exist in system and not already be in deactivated status)"
+                        },
+                        "compliance_officer_approval": {
+                            "type": "boolean",
+                            "description": "Compliance Officer approval presence (True/False) (required for investor offboarding as mandated by regulatory offboarding procedures)"
                         },
                         "reason": {
                             "type": "string",
-                            "description": "Optional reason for offboarding the investor"
+                            "description": "Optional reason for offboarding the investor (stored in audit trail for regulatory compliance and future reference)"
                         }
                     },
-                    "required": ["investor_id"]
+                    "required": ["investor_id", "compliance_officer_approval"]
                 }
             }
         }

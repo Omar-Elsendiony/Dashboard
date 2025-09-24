@@ -407,7 +407,7 @@ One investor is only allowed to have one portfolio, while one portfolio can have
 
 1. For creation:
 
-- obtain email, type, class, reference_id (optional), and approval. Validate type-class combination using the following rules:
+- obtain email, type, class, reference_id (optional). Validate type-class combination using the following rules:
   - Alert notifications are valid for: funds, investors, portfolios, trades, invoices, subscriptions, commitments
   - Report notifications are valid for: funds, investors, portfolios, reports, documents
   - Reminder notifications are valid for: invoices, subscriptions, commitments
@@ -416,7 +416,7 @@ One investor is only allowed to have one portfolio, while one portfolio can have
 
 2. For updates:
 
-- obtain notification_id, change set (e.g., status), and approval.
+- obtain notification_id, change set (e.g., status).
 - List notification to ensure that its status is in pending state and not sent or failed using get_system_entities.
 - change_notification.
 - Reject invalid combinations including: report+trades, report+invoices, report+subscriptions, report+commitments, reminder+funds, reminder+investors, reminder+portfolios, reminder+trades, reminder+reports, reminder+documents, subscription_update+funds, subscription_update+investors, subscription_update+portfolios, subscription_update+trades, subscription_update+invoices, subscription_update+reports, subscription_update+documents, alert+reports, alert+documents.

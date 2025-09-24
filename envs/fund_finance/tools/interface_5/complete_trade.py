@@ -5,7 +5,8 @@ from tau_bench.envs.tool import Tool
 class CompleteTrade(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_id: str, instrument_id: str, 
-               quantity: float, side: str, trade_date: str, price: float) -> str:
+               quantity: float, side: str, trade_date: str, price: float,
+               fund_manager_approval: bool) -> str:
         """
         Execute a trade for a fund after all approvals are obtained.
         
@@ -22,57 +23,103 @@ class CompleteTrade(Tool):
         instruments = data.get("instruments", {})
         trades = data.get("trades", {})
         
+        # Validate required approval first
+        if not fund_manager_approval:
+            return json.dumps({
+                "success": False,
+                "error": "Fund Manager approval is required for trade execution"
+            })
+        
         # Validate required parameters
         if not fund_id:
-            return json.dumps({"error": "fund_id is required"})
+            return json.dumps({
+                "success": False,
+                "error": "fund_id is required"
+            })
         
         if not instrument_id:
-            return json.dumps({"error": "instrument_id is required"})
+            return json.dumps({
+                "success": False,
+                "error": "instrument_id is required"
+            })
         
         if not side:
-            return json.dumps({"error": "side is required"})
+            return json.dumps({
+                "success": False,
+                "error": "side is required"
+            })
         
         if not trade_date:
-            return json.dumps({"error": "trade_date is required"})
+            return json.dumps({
+                "success": False,
+                "error": "trade_date is required"
+            })
         
         # Validate fund exists
         if str(fund_id) not in funds:
-            return json.dumps({"error": f"Fund {fund_id} not found"})
+            return json.dumps({
+                "success": False,
+                "error": f"Fund {fund_id} not found"
+            })
         
         # Validate instrument exists
         if str(instrument_id) not in instruments:
-            return json.dumps({"error": f"Instrument {instrument_id} not found"})
+            return json.dumps({
+                "success": False,
+                "error": f"Instrument {instrument_id} not found"
+            })
         
         # Validate side
         valid_sides = ["buy", "sell"]
         if side.lower() not in valid_sides:
-            return json.dumps({"error": f"Invalid side. Must be one of {valid_sides}"})
+            return json.dumps({
+                "success": False,
+                "error": f"Invalid side. Must be one of {valid_sides}"
+            })
         
         # Validate quantity
         try:
             quantity = float(quantity)
             if quantity <= 0:
-                return json.dumps({"error": "Quantity must be positive"})
+                return json.dumps({
+                    "success": False,
+                    "error": "Quantity must be positive"
+                })
         except (ValueError, TypeError):
-            return json.dumps({"error": "Invalid quantity format"})
+            return json.dumps({
+                "success": False,
+                "error": "Invalid quantity format"
+            })
         
         # Validate price
         try:
             price = float(price)
             if price <= 0:
-                return json.dumps({"error": "Price must be positive"})
+                return json.dumps({
+                    "success": False,
+                    "error": "Price must be positive"
+                })
         except (ValueError, TypeError):
-            return json.dumps({"error": "Invalid price format"})
+            return json.dumps({
+                "success": False,
+                "error": "Invalid price format"
+            })
         
         # Validate fund status is open
         fund = funds[str(fund_id)]
         if fund.get("status", "").lower() != "open":
-            return json.dumps({"error": f"Fund {fund_id} is not open for trading"})
+            return json.dumps({
+                "success": False,
+                "error": f"Fund {fund_id} is not open for trading"
+            })
         
         # Validate instrument status is active
         instrument = instruments[str(instrument_id)]
         if instrument.get("status", "").lower() != "active":
-            return json.dumps({"error": f"Instrument {instrument_id} is not active for trading"})
+            return json.dumps({
+                "success": False,
+                "error": f"Instrument {instrument_id} is not active for trading"
+            })
         
         # Execute the trade
         trade_id = generate_id(trades)
@@ -115,18 +162,40 @@ class CompleteTrade(Tool):
             "type": "function",
             "function": {
                 "name": "complete_trade",
-                "description": "Execute a trade for a fund after fund manager approval has been verified",
+                "description": "Execute a trade for a fund in the fund management system. This tool processes trade orders with comprehensive validation and regulatory compliance checks. Validates fund and instrument existence, trading eligibility, quantity and price parameters, and ensures proper market side specification. Requires Fund Manager approval as mandated by trading authorization procedures. Creates executed trade records with complete audit trail for regulatory reporting and portfolio tracking. Essential for fund portfolio management, investment strategy execution, and maintaining accurate position records. Supports buy and sell operations with real-time validation of fund and instrument trading status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "fund_id": {"type": "string", "description": "ID of the fund executing the trade"},
-                        "instrument_id": {"type": "string", "description": "ID of the instrument to trade"},
-                        "quantity": {"type": "number", "description": "Trade quantity: positive for buy, negative for sell"},
-                        "side": {"type": "string", "description": "Trade direction: 'buy' or 'sell'"},
-                        "trade_date": {"type": "string", "description": "Date of executing Trade (YYYY-MM-DD)"},
-                        "price": {"type": "number", "description": "Price"}
+                        "fund_id": {
+                            "type": "string", 
+                            "description": "Unique identifier of the fund executing the trade (required, must exist in system and have 'open' status)"
+                        },
+                        "instrument_id": {
+                            "type": "string", 
+                            "description": "Unique identifier of the financial instrument to trade (required, must exist in system and have 'active' status)"
+                        },
+                        "quantity": {
+                            "type": "number", 
+                            "description": "Number of units to trade (required, must be positive regardless of trade side)"
+                        },
+                        "side": {
+                            "type": "string", 
+                            "description": "Trade direction (required). Must be either 'buy' or 'sell'"
+                        },
+                        "trade_date": {
+                            "type": "string", 
+                            "description": "Date of trade execution in YYYY-MM-DD format (required)"
+                        },
+                        "price": {
+                            "type": "number", 
+                            "description": "Execution price per unit (required, must be positive)"
+                        },
+                        "fund_manager_approval": {
+                            "type": "boolean",
+                            "description": "Fund Manager approval presence (True/False) (required for trade execution as mandated by trading authorization procedures)"
+                        }
                     },
-                    "required": ["fund_id", "instrument_id", "quantity", "side", "trade_date", "price"]
+                    "required": ["fund_id", "instrument_id", "quantity", "side", "trade_date", "price", "fund_manager_approval"]
                 }
             }
         }
