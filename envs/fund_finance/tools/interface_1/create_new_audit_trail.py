@@ -15,10 +15,10 @@ class CreateNewAuditTrail(Tool):
         
         audit_trails = data.get("audit_trails", {})        
         
-        # Validate reference_type
+        # Validate reference_type - Added instrument_price
         valid_reference_types = [
             "user", "fund", "investor", "subscription", "commitment", "redemption",
-            "trade", "portfolio", "holding", "instrument", "invoice", "payment",
+            "trade", "portfolio", "holding", "instrument", "instrument_price", "invoice", "payment",
             "document", "report", "nav", "notification"
         ]
         if reference_type not in valid_reference_types:
@@ -39,7 +39,7 @@ class CreateNewAuditTrail(Tool):
         if action == "delete" and new_value is not None:
             raise ValueError("new_value should be null for delete actions")
         
-        # Validate that the referenced entity exists based on reference_type
+        # Validate that the referenced entity exists based on reference_type - Added instrument_price mapping
         reference_tables = {
             "user": "users",
             "fund": "funds",
@@ -51,6 +51,7 @@ class CreateNewAuditTrail(Tool):
             "portfolio": "portfolios",
             "holding": "portfolio_holdings",
             "instrument": "instruments",
+            "instrument_price": "instrument_prices",
             "invoice": "invoices",
             "payment": "payments",
             "document": "documents",
@@ -92,7 +93,7 @@ class CreateNewAuditTrail(Tool):
                     "type": "object",
                     "properties": {
                         "reference_id": {"type": "string", "description": "ID of the record that was changed"},
-                        "reference_type": {"type": "string", "description": "Type of record being audited (user, fund, investor, subscription, commitment, redemption, trade, portfolio, holding, instrument, invoice, payment, document, report, nav, notification)"},
+                        "reference_type": {"type": "string", "description": "Type of record being audited (user, fund, investor, subscription, commitment, redemption, trade, portfolio, holding, instrument, instrument_price, invoice, payment, document, report, nav, notification)"},
                         "action": {"type": "string", "description": "Action performed (create, update, delete, approve, cancel, process)"},
                         "field_name": {"type": "string", "description": "Name of the field that was changed (null for create/delete actions)"},
                         "old_value": {"type": "string", "description": "Previous value of the field (null for create actions)"},
