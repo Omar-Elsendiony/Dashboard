@@ -6,7 +6,7 @@ class RegisterCommitment(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], fund_id: str, investor_id: str, 
                commitment_amount: float, commitment_date: str, 
-               status: str = "pending") -> str:
+               status: str = "pending", compliance_officer_approval: bool = False) -> str:
         
         def generate_id(table: Dict[str, Any]) -> int:
             if not table:
@@ -16,6 +16,13 @@ class RegisterCommitment(Tool):
         funds = data.get("funds", {})
         investors = data.get("investors", {})
         commitments = data.get("commitments", {})
+        
+        # Validate required approvals first
+        if not compliance_officer_approval:
+            return json.dumps({
+                "success": False,
+                "error": "Compliance Officer approval is required for commitment creation"
+            })
         
         # Validate fund exists
         if str(fund_id) not in funds:
@@ -58,7 +65,7 @@ class RegisterCommitment(Tool):
             "type": "function",
             "function": {
                 "name": "register_commitment",
-                "description": "Create a new commitment for an investor to a fund",
+                "description": "Create a new commitment for an investor to a fund. This tool establishes investment commitments with comprehensive validation and regulatory compliance checks. Validates fund and investor existence, ensures unique investor-fund combinations, and checks commitment status according to regulatory requirements. Prevents duplicate commitment creation by checking existing investor-fund combinations. Requires Compliance Officer approval as mandated by regulatory procedures for commitment creation. Essential for investment tracking, capital call management, and regulatory compliance in fund operations.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -66,9 +73,13 @@ class RegisterCommitment(Tool):
                         "investor_id": {"type": "string", "description": "ID of the investor"},
                         "commitment_amount": {"type": "number", "description": "Amount of the commitment"},
                         "commitment_date": {"type": "string", "description": "Date of commitment (YYYY-MM-DD)"},
-                        "status": {"type": "string", "description": "Status of commitment (pending, fulfilled), defaults to pending"}
+                        "status": {"type": "string", "description": "Status of commitment (pending, fulfilled), defaults to pending"},
+                        "compliance_officer_approval": {
+                            "type": "boolean",
+                            "description": "Compliance Officer approval presence (True/False) (required for commitment creation as mandated by regulatory procedures)"
+                        }
                     },
-                    "required": ["fund_id", "investor_id", "commitment_amount", "commitment_date"]
+                    "required": ["fund_id", "investor_id", "commitment_amount", "commitment_date", "compliance_officer_approval"]
                 }
             }
         }
