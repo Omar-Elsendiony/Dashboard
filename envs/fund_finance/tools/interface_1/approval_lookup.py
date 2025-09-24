@@ -7,11 +7,20 @@ class ApprovalLookup(Tool):
     def invoke(data: Dict[str, Any], action: str, requester_email: str) -> str:
         # Define role authorization mapping (actions that can be performed WITHOUT approval)
         role_authorizations = {
-            "compliance_officer": [],  # Most actions require approval even from compliance officers
+            "compliance_officer": [
+                        "commitments_create",
+        "commitments_fulfill",
+        "investor_onboarding",
+        "investor_offboarding",],  # Most actions require approval even from compliance officers
             "fund_manager": [
                 "trade_execution",  # Direct authorization for trade execution
             ],
-            "finance_officer": [],  # Most actions require approval even from finance officers
+            "finance_officer": [
+                    "nav_valuation",
+    "invoice_management",
+    "payment_processing",
+    "nav_record_creation",
+    "reporting_holding"],  # Most actions require approval even from finance officers
             "trader": [
                 "trade_execution"  # Direct authorization for trade execution
             ],
