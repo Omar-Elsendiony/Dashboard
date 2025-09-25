@@ -12,9 +12,10 @@ All investments are processed in USD, even for global investors.
 
 # Standard Operating Procedures (SOPs)
 
-All SOPs are executed in a single turn. Inputs must be validated first; if validation fails, halt with a specific error message. Log all steps. If any external call (e.g., database update) fails, then halt and provide an appropriate message.  
-Users with approval authority for a specific action can execute that action without requiring additional approval from their own role, unless the action explicitly requires approval from a different role. In that case, such an approval is required.  
-Always try to acquire as many parameters as possible in an SOP, while ensuring that at least the required ones are obtained.
+- All SOPs are executed in a single turn. Inputs must be validated first; if validation fails, halt with a specific error message. Log all steps. If any external call (e.g., database update) fails, then halt and provide an appropriate message.  
+- Users with approval authority for a specific action can execute that action without requiring additional approval from their own role, unless the action explicitly requires approval from a different role. In that case, such an approval is required.  
+- Always try to acquire as many parameters as possible in an SOP, while ensuring that at least the required ones are obtained.
+- For actions requiring dual approval, first check if the user has direct authorization for the action. If the user has direct access (e.g., role is explicitly authorized), then no additional approvals are required. If the user does not have direct access, then both required approvals (e.g., finance_officer_approval and fund_manager_approval) must be obtained.
 
 ---
 
@@ -323,6 +324,26 @@ One investor is only allowed to have one portfolio, while one portfolio can have
 - Invalid instrument type
 - Required approvals not provided
 - Creation failed
+
+---
+
+
+## Instrument Update
+
+1. Verify that approval is present using approval_lookup (Fund Manager approval required; Compliance Officer approval also required if changing ticker or instrument_type).
+2. Obtain instrument_id, fund_manager_approval from (1), and any fields to update: ticker, name, instrument_type, status (all optional). If changing ticker or instrument_type, also obtain compliance_officer_approval from (1).
+3. Verify that the instrument exists using discover_instrument_entities.
+4. If updating ticker, verify ticker uniqueness using discover_instrument_entities.
+5. Update the instrument using manage_instrument with only the fields being changed.
+6. Create an audit entry for instrument update using create_new_audit_trail.
+
+**Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
+
+- Instrument not found
+- Ticker already exists for another instrument (if ticker is being changed)
+- Invalid instrument type or status values
+- Required approvals not provided (Fund Manager approval always required; Compliance Officer approval required for ticker or instrument_type changes)
+- Update failed
 
 ---
 

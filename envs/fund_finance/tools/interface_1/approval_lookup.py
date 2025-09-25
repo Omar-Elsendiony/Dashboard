@@ -9,12 +9,13 @@ class ApprovalLookup(Tool):
         role_authorizations = {
             "compliance_officer": [
                 "investor_onboarding", "investor_offboarding", "subscription_management", 
-                "commitments_create", "commitments_fulfill", "redemption_processing"
+                "commitments_create", "commitments_fulfill", "redemption_processing",
+                "instrument_creation", "instrument_update",
             ],
             "fund_manager": [
                 "fund_management_setup", "fund_management_maintenance", "trade_execution", 
                 "portfolio_creation", "portfolio_update", "portfolio_holding_management", 
-                "instrument_creation", "nav_record_updates", "instrument_price_updates",
+                "instrument_creation", "instrument_update", "nav_record_updates", "instrument_price_updates",
                 "reporting_performance", "reporting_financial", "subscription_management"
             ],
             "finance_officer": [
@@ -36,6 +37,7 @@ class ApprovalLookup(Tool):
             "fund_management_maintenance": ["fund_manager", "compliance_officer"],
             "redemption_processing": ["compliance_officer", "finance_officer"],
             "instrument_creation": ["fund_manager", "compliance_officer"],
+            "instrument_update": ["fund_manager", "compliance_officer"],
             "nav_record_updates": ["finance_officer", "fund_manager"],
             "instrument_price_updates": ["fund_manager", "compliance_officer"],
             "subscription_management": ["compliance_officer", "fund_manager"]
@@ -149,7 +151,7 @@ class ApprovalLookup(Tool):
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "The action being performed: investor_onboarding, investor_offboarding, fund_management_setup, fund_management_maintenance, subscription_management, commitments_create, commitments_fulfill, trade_execution, nav_valuation, redemption_processing, portfolio_creation, portfolio_update, portfolio_holding_management, instrument_creation, invoice_management, payment_processing, nav_record_creation, nav_record_updates, instrument_price_updates, reporting_performance, reporting_financial, reporting_holding, user_account_management, system_monitoring"
+                            "description": "The action being performed: investor_onboarding, investor_offboarding, fund_management_setup, fund_management_maintenance, subscription_management, commitments_create, commitments_fulfill, trade_execution, nav_valuation, redemption_processing, portfolio_creation, portfolio_update, portfolio_holding_management, instrument_creation, instrument_update, invoice_management, payment_processing, nav_record_creation, nav_record_updates, instrument_price_updates, reporting_performance, reporting_financial, reporting_holding, user_account_management, system_monitoring"
                         },
                         "requester_email": {
                             "type": "string",
