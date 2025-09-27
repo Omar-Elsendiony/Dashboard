@@ -156,6 +156,15 @@ def arguments_processing(arguments):
         if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower():
             cleaned_arguments[argument] = argument_value
             continue
+            
+        # Try to parse as JSON first (for objects/arrays)
+        if isinstance(argument_value, str) and (argument_value.startswith('{') or argument_value.startswith('[')):
+            try:
+                cleaned_arguments[argument] = json.loads(argument_value)
+                continue
+            except (json.JSONDecodeError, ValueError):
+                pass  # Fall through to literal_eval
+        
         # Try to evaluate literal (e.g., convert "True" → True, "123" → 123)
         try:
             cleaned_arguments[argument] = ast.literal_eval(argument_value)
@@ -343,6 +352,7 @@ def execute_api():
         try:
             # print(g.data)
             # Dynamically call the method with the provided arguments
+            print("Executing API:", api_name, "with arguments:", arguments)
             result = getattr(tools_instance, api_name)(data=g.data, **arguments)
             # print(f"Result from API {api_name}: {result}")
             session["actions"].append({
