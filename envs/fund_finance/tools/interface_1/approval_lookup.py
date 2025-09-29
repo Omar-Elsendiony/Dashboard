@@ -69,9 +69,7 @@ class ApprovalLookup(Tool):
             })
         
         # If not directly authorized, calculate and check approval code
-        # Generate calculated approval code: action + requester_id (hashed)
-        # import hashlib
-        # calculated_approval_code = hashlib.sha256(f"{action}_{requester_id}".encode()).hexdigest()
+        # Generate calculated approval code: action + requester_id
         calculated_approval_code = f"{action}_{requester_id}"
         
         approvals = data.get("approvals", {})

@@ -192,7 +192,7 @@ class ManageInstrumentPrice(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "price_id": price_id,
+                "price_id": str(price_id),
                 "message": f"Instrument price {price_id} updated successfully",
                 "price_data": updated_price
             })
@@ -217,7 +217,7 @@ class ManageInstrumentPrice(Tool):
                             "description": "Price data object. For create: requires instrument_id, price_date (cannot be future), open_price (positive), high_price (positive, >= low_price), low_price (positive, <= high_price), close_price (positive), fund_manager_approval (approval code), compliance_officer_approval (approval code). For update: includes price fields to change with both approval codes (instrument_id and price_date cannot be updated). SYNTAX: {\"key\": \"value\"}",
                             "properties": {
                                 "instrument_id": {
-                                    "type": "integer",
+                                    "type": "string",
                                     "description": "Unique identifier of the financial instrument (required for create only, cannot be updated)"
                                 },
                                 "price_date": {

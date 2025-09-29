@@ -189,7 +189,7 @@ class AddressNotifications(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "notification_id": notification_id,
+                "notification_id": str(notification_id),
                 "message": f"Notification {notification_id} updated successfully",
                 "notification_data": updated_notification
             })
@@ -228,7 +228,7 @@ class AddressNotifications(Tool):
                                     "enum": ["funds", "investors", "portfolios", "trades", "invoices", "reports", "documents", "subscriptions", "commitments"]
                                 },
                                 "reference_id": {
-                                    "type": "integer",
+                                    "type": "string",
                                     "description": "Optional reference to related record (for create only, cannot be updated)"
                                 },
                                 "status": {

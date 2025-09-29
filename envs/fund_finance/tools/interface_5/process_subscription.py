@@ -206,7 +206,7 @@ class ProcessSubscription(Tool):
             subscriptions[subscription_id] = updated_subscription
             
             return json.dumps({
-                "success": True, "action": "update", "subscription_id": subscription_id,
+                "success": True, "action": "update", "subscription_id": str(subscription_id),
                 "message": f"Subscription {subscription_id} updated successfully.",
                 "subscription_data": updated_subscription
             })
@@ -251,7 +251,7 @@ class ProcessSubscription(Tool):
             subscription["updated_at"] = "2025-10-01T00:00:00"
             
             return json.dumps({
-                "success": True, "action": "cancel", "subscription_id": subscription_id,
+                "success": True, "action": "cancel", "subscription_id": str(subscription_id),
                 "message": f"Subscription {subscription_id} cancelled successfully.",
                 "subscription_data": subscription
             })

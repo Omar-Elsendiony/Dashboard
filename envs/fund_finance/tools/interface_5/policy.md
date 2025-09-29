@@ -209,7 +209,7 @@ All investments are processed in USD, even for global investors.
 
 1. Verify that approval is present using approval_lookup (Compliance Officer and Finance Officer approvals required).
 2. Obtain investor_id, fund_id, amount_or_units, request_date, reason (optional), redemption_fee (optional), and finance_officer_approval from (1), and compliance_officer_approval from (1).
-3. Process the redemption using process_redemption.
+3. Process the redemption using execute_redemption.
 4. Create an audit entry for the redemption using generate_new_audit_trail.
 
 **Halt, and use route_to_human if you receive the following errors; otherwise complete the SOP:**

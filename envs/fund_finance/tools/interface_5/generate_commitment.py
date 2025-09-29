@@ -48,8 +48,8 @@ class GenerateCommitment(Tool):
         
         new_commitment = {
             "commitment_id": str(commitment_id),
-            "fund_id": fund_id,
-            "investor_id": investor_id,
+            "fund_id": str(fund_id),
+            "investor_id": str(investor_id),
             "commitment_amount": commitment_amount,
             "commitment_date": commitment_date,
             "status": status,

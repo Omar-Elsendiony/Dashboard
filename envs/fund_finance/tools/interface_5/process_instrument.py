@@ -179,7 +179,7 @@ class ProcessInstrument(Tool):
             new_id = str(generate_id(instruments))
             timestamp = "2025-10-01T00:00:00"
             new_instrument = {
-                "instrument_id": new_id,
+                "instrument_id": str(new_id),
                 "ticker": ticker,
                 "name": name,
                 "instrument_type": instrument_type,

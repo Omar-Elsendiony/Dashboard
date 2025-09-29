@@ -70,7 +70,7 @@ class CreateNewAuditTrail(Tool):
         
         new_audit_trail = {
             "audit_trail_id": str(audit_trail_id),
-            "reference_id": reference_id,
+            "reference_id": str(reference_id),
             "reference_type": reference_type,
             "action": action,
             "field_name": field_name,

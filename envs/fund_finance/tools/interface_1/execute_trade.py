@@ -127,8 +127,8 @@ class ExecuteTrade(Tool):
         
         new_trade = {
             "trade_id": str(trade_id),
-            "fund_id": fund_id,
-            "instrument_id": instrument_id,
+            "fund_id": str(fund_id),
+            "instrument_id": str(instrument_id),
             "trade_date": trade_date,
             "quantity": quantity,
             "price": price,
@@ -144,9 +144,9 @@ class ExecuteTrade(Tool):
             "trade_id": str(trade_id),
             "message": f"Trade {trade_id} executed successfully",
             "trade_data": {
-                "trade_id": new_trade["trade_id"],
-                "fund_id": new_trade["fund_id"],
-                "instrument_id": new_trade["instrument_id"],
+                "trade_id": str(new_trade["trade_id"]),
+                "fund_id": str(new_trade["fund_id"]),
+                "instrument_id": str(new_trade["instrument_id"]),
                 "quantity": new_trade["quantity"],
                 "price": new_trade["price"],
                 "side": new_trade["side"],

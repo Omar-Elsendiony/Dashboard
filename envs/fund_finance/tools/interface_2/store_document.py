@@ -54,7 +54,7 @@ class StoreDocument(Tool):
             "format": format,
             "uploaded_by": uploaded_by,
             "upload_date": timestamp,
-            "report_id": report_id,
+            "report_id": str(report_id),
             "size_bytes": size_bytes,
             "confidentiality_level": confidentiality_level,
             "status": status

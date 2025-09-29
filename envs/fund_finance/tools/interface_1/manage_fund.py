@@ -118,7 +118,7 @@ class ManageFund(Tool):
                 "fund_type": fund_data["fund_type"],
                 "size": fund_data.get("size"),
                 "base_currency": fund_data.get("base_currency", "USD"),
-                "manager_id": fund_data["manager_id"],
+                "manager_id": str(fund_data["manager_id"]),
                 "status": fund_data.get("status", "open"),
                 "created_at": "2025-10-01T12:00:00",
                 "updated_at": "2025-10-01T12:00:00"
@@ -250,7 +250,7 @@ class ManageFund(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "fund_id": fund_id,
+                "fund_id": str(fund_id),
                 "message": f"Fund {fund_id} updated successfully",
                 "fund_data": updated_fund
             })

@@ -74,7 +74,7 @@ class RecordInvestor(Tool):
             "date_of_incorporation": date_of_incorporation,
             "country": country_of_incorporation,
             "address": registered_address,
-            "tax_id": tax_id,
+            "tax_id": str(tax_id),
             "source_of_funds": source_of_funds,
             "status": "onboarded",
             "contact_email": contact_email,

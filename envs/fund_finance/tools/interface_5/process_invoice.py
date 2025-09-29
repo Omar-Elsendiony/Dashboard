@@ -115,7 +115,7 @@ class ProcessInvoice(Tool):
             # Create new invoice record
             new_invoice = {
                 "invoice_id": str(new_invoice_id),
-                "commitment_id": invoice_data.get("commitment_id"),
+                "commitment_id": str(invoice_data.get("commitment_id")),
                 "invoice_date": invoice_data["invoice_date"],
                 "due_date": invoice_data["due_date"],
                 "amount": invoice_data["amount"],
@@ -241,7 +241,7 @@ class ProcessInvoice(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "invoice_id": invoice_id,
+                "invoice_id": str(invoice_id),
                 "message": f"Invoice {invoice_id} updated successfully",
                 "invoice_data": updated_invoice
             })
@@ -266,7 +266,7 @@ class ProcessInvoice(Tool):
                             "description": "Invoice data object. For create: requires invoice_date, due_date (>= invoice_date), amount (positive), finance_officer_approval, with optional commitment_id and status (defaults to 'issued'). For update: includes invoice fields to change with finance_officer_approval (invoice_date cannot be updated). SYNTAX: {\"key\": \"value\"}",
                             "properties": {
                                 "commitment_id": {
-                                    "type": "integer",
+                                    "type": "string",
                                     "description": "Reference to related commitment (optional, unique with invoice_date if provided)"
                                 },
                                 "invoice_date": {

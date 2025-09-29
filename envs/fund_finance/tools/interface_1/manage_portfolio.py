@@ -183,7 +183,7 @@ class ManagePortfolio(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "portfolio_id": portfolio_id,
+                "portfolio_id": str(portfolio_id),
                 "message": f"Portfolio {portfolio_id} updated successfully",
                 "portfolio_data": updated_portfolio
             })
@@ -208,7 +208,7 @@ class ManagePortfolio(Tool):
                             "description": "Portfolio data object. For create: requires investor_id, status (optional, defaults to 'active'), and either fund_manager_approval OR finance_officer_approval. For update: includes status changes with fund_manager_approval (investor_id cannot be updated). SYNTAX: {\"key\": \"value\"}",
                             "properties": {
                                 "investor_id": {
-                                    "type": "integer",
+                                    "type": "string",
                                     "description": "Unique identifier of the investor (required for create only, cannot be updated)"
                                 },
                                 "status": {

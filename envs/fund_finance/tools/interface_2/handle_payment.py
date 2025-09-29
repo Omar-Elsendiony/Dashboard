@@ -95,8 +95,8 @@ class HandlePayment(Tool):
             # Create new payment record
             new_payment = {
                 "payment_id": str(new_payment_id),
-                "invoice_id": payment_data["invoice_id"],
-                "subscription_id": payment_data["subscription_id"],
+                "invoice_id": str(payment_data["invoice_id"]),
+                "subscription_id": str(payment_data["subscription_id"]),
                 "payment_date": payment_data["payment_date"],
                 "amount": payment_data["amount"],
                 "payment_method": payment_data["payment_method"],
@@ -208,7 +208,7 @@ class HandlePayment(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "payment_id": payment_id,
+                "payment_id": str(payment_id),
                 "message": f"Payment {payment_id} updated successfully",
                 "payment_data": updated_payment
             })
@@ -233,11 +233,11 @@ class HandlePayment(Tool):
                             "description": "Payment data object. For create: requires invoice_id (target invoice), subscription_id (related subscription), payment_date (settlement date), amount (positive value), payment_method (settlement method), finance_officer_approval (authorization), with optional status (defaults to 'draft'). For update: fields to change with finance_officer_approval (core fields cannot be updated, completed payments cannot be modified). SYNTAX: {\"key\": \"value\"}",
                             "properties": {
                                 "invoice_id": {
-                                    "type": "integer",
+                                    "type": "string",
                                     "description": "Unique identifier of the target invoice (required for create only, cannot be updated)"
                                 },
                                 "subscription_id": {
-                                    "type": "integer", 
+                                    "type": "string", 
                                     "description": "Unique identifier of the related subscription (required for create only, cannot be updated)"
                                 },
                                 "payment_date": {

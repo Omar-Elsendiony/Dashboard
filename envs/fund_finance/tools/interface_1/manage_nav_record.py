@@ -97,7 +97,7 @@ class ManageNavRecord(Tool):
             # Create new NAV record
             new_nav = {
                 "nav_id": str(new_nav_id),
-                "fund_id": nav_data["fund_id"],
+                "fund_id": str(nav_data["fund_id"]),
                 "nav_date": nav_data["nav_date"],
                 "nav_value": nav_data["nav_value"],
                 "updated_at": "2025-10-01T12:00:00"
@@ -176,7 +176,7 @@ class ManageNavRecord(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "nav_id": nav_id,
+                "nav_id": str(nav_id),
                 "message": f"NAV record {nav_id} updated successfully",
                 "nav_data": updated_nav
             })
@@ -201,7 +201,7 @@ class ManageNavRecord(Tool):
                             "description": "NAV data object. For create: requires fund_id, nav_date (cannot be future), nav_value (positive), finance_officer_approval (approval code). For update: includes nav_value to change with both finance_officer_approval and fund_manager_approval (fund_id and nav_date cannot be updated). SYNTAX: {\"key\": \"value\"}",
                             "properties": {
                                 "fund_id": {
-                                    "type": "integer",
+                                    "type": "string",
                                     "description": "Unique identifier of the fund (required for create only, cannot be updated, unique with nav_date)"
                                 },
                                 "nav_date": {

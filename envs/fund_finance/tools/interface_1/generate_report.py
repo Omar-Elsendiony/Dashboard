@@ -55,9 +55,9 @@ class GenerateReport(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_report = {
-            "report_id": report_id,
-            "fund_id": fund_id,
-            "investor_id": investor_id,
+            "report_id": str(report_id),
+            "fund_id": str(fund_id),
+            "investor_id": str(investor_id),
             "report_date": report_date,
             "report_type": report_type,
             "generated_by": generated_by,
