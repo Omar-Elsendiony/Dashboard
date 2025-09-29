@@ -622,7 +622,8 @@ function getTaskActions(){
                 } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
                     // console.log('parsing json')
                     try {
-                        parameters.set(paramName, JSON.parse(paramVal));
+                        const fixedVal = paramVal.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false');
+                        parameters.set(paramName, JSON.parse(fixedVal));
                     } catch (e) {
                         parameters.set(paramName, paramVal); // Fallback to string if parsing fails
                     }
