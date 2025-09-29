@@ -284,7 +284,7 @@ class ManageSubscription(Tool):
                                     "description": "Unique identifier of the investor (required for create only, must exist in system, unique with fund_id for subscription)"
                                 },
                                 "amount": {
-                                    "type": "string",
+                                    "type": "number",
                                     "description": "Subscription amount in USD (required for create, must be positive number, validates against fund minimums)"
                                 },
                                 "request_assigned_to": {

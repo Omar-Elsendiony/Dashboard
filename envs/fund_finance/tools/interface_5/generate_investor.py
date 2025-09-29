@@ -7,7 +7,7 @@ class GenerateInvestor(Tool):
     def invoke(data: Dict[str, Any], legal_name: str, source_of_funds: str, 
                contact_email: str, accreditation_status: str,
                compliance_officer_approval: bool,
-               registration_number: Optional[str] = None,
+               registration_number: Optional[int] = None,
                date_of_incorporation: Optional[str] = None,
                country_of_incorporation: Optional[str] = None,
                registered_address: Optional[str] = None,
@@ -101,7 +101,7 @@ class GenerateInvestor(Tool):
                             "description": "Legal name of the investor (required, cannot be empty or whitespace only)"
                         },
                         "registration_number": {
-                            "type": "string", 
+                            "type": "number", 
                             "description": "Registration number of the investor entity (optional, used for corporate entities)"
                         },
                         "date_of_incorporation": {

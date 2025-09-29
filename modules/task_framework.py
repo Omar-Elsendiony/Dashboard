@@ -351,7 +351,7 @@ def execute_api():
         try:
             # print(g.data)
             # Dynamically call the method with the provided arguments
-            print("Executing API:", api_name, "with arguments:", arguments)
+            # print("Executing API:", api_name, "with arguments:", arguments)
             result = getattr(tools_instance, api_name)(data=g.data, **arguments)
             # print(f"Result from API {api_name}: {result}")
             session["actions"].append({
