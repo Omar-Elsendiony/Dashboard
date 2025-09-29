@@ -114,8 +114,8 @@ class ProcessInvoice(Tool):
             
             # Create new invoice record
             new_invoice = {
-                "invoice_id": str(new_invoice_id),
-                "commitment_id": str(invoice_data.get("commitment_id")),
+                "invoice_id": str(new_invoice_id) if new_invoice_id is not None else None,
+                "commitment_id": str(invoice_data.get("commitment_id")) if invoice_data.get("commitment_id") is not None else None,
                 "invoice_date": invoice_data["invoice_date"],
                 "due_date": invoice_data["due_date"],
                 "amount": invoice_data["amount"],
