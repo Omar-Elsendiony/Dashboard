@@ -616,8 +616,9 @@ function getTaskActions(){
                     else {
                         parameters.set(paramName, Number(paramVal));
                     }
-                } else if (paramVal === 'true' || paramVal === 'false') {
+                } else if (paramVal.toLowerCase() === 'true' || paramVal.toLowerCase() === 'false') {
                     // console.log('mgegege')
+                    paramVal = paramVal.toLowerCase();
                     parameters.set(paramName, (paramVal === 'true'));
                 } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
                     // console.log('parsing json')
