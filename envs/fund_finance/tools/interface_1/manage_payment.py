@@ -94,9 +94,9 @@ class ManagePayment(Tool):
             
             # Create new payment record
             new_payment = {
-                "payment_id": str(new_payment_id),
-                "invoice_id": str(payment_data["invoice_id"]),
-                "subscription_id": str(payment_data["subscription_id"]),
+                "payment_id": str(new_payment_id) if new_payment_id else None ,
+                "invoice_id": str(payment_data["invoice_id"]) if payment_data["invoice_id"] else None,
+                "subscription_id": str(payment_data["subscription_id"]) if payment_data["subscription_id"] else None,
                 "payment_date": payment_data["payment_date"],
                 "amount": payment_data["amount"],
                 "payment_method": payment_data["payment_method"],
@@ -109,7 +109,7 @@ class ManagePayment(Tool):
             return json.dumps({
                 "success": True,
                 "action": "create",
-                "payment_id": str(new_payment_id),
+                "payment_id": str(new_payment_id) if new_payment_id else None ,
                 "message": f"Payment {new_payment_id} created successfully for invoice {payment_data['invoice_id']}",
                 "payment_data": new_payment
             })

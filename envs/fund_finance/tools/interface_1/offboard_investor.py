@@ -61,10 +61,10 @@ class OffboardInvestor(Tool):
 
         return json.dumps({
             "success": True,
-            "investor_id": str(investor_id),
+            "investor_id": str(investor_id) if investor_id else None,
             "message": f"Investor {investor_id} successfully offboarded",
             "investor_data": {
-                "investor_id": str(investor.get("investor_id")),
+                "investor_id": str(investor.get("investor_id")) if investor.get("investor_id") else None,
                 "name": investor.get("name"),
                 "status": investor.get("status"),
                 "contact_email": investor.get("contact_email"),

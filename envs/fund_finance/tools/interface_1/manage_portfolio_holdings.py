@@ -86,9 +86,9 @@ class ManagePortfolioHoldings(Tool):
             new_holding_id = generate_id(portfolio_holdings)
             
             new_holding = {
-                "holding_id": str(new_holding_id),
-                "portfolio_id": str(holding_data["portfolio_id"]),
-                "fund_id": str(holding_data["fund_id"]),
+                "holding_id": str(new_holding_id) if new_holding_id else None,
+                "portfolio_id": str(holding_data["portfolio_id"]) if holding_data["portfolio_id"] else None,
+                "fund_id": str(holding_data["fund_id"]) if holding_data["fund_id"] else None,
                 "quantity": holding_data["quantity"],
                 "cost_basis": holding_data["cost_basis"],
                 "created_at": "2025-10-01T12:00:00"
@@ -99,7 +99,7 @@ class ManagePortfolioHoldings(Tool):
             return json.dumps({
                 "success": True,
                 "action": "create",
-                "holding_id": str(new_holding_id),
+                "holding_id": str(new_holding_id) if new_holding_id else None,
                 "message": f"Portfolio holding {new_holding_id} created successfully for portfolio {portfolio_id} with fund {fund_id}",
                 "holding_data": new_holding
             })

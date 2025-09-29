@@ -141,12 +141,12 @@ class ConductTrade(Tool):
         
         return json.dumps({
             "success": True,
-            "trade_id": str(trade_id),
+            "trade_id": str(trade_id) if trade_id is not None else None,
             "message": f"Trade {trade_id} executed successfully",
             "trade_data": {
-                "trade_id": str(new_trade["trade_id"]),
-                "fund_id": str(new_trade["fund_id"]),
-                "instrument_id": str(new_trade["instrument_id"]),
+                "trade_id": str(new_trade["trade_id"]) if new_trade["trade_id"] is not None else None,
+                "fund_id": str(new_trade["fund_id"]) if new_trade["fund_id"] is not None else None,
+                "instrument_id": str(new_trade["instrument_id"]) if new_trade["instrument_id"] is not None else None,
                 "quantity": new_trade["quantity"],
                 "price": new_trade["price"],
                 "side": new_trade["side"],

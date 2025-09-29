@@ -241,7 +241,7 @@ class AddressInvoice(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "invoice_id": str(invoice_id),
+                "invoice_id": str(invoice_id) if invoice_id is not None else None,
                 "message": f"Invoice {invoice_id} updated successfully",
                 "invoice_data": updated_invoice
             })

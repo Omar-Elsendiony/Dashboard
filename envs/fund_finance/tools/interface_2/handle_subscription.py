@@ -153,7 +153,7 @@ class HandleSubscription(Tool):
             # Generate new subscription ID and create record
             new_subscription_id = generate_id(subscriptions)
             new_subscription = {
-                "subscription_id": str(new_subscription_id), "fund_id": fund_id, "investor_id": investor_id,
+                "subscription_id": str(new_subscription_id) if new_subscription_id else None, "fund_id": str(fund_id) if fund_id else None, "investor_id": str(investor_id) if investor_id else None,
                 "amount": amount, "status": status, "request_assigned_to": request_assigned_to,
                 "request_date": request_date, "approval_date": subscription_data.get("approval_date"),
                 "updated_at": "2025-10-01T00:00:00"

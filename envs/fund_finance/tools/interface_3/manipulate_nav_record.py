@@ -176,7 +176,7 @@ class ManipulateNavRecord(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "nav_id": str(nav_id),
+                "nav_id": str(nav_id) if nav_id is not None else None,
                 "message": f"NAV record {nav_id} updated successfully",
                 "nav_data": updated_nav
             })

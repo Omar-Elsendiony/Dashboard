@@ -49,12 +49,12 @@ class SubmitDocument(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_document = {
-            "document_id": str(document_id),
+            "document_id": str(document_id) if document_id else None,
             "name": name,
             "format": format,
             "uploaded_by": uploaded_by,
             "upload_date": timestamp,
-            "report_id": str(report_id),
+            "report_id": str(report_id) if report_id else None,
             "size_bytes": size_bytes,
             "confidentiality_level": confidentiality_level,
             "status": status
@@ -76,7 +76,7 @@ class SubmitDocument(Tool):
                         "name": {"type": "string", "description": "Name of the document file"},
                         "format": {"type": "string", "description": "Format of document (pdf, xlsx, docx, csv, other)"},
                         "uploaded_by": {"type": "string", "description": "ID of the user uploading the document"},
-                        "size_bytes": {"type": "integer", "description": "Size of document in bytes"},
+                        "size_bytes": {"type": "number", "description": "Size of document in bytes"},
                         "report_id": {"type": "string", "description": "ID of related report if applicable"},
                         "confidentiality_level": {"type": "string", "description": "Confidentiality level (public, internal, confidential, restricted), defaults to internal"},
                         "status": {"type": "string", "description": "Status of document (available, archived, deleted), defaults to available"}

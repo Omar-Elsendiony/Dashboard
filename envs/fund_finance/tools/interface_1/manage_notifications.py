@@ -111,11 +111,11 @@ class ManageNotifications(Tool):
             
             # Create new notification record
             new_notification = {
-                "notification_id": str(new_notification_id),
+                "notification_id": str(new_notification_id) if new_notification_id else None,
                 "email": notification_data["email"],
                 "type": notification_data["type"],
                 "class": notification_data["class"],
-                "reference_id": notification_data.get("reference_id"),
+                "reference_id": str(notification_data.get("reference_id")) if notification_data.get("reference_id") else None,
                 "status": notification_data.get("status", "pending"),
                 "sent_at": None,
                 "created_at": "2025-10-01T12:00:00"
@@ -126,7 +126,7 @@ class ManageNotifications(Tool):
             return json.dumps({
                 "success": True,
                 "action": "create",
-                "notification_id": str(new_notification_id),
+                "notification_id": str(new_notification_id) if new_notification_id else None,
                 "message": f"Notification {new_notification_id} created successfully for {notification_data['email']}",
                 "notification_data": new_notification
             })

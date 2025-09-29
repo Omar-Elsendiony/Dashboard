@@ -36,9 +36,9 @@ class GetTradingEntities(Tool):
                         match = False
                         break
                 if match:
-                    results.append({**entity_data, "trade_id": entity_id})
+                    results.append({**entity_data, "trade_id": str(entity_id)})
             else:
-                results.append({**entity_data, "trade_id": entity_id})
+                results.append({**entity_data, "trade_id": str(entity_id)})
         
         return json.dumps({
             "success": True,

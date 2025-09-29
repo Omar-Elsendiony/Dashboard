@@ -93,8 +93,8 @@ class AddressPortfolio(Tool):
             
             # Create new portfolio record
             new_portfolio = {
-                "portfolio_id": str(new_portfolio_id),
-                "investor_id": portfolio_data["investor_id"],
+                "portfolio_id": str(new_portfolio_id) if new_portfolio_id else None ,
+                "investor_id": str(portfolio_data["investor_id"]) if portfolio_data["investor_id"] else None,
                 "status": portfolio_data.get("status", "active"),
                 "created_at": "2025-10-01T12:00:00",
                 "updated_at": "2025-10-01T12:00:00"
@@ -105,7 +105,7 @@ class AddressPortfolio(Tool):
             return json.dumps({
                 "success": True,
                 "action": "create",
-                "portfolio_id": str(new_portfolio_id),
+                "portfolio_id": str(new_portfolio_id) if new_portfolio_id else None ,
                 "message": f"Portfolio {new_portfolio_id} created successfully for investor {investor_id}",
                 "portfolio_data": new_portfolio
             })

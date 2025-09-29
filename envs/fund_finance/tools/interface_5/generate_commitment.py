@@ -47,9 +47,9 @@ class GenerateCommitment(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_commitment = {
-            "commitment_id": str(commitment_id),
-            "fund_id": str(fund_id),
-            "investor_id": str(investor_id),
+            "commitment_id": str(commitment_id) if commitment_id is not None else None,
+            "fund_id": str(fund_id) if fund_id is not None else None,
+            "investor_id": str(investor_id) if investor_id is not None else None,
             "commitment_amount": commitment_amount,
             "commitment_date": commitment_date,
             "status": status,

@@ -68,13 +68,13 @@ class GenerateInvestor(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_investor = {
-            "investor_id": str(investor_id),
+            "investor_id": str(investor_id) if investor_id is not None else None,
             "name": legal_name,
             "registration_number": registration_number,
             "date_of_incorporation": date_of_incorporation,
             "country": country_of_incorporation,
             "address": registered_address,
-            "tax_id": str(tax_id),
+            "tax_id": str(tax_id) if tax_id is not None else None,
             "source_of_funds": source_of_funds,
             "status": "onboarded",
             "contact_email": contact_email,

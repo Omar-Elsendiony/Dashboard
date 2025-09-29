@@ -96,7 +96,7 @@ class HandleInstrumentPrice(Tool):
             # Create new price record
             new_price = {
                 "price_id": str(new_price_id),
-                "instrument_id": price_data["instrument_id"],
+                "instrument_id": str(price_data["instrument_id"]),
                 "price_date": price_data["price_date"],
                 "open_price": price_data["open_price"],
                 "high_price": price_data["high_price"],
@@ -192,7 +192,7 @@ class HandleInstrumentPrice(Tool):
             return json.dumps({
                 "success": True,
                 "action": "update",
-                "price_id": str(price_id),
+                "price_id": str(price_id) if price_id is not None else None,
                 "message": f"Instrument price {price_id} updated successfully",
                 "price_data": updated_price
             })

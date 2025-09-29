@@ -156,7 +156,6 @@ def arguments_processing(arguments):
         if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower():
             cleaned_arguments[argument] = argument_value
             continue
-            
         # Try to parse as JSON first (for objects/arrays)
         if isinstance(argument_value, str) and (argument_value.startswith('{') or argument_value.startswith('[')):
             try:

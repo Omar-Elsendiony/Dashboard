@@ -69,8 +69,8 @@ class AddNewAuditTrail(Tool):
         timestamp = "2025-10-01T00:00:00"
         
         new_audit_trail = {
-            "audit_trail_id": str(audit_trail_id),
-            "reference_id": str(reference_id),
+            "audit_trail_id": str(audit_trail_id) if audit_trail_id is not None else None,
+            "reference_id": str(reference_id) if reference_id is not None else None,
             "reference_type": reference_type,
             "action": action,
             "field_name": field_name,
