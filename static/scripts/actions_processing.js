@@ -604,7 +604,7 @@ function getTaskActions(){
         
         paramInputs.forEach(input => {
             const paramName = input.dataset.param;
-            const paramVal = input.value.trim();
+            let paramVal = input.value.trim();
             console.log(paramName, paramVal);
             if (paramVal !== '') {
                 // console.log(Number.isNaN(Number(paramVal)))
