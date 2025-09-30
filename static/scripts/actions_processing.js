@@ -610,7 +610,7 @@ function getTaskActions(){
                 // console.log(Number.isNaN(Number(paramVal)))
                 if (!Number.isNaN(Number(paramVal)) && !paramName.includes('phone') && !paramName.includes('mobile')) {
                     // console.log('parsing number')
-                    if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to')) {
+                    if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to') || paramName === 'name' || paramName === 'new_value' || paramName === 'old_value') {
                         parameters.set(paramName, paramVal); // Keep as string for IDs
                     }
                     else {

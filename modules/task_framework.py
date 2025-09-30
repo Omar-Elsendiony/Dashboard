@@ -153,7 +153,7 @@ def arguments_processing(arguments):
             continue
 
         # Skip IDs (do not modify or parse)
-        if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower():
+        if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower() or argument == "new_value" or argument == "old_value":
             cleaned_arguments[argument] = argument_value
             continue
         # Try to parse as JSON first (for objects/arrays)
