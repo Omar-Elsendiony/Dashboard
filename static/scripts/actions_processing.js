@@ -752,6 +752,16 @@ function getTaskActions(catchFloat = true){
             }
         }
         
+        let sortedOutput = output;
+        if (output && typeof output === 'object' && !Array.isArray(output)) {
+            sortedOutput = {};
+            const outputEntries = Object.entries(output);
+            outputEntries.sort((a, b) => a[0].localeCompare(b[0]));
+            outputEntries.forEach(([key, value]) => {
+                sortedOutput[key] = value;
+            });
+        }
+
         actions.push({
             name: selectedAPI,
             arguments: Object.fromEntries(parameters),
@@ -798,12 +808,22 @@ function formatJSONWithFloats(obj, indent = 2, removeFloatFields = false) {
             }
             
             // Filter out _floatFields if removeFloatFields is true
-            const keys = Object.keys(value).filter(k => !removeFloatFields || k !== '_floatFields');
-            if (keys.length === 0) return '{}';
-            const items = keys.map(key => 
-                `${nextIndent}"${key}": ${format(value[key], depth + 1, key, localFloatFields)}`
+            let entries = Object.entries(value).filter(([k, v]) => !removeFloatFields || k !== '_floatFields');
+            
+            // Sort entries alphabetically by key for consistent output
+            entries.sort((a, b) => a[0].localeCompare(b[0]));
+            
+            if (entries.length === 0) return '{}';
+            const items = entries.map(([key, val]) => 
+                `${nextIndent}"${key}": ${format(val, depth + 1, key, localFloatFields)}`
             );
             return `{\n${items.join(',\n')}\n${currentIndent}}`;
+            // const keys = Object.keys(value).filter(k => !removeFloatFields || k !== '_floatFields');
+            // if (keys.length === 0) return '{}';
+            // const items = keys.map(key => 
+            //     `${nextIndent}"${key}": ${format(value[key], depth + 1, key, localFloatFields)}`
+            // );
+            // return `{\n${items.join(',\n')}\n${currentIndent}}`;
         }
         return String(value);
     }
