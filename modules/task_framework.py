@@ -393,7 +393,7 @@ def execute_api():
             # parsed_result = convert_floats_to_strings(parsed_result)
             # print("parsed_res:" , (parsed_result))
             # print(type(result))
-            return ({'output': result, 'float_fields': float_fields}
+            return ({'output': parsed_result, 'float_fields': float_fields}
             ), 200
             
             # return jsonify({
