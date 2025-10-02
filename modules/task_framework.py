@@ -3,7 +3,7 @@ import json
 import ast
 import re
 from typing import Dict, Any
-from flask import Blueprint, render_template, request, jsonify, session, g
+from flask import Blueprint, render_template, request, jsonify, session, g, Response
 
 task_framework_bp = Blueprint('task_framework', __name__)
 
@@ -302,6 +302,36 @@ def execute_api_utility(api_name, arguments):
     #         'status': 'error',
     #         'message': f'API {api_name} not found'
     #     }), 404
+def convert_floats_to_strings(obj):
+    """Recursively convert all float values to strings with .0 preserved"""
+    if isinstance(obj, dict):
+        return {k: convert_floats_to_strings(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_floats_to_strings(item) for item in obj]
+    elif isinstance(obj, float):
+        # Check if it's a whole number
+        if obj.is_integer():
+            return f"{int(obj)}.0"
+        else:
+            return str(obj)
+    return obj
+
+def detect_float_fields(obj, parent_key='', float_fields=None):
+    """Recursively detect which fields are floats"""
+    if float_fields is None:
+        float_fields = set()
+    
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            if isinstance(value, float):
+                float_fields.add(key)
+            if isinstance(value, (dict, list)):
+                detect_float_fields(value, key, float_fields)
+    elif isinstance(obj, list):
+        for item in obj:
+            detect_float_fields(item, parent_key, float_fields)
+    
+    return float_fields
 
 
 @task_framework_bp.route('/execute_api', strict_slashes=False, methods=["GET", "POST"])
@@ -358,9 +388,17 @@ def execute_api():
                 'api_name': api_name,
                 'arguments': arguments
             })
-            return jsonify({
-                'output': json.loads(result) if isinstance(result, str) else result
-            }), 200
+            parsed_result = json.loads(result) if isinstance(result, str) else result
+            float_fields = list(detect_float_fields(parsed_result))
+            # parsed_result = convert_floats_to_strings(parsed_result)
+            # print("parsed_res:" , (parsed_result))
+            # print(type(result))
+            return ({'output': result, 'float_fields': float_fields}
+            ), 200
+            
+            # return jsonify({
+            #     'output': json.loads(result) if isinstance(result, str) else result
+            # }), 200
         except Exception as e:
             print(f"Error executing API {api_name}: {str(e)}")
             return jsonify({

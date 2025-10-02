@@ -1018,3 +1018,7 @@ button {
     display: block;
 }
 
+.response-content .floatFields {
+    display: none;
+}
+

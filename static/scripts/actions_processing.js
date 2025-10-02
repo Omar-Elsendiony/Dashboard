@@ -257,6 +257,81 @@ function selectAPI(actionId, apiKey) {
     executeDiv.style.display = 'block';
 }
 
+function convertStringFloatsToNumbers(obj) {
+    /**
+     * Recursively process object and convert string floats to numbers
+     * Preserves .0 for whole numbers using toFixed(1)
+     */
+    if (typeof obj === 'string') {
+        // Check if string looks like a float (e.g., "4241.0" or "123.456")
+        if (/^-?\d+\.\d+$/.test(obj)) {
+            // If it was a whole number with .0, format it
+            if (obj.endsWith('.0')) {
+                return parseFloat(obj).toFixed(1);
+            } else{
+                return parseFloat(obj);
+            }
+        }
+        return obj;
+    }
+    if (Array.isArray(obj)) {
+        return obj.map(convertStringFloatsToNumbers);
+    }
+    if (obj && typeof obj === 'object') {
+        const converted = {};
+        for (let key in obj) {
+            converted[key] = convertStringFloatsToNumbers(obj[key]);
+        }
+        return converted;
+    }
+    return obj;
+}
+
+// function formatJSONWithFloats(obj, indent = 2) {
+//     /**
+//      * Custom JSON formatter that displays .0 for whole number floats
+//      * without showing them as strings
+//      */
+//     const spaces = ' '.repeat(indent);
+    
+//     function format(value, depth = 0) {
+//         const currentIndent = spaces.repeat(depth);
+//         const nextIndent = spaces.repeat(depth + 1);
+        
+//         if (value === null) return 'null';
+//         if (value === undefined) return 'undefined';
+//         if (typeof value === 'boolean') return String(value);
+//         if (typeof value === 'number') {
+//             // Format whole numbers with .0
+//             return Number.isInteger(value) ? `${value}.0` : String(value);
+//         }
+//         if (typeof value === 'string') {
+//             // Check if it's a float string that should be displayed as number
+//             if (/^-?\d+\.\d+$/.test(value)) {
+//                 return value; // Display without quotes
+//             }
+//             return JSON.stringify(value);
+//         }
+//         if (Array.isArray(value)) {
+//             if (value.length === 0) return '[]';
+//             const items = value.map(item => `${nextIndent}${format(item, depth + 1)}`);
+//             return `[\n${items.join(',\n')}\n${currentIndent}]`;
+//         }
+//         if (typeof value === 'object') {
+//             const keys = Object.keys(value);
+//             if (keys.length === 0) return '{}';
+//             const items = keys.map(key => 
+//                 `${nextIndent}"${key}": ${format(value[key], depth + 1)}`
+//             );
+//             return `{\n${items.join(',\n')}\n${currentIndent}}`;
+//         }
+//         return String(value);
+//     }
+    
+//     return format(obj);
+// }
+
+
 async function executeAPI(actionId) {
     const environment = document.getElementById('environment').value.trim();
     const actionDiv = document.getElementById(actionId);
@@ -302,20 +377,6 @@ async function executeAPI(actionId) {
     responseDiv.className = 'api-response show';
     
     try {
-        const response = await fetch('/execute_api', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                api_name: selectedAPI,
-                parameters: parameters,
-                environment: environment
-            })
-        });
-        
-        const result = await response.json();
-        
         function fixNewlines(obj) {
             if (typeof obj === 'string') {
                 return obj.replace(/\\n/g, '\n');
@@ -332,18 +393,48 @@ async function executeAPI(actionId) {
             }
             return obj;
         }
+
+        const response = await fetch('/execute_api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                api_name: selectedAPI,
+                parameters: parameters,
+                environment: environment
+            })
+        });
+        
+        const result = await response.json();
+
+
         if (response.ok) {
             responseDiv.className = 'api-response show success';
             responseDiv.innerHTML = `
                 <div class="response-header">✅ Success</div>
-                <div class="response-content"><pre></pre></div>
+                <div class="response-content"><pre></pre><pre class="floatFields"></pre></div>
             `;
             // Set the JSON content as text to preserve literals
             
             // Process the data to convert literal \n to actual newlines
-
-            const fixedResult = fixNewlines(result);
-            responseDiv.querySelector('pre').textContent = JSON.stringify(fixedResult, null, 2);
+            console.log(result)
+            try {
+                result.output = JSON.parse(result.output)
+            } catch (e) {
+                // Not JSON, keep as is
+            }
+            // result.output = convertStringFloatsToNumbers(result.output)
+            if (result.float_fields && Array.isArray(result.float_fields)) {
+                result.output._floatFields = result.float_fields;
+            }
+            
+            const displayResult = {
+                output: result.output
+            };
+            const fixedResult = fixNewlines(displayResult);
+            responseDiv.querySelector('pre').textContent =  formatJSONWithFloats(fixedResult, 2, true);
+            responseDiv.querySelector('.floatFields').textContent = result.float_fields ? `Float Fields: ${result.float_fields.join(', ')}` : '';
             showCorrectMessage('API executed successfully!');
         } else {
             responseDiv.className = 'api-response show error';
@@ -605,51 +696,61 @@ function getTaskActions(){
         paramInputs.forEach(input => {
             const paramName = input.dataset.param;
             let paramVal = input.value.trim();
-            console.log(paramName, paramVal);
             if (paramVal !== '') {
-                // console.log(Number.isNaN(Number(paramVal)))
                 if (!Number.isNaN(Number(paramVal)) && !paramName.includes('phone') && !paramName.includes('mobile')) {
-                    // console.log('parsing number')
                     if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to') || paramName === 'name' || paramName === 'new_value' || paramName === 'old_value') {
-                        parameters.set(paramName, paramVal); // Keep as string for IDs
-                    }
-                    else {
+                        parameters.set(paramName, paramVal);
+                    } else {
                         parameters.set(paramName, Number(paramVal));
                     }
                 } else if (paramVal.toLowerCase() === 'true' || paramVal.toLowerCase() === 'false') {
-                    // console.log('mgegege')
                     paramVal = paramVal.toLowerCase();
                     parameters.set(paramName, (paramVal === 'true'));
                 } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
-                    // console.log('parsing json')
                     try {
                         const fixedVal = paramVal.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false');
                         parameters.set(paramName, JSON.parse(fixedVal));
                     } catch (e) {
-                        parameters.set(paramName, paramVal); // Fallback to string if parsing fails
+                        parameters.set(paramName, paramVal);
                     }
                 } else {
                     parameters.set(paramName, paramVal);
                 }
             }
-            /* const value = input.value.trim();
-            if (value !== '') {
-                parameters[paramName] = value;
-            } */
         });
-        // console.log(actionEl.querySelector('.response-content'))
-        output = actionEl.querySelector('.response-content');
-        if (output) {
-            output = JSON.parse(output.textContent.trim());
-            if (output.hasOwnProperty('output')) {
-                output = output.output;
-            } else {
-                output = ''
+        
+        let output = '';
+        const outputContent = actionEl.querySelector('.response-content pre');
+        const floatFieldsContent = actionEl.querySelector('.response-content pre.floatFields');
+        
+        if (outputContent) {
+            let text = outputContent.textContent.trim();
+            // console.log('Raw text:', text); // DEBUG
+            
+            try {
+                const parsed = JSON.parse(text);
+                output = parsed.hasOwnProperty('output') ? parsed.output : parsed;
+                // console.log('Parsed output:', output); // DEBUG
+                
+                // Extract float fields from the separate pre element
+                if (floatFieldsContent && floatFieldsContent.textContent.trim()) {
+                    const floatFieldsText = floatFieldsContent.textContent.trim();
+                    const match = floatFieldsText.match(/Float Fields: (.+)/);
+                    if (match) {
+                        const floatFieldsArray = match[1].split(',').map(f => f.trim()).filter(f => f);
+                        if (floatFieldsArray.length > 0) {
+                            if (typeof output === 'object' && output !== null) {
+                                output._floatFields = floatFieldsArray;
+                            }
+                        }
+                    }
+                }
+                // console.log('Float fields:', output._floatFields); // DEBUG
+            } catch (e) {
+                console.error('Error parsing output:', e);
+                output = '';
             }
-        } else {
-            output = '';
         }
-
         
         actions.push({
             name: selectedAPI,
@@ -657,14 +758,65 @@ function getTaskActions(){
             output: output
         });
     });
+    
+    // console.log('Final actions:', actions); // DEBUG
     return actions;
 }
 
-function exportActions() {
-    actions = getTaskActions();
+
+function formatJSONWithFloats(obj, indent = 2, removeFloatFields = false) {
+    const spaces = ' '.repeat(indent);
     
+    function format(value, depth = 0, currentKey = '', floatFields = new Set()) {
+        const currentIndent = spaces.repeat(depth);
+        const nextIndent = spaces.repeat(depth + 1);
+        
+        if (value === null) return 'null';
+        if (value === undefined) return 'undefined';
+        if (typeof value === 'boolean') return String(value);
+        if (typeof value === 'number') {
+            if (Number.isInteger(value) && floatFields.has(currentKey)) {
+                return `${value}.0`;
+            }
+            return String(value);
+        }
+        if (typeof value === 'string') {
+            if (/^-?\d+\.\d+$/.test(value)) {
+                return value;
+            }
+            return JSON.stringify(value);
+        }
+        if (Array.isArray(value)) {
+            if (value.length === 0) return '[]';
+            const items = value.map(item => `${nextIndent}${format(item, depth + 1, currentKey, floatFields)}`);
+            return `[\n${items.join(',\n')}\n${currentIndent}]`;
+        }
+        if (typeof value === 'object') {
+            let localFloatFields = new Set(floatFields);
+            if (value._floatFields && Array.isArray(value._floatFields)) {
+                value._floatFields.forEach(f => localFloatFields.add(f));
+            }
+            
+            // Filter out _floatFields if removeFloatFields is true
+            const keys = Object.keys(value).filter(k => !removeFloatFields || k !== '_floatFields');
+            if (keys.length === 0) return '{}';
+            const items = keys.map(key => 
+                `${nextIndent}"${key}": ${format(value[key], depth + 1, key, localFloatFields)}`
+            );
+            return `{\n${items.join(',\n')}\n${currentIndent}}`;
+        }
+        return String(value);
+    }
+    
+    return format(obj, 0, '');
+}
+
+function exportActions() {
+    const actions = getTaskActions();
     const exportData = { actions: actions };
-    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+    const jsonStr = formatJSONWithFloats(exportData, 2, true);
+    
+    const blob = new Blob([jsonStr], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -674,4 +826,3 @@ function exportActions() {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
-
