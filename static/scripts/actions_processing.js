@@ -680,7 +680,7 @@ function importActions() {
     };
 }
 
-function getTaskActions(){
+function getTaskActions(catchFloat = true){
     const actions = [];
     const actionElements = document.querySelectorAll('.api-action');
     
@@ -733,7 +733,7 @@ function getTaskActions(){
                 // console.log('Parsed output:', output); // DEBUG
                 
                 // Extract float fields from the separate pre element
-                if (floatFieldsContent && floatFieldsContent.textContent.trim()) {
+                if (catchFloat && floatFieldsContent && floatFieldsContent.textContent.trim()) {
                     const floatFieldsText = floatFieldsContent.textContent.trim();
                     const match = floatFieldsText.match(/Float Fields: (.+)/);
                     if (match) {

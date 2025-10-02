@@ -246,7 +246,7 @@ function toggleDiff() {
         taskBeforeReconstructed["task"] = new Map(); taskAfterConstructed["task"] = new Map();
         taskBeforeReconstructed["task"].set("user_id", user_id); taskAfterConstructed["task"].set("user_id", user_id);
         taskBeforeReconstructed["task"].set("instruction", instruction); taskAfterConstructed["task"].set("instruction", instruction);
-        taskBeforeReconstructed["task"].set("actions", actionsBefore); taskAfterConstructed["task"].set("actions", getTaskActions());
+        taskBeforeReconstructed["task"].set("actions", actionsBefore); taskAfterConstructed["task"].set("actions", getTaskActions(catchFloat=false));
         taskBeforeReconstructed["task"].set("edges", edgesBefore); taskAfterConstructed["task"].set("edges", edgesBefore);
 
         // console.log(taskBeforeReconstructed)
