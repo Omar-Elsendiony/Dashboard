@@ -42,7 +42,6 @@ Use this whenever you need to find, search, or verify entities; fetch details fo
 
 3. Run the selected discovery tool and wait for the results
 4. Acquire the result—whether it is a single match, multiple matches, or none
-5. Record what happened by creating an audit entry with `process_audit_logs`
 
 **Halt, and use `escalate_to_human` if you receive the following errors; otherwise complete the SOP:**
 
@@ -239,7 +238,7 @@ Use this whenever you need to find, search, or verify entities; fetch details fo
 
 **Process:**
 
-1. For creation: validate that candidate and position exist and are valid using `find_recruitment_entities` and `find_job_entities` respectively. Also, validate that the assigned recruiter exists and has a "recruiter" role using `find_user_entities`
+1. For creation: validate that candidate and position exist and are valid using `find_recruitment_entities` and `find_job_entities` respectively. Also, validate that the assigned recruiter exists and has a "recruiter" role using `find_user_employee_entities`
 2. For updates: validate that application exists using `find_recruitment_entities`
 3. Create or update the job application with the information provided using `process_job_application`
 4. Create an audit entry for application operation using `process_audit_logs`

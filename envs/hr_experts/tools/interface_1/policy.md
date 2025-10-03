@@ -42,7 +42,6 @@ Use this whenever you need to find, search, or verify entities; fetch details fo
 
 3. Run the selected discovery tool and wait for the results
 4. Acquire the result—whether it is a single match, multiple matches, or none
-5. Record what happened by creating an audit entry with `manage_audit_logs`
 
 **Halt, and use `transfer_to_human` if you receive the following errors; otherwise complete the SOP:**
 

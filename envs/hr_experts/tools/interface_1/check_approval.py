@@ -38,7 +38,8 @@ class CheckApproval(Tool):
                 "manage_application_stage"
             ],
             "payroll_administrator": [
-                "timesheet_approval", "timesheet_correction"
+                "timesheet_approval", "timesheet_correction", "process_payroll_run", 
+                "payroll_correction"
             ],
             "compliance_officer": [
                 "employee_onboarding", "employee_offboarding"

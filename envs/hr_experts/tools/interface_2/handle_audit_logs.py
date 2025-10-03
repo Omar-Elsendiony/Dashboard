@@ -40,7 +40,7 @@ class HandleAuditLogs(Tool):
         if user_id not in users:
             return json.dumps({"error": f"User with ID {user_id} not found."})
 
-        valid_actions = ["create", "read", "update", "delete", "approve", "reject"]
+        valid_actions = ["create", "update", "delete", "approve", "reject"]
         if action not in valid_actions:
             return json.dumps({"error": f"Invalid action. Must be one of {valid_actions}."})
 
@@ -74,7 +74,7 @@ class HandleAuditLogs(Tool):
                     "properties": {
                         "operation": {"type": "string", "description": "Must be 'create'."},
                         "user_id": {"type": "string", "description": "The ID of the user who performed the action."},
-                        "action": {"type": "string", "description": "Type of action audited: 'create', 'read', 'update', 'delete', 'approve', 'reject'."},
+                        "action": {"type": "string", "description": "Type of action audited: 'create', 'update', 'delete', 'approve', 'reject'."},
                         "reference_type": {"type": "string", "description": "Type or table: (e.g., 'employees', 'payroll_records')."},
                         "reference_id": {"type": "string", "description": "The primary key or unique identifier of the affected record."},
                         "field_name": {"type": "string", "description": "The specific field that was changed. Used for 'update' actions."},
