@@ -634,11 +634,17 @@ function importActions() {
                     imported_actions = obj.task.actions;
                     // actions_interface = obj.task.interface_num;
                 }
+                var environment_selected = document.getElementById("environment");
+                if (env && environment_selected.value.trim() !== env) {
+                    // environment_selected.value = env;
+                    showWrongMessage(`The imported task is for the environment: ${env} whereas the current environment is: ${environment_selected.value.trim()}. Please change the environment first.`);
+                    return;
+                }
 
                 var interface_selected = document.getElementsByClassName("form-select")[0];
                 var interface_selected_text = interface_selected.options[interface_selected.selectedIndex].text;
                 interface_selected_text = interface_selected_text.split(' ')[1];
-                console.log(interface_selected_text, actions_interface);
+                // console.log(interface_selected_text, actions_interface);
                 if (actions_interface && parseInt(actions_interface) !== parseInt(interface_selected_text)) {
                     showWrongMessage(`The imported actions are for the interface: ${actions_interface} whereas the environment is using interface: ${interface_selected_text}. Please select the correct interface first.`);
                     return;
