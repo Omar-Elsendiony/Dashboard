@@ -811,7 +811,7 @@ function formatJSONWithFloats(obj, indent = 2, removeFloatFields = false) {
             let entries = Object.entries(value).filter(([k, v]) => !removeFloatFields || k !== '_floatFields');
             
             // Sort entries alphabetically by key for consistent output
-            entries.sort((a, b) => a[0].localeCompare(b[0]));
+            // entries.sort((a, b) => a[0].localeCompare(b[0]));
             
             if (entries.length === 0) return '{}';
             const items = entries.map(([key, val]) => 
