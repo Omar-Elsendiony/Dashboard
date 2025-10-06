@@ -60,10 +60,10 @@ cors = CORS(app)
 app.config["SESSION_PERMANENT"] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
 
-# app.config['SESSION_TYPE'] = 'filesystem' 
+app.config['SESSION_TYPE'] = 'filesystem' 
 
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = redis.from_url(os.environ.get('REDIS_URL'))
 Session(app)
 
 ########### REGISTER BLUEPRINTS ###########
@@ -101,8 +101,8 @@ def load_session_data():
     if request.path.startswith('/static/') or request.path in ['static'] or request.path in PUBLIC_ROUTES or 'google' in request.path:
         return
 
-    if request.path in REDIRECT_ROUTES and not current_user.is_authenticated:
-        return redirect(url_for('index'))
+    # if request.path in REDIRECT_ROUTES and not current_user.is_authenticated:
+    #     return redirect(url_for('index'))
 
 ######################## AUTHENTICATION WITH GOOGLE ########################
 
@@ -137,10 +137,10 @@ def load_user(user_id):
 
 @app.route("/", strict_slashes=False)
 def index():
-    if current_user.is_authenticated:
+    # if current_user.is_authenticated:
         return render_template('main.html')
-    else:
-        return render_template('login.html')
+    # else:
+    #     return render_template('login.html')
 
 
 @lru_cache(maxsize=1)

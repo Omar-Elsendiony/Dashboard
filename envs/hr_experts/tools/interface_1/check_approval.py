@@ -157,7 +157,7 @@ class CheckApproval(Tool):
             if required_roles.issubset(approved_roles):
                 return json.dumps({
                     "approval_valid": True,
-                    "approved_by": list(required_roles),
+                    "approved_by": sorted(list(required_roles)),
                     "message": f"All required approvals received from: {', '.join(required_roles)}"
                 })
             else:
@@ -173,7 +173,7 @@ class CheckApproval(Tool):
             approved_roles = set(approver_roles)
             
             if allowed_roles.intersection(approved_roles):
-                valid_approver = list(allowed_roles.intersection(approved_roles))[0]
+                valid_approver = sorted(list(allowed_roles.intersection(approved_roles)))[0]
                 return json.dumps({
                     "approval_valid": True,
                     "approved_by": valid_approver,
