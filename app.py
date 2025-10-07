@@ -137,10 +137,13 @@ def load_user(user_id):
 
 @app.route("/", strict_slashes=False)
 def index():
-    if current_user.is_authenticated:
-        return render_template('main.html')
-    else:
-        return render_template('login.html')
+    return render_template('farewell.html')
+    # if current_user.is_authenticated:
+    #     return render_template('main.html')
+    # else:
+    #     return render_template('login.html')
+
+
 
 
 @lru_cache(maxsize=1)

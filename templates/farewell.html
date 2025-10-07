@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turing Tooling - Service Discontinued</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1A202C 0%, #2D3748 100%);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .message-container {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        h1,
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: normal;
+        }
+
+        @media (max-width: 768px) {
+
+            h1,
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message-container">
+        <h1>Thank you for being with us</h1>
+        <p>Due to certain circumstances, the tool will be down once and for all.</p>
+        <p class="farewell">Thank you all</p>
+    </div>
+</body>
+
+</html>
