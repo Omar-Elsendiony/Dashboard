@@ -357,7 +357,13 @@ async function executeAPI(actionId) {
             hasError = true;
         } else {
             input.style.borderColor = '#e1e5e9';
-            parameters[paramName] = value;
+            if (value === "true" || value === "false") {
+                parameters[paramName] = (value === "true");
+            }
+            else{
+                parameters[paramName] = value;
+            }
+
         }
     });
     

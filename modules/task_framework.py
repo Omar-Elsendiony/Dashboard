@@ -302,19 +302,20 @@ def execute_api_utility(api_name, arguments):
     #         'status': 'error',
     #         'message': f'API {api_name} not found'
     #     }), 404
-def convert_floats_to_strings(obj):
-    """Recursively convert all float values to strings with .0 preserved"""
-    if isinstance(obj, dict):
-        return {k: convert_floats_to_strings(v) for k, v in obj.items()}
-    elif isinstance(obj, list):
-        return [convert_floats_to_strings(item) for item in obj]
-    elif isinstance(obj, float):
-        # Check if it's a whole number
-        if obj.is_integer():
-            return f"{int(obj)}.0"
-        else:
-            return str(obj)
-    return obj
+
+# def convert_floats_to_strings(obj):
+#     """Recursively convert all float values to strings with .0 preserved"""
+#     if isinstance(obj, dict):
+#         return {k: convert_floats_to_strings(v) for k, v in obj.items()}
+#     elif isinstance(obj, list):
+#         return [convert_floats_to_strings(item) for item in obj]
+#     elif isinstance(obj, float):
+#         # Check if it's a whole number
+#         if obj.is_integer():
+#             return f"{int(obj)}.0"
+#         else:
+#             return str(obj)
+#     return obj
 
 def detect_float_fields(obj, parent_key='', float_fields=None):
     """Recursively detect which fields are floats"""
@@ -344,6 +345,7 @@ def execute_api():
         }), 405
 
     passed_data = request.get_json()
+    print(passed_data)
     # print(passed_data.get('environment'))
     environment = passed_data.get('environment', session.get("environment"))
     ENVS_PATH = "envs"
