@@ -265,7 +265,7 @@ For Update:
 
 1. **Obtain:**
 
-   - **Required:** application_id, interviewer_id, interview_type (phone, video, in_person, technical, behavioral), scheduled_date
+   - **Required:** application_id, interviewer_id, interview_type (phone_screening, panel, technical, behavioral, final), scheduled_date
    - **Optional:** duration_minutes, status (scheduled, completed, cancelled)
 
 2. Validate that the application and interviewer exist using `discover_recruitment_entities` and `discover_user_employee_entities` respectively

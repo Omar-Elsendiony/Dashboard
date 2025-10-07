@@ -277,7 +277,7 @@ Use this whenever you need to find, search, or verify entities; fetch details fo
 
 1. **Obtain:**
 
-   - Required: application_id, interviewer_id, interview_type (phone, video, in_person, technical, behavioral), scheduled_date
+   - Required: application_id, interviewer_id, interview_type (phone_screening, panel, technical, behavioral, final), scheduled_date
    - Optional: duration_minutes, status (scheduled, completed, cancelled)
 
 2. Validate that the application and interviewer exist using `search_recruitment_entities` and `search_user_employee_entities` respectively

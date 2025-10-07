@@ -32,7 +32,7 @@ class ManageDocumentStorage(Tool):
 
 
         timestamp = "2025-10-01T12:00:00"
-        documents = data.get("documents", {})
+        documents = data.get("document_storage", {})
         users = data.get("users", {})
         employees = data.get("employees", {})
 
