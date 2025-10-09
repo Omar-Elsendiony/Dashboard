@@ -404,9 +404,9 @@ def execute_api():
     
     
     # tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
-    result = execute_api_utility(api_name, arguments)
     # if hasattr(tools_instance, api_name):
     try:
+        result = execute_api_utility(api_name, arguments)
         # print(g.data)
         # Dynamically call the method with the provided arguments
         # print("Executing API:", api_name, "with arguments:", arguments)
