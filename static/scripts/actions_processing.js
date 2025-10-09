@@ -345,12 +345,15 @@ async function executeAPI(actionId) {
     
     // Collect parameters
     const parameters = {};
+    const argumentFloatFields = []; // Track which arguments should preserve .0
     const paramInputs = actionDiv.querySelectorAll('.parameter-input');
     let hasError = false;
     
     paramInputs.forEach(input => {
         const paramName = input.dataset.param;
         let value = input.value.trim();
+        const originalValue = value; // Store original for .0 detection
+        
         if (value === '') {
             parameters[paramName] = value;
             return;
@@ -362,6 +365,17 @@ async function executeAPI(actionId) {
         } else {
             input.style.borderColor = '#e1e5e9';
             let parameterInfo = APIs.get(selectedAPI).parameters[paramName];
+            
+            // Check if original value was a number with .0 (before any parsing)
+            // OR if it's a number type parameter that got converted to an integer
+            if (/^\d+\.0$/.test(originalValue)) {
+                argumentFloatFields.push(paramName);
+            } else if (parameterInfo['type'] === 'number' && /^\d+$/.test(originalValue)) {
+                // If it's a number type and user entered a whole number without decimal point,
+                // we'll treat it as potentially needing .0 in export
+                argumentFloatFields.push(paramName);
+            }
+            
             if (parameterInfo['type'] === 'object'){
                 if (parameterInfo['properties'] !== undefined){
                     // Handle object properties
@@ -505,7 +519,7 @@ async function executeAPI(actionId) {
             responseDiv.className = 'api-response show success';
             responseDiv.innerHTML = `
                 <div class="response-header">✅ Success</div>
-                <div class="response-content"><pre></pre><pre class="floatFields"></pre></div>
+                <div class="response-content"><pre></pre><pre class="floatFields"></pre><pre class="argFloatFields" style="display:none;"></pre></div>
             `;
             // Set the JSON content as text to preserve literals
             
@@ -528,6 +542,8 @@ async function executeAPI(actionId) {
             // console.log('Fixed Result:', fixedResult);
             responseDiv.querySelector('pre').textContent =  formatJSONWithFloats(fixedResult, 2, true);
             responseDiv.querySelector('.floatFields').textContent = result.float_fields ? `Float Fields: ${result.float_fields.join(', ')}` : '';
+            // Store argument float fields for later export
+            responseDiv.querySelector('.argFloatFields').textContent = argumentFloatFields.length > 0 ? argumentFloatFields.join(',') : '';
             showCorrectMessage('API executed successfully!');
         } else {
             responseDiv.className = 'api-response show error';
@@ -795,7 +811,15 @@ function getTaskActions(catchFloat = true){
         paramInputs.forEach(input => {
             const paramName = input.dataset.param;
             let value = input.value.trim();
-            
+            const originalValue = value;
+            if (value.startsWith('{') || value.startsWith('[')) {
+                try {
+                    value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                    // parameters.set(paramName, JSON.parse(fixedVal));
+                } catch (e) {
+                    // parameters.set(paramName, paramVal);
+                }
+            }
             if (input.classList.contains('required') && !value) {
                 input.style.borderColor = '#ff4757';
                 hasError = true;
@@ -926,7 +950,11 @@ function getTaskActions(catchFloat = true){
         let output = '';
         const outputContent = actionEl.querySelector('.response-content pre');
         const floatFieldsContent = actionEl.querySelector('.response-content pre.floatFields');
-        
+        const argFloatFieldsContent = actionEl.querySelector('.response-content pre.argFloatFields');
+        let argFloatFields = [];
+        if (argFloatFieldsContent && argFloatFieldsContent.textContent.trim()) {
+            argFloatFields = argFloatFieldsContent.textContent.split(',').filter(f => f);
+        }
         if (outputContent) {
             let text = outputContent.textContent.trim();
             // console.log('Raw text:', text); // DEBUG
@@ -966,11 +994,17 @@ function getTaskActions(catchFloat = true){
             });
         }
 
-        actions.push({
+        const actionData = {
             name: selectedAPI,
             arguments: Object.fromEntries(parameters),
             output: output
-        });
+        };
+
+        if (argFloatFields.length > 0) {
+            actionData.arguments._floatFields = argFloatFields;
+        }
+
+        actions.push(actionData);
     });
     
     // console.log('Final actions:', actions); // DEBUG
