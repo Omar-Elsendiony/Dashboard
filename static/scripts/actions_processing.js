@@ -936,17 +936,19 @@ function getTaskActions(catchFloat = true){
                 let parameterInfo = APIs.get(selectedAPI).parameters[paramName];
                 if (parameterInfo['type'] === 'object'){
                     // Detect float fields in the original JSON string BEFORE parsing
-                    const floatFieldsInObject = [];
-                    const inputValue = input.value.trim();
-                    const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
-                    let match;
-                    while ((match = floatRegex.exec(inputValue)) !== null) {
-                        floatFieldsInObject.push(match[1]);
-                        // Track all float fields regardless of properties definition
-                        if (!parameters.has('_floatFields')) {
-                            parameters.set('_floatFields', []);
+                    if (catchFloat) {  // Only track float fields if catchFloat is true
+                        const floatFieldsInObject = [];
+                        const inputValue = input.value.trim();
+                        const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
+                        let match;
+                        while ((match = floatRegex.exec(inputValue)) !== null) {
+                            floatFieldsInObject.push(match[1]);
+                            // Track all float fields regardless of properties definition
+                            if (!parameters.has('_floatFields')) {
+                                parameters.set('_floatFields', []);
+                            }
+                            parameters.get('_floatFields').push(`${paramName}.${match[1]}`);
                         }
-                        parameters.get('_floatFields').push(`${paramName}.${match[1]}`);
                     }
                     
                     if (parameterInfo['properties'] !== undefined){
@@ -1042,7 +1044,7 @@ function getTaskActions(catchFloat = true){
         const floatFieldsContent = actionEl.querySelector('.response-content pre.floatFields');
         const argFloatFieldsContent = actionEl.querySelector('.response-content pre.argFloatFields');
         let argFloatFields = [];
-        if (argFloatFieldsContent && argFloatFieldsContent.textContent.trim()) {
+        if (catchFloat && argFloatFieldsContent && argFloatFieldsContent.textContent.trim()) {  // Check catchFloat here too
             argFloatFields = argFloatFieldsContent.textContent.split(',').filter(f => f);
         }
         if (outputContent) {
@@ -1087,15 +1089,23 @@ function getTaskActions(catchFloat = true){
             output: output
         };
 
-        // Merge float fields from both argument-level tracking and parameter-level tracking
-        const allFloatFields = [...argFloatFields];
-        if (parameters.has('_floatFields')) {
-            allFloatFields.push(...parameters.get('_floatFields'));
-            delete actionData.arguments._floatFields; // Remove from arguments
-        }
-        
-        if (allFloatFields.length > 0) {
-            actionData.arguments._floatFields = allFloatFields;
+        // Only merge float fields if catchFloat is true
+        if (catchFloat) {
+            // Merge float fields from both argument-level tracking and parameter-level tracking
+            const allFloatFields = [...argFloatFields];
+            if (parameters.has('_floatFields')) {
+                allFloatFields.push(...parameters.get('_floatFields'));
+                delete actionData.arguments._floatFields; // Remove from arguments
+            }
+            
+            if (allFloatFields.length > 0) {
+                actionData.arguments._floatFields = allFloatFields;
+            }
+        } else {
+            // Remove _floatFields from parameters if catchFloat is false
+            if (parameters.has('_floatFields')) {
+                delete actionData.arguments._floatFields;
+            }
         }
 
         actions.push(actionData);
