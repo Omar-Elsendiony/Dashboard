@@ -370,7 +370,7 @@ def execute_api():
         }), 405
 
     passed_data = request.get_json()
-    print(passed_data)
+    # print(passed_data)
     # print(passed_data.get('environment'))
     environment = passed_data.get('environment', session.get("environment"))
     ENVS_PATH = "envs"
