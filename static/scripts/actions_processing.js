@@ -820,6 +820,7 @@ function getTaskActions(catchFloat = true){
                     // parameters.set(paramName, paramVal);
                 }
             }
+
             if (input.classList.contains('required') && !value) {
                 input.style.borderColor = '#ff4757';
                 hasError = true;
@@ -834,14 +835,14 @@ function getTaskActions(catchFloat = true){
                         if (value === '') {
                             value = {};
                         }
-                        try {
-                            value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
-                        } catch (e) {
-                            console.error('Failed to parse JSON for param:', paramName, e);
-                            showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
-                            hasError = true;
-                            return;
-                        }
+                        // try {
+                        //     value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                        // } catch (e) {
+                        //     console.error('Failed to parse JSON for param:', paramName, e);
+                        //     showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
+                        //     hasError = true;
+                        //     return;
+                        // }
                         for (const v_key in value){
                             if (properties[v_key] !== undefined){
                                 if (properties[v_key]['type'] === 'string'){
