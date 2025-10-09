@@ -354,15 +354,16 @@ async function executeAPI(actionId) {
         let value = input.value.trim();
         const originalValue = value; // Store original for .0 detection
         
-        if (value === '') {
-            parameters[paramName] = value;
-            return;
-        }
+
 
         if (input.classList.contains('required') && !value) {
             input.style.borderColor = '#ff4757';
             hasError = true;
         } else {
+            if (value === '') {
+                parameters[paramName] = value;
+                return;
+            }
             input.style.borderColor = '#e1e5e9';
             let parameterInfo = APIs.get(selectedAPI).parameters[paramName];
             
@@ -377,19 +378,19 @@ async function executeAPI(actionId) {
             }
             
             if (parameterInfo['type'] === 'object'){
+                try {
+                    value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                } catch (e) {
+                    console.error('Failed to parse JSON for param:', paramName, e);
+                    showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
+                    hasError = true;
+                    // return;
+                }
                 if (parameterInfo['properties'] !== undefined){
                     // Handle object properties
                     const properties = parameterInfo['properties'];
                     console.log('Parsing object for param:', paramName, typeof(value), value);
                     
-                    try {
-                        value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
-                    } catch (e) {
-                        console.error('Failed to parse JSON for param:', paramName, e);
-                        showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
-                        hasError = true;
-                        return;
-                    }
                     for (const v_key in value){
                         if (properties[v_key] !== undefined){
                             if (properties[v_key]['type'] === 'string'){
@@ -466,7 +467,6 @@ async function executeAPI(actionId) {
             parameters[paramName] = value;
         }
     });
-    
     if (hasError) {
         showWrongMessage('Please fill in all required fields.');
         return;
@@ -524,7 +524,7 @@ async function executeAPI(actionId) {
             // Set the JSON content as text to preserve literals
             
             // Process the data to convert literal \n to actual newlines
-            console.log(result)
+            // console.log(result)
             try {
                 result.output = JSON.parse(result.output)
             } catch (e) {
@@ -811,10 +811,7 @@ function getTaskActions(catchFloat = true){
         paramInputs.forEach(input => {
             const paramName = input.dataset.param;
             let value = input.value.trim();
-            if (!value) {
-                return; // Skip further processing
-            }
-            const originalValue = value;
+            // const originalValue = value;
             if (value.startsWith('{') || value.startsWith('[')) {
                 try {
                     value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
@@ -828,6 +825,9 @@ function getTaskActions(catchFloat = true){
                 input.style.borderColor = '#ff4757';
                 hasError = true;
             } else {
+                if (!value) {
+                    return; // Skip further processing
+                }
                 input.style.borderColor = '#e1e5e9';
                 let parameterInfo = APIs.get(selectedAPI).parameters[paramName];
                 if (parameterInfo['type'] === 'object'){
@@ -950,7 +950,7 @@ function getTaskActions(catchFloat = true){
         //         }
         //     }
         // });
-        console.log(parameters);
+        // console.log(parameters);
         let output = '';
         const outputContent = actionEl.querySelector('.response-content pre');
         const floatFieldsContent = actionEl.querySelector('.response-content pre.floatFields');
