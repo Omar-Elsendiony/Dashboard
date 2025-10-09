@@ -348,6 +348,7 @@ async function executeAPI(actionId) {
     const argumentFloatFields = []; // Track which arguments should preserve .0
     const paramInputs = actionDiv.querySelectorAll('.parameter-input');
     let hasError = false;
+    let hasJSONError = false;
     
     paramInputs.forEach(input => {
         const paramName = input.dataset.param;
@@ -378,14 +379,25 @@ async function executeAPI(actionId) {
             }
             
             if (parameterInfo['type'] === 'object'){
+                let parsedValue;
                 try {
-                    value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                    parsedValue = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
                 } catch (e) {
-                    console.error('Failed to parse JSON for param:', paramName, e);
-                    showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
-                    hasError = true;
+                    // console.error('Failed to parse JSON for param:', paramName, e);
+                    showWrongMessage(`Invalid JSON format for parameter: ${paramName}. JSON keys and values must be enclosed by double quotes.`);
+                    hasJSONError = true;
                     // return;
                 }
+                
+                // Detect float fields in the original JSON string before parsing
+                const floatFieldsInObject = [];
+                const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
+                let match;
+                while ((match = floatRegex.exec(value)) !== null) {
+                    floatFieldsInObject.push(match[1]);
+                }
+                
+                value = parsedValue;
                 if (parameterInfo['properties'] !== undefined){
                     // Handle object properties
                     const properties = parameterInfo['properties'];
@@ -398,6 +410,10 @@ async function executeAPI(actionId) {
                             }
                             else if (properties[v_key]['type'] === 'number'){
                                 if (!Number.isNaN(Number(value[v_key]))){
+                                    // Check if this field should preserve .0
+                                    if (floatFieldsInObject.includes(v_key)) {
+                                        argumentFloatFields.push(`${paramName}.${v_key}`);
+                                    }
                                     value[v_key] = Number(value[v_key]);
                                 }
                             }
@@ -467,6 +483,11 @@ async function executeAPI(actionId) {
             parameters[paramName] = value;
         }
     });
+    // console.log(argumentFloatFields)
+    if (hasJSONError) {
+        return;
+    }
+    
     if (hasError) {
         showWrongMessage('Please fill in all required fields.');
         return;
@@ -508,7 +529,8 @@ async function executeAPI(actionId) {
             body: JSON.stringify({
                 api_name: selectedAPI,
                 parameters: parameters,
-                environment: environment
+                environment: environment,
+                argument_float_fields: argumentFloatFields
             })
         });
         
@@ -714,38 +736,105 @@ function importActions() {
         reader.onload = e => {
             
             try {
-                // taskBefore = e.target.result
-                // console.log('File content:', taskBefore);
-                const obj = JSON.parse(e.target.result);
-                env = obj["env"]
-                model_provider = obj["model_provider"]
-                model = obj["model"]
-                num_trials = obj["num_trials"]
-                temperature = obj["temperature"]
-                interface_num = obj["interface_num"]
+                const jsonText = e.target.result;
+                
+                // Extract float fields BEFORE parsing JSON
+                // This regex finds patterns like "key": number.0
+                const floatFieldsMap = new Map(); // Map action index to set of float field paths
+                const actionRegex = /"actions"\s*:\s*\[([\s\S]*)\]/;
+                const actionsMatch = jsonText.match(actionRegex);
+                
+                if (actionsMatch) {
+                    const actionsText = actionsMatch[1];
+                    // Split by action objects (rough split)
+                    const actionTexts = actionsText.split(/\},\s*\{/).map((text, idx, arr) => {
+                        if (idx === 0) return text + '}';
+                        if (idx === arr.length - 1) return '{' + text;
+                        return '{' + text + '}';
+                    });
+                    
+                    actionTexts.forEach((actionText, actionIdx) => {
+                        const floatFields = new Set();
+                        
+                        // Extract the arguments section
+                        const argumentsMatch = actionText.match(/"arguments"\s*:\s*\{([\s\S]*?)\}\s*,?\s*"output"/);
+                        if (argumentsMatch) {
+                            const argumentsText = argumentsMatch[1];
+                            
+                            // Find all float patterns recursively
+                            function findFloatFields(text, prefix = '') {
+                                // Direct float fields at current level
+                                const directFloatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s\n])/g;
+                                let match;
+                                while ((match = directFloatRegex.exec(text)) !== null) {
+                                    const fieldPath = prefix ? `${prefix}.${match[1]}` : match[1];
+                                    floatFields.add(fieldPath);
+                                }
+                                
+                                // Find nested objects and recurse
+                                const nestedObjectRegex = /"(\w+)"\s*:\s*\{/g;
+                                let objMatch;
+                                while ((objMatch = nestedObjectRegex.exec(text)) !== null) {
+                                    const objectName = objMatch[1];
+                                    const startIdx = objMatch.index + objMatch[0].length;
+                                    
+                                    // Find matching closing brace
+                                    let braceCount = 1;
+                                    let endIdx = startIdx;
+                                    while (braceCount > 0 && endIdx < text.length) {
+                                        if (text[endIdx] === '{') braceCount++;
+                                        else if (text[endIdx] === '}') braceCount--;
+                                        endIdx++;
+                                    }
+                                    
+                                    const objectContent = text.substring(startIdx, endIdx - 1);
+                                    const newPrefix = prefix ? `${prefix}.${objectName}` : objectName;
+                                    findFloatFields(objectContent, newPrefix);
+                                }
+                            }
+                            
+                            findFloatFields(argumentsText);
+                        }
+                        
+                        if (floatFields.size > 0) {
+                            floatFieldsMap.set(actionIdx, floatFields);
+                            console.log(`Action ${actionIdx} float fields:`, Array.from(floatFields));
+                        }
+                    });
+                }
+                
+                // Now parse the JSON normally
+                const obj = JSON.parse(jsonText);
+                
+                env = obj["env"];
+                model_provider = obj["model_provider"];
+                model = obj["model"];
+                num_trials = obj["num_trials"];
+                temperature = obj["temperature"];
+                interface_num = obj["interface_num"];
+                
                 if (obj["task"]) {
-                    user_id = obj["task"]["user_id"]
-                    instruction = obj["task"]["instruction"]
-                    actionsBefore = obj["task"]["actions"]
-                    edgesBefore = obj["task"]["edges"]
-                } else{
-                    user_id = obj["task"]
-                    instruction = obj["task"]
-                    actionsBefore = obj["actions"]
-                    edgesBefore = obj["edges"]
+                    user_id = obj["task"]["user_id"];
+                    instruction = obj["task"]["instruction"];
+                    actionsBefore = obj["task"]["actions"];
+                    edgesBefore = obj["task"]["edges"];
+                } else {
+                    user_id = obj["task"];
+                    instruction = obj["task"];
+                    actionsBefore = obj["actions"];
+                    edgesBefore = obj["edges"];
                 }
 
                 console.log('Imported actions:', obj);
-                // const added = new Set();
+                
                 let imported_actions = obj.actions;
                 let actions_interface = obj.interface_num;
                 if (!obj.actions || !Array.isArray(obj.actions)) {
                     imported_actions = obj.task.actions;
-                    // actions_interface = obj.task.interface_num;
                 }
+                
                 var environment_selected = document.getElementById("environment");
                 if (env && environment_selected.value.trim() !== env) {
-                    // environment_selected.value = env;
                     showWrongMessage(`The imported task is for the environment: ${env} whereas the current environment is: ${environment_selected.value.trim()}. Please change the environment first.`);
                     return;
                 }
@@ -753,38 +842,56 @@ function importActions() {
                 var interface_selected = document.getElementsByClassName("form-select")[0];
                 var interface_selected_text = interface_selected.options[interface_selected.selectedIndex].text;
                 interface_selected_text = interface_selected_text.split(' ')[1];
-                // console.log(interface_selected_text, actions_interface);
+                
                 if (actions_interface && parseInt(actions_interface) !== parseInt(interface_selected_text)) {
                     showWrongMessage(`The imported actions are for the interface: ${actions_interface} whereas the environment is using interface: ${interface_selected_text}. Please select the correct interface first.`);
                     return;
                 }
 
-                imported_actions.forEach(action => {
-                    // if (added.has(action.name)) return;
-                    // added.add(action.name);
+                imported_actions.forEach((action, actionIdx) => {
                     [actionID, actionDiv] = addAction();
                     if (actionID === null || actionDiv === null) return;
+                    
                     const radioButton = actionDiv.querySelector(`input[type="radio"][value="${action.name}"]`);
                     if (radioButton) {
                         radioButton.checked = true;
                     }
                     selectAPI(actionID, action.name);
+                    
+                    // Get float fields for this action
+                    const actionFloatFields = floatFieldsMap.get(actionIdx) || new Set();
+                    
                     actionDiv.querySelectorAll('.parameter-input').forEach(input => {
                         const paramName = input.dataset.param;
                         let value = action.arguments[paramName];
+                        
                         if (value !== undefined) {
-                            // Check if value is a non-null object (but not an array or Date)
+                            // Check if value is a non-null object (but not an array)
                             if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
                                 try {
-                                    value = JSON.stringify(value);
+                                    // Use custom JSON stringify that preserves .0 for integers in float fields
+                                    const jsonStr = JSON.stringify(value, (key, val) => {
+                                        if (key === '') return val; // root object
+                                        const fullPath = `${paramName}.${key}`;
+                                        if (typeof val === 'number' && Number.isInteger(val) && actionFloatFields.has(fullPath)) {
+                                            // Return a marker that we'll replace later
+                                            return `__FLOAT__${val}__FLOAT__`;
+                                        }
+                                        return val;
+                                    });
+                                    // Replace markers with actual .0 notation (without quotes)
+                                    value = jsonStr.replace(/"__FLOAT__(\d+)__FLOAT__"/g, '$1.0');
                                 } catch (e) {
                                     console.warn(`Failed to stringify value for ${paramName}`, e);
+                                    value = JSON.stringify(value);
                                 }
+                            } else if (typeof value === 'number' && Number.isInteger(value) && actionFloatFields.has(paramName)) {
+                                // For direct number fields, add .0 (as string representation)
+                                value = value + '.0';
                             }
                             input.value = value;
                         }
                     });
-                    // console.log('Action ID:', actionID);
                 });
             } catch (error) {
                 console.error('Error importing actions:', error);
@@ -834,7 +941,16 @@ function getTaskActions(catchFloat = true){
                     if (parameterInfo['properties'] !== undefined){
                         // Handle object properties
                         const properties = parameterInfo['properties'];
-                        // console.log('Parsing object for param:', paramName, typeof(value), value);
+                        
+                        // Detect float fields in the original JSON string before parsing
+                        const floatFieldsInObject = [];
+                        const inputValue = input.value.trim();
+                        const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
+                        let match;
+                        while ((match = floatRegex.exec(inputValue)) !== null) {
+                            floatFieldsInObject.push(match[1]);
+                        }
+                        
                         if (value === '') {
                             value = {};
                         }
@@ -853,6 +969,13 @@ function getTaskActions(catchFloat = true){
                                 }
                                 else if (properties[v_key]['type'] === 'number'){
                                     if (!Number.isNaN(Number(value[v_key]))){
+                                        // Store float field info for nested object properties
+                                        if (floatFieldsInObject.includes(v_key)) {
+                                            if (!parameters.has('_floatFields')) {
+                                                parameters.set('_floatFields', []);
+                                            }
+                                            parameters.get('_floatFields').push(`${paramName}.${v_key}`);
+                                        }
                                         value[v_key] = Number(value[v_key]);
                                     }
                                 }
@@ -1004,8 +1127,15 @@ function getTaskActions(catchFloat = true){
             output: output
         };
 
-        if (argFloatFields.length > 0) {
-            actionData.arguments._floatFields = argFloatFields;
+        // Merge float fields from both argument-level tracking and parameter-level tracking
+        const allFloatFields = [...argFloatFields];
+        if (parameters.has('_floatFields')) {
+            allFloatFields.push(...parameters.get('_floatFields'));
+            delete actionData.arguments._floatFields; // Remove from arguments
+        }
+        
+        if (allFloatFields.length > 0) {
+            actionData.arguments._floatFields = allFloatFields;
         }
 
         actions.push(actionData);
@@ -1019,22 +1149,26 @@ function getTaskActions(catchFloat = true){
 function formatJSONWithFloats(obj, indent = 2, removeFloatFields = false) {
     const spaces = ' '.repeat(indent);
     
-    function format(value, depth = 0, currentKey = '', floatFields = new Set()) {
+    function format(value, depth = 0, currentKey = '', floatFields = new Set(), parentPath = '') {
         const currentIndent = spaces.repeat(depth);
         const nextIndent = spaces.repeat(depth + 1);
+        
+        // Build full path for nested keys
+        const fullPath = parentPath ? `${parentPath}.${currentKey}` : currentKey;
         
         if (value === null) return 'null';
         if (value === undefined) return 'undefined';
         if (typeof value === 'boolean') return String(value);
         if (typeof value === 'number') {
-            if (Number.isInteger(value) && floatFields.has(currentKey)) {
+            // Check both the current key and full path
+            if (Number.isInteger(value) && (floatFields.has(currentKey) || floatFields.has(fullPath))) {
                 return `${value}.0`;
             }
             return String(value);
         }
         if (typeof value === 'string') {
             // Only treat numeric strings as unquoted numbers if they're in floatFields
-            if (/^-?\d+\.\d+$/.test(value) && floatFields.has(currentKey)) {
+            if (/^-?\d+\.\d+$/.test(value) && (floatFields.has(currentKey) || floatFields.has(fullPath))) {
                 return value;
             }
             return JSON.stringify(value);
@@ -1042,23 +1176,37 @@ function formatJSONWithFloats(obj, indent = 2, removeFloatFields = false) {
         if (Array.isArray(value)) {
             if (value.length === 0) return '[]';
             // For arrays, pass the floatFields through so nested objects can use them
-            const items = value.map(item => `${nextIndent}${format(item, depth + 1, currentKey, floatFields)}`);
+            const items = value.map(item => `${nextIndent}${format(item, depth + 1, currentKey, floatFields, parentPath)}`);
             return `[\n${items.join(',\n')}\n${currentIndent}]`;
         }
         if (typeof value === 'object') {
             let localFloatFields = new Set(floatFields);
+            
+            // Check if this object has _floatFields
             if (value._floatFields && Array.isArray(value._floatFields)) {
-                value._floatFields.forEach(f => localFloatFields.add(f));
+                value._floatFields.forEach(f => {
+                    localFloatFields.add(f);
+                    // Also add the simple field name (last part after the dot)
+                    const parts = f.split('.');
+                    if (parts.length > 0) {
+                        localFloatFields.add(parts[parts.length - 1]);
+                    }
+                });
             }
             
             // Filter out _floatFields if removeFloatFields is true
             let entries = Object.entries(value).filter(([k, v]) => !removeFloatFields || k !== '_floatFields');
             
             if (entries.length === 0) return '{}';
-            const items = entries.map(([key, val]) => 
-                // Pass the actual key name so nested values can check against floatFields
-                `${nextIndent}"${key}": ${format(val, depth + 1, key, localFloatFields)}`
-            );
+            const items = entries.map(([key, val]) => {
+                // Build the new parent path
+                let newParentPath = parentPath;
+                if (currentKey) {
+                    newParentPath = parentPath ? `${parentPath}.${currentKey}` : currentKey;
+                }
+                
+                return `${nextIndent}"${key}": ${format(val, depth + 1, key, localFloatFields, newParentPath)}`;
+            });
             return `{\n${items.join(',\n')}\n${currentIndent}}`;
         }
         return String(value);

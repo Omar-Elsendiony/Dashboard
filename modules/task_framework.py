@@ -262,7 +262,7 @@ def env_interface():
                 }), 400
                 
         except Exception as e:
-            print(f"Error processing request: {str(e)}")
+            # print(f"Error processing request: {str(e)}")
             return jsonify({
                 'status': 'error',
                 'message': f'{str(e)}'
@@ -361,6 +361,58 @@ def detect_float_fields(obj, parent_key='', float_fields=None):
     
     return float_fields
 
+def apply_float_fields(obj, float_fields, current_path=''):
+    """
+    Recursively convert integers to floats for fields specified in float_fields.
+    
+    Args:
+        obj: The object to process (dict or list)
+        float_fields: List of field paths like ['holding_data.quantity']
+        current_path: Current path in the object hierarchy (used internally)
+    
+    Returns:
+        Modified object with integers converted to floats
+    """
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            # Build the full path for this key
+            full_path = f"{current_path}.{key}" if current_path else key
+            
+            # Check if this field should be converted to float
+            should_be_float = False
+            for float_field in float_fields:
+                # Match full path or check if the field name matches at the end of path
+                if full_path == float_field:
+                    should_be_float = True
+                    break
+                # Also check if current path + key matches the float_field
+                elif float_field.endswith(f".{key}"):
+                    parent_path = '.'.join(float_field.split('.')[:-1])
+                    if current_path == parent_path:
+                        should_be_float = True
+                        break
+            
+            # Convert to float if needed
+            if should_be_float and isinstance(value, int):
+                obj[key] = float(value)
+                # print(f"  ✓ Converted {full_path}: {value} (int) -> {float(value)} (float)")
+            
+            # Recursively process nested structures
+            if isinstance(value, dict):
+                apply_float_fields(value, float_fields, full_path)
+            elif isinstance(value, list):
+                for i, item in enumerate(value):
+                    if isinstance(item, dict):
+                        apply_float_fields(item, float_fields, f"{full_path}[{i}]")
+    
+    elif isinstance(obj, list):
+        for i, item in enumerate(obj):
+            if isinstance(item, dict):
+                apply_float_fields(item, float_fields, f"{current_path}[{i}]")
+    
+    return obj
+
+
 @task_framework_bp.route('/execute_api', strict_slashes=False, methods=["GET", "POST"])
 def execute_api():
     # global data, last_environment, last_interface  # Add global declaration
@@ -399,8 +451,16 @@ def execute_api():
 
     
     arguments = passed_data.get('parameters', {})
+    argument_float_fields = passed_data.get('argument_float_fields', [])  # Get float fields from frontend
     cleaned_arguments = (arguments)
     arguments = cleaned_arguments
+    
+    # Convert integers to floats based on argument_float_fields
+    if argument_float_fields:
+        # print(f"Float fields to apply: {argument_float_fields}")
+        # print(f"Arguments BEFORE float conversion: {arguments}")
+        arguments = apply_float_fields(arguments, argument_float_fields)
+        # print(f"Arguments AFTER float conversion: {arguments}")
     
     
     # tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
@@ -427,10 +487,13 @@ def execute_api():
         #     'output': json.loads(result) if isinstance(result, str) else result
         # }), 200
     except Exception as e:
-        print(f"Error executing API {api_name}: {str(e)}")
+        # print(f"Error executing API {api_name}: {str(e)}")
+        return_message = str(e)
+        if "expected an indented block" in return_message:
+            return_message = "Click on GO to reload the session"
         return jsonify({
             'status': 'error',
-            'message': f'Failed to execute API: {str(e)}'
+            'message': f'Failed to execute API: {return_message}'
         }), 500
 # else:
 #     return jsonify({
