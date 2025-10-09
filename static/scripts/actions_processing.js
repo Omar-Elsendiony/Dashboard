@@ -355,8 +355,6 @@ async function executeAPI(actionId) {
         let value = input.value.trim();
         const originalValue = value; // Store original for .0 detection
         
-
-
         if (input.classList.contains('required') && !value) {
             input.style.borderColor = '#ff4757';
             hasError = true;
@@ -379,6 +377,16 @@ async function executeAPI(actionId) {
             }
             
             if (parameterInfo['type'] === 'object'){
+                // Detect float fields in the original JSON string BEFORE parsing
+                const floatFieldsInObject = [];
+                const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
+                let match;
+                while ((match = floatRegex.exec(value)) !== null) {
+                    floatFieldsInObject.push(match[1]);
+                    // Track all float fields regardless of properties definition
+                    argumentFloatFields.push(`${paramName}.${match[1]}`);
+                }
+                
                 let parsedValue;
                 try {
                     parsedValue = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
@@ -389,17 +397,9 @@ async function executeAPI(actionId) {
                     // return;
                 }
                 
-                // Detect float fields in the original JSON string before parsing
-                const floatFieldsInObject = [];
-                const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
-                let match;
-                while ((match = floatRegex.exec(value)) !== null) {
-                    floatFieldsInObject.push(match[1]);
-                }
-                
                 value = parsedValue;
                 if (parameterInfo['properties'] !== undefined){
-                    // Handle object properties
+                    // Handle object properties with type conversion
                     const properties = parameterInfo['properties'];
                     console.log('Parsing object for param:', paramName, typeof(value), value);
                     
@@ -410,10 +410,6 @@ async function executeAPI(actionId) {
                             }
                             else if (properties[v_key]['type'] === 'number'){
                                 if (!Number.isNaN(Number(value[v_key]))){
-                                    // Check if this field should preserve .0
-                                    if (floatFieldsInObject.includes(v_key)) {
-                                        argumentFloatFields.push(`${paramName}.${v_key}`);
-                                    }
                                     value[v_key] = Number(value[v_key]);
                                 }
                             }
@@ -444,6 +440,7 @@ async function executeAPI(actionId) {
                         }
                     }
                 }
+                // Note: No else needed - float fields already tracked above
             }
             else{
                 // Handle non-object types
@@ -487,7 +484,7 @@ async function executeAPI(actionId) {
     if (hasJSONError) {
         return;
     }
-    
+
     if (hasError) {
         showWrongMessage('Please fill in all required fields.');
         return;
@@ -825,7 +822,7 @@ function importActions() {
                     edgesBefore = obj["edges"];
                 }
 
-                console.log('Imported actions:', obj);
+                // console.log('Imported actions:', obj);
                 
                 let imported_actions = obj.actions;
                 let actions_interface = obj.interface_num;
@@ -938,30 +935,28 @@ function getTaskActions(catchFloat = true){
                 input.style.borderColor = '#e1e5e9';
                 let parameterInfo = APIs.get(selectedAPI).parameters[paramName];
                 if (parameterInfo['type'] === 'object'){
-                    if (parameterInfo['properties'] !== undefined){
-                        // Handle object properties
-                        const properties = parameterInfo['properties'];
-                        
-                        // Detect float fields in the original JSON string before parsing
-                        const floatFieldsInObject = [];
-                        const inputValue = input.value.trim();
-                        const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
-                        let match;
-                        while ((match = floatRegex.exec(inputValue)) !== null) {
-                            floatFieldsInObject.push(match[1]);
+                    // Detect float fields in the original JSON string BEFORE parsing
+                    const floatFieldsInObject = [];
+                    const inputValue = input.value.trim();
+                    const floatRegex = /"(\w+)"\s*:\s*(\d+\.0)(?=[,}\s])/g;
+                    let match;
+                    while ((match = floatRegex.exec(inputValue)) !== null) {
+                        floatFieldsInObject.push(match[1]);
+                        // Track all float fields regardless of properties definition
+                        if (!parameters.has('_floatFields')) {
+                            parameters.set('_floatFields', []);
                         }
+                        parameters.get('_floatFields').push(`${paramName}.${match[1]}`);
+                    }
+                    
+                    if (parameterInfo['properties'] !== undefined){
+                        // Handle object properties with type conversion
+                        const properties = parameterInfo['properties'];
                         
                         if (value === '') {
                             value = {};
                         }
-                        // try {
-                        //     value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
-                        // } catch (e) {
-                        //     console.error('Failed to parse JSON for param:', paramName, e);
-                        //     showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
-                        //     hasError = true;
-                        //     return;
-                        // }
+                        
                         for (const v_key in value){
                             if (properties[v_key] !== undefined){
                                 if (properties[v_key]['type'] === 'string'){
@@ -969,13 +964,6 @@ function getTaskActions(catchFloat = true){
                                 }
                                 else if (properties[v_key]['type'] === 'number'){
                                     if (!Number.isNaN(Number(value[v_key]))){
-                                        // Store float field info for nested object properties
-                                        if (floatFieldsInObject.includes(v_key)) {
-                                            if (!parameters.has('_floatFields')) {
-                                                parameters.set('_floatFields', []);
-                                            }
-                                            parameters.get('_floatFields').push(`${paramName}.${v_key}`);
-                                        }
                                         value[v_key] = Number(value[v_key]);
                                     }
                                 }
@@ -1006,6 +994,7 @@ function getTaskActions(catchFloat = true){
                             }
                         }
                     }
+                    // Note: No else needed - float fields already tracked above
                 }
                 else{
                     // Handle non-object types
@@ -1048,32 +1037,6 @@ function getTaskActions(catchFloat = true){
             }
         });
 
-        // paramInputs.forEach(input => {
-        //     const paramName = input.dataset.param;
-        //     let paramVal = input.value.trim();
-        //     if (paramVal !== '') {
-        //         if (!Number.isNaN(Number(paramVal)) && !paramName.includes('phone') && !paramName.includes('mobile')) {
-        //             if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to') || paramName === 'name' || paramName === 'new_value' || paramName === 'old_value' || paramName.includes('phone') || paramName.includes('mobile')) {
-        //                 parameters.set(paramName, paramVal);
-        //             } else {
-        //                 parameters.set(paramName, Number(paramVal));
-        //             }
-        //         } else if (paramVal.toLowerCase() === 'true' || paramVal.toLowerCase() === 'false') {
-        //             paramVal = paramVal.toLowerCase();
-        //             parameters.set(paramName, (paramVal === 'true'));
-        //         } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
-        //             try {
-        //                 const fixedVal = paramVal.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false');
-        //                 parameters.set(paramName, JSON.parse(fixedVal));
-        //             } catch (e) {
-        //                 parameters.set(paramName, paramVal);
-        //             }
-        //         } else {
-        //             parameters.set(paramName, paramVal);
-        //         }
-        //     }
-        // });
-        // console.log(parameters);
         let output = '';
         const outputContent = actionEl.querySelector('.response-content pre');
         const floatFieldsContent = actionEl.querySelector('.response-content pre.floatFields');
@@ -1084,12 +1047,10 @@ function getTaskActions(catchFloat = true){
         }
         if (outputContent) {
             let text = outputContent.textContent.trim();
-            // console.log('Raw text:', text); // DEBUG
             
             try {
                 const parsed = JSON.parse(text);
                 output = parsed.hasOwnProperty('output') ? parsed.output : parsed;
-                // console.log('Parsed output:', output); // DEBUG
                 
                 // Extract float fields from the separate pre element
                 if (catchFloat && floatFieldsContent && floatFieldsContent.textContent.trim()) {
@@ -1104,7 +1065,6 @@ function getTaskActions(catchFloat = true){
                         }
                     }
                 }
-                // console.log('Float fields:', output._floatFields); // DEBUG
             } catch (e) {
                 console.error('Error parsing output:', e);
                 output = '';
@@ -1141,7 +1101,6 @@ function getTaskActions(catchFloat = true){
         actions.push(actionData);
     });
     
-    // console.log('Final actions:', actions); // DEBUG
     return actions;
 }
 
