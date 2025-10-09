@@ -811,6 +811,9 @@ function getTaskActions(catchFloat = true){
         paramInputs.forEach(input => {
             const paramName = input.dataset.param;
             let value = input.value.trim();
+            if (!value) {
+                return; // Skip further processing
+            }
             const originalValue = value;
             if (value.startsWith('{') || value.startsWith('[')) {
                 try {

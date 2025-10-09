@@ -153,9 +153,9 @@ def arguments_processing(arguments):
             continue
 
         # Skip IDs (do not modify or parse)
-        if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower() or argument == "new_value" or argument == "old_value":
-            cleaned_arguments[argument] = argument_value
-            continue
+        # if "id" == argument.lower() or "_id" in argument.lower() or "_by" in argument.lower() or "name" in argument.lower() or "_to" in argument.lower() or argument == "new_value" or argument == "old_value":
+        #     cleaned_arguments[argument] = argument_value
+        #     continue
         # Try to parse as JSON first (for objects/arrays)
         if isinstance(argument_value, str) and (argument_value.startswith('{') or argument_value.startswith('[')):
             try:
@@ -163,12 +163,13 @@ def arguments_processing(arguments):
                 continue
             except (json.JSONDecodeError, ValueError):
                 pass  # Fall through to literal_eval
-        
-        # Try to evaluate literal (e.g., convert "True" → True, "123" → 123)
-        try:
-            cleaned_arguments[argument] = ast.literal_eval(argument_value)
-        except (ValueError, SyntaxError):
+        else:
             cleaned_arguments[argument] = argument_value
+        # Try to evaluate literal (e.g., convert "True" → True, "123" → 123)
+        # try:
+        #     cleaned_arguments[argument] = ast.literal_eval(argument_value)
+        # except (ValueError, SyntaxError):
+        #     cleaned_arguments[argument] = argument_value
 
     return cleaned_arguments
 
@@ -277,7 +278,7 @@ def env_interface():
 def execute_api_utility(api_name, arguments):
     tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
     # print('executing ...')
-    # arguments = arguments_processing(arguments)
+    arguments = arguments_processing(arguments)
     if hasattr(tools_instance, api_name):
         # try:
             # print(g.data)
