@@ -283,6 +283,7 @@ def execute_api_utility(api_name, arguments):
             # print(g.data)
             # Dynamically call the method with the provided arguments
             result = getattr(tools_instance, api_name)(data=g.data, **arguments)
+            return result
             # print(f"Result from API {api_name}: {result}")
             # session["actions"].append({
             #     'api_name': api_name,
@@ -317,23 +318,47 @@ def execute_api_utility(api_name, arguments):
 #             return str(obj)
 #     return obj
 
+# def detect_float_fields(obj, parent_key='', float_fields=None):
+#     """Recursively detect which fields are floats"""
+#     if float_fields is None:
+#         float_fields = set()
+    
+#     if isinstance(obj, dict):
+#         for key, value in obj.items():
+#             if isinstance(value, float):
+#                 float_fields.add(key)
+#             if isinstance(value, (dict, list)):
+#                 detect_float_fields(value, key, float_fields)
+#     elif isinstance(obj, list):
+#         for item in obj:
+#             detect_float_fields(item, parent_key, float_fields)
+    
+#     return float_fields
+
 def detect_float_fields(obj, parent_key='', float_fields=None):
-    """Recursively detect which fields are floats"""
+    """Recursively detect which fields are floats, including in nested structures"""
     if float_fields is None:
         float_fields = set()
     
     if isinstance(obj, dict):
         for key, value in obj.items():
             if isinstance(value, float):
+                # Add the field name (not the parent key)
                 float_fields.add(key)
             if isinstance(value, (dict, list)):
+                # Recursively check nested structures
                 detect_float_fields(value, key, float_fields)
     elif isinstance(obj, list):
         for item in obj:
-            detect_float_fields(item, parent_key, float_fields)
+            if isinstance(item, (dict, list)):
+                # For items in arrays, continue recursion without changing parent_key
+                detect_float_fields(item, parent_key, float_fields)
+            elif isinstance(item, float):
+                # If the list contains float primitives, track using parent_key
+                if parent_key:
+                    float_fields.add(parent_key)
     
     return float_fields
-
 
 @task_framework_bp.route('/execute_api', strict_slashes=False, methods=["GET", "POST"])
 def execute_api():
@@ -373,42 +398,42 @@ def execute_api():
 
     
     arguments = passed_data.get('parameters', {})
-    cleaned_arguments = arguments_processing(arguments)
+    cleaned_arguments = (arguments)
     arguments = cleaned_arguments
     
     
-    tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
-
-    if hasattr(tools_instance, api_name):
-        try:
-            # print(g.data)
-            # Dynamically call the method with the provided arguments
-            # print("Executing API:", api_name, "with arguments:", arguments)
-            result = getattr(tools_instance, api_name)(data=g.data, **arguments)
-            # print(f"Result from API {api_name}: {result}")
-            session["actions"].append({
-                'api_name': api_name,
-                'arguments': arguments
-            })
-            parsed_result = json.loads(result) if isinstance(result, str) else result
-            float_fields = list(detect_float_fields(parsed_result))
-            # parsed_result = convert_floats_to_strings(parsed_result)
-            # print("parsed_res:" , (parsed_result))
-            # print(type(result))
-            return ({'output': parsed_result, 'float_fields': float_fields}
-            ), 200
-            
-            # return jsonify({
-            #     'output': json.loads(result) if isinstance(result, str) else result
-            # }), 200
-        except Exception as e:
-            print(f"Error executing API {api_name}: {str(e)}")
-            return jsonify({
-                'status': 'error',
-                'message': f'Failed to execute API: {str(e)}'
-            }), 500
-    else:
+    # tools_instance = create_tools_class(session.get("imports_set", []), session.get("invoke_methods", []))
+    result = execute_api_utility(api_name, arguments)
+    # if hasattr(tools_instance, api_name):
+    try:
+        # print(g.data)
+        # Dynamically call the method with the provided arguments
+        # print("Executing API:", api_name, "with arguments:", arguments)
+        # result = getattr(tools_instance, api_name)(data=g.data, **arguments)
+        # print(f"Result from API {api_name}: {result}")
+        session["actions"].append({
+            'api_name': api_name,
+            'arguments': arguments
+        })
+        parsed_result = json.loads(result) if isinstance(result, str) else result
+        float_fields = list(detect_float_fields(parsed_result))
+        # parsed_result = convert_floats_to_strings(parsed_result)
+        # print("parsed_res:" , (parsed_result))
+        # print(type(result))
+        return ({'output': parsed_result, 'float_fields': float_fields}
+        ), 200
+        
+        # return jsonify({
+        #     'output': json.loads(result) if isinstance(result, str) else result
+        # }), 200
+    except Exception as e:
+        print(f"Error executing API {api_name}: {str(e)}")
         return jsonify({
             'status': 'error',
-            'message': f'API {api_name} not found'
-        }), 404
+            'message': f'Failed to execute API: {str(e)}'
+        }), 500
+# else:
+#     return jsonify({
+#         'status': 'error',
+#         'message': f'API {api_name} not found'
+#     }), 404

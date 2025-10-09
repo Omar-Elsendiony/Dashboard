@@ -350,20 +350,106 @@ async function executeAPI(actionId) {
     
     paramInputs.forEach(input => {
         const paramName = input.dataset.param;
-        const value = input.value.trim();
-        
+        let value = input.value.trim();
+        if (value === '') {
+            parameters[paramName] = value;
+            return;
+        }
+
         if (input.classList.contains('required') && !value) {
             input.style.borderColor = '#ff4757';
             hasError = true;
         } else {
             input.style.borderColor = '#e1e5e9';
-            if (value === "true" || value === "false") {
-                parameters[paramName] = (value === "true");
+            let parameterInfo = APIs.get(selectedAPI).parameters[paramName];
+            if (parameterInfo['type'] === 'object'){
+                if (parameterInfo['properties'] !== undefined){
+                    // Handle object properties
+                    const properties = parameterInfo['properties'];
+                    console.log('Parsing object for param:', paramName, typeof(value), value);
+                    
+                    try {
+                        value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                    } catch (e) {
+                        console.error('Failed to parse JSON for param:', paramName, e);
+                        showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
+                        hasError = true;
+                        return;
+                    }
+                    for (const v_key in value){
+                        if (properties[v_key] !== undefined){
+                            if (properties[v_key]['type'] === 'string'){
+                                // Keep as string
+                            }
+                            else if (properties[v_key]['type'] === 'number'){
+                                if (!Number.isNaN(Number(value[v_key]))){
+                                    value[v_key] = Number(value[v_key]);
+                                }
+                            }
+                            else if (properties[v_key]['type'] === 'boolean'){
+                                const val = value[v_key];
+                                if (typeof val === 'string') {
+                                    const lower = val.toLowerCase();
+                                    if (lower === 'true' || lower === 'false') {
+                                        value[v_key] = lower === 'true';
+                                    }
+                                } else if (typeof val === 'boolean') {
+                                    // Already a boolean, do nothing
+                                } else {
+                                    // Optional: handle invalid type
+                                    console.warn(`Expected boolean or string, got: ${typeof val}`);
+                                }
+                            }
+                            else if (properties[v_key]['type'] === 'array'){
+                                try {
+                                    value[v_key] = JSON.parse(value[v_key].replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                                    if (!Array.isArray(value[v_key])){
+                                        throw new Error('Not an array');
+                                    }
+                                } catch (e) {
+                                    // Invalid JSON, keep as string
+                                }
+                            }
+                        }
+                    }
+                }
             }
             else{
-                parameters[paramName] = value;
+                // Handle non-object types
+                if (parameterInfo['type'] === 'string'){
+                    // Keep as string
+                }
+                else if (parameterInfo['type'] === 'number'){
+                    if (!Number.isNaN(Number(value))){
+                        value = Number(value);
+                    }
+                }
+                else if (parameterInfo['type'] === 'boolean'){
+                    const val = value;
+                    if (typeof val === 'string') {
+                        const lower = val.toLowerCase();
+                        if (lower === 'true' || lower === 'false') {
+                            value = lower === 'true';
+                        }
+                    } else if (typeof val === 'boolean') {
+                        // Already a boolean, do nothing
+                    } else {
+                        // Optional: handle invalid type
+                        console.warn(`Expected boolean or string, got: ${typeof val}`);
+                    }
+                }
+                else if (parameterInfo['type'] === 'array'){
+                    try {
+                        value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                        if (!Array.isArray(value)){
+                            throw new Error('Not an array');
+                        }
+                    } catch (e) {
+                        // Invalid JSON, keep as string
+                    }
+                }
             }
-
+            parameters[paramName] = value;
         }
     });
     
@@ -439,6 +525,7 @@ async function executeAPI(actionId) {
                 output: result.output
             };
             const fixedResult = fixNewlines(displayResult);
+            // console.log('Fixed Result:', fixedResult);
             responseDiv.querySelector('pre').textContent =  formatJSONWithFloats(fixedResult, 2, true);
             responseDiv.querySelector('.floatFields').textContent = result.float_fields ? `Float Fields: ${result.float_fields.join(', ')}` : '';
             showCorrectMessage('API executed successfully!');
@@ -707,30 +794,135 @@ function getTaskActions(catchFloat = true){
         
         paramInputs.forEach(input => {
             const paramName = input.dataset.param;
-            let paramVal = input.value.trim();
-            if (paramVal !== '') {
-                if (!Number.isNaN(Number(paramVal)) && !paramName.includes('phone') && !paramName.includes('mobile')) {
-                    if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to') || paramName === 'name' || paramName === 'new_value' || paramName === 'old_value') {
-                        parameters.set(paramName, paramVal);
-                    } else {
-                        parameters.set(paramName, Number(paramVal));
+            let value = input.value.trim();
+            
+            if (input.classList.contains('required') && !value) {
+                input.style.borderColor = '#ff4757';
+                hasError = true;
+            } else {
+                input.style.borderColor = '#e1e5e9';
+                let parameterInfo = APIs.get(selectedAPI).parameters[paramName];
+                if (parameterInfo['type'] === 'object'){
+                    if (parameterInfo['properties'] !== undefined){
+                        // Handle object properties
+                        const properties = parameterInfo['properties'];
+                        // console.log('Parsing object for param:', paramName, typeof(value), value);
+                        if (value === '') {
+                            value = {};
+                        }
+                        try {
+                            value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                        } catch (e) {
+                            console.error('Failed to parse JSON for param:', paramName, e);
+                            showWrongMessage(`Invalid JSON format for parameter: ${paramName}. A JSON key must be enclosed by double quotes.`);
+                            hasError = true;
+                            return;
+                        }
+                        for (const v_key in value){
+                            if (properties[v_key] !== undefined){
+                                if (properties[v_key]['type'] === 'string'){
+                                    // Keep as string
+                                }
+                                else if (properties[v_key]['type'] === 'number'){
+                                    if (!Number.isNaN(Number(value[v_key]))){
+                                        value[v_key] = Number(value[v_key]);
+                                    }
+                                }
+                                else if (properties[v_key]['type'] === 'boolean'){
+                                    const val = value[v_key];
+                                    if (typeof val === 'string') {
+                                        const lower = val.toLowerCase();
+                                        if (lower === 'true' || lower === 'false') {
+                                            value[v_key] = lower === 'true';
+                                        }
+                                    } else if (typeof val === 'boolean') {
+                                        // Already a boolean, do nothing
+                                    } else {
+                                        // Optional: handle invalid type
+                                        console.warn(`Expected boolean or string, got: ${typeof val}`);
+                                    }
+                                }
+                                else if (properties[v_key]['type'] === 'array'){
+                                    try {
+                                        value[v_key] = JSON.parse(value[v_key].replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                                        if (!Array.isArray(value[v_key])){
+                                            throw new Error('Not an array');
+                                        }
+                                    } catch (e) {
+                                        // Invalid JSON, keep as string
+                                    }
+                                }
+                            }
+                        }
                     }
-                } else if (paramVal.toLowerCase() === 'true' || paramVal.toLowerCase() === 'false') {
-                    paramVal = paramVal.toLowerCase();
-                    parameters.set(paramName, (paramVal === 'true'));
-                } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
-                    try {
-                        const fixedVal = paramVal.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false');
-                        parameters.set(paramName, JSON.parse(fixedVal));
-                    } catch (e) {
-                        parameters.set(paramName, paramVal);
+                }
+                else{
+                    // Handle non-object types
+                    if (parameterInfo['type'] === 'string'){
+                        // Keep as string
                     }
-                } else {
-                    parameters.set(paramName, paramVal);
+                    else if (parameterInfo['type'] === 'number'){
+                        if (!Number.isNaN(Number(value))){
+                            value = Number(value);
+                        }
+                    }
+                    else if (parameterInfo['type'] === 'boolean'){
+                        const val = value;
+                        if (typeof val === 'string') {
+                            const lower = val.toLowerCase();
+                            if (lower === 'true' || lower === 'false') {
+                                value = lower === 'true';
+                            }
+                        } else if (typeof val === 'boolean') {
+                            // Already a boolean, do nothing
+                        } else {
+                            // Optional: handle invalid type
+                            console.warn(`Expected boolean or string, got: ${typeof val}`);
+                        }
+                    }
+                    else if (parameterInfo['type'] === 'array'){
+                        try {
+                            value = JSON.parse(value.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false'));
+                            if (!Array.isArray(value)){
+                                throw new Error('Not an array');
+                            }
+                        } catch (e) {
+                            // Invalid JSON, keep as string
+                        }
+                    }
+                }
+                if (value !== '') {
+                    parameters.set(paramName, value);
                 }
             }
         });
-        
+
+        // paramInputs.forEach(input => {
+        //     const paramName = input.dataset.param;
+        //     let paramVal = input.value.trim();
+        //     if (paramVal !== '') {
+        //         if (!Number.isNaN(Number(paramVal)) && !paramName.includes('phone') && !paramName.includes('mobile')) {
+        //             if (paramName.includes('_id') || paramName.includes('_by') || paramName.includes('_to') || paramName === 'name' || paramName === 'new_value' || paramName === 'old_value' || paramName.includes('phone') || paramName.includes('mobile')) {
+        //                 parameters.set(paramName, paramVal);
+        //             } else {
+        //                 parameters.set(paramName, Number(paramVal));
+        //             }
+        //         } else if (paramVal.toLowerCase() === 'true' || paramVal.toLowerCase() === 'false') {
+        //             paramVal = paramVal.toLowerCase();
+        //             parameters.set(paramName, (paramVal === 'true'));
+        //         } else if (paramVal.startsWith('{') || paramVal.startsWith('[')) {
+        //             try {
+        //                 const fixedVal = paramVal.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false');
+        //                 parameters.set(paramName, JSON.parse(fixedVal));
+        //             } catch (e) {
+        //                 parameters.set(paramName, paramVal);
+        //             }
+        //         } else {
+        //             parameters.set(paramName, paramVal);
+        //         }
+        //     }
+        // });
+        console.log(parameters);
         let output = '';
         const outputContent = actionEl.querySelector('.response-content pre');
         const floatFieldsContent = actionEl.querySelector('.response-content pre.floatFields');
@@ -803,13 +995,15 @@ function formatJSONWithFloats(obj, indent = 2, removeFloatFields = false) {
             return String(value);
         }
         if (typeof value === 'string') {
-            if (/^-?\d+\.\d+$/.test(value)) {
+            // Only treat numeric strings as unquoted numbers if they're in floatFields
+            if (/^-?\d+\.\d+$/.test(value) && floatFields.has(currentKey)) {
                 return value;
             }
             return JSON.stringify(value);
         }
         if (Array.isArray(value)) {
             if (value.length === 0) return '[]';
+            // For arrays, pass the floatFields through so nested objects can use them
             const items = value.map(item => `${nextIndent}${format(item, depth + 1, currentKey, floatFields)}`);
             return `[\n${items.join(',\n')}\n${currentIndent}]`;
         }
@@ -822,20 +1016,12 @@ function formatJSONWithFloats(obj, indent = 2, removeFloatFields = false) {
             // Filter out _floatFields if removeFloatFields is true
             let entries = Object.entries(value).filter(([k, v]) => !removeFloatFields || k !== '_floatFields');
             
-            // Sort entries alphabetically by key for consistent output
-            // entries.sort((a, b) => a[0].localeCompare(b[0]));
-            
             if (entries.length === 0) return '{}';
             const items = entries.map(([key, val]) => 
+                // Pass the actual key name so nested values can check against floatFields
                 `${nextIndent}"${key}": ${format(val, depth + 1, key, localFloatFields)}`
             );
             return `{\n${items.join(',\n')}\n${currentIndent}}`;
-            // const keys = Object.keys(value).filter(k => !removeFloatFields || k !== '_floatFields');
-            // if (keys.length === 0) return '{}';
-            // const items = keys.map(key => 
-            //     `${nextIndent}"${key}": ${format(value[key], depth + 1, key, localFloatFields)}`
-            // );
-            // return `{\n${items.join(',\n')}\n${currentIndent}}`;
         }
         return String(value);
     }
