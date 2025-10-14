@@ -1,0 +1,50 @@
+{
+  "1": {
+    "product_id": "1",
+    "product_name": "CloudCore Platform",
+    "product_code": "PRD-1001",
+    "description": "",
+    "status": "deprecated",
+    "created_at": "2024-01-16T08:23:29"
+  },
+  "2": {
+    "product_id": "2",
+    "product_name": "DataSync Pro",
+    "product_code": "PRD-1002",
+    "description": "",
+    "status": "active",
+    "created_at": "2025-08-07T13:56:43"
+  },
+  "3": {
+    "product_id": "3",
+    "product_name": "SecureAuth Gateway",
+    "product_code": "PRD-1003",
+    "description": "",
+    "status": "deprecated",
+    "created_at": "2024-12-08T11:08:43"
+  },
+  "4": {
+    "product_id": "4",
+    "product_name": "Analytics Engine",
+    "product_code": "PRD-1004",
+    "description": "",
+    "status": "active",
+    "created_at": "2025-09-05T07:21:18"
+  },
+  "5": {
+    "product_id": "5",
+    "product_name": "API Manager",
+    "product_code": "PRD-1005",
+    "description": "",
+    "status": "deprecated",
+    "created_at": "2024-08-19T11:45:17"
+  },
+  "6": {
+    "product_id": "6",
+    "product_name": "Monitoring Suite",
+    "product_code": "PRD-1006",
+    "description": "",
+    "status": "active",
+    "created_at": "2024-09-12T20:08:19"
+  }
+}

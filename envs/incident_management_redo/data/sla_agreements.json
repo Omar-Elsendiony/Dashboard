@@ -1,0 +1,602 @@
+{
+  "1": {
+    "sla_id": "1",
+    "subscription_id": "1",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_minutes": 480,
+    "availability_guarantee": 99.94,
+    "created_by": "1",
+    "created_at": "2025-03-13T13:15:35"
+  },
+  "2": {
+    "sla_id": "2",
+    "subscription_id": "1",
+    "severity_level": "P2",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.71,
+    "created_by": "4",
+    "created_at": "2024-01-10T22:24:20"
+  },
+  "3": {
+    "sla_id": "3",
+    "subscription_id": "1",
+    "severity_level": "P3",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.75,
+    "created_by": "4",
+    "created_at": "2025-05-12T10:28:09"
+  },
+  "4": {
+    "sla_id": "4",
+    "subscription_id": "1",
+    "severity_level": "P4",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 10080,
+    "availability_guarantee": 99.7,
+    "created_by": "4",
+    "created_at": "2025-09-30T09:00:19"
+  },
+  "5": {
+    "sla_id": "5",
+    "subscription_id": "2",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.09,
+    "created_by": "2",
+    "created_at": "2023-01-27T18:52:31"
+  },
+  "6": {
+    "sla_id": "6",
+    "subscription_id": "2",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.68,
+    "created_by": "3",
+    "created_at": "2024-09-20T05:10:00"
+  },
+  "7": {
+    "sla_id": "7",
+    "subscription_id": "2",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.37,
+    "created_by": "5",
+    "created_at": "2025-06-22T09:57:49"
+  },
+  "8": {
+    "sla_id": "8",
+    "subscription_id": "2",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.34,
+    "created_by": "5",
+    "created_at": "2025-04-04T18:12:15"
+  },
+  "9": {
+    "sla_id": "9",
+    "subscription_id": "3",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.35,
+    "created_by": "4",
+    "created_at": "2024-05-28T20:47:36"
+  },
+  "10": {
+    "sla_id": "10",
+    "subscription_id": "3",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.3,
+    "created_by": "2",
+    "created_at": "2024-02-25T20:29:47"
+  },
+  "11": {
+    "sla_id": "11",
+    "subscription_id": "3",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.71,
+    "created_by": "3",
+    "created_at": "2023-07-07T10:22:38"
+  },
+  "12": {
+    "sla_id": "12",
+    "subscription_id": "3",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.74,
+    "created_by": "2",
+    "created_at": "2023-07-05T17:19:25"
+  },
+  "13": {
+    "sla_id": "13",
+    "subscription_id": "4",
+    "severity_level": "P1",
+    "response_time_minutes": 15,
+    "resolution_time_minutes": 240,
+    "availability_guarantee": 99.21,
+    "created_by": "4",
+    "created_at": "2023-10-25T13:09:54"
+  },
+  "14": {
+    "sla_id": "14",
+    "subscription_id": "4",
+    "severity_level": "P2",
+    "response_time_minutes": 60,
+    "resolution_time_minutes": 480,
+    "availability_guarantee": 99.72,
+    "created_by": "5",
+    "created_at": "2024-03-05T12:39:11"
+  },
+  "15": {
+    "sla_id": "15",
+    "subscription_id": "4",
+    "severity_level": "P3",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 2880,
+    "availability_guarantee": 99.28,
+    "created_by": "1",
+    "created_at": "2025-07-16T01:58:17"
+  },
+  "16": {
+    "sla_id": "16",
+    "subscription_id": "4",
+    "severity_level": "P4",
+    "response_time_minutes": 480,
+    "resolution_time_minutes": 7680,
+    "availability_guarantee": 99.29,
+    "created_by": "3",
+    "created_at": "2023-10-29T13:13:40"
+  },
+  "17": {
+    "sla_id": "17",
+    "subscription_id": "5",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.3,
+    "created_by": "5",
+    "created_at": "2023-10-06T18:03:56"
+  },
+  "18": {
+    "sla_id": "18",
+    "subscription_id": "5",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.27,
+    "created_by": "1",
+    "created_at": "2023-07-16T15:21:17"
+  },
+  "19": {
+    "sla_id": "19",
+    "subscription_id": "5",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.29,
+    "created_by": "2",
+    "created_at": "2025-05-09T14:43:03"
+  },
+  "20": {
+    "sla_id": "20",
+    "subscription_id": "5",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.86,
+    "created_by": "4",
+    "created_at": "2025-09-17T21:30:15"
+  },
+  "21": {
+    "sla_id": "21",
+    "subscription_id": "6",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.86,
+    "created_by": "5",
+    "created_at": "2023-06-09T08:44:40"
+  },
+  "22": {
+    "sla_id": "22",
+    "subscription_id": "6",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.46,
+    "created_by": "4",
+    "created_at": "2024-03-17T16:56:18"
+  },
+  "23": {
+    "sla_id": "23",
+    "subscription_id": "6",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.18,
+    "created_by": "1",
+    "created_at": "2024-06-13T06:26:16"
+  },
+  "24": {
+    "sla_id": "24",
+    "subscription_id": "6",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.93,
+    "created_by": "4",
+    "created_at": "2024-01-28T05:04:35"
+  },
+  "25": {
+    "sla_id": "25",
+    "subscription_id": "7",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.81,
+    "created_by": "4",
+    "created_at": "2023-06-27T05:28:36"
+  },
+  "26": {
+    "sla_id": "26",
+    "subscription_id": "7",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.07,
+    "created_by": "1",
+    "created_at": "2025-02-02T21:38:26"
+  },
+  "27": {
+    "sla_id": "27",
+    "subscription_id": "7",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.15,
+    "created_by": "5",
+    "created_at": "2023-08-24T16:47:34"
+  },
+  "28": {
+    "sla_id": "28",
+    "subscription_id": "7",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.08,
+    "created_by": "2",
+    "created_at": "2024-04-16T23:48:32"
+  },
+  "29": {
+    "sla_id": "29",
+    "subscription_id": "8",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.55,
+    "created_by": "4",
+    "created_at": "2023-07-04T00:11:39"
+  },
+  "30": {
+    "sla_id": "30",
+    "subscription_id": "8",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.59,
+    "created_by": "5",
+    "created_at": "2025-07-30T21:09:37"
+  },
+  "31": {
+    "sla_id": "31",
+    "subscription_id": "8",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.77,
+    "created_by": "4",
+    "created_at": "2023-12-17T14:13:34"
+  },
+  "32": {
+    "sla_id": "32",
+    "subscription_id": "8",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.9,
+    "created_by": "3",
+    "created_at": "2024-11-30T20:23:47"
+  },
+  "33": {
+    "sla_id": "33",
+    "subscription_id": "9",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.98,
+    "created_by": "3",
+    "created_at": "2025-07-03T05:48:26"
+  },
+  "34": {
+    "sla_id": "34",
+    "subscription_id": "9",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.61,
+    "created_by": "5",
+    "created_at": "2025-06-02T08:02:35"
+  },
+  "35": {
+    "sla_id": "35",
+    "subscription_id": "9",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.94,
+    "created_by": "2",
+    "created_at": "2023-06-04T03:41:44"
+  },
+  "36": {
+    "sla_id": "36",
+    "subscription_id": "9",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.21,
+    "created_by": "1",
+    "created_at": "2025-08-29T16:53:26"
+  },
+  "37": {
+    "sla_id": "37",
+    "subscription_id": "10",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_minutes": 480,
+    "availability_guarantee": 99.24,
+    "created_by": "5",
+    "created_at": "2023-09-01T23:30:46"
+  },
+  "38": {
+    "sla_id": "38",
+    "subscription_id": "10",
+    "severity_level": "P2",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.15,
+    "created_by": "4",
+    "created_at": "2023-04-27T14:37:16"
+  },
+  "39": {
+    "sla_id": "39",
+    "subscription_id": "10",
+    "severity_level": "P3",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.68,
+    "created_by": "4",
+    "created_at": "2024-11-30T19:59:43"
+  },
+  "40": {
+    "sla_id": "40",
+    "subscription_id": "10",
+    "severity_level": "P4",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 10080,
+    "availability_guarantee": 99.03,
+    "created_by": "3",
+    "created_at": "2024-03-28T10:56:00"
+  },
+  "41": {
+    "sla_id": "41",
+    "subscription_id": "11",
+    "severity_level": "P1",
+    "response_time_minutes": 15,
+    "resolution_time_minutes": 240,
+    "availability_guarantee": 99.7,
+    "created_by": "4",
+    "created_at": "2024-03-15T04:30:17"
+  },
+  "42": {
+    "sla_id": "42",
+    "subscription_id": "11",
+    "severity_level": "P2",
+    "response_time_minutes": 60,
+    "resolution_time_minutes": 480,
+    "availability_guarantee": 99.68,
+    "created_by": "3",
+    "created_at": "2023-04-21T13:46:25"
+  },
+  "43": {
+    "sla_id": "43",
+    "subscription_id": "11",
+    "severity_level": "P3",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 2880,
+    "availability_guarantee": 99.58,
+    "created_by": "2",
+    "created_at": "2025-08-28T23:51:05"
+  },
+  "44": {
+    "sla_id": "44",
+    "subscription_id": "11",
+    "severity_level": "P4",
+    "response_time_minutes": 480,
+    "resolution_time_minutes": 7680,
+    "availability_guarantee": 99.11,
+    "created_by": "2",
+    "created_at": "2024-10-22T10:19:46"
+  },
+  "45": {
+    "sla_id": "45",
+    "subscription_id": "12",
+    "severity_level": "P1",
+    "response_time_minutes": 15,
+    "resolution_time_minutes": 240,
+    "availability_guarantee": 99.15,
+    "created_by": "3",
+    "created_at": "2025-10-03T01:34:21"
+  },
+  "46": {
+    "sla_id": "46",
+    "subscription_id": "12",
+    "severity_level": "P2",
+    "response_time_minutes": 60,
+    "resolution_time_minutes": 480,
+    "availability_guarantee": 99.07,
+    "created_by": "2",
+    "created_at": "2023-08-09T22:57:11"
+  },
+  "47": {
+    "sla_id": "47",
+    "subscription_id": "12",
+    "severity_level": "P3",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 2880,
+    "availability_guarantee": 99.59,
+    "created_by": "5",
+    "created_at": "2024-04-22T20:35:58"
+  },
+  "48": {
+    "sla_id": "48",
+    "subscription_id": "12",
+    "severity_level": "P4",
+    "response_time_minutes": 480,
+    "resolution_time_minutes": 7680,
+    "availability_guarantee": 99.43,
+    "created_by": "4",
+    "created_at": "2024-03-24T08:10:57"
+  },
+  "49": {
+    "sla_id": "49",
+    "subscription_id": "13",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.69,
+    "created_by": "3",
+    "created_at": "2024-04-17T09:20:28"
+  },
+  "50": {
+    "sla_id": "50",
+    "subscription_id": "13",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.53,
+    "created_by": "4",
+    "created_at": "2025-02-16T10:57:18"
+  },
+  "51": {
+    "sla_id": "51",
+    "subscription_id": "13",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.59,
+    "created_by": "4",
+    "created_at": "2023-05-05T23:05:22"
+  },
+  "52": {
+    "sla_id": "52",
+    "subscription_id": "13",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.6,
+    "created_by": "1",
+    "created_at": "2024-05-15T17:01:10"
+  },
+  "53": {
+    "sla_id": "53",
+    "subscription_id": "14",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.23,
+    "created_by": "5",
+    "created_at": "2023-05-22T20:54:47"
+  },
+  "54": {
+    "sla_id": "54",
+    "subscription_id": "14",
+    "severity_level": "P2",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.94,
+    "created_by": "3",
+    "created_at": "2025-07-01T01:31:45"
+  },
+  "55": {
+    "sla_id": "55",
+    "subscription_id": "14",
+    "severity_level": "P3",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 7200,
+    "availability_guarantee": 99.04,
+    "created_by": "2",
+    "created_at": "2025-06-14T04:02:41"
+  },
+  "56": {
+    "sla_id": "56",
+    "subscription_id": "14",
+    "severity_level": "P4",
+    "response_time_minutes": 7200,
+    "resolution_time_minutes": 20160,
+    "availability_guarantee": 99.51,
+    "created_by": "4",
+    "created_at": "2024-12-31T21:32:31"
+  },
+  "57": {
+    "sla_id": "57",
+    "subscription_id": "15",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_minutes": 480,
+    "availability_guarantee": 99.18,
+    "created_by": "5",
+    "created_at": "2024-03-08T02:25:43"
+  },
+  "58": {
+    "sla_id": "58",
+    "subscription_id": "15",
+    "severity_level": "P2",
+    "response_time_minutes": 240,
+    "resolution_time_minutes": 1440,
+    "availability_guarantee": 99.63,
+    "created_by": "4",
+    "created_at": "2024-11-08T02:58:12"
+  },
+  "59": {
+    "sla_id": "59",
+    "subscription_id": "15",
+    "severity_level": "P3",
+    "response_time_minutes": 1440,
+    "resolution_time_minutes": 4320,
+    "availability_guarantee": 99.47,
+    "created_by": "4",
+    "created_at": "2023-05-22T17:45:48"
+  },
+  "60": {
+    "sla_id": "60",
+    "subscription_id": "15",
+    "severity_level": "P4",
+    "response_time_minutes": 2880,
+    "resolution_time_minutes": 10080,
+    "availability_guarantee": 99.32,
+    "created_by": "1",
+    "created_at": "2024-06-01T18:38:15"
+  }
+}

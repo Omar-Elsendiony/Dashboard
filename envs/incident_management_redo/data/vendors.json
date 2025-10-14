@@ -1,0 +1,66 @@
+{
+  "1": {
+    "vendor_id": "1",
+    "vendor_name": "Rodriguez, Figueroa and Sanchez",
+    "contact_email": "support@vendor1.com",
+    "contact_phone": "+12121419610",
+    "status": "inactive",
+    "created_at": "2025-09-20T07:33:32"
+  },
+  "2": {
+    "vendor_id": "2",
+    "vendor_name": "Doyle Ltd",
+    "contact_email": "support@vendor2.com",
+    "contact_phone": "+14154744854",
+    "status": "active",
+    "created_at": "2024-03-03T05:50:10"
+  },
+  "3": {
+    "vendor_id": "3",
+    "vendor_name": "Mcclain, Miller and Henderson",
+    "contact_email": "support@vendor3.com",
+    "contact_phone": "+14042458591",
+    "status": "inactive",
+    "created_at": "2023-06-09T05:17:49"
+  },
+  "4": {
+    "vendor_id": "4",
+    "vendor_name": "Davis and Sons",
+    "contact_email": "support@vendor4.com",
+    "contact_phone": "+12011499914",
+    "status": "active",
+    "created_at": "2024-10-17T10:23:08"
+  },
+  "5": {
+    "vendor_id": "5",
+    "vendor_name": "Guzman, Hoffman and Baldwin",
+    "contact_email": "support@vendor5.com",
+    "contact_phone": "+14159478454",
+    "status": "inactive",
+    "created_at": "2023-12-06T15:24:52"
+  },
+  "6": {
+    "vendor_id": "6",
+    "vendor_name": "Gardner, Robinson and Lawrence",
+    "contact_email": "support@vendor6.com",
+    "contact_phone": "+14044335942",
+    "status": "inactive",
+    "created_at": "2023-02-11T05:19:57"
+  },
+  "7": {
+    "vendor_id": "7",
+    "vendor_name": "Blake and Sons",
+    "contact_email": "support@vendor7.com",
+    "contact_phone": "+14048038374",
+    "status": "active",
+    "created_at": "2025-10-06T13:26:52"
+  },
+  "8": {
+    "vendor_id": "8",
+    "vendor_name": "Henderson, Ramirez and Lewis",
+    "contact_email": "support@vendor8.com",
+    "contact_phone": "+17135667265",
+    "status": "active",
+    "created_at": "2024-11-28T19:43:37"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "1": {
+    "ci_id": "1",
+    "ci_name": "CloudCore Platform-application-stag-01",
+    "product_id": "1",
+    "ci_type": "application",
+    "environment": "staging",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-09-18T04:10:58",
+    "updated_at": "2025-10-08T19:30:50"
+  },
+  "2": {
+    "ci_id": "2",
+    "ci_name": "CloudCore Platform-network-stag-02",
+    "product_id": "1",
+    "ci_type": "network",
+    "environment": "staging",
+    "location": "ap-southeast-1",
+    "operational_status": "down",
+    "created_at": "2025-06-12T09:20:52",
+    "updated_at": "2025-07-05T22:55:11"
+  },
+  "3": {
+    "ci_id": "3",
+    "ci_name": "DataSync Pro-network-test-01",
+    "product_id": "2",
+    "ci_type": "network",
+    "environment": "testing",
+    "location": "us-west-2",
+    "operational_status": "degraded",
+    "created_at": "2025-09-18T22:32:28",
+    "updated_at": "2025-10-13T10:39:01"
+  },
+  "4": {
+    "ci_id": "4",
+    "ci_name": "DataSync Pro-application-deve-02",
+    "product_id": "2",
+    "ci_type": "application",
+    "environment": "development",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-07-11T07:55:11",
+    "updated_at": "2025-09-22T07:41:11"
+  },
+  "5": {
+    "ci_id": "5",
+    "ci_name": "DataSync Pro-service-deve-03",
+    "product_id": "2",
+    "ci_type": "service",
+    "environment": "development",
+    "location": "us-west-2",
+    "operational_status": "operational",
+    "created_at": "2025-09-29T09:57:16",
+    "updated_at": "2025-10-01T07:05:30"
+  },
+  "6": {
+    "ci_id": "6",
+    "ci_name": "DataSync Pro-server-stag-04",
+    "product_id": "2",
+    "ci_type": "server",
+    "environment": "staging",
+    "location": "us-west-2",
+    "operational_status": "operational",
+    "created_at": "2025-08-22T01:57:15",
+    "updated_at": "2025-10-13T12:36:00"
+  },
+  "7": {
+    "ci_id": "7",
+    "ci_name": "SecureAuth Gateway-server-test-01",
+    "product_id": "3",
+    "ci_type": "server",
+    "environment": "testing",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-10-13T14:04:32",
+    "updated_at": "2025-10-13T17:58:13"
+  },
+  "8": {
+    "ci_id": "8",
+    "ci_name": "SecureAuth Gateway-server-stag-02",
+    "product_id": "3",
+    "ci_type": "server",
+    "environment": "staging",
+    "location": "ap-southeast-1",
+    "operational_status": "degraded",
+    "created_at": "2025-07-28T11:21:51",
+    "updated_at": "2025-09-06T20:11:18"
+  },
+  "9": {
+    "ci_id": "9",
+    "ci_name": "SecureAuth Gateway-storage-test-03",
+    "product_id": "3",
+    "ci_type": "storage",
+    "environment": "testing",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-08-31T01:22:18",
+    "updated_at": "2025-09-01T00:07:40"
+  },
+  "10": {
+    "ci_id": "10",
+    "ci_name": "Analytics Engine-storage-stag-01",
+    "product_id": "4",
+    "ci_type": "storage",
+    "environment": "staging",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-09-13T17:28:09",
+    "updated_at": "2025-10-04T01:39:51"
+  },
+  "11": {
+    "ci_id": "11",
+    "ci_name": "Analytics Engine-server-test-02",
+    "product_id": "4",
+    "ci_type": "server",
+    "environment": "testing",
+    "location": "eu-west-1",
+    "operational_status": "degraded",
+    "created_at": "2025-09-29T15:08:33",
+    "updated_at": "2025-10-11T10:02:58"
+  },
+  "12": {
+    "ci_id": "12",
+    "ci_name": "Analytics Engine-storage-prod-03",
+    "product_id": "4",
+    "ci_type": "storage",
+    "environment": "production",
+    "location": "ap-southeast-1",
+    "operational_status": "down",
+    "created_at": "2025-09-17T09:05:51",
+    "updated_at": "2025-09-23T13:47:40"
+  },
+  "13": {
+    "ci_id": "13",
+    "ci_name": "API Manager-network-stag-01",
+    "product_id": "5",
+    "ci_type": "network",
+    "environment": "staging",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-09-12T01:48:20",
+    "updated_at": "2025-10-13T06:39:47"
+  },
+  "14": {
+    "ci_id": "14",
+    "ci_name": "API Manager-database-stag-02",
+    "product_id": "5",
+    "ci_type": "database",
+    "environment": "staging",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-09-14T15:06:13",
+    "updated_at": "2025-10-03T00:47:29"
+  },
+  "15": {
+    "ci_id": "15",
+    "ci_name": "API Manager-network-deve-03",
+    "product_id": "5",
+    "ci_type": "network",
+    "environment": "development",
+    "location": "us-east-1",
+    "operational_status": "degraded",
+    "created_at": "2025-09-01T14:51:21",
+    "updated_at": "2025-09-15T03:02:53"
+  },
+  "16": {
+    "ci_id": "16",
+    "ci_name": "API Manager-database-stag-04",
+    "product_id": "5",
+    "ci_type": "database",
+    "environment": "staging",
+    "location": "us-east-1",
+    "operational_status": "operational",
+    "created_at": "2025-10-06T04:28:06",
+    "updated_at": "2025-10-06T19:38:21"
+  },
+  "17": {
+    "ci_id": "17",
+    "ci_name": "Monitoring Suite-storage-stag-01",
+    "product_id": "6",
+    "ci_type": "storage",
+    "environment": "staging",
+    "location": "us-west-2",
+    "operational_status": "operational",
+    "created_at": "2025-08-01T08:32:37",
+    "updated_at": "2025-08-03T08:01:56"
+  },
+  "18": {
+    "ci_id": "18",
+    "ci_name": "Monitoring Suite-storage-stag-02",
+    "product_id": "6",
+    "ci_type": "storage",
+    "environment": "staging",
+    "location": "ap-southeast-1",
+    "operational_status": "operational",
+    "created_at": "2025-09-22T23:54:14",
+    "updated_at": "2025-09-25T18:32:26"
+  }
+}
