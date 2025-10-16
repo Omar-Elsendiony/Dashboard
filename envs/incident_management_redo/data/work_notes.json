@@ -2,1345 +2,1394 @@
   "1": {
     "note_id": "1",
     "incident_id": "1",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 20:46. Correlating with other system events.",
-    "created_by": "6",
-    "created_at": "2025-08-31T20:46:26"
+    "note_text": "Applied hotfix version v5.6.13 to Network: High latency on Payme. Monitoring system stability for 39 minutes.",
+    "created_by": "285",
+    "created_at": "2025-10-10T03:57:48"
   },
   "2": {
     "note_id": "2",
-    "incident_id": "1",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "25",
-    "created_at": "2024-05-25T13:14:09"
+    "incident_id": "2",
+    "note_text": "Restarted affected services on srv-09. All services restored at 21:23.",
+    "created_by": "407",
+    "created_at": "2025-10-04T21:23:15"
   },
   "3": {
     "note_id": "3",
-    "incident_id": "1",
-    "note_text": "Analyzing system logs from 04:45 to 06:45. Initial findings indicate timeout errors affecting P3: CloudCore Platform-network.",
-    "created_by": "18",
-    "created_at": "2025-08-28T04:45:53"
+    "incident_id": "2",
+    "note_text": "Restarted affected services on srv-99. All services restored at 20:27.",
+    "created_by": "767",
+    "created_at": "2025-10-04T20:27:15"
   },
   "4": {
     "note_id": "4",
     "incident_id": "2",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "22",
-    "created_at": "2024-08-20T19:47:13"
+    "note_text": "All metrics returned to baseline levels. Monitoring for 134 minutes before closing.",
+    "created_by": "325",
+    "created_at": "2025-10-04T20:40:16"
   },
   "5": {
     "note_id": "5",
-    "incident_id": "2",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "21",
-    "created_at": "2025-04-26T17:13:13"
+    "incident_id": "3",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "260",
+    "created_at": "2025-09-22T05:46:53"
   },
   "6": {
     "note_id": "6",
     "incident_id": "3",
-    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
-    "created_by": "47",
-    "created_at": "2025-07-24T19:03:03"
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "305",
+    "created_at": "2025-09-22T06:04:29"
   },
   "7": {
     "note_id": "7",
     "incident_id": "3",
-    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
-    "created_by": "25",
-    "created_at": "2024-12-24T13:15:42"
+    "note_text": "Analyzing system logs from 05:17 to 07:17. Initial findings indicate high memory usage affecting Complete connectivity loss to .",
+    "created_by": "165",
+    "created_at": "2025-09-22T05:17:45"
   },
   "8": {
     "note_id": "8",
     "incident_id": "4",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 19:12. Correlating with other system events.",
-    "created_by": "11",
-    "created_at": "2024-12-14T19:12:37"
+    "note_text": "Monitoring dashboards show response_time increased significantly at 14:51. Correlating with other system events.",
+    "created_by": "205",
+    "created_at": "2025-09-29T14:51:02"
   },
   "9": {
     "note_id": "9",
-    "incident_id": "5",
-    "note_text": "Applied hotfix version v1.1.8 to High: Performance degradation . Monitoring system stability for 86 minutes.",
-    "created_by": "50",
-    "created_at": "2025-04-20T21:08:38"
+    "incident_id": "4",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "267",
+    "created_at": "2025-09-29T15:41:12"
   },
   "10": {
     "note_id": "10",
-    "incident_id": "5",
-    "note_text": "System performance stable for past 45 hours. No anomalies detected.",
-    "created_by": "14",
-    "created_at": "2025-06-11T19:49:56"
+    "incident_id": "4",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 14:39. Correlating with other system events.",
+    "created_by": "92",
+    "created_at": "2025-09-29T14:39:06"
   },
   "11": {
     "note_id": "11",
     "incident_id": "5",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 106 minutes before closing.",
-    "created_by": "44",
-    "created_at": "2025-02-08T18:17:04"
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "465",
+    "created_at": "2025-09-23T16:45:46"
   },
   "12": {
     "note_id": "12",
-    "incident_id": "6",
-    "note_text": "Restarted affected services on srv-52. All services restored at 03:43.",
-    "created_by": "26",
-    "created_at": "2025-07-29T03:43:28"
+    "incident_id": "5",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 17:28. Correlating with other system events.",
+    "created_by": "290",
+    "created_at": "2025-09-23T17:28:42"
   },
   "13": {
     "note_id": "13",
-    "incident_id": "7",
-    "note_text": "System performance stable for past 58 hours. No anomalies detected.",
-    "created_by": "24",
-    "created_at": "2025-07-26T17:54:55"
+    "incident_id": "6",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 145 minutes before closing.",
+    "created_by": "88",
+    "created_at": "2025-10-15T19:35:50"
   },
   "14": {
     "note_id": "14",
-    "incident_id": "8",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "44",
-    "created_at": "2024-06-02T01:43:50"
+    "incident_id": "6",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 95 minutes before closing.",
+    "created_by": "241",
+    "created_at": "2025-10-15T19:11:23"
   },
   "15": {
     "note_id": "15",
-    "incident_id": "8",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "27",
-    "created_at": "2025-07-02T08:34:36"
+    "incident_id": "6",
+    "note_text": "Updated configuration parameter max_connections from 397 to 867. System responding normally.",
+    "created_by": "516",
+    "created_at": "2025-10-15T20:14:16"
   },
   "16": {
     "note_id": "16",
-    "incident_id": "9",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 02:01. Correlating with other system events.",
-    "created_by": "40",
-    "created_at": "2024-04-17T02:01:57"
+    "incident_id": "7",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "441",
+    "created_at": "2025-10-07T17:41:21"
   },
   "17": {
     "note_id": "17",
-    "incident_id": "9",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "11",
-    "created_at": "2024-02-11T15:23:10"
+    "incident_id": "7",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "236",
+    "created_at": "2025-10-07T17:39:26"
   },
   "18": {
     "note_id": "18",
-    "incident_id": "9",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 05:05. Correlating with other system events.",
-    "created_by": "37",
-    "created_at": "2024-03-05T05:05:31"
+    "incident_id": "8",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "127",
+    "created_at": "2025-10-12T00:07:52"
   },
   "19": {
     "note_id": "19",
-    "incident_id": "10",
-    "note_text": "System performance stable for past 52 hours. No anomalies detected.",
-    "created_by": "23",
-    "created_at": "2024-07-27T01:48:40"
+    "incident_id": "9",
+    "note_text": "Restarted affected services on srv-01. All services restored at 15:27.",
+    "created_by": "694",
+    "created_at": "2025-10-11T15:27:27"
   },
   "20": {
     "note_id": "20",
-    "incident_id": "11",
-    "note_text": "Analyzing system logs from 00:51 to 02:51. Initial findings indicate timeout errors affecting Emergency: API Manager-network.",
-    "created_by": "39",
-    "created_at": "2024-12-07T00:51:22"
+    "incident_id": "9",
+    "note_text": "Updated configuration parameter max_connections from 141 to 1442. System responding normally.",
+    "created_by": "465",
+    "created_at": "2025-10-11T15:27:30"
   },
   "21": {
     "note_id": "21",
-    "incident_id": "12",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "46",
-    "created_at": "2024-05-10T18:46:53"
+    "incident_id": "10",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 18:09. Correlating with other system events.",
+    "created_by": "561",
+    "created_at": "2025-09-16T18:09:02"
   },
   "22": {
     "note_id": "22",
-    "incident_id": "12",
-    "note_text": "Analyzing system logs from 04:19 to 06:19. Initial findings indicate high memory usage affecting P1: Complete outage on SecureA.",
-    "created_by": "45",
-    "created_at": "2024-09-07T04:19:04"
+    "incident_id": "10",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "124",
+    "created_at": "2025-09-16T18:54:29"
   },
   "23": {
     "note_id": "23",
-    "incident_id": "12",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "21",
-    "created_at": "2024-10-13T15:59:07"
+    "incident_id": "10",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "577",
+    "created_at": "2025-09-16T18:13:01"
   },
   "24": {
     "note_id": "24",
-    "incident_id": "13",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 08:12. Correlating with other system events.",
-    "created_by": "28",
-    "created_at": "2024-09-19T08:12:44"
+    "incident_id": "11",
+    "note_text": "Analyzing system logs from 05:08 to 07:08. Initial findings indicate high memory usage affecting Complete connectivity loss to .",
+    "created_by": "508",
+    "created_at": "2025-09-25T05:08:33"
   },
   "25": {
     "note_id": "25",
-    "incident_id": "13",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 03:29. Correlating with other system events.",
-    "created_by": "4",
-    "created_at": "2024-06-06T03:29:04"
+    "incident_id": "11",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 05:22. Correlating with other system events.",
+    "created_by": "583",
+    "created_at": "2025-09-25T05:22:47"
   },
   "26": {
     "note_id": "26",
-    "incident_id": "14",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "1",
-    "created_at": "2025-04-30T22:06:32"
+    "incident_id": "11",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 04:17. Correlating with other system events.",
+    "created_by": "117",
+    "created_at": "2025-09-25T04:17:18"
   },
   "27": {
     "note_id": "27",
-    "incident_id": "14",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "9",
-    "created_at": "2025-06-24T06:52:11"
+    "incident_id": "12",
+    "note_text": "Restarted affected services on srv-93. All services restored at 09:03.",
+    "created_by": "350",
+    "created_at": "2025-10-09T09:03:09"
   },
   "28": {
     "note_id": "28",
-    "incident_id": "15",
-    "note_text": "Restarted affected services on srv-53. All services restored at 18:20.",
-    "created_by": "49",
-    "created_at": "2025-08-23T18:20:54"
+    "incident_id": "12",
+    "note_text": "Restarted affected services on srv-51. All services restored at 08:25.",
+    "created_by": "472",
+    "created_at": "2025-10-09T08:25:31"
   },
   "29": {
     "note_id": "29",
-    "incident_id": "15",
-    "note_text": "System performance stable for past 25 hours. No anomalies detected.",
-    "created_by": "14",
-    "created_at": "2024-04-05T15:49:01"
+    "incident_id": "12",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "created_by": "28",
+    "created_at": "2025-10-09T08:55:16"
   },
   "30": {
     "note_id": "30",
-    "incident_id": "16",
-    "note_text": "System performance stable for past 62 hours. No anomalies detected.",
-    "created_by": "34",
-    "created_at": "2025-04-16T09:56:12"
+    "incident_id": "13",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 14:34. Correlating with other system events.",
+    "created_by": "120",
+    "created_at": "2025-09-22T14:34:26"
   },
   "31": {
     "note_id": "31",
-    "incident_id": "16",
-    "note_text": "Updated configuration parameter max_connections from 108 to 1702. System responding normally.",
-    "created_by": "17",
-    "created_at": "2024-01-10T08:56:43"
+    "incident_id": "14",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "created_by": "646",
+    "created_at": "2025-09-20T07:06:33"
   },
   "32": {
     "note_id": "32",
-    "incident_id": "16",
-    "note_text": "Applied hotfix version v4.6.2 to Low: API Manager-network-deve-. Monitoring system stability for 167 minutes.",
-    "created_by": "33",
-    "created_at": "2024-06-16T13:44:23"
+    "incident_id": "15",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 161 minutes before closing.",
+    "created_by": "433",
+    "created_at": "2025-09-17T00:51:39"
   },
   "33": {
     "note_id": "33",
-    "incident_id": "17",
-    "note_text": "Analyzing system logs from 15:19 to 17:19. Initial findings indicate high memory usage affecting Medium: Monitoring Suite-stora.",
-    "created_by": "20",
-    "created_at": "2025-09-19T15:19:54"
+    "incident_id": "15",
+    "note_text": "Updated configuration parameter timeout_seconds from 110 to 830. System responding normally.",
+    "created_by": "481",
+    "created_at": "2025-09-17T00:54:07"
   },
   "34": {
     "note_id": "34",
-    "incident_id": "18",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 02:10. Correlating with other system events.",
-    "created_by": "47",
-    "created_at": "2025-07-30T02:10:08"
+    "incident_id": "15",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 105 minutes before closing.",
+    "created_by": "484",
+    "created_at": "2025-09-17T00:50:09"
   },
   "35": {
     "note_id": "35",
-    "incident_id": "18",
-    "note_text": "Analyzing system logs from 16:44 to 18:44. Initial findings indicate high memory usage affecting P3: API Manager-network-stag-0.",
-    "created_by": "37",
-    "created_at": "2024-04-01T16:44:12"
+    "incident_id": "16",
+    "note_text": "Analyzing system logs from 11:30 to 13:30. Initial findings indicate high memory usage affecting Hardware: Message Queue Servic.",
+    "created_by": "241",
+    "created_at": "2025-09-27T11:30:39"
   },
   "36": {
     "note_id": "36",
-    "incident_id": "18",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "10",
-    "created_at": "2024-05-09T14:53:40"
+    "incident_id": "17",
+    "note_text": "Analyzing system logs from 03:25 to 05:25. Initial findings indicate timeout errors affecting Critical: User lockout issue -.",
+    "created_by": "124",
+    "created_at": "2025-10-07T03:25:03"
   },
   "37": {
     "note_id": "37",
-    "incident_id": "19",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 11:13. Correlating with other system events.",
-    "created_by": "12",
-    "created_at": "2024-01-28T11:13:29"
+    "incident_id": "18",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 161 minutes before closing.",
+    "created_by": "774",
+    "created_at": "2025-09-22T04:03:51"
   },
   "38": {
     "note_id": "38",
-    "incident_id": "20",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 17:56. Correlating with other system events.",
-    "created_by": "37",
-    "created_at": "2025-09-16T17:56:50"
+    "incident_id": "18",
+    "note_text": "Applied hotfix version v2.1.6 to High: Performance degradation . Monitoring system stability for 122 minutes.",
+    "created_by": "751",
+    "created_at": "2025-09-22T03:48:24"
   },
   "39": {
     "note_id": "39",
-    "incident_id": "21",
-    "note_text": "System performance stable for past 58 hours. No anomalies detected.",
-    "created_by": "41",
-    "created_at": "2025-07-28T10:41:44"
+    "incident_id": "18",
+    "note_text": "Applied hotfix version v2.1.6 to High: Performance degradation . Monitoring system stability for 142 minutes.",
+    "created_by": "518",
+    "created_at": "2025-09-22T05:32:07"
   },
   "40": {
     "note_id": "40",
-    "incident_id": "21",
-    "note_text": "Applied hotfix version v1.3.16 to Low: Analytics Engine-storage-. Monitoring system stability for 90 minutes.",
-    "created_by": "6",
-    "created_at": "2025-06-22T15:02:46"
+    "incident_id": "19",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "529",
+    "created_at": "2025-09-30T18:57:23"
   },
   "41": {
     "note_id": "41",
-    "incident_id": "22",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 18:57. Correlating with other system events.",
-    "created_by": "28",
-    "created_at": "2024-06-28T18:57:41"
+    "incident_id": "20",
+    "note_text": "Analyzing system logs from 22:19 to 00:19. Initial findings indicate high memory usage affecting Emergency: Network partition -.",
+    "created_by": "677",
+    "created_at": "2025-10-06T22:19:26"
   },
   "42": {
     "note_id": "42",
-    "incident_id": "23",
-    "note_text": "Analyzing system logs from 12:34 to 14:34. Initial findings indicate high memory usage affecting P2: DataSync Pro-server-stag-0.",
-    "created_by": "10",
-    "created_at": "2024-04-11T12:34:44"
+    "incident_id": "20",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 21:50. Correlating with other system events.",
+    "created_by": "718",
+    "created_at": "2025-10-06T21:50:39"
   },
   "43": {
     "note_id": "43",
-    "incident_id": "23",
-    "note_text": "Analyzing system logs from 01:36 to 03:36. Initial findings indicate high memory usage affecting P2: DataSync Pro-server-stag-0.",
-    "created_by": "11",
-    "created_at": "2024-03-23T01:36:11"
+    "incident_id": "20",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "533",
+    "created_at": "2025-10-06T22:25:12"
   },
   "44": {
     "note_id": "44",
-    "incident_id": "23",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 06:41. Correlating with other system events.",
-    "created_by": "17",
-    "created_at": "2025-09-19T06:41:50"
+    "incident_id": "21",
+    "note_text": "Analyzing system logs from 04:08 to 06:08. Initial findings indicate timeout errors affecting Database: Email Service-applic.",
+    "created_by": "518",
+    "created_at": "2025-10-09T04:08:57"
   },
   "45": {
     "note_id": "45",
-    "incident_id": "24",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "26",
-    "created_at": "2024-01-25T03:24:43"
+    "incident_id": "21",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 03:45. Correlating with other system events.",
+    "created_by": "242",
+    "created_at": "2025-10-09T03:45:16"
   },
   "46": {
     "note_id": "46",
-    "incident_id": "25",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 01:17. Correlating with other system events.",
-    "created_by": "4",
-    "created_at": "2025-06-17T01:17:04"
+    "incident_id": "21",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 05:12. Correlating with other system events.",
+    "created_by": "370",
+    "created_at": "2025-10-09T05:12:01"
   },
   "47": {
     "note_id": "47",
-    "incident_id": "25",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 11:32. Correlating with other system events.",
-    "created_by": "10",
-    "created_at": "2024-05-10T11:32:44"
+    "incident_id": "22",
+    "note_text": "Analyzing system logs from 14:07 to 16:07. Initial findings indicate high memory usage affecting Critical: Login failures on AP.",
+    "created_by": "603",
+    "created_at": "2025-10-10T14:07:00"
   },
   "48": {
     "note_id": "48",
-    "incident_id": "26",
-    "note_text": "System performance stable for past 50 hours. No anomalies detected.",
-    "created_by": "42",
-    "created_at": "2025-04-21T23:46:34"
+    "incident_id": "22",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 14:38. Correlating with other system events.",
+    "created_by": "722",
+    "created_at": "2025-10-10T14:38:28"
   },
   "49": {
     "note_id": "49",
-    "incident_id": "27",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 12:27. Correlating with other system events.",
-    "created_by": "21",
-    "created_at": "2024-07-12T12:27:02"
+    "incident_id": "23",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 10:07. Correlating with other system events.",
+    "created_by": "379",
+    "created_at": "2025-09-28T10:07:52"
   },
   "50": {
     "note_id": "50",
-    "incident_id": "27",
-    "note_text": "Analyzing system logs from 19:03 to 21:03. Initial findings indicate timeout errors affecting P3: CloudCore Platform-network.",
-    "created_by": "35",
-    "created_at": "2025-04-08T19:03:20"
+    "incident_id": "23",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "50",
+    "created_at": "2025-09-28T09:57:55"
   },
   "51": {
     "note_id": "51",
-    "incident_id": "27",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 00:39. Correlating with other system events.",
-    "created_by": "37",
-    "created_at": "2025-09-26T00:39:29"
+    "incident_id": "23",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "580",
+    "created_at": "2025-09-28T10:08:56"
   },
   "52": {
     "note_id": "52",
-    "incident_id": "28",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 08:58. Correlating with other system events.",
-    "created_by": "22",
-    "created_at": "2024-04-20T08:58:43"
+    "incident_id": "24",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 144 minutes before closing.",
+    "created_by": "397",
+    "created_at": "2025-09-19T06:56:52"
   },
   "53": {
     "note_id": "53",
-    "incident_id": "28",
-    "note_text": "Analyzing system logs from 00:18 to 02:18. Initial findings indicate timeout errors affecting Critical: SecureAuth Gateway-s.",
-    "created_by": "5",
-    "created_at": "2025-04-22T00:18:06"
+    "incident_id": "24",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 36 minutes before closing.",
+    "created_by": "198",
+    "created_at": "2025-09-19T06:55:05"
   },
   "54": {
     "note_id": "54",
-    "incident_id": "28",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 04:14. Correlating with other system events.",
-    "created_by": "12",
-    "created_at": "2024-10-17T04:14:12"
+    "incident_id": "25",
+    "note_text": "System performance stable for past 39 hours. No anomalies detected.",
+    "created_by": "87",
+    "created_at": "2025-10-10T17:06:33"
   },
   "55": {
     "note_id": "55",
-    "incident_id": "29",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 12:00. Correlating with other system events.",
-    "created_by": "12",
-    "created_at": "2025-03-12T12:00:58"
+    "incident_id": "25",
+    "note_text": "System performance stable for past 48 hours. No anomalies detected.",
+    "created_by": "94",
+    "created_at": "2025-10-10T17:42:45"
   },
   "56": {
     "note_id": "56",
-    "incident_id": "29",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "29",
-    "created_at": "2025-04-12T21:20:19"
+    "incident_id": "25",
+    "note_text": "Applied hotfix version v3.1.4 to Network: High latency on Secur. Monitoring system stability for 108 minutes.",
+    "created_by": "28",
+    "created_at": "2025-10-10T16:08:14"
   },
   "57": {
     "note_id": "57",
-    "incident_id": "29",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "32",
-    "created_at": "2024-01-09T20:25:47"
+    "incident_id": "26",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "505",
+    "created_at": "2025-09-16T04:53:21"
   },
   "58": {
     "note_id": "58",
-    "incident_id": "30",
-    "note_text": "System performance stable for past 30 hours. No anomalies detected.",
-    "created_by": "22",
-    "created_at": "2024-09-29T19:25:24"
+    "incident_id": "26",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 05:54. Correlating with other system events.",
+    "created_by": "20",
+    "created_at": "2025-09-16T05:54:48"
   },
   "59": {
     "note_id": "59",
-    "incident_id": "30",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 153 minutes before closing.",
-    "created_by": "11",
-    "created_at": "2024-05-12T02:59:26"
+    "incident_id": "26",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 05:22. Correlating with other system events.",
+    "created_by": "252",
+    "created_at": "2025-09-16T05:22:06"
   },
   "60": {
     "note_id": "60",
-    "incident_id": "31",
-    "note_text": "Updated configuration parameter timeout_seconds from 392 to 1625. System responding normally.",
-    "created_by": "4",
-    "created_at": "2024-03-19T15:34:56"
+    "incident_id": "27",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 00:39. Correlating with other system events.",
+    "created_by": "697",
+    "created_at": "2025-09-21T00:39:23"
   },
   "61": {
     "note_id": "61",
-    "incident_id": "32",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "26",
-    "created_at": "2024-01-03T23:07:38"
+    "incident_id": "27",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "743",
+    "created_at": "2025-09-21T00:33:26"
   },
   "62": {
     "note_id": "62",
-    "incident_id": "32",
+    "incident_id": "27",
     "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "15",
-    "created_at": "2024-12-31T19:02:27"
+    "created_by": "17",
+    "created_at": "2025-09-21T00:57:30"
   },
   "63": {
     "note_id": "63",
-    "incident_id": "33",
-    "note_text": "Analyzing system logs from 06:19 to 08:19. Initial findings indicate timeout errors affecting P2: Analytics Engine-storage-p.",
-    "created_by": "37",
-    "created_at": "2025-03-14T06:19:07"
+    "incident_id": "28",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 15:21. Correlating with other system events.",
+    "created_by": "665",
+    "created_at": "2025-09-23T15:21:56"
   },
   "64": {
     "note_id": "64",
-    "incident_id": "33",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "14",
-    "created_at": "2024-07-02T00:41:08"
+    "incident_id": "28",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 15:14. Correlating with other system events.",
+    "created_by": "474",
+    "created_at": "2025-09-23T15:14:16"
   },
   "65": {
     "note_id": "65",
-    "incident_id": "34",
-    "note_text": "Analyzing system logs from 00:16 to 02:16. Initial findings indicate high memory usage affecting P2: Analytics Engine-server-te.",
-    "created_by": "36",
-    "created_at": "2024-04-08T00:16:39"
+    "incident_id": "28",
+    "note_text": "Analyzing system logs from 15:54 to 17:54. Initial findings indicate high memory usage affecting Disk failure on Email Service-.",
+    "created_by": "372",
+    "created_at": "2025-09-23T15:54:15"
   },
   "66": {
     "note_id": "66",
-    "incident_id": "35",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 12:45. Correlating with other system events.",
-    "created_by": "35",
-    "created_at": "2024-08-02T12:45:23"
+    "incident_id": "29",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "67",
+    "created_at": "2025-10-02T07:06:01"
   },
   "67": {
     "note_id": "67",
-    "incident_id": "35",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "4",
-    "created_at": "2024-09-24T02:11:09"
+    "incident_id": "30",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "created_by": "438",
+    "created_at": "2025-09-19T00:46:43"
   },
   "68": {
     "note_id": "68",
-    "incident_id": "36",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "47",
-    "created_at": "2025-01-04T02:42:32"
+    "incident_id": "30",
+    "note_text": "Updated configuration parameter max_connections from 469 to 959. System responding normally.",
+    "created_by": "431",
+    "created_at": "2025-09-19T00:45:25"
   },
   "69": {
     "note_id": "69",
-    "incident_id": "36",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 17:12. Correlating with other system events.",
-    "created_by": "9",
-    "created_at": "2024-11-19T17:12:24"
+    "incident_id": "30",
+    "note_text": "Updated configuration parameter timeout_seconds from 138 to 1011. System responding normally.",
+    "created_by": "338",
+    "created_at": "2025-09-19T00:52:11"
   },
   "70": {
     "note_id": "70",
-    "incident_id": "36",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 05:52. Correlating with other system events.",
-    "created_by": "30",
-    "created_at": "2025-08-29T05:52:50"
+    "incident_id": "31",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 07:17. Correlating with other system events.",
+    "created_by": "56",
+    "created_at": "2025-09-22T07:17:59"
   },
   "71": {
     "note_id": "71",
-    "incident_id": "37",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 07:32. Correlating with other system events.",
-    "created_by": "11",
-    "created_at": "2024-11-04T07:32:25"
+    "incident_id": "31",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 07:54. Correlating with other system events.",
+    "created_by": "131",
+    "created_at": "2025-09-22T07:54:57"
   },
   "72": {
     "note_id": "72",
-    "incident_id": "37",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "33",
-    "created_at": "2025-10-12T14:59:52"
+    "incident_id": "32",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "239",
+    "created_at": "2025-10-01T17:21:08"
   },
   "73": {
     "note_id": "73",
-    "incident_id": "37",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 13:48. Correlating with other system events.",
-    "created_by": "28",
-    "created_at": "2024-01-16T13:48:10"
+    "incident_id": "33",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 04:58. Correlating with other system events.",
+    "created_by": "111",
+    "created_at": "2025-10-06T04:58:43"
   },
   "74": {
     "note_id": "74",
-    "incident_id": "38",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "20",
-    "created_at": "2024-09-27T20:24:38"
+    "incident_id": "33",
+    "note_text": "Analyzing system logs from 04:55 to 06:55. Initial findings indicate timeout errors affecting Complete connectivity loss to .",
+    "created_by": "62",
+    "created_at": "2025-10-06T04:55:48"
   },
   "75": {
     "note_id": "75",
-    "incident_id": "38",
-    "note_text": "Analyzing system logs from 14:23 to 16:23. Initial findings indicate high memory usage affecting P4: CloudCore Platform-network.",
-    "created_by": "43",
-    "created_at": "2025-06-15T14:23:08"
+    "incident_id": "33",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "9",
+    "created_at": "2025-10-06T04:55:54"
   },
   "76": {
     "note_id": "76",
-    "incident_id": "39",
-    "note_text": "Restarted affected services on srv-95. All services restored at 18:12.",
-    "created_by": "22",
-    "created_at": "2025-06-12T18:12:25"
+    "incident_id": "34",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "created_by": "712",
+    "created_at": "2025-09-18T02:54:53"
   },
   "77": {
     "note_id": "77",
-    "incident_id": "39",
-    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
-    "created_by": "47",
-    "created_at": "2025-07-18T07:52:16"
+    "incident_id": "34",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 56 minutes before closing.",
+    "created_by": "710",
+    "created_at": "2025-09-18T03:09:16"
   },
   "78": {
     "note_id": "78",
-    "incident_id": "40",
-    "note_text": "Analyzing system logs from 13:49 to 15:49. Initial findings indicate high memory usage affecting Medium: CloudCore Platform-net.",
-    "created_by": "8",
-    "created_at": "2025-08-15T13:49:34"
+    "incident_id": "34",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 77 minutes before closing.",
+    "created_by": "569",
+    "created_at": "2025-09-18T02:06:15"
   },
   "79": {
     "note_id": "79",
-    "incident_id": "40",
-    "note_text": "Analyzing system logs from 11:26 to 13:26. Initial findings indicate timeout errors affecting Medium: CloudCore Platform-net.",
-    "created_by": "37",
-    "created_at": "2024-12-31T11:26:14"
+    "incident_id": "35",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "568",
+    "created_at": "2025-10-08T09:49:21"
   },
   "80": {
     "note_id": "80",
-    "incident_id": "40",
-    "note_text": "Analyzing system logs from 09:44 to 11:44. Initial findings indicate high memory usage affecting Medium: CloudCore Platform-net.",
-    "created_by": "49",
-    "created_at": "2024-12-21T09:44:59"
+    "incident_id": "36",
+    "note_text": "Restarted affected services on srv-44. All services restored at 21:58.",
+    "created_by": "382",
+    "created_at": "2025-09-27T21:58:08"
   },
   "81": {
     "note_id": "81",
-    "incident_id": "41",
-    "note_text": "Restarted affected services on srv-50. All services restored at 14:37.",
-    "created_by": "1",
-    "created_at": "2025-03-23T14:37:03"
+    "incident_id": "37",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 16:03. Correlating with other system events.",
+    "created_by": "652",
+    "created_at": "2025-09-20T16:03:37"
   },
   "82": {
     "note_id": "82",
-    "incident_id": "42",
-    "note_text": "System performance stable for past 43 hours. No anomalies detected.",
-    "created_by": "5",
-    "created_at": "2025-08-10T20:39:51"
+    "incident_id": "37",
+    "note_text": "Analyzing system logs from 16:08 to 18:08. Initial findings indicate timeout errors affecting Help request: Access issues on.",
+    "created_by": "680",
+    "created_at": "2025-09-20T16:08:37"
   },
   "83": {
     "note_id": "83",
-    "incident_id": "42",
-    "note_text": "Applied hotfix version v4.2.10 to P3: Analytics Engine-storage-s. Monitoring system stability for 155 minutes.",
-    "created_by": "15",
-    "created_at": "2025-10-01T21:33:43"
+    "incident_id": "37",
+    "note_text": "Analyzing system logs from 16:33 to 18:33. Initial findings indicate timeout errors affecting Help request: Access issues on.",
+    "created_by": "486",
+    "created_at": "2025-09-20T16:33:54"
   },
   "84": {
     "note_id": "84",
-    "incident_id": "43",
-    "note_text": "Analyzing system logs from 21:51 to 23:51. Initial findings indicate timeout errors affecting Emergency: Analytics Engine-st.",
-    "created_by": "42",
-    "created_at": "2024-04-11T21:51:10"
+    "incident_id": "38",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "261",
+    "created_at": "2025-09-19T10:15:15"
   },
   "85": {
     "note_id": "85",
-    "incident_id": "43",
-    "note_text": "Analyzing system logs from 10:24 to 12:24. Initial findings indicate timeout errors affecting Emergency: Analytics Engine-st.",
-    "created_by": "20",
-    "created_at": "2025-10-11T10:24:24"
+    "incident_id": "38",
+    "note_text": "Analyzing system logs from 10:11 to 12:11. Initial findings indicate timeout errors affecting Critical: Server Database Clus.",
+    "created_by": "462",
+    "created_at": "2025-09-19T10:11:04"
   },
   "86": {
     "note_id": "86",
-    "incident_id": "43",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 21:36. Correlating with other system events.",
-    "created_by": "50",
-    "created_at": "2024-11-22T21:36:45"
+    "incident_id": "39",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 143 minutes before closing.",
+    "created_by": "302",
+    "created_at": "2025-09-18T17:18:52"
   },
   "87": {
     "note_id": "87",
-    "incident_id": "44",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 20:15. Correlating with other system events.",
-    "created_by": "43",
-    "created_at": "2025-10-07T20:15:41"
+    "incident_id": "39",
+    "note_text": "System performance stable for past 67 hours. No anomalies detected.",
+    "created_by": "257",
+    "created_at": "2025-09-18T17:28:19"
   },
   "88": {
     "note_id": "88",
-    "incident_id": "44",
-    "note_text": "Analyzing system logs from 03:07 to 05:07. Initial findings indicate high memory usage affecting High: Performance degradation .",
-    "created_by": "12",
-    "created_at": "2024-03-10T03:07:59"
+    "incident_id": "40",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "created_by": "670",
+    "created_at": "2025-10-09T09:29:04"
   },
   "89": {
     "note_id": "89",
-    "incident_id": "45",
-    "note_text": "Updated configuration parameter timeout_seconds from 324 to 1773. System responding normally.",
-    "created_by": "24",
-    "created_at": "2024-08-13T16:33:53"
+    "incident_id": "40",
+    "note_text": "Restarted affected services on srv-71. All services restored at 09:28.",
+    "created_by": "321",
+    "created_at": "2025-10-09T09:28:05"
   },
   "90": {
     "note_id": "90",
-    "incident_id": "46",
-    "note_text": "Analyzing system logs from 00:55 to 02:55. Initial findings indicate high memory usage affecting High: Performance degradation .",
-    "created_by": "7",
-    "created_at": "2024-05-22T00:55:59"
+    "incident_id": "41",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 04:37. Correlating with other system events.",
+    "created_by": "348",
+    "created_at": "2025-09-19T04:37:08"
   },
   "91": {
     "note_id": "91",
-    "incident_id": "46",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 03:19. Correlating with other system events.",
-    "created_by": "29",
-    "created_at": "2024-11-19T03:19:07"
+    "incident_id": "42",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 38 minutes before closing.",
+    "created_by": "391",
+    "created_at": "2025-09-20T05:50:45"
   },
   "92": {
     "note_id": "92",
-    "incident_id": "47",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "10",
-    "created_at": "2024-02-19T04:40:10"
+    "incident_id": "43",
+    "note_text": "Analyzing system logs from 22:14 to 00:14. Initial findings indicate high memory usage affecting Hardware: Monitoring Suite-sto.",
+    "created_by": "33",
+    "created_at": "2025-09-19T22:14:34"
   },
   "93": {
     "note_id": "93",
-    "incident_id": "48",
-    "note_text": "Analyzing system logs from 01:32 to 03:32. Initial findings indicate timeout errors affecting High: Performance degradation .",
-    "created_by": "36",
-    "created_at": "2025-04-21T01:32:43"
+    "incident_id": "44",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 89 minutes before closing.",
+    "created_by": "176",
+    "created_at": "2025-09-17T12:05:45"
   },
   "94": {
     "note_id": "94",
-    "incident_id": "48",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "7",
-    "created_at": "2025-05-14T16:18:14"
+    "incident_id": "44",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 47 minutes before closing.",
+    "created_by": "727",
+    "created_at": "2025-09-17T11:46:52"
   },
   "95": {
     "note_id": "95",
-    "incident_id": "48",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "24",
-    "created_at": "2024-11-09T08:39:37"
+    "incident_id": "44",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 81 minutes before closing.",
+    "created_by": "539",
+    "created_at": "2025-09-17T12:09:56"
   },
   "96": {
     "note_id": "96",
-    "incident_id": "49",
-    "note_text": "Restarted affected services on srv-01. All services restored at 06:18.",
-    "created_by": "45",
-    "created_at": "2025-09-26T06:18:59"
+    "incident_id": "45",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "469",
+    "created_at": "2025-09-23T19:59:26"
   },
   "97": {
     "note_id": "97",
-    "incident_id": "50",
-    "note_text": "Restarted affected services on srv-16. All services restored at 13:21.",
-    "created_by": "7",
-    "created_at": "2024-02-05T13:21:56"
+    "incident_id": "45",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 19:56. Correlating with other system events.",
+    "created_by": "506",
+    "created_at": "2025-09-23T19:56:17"
   },
   "98": {
     "note_id": "98",
-    "incident_id": "51",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 02:49. Correlating with other system events.",
-    "created_by": "45",
-    "created_at": "2024-02-06T02:49:46"
+    "incident_id": "46",
+    "note_text": "System performance stable for past 26 hours. No anomalies detected.",
+    "created_by": "28",
+    "created_at": "2025-10-01T07:43:00"
   },
   "99": {
     "note_id": "99",
-    "incident_id": "51",
-    "note_text": "Analyzing system logs from 09:02 to 11:02. Initial findings indicate timeout errors affecting Critical: SecureAuth Gateway-s.",
-    "created_by": "9",
-    "created_at": "2025-03-25T09:02:07"
+    "incident_id": "46",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "created_by": "497",
+    "created_at": "2025-10-01T06:08:58"
   },
   "100": {
     "note_id": "100",
-    "incident_id": "52",
-    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
-    "created_by": "33",
-    "created_at": "2025-04-12T23:52:11"
+    "incident_id": "47",
+    "note_text": "Analyzing system logs from 07:57 to 09:57. Initial findings indicate timeout errors affecting High: Performance degradation .",
+    "created_by": "173",
+    "created_at": "2025-09-27T07:57:01"
   },
   "101": {
     "note_id": "101",
-    "incident_id": "52",
-    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
-    "created_by": "1",
-    "created_at": "2025-02-25T08:46:26"
+    "incident_id": "47",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 07:57. Correlating with other system events.",
+    "created_by": "714",
+    "created_at": "2025-09-27T07:57:39"
   },
   "102": {
     "note_id": "102",
-    "incident_id": "53",
-    "note_text": "Applied hotfix version v2.4.5 to Low: Analytics Engine-storage-. Monitoring system stability for 103 minutes.",
-    "created_by": "14",
-    "created_at": "2024-03-23T16:45:12"
+    "incident_id": "48",
+    "note_text": "System performance stable for past 39 hours. No anomalies detected.",
+    "created_by": "245",
+    "created_at": "2025-09-25T03:08:14"
   },
   "103": {
     "note_id": "103",
-    "incident_id": "53",
-    "note_text": "System performance stable for past 42 hours. No anomalies detected.",
-    "created_by": "25",
-    "created_at": "2025-08-08T08:00:33"
+    "incident_id": "49",
+    "note_text": "Analyzing system logs from 21:31 to 23:31. Initial findings indicate high memory usage affecting Hardware: Payment Gateway-netw.",
+    "created_by": "525",
+    "created_at": "2025-10-13T21:31:00"
   },
   "104": {
     "note_id": "104",
-    "incident_id": "53",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 143 minutes before closing.",
-    "created_by": "50",
-    "created_at": "2024-10-28T00:32:32"
+    "incident_id": "50",
+    "note_text": "Updated configuration parameter max_connections from 154 to 1230. System responding normally.",
+    "created_by": "16",
+    "created_at": "2025-10-01T21:40:32"
   },
   "105": {
     "note_id": "105",
-    "incident_id": "54",
-    "note_text": "Updated configuration parameter timeout_seconds from 242 to 1639. System responding normally.",
-    "created_by": "11",
-    "created_at": "2024-05-30T07:03:31"
+    "incident_id": "51",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "105",
+    "created_at": "2025-10-04T21:13:56"
   },
   "106": {
     "note_id": "106",
-    "incident_id": "54",
-    "note_text": "Updated configuration parameter timeout_seconds from 351 to 1672. System responding normally.",
-    "created_by": "5",
-    "created_at": "2025-03-29T14:17:20"
+    "incident_id": "51",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 21:05. Correlating with other system events.",
+    "created_by": "19",
+    "created_at": "2025-10-04T21:05:54"
   },
   "107": {
     "note_id": "107",
-    "incident_id": "54",
-    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
-    "created_by": "43",
-    "created_at": "2025-08-31T23:24:19"
+    "incident_id": "52",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 04:50. Correlating with other system events.",
+    "created_by": "635",
+    "created_at": "2025-09-19T04:50:43"
   },
   "108": {
     "note_id": "108",
-    "incident_id": "55",
-    "note_text": "Updated configuration parameter max_connections from 120 to 1897. System responding normally.",
-    "created_by": "8",
-    "created_at": "2024-09-14T03:31:39"
+    "incident_id": "52",
+    "note_text": "Analyzing system logs from 03:53 to 05:53. Initial findings indicate timeout errors affecting Network: Intermittent connecti.",
+    "created_by": "757",
+    "created_at": "2025-09-19T03:53:53"
   },
   "109": {
     "note_id": "109",
-    "incident_id": "55",
-    "note_text": "Updated configuration parameter max_connections from 149 to 842. System responding normally.",
-    "created_by": "41",
-    "created_at": "2024-10-26T17:14:55"
+    "incident_id": "52",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "249",
+    "created_at": "2025-09-19T04:48:21"
   },
   "110": {
     "note_id": "110",
-    "incident_id": "56",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 17:15. Correlating with other system events.",
-    "created_by": "3",
-    "created_at": "2024-06-12T17:15:05"
+    "incident_id": "53",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 21:12. Correlating with other system events.",
+    "created_by": "72",
+    "created_at": "2025-09-21T21:12:23"
   },
   "111": {
     "note_id": "111",
-    "incident_id": "57",
-    "note_text": "Analyzing system logs from 21:26 to 23:26. Initial findings indicate timeout errors affecting High: Performance degradation .",
-    "created_by": "44",
-    "created_at": "2024-02-26T21:26:32"
+    "incident_id": "54",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 23:41. Correlating with other system events.",
+    "created_by": "169",
+    "created_at": "2025-09-17T23:41:51"
   },
   "112": {
     "note_id": "112",
-    "incident_id": "58",
-    "note_text": "Analyzing system logs from 10:02 to 12:02. Initial findings indicate timeout errors affecting P3: API Manager-database-stag-.",
-    "created_by": "25",
-    "created_at": "2025-02-19T10:02:07"
+    "incident_id": "55",
+    "note_text": "Analyzing system logs from 14:32 to 16:32. Initial findings indicate high memory usage affecting Software bug: Container Orches.",
+    "created_by": "172",
+    "created_at": "2025-09-18T14:32:57"
   },
   "113": {
     "note_id": "113",
-    "incident_id": "59",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 13:28. Correlating with other system events.",
-    "created_by": "1",
-    "created_at": "2025-09-30T13:28:18"
+    "incident_id": "55",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "264",
+    "created_at": "2025-09-18T14:37:37"
   },
   "114": {
     "note_id": "114",
-    "incident_id": "59",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 22:26. Correlating with other system events.",
-    "created_by": "14",
-    "created_at": "2025-03-05T22:26:19"
+    "incident_id": "55",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "195",
+    "created_at": "2025-09-18T14:36:04"
   },
   "115": {
     "note_id": "115",
-    "incident_id": "60",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 17:02. Correlating with other system events.",
-    "created_by": "19",
-    "created_at": "2025-05-16T17:02:09"
+    "incident_id": "56",
+    "note_text": "System performance stable for past 31 hours. No anomalies detected.",
+    "created_by": "580",
+    "created_at": "2025-09-24T02:19:20"
   },
   "116": {
     "note_id": "116",
-    "incident_id": "60",
-    "note_text": "Analyzing system logs from 17:07 to 19:07. Initial findings indicate high memory usage affecting P4: SecureAuth Gateway-server-.",
-    "created_by": "32",
-    "created_at": "2025-06-05T17:07:14"
+    "incident_id": "57",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "647",
+    "created_at": "2025-09-17T15:48:44"
   },
   "117": {
     "note_id": "117",
-    "incident_id": "61",
-    "note_text": "System performance stable for past 71 hours. No anomalies detected.",
-    "created_by": "18",
-    "created_at": "2024-09-12T00:48:52"
+    "incident_id": "58",
+    "note_text": "Analyzing system logs from 18:26 to 20:26. Initial findings indicate timeout errors affecting Complete connectivity loss to .",
+    "created_by": "408",
+    "created_at": "2025-10-02T18:26:47"
   },
   "118": {
     "note_id": "118",
-    "incident_id": "61",
-    "note_text": "Restarted affected services on srv-14. All services restored at 05:18.",
-    "created_by": "9",
-    "created_at": "2024-10-06T05:18:17"
+    "incident_id": "58",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 18:30. Correlating with other system events.",
+    "created_by": "771",
+    "created_at": "2025-10-02T18:30:50"
   },
   "119": {
     "note_id": "119",
-    "incident_id": "62",
-    "note_text": "Updated configuration parameter max_connections from 118 to 1629. System responding normally.",
-    "created_by": "42",
-    "created_at": "2024-06-01T13:45:23"
+    "incident_id": "58",
+    "note_text": "Analyzing system logs from 18:33 to 20:33. Initial findings indicate timeout errors affecting Complete connectivity loss to .",
+    "created_by": "714",
+    "created_at": "2025-10-02T18:33:46"
   },
   "120": {
     "note_id": "120",
-    "incident_id": "62",
-    "note_text": "Restarted affected services on srv-12. All services restored at 02:43.",
-    "created_by": "40",
-    "created_at": "2025-08-25T02:43:26"
+    "incident_id": "59",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "581",
+    "created_at": "2025-09-23T21:49:03"
   },
   "121": {
     "note_id": "121",
-    "incident_id": "62",
-    "note_text": "Restarted affected services on srv-46. All services restored at 09:41.",
-    "created_by": "17",
-    "created_at": "2025-06-15T09:41:51"
+    "incident_id": "59",
+    "note_text": "Analyzing system logs from 21:43 to 23:43. Initial findings indicate timeout errors affecting Database: Query performance de.",
+    "created_by": "128",
+    "created_at": "2025-09-23T21:43:43"
   },
   "122": {
     "note_id": "122",
-    "incident_id": "63",
-    "note_text": "Applied hotfix version v4.7.1 to Medium: Analytics Engine-stora. Monitoring system stability for 40 minutes.",
-    "created_by": "48",
-    "created_at": "2024-06-30T18:25:27"
+    "incident_id": "60",
+    "note_text": "Updated configuration parameter max_connections from 440 to 1692. System responding normally.",
+    "created_by": "217",
+    "created_at": "2025-09-25T04:07:01"
   },
   "123": {
     "note_id": "123",
-    "incident_id": "63",
-    "note_text": "System performance stable for past 46 hours. No anomalies detected.",
-    "created_by": "32",
-    "created_at": "2024-07-23T12:34:02"
+    "incident_id": "60",
+    "note_text": "Applied hotfix version v4.5.19 to Database: Database Cluster-net. Monitoring system stability for 139 minutes.",
+    "created_by": "370",
+    "created_at": "2025-09-25T05:09:33"
   },
   "124": {
     "note_id": "124",
-    "incident_id": "64",
-    "note_text": "Analyzing system logs from 07:18 to 09:18. Initial findings indicate timeout errors affecting P3: Analytics Engine-storage-p.",
-    "created_by": "43",
-    "created_at": "2025-04-14T07:18:32"
+    "incident_id": "61",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "378",
+    "created_at": "2025-10-05T08:48:23"
   },
   "125": {
     "note_id": "125",
-    "incident_id": "64",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "37",
-    "created_at": "2024-06-27T21:58:00"
+    "incident_id": "61",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 08:52. Correlating with other system events.",
+    "created_by": "410",
+    "created_at": "2025-10-05T08:52:02"
   },
   "126": {
     "note_id": "126",
-    "incident_id": "65",
-    "note_text": "Analyzing system logs from 03:39 to 05:39. Initial findings indicate timeout errors affecting Medium: SecureAuth Gateway-ser.",
-    "created_by": "6",
-    "created_at": "2024-05-05T03:39:53"
+    "incident_id": "61",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 09:11. Correlating with other system events.",
+    "created_by": "131",
+    "created_at": "2025-10-05T09:11:38"
   },
   "127": {
     "note_id": "127",
-    "incident_id": "65",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "11",
-    "created_at": "2024-06-17T05:35:38"
+    "incident_id": "62",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "109",
+    "created_at": "2025-09-18T06:25:22"
   },
   "128": {
     "note_id": "128",
-    "incident_id": "65",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 11:49. Correlating with other system events.",
-    "created_by": "10",
-    "created_at": "2025-07-16T11:49:13"
+    "incident_id": "62",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 06:49. Correlating with other system events.",
+    "created_by": "93",
+    "created_at": "2025-09-18T06:49:07"
   },
   "129": {
     "note_id": "129",
-    "incident_id": "66",
-    "note_text": "Analyzing system logs from 19:08 to 21:08. Initial findings indicate high memory usage affecting Low: DataSync Pro-service-deve.",
-    "created_by": "45",
-    "created_at": "2024-03-15T19:08:08"
+    "incident_id": "63",
+    "note_text": "Analyzing system logs from 19:55 to 21:55. Initial findings indicate timeout errors affecting Disk failure on Workflow Autom.",
+    "created_by": "92",
+    "created_at": "2025-09-17T19:55:42"
   },
   "130": {
     "note_id": "130",
-    "incident_id": "66",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "39",
-    "created_at": "2025-02-15T12:29:44"
+    "incident_id": "63",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 19:55. Correlating with other system events.",
+    "created_by": "398",
+    "created_at": "2025-09-17T19:55:57"
   },
   "131": {
     "note_id": "131",
-    "incident_id": "66",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "27",
-    "created_at": "2025-02-26T07:52:51"
+    "incident_id": "63",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "697",
+    "created_at": "2025-09-17T19:58:48"
   },
   "132": {
     "note_id": "132",
-    "incident_id": "67",
-    "note_text": "Analyzing system logs from 18:51 to 20:51. Initial findings indicate high memory usage affecting Medium: CloudCore Platform-net.",
-    "created_by": "27",
-    "created_at": "2024-03-23T18:51:18"
+    "incident_id": "64",
+    "note_text": "System performance stable for past 55 hours. No anomalies detected.",
+    "created_by": "722",
+    "created_at": "2025-09-20T16:00:03"
   },
   "133": {
     "note_id": "133",
-    "incident_id": "67",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 19:58. Correlating with other system events.",
-    "created_by": "48",
-    "created_at": "2025-03-04T19:58:55"
+    "incident_id": "64",
+    "note_text": "Applied hotfix version v1.2.15 to Database: Payment Gateway-netw. Monitoring system stability for 130 minutes.",
+    "created_by": "433",
+    "created_at": "2025-09-20T16:15:42"
   },
   "134": {
     "note_id": "134",
-    "incident_id": "68",
-    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
-    "created_by": "31",
-    "created_at": "2024-12-12T21:07:54"
+    "incident_id": "65",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "469",
+    "created_at": "2025-10-02T08:55:43"
   },
   "135": {
     "note_id": "135",
-    "incident_id": "69",
-    "note_text": "Applied hotfix version v1.9.1 to P4: Monitoring Suite-storage-s. Monitoring system stability for 128 minutes.",
-    "created_by": "41",
-    "created_at": "2024-12-04T04:01:25"
+    "incident_id": "65",
+    "note_text": "Analyzing system logs from 09:08 to 11:08. Initial findings indicate timeout errors affecting Hardware: CloudCore Platform-s.",
+    "created_by": "695",
+    "created_at": "2025-10-02T09:08:05"
   },
   "136": {
     "note_id": "136",
-    "incident_id": "69",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 162 minutes before closing.",
-    "created_by": "24",
-    "created_at": "2025-01-18T23:41:40"
+    "incident_id": "65",
+    "note_text": "Analyzing system logs from 09:17 to 11:17. Initial findings indicate high memory usage affecting Hardware: CloudCore Platform-s.",
+    "created_by": "153",
+    "created_at": "2025-10-02T09:17:01"
   },
   "137": {
     "note_id": "137",
-    "incident_id": "69",
-    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
-    "created_by": "6",
-    "created_at": "2024-07-04T20:04:00"
+    "incident_id": "66",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 74 minutes before closing.",
+    "created_by": "475",
+    "created_at": "2025-10-14T17:10:14"
   },
   "138": {
     "note_id": "138",
-    "incident_id": "70",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 23:20. Correlating with other system events.",
-    "created_by": "36",
-    "created_at": "2024-08-08T23:20:54"
+    "incident_id": "66",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "created_by": "24",
+    "created_at": "2025-10-14T17:19:57"
   },
   "139": {
     "note_id": "139",
-    "incident_id": "70",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 05:22. Correlating with other system events.",
-    "created_by": "50",
-    "created_at": "2024-02-26T05:22:20"
+    "incident_id": "66",
+    "note_text": "System performance stable for past 28 hours. No anomalies detected.",
+    "created_by": "416",
+    "created_at": "2025-10-14T17:00:58"
   },
   "140": {
     "note_id": "140",
-    "incident_id": "70",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 09:33. Correlating with other system events.",
-    "created_by": "27",
-    "created_at": "2024-12-22T09:33:16"
+    "incident_id": "67",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "589",
+    "created_at": "2025-10-13T04:12:38"
   },
   "141": {
     "note_id": "141",
-    "incident_id": "71",
-    "note_text": "System performance stable for past 46 hours. No anomalies detected.",
-    "created_by": "37",
-    "created_at": "2025-02-05T04:20:11"
+    "incident_id": "67",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 04:38. Correlating with other system events.",
+    "created_by": "308",
+    "created_at": "2025-10-13T04:38:06"
   },
   "142": {
     "note_id": "142",
-    "incident_id": "71",
-    "note_text": "Restarted affected services on srv-26. All services restored at 23:56.",
-    "created_by": "8",
-    "created_at": "2024-07-27T23:56:10"
+    "incident_id": "67",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 04:16. Correlating with other system events.",
+    "created_by": "243",
+    "created_at": "2025-10-13T04:16:15"
   },
   "143": {
     "note_id": "143",
-    "incident_id": "72",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 22:03. Correlating with other system events.",
-    "created_by": "26",
-    "created_at": "2025-06-08T22:03:03"
+    "incident_id": "68",
+    "note_text": "Restarted affected services on srv-94. All services restored at 22:06.",
+    "created_by": "391",
+    "created_at": "2025-10-12T22:06:05"
   },
   "144": {
     "note_id": "144",
-    "incident_id": "73",
-    "note_text": "System performance stable for past 68 hours. No anomalies detected.",
-    "created_by": "21",
-    "created_at": "2025-08-05T16:10:15"
+    "incident_id": "69",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 48 minutes before closing.",
+    "created_by": "732",
+    "created_at": "2025-09-26T17:04:10"
   },
   "145": {
     "note_id": "145",
-    "incident_id": "74",
-    "note_text": "Analyzing system logs from 12:56 to 14:56. Initial findings indicate timeout errors affecting Medium: DataSync Pro-applicati.",
-    "created_by": "24",
-    "created_at": "2024-01-07T12:56:03"
+    "incident_id": "69",
+    "note_text": "System performance stable for past 31 hours. No anomalies detected.",
+    "created_by": "68",
+    "created_at": "2025-09-26T17:32:41"
   },
   "146": {
     "note_id": "146",
-    "incident_id": "74",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "47",
-    "created_at": "2024-05-22T20:23:57"
+    "incident_id": "69",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "created_by": "180",
+    "created_at": "2025-09-26T17:26:51"
   },
   "147": {
     "note_id": "147",
-    "incident_id": "74",
-    "note_text": "Analyzing system logs from 16:12 to 18:12. Initial findings indicate high memory usage affecting Medium: DataSync Pro-applicati.",
-    "created_by": "32",
-    "created_at": "2024-07-28T16:12:57"
+    "incident_id": "70",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "760",
+    "created_at": "2025-09-19T21:16:05"
   },
   "148": {
     "note_id": "148",
-    "incident_id": "75",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 22:29. Correlating with other system events.",
-    "created_by": "24",
-    "created_at": "2024-07-13T22:29:42"
+    "incident_id": "70",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 21:12. Correlating with other system events.",
+    "created_by": "725",
+    "created_at": "2025-09-19T21:12:38"
   },
   "149": {
     "note_id": "149",
-    "incident_id": "75",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 05:40. Correlating with other system events.",
-    "created_by": "44",
-    "created_at": "2025-03-11T05:40:54"
+    "incident_id": "70",
+    "note_text": "Analyzing system logs from 21:19 to 23:19. Initial findings indicate high memory usage affecting User inquiry: API Manager-data.",
+    "created_by": "313",
+    "created_at": "2025-09-19T21:19:26"
   },
   "150": {
     "note_id": "150",
-    "incident_id": "76",
-    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
-    "created_by": "15",
-    "created_at": "2025-01-13T15:32:31"
+    "incident_id": "71",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "11",
+    "created_at": "2025-09-28T00:37:39"
   },
   "151": {
     "note_id": "151",
-    "incident_id": "76",
-    "note_text": "Updated configuration parameter timeout_seconds from 311 to 842. System responding normally.",
-    "created_by": "9",
-    "created_at": "2024-08-31T11:43:45"
+    "incident_id": "71",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 00:49. Correlating with other system events.",
+    "created_by": "251",
+    "created_at": "2025-09-28T00:49:09"
   },
   "152": {
     "note_id": "152",
-    "incident_id": "76",
-    "note_text": "Restarted affected services on srv-09. All services restored at 06:39.",
-    "created_by": "34",
-    "created_at": "2025-07-19T06:39:40"
+    "incident_id": "71",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 00:59. Correlating with other system events.",
+    "created_by": "508",
+    "created_at": "2025-09-28T00:59:54"
   },
   "153": {
     "note_id": "153",
-    "incident_id": "77",
-    "note_text": "Updated configuration parameter max_connections from 167 to 1578. System responding normally.",
-    "created_by": "3",
-    "created_at": "2024-03-21T17:21:57"
+    "incident_id": "72",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "223",
+    "created_at": "2025-09-18T10:32:51"
   },
   "154": {
     "note_id": "154",
-    "incident_id": "78",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "23",
-    "created_at": "2024-10-04T04:00:10"
+    "incident_id": "72",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 10:42. Correlating with other system events.",
+    "created_by": "740",
+    "created_at": "2025-09-18T10:42:01"
   },
   "155": {
     "note_id": "155",
-    "incident_id": "78",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 02:38. Correlating with other system events.",
-    "created_by": "23",
-    "created_at": "2025-01-09T02:38:17"
+    "incident_id": "73",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "673",
+    "created_at": "2025-09-21T19:34:58"
   },
   "156": {
     "note_id": "156",
-    "incident_id": "78",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "27",
-    "created_at": "2024-08-10T17:38:08"
+    "incident_id": "74",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "363",
+    "created_at": "2025-10-06T19:42:49"
   },
   "157": {
     "note_id": "157",
-    "incident_id": "79",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 138 minutes before closing.",
-    "created_by": "19",
-    "created_at": "2024-12-05T12:15:11"
+    "incident_id": "74",
+    "note_text": "Analyzing system logs from 20:11 to 22:11. Initial findings indicate high memory usage affecting Help request: Access issues on.",
+    "created_by": "683",
+    "created_at": "2025-10-06T20:11:12"
   },
   "158": {
     "note_id": "158",
-    "incident_id": "79",
+    "incident_id": "75",
     "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
-    "created_by": "13",
-    "created_at": "2025-05-18T16:06:55"
+    "created_by": "135",
+    "created_at": "2025-09-22T19:24:48"
   },
   "159": {
     "note_id": "159",
-    "incident_id": "79",
-    "note_text": "Applied hotfix version v1.4.8 to High: Performance degradation . Monitoring system stability for 62 minutes.",
-    "created_by": "10",
-    "created_at": "2024-09-06T01:13:56"
+    "incident_id": "76",
+    "note_text": "Analyzing system logs from 15:54 to 17:54. Initial findings indicate timeout errors affecting Complete connectivity loss to .",
+    "created_by": "498",
+    "created_at": "2025-09-16T15:54:31"
   },
   "160": {
     "note_id": "160",
-    "incident_id": "80",
-    "note_text": "Analyzing system logs from 08:59 to 10:59. Initial findings indicate high memory usage affecting Emergency: API Manager-databas.",
-    "created_by": "35",
-    "created_at": "2025-01-18T08:59:23"
+    "incident_id": "77",
+    "note_text": "Restarted affected services on srv-86. All services restored at 15:56.",
+    "created_by": "718",
+    "created_at": "2025-09-19T15:56:21"
   },
   "161": {
     "note_id": "161",
-    "incident_id": "81",
-    "note_text": "Analyzing system logs from 01:20 to 03:20. Initial findings indicate high memory usage affecting P1: Complete outage on CloudCo.",
-    "created_by": "34",
-    "created_at": "2024-05-21T01:20:20"
+    "incident_id": "78",
+    "note_text": "System performance stable for past 25 hours. No anomalies detected.",
+    "created_by": "94",
+    "created_at": "2025-09-21T08:25:19"
   },
   "162": {
     "note_id": "162",
-    "incident_id": "81",
-    "note_text": "Analyzing system logs from 07:17 to 09:17. Initial findings indicate high memory usage affecting P1: Complete outage on CloudCo.",
-    "created_by": "24",
-    "created_at": "2025-06-01T07:17:12"
+    "incident_id": "78",
+    "note_text": "Applied hotfix version v2.5.13 to Hardware: Search Engine-servic. Monitoring system stability for 152 minutes.",
+    "created_by": "276",
+    "created_at": "2025-09-21T08:50:02"
   },
   "163": {
     "note_id": "163",
-    "incident_id": "82",
-    "note_text": "Restarted affected services on srv-16. All services restored at 20:05.",
-    "created_by": "45",
-    "created_at": "2025-06-01T20:05:29"
+    "incident_id": "78",
+    "note_text": "Updated configuration parameter max_connections from 438 to 1158. System responding normally.",
+    "created_by": "484",
+    "created_at": "2025-09-21T08:15:51"
   },
   "164": {
     "note_id": "164",
-    "incident_id": "83",
-    "note_text": "Updated configuration parameter timeout_seconds from 430 to 815. System responding normally.",
-    "created_by": "9",
-    "created_at": "2024-04-30T09:15:33"
+    "incident_id": "79",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 54 minutes before closing.",
+    "created_by": "370",
+    "created_at": "2025-09-23T12:46:22"
   },
   "165": {
     "note_id": "165",
-    "incident_id": "83",
-    "note_text": "Restarted affected services on srv-93. All services restored at 22:03.",
-    "created_by": "36",
-    "created_at": "2025-01-13T22:03:01"
+    "incident_id": "79",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "created_by": "198",
+    "created_at": "2025-09-23T13:21:57"
   },
   "166": {
     "note_id": "166",
-    "incident_id": "83",
-    "note_text": "System performance stable for past 52 hours. No anomalies detected.",
-    "created_by": "17",
-    "created_at": "2024-08-16T21:52:41"
+    "incident_id": "80",
+    "note_text": "Analyzing system logs from 19:38 to 21:38. Initial findings indicate timeout errors affecting Network: Intermittent connecti.",
+    "created_by": "778",
+    "created_at": "2025-10-10T19:38:27"
   },
   "167": {
     "note_id": "167",
-    "incident_id": "84",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "34",
-    "created_at": "2024-10-12T03:28:36"
+    "incident_id": "80",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 19:38. Correlating with other system events.",
+    "created_by": "297",
+    "created_at": "2025-10-10T19:38:53"
   },
   "168": {
     "note_id": "168",
-    "incident_id": "84",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "13",
-    "created_at": "2025-06-14T16:13:18"
+    "incident_id": "80",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 19:38. Correlating with other system events.",
+    "created_by": "411",
+    "created_at": "2025-10-10T19:38:01"
   },
   "169": {
     "note_id": "169",
-    "incident_id": "84",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "1",
-    "created_at": "2024-03-24T03:39:10"
+    "incident_id": "81",
+    "note_text": "Restarted affected services on srv-65. All services restored at 07:40.",
+    "created_by": "566",
+    "created_at": "2025-09-25T07:40:45"
   },
   "170": {
     "note_id": "170",
-    "incident_id": "85",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 44 minutes before closing.",
-    "created_by": "20",
-    "created_at": "2025-05-24T08:03:14"
+    "incident_id": "81",
+    "note_text": "Restarted affected services on srv-35. All services restored at 07:30.",
+    "created_by": "2",
+    "created_at": "2025-09-25T07:30:20"
   },
   "171": {
     "note_id": "171",
-    "incident_id": "86",
-    "note_text": "System performance stable for past 50 hours. No anomalies detected.",
-    "created_by": "50",
-    "created_at": "2024-06-16T16:40:07"
+    "incident_id": "81",
+    "note_text": "Updated configuration parameter max_connections from 420 to 521. System responding normally.",
+    "created_by": "749",
+    "created_at": "2025-09-25T08:06:29"
   },
   "172": {
     "note_id": "172",
-    "incident_id": "87",
-    "note_text": "Updated configuration parameter timeout_seconds from 436 to 823. System responding normally.",
-    "created_by": "23",
-    "created_at": "2025-03-23T19:55:32"
+    "incident_id": "82",
+    "note_text": "Updated configuration parameter max_connections from 266 to 1050. System responding normally.",
+    "created_by": "160",
+    "created_at": "2025-10-01T23:09:09"
   },
   "173": {
     "note_id": "173",
-    "incident_id": "87",
-    "note_text": "System performance stable for past 71 hours. No anomalies detected.",
-    "created_by": "24",
-    "created_at": "2024-09-01T18:54:53"
+    "incident_id": "82",
+    "note_text": "Restarted affected services on srv-24. All services restored at 23:45.",
+    "created_by": "664",
+    "created_at": "2025-10-01T23:45:56"
   },
   "174": {
     "note_id": "174",
-    "incident_id": "87",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 64 minutes before closing.",
-    "created_by": "2",
-    "created_at": "2024-12-17T09:24:43"
+    "incident_id": "83",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "745",
+    "created_at": "2025-10-06T20:17:41"
   },
   "175": {
     "note_id": "175",
-    "incident_id": "88",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "37",
-    "created_at": "2025-09-30T17:28:52"
+    "incident_id": "83",
+    "note_text": "Analyzing system logs from 21:07 to 23:07. Initial findings indicate timeout errors affecting User inquiry: Database Cluster.",
+    "created_by": "643",
+    "created_at": "2025-10-06T21:07:28"
   },
   "176": {
     "note_id": "176",
-    "incident_id": "88",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 12:46. Correlating with other system events.",
-    "created_by": "6",
-    "created_at": "2024-11-06T12:46:46"
+    "incident_id": "84",
+    "note_text": "Analyzing system logs from 19:33 to 21:33. Initial findings indicate timeout errors affecting Emergency: Network partition -.",
+    "created_by": "250",
+    "created_at": "2025-09-20T19:33:11"
   },
   "177": {
     "note_id": "177",
-    "incident_id": "88",
-    "note_text": "Analyzing system logs from 22:31 to 00:31. Initial findings indicate high memory usage affecting P4: Analytics Engine-storage-p.",
-    "created_by": "21",
-    "created_at": "2025-08-28T22:31:35"
+    "incident_id": "84",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 19:33. Correlating with other system events.",
+    "created_by": "233",
+    "created_at": "2025-09-20T19:33:22"
   },
   "178": {
     "note_id": "178",
-    "incident_id": "89",
-    "note_text": "Analyzing system logs from 18:44 to 20:44. Initial findings indicate high memory usage affecting P4: SecureAuth Gateway-server-.",
-    "created_by": "10",
-    "created_at": "2025-03-14T18:44:22"
+    "incident_id": "84",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "631",
+    "created_at": "2025-09-20T19:34:57"
   },
   "179": {
     "note_id": "179",
-    "incident_id": "89",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "32",
-    "created_at": "2024-04-12T16:10:56"
+    "incident_id": "85",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "640",
+    "created_at": "2025-10-03T02:11:15"
   },
   "180": {
     "note_id": "180",
-    "incident_id": "89",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 01:16. Correlating with other system events.",
-    "created_by": "24",
-    "created_at": "2024-11-03T01:16:35"
+    "incident_id": "85",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "739",
+    "created_at": "2025-10-03T02:34:17"
   },
   "181": {
     "note_id": "181",
-    "incident_id": "90",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "44",
-    "created_at": "2024-05-27T22:59:10"
+    "incident_id": "86",
+    "note_text": "Applied hotfix version v1.5.4 to User inquiry: Content Delivery. Monitoring system stability for 76 minutes.",
+    "created_by": "493",
+    "created_at": "2025-09-23T18:30:56"
   },
   "182": {
     "note_id": "182",
-    "incident_id": "90",
-    "note_text": "Analyzing system logs from 08:31 to 10:31. Initial findings indicate timeout errors affecting P3: API Manager-database-stag-.",
-    "created_by": "22",
-    "created_at": "2024-10-17T08:31:28"
+    "incident_id": "86",
+    "note_text": "System performance stable for past 38 hours. No anomalies detected.",
+    "created_by": "86",
+    "created_at": "2025-09-23T19:18:16"
   },
   "183": {
     "note_id": "183",
-    "incident_id": "91",
-    "note_text": "System performance stable for past 27 hours. No anomalies detected.",
-    "created_by": "13",
-    "created_at": "2025-07-28T18:50:30"
+    "incident_id": "87",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "created_by": "370",
+    "created_at": "2025-09-22T01:35:10"
   },
   "184": {
     "note_id": "184",
-    "incident_id": "92",
-    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "33",
-    "created_at": "2025-04-24T23:41:54"
+    "incident_id": "87",
+    "note_text": "Analyzing system logs from 01:35 to 03:35. Initial findings indicate high memory usage affecting Emergency: Email Service-netwo.",
+    "created_by": "387",
+    "created_at": "2025-09-22T01:35:44"
   },
   "185": {
     "note_id": "185",
-    "incident_id": "92",
-    "note_text": "Analyzing system logs from 05:33 to 07:33. Initial findings indicate high memory usage affecting P3: API Manager-database-stag-.",
-    "created_by": "22",
-    "created_at": "2025-07-05T05:33:29"
+    "incident_id": "87",
+    "note_text": "Analyzing system logs from 01:35 to 03:35. Initial findings indicate high memory usage affecting Emergency: Email Service-netwo.",
+    "created_by": "79",
+    "created_at": "2025-09-22T01:35:14"
   },
   "186": {
     "note_id": "186",
-    "incident_id": "92",
-    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
-    "created_by": "36",
-    "created_at": "2025-01-15T13:00:36"
+    "incident_id": "88",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 135 minutes before closing.",
+    "created_by": "294",
+    "created_at": "2025-09-20T05:28:03"
   },
   "187": {
     "note_id": "187",
-    "incident_id": "93",
-    "note_text": "Restarted affected services on srv-54. All services restored at 05:09.",
-    "created_by": "39",
-    "created_at": "2024-06-24T05:09:58"
+    "incident_id": "89",
+    "note_text": "Applied hotfix version v1.6.13 to User inquiry: Monitoring Suite. Monitoring system stability for 146 minutes.",
+    "created_by": "434",
+    "created_at": "2025-09-21T01:23:44"
   },
   "188": {
     "note_id": "188",
-    "incident_id": "93",
-    "note_text": "All metrics returned to baseline levels. Monitoring for 64 minutes before closing.",
-    "created_by": "5",
-    "created_at": "2024-09-12T18:18:44"
+    "incident_id": "90",
+    "note_text": "Analyzing system logs from 15:11 to 17:11. Initial findings indicate high memory usage affecting Complete connectivity loss to .",
+    "created_by": "669",
+    "created_at": "2025-09-29T15:11:52"
   },
   "189": {
     "note_id": "189",
-    "incident_id": "94",
-    "note_text": "Monitoring dashboards show error_rate increased significantly at 23:07. Correlating with other system events.",
-    "created_by": "10",
-    "created_at": "2025-02-17T23:07:23"
+    "incident_id": "91",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 56 minutes before closing.",
+    "created_by": "289",
+    "created_at": "2025-09-20T03:24:22"
   },
   "190": {
     "note_id": "190",
-    "incident_id": "94",
-    "note_text": "Analyzing system logs from 03:37 to 05:37. Initial findings indicate timeout errors affecting Medium: API Manager-network-st.",
-    "created_by": "23",
-    "created_at": "2025-08-28T03:37:25"
+    "incident_id": "91",
+    "note_text": "System performance stable for past 29 hours. No anomalies detected.",
+    "created_by": "578",
+    "created_at": "2025-09-20T02:51:17"
   },
   "191": {
     "note_id": "191",
-    "incident_id": "94",
-    "note_text": "Monitoring dashboards show response_time increased significantly at 17:31. Correlating with other system events.",
-    "created_by": "49",
-    "created_at": "2024-03-02T17:31:45"
+    "incident_id": "91",
+    "note_text": "Applied hotfix version v1.5.9 to User inquiry: API Manager-data. Monitoring system stability for 131 minutes.",
+    "created_by": "133",
+    "created_at": "2025-09-20T03:35:07"
   },
   "192": {
     "note_id": "192",
+    "incident_id": "92",
+    "note_text": "Updated configuration parameter max_connections from 248 to 830. System responding normally.",
+    "created_by": "81",
+    "created_at": "2025-09-23T03:51:49"
+  },
+  "193": {
+    "note_id": "193",
+    "incident_id": "92",
+    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
+    "created_by": "369",
+    "created_at": "2025-09-23T03:51:16"
+  },
+  "194": {
+    "note_id": "194",
+    "incident_id": "92",
+    "note_text": "Applied hotfix version v2.9.20 to Network: Intermittent connecti. Monitoring system stability for 157 minutes.",
+    "created_by": "511",
+    "created_at": "2025-09-23T04:37:21"
+  },
+  "195": {
+    "note_id": "195",
+    "incident_id": "93",
+    "note_text": "Updated configuration parameter max_connections from 191 to 1955. System responding normally.",
+    "created_by": "485",
+    "created_at": "2025-09-24T02:43:32"
+  },
+  "196": {
+    "note_id": "196",
+    "incident_id": "94",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 03:21. Correlating with other system events.",
+    "created_by": "383",
+    "created_at": "2025-09-22T03:21:05"
+  },
+  "197": {
+    "note_id": "197",
+    "incident_id": "94",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 02:32. Correlating with other system events.",
+    "created_by": "108",
+    "created_at": "2025-09-22T02:32:07"
+  },
+  "198": {
+    "note_id": "198",
     "incident_id": "95",
-    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
-    "created_by": "50",
-    "created_at": "2024-07-28T14:31:50"
+    "note_text": "Analyzing system logs from 04:13 to 06:13. Initial findings indicate high memory usage affecting Software failure: Payment Gate.",
+    "created_by": "407",
+    "created_at": "2025-09-30T04:13:13"
+  },
+  "199": {
+    "note_id": "199",
+    "incident_id": "95",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "created_by": "559",
+    "created_at": "2025-09-30T04:26:37"
   }
 }

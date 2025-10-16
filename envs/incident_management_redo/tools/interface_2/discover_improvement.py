@@ -3,22 +3,21 @@ from typing import Any, Dict, List
 from tau_bench.envs.tool import Tool
 
 
-class DiscoverParties(Tool):
+class DiscoverImprovement(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], entity_type: str, filters: Dict[str, Any] = None) -> str:
         """
-        Discover party entities (clients, vendors, users). The entity to discover is decided by entity_type.
+        Discover improvement entities (root_cause_analyses, post_incident_reviews). The entity to discover is decided by entity_type.
         Optionally, filters can be applied to narrow down the search results.
         
         Supported entities:
-        - clients: Client records
-        - vendors: Vendor records
-        - users: User records
+        - root_cause_analyses: Root Cause Analysis records
+        - post_incident_reviews: Post Incident Review records
         """
-        if entity_type not in ["clients", "vendors", "users"]:
+        if entity_type not in ["root_cause_analyses", "post_incident_reviews"]:
             return json.dumps({
                 "success": False,
-                "error": f"Invalid entity_type '{entity_type}'. Must be 'clients', 'vendors', or 'users'"
+                "error": f"Invalid entity_type '{entity_type}'. Must be 'root_cause_analyses' or 'post_incident_reviews'"
             })
         
         if not isinstance(data, dict):
@@ -40,24 +39,16 @@ class DiscoverParties(Tool):
                         break
                 if match:
                     # Add appropriate ID field based on entity type
-                    if entity_type == "clients":
-                        id_field = "client_id"
-                    elif entity_type == "vendors":
-                        id_field = "vendor_id"
-                    else:  # users
-                        id_field = "user_id"
-                        # Remove role field from user data
-                        entity_data = {k: v for k, v in entity_data.items() if k != "role"}
+                    if entity_type == "root_cause_analyses":
+                        id_field = "rca_id"
+                    else:  # post_incident_reviews
+                        id_field = "review_id"
                     results.append({**entity_data, id_field: entity_id})
             else:
-                if entity_type == "clients":
-                    id_field = "client_id"
-                elif entity_type == "vendors":
-                    id_field = "vendor_id"
-                else:  # users
-                    id_field = "user_id"
-                    # Remove role field from user data
-                    entity_data = {k: v for k, v in entity_data.items() if k != "role"}
+                if entity_type == "root_cause_analyses":
+                    id_field = "rca_id"
+                else:  # post_incident_reviews
+                    id_field = "review_id"
                 results.append({**entity_data, id_field: entity_id})
         
         return json.dumps({
@@ -72,86 +63,86 @@ class DiscoverParties(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "discover_parties",
-                "description": "Discover party entities (clients, vendors, users). The entity to discover is decided by entity_type. Optional filters can be applied to narrow down the search results.",
+                "name": "discover_improvement",
+                "description": "Discover improvement entities (root cause analyses, post incident reviews). The entity to discover is decided by entity_type. Optional filters can be applied to narrow down the search results.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "entity_type": {
                             "type": "string",
-                            "description": "Type of entity to discover: 'clients', 'vendors', or 'users'"
+                            "description": "Type of entity to discover: 'root_cause_analyses' or 'post_incident_reviews'"
                         },
                         "filters": {
                             "type": "object",
                             "description": "Optional filters to narrow down search results. Only exact matches are supported (AND logic for multiple filters).",
                             "properties": {
-                                "client_id": {
+                                "rca_id": {
                                     "type": "string",
-                                    "description": "Client ID (for clients)"
+                                    "description": "Root cause analysis ID (for root_cause_analyses)"
                                 },
-                                "client_name": {
+                                "rca_number": {
                                     "type": "string",
-                                    "description": "Client name (for clients)"
+                                    "description": "RCA number, e.g., RCA0001234 (for root_cause_analyses)"
                                 },
-                                "registration_number": {
+                                "rca_title": {
                                     "type": "string",
-                                    "description": "Registration number (for clients)"
+                                    "description": "RCA title (for root_cause_analyses)"
                                 },
-                                "company_type": {
+                                "incident_id": {
                                     "type": "string",
-                                    "description": "Company type: 'enterprise', 'mid_market', 'smb', 'startup' (for clients)"
+                                    "description": "Associated incident ID"
                                 },
-                                "address": {
+                                "assigned_to": {
                                     "type": "string",
-                                    "description": "Client address (for clients)"
+                                    "description": "User ID assigned to the RCA (for root_cause_analyses)"
                                 },
-                                "contact_phone": {
+                                "analysis_method": {
                                     "type": "string",
-                                    "description": "Contact phone number"
+                                    "description": "Analysis method: '5_whys', 'fishbone', 'timeline', 'fault_tree', 'kepner_tregoe' (for root_cause_analyses)"
                                 },
-                                "contact_email": {
+                                "root_cause_summary": {
                                     "type": "string",
-                                    "description": "Contact email address"
-                                },
-                                "support_coverage": {
-                                    "type": "string",
-                                    "description": "Support coverage: '24x7', 'business_hours', 'on_call' (for clients)"
-                                },
-                                "preferred_communication": {
-                                    "type": "string",
-                                    "description": "Preferred communication method: 'email', 'portal', 'phone', 'slack' (for clients)"
+                                    "description": "Summary of root cause findings (for root_cause_analyses)"
                                 },
                                 "status": {
                                     "type": "string",
-                                    "description": "Status of the entity"
+                                    "description": "Status of RCA or review"
                                 },
-                                "vendor_id": {
+                                "due_date": {
                                     "type": "string",
-                                    "description": "Vendor ID (for vendors)"
+                                    "description": "Due date in YYYY-MM-DD format (for root_cause_analyses)"
                                 },
-                                "vendor_name": {
+                                "completed_at": {
                                     "type": "string",
-                                    "description": "Vendor name (for vendors)"
+                                    "description": "Completion timestamp in YYYY-MM-DD format (for root_cause_analyses)"
                                 },
-                                "user_id": {
+                                "approved_by": {
                                     "type": "string",
-                                    "description": "User ID (for users)"
+                                    "description": "User ID who approved the RCA (for root_cause_analyses)"
                                 },
-                                "first_name": {
+                                "review_id": {
                                     "type": "string",
-                                    "description": "User first name (for users)"
+                                    "description": "Post incident review ID (for post_incident_reviews)"
                                 },
-                                "last_name": {
+                                "scheduled_date": {
                                     "type": "string",
-                                    "description": "User last name (for users)"
+                                    "description": "Scheduled date in YYYY-MM-DD format (for post_incident_reviews)"
                                 },
-                                "email": {
+                                "facilitator": {
                                     "type": "string",
-                                    "description": "User email address (for users)"
+                                    "description": "User ID of facilitator (for post_incident_reviews)"
                                 },
-                                "timezone": {
+                                "review_notes": {
                                     "type": "string",
-                                    "description": "User timezone (for users)"
+                                    "description": "Notes from the review (for post_incident_reviews)"
+                                },
+                                "lessons_learned": {
+                                    "type": "string",
+                                    "description": "Lessons learned (for post_incident_reviews)"
+                                },
+                                "action_items": {
+                                    "type": "string",
+                                    "description": "Action items from the review (for post_incident_reviews)"
                                 },
                                 "created_at": {
                                     "type": "string",
@@ -159,7 +150,7 @@ class DiscoverParties(Tool):
                                 },
                                 "updated_at": {
                                     "type": "string",
-                                    "description": "Update timestamp in YYYY-MM-DD format"
+                                    "description": "Update timestamp in YYYY-MM-DD format (for root_cause_analyses)"
                                 }
                             }
                         }

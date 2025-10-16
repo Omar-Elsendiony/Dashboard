@@ -3,48 +3,120 @@
     "product_id": "1",
     "product_name": "CloudCore Platform",
     "product_code": "PRD-1001",
-    "description": "",
-    "status": "deprecated",
-    "created_at": "2024-01-16T08:23:29"
+    "description": "Enterprise cloud infrastructure platform providing scalable computing resources, storage, and networking services. Supports multi-region deployments with built-in high availability.",
+    "status": "active",
+    "created_at": "2025-04-04T23:56:09"
   },
   "2": {
     "product_id": "2",
     "product_name": "DataSync Pro",
     "product_code": "PRD-1002",
-    "description": "",
+    "description": "Real-time data synchronization and integration platform for seamless data flow across multiple systems. Features automated conflict resolution and data validation.",
     "status": "active",
-    "created_at": "2025-08-07T13:56:43"
+    "created_at": "2025-06-20T12:46:04"
   },
   "3": {
     "product_id": "3",
     "product_name": "SecureAuth Gateway",
     "product_code": "PRD-1003",
-    "description": "",
-    "status": "deprecated",
-    "created_at": "2024-12-08T11:08:43"
+    "description": "Multi-factor authentication and identity management solution. Provides SSO capabilities, adaptive authentication, and comprehensive audit logging for compliance.",
+    "status": "active",
+    "created_at": "2025-03-09T03:30:52"
   },
   "4": {
     "product_id": "4",
     "product_name": "Analytics Engine",
     "product_code": "PRD-1004",
-    "description": "",
+    "description": "Advanced analytics and business intelligence platform with real-time data processing. Includes predictive analytics, custom dashboards, and automated reporting capabilities.",
     "status": "active",
-    "created_at": "2025-09-05T07:21:18"
+    "created_at": "2025-08-14T06:12:32"
   },
   "5": {
     "product_id": "5",
     "product_name": "API Manager",
     "product_code": "PRD-1005",
-    "description": "",
-    "status": "deprecated",
-    "created_at": "2024-08-19T11:45:17"
+    "description": "Comprehensive API gateway and management platform for designing, publishing, and monitoring APIs. Features rate limiting, caching, and detailed analytics.",
+    "status": "active",
+    "created_at": "2025-09-09T12:13:57"
   },
   "6": {
     "product_id": "6",
     "product_name": "Monitoring Suite",
     "product_code": "PRD-1006",
-    "description": "",
+    "description": "Infrastructure and application monitoring platform with intelligent alerting. Provides real-time metrics, distributed tracing, and automated incident detection.",
     "status": "active",
-    "created_at": "2024-09-12T20:08:19"
+    "created_at": "2025-10-13T15:33:37"
+  },
+  "7": {
+    "product_id": "7",
+    "product_name": "Payment Gateway",
+    "product_code": "PRD-1007",
+    "description": "PCI-DSS compliant payment processing platform supporting multiple payment methods. Includes fraud detection, tokenization, and international currency support.",
+    "status": "active",
+    "created_at": "2025-09-10T07:17:15"
+  },
+  "8": {
+    "product_id": "8",
+    "product_name": "Content Delivery Network",
+    "product_code": "PRD-1008",
+    "description": "Global CDN service for fast content delivery with edge caching. Features DDoS protection, SSL/TLS management, and real-time analytics.",
+    "status": "deprecated",
+    "created_at": "2025-02-20T05:49:01"
+  },
+  "9": {
+    "product_id": "9",
+    "product_name": "Database Cluster",
+    "product_code": "PRD-1009",
+    "description": "Managed relational database service with automated backups and failover. Supports read replicas, point-in-time recovery, and performance optimization.",
+    "status": "active",
+    "created_at": "2025-08-06T19:26:27"
+  },
+  "10": {
+    "product_id": "10",
+    "product_name": "Message Queue Service",
+    "product_code": "PRD-1010",
+    "description": "Distributed message queue for reliable asynchronous communication. Provides message ordering, dead-letter queues, and delivery guarantees.",
+    "status": "active",
+    "created_at": "2024-08-27T12:06:33"
+  },
+  "11": {
+    "product_id": "11",
+    "product_name": "Storage Service",
+    "product_code": "PRD-1011",
+    "description": "Object storage platform with unlimited scalability and 99.99% durability. Features versioning, lifecycle policies, and encryption at rest.",
+    "status": "deprecated",
+    "created_at": "2025-07-10T19:28:15"
+  },
+  "12": {
+    "product_id": "12",
+    "product_name": "Container Orchestration",
+    "product_code": "PRD-1012",
+    "description": "Kubernetes-based container orchestration platform for deploying and managing containerized applications. Includes auto-scaling, rolling updates, and service mesh integration.",
+    "status": "deprecated",
+    "created_at": "2025-09-28T03:24:29"
+  },
+  "13": {
+    "product_id": "13",
+    "product_name": "Email Service",
+    "product_code": "PRD-1013",
+    "description": "Transactional and marketing email platform with high deliverability. Features template management, bounce handling, and detailed delivery analytics.",
+    "status": "deprecated",
+    "created_at": "2025-04-18T13:22:32"
+  },
+  "14": {
+    "product_id": "14",
+    "product_name": "Search Engine",
+    "product_code": "PRD-1014",
+    "description": "Full-text search and analytics engine for fast data retrieval. Provides relevance tuning, faceted search, and real-time indexing capabilities.",
+    "status": "active",
+    "created_at": "2024-06-06T12:56:02"
+  },
+  "15": {
+    "product_id": "15",
+    "product_name": "Workflow Automation",
+    "product_code": "PRD-1015",
+    "description": "Business process automation platform for designing and executing complex workflows. Features visual workflow designer, approval routing, and integration with external systems.",
+    "status": "active",
+    "created_at": "2025-06-21T06:46:40"
   }
 }

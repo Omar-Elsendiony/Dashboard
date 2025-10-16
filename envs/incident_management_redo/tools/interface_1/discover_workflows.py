@@ -3,22 +3,21 @@ from typing import Any, Dict, List
 from tau_bench.envs.tool import Tool
 
 
-class DiscoverCoordination(Tool):
+class DiscoverWorkflows(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], entity_type: str, filters: Dict[str, Any] = None) -> str:
         """
-        Discover coordination entities (escalations, bridges, bridge_participants). The entity to discover is decided by entity_type.
+        Discover workflow entities (communications, approval_requests). The entity to discover is decided by entity_type.
         Optionally, filters can be applied to narrow down the search results.
         
         Supported entities:
-        - escalations: Escalation records
-        - bridges: Bridge records
-        - bridge_participants: Bridge Participant records
+        - communications: Communication records
+        - approval_requests: Approval Request records
         """
-        if entity_type not in ["escalations", "bridges", "bridge_participants"]:
+        if entity_type not in ["communications", "approval_requests"]:
             return json.dumps({
                 "success": False,
-                "error": f"Invalid entity_type '{entity_type}'. Must be 'escalations', 'bridges', or 'bridge_participants'"
+                "error": f"Invalid entity_type '{entity_type}'. Must be 'communications' or 'approval_requests'"
             })
         
         if not isinstance(data, dict):
@@ -40,20 +39,16 @@ class DiscoverCoordination(Tool):
                         break
                 if match:
                     # Add appropriate ID field based on entity type
-                    if entity_type == "escalations":
-                        id_field = "escalation_id"
-                    elif entity_type == "bridges":
-                        id_field = "bridge_id"
-                    else:  # bridge_participants
-                        id_field = "participant_id"
+                    if entity_type == "communications":
+                        id_field = "communication_id"
+                    else:  # approval_requests
+                        id_field = "approval_id"
                     results.append({**entity_data, id_field: entity_id})
             else:
-                if entity_type == "escalations":
-                    id_field = "escalation_id"
-                elif entity_type == "bridges":
-                    id_field = "bridge_id"
-                else:  # bridge_participants
-                    id_field = "participant_id"
+                if entity_type == "communications":
+                    id_field = "communication_id"
+                else:  # approval_requests
+                    id_field = "approval_id"
                 results.append({**entity_data, id_field: entity_id})
         
         return json.dumps({
@@ -68,94 +63,94 @@ class DiscoverCoordination(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "discover_coordination",
-                "description": "Discover coordination entities (escalations, bridges, bridge participants). The entity to discover is decided by entity_type. Optional filters can be applied to narrow down the search results.",
+                "name": "discover_workflows",
+                "description": "Discover workflow entities (communications, approval requests). The entity to discover is decided by entity_type. Optional filters can be applied to narrow down the search results.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "entity_type": {
                             "type": "string",
-                            "description": "Type of entity to discover: 'escalations', 'bridges', or 'bridge_participants'"
+                            "description": "Type of entity to discover: 'communications' or 'approval_requests'"
                         },
                         "filters": {
                             "type": "object",
                             "description": "Optional filters to narrow down search results. Only exact matches are supported (AND logic for multiple filters).",
                             "properties": {
-                                "escalation_id": {
+                                "communication_id": {
                                     "type": "string",
-                                    "description": "Escalation ID (for escalations)"
+                                    "description": "Communication ID (for communications)"
                                 },
                                 "incident_id": {
                                     "type": "string",
                                     "description": "Associated incident ID"
                                 },
-                                "escalated_from": {
+                                "communication_type": {
                                     "type": "string",
-                                    "description": "User ID who requested escalation (for escalations)"
+                                    "description": "Type of communication: 'status_update', 'resolution_notice', 'escalation_notice', 'bridge_invitation' (for communications)"
                                 },
-                                "escalated_to": {
+                                "recipient_type": {
                                     "type": "string",
-                                    "description": "User ID receiving escalation (for escalations)"
+                                    "description": "Type of recipient: 'client', 'internal', 'vendor', 'executive' (for communications)"
                                 },
-                                "escalation_level": {
+                                "sender": {
                                     "type": "string",
-                                    "description": "Escalation level: 'L1_to_L2', 'L2_to_L3', 'L3_to_management', 'management_to_executive' (for escalations)"
+                                    "description": "User ID of sender (for communications)"
                                 },
-                                "escalation_reason": {
+                                "recipient": {
                                     "type": "string",
-                                    "description": "Reason for escalation (for escalations)"
+                                    "description": "User ID of recipient (for communications)"
+                                },
+                                "delivery_method": {
+                                    "type": "string",
+                                    "description": "Delivery method: 'email', 'portal', 'sms', 'phone' (for communications)"
+                                },
+                                "message_content": {
+                                    "type": "string",
+                                    "description": "Message content (for communications)"
+                                },
+                                "delivery_status": {
+                                    "type": "string",
+                                    "description": "Delivery status: 'pending', 'sent', 'delivered', 'failed' (for communications)"
+                                },
+                                "sent_at": {
+                                    "type": "string",
+                                    "description": "Sent timestamp in YYYY-MM-DD format (for communications)"
+                                },
+                                "approval_id": {
+                                    "type": "string",
+                                    "description": "Approval request ID (for approval_requests)"
+                                },
+                                "reference_id": {
+                                    "type": "string",
+                                    "description": "ID of the record requiring approval (for approval_requests)"
+                                },
+                                "reference_type": {
+                                    "type": "string",
+                                    "description": "Type of record requiring approval: 'escalation', 'bridge', 'change', 'rollback', 'incident_closure', 'rca' (for approval_requests)"
+                                },
+                                "requested_by": {
+                                    "type": "string",
+                                    "description": "User ID who requested approval (for approval_requests)"
+                                },
+                                "requested_action": {
+                                    "type": "string",
+                                    "description": "Action being requested (for approval_requests)"
+                                },
+                                "approver": {
+                                    "type": "string",
+                                    "description": "User ID of approver (for approval_requests)"
                                 },
                                 "status": {
                                     "type": "string",
-                                    "description": "Status of the escalation or bridge"
+                                    "description": "Approval status: 'pending', 'approved', 'denied' (for approval_requests)"
                                 },
                                 "requested_at": {
                                     "type": "string",
-                                    "description": "Request timestamp in YYYY-MM-DD format (for escalations)"
+                                    "description": "Request timestamp in YYYY-MM-DD format (for approval_requests)"
                                 },
                                 "responded_at": {
                                     "type": "string",
-                                    "description": "Response timestamp in YYYY-MM-DD format (for escalations)"
-                                },
-                                "bridge_id": {
-                                    "type": "string",
-                                    "description": "Bridge ID"
-                                },
-                                "bridge_number": {
-                                    "type": "string",
-                                    "description": "Bridge number, e.g., BRG0001234 (for bridges)"
-                                },
-                                "bridge_type": {
-                                    "type": "string",
-                                    "description": "Bridge type: 'major_incident', 'coordination', 'technical' (for bridges)"
-                                },
-                                "bridge_host": {
-                                    "type": "string",
-                                    "description": "User ID hosting the bridge (for bridges)"
-                                },
-                                "start_time": {
-                                    "type": "string",
-                                    "description": "Start timestamp in YYYY-MM-DD format (for bridges)"
-                                },
-                                "end_time": {
-                                    "type": "string",
-                                    "description": "End timestamp in YYYY-MM-DD format (for bridges)"
-                                },
-                                "participant_id": {
-                                    "type": "string",
-                                    "description": "Participant ID (for bridge_participants)"
-                                },
-                                "user_id": {
-                                    "type": "string",
-                                    "description": "User ID of the participant (for bridge_participants)"
-                                },
-                                "role_in_bridge": {
-                                    "type": "string",
-                                    "description": "Role in bridge: 'host', 'technical_support', 'account_manager', 'vendor', 'executive' (for bridge_participants)"
-                                },
-                                "joined_at": {
-                                    "type": "string",
-                                    "description": "Join timestamp in YYYY-MM-DD format (for bridge_participants)"
+                                    "description": "Response timestamp in YYYY-MM-DD format (for approval_requests)"
                                 },
                                 "created_at": {
                                     "type": "string",
