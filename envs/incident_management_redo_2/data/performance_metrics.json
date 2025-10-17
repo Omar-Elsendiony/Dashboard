@@ -1,0 +1,2630 @@
+{
+  "1": {
+    "metric_id": "1",
+    "incident_id": "1",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1785,
+    "sla_target_minutes": 1128,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-04T08:54:21"
+  },
+  "2": {
+    "metric_id": "2",
+    "incident_id": "2",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1284,
+    "sla_target_minutes": 430,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T12:29:18"
+  },
+  "3": {
+    "metric_id": "3",
+    "incident_id": "2",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 380,
+    "sla_target_minutes": 1650,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T05:59:02"
+  },
+  "4": {
+    "metric_id": "4",
+    "incident_id": "2",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 165,
+    "sla_target_minutes": 968,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T03:41:55"
+  },
+  "5": {
+    "metric_id": "5",
+    "incident_id": "3",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 485,
+    "sla_target_minutes": 1671,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T17:42:57"
+  },
+  "6": {
+    "metric_id": "6",
+    "incident_id": "4",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 979,
+    "sla_target_minutes": 1334,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-08T15:42:51"
+  },
+  "7": {
+    "metric_id": "7",
+    "incident_id": "5",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 525,
+    "sla_target_minutes": 1599,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T16:10:26"
+  },
+  "8": {
+    "metric_id": "8",
+    "incident_id": "6",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1833,
+    "sla_target_minutes": 1773,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T01:57:43"
+  },
+  "9": {
+    "metric_id": "9",
+    "incident_id": "7",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 64,
+    "sla_target_minutes": 48,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T02:39:41"
+  },
+  "10": {
+    "metric_id": "10",
+    "incident_id": "8",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1858,
+    "sla_target_minutes": 1130,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-01T21:42:44"
+  },
+  "11": {
+    "metric_id": "11",
+    "incident_id": "8",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1801,
+    "sla_target_minutes": 592,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-01T17:45:01"
+  },
+  "12": {
+    "metric_id": "12",
+    "incident_id": "8",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 135,
+    "sla_target_minutes": 812,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-01T16:55:57"
+  },
+  "13": {
+    "metric_id": "13",
+    "incident_id": "9",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 734,
+    "sla_target_minutes": 973,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T09:10:41"
+  },
+  "14": {
+    "metric_id": "14",
+    "incident_id": "10",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 202,
+    "sla_target_minutes": 1139,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T05:53:46"
+  },
+  "15": {
+    "metric_id": "15",
+    "incident_id": "10",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1484,
+    "sla_target_minutes": 601,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T05:50:05"
+  },
+  "16": {
+    "metric_id": "16",
+    "incident_id": "11",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 225,
+    "sla_target_minutes": 1256,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T08:44:59"
+  },
+  "17": {
+    "metric_id": "17",
+    "incident_id": "12",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1003,
+    "sla_target_minutes": 1918,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T06:59:56"
+  },
+  "18": {
+    "metric_id": "18",
+    "incident_id": "13",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 269,
+    "sla_target_minutes": 1563,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T11:38:20"
+  },
+  "19": {
+    "metric_id": "19",
+    "incident_id": "13",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1528,
+    "sla_target_minutes": 1059,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T11:39:50"
+  },
+  "20": {
+    "metric_id": "20",
+    "incident_id": "13",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 278,
+    "sla_target_minutes": 658,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T11:42:41"
+  },
+  "21": {
+    "metric_id": "21",
+    "incident_id": "14",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 493,
+    "sla_target_minutes": 1071,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T17:14:29"
+  },
+  "22": {
+    "metric_id": "22",
+    "incident_id": "15",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1517,
+    "sla_target_minutes": 60,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T22:47:57"
+  },
+  "23": {
+    "metric_id": "23",
+    "incident_id": "15",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1590,
+    "sla_target_minutes": 2253,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T23:04:38"
+  },
+  "24": {
+    "metric_id": "24",
+    "incident_id": "15",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1018,
+    "sla_target_minutes": 199,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T23:29:17"
+  },
+  "25": {
+    "metric_id": "25",
+    "incident_id": "16",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1979,
+    "sla_target_minutes": 885,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T17:35:32"
+  },
+  "26": {
+    "metric_id": "26",
+    "incident_id": "16",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1561,
+    "sla_target_minutes": 726,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T17:36:46"
+  },
+  "27": {
+    "metric_id": "27",
+    "incident_id": "17",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 743,
+    "sla_target_minutes": 264,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T00:42:21"
+  },
+  "28": {
+    "metric_id": "28",
+    "incident_id": "17",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 706,
+    "sla_target_minutes": 1943,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T21:17:07"
+  },
+  "29": {
+    "metric_id": "29",
+    "incident_id": "17",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1121,
+    "sla_target_minutes": 1217,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T13:37:30"
+  },
+  "30": {
+    "metric_id": "30",
+    "incident_id": "18",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 693,
+    "sla_target_minutes": 2092,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T09:08:01"
+  },
+  "31": {
+    "metric_id": "31",
+    "incident_id": "18",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1515,
+    "sla_target_minutes": 2189,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T08:46:07"
+  },
+  "32": {
+    "metric_id": "32",
+    "incident_id": "19",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1465,
+    "sla_target_minutes": 1987,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T12:50:14"
+  },
+  "33": {
+    "metric_id": "33",
+    "incident_id": "19",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 838,
+    "sla_target_minutes": 734,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T12:08:58"
+  },
+  "34": {
+    "metric_id": "34",
+    "incident_id": "19",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1524,
+    "sla_target_minutes": 2110,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T11:53:00"
+  },
+  "35": {
+    "metric_id": "35",
+    "incident_id": "20",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1358,
+    "sla_target_minutes": 719,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T04:27:33"
+  },
+  "36": {
+    "metric_id": "36",
+    "incident_id": "20",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 634,
+    "sla_target_minutes": 917,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T04:35:39"
+  },
+  "37": {
+    "metric_id": "37",
+    "incident_id": "21",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 812,
+    "sla_target_minutes": 721,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T15:53:36"
+  },
+  "38": {
+    "metric_id": "38",
+    "incident_id": "21",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 335,
+    "sla_target_minutes": 737,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T15:52:34"
+  },
+  "39": {
+    "metric_id": "39",
+    "incident_id": "21",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1790,
+    "sla_target_minutes": 1465,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T15:39:52"
+  },
+  "40": {
+    "metric_id": "40",
+    "incident_id": "22",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 385,
+    "sla_target_minutes": 1474,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T19:59:51"
+  },
+  "41": {
+    "metric_id": "41",
+    "incident_id": "23",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 362,
+    "sla_target_minutes": 2292,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T14:34:55"
+  },
+  "42": {
+    "metric_id": "42",
+    "incident_id": "23",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 396,
+    "sla_target_minutes": 1061,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T14:32:28"
+  },
+  "43": {
+    "metric_id": "43",
+    "incident_id": "23",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1333,
+    "sla_target_minutes": 82,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T14:16:42"
+  },
+  "44": {
+    "metric_id": "44",
+    "incident_id": "24",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 342,
+    "sla_target_minutes": 1036,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-10T13:51:34"
+  },
+  "45": {
+    "metric_id": "45",
+    "incident_id": "25",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1226,
+    "sla_target_minutes": 76,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T13:23:10"
+  },
+  "46": {
+    "metric_id": "46",
+    "incident_id": "25",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1250,
+    "sla_target_minutes": 1740,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T07:30:14"
+  },
+  "47": {
+    "metric_id": "47",
+    "incident_id": "26",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 285,
+    "sla_target_minutes": 1708,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T12:38:13"
+  },
+  "48": {
+    "metric_id": "48",
+    "incident_id": "26",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 10,
+    "sla_target_minutes": 1104,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T13:02:43"
+  },
+  "49": {
+    "metric_id": "49",
+    "incident_id": "27",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 407,
+    "sla_target_minutes": 788,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-02T13:08:25"
+  },
+  "50": {
+    "metric_id": "50",
+    "incident_id": "27",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 987,
+    "sla_target_minutes": 1197,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T17:21:14"
+  },
+  "51": {
+    "metric_id": "51",
+    "incident_id": "28",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1268,
+    "sla_target_minutes": 336,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T19:57:26"
+  },
+  "52": {
+    "metric_id": "52",
+    "incident_id": "28",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1520,
+    "sla_target_minutes": 375,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T19:32:37"
+  },
+  "53": {
+    "metric_id": "53",
+    "incident_id": "28",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 459,
+    "sla_target_minutes": 1036,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T20:44:18"
+  },
+  "54": {
+    "metric_id": "54",
+    "incident_id": "29",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 338,
+    "sla_target_minutes": 1250,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-17T22:06:56"
+  },
+  "55": {
+    "metric_id": "55",
+    "incident_id": "29",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 959,
+    "sla_target_minutes": 413,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-17T22:18:55"
+  },
+  "56": {
+    "metric_id": "56",
+    "incident_id": "30",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 792,
+    "sla_target_minutes": 53,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T21:31:51"
+  },
+  "57": {
+    "metric_id": "57",
+    "incident_id": "31",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 304,
+    "sla_target_minutes": 1919,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T07:02:48"
+  },
+  "58": {
+    "metric_id": "58",
+    "incident_id": "31",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1359,
+    "sla_target_minutes": 182,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T06:56:56"
+  },
+  "59": {
+    "metric_id": "59",
+    "incident_id": "31",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 829,
+    "sla_target_minutes": 1180,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T06:34:20"
+  },
+  "60": {
+    "metric_id": "60",
+    "incident_id": "32",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 980,
+    "sla_target_minutes": 1815,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-25T17:54:22"
+  },
+  "61": {
+    "metric_id": "61",
+    "incident_id": "32",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 810,
+    "sla_target_minutes": 1182,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T15:43:27"
+  },
+  "62": {
+    "metric_id": "62",
+    "incident_id": "33",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1933,
+    "sla_target_minutes": 1479,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-13T07:35:59"
+  },
+  "63": {
+    "metric_id": "63",
+    "incident_id": "34",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 676,
+    "sla_target_minutes": 964,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T23:39:24"
+  },
+  "64": {
+    "metric_id": "64",
+    "incident_id": "35",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 877,
+    "sla_target_minutes": 399,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T00:29:33"
+  },
+  "65": {
+    "metric_id": "65",
+    "incident_id": "35",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1701,
+    "sla_target_minutes": 1773,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T06:48:10"
+  },
+  "66": {
+    "metric_id": "66",
+    "incident_id": "36",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 431,
+    "sla_target_minutes": 841,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T17:06:27"
+  },
+  "67": {
+    "metric_id": "67",
+    "incident_id": "36",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 244,
+    "sla_target_minutes": 80,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T03:59:43"
+  },
+  "68": {
+    "metric_id": "68",
+    "incident_id": "36",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 589,
+    "sla_target_minutes": 411,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T22:29:00"
+  },
+  "69": {
+    "metric_id": "69",
+    "incident_id": "37",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1475,
+    "sla_target_minutes": 436,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T16:43:28"
+  },
+  "70": {
+    "metric_id": "70",
+    "incident_id": "37",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 724,
+    "sla_target_minutes": 1160,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T20:09:57"
+  },
+  "71": {
+    "metric_id": "71",
+    "incident_id": "38",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 375,
+    "sla_target_minutes": 1930,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T04:46:45"
+  },
+  "72": {
+    "metric_id": "72",
+    "incident_id": "38",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1358,
+    "sla_target_minutes": 1620,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T04:47:26"
+  },
+  "73": {
+    "metric_id": "73",
+    "incident_id": "39",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 874,
+    "sla_target_minutes": 883,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-13T11:31:41"
+  },
+  "74": {
+    "metric_id": "74",
+    "incident_id": "39",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1247,
+    "sla_target_minutes": 1227,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-13T19:30:54"
+  },
+  "75": {
+    "metric_id": "75",
+    "incident_id": "39",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1287,
+    "sla_target_minutes": 214,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-13T16:55:54"
+  },
+  "76": {
+    "metric_id": "76",
+    "incident_id": "40",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 681,
+    "sla_target_minutes": 1423,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T03:51:05"
+  },
+  "77": {
+    "metric_id": "77",
+    "incident_id": "40",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1057,
+    "sla_target_minutes": 2284,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T03:44:43"
+  },
+  "78": {
+    "metric_id": "78",
+    "incident_id": "41",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1279,
+    "sla_target_minutes": 2342,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-10T21:52:11"
+  },
+  "79": {
+    "metric_id": "79",
+    "incident_id": "41",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 363,
+    "sla_target_minutes": 1257,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T23:36:53"
+  },
+  "80": {
+    "metric_id": "80",
+    "incident_id": "42",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1157,
+    "sla_target_minutes": 927,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T18:17:15"
+  },
+  "81": {
+    "metric_id": "81",
+    "incident_id": "42",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 640,
+    "sla_target_minutes": 1122,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T19:00:28"
+  },
+  "82": {
+    "metric_id": "82",
+    "incident_id": "42",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 169,
+    "sla_target_minutes": 2062,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T18:11:52"
+  },
+  "83": {
+    "metric_id": "83",
+    "incident_id": "43",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 717,
+    "sla_target_minutes": 1784,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T03:03:53"
+  },
+  "84": {
+    "metric_id": "84",
+    "incident_id": "44",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 928,
+    "sla_target_minutes": 2365,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T22:58:46"
+  },
+  "85": {
+    "metric_id": "85",
+    "incident_id": "44",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 348,
+    "sla_target_minutes": 1500,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T22:50:25"
+  },
+  "86": {
+    "metric_id": "86",
+    "incident_id": "45",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 471,
+    "sla_target_minutes": 1580,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T01:45:28"
+  },
+  "87": {
+    "metric_id": "87",
+    "incident_id": "45",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1568,
+    "sla_target_minutes": 590,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T03:31:06"
+  },
+  "88": {
+    "metric_id": "88",
+    "incident_id": "46",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1419,
+    "sla_target_minutes": 1945,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T01:24:45"
+  },
+  "89": {
+    "metric_id": "89",
+    "incident_id": "46",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 415,
+    "sla_target_minutes": 2142,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T01:21:04"
+  },
+  "90": {
+    "metric_id": "90",
+    "incident_id": "47",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 34,
+    "sla_target_minutes": 43,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T21:22:27"
+  },
+  "91": {
+    "metric_id": "91",
+    "incident_id": "47",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 704,
+    "sla_target_minutes": 960,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T19:17:28"
+  },
+  "92": {
+    "metric_id": "92",
+    "incident_id": "48",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 367,
+    "sla_target_minutes": 404,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T20:03:19"
+  },
+  "93": {
+    "metric_id": "93",
+    "incident_id": "48",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1497,
+    "sla_target_minutes": 1170,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T19:38:55"
+  },
+  "94": {
+    "metric_id": "94",
+    "incident_id": "48",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 667,
+    "sla_target_minutes": 95,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T00:33:46"
+  },
+  "95": {
+    "metric_id": "95",
+    "incident_id": "49",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 986,
+    "sla_target_minutes": 2215,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T08:02:12"
+  },
+  "96": {
+    "metric_id": "96",
+    "incident_id": "50",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 885,
+    "sla_target_minutes": 234,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T15:49:28"
+  },
+  "97": {
+    "metric_id": "97",
+    "incident_id": "51",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 611,
+    "sla_target_minutes": 939,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T21:34:34"
+  },
+  "98": {
+    "metric_id": "98",
+    "incident_id": "51",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1044,
+    "sla_target_minutes": 2170,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T21:46:55"
+  },
+  "99": {
+    "metric_id": "99",
+    "incident_id": "52",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 114,
+    "sla_target_minutes": 1652,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T17:54:59"
+  },
+  "100": {
+    "metric_id": "100",
+    "incident_id": "52",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 178,
+    "sla_target_minutes": 2250,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T17:53:35"
+  },
+  "101": {
+    "metric_id": "101",
+    "incident_id": "53",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1845,
+    "sla_target_minutes": 1726,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-11T17:52:43"
+  },
+  "102": {
+    "metric_id": "102",
+    "incident_id": "53",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 967,
+    "sla_target_minutes": 568,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-11T18:33:10"
+  },
+  "103": {
+    "metric_id": "103",
+    "incident_id": "54",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1903,
+    "sla_target_minutes": 305,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T01:35:31"
+  },
+  "104": {
+    "metric_id": "104",
+    "incident_id": "54",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1359,
+    "sla_target_minutes": 1246,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T01:10:10"
+  },
+  "105": {
+    "metric_id": "105",
+    "incident_id": "54",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 188,
+    "sla_target_minutes": 2157,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T01:54:43"
+  },
+  "106": {
+    "metric_id": "106",
+    "incident_id": "55",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 315,
+    "sla_target_minutes": 1884,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T19:00:11"
+  },
+  "107": {
+    "metric_id": "107",
+    "incident_id": "55",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1903,
+    "sla_target_minutes": 713,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T19:56:56"
+  },
+  "108": {
+    "metric_id": "108",
+    "incident_id": "56",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 695,
+    "sla_target_minutes": 197,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T11:00:54"
+  },
+  "109": {
+    "metric_id": "109",
+    "incident_id": "56",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1340,
+    "sla_target_minutes": 2332,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T11:20:53"
+  },
+  "110": {
+    "metric_id": "110",
+    "incident_id": "56",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 51,
+    "sla_target_minutes": 1218,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T11:11:25"
+  },
+  "111": {
+    "metric_id": "111",
+    "incident_id": "57",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1551,
+    "sla_target_minutes": 1784,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T19:20:28"
+  },
+  "112": {
+    "metric_id": "112",
+    "incident_id": "58",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 84,
+    "sla_target_minutes": 963,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T06:37:46"
+  },
+  "113": {
+    "metric_id": "113",
+    "incident_id": "59",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1222,
+    "sla_target_minutes": 2115,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T19:37:36"
+  },
+  "114": {
+    "metric_id": "114",
+    "incident_id": "59",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 442,
+    "sla_target_minutes": 140,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T19:13:08"
+  },
+  "115": {
+    "metric_id": "115",
+    "incident_id": "59",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 999,
+    "sla_target_minutes": 1832,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T19:33:42"
+  },
+  "116": {
+    "metric_id": "116",
+    "incident_id": "60",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1445,
+    "sla_target_minutes": 522,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T03:26:14"
+  },
+  "117": {
+    "metric_id": "117",
+    "incident_id": "60",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 384,
+    "sla_target_minutes": 781,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T02:40:27"
+  },
+  "118": {
+    "metric_id": "118",
+    "incident_id": "60",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 850,
+    "sla_target_minutes": 1977,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T03:19:21"
+  },
+  "119": {
+    "metric_id": "119",
+    "incident_id": "61",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1589,
+    "sla_target_minutes": 2126,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-10T23:44:20"
+  },
+  "120": {
+    "metric_id": "120",
+    "incident_id": "61",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1050,
+    "sla_target_minutes": 2106,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-11T01:43:23"
+  },
+  "121": {
+    "metric_id": "121",
+    "incident_id": "61",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 683,
+    "sla_target_minutes": 923,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-11T01:37:35"
+  },
+  "122": {
+    "metric_id": "122",
+    "incident_id": "62",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1548,
+    "sla_target_minutes": 870,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T08:27:39"
+  },
+  "123": {
+    "metric_id": "123",
+    "incident_id": "62",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 859,
+    "sla_target_minutes": 867,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T08:31:07"
+  },
+  "124": {
+    "metric_id": "124",
+    "incident_id": "62",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1402,
+    "sla_target_minutes": 722,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T08:21:58"
+  },
+  "125": {
+    "metric_id": "125",
+    "incident_id": "63",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1529,
+    "sla_target_minutes": 1319,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T02:22:21"
+  },
+  "126": {
+    "metric_id": "126",
+    "incident_id": "63",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1747,
+    "sla_target_minutes": 119,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T02:42:44"
+  },
+  "127": {
+    "metric_id": "127",
+    "incident_id": "63",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1179,
+    "sla_target_minutes": 595,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T02:41:22"
+  },
+  "128": {
+    "metric_id": "128",
+    "incident_id": "64",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 130,
+    "sla_target_minutes": 1104,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T12:57:56"
+  },
+  "129": {
+    "metric_id": "129",
+    "incident_id": "65",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 169,
+    "sla_target_minutes": 2262,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T12:19:22"
+  },
+  "130": {
+    "metric_id": "130",
+    "incident_id": "65",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 832,
+    "sla_target_minutes": 1843,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T19:33:59"
+  },
+  "131": {
+    "metric_id": "131",
+    "incident_id": "65",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 843,
+    "sla_target_minutes": 1630,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T06:47:40"
+  },
+  "132": {
+    "metric_id": "132",
+    "incident_id": "66",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 135,
+    "sla_target_minutes": 315,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-30T23:10:53"
+  },
+  "133": {
+    "metric_id": "133",
+    "incident_id": "67",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 402,
+    "sla_target_minutes": 756,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T00:16:26"
+  },
+  "134": {
+    "metric_id": "134",
+    "incident_id": "67",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1724,
+    "sla_target_minutes": 2114,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T05:35:33"
+  },
+  "135": {
+    "metric_id": "135",
+    "incident_id": "68",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1160,
+    "sla_target_minutes": 660,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-25T03:40:21"
+  },
+  "136": {
+    "metric_id": "136",
+    "incident_id": "68",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1448,
+    "sla_target_minutes": 1352,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-25T03:50:33"
+  },
+  "137": {
+    "metric_id": "137",
+    "incident_id": "68",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 427,
+    "sla_target_minutes": 985,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-25T04:02:31"
+  },
+  "138": {
+    "metric_id": "138",
+    "incident_id": "69",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1882,
+    "sla_target_minutes": 54,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T16:17:51"
+  },
+  "139": {
+    "metric_id": "139",
+    "incident_id": "69",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 876,
+    "sla_target_minutes": 1291,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T08:52:59"
+  },
+  "140": {
+    "metric_id": "140",
+    "incident_id": "70",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 607,
+    "sla_target_minutes": 676,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T06:03:44"
+  },
+  "141": {
+    "metric_id": "141",
+    "incident_id": "70",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 432,
+    "sla_target_minutes": 2223,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T04:47:40"
+  },
+  "142": {
+    "metric_id": "142",
+    "incident_id": "70",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1963,
+    "sla_target_minutes": 990,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T06:17:20"
+  },
+  "143": {
+    "metric_id": "143",
+    "incident_id": "71",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 629,
+    "sla_target_minutes": 108,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-11T20:35:36"
+  },
+  "144": {
+    "metric_id": "144",
+    "incident_id": "72",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1597,
+    "sla_target_minutes": 2346,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T03:23:34"
+  },
+  "145": {
+    "metric_id": "145",
+    "incident_id": "73",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1236,
+    "sla_target_minutes": 765,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-02T17:49:07"
+  },
+  "146": {
+    "metric_id": "146",
+    "incident_id": "73",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1273,
+    "sla_target_minutes": 1422,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-02T17:05:51"
+  },
+  "147": {
+    "metric_id": "147",
+    "incident_id": "73",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 909,
+    "sla_target_minutes": 807,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-02T18:10:43"
+  },
+  "148": {
+    "metric_id": "148",
+    "incident_id": "74",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1253,
+    "sla_target_minutes": 2202,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T16:27:37"
+  },
+  "149": {
+    "metric_id": "149",
+    "incident_id": "75",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1159,
+    "sla_target_minutes": 2129,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T00:19:54"
+  },
+  "150": {
+    "metric_id": "150",
+    "incident_id": "76",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1613,
+    "sla_target_minutes": 338,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T06:15:08"
+  },
+  "151": {
+    "metric_id": "151",
+    "incident_id": "76",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1494,
+    "sla_target_minutes": 2236,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T06:58:43"
+  },
+  "152": {
+    "metric_id": "152",
+    "incident_id": "76",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 858,
+    "sla_target_minutes": 1961,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T06:10:21"
+  },
+  "153": {
+    "metric_id": "153",
+    "incident_id": "77",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1963,
+    "sla_target_minutes": 1140,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T01:10:58"
+  },
+  "154": {
+    "metric_id": "154",
+    "incident_id": "77",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 464,
+    "sla_target_minutes": 496,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T01:30:31"
+  },
+  "155": {
+    "metric_id": "155",
+    "incident_id": "77",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1818,
+    "sla_target_minutes": 2191,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-19T01:08:42"
+  },
+  "156": {
+    "metric_id": "156",
+    "incident_id": "78",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1752,
+    "sla_target_minutes": 1064,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T02:25:02"
+  },
+  "157": {
+    "metric_id": "157",
+    "incident_id": "78",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1199,
+    "sla_target_minutes": 611,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T04:38:11"
+  },
+  "158": {
+    "metric_id": "158",
+    "incident_id": "78",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1056,
+    "sla_target_minutes": 411,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T02:28:55"
+  },
+  "159": {
+    "metric_id": "159",
+    "incident_id": "79",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1596,
+    "sla_target_minutes": 219,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T09:11:19"
+  },
+  "160": {
+    "metric_id": "160",
+    "incident_id": "79",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 984,
+    "sla_target_minutes": 252,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T08:25:40"
+  },
+  "161": {
+    "metric_id": "161",
+    "incident_id": "80",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 97,
+    "sla_target_minutes": 1857,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T19:47:08"
+  },
+  "162": {
+    "metric_id": "162",
+    "incident_id": "80",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 426,
+    "sla_target_minutes": 157,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-08T07:18:56"
+  },
+  "163": {
+    "metric_id": "163",
+    "incident_id": "80",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1298,
+    "sla_target_minutes": 2239,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-11T03:04:22"
+  },
+  "164": {
+    "metric_id": "164",
+    "incident_id": "81",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1849,
+    "sla_target_minutes": 298,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-13T20:31:12"
+  },
+  "165": {
+    "metric_id": "165",
+    "incident_id": "82",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1092,
+    "sla_target_minutes": 708,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-10T10:48:43"
+  },
+  "166": {
+    "metric_id": "166",
+    "incident_id": "82",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1947,
+    "sla_target_minutes": 1728,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-10T11:50:13"
+  },
+  "167": {
+    "metric_id": "167",
+    "incident_id": "83",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 678,
+    "sla_target_minutes": 153,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T04:02:20"
+  },
+  "168": {
+    "metric_id": "168",
+    "incident_id": "83",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1752,
+    "sla_target_minutes": 108,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T04:11:29"
+  },
+  "169": {
+    "metric_id": "169",
+    "incident_id": "83",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 311,
+    "sla_target_minutes": 2144,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T03:57:38"
+  },
+  "170": {
+    "metric_id": "170",
+    "incident_id": "84",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1323,
+    "sla_target_minutes": 1942,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T17:33:02"
+  },
+  "171": {
+    "metric_id": "171",
+    "incident_id": "84",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 191,
+    "sla_target_minutes": 338,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T17:45:33"
+  },
+  "172": {
+    "metric_id": "172",
+    "incident_id": "84",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1115,
+    "sla_target_minutes": 38,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T18:05:08"
+  },
+  "173": {
+    "metric_id": "173",
+    "incident_id": "85",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1821,
+    "sla_target_minutes": 1606,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T18:56:33"
+  },
+  "174": {
+    "metric_id": "174",
+    "incident_id": "85",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 361,
+    "sla_target_minutes": 1964,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T18:23:08"
+  },
+  "175": {
+    "metric_id": "175",
+    "incident_id": "86",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1151,
+    "sla_target_minutes": 165,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-08T00:01:21"
+  },
+  "176": {
+    "metric_id": "176",
+    "incident_id": "86",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 283,
+    "sla_target_minutes": 98,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-08T01:11:38"
+  },
+  "177": {
+    "metric_id": "177",
+    "incident_id": "87",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 944,
+    "sla_target_minutes": 262,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-07T11:39:44"
+  },
+  "178": {
+    "metric_id": "178",
+    "incident_id": "88",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1855,
+    "sla_target_minutes": 1113,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T08:04:26"
+  },
+  "179": {
+    "metric_id": "179",
+    "incident_id": "88",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 561,
+    "sla_target_minutes": 924,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T07:10:55"
+  },
+  "180": {
+    "metric_id": "180",
+    "incident_id": "88",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1654,
+    "sla_target_minutes": 1592,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T07:17:08"
+  },
+  "181": {
+    "metric_id": "181",
+    "incident_id": "89",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1403,
+    "sla_target_minutes": 2014,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T22:47:33"
+  },
+  "182": {
+    "metric_id": "182",
+    "incident_id": "89",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 176,
+    "sla_target_minutes": 761,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T09:12:53"
+  },
+  "183": {
+    "metric_id": "183",
+    "incident_id": "89",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1516,
+    "sla_target_minutes": 1239,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T09:35:06"
+  },
+  "184": {
+    "metric_id": "184",
+    "incident_id": "90",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1805,
+    "sla_target_minutes": 1561,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T08:22:07"
+  },
+  "185": {
+    "metric_id": "185",
+    "incident_id": "90",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 845,
+    "sla_target_minutes": 106,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-15T16:15:04"
+  },
+  "186": {
+    "metric_id": "186",
+    "incident_id": "90",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 194,
+    "sla_target_minutes": 669,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T05:44:42"
+  },
+  "187": {
+    "metric_id": "187",
+    "incident_id": "91",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 519,
+    "sla_target_minutes": 66,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T04:24:48"
+  },
+  "188": {
+    "metric_id": "188",
+    "incident_id": "92",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1177,
+    "sla_target_minutes": 1878,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-07T17:31:34"
+  },
+  "189": {
+    "metric_id": "189",
+    "incident_id": "93",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 781,
+    "sla_target_minutes": 1868,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T00:37:57"
+  },
+  "190": {
+    "metric_id": "190",
+    "incident_id": "93",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 280,
+    "sla_target_minutes": 1232,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T04:15:59"
+  },
+  "191": {
+    "metric_id": "191",
+    "incident_id": "94",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 282,
+    "sla_target_minutes": 1292,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T10:42:34"
+  },
+  "192": {
+    "metric_id": "192",
+    "incident_id": "95",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 465,
+    "sla_target_minutes": 1770,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T22:35:09"
+  },
+  "193": {
+    "metric_id": "193",
+    "incident_id": "96",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1679,
+    "sla_target_minutes": 1830,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T22:16:00"
+  },
+  "194": {
+    "metric_id": "194",
+    "incident_id": "96",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1605,
+    "sla_target_minutes": 1170,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T22:09:13"
+  },
+  "195": {
+    "metric_id": "195",
+    "incident_id": "97",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 567,
+    "sla_target_minutes": 2119,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-30T07:04:22"
+  },
+  "196": {
+    "metric_id": "196",
+    "incident_id": "97",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 310,
+    "sla_target_minutes": 516,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-30T05:39:47"
+  },
+  "197": {
+    "metric_id": "197",
+    "incident_id": "97",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1800,
+    "sla_target_minutes": 2364,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-30T03:53:33"
+  },
+  "198": {
+    "metric_id": "198",
+    "incident_id": "98",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 766,
+    "sla_target_minutes": 1162,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T08:09:31"
+  },
+  "199": {
+    "metric_id": "199",
+    "incident_id": "98",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 851,
+    "sla_target_minutes": 653,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T06:00:57"
+  },
+  "200": {
+    "metric_id": "200",
+    "incident_id": "99",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 886,
+    "sla_target_minutes": 187,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-08T19:44:32"
+  },
+  "201": {
+    "metric_id": "201",
+    "incident_id": "100",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1598,
+    "sla_target_minutes": 2196,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T08:17:38"
+  },
+  "202": {
+    "metric_id": "202",
+    "incident_id": "100",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 591,
+    "sla_target_minutes": 331,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T01:08:13"
+  },
+  "203": {
+    "metric_id": "203",
+    "incident_id": "101",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 645,
+    "sla_target_minutes": 2352,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-05T13:36:48"
+  },
+  "204": {
+    "metric_id": "204",
+    "incident_id": "102",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 113,
+    "sla_target_minutes": 1080,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T04:36:46"
+  },
+  "205": {
+    "metric_id": "205",
+    "incident_id": "102",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1248,
+    "sla_target_minutes": 2178,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T03:58:22"
+  },
+  "206": {
+    "metric_id": "206",
+    "incident_id": "103",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1164,
+    "sla_target_minutes": 557,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T17:18:42"
+  },
+  "207": {
+    "metric_id": "207",
+    "incident_id": "103",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 796,
+    "sla_target_minutes": 1737,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T16:24:08"
+  },
+  "208": {
+    "metric_id": "208",
+    "incident_id": "104",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1204,
+    "sla_target_minutes": 1701,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T21:17:17"
+  },
+  "209": {
+    "metric_id": "209",
+    "incident_id": "104",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 397,
+    "sla_target_minutes": 1442,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T20:23:44"
+  },
+  "210": {
+    "metric_id": "210",
+    "incident_id": "105",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1883,
+    "sla_target_minutes": 2275,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T20:22:46"
+  },
+  "211": {
+    "metric_id": "211",
+    "incident_id": "105",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 451,
+    "sla_target_minutes": 1343,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T19:59:33"
+  },
+  "212": {
+    "metric_id": "212",
+    "incident_id": "106",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 960,
+    "sla_target_minutes": 2059,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T01:49:00"
+  },
+  "213": {
+    "metric_id": "213",
+    "incident_id": "106",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1261,
+    "sla_target_minutes": 797,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T01:46:49"
+  },
+  "214": {
+    "metric_id": "214",
+    "incident_id": "106",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1886,
+    "sla_target_minutes": 1806,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T01:44:08"
+  },
+  "215": {
+    "metric_id": "215",
+    "incident_id": "107",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 515,
+    "sla_target_minutes": 1073,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T23:47:41"
+  },
+  "216": {
+    "metric_id": "216",
+    "incident_id": "108",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1843,
+    "sla_target_minutes": 1041,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T22:53:39"
+  },
+  "217": {
+    "metric_id": "217",
+    "incident_id": "108",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 680,
+    "sla_target_minutes": 849,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T00:12:02"
+  },
+  "218": {
+    "metric_id": "218",
+    "incident_id": "108",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1091,
+    "sla_target_minutes": 806,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-01T02:06:26"
+  },
+  "219": {
+    "metric_id": "219",
+    "incident_id": "109",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 30,
+    "sla_target_minutes": 150,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T20:30:38"
+  },
+  "220": {
+    "metric_id": "220",
+    "incident_id": "109",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1846,
+    "sla_target_minutes": 302,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T19:36:18"
+  },
+  "221": {
+    "metric_id": "221",
+    "incident_id": "109",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 619,
+    "sla_target_minutes": 233,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T20:15:14"
+  },
+  "222": {
+    "metric_id": "222",
+    "incident_id": "110",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1493,
+    "sla_target_minutes": 305,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-25T06:56:55"
+  },
+  "223": {
+    "metric_id": "223",
+    "incident_id": "110",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1527,
+    "sla_target_minutes": 959,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T09:30:47"
+  },
+  "224": {
+    "metric_id": "224",
+    "incident_id": "110",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1793,
+    "sla_target_minutes": 1194,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T18:00:58"
+  },
+  "225": {
+    "metric_id": "225",
+    "incident_id": "111",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 252,
+    "sla_target_minutes": 98,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T23:29:22"
+  },
+  "226": {
+    "metric_id": "226",
+    "incident_id": "111",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1067,
+    "sla_target_minutes": 2384,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T23:22:48"
+  },
+  "227": {
+    "metric_id": "227",
+    "incident_id": "111",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 668,
+    "sla_target_minutes": 653,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-24T23:42:42"
+  },
+  "228": {
+    "metric_id": "228",
+    "incident_id": "112",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1221,
+    "sla_target_minutes": 2242,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-15T09:58:09"
+  },
+  "229": {
+    "metric_id": "229",
+    "incident_id": "112",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1329,
+    "sla_target_minutes": 1370,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T00:35:29"
+  },
+  "230": {
+    "metric_id": "230",
+    "incident_id": "112",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 618,
+    "sla_target_minutes": 684,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-15T22:44:00"
+  },
+  "231": {
+    "metric_id": "231",
+    "incident_id": "113",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1281,
+    "sla_target_minutes": 649,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T00:37:04"
+  },
+  "232": {
+    "metric_id": "232",
+    "incident_id": "113",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1072,
+    "sla_target_minutes": 778,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T00:18:22"
+  },
+  "233": {
+    "metric_id": "233",
+    "incident_id": "113",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 699,
+    "sla_target_minutes": 980,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T00:30:31"
+  },
+  "234": {
+    "metric_id": "234",
+    "incident_id": "114",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 883,
+    "sla_target_minutes": 1783,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-05T19:07:51"
+  },
+  "235": {
+    "metric_id": "235",
+    "incident_id": "115",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 830,
+    "sla_target_minutes": 542,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T11:17:10"
+  },
+  "236": {
+    "metric_id": "236",
+    "incident_id": "115",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1935,
+    "sla_target_minutes": 2263,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T20:07:25"
+  },
+  "237": {
+    "metric_id": "237",
+    "incident_id": "115",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 79,
+    "sla_target_minutes": 1545,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-30T20:22:45"
+  },
+  "238": {
+    "metric_id": "238",
+    "incident_id": "116",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 184,
+    "sla_target_minutes": 1970,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T07:04:04"
+  },
+  "239": {
+    "metric_id": "239",
+    "incident_id": "116",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 513,
+    "sla_target_minutes": 41,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-16T07:53:14"
+  },
+  "240": {
+    "metric_id": "240",
+    "incident_id": "117",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 215,
+    "sla_target_minutes": 2185,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T16:40:31"
+  },
+  "241": {
+    "metric_id": "241",
+    "incident_id": "117",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1181,
+    "sla_target_minutes": 1394,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T16:43:28"
+  },
+  "242": {
+    "metric_id": "242",
+    "incident_id": "118",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1743,
+    "sla_target_minutes": 57,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-13T13:19:39"
+  },
+  "243": {
+    "metric_id": "243",
+    "incident_id": "118",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 517,
+    "sla_target_minutes": 1288,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-13T08:24:46"
+  },
+  "244": {
+    "metric_id": "244",
+    "incident_id": "119",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 661,
+    "sla_target_minutes": 953,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T14:20:52"
+  },
+  "245": {
+    "metric_id": "245",
+    "incident_id": "119",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1354,
+    "sla_target_minutes": 825,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T14:20:29"
+  },
+  "246": {
+    "metric_id": "246",
+    "incident_id": "120",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 838,
+    "sla_target_minutes": 427,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T07:24:17"
+  },
+  "247": {
+    "metric_id": "247",
+    "incident_id": "120",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 116,
+    "sla_target_minutes": 2062,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T06:27:06"
+  },
+  "248": {
+    "metric_id": "248",
+    "incident_id": "121",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 160,
+    "sla_target_minutes": 2062,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-21T17:37:06"
+  },
+  "249": {
+    "metric_id": "249",
+    "incident_id": "121",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 137,
+    "sla_target_minutes": 954,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T06:43:46"
+  },
+  "250": {
+    "metric_id": "250",
+    "incident_id": "122",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 310,
+    "sla_target_minutes": 1396,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T18:14:38"
+  },
+  "251": {
+    "metric_id": "251",
+    "incident_id": "122",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1219,
+    "sla_target_minutes": 842,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T19:11:25"
+  },
+  "252": {
+    "metric_id": "252",
+    "incident_id": "123",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 92,
+    "sla_target_minutes": 807,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T23:02:03"
+  },
+  "253": {
+    "metric_id": "253",
+    "incident_id": "123",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1508,
+    "sla_target_minutes": 783,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T22:40:01"
+  },
+  "254": {
+    "metric_id": "254",
+    "incident_id": "123",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1754,
+    "sla_target_minutes": 1301,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T22:39:25"
+  },
+  "255": {
+    "metric_id": "255",
+    "incident_id": "124",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1257,
+    "sla_target_minutes": 30,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T20:54:13"
+  },
+  "256": {
+    "metric_id": "256",
+    "incident_id": "124",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1020,
+    "sla_target_minutes": 1796,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-25T11:38:03"
+  },
+  "257": {
+    "metric_id": "257",
+    "incident_id": "125",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 861,
+    "sla_target_minutes": 557,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T04:01:29"
+  },
+  "258": {
+    "metric_id": "258",
+    "incident_id": "126",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1900,
+    "sla_target_minutes": 51,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-23T06:09:57"
+  },
+  "259": {
+    "metric_id": "259",
+    "incident_id": "127",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1602,
+    "sla_target_minutes": 322,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T06:37:11"
+  },
+  "260": {
+    "metric_id": "260",
+    "incident_id": "127",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 975,
+    "sla_target_minutes": 169,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T07:01:25"
+  },
+  "261": {
+    "metric_id": "261",
+    "incident_id": "127",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1151,
+    "sla_target_minutes": 1493,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T06:58:04"
+  },
+  "262": {
+    "metric_id": "262",
+    "incident_id": "128",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 499,
+    "sla_target_minutes": 711,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-22T00:42:41"
+  },
+  "263": {
+    "metric_id": "263",
+    "incident_id": "129",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 730,
+    "sla_target_minutes": 1600,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T07:27:16"
+  },
+  "264": {
+    "metric_id": "264",
+    "incident_id": "129",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1999,
+    "sla_target_minutes": 1077,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T07:16:58"
+  },
+  "265": {
+    "metric_id": "265",
+    "incident_id": "129",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1249,
+    "sla_target_minutes": 330,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-18T06:55:44"
+  },
+  "266": {
+    "metric_id": "266",
+    "incident_id": "130",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1125,
+    "sla_target_minutes": 353,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T00:28:05"
+  },
+  "267": {
+    "metric_id": "267",
+    "incident_id": "130",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 667,
+    "sla_target_minutes": 1880,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T00:10:57"
+  },
+  "268": {
+    "metric_id": "268",
+    "incident_id": "130",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 565,
+    "sla_target_minutes": 1637,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T00:22:14"
+  },
+  "269": {
+    "metric_id": "269",
+    "incident_id": "131",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1897,
+    "sla_target_minutes": 1661,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T07:29:45"
+  },
+  "270": {
+    "metric_id": "270",
+    "incident_id": "131",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1334,
+    "sla_target_minutes": 2044,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T07:10:37"
+  },
+  "271": {
+    "metric_id": "271",
+    "incident_id": "131",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 15,
+    "sla_target_minutes": 237,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-12T09:06:55"
+  },
+  "272": {
+    "metric_id": "272",
+    "incident_id": "132",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1478,
+    "sla_target_minutes": 1305,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T08:12:08"
+  },
+  "273": {
+    "metric_id": "273",
+    "incident_id": "132",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1838,
+    "sla_target_minutes": 1306,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-06T08:33:03"
+  },
+  "274": {
+    "metric_id": "274",
+    "incident_id": "133",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 47,
+    "sla_target_minutes": 1048,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T23:36:12"
+  },
+  "275": {
+    "metric_id": "275",
+    "incident_id": "134",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1657,
+    "sla_target_minutes": 2240,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T15:58:43"
+  },
+  "276": {
+    "metric_id": "276",
+    "incident_id": "134",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1404,
+    "sla_target_minutes": 886,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-09T13:53:33"
+  },
+  "277": {
+    "metric_id": "277",
+    "incident_id": "134",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 816,
+    "sla_target_minutes": 686,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-10T02:56:40"
+  },
+  "278": {
+    "metric_id": "278",
+    "incident_id": "135",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1884,
+    "sla_target_minutes": 2258,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T02:30:53"
+  },
+  "279": {
+    "metric_id": "279",
+    "incident_id": "135",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 827,
+    "sla_target_minutes": 1171,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T02:43:22"
+  },
+  "280": {
+    "metric_id": "280",
+    "incident_id": "135",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 2000,
+    "sla_target_minutes": 116,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-03T02:48:24"
+  },
+  "281": {
+    "metric_id": "281",
+    "incident_id": "136",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 668,
+    "sla_target_minutes": 674,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T05:34:09"
+  },
+  "282": {
+    "metric_id": "282",
+    "incident_id": "136",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1439,
+    "sla_target_minutes": 1414,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T05:48:55"
+  },
+  "283": {
+    "metric_id": "283",
+    "incident_id": "136",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 1998,
+    "sla_target_minutes": 1595,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-20T05:13:35"
+  },
+  "284": {
+    "metric_id": "284",
+    "incident_id": "137",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1489,
+    "sla_target_minutes": 999,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-29T09:10:01"
+  },
+  "285": {
+    "metric_id": "285",
+    "incident_id": "137",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1486,
+    "sla_target_minutes": 1740,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-01T01:36:07"
+  },
+  "286": {
+    "metric_id": "286",
+    "incident_id": "138",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 1919,
+    "sla_target_minutes": 807,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-28T21:39:13"
+  },
+  "287": {
+    "metric_id": "287",
+    "incident_id": "139",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1040,
+    "sla_target_minutes": 2107,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T11:33:53"
+  },
+  "288": {
+    "metric_id": "288",
+    "incident_id": "139",
+    "metric_type": "MTTR",
+    "calculated_value_minutes": 1570,
+    "sla_target_minutes": 1799,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-26T21:06:21"
+  },
+  "289": {
+    "metric_id": "289",
+    "incident_id": "139",
+    "metric_type": "MTTD",
+    "calculated_value_minutes": 97,
+    "sla_target_minutes": 2100,
+    "recorded_by": "429",
+    "recorded_date": "2025-10-02T03:30:22"
+  },
+  "290": {
+    "metric_id": "290",
+    "incident_id": "140",
+    "metric_type": "FTR",
+    "calculated_value_minutes": 354,
+    "sla_target_minutes": 198,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T05:40:42"
+  },
+  "291": {
+    "metric_id": "291",
+    "incident_id": "140",
+    "metric_type": "MTTM",
+    "calculated_value_minutes": 1475,
+    "sla_target_minutes": 511,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T17:45:15"
+  },
+  "292": {
+    "metric_id": "292",
+    "incident_id": "140",
+    "metric_type": "MTTA",
+    "calculated_value_minutes": 1442,
+    "sla_target_minutes": 409,
+    "recorded_by": "429",
+    "recorded_date": "2025-09-27T06:06:04"
+  }
+}

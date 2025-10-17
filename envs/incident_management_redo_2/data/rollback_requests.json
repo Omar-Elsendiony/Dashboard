@@ -1,0 +1,122 @@
+{
+  "1": {
+    "rollback_id": "1",
+    "rollback_number": "RBK0000001",
+    "change_id": "1",
+    "incident_id": "109",
+    "title": "Rollback: Apply Database monthly security updates",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 79\n\nInitiating emergency rollback procedure.",
+    "requested_by": "632",
+    "status": "approved",
+    "executed_at": null,
+    "created_at": "2025-10-10T03:18:44"
+  },
+  "2": {
+    "rollback_id": "2",
+    "rollback_number": "RBK0000002",
+    "change_id": "2",
+    "incident_id": "130",
+    "title": "Rollback: Implement Database performance optimization",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 49\n\nInitiating emergency rollback procedure.",
+    "requested_by": "391",
+    "status": "approved",
+    "executed_at": null,
+    "created_at": "2025-10-16T05:24:44"
+  },
+  "3": {
+    "rollback_id": "3",
+    "rollback_number": "RBK0000003",
+    "change_id": "3",
+    "incident_id": "169",
+    "title": "Rollback: Emergency: Restore Database service from backup",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 25%\n- Performance degradation of 51%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "51",
+    "status": "executed",
+    "executed_at": "2025-10-17T02:01:10",
+    "created_at": "2025-10-17T01:01:10"
+  },
+  "4": {
+    "rollback_id": "4",
+    "rollback_number": "RBK0000004",
+    "change_id": "4",
+    "incident_id": "64",
+    "title": "Rollback: Apply Database monthly security updates",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 16%\n- Performance degradation of 73%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "391",
+    "status": "approved",
+    "executed_at": null,
+    "created_at": "2025-09-20T00:32:46"
+  },
+  "5": {
+    "rollback_id": "5",
+    "rollback_number": "RBK0000005",
+    "change_id": "5",
+    "incident_id": "109",
+    "title": "Rollback: Apply Application Server monthly security updates",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 20\n\nInitiating emergency rollback procedure.",
+    "requested_by": "700",
+    "status": "requested",
+    "executed_at": null,
+    "created_at": "2025-10-16T06:44:20"
+  },
+  "6": {
+    "rollback_id": "6",
+    "rollback_number": "RBK0000006",
+    "change_id": "6",
+    "incident_id": "106",
+    "title": "Rollback: Emergency: Implement hotfix for Load Balancer critical vulnerability",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 41\n\nInitiating emergency rollback procedure.",
+    "requested_by": "664",
+    "status": "approved",
+    "executed_at": null,
+    "created_at": "2025-10-13T03:54:18"
+  },
+  "7": {
+    "rollback_id": "7",
+    "rollback_number": "RBK0000007",
+    "change_id": "7",
+    "incident_id": "125",
+    "title": "Rollback: Apply Database monthly security updates",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: user login\n- Monitoring alerts triggered: 58\n\nInitiating emergency rollback procedure.",
+    "requested_by": "8",
+    "status": "requested",
+    "executed_at": null,
+    "created_at": "2025-10-02T05:30:08"
+  },
+  "8": {
+    "rollback_id": "8",
+    "rollback_number": "RBK0000008",
+    "change_id": "8",
+    "incident_id": "149",
+    "title": "Rollback: Emergency: Restore Load Balancer service from backup",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 77\n\nInitiating emergency rollback procedure.",
+    "requested_by": "257",
+    "status": "requested",
+    "executed_at": null,
+    "created_at": "2025-09-29T01:34:27"
+  },
+  "9": {
+    "rollback_id": "9",
+    "rollback_number": "RBK0000009",
+    "change_id": "9",
+    "incident_id": "71",
+    "title": "Rollback: Upgrade Database to version v4.6.4",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 97\n\nInitiating emergency rollback procedure.",
+    "requested_by": "571",
+    "status": "requested",
+    "executed_at": null,
+    "created_at": "2025-10-15T07:31:14"
+  },
+  "10": {
+    "rollback_id": "10",
+    "rollback_number": "RBK0000010",
+    "change_id": "10",
+    "incident_id": "112",
+    "title": "Rollback: Apply Database monthly security updates",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: user login\n- Monitoring alerts triggered: 51\n\nInitiating emergency rollback procedure.",
+    "requested_by": "269",
+    "status": "failed",
+    "executed_at": "2025-10-13T01:57:37",
+    "created_at": "2025-10-12T23:57:37"
+  }
+}

@@ -1,0 +1,3034 @@
+{
+  "1": {
+    "note_id": "1",
+    "incident_id": "1",
+    "note_text": "Analyzing system logs from 08:46 to 10:46. Initial findings indicate high memory usage affecting Hardware: Server temperature w.",
+    "note_type": "troubleshooting",
+    "created_by": "24",
+    "created_at": "2025-10-04T08:46:25"
+  },
+  "2": {
+    "note_id": "2",
+    "incident_id": "1",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "troubleshooting",
+    "created_by": "416",
+    "created_at": "2025-10-04T08:41:31"
+  },
+  "3": {
+    "note_id": "3",
+    "incident_id": "1",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "6",
+    "created_at": "2025-10-04T08:56:57"
+  },
+  "4": {
+    "note_id": "4",
+    "incident_id": "2",
+    "note_text": "Updated configuration parameter max_connections from 359 to 1111. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "434",
+    "created_at": "2025-09-20T11:42:49"
+  },
+  "5": {
+    "note_id": "5",
+    "incident_id": "2",
+    "note_text": "Applied hotfix version v2.9.15 to Network: Intermittent connecti. Monitoring system stability for 110 minutes.",
+    "note_type": "resolution",
+    "created_by": "102",
+    "created_at": "2025-09-20T12:11:37"
+  },
+  "6": {
+    "note_id": "6",
+    "incident_id": "2",
+    "note_text": "Applied hotfix version v2.2.19 to Network: Intermittent connecti. Monitoring system stability for 171 minutes.",
+    "note_type": "resolution",
+    "created_by": "77",
+    "created_at": "2025-09-20T12:12:14"
+  },
+  "7": {
+    "note_id": "7",
+    "incident_id": "3",
+    "note_text": "Updated configuration parameter max_connections from 422 to 2000. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "382",
+    "created_at": "2025-09-22T11:31:01"
+  },
+  "8": {
+    "note_id": "8",
+    "incident_id": "3",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 99 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "338",
+    "created_at": "2025-09-22T11:18:36"
+  },
+  "9": {
+    "note_id": "9",
+    "incident_id": "3",
+    "note_text": "Updated configuration parameter max_connections from 500 to 752. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "603",
+    "created_at": "2025-09-22T11:08:21"
+  },
+  "10": {
+    "note_id": "10",
+    "incident_id": "4",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "troubleshooting",
+    "created_by": "489",
+    "created_at": "2025-10-08T15:18:28"
+  },
+  "11": {
+    "note_id": "11",
+    "incident_id": "4",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "469",
+    "created_at": "2025-10-08T16:26:18"
+  },
+  "12": {
+    "note_id": "12",
+    "incident_id": "5",
+    "note_text": "Updated configuration parameter timeout_seconds from 146 to 1799. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "246",
+    "created_at": "2025-10-03T13:02:41"
+  },
+  "13": {
+    "note_id": "13",
+    "incident_id": "6",
+    "note_text": "System performance stable for past 67 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "416",
+    "created_at": "2025-09-26T11:21:02"
+  },
+  "14": {
+    "note_id": "14",
+    "incident_id": "7",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "527",
+    "created_at": "2025-09-20T03:32:37"
+  },
+  "15": {
+    "note_id": "15",
+    "incident_id": "8",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 60 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "3",
+    "created_at": "2025-10-01T12:01:23"
+  },
+  "16": {
+    "note_id": "16",
+    "incident_id": "8",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "6",
+    "created_at": "2025-10-01T12:13:06"
+  },
+  "17": {
+    "note_id": "17",
+    "incident_id": "9",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "160",
+    "created_at": "2025-09-21T08:09:41"
+  },
+  "18": {
+    "note_id": "18",
+    "incident_id": "9",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "166",
+    "created_at": "2025-09-21T08:08:39"
+  },
+  "19": {
+    "note_id": "19",
+    "incident_id": "10",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "683",
+    "created_at": "2025-09-24T05:55:00"
+  },
+  "20": {
+    "note_id": "20",
+    "incident_id": "11",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "130",
+    "created_at": "2025-09-21T08:23:04"
+  },
+  "21": {
+    "note_id": "21",
+    "incident_id": "12",
+    "note_text": "System performance stable for past 72 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "254",
+    "created_at": "2025-09-19T03:45:45"
+  },
+  "22": {
+    "note_id": "22",
+    "incident_id": "13",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "194",
+    "created_at": "2025-10-06T11:30:37"
+  },
+  "23": {
+    "note_id": "23",
+    "incident_id": "13",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "390",
+    "created_at": "2025-10-06T11:44:57"
+  },
+  "24": {
+    "note_id": "24",
+    "incident_id": "13",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "troubleshooting",
+    "created_by": "288",
+    "created_at": "2025-10-06T11:34:58"
+  },
+  "25": {
+    "note_id": "25",
+    "incident_id": "14",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "259",
+    "created_at": "2025-09-22T17:05:48"
+  },
+  "26": {
+    "note_id": "26",
+    "incident_id": "14",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 17:10. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "244",
+    "created_at": "2025-09-22T17:10:48"
+  },
+  "27": {
+    "note_id": "27",
+    "incident_id": "15",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "309",
+    "created_at": "2025-09-22T23:01:00"
+  },
+  "28": {
+    "note_id": "28",
+    "incident_id": "15",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "447",
+    "created_at": "2025-09-23T00:02:22"
+  },
+  "29": {
+    "note_id": "29",
+    "incident_id": "15",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "170",
+    "created_at": "2025-09-22T22:32:34"
+  },
+  "30": {
+    "note_id": "30",
+    "incident_id": "16",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "311",
+    "created_at": "2025-09-19T17:46:09"
+  },
+  "31": {
+    "note_id": "31",
+    "incident_id": "16",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 17:36. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "658",
+    "created_at": "2025-09-19T17:36:17"
+  },
+  "32": {
+    "note_id": "32",
+    "incident_id": "17",
+    "note_text": "System performance stable for past 42 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "59",
+    "created_at": "2025-09-18T21:25:58"
+  },
+  "33": {
+    "note_id": "33",
+    "incident_id": "18",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "453",
+    "created_at": "2025-09-20T07:58:29"
+  },
+  "34": {
+    "note_id": "34",
+    "incident_id": "18",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 08:27. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "190",
+    "created_at": "2025-09-20T08:27:11"
+  },
+  "35": {
+    "note_id": "35",
+    "incident_id": "18",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "troubleshooting",
+    "created_by": "252",
+    "created_at": "2025-09-20T08:21:06"
+  },
+  "36": {
+    "note_id": "36",
+    "incident_id": "19",
+    "note_text": "Analyzing system logs from 12:45 to 14:45. Initial findings indicate timeout errors affecting Database: Connection pool warn.",
+    "note_type": "progress_update",
+    "created_by": "147",
+    "created_at": "2025-09-19T12:45:30"
+  },
+  "37": {
+    "note_id": "37",
+    "incident_id": "19",
+    "note_text": "Analyzing system logs from 13:12 to 15:12. Initial findings indicate timeout errors affecting Database: Connection pool warn.",
+    "note_type": "progress_update",
+    "created_by": "250",
+    "created_at": "2025-09-19T13:12:25"
+  },
+  "38": {
+    "note_id": "38",
+    "incident_id": "20",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "438",
+    "created_at": "2025-09-19T04:41:50"
+  },
+  "39": {
+    "note_id": "39",
+    "incident_id": "21",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 15:38. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "122",
+    "created_at": "2025-09-22T15:38:38"
+  },
+  "40": {
+    "note_id": "40",
+    "incident_id": "21",
+    "note_text": "Analyzing system logs from 15:45 to 17:45. Initial findings indicate timeout errors affecting Software bug: Intermittent app.",
+    "note_type": "progress_update",
+    "created_by": "278",
+    "created_at": "2025-09-22T15:45:55"
+  },
+  "41": {
+    "note_id": "41",
+    "incident_id": "22",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 20:04. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "286",
+    "created_at": "2025-10-09T20:04:14"
+  },
+  "42": {
+    "note_id": "42",
+    "incident_id": "22",
+    "note_text": "Analyzing system logs from 19:46 to 21:46. Initial findings indicate timeout errors affecting Critical: Network outage affec.",
+    "note_type": "troubleshooting",
+    "created_by": "670",
+    "created_at": "2025-10-09T19:46:35"
+  },
+  "43": {
+    "note_id": "43",
+    "incident_id": "23",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "3",
+    "created_at": "2025-10-03T14:30:33"
+  },
+  "44": {
+    "note_id": "44",
+    "incident_id": "24",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 12:05. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "230",
+    "created_at": "2025-10-10T12:05:39"
+  },
+  "45": {
+    "note_id": "45",
+    "incident_id": "25",
+    "note_text": "Applied hotfix version v3.0.3 to Network: High latency detected. Monitoring system stability for 178 minutes.",
+    "note_type": "resolution",
+    "created_by": "375",
+    "created_at": "2025-10-09T07:19:40"
+  },
+  "46": {
+    "note_id": "46",
+    "incident_id": "26",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "455",
+    "created_at": "2025-09-18T12:40:54"
+  },
+  "47": {
+    "note_id": "47",
+    "incident_id": "27",
+    "note_text": "Applied hotfix version v5.2.16 to User inquiry: Feature question. Monitoring system stability for 71 minutes.",
+    "note_type": "progress_update",
+    "created_by": "586",
+    "created_at": "2025-09-22T03:15:30"
+  },
+  "48": {
+    "note_id": "48",
+    "incident_id": "27",
+    "note_text": "Updated configuration parameter max_connections from 212 to 1303. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "480",
+    "created_at": "2025-09-22T03:02:18"
+  },
+  "49": {
+    "note_id": "49",
+    "incident_id": "27",
+    "note_text": "Updated configuration parameter max_connections from 285 to 1735. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "246",
+    "created_at": "2025-09-22T03:00:38"
+  },
+  "50": {
+    "note_id": "50",
+    "incident_id": "28",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "578",
+    "created_at": "2025-10-06T19:48:02"
+  },
+  "51": {
+    "note_id": "51",
+    "incident_id": "28",
+    "note_text": "Analyzing system logs from 20:31 to 22:31. Initial findings indicate timeout errors affecting Emergency: Network partition d.",
+    "note_type": "progress_update",
+    "created_by": "133",
+    "created_at": "2025-10-06T20:31:52"
+  },
+  "52": {
+    "note_id": "52",
+    "incident_id": "29",
+    "note_text": "Analyzing system logs from 22:16 to 00:16. Initial findings indicate high memory usage affecting User inquiry: Feature question.",
+    "note_type": "troubleshooting",
+    "created_by": "81",
+    "created_at": "2025-09-17T22:16:09"
+  },
+  "53": {
+    "note_id": "53",
+    "incident_id": "29",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "369",
+    "created_at": "2025-09-17T22:19:45"
+  },
+  "54": {
+    "note_id": "54",
+    "incident_id": "29",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "561",
+    "created_at": "2025-09-17T22:15:17"
+  },
+  "55": {
+    "note_id": "55",
+    "incident_id": "30",
+    "note_text": "Analyzing system logs from 21:50 to 23:50. Initial findings indicate high memory usage affecting Database: Connection pool warn.",
+    "note_type": "troubleshooting",
+    "created_by": "265",
+    "created_at": "2025-09-18T21:50:44"
+  },
+  "56": {
+    "note_id": "56",
+    "incident_id": "31",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "452",
+    "created_at": "2025-09-27T06:25:33"
+  },
+  "57": {
+    "note_id": "57",
+    "incident_id": "31",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "159",
+    "created_at": "2025-09-27T06:40:40"
+  },
+  "58": {
+    "note_id": "58",
+    "incident_id": "32",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 149 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "407",
+    "created_at": "2025-09-25T01:57:31"
+  },
+  "59": {
+    "note_id": "59",
+    "incident_id": "33",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 101 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "656",
+    "created_at": "2025-10-12T05:39:37"
+  },
+  "60": {
+    "note_id": "60",
+    "incident_id": "33",
+    "note_text": "Updated configuration parameter timeout_seconds from 238 to 1016. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "86",
+    "created_at": "2025-10-12T05:39:44"
+  },
+  "61": {
+    "note_id": "61",
+    "incident_id": "34",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 22:30. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "169",
+    "created_at": "2025-09-19T22:30:42"
+  },
+  "62": {
+    "note_id": "62",
+    "incident_id": "35",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 32 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "332",
+    "created_at": "2025-09-25T14:48:39"
+  },
+  "63": {
+    "note_id": "63",
+    "incident_id": "36",
+    "note_text": "Applied hotfix version v1.6.8 to Disk failure on production ser. Monitoring system stability for 163 minutes.",
+    "note_type": "resolution",
+    "created_by": "655",
+    "created_at": "2025-09-19T13:14:04"
+  },
+  "64": {
+    "note_id": "64",
+    "incident_id": "36",
+    "note_text": "Applied hotfix version v5.2.19 to Disk failure on production ser. Monitoring system stability for 126 minutes.",
+    "note_type": "resolution",
+    "created_by": "380",
+    "created_at": "2025-09-19T13:23:00"
+  },
+  "65": {
+    "note_id": "65",
+    "incident_id": "36",
+    "note_text": "Applied hotfix version v4.6.13 to Disk failure on production ser. Monitoring system stability for 120 minutes.",
+    "note_type": "progress_update",
+    "created_by": "470",
+    "created_at": "2025-09-19T13:15:41"
+  },
+  "66": {
+    "note_id": "66",
+    "incident_id": "37",
+    "note_text": "Restarted affected services on srv-14. All services restored at 13:55.",
+    "note_type": "resolution",
+    "created_by": "107",
+    "created_at": "2025-09-21T13:55:54"
+  },
+  "67": {
+    "note_id": "67",
+    "incident_id": "37",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "360",
+    "created_at": "2025-09-21T14:12:44"
+  },
+  "68": {
+    "note_id": "68",
+    "incident_id": "38",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "27",
+    "created_at": "2025-10-12T04:43:33"
+  },
+  "69": {
+    "note_id": "69",
+    "incident_id": "38",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "652",
+    "created_at": "2025-10-12T04:25:50"
+  },
+  "70": {
+    "note_id": "70",
+    "incident_id": "39",
+    "note_text": "Restarted affected services on srv-16. All services restored at 11:12.",
+    "note_type": "progress_update",
+    "created_by": "331",
+    "created_at": "2025-10-13T11:12:16"
+  },
+  "71": {
+    "note_id": "71",
+    "incident_id": "39",
+    "note_text": "Applied hotfix version v1.9.17 to Hardware: Server temperature w. Monitoring system stability for 50 minutes.",
+    "note_type": "resolution",
+    "created_by": "192",
+    "created_at": "2025-10-13T10:36:28"
+  },
+  "72": {
+    "note_id": "72",
+    "incident_id": "40",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "471",
+    "created_at": "2025-09-21T03:54:09"
+  },
+  "73": {
+    "note_id": "73",
+    "incident_id": "41",
+    "note_text": "Applied hotfix version v1.7.11 to User inquiry: Feature question. Monitoring system stability for 83 minutes.",
+    "note_type": "resolution",
+    "created_by": "499",
+    "created_at": "2025-10-09T10:08:49"
+  },
+  "74": {
+    "note_id": "74",
+    "incident_id": "41",
+    "note_text": "Applied hotfix version v2.2.9 to User inquiry: Feature question. Monitoring system stability for 32 minutes.",
+    "note_type": "resolution",
+    "created_by": "629",
+    "created_at": "2025-10-09T11:17:29"
+  },
+  "75": {
+    "note_id": "75",
+    "incident_id": "41",
+    "note_text": "System performance stable for past 31 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "31",
+    "created_at": "2025-10-09T11:13:59"
+  },
+  "76": {
+    "note_id": "76",
+    "incident_id": "42",
+    "note_text": "Restarted affected services on srv-84. All services restored at 17:08.",
+    "note_type": "resolution",
+    "created_by": "198",
+    "created_at": "2025-09-21T17:08:20"
+  },
+  "77": {
+    "note_id": "77",
+    "incident_id": "42",
+    "note_text": "Restarted affected services on srv-58. All services restored at 17:15.",
+    "note_type": "resolution",
+    "created_by": "622",
+    "created_at": "2025-09-21T17:15:57"
+  },
+  "78": {
+    "note_id": "78",
+    "incident_id": "43",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "408",
+    "created_at": "2025-09-20T03:06:37"
+  },
+  "79": {
+    "note_id": "79",
+    "incident_id": "43",
+    "note_text": "Analyzing system logs from 02:59 to 04:59. Initial findings indicate high memory usage affecting Hardware: Server temperature w.",
+    "note_type": "progress_update",
+    "created_by": "327",
+    "created_at": "2025-09-20T02:59:48"
+  },
+  "80": {
+    "note_id": "80",
+    "incident_id": "44",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "623",
+    "created_at": "2025-09-24T22:50:25"
+  },
+  "81": {
+    "note_id": "81",
+    "incident_id": "44",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "troubleshooting",
+    "created_by": "176",
+    "created_at": "2025-09-24T22:52:36"
+  },
+  "82": {
+    "note_id": "82",
+    "incident_id": "44",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "troubleshooting",
+    "created_by": "346",
+    "created_at": "2025-09-24T23:01:12"
+  },
+  "83": {
+    "note_id": "83",
+    "incident_id": "45",
+    "note_text": "Applied hotfix version v3.5.12 to Critical: Server hardware fail. Monitoring system stability for 50 minutes.",
+    "note_type": "progress_update",
+    "created_by": "306",
+    "created_at": "2025-10-02T12:13:34"
+  },
+  "84": {
+    "note_id": "84",
+    "incident_id": "45",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 65 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "175",
+    "created_at": "2025-10-02T13:13:24"
+  },
+  "85": {
+    "note_id": "85",
+    "incident_id": "45",
+    "note_text": "Restarted affected services on srv-10. All services restored at 12:23.",
+    "note_type": "progress_update",
+    "created_by": "277",
+    "created_at": "2025-10-02T12:23:22"
+  },
+  "86": {
+    "note_id": "86",
+    "incident_id": "46",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "troubleshooting",
+    "created_by": "678",
+    "created_at": "2025-09-28T01:20:58"
+  },
+  "87": {
+    "note_id": "87",
+    "incident_id": "46",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 01:31. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "62",
+    "created_at": "2025-09-28T01:31:53"
+  },
+  "88": {
+    "note_id": "88",
+    "incident_id": "46",
+    "note_text": "Analyzing system logs from 01:22 to 03:22. Initial findings indicate high memory usage affecting Database: Connection pool warn.",
+    "note_type": "progress_update",
+    "created_by": "672",
+    "created_at": "2025-09-28T01:22:25"
+  },
+  "89": {
+    "note_id": "89",
+    "incident_id": "47",
+    "note_text": "System performance stable for past 51 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "315",
+    "created_at": "2025-09-20T23:32:04"
+  },
+  "90": {
+    "note_id": "90",
+    "incident_id": "48",
+    "note_text": "Applied hotfix version v1.7.5 to Hardware: Server temperature w. Monitoring system stability for 98 minutes.",
+    "note_type": "resolution",
+    "created_by": "272",
+    "created_at": "2025-09-20T09:27:28"
+  },
+  "91": {
+    "note_id": "91",
+    "incident_id": "48",
+    "note_text": "System performance stable for past 47 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "51",
+    "created_at": "2025-09-20T08:15:06"
+  },
+  "92": {
+    "note_id": "92",
+    "incident_id": "48",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 165 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "662",
+    "created_at": "2025-09-20T09:27:30"
+  },
+  "93": {
+    "note_id": "93",
+    "incident_id": "49",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "402",
+    "created_at": "2025-10-12T07:58:28"
+  },
+  "94": {
+    "note_id": "94",
+    "incident_id": "50",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "516",
+    "created_at": "2025-10-16T15:29:59"
+  },
+  "95": {
+    "note_id": "95",
+    "incident_id": "50",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "439",
+    "created_at": "2025-10-16T15:57:31"
+  },
+  "96": {
+    "note_id": "96",
+    "incident_id": "51",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "18",
+    "created_at": "2025-09-26T21:32:04"
+  },
+  "97": {
+    "note_id": "97",
+    "incident_id": "51",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "680",
+    "created_at": "2025-09-26T21:50:43"
+  },
+  "98": {
+    "note_id": "98",
+    "incident_id": "52",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 17:51. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "152",
+    "created_at": "2025-09-24T17:51:30"
+  },
+  "99": {
+    "note_id": "99",
+    "incident_id": "52",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "199",
+    "created_at": "2025-09-24T17:54:11"
+  },
+  "100": {
+    "note_id": "100",
+    "incident_id": "53",
+    "note_text": "Analyzing system logs from 18:18 to 20:18. Initial findings indicate high memory usage affecting User inquiry: Feature question.",
+    "note_type": "progress_update",
+    "created_by": "594",
+    "created_at": "2025-10-11T18:18:49"
+  },
+  "101": {
+    "note_id": "101",
+    "incident_id": "53",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "698",
+    "created_at": "2025-10-11T18:10:43"
+  },
+  "102": {
+    "note_id": "102",
+    "incident_id": "54",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 01:31. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "314",
+    "created_at": "2025-10-09T01:31:23"
+  },
+  "103": {
+    "note_id": "103",
+    "incident_id": "55",
+    "note_text": "Updated configuration parameter timeout_seconds from 173 to 902. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "298",
+    "created_at": "2025-10-16T19:50:47"
+  },
+  "104": {
+    "note_id": "104",
+    "incident_id": "56",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "593",
+    "created_at": "2025-09-20T10:23:14"
+  },
+  "105": {
+    "note_id": "105",
+    "incident_id": "57",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "99",
+    "created_at": "2025-10-09T19:38:59"
+  },
+  "106": {
+    "note_id": "106",
+    "incident_id": "58",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "630",
+    "created_at": "2025-09-21T06:34:35"
+  },
+  "107": {
+    "note_id": "107",
+    "incident_id": "59",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "666",
+    "created_at": "2025-09-28T19:12:43"
+  },
+  "108": {
+    "note_id": "108",
+    "incident_id": "59",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 18:54. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "576",
+    "created_at": "2025-09-28T18:54:12"
+  },
+  "109": {
+    "note_id": "109",
+    "incident_id": "60",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "254",
+    "created_at": "2025-10-16T03:29:33"
+  },
+  "110": {
+    "note_id": "110",
+    "incident_id": "60",
+    "note_text": "Analyzing system logs from 02:49 to 04:49. Initial findings indicate timeout errors affecting Critical: Database unavailable.",
+    "note_type": "troubleshooting",
+    "created_by": "674",
+    "created_at": "2025-10-16T02:49:49"
+  },
+  "111": {
+    "note_id": "111",
+    "incident_id": "60",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "603",
+    "created_at": "2025-10-16T02:38:45"
+  },
+  "112": {
+    "note_id": "112",
+    "incident_id": "61",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "595",
+    "created_at": "2025-10-11T00:30:05"
+  },
+  "113": {
+    "note_id": "113",
+    "incident_id": "61",
+    "note_text": "Applied hotfix version v4.4.0 to Emergency: Network partition d. Monitoring system stability for 70 minutes.",
+    "note_type": "progress_update",
+    "created_by": "526",
+    "created_at": "2025-10-11T00:21:16"
+  },
+  "114": {
+    "note_id": "114",
+    "incident_id": "62",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "590",
+    "created_at": "2025-10-16T08:17:32"
+  },
+  "115": {
+    "note_id": "115",
+    "incident_id": "63",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "682",
+    "created_at": "2025-10-03T02:55:19"
+  },
+  "116": {
+    "note_id": "116",
+    "incident_id": "63",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "453",
+    "created_at": "2025-10-03T02:27:58"
+  },
+  "117": {
+    "note_id": "117",
+    "incident_id": "63",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "696",
+    "created_at": "2025-10-03T02:46:16"
+  },
+  "118": {
+    "note_id": "118",
+    "incident_id": "64",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "582",
+    "created_at": "2025-09-20T12:26:33"
+  },
+  "119": {
+    "note_id": "119",
+    "incident_id": "64",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 12:05. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "73",
+    "created_at": "2025-09-20T12:05:35"
+  },
+  "120": {
+    "note_id": "120",
+    "incident_id": "65",
+    "note_text": "Restarted affected services on srv-03. All services restored at 04:48.",
+    "note_type": "progress_update",
+    "created_by": "70",
+    "created_at": "2025-09-27T04:48:24"
+  },
+  "121": {
+    "note_id": "121",
+    "incident_id": "65",
+    "note_text": "Updated configuration parameter timeout_seconds from 234 to 1837. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "347",
+    "created_at": "2025-09-27T04:59:17"
+  },
+  "122": {
+    "note_id": "122",
+    "incident_id": "65",
+    "note_text": "Updated configuration parameter max_connections from 388 to 1749. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "355",
+    "created_at": "2025-09-27T05:35:16"
+  },
+  "123": {
+    "note_id": "123",
+    "incident_id": "66",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "311",
+    "created_at": "2025-09-30T22:13:10"
+  },
+  "124": {
+    "note_id": "124",
+    "incident_id": "67",
+    "note_text": "Applied hotfix version v5.7.1 to Software bug: Intermittent app. Monitoring system stability for 129 minutes.",
+    "note_type": "resolution",
+    "created_by": "563",
+    "created_at": "2025-10-15T15:41:00"
+  },
+  "125": {
+    "note_id": "125",
+    "incident_id": "68",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "16",
+    "created_at": "2025-09-25T03:40:12"
+  },
+  "126": {
+    "note_id": "126",
+    "incident_id": "69",
+    "note_text": "Applied hotfix version v3.0.10 to Network: High latency detected. Monitoring system stability for 119 minutes.",
+    "note_type": "resolution",
+    "created_by": "491",
+    "created_at": "2025-09-28T13:43:44"
+  },
+  "127": {
+    "note_id": "127",
+    "incident_id": "69",
+    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "327",
+    "created_at": "2025-09-28T13:35:02"
+  },
+  "128": {
+    "note_id": "128",
+    "incident_id": "69",
+    "note_text": "System performance stable for past 37 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "382",
+    "created_at": "2025-09-28T14:03:38"
+  },
+  "129": {
+    "note_id": "129",
+    "incident_id": "70",
+    "note_text": "Analyzing system logs from 05:02 to 07:02. Initial findings indicate high memory usage affecting Complete connectivity loss to .",
+    "note_type": "progress_update",
+    "created_by": "625",
+    "created_at": "2025-09-20T05:02:55"
+  },
+  "130": {
+    "note_id": "130",
+    "incident_id": "70",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "33",
+    "created_at": "2025-09-20T05:35:58"
+  },
+  "131": {
+    "note_id": "131",
+    "incident_id": "70",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "112",
+    "created_at": "2025-09-20T05:57:29"
+  },
+  "132": {
+    "note_id": "132",
+    "incident_id": "71",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "556",
+    "created_at": "2025-10-07T21:25:24"
+  },
+  "133": {
+    "note_id": "133",
+    "incident_id": "71",
+    "note_text": "Updated configuration parameter timeout_seconds from 391 to 1853. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "184",
+    "created_at": "2025-10-07T21:25:00"
+  },
+  "134": {
+    "note_id": "134",
+    "incident_id": "71",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 172 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "625",
+    "created_at": "2025-10-07T21:25:38"
+  },
+  "135": {
+    "note_id": "135",
+    "incident_id": "72",
+    "note_text": "Applied hotfix version v4.2.7 to Hardware: Server temperature w. Monitoring system stability for 74 minutes.",
+    "note_type": "progress_update",
+    "created_by": "189",
+    "created_at": "2025-09-17T19:14:39"
+  },
+  "136": {
+    "note_id": "136",
+    "incident_id": "72",
+    "note_text": "System performance stable for past 46 hours. No anomalies detected.",
+    "note_type": "progress_update",
+    "created_by": "80",
+    "created_at": "2025-09-17T19:39:56"
+  },
+  "137": {
+    "note_id": "137",
+    "incident_id": "72",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 48 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "622",
+    "created_at": "2025-09-17T19:27:49"
+  },
+  "138": {
+    "note_id": "138",
+    "incident_id": "73",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "524",
+    "created_at": "2025-10-02T17:42:55"
+  },
+  "139": {
+    "note_id": "139",
+    "incident_id": "73",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "552",
+    "created_at": "2025-10-02T18:34:54"
+  },
+  "140": {
+    "note_id": "140",
+    "incident_id": "74",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "467",
+    "created_at": "2025-10-09T16:26:27"
+  },
+  "141": {
+    "note_id": "141",
+    "incident_id": "74",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "460",
+    "created_at": "2025-10-09T16:28:06"
+  },
+  "142": {
+    "note_id": "142",
+    "incident_id": "74",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "432",
+    "created_at": "2025-10-09T16:32:07"
+  },
+  "143": {
+    "note_id": "143",
+    "incident_id": "75",
+    "note_text": "System performance stable for past 32 hours. No anomalies detected.",
+    "note_type": "progress_update",
+    "created_by": "442",
+    "created_at": "2025-09-22T16:03:13"
+  },
+  "144": {
+    "note_id": "144",
+    "incident_id": "75",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "47",
+    "created_at": "2025-09-22T15:54:44"
+  },
+  "145": {
+    "note_id": "145",
+    "incident_id": "75",
+    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "691",
+    "created_at": "2025-09-22T15:58:08"
+  },
+  "146": {
+    "note_id": "146",
+    "incident_id": "76",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "183",
+    "created_at": "2025-09-19T06:57:02"
+  },
+  "147": {
+    "note_id": "147",
+    "incident_id": "76",
+    "note_text": "Analyzing system logs from 06:14 to 08:14. Initial findings indicate high memory usage affecting Emergency: Network partition d.",
+    "note_type": "progress_update",
+    "created_by": "174",
+    "created_at": "2025-09-19T06:14:40"
+  },
+  "148": {
+    "note_id": "148",
+    "incident_id": "76",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 06:34. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "7",
+    "created_at": "2025-09-19T06:34:30"
+  },
+  "149": {
+    "note_id": "149",
+    "incident_id": "77",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 00:47. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "89",
+    "created_at": "2025-09-19T00:47:00"
+  },
+  "150": {
+    "note_id": "150",
+    "incident_id": "77",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 00:54. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "323",
+    "created_at": "2025-09-19T00:54:35"
+  },
+  "151": {
+    "note_id": "151",
+    "incident_id": "78",
+    "note_text": "Applied hotfix version v2.2.18 to Critical: Server hardware fail. Monitoring system stability for 126 minutes.",
+    "note_type": "progress_update",
+    "created_by": "192",
+    "created_at": "2025-09-19T15:33:42"
+  },
+  "152": {
+    "note_id": "152",
+    "incident_id": "79",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 09:17. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "270",
+    "created_at": "2025-09-23T09:17:52"
+  },
+  "153": {
+    "note_id": "153",
+    "incident_id": "79",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "557",
+    "created_at": "2025-09-23T09:01:58"
+  },
+  "154": {
+    "note_id": "154",
+    "incident_id": "79",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 09:15. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "677",
+    "created_at": "2025-09-23T09:15:43"
+  },
+  "155": {
+    "note_id": "155",
+    "incident_id": "80",
+    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "268",
+    "created_at": "2025-10-08T01:07:37"
+  },
+  "156": {
+    "note_id": "156",
+    "incident_id": "81",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "459",
+    "created_at": "2025-10-13T20:20:11"
+  },
+  "157": {
+    "note_id": "157",
+    "incident_id": "81",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "342",
+    "created_at": "2025-10-13T20:23:20"
+  },
+  "158": {
+    "note_id": "158",
+    "incident_id": "81",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "383",
+    "created_at": "2025-10-13T20:21:23"
+  },
+  "159": {
+    "note_id": "159",
+    "incident_id": "82",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "35",
+    "created_at": "2025-10-10T11:24:39"
+  },
+  "160": {
+    "note_id": "160",
+    "incident_id": "82",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "98",
+    "created_at": "2025-10-10T11:05:24"
+  },
+  "161": {
+    "note_id": "161",
+    "incident_id": "83",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "386",
+    "created_at": "2025-09-24T04:06:33"
+  },
+  "162": {
+    "note_id": "162",
+    "incident_id": "83",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "382",
+    "created_at": "2025-09-24T03:46:16"
+  },
+  "163": {
+    "note_id": "163",
+    "incident_id": "83",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "646",
+    "created_at": "2025-09-24T04:18:28"
+  },
+  "164": {
+    "note_id": "164",
+    "incident_id": "84",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "319",
+    "created_at": "2025-09-18T17:20:57"
+  },
+  "165": {
+    "note_id": "165",
+    "incident_id": "85",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "473",
+    "created_at": "2025-10-06T18:38:40"
+  },
+  "166": {
+    "note_id": "166",
+    "incident_id": "85",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "40",
+    "created_at": "2025-10-06T18:48:35"
+  },
+  "167": {
+    "note_id": "167",
+    "incident_id": "85",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "578",
+    "created_at": "2025-10-06T18:44:34"
+  },
+  "168": {
+    "note_id": "168",
+    "incident_id": "86",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "537",
+    "created_at": "2025-10-08T00:21:53"
+  },
+  "169": {
+    "note_id": "169",
+    "incident_id": "86",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "551",
+    "created_at": "2025-10-08T01:36:51"
+  },
+  "170": {
+    "note_id": "170",
+    "incident_id": "86",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 01:01. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "292",
+    "created_at": "2025-10-08T01:01:50"
+  },
+  "171": {
+    "note_id": "171",
+    "incident_id": "87",
+    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "183",
+    "created_at": "2025-10-07T11:26:54"
+  },
+  "172": {
+    "note_id": "172",
+    "incident_id": "87",
+    "note_text": "System performance stable for past 24 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "222",
+    "created_at": "2025-10-07T11:15:56"
+  },
+  "173": {
+    "note_id": "173",
+    "incident_id": "88",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "310",
+    "created_at": "2025-09-22T08:22:18"
+  },
+  "174": {
+    "note_id": "174",
+    "incident_id": "89",
+    "note_text": "Restarted affected services on srv-11. All services restored at 08:55.",
+    "note_type": "progress_update",
+    "created_by": "448",
+    "created_at": "2025-09-26T08:55:15"
+  },
+  "175": {
+    "note_id": "175",
+    "incident_id": "89",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 123 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "392",
+    "created_at": "2025-09-26T09:25:30"
+  },
+  "176": {
+    "note_id": "176",
+    "incident_id": "89",
+    "note_text": "Restarted affected services on srv-13. All services restored at 09:12.",
+    "note_type": "resolution",
+    "created_by": "35",
+    "created_at": "2025-09-26T09:12:47"
+  },
+  "177": {
+    "note_id": "177",
+    "incident_id": "90",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "40",
+    "created_at": "2025-10-15T09:03:03"
+  },
+  "178": {
+    "note_id": "178",
+    "incident_id": "90",
+    "note_text": "Applied hotfix version v1.0.14 to Network: High latency detected. Monitoring system stability for 45 minutes.",
+    "note_type": "resolution",
+    "created_by": "341",
+    "created_at": "2025-10-15T09:15:58"
+  },
+  "179": {
+    "note_id": "179",
+    "incident_id": "90",
+    "note_text": "Updated configuration parameter max_connections from 473 to 1046. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "455",
+    "created_at": "2025-10-15T09:57:15"
+  },
+  "180": {
+    "note_id": "180",
+    "incident_id": "91",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "580",
+    "created_at": "2025-09-22T04:18:45"
+  },
+  "181": {
+    "note_id": "181",
+    "incident_id": "92",
+    "note_text": "Applied hotfix version v3.9.20 to Critical: Network outage affec. Monitoring system stability for 35 minutes.",
+    "note_type": "resolution",
+    "created_by": "472",
+    "created_at": "2025-10-07T17:34:31"
+  },
+  "182": {
+    "note_id": "182",
+    "incident_id": "92",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "232",
+    "created_at": "2025-10-07T17:33:34"
+  },
+  "183": {
+    "note_id": "183",
+    "incident_id": "93",
+    "note_text": "Restarted affected services on srv-47. All services restored at 04:21.",
+    "note_type": "resolution",
+    "created_by": "647",
+    "created_at": "2025-09-22T04:21:56"
+  },
+  "184": {
+    "note_id": "184",
+    "incident_id": "94",
+    "note_text": "Analyzing system logs from 10:32 to 12:32. Initial findings indicate timeout errors affecting Network: High latency detected.",
+    "note_type": "troubleshooting",
+    "created_by": "224",
+    "created_at": "2025-09-26T10:32:29"
+  },
+  "185": {
+    "note_id": "185",
+    "incident_id": "94",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 10:52. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "108",
+    "created_at": "2025-09-26T10:52:46"
+  },
+  "186": {
+    "note_id": "186",
+    "incident_id": "94",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "450",
+    "created_at": "2025-09-26T10:45:20"
+  },
+  "187": {
+    "note_id": "187",
+    "incident_id": "95",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "432",
+    "created_at": "2025-09-24T22:49:01"
+  },
+  "188": {
+    "note_id": "188",
+    "incident_id": "95",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "56",
+    "created_at": "2025-09-24T22:44:50"
+  },
+  "189": {
+    "note_id": "189",
+    "incident_id": "95",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 21:59. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "242",
+    "created_at": "2025-09-24T21:59:02"
+  },
+  "190": {
+    "note_id": "190",
+    "incident_id": "96",
+    "note_text": "Applied hotfix version v4.2.11 to Network: High latency detected. Monitoring system stability for 55 minutes.",
+    "note_type": "resolution",
+    "created_by": "475",
+    "created_at": "2025-09-18T17:10:14"
+  },
+  "191": {
+    "note_id": "191",
+    "incident_id": "97",
+    "note_text": "Applied hotfix version v3.4.13 to Network: Intermittent connecti. Monitoring system stability for 130 minutes.",
+    "note_type": "progress_update",
+    "created_by": "228",
+    "created_at": "2025-09-30T00:57:44"
+  },
+  "192": {
+    "note_id": "192",
+    "incident_id": "97",
+    "note_text": "System performance stable for past 36 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "217",
+    "created_at": "2025-09-30T01:41:37"
+  },
+  "193": {
+    "note_id": "193",
+    "incident_id": "97",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 129 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "168",
+    "created_at": "2025-09-30T01:01:46"
+  },
+  "194": {
+    "note_id": "194",
+    "incident_id": "98",
+    "note_text": "System performance stable for past 24 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "670",
+    "created_at": "2025-09-20T23:07:16"
+  },
+  "195": {
+    "note_id": "195",
+    "incident_id": "98",
+    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "548",
+    "created_at": "2025-09-20T23:16:44"
+  },
+  "196": {
+    "note_id": "196",
+    "incident_id": "99",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "41",
+    "created_at": "2025-10-08T19:36:24"
+  },
+  "197": {
+    "note_id": "197",
+    "incident_id": "99",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "366",
+    "created_at": "2025-10-08T19:37:04"
+  },
+  "198": {
+    "note_id": "198",
+    "incident_id": "100",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 131 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "149",
+    "created_at": "2025-09-25T10:19:52"
+  },
+  "199": {
+    "note_id": "199",
+    "incident_id": "100",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 40 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "392",
+    "created_at": "2025-09-25T11:43:53"
+  },
+  "200": {
+    "note_id": "200",
+    "incident_id": "101",
+    "note_text": "Applied hotfix version v2.4.20 to Help request: Access issues. Monitoring system stability for 50 minutes.",
+    "note_type": "progress_update",
+    "created_by": "631",
+    "created_at": "2025-10-05T11:47:33"
+  },
+  "201": {
+    "note_id": "201",
+    "incident_id": "101",
+    "note_text": "System performance stable for past 35 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "280",
+    "created_at": "2025-10-05T11:33:07"
+  },
+  "202": {
+    "note_id": "202",
+    "incident_id": "101",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 111 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "227",
+    "created_at": "2025-10-05T10:58:22"
+  },
+  "203": {
+    "note_id": "203",
+    "incident_id": "102",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 04:27. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "156",
+    "created_at": "2025-09-23T04:27:25"
+  },
+  "204": {
+    "note_id": "204",
+    "incident_id": "103",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "543",
+    "created_at": "2025-09-24T18:04:01"
+  },
+  "205": {
+    "note_id": "205",
+    "incident_id": "103",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 17:13. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "291",
+    "created_at": "2025-09-24T17:13:02"
+  },
+  "206": {
+    "note_id": "206",
+    "incident_id": "104",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "564",
+    "created_at": "2025-09-29T21:06:35"
+  },
+  "207": {
+    "note_id": "207",
+    "incident_id": "104",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 20:55. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "294",
+    "created_at": "2025-09-29T20:55:21"
+  },
+  "208": {
+    "note_id": "208",
+    "incident_id": "104",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "634",
+    "created_at": "2025-09-29T21:00:56"
+  },
+  "209": {
+    "note_id": "209",
+    "incident_id": "105",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "616",
+    "created_at": "2025-09-21T19:52:05"
+  },
+  "210": {
+    "note_id": "210",
+    "incident_id": "106",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "471",
+    "created_at": "2025-10-09T01:44:43"
+  },
+  "211": {
+    "note_id": "211",
+    "incident_id": "106",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "533",
+    "created_at": "2025-10-09T01:39:47"
+  },
+  "212": {
+    "note_id": "212",
+    "incident_id": "106",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "373",
+    "created_at": "2025-10-09T02:05:24"
+  },
+  "213": {
+    "note_id": "213",
+    "incident_id": "107",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "495",
+    "created_at": "2025-09-19T00:40:57"
+  },
+  "214": {
+    "note_id": "214",
+    "incident_id": "107",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 23:59. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "582",
+    "created_at": "2025-09-18T23:59:48"
+  },
+  "215": {
+    "note_id": "215",
+    "incident_id": "108",
+    "note_text": "Applied hotfix version v2.5.18 to Database: Connection pool warn. Monitoring system stability for 122 minutes.",
+    "note_type": "resolution",
+    "created_by": "487",
+    "created_at": "2025-09-27T10:56:51"
+  },
+  "216": {
+    "note_id": "216",
+    "incident_id": "108",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 95 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "152",
+    "created_at": "2025-09-27T11:04:57"
+  },
+  "217": {
+    "note_id": "217",
+    "incident_id": "109",
+    "note_text": "Updated configuration parameter timeout_seconds from 293 to 1493. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "538",
+    "created_at": "2025-09-24T19:37:20"
+  },
+  "218": {
+    "note_id": "218",
+    "incident_id": "109",
+    "note_text": "Restarted affected services on srv-20. All services restored at 20:41.",
+    "note_type": "progress_update",
+    "created_by": "366",
+    "created_at": "2025-09-24T20:41:30"
+  },
+  "219": {
+    "note_id": "219",
+    "incident_id": "109",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 55 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "58",
+    "created_at": "2025-09-24T20:43:48"
+  },
+  "220": {
+    "note_id": "220",
+    "incident_id": "110",
+    "note_text": "System performance stable for past 29 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "66",
+    "created_at": "2025-09-21T14:23:23"
+  },
+  "221": {
+    "note_id": "221",
+    "incident_id": "110",
+    "note_text": "System performance stable for past 28 hours. No anomalies detected.",
+    "note_type": "progress_update",
+    "created_by": "490",
+    "created_at": "2025-09-21T13:24:06"
+  },
+  "222": {
+    "note_id": "222",
+    "incident_id": "111",
+    "note_text": "Analyzing system logs from 23:39 to 01:39. Initial findings indicate timeout errors affecting Network: Intermittent connecti.",
+    "note_type": "troubleshooting",
+    "created_by": "604",
+    "created_at": "2025-09-24T23:39:02"
+  },
+  "223": {
+    "note_id": "223",
+    "incident_id": "112",
+    "note_text": "Applied hotfix version v2.5.16 to Software bug: Intermittent app. Monitoring system stability for 153 minutes.",
+    "note_type": "progress_update",
+    "created_by": "350",
+    "created_at": "2025-10-15T09:47:59"
+  },
+  "224": {
+    "note_id": "224",
+    "incident_id": "112",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "690",
+    "created_at": "2025-10-15T09:23:17"
+  },
+  "225": {
+    "note_id": "225",
+    "incident_id": "112",
+    "note_text": "Applied hotfix version v1.3.6 to Software bug: Intermittent app. Monitoring system stability for 108 minutes.",
+    "note_type": "progress_update",
+    "created_by": "308",
+    "created_at": "2025-10-15T09:27:17"
+  },
+  "226": {
+    "note_id": "226",
+    "incident_id": "113",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "235",
+    "created_at": "2025-10-12T00:28:56"
+  },
+  "227": {
+    "note_id": "227",
+    "incident_id": "113",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "6",
+    "created_at": "2025-10-12T00:32:31"
+  },
+  "228": {
+    "note_id": "228",
+    "incident_id": "113",
+    "note_text": "Analyzing system logs from 00:42 to 02:42. Initial findings indicate high memory usage affecting Software bug: Intermittent app.",
+    "note_type": "progress_update",
+    "created_by": "438",
+    "created_at": "2025-10-12T00:42:10"
+  },
+  "229": {
+    "note_id": "229",
+    "incident_id": "114",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "676",
+    "created_at": "2025-10-05T18:46:11"
+  },
+  "230": {
+    "note_id": "230",
+    "incident_id": "114",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "138",
+    "created_at": "2025-10-05T18:54:58"
+  },
+  "231": {
+    "note_id": "231",
+    "incident_id": "115",
+    "note_text": "Updated configuration parameter timeout_seconds from 385 to 1587. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "144",
+    "created_at": "2025-09-20T22:36:42"
+  },
+  "232": {
+    "note_id": "232",
+    "incident_id": "115",
+    "note_text": "Applied hotfix version v3.7.7 to Network: Intermittent connecti. Monitoring system stability for 147 minutes.",
+    "note_type": "progress_update",
+    "created_by": "262",
+    "created_at": "2025-09-20T23:00:32"
+  },
+  "233": {
+    "note_id": "233",
+    "incident_id": "115",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "517",
+    "created_at": "2025-09-20T22:54:47"
+  },
+  "234": {
+    "note_id": "234",
+    "incident_id": "116",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "625",
+    "created_at": "2025-10-16T08:17:02"
+  },
+  "235": {
+    "note_id": "235",
+    "incident_id": "116",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "541",
+    "created_at": "2025-10-16T07:29:32"
+  },
+  "236": {
+    "note_id": "236",
+    "incident_id": "117",
+    "note_text": "Analyzing system logs from 16:43 to 18:43. Initial findings indicate high memory usage affecting Critical: Network outage affec.",
+    "note_type": "troubleshooting",
+    "created_by": "546",
+    "created_at": "2025-09-20T16:43:43"
+  },
+  "237": {
+    "note_id": "237",
+    "incident_id": "117",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "554",
+    "created_at": "2025-09-20T16:47:10"
+  },
+  "238": {
+    "note_id": "238",
+    "incident_id": "117",
+    "note_text": "Analyzing system logs from 16:32 to 18:32. Initial findings indicate high memory usage affecting Critical: Network outage affec.",
+    "note_type": "troubleshooting",
+    "created_by": "451",
+    "created_at": "2025-09-20T16:32:16"
+  },
+  "239": {
+    "note_id": "239",
+    "incident_id": "118",
+    "note_text": "Applied hotfix version v4.6.6 to Software bug: Intermittent app. Monitoring system stability for 82 minutes.",
+    "note_type": "progress_update",
+    "created_by": "519",
+    "created_at": "2025-10-13T06:26:53"
+  },
+  "240": {
+    "note_id": "240",
+    "incident_id": "119",
+    "note_text": "Analyzing system logs from 14:22 to 16:22. Initial findings indicate timeout errors affecting Database: Query performance de.",
+    "note_type": "progress_update",
+    "created_by": "468",
+    "created_at": "2025-09-26T14:22:23"
+  },
+  "241": {
+    "note_id": "241",
+    "incident_id": "119",
+    "note_text": "Analyzing system logs from 14:20 to 16:20. Initial findings indicate high memory usage affecting Database: Query performance de.",
+    "note_type": "troubleshooting",
+    "created_by": "483",
+    "created_at": "2025-09-26T14:20:15"
+  },
+  "242": {
+    "note_id": "242",
+    "incident_id": "119",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 14:20. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "63",
+    "created_at": "2025-09-26T14:20:15"
+  },
+  "243": {
+    "note_id": "243",
+    "incident_id": "120",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "510",
+    "created_at": "2025-10-12T06:40:33"
+  },
+  "244": {
+    "note_id": "244",
+    "incident_id": "120",
+    "note_text": "Updated configuration parameter max_connections from 308 to 595. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "613",
+    "created_at": "2025-10-12T06:40:09"
+  },
+  "245": {
+    "note_id": "245",
+    "incident_id": "120",
+    "note_text": "System performance stable for past 58 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "138",
+    "created_at": "2025-10-12T07:15:33"
+  },
+  "246": {
+    "note_id": "246",
+    "incident_id": "121",
+    "note_text": "Updated configuration parameter timeout_seconds from 483 to 1669. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "225",
+    "created_at": "2025-09-21T05:16:20"
+  },
+  "247": {
+    "note_id": "247",
+    "incident_id": "121",
+    "note_text": "Restarted affected services on srv-32. All services restored at 05:51.",
+    "note_type": "resolution",
+    "created_by": "337",
+    "created_at": "2025-09-21T05:51:26"
+  },
+  "248": {
+    "note_id": "248",
+    "incident_id": "121",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "650",
+    "created_at": "2025-09-21T05:47:50"
+  },
+  "249": {
+    "note_id": "249",
+    "incident_id": "122",
+    "note_text": "Restarted affected services on srv-52. All services restored at 17:08.",
+    "note_type": "progress_update",
+    "created_by": "559",
+    "created_at": "2025-10-06T17:08:50"
+  },
+  "250": {
+    "note_id": "250",
+    "incident_id": "123",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "65",
+    "created_at": "2025-09-28T22:15:23"
+  },
+  "251": {
+    "note_id": "251",
+    "incident_id": "123",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "517",
+    "created_at": "2025-09-28T22:49:11"
+  },
+  "252": {
+    "note_id": "252",
+    "incident_id": "124",
+    "note_text": "System performance stable for past 58 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "544",
+    "created_at": "2025-09-22T05:37:25"
+  },
+  "253": {
+    "note_id": "253",
+    "incident_id": "125",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "488",
+    "created_at": "2025-09-26T03:39:38"
+  },
+  "254": {
+    "note_id": "254",
+    "incident_id": "126",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "progress_update",
+    "created_by": "249",
+    "created_at": "2025-09-23T06:44:56"
+  },
+  "255": {
+    "note_id": "255",
+    "incident_id": "126",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "600",
+    "created_at": "2025-09-23T06:54:24"
+  },
+  "256": {
+    "note_id": "256",
+    "incident_id": "127",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "238",
+    "created_at": "2025-09-26T06:39:45"
+  },
+  "257": {
+    "note_id": "257",
+    "incident_id": "127",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "600",
+    "created_at": "2025-09-26T06:57:07"
+  },
+  "258": {
+    "note_id": "258",
+    "incident_id": "127",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "654",
+    "created_at": "2025-09-26T06:40:19"
+  },
+  "259": {
+    "note_id": "259",
+    "incident_id": "128",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "606",
+    "created_at": "2025-09-22T00:33:29"
+  },
+  "260": {
+    "note_id": "260",
+    "incident_id": "129",
+    "note_text": "Analyzing system logs from 07:26 to 09:26. Initial findings indicate high memory usage affecting Emergency: Server unresponsive.",
+    "note_type": "troubleshooting",
+    "created_by": "404",
+    "created_at": "2025-09-18T07:26:58"
+  },
+  "261": {
+    "note_id": "261",
+    "incident_id": "129",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 06:56. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "423",
+    "created_at": "2025-09-18T06:56:07"
+  },
+  "262": {
+    "note_id": "262",
+    "incident_id": "130",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "215",
+    "created_at": "2025-10-09T00:35:37"
+  },
+  "263": {
+    "note_id": "263",
+    "incident_id": "131",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "655",
+    "created_at": "2025-10-12T07:19:47"
+  },
+  "264": {
+    "note_id": "264",
+    "incident_id": "131",
+    "note_text": "Updated configuration parameter max_connections from 186 to 1161. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "195",
+    "created_at": "2025-10-12T07:25:32"
+  },
+  "265": {
+    "note_id": "265",
+    "incident_id": "131",
+    "note_text": "System performance stable for past 58 hours. No anomalies detected.",
+    "note_type": "progress_update",
+    "created_by": "407",
+    "created_at": "2025-10-12T07:19:00"
+  },
+  "266": {
+    "note_id": "266",
+    "incident_id": "132",
+    "note_text": "Analyzing system logs from 08:37 to 10:37. Initial findings indicate timeout errors affecting Network: Intermittent connecti.",
+    "note_type": "troubleshooting",
+    "created_by": "252",
+    "created_at": "2025-10-06T08:37:34"
+  },
+  "267": {
+    "note_id": "267",
+    "incident_id": "133",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "643",
+    "created_at": "2025-09-29T23:58:36"
+  },
+  "268": {
+    "note_id": "268",
+    "incident_id": "134",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "552",
+    "created_at": "2025-10-09T13:53:41"
+  },
+  "269": {
+    "note_id": "269",
+    "incident_id": "134",
+    "note_text": "Applied hotfix version v5.3.14 to Disk failure on production ser. Monitoring system stability for 98 minutes.",
+    "note_type": "progress_update",
+    "created_by": "606",
+    "created_at": "2025-10-09T13:18:24"
+  },
+  "270": {
+    "note_id": "270",
+    "incident_id": "134",
+    "note_text": "Applied hotfix version v3.7.4 to Disk failure on production ser. Monitoring system stability for 46 minutes.",
+    "note_type": "resolution",
+    "created_by": "29",
+    "created_at": "2025-10-09T14:00:23"
+  },
+  "271": {
+    "note_id": "271",
+    "incident_id": "135",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "148",
+    "created_at": "2025-10-03T02:46:19"
+  },
+  "272": {
+    "note_id": "272",
+    "incident_id": "135",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "255",
+    "created_at": "2025-10-03T02:42:21"
+  },
+  "273": {
+    "note_id": "273",
+    "incident_id": "135",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "142",
+    "created_at": "2025-10-03T02:46:34"
+  },
+  "274": {
+    "note_id": "274",
+    "incident_id": "136",
+    "note_text": "Analyzing system logs from 05:19 to 07:19. Initial findings indicate high memory usage affecting Database: Connection pool warn.",
+    "note_type": "troubleshooting",
+    "created_by": "348",
+    "created_at": "2025-09-20T05:19:54"
+  },
+  "275": {
+    "note_id": "275",
+    "incident_id": "136",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "29",
+    "created_at": "2025-09-20T05:38:15"
+  },
+  "276": {
+    "note_id": "276",
+    "incident_id": "137",
+    "note_text": "Updated configuration parameter max_connections from 407 to 1266. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "452",
+    "created_at": "2025-09-26T21:52:06"
+  },
+  "277": {
+    "note_id": "277",
+    "incident_id": "137",
+    "note_text": "System performance stable for past 34 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "510",
+    "created_at": "2025-09-26T21:50:27"
+  },
+  "278": {
+    "note_id": "278",
+    "incident_id": "137",
+    "note_text": "System performance stable for past 55 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "414",
+    "created_at": "2025-09-26T21:50:31"
+  },
+  "279": {
+    "note_id": "279",
+    "incident_id": "138",
+    "note_text": "Applied hotfix version v5.9.18 to Critical: Database unavailable. Monitoring system stability for 166 minutes.",
+    "note_type": "progress_update",
+    "created_by": "290",
+    "created_at": "2025-09-28T20:02:27"
+  },
+  "280": {
+    "note_id": "280",
+    "incident_id": "139",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 155 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "625",
+    "created_at": "2025-09-26T05:41:59"
+  },
+  "281": {
+    "note_id": "281",
+    "incident_id": "139",
+    "note_text": "Updated configuration parameter max_connections from 428 to 1142. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "548",
+    "created_at": "2025-09-26T05:59:17"
+  },
+  "282": {
+    "note_id": "282",
+    "incident_id": "140",
+    "note_text": "Updated configuration parameter max_connections from 209 to 702. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "227",
+    "created_at": "2025-09-23T14:49:18"
+  },
+  "283": {
+    "note_id": "283",
+    "incident_id": "141",
+    "note_text": "Applied hotfix version v4.3.3 to Help request: Access issues. Monitoring system stability for 104 minutes.",
+    "note_type": "resolution",
+    "created_by": "234",
+    "created_at": "2025-09-24T14:31:44"
+  },
+  "284": {
+    "note_id": "284",
+    "incident_id": "141",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 109 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "424",
+    "created_at": "2025-09-24T14:33:30"
+  },
+  "285": {
+    "note_id": "285",
+    "incident_id": "141",
+    "note_text": "Updated configuration parameter max_connections from 159 to 825. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "188",
+    "created_at": "2025-09-24T14:33:41"
+  },
+  "286": {
+    "note_id": "286",
+    "incident_id": "142",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "89",
+    "created_at": "2025-10-06T04:04:34"
+  },
+  "287": {
+    "note_id": "287",
+    "incident_id": "142",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "248",
+    "created_at": "2025-10-06T04:20:06"
+  },
+  "288": {
+    "note_id": "288",
+    "incident_id": "142",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "157",
+    "created_at": "2025-10-06T04:11:59"
+  },
+  "289": {
+    "note_id": "289",
+    "incident_id": "143",
+    "note_text": "Restarted affected services on srv-09. All services restored at 00:26.",
+    "note_type": "progress_update",
+    "created_by": "674",
+    "created_at": "2025-10-04T00:26:17"
+  },
+  "290": {
+    "note_id": "290",
+    "incident_id": "143",
+    "note_text": "Applied hotfix version v2.8.10 to Software bug: Intermittent app. Monitoring system stability for 44 minutes.",
+    "note_type": "progress_update",
+    "created_by": "634",
+    "created_at": "2025-10-04T00:39:07"
+  },
+  "291": {
+    "note_id": "291",
+    "incident_id": "144",
+    "note_text": "Error rate dropped to 1% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "644",
+    "created_at": "2025-09-18T02:35:45"
+  },
+  "292": {
+    "note_id": "292",
+    "incident_id": "144",
+    "note_text": "System performance stable for past 63 hours. No anomalies detected.",
+    "note_type": "resolution",
+    "created_by": "354",
+    "created_at": "2025-09-18T02:26:34"
+  },
+  "293": {
+    "note_id": "293",
+    "incident_id": "144",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 74 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "443",
+    "created_at": "2025-09-18T03:07:37"
+  },
+  "294": {
+    "note_id": "294",
+    "incident_id": "145",
+    "note_text": "Analyzing system logs from 01:10 to 03:10. Initial findings indicate high memory usage affecting Database: Connection pool warn.",
+    "note_type": "troubleshooting",
+    "created_by": "475",
+    "created_at": "2025-10-08T01:10:56"
+  },
+  "295": {
+    "note_id": "295",
+    "incident_id": "145",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 01:25. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "384",
+    "created_at": "2025-10-08T01:25:56"
+  },
+  "296": {
+    "note_id": "296",
+    "incident_id": "146",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "530",
+    "created_at": "2025-10-09T18:24:56"
+  },
+  "297": {
+    "note_id": "297",
+    "incident_id": "146",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "155",
+    "created_at": "2025-10-09T18:41:59"
+  },
+  "298": {
+    "note_id": "298",
+    "incident_id": "146",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 18:39. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "22",
+    "created_at": "2025-10-09T18:39:11"
+  },
+  "299": {
+    "note_id": "299",
+    "incident_id": "147",
+    "note_text": "Updated configuration parameter timeout_seconds from 398 to 1414. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "180",
+    "created_at": "2025-09-23T08:34:34"
+  },
+  "300": {
+    "note_id": "300",
+    "incident_id": "148",
+    "note_text": "Applied hotfix version v5.9.13 to Database: Connection pool warn. Monitoring system stability for 70 minutes.",
+    "note_type": "resolution",
+    "created_by": "117",
+    "created_at": "2025-09-23T02:40:42"
+  },
+  "301": {
+    "note_id": "301",
+    "incident_id": "148",
+    "note_text": "Restarted affected services on srv-99. All services restored at 02:41.",
+    "note_type": "progress_update",
+    "created_by": "599",
+    "created_at": "2025-09-23T02:41:28"
+  },
+  "302": {
+    "note_id": "302",
+    "incident_id": "149",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 75 minutes before closing.",
+    "note_type": "resolution",
+    "created_by": "685",
+    "created_at": "2025-09-17T06:10:31"
+  },
+  "303": {
+    "note_id": "303",
+    "incident_id": "149",
+    "note_text": "Error rate dropped to 2% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "533",
+    "created_at": "2025-09-17T06:11:02"
+  },
+  "304": {
+    "note_id": "304",
+    "incident_id": "149",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 116 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "341",
+    "created_at": "2025-09-17T06:05:07"
+  },
+  "305": {
+    "note_id": "305",
+    "incident_id": "150",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "525",
+    "created_at": "2025-10-12T19:43:38"
+  },
+  "306": {
+    "note_id": "306",
+    "incident_id": "150",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "24",
+    "created_at": "2025-10-12T19:50:20"
+  },
+  "307": {
+    "note_id": "307",
+    "incident_id": "150",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "633",
+    "created_at": "2025-10-12T19:45:17"
+  },
+  "308": {
+    "note_id": "308",
+    "incident_id": "151",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "4",
+    "created_at": "2025-09-21T17:02:36"
+  },
+  "309": {
+    "note_id": "309",
+    "incident_id": "152",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "481",
+    "created_at": "2025-09-20T17:28:01"
+  },
+  "310": {
+    "note_id": "310",
+    "incident_id": "152",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "193",
+    "created_at": "2025-09-20T16:53:38"
+  },
+  "311": {
+    "note_id": "311",
+    "incident_id": "153",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 13:33. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "671",
+    "created_at": "2025-10-11T13:33:44"
+  },
+  "312": {
+    "note_id": "312",
+    "incident_id": "154",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 12:07. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "603",
+    "created_at": "2025-09-27T12:07:47"
+  },
+  "313": {
+    "note_id": "313",
+    "incident_id": "154",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 12:43. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "234",
+    "created_at": "2025-09-27T12:43:16"
+  },
+  "314": {
+    "note_id": "314",
+    "incident_id": "154",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "430",
+    "created_at": "2025-09-27T12:30:42"
+  },
+  "315": {
+    "note_id": "315",
+    "incident_id": "155",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "484",
+    "created_at": "2025-09-23T15:09:56"
+  },
+  "316": {
+    "note_id": "316",
+    "incident_id": "156",
+    "note_text": "Updated configuration parameter timeout_seconds from 410 to 1982. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "446",
+    "created_at": "2025-09-29T03:09:06"
+  },
+  "317": {
+    "note_id": "317",
+    "incident_id": "157",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "316",
+    "created_at": "2025-09-24T21:23:00"
+  },
+  "318": {
+    "note_id": "318",
+    "incident_id": "158",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 10:56. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "19",
+    "created_at": "2025-09-29T10:56:00"
+  },
+  "319": {
+    "note_id": "319",
+    "incident_id": "158",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 11:05. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "648",
+    "created_at": "2025-09-29T11:05:51"
+  },
+  "320": {
+    "note_id": "320",
+    "incident_id": "158",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "474",
+    "created_at": "2025-09-29T11:10:08"
+  },
+  "321": {
+    "note_id": "321",
+    "incident_id": "159",
+    "note_text": "Analyzing system logs from 09:40 to 11:40. Initial findings indicate high memory usage affecting Database: Connection pool warn.",
+    "note_type": "troubleshooting",
+    "created_by": "576",
+    "created_at": "2025-10-11T09:40:22"
+  },
+  "322": {
+    "note_id": "322",
+    "incident_id": "159",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "troubleshooting",
+    "created_by": "255",
+    "created_at": "2025-10-11T09:36:17"
+  },
+  "323": {
+    "note_id": "323",
+    "incident_id": "159",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "569",
+    "created_at": "2025-10-11T09:44:08"
+  },
+  "324": {
+    "note_id": "324",
+    "incident_id": "160",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 102 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "335",
+    "created_at": "2025-09-30T04:58:05"
+  },
+  "325": {
+    "note_id": "325",
+    "incident_id": "161",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 01:19. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "524",
+    "created_at": "2025-10-04T01:19:25"
+  },
+  "326": {
+    "note_id": "326",
+    "incident_id": "161",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "84",
+    "created_at": "2025-10-04T01:05:02"
+  },
+  "327": {
+    "note_id": "327",
+    "incident_id": "161",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 01:17. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "233",
+    "created_at": "2025-10-04T01:17:13"
+  },
+  "328": {
+    "note_id": "328",
+    "incident_id": "162",
+    "note_text": "Error rate dropped to 3% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "650",
+    "created_at": "2025-09-25T16:37:07"
+  },
+  "329": {
+    "note_id": "329",
+    "incident_id": "163",
+    "note_text": "Applied hotfix version v1.3.18 to Help request: Access issues. Monitoring system stability for 39 minutes.",
+    "note_type": "progress_update",
+    "created_by": "83",
+    "created_at": "2025-09-24T18:51:59"
+  },
+  "330": {
+    "note_id": "330",
+    "incident_id": "163",
+    "note_text": "Updated configuration parameter timeout_seconds from 181 to 912. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "343",
+    "created_at": "2025-09-24T18:53:34"
+  },
+  "331": {
+    "note_id": "331",
+    "incident_id": "163",
+    "note_text": "Updated configuration parameter timeout_seconds from 204 to 878. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "397",
+    "created_at": "2025-09-24T18:50:17"
+  },
+  "332": {
+    "note_id": "332",
+    "incident_id": "164",
+    "note_text": "Restarted affected services on srv-73. All services restored at 19:44.",
+    "note_type": "resolution",
+    "created_by": "13",
+    "created_at": "2025-10-15T19:44:49"
+  },
+  "333": {
+    "note_id": "333",
+    "incident_id": "165",
+    "note_text": "Updated configuration parameter timeout_seconds from 387 to 1722. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "80",
+    "created_at": "2025-09-20T09:33:05"
+  },
+  "334": {
+    "note_id": "334",
+    "incident_id": "166",
+    "note_text": "Analyzing system logs from 16:41 to 18:41. Initial findings indicate timeout errors affecting Hardware: Server temperature w.",
+    "note_type": "progress_update",
+    "created_by": "434",
+    "created_at": "2025-09-20T16:41:41"
+  },
+  "335": {
+    "note_id": "335",
+    "incident_id": "166",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 17:03. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "488",
+    "created_at": "2025-09-20T17:03:21"
+  },
+  "336": {
+    "note_id": "336",
+    "incident_id": "166",
+    "note_text": "Analyzing system logs from 16:43 to 18:43. Initial findings indicate timeout errors affecting Hardware: Server temperature w.",
+    "note_type": "progress_update",
+    "created_by": "221",
+    "created_at": "2025-09-20T16:43:59"
+  },
+  "337": {
+    "note_id": "337",
+    "incident_id": "167",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "491",
+    "created_at": "2025-09-19T05:11:16"
+  },
+  "338": {
+    "note_id": "338",
+    "incident_id": "168",
+    "note_text": "Applied hotfix version v1.9.13 to Hardware: Server temperature w. Monitoring system stability for 173 minutes.",
+    "note_type": "progress_update",
+    "created_by": "294",
+    "created_at": "2025-09-22T05:57:09"
+  },
+  "339": {
+    "note_id": "339",
+    "incident_id": "169",
+    "note_text": "System performance stable for past 61 hours. No anomalies detected.",
+    "note_type": "progress_update",
+    "created_by": "382",
+    "created_at": "2025-09-25T03:32:31"
+  },
+  "340": {
+    "note_id": "340",
+    "incident_id": "169",
+    "note_text": "Updated configuration parameter timeout_seconds from 283 to 1821. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "553",
+    "created_at": "2025-09-25T04:24:16"
+  },
+  "341": {
+    "note_id": "341",
+    "incident_id": "170",
+    "note_text": "Analyzing system logs from 20:30 to 22:30. Initial findings indicate high memory usage affecting User inquiry: Feature question.",
+    "note_type": "progress_update",
+    "created_by": "533",
+    "created_at": "2025-10-02T20:30:51"
+  },
+  "342": {
+    "note_id": "342",
+    "incident_id": "170",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "225",
+    "created_at": "2025-10-02T20:26:44"
+  },
+  "343": {
+    "note_id": "343",
+    "incident_id": "170",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 20:59. Correlating with other system events.",
+    "note_type": "progress_update",
+    "created_by": "248",
+    "created_at": "2025-10-02T20:59:02"
+  },
+  "344": {
+    "note_id": "344",
+    "incident_id": "171",
+    "note_text": "Restarted affected services on srv-88. All services restored at 18:41.",
+    "note_type": "resolution",
+    "created_by": "433",
+    "created_at": "2025-09-25T18:41:47"
+  },
+  "345": {
+    "note_id": "345",
+    "incident_id": "171",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "696",
+    "created_at": "2025-09-25T18:42:43"
+  },
+  "346": {
+    "note_id": "346",
+    "incident_id": "172",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "40",
+    "created_at": "2025-10-07T12:10:30"
+  },
+  "347": {
+    "note_id": "347",
+    "incident_id": "172",
+    "note_text": "Escalated to L2 support for further analysis.",
+    "note_type": "progress_update",
+    "created_by": "36",
+    "created_at": "2025-10-07T12:41:37"
+  },
+  "348": {
+    "note_id": "348",
+    "incident_id": "173",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "troubleshooting",
+    "created_by": "282",
+    "created_at": "2025-10-02T06:22:33"
+  },
+  "349": {
+    "note_id": "349",
+    "incident_id": "173",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "159",
+    "created_at": "2025-10-02T06:39:59"
+  },
+  "350": {
+    "note_id": "350",
+    "incident_id": "174",
+    "note_text": "All metrics returned to baseline levels. Monitoring for 76 minutes before closing.",
+    "note_type": "progress_update",
+    "created_by": "456",
+    "created_at": "2025-09-19T15:47:19"
+  },
+  "351": {
+    "note_id": "351",
+    "incident_id": "175",
+    "note_text": "Analyzing system logs from 16:15 to 18:15. Initial findings indicate timeout errors affecting Emergency: Network partition d.",
+    "note_type": "progress_update",
+    "created_by": "486",
+    "created_at": "2025-10-03T16:15:33"
+  },
+  "352": {
+    "note_id": "352",
+    "incident_id": "175",
+    "note_text": "Monitoring dashboards show error_rate increased significantly at 16:09. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "89",
+    "created_at": "2025-10-03T16:09:55"
+  },
+  "353": {
+    "note_id": "353",
+    "incident_id": "175",
+    "note_text": "Reproduced the issue in test environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "151",
+    "created_at": "2025-10-03T16:46:34"
+  },
+  "354": {
+    "note_id": "354",
+    "incident_id": "176",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "492",
+    "created_at": "2025-09-21T20:56:10"
+  },
+  "355": {
+    "note_id": "355",
+    "incident_id": "176",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to configuration mismatch.",
+    "note_type": "troubleshooting",
+    "created_by": "70",
+    "created_at": "2025-09-21T21:01:39"
+  },
+  "356": {
+    "note_id": "356",
+    "incident_id": "177",
+    "note_text": "Analyzing system logs from 14:30 to 16:30. Initial findings indicate timeout errors affecting Software bug: Intermittent app.",
+    "note_type": "progress_update",
+    "created_by": "198",
+    "created_at": "2025-09-24T14:30:01"
+  },
+  "357": {
+    "note_id": "357",
+    "incident_id": "177",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "troubleshooting",
+    "created_by": "510",
+    "created_at": "2025-09-24T14:35:25"
+  },
+  "358": {
+    "note_id": "358",
+    "incident_id": "178",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "316",
+    "created_at": "2025-09-18T02:55:19"
+  },
+  "359": {
+    "note_id": "359",
+    "incident_id": "179",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "progress_update",
+    "created_by": "296",
+    "created_at": "2025-09-22T02:02:18"
+  },
+  "360": {
+    "note_id": "360",
+    "incident_id": "179",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "271",
+    "created_at": "2025-09-22T02:13:38"
+  },
+  "361": {
+    "note_id": "361",
+    "incident_id": "180",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "resolution",
+    "created_by": "299",
+    "created_at": "2025-10-16T13:29:21"
+  },
+  "362": {
+    "note_id": "362",
+    "incident_id": "180",
+    "note_text": "Restarted affected services on srv-73. All services restored at 13:58.",
+    "note_type": "resolution",
+    "created_by": "621",
+    "created_at": "2025-10-16T13:58:40"
+  },
+  "363": {
+    "note_id": "363",
+    "incident_id": "180",
+    "note_text": "Updated configuration parameter timeout_seconds from 361 to 1662. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "273",
+    "created_at": "2025-10-16T12:41:19"
+  },
+  "364": {
+    "note_id": "364",
+    "incident_id": "181",
+    "note_text": "Customer contacted for more information.",
+    "note_type": "troubleshooting",
+    "created_by": "285",
+    "created_at": "2025-09-26T09:53:10"
+  },
+  "365": {
+    "note_id": "365",
+    "incident_id": "182",
+    "note_text": "System performance stable for past 41 hours. No anomalies detected.",
+    "note_type": "progress_update",
+    "created_by": "441",
+    "created_at": "2025-09-25T17:44:56"
+  },
+  "366": {
+    "note_id": "366",
+    "incident_id": "183",
+    "note_text": "Restarted affected services on srv-22. All services restored at 09:42.",
+    "note_type": "progress_update",
+    "created_by": "165",
+    "created_at": "2025-09-22T09:42:27"
+  },
+  "367": {
+    "note_id": "367",
+    "incident_id": "184",
+    "note_text": "Error rate dropped to 0% (within acceptable threshold of 5%).",
+    "note_type": "progress_update",
+    "created_by": "4",
+    "created_at": "2025-09-18T13:06:43"
+  },
+  "368": {
+    "note_id": "368",
+    "incident_id": "185",
+    "note_text": "Updated configuration parameter max_connections from 478 to 1287. System responding normally.",
+    "note_type": "progress_update",
+    "created_by": "24",
+    "created_at": "2025-10-16T15:46:30"
+  },
+  "369": {
+    "note_id": "369",
+    "incident_id": "186",
+    "note_text": "Reproduced the issue in production environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "616",
+    "created_at": "2025-09-29T09:26:10"
+  },
+  "370": {
+    "note_id": "370",
+    "incident_id": "186",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "615",
+    "created_at": "2025-09-29T09:55:20"
+  },
+  "371": {
+    "note_id": "371",
+    "incident_id": "186",
+    "note_text": "Analyzing system logs from 09:39 to 11:39. Initial findings indicate timeout errors affecting Critical: User lockout issue.",
+    "note_type": "progress_update",
+    "created_by": "435",
+    "created_at": "2025-09-29T09:39:41"
+  },
+  "372": {
+    "note_id": "372",
+    "incident_id": "187",
+    "note_text": "Monitoring dashboards show response_time increased significantly at 21:41. Correlating with other system events.",
+    "note_type": "troubleshooting",
+    "created_by": "235",
+    "created_at": "2025-09-22T21:41:46"
+  },
+  "373": {
+    "note_id": "373",
+    "incident_id": "188",
+    "note_text": "Analyzing system logs from 11:09 to 13:09. Initial findings indicate timeout errors affecting Database: Query performance de.",
+    "note_type": "progress_update",
+    "created_by": "171",
+    "created_at": "2025-09-23T11:09:25"
+  },
+  "374": {
+    "note_id": "374",
+    "incident_id": "189",
+    "note_text": "Restarted affected services on srv-31. All services restored at 13:56.",
+    "note_type": "resolution",
+    "created_by": "69",
+    "created_at": "2025-09-24T13:56:07"
+  },
+  "375": {
+    "note_id": "375",
+    "incident_id": "189",
+    "note_text": "Updated configuration parameter timeout_seconds from 187 to 1057. System responding normally.",
+    "note_type": "resolution",
+    "created_by": "513",
+    "created_at": "2025-09-24T13:58:29"
+  },
+  "376": {
+    "note_id": "376",
+    "incident_id": "189",
+    "note_text": "Applied hotfix version v2.2.7 to Network: Intermittent connecti. Monitoring system stability for 124 minutes.",
+    "note_type": "progress_update",
+    "created_by": "113",
+    "created_at": "2025-09-24T14:26:00"
+  },
+  "377": {
+    "note_id": "377",
+    "incident_id": "190",
+    "note_text": "Reproduced the issue in staging environment. Root cause appears to be related to resource exhaustion.",
+    "note_type": "progress_update",
+    "created_by": "538",
+    "created_at": "2025-09-18T08:17:23"
+  },
+  "378": {
+    "note_id": "378",
+    "incident_id": "190",
+    "note_text": "Gathering additional diagnostic data.",
+    "note_type": "progress_update",
+    "created_by": "306",
+    "created_at": "2025-09-18T08:32:18"
+  },
+  "379": {
+    "note_id": "379",
+    "incident_id": "190",
+    "note_text": "Internal team meeting held to discuss next steps.",
+    "note_type": "progress_update",
+    "created_by": "461",
+    "created_at": "2025-09-18T08:08:20"
+  }
+}

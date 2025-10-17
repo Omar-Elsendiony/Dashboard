@@ -1,0 +1,1478 @@
+{
+  "1": {
+    "assignment_id": "1",
+    "ci_id": "1",
+    "client_id": "12",
+    "assignment_type": "primary",
+    "usage_percentage": 96.7,
+    "dependency_level": "high",
+    "created_at": "2025-10-15T14:30:08"
+  },
+  "2": {
+    "assignment_id": "2",
+    "ci_id": "2",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 75.93,
+    "dependency_level": "critical",
+    "created_at": "2025-07-15T04:09:27"
+  },
+  "3": {
+    "assignment_id": "3",
+    "ci_id": "2",
+    "client_id": "19",
+    "assignment_type": "shared",
+    "usage_percentage": 27.92,
+    "dependency_level": "high",
+    "created_at": "2025-07-15T04:09:27"
+  },
+  "4": {
+    "assignment_id": "4",
+    "ci_id": "2",
+    "client_id": "23",
+    "assignment_type": "shared",
+    "usage_percentage": 39.32,
+    "dependency_level": "critical",
+    "created_at": "2025-07-15T04:09:27"
+  },
+  "5": {
+    "assignment_id": "5",
+    "ci_id": "2",
+    "client_id": "24",
+    "assignment_type": "shared",
+    "usage_percentage": 27.91,
+    "dependency_level": "high",
+    "created_at": "2025-07-15T04:09:27"
+  },
+  "6": {
+    "assignment_id": "6",
+    "ci_id": "2",
+    "client_id": "13",
+    "assignment_type": "shared",
+    "usage_percentage": 35.43,
+    "dependency_level": "high",
+    "created_at": "2025-07-15T04:09:27"
+  },
+  "7": {
+    "assignment_id": "7",
+    "ci_id": "2",
+    "client_id": "15",
+    "assignment_type": "shared",
+    "usage_percentage": 27.17,
+    "dependency_level": "high",
+    "created_at": "2025-07-15T04:09:27"
+  },
+  "8": {
+    "assignment_id": "8",
+    "ci_id": "3",
+    "client_id": "1",
+    "assignment_type": "primary",
+    "usage_percentage": 90.04,
+    "dependency_level": "critical",
+    "created_at": "2025-10-14T06:18:09"
+  },
+  "9": {
+    "assignment_id": "9",
+    "ci_id": "4",
+    "client_id": "4",
+    "assignment_type": "primary",
+    "usage_percentage": 48.46,
+    "dependency_level": "critical",
+    "created_at": "2025-07-09T20:20:51"
+  },
+  "10": {
+    "assignment_id": "10",
+    "ci_id": "4",
+    "client_id": "23",
+    "assignment_type": "shared",
+    "usage_percentage": 18.93,
+    "dependency_level": "medium",
+    "created_at": "2025-07-09T20:20:51"
+  },
+  "11": {
+    "assignment_id": "11",
+    "ci_id": "4",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 31.53,
+    "dependency_level": "low",
+    "created_at": "2025-07-09T20:20:51"
+  },
+  "12": {
+    "assignment_id": "12",
+    "ci_id": "5",
+    "client_id": "6",
+    "assignment_type": "primary",
+    "usage_percentage": 89.63,
+    "dependency_level": "high",
+    "created_at": "2025-06-29T12:04:48"
+  },
+  "13": {
+    "assignment_id": "13",
+    "ci_id": "6",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 92.95,
+    "dependency_level": "high",
+    "created_at": "2025-06-20T22:35:05"
+  },
+  "14": {
+    "assignment_id": "14",
+    "ci_id": "7",
+    "client_id": "7",
+    "assignment_type": "primary",
+    "usage_percentage": 45.39,
+    "dependency_level": "medium",
+    "created_at": "2025-10-02T07:55:38"
+  },
+  "15": {
+    "assignment_id": "15",
+    "ci_id": "7",
+    "client_id": "8",
+    "assignment_type": "secondary",
+    "usage_percentage": 5.78,
+    "dependency_level": "medium",
+    "created_at": "2025-10-02T07:55:38"
+  },
+  "16": {
+    "assignment_id": "16",
+    "ci_id": "8",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 78.77,
+    "dependency_level": "medium",
+    "created_at": "2025-09-14T12:17:34"
+  },
+  "17": {
+    "assignment_id": "17",
+    "ci_id": "8",
+    "client_id": "23",
+    "assignment_type": "shared",
+    "usage_percentage": 15.47,
+    "dependency_level": "low",
+    "created_at": "2025-09-14T12:17:34"
+  },
+  "18": {
+    "assignment_id": "18",
+    "ci_id": "8",
+    "client_id": "19",
+    "assignment_type": "shared",
+    "usage_percentage": 38.68,
+    "dependency_level": "medium",
+    "created_at": "2025-09-14T12:17:34"
+  },
+  "19": {
+    "assignment_id": "19",
+    "ci_id": "8",
+    "client_id": "13",
+    "assignment_type": "shared",
+    "usage_percentage": 26.23,
+    "dependency_level": "low",
+    "created_at": "2025-09-14T12:17:34"
+  },
+  "20": {
+    "assignment_id": "20",
+    "ci_id": "9",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 84.39,
+    "dependency_level": "medium",
+    "created_at": "2025-10-05T07:20:55"
+  },
+  "21": {
+    "assignment_id": "21",
+    "ci_id": "10",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 92.46,
+    "dependency_level": "medium",
+    "created_at": "2025-06-17T18:18:46"
+  },
+  "22": {
+    "assignment_id": "22",
+    "ci_id": "11",
+    "client_id": "15",
+    "assignment_type": "primary",
+    "usage_percentage": 44.34,
+    "dependency_level": "critical",
+    "created_at": "2025-09-16T12:09:09"
+  },
+  "23": {
+    "assignment_id": "23",
+    "ci_id": "11",
+    "client_id": "21",
+    "assignment_type": "shared",
+    "usage_percentage": 28.07,
+    "dependency_level": "high",
+    "created_at": "2025-09-16T12:09:09"
+  },
+  "24": {
+    "assignment_id": "24",
+    "ci_id": "11",
+    "client_id": "4",
+    "assignment_type": "shared",
+    "usage_percentage": 35.66,
+    "dependency_level": "critical",
+    "created_at": "2025-09-16T12:09:09"
+  },
+  "25": {
+    "assignment_id": "25",
+    "ci_id": "11",
+    "client_id": "6",
+    "assignment_type": "shared",
+    "usage_percentage": 19.44,
+    "dependency_level": "critical",
+    "created_at": "2025-09-16T12:09:09"
+  },
+  "26": {
+    "assignment_id": "26",
+    "ci_id": "11",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 36.94,
+    "dependency_level": "critical",
+    "created_at": "2025-09-16T12:09:09"
+  },
+  "27": {
+    "assignment_id": "27",
+    "ci_id": "11",
+    "client_id": "20",
+    "assignment_type": "shared",
+    "usage_percentage": 17.33,
+    "dependency_level": "critical",
+    "created_at": "2025-09-16T12:09:09"
+  },
+  "28": {
+    "assignment_id": "28",
+    "ci_id": "11",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 37.55,
+    "dependency_level": "critical",
+    "created_at": "2025-09-16T12:09:09"
+  },
+  "29": {
+    "assignment_id": "29",
+    "ci_id": "12",
+    "client_id": "20",
+    "assignment_type": "primary",
+    "usage_percentage": 90.44,
+    "dependency_level": "high",
+    "created_at": "2025-09-27T10:53:48"
+  },
+  "30": {
+    "assignment_id": "30",
+    "ci_id": "13",
+    "client_id": "20",
+    "assignment_type": "primary",
+    "usage_percentage": 57.02,
+    "dependency_level": "high",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "31": {
+    "assignment_id": "31",
+    "ci_id": "13",
+    "client_id": "11",
+    "assignment_type": "shared",
+    "usage_percentage": 26.93,
+    "dependency_level": "critical",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "32": {
+    "assignment_id": "32",
+    "ci_id": "13",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 37.75,
+    "dependency_level": "critical",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "33": {
+    "assignment_id": "33",
+    "ci_id": "13",
+    "client_id": "19",
+    "assignment_type": "shared",
+    "usage_percentage": 22.08,
+    "dependency_level": "high",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "34": {
+    "assignment_id": "34",
+    "ci_id": "13",
+    "client_id": "21",
+    "assignment_type": "shared",
+    "usage_percentage": 21.45,
+    "dependency_level": "critical",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "35": {
+    "assignment_id": "35",
+    "ci_id": "13",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 32.73,
+    "dependency_level": "critical",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "36": {
+    "assignment_id": "36",
+    "ci_id": "13",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 29.45,
+    "dependency_level": "critical",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "37": {
+    "assignment_id": "37",
+    "ci_id": "13",
+    "client_id": "13",
+    "assignment_type": "shared",
+    "usage_percentage": 27.99,
+    "dependency_level": "high",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "38": {
+    "assignment_id": "38",
+    "ci_id": "13",
+    "client_id": "15",
+    "assignment_type": "shared",
+    "usage_percentage": 31.36,
+    "dependency_level": "high",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "39": {
+    "assignment_id": "39",
+    "ci_id": "13",
+    "client_id": "2",
+    "assignment_type": "shared",
+    "usage_percentage": 25.22,
+    "dependency_level": "critical",
+    "created_at": "2025-08-05T06:12:37"
+  },
+  "40": {
+    "assignment_id": "40",
+    "ci_id": "14",
+    "client_id": "12",
+    "assignment_type": "primary",
+    "usage_percentage": 55.9,
+    "dependency_level": "critical",
+    "created_at": "2025-09-15T14:10:31"
+  },
+  "41": {
+    "assignment_id": "41",
+    "ci_id": "14",
+    "client_id": "20",
+    "assignment_type": "shared",
+    "usage_percentage": 25.33,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T14:10:31"
+  },
+  "42": {
+    "assignment_id": "42",
+    "ci_id": "14",
+    "client_id": "17",
+    "assignment_type": "shared",
+    "usage_percentage": 19.47,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T14:10:31"
+  },
+  "43": {
+    "assignment_id": "43",
+    "ci_id": "14",
+    "client_id": "13",
+    "assignment_type": "shared",
+    "usage_percentage": 21.34,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T14:10:31"
+  },
+  "44": {
+    "assignment_id": "44",
+    "ci_id": "14",
+    "client_id": "7",
+    "assignment_type": "shared",
+    "usage_percentage": 29.44,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T14:10:31"
+  },
+  "45": {
+    "assignment_id": "45",
+    "ci_id": "14",
+    "client_id": "15",
+    "assignment_type": "shared",
+    "usage_percentage": 33.39,
+    "dependency_level": "critical",
+    "created_at": "2025-09-15T14:10:31"
+  },
+  "46": {
+    "assignment_id": "46",
+    "ci_id": "15",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 71.44,
+    "dependency_level": "critical",
+    "created_at": "2025-09-09T02:32:26"
+  },
+  "47": {
+    "assignment_id": "47",
+    "ci_id": "15",
+    "client_id": "6",
+    "assignment_type": "shared",
+    "usage_percentage": 19.02,
+    "dependency_level": "critical",
+    "created_at": "2025-09-09T02:32:26"
+  },
+  "48": {
+    "assignment_id": "48",
+    "ci_id": "15",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 35.11,
+    "dependency_level": "critical",
+    "created_at": "2025-09-09T02:32:26"
+  },
+  "49": {
+    "assignment_id": "49",
+    "ci_id": "15",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 26.79,
+    "dependency_level": "high",
+    "created_at": "2025-09-09T02:32:26"
+  },
+  "50": {
+    "assignment_id": "50",
+    "ci_id": "15",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 17.2,
+    "dependency_level": "high",
+    "created_at": "2025-09-09T02:32:26"
+  },
+  "51": {
+    "assignment_id": "51",
+    "ci_id": "16",
+    "client_id": "4",
+    "assignment_type": "primary",
+    "usage_percentage": 92.18,
+    "dependency_level": "high",
+    "created_at": "2025-10-06T03:24:36"
+  },
+  "52": {
+    "assignment_id": "52",
+    "ci_id": "17",
+    "client_id": "19",
+    "assignment_type": "primary",
+    "usage_percentage": 92.28,
+    "dependency_level": "medium",
+    "created_at": "2025-08-10T10:23:17"
+  },
+  "53": {
+    "assignment_id": "53",
+    "ci_id": "18",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 57.56,
+    "dependency_level": "critical",
+    "created_at": "2025-08-14T14:08:05"
+  },
+  "54": {
+    "assignment_id": "54",
+    "ci_id": "18",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 36.26,
+    "dependency_level": "high",
+    "created_at": "2025-08-14T14:08:05"
+  },
+  "55": {
+    "assignment_id": "55",
+    "ci_id": "19",
+    "client_id": "23",
+    "assignment_type": "primary",
+    "usage_percentage": 90.32,
+    "dependency_level": "critical",
+    "created_at": "2025-09-29T14:19:31"
+  },
+  "56": {
+    "assignment_id": "56",
+    "ci_id": "20",
+    "client_id": "17",
+    "assignment_type": "primary",
+    "usage_percentage": 66.2,
+    "dependency_level": "critical",
+    "created_at": "2025-10-01T14:24:32"
+  },
+  "57": {
+    "assignment_id": "57",
+    "ci_id": "20",
+    "client_id": "11",
+    "assignment_type": "shared",
+    "usage_percentage": 17.17,
+    "dependency_level": "high",
+    "created_at": "2025-10-01T14:24:32"
+  },
+  "58": {
+    "assignment_id": "58",
+    "ci_id": "21",
+    "client_id": "17",
+    "assignment_type": "primary",
+    "usage_percentage": 93.39,
+    "dependency_level": "high",
+    "created_at": "2025-07-02T09:46:42"
+  },
+  "59": {
+    "assignment_id": "59",
+    "ci_id": "22",
+    "client_id": "23",
+    "assignment_type": "primary",
+    "usage_percentage": 80.31,
+    "dependency_level": "critical",
+    "created_at": "2025-05-11T17:29:58"
+  },
+  "60": {
+    "assignment_id": "60",
+    "ci_id": "23",
+    "client_id": "24",
+    "assignment_type": "primary",
+    "usage_percentage": 85.69,
+    "dependency_level": "medium",
+    "created_at": "2025-09-24T10:14:27"
+  },
+  "61": {
+    "assignment_id": "61",
+    "ci_id": "24",
+    "client_id": "11",
+    "assignment_type": "primary",
+    "usage_percentage": 40.19,
+    "dependency_level": "critical",
+    "created_at": "2025-10-08T23:28:11"
+  },
+  "62": {
+    "assignment_id": "62",
+    "ci_id": "24",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 25.18,
+    "dependency_level": "critical",
+    "created_at": "2025-10-08T23:28:11"
+  },
+  "63": {
+    "assignment_id": "63",
+    "ci_id": "24",
+    "client_id": "21",
+    "assignment_type": "shared",
+    "usage_percentage": 28.97,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T23:28:11"
+  },
+  "64": {
+    "assignment_id": "64",
+    "ci_id": "24",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 23.5,
+    "dependency_level": "critical",
+    "created_at": "2025-10-08T23:28:11"
+  },
+  "65": {
+    "assignment_id": "65",
+    "ci_id": "24",
+    "client_id": "23",
+    "assignment_type": "shared",
+    "usage_percentage": 35.07,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T23:28:11"
+  },
+  "66": {
+    "assignment_id": "66",
+    "ci_id": "24",
+    "client_id": "13",
+    "assignment_type": "shared",
+    "usage_percentage": 36.9,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T23:28:11"
+  },
+  "67": {
+    "assignment_id": "67",
+    "ci_id": "25",
+    "client_id": "19",
+    "assignment_type": "primary",
+    "usage_percentage": 91.26,
+    "dependency_level": "critical",
+    "created_at": "2025-09-16T09:57:59"
+  },
+  "68": {
+    "assignment_id": "68",
+    "ci_id": "26",
+    "client_id": "21",
+    "assignment_type": "primary",
+    "usage_percentage": 65.35,
+    "dependency_level": "critical",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "69": {
+    "assignment_id": "69",
+    "ci_id": "26",
+    "client_id": "24",
+    "assignment_type": "shared",
+    "usage_percentage": 31.92,
+    "dependency_level": "critical",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "70": {
+    "assignment_id": "70",
+    "ci_id": "26",
+    "client_id": "1",
+    "assignment_type": "shared",
+    "usage_percentage": 35.0,
+    "dependency_level": "high",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "71": {
+    "assignment_id": "71",
+    "ci_id": "26",
+    "client_id": "11",
+    "assignment_type": "shared",
+    "usage_percentage": 38.89,
+    "dependency_level": "critical",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "72": {
+    "assignment_id": "72",
+    "ci_id": "26",
+    "client_id": "2",
+    "assignment_type": "shared",
+    "usage_percentage": 32.52,
+    "dependency_level": "high",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "73": {
+    "assignment_id": "73",
+    "ci_id": "26",
+    "client_id": "7",
+    "assignment_type": "shared",
+    "usage_percentage": 21.21,
+    "dependency_level": "critical",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "74": {
+    "assignment_id": "74",
+    "ci_id": "26",
+    "client_id": "20",
+    "assignment_type": "shared",
+    "usage_percentage": 24.97,
+    "dependency_level": "high",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "75": {
+    "assignment_id": "75",
+    "ci_id": "26",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 16.9,
+    "dependency_level": "critical",
+    "created_at": "2025-09-22T09:11:55"
+  },
+  "76": {
+    "assignment_id": "76",
+    "ci_id": "27",
+    "client_id": "17",
+    "assignment_type": "primary",
+    "usage_percentage": 84.37,
+    "dependency_level": "high",
+    "created_at": "2025-09-28T20:17:07"
+  },
+  "77": {
+    "assignment_id": "77",
+    "ci_id": "28",
+    "client_id": "22",
+    "assignment_type": "primary",
+    "usage_percentage": 74.91,
+    "dependency_level": "critical",
+    "created_at": "2025-09-09T23:44:15"
+  },
+  "78": {
+    "assignment_id": "78",
+    "ci_id": "28",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 20.73,
+    "dependency_level": "critical",
+    "created_at": "2025-09-09T23:44:15"
+  },
+  "79": {
+    "assignment_id": "79",
+    "ci_id": "28",
+    "client_id": "11",
+    "assignment_type": "shared",
+    "usage_percentage": 35.91,
+    "dependency_level": "high",
+    "created_at": "2025-09-09T23:44:15"
+  },
+  "80": {
+    "assignment_id": "80",
+    "ci_id": "28",
+    "client_id": "17",
+    "assignment_type": "shared",
+    "usage_percentage": 18.9,
+    "dependency_level": "critical",
+    "created_at": "2025-09-09T23:44:15"
+  },
+  "81": {
+    "assignment_id": "81",
+    "ci_id": "28",
+    "client_id": "6",
+    "assignment_type": "shared",
+    "usage_percentage": 18.0,
+    "dependency_level": "critical",
+    "created_at": "2025-09-09T23:44:15"
+  },
+  "82": {
+    "assignment_id": "82",
+    "ci_id": "29",
+    "client_id": "22",
+    "assignment_type": "primary",
+    "usage_percentage": 92.28,
+    "dependency_level": "critical",
+    "created_at": "2025-05-25T12:03:55"
+  },
+  "83": {
+    "assignment_id": "83",
+    "ci_id": "30",
+    "client_id": "17",
+    "assignment_type": "primary",
+    "usage_percentage": 92.41,
+    "dependency_level": "high",
+    "created_at": "2025-09-21T08:31:31"
+  },
+  "84": {
+    "assignment_id": "84",
+    "ci_id": "31",
+    "client_id": "12",
+    "assignment_type": "primary",
+    "usage_percentage": 89.82,
+    "dependency_level": "high",
+    "created_at": "2025-10-07T11:28:28"
+  },
+  "85": {
+    "assignment_id": "85",
+    "ci_id": "32",
+    "client_id": "7",
+    "assignment_type": "primary",
+    "usage_percentage": 81.08,
+    "dependency_level": "high",
+    "created_at": "2025-08-02T22:01:42"
+  },
+  "86": {
+    "assignment_id": "86",
+    "ci_id": "33",
+    "client_id": "2",
+    "assignment_type": "primary",
+    "usage_percentage": 58.4,
+    "dependency_level": "critical",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "87": {
+    "assignment_id": "87",
+    "ci_id": "33",
+    "client_id": "23",
+    "assignment_type": "shared",
+    "usage_percentage": 15.3,
+    "dependency_level": "critical",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "88": {
+    "assignment_id": "88",
+    "ci_id": "33",
+    "client_id": "17",
+    "assignment_type": "shared",
+    "usage_percentage": 24.49,
+    "dependency_level": "critical",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "89": {
+    "assignment_id": "89",
+    "ci_id": "33",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 23.14,
+    "dependency_level": "high",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "90": {
+    "assignment_id": "90",
+    "ci_id": "33",
+    "client_id": "20",
+    "assignment_type": "shared",
+    "usage_percentage": 19.68,
+    "dependency_level": "high",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "91": {
+    "assignment_id": "91",
+    "ci_id": "33",
+    "client_id": "15",
+    "assignment_type": "shared",
+    "usage_percentage": 20.93,
+    "dependency_level": "high",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "92": {
+    "assignment_id": "92",
+    "ci_id": "33",
+    "client_id": "4",
+    "assignment_type": "shared",
+    "usage_percentage": 38.96,
+    "dependency_level": "high",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "93": {
+    "assignment_id": "93",
+    "ci_id": "33",
+    "client_id": "11",
+    "assignment_type": "shared",
+    "usage_percentage": 24.15,
+    "dependency_level": "high",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "94": {
+    "assignment_id": "94",
+    "ci_id": "33",
+    "client_id": "24",
+    "assignment_type": "shared",
+    "usage_percentage": 25.6,
+    "dependency_level": "high",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "95": {
+    "assignment_id": "95",
+    "ci_id": "33",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 32.52,
+    "dependency_level": "high",
+    "created_at": "2025-05-14T06:05:38"
+  },
+  "96": {
+    "assignment_id": "96",
+    "ci_id": "34",
+    "client_id": "12",
+    "assignment_type": "primary",
+    "usage_percentage": 79.17,
+    "dependency_level": "critical",
+    "created_at": "2025-10-07T11:57:39"
+  },
+  "97": {
+    "assignment_id": "97",
+    "ci_id": "34",
+    "client_id": "21",
+    "assignment_type": "shared",
+    "usage_percentage": 35.35,
+    "dependency_level": "high",
+    "created_at": "2025-10-07T11:57:39"
+  },
+  "98": {
+    "assignment_id": "98",
+    "ci_id": "34",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 35.1,
+    "dependency_level": "high",
+    "created_at": "2025-10-07T11:57:39"
+  },
+  "99": {
+    "assignment_id": "99",
+    "ci_id": "34",
+    "client_id": "13",
+    "assignment_type": "shared",
+    "usage_percentage": 36.41,
+    "dependency_level": "critical",
+    "created_at": "2025-10-07T11:57:39"
+  },
+  "100": {
+    "assignment_id": "100",
+    "ci_id": "34",
+    "client_id": "4",
+    "assignment_type": "shared",
+    "usage_percentage": 18.65,
+    "dependency_level": "critical",
+    "created_at": "2025-10-07T11:57:39"
+  },
+  "101": {
+    "assignment_id": "101",
+    "ci_id": "35",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 59.98,
+    "dependency_level": "medium",
+    "created_at": "2025-07-28T18:20:14"
+  },
+  "102": {
+    "assignment_id": "102",
+    "ci_id": "35",
+    "client_id": "20",
+    "assignment_type": "shared",
+    "usage_percentage": 27.93,
+    "dependency_level": "low",
+    "created_at": "2025-07-28T18:20:14"
+  },
+  "103": {
+    "assignment_id": "103",
+    "ci_id": "36",
+    "client_id": "13",
+    "assignment_type": "primary",
+    "usage_percentage": 85.02,
+    "dependency_level": "high",
+    "created_at": "2025-08-11T13:22:40"
+  },
+  "104": {
+    "assignment_id": "104",
+    "ci_id": "37",
+    "client_id": "8",
+    "assignment_type": "primary",
+    "usage_percentage": 81.2,
+    "dependency_level": "high",
+    "created_at": "2025-08-14T02:59:00"
+  },
+  "105": {
+    "assignment_id": "105",
+    "ci_id": "38",
+    "client_id": "21",
+    "assignment_type": "primary",
+    "usage_percentage": 54.44,
+    "dependency_level": "high",
+    "created_at": "2025-08-15T20:28:29"
+  },
+  "106": {
+    "assignment_id": "106",
+    "ci_id": "38",
+    "client_id": "15",
+    "assignment_type": "shared",
+    "usage_percentage": 23.6,
+    "dependency_level": "high",
+    "created_at": "2025-08-15T20:28:29"
+  },
+  "107": {
+    "assignment_id": "107",
+    "ci_id": "38",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 18.03,
+    "dependency_level": "critical",
+    "created_at": "2025-08-15T20:28:29"
+  },
+  "108": {
+    "assignment_id": "108",
+    "ci_id": "39",
+    "client_id": "24",
+    "assignment_type": "primary",
+    "usage_percentage": 59.5,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T05:48:47"
+  },
+  "109": {
+    "assignment_id": "109",
+    "ci_id": "39",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 37.24,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T05:48:47"
+  },
+  "110": {
+    "assignment_id": "110",
+    "ci_id": "39",
+    "client_id": "13",
+    "assignment_type": "shared",
+    "usage_percentage": 30.34,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T05:48:47"
+  },
+  "111": {
+    "assignment_id": "111",
+    "ci_id": "39",
+    "client_id": "23",
+    "assignment_type": "shared",
+    "usage_percentage": 30.79,
+    "dependency_level": "critical",
+    "created_at": "2025-09-15T05:48:47"
+  },
+  "112": {
+    "assignment_id": "112",
+    "ci_id": "39",
+    "client_id": "21",
+    "assignment_type": "shared",
+    "usage_percentage": 36.71,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T05:48:47"
+  },
+  "113": {
+    "assignment_id": "113",
+    "ci_id": "39",
+    "client_id": "15",
+    "assignment_type": "shared",
+    "usage_percentage": 25.55,
+    "dependency_level": "high",
+    "created_at": "2025-09-15T05:48:47"
+  },
+  "114": {
+    "assignment_id": "114",
+    "ci_id": "39",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 36.22,
+    "dependency_level": "critical",
+    "created_at": "2025-09-15T05:48:47"
+  },
+  "115": {
+    "assignment_id": "115",
+    "ci_id": "40",
+    "client_id": "11",
+    "assignment_type": "primary",
+    "usage_percentage": 51.65,
+    "dependency_level": "high",
+    "created_at": "2025-08-31T04:11:33"
+  },
+  "116": {
+    "assignment_id": "116",
+    "ci_id": "40",
+    "client_id": "15",
+    "assignment_type": "secondary",
+    "usage_percentage": 17.11,
+    "dependency_level": "low",
+    "created_at": "2025-08-31T04:11:33"
+  },
+  "117": {
+    "assignment_id": "117",
+    "ci_id": "40",
+    "client_id": "23",
+    "assignment_type": "secondary",
+    "usage_percentage": 10.42,
+    "dependency_level": "low",
+    "created_at": "2025-08-31T04:11:33"
+  },
+  "118": {
+    "assignment_id": "118",
+    "ci_id": "40",
+    "client_id": "22",
+    "assignment_type": "secondary",
+    "usage_percentage": 20.62,
+    "dependency_level": "low",
+    "created_at": "2025-08-31T04:11:33"
+  },
+  "119": {
+    "assignment_id": "119",
+    "ci_id": "41",
+    "client_id": "21",
+    "assignment_type": "primary",
+    "usage_percentage": 48.42,
+    "dependency_level": "high",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "120": {
+    "assignment_id": "120",
+    "ci_id": "41",
+    "client_id": "20",
+    "assignment_type": "shared",
+    "usage_percentage": 17.58,
+    "dependency_level": "critical",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "121": {
+    "assignment_id": "121",
+    "ci_id": "41",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 38.42,
+    "dependency_level": "high",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "122": {
+    "assignment_id": "122",
+    "ci_id": "41",
+    "client_id": "4",
+    "assignment_type": "shared",
+    "usage_percentage": 28.71,
+    "dependency_level": "critical",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "123": {
+    "assignment_id": "123",
+    "ci_id": "41",
+    "client_id": "23",
+    "assignment_type": "shared",
+    "usage_percentage": 34.27,
+    "dependency_level": "critical",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "124": {
+    "assignment_id": "124",
+    "ci_id": "41",
+    "client_id": "1",
+    "assignment_type": "shared",
+    "usage_percentage": 17.6,
+    "dependency_level": "critical",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "125": {
+    "assignment_id": "125",
+    "ci_id": "41",
+    "client_id": "24",
+    "assignment_type": "shared",
+    "usage_percentage": 17.11,
+    "dependency_level": "high",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "126": {
+    "assignment_id": "126",
+    "ci_id": "41",
+    "client_id": "6",
+    "assignment_type": "shared",
+    "usage_percentage": 22.73,
+    "dependency_level": "critical",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "127": {
+    "assignment_id": "127",
+    "ci_id": "41",
+    "client_id": "7",
+    "assignment_type": "shared",
+    "usage_percentage": 33.44,
+    "dependency_level": "high",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "128": {
+    "assignment_id": "128",
+    "ci_id": "41",
+    "client_id": "2",
+    "assignment_type": "shared",
+    "usage_percentage": 30.66,
+    "dependency_level": "critical",
+    "created_at": "2025-06-10T04:39:16"
+  },
+  "129": {
+    "assignment_id": "129",
+    "ci_id": "42",
+    "client_id": "1",
+    "assignment_type": "primary",
+    "usage_percentage": 74.41,
+    "dependency_level": "high",
+    "created_at": "2025-09-10T16:48:30"
+  },
+  "130": {
+    "assignment_id": "130",
+    "ci_id": "42",
+    "client_id": "2",
+    "assignment_type": "shared",
+    "usage_percentage": 36.61,
+    "dependency_level": "low",
+    "created_at": "2025-09-10T16:48:30"
+  },
+  "131": {
+    "assignment_id": "131",
+    "ci_id": "42",
+    "client_id": "17",
+    "assignment_type": "shared",
+    "usage_percentage": 39.37,
+    "dependency_level": "low",
+    "created_at": "2025-09-10T16:48:30"
+  },
+  "132": {
+    "assignment_id": "132",
+    "ci_id": "43",
+    "client_id": "24",
+    "assignment_type": "primary",
+    "usage_percentage": 65.24,
+    "dependency_level": "medium",
+    "created_at": "2025-10-04T19:52:08"
+  },
+  "133": {
+    "assignment_id": "133",
+    "ci_id": "43",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 36.93,
+    "dependency_level": "low",
+    "created_at": "2025-10-04T19:52:08"
+  },
+  "134": {
+    "assignment_id": "134",
+    "ci_id": "43",
+    "client_id": "21",
+    "assignment_type": "shared",
+    "usage_percentage": 28.09,
+    "dependency_level": "low",
+    "created_at": "2025-10-04T19:52:08"
+  },
+  "135": {
+    "assignment_id": "135",
+    "ci_id": "44",
+    "client_id": "22",
+    "assignment_type": "primary",
+    "usage_percentage": 90.79,
+    "dependency_level": "high",
+    "created_at": "2025-07-22T09:53:59"
+  },
+  "136": {
+    "assignment_id": "136",
+    "ci_id": "45",
+    "client_id": "20",
+    "assignment_type": "primary",
+    "usage_percentage": 40.42,
+    "dependency_level": "critical",
+    "created_at": "2025-08-19T03:54:28"
+  },
+  "137": {
+    "assignment_id": "137",
+    "ci_id": "45",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 23.6,
+    "dependency_level": "high",
+    "created_at": "2025-08-19T03:54:28"
+  },
+  "138": {
+    "assignment_id": "138",
+    "ci_id": "45",
+    "client_id": "7",
+    "assignment_type": "shared",
+    "usage_percentage": 28.38,
+    "dependency_level": "high",
+    "created_at": "2025-08-19T03:54:28"
+  },
+  "139": {
+    "assignment_id": "139",
+    "ci_id": "45",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 38.67,
+    "dependency_level": "high",
+    "created_at": "2025-08-19T03:54:28"
+  },
+  "140": {
+    "assignment_id": "140",
+    "ci_id": "46",
+    "client_id": "13",
+    "assignment_type": "primary",
+    "usage_percentage": 57.48,
+    "dependency_level": "critical",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "141": {
+    "assignment_id": "141",
+    "ci_id": "46",
+    "client_id": "11",
+    "assignment_type": "shared",
+    "usage_percentage": 19.08,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "142": {
+    "assignment_id": "142",
+    "ci_id": "46",
+    "client_id": "1",
+    "assignment_type": "shared",
+    "usage_percentage": 35.71,
+    "dependency_level": "critical",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "143": {
+    "assignment_id": "143",
+    "ci_id": "46",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 21.57,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "144": {
+    "assignment_id": "144",
+    "ci_id": "46",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 30.63,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "145": {
+    "assignment_id": "145",
+    "ci_id": "46",
+    "client_id": "6",
+    "assignment_type": "shared",
+    "usage_percentage": 22.12,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "146": {
+    "assignment_id": "146",
+    "ci_id": "46",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 25.32,
+    "dependency_level": "critical",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "147": {
+    "assignment_id": "147",
+    "ci_id": "46",
+    "client_id": "21",
+    "assignment_type": "shared",
+    "usage_percentage": 19.56,
+    "dependency_level": "high",
+    "created_at": "2025-10-08T09:09:23"
+  },
+  "148": {
+    "assignment_id": "148",
+    "ci_id": "47",
+    "client_id": "21",
+    "assignment_type": "primary",
+    "usage_percentage": 40.78,
+    "dependency_level": "critical",
+    "created_at": "2025-06-25T23:14:44"
+  },
+  "149": {
+    "assignment_id": "149",
+    "ci_id": "47",
+    "client_id": "12",
+    "assignment_type": "shared",
+    "usage_percentage": 39.24,
+    "dependency_level": "medium",
+    "created_at": "2025-06-25T23:14:44"
+  },
+  "150": {
+    "assignment_id": "150",
+    "ci_id": "47",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 19.65,
+    "dependency_level": "medium",
+    "created_at": "2025-06-25T23:14:44"
+  },
+  "151": {
+    "assignment_id": "151",
+    "ci_id": "47",
+    "client_id": "6",
+    "assignment_type": "shared",
+    "usage_percentage": 22.05,
+    "dependency_level": "medium",
+    "created_at": "2025-06-25T23:14:44"
+  },
+  "152": {
+    "assignment_id": "152",
+    "ci_id": "47",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 32.88,
+    "dependency_level": "medium",
+    "created_at": "2025-06-25T23:14:44"
+  },
+  "153": {
+    "assignment_id": "153",
+    "ci_id": "48",
+    "client_id": "1",
+    "assignment_type": "primary",
+    "usage_percentage": 53.68,
+    "dependency_level": "high",
+    "created_at": "2025-09-17T16:09:29"
+  },
+  "154": {
+    "assignment_id": "154",
+    "ci_id": "48",
+    "client_id": "22",
+    "assignment_type": "secondary",
+    "usage_percentage": 20.71,
+    "dependency_level": "low",
+    "created_at": "2025-09-17T16:09:29"
+  },
+  "155": {
+    "assignment_id": "155",
+    "ci_id": "48",
+    "client_id": "9",
+    "assignment_type": "secondary",
+    "usage_percentage": 24.96,
+    "dependency_level": "low",
+    "created_at": "2025-09-17T16:09:29"
+  },
+  "156": {
+    "assignment_id": "156",
+    "ci_id": "49",
+    "client_id": "2",
+    "assignment_type": "primary",
+    "usage_percentage": 86.6,
+    "dependency_level": "critical",
+    "created_at": "2025-07-24T04:57:59"
+  },
+  "157": {
+    "assignment_id": "157",
+    "ci_id": "50",
+    "client_id": "4",
+    "assignment_type": "primary",
+    "usage_percentage": 44.88,
+    "dependency_level": "critical",
+    "created_at": "2025-06-02T01:37:47"
+  },
+  "158": {
+    "assignment_id": "158",
+    "ci_id": "50",
+    "client_id": "22",
+    "assignment_type": "shared",
+    "usage_percentage": 24.62,
+    "dependency_level": "high",
+    "created_at": "2025-06-02T01:37:47"
+  },
+  "159": {
+    "assignment_id": "159",
+    "ci_id": "50",
+    "client_id": "8",
+    "assignment_type": "shared",
+    "usage_percentage": 21.18,
+    "dependency_level": "critical",
+    "created_at": "2025-06-02T01:37:47"
+  },
+  "160": {
+    "assignment_id": "160",
+    "ci_id": "50",
+    "client_id": "6",
+    "assignment_type": "shared",
+    "usage_percentage": 19.98,
+    "dependency_level": "critical",
+    "created_at": "2025-06-02T01:37:47"
+  },
+  "161": {
+    "assignment_id": "161",
+    "ci_id": "50",
+    "client_id": "20",
+    "assignment_type": "shared",
+    "usage_percentage": 28.03,
+    "dependency_level": "critical",
+    "created_at": "2025-06-02T01:37:47"
+  },
+  "162": {
+    "assignment_id": "162",
+    "ci_id": "50",
+    "client_id": "7",
+    "assignment_type": "shared",
+    "usage_percentage": 26.82,
+    "dependency_level": "high",
+    "created_at": "2025-06-02T01:37:47"
+  },
+  "163": {
+    "assignment_id": "163",
+    "ci_id": "50",
+    "client_id": "9",
+    "assignment_type": "shared",
+    "usage_percentage": 38.41,
+    "dependency_level": "critical",
+    "created_at": "2025-06-02T01:37:47"
+  },
+  "164": {
+    "assignment_id": "164",
+    "ci_id": "50",
+    "client_id": "1",
+    "assignment_type": "shared",
+    "usage_percentage": 30.73,
+    "dependency_level": "critical",
+    "created_at": "2025-06-02T01:37:47"
+  }
+}
