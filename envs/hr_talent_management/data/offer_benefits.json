@@ -1,0 +1,996 @@
+{
+  "1": {
+    "benefit_id": "1",
+    "offer_id": "1",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-10-12T15:45:45"
+  },
+  "2": {
+    "benefit_id": "2",
+    "offer_id": "1",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-03-08T11:14:38"
+  },
+  "3": {
+    "benefit_id": "3",
+    "offer_id": "1",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2021-10-11T13:53:25"
+  },
+  "4": {
+    "benefit_id": "4",
+    "offer_id": "2",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-01-04T15:27:37"
+  },
+  "5": {
+    "benefit_id": "5",
+    "offer_id": "2",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-09-30T11:54:14"
+  },
+  "6": {
+    "benefit_id": "6",
+    "offer_id": "2",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2022-05-30T11:02:15"
+  },
+  "7": {
+    "benefit_id": "7",
+    "offer_id": "3",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-09-08T12:13:32"
+  },
+  "8": {
+    "benefit_id": "8",
+    "offer_id": "3",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-01-15T05:46:29"
+  },
+  "9": {
+    "benefit_id": "9",
+    "offer_id": "3",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2024-09-20T17:11:04"
+  },
+  "10": {
+    "benefit_id": "10",
+    "offer_id": "4",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-07-30T03:05:06"
+  },
+  "11": {
+    "benefit_id": "11",
+    "offer_id": "4",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-05-14T23:57:17"
+  },
+  "12": {
+    "benefit_id": "12",
+    "offer_id": "4",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2020-10-09T02:11:16"
+  },
+  "13": {
+    "benefit_id": "13",
+    "offer_id": "5",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-06-02T17:26:51"
+  },
+  "14": {
+    "benefit_id": "14",
+    "offer_id": "5",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-10-25T15:20:21"
+  },
+  "15": {
+    "benefit_id": "15",
+    "offer_id": "5",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-06-21T03:57:32"
+  },
+  "16": {
+    "benefit_id": "16",
+    "offer_id": "6",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2022-06-24T03:31:56"
+  },
+  "17": {
+    "benefit_id": "17",
+    "offer_id": "6",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-01-02T04:26:13"
+  },
+  "18": {
+    "benefit_id": "18",
+    "offer_id": "6",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2021-06-08T13:52:13"
+  },
+  "19": {
+    "benefit_id": "19",
+    "offer_id": "7",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-02-16T01:13:19"
+  },
+  "20": {
+    "benefit_id": "20",
+    "offer_id": "7",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-08-22T06:43:26"
+  },
+  "21": {
+    "benefit_id": "21",
+    "offer_id": "8",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-06-30T22:04:21"
+  },
+  "22": {
+    "benefit_id": "22",
+    "offer_id": "8",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-11-27T11:22:47"
+  },
+  "23": {
+    "benefit_id": "23",
+    "offer_id": "8",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2020-04-08T00:23:20"
+  },
+  "24": {
+    "benefit_id": "24",
+    "offer_id": "9",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-11-08T10:20:34"
+  },
+  "25": {
+    "benefit_id": "25",
+    "offer_id": "9",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-12-30T11:07:02"
+  },
+  "26": {
+    "benefit_id": "26",
+    "offer_id": "10",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-05-12T12:33:21"
+  },
+  "27": {
+    "benefit_id": "27",
+    "offer_id": "10",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-06-25T10:25:06"
+  },
+  "28": {
+    "benefit_id": "28",
+    "offer_id": "10",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-06-25T16:13:43"
+  },
+  "29": {
+    "benefit_id": "29",
+    "offer_id": "11",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-08-21T19:08:59"
+  },
+  "30": {
+    "benefit_id": "30",
+    "offer_id": "11",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-03-29T20:01:17"
+  },
+  "31": {
+    "benefit_id": "31",
+    "offer_id": "11",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2023-11-16T10:53:17"
+  },
+  "32": {
+    "benefit_id": "32",
+    "offer_id": "12",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-05-07T00:31:33"
+  },
+  "33": {
+    "benefit_id": "33",
+    "offer_id": "12",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-03-30T06:19:40"
+  },
+  "34": {
+    "benefit_id": "34",
+    "offer_id": "12",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-09-09T16:52:24"
+  },
+  "35": {
+    "benefit_id": "35",
+    "offer_id": "13",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-02-14T03:03:13"
+  },
+  "36": {
+    "benefit_id": "36",
+    "offer_id": "13",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-07-01T16:48:17"
+  },
+  "37": {
+    "benefit_id": "37",
+    "offer_id": "13",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2023-07-07T08:11:08"
+  },
+  "38": {
+    "benefit_id": "38",
+    "offer_id": "14",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-06-01T13:30:05"
+  },
+  "39": {
+    "benefit_id": "39",
+    "offer_id": "14",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-12-08T21:10:18"
+  },
+  "40": {
+    "benefit_id": "40",
+    "offer_id": "15",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-04-17T01:01:13"
+  },
+  "41": {
+    "benefit_id": "41",
+    "offer_id": "15",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-09-30T02:24:39"
+  },
+  "42": {
+    "benefit_id": "42",
+    "offer_id": "16",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2022-05-02T06:10:51"
+  },
+  "43": {
+    "benefit_id": "43",
+    "offer_id": "16",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-01-03T09:13:40"
+  },
+  "44": {
+    "benefit_id": "44",
+    "offer_id": "17",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-10-11T08:37:42"
+  },
+  "45": {
+    "benefit_id": "45",
+    "offer_id": "17",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-07-18T06:09:48"
+  },
+  "46": {
+    "benefit_id": "46",
+    "offer_id": "17",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2022-12-10T17:02:41"
+  },
+  "47": {
+    "benefit_id": "47",
+    "offer_id": "18",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-08-09T05:54:25"
+  },
+  "48": {
+    "benefit_id": "48",
+    "offer_id": "18",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-08-01T14:37:00"
+  },
+  "49": {
+    "benefit_id": "49",
+    "offer_id": "18",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2020-11-10T00:26:01"
+  },
+  "50": {
+    "benefit_id": "50",
+    "offer_id": "19",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2020-12-01T08:38:53"
+  },
+  "51": {
+    "benefit_id": "51",
+    "offer_id": "19",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-04-14T13:40:23"
+  },
+  "52": {
+    "benefit_id": "52",
+    "offer_id": "19",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2022-07-26T00:23:48"
+  },
+  "53": {
+    "benefit_id": "53",
+    "offer_id": "20",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2020-07-30T16:55:27"
+  },
+  "54": {
+    "benefit_id": "54",
+    "offer_id": "20",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-09-17T10:27:32"
+  },
+  "55": {
+    "benefit_id": "55",
+    "offer_id": "20",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-09-26T07:08:02"
+  },
+  "56": {
+    "benefit_id": "56",
+    "offer_id": "21",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-10-15T15:59:15"
+  },
+  "57": {
+    "benefit_id": "57",
+    "offer_id": "21",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-10-06T02:19:40"
+  },
+  "58": {
+    "benefit_id": "58",
+    "offer_id": "22",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-07-20T00:14:39"
+  },
+  "59": {
+    "benefit_id": "59",
+    "offer_id": "22",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-11-09T18:44:48"
+  },
+  "60": {
+    "benefit_id": "60",
+    "offer_id": "23",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-06-06T13:53:49"
+  },
+  "61": {
+    "benefit_id": "61",
+    "offer_id": "23",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-07-13T00:02:51"
+  },
+  "62": {
+    "benefit_id": "62",
+    "offer_id": "24",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2020-01-30T04:01:01"
+  },
+  "63": {
+    "benefit_id": "63",
+    "offer_id": "24",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-01-02T18:37:37"
+  },
+  "64": {
+    "benefit_id": "64",
+    "offer_id": "25",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-10-15T16:31:00"
+  },
+  "65": {
+    "benefit_id": "65",
+    "offer_id": "25",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2020-09-25T05:01:30"
+  },
+  "66": {
+    "benefit_id": "66",
+    "offer_id": "26",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-07-12T04:18:25"
+  },
+  "67": {
+    "benefit_id": "67",
+    "offer_id": "26",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-08-07T22:01:04"
+  },
+  "68": {
+    "benefit_id": "68",
+    "offer_id": "27",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-10-11T06:46:29"
+  },
+  "69": {
+    "benefit_id": "69",
+    "offer_id": "27",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-04-25T06:25:56"
+  },
+  "70": {
+    "benefit_id": "70",
+    "offer_id": "28",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-12-04T14:27:21"
+  },
+  "71": {
+    "benefit_id": "71",
+    "offer_id": "28",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-08-21T04:03:57"
+  },
+  "72": {
+    "benefit_id": "72",
+    "offer_id": "28",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2020-03-17T16:36:32"
+  },
+  "73": {
+    "benefit_id": "73",
+    "offer_id": "29",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-03-30T10:27:16"
+  },
+  "74": {
+    "benefit_id": "74",
+    "offer_id": "29",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-02-10T13:34:05"
+  },
+  "75": {
+    "benefit_id": "75",
+    "offer_id": "29",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2020-02-24T04:28:51"
+  },
+  "76": {
+    "benefit_id": "76",
+    "offer_id": "30",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-12-30T05:06:46"
+  },
+  "77": {
+    "benefit_id": "77",
+    "offer_id": "30",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-03-08T03:16:53"
+  },
+  "78": {
+    "benefit_id": "78",
+    "offer_id": "30",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2023-08-21T16:22:09"
+  },
+  "79": {
+    "benefit_id": "79",
+    "offer_id": "31",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-06-21T16:27:41"
+  },
+  "80": {
+    "benefit_id": "80",
+    "offer_id": "31",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-03-04T03:31:46"
+  },
+  "81": {
+    "benefit_id": "81",
+    "offer_id": "31",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2022-06-04T06:41:40"
+  },
+  "82": {
+    "benefit_id": "82",
+    "offer_id": "32",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2020-01-10T06:22:26"
+  },
+  "83": {
+    "benefit_id": "83",
+    "offer_id": "32",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-05-02T01:56:58"
+  },
+  "84": {
+    "benefit_id": "84",
+    "offer_id": "32",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2023-10-19T19:57:04"
+  },
+  "85": {
+    "benefit_id": "85",
+    "offer_id": "33",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2020-06-09T16:00:07"
+  },
+  "86": {
+    "benefit_id": "86",
+    "offer_id": "33",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-05-11T00:01:21"
+  },
+  "87": {
+    "benefit_id": "87",
+    "offer_id": "34",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-11-22T22:09:15"
+  },
+  "88": {
+    "benefit_id": "88",
+    "offer_id": "34",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-07-23T19:17:00"
+  },
+  "89": {
+    "benefit_id": "89",
+    "offer_id": "34",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2023-01-07T16:44:38"
+  },
+  "90": {
+    "benefit_id": "90",
+    "offer_id": "35",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-09-06T18:24:21"
+  },
+  "91": {
+    "benefit_id": "91",
+    "offer_id": "35",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-08-31T23:35:50"
+  },
+  "92": {
+    "benefit_id": "92",
+    "offer_id": "36",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-07-10T02:50:01"
+  },
+  "93": {
+    "benefit_id": "93",
+    "offer_id": "36",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-12-16T08:32:16"
+  },
+  "94": {
+    "benefit_id": "94",
+    "offer_id": "36",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-06-05T20:43:45"
+  },
+  "95": {
+    "benefit_id": "95",
+    "offer_id": "37",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-05-23T11:20:44"
+  },
+  "96": {
+    "benefit_id": "96",
+    "offer_id": "37",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2022-07-26T07:01:08"
+  },
+  "97": {
+    "benefit_id": "97",
+    "offer_id": "37",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2024-06-23T03:17:23"
+  },
+  "98": {
+    "benefit_id": "98",
+    "offer_id": "38",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2020-05-16T03:06:58"
+  },
+  "99": {
+    "benefit_id": "99",
+    "offer_id": "38",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-02-04T07:51:14"
+  },
+  "100": {
+    "benefit_id": "100",
+    "offer_id": "39",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-06-18T07:35:58"
+  },
+  "101": {
+    "benefit_id": "101",
+    "offer_id": "39",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-07-01T23:52:12"
+  },
+  "102": {
+    "benefit_id": "102",
+    "offer_id": "40",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-06-18T03:18:27"
+  },
+  "103": {
+    "benefit_id": "103",
+    "offer_id": "40",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-10-25T15:04:26"
+  },
+  "104": {
+    "benefit_id": "104",
+    "offer_id": "41",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2022-02-04T04:55:36"
+  },
+  "105": {
+    "benefit_id": "105",
+    "offer_id": "41",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-11-05T22:15:45"
+  },
+  "106": {
+    "benefit_id": "106",
+    "offer_id": "42",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2022-06-19T22:38:30"
+  },
+  "107": {
+    "benefit_id": "107",
+    "offer_id": "42",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-03-21T06:23:02"
+  },
+  "108": {
+    "benefit_id": "108",
+    "offer_id": "42",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2020-05-13T04:35:22"
+  },
+  "109": {
+    "benefit_id": "109",
+    "offer_id": "43",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-04-24T09:23:05"
+  },
+  "110": {
+    "benefit_id": "110",
+    "offer_id": "43",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-02-09T04:12:50"
+  },
+  "111": {
+    "benefit_id": "111",
+    "offer_id": "44",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2025-03-28T01:26:56"
+  },
+  "112": {
+    "benefit_id": "112",
+    "offer_id": "44",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2020-12-08T23:49:04"
+  },
+  "113": {
+    "benefit_id": "113",
+    "offer_id": "45",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-11-04T21:52:01"
+  },
+  "114": {
+    "benefit_id": "114",
+    "offer_id": "45",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-11-10T04:25:39"
+  },
+  "115": {
+    "benefit_id": "115",
+    "offer_id": "45",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2023-05-16T17:38:55"
+  },
+  "116": {
+    "benefit_id": "116",
+    "offer_id": "46",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-04-25T09:44:28"
+  },
+  "117": {
+    "benefit_id": "117",
+    "offer_id": "46",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2020-05-05T05:29:55"
+  },
+  "118": {
+    "benefit_id": "118",
+    "offer_id": "47",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-03-07T03:32:17"
+  },
+  "119": {
+    "benefit_id": "119",
+    "offer_id": "47",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-05-04T10:05:14"
+  },
+  "120": {
+    "benefit_id": "120",
+    "offer_id": "47",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-07-01T11:57:13"
+  },
+  "121": {
+    "benefit_id": "121",
+    "offer_id": "48",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2022-04-25T18:05:17"
+  },
+  "122": {
+    "benefit_id": "122",
+    "offer_id": "48",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-05-15T14:40:36"
+  },
+  "123": {
+    "benefit_id": "123",
+    "offer_id": "49",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-01-12T22:13:32"
+  },
+  "124": {
+    "benefit_id": "124",
+    "offer_id": "49",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-02-08T05:25:21"
+  },
+  "125": {
+    "benefit_id": "125",
+    "offer_id": "49",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2020-01-25T11:29:24"
+  },
+  "126": {
+    "benefit_id": "126",
+    "offer_id": "50",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-05-02T02:27:56"
+  },
+  "127": {
+    "benefit_id": "127",
+    "offer_id": "50",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2024-02-07T04:07:31"
+  },
+  "128": {
+    "benefit_id": "128",
+    "offer_id": "50",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2022-08-26T01:40:07"
+  },
+  "129": {
+    "benefit_id": "129",
+    "offer_id": "51",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-08-10T23:30:52"
+  },
+  "130": {
+    "benefit_id": "130",
+    "offer_id": "51",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-10-05T14:21:30"
+  },
+  "131": {
+    "benefit_id": "131",
+    "offer_id": "51",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-06-19T18:10:48"
+  },
+  "132": {
+    "benefit_id": "132",
+    "offer_id": "52",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2023-08-12T03:41:08"
+  },
+  "133": {
+    "benefit_id": "133",
+    "offer_id": "52",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2020-07-26T18:40:24"
+  },
+  "134": {
+    "benefit_id": "134",
+    "offer_id": "53",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2021-09-15T09:49:58"
+  },
+  "135": {
+    "benefit_id": "135",
+    "offer_id": "53",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2025-03-08T00:50:32"
+  },
+  "136": {
+    "benefit_id": "136",
+    "offer_id": "53",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2022-08-26T16:18:29"
+  },
+  "137": {
+    "benefit_id": "137",
+    "offer_id": "54",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-05-25T07:35:04"
+  },
+  "138": {
+    "benefit_id": "138",
+    "offer_id": "54",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2021-01-13T23:30:39"
+  },
+  "139": {
+    "benefit_id": "139",
+    "offer_id": "54",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2022-07-19T01:06:20"
+  },
+  "140": {
+    "benefit_id": "140",
+    "offer_id": "55",
+    "benefit_type": "medical",
+    "benefit_description": "Comprehensive medical coverage including doctor visits, hospital stays, and prescription drugs",
+    "created_at": "2024-02-21T08:44:53"
+  },
+  "141": {
+    "benefit_id": "141",
+    "offer_id": "55",
+    "benefit_type": "dental",
+    "benefit_description": "Dental coverage for routine cleanings, fillings, and major dental work",
+    "created_at": "2023-04-21T06:45:54"
+  },
+  "142": {
+    "benefit_id": "142",
+    "offer_id": "55",
+    "benefit_type": "vision",
+    "benefit_description": "Vision coverage for eye exams, glasses, and contact lenses",
+    "created_at": "2025-09-09T10:19:21"
+  }
+}

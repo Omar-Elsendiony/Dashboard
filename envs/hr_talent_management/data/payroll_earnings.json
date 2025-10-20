@@ -1,0 +1,384 @@
+{
+  "1": {
+    "earning_id": "1",
+    "payroll_input_id": "2",
+    "earning_type": "bonus",
+    "amount": 504.37,
+    "approval_status": "pending",
+    "created_at": "2022-10-15T12:50:14"
+  },
+  "2": {
+    "earning_id": "2",
+    "payroll_input_id": "2",
+    "earning_type": "bonus",
+    "amount": 1873.65,
+    "approval_status": "pending",
+    "created_at": "2025-02-13T01:54:56"
+  },
+  "3": {
+    "earning_id": "3",
+    "payroll_input_id": "4",
+    "earning_type": "bonus",
+    "amount": 1431.7,
+    "approval_status": "pending",
+    "created_at": "2023-04-10T21:51:43"
+  },
+  "4": {
+    "earning_id": "4",
+    "payroll_input_id": "4",
+    "earning_type": "bonus",
+    "amount": 959.08,
+    "approval_status": "pending",
+    "created_at": "2022-04-01T09:03:13"
+  },
+  "5": {
+    "earning_id": "5",
+    "payroll_input_id": "5",
+    "earning_type": "bonus",
+    "amount": 408.5,
+    "approval_status": "pending",
+    "created_at": "2022-06-22T21:10:49"
+  },
+  "6": {
+    "earning_id": "6",
+    "payroll_input_id": "7",
+    "earning_type": "bonus",
+    "amount": 1219.09,
+    "approval_status": "approved",
+    "created_at": "2022-05-01T02:55:30",
+    "approved_by": "21",
+    "approval_date": "2025-05-12"
+  },
+  "7": {
+    "earning_id": "7",
+    "payroll_input_id": "10",
+    "earning_type": "bonus",
+    "amount": 1273.65,
+    "approval_status": "approved",
+    "created_at": "2020-10-23T20:03:01",
+    "approved_by": "24",
+    "approval_date": "2025-07-03"
+  },
+  "8": {
+    "earning_id": "8",
+    "payroll_input_id": "13",
+    "earning_type": "incentive",
+    "amount": 1359.15,
+    "approval_status": "approved",
+    "created_at": "2020-03-30T14:27:37",
+    "approved_by": "21",
+    "approval_date": "2025-01-09"
+  },
+  "9": {
+    "earning_id": "9",
+    "payroll_input_id": "14",
+    "earning_type": "incentive",
+    "amount": 1744.08,
+    "approval_status": "approved",
+    "created_at": "2021-11-14T18:15:18",
+    "approved_by": "24",
+    "approval_date": "2024-02-15"
+  },
+  "10": {
+    "earning_id": "10",
+    "payroll_input_id": "14",
+    "earning_type": "incentive",
+    "amount": 1740.91,
+    "approval_status": "approved",
+    "created_at": "2023-06-04T08:09:50",
+    "approved_by": "44",
+    "approval_date": "2023-10-02"
+  },
+  "11": {
+    "earning_id": "11",
+    "payroll_input_id": "16",
+    "earning_type": "incentive",
+    "amount": 638.91,
+    "approval_status": "approved",
+    "created_at": "2025-09-02T09:20:52",
+    "approved_by": "19",
+    "approval_date": "2022-11-12"
+  },
+  "12": {
+    "earning_id": "12",
+    "payroll_input_id": "16",
+    "earning_type": "incentive",
+    "amount": 973.97,
+    "approval_status": "approved",
+    "created_at": "2022-04-07T14:36:49",
+    "approved_by": "23",
+    "approval_date": "2022-12-27"
+  },
+  "13": {
+    "earning_id": "13",
+    "payroll_input_id": "17",
+    "earning_type": "incentive",
+    "amount": 660.3,
+    "approval_status": "approved",
+    "created_at": "2024-01-19T11:22:11",
+    "approved_by": "16",
+    "approval_date": "2023-10-22"
+  },
+  "14": {
+    "earning_id": "14",
+    "payroll_input_id": "22",
+    "earning_type": "reimbursement",
+    "amount": 1703.35,
+    "approval_status": "approved",
+    "created_at": "2022-01-23T10:22:55",
+    "approved_by": "19",
+    "approval_date": "2025-04-01"
+  },
+  "15": {
+    "earning_id": "15",
+    "payroll_input_id": "22",
+    "earning_type": "reimbursement",
+    "amount": 312.72,
+    "approval_status": "approved",
+    "created_at": "2020-10-09T22:46:05",
+    "approved_by": "42",
+    "approval_date": "2024-09-27"
+  },
+  "16": {
+    "earning_id": "16",
+    "payroll_input_id": "23",
+    "earning_type": "reimbursement",
+    "amount": 1497.27,
+    "approval_status": "approved",
+    "created_at": "2025-02-10T22:52:14",
+    "approved_by": "25",
+    "approval_date": "2020-11-27"
+  },
+  "17": {
+    "earning_id": "17",
+    "payroll_input_id": "24",
+    "earning_type": "reimbursement",
+    "amount": 1651.36,
+    "approval_status": "approved",
+    "created_at": "2020-04-14T15:48:27",
+    "approved_by": "19",
+    "approval_date": "2023-11-08"
+  },
+  "18": {
+    "earning_id": "18",
+    "payroll_input_id": "24",
+    "earning_type": "reimbursement",
+    "amount": 1773.58,
+    "approval_status": "approved",
+    "created_at": "2023-09-19T06:23:59",
+    "approved_by": "17",
+    "approval_date": "2024-11-13"
+  },
+  "19": {
+    "earning_id": "19",
+    "payroll_input_id": "25",
+    "earning_type": "commission",
+    "amount": 1451.4,
+    "approval_status": "approved",
+    "created_at": "2024-02-01T10:03:33",
+    "approved_by": "44",
+    "approval_date": "2025-04-15"
+  },
+  "20": {
+    "earning_id": "20",
+    "payroll_input_id": "25",
+    "earning_type": "commission",
+    "amount": 1447.91,
+    "approval_status": "approved",
+    "created_at": "2024-10-26T05:49:11",
+    "approved_by": "21",
+    "approval_date": "2025-09-19"
+  },
+  "21": {
+    "earning_id": "21",
+    "payroll_input_id": "28",
+    "earning_type": "commission",
+    "amount": 1075.04,
+    "approval_status": "approved",
+    "created_at": "2023-01-03T05:31:38",
+    "approved_by": "21",
+    "approval_date": "2025-07-12"
+  },
+  "22": {
+    "earning_id": "22",
+    "payroll_input_id": "28",
+    "earning_type": "commission",
+    "amount": 467.35,
+    "approval_status": "approved",
+    "created_at": "2025-03-18T17:39:13",
+    "approved_by": "43",
+    "approval_date": "2023-02-05"
+  },
+  "23": {
+    "earning_id": "23",
+    "payroll_input_id": "29",
+    "earning_type": "commission",
+    "amount": 1798.02,
+    "approval_status": "approved",
+    "created_at": "2024-01-16T21:28:13",
+    "approved_by": "19",
+    "approval_date": "2024-07-20"
+  },
+  "24": {
+    "earning_id": "24",
+    "payroll_input_id": "29",
+    "earning_type": "other",
+    "amount": 1525.9,
+    "approval_status": "approved",
+    "created_at": "2020-12-06T08:46:13",
+    "approved_by": "21",
+    "approval_date": "2023-08-13"
+  },
+  "25": {
+    "earning_id": "25",
+    "payroll_input_id": "30",
+    "earning_type": "other",
+    "amount": 191.73,
+    "approval_status": "approved",
+    "created_at": "2020-11-30T14:05:26",
+    "approved_by": "24",
+    "approval_date": "2025-07-08"
+  },
+  "26": {
+    "earning_id": "26",
+    "payroll_input_id": "32",
+    "earning_type": "other",
+    "amount": 805.61,
+    "approval_status": "rejected",
+    "created_at": "2020-03-13T12:59:48",
+    "approved_by": "16",
+    "approval_date": "2024-09-20"
+  },
+  "27": {
+    "earning_id": "27",
+    "payroll_input_id": "32",
+    "earning_type": "other",
+    "amount": 284.79,
+    "approval_status": "rejected",
+    "created_at": "2020-09-26T04:24:18",
+    "approved_by": "16",
+    "approval_date": "2025-01-17"
+  },
+  "28": {
+    "earning_id": "28",
+    "payroll_input_id": "35",
+    "earning_type": "other",
+    "amount": 952.76,
+    "approval_status": "rejected",
+    "created_at": "2022-08-19T13:09:55",
+    "approved_by": "43",
+    "approval_date": "2024-03-08"
+  },
+  "29": {
+    "earning_id": "29",
+    "payroll_input_id": "35",
+    "earning_type": "commission",
+    "amount": 1958.03,
+    "approval_status": "rejected",
+    "created_at": "2023-04-12T23:32:29",
+    "approved_by": "43",
+    "approval_date": "2024-08-03"
+  },
+  "30": {
+    "earning_id": "30",
+    "payroll_input_id": "36",
+    "earning_type": "other",
+    "amount": 1474.71,
+    "approval_status": "rejected",
+    "created_at": "2020-06-03T11:11:11",
+    "approved_by": "21",
+    "approval_date": "2025-09-15"
+  },
+  "31": {
+    "earning_id": "31",
+    "payroll_input_id": "36",
+    "earning_type": "bonus",
+    "amount": 561.67,
+    "approval_status": "pending",
+    "created_at": "2020-05-16T15:20:44"
+  },
+  "32": {
+    "earning_id": "32",
+    "payroll_input_id": "39",
+    "earning_type": "incentive",
+    "amount": 1481.84,
+    "approval_status": "approved",
+    "created_at": "2024-12-27T04:08:34",
+    "approved_by": "24",
+    "approval_date": "2023-12-20"
+  },
+  "33": {
+    "earning_id": "33",
+    "payroll_input_id": "40",
+    "earning_type": "reimbursement",
+    "amount": 1716.58,
+    "approval_status": "rejected",
+    "created_at": "2021-12-08T20:45:00",
+    "approved_by": "24",
+    "approval_date": "2022-11-25"
+  },
+  "34": {
+    "earning_id": "34",
+    "payroll_input_id": "40",
+    "earning_type": "commission",
+    "amount": 1945.76,
+    "approval_status": "pending",
+    "created_at": "2020-03-23T00:02:03"
+  },
+  "35": {
+    "earning_id": "35",
+    "payroll_input_id": "43",
+    "earning_type": "other",
+    "amount": 905.57,
+    "approval_status": "approved",
+    "created_at": "2022-07-13T21:17:47",
+    "approved_by": "16",
+    "approval_date": "2025-08-24"
+  },
+  "36": {
+    "earning_id": "36",
+    "payroll_input_id": "43",
+    "earning_type": "bonus",
+    "amount": 1755.85,
+    "approval_status": "rejected",
+    "created_at": "2022-06-02T20:02:39",
+    "approved_by": "42",
+    "approval_date": "2024-06-05"
+  },
+  "37": {
+    "earning_id": "37",
+    "payroll_input_id": "44",
+    "earning_type": "incentive",
+    "amount": 1480.85,
+    "approval_status": "pending",
+    "created_at": "2021-10-03T07:07:53"
+  },
+  "38": {
+    "earning_id": "38",
+    "payroll_input_id": "46",
+    "earning_type": "reimbursement",
+    "amount": 266.88,
+    "approval_status": "approved",
+    "created_at": "2023-07-28T03:38:20",
+    "approved_by": "19",
+    "approval_date": "2023-11-10"
+  },
+  "39": {
+    "earning_id": "39",
+    "payroll_input_id": "48",
+    "earning_type": "commission",
+    "amount": 231.14,
+    "approval_status": "rejected",
+    "created_at": "2022-07-29T17:07:46",
+    "approved_by": "44",
+    "approval_date": "2023-03-19"
+  },
+  "40": {
+    "earning_id": "40",
+    "payroll_input_id": "48",
+    "earning_type": "other",
+    "amount": 1223.21,
+    "approval_status": "pending",
+    "created_at": "2021-12-10T01:56:58"
+  }
+}

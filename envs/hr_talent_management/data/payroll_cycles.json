@@ -1,0 +1,262 @@
+{
+  "1": {
+    "cycle_id": "1",
+    "cycle_start_date": "2024-10-01",
+    "cycle_end_date": "2024-10-07",
+    "frequency": "weekly",
+    "cutoff_date": "2024-10-10",
+    "status": "open",
+    "created_at": "2023-10-22T03:17:30",
+    "updated_at": "2020-04-11T05:16:32"
+  },
+  "2": {
+    "cycle_id": "2",
+    "cycle_start_date": "2024-10-08",
+    "cycle_end_date": "2024-10-14",
+    "frequency": "weekly",
+    "cutoff_date": "2024-10-17",
+    "status": "open",
+    "created_at": "2024-08-17T07:05:56",
+    "updated_at": "2023-06-12T21:12:15"
+  },
+  "3": {
+    "cycle_id": "3",
+    "cycle_start_date": "2024-10-15",
+    "cycle_end_date": "2024-10-21",
+    "frequency": "weekly",
+    "cutoff_date": "2024-10-24",
+    "status": "open",
+    "created_at": "2020-12-31T04:16:17",
+    "updated_at": "2025-04-17T07:20:15"
+  },
+  "4": {
+    "cycle_id": "4",
+    "cycle_start_date": "2024-10-22",
+    "cycle_end_date": "2024-10-28",
+    "frequency": "weekly",
+    "cutoff_date": "2024-10-31",
+    "status": "open",
+    "created_at": "2024-08-02T02:11:33",
+    "updated_at": "2024-01-24T13:55:00"
+  },
+  "5": {
+    "cycle_id": "5",
+    "cycle_start_date": "2024-10-29",
+    "cycle_end_date": "2024-11-04",
+    "frequency": "weekly",
+    "cutoff_date": "2024-11-07",
+    "status": "open",
+    "created_at": "2025-07-08T20:30:15",
+    "updated_at": "2020-11-10T05:00:23"
+  },
+  "6": {
+    "cycle_id": "6",
+    "cycle_start_date": "2024-11-05",
+    "cycle_end_date": "2024-11-11",
+    "frequency": "weekly",
+    "cutoff_date": "2024-11-14",
+    "status": "active",
+    "created_at": "2021-06-13T21:30:30",
+    "updated_at": "2020-06-27T22:14:41"
+  },
+  "7": {
+    "cycle_id": "7",
+    "cycle_start_date": "2024-11-12",
+    "cycle_end_date": "2024-11-18",
+    "frequency": "weekly",
+    "cutoff_date": "2024-11-21",
+    "status": "active",
+    "created_at": "2021-11-16T11:15:04",
+    "updated_at": "2024-04-16T13:48:20"
+  },
+  "8": {
+    "cycle_id": "8",
+    "cycle_start_date": "2024-11-19",
+    "cycle_end_date": "2024-11-25",
+    "frequency": "weekly",
+    "cutoff_date": "2024-11-28",
+    "status": "active",
+    "created_at": "2021-01-21T12:58:23",
+    "updated_at": "2020-10-08T21:48:14"
+  },
+  "9": {
+    "cycle_id": "9",
+    "cycle_start_date": "2024-10-01",
+    "cycle_end_date": "2024-10-14",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2024-10-17",
+    "status": "active",
+    "created_at": "2023-02-04T05:43:41",
+    "updated_at": "2025-05-14T04:37:46"
+  },
+  "10": {
+    "cycle_id": "10",
+    "cycle_start_date": "2024-10-15",
+    "cycle_end_date": "2024-10-28",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2024-10-31",
+    "status": "active",
+    "created_at": "2023-05-29T08:32:46",
+    "updated_at": "2023-08-23T18:20:12"
+  },
+  "11": {
+    "cycle_id": "11",
+    "cycle_start_date": "2024-10-29",
+    "cycle_end_date": "2024-11-11",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2024-11-14",
+    "status": "active",
+    "created_at": "2021-10-28T15:04:32",
+    "updated_at": "2025-04-19T01:52:39"
+  },
+  "12": {
+    "cycle_id": "12",
+    "cycle_start_date": "2024-11-12",
+    "cycle_end_date": "2024-11-25",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2024-11-28",
+    "status": "active",
+    "created_at": "2021-06-23T19:43:36",
+    "updated_at": "2021-09-10T19:26:14"
+  },
+  "13": {
+    "cycle_id": "13",
+    "cycle_start_date": "2024-11-26",
+    "cycle_end_date": "2024-12-09",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2024-12-12",
+    "status": "active",
+    "created_at": "2022-03-23T05:05:37",
+    "updated_at": "2020-10-02T11:52:03"
+  },
+  "14": {
+    "cycle_id": "14",
+    "cycle_start_date": "2024-12-10",
+    "cycle_end_date": "2024-12-23",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2024-12-26",
+    "status": "locked",
+    "created_at": "2020-02-14T19:28:39",
+    "updated_at": "2020-07-21T06:29:49"
+  },
+  "15": {
+    "cycle_id": "15",
+    "cycle_start_date": "2024-12-24",
+    "cycle_end_date": "2025-01-06",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2025-01-09",
+    "status": "locked",
+    "created_at": "2022-03-04T22:03:01",
+    "updated_at": "2021-09-30T02:40:47"
+  },
+  "16": {
+    "cycle_id": "16",
+    "cycle_start_date": "2025-01-07",
+    "cycle_end_date": "2025-01-20",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2025-01-23",
+    "status": "locked",
+    "created_at": "2023-05-01T13:30:06",
+    "updated_at": "2021-07-11T05:21:54"
+  },
+  "17": {
+    "cycle_id": "17",
+    "cycle_start_date": "2025-01-21",
+    "cycle_end_date": "2025-02-03",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2025-02-06",
+    "status": "locked",
+    "created_at": "2025-09-23T06:14:00",
+    "updated_at": "2020-10-22T12:08:49"
+  },
+  "18": {
+    "cycle_id": "18",
+    "cycle_start_date": "2025-02-04",
+    "cycle_end_date": "2025-02-17",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2025-02-20",
+    "status": "locked",
+    "created_at": "2025-07-08T08:07:31",
+    "updated_at": "2024-11-15T16:06:22"
+  },
+  "19": {
+    "cycle_id": "19",
+    "cycle_start_date": "2025-02-18",
+    "cycle_end_date": "2025-03-03",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2025-03-06",
+    "status": "closed",
+    "created_at": "2024-01-07T16:37:36",
+    "updated_at": "2022-10-10T04:23:42"
+  },
+  "20": {
+    "cycle_id": "20",
+    "cycle_start_date": "2025-03-04",
+    "cycle_end_date": "2025-03-17",
+    "frequency": "bi_weekly",
+    "cutoff_date": "2025-03-20",
+    "status": "closed",
+    "created_at": "2022-07-03T22:48:52",
+    "updated_at": "2021-09-29T15:30:05"
+  },
+  "21": {
+    "cycle_id": "21",
+    "cycle_start_date": "2024-10-01",
+    "cycle_end_date": "2024-10-31",
+    "frequency": "monthly",
+    "cutoff_date": "2024-11-03",
+    "status": "closed",
+    "created_at": "2024-04-03T19:02:13",
+    "updated_at": "2020-05-30T13:10:04"
+  },
+  "22": {
+    "cycle_id": "22",
+    "cycle_start_date": "2024-10-31",
+    "cycle_end_date": "2024-10-31",
+    "frequency": "monthly",
+    "cutoff_date": "2024-11-03",
+    "status": "closed",
+    "created_at": "2020-12-19T19:47:12",
+    "updated_at": "2023-04-03T13:33:12"
+  },
+  "23": {
+    "cycle_id": "23",
+    "cycle_start_date": "2024-11-30",
+    "cycle_end_date": "2024-11-30",
+    "frequency": "monthly",
+    "cutoff_date": "2024-12-03",
+    "status": "closed",
+    "created_at": "2022-11-06T02:49:06",
+    "updated_at": "2020-12-16T07:50:01"
+  },
+  "24": {
+    "cycle_id": "24",
+    "cycle_start_date": "2024-12-30",
+    "cycle_end_date": "2024-12-31",
+    "frequency": "monthly",
+    "cutoff_date": "2025-01-03",
+    "status": "archived",
+    "created_at": "2022-09-10T06:54:08",
+    "updated_at": "2023-12-10T18:07:58"
+  },
+  "25": {
+    "cycle_id": "25",
+    "cycle_start_date": "2025-01-29",
+    "cycle_end_date": "2025-01-31",
+    "frequency": "monthly",
+    "cutoff_date": "2025-02-03",
+    "status": "archived",
+    "created_at": "2024-11-21T03:44:23",
+    "updated_at": "2021-06-01T07:01:29"
+  },
+  "26": {
+    "cycle_id": "26",
+    "cycle_start_date": "2025-02-28",
+    "cycle_end_date": "2025-02-28",
+    "frequency": "monthly",
+    "cutoff_date": "2025-03-03",
+    "status": "archived",
+    "created_at": "2024-07-03T08:59:24",
+    "updated_at": "2024-12-19T18:58:31"
+  }
+}

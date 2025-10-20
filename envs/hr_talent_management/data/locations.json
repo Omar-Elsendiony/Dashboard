@@ -1,0 +1,182 @@
+{
+  "1": {
+    "location_id": "1",
+    "location_name": "Lake Paulshire Office",
+    "address": "8296 Crawford View",
+    "city_name": "Lake Paulshire",
+    "country": "Saint Martin",
+    "status": "active",
+    "created_at": "2023-10-02T13:33:08"
+  },
+  "2": {
+    "location_id": "2",
+    "location_name": "North Kylie Office",
+    "address": "9540 Smith Brook Apt. 493",
+    "city_name": "North Kylie",
+    "country": "Pakistan",
+    "status": "active",
+    "created_at": "2023-10-14T10:59:41"
+  },
+  "3": {
+    "location_id": "3",
+    "location_name": "Mikaylaburgh Office",
+    "address": "394 Smith Freeway Apt. 697",
+    "city_name": "Mikaylaburgh",
+    "country": "Indonesia",
+    "status": "active",
+    "created_at": "2022-12-05T04:41:10"
+  },
+  "4": {
+    "location_id": "4",
+    "location_name": "East Adamfort Office",
+    "address": "04268 Jeremy Club Apt. 496",
+    "city_name": "East Adamfort",
+    "country": "Netherlands Antilles",
+    "status": "active",
+    "created_at": "2022-02-26T18:51:24"
+  },
+  "5": {
+    "location_id": "5",
+    "location_name": "Meyerchester Office",
+    "address": "891 Ray Track Apt. 205",
+    "city_name": "Meyerchester",
+    "country": "Mali",
+    "status": "active",
+    "created_at": "2022-05-23T13:58:13"
+  },
+  "6": {
+    "location_id": "6",
+    "location_name": "Erikaville Office",
+    "address": "2714 Long Grove Suite 635",
+    "city_name": "Erikaville",
+    "country": "Sweden",
+    "status": "active",
+    "created_at": "2021-06-16T04:30:46"
+  },
+  "7": {
+    "location_id": "7",
+    "location_name": "North Katherine Office",
+    "address": "995 Chad Squares Suite 762",
+    "city_name": "North Katherine",
+    "country": "Marshall Islands",
+    "status": "active",
+    "created_at": "2022-08-12T20:20:20"
+  },
+  "8": {
+    "location_id": "8",
+    "location_name": "North Rachel Office",
+    "address": "95728 Baxter Divide Apt. 435",
+    "city_name": "North Rachel",
+    "country": "Mexico",
+    "status": "active",
+    "created_at": "2024-07-24T08:25:42"
+  },
+  "9": {
+    "location_id": "9",
+    "location_name": "New Larry Office",
+    "address": "777 Kyle Turnpike",
+    "city_name": "New Larry",
+    "country": "Falkland Islands (Malvinas)",
+    "status": "active",
+    "created_at": "2020-11-23T05:03:23"
+  },
+  "10": {
+    "location_id": "10",
+    "location_name": "West Stevenburgh Office",
+    "address": "11479 Bartlett Cove Apt. 628",
+    "city_name": "West Stevenburgh",
+    "country": "British Virgin Islands",
+    "status": "active",
+    "created_at": "2021-07-15T23:58:07"
+  },
+  "11": {
+    "location_id": "11",
+    "location_name": "Port Charles Office",
+    "address": "541 Monica Rest Apt. 906",
+    "city_name": "Port Charles",
+    "country": "Timor-Leste",
+    "status": "inactive",
+    "created_at": "2024-08-04T22:34:50"
+  },
+  "12": {
+    "location_id": "12",
+    "location_name": "East Joshua Office",
+    "address": "37872 Jacobs Dale Apt. 630",
+    "city_name": "East Joshua",
+    "country": "Gabon",
+    "status": "inactive",
+    "created_at": "2022-11-28T23:30:34"
+  },
+  "13": {
+    "location_id": "13",
+    "location_name": "East Andreaberg Office",
+    "address": "6390 Levy Drive Suite 401",
+    "city_name": "East Andreaberg",
+    "country": "New Zealand",
+    "status": "inactive",
+    "created_at": "2025-04-05T10:36:46"
+  },
+  "14": {
+    "location_id": "14",
+    "location_name": "East Sharonland Office",
+    "address": "1561 Robin Roads",
+    "city_name": "East Sharonland",
+    "country": "Comoros",
+    "status": "inactive",
+    "created_at": "2023-06-02T11:40:12"
+  },
+  "15": {
+    "location_id": "15",
+    "location_name": "Michelletown Office",
+    "address": "3661 Andrew Hollow Suite 648",
+    "city_name": "Michelletown",
+    "country": "Congo",
+    "status": "inactive",
+    "created_at": "2022-11-01T09:13:52"
+  },
+  "16": {
+    "location_id": "16",
+    "location_name": "Powellmouth Office",
+    "address": "522 Jeffrey Cove Suite 246",
+    "city_name": "Powellmouth",
+    "country": "French Southern Territories",
+    "status": "active",
+    "created_at": "2020-09-09T02:17:56"
+  },
+  "17": {
+    "location_id": "17",
+    "location_name": "Natashafurt Office",
+    "address": "178 Faulkner Mountains",
+    "city_name": "Natashafurt",
+    "country": "Solomon Islands",
+    "status": "active",
+    "created_at": "2022-11-12T15:15:32"
+  },
+  "18": {
+    "location_id": "18",
+    "location_name": "North Stephanie Office",
+    "address": "8355 Roy Isle Apt. 148",
+    "city_name": "North Stephanie",
+    "country": "Saint Barthelemy",
+    "status": "active",
+    "created_at": "2022-11-03T03:30:18"
+  },
+  "19": {
+    "location_id": "19",
+    "location_name": "Port Debra Office",
+    "address": "4113 Davidson Bridge",
+    "city_name": "Port Debra",
+    "country": "Iraq",
+    "status": "active",
+    "created_at": "2023-06-15T07:35:39"
+  },
+  "20": {
+    "location_id": "20",
+    "location_name": "Baxterville Office",
+    "address": "029 Susan Turnpike",
+    "city_name": "Baxterville",
+    "country": "Egypt",
+    "status": "active",
+    "created_at": "2025-10-08T22:34:00"
+  }
+}
