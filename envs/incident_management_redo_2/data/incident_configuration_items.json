@@ -3,8 +3,6 @@
     "incident_ci_id": "1",
     "incident_id": "1",
     "ci_id": "11",
-    "relationship_type": "primary_affected",
-    "symptoms": "White measure manager range indeed style major bar air set.",
     "identified_at": "2025-10-04T07:58:28",
     "created_at": "2025-10-04T08:01:28"
   },
@@ -12,8 +10,6 @@
     "incident_ci_id": "2",
     "incident_id": "2",
     "ci_id": "3",
-    "relationship_type": "primary_affected",
-    "symptoms": "Allow different eye sit not significant manager member of.",
     "identified_at": "2025-09-20T10:50:46",
     "created_at": "2025-09-20T10:41:46"
   },
@@ -21,8 +17,6 @@
     "incident_ci_id": "3",
     "incident_id": "3",
     "ci_id": "41",
-    "relationship_type": "primary_affected",
-    "symptoms": "Simple statement happen state among rest national wrong bill.",
     "identified_at": "2025-09-22T11:15:13",
     "created_at": "2025-09-22T10:56:13"
   },
@@ -30,8 +24,6 @@
     "incident_ci_id": "4",
     "incident_id": "4",
     "ci_id": "30",
-    "relationship_type": "primary_affected",
-    "symptoms": "Fear yourself last give stage keep yes simply down.",
     "identified_at": "2025-10-08T15:16:26",
     "created_at": "2025-10-08T15:05:26"
   },
@@ -39,8 +31,6 @@
     "incident_ci_id": "5",
     "incident_id": "5",
     "ci_id": "26",
-    "relationship_type": "primary_affected",
-    "symptoms": "Ready technology particular into pattern size spend south now mother others collection without.",
     "identified_at": "2025-10-03T12:44:44",
     "created_at": "2025-10-03T12:32:44"
   },
@@ -48,8 +38,6 @@
     "incident_ci_id": "6",
     "incident_id": "6",
     "ci_id": "3",
-    "relationship_type": "primary_affected",
-    "symptoms": "Eye environment teach world quickly believe while size try.",
     "identified_at": "2025-09-26T10:59:46",
     "created_at": "2025-09-26T11:09:46"
   },
@@ -57,8 +45,6 @@
     "incident_ci_id": "7",
     "incident_id": "7",
     "ci_id": "46",
-    "relationship_type": "primary_affected",
-    "symptoms": "Term camera tend economic represent stock seven put majority.",
     "identified_at": "2025-09-20T02:24:29",
     "created_at": "2025-09-20T02:08:29"
   },
@@ -66,8 +52,6 @@
     "incident_ci_id": "8",
     "incident_id": "8",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Plan physical heart away some shoulder idea seek reason theory lawyer maintain old.",
     "identified_at": "2025-10-01T12:08:31",
     "created_at": "2025-10-01T12:00:31"
   },
@@ -75,8 +59,6 @@
     "incident_ci_id": "9",
     "incident_id": "9",
     "ci_id": "30",
-    "relationship_type": "primary_affected",
-    "symptoms": "Room learn professional group as move design.",
     "identified_at": "2025-09-21T07:57:06",
     "created_at": "2025-09-21T08:02:06"
   },
@@ -84,8 +66,6 @@
     "incident_ci_id": "10",
     "incident_id": "10",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Station manager follow exist natural candidate system small thus several animal.",
     "identified_at": "2025-09-24T05:47:56",
     "created_at": "2025-09-24T05:42:56"
   },
@@ -93,8 +73,6 @@
     "incident_ci_id": "11",
     "incident_id": "11",
     "ci_id": "29",
-    "relationship_type": "primary_affected",
-    "symptoms": "Six least buy tax kid a when dark read car practice city usually ever.",
     "identified_at": "2025-09-21T07:24:38",
     "created_at": "2025-09-21T07:17:38"
   },
@@ -102,8 +80,6 @@
     "incident_ci_id": "12",
     "incident_id": "11",
     "ci_id": "9",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Economy head tough close how figure record doctor pretty region.",
     "identified_at": "2025-09-21T07:35:38",
     "created_at": "2025-09-21T07:17:38"
   },
@@ -111,8 +87,6 @@
     "incident_ci_id": "13",
     "incident_id": "12",
     "ci_id": "2",
-    "relationship_type": "primary_affected",
-    "symptoms": "Degree back order mind knowledge account.",
     "identified_at": "2025-09-19T03:03:46",
     "created_at": "2025-09-19T02:58:46"
   },
@@ -120,8 +94,6 @@
     "incident_ci_id": "14",
     "incident_id": "13",
     "ci_id": "19",
-    "relationship_type": "primary_affected",
-    "symptoms": "Stage write institution car audience him room bill finish thing.",
     "identified_at": "2025-10-06T11:22:01",
     "created_at": "2025-10-06T11:28:01"
   },
@@ -129,8 +101,6 @@
     "incident_ci_id": "15",
     "incident_id": "14",
     "ci_id": "26",
-    "relationship_type": "primary_affected",
-    "symptoms": "Him spend themselves political quality attention none.",
     "identified_at": "2025-09-22T16:30:16",
     "created_at": "2025-09-22T16:37:16"
   },
@@ -138,8 +108,6 @@
     "incident_ci_id": "16",
     "incident_id": "15",
     "ci_id": "49",
-    "relationship_type": "primary_affected",
-    "symptoms": "Practice key reveal physical character in rather team beautiful beyond sell operation himself.",
     "identified_at": "2025-09-22T22:22:20",
     "created_at": "2025-09-22T22:23:20"
   },
@@ -147,8 +115,6 @@
     "incident_ci_id": "17",
     "incident_id": "16",
     "ci_id": "10",
-    "relationship_type": "primary_affected",
-    "symptoms": "Fire cause everybody base network outside parent single real summer probably.",
     "identified_at": "2025-09-19T17:38:46",
     "created_at": "2025-09-19T17:28:46"
   },
@@ -156,8 +122,6 @@
     "incident_ci_id": "18",
     "incident_id": "17",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Day parent country hot position six soldier dream history.",
     "identified_at": "2025-09-18T21:08:18",
     "created_at": "2025-09-18T20:57:18"
   },
@@ -165,8 +129,6 @@
     "incident_ci_id": "19",
     "incident_id": "18",
     "ci_id": "44",
-    "relationship_type": "primary_affected",
-    "symptoms": "Matter order month within would value car team nothing.",
     "identified_at": "2025-09-20T08:06:04",
     "created_at": "2025-09-20T07:57:04"
   },
@@ -174,8 +136,6 @@
     "incident_ci_id": "20",
     "incident_id": "19",
     "ci_id": "45",
-    "relationship_type": "primary_affected",
-    "symptoms": "National common likely would authority onto add democratic two we.",
     "identified_at": "2025-09-19T11:50:33",
     "created_at": "2025-09-19T11:50:33"
   },
@@ -183,8 +143,6 @@
     "incident_ci_id": "21",
     "incident_id": "20",
     "ci_id": "34",
-    "relationship_type": "primary_affected",
-    "symptoms": "Media pick may indeed reduce bar Mr pattern everyone finally memory.",
     "identified_at": "2025-09-19T04:41:17",
     "created_at": "2025-09-19T04:23:17"
   },
@@ -192,8 +150,6 @@
     "incident_ci_id": "22",
     "incident_id": "20",
     "ci_id": "42",
-    "relationship_type": "related",
-    "symptoms": "Window choice force only shake power poor financial.",
     "identified_at": "2025-09-19T04:41:17",
     "created_at": "2025-09-19T04:23:17"
   },
@@ -201,8 +157,6 @@
     "incident_ci_id": "23",
     "incident_id": "21",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "Role suffer around beat its law participant finally score scientist budget.",
     "identified_at": "2025-09-22T15:35:37",
     "created_at": "2025-09-22T15:33:37"
   },
@@ -210,8 +164,6 @@
     "incident_ci_id": "24",
     "incident_id": "21",
     "ci_id": "45",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Reduce clearly well mission situation result cold.",
     "identified_at": "2025-09-22T15:27:37",
     "created_at": "2025-09-22T15:33:37"
   },
@@ -219,8 +171,6 @@
     "incident_ci_id": "25",
     "incident_id": "22",
     "ci_id": "4",
-    "relationship_type": "primary_affected",
-    "symptoms": "Seek them run brother tonight friend investment.",
     "identified_at": "2025-10-09T19:50:39",
     "created_at": "2025-10-09T19:41:39"
   },
@@ -228,8 +178,6 @@
     "incident_ci_id": "26",
     "incident_id": "23",
     "ci_id": "13",
-    "relationship_type": "primary_affected",
-    "symptoms": "Ask Republican office baby lawyer growth matter note happy effort bill off.",
     "identified_at": "2025-10-03T14:26:24",
     "created_at": "2025-10-03T14:04:24"
   },
@@ -237,8 +185,6 @@
     "incident_ci_id": "27",
     "incident_id": "24",
     "ci_id": "16",
-    "relationship_type": "primary_affected",
-    "symptoms": "Direction meeting analysis television each line him.",
     "identified_at": "2025-10-10T12:07:19",
     "created_at": "2025-10-10T12:03:19"
   },
@@ -246,8 +192,6 @@
     "incident_ci_id": "28",
     "incident_id": "25",
     "ci_id": "27",
-    "relationship_type": "primary_affected",
-    "symptoms": "Condition whether along sort research pretty different.",
     "identified_at": "2025-10-09T06:50:52",
     "created_at": "2025-10-09T07:00:52"
   },
@@ -255,8 +199,6 @@
     "incident_ci_id": "29",
     "incident_id": "26",
     "ci_id": "22",
-    "relationship_type": "primary_affected",
-    "symptoms": "Indicate result even back head maybe top conference source.",
     "identified_at": "2025-09-18T12:50:31",
     "created_at": "2025-09-18T12:35:31"
   },
@@ -264,8 +206,6 @@
     "incident_ci_id": "30",
     "incident_id": "26",
     "ci_id": "13",
-    "relationship_type": "related",
-    "symptoms": "West attention let executive suddenly force.",
     "identified_at": "2025-09-18T12:31:31",
     "created_at": "2025-09-18T12:35:31"
   },
@@ -273,8 +213,6 @@
     "incident_ci_id": "31",
     "incident_id": "27",
     "ci_id": "7",
-    "relationship_type": "primary_affected",
-    "symptoms": "Lead hard factor six science drug happy will young simply run national somebody.",
     "identified_at": "2025-09-22T02:46:03",
     "created_at": "2025-09-22T02:28:03"
   },
@@ -282,8 +220,6 @@
     "incident_ci_id": "32",
     "incident_id": "28",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "According improve do get style theory week.",
     "identified_at": "2025-10-06T19:44:49",
     "created_at": "2025-10-06T19:25:49"
   },
@@ -291,8 +227,6 @@
     "incident_ci_id": "33",
     "incident_id": "28",
     "ci_id": "11",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Serve heavy scene film day work.",
     "identified_at": "2025-10-06T19:22:49",
     "created_at": "2025-10-06T19:25:49"
   },
@@ -300,8 +234,6 @@
     "incident_ci_id": "34",
     "incident_id": "29",
     "ci_id": "7",
-    "relationship_type": "primary_affected",
-    "symptoms": "Man art young Republican behavior TV today mind red head window.",
     "identified_at": "2025-09-17T22:17:39",
     "created_at": "2025-09-17T22:04:39"
   },
@@ -309,8 +241,6 @@
     "incident_ci_id": "35",
     "incident_id": "30",
     "ci_id": "36",
-    "relationship_type": "primary_affected",
-    "symptoms": "Oil measure PM hour option artist production.",
     "identified_at": "2025-09-18T21:35:41",
     "created_at": "2025-09-18T21:16:41"
   },
@@ -318,8 +248,6 @@
     "incident_ci_id": "36",
     "incident_id": "31",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Door end fire song red save fish.",
     "identified_at": "2025-09-27T06:04:36",
     "created_at": "2025-09-27T05:50:36"
   },
@@ -327,8 +255,6 @@
     "incident_ci_id": "37",
     "incident_id": "32",
     "ci_id": "28",
-    "relationship_type": "primary_affected",
-    "symptoms": "Do want carry show board black last finish building.",
     "identified_at": "2025-09-25T01:46:03",
     "created_at": "2025-09-25T01:55:03"
   },
@@ -336,8 +262,6 @@
     "incident_ci_id": "38",
     "incident_id": "33",
     "ci_id": "7",
-    "relationship_type": "primary_affected",
-    "symptoms": "Who debate final enter build citizen rather step recent American.",
     "identified_at": "2025-10-12T05:43:55",
     "created_at": "2025-10-12T05:37:55"
   },
@@ -345,8 +269,6 @@
     "incident_ci_id": "39",
     "incident_id": "34",
     "ci_id": "1",
-    "relationship_type": "primary_affected",
-    "symptoms": "Chance represent why how any federal star community weight take.",
     "identified_at": "2025-09-19T22:18:15",
     "created_at": "2025-09-19T22:21:15"
   },
@@ -354,8 +276,6 @@
     "incident_ci_id": "40",
     "incident_id": "35",
     "ci_id": "1",
-    "relationship_type": "primary_affected",
-    "symptoms": "Security economic left sound cause activity store work candidate statement head piece popular.",
     "identified_at": "2025-09-25T14:40:44",
     "created_at": "2025-09-25T14:36:44"
   },
@@ -363,8 +283,6 @@
     "incident_ci_id": "41",
     "incident_id": "36",
     "ci_id": "15",
-    "relationship_type": "primary_affected",
-    "symptoms": "Only true avoid young cup position speak begin suggest speak business walk anything.",
     "identified_at": "2025-09-19T13:00:16",
     "created_at": "2025-09-19T13:03:16"
   },
@@ -372,8 +290,6 @@
     "incident_ci_id": "42",
     "incident_id": "37",
     "ci_id": "18",
-    "relationship_type": "primary_affected",
-    "symptoms": "Item right many him interview government traditional every land chance pass pay positive.",
     "identified_at": "2025-09-21T13:09:58",
     "created_at": "2025-09-21T13:04:58"
   },
@@ -381,8 +297,6 @@
     "incident_ci_id": "43",
     "incident_id": "38",
     "ci_id": "3",
-    "relationship_type": "primary_affected",
-    "symptoms": "Include nearly article evidence case current this moment piece soon some writer.",
     "identified_at": "2025-10-12T04:05:22",
     "created_at": "2025-10-12T04:15:22"
   },
@@ -390,8 +304,6 @@
     "incident_ci_id": "44",
     "incident_id": "39",
     "ci_id": "27",
-    "relationship_type": "primary_affected",
-    "symptoms": "Look sit general not focus establish ago others ahead specific.",
     "identified_at": "2025-10-13T10:43:34",
     "created_at": "2025-10-13T10:22:34"
   },
@@ -399,8 +311,6 @@
     "incident_ci_id": "45",
     "incident_id": "39",
     "ci_id": "20",
-    "relationship_type": "related",
-    "symptoms": "Around yard morning short yourself wind beyond prevent entire.",
     "identified_at": "2025-10-13T10:34:34",
     "created_at": "2025-10-13T10:22:34"
   },
@@ -408,8 +318,6 @@
     "incident_ci_id": "46",
     "incident_id": "40",
     "ci_id": "7",
-    "relationship_type": "primary_affected",
-    "symptoms": "Shake way offer work home very.",
     "identified_at": "2025-09-21T03:55:01",
     "created_at": "2025-09-21T03:43:01"
   },
@@ -417,8 +325,6 @@
     "incident_ci_id": "47",
     "incident_id": "40",
     "ci_id": "46",
-    "relationship_type": "related",
-    "symptoms": "Compare or south recently trial agreement red way.",
     "identified_at": "2025-09-21T03:43:01",
     "created_at": "2025-09-21T03:43:01"
   },
@@ -426,8 +332,6 @@
     "incident_ci_id": "48",
     "incident_id": "41",
     "ci_id": "7",
-    "relationship_type": "primary_affected",
-    "symptoms": "Center way student special wife my compare also argue own after long forward.",
     "identified_at": "2025-10-09T10:00:04",
     "created_at": "2025-10-09T09:52:04"
   },
@@ -435,8 +339,6 @@
     "incident_ci_id": "49",
     "incident_id": "42",
     "ci_id": "41",
-    "relationship_type": "primary_affected",
-    "symptoms": "Cut candidate response try such food against only true similar suffer team whether.",
     "identified_at": "2025-09-21T17:18:53",
     "created_at": "2025-09-21T16:58:53"
   },
@@ -444,8 +346,6 @@
     "incident_ci_id": "50",
     "incident_id": "43",
     "ci_id": "50",
-    "relationship_type": "primary_affected",
-    "symptoms": "Relate product only from follow wish run join police maintain.",
     "identified_at": "2025-09-20T03:20:18",
     "created_at": "2025-09-20T02:59:18"
   },
@@ -453,8 +353,6 @@
     "incident_ci_id": "51",
     "incident_id": "44",
     "ci_id": "12",
-    "relationship_type": "primary_affected",
-    "symptoms": "Company why really up skin development open compare fill read.",
     "identified_at": "2025-09-24T23:03:03",
     "created_at": "2025-09-24T22:50:03"
   },
@@ -462,8 +360,6 @@
     "incident_ci_id": "52",
     "incident_id": "45",
     "ci_id": "45",
-    "relationship_type": "primary_affected",
-    "symptoms": "Concern ability reduce of surface side nothing.",
     "identified_at": "2025-10-02T12:24:21",
     "created_at": "2025-10-02T12:11:21"
   },
@@ -471,8 +367,6 @@
     "incident_ci_id": "53",
     "incident_id": "45",
     "ci_id": "21",
-    "relationship_type": "related",
-    "symptoms": "Own TV whose determine not view cell seat.",
     "identified_at": "2025-10-02T12:12:21",
     "created_at": "2025-10-02T12:11:21"
   },
@@ -480,8 +374,6 @@
     "incident_ci_id": "54",
     "incident_id": "46",
     "ci_id": "2",
-    "relationship_type": "primary_affected",
-    "symptoms": "Get floor player white start prove role from activity.",
     "identified_at": "2025-09-28T01:31:10",
     "created_at": "2025-09-28T01:15:10"
   },
@@ -489,8 +381,6 @@
     "incident_ci_id": "55",
     "incident_id": "47",
     "ci_id": "29",
-    "relationship_type": "primary_affected",
-    "symptoms": "Economic attack either blue ability history run why.",
     "identified_at": "2025-09-20T21:41:19",
     "created_at": "2025-09-20T21:36:19"
   },
@@ -498,8 +388,6 @@
     "incident_ci_id": "56",
     "incident_id": "47",
     "ci_id": "25",
-    "relationship_type": "related",
-    "symptoms": "Manage her national big look tell prepare reach class available suffer.",
     "identified_at": "2025-09-20T21:48:19",
     "created_at": "2025-09-20T21:36:19"
   },
@@ -507,8 +395,6 @@
     "incident_ci_id": "57",
     "incident_id": "48",
     "ci_id": "38",
-    "relationship_type": "primary_affected",
-    "symptoms": "After end bit game thousand claim avoid walk within.",
     "identified_at": "2025-09-20T08:06:57",
     "created_at": "2025-09-20T07:58:57"
   },
@@ -516,8 +402,6 @@
     "incident_ci_id": "58",
     "incident_id": "49",
     "ci_id": "15",
-    "relationship_type": "primary_affected",
-    "symptoms": "Order party lot all wall close threat church big day.",
     "identified_at": "2025-10-12T08:06:41",
     "created_at": "2025-10-12T07:54:41"
   },
@@ -525,8 +409,6 @@
     "incident_ci_id": "59",
     "incident_id": "49",
     "ci_id": "2",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Important never understand music produce father benefit hotel.",
     "identified_at": "2025-10-12T07:56:41",
     "created_at": "2025-10-12T07:54:41"
   },
@@ -534,8 +416,6 @@
     "incident_ci_id": "60",
     "incident_id": "50",
     "ci_id": "28",
-    "relationship_type": "primary_affected",
-    "symptoms": "Style child guess into far product outside current agent color factor bank such.",
     "identified_at": "2025-10-16T15:36:32",
     "created_at": "2025-10-16T15:26:32"
   },
@@ -543,8 +423,6 @@
     "incident_ci_id": "61",
     "incident_id": "51",
     "ci_id": "6",
-    "relationship_type": "primary_affected",
-    "symptoms": "Size likely thus enter politics hold he high cost.",
     "identified_at": "2025-09-26T21:26:22",
     "created_at": "2025-09-26T21:31:22"
   },
@@ -552,8 +430,6 @@
     "incident_ci_id": "62",
     "incident_id": "52",
     "ci_id": "32",
-    "relationship_type": "primary_affected",
-    "symptoms": "Enjoy let difficult environmental article sell.",
     "identified_at": "2025-09-24T17:43:11",
     "created_at": "2025-09-24T17:47:11"
   },
@@ -561,8 +437,6 @@
     "incident_ci_id": "63",
     "incident_id": "53",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "Beat gas must wife operation network subject.",
     "identified_at": "2025-10-11T17:38:13",
     "created_at": "2025-10-11T17:35:13"
   },
@@ -570,8 +444,6 @@
     "incident_ci_id": "64",
     "incident_id": "54",
     "ci_id": "16",
-    "relationship_type": "primary_affected",
-    "symptoms": "Industry movement term little think live bad total research maybe too song.",
     "identified_at": "2025-10-09T00:35:58",
     "created_at": "2025-10-09T00:19:58"
   },
@@ -579,8 +451,6 @@
     "incident_ci_id": "65",
     "incident_id": "55",
     "ci_id": "29",
-    "relationship_type": "primary_affected",
-    "symptoms": "Challenge we last we cold deep cover amount bad raise dark state challenge.",
     "identified_at": "2025-10-16T19:15:02",
     "created_at": "2025-10-16T18:52:02"
   },
@@ -588,8 +458,6 @@
     "incident_ci_id": "66",
     "incident_id": "55",
     "ci_id": "48",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Election treat trial attack hold however for everybody leader them skill performance mission.",
     "identified_at": "2025-10-16T18:51:02",
     "created_at": "2025-10-16T18:52:02"
   },
@@ -597,8 +465,6 @@
     "incident_ci_id": "67",
     "incident_id": "56",
     "ci_id": "42",
-    "relationship_type": "primary_affected",
-    "symptoms": "Both change note old who beyond black single size test they.",
     "identified_at": "2025-09-20T10:29:51",
     "created_at": "2025-09-20T10:18:51"
   },
@@ -606,8 +472,6 @@
     "incident_ci_id": "68",
     "incident_id": "57",
     "ci_id": "34",
-    "relationship_type": "primary_affected",
-    "symptoms": "Enough pressure occur list common idea peace race I how these.",
     "identified_at": "2025-10-09T18:59:21",
     "created_at": "2025-10-09T18:52:21"
   },
@@ -615,8 +479,6 @@
     "incident_ci_id": "69",
     "incident_id": "57",
     "ci_id": "27",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Any little environmental head full soldier financial successful teach.",
     "identified_at": "2025-10-09T19:03:21",
     "created_at": "2025-10-09T18:52:21"
   },
@@ -624,8 +486,6 @@
     "incident_ci_id": "70",
     "incident_id": "58",
     "ci_id": "47",
-    "relationship_type": "primary_affected",
-    "symptoms": "Win direction feel season similar fly rock.",
     "identified_at": "2025-09-21T06:39:06",
     "created_at": "2025-09-21T06:30:06"
   },
@@ -633,8 +493,6 @@
     "incident_ci_id": "71",
     "incident_id": "59",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Population could deep station scientist service test start middle city find medical career.",
     "identified_at": "2025-09-28T18:53:36",
     "created_at": "2025-09-28T18:39:36"
   },
@@ -642,8 +500,6 @@
     "incident_ci_id": "72",
     "incident_id": "60",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "These ahead cover strategy student economic lead truth relate ever statement measure.",
     "identified_at": "2025-10-16T02:19:56",
     "created_at": "2025-10-16T02:21:56"
   },
@@ -651,8 +507,6 @@
     "incident_ci_id": "73",
     "incident_id": "61",
     "ci_id": "45",
-    "relationship_type": "primary_affected",
-    "symptoms": "Race drop major land whether listen necessary.",
     "identified_at": "2025-10-10T23:45:56",
     "created_at": "2025-10-10T23:39:56"
   },
@@ -660,8 +514,6 @@
     "incident_ci_id": "74",
     "incident_id": "61",
     "ci_id": "47",
-    "relationship_type": "related",
-    "symptoms": "Clear thus see read expect hit clear occur who tax.",
     "identified_at": "2025-10-11T00:05:56",
     "created_at": "2025-10-10T23:39:56"
   },
@@ -669,8 +521,6 @@
     "incident_ci_id": "75",
     "incident_id": "62",
     "ci_id": "21",
-    "relationship_type": "primary_affected",
-    "symptoms": "Question especially important after sister should across treatment.",
     "identified_at": "2025-10-16T08:09:35",
     "created_at": "2025-10-16T08:11:35"
   },
@@ -678,8 +528,6 @@
     "incident_ci_id": "76",
     "incident_id": "63",
     "ci_id": "1",
-    "relationship_type": "primary_affected",
-    "symptoms": "Over across education source figure whom poor interest.",
     "identified_at": "2025-10-03T02:10:43",
     "created_at": "2025-10-03T02:20:43"
   },
@@ -687,8 +535,6 @@
     "incident_ci_id": "77",
     "incident_id": "64",
     "ci_id": "5",
-    "relationship_type": "primary_affected",
-    "symptoms": "Surface learn design few minute perhaps once account yourself whom.",
     "identified_at": "2025-09-20T11:52:46",
     "created_at": "2025-09-20T11:55:46"
   },
@@ -696,8 +542,6 @@
     "incident_ci_id": "78",
     "incident_id": "64",
     "ci_id": "13",
-    "relationship_type": "related",
-    "symptoms": "No order executive range loss from everybody foot everybody prevent.",
     "identified_at": "2025-09-20T11:55:46",
     "created_at": "2025-09-20T11:55:46"
   },
@@ -705,8 +549,6 @@
     "incident_ci_id": "79",
     "incident_id": "65",
     "ci_id": "9",
-    "relationship_type": "primary_affected",
-    "symptoms": "Could military drive arm tax special identify floor cause.",
     "identified_at": "2025-09-27T04:41:44",
     "created_at": "2025-09-27T04:37:44"
   },
@@ -714,8 +556,6 @@
     "incident_ci_id": "80",
     "incident_id": "65",
     "ci_id": "6",
-    "relationship_type": "related",
-    "symptoms": "Pretty young else industry home along.",
     "identified_at": "2025-09-27T04:53:44",
     "created_at": "2025-09-27T04:37:44"
   },
@@ -723,8 +563,6 @@
     "incident_ci_id": "81",
     "incident_id": "66",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Staff gas require rather point little wait grow feel color price next family.",
     "identified_at": "2025-09-30T21:20:21",
     "created_at": "2025-09-30T21:16:21"
   },
@@ -732,8 +570,6 @@
     "incident_ci_id": "82",
     "incident_id": "66",
     "ci_id": "16",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Campaign else space several consumer quite friend become great season film small.",
     "identified_at": "2025-09-30T21:17:21",
     "created_at": "2025-09-30T21:16:21"
   },
@@ -741,8 +577,6 @@
     "incident_ci_id": "83",
     "incident_id": "67",
     "ci_id": "20",
-    "relationship_type": "primary_affected",
-    "symptoms": "He one less brother approach plant oil per line create.",
     "identified_at": "2025-10-15T15:56:05",
     "created_at": "2025-10-15T15:38:05"
   },
@@ -750,8 +584,6 @@
     "incident_ci_id": "84",
     "incident_id": "67",
     "ci_id": "11",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Test high fear approach take case customer.",
     "identified_at": "2025-10-15T15:40:05",
     "created_at": "2025-10-15T15:38:05"
   },
@@ -759,8 +591,6 @@
     "incident_ci_id": "85",
     "incident_id": "68",
     "ci_id": "39",
-    "relationship_type": "primary_affected",
-    "symptoms": "Would throughout would century television Congress ball forward would finish around.",
     "identified_at": "2025-09-25T03:35:16",
     "created_at": "2025-09-25T03:36:16"
   },
@@ -768,8 +598,6 @@
     "incident_ci_id": "86",
     "incident_id": "69",
     "ci_id": "37",
-    "relationship_type": "primary_affected",
-    "symptoms": "Event seven collection share majority shake because pass plant idea whole.",
     "identified_at": "2025-09-28T13:29:41",
     "created_at": "2025-09-28T13:26:41"
   },
@@ -777,8 +605,6 @@
     "incident_ci_id": "87",
     "incident_id": "70",
     "ci_id": "13",
-    "relationship_type": "primary_affected",
-    "symptoms": "Above move room wear throughout series most adult above safe.",
     "identified_at": "2025-09-20T05:09:33",
     "created_at": "2025-09-20T04:43:33"
   },
@@ -786,8 +612,6 @@
     "incident_ci_id": "88",
     "incident_id": "70",
     "ci_id": "18",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Really general can himself open cold statement fear.",
     "identified_at": "2025-09-20T04:44:33",
     "created_at": "2025-09-20T04:43:33"
   },
@@ -795,8 +619,6 @@
     "incident_ci_id": "89",
     "incident_id": "71",
     "ci_id": "24",
-    "relationship_type": "primary_affected",
-    "symptoms": "Lay minute model its rather card you majority seek.",
     "identified_at": "2025-10-07T21:34:45",
     "created_at": "2025-10-07T21:23:45"
   },
@@ -804,8 +626,6 @@
     "incident_ci_id": "90",
     "incident_id": "71",
     "ci_id": "26",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Way truth idea direction road capital safe operation.",
     "identified_at": "2025-10-07T21:37:45",
     "created_at": "2025-10-07T21:23:45"
   },
@@ -813,8 +633,6 @@
     "incident_ci_id": "91",
     "incident_id": "72",
     "ci_id": "33",
-    "relationship_type": "primary_affected",
-    "symptoms": "But represent society heart policy side perhaps order.",
     "identified_at": "2025-09-17T19:02:13",
     "created_at": "2025-09-17T18:53:13"
   },
@@ -822,8 +640,6 @@
     "incident_ci_id": "92",
     "incident_id": "73",
     "ci_id": "49",
-    "relationship_type": "primary_affected",
-    "symptoms": "Product president after ready indicate herself.",
     "identified_at": "2025-10-02T17:20:11",
     "created_at": "2025-10-02T16:57:11"
   },
@@ -831,8 +647,6 @@
     "incident_ci_id": "93",
     "incident_id": "73",
     "ci_id": "10",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Education reduce day rate act inside big minute performance red industry together memory.",
     "identified_at": "2025-10-02T16:54:11",
     "created_at": "2025-10-02T16:57:11"
   },
@@ -840,8 +654,6 @@
     "incident_ci_id": "94",
     "incident_id": "74",
     "ci_id": "28",
-    "relationship_type": "primary_affected",
-    "symptoms": "Brother box blood cup current enjoy mission cut region far always many debate.",
     "identified_at": "2025-10-09T16:43:25",
     "created_at": "2025-10-09T16:25:25"
   },
@@ -849,8 +661,6 @@
     "incident_ci_id": "95",
     "incident_id": "74",
     "ci_id": "6",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Former able public trade structure protect chance bed memory rich big eight.",
     "identified_at": "2025-10-09T16:38:25",
     "created_at": "2025-10-09T16:25:25"
   },
@@ -858,8 +668,6 @@
     "incident_ci_id": "96",
     "incident_id": "75",
     "ci_id": "36",
-    "relationship_type": "primary_affected",
-    "symptoms": "Lead with enough anyone spend them system growth.",
     "identified_at": "2025-09-22T16:07:06",
     "created_at": "2025-09-22T15:53:06"
   },
@@ -867,8 +675,6 @@
     "incident_ci_id": "97",
     "incident_id": "76",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "International break surface three act catch positive forget thus western.",
     "identified_at": "2025-09-19T06:03:07",
     "created_at": "2025-09-19T05:55:07"
   },
@@ -876,8 +682,6 @@
     "incident_ci_id": "98",
     "incident_id": "77",
     "ci_id": "19",
-    "relationship_type": "primary_affected",
-    "symptoms": "There behavior spring consumer husband while even history surface.",
     "identified_at": "2025-09-19T00:51:15",
     "created_at": "2025-09-19T00:45:15"
   },
@@ -885,8 +689,6 @@
     "incident_ci_id": "99",
     "incident_id": "78",
     "ci_id": "31",
-    "relationship_type": "primary_affected",
-    "symptoms": "Power someone both receive around wall city indeed opportunity soon question.",
     "identified_at": "2025-09-19T14:24:32",
     "created_at": "2025-09-19T14:34:32"
   },
@@ -894,8 +696,6 @@
     "incident_ci_id": "100",
     "incident_id": "79",
     "ci_id": "46",
-    "relationship_type": "primary_affected",
-    "symptoms": "Particularly single particularly television they road through low.",
     "identified_at": "2025-09-23T08:14:03",
     "created_at": "2025-09-23T08:10:03"
   },
@@ -903,8 +703,6 @@
     "incident_ci_id": "101",
     "incident_id": "80",
     "ci_id": "13",
-    "relationship_type": "primary_affected",
-    "symptoms": "Both in animal energy fire relate question should office north within prove.",
     "identified_at": "2025-10-08T00:09:10",
     "created_at": "2025-10-08T00:20:10"
   },
@@ -912,8 +710,6 @@
     "incident_ci_id": "102",
     "incident_id": "81",
     "ci_id": "33",
-    "relationship_type": "primary_affected",
-    "symptoms": "Mind read peace item risk loss professional political chance step.",
     "identified_at": "2025-10-13T20:29:21",
     "created_at": "2025-10-13T20:09:21"
   },
@@ -921,8 +717,6 @@
     "incident_ci_id": "103",
     "incident_id": "82",
     "ci_id": "32",
-    "relationship_type": "primary_affected",
-    "symptoms": "Approach poor church support system thank avoid man drive wife anyone development poor.",
     "identified_at": "2025-10-10T10:52:13",
     "created_at": "2025-10-10T10:28:13"
   },
@@ -930,8 +724,6 @@
     "incident_ci_id": "104",
     "incident_id": "82",
     "ci_id": "26",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Stage bad know of because material firm wonder seat adult idea.",
     "identified_at": "2025-10-10T10:53:13",
     "created_at": "2025-10-10T10:28:13"
   },
@@ -939,8 +731,6 @@
     "incident_ci_id": "105",
     "incident_id": "83",
     "ci_id": "48",
-    "relationship_type": "primary_affected",
-    "symptoms": "News a before page people fight.",
     "identified_at": "2025-09-24T03:28:24",
     "created_at": "2025-09-24T03:26:24"
   },
@@ -948,8 +738,6 @@
     "incident_ci_id": "106",
     "incident_id": "84",
     "ci_id": "20",
-    "relationship_type": "primary_affected",
-    "symptoms": "None pressure lay future stay staff such forward should outside respond guy.",
     "identified_at": "2025-09-18T17:24:56",
     "created_at": "2025-09-18T17:07:56"
   },
@@ -957,8 +745,6 @@
     "incident_ci_id": "107",
     "incident_id": "85",
     "ci_id": "5",
-    "relationship_type": "primary_affected",
-    "symptoms": "Box service develop game stop who factor miss reduce animal clearly.",
     "identified_at": "2025-10-06T18:28:37",
     "created_at": "2025-10-06T18:15:37"
   },
@@ -966,8 +752,6 @@
     "incident_ci_id": "108",
     "incident_id": "85",
     "ci_id": "27",
-    "relationship_type": "secondary_affected",
-    "symptoms": "State score important effect cultural building system.",
     "identified_at": "2025-10-06T18:29:37",
     "created_at": "2025-10-06T18:15:37"
   },
@@ -975,8 +759,6 @@
     "incident_ci_id": "109",
     "incident_id": "86",
     "ci_id": "37",
-    "relationship_type": "primary_affected",
-    "symptoms": "Lead sit response blue increase unit study open.",
     "identified_at": "2025-10-07T23:56:14",
     "created_at": "2025-10-07T23:59:14"
   },
@@ -984,8 +766,6 @@
     "incident_ci_id": "110",
     "incident_id": "87",
     "ci_id": "28",
-    "relationship_type": "primary_affected",
-    "symptoms": "Leader operation mean white above save network item one under sit.",
     "identified_at": "2025-10-07T11:33:58",
     "created_at": "2025-10-07T11:06:58"
   },
@@ -993,8 +773,6 @@
     "incident_ci_id": "111",
     "incident_id": "88",
     "ci_id": "49",
-    "relationship_type": "primary_affected",
-    "symptoms": "Reality community spring billion price paper focus thing.",
     "identified_at": "2025-09-22T06:50:37",
     "created_at": "2025-09-22T06:32:37"
   },
@@ -1002,8 +780,6 @@
     "incident_ci_id": "112",
     "incident_id": "89",
     "ci_id": "46",
-    "relationship_type": "primary_affected",
-    "symptoms": "Woman trouble several event white wife laugh card include record security.",
     "identified_at": "2025-09-26T08:53:15",
     "created_at": "2025-09-26T08:47:15"
   },
@@ -1011,8 +787,6 @@
     "incident_ci_id": "113",
     "incident_id": "90",
     "ci_id": "24",
-    "relationship_type": "primary_affected",
-    "symptoms": "Successful natural finish say network design decide research rather.",
     "identified_at": "2025-10-15T08:32:31",
     "created_at": "2025-10-15T08:25:31"
   },
@@ -1020,8 +794,6 @@
     "incident_ci_id": "114",
     "incident_id": "91",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "Wonder practice when mean reason follow break.",
     "identified_at": "2025-09-22T04:16:57",
     "created_at": "2025-09-22T03:59:57"
   },
@@ -1029,8 +801,6 @@
     "incident_ci_id": "115",
     "incident_id": "92",
     "ci_id": "16",
-    "relationship_type": "primary_affected",
-    "symptoms": "No old wall report purpose throw move there institution actually.",
     "identified_at": "2025-10-07T17:21:29",
     "created_at": "2025-10-07T17:22:29"
   },
@@ -1038,8 +808,6 @@
     "incident_ci_id": "116",
     "incident_id": "93",
     "ci_id": "24",
-    "relationship_type": "primary_affected",
-    "symptoms": "Agent certainly prove customer seek claim expert.",
     "identified_at": "2025-09-22T04:30:38",
     "created_at": "2025-09-22T04:12:38"
   },
@@ -1047,8 +815,6 @@
     "incident_ci_id": "117",
     "incident_id": "94",
     "ci_id": "2",
-    "relationship_type": "primary_affected",
-    "symptoms": "Chair artist six daughter must grow laugh pattern push.",
     "identified_at": "2025-09-26T10:28:51",
     "created_at": "2025-09-26T10:20:51"
   },
@@ -1056,8 +822,6 @@
     "incident_ci_id": "118",
     "incident_id": "94",
     "ci_id": "45",
-    "relationship_type": "related",
-    "symptoms": "Ten score night down six sometimes explain professor unit hold what wish fine.",
     "identified_at": "2025-09-26T10:11:51",
     "created_at": "2025-09-26T10:20:51"
   },
@@ -1065,8 +829,6 @@
     "incident_ci_id": "119",
     "incident_id": "95",
     "ci_id": "30",
-    "relationship_type": "primary_affected",
-    "symptoms": "Approach season data than team kitchen difficult plant remember happy open school cultural.",
     "identified_at": "2025-09-24T22:05:42",
     "created_at": "2025-09-24T21:46:42"
   },
@@ -1074,8 +836,6 @@
     "incident_ci_id": "120",
     "incident_id": "96",
     "ci_id": "17",
-    "relationship_type": "primary_affected",
-    "symptoms": "Family concern radio cost community message help investment.",
     "identified_at": "2025-09-18T16:45:26",
     "created_at": "2025-09-18T16:40:26"
   },
@@ -1083,8 +843,6 @@
     "incident_ci_id": "121",
     "incident_id": "97",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Enough claim suffer accept letter visit always up others similar personal successful feeling.",
     "identified_at": "2025-09-30T00:55:10",
     "created_at": "2025-09-30T00:41:10"
   },
@@ -1092,8 +850,6 @@
     "incident_ci_id": "122",
     "incident_id": "98",
     "ci_id": "8",
-    "relationship_type": "primary_affected",
-    "symptoms": "Nearly authority remain moment whatever minute skill city myself idea glass third professional.",
     "identified_at": "2025-09-20T23:02:59",
     "created_at": "2025-09-20T22:43:59"
   },
@@ -1101,8 +857,6 @@
     "incident_ci_id": "123",
     "incident_id": "99",
     "ci_id": "46",
-    "relationship_type": "primary_affected",
-    "symptoms": "Guess despite sell most you statement wonder across protect knowledge.",
     "identified_at": "2025-10-08T19:45:47",
     "created_at": "2025-10-08T19:28:47"
   },
@@ -1110,8 +864,6 @@
     "incident_ci_id": "124",
     "incident_id": "100",
     "ci_id": "46",
-    "relationship_type": "primary_affected",
-    "symptoms": "Truth during always those high someone box either rich agency might side method.",
     "identified_at": "2025-09-25T10:25:29",
     "created_at": "2025-09-25T10:17:29"
   },
@@ -1119,8 +871,6 @@
     "incident_ci_id": "125",
     "incident_id": "101",
     "ci_id": "6",
-    "relationship_type": "primary_affected",
-    "symptoms": "Knowledge analysis together court message way cold what Mrs account assume prove.",
     "identified_at": "2025-10-05T11:12:02",
     "created_at": "2025-10-05T10:58:02"
   },
@@ -1128,8 +878,6 @@
     "incident_ci_id": "126",
     "incident_id": "101",
     "ci_id": "34",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Ten interest billion Mrs reflect wish simple position.",
     "identified_at": "2025-10-05T11:11:02",
     "created_at": "2025-10-05T10:58:02"
   },
@@ -1137,8 +885,6 @@
     "incident_ci_id": "127",
     "incident_id": "102",
     "ci_id": "28",
-    "relationship_type": "primary_affected",
-    "symptoms": "Section child learn forward beautiful approach.",
     "identified_at": "2025-09-23T03:38:41",
     "created_at": "2025-09-23T03:45:41"
   },
@@ -1146,8 +892,6 @@
     "incident_ci_id": "128",
     "incident_id": "103",
     "ci_id": "33",
-    "relationship_type": "primary_affected",
-    "symptoms": "Newspaper offer direction else hold picture item admit pull.",
     "identified_at": "2025-09-24T16:43:38",
     "created_at": "2025-09-24T16:22:38"
   },
@@ -1155,8 +899,6 @@
     "incident_ci_id": "129",
     "incident_id": "104",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "Accept result as second animal summer group me face rate paper example.",
     "identified_at": "2025-09-29T20:14:35",
     "created_at": "2025-09-29T19:59:35"
   },
@@ -1164,8 +906,6 @@
     "incident_ci_id": "130",
     "incident_id": "105",
     "ci_id": "27",
-    "relationship_type": "primary_affected",
-    "symptoms": "High state air choose detail section someone support far plant fear.",
     "identified_at": "2025-09-21T19:58:38",
     "created_at": "2025-09-21T19:42:38"
   },
@@ -1173,8 +913,6 @@
     "incident_ci_id": "131",
     "incident_id": "106",
     "ci_id": "47",
-    "relationship_type": "primary_affected",
-    "symptoms": "Whatever action themselves center among of hour natural be decide.",
     "identified_at": "2025-10-09T01:20:26",
     "created_at": "2025-10-09T01:31:26"
   },
@@ -1182,8 +920,6 @@
     "incident_ci_id": "132",
     "incident_id": "106",
     "ci_id": "6",
-    "relationship_type": "related",
-    "symptoms": "Deep town surface central contain pattern education boy provide note.",
     "identified_at": "2025-10-09T01:35:26",
     "created_at": "2025-10-09T01:31:26"
   },
@@ -1191,8 +927,6 @@
     "incident_ci_id": "133",
     "incident_id": "107",
     "ci_id": "23",
-    "relationship_type": "primary_affected",
-    "symptoms": "Surface usually yes leave near fact.",
     "identified_at": "2025-09-18T23:28:07",
     "created_at": "2025-09-18T23:31:07"
   },
@@ -1200,8 +934,6 @@
     "incident_ci_id": "134",
     "incident_id": "107",
     "ci_id": "10",
-    "relationship_type": "related",
-    "symptoms": "Economy culture oil week ground provide.",
     "identified_at": "2025-09-18T23:26:07",
     "created_at": "2025-09-18T23:31:07"
   },
@@ -1209,8 +941,6 @@
     "incident_ci_id": "135",
     "incident_id": "108",
     "ci_id": "26",
-    "relationship_type": "primary_affected",
-    "symptoms": "Beyond people too fish late pattern figure once not.",
     "identified_at": "2025-09-27T10:17:17",
     "created_at": "2025-09-27T10:16:17"
   },
@@ -1218,8 +948,6 @@
     "incident_ci_id": "136",
     "incident_id": "108",
     "ci_id": "45",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Space when collection finish size Republican political everybody growth quickly.",
     "identified_at": "2025-09-27T10:13:17",
     "created_at": "2025-09-27T10:16:17"
   },
@@ -1227,8 +955,6 @@
     "incident_ci_id": "137",
     "incident_id": "109",
     "ci_id": "1",
-    "relationship_type": "primary_affected",
-    "symptoms": "There leg grow figure necessary compare parent success teach cause.",
     "identified_at": "2025-09-24T19:31:42",
     "created_at": "2025-09-24T19:35:42"
   },
@@ -1236,8 +962,6 @@
     "incident_ci_id": "138",
     "incident_id": "109",
     "ci_id": "7",
-    "relationship_type": "related",
-    "symptoms": "Cultural safe phone road throughout support place spend often shoulder defense already.",
     "identified_at": "2025-09-24T19:42:42",
     "created_at": "2025-09-24T19:35:42"
   },
@@ -1245,8 +969,6 @@
     "incident_ci_id": "139",
     "incident_id": "110",
     "ci_id": "42",
-    "relationship_type": "primary_affected",
-    "symptoms": "Myself your line simple hand development sign run fact.",
     "identified_at": "2025-09-21T13:10:01",
     "created_at": "2025-09-21T13:06:01"
   },
@@ -1254,8 +976,6 @@
     "incident_ci_id": "140",
     "incident_id": "111",
     "ci_id": "11",
-    "relationship_type": "primary_affected",
-    "symptoms": "May bed hair action draw who word range serious cell city.",
     "identified_at": "2025-09-24T23:11:52",
     "created_at": "2025-09-24T23:08:52"
   },
@@ -1263,8 +983,6 @@
     "incident_ci_id": "141",
     "incident_id": "111",
     "ci_id": "12",
-    "relationship_type": "secondary_affected",
-    "symptoms": "We process whose save low grow despite maintain as hard amount deal traditional.",
     "identified_at": "2025-09-24T23:22:52",
     "created_at": "2025-09-24T23:08:52"
   },
@@ -1272,8 +990,6 @@
     "incident_ci_id": "142",
     "incident_id": "112",
     "ci_id": "32",
-    "relationship_type": "primary_affected",
-    "symptoms": "Hold truth thing always possible billion why plant event score.",
     "identified_at": "2025-10-15T08:43:42",
     "created_at": "2025-10-15T08:45:42"
   },
@@ -1281,8 +997,6 @@
     "incident_ci_id": "143",
     "incident_id": "113",
     "ci_id": "8",
-    "relationship_type": "primary_affected",
-    "symptoms": "Name community president half president structure might heavy trade might good test main.",
     "identified_at": "2025-10-12T00:26:35",
     "created_at": "2025-10-12T00:14:35"
   },
@@ -1290,8 +1004,6 @@
     "incident_ci_id": "144",
     "incident_id": "114",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Thought according think key discover method exactly change church own stage produce.",
     "identified_at": "2025-10-05T18:01:43",
     "created_at": "2025-10-05T18:01:43"
   },
@@ -1299,8 +1011,6 @@
     "incident_ci_id": "145",
     "incident_id": "115",
     "ci_id": "48",
-    "relationship_type": "primary_affected",
-    "symptoms": "Specific result loss long decision claim street against amount of claim.",
     "identified_at": "2025-09-20T22:25:11",
     "created_at": "2025-09-20T22:34:11"
   },
@@ -1308,8 +1018,6 @@
     "incident_ci_id": "146",
     "incident_id": "116",
     "ci_id": "13",
-    "relationship_type": "primary_affected",
-    "symptoms": "Mention three chair coach two might if wide point these road start water describe.",
     "identified_at": "2025-10-16T07:25:29",
     "created_at": "2025-10-16T07:03:29"
   },
@@ -1317,8 +1025,6 @@
     "incident_ci_id": "147",
     "incident_id": "116",
     "ci_id": "17",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Yeah test color store over some star consider process enough right garden law.",
     "identified_at": "2025-10-16T07:11:29",
     "created_at": "2025-10-16T07:03:29"
   },
@@ -1326,8 +1032,6 @@
     "incident_ci_id": "148",
     "incident_id": "117",
     "ci_id": "40",
-    "relationship_type": "primary_affected",
-    "symptoms": "Attention her car admit mission training range step painting concern top outside there.",
     "identified_at": "2025-09-20T15:33:41",
     "created_at": "2025-09-20T15:44:41"
   },
@@ -1335,8 +1039,6 @@
     "incident_ci_id": "149",
     "incident_id": "118",
     "ci_id": "11",
-    "relationship_type": "primary_affected",
-    "symptoms": "Me brother lot candidate owner still to simple power miss have analysis.",
     "identified_at": "2025-10-13T05:36:41",
     "created_at": "2025-10-13T05:35:41"
   },
@@ -1344,8 +1046,6 @@
     "incident_ci_id": "150",
     "incident_id": "118",
     "ci_id": "6",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Investment voice lot shoulder go source traditional student office international effort she.",
     "identified_at": "2025-10-13T05:39:41",
     "created_at": "2025-10-13T05:35:41"
   },
@@ -1353,8 +1053,6 @@
     "incident_ci_id": "151",
     "incident_id": "119",
     "ci_id": "5",
-    "relationship_type": "primary_affected",
-    "symptoms": "Exist theory impact country remember smile official.",
     "identified_at": "2025-09-26T14:16:11",
     "created_at": "2025-09-26T14:20:11"
   },
@@ -1362,8 +1060,6 @@
     "incident_ci_id": "152",
     "incident_id": "120",
     "ci_id": "16",
-    "relationship_type": "primary_affected",
-    "symptoms": "Mind heart day sound impact blood international.",
     "identified_at": "2025-10-12T06:33:14",
     "created_at": "2025-10-12T06:26:14"
   },
@@ -1371,8 +1067,6 @@
     "incident_ci_id": "153",
     "incident_id": "121",
     "ci_id": "49",
-    "relationship_type": "primary_affected",
-    "symptoms": "Effect talk interest hand every quite sense including six lot have never effect.",
     "identified_at": "2025-09-21T05:18:18",
     "created_at": "2025-09-21T05:16:18"
   },
@@ -1380,8 +1074,6 @@
     "incident_ci_id": "154",
     "incident_id": "122",
     "ci_id": "18",
-    "relationship_type": "primary_affected",
-    "symptoms": "Officer similar huge catch tell budget discover situation we.",
     "identified_at": "2025-10-06T16:56:22",
     "created_at": "2025-10-06T16:36:22"
   },
@@ -1389,8 +1081,6 @@
     "incident_ci_id": "155",
     "incident_id": "123",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Democrat hundred full nearly recent religious claim.",
     "identified_at": "2025-09-28T22:16:18",
     "created_at": "2025-09-28T21:59:18"
   },
@@ -1398,8 +1088,6 @@
     "incident_ci_id": "156",
     "incident_id": "123",
     "ci_id": "38",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Source statement likely outside because enjoy.",
     "identified_at": "2025-09-28T21:54:18",
     "created_at": "2025-09-28T21:59:18"
   },
@@ -1407,8 +1095,6 @@
     "incident_ci_id": "157",
     "incident_id": "124",
     "ci_id": "1",
-    "relationship_type": "primary_affected",
-    "symptoms": "Bag also his worker pass minute represent our watch star.",
     "identified_at": "2025-09-22T04:40:09",
     "created_at": "2025-09-22T04:43:09"
   },
@@ -1416,8 +1102,6 @@
     "incident_ci_id": "158",
     "incident_id": "125",
     "ci_id": "49",
-    "relationship_type": "primary_affected",
-    "symptoms": "Keep cut prevent sound experience almost outside middle discuss college already dream.",
     "identified_at": "2025-09-26T02:51:31",
     "created_at": "2025-09-26T02:48:31"
   },
@@ -1425,8 +1109,6 @@
     "incident_ci_id": "159",
     "incident_id": "126",
     "ci_id": "31",
-    "relationship_type": "primary_affected",
-    "symptoms": "Wish beautiful every human prove if.",
     "identified_at": "2025-09-23T06:06:59",
     "created_at": "2025-09-23T06:00:59"
   },
@@ -1434,8 +1116,6 @@
     "incident_ci_id": "160",
     "incident_id": "126",
     "ci_id": "49",
-    "relationship_type": "related",
-    "symptoms": "Military say attention bed expect stop trip give.",
     "identified_at": "2025-09-23T06:09:59",
     "created_at": "2025-09-23T06:00:59"
   },
@@ -1443,8 +1123,6 @@
     "incident_ci_id": "161",
     "incident_id": "127",
     "ci_id": "44",
-    "relationship_type": "primary_affected",
-    "symptoms": "Difficult white lawyer identify above company media next me.",
     "identified_at": "2025-09-26T06:52:35",
     "created_at": "2025-09-26T06:34:35"
   },
@@ -1452,8 +1130,6 @@
     "incident_ci_id": "162",
     "incident_id": "128",
     "ci_id": "21",
-    "relationship_type": "primary_affected",
-    "symptoms": "Water sort what then spend offer reason whom none show.",
     "identified_at": "2025-09-22T00:11:14",
     "created_at": "2025-09-21T23:55:14"
   },
@@ -1461,8 +1137,6 @@
     "incident_ci_id": "163",
     "incident_id": "129",
     "ci_id": "24",
-    "relationship_type": "primary_affected",
-    "symptoms": "Which learn leave only agree break attack plant yes quality.",
     "identified_at": "2025-09-18T07:08:41",
     "created_at": "2025-09-18T06:50:41"
   },
@@ -1470,8 +1144,6 @@
     "incident_ci_id": "164",
     "incident_id": "130",
     "ci_id": "40",
-    "relationship_type": "primary_affected",
-    "symptoms": "Son include good movie red enjoy expert human.",
     "identified_at": "2025-10-08T23:54:27",
     "created_at": "2025-10-09T00:04:27"
   },
@@ -1479,8 +1151,6 @@
     "incident_ci_id": "165",
     "incident_id": "131",
     "ci_id": "22",
-    "relationship_type": "primary_affected",
-    "symptoms": "Away use live government thus especially water raise travel material.",
     "identified_at": "2025-10-12T06:51:49",
     "created_at": "2025-10-12T06:57:49"
   },
@@ -1488,8 +1158,6 @@
     "incident_ci_id": "166",
     "incident_id": "131",
     "ci_id": "7",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Dog drug enter director strong student green single.",
     "identified_at": "2025-10-12T07:18:49",
     "created_at": "2025-10-12T06:57:49"
   },
@@ -1497,8 +1165,6 @@
     "incident_ci_id": "167",
     "incident_id": "132",
     "ci_id": "47",
-    "relationship_type": "primary_affected",
-    "symptoms": "Turn put professional pass share must amount.",
     "identified_at": "2025-10-06T08:22:17",
     "created_at": "2025-10-06T08:11:17"
   },
@@ -1506,8 +1172,6 @@
     "incident_ci_id": "168",
     "incident_id": "133",
     "ci_id": "9",
-    "relationship_type": "primary_affected",
-    "symptoms": "He firm together thing off ever consumer share memory huge seek campaign.",
     "identified_at": "2025-09-29T23:05:29",
     "created_at": "2025-09-29T22:58:29"
   },
@@ -1515,8 +1179,6 @@
     "incident_ci_id": "169",
     "incident_id": "133",
     "ci_id": "2",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Son long must maybe hour rather company with recently least ready activity.",
     "identified_at": "2025-09-29T23:13:29",
     "created_at": "2025-09-29T22:58:29"
   },
@@ -1524,8 +1186,6 @@
     "incident_ci_id": "170",
     "incident_id": "134",
     "ci_id": "45",
-    "relationship_type": "primary_affected",
-    "symptoms": "Here beyond gun technology cost enjoy especially when.",
     "identified_at": "2025-10-09T13:09:50",
     "created_at": "2025-10-09T13:00:50"
   },
@@ -1533,8 +1193,6 @@
     "incident_ci_id": "171",
     "incident_id": "135",
     "ci_id": "24",
-    "relationship_type": "primary_affected",
-    "symptoms": "Hand material decision red head take evidence conference capital office.",
     "identified_at": "2025-10-03T02:12:31",
     "created_at": "2025-10-03T02:05:31"
   },
@@ -1542,8 +1200,6 @@
     "incident_ci_id": "172",
     "incident_id": "135",
     "ci_id": "29",
-    "relationship_type": "related",
-    "symptoms": "Sport result sound new task cultural son school.",
     "identified_at": "2025-10-03T02:14:31",
     "created_at": "2025-10-03T02:05:31"
   },
@@ -1551,8 +1207,6 @@
     "incident_ci_id": "173",
     "incident_id": "136",
     "ci_id": "33",
-    "relationship_type": "primary_affected",
-    "symptoms": "South computer matter yet support military result size feel no nothing huge.",
     "identified_at": "2025-09-20T05:19:25",
     "created_at": "2025-09-20T05:07:25"
   },
@@ -1560,8 +1214,6 @@
     "incident_ci_id": "174",
     "incident_id": "136",
     "ci_id": "27",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Art sport live picture last free guess night.",
     "identified_at": "2025-09-20T04:58:25",
     "created_at": "2025-09-20T05:07:25"
   },
@@ -1569,8 +1221,6 @@
     "incident_ci_id": "175",
     "incident_id": "137",
     "ci_id": "21",
-    "relationship_type": "primary_affected",
-    "symptoms": "General in go quickly paper officer practice Mrs without.",
     "identified_at": "2025-09-26T22:08:42",
     "created_at": "2025-09-26T21:49:42"
   },
@@ -1578,8 +1228,6 @@
     "incident_ci_id": "176",
     "incident_id": "137",
     "ci_id": "2",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Great pull maintain say threat high expert place certain.",
     "identified_at": "2025-09-26T22:15:42",
     "created_at": "2025-09-26T21:49:42"
   },
@@ -1587,8 +1235,6 @@
     "incident_ci_id": "177",
     "incident_id": "138",
     "ci_id": "48",
-    "relationship_type": "primary_affected",
-    "symptoms": "Political up instead partner if trade bad gas.",
     "identified_at": "2025-09-28T19:40:00",
     "created_at": "2025-09-28T19:38:00"
   },
@@ -1596,8 +1242,6 @@
     "incident_ci_id": "178",
     "incident_id": "139",
     "ci_id": "15",
-    "relationship_type": "primary_affected",
-    "symptoms": "First fact environment popular even know television guy only whole.",
     "identified_at": "2025-09-26T05:39:45",
     "created_at": "2025-09-26T05:32:45"
   },
@@ -1605,8 +1249,6 @@
     "incident_ci_id": "179",
     "incident_id": "140",
     "ci_id": "48",
-    "relationship_type": "primary_affected",
-    "symptoms": "Cold take by doctor edge season see decision however believe view.",
     "identified_at": "2025-09-23T14:58:42",
     "created_at": "2025-09-23T14:47:42"
   },
@@ -1614,8 +1256,6 @@
     "incident_ci_id": "180",
     "incident_id": "141",
     "ci_id": "23",
-    "relationship_type": "primary_affected",
-    "symptoms": "Nature ago however share bar energy choice pressure those finally easy exist.",
     "identified_at": "2025-09-24T14:36:49",
     "created_at": "2025-09-24T14:20:49"
   },
@@ -1623,8 +1263,6 @@
     "incident_ci_id": "181",
     "incident_id": "141",
     "ci_id": "28",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Call money color along ground trip ten level that various nature career way much.",
     "identified_at": "2025-09-24T14:27:49",
     "created_at": "2025-09-24T14:20:49"
   },
@@ -1632,8 +1270,6 @@
     "incident_ci_id": "182",
     "incident_id": "142",
     "ci_id": "7",
-    "relationship_type": "primary_affected",
-    "symptoms": "Our piece player nor model police finally girl music source kind hand employee.",
     "identified_at": "2025-10-06T03:45:14",
     "created_at": "2025-10-06T03:42:14"
   },
@@ -1641,8 +1277,6 @@
     "incident_ci_id": "183",
     "incident_id": "142",
     "ci_id": "47",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Action model serve carry expert movement reach man sense.",
     "identified_at": "2025-10-06T03:52:14",
     "created_at": "2025-10-06T03:42:14"
   },
@@ -1650,8 +1284,6 @@
     "incident_ci_id": "184",
     "incident_id": "143",
     "ci_id": "10",
-    "relationship_type": "primary_affected",
-    "symptoms": "Across involve fall discuss account health in night house.",
     "identified_at": "2025-10-04T00:31:10",
     "created_at": "2025-10-04T00:09:10"
   },
@@ -1659,8 +1291,6 @@
     "incident_ci_id": "185",
     "incident_id": "144",
     "ci_id": "37",
-    "relationship_type": "primary_affected",
-    "symptoms": "Resource position stock determine bad personal might son.",
     "identified_at": "2025-09-18T02:40:10",
     "created_at": "2025-09-18T02:24:10"
   },
@@ -1668,8 +1298,6 @@
     "incident_ci_id": "186",
     "incident_id": "145",
     "ci_id": "33",
-    "relationship_type": "primary_affected",
-    "symptoms": "Space range expect sea speak include table consumer face PM pay evening performance.",
     "identified_at": "2025-10-08T00:54:07",
     "created_at": "2025-10-08T01:01:07"
   },
@@ -1677,8 +1305,6 @@
     "incident_ci_id": "187",
     "incident_id": "145",
     "ci_id": "3",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Fly charge wide against win example by just.",
     "identified_at": "2025-10-08T01:15:07",
     "created_at": "2025-10-08T01:01:07"
   },
@@ -1686,8 +1312,6 @@
     "incident_ci_id": "188",
     "incident_id": "146",
     "ci_id": "44",
-    "relationship_type": "primary_affected",
-    "symptoms": "Do character management game find son.",
     "identified_at": "2025-10-09T17:54:02",
     "created_at": "2025-10-09T17:43:02"
   },
@@ -1695,8 +1319,6 @@
     "incident_ci_id": "189",
     "incident_id": "147",
     "ci_id": "30",
-    "relationship_type": "primary_affected",
-    "symptoms": "Less social form such weight argue simply author like court.",
     "identified_at": "2025-09-23T08:46:22",
     "created_at": "2025-09-23T08:27:22"
   },
@@ -1704,8 +1326,6 @@
     "incident_ci_id": "190",
     "incident_id": "147",
     "ci_id": "11",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Stage stock business should eat side kitchen scene almost.",
     "identified_at": "2025-09-23T08:48:22",
     "created_at": "2025-09-23T08:27:22"
   },
@@ -1713,8 +1333,6 @@
     "incident_ci_id": "191",
     "incident_id": "148",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Same behind program decade home which view city rock seat near.",
     "identified_at": "2025-09-23T02:54:04",
     "created_at": "2025-09-23T02:40:04"
   },
@@ -1722,8 +1340,6 @@
     "incident_ci_id": "192",
     "incident_id": "149",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Education police cup thought tell design both.",
     "identified_at": "2025-09-17T06:02:19",
     "created_at": "2025-09-17T06:04:19"
   },
@@ -1731,8 +1347,6 @@
     "incident_ci_id": "193",
     "incident_id": "150",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Foot cold everybody build smile across among situation little other he.",
     "identified_at": "2025-10-12T19:32:06",
     "created_at": "2025-10-12T19:43:06"
   },
@@ -1740,8 +1354,6 @@
     "incident_ci_id": "194",
     "incident_id": "150",
     "ci_id": "45",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Eat matter rather full wide service art.",
     "identified_at": "2025-10-12T19:43:06",
     "created_at": "2025-10-12T19:43:06"
   },
@@ -1749,8 +1361,6 @@
     "incident_ci_id": "195",
     "incident_id": "151",
     "ci_id": "2",
-    "relationship_type": "primary_affected",
-    "symptoms": "Popular red social call discussion word small series south just.",
     "identified_at": "2025-09-21T17:21:57",
     "created_at": "2025-09-21T16:59:57"
   },
@@ -1758,8 +1368,6 @@
     "incident_ci_id": "196",
     "incident_id": "151",
     "ci_id": "11",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Again help right economy always religious next my.",
     "identified_at": "2025-09-21T17:20:57",
     "created_at": "2025-09-21T16:59:57"
   },
@@ -1767,8 +1375,6 @@
     "incident_ci_id": "197",
     "incident_id": "152",
     "ci_id": "18",
-    "relationship_type": "primary_affected",
-    "symptoms": "Couple cost girl run every story trial never attention choice fast enjoy.",
     "identified_at": "2025-09-20T16:32:59",
     "created_at": "2025-09-20T16:33:59"
   },
@@ -1776,8 +1382,6 @@
     "incident_ci_id": "198",
     "incident_id": "153",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Law simply media safe third people hair per fly as.",
     "identified_at": "2025-10-11T13:23:47",
     "created_at": "2025-10-11T13:04:47"
   },
@@ -1785,8 +1389,6 @@
     "incident_ci_id": "199",
     "incident_id": "153",
     "ci_id": "31",
-    "relationship_type": "related",
-    "symptoms": "Standard couple raise she child executive important focus benefit probably analysis visit.",
     "identified_at": "2025-10-11T12:56:47",
     "created_at": "2025-10-11T13:04:47"
   },
@@ -1794,8 +1396,6 @@
     "incident_ci_id": "200",
     "incident_id": "154",
     "ci_id": "35",
-    "relationship_type": "primary_affected",
-    "symptoms": "Them dark magazine better number student price moment.",
     "identified_at": "2025-09-27T12:03:37",
     "created_at": "2025-09-27T11:50:37"
   },
@@ -1803,8 +1403,6 @@
     "incident_ci_id": "201",
     "incident_id": "155",
     "ci_id": "6",
-    "relationship_type": "primary_affected",
-    "symptoms": "Eight hand paper audience us decade man threat bag song art newspaper voice.",
     "identified_at": "2025-09-23T14:59:54",
     "created_at": "2025-09-23T14:50:54"
   },
@@ -1812,8 +1410,6 @@
     "incident_ci_id": "202",
     "incident_id": "155",
     "ci_id": "45",
-    "relationship_type": "secondary_affected",
-    "symptoms": "State some around pay more same strong back democratic mind big.",
     "identified_at": "2025-09-23T15:18:54",
     "created_at": "2025-09-23T14:50:54"
   },
@@ -1821,8 +1417,6 @@
     "incident_ci_id": "203",
     "incident_id": "156",
     "ci_id": "39",
-    "relationship_type": "primary_affected",
-    "symptoms": "Mother country moment eat personal condition see indeed.",
     "identified_at": "2025-09-29T02:20:07",
     "created_at": "2025-09-29T02:32:07"
   },
@@ -1830,8 +1424,6 @@
     "incident_ci_id": "204",
     "incident_id": "157",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "Short office purpose reflect interview bit society.",
     "identified_at": "2025-09-24T21:29:41",
     "created_at": "2025-09-24T21:14:41"
   },
@@ -1839,8 +1431,6 @@
     "incident_ci_id": "205",
     "incident_id": "158",
     "ci_id": "48",
-    "relationship_type": "primary_affected",
-    "symptoms": "Husband front citizen your kitchen good firm yard foot he share issue rise.",
     "identified_at": "2025-09-29T10:56:36",
     "created_at": "2025-09-29T10:50:36"
   },
@@ -1848,8 +1438,6 @@
     "incident_ci_id": "206",
     "incident_id": "158",
     "ci_id": "47",
-    "relationship_type": "related",
-    "symptoms": "Drive nation heart nearly season growth laugh where a alone expect administration career.",
     "identified_at": "2025-09-29T11:04:36",
     "created_at": "2025-09-29T10:50:36"
   },
@@ -1857,8 +1445,6 @@
     "incident_ci_id": "207",
     "incident_id": "159",
     "ci_id": "28",
-    "relationship_type": "primary_affected",
-    "symptoms": "According worker Democrat fire sign wall state try memory.",
     "identified_at": "2025-10-11T09:27:18",
     "created_at": "2025-10-11T09:31:18"
   },
@@ -1866,8 +1452,6 @@
     "incident_ci_id": "208",
     "incident_id": "159",
     "ci_id": "15",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Unit choice also green catch happen old do specific begin hundred truth safe.",
     "identified_at": "2025-10-11T09:23:18",
     "created_at": "2025-10-11T09:31:18"
   },
@@ -1875,8 +1459,6 @@
     "incident_ci_id": "209",
     "incident_id": "160",
     "ci_id": "8",
-    "relationship_type": "primary_affected",
-    "symptoms": "Society common stay ready office traditional organization feel room office.",
     "identified_at": "2025-09-30T04:38:57",
     "created_at": "2025-09-30T04:47:57"
   },
@@ -1884,8 +1466,6 @@
     "incident_ci_id": "210",
     "incident_id": "161",
     "ci_id": "38",
-    "relationship_type": "primary_affected",
-    "symptoms": "Sister two free they its us building.",
     "identified_at": "2025-10-04T01:31:08",
     "created_at": "2025-10-04T01:03:08"
   },
@@ -1893,8 +1473,6 @@
     "incident_ci_id": "211",
     "incident_id": "162",
     "ci_id": "8",
-    "relationship_type": "primary_affected",
-    "symptoms": "Section support up plant place approach modern floor.",
     "identified_at": "2025-09-25T16:50:16",
     "created_at": "2025-09-25T16:33:16"
   },
@@ -1902,8 +1480,6 @@
     "incident_ci_id": "212",
     "incident_id": "163",
     "ci_id": "21",
-    "relationship_type": "primary_affected",
-    "symptoms": "Change maybe determine anything rule hotel knowledge organization measure develop face hour car.",
     "identified_at": "2025-09-24T19:15:37",
     "created_at": "2025-09-24T18:48:37"
   },
@@ -1911,8 +1487,6 @@
     "incident_ci_id": "213",
     "incident_id": "164",
     "ci_id": "48",
-    "relationship_type": "primary_affected",
-    "symptoms": "Live seat nature energy huge its recently.",
     "identified_at": "2025-10-15T18:02:24",
     "created_at": "2025-10-15T18:03:24"
   },
@@ -1920,8 +1494,6 @@
     "incident_ci_id": "214",
     "incident_id": "165",
     "ci_id": "38",
-    "relationship_type": "primary_affected",
-    "symptoms": "Lose cup house number night young modern.",
     "identified_at": "2025-09-20T09:10:23",
     "created_at": "2025-09-20T09:08:23"
   },
@@ -1929,8 +1501,6 @@
     "incident_ci_id": "215",
     "incident_id": "166",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "Author since food under become public interest give fly.",
     "identified_at": "2025-09-20T16:39:02",
     "created_at": "2025-09-20T16:38:02"
   },
@@ -1938,8 +1508,6 @@
     "incident_ci_id": "216",
     "incident_id": "167",
     "ci_id": "24",
-    "relationship_type": "primary_affected",
-    "symptoms": "Pretty show college glass start sort perhaps key under do rate choose rock.",
     "identified_at": "2025-09-19T04:35:00",
     "created_at": "2025-09-19T04:17:00"
   },
@@ -1947,8 +1515,6 @@
     "incident_ci_id": "217",
     "incident_id": "168",
     "ci_id": "9",
-    "relationship_type": "primary_affected",
-    "symptoms": "Both approach we unit than star add.",
     "identified_at": "2025-09-22T05:34:40",
     "created_at": "2025-09-22T05:20:40"
   },
@@ -1956,8 +1522,6 @@
     "incident_ci_id": "218",
     "incident_id": "169",
     "ci_id": "38",
-    "relationship_type": "primary_affected",
-    "symptoms": "Figure likely forward science deep national seek.",
     "identified_at": "2025-09-25T03:22:27",
     "created_at": "2025-09-25T03:20:27"
   },
@@ -1965,8 +1529,6 @@
     "incident_ci_id": "219",
     "incident_id": "170",
     "ci_id": "1",
-    "relationship_type": "primary_affected",
-    "symptoms": "Low role center recognize adult on professional analysis color exist smile peace apply.",
     "identified_at": "2025-10-02T20:28:39",
     "created_at": "2025-10-02T20:19:39"
   },
@@ -1974,8 +1536,6 @@
     "incident_ci_id": "220",
     "incident_id": "171",
     "ci_id": "21",
-    "relationship_type": "primary_affected",
-    "symptoms": "At produce production tree growth blue.",
     "identified_at": "2025-09-25T19:00:37",
     "created_at": "2025-09-25T18:36:37"
   },
@@ -1983,8 +1543,6 @@
     "incident_ci_id": "221",
     "incident_id": "171",
     "ci_id": "10",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Test power discuss herself with between firm term mother.",
     "identified_at": "2025-09-25T19:00:37",
     "created_at": "2025-09-25T18:36:37"
   },
@@ -1992,8 +1550,6 @@
     "incident_ci_id": "222",
     "incident_id": "172",
     "ci_id": "44",
-    "relationship_type": "primary_affected",
-    "symptoms": "Current whom night Republican always two figure majority.",
     "identified_at": "2025-10-07T12:19:21",
     "created_at": "2025-10-07T12:08:21"
   },
@@ -2001,8 +1557,6 @@
     "incident_ci_id": "223",
     "incident_id": "173",
     "ci_id": "19",
-    "relationship_type": "primary_affected",
-    "symptoms": "Adult range green few you without every artist.",
     "identified_at": "2025-10-02T06:00:25",
     "created_at": "2025-10-02T06:01:25"
   },
@@ -2010,8 +1564,6 @@
     "incident_ci_id": "224",
     "incident_id": "174",
     "ci_id": "45",
-    "relationship_type": "primary_affected",
-    "symptoms": "These three spring ahead never exactly charge today prevent.",
     "identified_at": "2025-09-19T15:55:32",
     "created_at": "2025-09-19T15:40:32"
   },
@@ -2019,8 +1571,6 @@
     "incident_ci_id": "225",
     "incident_id": "174",
     "ci_id": "3",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Role minute question their rather individual of.",
     "identified_at": "2025-09-19T15:45:32",
     "created_at": "2025-09-19T15:40:32"
   },
@@ -2028,8 +1578,6 @@
     "incident_ci_id": "226",
     "incident_id": "175",
     "ci_id": "45",
-    "relationship_type": "primary_affected",
-    "symptoms": "Wife travel forget my deal catch must son television finally relate.",
     "identified_at": "2025-10-03T16:08:38",
     "created_at": "2025-10-03T16:07:38"
   },
@@ -2037,8 +1585,6 @@
     "incident_ci_id": "227",
     "incident_id": "176",
     "ci_id": "46",
-    "relationship_type": "primary_affected",
-    "symptoms": "Travel involve training show prevent north citizen attack mouth rest contain style.",
     "identified_at": "2025-09-21T21:01:05",
     "created_at": "2025-09-21T20:47:05"
   },
@@ -2046,8 +1592,6 @@
     "incident_ci_id": "228",
     "incident_id": "177",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Risk she they increase in kitchen value.",
     "identified_at": "2025-09-24T14:19:30",
     "created_at": "2025-09-24T14:12:30"
   },
@@ -2055,8 +1599,6 @@
     "incident_ci_id": "229",
     "incident_id": "178",
     "ci_id": "25",
-    "relationship_type": "primary_affected",
-    "symptoms": "Charge could capital ago worry pay paper partner others.",
     "identified_at": "2025-09-18T01:43:14",
     "created_at": "2025-09-18T01:56:14"
   },
@@ -2064,8 +1606,6 @@
     "incident_ci_id": "230",
     "incident_id": "179",
     "ci_id": "22",
-    "relationship_type": "primary_affected",
-    "symptoms": "Reach grow read live maybe painting Republican hear.",
     "identified_at": "2025-09-22T01:12:29",
     "created_at": "2025-09-22T00:52:29"
   },
@@ -2073,8 +1613,6 @@
     "incident_ci_id": "231",
     "incident_id": "179",
     "ci_id": "10",
-    "relationship_type": "related",
-    "symptoms": "Man case cover allow share address establish including score write.",
     "identified_at": "2025-09-22T00:52:29",
     "created_at": "2025-09-22T00:52:29"
   },
@@ -2082,8 +1620,6 @@
     "incident_ci_id": "232",
     "incident_id": "180",
     "ci_id": "15",
-    "relationship_type": "primary_affected",
-    "symptoms": "At until worry term majority foot leader east.",
     "identified_at": "2025-10-16T12:51:29",
     "created_at": "2025-10-16T12:31:29"
   },
@@ -2091,8 +1627,6 @@
     "incident_ci_id": "233",
     "incident_id": "180",
     "ci_id": "45",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Simply part station result hour voice occur movie political region although.",
     "identified_at": "2025-10-16T12:57:29",
     "created_at": "2025-10-16T12:31:29"
   },
@@ -2100,8 +1634,6 @@
     "incident_ci_id": "234",
     "incident_id": "181",
     "ci_id": "12",
-    "relationship_type": "primary_affected",
-    "symptoms": "Later still amount yet million how same.",
     "identified_at": "2025-09-26T08:55:10",
     "created_at": "2025-09-26T08:46:10"
   },
@@ -2109,8 +1641,6 @@
     "incident_ci_id": "235",
     "incident_id": "181",
     "ci_id": "32",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Hold share while couple keep this similar experience coach family try ready tough.",
     "identified_at": "2025-09-26T08:41:10",
     "created_at": "2025-09-26T08:46:10"
   },
@@ -2118,8 +1648,6 @@
     "incident_ci_id": "236",
     "incident_id": "182",
     "ci_id": "43",
-    "relationship_type": "primary_affected",
-    "symptoms": "Stop later reveal both single visit receive career including late condition.",
     "identified_at": "2025-09-25T16:26:03",
     "created_at": "2025-09-25T16:30:03"
   },
@@ -2127,8 +1655,6 @@
     "incident_ci_id": "237",
     "incident_id": "182",
     "ci_id": "11",
-    "relationship_type": "related",
-    "symptoms": "To time think bed food possible represent clearly run before relationship plant be.",
     "identified_at": "2025-09-25T16:38:03",
     "created_at": "2025-09-25T16:30:03"
   },
@@ -2136,8 +1662,6 @@
     "incident_ci_id": "238",
     "incident_id": "183",
     "ci_id": "44",
-    "relationship_type": "primary_affected",
-    "symptoms": "Risk window partner civil nearly analysis color friend the television.",
     "identified_at": "2025-09-22T09:16:59",
     "created_at": "2025-09-22T09:10:59"
   },
@@ -2145,8 +1669,6 @@
     "incident_ci_id": "239",
     "incident_id": "184",
     "ci_id": "49",
-    "relationship_type": "primary_affected",
-    "symptoms": "Than condition Republican information finally shoulder land phone.",
     "identified_at": "2025-09-18T12:45:14",
     "created_at": "2025-09-18T12:47:14"
   },
@@ -2154,8 +1676,6 @@
     "incident_ci_id": "240",
     "incident_id": "184",
     "ci_id": "26",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Together whether about she activity marriage material.",
     "identified_at": "2025-09-18T12:49:14",
     "created_at": "2025-09-18T12:47:14"
   },
@@ -2163,8 +1683,6 @@
     "incident_ci_id": "241",
     "incident_id": "185",
     "ci_id": "19",
-    "relationship_type": "primary_affected",
-    "symptoms": "Part management describe process law kind.",
     "identified_at": "2025-10-16T15:21:41",
     "created_at": "2025-10-16T15:00:41"
   },
@@ -2172,8 +1690,6 @@
     "incident_ci_id": "242",
     "incident_id": "185",
     "ci_id": "45",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Outside each natural people newspaper stay any challenge president already take project study.",
     "identified_at": "2025-10-16T15:14:41",
     "created_at": "2025-10-16T15:00:41"
   },
@@ -2181,8 +1697,6 @@
     "incident_ci_id": "243",
     "incident_id": "186",
     "ci_id": "26",
-    "relationship_type": "primary_affected",
-    "symptoms": "Former because board year claim expect produce record occur.",
     "identified_at": "2025-09-29T09:06:38",
     "created_at": "2025-09-29T09:07:38"
   },
@@ -2190,8 +1704,6 @@
     "incident_ci_id": "244",
     "incident_id": "186",
     "ci_id": "7",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Concern lay often use behavior federal happy her attack interview nearly fall care.",
     "identified_at": "2025-09-29T09:26:38",
     "created_at": "2025-09-29T09:07:38"
   },
@@ -2199,8 +1711,6 @@
     "incident_ci_id": "245",
     "incident_id": "187",
     "ci_id": "4",
-    "relationship_type": "primary_affected",
-    "symptoms": "Forget including decide decade around number without more because.",
     "identified_at": "2025-09-22T20:42:04",
     "created_at": "2025-09-22T20:42:04"
   },
@@ -2208,8 +1718,6 @@
     "incident_ci_id": "246",
     "incident_id": "187",
     "ci_id": "46",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Value worry expert participant first moment yet government can none mind place manage.",
     "identified_at": "2025-09-22T20:53:04",
     "created_at": "2025-09-22T20:42:04"
   },
@@ -2217,8 +1725,6 @@
     "incident_ci_id": "247",
     "incident_id": "188",
     "ci_id": "9",
-    "relationship_type": "primary_affected",
-    "symptoms": "This discussion fact cover brother let someone scene.",
     "identified_at": "2025-09-23T11:08:35",
     "created_at": "2025-09-23T10:58:35"
   },
@@ -2226,8 +1732,6 @@
     "incident_ci_id": "248",
     "incident_id": "189",
     "ci_id": "19",
-    "relationship_type": "primary_affected",
-    "symptoms": "Son yourself increase free night point action cut.",
     "identified_at": "2025-09-24T14:05:34",
     "created_at": "2025-09-24T13:51:34"
   },
@@ -2235,8 +1739,6 @@
     "incident_ci_id": "249",
     "incident_id": "190",
     "ci_id": "14",
-    "relationship_type": "primary_affected",
-    "symptoms": "Effort attack feel nearly short box four how notice.",
     "identified_at": "2025-09-18T08:21:27",
     "created_at": "2025-09-18T08:00:27"
   },
@@ -2244,8 +1746,6 @@
     "incident_ci_id": "250",
     "incident_id": "191",
     "ci_id": "48",
-    "relationship_type": "primary_affected",
-    "symptoms": "Story create street two look listen.",
     "identified_at": "2025-09-19T21:34:04",
     "created_at": "2025-09-19T21:42:04"
   },
@@ -2253,8 +1753,6 @@
     "incident_ci_id": "251",
     "incident_id": "191",
     "ci_id": "42",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Population loss physical throughout Mr friend.",
     "identified_at": "2025-09-19T21:57:04",
     "created_at": "2025-09-19T21:42:04"
   },
@@ -2262,8 +1760,6 @@
     "incident_ci_id": "252",
     "incident_id": "192",
     "ci_id": "7",
-    "relationship_type": "primary_affected",
-    "symptoms": "Until argue minute north question new affect officer forward trouble somebody.",
     "identified_at": "2025-10-12T07:55:59",
     "created_at": "2025-10-12T07:37:59"
   },
@@ -2271,8 +1767,6 @@
     "incident_ci_id": "253",
     "incident_id": "192",
     "ci_id": "44",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Wide exactly all worker phone success.",
     "identified_at": "2025-10-12T07:42:59",
     "created_at": "2025-10-12T07:37:59"
   },
@@ -2280,8 +1774,6 @@
     "incident_ci_id": "254",
     "incident_id": "193",
     "ci_id": "28",
-    "relationship_type": "primary_affected",
-    "symptoms": "Paper cost bring site final tax report even beautiful theory he stop few.",
     "identified_at": "2025-09-19T10:50:41",
     "created_at": "2025-09-19T10:33:41"
   },
@@ -2289,8 +1781,6 @@
     "incident_ci_id": "255",
     "incident_id": "193",
     "ci_id": "44",
-    "relationship_type": "secondary_affected",
-    "symptoms": "Few born size sing tree kitchen agent lot matter couple type run.",
     "identified_at": "2025-09-19T10:53:41",
     "created_at": "2025-09-19T10:33:41"
   },
@@ -2298,8 +1788,6 @@
     "incident_ci_id": "256",
     "incident_id": "194",
     "ci_id": "23",
-    "relationship_type": "primary_affected",
-    "symptoms": "Financial force show better word might yeah day already hold ten break.",
     "identified_at": "2025-09-24T04:58:29",
     "created_at": "2025-09-24T04:44:29"
   },
@@ -2307,8 +1795,6 @@
     "incident_ci_id": "257",
     "incident_id": "195",
     "ci_id": "4",
-    "relationship_type": "primary_affected",
-    "symptoms": "Usually reach organization beautiful level animal minute probably fine.",
     "identified_at": "2025-09-17T16:54:45",
     "created_at": "2025-09-17T17:00:45"
   },
@@ -2316,8 +1802,6 @@
     "incident_ci_id": "258",
     "incident_id": "196",
     "ci_id": "42",
-    "relationship_type": "primary_affected",
-    "symptoms": "Serve police decide customer expert mother significant provide evening church boy when nice.",
     "identified_at": "2025-09-30T00:36:11",
     "created_at": "2025-09-30T00:32:11"
   },
@@ -2325,8 +1809,6 @@
     "incident_ci_id": "259",
     "incident_id": "196",
     "ci_id": "22",
-    "relationship_type": "suspected_cause",
-    "symptoms": "Deal go five center region exist each.",
     "identified_at": "2025-09-30T00:22:11",
     "created_at": "2025-09-30T00:32:11"
   },
@@ -2334,8 +1816,6 @@
     "incident_ci_id": "260",
     "incident_id": "197",
     "ci_id": "26",
-    "relationship_type": "primary_affected",
-    "symptoms": "Find throughout music anything ahead tough.",
     "identified_at": "2025-10-04T07:07:29",
     "created_at": "2025-10-04T07:08:29"
   },
@@ -2343,8 +1823,6 @@
     "incident_ci_id": "261",
     "incident_id": "198",
     "ci_id": "16",
-    "relationship_type": "primary_affected",
-    "symptoms": "Black approach interview condition other or.",
     "identified_at": "2025-09-23T20:27:24",
     "created_at": "2025-09-23T20:27:24"
   },
@@ -2352,8 +1830,6 @@
     "incident_ci_id": "262",
     "incident_id": "199",
     "ci_id": "45",
-    "relationship_type": "primary_affected",
-    "symptoms": "Pattern fine stage require provide move wind sense letter capital spend.",
     "identified_at": "2025-09-23T06:50:21",
     "created_at": "2025-09-23T06:38:21"
   },
@@ -2361,8 +1837,6 @@
     "incident_ci_id": "263",
     "incident_id": "200",
     "ci_id": "42",
-    "relationship_type": "primary_affected",
-    "symptoms": "Best financial popular short like water century time election guy contain.",
     "identified_at": "2025-09-19T11:33:10",
     "created_at": "2025-09-19T11:36:10"
   },
@@ -2370,8 +1844,6 @@
     "incident_ci_id": "264",
     "incident_id": "200",
     "ci_id": "48",
-    "relationship_type": "related",
-    "symptoms": "Small think law air little goal leave color should page.",
     "identified_at": "2025-09-19T11:46:10",
     "created_at": "2025-09-19T11:36:10"
   }

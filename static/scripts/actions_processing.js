@@ -370,11 +370,12 @@ async function executeAPI(actionId) {
             // OR if it's a number type parameter that got converted to an integer
             if (/^\d+\.0$/.test(originalValue)) {
                 argumentFloatFields.push(paramName);
-            } else if (parameterInfo['type'] === 'number' && /^\d+$/.test(originalValue)) {
-                // If it's a number type and user entered a whole number without decimal point,
-                // we'll treat it as potentially needing .0 in export
-                argumentFloatFields.push(paramName);
-            }
+            } 
+            // else if (parameterInfo['type'] === 'number' && /^\d+$/.test(originalValue)) {
+            //     // If it's a number type and user entered a whole number without decimal point,
+            //     // we'll treat it as potentially needing .0 in export
+            //     argumentFloatFields.push(paramName);
+            // }
             
             if (parameterInfo['type'] === 'object'){
                 // Detect float fields in the original JSON string BEFORE parsing
