@@ -1,0 +1,122 @@
+{
+  "1": {
+    "rollback_id": "1",
+    "rollback_number": "RBK0000001",
+    "change_id": "1",
+    "incident_id": "119",
+    "title": "Rollback: Emergency: Implement hotfix for Load Balancer critical vulnerability",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 92\n\nInitiating emergency rollback procedure.",
+    "requested_by": "505",
+    "status": "executed",
+    "executed_at": "2025-10-07T11:43:00",
+    "created_at": "2025-10-07T09:43:00"
+  },
+  "2": {
+    "rollback_id": "2",
+    "rollback_number": "RBK0000002",
+    "change_id": "2",
+    "incident_id": "65",
+    "title": "Rollback: Update Load Balancer configuration parameters",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 43\n\nInitiating emergency rollback procedure.",
+    "requested_by": "592",
+    "status": "failed",
+    "executed_at": "2025-10-06T14:25:02",
+    "created_at": "2025-10-06T10:25:02"
+  },
+  "3": {
+    "rollback_id": "3",
+    "rollback_number": "RBK0000003",
+    "change_id": "3",
+    "incident_id": "48",
+    "title": "Rollback: Apply Load Balancer monthly security updates",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 43%\n- Performance degradation of 58%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "585",
+    "status": "requested",
+    "executed_at": null,
+    "created_at": "2025-10-06T23:41:33"
+  },
+  "4": {
+    "rollback_id": "4",
+    "rollback_number": "RBK0000004",
+    "change_id": "4",
+    "incident_id": "171",
+    "title": "Rollback: Implement Application Server performance optimization",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 20%\n- Performance degradation of 33%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "611",
+    "status": "failed",
+    "executed_at": "2025-09-24T14:09:14",
+    "created_at": "2025-09-24T10:09:14"
+  },
+  "5": {
+    "rollback_id": "5",
+    "rollback_number": "RBK0000005",
+    "change_id": "5",
+    "incident_id": "149",
+    "title": "Rollback: Emergency: Restore Load Balancer service from backup",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 21%\n- Performance degradation of 61%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "572",
+    "status": "failed",
+    "executed_at": "2025-10-06T13:57:42",
+    "created_at": "2025-10-06T08:57:42"
+  },
+  "6": {
+    "rollback_id": "6",
+    "rollback_number": "RBK0000006",
+    "change_id": "6",
+    "incident_id": "94",
+    "title": "Rollback: Apply Load Balancer monthly security updates",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 15%\n- Performance degradation of 73%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "407",
+    "status": "approved",
+    "executed_at": null,
+    "created_at": "2025-09-19T22:06:31"
+  },
+  "7": {
+    "rollback_id": "7",
+    "rollback_number": "RBK0000007",
+    "change_id": "7",
+    "incident_id": "126",
+    "title": "Rollback: Upgrade Application Server to version v1.2.8",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 16%\n- Performance degradation of 32%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "622",
+    "status": "approved",
+    "executed_at": null,
+    "created_at": "2025-10-06T17:01:19"
+  },
+  "8": {
+    "rollback_id": "8",
+    "rollback_number": "RBK0000008",
+    "change_id": "8",
+    "incident_id": "132",
+    "title": "Rollback: Emergency: Implement hotfix for Database critical vulnerability",
+    "rollback_reason": "Post-implementation validation failed:\n- Critical functionality broken: payment processing\n- Monitoring alerts triggered: 95\n\nInitiating emergency rollback procedure.",
+    "requested_by": "366",
+    "status": "failed",
+    "executed_at": "2025-10-05T22:37:36",
+    "created_at": "2025-10-05T20:37:36"
+  },
+  "9": {
+    "rollback_id": "9",
+    "rollback_number": "RBK0000009",
+    "change_id": "9",
+    "incident_id": "5",
+    "title": "Rollback: Apply Application Server monthly security updates",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 40%\n- Performance degradation of 78%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "285",
+    "status": "failed",
+    "executed_at": "2025-09-20T04:35:19",
+    "created_at": "2025-09-20T01:35:19"
+  },
+  "10": {
+    "rollback_id": "10",
+    "rollback_number": "RBK0000010",
+    "change_id": "10",
+    "incident_id": "118",
+    "title": "Rollback: Emergency: Restore Load Balancer service from backup",
+    "rollback_reason": "Change implementation caused unexpected side effects:\n- Error rate increased to 41%\n- Performance degradation of 66%\n\nImmediate rollback required to restore service stability.",
+    "requested_by": "69",
+    "status": "failed",
+    "executed_at": "2025-09-28T19:50:23",
+    "created_at": "2025-09-28T16:50:23"
+  }
+}

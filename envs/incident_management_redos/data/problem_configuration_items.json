@@ -1,0 +1,302 @@
+{
+  "1": {
+    "problem_ci_id": "1",
+    "problem_id": "1",
+    "ci_id": "19",
+    "created_at": "2025-08-25T01:32:52"
+  },
+  "2": {
+    "problem_ci_id": "2",
+    "problem_id": "1",
+    "ci_id": "18",
+    "created_at": "2025-08-25T01:32:52"
+  },
+  "3": {
+    "problem_ci_id": "3",
+    "problem_id": "1",
+    "ci_id": "9",
+    "created_at": "2025-08-25T01:32:52"
+  },
+  "4": {
+    "problem_ci_id": "4",
+    "problem_id": "2",
+    "ci_id": "47",
+    "created_at": "2025-09-22T08:11:55"
+  },
+  "5": {
+    "problem_ci_id": "5",
+    "problem_id": "2",
+    "ci_id": "1",
+    "created_at": "2025-09-22T08:11:55"
+  },
+  "6": {
+    "problem_ci_id": "6",
+    "problem_id": "3",
+    "ci_id": "10",
+    "created_at": "2025-07-15T06:30:48"
+  },
+  "7": {
+    "problem_ci_id": "7",
+    "problem_id": "4",
+    "ci_id": "14",
+    "created_at": "2025-10-04T03:03:29"
+  },
+  "8": {
+    "problem_ci_id": "8",
+    "problem_id": "5",
+    "ci_id": "20",
+    "created_at": "2025-08-22T17:56:57"
+  },
+  "9": {
+    "problem_ci_id": "9",
+    "problem_id": "6",
+    "ci_id": "32",
+    "created_at": "2025-09-22T08:01:16"
+  },
+  "10": {
+    "problem_ci_id": "10",
+    "problem_id": "6",
+    "ci_id": "24",
+    "created_at": "2025-09-22T08:01:16"
+  },
+  "11": {
+    "problem_ci_id": "11",
+    "problem_id": "7",
+    "ci_id": "3",
+    "created_at": "2025-07-04T20:57:22"
+  },
+  "12": {
+    "problem_ci_id": "12",
+    "problem_id": "8",
+    "ci_id": "49",
+    "created_at": "2025-07-11T01:31:08"
+  },
+  "13": {
+    "problem_ci_id": "13",
+    "problem_id": "9",
+    "ci_id": "4",
+    "created_at": "2025-10-06T13:10:43"
+  },
+  "14": {
+    "problem_ci_id": "14",
+    "problem_id": "9",
+    "ci_id": "18",
+    "created_at": "2025-10-06T13:10:43"
+  },
+  "15": {
+    "problem_ci_id": "15",
+    "problem_id": "9",
+    "ci_id": "50",
+    "created_at": "2025-10-06T13:10:43"
+  },
+  "16": {
+    "problem_ci_id": "16",
+    "problem_id": "10",
+    "ci_id": "35",
+    "created_at": "2025-07-17T10:20:40"
+  },
+  "17": {
+    "problem_ci_id": "17",
+    "problem_id": "11",
+    "ci_id": "13",
+    "created_at": "2025-08-27T11:02:42"
+  },
+  "18": {
+    "problem_ci_id": "18",
+    "problem_id": "12",
+    "ci_id": "17",
+    "created_at": "2025-08-01T19:23:44"
+  },
+  "19": {
+    "problem_ci_id": "19",
+    "problem_id": "12",
+    "ci_id": "25",
+    "created_at": "2025-08-01T19:23:44"
+  },
+  "20": {
+    "problem_ci_id": "20",
+    "problem_id": "12",
+    "ci_id": "1",
+    "created_at": "2025-08-01T19:23:44"
+  },
+  "21": {
+    "problem_ci_id": "21",
+    "problem_id": "13",
+    "ci_id": "50",
+    "created_at": "2025-06-28T04:47:57"
+  },
+  "22": {
+    "problem_ci_id": "22",
+    "problem_id": "14",
+    "ci_id": "25",
+    "created_at": "2025-07-11T01:00:27"
+  },
+  "23": {
+    "problem_ci_id": "23",
+    "problem_id": "14",
+    "ci_id": "50",
+    "created_at": "2025-07-11T01:00:27"
+  },
+  "24": {
+    "problem_ci_id": "24",
+    "problem_id": "15",
+    "ci_id": "16",
+    "created_at": "2025-05-02T17:24:19"
+  },
+  "25": {
+    "problem_ci_id": "25",
+    "problem_id": "15",
+    "ci_id": "48",
+    "created_at": "2025-05-02T17:24:19"
+  },
+  "26": {
+    "problem_ci_id": "26",
+    "problem_id": "15",
+    "ci_id": "3",
+    "created_at": "2025-05-02T17:24:19"
+  },
+  "27": {
+    "problem_ci_id": "27",
+    "problem_id": "16",
+    "ci_id": "48",
+    "created_at": "2025-07-02T08:29:15"
+  },
+  "28": {
+    "problem_ci_id": "28",
+    "problem_id": "17",
+    "ci_id": "34",
+    "created_at": "2025-09-29T16:28:18"
+  },
+  "29": {
+    "problem_ci_id": "29",
+    "problem_id": "17",
+    "ci_id": "43",
+    "created_at": "2025-09-29T16:28:18"
+  },
+  "30": {
+    "problem_ci_id": "30",
+    "problem_id": "18",
+    "ci_id": "31",
+    "created_at": "2025-09-01T22:42:37"
+  },
+  "31": {
+    "problem_ci_id": "31",
+    "problem_id": "18",
+    "ci_id": "25",
+    "created_at": "2025-09-01T22:42:37"
+  },
+  "32": {
+    "problem_ci_id": "32",
+    "problem_id": "18",
+    "ci_id": "44",
+    "created_at": "2025-09-01T22:42:37"
+  },
+  "33": {
+    "problem_ci_id": "33",
+    "problem_id": "19",
+    "ci_id": "21",
+    "created_at": "2025-09-13T01:06:22"
+  },
+  "34": {
+    "problem_ci_id": "34",
+    "problem_id": "19",
+    "ci_id": "11",
+    "created_at": "2025-09-13T01:06:22"
+  },
+  "35": {
+    "problem_ci_id": "35",
+    "problem_id": "19",
+    "ci_id": "41",
+    "created_at": "2025-09-13T01:06:22"
+  },
+  "36": {
+    "problem_ci_id": "36",
+    "problem_id": "20",
+    "ci_id": "48",
+    "created_at": "2025-09-18T02:43:00"
+  },
+  "37": {
+    "problem_ci_id": "37",
+    "problem_id": "20",
+    "ci_id": "36",
+    "created_at": "2025-09-18T02:43:00"
+  },
+  "38": {
+    "problem_ci_id": "38",
+    "problem_id": "21",
+    "ci_id": "17",
+    "created_at": "2025-07-24T19:00:02"
+  },
+  "39": {
+    "problem_ci_id": "39",
+    "problem_id": "21",
+    "ci_id": "31",
+    "created_at": "2025-07-24T19:00:02"
+  },
+  "40": {
+    "problem_ci_id": "40",
+    "problem_id": "22",
+    "ci_id": "13",
+    "created_at": "2025-09-24T03:29:58"
+  },
+  "41": {
+    "problem_ci_id": "41",
+    "problem_id": "22",
+    "ci_id": "24",
+    "created_at": "2025-09-24T03:29:58"
+  },
+  "42": {
+    "problem_ci_id": "42",
+    "problem_id": "23",
+    "ci_id": "43",
+    "created_at": "2025-08-06T22:47:18"
+  },
+  "43": {
+    "problem_ci_id": "43",
+    "problem_id": "23",
+    "ci_id": "14",
+    "created_at": "2025-08-06T22:47:18"
+  },
+  "44": {
+    "problem_ci_id": "44",
+    "problem_id": "23",
+    "ci_id": "8",
+    "created_at": "2025-08-06T22:47:18"
+  },
+  "45": {
+    "problem_ci_id": "45",
+    "problem_id": "24",
+    "ci_id": "28",
+    "created_at": "2025-09-24T06:17:01"
+  },
+  "46": {
+    "problem_ci_id": "46",
+    "problem_id": "25",
+    "ci_id": "11",
+    "created_at": "2025-08-24T11:24:50"
+  },
+  "47": {
+    "problem_ci_id": "47",
+    "problem_id": "26",
+    "ci_id": "38",
+    "created_at": "2025-07-14T04:34:19"
+  },
+  "48": {
+    "problem_ci_id": "48",
+    "problem_id": "26",
+    "ci_id": "8",
+    "created_at": "2025-07-14T04:34:19"
+  },
+  "49": {
+    "problem_ci_id": "49",
+    "problem_id": "27",
+    "ci_id": "16",
+    "created_at": "2025-10-06T08:45:26"
+  },
+  "50": {
+    "problem_ci_id": "50",
+    "problem_id": "28",
+    "ci_id": "3",
+    "created_at": "2025-09-11T12:13:10"
+  }
+}

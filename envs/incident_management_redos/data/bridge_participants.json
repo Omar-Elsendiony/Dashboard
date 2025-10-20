@@ -1,0 +1,2872 @@
+{
+  "1": {
+    "participant_id": "1",
+    "bridge_id": "1",
+    "user_id": "184",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T12:13:52"
+  },
+  "2": {
+    "participant_id": "2",
+    "bridge_id": "1",
+    "user_id": "346",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T13:52:50"
+  },
+  "3": {
+    "participant_id": "3",
+    "bridge_id": "2",
+    "user_id": "126",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-03T04:19:15"
+  },
+  "4": {
+    "participant_id": "4",
+    "bridge_id": "2",
+    "user_id": "86",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-03T02:12:17"
+  },
+  "5": {
+    "participant_id": "5",
+    "bridge_id": "2",
+    "user_id": "362",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T00:30:33"
+  },
+  "6": {
+    "participant_id": "6",
+    "bridge_id": "2",
+    "user_id": "194",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-03T03:12:08"
+  },
+  "7": {
+    "participant_id": "7",
+    "bridge_id": "2",
+    "user_id": "636",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-02T23:50:15"
+  },
+  "8": {
+    "participant_id": "8",
+    "bridge_id": "3",
+    "user_id": "150",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-06T05:02:03"
+  },
+  "9": {
+    "participant_id": "9",
+    "bridge_id": "3",
+    "user_id": "535",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-06T05:01:47"
+  },
+  "10": {
+    "participant_id": "10",
+    "bridge_id": "4",
+    "user_id": "31",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-26T22:44:09"
+  },
+  "11": {
+    "participant_id": "11",
+    "bridge_id": "4",
+    "user_id": "443",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T18:53:15"
+  },
+  "12": {
+    "participant_id": "12",
+    "bridge_id": "4",
+    "user_id": "413",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-04T18:21:28"
+  },
+  "13": {
+    "participant_id": "13",
+    "bridge_id": "4",
+    "user_id": "195",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-18T00:31:26"
+  },
+  "14": {
+    "participant_id": "14",
+    "bridge_id": "4",
+    "user_id": "233",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T03:17:25"
+  },
+  "15": {
+    "participant_id": "15",
+    "bridge_id": "5",
+    "user_id": "330",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-26T21:57:44"
+  },
+  "16": {
+    "participant_id": "16",
+    "bridge_id": "5",
+    "user_id": "43",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-17T18:44:13"
+  },
+  "17": {
+    "participant_id": "17",
+    "bridge_id": "5",
+    "user_id": "193",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T02:25:52"
+  },
+  "18": {
+    "participant_id": "18",
+    "bridge_id": "5",
+    "user_id": "364",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-05T19:56:45"
+  },
+  "19": {
+    "participant_id": "19",
+    "bridge_id": "5",
+    "user_id": "665",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-26T04:47:28"
+  },
+  "20": {
+    "participant_id": "20",
+    "bridge_id": "6",
+    "user_id": "8",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-16T07:36:47"
+  },
+  "21": {
+    "participant_id": "21",
+    "bridge_id": "6",
+    "user_id": "475",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-16T07:44:27"
+  },
+  "22": {
+    "participant_id": "22",
+    "bridge_id": "6",
+    "user_id": "99",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-16T06:54:46"
+  },
+  "23": {
+    "participant_id": "23",
+    "bridge_id": "6",
+    "user_id": "140",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-16T07:26:05"
+  },
+  "24": {
+    "participant_id": "24",
+    "bridge_id": "6",
+    "user_id": "567",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-16T07:19:21"
+  },
+  "25": {
+    "participant_id": "25",
+    "bridge_id": "7",
+    "user_id": "34",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-03T16:25:30"
+  },
+  "26": {
+    "participant_id": "26",
+    "bridge_id": "7",
+    "user_id": "320",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-03T15:59:38"
+  },
+  "27": {
+    "participant_id": "27",
+    "bridge_id": "8",
+    "user_id": "110",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-17T11:34:53"
+  },
+  "28": {
+    "participant_id": "28",
+    "bridge_id": "8",
+    "user_id": "681",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T11:52:43"
+  },
+  "29": {
+    "participant_id": "29",
+    "bridge_id": "8",
+    "user_id": "265",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-17T12:19:44"
+  },
+  "30": {
+    "participant_id": "30",
+    "bridge_id": "8",
+    "user_id": "288",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-17T11:42:40"
+  },
+  "31": {
+    "participant_id": "31",
+    "bridge_id": "9",
+    "user_id": "77",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-07T07:15:43"
+  },
+  "32": {
+    "participant_id": "32",
+    "bridge_id": "9",
+    "user_id": "511",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-15T07:21:47"
+  },
+  "33": {
+    "participant_id": "33",
+    "bridge_id": "9",
+    "user_id": "308",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-01T09:53:23"
+  },
+  "34": {
+    "participant_id": "34",
+    "bridge_id": "9",
+    "user_id": "27",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-14T00:50:59"
+  },
+  "35": {
+    "participant_id": "35",
+    "bridge_id": "9",
+    "user_id": "190",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-21T10:32:16"
+  },
+  "36": {
+    "participant_id": "36",
+    "bridge_id": "10",
+    "user_id": "618",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-02T17:22:58"
+  },
+  "37": {
+    "participant_id": "37",
+    "bridge_id": "10",
+    "user_id": "117",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-02T16:38:37"
+  },
+  "38": {
+    "participant_id": "38",
+    "bridge_id": "10",
+    "user_id": "342",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T16:11:46"
+  },
+  "39": {
+    "participant_id": "39",
+    "bridge_id": "11",
+    "user_id": "591",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-19T04:04:11"
+  },
+  "40": {
+    "participant_id": "40",
+    "bridge_id": "11",
+    "user_id": "238",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-14T03:09:26"
+  },
+  "41": {
+    "participant_id": "41",
+    "bridge_id": "12",
+    "user_id": "564",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-24T17:04:44"
+  },
+  "42": {
+    "participant_id": "42",
+    "bridge_id": "12",
+    "user_id": "592",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-06T05:43:33"
+  },
+  "43": {
+    "participant_id": "43",
+    "bridge_id": "12",
+    "user_id": "674",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-06T09:43:21"
+  },
+  "44": {
+    "participant_id": "44",
+    "bridge_id": "12",
+    "user_id": "414",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-14T11:11:04"
+  },
+  "45": {
+    "participant_id": "45",
+    "bridge_id": "13",
+    "user_id": "96",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-01T00:16:40"
+  },
+  "46": {
+    "participant_id": "46",
+    "bridge_id": "13",
+    "user_id": "54",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-23T16:12:24"
+  },
+  "47": {
+    "participant_id": "47",
+    "bridge_id": "13",
+    "user_id": "97",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-13T22:50:23"
+  },
+  "48": {
+    "participant_id": "48",
+    "bridge_id": "13",
+    "user_id": "489",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T19:12:27"
+  },
+  "49": {
+    "participant_id": "49",
+    "bridge_id": "14",
+    "user_id": "370",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-05T07:12:12"
+  },
+  "50": {
+    "participant_id": "50",
+    "bridge_id": "14",
+    "user_id": "110",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-28T19:21:08"
+  },
+  "51": {
+    "participant_id": "51",
+    "bridge_id": "14",
+    "user_id": "606",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-19T12:08:49"
+  },
+  "52": {
+    "participant_id": "52",
+    "bridge_id": "14",
+    "user_id": "343",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T15:24:32"
+  },
+  "53": {
+    "participant_id": "53",
+    "bridge_id": "14",
+    "user_id": "665",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-20T03:28:51"
+  },
+  "54": {
+    "participant_id": "54",
+    "bridge_id": "15",
+    "user_id": "224",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T02:26:47"
+  },
+  "55": {
+    "participant_id": "55",
+    "bridge_id": "15",
+    "user_id": "699",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T01:04:36"
+  },
+  "56": {
+    "participant_id": "56",
+    "bridge_id": "16",
+    "user_id": "698",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-11T03:25:02"
+  },
+  "57": {
+    "participant_id": "57",
+    "bridge_id": "16",
+    "user_id": "505",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-11T05:04:34"
+  },
+  "58": {
+    "participant_id": "58",
+    "bridge_id": "16",
+    "user_id": "441",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-11T03:54:34"
+  },
+  "59": {
+    "participant_id": "59",
+    "bridge_id": "16",
+    "user_id": "198",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-11T06:54:17"
+  },
+  "60": {
+    "participant_id": "60",
+    "bridge_id": "16",
+    "user_id": "140",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-11T06:30:09"
+  },
+  "61": {
+    "participant_id": "61",
+    "bridge_id": "17",
+    "user_id": "295",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-06T21:40:38"
+  },
+  "62": {
+    "participant_id": "62",
+    "bridge_id": "17",
+    "user_id": "632",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T21:43:09"
+  },
+  "63": {
+    "participant_id": "63",
+    "bridge_id": "17",
+    "user_id": "262",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-05T22:39:04"
+  },
+  "64": {
+    "participant_id": "64",
+    "bridge_id": "17",
+    "user_id": "118",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-03T09:39:47"
+  },
+  "65": {
+    "participant_id": "65",
+    "bridge_id": "17",
+    "user_id": "196",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-06T23:29:02"
+  },
+  "66": {
+    "participant_id": "66",
+    "bridge_id": "18",
+    "user_id": "657",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-29T14:24:40"
+  },
+  "67": {
+    "participant_id": "67",
+    "bridge_id": "18",
+    "user_id": "136",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-01T03:56:23"
+  },
+  "68": {
+    "participant_id": "68",
+    "bridge_id": "18",
+    "user_id": "256",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T17:29:53"
+  },
+  "69": {
+    "participant_id": "69",
+    "bridge_id": "19",
+    "user_id": "137",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-11T09:05:57"
+  },
+  "70": {
+    "participant_id": "70",
+    "bridge_id": "19",
+    "user_id": "116",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-11T08:01:24"
+  },
+  "71": {
+    "participant_id": "71",
+    "bridge_id": "20",
+    "user_id": "114",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-05T20:56:51"
+  },
+  "72": {
+    "participant_id": "72",
+    "bridge_id": "20",
+    "user_id": "110",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T04:26:10"
+  },
+  "73": {
+    "participant_id": "73",
+    "bridge_id": "20",
+    "user_id": "458",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-29T16:08:11"
+  },
+  "74": {
+    "participant_id": "74",
+    "bridge_id": "21",
+    "user_id": "664",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-16T10:39:59"
+  },
+  "75": {
+    "participant_id": "75",
+    "bridge_id": "21",
+    "user_id": "378",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-16T10:59:43"
+  },
+  "76": {
+    "participant_id": "76",
+    "bridge_id": "21",
+    "user_id": "388",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-16T09:57:13"
+  },
+  "77": {
+    "participant_id": "77",
+    "bridge_id": "22",
+    "user_id": "207",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-01T03:18:00"
+  },
+  "78": {
+    "participant_id": "78",
+    "bridge_id": "22",
+    "user_id": "399",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-20T01:27:50"
+  },
+  "79": {
+    "participant_id": "79",
+    "bridge_id": "22",
+    "user_id": "682",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-19T14:31:24"
+  },
+  "80": {
+    "participant_id": "80",
+    "bridge_id": "22",
+    "user_id": "501",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-26T22:24:00"
+  },
+  "81": {
+    "participant_id": "81",
+    "bridge_id": "22",
+    "user_id": "51",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-25T15:50:18"
+  },
+  "82": {
+    "participant_id": "82",
+    "bridge_id": "23",
+    "user_id": "475",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-05T01:36:39"
+  },
+  "83": {
+    "participant_id": "83",
+    "bridge_id": "23",
+    "user_id": "62",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-30T13:17:25"
+  },
+  "84": {
+    "participant_id": "84",
+    "bridge_id": "24",
+    "user_id": "424",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-09T12:49:40"
+  },
+  "85": {
+    "participant_id": "85",
+    "bridge_id": "24",
+    "user_id": "145",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-09T12:55:22"
+  },
+  "86": {
+    "participant_id": "86",
+    "bridge_id": "24",
+    "user_id": "182",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-09T12:54:50"
+  },
+  "87": {
+    "participant_id": "87",
+    "bridge_id": "24",
+    "user_id": "15",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-09T13:28:16"
+  },
+  "88": {
+    "participant_id": "88",
+    "bridge_id": "25",
+    "user_id": "466",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-08T22:48:52"
+  },
+  "89": {
+    "participant_id": "89",
+    "bridge_id": "25",
+    "user_id": "660",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-08T22:10:11"
+  },
+  "90": {
+    "participant_id": "90",
+    "bridge_id": "26",
+    "user_id": "283",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-25T00:06:28"
+  },
+  "91": {
+    "participant_id": "91",
+    "bridge_id": "26",
+    "user_id": "277",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-29T14:35:56"
+  },
+  "92": {
+    "participant_id": "92",
+    "bridge_id": "26",
+    "user_id": "226",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-01T18:53:07"
+  },
+  "93": {
+    "participant_id": "93",
+    "bridge_id": "26",
+    "user_id": "18",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-23T08:49:21"
+  },
+  "94": {
+    "participant_id": "94",
+    "bridge_id": "26",
+    "user_id": "498",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-05T18:55:45"
+  },
+  "95": {
+    "participant_id": "95",
+    "bridge_id": "27",
+    "user_id": "522",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T11:19:21"
+  },
+  "96": {
+    "participant_id": "96",
+    "bridge_id": "27",
+    "user_id": "275",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-16T09:18:41"
+  },
+  "97": {
+    "participant_id": "97",
+    "bridge_id": "27",
+    "user_id": "261",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-16T11:11:14"
+  },
+  "98": {
+    "participant_id": "98",
+    "bridge_id": "28",
+    "user_id": "529",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-15T19:58:04"
+  },
+  "99": {
+    "participant_id": "99",
+    "bridge_id": "28",
+    "user_id": "414",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T20:10:06"
+  },
+  "100": {
+    "participant_id": "100",
+    "bridge_id": "28",
+    "user_id": "581",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T18:36:47"
+  },
+  "101": {
+    "participant_id": "101",
+    "bridge_id": "28",
+    "user_id": "290",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-15T19:01:08"
+  },
+  "102": {
+    "participant_id": "102",
+    "bridge_id": "29",
+    "user_id": "629",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-05T18:56:43"
+  },
+  "103": {
+    "participant_id": "103",
+    "bridge_id": "29",
+    "user_id": "542",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-02T22:17:48"
+  },
+  "104": {
+    "participant_id": "104",
+    "bridge_id": "29",
+    "user_id": "21",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-16T00:55:01"
+  },
+  "105": {
+    "participant_id": "105",
+    "bridge_id": "30",
+    "user_id": "350",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-17T07:05:24"
+  },
+  "106": {
+    "participant_id": "106",
+    "bridge_id": "30",
+    "user_id": "199",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T06:17:56"
+  },
+  "107": {
+    "participant_id": "107",
+    "bridge_id": "30",
+    "user_id": "314",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-17T02:54:28"
+  },
+  "108": {
+    "participant_id": "108",
+    "bridge_id": "30",
+    "user_id": "279",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T04:12:24"
+  },
+  "109": {
+    "participant_id": "109",
+    "bridge_id": "30",
+    "user_id": "412",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-17T07:38:40"
+  },
+  "110": {
+    "participant_id": "110",
+    "bridge_id": "31",
+    "user_id": "484",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-10T03:46:49"
+  },
+  "111": {
+    "participant_id": "111",
+    "bridge_id": "31",
+    "user_id": "333",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T03:09:57"
+  },
+  "112": {
+    "participant_id": "112",
+    "bridge_id": "32",
+    "user_id": "483",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-13T20:08:35"
+  },
+  "113": {
+    "participant_id": "113",
+    "bridge_id": "32",
+    "user_id": "342",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T20:32:34"
+  },
+  "114": {
+    "participant_id": "114",
+    "bridge_id": "32",
+    "user_id": "442",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-13T19:50:56"
+  },
+  "115": {
+    "participant_id": "115",
+    "bridge_id": "32",
+    "user_id": "79",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-13T20:54:02"
+  },
+  "116": {
+    "participant_id": "116",
+    "bridge_id": "33",
+    "user_id": "421",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T19:50:30"
+  },
+  "117": {
+    "participant_id": "117",
+    "bridge_id": "33",
+    "user_id": "479",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-04T19:43:19"
+  },
+  "118": {
+    "participant_id": "118",
+    "bridge_id": "33",
+    "user_id": "75",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T21:13:26"
+  },
+  "119": {
+    "participant_id": "119",
+    "bridge_id": "34",
+    "user_id": "227",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-10T17:20:42"
+  },
+  "120": {
+    "participant_id": "120",
+    "bridge_id": "34",
+    "user_id": "380",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T17:43:18"
+  },
+  "121": {
+    "participant_id": "121",
+    "bridge_id": "34",
+    "user_id": "263",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T16:53:38"
+  },
+  "122": {
+    "participant_id": "122",
+    "bridge_id": "34",
+    "user_id": "419",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T19:24:04"
+  },
+  "123": {
+    "participant_id": "123",
+    "bridge_id": "34",
+    "user_id": "659",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-10T18:00:13"
+  },
+  "124": {
+    "participant_id": "124",
+    "bridge_id": "35",
+    "user_id": "349",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-29T02:59:10"
+  },
+  "125": {
+    "participant_id": "125",
+    "bridge_id": "35",
+    "user_id": "122",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-05T09:56:58"
+  },
+  "126": {
+    "participant_id": "126",
+    "bridge_id": "35",
+    "user_id": "613",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-01T00:40:03"
+  },
+  "127": {
+    "participant_id": "127",
+    "bridge_id": "36",
+    "user_id": "284",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-29T22:54:47"
+  },
+  "128": {
+    "participant_id": "128",
+    "bridge_id": "36",
+    "user_id": "502",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-29T20:46:33"
+  },
+  "129": {
+    "participant_id": "129",
+    "bridge_id": "37",
+    "user_id": "103",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T03:42:26"
+  },
+  "130": {
+    "participant_id": "130",
+    "bridge_id": "37",
+    "user_id": "597",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-04T13:12:57"
+  },
+  "131": {
+    "participant_id": "131",
+    "bridge_id": "37",
+    "user_id": "1",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-23T13:52:17"
+  },
+  "132": {
+    "participant_id": "132",
+    "bridge_id": "37",
+    "user_id": "366",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-27T00:55:44"
+  },
+  "133": {
+    "participant_id": "133",
+    "bridge_id": "37",
+    "user_id": "169",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-07T02:29:01"
+  },
+  "134": {
+    "participant_id": "134",
+    "bridge_id": "38",
+    "user_id": "22",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-14T00:13:34"
+  },
+  "135": {
+    "participant_id": "135",
+    "bridge_id": "38",
+    "user_id": "177",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-13T20:46:30"
+  },
+  "136": {
+    "participant_id": "136",
+    "bridge_id": "39",
+    "user_id": "47",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-11T04:12:13"
+  },
+  "137": {
+    "participant_id": "137",
+    "bridge_id": "39",
+    "user_id": "215",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-11T02:58:16"
+  },
+  "138": {
+    "participant_id": "138",
+    "bridge_id": "39",
+    "user_id": "303",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-11T02:49:38"
+  },
+  "139": {
+    "participant_id": "139",
+    "bridge_id": "40",
+    "user_id": "232",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-26T01:17:37"
+  },
+  "140": {
+    "participant_id": "140",
+    "bridge_id": "40",
+    "user_id": "121",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-26T00:20:32"
+  },
+  "141": {
+    "participant_id": "141",
+    "bridge_id": "41",
+    "user_id": "307",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-08T15:15:53"
+  },
+  "142": {
+    "participant_id": "142",
+    "bridge_id": "41",
+    "user_id": "65",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-08T14:11:16"
+  },
+  "143": {
+    "participant_id": "143",
+    "bridge_id": "41",
+    "user_id": "388",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-08T14:54:56"
+  },
+  "144": {
+    "participant_id": "144",
+    "bridge_id": "41",
+    "user_id": "384",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-08T14:13:39"
+  },
+  "145": {
+    "participant_id": "145",
+    "bridge_id": "42",
+    "user_id": "112",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T01:49:23"
+  },
+  "146": {
+    "participant_id": "146",
+    "bridge_id": "42",
+    "user_id": "217",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T01:13:30"
+  },
+  "147": {
+    "participant_id": "147",
+    "bridge_id": "42",
+    "user_id": "426",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T01:12:59"
+  },
+  "148": {
+    "participant_id": "148",
+    "bridge_id": "43",
+    "user_id": "171",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-30T19:48:36"
+  },
+  "149": {
+    "participant_id": "149",
+    "bridge_id": "43",
+    "user_id": "533",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-06T16:54:48"
+  },
+  "150": {
+    "participant_id": "150",
+    "bridge_id": "43",
+    "user_id": "162",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T12:59:45"
+  },
+  "151": {
+    "participant_id": "151",
+    "bridge_id": "43",
+    "user_id": "436",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T11:49:55"
+  },
+  "152": {
+    "participant_id": "152",
+    "bridge_id": "43",
+    "user_id": "456",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-05T10:59:09"
+  },
+  "153": {
+    "participant_id": "153",
+    "bridge_id": "44",
+    "user_id": "621",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-06T05:21:09"
+  },
+  "154": {
+    "participant_id": "154",
+    "bridge_id": "44",
+    "user_id": "201",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-06T04:48:22"
+  },
+  "155": {
+    "participant_id": "155",
+    "bridge_id": "44",
+    "user_id": "385",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-06T05:25:59"
+  },
+  "156": {
+    "participant_id": "156",
+    "bridge_id": "44",
+    "user_id": "596",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-06T04:58:03"
+  },
+  "157": {
+    "participant_id": "157",
+    "bridge_id": "45",
+    "user_id": "236",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T00:24:58"
+  },
+  "158": {
+    "participant_id": "158",
+    "bridge_id": "45",
+    "user_id": "405",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-12T01:23:04"
+  },
+  "159": {
+    "participant_id": "159",
+    "bridge_id": "45",
+    "user_id": "531",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-12T00:24:50"
+  },
+  "160": {
+    "participant_id": "160",
+    "bridge_id": "46",
+    "user_id": "130",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-22T05:51:18"
+  },
+  "161": {
+    "participant_id": "161",
+    "bridge_id": "46",
+    "user_id": "52",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-22T06:21:05"
+  },
+  "162": {
+    "participant_id": "162",
+    "bridge_id": "46",
+    "user_id": "552",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-22T03:19:05"
+  },
+  "163": {
+    "participant_id": "163",
+    "bridge_id": "47",
+    "user_id": "551",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T10:03:22"
+  },
+  "164": {
+    "participant_id": "164",
+    "bridge_id": "47",
+    "user_id": "268",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-04T09:27:08"
+  },
+  "165": {
+    "participant_id": "165",
+    "bridge_id": "47",
+    "user_id": "140",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-04T10:06:37"
+  },
+  "166": {
+    "participant_id": "166",
+    "bridge_id": "47",
+    "user_id": "438",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-04T08:57:41"
+  },
+  "167": {
+    "participant_id": "167",
+    "bridge_id": "48",
+    "user_id": "226",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-13T13:38:38"
+  },
+  "168": {
+    "participant_id": "168",
+    "bridge_id": "48",
+    "user_id": "640",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T13:39:44"
+  },
+  "169": {
+    "participant_id": "169",
+    "bridge_id": "48",
+    "user_id": "433",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-13T13:29:19"
+  },
+  "170": {
+    "participant_id": "170",
+    "bridge_id": "49",
+    "user_id": "169",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-08T23:06:07"
+  },
+  "171": {
+    "participant_id": "171",
+    "bridge_id": "49",
+    "user_id": "31",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-08T22:49:18"
+  },
+  "172": {
+    "participant_id": "172",
+    "bridge_id": "49",
+    "user_id": "28",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-08T22:04:46"
+  },
+  "173": {
+    "participant_id": "173",
+    "bridge_id": "49",
+    "user_id": "32",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-08T23:41:55"
+  },
+  "174": {
+    "participant_id": "174",
+    "bridge_id": "50",
+    "user_id": "653",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-23T23:34:43"
+  },
+  "175": {
+    "participant_id": "175",
+    "bridge_id": "50",
+    "user_id": "195",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-23T23:12:14"
+  },
+  "176": {
+    "participant_id": "176",
+    "bridge_id": "50",
+    "user_id": "450",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-23T23:16:30"
+  },
+  "177": {
+    "participant_id": "177",
+    "bridge_id": "50",
+    "user_id": "646",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-23T23:05:18"
+  },
+  "178": {
+    "participant_id": "178",
+    "bridge_id": "51",
+    "user_id": "321",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-24T16:42:05"
+  },
+  "179": {
+    "participant_id": "179",
+    "bridge_id": "51",
+    "user_id": "118",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T10:26:24"
+  },
+  "180": {
+    "participant_id": "180",
+    "bridge_id": "51",
+    "user_id": "300",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-04T09:14:52"
+  },
+  "181": {
+    "participant_id": "181",
+    "bridge_id": "52",
+    "user_id": "559",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-19T02:03:49"
+  },
+  "182": {
+    "participant_id": "182",
+    "bridge_id": "52",
+    "user_id": "685",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-01T14:15:08"
+  },
+  "183": {
+    "participant_id": "183",
+    "bridge_id": "52",
+    "user_id": "503",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-23T23:49:15"
+  },
+  "184": {
+    "participant_id": "184",
+    "bridge_id": "53",
+    "user_id": "296",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-13T02:31:29"
+  },
+  "185": {
+    "participant_id": "185",
+    "bridge_id": "53",
+    "user_id": "389",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T02:50:23"
+  },
+  "186": {
+    "participant_id": "186",
+    "bridge_id": "53",
+    "user_id": "520",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T02:13:00"
+  },
+  "187": {
+    "participant_id": "187",
+    "bridge_id": "54",
+    "user_id": "46",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-25T01:54:26"
+  },
+  "188": {
+    "participant_id": "188",
+    "bridge_id": "54",
+    "user_id": "678",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-24T12:14:35"
+  },
+  "189": {
+    "participant_id": "189",
+    "bridge_id": "54",
+    "user_id": "387",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-30T09:41:40"
+  },
+  "190": {
+    "participant_id": "190",
+    "bridge_id": "54",
+    "user_id": "91",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T17:32:47"
+  },
+  "191": {
+    "participant_id": "191",
+    "bridge_id": "54",
+    "user_id": "282",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-06T23:08:34"
+  },
+  "192": {
+    "participant_id": "192",
+    "bridge_id": "55",
+    "user_id": "577",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-23T05:24:16"
+  },
+  "193": {
+    "participant_id": "193",
+    "bridge_id": "55",
+    "user_id": "423",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-23T05:04:53"
+  },
+  "194": {
+    "participant_id": "194",
+    "bridge_id": "55",
+    "user_id": "524",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-23T05:09:29"
+  },
+  "195": {
+    "participant_id": "195",
+    "bridge_id": "55",
+    "user_id": "379",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-23T05:16:36"
+  },
+  "196": {
+    "participant_id": "196",
+    "bridge_id": "55",
+    "user_id": "318",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-23T05:22:41"
+  },
+  "197": {
+    "participant_id": "197",
+    "bridge_id": "56",
+    "user_id": "43",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-06T01:05:49"
+  },
+  "198": {
+    "participant_id": "198",
+    "bridge_id": "56",
+    "user_id": "482",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T18:38:06"
+  },
+  "199": {
+    "participant_id": "199",
+    "bridge_id": "56",
+    "user_id": "213",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-02T03:03:18"
+  },
+  "200": {
+    "participant_id": "200",
+    "bridge_id": "56",
+    "user_id": "617",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-02T04:03:37"
+  },
+  "201": {
+    "participant_id": "201",
+    "bridge_id": "56",
+    "user_id": "364",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T16:37:04"
+  },
+  "202": {
+    "participant_id": "202",
+    "bridge_id": "57",
+    "user_id": "67",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T02:01:31"
+  },
+  "203": {
+    "participant_id": "203",
+    "bridge_id": "57",
+    "user_id": "49",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T02:40:18"
+  },
+  "204": {
+    "participant_id": "204",
+    "bridge_id": "57",
+    "user_id": "259",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T03:14:08"
+  },
+  "205": {
+    "participant_id": "205",
+    "bridge_id": "58",
+    "user_id": "641",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-23T08:39:40"
+  },
+  "206": {
+    "participant_id": "206",
+    "bridge_id": "58",
+    "user_id": "561",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-19T06:36:16"
+  },
+  "207": {
+    "participant_id": "207",
+    "bridge_id": "59",
+    "user_id": "255",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-30T04:23:00"
+  },
+  "208": {
+    "participant_id": "208",
+    "bridge_id": "59",
+    "user_id": "193",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T03:14:25"
+  },
+  "209": {
+    "participant_id": "209",
+    "bridge_id": "59",
+    "user_id": "275",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-30T03:17:22"
+  },
+  "210": {
+    "participant_id": "210",
+    "bridge_id": "59",
+    "user_id": "690",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T02:43:56"
+  },
+  "211": {
+    "participant_id": "211",
+    "bridge_id": "59",
+    "user_id": "410",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-30T02:42:07"
+  },
+  "212": {
+    "participant_id": "212",
+    "bridge_id": "60",
+    "user_id": "586",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-29T01:34:42"
+  },
+  "213": {
+    "participant_id": "213",
+    "bridge_id": "60",
+    "user_id": "305",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-29T01:03:33"
+  },
+  "214": {
+    "participant_id": "214",
+    "bridge_id": "60",
+    "user_id": "249",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-28T23:17:54"
+  },
+  "215": {
+    "participant_id": "215",
+    "bridge_id": "61",
+    "user_id": "542",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-11T01:44:47"
+  },
+  "216": {
+    "participant_id": "216",
+    "bridge_id": "61",
+    "user_id": "107",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-11T01:23:43"
+  },
+  "217": {
+    "participant_id": "217",
+    "bridge_id": "61",
+    "user_id": "258",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-11T02:40:46"
+  },
+  "218": {
+    "participant_id": "218",
+    "bridge_id": "62",
+    "user_id": "400",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-10T12:24:49"
+  },
+  "219": {
+    "participant_id": "219",
+    "bridge_id": "62",
+    "user_id": "161",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-27T11:08:49"
+  },
+  "220": {
+    "participant_id": "220",
+    "bridge_id": "62",
+    "user_id": "298",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T16:15:15"
+  },
+  "221": {
+    "participant_id": "221",
+    "bridge_id": "62",
+    "user_id": "413",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T14:17:42"
+  },
+  "222": {
+    "participant_id": "222",
+    "bridge_id": "62",
+    "user_id": "349",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-26T10:52:28"
+  },
+  "223": {
+    "participant_id": "223",
+    "bridge_id": "63",
+    "user_id": "24",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T05:26:15"
+  },
+  "224": {
+    "participant_id": "224",
+    "bridge_id": "63",
+    "user_id": "387",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-03T14:27:27"
+  },
+  "225": {
+    "participant_id": "225",
+    "bridge_id": "63",
+    "user_id": "287",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T21:22:38"
+  },
+  "226": {
+    "participant_id": "226",
+    "bridge_id": "63",
+    "user_id": "590",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T03:01:31"
+  },
+  "227": {
+    "participant_id": "227",
+    "bridge_id": "64",
+    "user_id": "378",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T18:35:33"
+  },
+  "228": {
+    "participant_id": "228",
+    "bridge_id": "64",
+    "user_id": "532",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T22:09:38"
+  },
+  "229": {
+    "participant_id": "229",
+    "bridge_id": "64",
+    "user_id": "340",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T20:06:28"
+  },
+  "230": {
+    "participant_id": "230",
+    "bridge_id": "65",
+    "user_id": "64",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-07T01:03:57"
+  },
+  "231": {
+    "participant_id": "231",
+    "bridge_id": "65",
+    "user_id": "297",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T02:17:50"
+  },
+  "232": {
+    "participant_id": "232",
+    "bridge_id": "65",
+    "user_id": "245",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T04:13:56"
+  },
+  "233": {
+    "participant_id": "233",
+    "bridge_id": "65",
+    "user_id": "214",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T06:18:58"
+  },
+  "234": {
+    "participant_id": "234",
+    "bridge_id": "65",
+    "user_id": "539",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-01T23:57:54"
+  },
+  "235": {
+    "participant_id": "235",
+    "bridge_id": "66",
+    "user_id": "405",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T04:11:20"
+  },
+  "236": {
+    "participant_id": "236",
+    "bridge_id": "66",
+    "user_id": "105",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-18T02:36:01"
+  },
+  "237": {
+    "participant_id": "237",
+    "bridge_id": "66",
+    "user_id": "615",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-15T20:01:34"
+  },
+  "238": {
+    "participant_id": "238",
+    "bridge_id": "66",
+    "user_id": "478",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-06T18:55:09"
+  },
+  "239": {
+    "participant_id": "239",
+    "bridge_id": "67",
+    "user_id": "204",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-04T06:57:44"
+  },
+  "240": {
+    "participant_id": "240",
+    "bridge_id": "67",
+    "user_id": "94",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-04T06:55:56"
+  },
+  "241": {
+    "participant_id": "241",
+    "bridge_id": "68",
+    "user_id": "138",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-21T23:46:01"
+  },
+  "242": {
+    "participant_id": "242",
+    "bridge_id": "68",
+    "user_id": "331",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-02T08:39:21"
+  },
+  "243": {
+    "participant_id": "243",
+    "bridge_id": "68",
+    "user_id": "417",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-17T16:19:27"
+  },
+  "244": {
+    "participant_id": "244",
+    "bridge_id": "68",
+    "user_id": "79",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T06:52:13"
+  },
+  "245": {
+    "participant_id": "245",
+    "bridge_id": "68",
+    "user_id": "627",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-04T22:24:48"
+  },
+  "246": {
+    "participant_id": "246",
+    "bridge_id": "69",
+    "user_id": "98",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-28T20:23:08"
+  },
+  "247": {
+    "participant_id": "247",
+    "bridge_id": "69",
+    "user_id": "417",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T20:53:33"
+  },
+  "248": {
+    "participant_id": "248",
+    "bridge_id": "69",
+    "user_id": "190",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-28T18:39:44"
+  },
+  "249": {
+    "participant_id": "249",
+    "bridge_id": "69",
+    "user_id": "31",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T18:44:05"
+  },
+  "250": {
+    "participant_id": "250",
+    "bridge_id": "70",
+    "user_id": "115",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-09T17:59:59"
+  },
+  "251": {
+    "participant_id": "251",
+    "bridge_id": "70",
+    "user_id": "537",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-09T18:24:52"
+  },
+  "252": {
+    "participant_id": "252",
+    "bridge_id": "70",
+    "user_id": "387",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-09T17:36:42"
+  },
+  "253": {
+    "participant_id": "253",
+    "bridge_id": "70",
+    "user_id": "653",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-09T18:07:48"
+  },
+  "254": {
+    "participant_id": "254",
+    "bridge_id": "71",
+    "user_id": "291",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-14T06:52:44"
+  },
+  "255": {
+    "participant_id": "255",
+    "bridge_id": "71",
+    "user_id": "426",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-14T07:08:30"
+  },
+  "256": {
+    "participant_id": "256",
+    "bridge_id": "71",
+    "user_id": "636",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-14T07:03:10"
+  },
+  "257": {
+    "participant_id": "257",
+    "bridge_id": "71",
+    "user_id": "377",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-14T06:29:41"
+  },
+  "258": {
+    "participant_id": "258",
+    "bridge_id": "72",
+    "user_id": "79",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-10T15:27:20"
+  },
+  "259": {
+    "participant_id": "259",
+    "bridge_id": "72",
+    "user_id": "73",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-07T03:17:46"
+  },
+  "260": {
+    "participant_id": "260",
+    "bridge_id": "72",
+    "user_id": "655",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-03T08:44:03"
+  },
+  "261": {
+    "participant_id": "261",
+    "bridge_id": "73",
+    "user_id": "300",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-26T22:52:12"
+  },
+  "262": {
+    "participant_id": "262",
+    "bridge_id": "73",
+    "user_id": "407",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-26T22:31:11"
+  },
+  "263": {
+    "participant_id": "263",
+    "bridge_id": "74",
+    "user_id": "28",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-05T18:35:09"
+  },
+  "264": {
+    "participant_id": "264",
+    "bridge_id": "74",
+    "user_id": "418",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T19:04:58"
+  },
+  "265": {
+    "participant_id": "265",
+    "bridge_id": "74",
+    "user_id": "162",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-19T13:45:34"
+  },
+  "266": {
+    "participant_id": "266",
+    "bridge_id": "74",
+    "user_id": "617",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-30T03:43:44"
+  },
+  "267": {
+    "participant_id": "267",
+    "bridge_id": "75",
+    "user_id": "463",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-03T17:16:42"
+  },
+  "268": {
+    "participant_id": "268",
+    "bridge_id": "75",
+    "user_id": "346",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-03T17:29:40"
+  },
+  "269": {
+    "participant_id": "269",
+    "bridge_id": "76",
+    "user_id": "262",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T16:28:01"
+  },
+  "270": {
+    "participant_id": "270",
+    "bridge_id": "76",
+    "user_id": "134",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-25T11:29:31"
+  },
+  "271": {
+    "participant_id": "271",
+    "bridge_id": "77",
+    "user_id": "646",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-27T05:01:28"
+  },
+  "272": {
+    "participant_id": "272",
+    "bridge_id": "77",
+    "user_id": "244",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-25T18:50:10"
+  },
+  "273": {
+    "participant_id": "273",
+    "bridge_id": "78",
+    "user_id": "446",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T17:59:23"
+  },
+  "274": {
+    "participant_id": "274",
+    "bridge_id": "78",
+    "user_id": "99",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T18:11:46"
+  },
+  "275": {
+    "participant_id": "275",
+    "bridge_id": "78",
+    "user_id": "132",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-12T18:42:46"
+  },
+  "276": {
+    "participant_id": "276",
+    "bridge_id": "78",
+    "user_id": "19",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T18:47:24"
+  },
+  "277": {
+    "participant_id": "277",
+    "bridge_id": "78",
+    "user_id": "57",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-12T17:27:12"
+  },
+  "278": {
+    "participant_id": "278",
+    "bridge_id": "79",
+    "user_id": "408",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T20:41:50"
+  },
+  "279": {
+    "participant_id": "279",
+    "bridge_id": "79",
+    "user_id": "28",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-28T21:40:13"
+  },
+  "280": {
+    "participant_id": "280",
+    "bridge_id": "79",
+    "user_id": "467",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T20:09:32"
+  },
+  "281": {
+    "participant_id": "281",
+    "bridge_id": "79",
+    "user_id": "218",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T20:32:15"
+  },
+  "282": {
+    "participant_id": "282",
+    "bridge_id": "80",
+    "user_id": "261",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-14T10:11:12"
+  },
+  "283": {
+    "participant_id": "283",
+    "bridge_id": "80",
+    "user_id": "54",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-14T10:29:56"
+  },
+  "284": {
+    "participant_id": "284",
+    "bridge_id": "80",
+    "user_id": "564",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-14T10:50:52"
+  },
+  "285": {
+    "participant_id": "285",
+    "bridge_id": "81",
+    "user_id": "498",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-27T09:01:34"
+  },
+  "286": {
+    "participant_id": "286",
+    "bridge_id": "81",
+    "user_id": "575",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-05T00:56:05"
+  },
+  "287": {
+    "participant_id": "287",
+    "bridge_id": "81",
+    "user_id": "538",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-29T20:29:42"
+  },
+  "288": {
+    "participant_id": "288",
+    "bridge_id": "81",
+    "user_id": "42",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-01T18:49:54"
+  },
+  "289": {
+    "participant_id": "289",
+    "bridge_id": "81",
+    "user_id": "312",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T14:41:40"
+  },
+  "290": {
+    "participant_id": "290",
+    "bridge_id": "82",
+    "user_id": "351",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-17T03:11:49"
+  },
+  "291": {
+    "participant_id": "291",
+    "bridge_id": "82",
+    "user_id": "489",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T03:23:39"
+  },
+  "292": {
+    "participant_id": "292",
+    "bridge_id": "82",
+    "user_id": "48",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-17T04:10:05"
+  },
+  "293": {
+    "participant_id": "293",
+    "bridge_id": "82",
+    "user_id": "661",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-17T03:22:39"
+  },
+  "294": {
+    "participant_id": "294",
+    "bridge_id": "82",
+    "user_id": "55",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-17T02:52:43"
+  },
+  "295": {
+    "participant_id": "295",
+    "bridge_id": "83",
+    "user_id": "19",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T01:24:03"
+  },
+  "296": {
+    "participant_id": "296",
+    "bridge_id": "83",
+    "user_id": "378",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T01:39:19"
+  },
+  "297": {
+    "participant_id": "297",
+    "bridge_id": "83",
+    "user_id": "297",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-15T03:00:07"
+  },
+  "298": {
+    "participant_id": "298",
+    "bridge_id": "83",
+    "user_id": "187",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T01:57:31"
+  },
+  "299": {
+    "participant_id": "299",
+    "bridge_id": "84",
+    "user_id": "597",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-14T00:46:46"
+  },
+  "300": {
+    "participant_id": "300",
+    "bridge_id": "84",
+    "user_id": "613",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-14T01:27:05"
+  },
+  "301": {
+    "participant_id": "301",
+    "bridge_id": "84",
+    "user_id": "587",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-14T02:27:36"
+  },
+  "302": {
+    "participant_id": "302",
+    "bridge_id": "84",
+    "user_id": "566",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-14T00:58:01"
+  },
+  "303": {
+    "participant_id": "303",
+    "bridge_id": "84",
+    "user_id": "535",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-14T00:01:33"
+  },
+  "304": {
+    "participant_id": "304",
+    "bridge_id": "85",
+    "user_id": "375",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-05T02:56:57"
+  },
+  "305": {
+    "participant_id": "305",
+    "bridge_id": "85",
+    "user_id": "583",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-05T03:03:53"
+  },
+  "306": {
+    "participant_id": "306",
+    "bridge_id": "85",
+    "user_id": "339",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-05T02:30:26"
+  },
+  "307": {
+    "participant_id": "307",
+    "bridge_id": "86",
+    "user_id": "513",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-11T12:18:28"
+  },
+  "308": {
+    "participant_id": "308",
+    "bridge_id": "86",
+    "user_id": "180",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-19T22:04:28"
+  },
+  "309": {
+    "participant_id": "309",
+    "bridge_id": "86",
+    "user_id": "190",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-15T17:45:55"
+  },
+  "310": {
+    "participant_id": "310",
+    "bridge_id": "86",
+    "user_id": "145",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-24T18:33:37"
+  },
+  "311": {
+    "participant_id": "311",
+    "bridge_id": "87",
+    "user_id": "574",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-30T20:10:17"
+  },
+  "312": {
+    "participant_id": "312",
+    "bridge_id": "87",
+    "user_id": "638",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-27T01:14:20"
+  },
+  "313": {
+    "participant_id": "313",
+    "bridge_id": "87",
+    "user_id": "485",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-30T16:40:21"
+  },
+  "314": {
+    "participant_id": "314",
+    "bridge_id": "87",
+    "user_id": "656",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T19:30:55"
+  },
+  "315": {
+    "participant_id": "315",
+    "bridge_id": "87",
+    "user_id": "428",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T05:59:41"
+  },
+  "316": {
+    "participant_id": "316",
+    "bridge_id": "88",
+    "user_id": "222",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T05:16:07"
+  },
+  "317": {
+    "participant_id": "317",
+    "bridge_id": "88",
+    "user_id": "234",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-02T07:02:00"
+  },
+  "318": {
+    "participant_id": "318",
+    "bridge_id": "88",
+    "user_id": "687",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-02T05:57:35"
+  },
+  "319": {
+    "participant_id": "319",
+    "bridge_id": "88",
+    "user_id": "250",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-02T07:26:10"
+  },
+  "320": {
+    "participant_id": "320",
+    "bridge_id": "88",
+    "user_id": "575",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-02T07:28:06"
+  },
+  "321": {
+    "participant_id": "321",
+    "bridge_id": "89",
+    "user_id": "4",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-11T21:51:05"
+  },
+  "322": {
+    "participant_id": "322",
+    "bridge_id": "89",
+    "user_id": "680",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-11T19:56:15"
+  },
+  "323": {
+    "participant_id": "323",
+    "bridge_id": "89",
+    "user_id": "580",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-11T18:43:53"
+  },
+  "324": {
+    "participant_id": "324",
+    "bridge_id": "89",
+    "user_id": "31",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-11T19:38:11"
+  },
+  "325": {
+    "participant_id": "325",
+    "bridge_id": "90",
+    "user_id": "368",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-09T06:14:30"
+  },
+  "326": {
+    "participant_id": "326",
+    "bridge_id": "90",
+    "user_id": "677",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-09T05:53:09"
+  },
+  "327": {
+    "participant_id": "327",
+    "bridge_id": "90",
+    "user_id": "564",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-09T05:06:38"
+  },
+  "328": {
+    "participant_id": "328",
+    "bridge_id": "90",
+    "user_id": "388",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-09T06:12:06"
+  },
+  "329": {
+    "participant_id": "329",
+    "bridge_id": "90",
+    "user_id": "646",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-09T05:49:26"
+  },
+  "330": {
+    "participant_id": "330",
+    "bridge_id": "91",
+    "user_id": "576",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T13:31:04"
+  },
+  "331": {
+    "participant_id": "331",
+    "bridge_id": "91",
+    "user_id": "101",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T12:23:30"
+  },
+  "332": {
+    "participant_id": "332",
+    "bridge_id": "91",
+    "user_id": "542",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-22T01:49:10"
+  },
+  "333": {
+    "participant_id": "333",
+    "bridge_id": "92",
+    "user_id": "124",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-27T21:41:25"
+  },
+  "334": {
+    "participant_id": "334",
+    "bridge_id": "92",
+    "user_id": "274",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-27T16:36:28"
+  },
+  "335": {
+    "participant_id": "335",
+    "bridge_id": "92",
+    "user_id": "153",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-27T19:47:18"
+  },
+  "336": {
+    "participant_id": "336",
+    "bridge_id": "92",
+    "user_id": "319",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-27T20:12:30"
+  },
+  "337": {
+    "participant_id": "337",
+    "bridge_id": "93",
+    "user_id": "169",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-30T11:12:21"
+  },
+  "338": {
+    "participant_id": "338",
+    "bridge_id": "93",
+    "user_id": "2",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-02T19:47:39"
+  },
+  "339": {
+    "participant_id": "339",
+    "bridge_id": "94",
+    "user_id": "401",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-04T21:52:04"
+  },
+  "340": {
+    "participant_id": "340",
+    "bridge_id": "94",
+    "user_id": "57",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-28T09:13:33"
+  },
+  "341": {
+    "participant_id": "341",
+    "bridge_id": "94",
+    "user_id": "397",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-06T21:18:16"
+  },
+  "342": {
+    "participant_id": "342",
+    "bridge_id": "94",
+    "user_id": "84",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-28T12:51:09"
+  },
+  "343": {
+    "participant_id": "343",
+    "bridge_id": "94",
+    "user_id": "343",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-05T01:13:00"
+  },
+  "344": {
+    "participant_id": "344",
+    "bridge_id": "95",
+    "user_id": "385",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T14:11:13"
+  },
+  "345": {
+    "participant_id": "345",
+    "bridge_id": "95",
+    "user_id": "83",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-05T21:12:39"
+  },
+  "346": {
+    "participant_id": "346",
+    "bridge_id": "96",
+    "user_id": "330",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-05T10:39:57"
+  },
+  "347": {
+    "participant_id": "347",
+    "bridge_id": "96",
+    "user_id": "418",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-28T12:52:41"
+  },
+  "348": {
+    "participant_id": "348",
+    "bridge_id": "97",
+    "user_id": "658",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-03T02:32:28"
+  },
+  "349": {
+    "participant_id": "349",
+    "bridge_id": "97",
+    "user_id": "52",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-18T13:24:19"
+  },
+  "350": {
+    "participant_id": "350",
+    "bridge_id": "97",
+    "user_id": "653",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-22T06:57:25"
+  },
+  "351": {
+    "participant_id": "351",
+    "bridge_id": "98",
+    "user_id": "508",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-15T17:09:21"
+  },
+  "352": {
+    "participant_id": "352",
+    "bridge_id": "98",
+    "user_id": "614",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-15T19:05:39"
+  },
+  "353": {
+    "participant_id": "353",
+    "bridge_id": "98",
+    "user_id": "167",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-15T18:51:27"
+  },
+  "354": {
+    "participant_id": "354",
+    "bridge_id": "98",
+    "user_id": "460",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-15T20:19:49"
+  },
+  "355": {
+    "participant_id": "355",
+    "bridge_id": "99",
+    "user_id": "422",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-10T15:30:35"
+  },
+  "356": {
+    "participant_id": "356",
+    "bridge_id": "99",
+    "user_id": "141",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-10T14:45:04"
+  },
+  "357": {
+    "participant_id": "357",
+    "bridge_id": "99",
+    "user_id": "569",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-10T12:07:33"
+  },
+  "358": {
+    "participant_id": "358",
+    "bridge_id": "99",
+    "user_id": "504",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-10T15:25:55"
+  },
+  "359": {
+    "participant_id": "359",
+    "bridge_id": "99",
+    "user_id": "49",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-10T13:47:14"
+  },
+  "360": {
+    "participant_id": "360",
+    "bridge_id": "100",
+    "user_id": "270",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-11T17:49:20"
+  },
+  "361": {
+    "participant_id": "361",
+    "bridge_id": "100",
+    "user_id": "537",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-11T17:23:57"
+  },
+  "362": {
+    "participant_id": "362",
+    "bridge_id": "101",
+    "user_id": "204",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-04T11:40:45"
+  },
+  "363": {
+    "participant_id": "363",
+    "bridge_id": "101",
+    "user_id": "238",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-04T12:51:22"
+  },
+  "364": {
+    "participant_id": "364",
+    "bridge_id": "102",
+    "user_id": "367",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T01:30:00"
+  },
+  "365": {
+    "participant_id": "365",
+    "bridge_id": "102",
+    "user_id": "354",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-16T00:59:32"
+  },
+  "366": {
+    "participant_id": "366",
+    "bridge_id": "102",
+    "user_id": "479",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-16T00:33:54"
+  },
+  "367": {
+    "participant_id": "367",
+    "bridge_id": "103",
+    "user_id": "210",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T09:21:24"
+  },
+  "368": {
+    "participant_id": "368",
+    "bridge_id": "103",
+    "user_id": "105",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-03T10:06:58"
+  },
+  "369": {
+    "participant_id": "369",
+    "bridge_id": "103",
+    "user_id": "168",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-03T10:01:50"
+  },
+  "370": {
+    "participant_id": "370",
+    "bridge_id": "103",
+    "user_id": "116",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T09:46:36"
+  },
+  "371": {
+    "participant_id": "371",
+    "bridge_id": "103",
+    "user_id": "433",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T10:11:54"
+  },
+  "372": {
+    "participant_id": "372",
+    "bridge_id": "104",
+    "user_id": "479",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-23T05:54:53"
+  },
+  "373": {
+    "participant_id": "373",
+    "bridge_id": "104",
+    "user_id": "588",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-23T06:51:22"
+  },
+  "374": {
+    "participant_id": "374",
+    "bridge_id": "104",
+    "user_id": "125",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-23T06:28:09"
+  },
+  "375": {
+    "participant_id": "375",
+    "bridge_id": "104",
+    "user_id": "459",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-23T06:06:36"
+  },
+  "376": {
+    "participant_id": "376",
+    "bridge_id": "105",
+    "user_id": "271",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T11:21:10"
+  },
+  "377": {
+    "participant_id": "377",
+    "bridge_id": "105",
+    "user_id": "593",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-12T10:05:35"
+  },
+  "378": {
+    "participant_id": "378",
+    "bridge_id": "105",
+    "user_id": "145",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-12T08:59:33"
+  },
+  "379": {
+    "participant_id": "379",
+    "bridge_id": "105",
+    "user_id": "523",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-12T11:14:02"
+  },
+  "380": {
+    "participant_id": "380",
+    "bridge_id": "106",
+    "user_id": "283",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-09T02:59:16"
+  },
+  "381": {
+    "participant_id": "381",
+    "bridge_id": "106",
+    "user_id": "243",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-09T01:15:58"
+  },
+  "382": {
+    "participant_id": "382",
+    "bridge_id": "107",
+    "user_id": "105",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T07:37:01"
+  },
+  "383": {
+    "participant_id": "383",
+    "bridge_id": "107",
+    "user_id": "548",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-13T08:37:10"
+  },
+  "384": {
+    "participant_id": "384",
+    "bridge_id": "107",
+    "user_id": "475",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-13T07:07:25"
+  },
+  "385": {
+    "participant_id": "385",
+    "bridge_id": "108",
+    "user_id": "77",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-19T04:51:50"
+  },
+  "386": {
+    "participant_id": "386",
+    "bridge_id": "108",
+    "user_id": "655",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-19T04:48:23"
+  },
+  "387": {
+    "participant_id": "387",
+    "bridge_id": "108",
+    "user_id": "604",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-19T05:33:27"
+  },
+  "388": {
+    "participant_id": "388",
+    "bridge_id": "109",
+    "user_id": "199",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-03T14:46:45"
+  },
+  "389": {
+    "participant_id": "389",
+    "bridge_id": "109",
+    "user_id": "430",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T14:39:19"
+  },
+  "390": {
+    "participant_id": "390",
+    "bridge_id": "110",
+    "user_id": "622",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-10-07T07:03:32"
+  },
+  "391": {
+    "participant_id": "391",
+    "bridge_id": "110",
+    "user_id": "437",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-06T21:41:09"
+  },
+  "392": {
+    "participant_id": "392",
+    "bridge_id": "110",
+    "user_id": "249",
+    "role_in_bridge": "host",
+    "joined_at": "2025-10-07T08:48:30"
+  },
+  "393": {
+    "participant_id": "393",
+    "bridge_id": "110",
+    "user_id": "182",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-10-07T07:55:57"
+  },
+  "394": {
+    "participant_id": "394",
+    "bridge_id": "111",
+    "user_id": "347",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-26T21:17:17"
+  },
+  "395": {
+    "participant_id": "395",
+    "bridge_id": "111",
+    "user_id": "461",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T23:45:38"
+  },
+  "396": {
+    "participant_id": "396",
+    "bridge_id": "111",
+    "user_id": "603",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-26T23:23:54"
+  },
+  "397": {
+    "participant_id": "397",
+    "bridge_id": "111",
+    "user_id": "698",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T22:59:19"
+  },
+  "398": {
+    "participant_id": "398",
+    "bridge_id": "111",
+    "user_id": "490",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-26T23:13:11"
+  },
+  "399": {
+    "participant_id": "399",
+    "bridge_id": "112",
+    "user_id": "242",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-09T00:23:14"
+  },
+  "400": {
+    "participant_id": "400",
+    "bridge_id": "112",
+    "user_id": "151",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-09T00:26:12"
+  },
+  "401": {
+    "participant_id": "401",
+    "bridge_id": "112",
+    "user_id": "3",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-09T00:05:17"
+  },
+  "402": {
+    "participant_id": "402",
+    "bridge_id": "112",
+    "user_id": "148",
+    "role_in_bridge": "host",
+    "joined_at": "2025-09-09T00:29:15"
+  },
+  "403": {
+    "participant_id": "403",
+    "bridge_id": "112",
+    "user_id": "185",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-08T23:38:47"
+  },
+  "404": {
+    "participant_id": "404",
+    "bridge_id": "113",
+    "user_id": "691",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-18T18:14:12"
+  },
+  "405": {
+    "participant_id": "405",
+    "bridge_id": "113",
+    "user_id": "403",
+    "role_in_bridge": "account_manager",
+    "joined_at": "2025-09-18T17:08:12"
+  },
+  "406": {
+    "participant_id": "406",
+    "bridge_id": "113",
+    "user_id": "344",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-18T16:48:43"
+  },
+  "407": {
+    "participant_id": "407",
+    "bridge_id": "113",
+    "user_id": "272",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-18T17:13:18"
+  },
+  "408": {
+    "participant_id": "408",
+    "bridge_id": "114",
+    "user_id": "75",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-10-03T00:08:05"
+  },
+  "409": {
+    "participant_id": "409",
+    "bridge_id": "114",
+    "user_id": "585",
+    "role_in_bridge": "technical_support",
+    "joined_at": "2025-09-16T23:48:37"
+  },
+  "410": {
+    "participant_id": "410",
+    "bridge_id": "114",
+    "user_id": "582",
+    "role_in_bridge": "executive",
+    "joined_at": "2025-09-23T04:08:54"
+  }
+}
