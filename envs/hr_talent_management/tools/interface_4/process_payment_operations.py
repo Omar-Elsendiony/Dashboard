@@ -213,6 +213,15 @@ class ProcessPaymentOperations(Tool):
                     "message": f"Halt: Payment {payment_id_str} not found",
                     "transfer_to_human": True
                 })
+            
+            payment = payments[payment_id_str]
+            if payment.get("payment_status") != "pending":
+                return json.dumps({
+                    "success": False,
+                    "payment_id": payment_id_str,
+                    "message": f"Halt: Payment {payment_id_str} not in 'pending' status",
+                    "transfer_to_human": True
+                })
 
             # Validate payment status transition against schema (pending, processed, failed, reversed)
             valid_statuses = ["pending", "processed", "failed", "reversed"]
@@ -308,11 +317,11 @@ class ProcessPaymentOperations(Tool):
                         "payment_date": {
                             "type": "string",
                             "description": "Payment date (YYYY-MM-DD, required for create_payment, must not be in the future).",
-                            "pattern": "^\\d{2}-\\d{2}-\\d{4}$"
+                            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
                         },
                         "payment_method": {
                             "type": "string",
-                            "description": "Payment method (required for create_payment).",
+                            "description": "Payment method (required for create_payment). Values: 'bank_transfer' | 'check' | 'cash'",
                             "enum": ["bank_transfer", "check", "cash"]
                         },
                         "user_id": {
@@ -334,8 +343,8 @@ class ProcessPaymentOperations(Tool):
                         },
                         "bank_confirmation_date": {
                             "type": "string",
-                            "description": "Optional: The date the bank confirmed the status, in MM-DD-YYYY format (optional for update_payment_status).",
-                            "pattern": "^\\d{2}-\\d{2}-\\d{4}$"
+                            "description": "Optional: The date the bank confirmed the status, in YYYY-MM-DD format (optional for update_payment_status).",
+                            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
                         }
                     },
                     "required": ["operation_type", "user_id"]
