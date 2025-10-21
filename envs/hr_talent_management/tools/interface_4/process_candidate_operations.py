@@ -84,7 +84,7 @@ class ProcessCandidateOperations(Tool):
             
             # Generate new candidate ID and create record
             new_candidate_id = generate_id(candidates)
-            timestamp = "2025-01-01T12:00:00"
+            timestamp = "2025-10-10T12:00:00"
             
             new_candidate = {
                 "candidate_id": str(new_candidate_id),

@@ -1,332 +1,428 @@
-# Auto-generated — DO NOT EDIT BY HAND
 import json
-from datetime import datetime, timezone, date
+import re
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
-
-
-def _parse_mmddyyyy(s: str) -> date:
-    try:
-        return datetime.strptime(s.strip(), "%m-%d-%Y").date()
-    except Exception as e:
-        raise ValueError(f"Invalid date format '{s}'. Expected MM-DD-YYYY.") from e
-
-
-def _now_utc_dt(data: Dict[str, Any]) -> datetime:
-    # Use injected clock for determinism if provided; else real UTC
-    injected = data.get("_now_utc")
-    if isinstance(injected, str) and injected.strip():
-        try:
-            return datetime.fromisoformat(injected.replace("Z", "+00:00"))
-        except Exception:
-            pass
-    return datetime.now(timezone.utc)
-
-
-def _iso_date(d: date) -> str:
-    return d.isoformat()  # YYYY-MM-DD
-
-
-def _require_user(data: Dict[str, Any], user_id: Optional[str]) -> Dict[str, Any]:
-    uid = user_id or data.get("_caller_user_id")
-    if not uid or not isinstance(uid, str) or not uid.strip():
-        raise ValueError("Missing user context: user_id/_caller_user_id is required.")
-    users = data.get("users", {})
-    user = None
-    for _, u in users.items():
-        if u.get("user_id") == uid:
-            user = u
-            break
-    if not user:
-        raise ValueError(f"User '{uid}' not found.")
-    if str(user.get("employment_status", "")).lower() != "active":
-        raise ValueError(f"User '{uid}' is not active.")
-    return user
-
-
-def _enforce_role(user: Dict[str, Any], allowed_roles: set, action_name: str):
-    role = str(user.get("role", "")).lower()
-    if role not in allowed_roles:
-        raise ValueError(f"User '{user.get('user_id')}' not authorized to {action_name} (role '{role}' not allowed).")
-
-
-def _related_entity_exists(data: Dict[str, Any], related_entity_type: str, related_entity_id: str):
-    # Map related_entity_type -> in-memory table key
-    table_map = {
-        "employee": "employees",
-        "candidate": "candidates",
-        "offer": "offers",
-        "onboarding": "onboarding_checklists",
-        "job_requisition": "job_requisitions",
-        "job_posting": "job_postings",
-        "application": "applications",
-    }
-    table_key = table_map.get(related_entity_type)
-    if not table_key:
-        raise ValueError(f"Invalid related_entity_type '{related_entity_type}'.")
-    table = data.get(table_key, {})
-    for _, rec in table.items():
-        if related_entity_type == "offer" and rec.get("offer_id") == related_entity_id:
-            return
-        if related_entity_type == "job_requisition" and rec.get("requisition_id") == related_entity_id:
-            return
-        if related_entity_type == "job_posting" and rec.get("posting_id") == related_entity_id:
-            return
-        if related_entity_type == "application" and rec.get("application_id") == related_entity_id:
-            return
-        if related_entity_type == "employee" and rec.get("employee_id") == related_entity_id:
-            return
-        if related_entity_type == "candidate" and rec.get("candidate_id") == related_entity_id:
-            return
-        if related_entity_type == "onboarding" and rec.get("checklist_id") == related_entity_id:
-            return
-    raise ValueError(f"Related entity '{related_entity_type}:{related_entity_id}' not found.")
-
-
-def _maybe_audit(
-    data: Dict[str, Any],
-    reference_id: str,
-    action: str,
-    field_name: Optional[str] = None,
-    old_value: Optional[str] = None,
-    new_value: Optional[str] = None,
-):
-    """Create an audit entry if auto-audit is enabled. Halt on failure (SOP)."""
-    if not data.get("_auto_audit"):
-        return
-    try:
-        # Prefer the dedicated tool if available
-        from create_audit_entry import create_audit_entry  # type: ignore
-    except Exception as e:
-        raise ValueError(f"Audit integration unavailable: {e}")
-
-    try:
-        create_audit_entry(
-            data,
-            reference_id=reference_id,
-            reference_type="document",
-            action=action,
-            field_name=field_name,
-            old_value=old_value,
-            new_value=new_value,
-        )
-    except Exception as e:
-        raise ValueError(f"Audit failed: {e}")
+from datetime import datetime
 
 
 class ExecuteDocumentOperations(Tool):
+    
     @staticmethod
-    def invoke(
-        data: Dict[str, Any],
-        operation_type: str,
-        document_category: str = None,
-        related_entity_type: str = None,
-        related_entity_id: str = None,
-        file_name: str = None,
-        file_format: str = None,
-        uploaded_by: str = None,
-        upload_date: str = None,
-        document_id: str = None,
-        expiry_date: str = None,
-        verification_status: str = None,
-        verified_date: str = None,
-        user_id: str = None,
-        document_status: str = None
-    ) -> str:
+    def invoke(data: Dict[str, Any], operation_type: str, **kwargs) -> str:
+        """
+        Manages document operations including upload, verification, and status updates.
+        """
+        
+        # --- Utility Functions ---
+        def generate_id(table: Dict[str, Any]) -> int:
+            """Utility to generate a new sequential ID for the documents table."""
+            if not table:
+                return 9001
+            return max(int(k) for k in table.keys()) + 1
 
-        documents = data.setdefault("documents", {})
-
-        op = (operation_type or "").strip().lower()
-        if op not in {"upload_document", "verify_document", "update_document_status"}:
-            raise ValueError("operation_type must be one of 'upload_document' | 'verify_document' | 'update_document_status'.")
-
-        valid_categories = {
-            'verification_id_proof', 'verification_address_proof', 'verification_educational_certificate',
-            'verification_experience_letter', 'verification_work_visa', 'verification_pr_card',
-            'verification_bank_proof', 'offer_letter', 'contract', 'policy_acknowledgment', 'tax_form',
-            'insurance_form', 'nda', 'resume', 'cover_letter', 'job_description', 'budget_justification',
-            'budget_approval', 'workforce_plan', 'recruitment_checklist', 'promotion_letter',
-            'transfer_memo', 'other'
-        }
-        valid_related = {'employee', 'candidate', 'offer', 'onboarding', 'job_requisition', 'job_posting', 'application'}
-        valid_doc_status = {'active', 'archived', 'expired'}
-        valid_verif_status = {'pending', 'verified', 'failed'}
-
-        # Normalize enums
-        if document_category is not None:
-            document_category = str(document_category).lower().strip()
-        if related_entity_type is not None:
-            related_entity_type = str(related_entity_type).lower().strip()
-        if document_status is not None:
-            document_status = str(document_status).lower().strip()
-        if verification_status is not None:
-            verification_status = str(verification_status).lower().strip()
-
-        now_dt = _now_utc_dt(data)
-        today = now_dt.date()
-
-        # ---------- UPLOAD ----------
-        if op == "upload_document":
-            required_vals = [document_category, related_entity_type, related_entity_id, file_name, file_format, uploaded_by, upload_date]
-            if any(v in (None, "") for v in required_vals):
-                raise ValueError("Missing required fields for upload_document (document_category, related_entity_type, related_entity_id, file_name, file_format, uploaded_by, upload_date).")
-
-            uploader = _require_user(data, uploaded_by)
-            _enforce_role(
-                uploader,
-                {"hr_recruiter", "hr_admin", "hr_manager", "compliance_officer", "employee"},
-                "upload documents"
-            )
-
-            if document_category not in valid_categories:
-                raise ValueError(f"Invalid document_category. Allowed: {sorted(valid_categories)}")
-            if related_entity_type not in valid_related:
-                raise ValueError(f"Invalid related_entity_type. Allowed: {sorted(valid_related)}")
-
-            _related_entity_exists(data, related_entity_type, related_entity_id)
-
-            if not isinstance(file_format, str) or not file_format.strip() or len(file_format.strip()) > 10:
-                raise ValueError("file_format must be a non-empty string up to 10 characters.")
-
-            if any(d.get("file_name") == file_name for d in documents.values()):
-                raise ValueError(f"file_name '{file_name}' already exists (must be unique).")
-
-            upload_date_d = _parse_mmddyyyy(upload_date)
-            if upload_date_d > today:
-                raise ValueError("Upload date cannot be in the future.")
-
-            expiry_date_iso = None
-            if expiry_date not in (None, ""):
-                exp_d = _parse_mmddyyyy(expiry_date)
-                if exp_d < upload_date_d:
-                    raise ValueError("expiry_date cannot be earlier than upload_date.")
-                expiry_date_iso = _iso_date(exp_d)
-
-            ver_status = verification_status or "pending"
-            ver_status = str(ver_status).lower().strip()
-            if ver_status not in valid_verif_status:
-                raise ValueError("verification_status must be one of 'pending','verified','failed'.")
-
-            new_id = str(max([int(k) for k in documents.keys()] + [0]) + 1)
-            rec = {
-                "document_id": new_id,
-                "document_category": document_category,
-                "related_entity_type": related_entity_type,
-                "related_entity_id": related_entity_id,
-                "file_name": file_name,
-                "file_format": file_format.strip(),
-                "upload_date": _iso_date(upload_date_d),
-                "uploaded_by": uploader.get("user_id"),
-                "document_status": "active",
-                "expiry_date": expiry_date_iso,
-                "verification_status": ver_status,
-                "created_at": now_dt.isoformat(),
-            }
-            documents[new_id] = rec
-
-            # Auto-audit (create)
-            _maybe_audit(
-                data,
-                reference_id=new_id,
-                action="create",
-                field_name="file_name",
-                old_value=None,
-                new_value=file_name,
-            )
-            return json.dumps(rec)
-
-        # document_id must be provided for the other ops
-        if not document_id:
-            raise ValueError("document_id is required.")
-        rec = documents.get(document_id)
-        if not rec:
-            raise ValueError(f"Document {document_id} not found.")
-
-        # ---------- VERIFY ----------
-        if op == "verify_document":
-            if verification_status not in valid_verif_status:
-                raise ValueError("verification_status must be one of 'pending','verified','failed'.")
-            if str(rec.get("document_status", "")).lower() != "active":
-                raise ValueError("Only active documents can be verified.")
-
-            verifier = _require_user(data, user_id)
-            _enforce_role(
-                verifier,
-                {"compliance_officer", "finance_manager", "hr_manager"},
-                "verify documents"
-            )
-
-            if not verified_date:
-                raise ValueError("verified_date is required (MM-DD-YYYY).")
-            ver_dt = _parse_mmddyyyy(verified_date)
-            if ver_dt > today:
-                raise ValueError("Verification date cannot be in the future.")
-
-            old = str(rec.get("verification_status", "pending")).lower()
-            rec["verification_status"] = verification_status
-            rec["verified_by"] = verifier.get("user_id")
-            rec["verified_date"] = _iso_date(ver_dt)
-
-            # Auto-audit (verify)
-            _maybe_audit(
-                data,
-                reference_id=document_id,
-                action="verify",
-                field_name="verification_status",
-                old_value=old,
-                new_value=verification_status,
-            )
-            return json.dumps(rec)
-
-        # ---------- UPDATE STATUS ----------
-        if op == "update_document_status":
-            if document_status not in valid_doc_status:
-                raise ValueError("document_status must be one of 'active','archived','expired'.")
-
-            actor = _require_user(data, user_id)
-            _enforce_role(
-                actor,
-                {"hr_admin", "hr_manager", "hr_director"},
-                "update document status"
-            )
-
-            current_status = str(rec.get("document_status", "")).lower()
-            target_status = document_status
-
-            allowed_transitions = {
-                "active": {"archived", "expired"},
-                "archived": {"active"},
-                "expired": set(),
-            }
-            if target_status not in allowed_transitions.get(current_status, set()):
-                raise ValueError(f"Invalid status transition: {current_status} -> {target_status}.")
-
-            if target_status == "expired":
-                exp = rec.get("expiry_date")
-                if not exp:
-                    raise ValueError("Cannot set status to 'expired' without an expiry_date on the document.")
+        def validate_date_format(date_str: str, field_name: str) -> Optional[str]:
+            """Validates date format is YYYY-MM-DD."""
+            if date_str:
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+                if not re.match(date_pattern, date_str):
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
+                
                 try:
-                    exp_dt = datetime.fromisoformat(exp).date()
-                except Exception:
-                    exp_dt = _parse_mmddyyyy(exp)
-                if exp_dt > today:
-                    raise ValueError("Document cannot be set to 'expired' before its expiry_date.")
+                    datetime.strptime(date_str, '%Y-%m-%d')
+                except ValueError:
+                    return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
+            return None
 
-            old = current_status
-            rec["document_status"] = target_status
+        def convert_date_format(date_str: str) -> str:
+            """Convert YYYY-MM-DD format for internal storage."""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
+            return date_str
 
-            # Auto-audit (update)
-            _maybe_audit(
-                data,
-                reference_id=document_id,
-                action="update",
-                field_name="document_status",
-                old_value=old,
-                new_value=target_status,
-            )
-            return json.dumps(rec)
+        def validate_file_format(file_name: str) -> tuple[str, Optional[str]]:
+            """Extract and validate file format from file name. Returns (extension, error_message)."""
+            if not file_name:
+                return "", "File name cannot be empty"
+            
+            # Extract extension
+            if '.' not in file_name:
+                return "", "File name must have a valid extension (e.g., .pdf, .doc, .docx, .txt, .jpg, .png, .xls, .xlsx)"
+            
+            extension = file_name.split('.')[-1].lower()
+            
+            # Validate common document formats
+            valid_formats = ['pdf', 'doc', 'docx', 'txt', 'jpg', 'jpeg', 'png', 'gif', 'xls', 'xlsx', 'csv', 'rtf', 'odt', 'ods', 'ppt', 'pptx']
+            if extension not in valid_formats:
+                return "", f"Invalid file extension '{extension}'. Supported formats: {', '.join(valid_formats)}"
+            
+            return extension, None
+        
+        valid_operations = ["upload_document", "verify_document", "update_document_status"]
+        if operation_type not in valid_operations:
+            return json.dumps({
+                "success": False,
+                "document_id": None,
+                "message": f"Invalid operation_type '{operation_type}'. Must be one of: {', '.join(valid_operations)}"
+            })
 
-        raise ValueError("Unsupported operation_type.")
+        if not isinstance(data, dict):
+            return json.dumps({
+                "success": False,
+                "document_id": None,
+                "message": "Invalid data format for document operations"
+            })
+        
+        documents = data.get("documents", {})
+        users = data.get("users", {})
+
+        # --- Document Upload (upload_document) ---
+        if operation_type == "upload_document":
+            required_fields = ["document_category", "related_entity_type", "related_entity_id", "file_name", "upload_date", "uploaded_by"]
+            missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
+            
+            if missing_fields:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": f"Missing mandatory fields: {', '.join(missing_fields)}"
+                })
+
+            # 1. Validate uploaded_by user exists and is active
+            uploaded_by_user = users.get(str(kwargs["uploaded_by"]))
+            if not uploaded_by_user or uploaded_by_user.get("employment_status") != "active":
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": "Halt: Uploader user not found or inactive"
+                })
+
+            # 2. Validate document_category enum
+            valid_categories = [
+                "verification_id_proof", "verification_address_proof", "verification_educational_certificate",
+                "verification_experience_letter", "verification_work_visa", "verification_pr_card",
+                "verification_bank_proof", "offer_letter", "contract", "policy_acknowledgment",
+                "tax_form", "insurance_form", "nda", "resume", "cover_letter", "job_description",
+                "budget_justification", "budget_approval", "workforce_plan", "recruitment_checklist",
+                "promotion_letter", "transfer_memo", "other"
+            ]
+            if kwargs["document_category"] not in valid_categories:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": f"Invalid document_category. Must be one of: {', '.join(valid_categories)}"
+                })
+
+            # 3. Validate related_entity_type enum
+            valid_entity_types = [
+                "employee", "candidate", "offer", "onboarding", "job_requisition", "job_posting", "application"
+            ]
+            if kwargs["related_entity_type"] not in valid_entity_types:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": f"Halt: Invalid related_entity_type. Must be one of: {', '.join(valid_entity_types)}"
+                })
+            
+            # 3.1. Validate related_entity_id
+            related_entity_id = kwargs["related_entity_id"]
+            if not related_entity_id or not isinstance(related_entity_id, str) or len(related_entity_id.strip()) == 0:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": "Halt: related_entity_id must be a non-empty string"
+                })
+
+            # 4. Validate file_name and extract file format
+            file_name = kwargs["file_name"]
+            if not file_name or len(file_name.strip()) == 0:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": "Halt: File name cannot be empty"
+                })
+            if len(file_name) > 255:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": "Halt: File name cannot exceed 255 characters"
+                })
+            
+            # Validate file extension
+            file_extension, extension_error = validate_file_format(file_name)
+            if extension_error:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": f"Halt: {extension_error}"
+                })
+
+            # 5. Check for duplicate file name
+            for existing_doc in documents.values():
+                if existing_doc.get("file_name") == file_name:
+                    return json.dumps({
+                        "success": False,
+                        "document_id": None,
+                        "message": "Halt: Document with this file name already exists"
+                    })
+
+            # 6. Validate upload_date format
+            upload_date_error = validate_date_format(kwargs["upload_date"], "upload_date")
+            if upload_date_error:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": f"Halt: {upload_date_error}"
+                })
+            
+            # Validate that upload_date is not in the future
+            try:
+                from datetime import datetime
+                upload_dt = datetime.strptime(convert_date_format(kwargs["upload_date"]), '%Y-%m-%d')
+                current_dt = datetime.strptime("2025-10-10", '%Y-%m-%d')
+                if upload_dt > current_dt:
+                    return json.dumps({
+                        "success": False,
+                        "document_id": None,
+                        "message": "Halt: Upload date cannot be in the future"
+                    })
+            except ValueError:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": "Halt: Invalid upload date format"
+                })
+
+            # 7. Validate expiry_date format if provided
+            expiry_date = kwargs.get("expiry_date")
+            if expiry_date:
+                expiry_date_error = validate_date_format(expiry_date, "expiry_date")
+                if expiry_date_error:
+                    return json.dumps({
+                        "success": False,
+                        "document_id": None,
+                        "message": f"Halt: {expiry_date_error}"
+                    })
+                
+                # Validate that expiry_date is not in the past
+                try:
+                    from datetime import datetime
+                    expiry_dt = datetime.strptime(convert_date_format(expiry_date), '%Y-%m-%d')
+                    current_dt = datetime.strptime("2025-10-10", '%Y-%m-%d')
+                    if expiry_dt < current_dt:
+                        return json.dumps({
+                            "success": False,
+                            "document_id": None,
+                            "message": "Halt: Expiry date cannot be in the past"
+                        })
+                except ValueError:
+                    return json.dumps({
+                        "success": False,
+                        "document_id": None,
+                        "message": "Halt: Invalid expiry date format"
+                    })
+
+            # 8. Create Document
+            new_document_id = generate_id(documents)
+            timestamp = "2025-10-10T12:00:00"
+
+            new_document = {
+                "document_id": str(new_document_id),
+                "document_category": kwargs["document_category"],
+                "related_entity_type": kwargs["related_entity_type"],
+                "related_entity_id": related_entity_id.strip(),
+                "file_name": file_name.strip(),
+                "file_format": file_extension,
+                "upload_date": convert_date_format(kwargs["upload_date"]),
+                "uploaded_by": str(kwargs["uploaded_by"]),
+                "document_status": "active",
+                "expiry_date": convert_date_format(expiry_date) if expiry_date else None,
+                "verification_status": "pending" if kwargs["document_category"].startswith("verification_") else None,
+                "verified_by": None,
+                "verified_date": None,
+                "created_at": timestamp
+            }
+            
+            documents[str(new_document_id)] = new_document
+            
+            return json.dumps({
+                "success": True,
+                "document_id": str(new_document_id),
+                "message": f"Document {new_document_id} uploaded successfully",
+                "document_data": new_document
+            })
+
+        # --- Document Verification (verify_document) ---
+        elif operation_type == "verify_document":
+            required_fields = ["document_id", "verification_status", "verified_by", "verified_date"]
+            missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
+            
+            if missing_fields:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": f"Missing mandatory fields: {', '.join(missing_fields)}"
+                })
+
+            document_id_str = str(kwargs["document_id"])
+            document = documents.get(document_id_str)
+            
+            # 1. Verify document exists and is active
+            if not document or document.get("document_status") != "active":
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": "Halt: Document not found or not in 'active' status"
+                })
+
+            # 2. Validate verifier user exists and is active
+            verifier_user = users.get(str(kwargs["verified_by"]))
+            if not verifier_user or verifier_user.get("employment_status") != "active":
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": "Halt: Verifier user not found or inactive"
+                })
+
+            # 3. Validate verifier has appropriate role
+            verifier_role = verifier_user.get("role")
+            valid_verifier_roles = ["compliance_officer", "finance_manager", "hr_manager"]
+            if verifier_role not in valid_verifier_roles:
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": "Halt: Verifier not authorized (must be Compliance Officer, Finance Manager, or HR Manager)"
+                })
+
+            # 4. Validate verification_status enum
+            valid_statuses = ["pending", "verified", "failed"]
+            if kwargs["verification_status"] not in valid_statuses:
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": f"Invalid verification_status. Must be one of: {', '.join(valid_statuses)}"
+                })
+
+            # 5. Validate verified_date format
+            verified_date_error = validate_date_format(kwargs["verified_date"], "verified_date")
+            if verified_date_error:
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": f"Halt: {verified_date_error}"
+                })
+            
+            # Validate that verified_date is not in the future
+            try:
+                from datetime import datetime
+                verified_dt = datetime.strptime(convert_date_format(kwargs["verified_date"]), '%Y-%m-%d')
+                current_dt = datetime.strptime("2025-10-10", '%Y-%m-%d')
+                if verified_dt > current_dt:
+                    return json.dumps({
+                        "success": False,
+                        "document_id": document_id_str,
+                        "message": "Halt: Verification date cannot be in the future"
+                    })
+            except ValueError:
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": "Halt: Invalid verification date format"
+                })
+
+            # 6. Update document verification
+            document["verification_status"] = kwargs["verification_status"]
+            document["verified_by"] = str(kwargs["verified_by"])
+            document["verified_date"] = convert_date_format(kwargs["verified_date"])
+            
+            return json.dumps({
+                "success": True,
+                "document_id": document_id_str,
+                "message": f"Document {document_id_str} verification status updated to '{kwargs['verification_status']}' successfully"
+            })
+
+        # --- Document Status Update (update_document_status) ---
+        elif operation_type == "update_document_status":
+            required_fields = ["document_id", "document_status", "user_id"]
+            missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
+            
+            if missing_fields:
+                return json.dumps({
+                    "success": False,
+                    "document_id": None,
+                    "message": f"Missing mandatory fields: {', '.join(missing_fields)}"
+                })
+
+            document_id_str = str(kwargs["document_id"])
+            document = documents.get(document_id_str)
+            
+            # 1. Verify document exists
+            if not document:
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": "Halt: Document not found"
+                })
+
+            # 2. Validate user authorization
+            user = users.get(str(kwargs["user_id"]))
+            if not user or user.get("employment_status") != "active":
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": "Halt: User not found or inactive"
+                })
+
+            # 3. Validate user has appropriate role
+            user_role = user.get("role")
+            valid_roles = ["hr_admin", "hr_manager", "hr_director"]
+            if user_role not in valid_roles:
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": "Halt: User lacks authorization to perform this action"
+                })
+
+            # 4. Validate document_status enum
+            valid_statuses = ["active", "archived", "expired"]
+            if kwargs["document_status"] not in valid_statuses:
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": f"Invalid document_status. Must be one of: {', '.join(valid_statuses)}"
+                })
+
+            # 5. Validate status transitions
+            current_status = document.get("document_status")
+            new_status = kwargs["document_status"]
+            
+            # Define valid status transitions
+            valid_transitions = {
+                "active": ["archived", "expired"],
+                "archived": ["active"],  # Can reactivate archived documents
+                "expired": ["active"]    # Can reactivate expired documents
+            }
+            
+            if new_status not in valid_transitions.get(current_status, []):
+                return json.dumps({
+                    "success": False,
+                    "document_id": document_id_str,
+                    "message": f"Invalid status transition from '{current_status}' to '{new_status}'"
+                })
+
+            # 6. Update document status
+            document["document_status"] = new_status
+            
+            return json.dumps({
+                "success": True,
+                "document_id": document_id_str,
+                "message": f"Document {document_id_str} status updated to '{new_status}' successfully"
+            })
+
+        return json.dumps({
+            "success": False,
+            "document_id": None,
+            "message": "Unhandled operation type"
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -334,43 +430,73 @@ class ExecuteDocumentOperations(Tool):
             "type": "function",
             "function": {
                 "name": "execute_document_operations",
-                "description": "Upload, verify, or update status of documents per SOP and DB schema (auto-audits when enabled).",
+                "description": "Manages document operations in the HR talent management system. 'upload_document' establishes new document records with comprehensive validation of document categories (verification_id_proof, verification_address_proof, verification_educational_certificate, verification_experience_letter, verification_work_visa, verification_pr_card, verification_bank_proof, offer_letter, contract, policy_acknowledgment, tax_form, insurance_form, nda, resume, cover_letter, job_description, budget_justification, budget_approval, workforce_plan, recruitment_checklist, promotion_letter, transfer_memo, other), related entity types (employee, candidate, offer, onboarding, job_requisition, job_posting, application), file names with valid extensions (pdf, doc, docx, txt, jpg, jpeg, png, gif, xls, xlsx, csv, rtf, odt, ods, ppt, pptx), upload dates, and user permissions. Validates file formats, prevents duplicate file names, and enforces proper document categorization. 'verify_document' manages document verification workflow by updating verification status (pending, verified, failed) with proper authorization validation for Compliance Officers, Finance Managers, and HR Managers. 'update_document_status' manages document lifecycle by updating status (active, archived, expired) with proper status transition validation. Essential for document management, compliance tracking, audit trails, and maintaining proper document status throughout the employee lifecycle including onboarding verification, offer documentation, policy acknowledgments, and benefits enrollment documents.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "operation_type": {
                             "type": "string",
+                            "description": "Type of operation: 'upload_document' to create new document record, 'verify_document' to update verification status, 'update_document_status' to update document lifecycle status",
                             "enum": ["upload_document", "verify_document", "update_document_status"]
                         },
-                        # Common
-                        "document_id": {"type": "string"},
-                        "user_id": {"type": "string"},
-
-                        # Upload
-                        "document_category": {"type": "string"},
+                        "document_category": {
+                            "type": "string",
+                            "description": "Category of the document (required for upload_document)",
+                            "enum": ["verification_id_proof", "verification_address_proof", "verification_educational_certificate", "verification_experience_letter", "verification_work_visa", "verification_pr_card", "verification_bank_proof", "offer_letter", "contract", "policy_acknowledgment", "tax_form", "insurance_form", "nda", "resume", "cover_letter", "job_description", "budget_justification", "budget_approval", "workforce_plan", "recruitment_checklist", "promotion_letter", "transfer_memo", "other"]
+                        },
                         "related_entity_type": {
                             "type": "string",
+                            "description": "Type of entity this document relates to (required for upload_document)",
                             "enum": ["employee", "candidate", "offer", "onboarding", "job_requisition", "job_posting", "application"]
                         },
-                        "related_entity_id": {"type": "string"},
-                        "file_name": {"type": "string"},
-                        "file_format": {"type": "string"},
-                        "uploaded_by": {"type": "string"},
-                        "upload_date": {"type": "string", "description": "MM-DD-YYYY"},
-                        "expiry_date": {"type": "string", "description": "MM-DD-YYYY"},
-                        "verification_status": {"type": "string", "description": "pending|verified|failed"},
-
-                        # Verify
-                        "verified_date": {"type": "string", "description": "MM-DD-YYYY"},
-
-                        # Update status
-                        "document_status": {"type": "string", "description": "active|archived|expired"}
+                        "related_entity_id": {
+                            "type": "string",
+                            "description": "ID of the related entity (required for upload_document)"
+                        },
+                        "file_name": {
+                            "type": "string",
+                            "description": "Name of the uploaded file (required for upload_document, must be unique, max 255 characters)"
+                        },
+                        "upload_date": {
+                            "type": "string",
+                            "description": "Date when document was uploaded in YYYY-MM-DD format (required for upload_document)"
+                        },
+                        "uploaded_by": {
+                            "type": "string",
+                            "description": "User ID of the person uploading the document (required for upload_document, must exist and be active)"
+                        },
+                        "expiry_date": {
+                            "type": "string",
+                            "description": "Document expiry date in YYYY-MM-DD format (optional for upload_document)"
+                        },
+                        "document_id": {
+                            "type": "string",
+                            "description": "Document ID (required for verify_document and update_document_status, must exist)"
+                        },
+                        "verification_status": {
+                            "type": "string",
+                            "description": "Verification status (required for verify_document)",
+                            "enum": ["pending", "verified", "failed"]
+                        },
+                        "verified_by": {
+                            "type": "string",
+                            "description": "User ID of the person verifying the document (required for verify_document, must be Compliance Officer, Finance Manager, or HR Manager)"
+                        },
+                        "verified_date": {
+                            "type": "string",
+                            "description": "Date when document was verified in YYYY-MM-DD format (required for verify_document)"
+                        },
+                        "document_status": {
+                            "type": "string",
+                            "description": "Document lifecycle status (required for update_document_status)",
+                            "enum": ["active", "archived", "expired"]
+                        },
+                        "user_id": {
+                            "type": "string",
+                            "description": "User ID performing the status update (required for update_document_status, must be HR Admin, HR Manager, or HR Director)"
+                        }
                     },
                     "required": ["operation_type"]
                 }
             }
         }
-
-
-def manage_document_operations(data: Dict[str, Any], **kwargs) -> str:
-    return ManageDocumentOperations.invoke(data, **kwargs)

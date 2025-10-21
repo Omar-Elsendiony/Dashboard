@@ -22,15 +22,14 @@ class ManageItProvisioningOperations(Tool):
 
         def validate_date_format(date_str: str, field_name: str) -> Optional[str]:
             if date_str:
-                date_pattern = r'^\d{2}-\d{2}-\d{4}$'
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
                 if not re.match(date_pattern, date_str):
-                    return f"Invalid {field_name} format. Must be MM-DD-YYYY"
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
             return None
 
         def convert_date_format(date_str: str) -> str:
-            if date_str and re.match(r'^\d{2}-\d{2}-\d{4}$', date_str):
-                month, day, year = date_str.split('-')
-                return f"{year}-{month}-{day}"
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
             return date_str
 
         # Validate operation_type
@@ -122,7 +121,7 @@ class ManageItProvisioningOperations(Tool):
 
             # Create task
             new_task_id = generate_id(it_tasks)
-            timestamp = "2025-10-01T12:00:00"
+            timestamp = "2025-10-10T12:00:00"
 
             new_task = {
                 "task_id": str(new_task_id),
@@ -267,7 +266,7 @@ class ManageItProvisioningOperations(Tool):
                         },
                         "completion_date": {
                             "type": "string",
-                            "description": "Date when the IT provisioning task was completed. Enter date in MM-DD-YYYY format (e.g., '04-05-2025' for April 5, 2025). This field is optional and only applies when operation_type is 'update_task'. Must follow the exact format MM-DD-YYYY with hyphens as separators. The system validates the date format. Typically provided when task_status is updated to 'completed'. Documents when the provisioning item was delivered or configured. Example: '05-20-2025'"
+                            "description": "Date when the IT provisioning task was completed. Enter date in YYYY-MM-DD format (e.g., '2025-04-05' for April 5, 2025). This field is optional and only applies when operation_type is 'update_task'. Must follow the exact format YYYY-MM-DD with hyphens as separators. The system validates the date format. Typically provided when task_status is updated to 'completed'. Documents when the provisioning item was delivered or configured. Example: '2025-05-20'"
                         }
                     },
                     "required": ["operation_type"]

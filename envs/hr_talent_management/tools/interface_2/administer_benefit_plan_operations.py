@@ -21,26 +21,22 @@ class AdministerBenefitPlanOperations(Tool):
             return max(int(k) for k in table.keys()) + 1
 
         def validate_date_format(date_str: str, field_name: str) -> Optional[str]:
-            """Validates date format is MM-DD-YYYY."""
+            """Validates date format is YYYY-MM-DD."""
             if date_str:
-                date_pattern = r'^\d{2}-\d{2}-\d{4}$'
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
                 if not re.match(date_pattern, date_str):
-                    return f"Invalid {field_name} format. Must be MM-DD-YYYY"
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
                 
                 try:
-                    datetime.strptime(date_str, '%m-%d-%Y')
+                    datetime.strptime(date_str, '%Y-%m-%d')
                 except ValueError:
-                    return f"Invalid date value provided for {field_name}. Please check month/day/year validity."
+                    return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
             return None
 
         def convert_date_format(date_str: str) -> str:
-            """Convert MM-DD-YYYY to YYYY-MM-DD for internal storage."""
-            if date_str and re.match(r'^\d{2}-\d{2}-\d{4}$', date_str):
-                try:
-                    dt = datetime.strptime(date_str, '%m-%d-%Y')
-                    return dt.strftime('%Y-%m-%d')
-                except ValueError:
-                    return date_str
+            """Convert YYYY-MM-DD format for internal storage."""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
             return date_str
 
         def validate_numeric_field(value: Any, field_name: str) -> Optional[str]:
@@ -139,7 +135,7 @@ class AdministerBenefitPlanOperations(Tool):
 
             # 5. Create Benefit Plan
             new_plan_id = generate_id(benefit_plans)
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
 
             new_plan = {
                 "plan_id": str(new_plan_id),
@@ -238,7 +234,7 @@ class AdministerBenefitPlanOperations(Tool):
                     else:
                         plan[field] = kwargs[field]
 
-            plan["updated_at"] = datetime.now().isoformat()
+            plan["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -282,11 +278,11 @@ class AdministerBenefitPlanOperations(Tool):
                         },
                         "effective_from": {
                             "type": "string",
-                            "description": "Plan effective start date in MM-DD-YYYY format (required for create_plan, optional for update_plan)"
+                            "description": "Plan effective start date in YYYY-MM-DD format (required for create_plan, optional for update_plan)"
                         },
                         "effective_until": {
                             "type": "string",
-                            "description": "Plan effective end date in MM-DD-YYYY format (required for create_plan, optional for update_plan)"
+                            "description": "Plan effective end date in YYYY-MM-DD format (required for create_plan, optional for update_plan)"
                         },
                         "user_id": {
                             "type": "string",

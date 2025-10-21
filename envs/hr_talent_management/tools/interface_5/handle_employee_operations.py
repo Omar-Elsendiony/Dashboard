@@ -21,17 +21,16 @@ class HandleEmployeeOperations(Tool):
         
         def validate_date_format(date_str: str, field_name: str) -> Optional[str]:
             if date_str:
-                # Convert MM-DD-YYYY to YYYY-MM-DD for internal storage
-                date_pattern = r'^\d{2}-\d{2}-\d{4}$'
+                # Convert YYYY-MM-DD format for internal storage
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
                 if not re.match(date_pattern, date_str):
-                    return f"Invalid {field_name} format. Must be MM-DD-YYYY"
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
             return None
         
         def convert_date_format(date_str: str) -> str:
-            """Convert MM-DD-YYYY to YYYY-MM-DD"""
-            if date_str and re.match(r'^\d{2}-\d{2}-\d{4}$', date_str):
-                month, day, year = date_str.split('-')
-                return f"{year}-{month}-{day}"
+            """Convert YYYY-MM-DD format for internal storage"""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
             return date_str
         
         def validate_tax_id_format(tax_id: str) -> Optional[str]:
@@ -221,7 +220,7 @@ class HandleEmployeeOperations(Tool):
             
             # Generate new employee ID and create record
             new_employee_id = generate_id(employees)
-            timestamp = "2025-10-01T12:00:00"
+            timestamp = "2025-10-10T12:00:00"
             
             # Convert employee_type to lowercase with underscore for internal storage
             employee_type_internal = kwargs["employee_type"].lower().replace("-", "_")
@@ -302,7 +301,7 @@ class HandleEmployeeOperations(Tool):
                 if field in kwargs and kwargs[field] is not None:
                     employee[field] = kwargs[field]
             
-            employee["updated_at"] = "2025-01-01T12:00:00"
+            employee["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -358,7 +357,7 @@ class HandleEmployeeOperations(Tool):
                         },
                         "start_date": {
                             "type": "string",
-                            "description": "Employee's first day of employment. Enter date in MM-DD-YYYY format (e.g., '03-15-2025' for March 15, 2025). This field is required only when operation_type is 'create_employee'. Must follow the exact format MM-DD-YYYY with hyphens as separators. The system validates the date format. Used for benefits eligibility, tenure calculations, and onboarding scheduling. Example: '04-01-2025'"
+                            "description": "Employee's first day of employment. Enter date in YYYY-MM-DD format (e.g., '2025-03-15' for March 15, 2025). This field is required only when operation_type is 'create_employee'. Must follow the exact format YYYY-MM-DD with hyphens as separators. The system validates the date format. Used for benefits eligibility, tenure calculations, and onboarding scheduling. Example: '2025-04-01'"
                         },
                         "tax_id": {
                             "type": "string",

@@ -1,279 +1,277 @@
-# Auto-generated — DO NOT EDIT BY HAND
 import json
+import re
 from typing import Any, Dict, Optional
-from datetime import datetime, timezone
 from tau_bench.envs.tool import Tool
 
 
-# ---- helpers ---------------------------------------------------------------
-
-def _now_utc_iso(data: Dict[str, Any]) -> str:
-    # Use injected clock if present for determinism
-    injected = data.get("_now_utc")
-    if isinstance(injected, str) and injected.strip():
-        try:
-            # normalize Z → +00:00 for fromisoformat
-            dt = datetime.fromisoformat(injected.replace("Z", "+00:00"))
-            return dt.isoformat()
-        except Exception:
-            pass
-    return datetime.now(timezone.utc).isoformat()
-
-
-def _get_user(data: Dict[str, Any], user_id: str) -> Dict[str, Any]:
-    users = data.get("users", {})
-    for _, u in users.items():
-        if u.get("user_id") == user_id:
-            return u
-    raise ValueError(f"User '{user_id}' not found.")
-
-
-def _require_active_user(data: Dict[str, Any], user_id: str) -> Dict[str, Any]:
-    if not user_id:
-        raise ValueError("Missing required user id.")
-    u = _get_user(data, user_id)
-    if str(u.get("employment_status", "")).lower() != "active":
-        raise ValueError(f"User '{user_id}' is not active.")
-    return u
-
-
-def _related_entity_exists(data: Dict[str, Any], reference_type: str, reference_id: str) -> None:
-    """
-    Verify the referenced record exists based on notifications.reference_type enum:
-      {'application','interview','offer','employee','payroll','benefit','document','exit'}
-    """
-    if not reference_type or not reference_id:
-        raise ValueError("reference_type and reference_id are required.")
-    rt = reference_type
-
-    # Map to table names + primary key field names
-    table_map = {
-        "application": ("applications", "application_id"),
-        "interview": ("interviews", "interview_id"),
-        "offer": ("offers", "offer_id"),
-        "employee": ("employees", "employee_id"),
-        "payroll": ("payslips", "payslip_id"),     # notifications are often about payslips
-        "benefit": ("benefit_enrollments", "enrollment_id"),
-        "document": ("documents", "document_id"),
-        "exit": ("employee_exits", "exit_id"),
-    }
-    if rt not in table_map:
-        raise ValueError(f"Invalid reference_type '{rt}'.")
-    table_key, pk = table_map[rt]
-    table = data.get(table_key, {})
-    for _, rec in table.items():
-        if rec.get(pk) == reference_id:
-            return
-    raise ValueError(f"Reference not found for {rt}:{reference_id}.")
-
-
-def _maybe_audit_notification(data: Dict[str, Any], reference_type: str, reference_id: str, action: str, field_name: Optional[str] = None, old_value: Optional[str] = None, new_value: Optional[str] = None):
-    """
-    If auto-audit is enabled, log to audit_trails against the *business object* (not the notification),
-    but only when the reference_type exists in audit_trails.reference_type enum:
-      ['requisition','application','offer','employee','payroll','benefit','exit','document','shortlist']
-    'interview' is NOT supported; skip audit in that case.
-    """
-    if not data.get("_auto_audit"):
-        return
-    ref_map = {
-        "application": "application",
-        "offer": "offer",
-        "employee": "employee",
-        "payroll": "payroll",
-        "benefit": "benefit",
-        "document": "document",
-        "exit": "exit",
-        # 'interview' not present in audit_trails enum — skip
-    }
-    at_ref_type = ref_map.get(reference_type)
-    if not at_ref_type:
-        return  # skip unsupported reference types for audit
-
-    try:
-        from create_audit_entry import create_audit_entry  # type: ignore
-        create_audit_entry(
-            data,
-            reference_id=reference_id,
-            reference_type=at_ref_type,
-            action=action,
-            field_name=field_name,
-            old_value=old_value,
-            new_value=new_value,
-        )
-    except Exception as e:
-        # Per SOP: if external audit fails, halt
-        raise ValueError(f"Audit failed: {e}")
-
-
-# ---- main tool -------------------------------------------------------------
-
 class HandleNotificationOperations(Tool):
+    
     @staticmethod
-    def invoke(
-        data: Dict[str, Any],
-        operation_type: str,
-        recipient_user_id: str = None,
-        sender_user_id: str = None,
-        recipient_email: str = None,
-        notification_type: str = None,
-        reference_type: str = None,
-        reference_id: str = None,
-        subject: str = None,
-        notification_id: str = None,
-        failed_reason: str = None
-    ) -> str:
-        notifications = data.setdefault("notifications", {})
-        op = (operation_type or "").strip().lower()
+    def invoke(data: Dict[str, Any], operation_type: str, **kwargs) -> str:
+        """
+        Manages notification operations including creation and status updates.
+        """
+        
+        # --- Utility Functions ---
+        def generate_id(table: Dict[str, Any]) -> int:
+            """Utility to generate a new sequential ID for the notifications table."""
+            if not table:
+                return 8001
+            return max(int(k) for k in table.keys()) + 1
 
-        # Enums from DB
-        valid_types = {
-            'application_acknowledgment', 'interview_scheduled', 'offer_issued', 'onboarding_welcome',
-            'payslip_released', 'payment_processed', 'benefits_enrollment', 'payroll_query_update',
-            'exit_confirmation', 'document_request', 'other'
-        }
-        valid_refs = {'application', 'interview', 'offer', 'employee', 'payroll', 'benefit', 'document', 'exit'}
-        valid_status = {'pending', 'sent', 'failed', 'bounced'}
+        def validate_email_format(email: str) -> bool:
+            """Basic email format validation."""
+            if not email:
+                return False
+            pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+            return bool(re.match(pattern, email))
+        
+        valid_operations = ["create_notification", "update_notification_status"]
+        if operation_type not in valid_operations:
+            return json.dumps({
+                "success": False,
+                "notification_id": None,
+                "message": f"Invalid operation_type '{operation_type}'. Must be one of: {', '.join(valid_operations)}"
+            })
 
-        # Normalize inputs that are enums
-        if notification_type is not None:
-            notification_type = str(notification_type).lower().strip()
-        if reference_type is not None:
-            reference_type = str(reference_type).lower().strip()
+        if not isinstance(data, dict):
+            return json.dumps({
+                "success": False,
+                "notification_id": None,
+                "message": "Invalid data format for notification operations"
+            })
+        
+        notifications = data.get("notifications", {})
+        users = data.get("users", {})
 
-        now_iso = _now_utc_iso(data)
+        # --- Notification Creation (create_notification) ---
+        if operation_type == "create_notification":
+            required_fields = ["recipient_user_id", "sender_user_id", "notification_type", "reference_type", "subject"]
+            missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
+            
+            if missing_fields:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": f"Missing mandatory fields: {', '.join(missing_fields)}"
+                })
 
-        # ---------------- create_notification ----------------
-        if op == "create_notification":
-            # Required: at least one recipient, sender, type, ref type/id, subject
-            if not subject or not sender_user_id or not notification_type or not reference_type or not reference_id:
-                raise ValueError("Missing required fields for create_notification (subject, sender_user_id, notification_type, reference_type, reference_id).")
-            if not (recipient_user_id or recipient_email):
-                raise ValueError("At least one recipient is required: recipient_user_id or recipient_email.")
+            # 1. Validate sender user exists and is active
+            sender_user = users.get(str(kwargs["sender_user_id"]))
+            if not sender_user or sender_user.get("employment_status") != "active":
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": "Halt: Sender user not found or inactive"
+                })
 
-            # Validate enums
-            if notification_type not in valid_types:
-                raise ValueError(f"Invalid notification_type. Allowed: {sorted(valid_types)}")
-            if reference_type not in valid_refs:
-                raise ValueError(f"Invalid reference_type. Allowed: {sorted(valid_refs)}")
+            # 2. Validate recipient user exists and is active
+            recipient_user = users.get(str(kwargs["recipient_user_id"]))
+            if not recipient_user or recipient_user.get("employment_status") != "active":
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": "Halt: Recipient user not found or inactive"
+                })
 
-            # Sender must exist & be active
-            _require_active_user(data, sender_user_id)
+            # 3. Validate notification_type enum
+            valid_notification_types = [
+                "application_acknowledgment", "interview_scheduled", "offer_issued", 
+                "onboarding_welcome", "payslip_released", "payment_processed", 
+                "benefits_enrollment", "payroll_query_update", "exit_confirmation", 
+                "document_request", "other"
+            ]
+            if kwargs["notification_type"] not in valid_notification_types:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": f"Invalid notification_type. Must be one of: {', '.join(valid_notification_types)}"
+                })
 
-            # Recipient user (if provided) must exist & be active
-            if recipient_user_id:
-                _require_active_user(data, recipient_user_id)
+            # 4. Validate reference_type enum
+            valid_reference_types = [
+                "application", "interview", "offer", "employee", "payroll", 
+                "benefit", "document", "exit"
+            ]
+            if kwargs["reference_type"] not in valid_reference_types:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": f"Halt: Invalid reference_type. Must be one of: {', '.join(valid_reference_types)}"
+                })
+            
+            # 4.1. Validate reference_id if provided
+            reference_id = kwargs.get("reference_id")
+            if reference_id is not None and (not isinstance(reference_id, str) or len(reference_id.strip()) == 0):
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": "Halt: reference_id must be a non-empty string if provided"
+                })
 
-            # Reference must exist
-            _related_entity_exists(data, reference_type, reference_id)
+            # 5. Validate subject length
+            subject = kwargs["subject"]
+            if not subject or len(subject.strip()) == 0:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": "Subject cannot be empty"
+                })
+            if len(subject) > 255:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": "Subject cannot exceed 255 characters"
+                })
 
-            # Create record
-            new_id = str(max([int(k) for k in notifications.keys()] + [0]) + 1)
-            rec = {
-                "notification_id": new_id,
-                "recipient_user_id": recipient_user_id,
-                "sender_user_id": sender_user_id,
+            # 6. Validate recipient_email if provided
+            recipient_email = kwargs.get("recipient_email")
+            if recipient_email:
+                if not validate_email_format(recipient_email):
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": None,
+                        "message": "Halt: Invalid recipient_email format"
+                    })
+                if len(recipient_email) > 320:
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": None,
+                        "message": "Halt: Recipient email cannot exceed 320 characters"
+                    })
+            else:
+                # Use recipient user's email if not provided
+                recipient_email = recipient_user.get("email")
+                if not recipient_email:
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": None,
+                        "message": "Halt: Recipient user has no email address and recipient_email not provided"
+                    })
+
+            # 7. Create Notification
+            new_notification_id = generate_id(notifications)
+            timestamp = "2025-10-10T12:00:00"
+
+            new_notification = {
+                "notification_id": str(new_notification_id),
+                "recipient_user_id": str(kwargs["recipient_user_id"]),
+                "sender_user_id": str(kwargs["sender_user_id"]),
                 "recipient_email": recipient_email,
-                "notification_type": notification_type,
-                "reference_type": reference_type,
+                "notification_type": kwargs["notification_type"],
+                "reference_type": kwargs["reference_type"],
                 "reference_id": reference_id,
-                "subject": subject,
+                "subject": subject.strip(),
                 "notification_status": "pending",
-                "created_at": now_iso,
                 "sent_at": None,
-                "failed_reason": None
+                "failed_reason": None,
+                "created_at": timestamp
             }
-            notifications[new_id] = rec
+            
+            notifications[str(new_notification_id)] = new_notification
+            
+            return json.dumps({
+                "success": True,
+                "notification_id": str(new_notification_id),
+                "message": f"Notification {new_notification_id} created successfully",
+                "notification_data": new_notification
+            })
 
-            # Optional auto-audit: submitting/queuing a notification against the business object
-            _maybe_audit_notification(
-                data,
-                reference_type=reference_type,
-                reference_id=reference_id,
-                action="submit",
-                field_name="notification_status",
-                old_value=None,
-                new_value="pending",
-            )
-            return json.dumps(rec)
+        # --- Notification Status Update (update_notification_status) ---
+        elif operation_type == "update_notification_status":
+            required_fields = ["notification_id", "notification_status", "user_id"]
+            missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
+            
+            if missing_fields:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": f"Missing mandatory fields: {', '.join(missing_fields)}"
+                })
 
-        # For updates, require notification_id and record existence
-        if not notification_id:
-            raise ValueError("notification_id is required for status updates.")
-        if notification_id not in notifications:
-            raise ValueError(f"Notification {notification_id} not found.")
-        rec = notifications[notification_id]
-        current_status = rec.get("notification_status", "pending")
-        if current_status not in valid_status:
-            raise ValueError("Corrupt notification_status on record.")
+            notification_id_str = str(kwargs["notification_id"])
+            notification = notifications.get(notification_id_str)
+            
+            # 1. Verify notification exists
+            if not notification:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": notification_id_str,
+                    "message": "Halt: Notification not found"
+                })
 
-        # Allowed transitions: pending → sent|failed|bounced; others terminal
-        def _ensure_transition(target: str):
-            if current_status == "pending" and target in {"sent", "failed", "bounced"}:
-                return
-            if current_status != "pending":
-                raise ValueError(f"Invalid status transition: {current_status} -> {target} (terminal state).")
-            raise ValueError(f"Invalid status transition: {current_status} -> {target}.")
+            # 2. Validate user authorization
+            user = users.get(str(kwargs["user_id"]))
+            if not user or user.get("employment_status") != "active":
+                return json.dumps({
+                    "success": False,
+                    "notification_id": notification_id_str,
+                    "message": "Halt: User not found or inactive"
+                })
+            
+            # 2.1. Validate that user has permission to update notification status
+            # For now, any active user can update notification status, but this could be restricted
+            # based on business rules (e.g., only sender, recipient, or system admins)
 
-        # ---------------- mark_sent ----------------
-        if op == "mark_sent":
-            _ensure_transition("sent")
-            old = current_status
-            rec["notification_status"] = "sent"
-            rec["sent_at"] = now_iso
-            # Auto-audit
-            _maybe_audit_notification(
-                data,
-                reference_type=rec.get("reference_type"),
-                reference_id=rec.get("reference_id"),
-                action="update",
-                field_name="notification_status",
-                old_value=old,
-                new_value="sent",
-            )
-            return json.dumps(rec)
+            # 3. Validate notification_status enum
+            valid_statuses = ["pending", "sent", "failed", "bounced"]
+            if kwargs["notification_status"] not in valid_statuses:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": notification_id_str,
+                    "message": f"Invalid notification_status. Must be one of: {', '.join(valid_statuses)}"
+                })
 
-        # ---------------- mark_failed ----------------
-        if op == "mark_failed":
-            if not failed_reason or not str(failed_reason).strip():
-                raise ValueError("failed_reason is required for mark_failed.")
-            _ensure_transition("failed")
-            old = current_status
-            rec["notification_status"] = "failed"
-            rec["failed_reason"] = str(failed_reason).strip()
-            # Auto-audit
-            _maybe_audit_notification(
-                data,
-                reference_type=rec.get("reference_type"),
-                reference_id=rec.get("reference_id"),
-                action="update",
-                field_name="notification_status",
-                old_value=old,
-                new_value="failed",
-            )
-            return json.dumps(rec)
+            # 4. Validate status transitions
+            current_status = notification.get("notification_status")
+            new_status = kwargs["notification_status"]
+            
+            # Define valid status transitions
+            valid_transitions = {
+                "pending": ["sent", "failed", "bounced"],
+                "sent": ["bounced"],  # Can bounce after being sent
+                "failed": ["pending"],  # Can retry
+                "bounced": []  # Terminal state
+            }
+            
+            if new_status not in valid_transitions.get(current_status, []):
+                return json.dumps({
+                    "success": False,
+                    "notification_id": notification_id_str,
+                    "message": f"Invalid status transition from '{current_status}' to '{new_status}'"
+                })
 
-        # ---------------- mark_bounced ----------------
-        if op == "mark_bounced":
-            if not failed_reason or not str(failed_reason).strip():
-                raise ValueError("failed_reason (bounce reason) is required for mark_bounced.")
-            _ensure_transition("bounced")
-            old = current_status
-            rec["notification_status"] = "bounced"
-            rec["failed_reason"] = str(failed_reason).strip()
-            # Auto-audit
-            _maybe_audit_notification(
-                data,
-                reference_type=rec.get("reference_type"),
-                reference_id=rec.get("reference_id"),
-                action="update",
-                field_name="notification_status",
-                old_value=old,
-                new_value="bounced",
-            )
-            return json.dumps(rec)
+            # 5. Validate failed_reason for failed/bounced status
+            if new_status in ["failed", "bounced"]:
+                failed_reason = kwargs.get("failed_reason")
+                if not failed_reason or len(failed_reason.strip()) == 0:
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": notification_id_str,
+                        "message": f"Halt: failed_reason is required when status is '{new_status}'"
+                    })
+            
+            # 6. Update notification status
+            notification["notification_status"] = new_status
+            
+            # Set sent_at timestamp if status is being changed to 'sent'
+            if new_status == "sent":
+                notification["sent_at"] = "2025-10-10T12:00:00"
+                notification["failed_reason"] = None
+            elif new_status in ["failed", "bounced"]:
+                notification["failed_reason"] = kwargs.get("failed_reason", "No reason provided")
+            
+            return json.dumps({
+                "success": True,
+                "notification_id": notification_id_str,
+                "message": f"Notification {notification_id_str} status updated to '{new_status}' successfully"
+            })
 
-        raise ValueError("operation_type must be one of: create_notification | mark_sent | mark_failed | mark_bounced")
+        return json.dumps({
+            "success": False,
+            "notification_id": None,
+            "message": "Unhandled operation type"
+        })
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -281,32 +279,64 @@ class HandleNotificationOperations(Tool):
             "type": "function",
             "function": {
                 "name": "handle_notification_operations",
-                "description": "Create or update notifications per SOP/DB (supports create, mark_sent, mark_failed, mark_bounced).",
+                "description": "Manages notification operations in the HR talent management system. 'create_notification' establishes new notification records with comprehensive validation of sender/recipient users, notification types (application_acknowledgment, interview_scheduled, offer_issued, onboarding_welcome, payslip_released, payment_processed, benefits_enrollment, payroll_query_update, exit_confirmation, document_request, other), reference types (application, interview, offer, employee, payroll, benefit, document, exit), and subject content. Validates email formats, user existence and active status, and enforces proper notification categorization. 'update_notification_status' manages notification lifecycle by updating status from pending to sent/failed/bounced with proper status transition validation. Essential for communication tracking, audit trails, and ensuring proper notification delivery throughout the employee lifecycle including application acknowledgments, interview scheduling, offer issuance, onboarding welcome messages, payslip releases, payment confirmations, benefits enrollment notifications, and exit confirmations.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "operation_type": {
                             "type": "string",
-                            "enum": ["create_notification", "mark_sent", "mark_failed", "mark_bounced"]
+                            "description": "Type of operation: 'create_notification' to create new notification record, 'update_notification_status' to update notification delivery status",
+                            "enum": ["create_notification", "update_notification_status"]
                         },
-                        "recipient_user_id": {"type": "string"},
-                        "sender_user_id": {"type": "string"},
-                        "recipient_email": {"type": "string"},
-                        "notification_type": {"type": "string"},
+                        "recipient_user_id": {
+                            "type": "string",
+                            "description": "User ID of the notification recipient (required for create_notification, must exist and be active)"
+                        },
+                        "sender_user_id": {
+                            "type": "string",
+                            "description": "User ID of the notification sender (required for create_notification, must exist and be active)"
+                        },
+                        "notification_type": {
+                            "type": "string",
+                            "description": "Type of notification being sent (required for create_notification)",
+                            "enum": ["application_acknowledgment", "interview_scheduled", "offer_issued", "onboarding_welcome", "payslip_released", "payment_processed", "benefits_enrollment", "payroll_query_update", "exit_confirmation", "document_request", "other"]
+                        },
                         "reference_type": {
                             "type": "string",
+                            "description": "Type of entity this notification references (required for create_notification)",
                             "enum": ["application", "interview", "offer", "employee", "payroll", "benefit", "document", "exit"]
                         },
-                        "reference_id": {"type": "string"},
-                        "subject": {"type": "string"},
-                        "notification_id": {"type": "string"},
-                        "failed_reason": {"type": "string"}
+                        "reference_id": {
+                            "type": "string",
+                            "description": "ID of the referenced entity (optional for create_notification)"
+                        },
+                        "subject": {
+                            "type": "string",
+                            "description": "Notification subject line (required for create_notification, max 255 characters)"
+                        },
+                        "recipient_email": {
+                            "type": "string",
+                            "description": "Recipient email address (optional for create_notification, will use recipient user's email if not provided, must be valid format if provided)"
+                        },
+                        "notification_id": {
+                            "type": "string",
+                            "description": "Notification ID (required for update_notification_status, must exist)"
+                        },
+                        "notification_status": {
+                            "type": "string",
+                            "description": "New notification status (required for update_notification_status)",
+                            "enum": ["pending", "sent", "failed", "bounced"]
+                        },
+                        "user_id": {
+                            "type": "string",
+                            "description": "User ID performing the status update (required for update_notification_status, must exist and be active)"
+                        },
+                        "failed_reason": {
+                            "type": "string",
+                            "description": "Reason for notification failure (optional for update_notification_status, used when status is 'failed' or 'bounced')"
+                        }
                     },
                     "required": ["operation_type"]
                 }
             }
         }
-
-
-def manage_notification_operations(data: Dict[str, Any], **kwargs) -> str:
-    return ManageNotificationOperations.invoke(data, **kwargs)

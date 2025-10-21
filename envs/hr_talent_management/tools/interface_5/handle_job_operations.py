@@ -25,18 +25,16 @@ class HandleJobOperations(Tool):
         
         def validate_date_format(date_str: str, field_name: str) -> Optional[str]:
             if date_str:
-                # Accept both MM-DD-YYYY and YYYY-MM-DD formats
-                date_pattern_1 = r'^\d{2}-\d{2}-\d{4}$'
-                date_pattern_2 = r'^\d{4}-\d{2}-\d{2}$'
-                if not (re.match(date_pattern_1, date_str) or re.match(date_pattern_2, date_str)):
-                    return f"Invalid {field_name} format. Must be MM-DD-YYYY or YYYY-MM-DD"
+                # Accept YYYY-MM-DD format
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+                if not re.match(date_pattern, date_str):
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
             return None
         
         def convert_date_format(date_str: str) -> str:
-            """Convert MM-DD-YYYY to YYYY-MM-DD"""
-            if date_str and re.match(r'^\d{2}-\d{2}-\d{4}$', date_str):
-                month, day, year = date_str.split('-')
-                return f"{year}-{month}-{day}"
+            """Convert YYYY-MM-DD format for internal storage"""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
             return date_str
         
         # Validate operation_type
@@ -265,7 +263,7 @@ class HandleJobOperations(Tool):
                 if kwargs.get(field) is not None:
                     requisition[field] = kwargs[field]
             
-            requisition["updated_at"] = "2025-01-01T12:00:00"
+            requisition["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({"success": True, "requisition_id": kwargs["requisition_id"], "message": f"Requisition {kwargs['requisition_id']} updated successfully"})
         
@@ -565,11 +563,11 @@ class HandleJobOperations(Tool):
                         },
                         "approval_date": {
                             "type": "string",
-                            "description": "Approval date. Format: MM-DD-YYYY or YYYY-MM-DD. Optional for: approve_requisition"
+                            "description": "Approval date. Format: YYYY-MM-DD. Optional for: approve_requisition"
                         },
                         "posted_date": {
                             "type": "string",
-                            "description": "Posting date. Format: MM-DD-YYYY or YYYY-MM-DD. Required for: create_posting"
+                            "description": "Posting date. Format: YYYY-MM-DD. Required for: create_posting"
                         },
                         "portal_type": {
                             "type": "string",

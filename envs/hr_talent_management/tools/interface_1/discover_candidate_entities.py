@@ -52,7 +52,7 @@ class DiscoverCandidateEntities(Tool):
             # Supported candidate filters
             candidate_exact_keys = [
                 "candidate_id", "first_name", "last_name", "email_address", 
-                "contact_number", "country_of_residence", "status", "source_of_application"
+                "contact_number", "country_of_residence", "status", "linkedin_profile"
             ]
 
             for candidate_id, candidate in candidates.items():
@@ -127,7 +127,7 @@ class DiscoverCandidateEntities(Tool):
             "type": "function",
             "function": {
                 "name": "discover_candidate_entities",
-                "description": "Discover and retrieve candidate-related entities including candidates, applications, and shortlists.",
+                "description": "Discover and retrieve candidate-related entities including candidates and applications",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -137,13 +137,10 @@ class DiscoverCandidateEntities(Tool):
                         },
                         "filters": {
                             "type": "object",
-                            "description": "Optional filters for discovery. For candidates: candidate_id, first_name, last_name, email_address, contact_number, country_of_residence, status, source_of_application. For applications: application_id, candidate_id, posting_id, resume_file_id, cover_letter_file_id, application_date_from, application_date_to, status, screened_by, shortlist_approved_by, shortlist_approval_date_from, shortlist_approval_date_to, screened_date_from, screened_date_to"
+                            "description": "Optional filters for discovery. For candidates: candidate_id, first_name, last_name, email_address, contact_number, country_of_residence, status. For applications: application_id, candidate_id, posting_id, resume_file_id, cover_letter_file_id, application_date_from, application_date_to, status, screened_by, shortlist_approved_by, shortlist_approval_date_from, shortlist_approval_date_to, screened_date_from, screened_date_to"
                         }
                     },
                     "required": ["entity_type"]
                 }
             }
         }
-
-
-
