@@ -31,8 +31,8 @@ class ProcessPayrollInputOperations(Tool):
                 return False
             cycle = payroll_cycles[cycle_id]
             cutoff_date = cycle.get("cutoff_date", "")
-            # For demo purposes, assume current date is 2025-01-10
-            current_date = "2025-01-10"
+            # For demo purposes, assume current date is 2025-10-10
+            current_date = "2025-10-10"
             return current_date > cutoff_date
         
         if operation_type not in ["create_input", "approve_input"]:

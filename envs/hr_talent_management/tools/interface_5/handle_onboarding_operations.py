@@ -1,6 +1,5 @@
 import json
 import re
-from datetime import datetime
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
@@ -23,17 +22,16 @@ class HandleOnboardingOperations(Tool):
         
         def validate_date_format(date_str: str, field_name: str) -> Optional[str]:
             if date_str:
-                # Convert MM-DD-YYYY to YYYY-MM-DD for internal storage
-                date_pattern = r'^\d{2}-\d{2}-\d{4}$'
+                # Convert YYYY-MM-DD format for internal storage
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
                 if not re.match(date_pattern, date_str):
-                    return f"Invalid {field_name} format. Must be MM-DD-YYYY"
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
             return None
         
         def convert_date_format(date_str: str) -> str:
-            """Convert MM-DD-YYYY to YYYY-MM-DD"""
-            if date_str and re.match(r'^\d{2}-\d{2}-\d{4}$', date_str):
-                month, day, year = date_str.split('-')
-                return f"{year}-{month}-{day}"
+            """Convert YYYY-MM-DD format for internal storage"""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
             return date_str
         
         def validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
@@ -118,7 +116,7 @@ class HandleOnboardingOperations(Tool):
             
             # Generate new checklist ID and create record
             new_checklist_id = generate_id(onboarding_checklists)
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
             
             new_checklist = {
                 "checklist_id": str(new_checklist_id),
@@ -223,7 +221,7 @@ class HandleOnboardingOperations(Tool):
                     else:
                         checklist[field_name] = kwargs[field_name]
             
-            checklist["updated_at"] = "2025-10-01T12:00:00"
+            checklist["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -258,7 +256,7 @@ class HandleOnboardingOperations(Tool):
                         },
                         "start_date": {
                             "type": "string",
-                            "description": "Employee's scheduled first day of work. Enter date in MM-DD-YYYY format (e.g., '04-01-2025' for April 1, 2025). This field is required only when operation_type is 'create_checklist'. Must follow the exact format MM-DD-YYYY with hyphens as separators. The system validates the date format. Used for scheduling onboarding activities and tracking timelines. Example: '05-15-2025'"
+                            "description": "Employee's scheduled first day of work. Enter date in YYYY-MM-DD format (e.g., '2025-04-01' for April 1, 2025). This field is required only when operation_type is 'create_checklist'. Must follow the exact format YYYY-MM-DD with hyphens as separators. The system validates the date format. Used for scheduling onboarding activities and tracking timelines. Example: '2025-05-15'"
                         },
                         "position": {
                             "type": "string",
@@ -288,7 +286,7 @@ class HandleOnboardingOperations(Tool):
                         },
                         "background_check_cleared_date": {
                             "type": "string",
-                            "description": "Date when the background check was successfully completed and cleared. Enter date in MM-DD-YYYY format (e.g., '03-10-2025' for March 10, 2025). This field is optional and only applies when operation_type is 'update_checklist'. Must follow the exact format MM-DD-YYYY with hyphens as separators. Typically set when background_check_status changes to 'passed'. Example: '04-05-2025'"
+                            "description": "Date when the background check was successfully completed and cleared. Enter date in YYYY-MM-DD format (e.g., '2025-03-10' for March 10, 2025). This field is optional and only applies when operation_type is 'update_checklist'. Must follow the exact format YYYY-MM-DD with hyphens as separators. Typically set when background_check_status changes to 'passed'. Example: '2025-04-05'"
                         },
                         "document_verification_status": {
                             "type": "string",
@@ -306,7 +304,7 @@ class HandleOnboardingOperations(Tool):
                         },
                         "orientation_date": {
                             "type": "string",
-                            "description": "Date when the employee completed the orientation program. Enter date in MM-DD-YYYY format (e.g., '04-02-2025' for April 2, 2025). This field is optional and only applies when operation_type is 'update_checklist'. Must follow the exact format MM-DD-YYYY with hyphens as separators. Typically set when orientation_completed is marked as true. Example: '05-16-2025'"
+                            "description": "Date when the employee completed the orientation program. Enter date in YYYY-MM-DD format (e.g., '2025-04-02' for April 2, 2025). This field is optional and only applies when operation_type is 'update_checklist'. Must follow the exact format YYYY-MM-DD with hyphens as separators. Typically set when orientation_completed is marked as true. Example: '2025-05-16'"
                         },
                         "benefits_enrollment_status": {
                             "type": "string",

@@ -12,7 +12,7 @@ You should deny user requests that are against this policy.
 
 If any external integration (e.g., database or API) fails, you must halt and provide appropriate error messaging.
 
-All monetary amounts are processed in USD, and all dates follow MM-DD-YYYY format.
+All monetary amounts are processed in USD, and all dates follow YYYY-MM-DD format.
 
 ## Standard Operating Procedures (SOPs)
 
@@ -1062,7 +1062,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 ### Steps:
 
 #### 1. Collect Cycle Details
-- Obtain mandatory fields: `cycle_start_date`, `cycle_end_date`, `frequency`, `cutoff_date`, `user_id`
+- Obtain mandatory fields: `cycle_start_date`, `cycle_end_date`, `frequency`, `cutoff_date`, `requesting_user_id`
 - Verify the user is an active HR Payroll Administrator, HR Manager, or HR Director using `discover_reference_entities`
 
 #### 2. Create Payroll Cycle
@@ -1089,7 +1089,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 ### Steps:
 
 #### 1. Collect Input Details
-- Obtain mandatory fields: `employee_id`, `cycle_id`, `user_id`
+- Obtain mandatory fields: `employee_id`, `cycle_id`, `requesting_user_id`
 - Collect optional fields: `hours_worked`, `overtime_hours`
 - Verify the user is an active HR Payroll Administrator, HR Manager, or HR Director using `discover_reference_entities`
 - Verify employee exists and is active using `discover_employee_entities`
@@ -1148,7 +1148,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 ### Steps:
 
 #### 1. Collect Earning Details
-- Obtain mandatory fields: `payroll_input_id`, `employee_id`, `earning_type`, `amount`, `user_id`
+- Obtain mandatory fields: `payroll_input_id`, `earning_type`, `amount`, `user_id`
 - Verify the user is an active HR Payroll Administrator, HR Manager, or HR Director using `discover_reference_entities`
 - Verify the employee exists using `discover_employee_entities`
 - Verify `payroll_input_id` exists and is approved using `discover_payroll_entities`

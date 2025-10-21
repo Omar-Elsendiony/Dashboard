@@ -26,17 +26,16 @@ class ExecuteOfferOperations(Tool):
         
         def validate_date_format(date_str: str, field_name: str) -> Optional[str]:
             if date_str:
-                # Convert MM-DD-YYYY to YYYY-MM-DD for internal storage
-                date_pattern = r'^\d{2}-\d{2}-\d{4}$'
+                # Convert YYYY-MM-DD format for internal storage
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
                 if not re.match(date_pattern, date_str):
-                    return f"Invalid {field_name} format. Must be MM-DD-YYYY"
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
             return None
         
         def convert_date_format(date_str: str) -> str:
-            """Convert MM-DD-YYYY to YYYY-MM-DD"""
-            if date_str and re.match(r'^\d{2}-\d{2}-\d{4}$', date_str):
-                month, day, year = date_str.split('-')
-                return f"{year}-{month}-{day}"
+            """Convert YYYY-MM-DD format for internal storage"""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
             return date_str
         
         # Validate operation_type
@@ -134,7 +133,7 @@ class ExecuteOfferOperations(Tool):
             
             # Generate new offer ID and create record
             new_offer_id = generate_id(offers)
-            timestamp = "2025-10-01T12:00:00"
+            timestamp = "2025-10-10T12:00:00"
             
             new_offer = {
                 "offer_id": str(new_offer_id),
@@ -181,7 +180,7 @@ class ExecuteOfferOperations(Tool):
             
             # Generate new benefit ID and create record
             new_benefit_id = generate_id(offer_benefits)
-            timestamp = "2025-10-01T12:00:00"
+            timestamp = "2025-10-10T12:00:00"
             
             new_benefit = {
                 "benefit_id": str(new_benefit_id),
@@ -231,7 +230,7 @@ class ExecuteOfferOperations(Tool):
             offer = offers[str(kwargs["offer_id"])]
             offer["compliance_approved_by"] = str(kwargs["compliance_approved_by"])
             offer["compliance_approval_date"] = convert_date_format(kwargs["compliance_approval_date"])
-            offer["updated_at"] = "2025-10-01T12:00:00"
+            offer["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -272,7 +271,7 @@ class ExecuteOfferOperations(Tool):
             offer["hr_manager_approved_by"] = str(kwargs["hr_manager_approved_by"])
             offer["hr_manager_approval_date"] = convert_date_format(kwargs["hr_manager_approval_date"])
             offer["offer_status"] = "approved_for_issue"
-            offer["updated_at"] = "2025-10-01T12:00:00"
+            offer["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -312,7 +311,7 @@ class ExecuteOfferOperations(Tool):
             offer = offers[str(kwargs["offer_id"])]
             offer["issue_date"] = convert_date_format(kwargs["issue_date"])
             offer["offer_status"] = "issued"
-            offer["updated_at"] = "2025-10-01T12:00:00"
+            offer["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -361,7 +360,7 @@ class ExecuteOfferOperations(Tool):
             offer["acceptance_date"] = convert_date_format(kwargs["acceptance_date"])
             offer["offer_accepted_date"] = convert_date_format(kwargs["offer_accepted_date"])
             offer["offer_status"] = "accepted"
-            offer["updated_at"] = "2025-10-01T12:00:00"
+            offer["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -404,7 +403,7 @@ class ExecuteOfferOperations(Tool):
                         },
                         "start_date": {
                             "type": "string",
-                            "description": "Proposed employment start date for the candidate. Enter date in MM-DD-YYYY format (e.g., '01-15-2025' for January 15, 2025). This field is required only when operation_type is 'create_offer'. Must follow the exact format MM-DD-YYYY with hyphens as separators. The system will validate the date format. Example: '03-01-2025'"
+                            "description": "Proposed employment start date for the candidate. Enter date in YYYY-MM-DD format (e.g., '2025-01-15' for January 15, 2025). This field is required only when operation_type is 'create_offer'. Must follow the exact format YYYY-MM-DD with hyphens as separators. The system will validate the date format. Example: '2025-03-01'"
                         },
                         "base_salary": {
                             "type": "number",
@@ -448,7 +447,7 @@ class ExecuteOfferOperations(Tool):
                         },
                         "compliance_approval_date": {
                             "type": "string",
-                            "description": "Date when compliance approval was granted. Enter date in MM-DD-YYYY format (e.g., '02-10-2025' for February 10, 2025). This field is required only when operation_type is 'verify_compliance'. Must follow the exact format MM-DD-YYYY with hyphens as separators. Used for compliance audit trail. Example: '02-15-2025'"
+                            "description": "Date when compliance approval was granted. Enter date in YYYY-MM-DD format (e.g., '2025-02-10' for February 10, 2025). This field is required only when operation_type is 'verify_compliance'. Must follow the exact format YYYY-MM-DD with hyphens as separators. Used for compliance audit trail. Example: '2025-02-15'"
                         },
                         "hr_manager_approved_by": {
                             "type": "string",
@@ -456,19 +455,19 @@ class ExecuteOfferOperations(Tool):
                         },
                         "hr_manager_approval_date": {
                             "type": "string",
-                            "description": "Date when HR manager approval was granted. Enter date in MM-DD-YYYY format (e.g., '02-12-2025' for February 12, 2025). This field is required only when operation_type is 'approve_offer'. Must follow the exact format MM-DD-YYYY with hyphens as separators. Records when final HR approval occurred. Example: '02-18-2025'"
+                            "description": "Date when HR manager approval was granted. Enter date in YYYY-MM-DD format (e.g., '2025-02-12' for February 12, 2025). This field is required only when operation_type is 'approve_offer'. Must follow the exact format YYYY-MM-DD with hyphens as separators. Records when final HR approval occurred. Example: '2025-02-18'"
                         },
                         "issue_date": {
                             "type": "string",
-                            "description": "Date when the offer was officially issued or sent to the candidate. Enter date in MM-DD-YYYY format (e.g., '02-14-2025' for February 14, 2025). This field is required only when operation_type is 'issue_offer'. Must follow the exact format MM-DD-YYYY with hyphens as separators. Marks when the offer was formally communicated to the candidate. Example: '02-20-2025'"
+                            "description": "Date when the offer was officially issued or sent to the candidate. Enter date in YYYY-MM-DD format (e.g., '2025-02-14' for February 14, 2025). This field is required only when operation_type is 'issue_offer'. Must follow the exact format YYYY-MM-DD with hyphens as separators. Marks when the offer was formally communicated to the candidate. Example: '2025-02-20'"
                         },
                         "acceptance_date": {
                             "type": "string",
-                            "description": "Date when the candidate accepted the offer. Enter date in MM-DD-YYYY format (e.g., '02-18-2025' for February 18, 2025). This field is required only when operation_type is 'record_acceptance'. Must follow the exact format MM-DD-YYYY with hyphens as separators. Records the candidate's acceptance date for documentation. Example: '02-25-2025'"
+                            "description": "Date when the candidate accepted the offer. Enter date in YYYY-MM-DD format (e.g., '2025-02-18' for February 18, 2025). This field is required only when operation_type is 'record_acceptance'. Must follow the exact format YYYY-MM-DD with hyphens as separators. Records the candidate's acceptance date for documentation. Example: '2025-02-25'"
                         },
                         "offer_accepted_date": {
                             "type": "string",
-                            "description": "Date when the offer acceptance was recorded in the system. Enter date in MM-DD-YYYY format (e.g., '02-19-2025' for February 19, 2025). This field is required only when operation_type is 'record_acceptance'. Must follow the exact format MM-DD-YYYY with hyphens as separators. May differ from acceptance_date if there was a delay in recording. Example: '02-26-2025'"
+                            "description": "Date when the offer acceptance was recorded in the system. Enter date in YYYY-MM-DD format (e.g., '2025-02-19' for February 19, 2025). This field is required only when operation_type is 'record_acceptance'. Must follow the exact format YYYY-MM-DD with hyphens as separators. May differ from acceptance_date if there was a delay in recording. Example: '2025-02-26'"
                         }
                     },
                     "required": ["operation_type"]

@@ -1,197 +1,162 @@
-# Auto-generated — DO NOT EDIT BY HAND
 import json
-from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
 
 class CreateAuditEntry(Tool):
-    """
-    Create an audit trail record consistent with the HR SOP and DB schema.
-    - Enforces valid reference_type and action enums (DB-aligned).
-    - Accepts common aliases for reference_type and normalizes to canonical DB values.
-    - Requires a caller user id for traceability (SOP: auditable, role-bound actions).
-    - Uses UTC ISO8601 timestamps for created_at (DB: timestamp).
-    - For 'update' actions, requires field_name and at least one of old_value/new_value.
-    - Normalizes enums to lowercase to reduce caller error, while validating against allowed sets.
-    """
-
-    # Canonical enums (must match DB schema exactly)
-    VALID_REFERENCE_TYPES = {
-        "requisition", "application", "offer", "employee", "payroll",
-        "benefit", "exit", "document", "shortlist"
-    }
-
-    VALID_ACTIONS = {
-        "create", "update", "delete", "approve", "reject",
-        "lock", "unlock", "submit", "verify"
-    }
-
-    # Friendly aliases → canonical reference_type
-    REFERENCE_TYPE_ALIASES = {
-        "job_requisition": "requisition",
-        "requisitions": "requisition",
-        "jobreq": "requisition",
-
-        "applications": "application",
-        "app": "application",
-
-        "offers": "offer",
-
-        "employees": "employee",
-        "worker": "employee",
-        "workers": "employee",
-
-        "payroll_cycle": "payroll",
-        "payroll_cycles": "payroll",
-        "payrun": "payroll",
-
-        "benefits": "benefit",
-
-        "employee_exit": "exit",
-        "employee_exits": "exit",
-        "termination": "exit",
-
-        "doc": "document",
-        "documents": "document",
-
-        "short_list": "shortlist",
-        "short_listed": "shortlist",
-        "shortlists": "shortlist",
-    }
-
     @staticmethod
-    def _now_utc_iso(data: Dict[str, Any]) -> str:
-        injected = data.get("_now_utc")
-        if isinstance(injected, str) and injected.strip():
-            return injected
-        return datetime.now(timezone.utc).isoformat()
-
-    @staticmethod
-    def _require_caller_user_id(data: Dict[str, Any]) -> str:
-        caller = data.get("_caller_user_id")
-        if not caller or not isinstance(caller, str) or not caller.strip():
-            # SOP: halt with explicit error if we cannot attribute the action
-            raise ValueError("Missing _caller_user_id for audit attribution.")
-        return caller
-
-    @staticmethod
-    def _next_numeric_id_str(store: Dict[str, Any]) -> str:
-        numeric_keys = [int(k) for k in store.keys() if str(k).isdigit()]
-        return str((max(numeric_keys) if numeric_keys else 0) + 1)
-
-    @classmethod
-    def _normalize_reference_type(cls, value: str) -> str:
-        v = (value or "").strip().lower()
-        if v in cls.VALID_REFERENCE_TYPES:
-            return v
-        if v in cls.REFERENCE_TYPE_ALIASES:
-            return cls.REFERENCE_TYPE_ALIASES[v]
-        return v  # return as-is; will be validated later
-
-    @staticmethod
-    def invoke(
-        data: Dict[str, Any],
-        reference_id: str,
-        reference_type: str,
-        action: str,
-        field_name: Optional[str] = None,
-        old_value: Optional[str] = None,
-        new_value: Optional[str] = None,
-    ) -> str:
-        # -------- Input normalization --------
-        if not isinstance(reference_id, str) or not reference_id.strip():
-            raise ValueError("Invalid reference_id. Must be a non-empty string.")
-
-        ref_type_norm = CreateAuditEntry._normalize_reference_type(reference_type)
-        action_norm = action.lower().strip() if isinstance(action, str) else ""
-
-        if ref_type_norm not in CreateAuditEntry.VALID_REFERENCE_TYPES:
-            allowed = ", ".join(sorted(CreateAuditEntry.VALID_REFERENCE_TYPES))
-            raise ValueError(
-                f"Invalid reference_type '{reference_type}'. Must be one of [{allowed}] "
-                f"(aliases accepted: {', '.join(sorted(CreateAuditEntry.REFERENCE_TYPE_ALIASES.keys()))})."
-            )
-        if action_norm not in CreateAuditEntry.VALID_ACTIONS:
-            allowed = ", ".join(sorted(CreateAuditEntry.VALID_ACTIONS))
-            raise ValueError(
-                f"Invalid action '{action}'. Must be one of [{allowed}]."
-            )
-
-        # For 'update', require field_name and at least one of old/new
-        if action_norm == "update":
-            if not field_name or not isinstance(field_name, str) or not field_name.strip():
-                raise ValueError("For action 'update', field_name is required.")
-            if (old_value is None) and (new_value is None):
-                raise ValueError("For action 'update', at least one of old_value or new_value must be provided.")
-
-        # -------- Caller + time --------
-        caller_user_id = CreateAuditEntry._require_caller_user_id(data)
-        created_at_iso = CreateAuditEntry._now_utc_iso(data)
-
-        # -------- Storage --------
-        audit_trails = data.setdefault("audit_trails", {})
-        new_id = CreateAuditEntry._next_numeric_id_str(audit_trails)
-
-        rec = {
-            "audit_id": new_id,
+    def invoke(data: Dict[str, Any], reference_id: str, reference_type: str, action: str, user_id: str, field_name: Optional[str] = None, old_value: Optional[str] = None, new_value: Optional[str] = None) -> str:
+        """
+        Create an audit trail entry to track changes and actions in the HR system.
+        
+        Args:
+            reference_id: ID of the entity being audited
+            reference_type: Type of entity (user, location, department, job_requisition, etc.)
+            action: Action performed (create, update, delete, approve, reject, etc.)
+            user_id: ID of the user performing the action
+            field_name: Optional field name being changed
+            old_value: Optional old value of the field
+            new_value: Optional new value of the field
+        """
+        
+        def generate_audit_id(audit_trails: Dict[str, Any]) -> int:
+            if not audit_trails:
+                return 1
+            return max(int(k) for k in audit_trails.keys()) + 1
+        
+        # Validate required fields
+        required_fields = ["reference_id", "reference_type", "action", "user_id"]
+        missing_fields = [field for field in required_fields if not locals().get(field)]
+        if missing_fields:
+            return json.dumps({
+                "success": False,
+                "audit_id": None,
+                "message": f"Missing required fields: {', '.join(missing_fields)}"
+            })
+        
+        # Access related data
+        if not isinstance(data, dict):
+            return json.dumps({
+                "success": False,
+                "audit_id": None,
+                "message": "Invalid data format for audit operations"
+            })
+        
+        users = data.get("users", {})
+        audit_trails = data.get("audit_trails", {})
+        
+        # Validate user exists and is active
+        user_str = str(user_id)
+        if user_str not in users:
+            return json.dumps({
+                "success": False,
+                "audit_id": None,
+                "message": f"User {user_id} not found"
+            })
+        
+        user = users[user_str]
+        if user.get("employment_status") != "active":
+            return json.dumps({
+                "success": False,
+                "audit_id": None,
+                "message": f"User {user_id} is not active"
+            })
+        
+        # Validate reference_type enum
+        valid_reference_types = [
+            "user", "location", "department", "job_requisition", "job_posting", 
+            "candidate", "application", "interview", "interview_panel_member", 
+            "offer", "offer_benefit", "employee", "onboarding_checklist", 
+            "document", "it_provisioning_task", "payroll_cycle", "payroll_input", 
+            "payroll_earning", "benefit_plan", "benefit_enrollment", "payslip", 
+            "payment", "employee_exit", "notification"
+        ]
+        
+        if reference_type not in valid_reference_types:
+            return json.dumps({
+                "success": False,
+                "audit_id": None,
+                "message": f"Invalid reference_type '{reference_type}'. Must be one of: {', '.join(valid_reference_types)}"
+            })
+        
+        # Validate action enum
+        valid_actions = [
+            "create", "update", "delete", "approve", "reject", "lock", 
+            "unlock", "submit", "verify"
+        ]
+        
+        if action not in valid_actions:
+            return json.dumps({
+                "success": False,
+                "audit_id": None,
+                "message": f"Invalid action '{action}'. Must be one of: {', '.join(valid_actions)}"
+            })
+        
+        # Generate new audit ID and create record
+        new_audit_id = generate_audit_id(audit_trails)
+        timestamp = "2025-10-10T12:00:00"
+        
+        new_audit_entry = {
+            "audit_id": str(new_audit_id),
             "reference_id": reference_id,
-            "reference_type": ref_type_norm,
-            "action": action_norm,
-            "user_id": caller_user_id,
+            "reference_type": reference_type,
+            "action": action,
+            "user_id": user_id,
             "field_name": field_name,
             "old_value": old_value,
             "new_value": new_value,
-            "created_at": created_at_iso,
+            "created_at": timestamp
         }
-
-        audit_trails[new_id] = rec
-        return json.dumps(rec)
-
+        
+        audit_trails[str(new_audit_id)] = new_audit_entry
+        
+        return json.dumps({
+            "success": True,
+            "audit_id": str(new_audit_id),
+            "message": f"Audit entry {new_audit_id} created successfully",
+            "audit_log": new_audit_entry
+        })
+    
     @staticmethod
     def get_info() -> Dict[str, Any]:
-        # Provide explicit enums for clarity + short descriptions for each reference_type.
         return {
             "type": "function",
             "function": {
                 "name": "create_audit_entry",
-                "description": (
-                    "Append a record to audit_trails adhering to HR audit policy. "
-                    "Valid reference_type values mirror the DB enum. Common aliases are accepted and normalized."
-                ),
+                "description": "Create an audit trail entry to track changes and actions in the HR system. This tool logs all system activities for compliance and audit purposes. The requesting user must be active in the system. Use this tool after any create, update, delete, approve, reject, or other system operations to maintain a complete audit trail.",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "reference_id": {"type": "string", "description": "Primary key of the referenced record."},
+                        "reference_id": {
+                            "type": "string",
+                            "description": "ID of the entity being audited (e.g., '123' for user_id, '1' for requisition_id, etc.)"
+                        },
                         "reference_type": {
                             "type": "string",
-                            "description": (
-                                "Entity type for the reference. "
-                                "Allowed: requisition (job requisitions), application (candidate applications), "
-                                "offer (candidate offers), employee (employee records), payroll (payroll cycles/ops), "
-                                "benefit (benefit plans/enrollments), exit (employee exits), document (uploaded docs), "
-                                "shortlist (shortlisting decisions). "
-                                "Aliases accepted: job_requisition→requisition, payroll_cycle→payroll, employee_exit→exit, doc→document, etc."
-                            ),
-                            "enum": [
-                                "requisition","application","offer","employee","payroll",
-                                "benefit","exit","document","shortlist"
-                            ],
+                            "description": "Type of entity being audited. MUST be one of these exact values: 'user', 'location', 'department', 'job_requisition', 'job_posting', 'candidate', 'application', 'interview', 'interview_panel_member', 'offer', 'offer_benefit', 'employee', 'onboarding_checklist', 'document', 'it_provisioning_task', 'payroll_cycle', 'payroll_input', 'payroll_earning', 'benefit_plan', 'benefit_enrollment', 'payslip', 'payment', 'employee_exit', 'notification'"
                         },
                         "action": {
                             "type": "string",
-                            "description": "Audit action verb.",
-                            "enum": ["create","update","delete","approve","reject","lock","unlock","submit","verify"],
+                            "description": "Action performed on the entity. MUST be one of these exact values: 'create' (for new records), 'update' (for modifications), 'delete' (for removals), 'approve' (for approvals), 'reject' (for rejections), 'lock' (for locking records), 'unlock' (for unlocking records), 'submit' (for submissions), 'verify' (for verifications)"
                         },
-                        "field_name": {"type": "string", "description": "Required for 'update' actions."},
-                        "old_value": {"type": "string", "description": "Optional; recommended for 'update' actions."},
-                        "new_value": {"type": "string", "description": "Optional; recommended for 'update' actions."},
+                        "user_id": {
+                            "type": "string",
+                            "description": "ID of the user performing the action. The user MUST exist in the system and have employment_status = 'active'"
+                        },
+                        "field_name": {
+                            "type": "string",
+                            "description": "Optional: Name of the specific field being changed (e.g., 'status', 'salary', 'department_id'). Only required for field-level change tracking."
+                        },
+                        "old_value": {
+                            "type": "string",
+                            "description": "Optional: Previous value of the field before the change. Only used when tracking specific field changes."
+                        },
+                        "new_value": {
+                            "type": "string",
+                            "description": "Optional: New value of the field after the change. Only used when tracking specific field changes."
+                        }
                     },
-                    "required": ["reference_id", "reference_type", "action"],
-                },
-            },
+                    "required": ["reference_id", "reference_type", "action", "user_id"]
+                }
+            }
         }
-
-
-def create_audit_entry(data: Dict[str, Any], **kwargs) -> str:
-    return CreateAuditEntry.invoke(data, **kwargs)

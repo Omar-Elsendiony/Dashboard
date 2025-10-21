@@ -4,7 +4,7 @@ from tau_bench.envs.tool import Tool
 
 class ManagePayrollEarningOperations(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], operation_type: str, payroll_input_id: str = None, employee_id: str = None,
+    def invoke(data: Dict[str, Any], operation_type: str, payroll_input_id: str = None,
                earning_type: str = None, amount: float = None, user_id: str = None,
                earning_id: str = None, approval_status: str = None, approved_by: str = None,
                approval_date: str = None) -> str:
@@ -12,7 +12,7 @@ class ManagePayrollEarningOperations(Tool):
         Manage payroll earning operations including creation and approval.
         
         Operations:
-        - create_earning: Create additional earning record for employee (requires payroll_input_id, employee_id, earning_type, amount, user_id)
+        - create_earning: Create additional earning record for employee (requires payroll_input_id, earning_type, amount, user_id)
         - approve_earning: Approve additional earning record (requires earning_id, approval_status, approved_by, approval_date)
         """
         
@@ -44,11 +44,19 @@ class ManagePayrollEarningOperations(Tool):
         audit_trails = data.get("audit_trails", {})
         
         if operation_type == "create_earning":
-            # Validate mandatory fields
-            if not all([payroll_input_id, employee_id, earning_type, amount, user_id]):
+            # Validate mandatory fields and identify missing ones
+            required_fields = {
+                "payroll_input_id": payroll_input_id,
+                "earning_type": earning_type,
+                "amount": amount,
+                "user_id": user_id
+            }
+            missing_fields = [field for field, value in required_fields.items() if value is None]
+            
+            if missing_fields:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Missing mandatory fields - payroll_input_id, employee_id, earning_type, amount, and user_id are required"
+                    "error": f"Halt: Missing mandatory fields - {', '.join(missing_fields)} are required"
                 })
             
             # Verify the user is an active HR Payroll Administrator, HR Manager, or HR Director
@@ -74,13 +82,6 @@ class ManagePayrollEarningOperations(Tool):
                     "error": "Halt: User is not an active HR Payroll Administrator - user is not active"
                 })
             
-            # Verify the employee exists
-            if employee_id not in employees:
-                return json.dumps({
-                    "success": False,
-                    "error": "Halt: Employee mismatch with payroll input - employee not found"
-                })
-            
             # Verify payroll_input_id exists and is approved
             if payroll_input_id not in payroll_inputs:
                 return json.dumps({
@@ -93,13 +94,6 @@ class ManagePayrollEarningOperations(Tool):
                 return json.dumps({
                     "success": False,
                     "error": "Halt: Payroll input not found or not approved - payroll input is not approved"
-                })
-            
-            # Verify employee mismatch with payroll input
-            if payroll_input.get("employee_id") != employee_id:
-                return json.dumps({
-                    "success": False,
-                    "error": "Halt: Employee mismatch with payroll input - employee ID does not match payroll input"
                 })
             
             # Validate earning_type
@@ -158,11 +152,19 @@ class ManagePayrollEarningOperations(Tool):
             })
         
         elif operation_type == "approve_earning":
-            # Validate mandatory fields for approval
-            if not all([earning_id, approval_status, approved_by, approval_date]):
+            # Validate mandatory fields for approval and identify missing ones
+            required_fields = {
+                "earning_id": earning_id,
+                "approval_status": approval_status,
+                "approved_by": approved_by,
+                "approval_date": approval_date
+            }
+            missing_fields = [field for field, value in required_fields.items() if value is None]
+            
+            if missing_fields:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Missing mandatory fields - earning_id, approval_status, approved_by, and approval_date are required"
+                    "error": f"Halt: Missing mandatory fields - {', '.join(missing_fields)} are required"
                 })
             
             # Verify earning exists and is in 'pending' status
@@ -264,7 +266,7 @@ class ManagePayrollEarningOperations(Tool):
             "type": "function",
             "function": {
                 "name": "manage_payroll_earning_operations",
-				"description": "Create and approve additional earnings (bonuses, incentives, reimbursements, commissions) tied to approved payroll inputs.\n\nWhat this tool does:\n- create_earning: Adds an earning line item for an employee against an approved payroll input.\n- approve_earning: Lets the employee's manager approve or reject the earning.\n\nWho can use it:\n- create_earning: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_earning: The employee's manager (active user matching employees[employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_earning' or 'approve_earning'.\n- For create_earning:\n  - payroll_input_id: Existing payroll input with input_status 'submitted'.\n  - employee_id: Must match payroll_input.employee_id.\n  - earning_type: One of bonus, incentive, reimbursement, commission, other.\n  - amount: Positive number (> 0).\n  - user_id: Authorized active user id.\n- For approve_earning:\n  - earning_id: Existing earning with approval_status 'pending'.\n  - approval_status: 'approved' or 'rejected'.\n  - approved_by: Active user id who is the employee's manager.\n  - approval_date: YYYY-MM-DD.\n\nExample create_earning:\n{\n  \"operation_type\": \"create_earning\",\n  \"payroll_input_id\": \"pi_55\",\n  \"employee_id\": \"e_101\",\n  \"earning_type\": \"bonus\",\n  \"amount\": 500,\n  \"user_id\": \"u_hr_1\"\n}\n\nExample approve_earning:\n{\n  \"operation_type\": \"approve_earning\",\n  \"earning_id\": \"pe_77\",\n  \"approval_status\": \"approved\",\n  \"approved_by\": \"u_mgr_7\",\n  \"approval_date\": \"2025-01-12\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- Requester not authorized or inactive.\n- Payroll input not found/not approved; employee mismatch with payroll input.\n- Invalid earning_type or non-positive amount.\n- For approval: approver not employee's manager; earning not pending; invalid approval status.",
+				"description": "Create and approve additional earnings (bonuses, incentives, reimbursements, commissions) tied to approved payroll inputs.\n\nWhat this tool does:\n- create_earning: Adds an earning line item for an employee against an approved payroll input.\n- approve_earning: Lets the employee's manager approve or reject the earning.\n\nWho can use it:\n- create_earning: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_earning: The employee's manager (active user matching employees[payroll_input.employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_earning' or 'approve_earning'.\n- For create_earning:\n  - payroll_input_id: Existing payroll input with input_status 'submitted'.\n \n  - earning_type: One of bonus, incentive, reimbursement, commission, other.\n  - amount: Positive number (> 0).\n  - user_id: Authorized active user id.\n- For approve_earning:\n  - earning_id: Existing earning with approval_status 'pending'.\n  - approval_status: 'approved' or 'rejected'.\n  - approved_by: Active user id who is the employee's manager.\n  - approval_date: YYYY-MM-DD.\n\nExample create_earning:\n{\n  \"operation_type\": \"create_earning\",\n  \"payroll_input_id\": \"pi_55\",\n  \"earning_type\": \"bonus\",\n  \"amount\": 500,\n  \"user_id\": \"u_hr_1\"\n}\n\nExample approve_earning:\n{\n  \"operation_type\": \"approve_earning\",\n  \"earning_id\": \"pe_77\",\n  \"approval_status\": \"approved\",\n  \"approved_by\": \"u_mgr_7\",\n  \"approval_date\": \"2025-01-12\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- Requester not authorized or inactive.\n- Payroll input not found/not approved; employee mismatch with payroll input.\n- Invalid earning_type or non-positive amount.\n- For approval: approver not employee's manager; earning not pending; invalid approval status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -276,10 +278,6 @@ class ManagePayrollEarningOperations(Tool):
                         "payroll_input_id": {
                             "type": "string",
 							"description": "Payroll input id (required for create_earning). Must exist and have input_status 'submitted'."
-                        },
-                        "employee_id": {
-                            "type": "string",
-							"description": "Employee id (required for create_earning). Must match payroll_input.employee_id."
                         },
                         "earning_type": {
                             "type": "string",

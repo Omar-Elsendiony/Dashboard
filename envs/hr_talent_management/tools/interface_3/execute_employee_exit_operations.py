@@ -17,32 +17,28 @@ class ExecuteEmployeeExitOperations(Tool):
 
     @staticmethod
     def _validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
-        """Validates date format (MM-DD-YYYY) and checks if it's not in the future."""
+        """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
         if date_str:
-            date_pattern = r'^\d{2}-\d\d-\d{4}$'
+            date_pattern = r'^\d{4}-\d{2}-\d{2}$'
             if not re.match(date_pattern, date_str):
-                return f"Invalid {field_name} format. Must be MM-DD-YYYY"
+                return f"Invalid {field_name} format. Must be YYYY-MM-DD"
             
             try:
-                dt_obj = datetime.strptime(date_str, '%m-%d-%Y')
+                dt_obj = datetime.strptime(date_str, '%Y-%m-%d')
                 # Check for future date if not allowed
                 if not allow_future:
                     simulated_today = date(2025, 10, 1) # Using same simulated date as other tools
                     if dt_obj.date() > simulated_today:
                          return f"{field_name} cannot be in the future (compared to the system date)."
             except ValueError:
-                return f"Invalid date value provided for {field_name}. Please check month/day/year validity."
+                return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
         return None
 
     @staticmethod
     def _convert_date_format(date_str: str) -> str:
-        """Convert MM-DD-YYYY to YYYY-MM-DD for internal storage."""
-        if date_str and re.match(r'^\d{2}-\d{2}-\d{4}$', date_str):
-            try:
-                dt = datetime.strptime(date_str, '%m-%d-%Y')
-                return dt.strftime('%Y-%m-%d')
-            except ValueError:
-                return date_str
+        """Convert YYYY-MM-DD format for internal storage."""
+        if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+            return date_str
         return date_str
 
     @staticmethod
@@ -133,7 +129,7 @@ class ExecuteEmployeeExitOperations(Tool):
 
             # 2. Create Exit Record
             new_exit_id = ManageEmployeeExitOperations._generate_id(exits)
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
 
             new_exit = {
                 "exit_id": str(new_exit_id),
@@ -233,7 +229,7 @@ class ExecuteEmployeeExitOperations(Tool):
             else:
                 exit_record["clearance_status"] = "pending"
 
-            exit_record["updated_at"] = datetime.now().isoformat()
+            exit_record["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -286,7 +282,7 @@ class ExecuteEmployeeExitOperations(Tool):
             exit_record["approval_date"] = converted_approval_date
             exit_record["finance_settlement_status"] = "approved" # Settlement is calculated and approved in this SOP step
 
-            exit_record["updated_at"] = datetime.now().isoformat()
+            exit_record["updated_at"] = "2025-10-10T12:00:00"
             
             return json.dumps({
                 "success": True,
@@ -321,7 +317,7 @@ class ExecuteEmployeeExitOperations(Tool):
                         },
                         "exit_date": {
                             "type": "string",
-                            "description": "The official last day of employment (MM-DD-YYYY, required for create_exit, must be current or future)."
+                            "description": "The official last day of employment (YYYY-MM-DD, required for create_exit, must be current or future)."
                         },
                         "exit_reason": {
                             "type": "string",
@@ -365,7 +361,7 @@ class ExecuteEmployeeExitOperations(Tool):
                         },
                         "approval_date": {
                             "type": "string",
-                            "description": "The date the final settlement was approved (MM-DD-YYYY, required for process_settlement, must not be in the future)."
+                            "description": "The date the final settlement was approved (YYYY-MM-DD, required for process_settlement, must not be in the future)."
                         }
                     },
                     "required": ["operation_type"]
