@@ -448,7 +448,7 @@ async function executeAPI(actionId) {
                 if (parameterInfo['type'] === 'string'){
                     // Keep as string
                 }
-                else if (parameterInfo['type'] === 'number'){
+                else if (parameterInfo['type'] === 'number' || parameterInfo['type'] === 'integer' || parameterInfo['type'] === 'float'){
                     if (!Number.isNaN(Number(value))){
                         value = Number(value);
                     }
@@ -1004,7 +1004,7 @@ function getTaskActions(catchFloat = true){
                     if (parameterInfo['type'] === 'string'){
                         // Keep as string
                     }
-                    else if (parameterInfo['type'] === 'number'){
+                    else if (parameterInfo['type'] === 'number' || parameterInfo['type'] === 'integer' || parameterInfo['type'] === 'float'){
                         if (!Number.isNaN(Number(value))){
                             value = Number(value);
                         }
