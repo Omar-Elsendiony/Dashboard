@@ -6,21 +6,21 @@ from datetime import datetime, date
 
 
 class AdministerBenefitEnrollmentOperations(Tool):
-
+    
     @staticmethod
     def invoke(data: Dict[str, Any], operation_type: str, **kwargs) -> str:
         """
-        Manages benefit enrollment operations, including creation and HR Manager approval.
+        Manages benefit enrollment operations.
         """
         
         # --- Utility Functions ---
-        def _generate_id(table: Dict[str, Any]) -> int:
+        def generate_id(table: Dict[str, Any]) -> int:
             """Utility to generate a new sequential ID for the benefit_enrollments table."""
             if not table:
                 return 11001
             return max(int(k) for k in table.keys()) + 1
 
-        def _validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
+        def validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
             """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
             if date_str:
                 date_pattern = r'^\d{4}-\d{2}-\d{2}$'
@@ -38,19 +38,19 @@ class AdministerBenefitEnrollmentOperations(Tool):
                     return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
             return None
 
-        def _convert_date_format(date_str: str) -> str:
+        def convert_date_format(date_str: str) -> str:
             """Convert YYYY-MM-DD format for internal storage."""
             if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
                 return date_str
             return date_str
 
-        def _validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
+        def validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
             """Validate status field against allowed values."""
             if status_value and status_value not in valid_statuses:
                 return f"Invalid {field_name}. Must be one of: {', '.join(valid_statuses)}"
             return None
 
-        def _is_date_in_range(date_str: str, start_date: str, end_date: str) -> bool:
+        def is_date_in_range(date_str: str, start_date: str, end_date: str) -> bool:
             """Check if date is within the specified range."""
             try:
                 date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()
@@ -59,7 +59,7 @@ class AdministerBenefitEnrollmentOperations(Tool):
                 return start_obj <= date_obj <= end_obj
             except ValueError:
                 return False
-
+        
         valid_operations = ["create_enrollment", "approve_enrollment"]
         if operation_type not in valid_operations:
             return json.dumps({
@@ -74,22 +74,22 @@ class AdministerBenefitEnrollmentOperations(Tool):
                 "enrollment_id": None,
                 "message": "Invalid data format for benefit enrollment operations"
             })
-
+        
         enrollments = data.get("benefit_enrollments", {})
         employees = data.get("employees", {})
         benefit_plans = data.get("benefit_plans", {})
         users = data.get("users", {})
         documents = data.get("documents", {})
-
+        
         simulated_today = date(2025, 10, 1) # Used for past date checks
 
         # --- Benefit Enrollment Creation (create_enrollment) ---
         if operation_type == "create_enrollment":
-            required_fields = ["employee_id", "plan_id", "effective_date", "employee_contribution",
-                               "employer_contribution", "enrollment_window_start", "enrollment_window_end",
-                               "selection_date", "user_id"]
+            required_fields = ["employee_id", "plan_id", "effective_date", "employee_contribution", 
+                             "employer_contribution", "enrollment_window_start", "enrollment_window_end", 
+                             "selection_date", "user_id"]
             missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
-
+            
             if missing_fields:
                 return json.dumps({
                     "success": False,
@@ -107,11 +107,11 @@ class AdministerBenefitEnrollmentOperations(Tool):
             requester = users.get(requester_id_str)
             if not requester:
                 return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Operation failed due to system errors - requester user not found", "transfer_to_human": True})
-
+            
             if requester.get("employment_status") != "active" or requester.get("role") not in ["hr_manager", "hr_admin", "hr_payroll_administrator"]:
                 return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Unauthorized requester attempting to create enrollment - must be active HR Admin/Manager/Director", "transfer_to_human": True})
 
-            # Verify employee exists and is active/on_leave
+            # Verify employee exists and is active
             employee = employees.get(employee_id_str)
             if not employee or employee.get("employment_status") not in ["active", "on_leave"]:
                 return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Employee not found or inactive", "transfer_to_human": True})
@@ -127,26 +127,19 @@ class AdministerBenefitEnrollmentOperations(Tool):
             enrollment_window_end = kwargs["enrollment_window_end"]
             selection_date = kwargs["selection_date"]
 
-            # Validate date formats for all date fields
-            for field_name in ["effective_date", "enrollment_window_start", "enrollment_window_end", "selection_date"]:
-                date_error = _validate_date_format(kwargs[field_name], field_name, allow_future=True)
-                if date_error:
-                    return json.dumps({"success": False, "enrollment_id": None, "message": f"Halt: {date_error}", "transfer_to_human": True})
-
-            # Convert dates for storage/comparison
-            converted_effective_date = _convert_date_format(effective_date)
-            converted_window_start = _convert_date_format(enrollment_window_start)
-            converted_window_end = _convert_date_format(enrollment_window_end)
-            converted_selection_date = _convert_date_format(selection_date)
+            # Convert dates for validation
+            converted_effective_date = convert_date_format(effective_date)
+            converted_window_start = convert_date_format(enrollment_window_start)
+            converted_window_end = convert_date_format(enrollment_window_end)
+            converted_selection_date = convert_date_format(selection_date)
 
             # Validate effective date is not in the past
-            # Note: This check is done separately because it uses allow_future=False
-            effective_date_error = _validate_date_format(effective_date, "effective_date", allow_future=False)
+            effective_date_error = validate_date_format(effective_date, "effective_date", allow_future=False)
             if effective_date_error:
                 return json.dumps({"success": False, "enrollment_id": None, "message": f"Halt: {effective_date_error}", "transfer_to_human": True})
 
             # Validate selection date is within enrollment window
-            if not _is_date_in_range(converted_selection_date, converted_window_start, converted_window_end):
+            if not is_date_in_range(converted_selection_date, converted_window_start, converted_window_end):
                 return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Selection date outside enrollment window", "transfer_to_human": True})
 
             # Validate contribution amounts
@@ -165,21 +158,21 @@ class AdministerBenefitEnrollmentOperations(Tool):
                 for doc in supporting_documents:
                     if not isinstance(doc, dict):
                         return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Invalid document format", "transfer_to_human": True})
-
+                    
                     if not doc.get("file_name") or not doc.get("document_category"):
                         return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Document missing file_name or document_category", "transfer_to_human": True})
-
+                    
                     if doc.get("document_category") not in valid_doc_categories:
                         return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Invalid document_category. Must be one of: insurance_form, tax_form, other", "transfer_to_human": True})
-
+                    
                     # Check for duplicate document names
                     file_name = doc.get("file_name")
                     if any(d.get("file_name") == file_name for d in documents.values()):
                         return json.dumps({"success": False, "enrollment_id": None, "message": f"Halt: Duplicate document - {file_name}", "transfer_to_human": True})
 
             # 2. Create Benefit Enrollment Record
-            new_enrollment_id = _generate_id(enrollments)
-            timestamp = datetime.now().isoformat()
+            new_enrollment_id = generate_id(enrollments)
+            timestamp = "2025-10-10T12:00:00"
 
             new_enrollment = {
                 "enrollment_id": str(new_enrollment_id),
@@ -195,15 +188,14 @@ class AdministerBenefitEnrollmentOperations(Tool):
                 "hr_manager_approval_status": "pending",
                 "approved_by": None,
                 "approval_date": None,
-                "created_at": timestamp,
-                "updated_at": timestamp
+                "created_at": timestamp
             }
-
+            
             enrollments[str(new_enrollment_id)] = new_enrollment
-
+            
             # SOP: Create Audit Entry
-            audit_trails = data.setdefault("audit_trails", {})
             try:
+                audit_trails = data.setdefault("audit_trails", {})
                 new_audit_id = str(max([int(k) for k in audit_trails.keys()] + [0]) + 1)
                 audit_entry = {
                     "audit_id": new_audit_id,
@@ -322,19 +314,19 @@ class AdministerBenefitEnrollmentOperations(Tool):
             valid_statuses = ["approved", "rejected"]
             approval_status = str(kwargs["hr_manager_approval_status"])
 
-            status_error = _validate_status_field(approval_status, "hr_manager_approval_status", valid_statuses)
+            status_error = validate_status_field(approval_status, "hr_manager_approval_status", valid_statuses)
             if status_error:
                 return json.dumps({"success": False, "enrollment_id": enrollment_id_str, "message": f"Halt: {status_error}", "transfer_to_human": True})
 
                 # Date format validation (allow_future=True is acceptable for an approval date)
-            date_error = _validate_date_format(kwargs["approval_date"], "approval_date", allow_future=True)
+            date_error = validate_date_format(kwargs["approval_date"], "approval_date", allow_future=True)
             if date_error:
                 return json.dumps({"success": False, "enrollment_id": enrollment_id_str, "message": f"Halt: {date_error}", "transfer_to_human": True})
 
-            converted_approval_date = _convert_date_format(kwargs["approval_date"])
+            converted_approval_date = convert_date_format(kwargs["approval_date"])
 
             # 4. Execute Approval/Rejection
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
 
             enrollment["hr_manager_approval_status"] = approval_status
             enrollment["approved_by"] = approver_id_str
@@ -373,7 +365,7 @@ class AdministerBenefitEnrollmentOperations(Tool):
                 "message": f"Benefit enrollment {enrollment_id_str} successfully marked as '{approval_status}'.",
                 "enrollment_status": enrollment["enrollment_status"]
             })
-
+        
         return json.dumps({
             "success": False,
             "enrollment_id": None,
@@ -382,7 +374,7 @@ class AdministerBenefitEnrollmentOperations(Tool):
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
-          return {
+        return {
             "type": "function",
             "function": {
                 "name": "administer_benefit_enrollment_operations",
@@ -430,6 +422,23 @@ class AdministerBenefitEnrollmentOperations(Tool):
                         "user_id": {
                             "type": "string",
                             "description": "Unique identifier of the HR Admin/Manager/Director creating the enrollment (required for all operations)."
+                        },
+                        "enrollment_id": {
+                            "type": "string",
+                            "description": "Unique identifier of the enrollment to approve/reject (required for approve_enrollment)."
+                        },
+                        "hr_manager_approval_status": {
+                            "type": "string",
+                            "description": "Approval status: 'approved' or 'rejected' (required for approve_enrollment).",
+                            "enum": ["approved", "rejected"]
+                        },
+                        "approved_by": {
+                            "type": "string",
+                            "description": "Unique identifier of the HR Admin/Manager/Director approving the enrollment (required for approve_enrollment)."
+                        },
+                        "approval_date": {
+                            "type": "string",
+                            "description": "Date when the enrollment was approved/rejected (YYYY-MM-DD, required for approve_enrollment)."
                         },
                         "supporting_documents": {
                             "type": "array",

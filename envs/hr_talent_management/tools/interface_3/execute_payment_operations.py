@@ -33,7 +33,7 @@ class ExecutePaymentOperations(Tool):
                     if not allow_future:
                         simulated_today = date(2025, 10, 1) # Using same simulated date as other tools
                         if dt_obj.date() > simulated_today:
-                             return f"{field_name} cannot be in the future (compared to the system date)."
+                            return f"{field_name} cannot be in the future (compared to the system date)."
                 except ValueError:
                     return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
             return None
@@ -146,7 +146,7 @@ class ExecutePaymentOperations(Tool):
 
             # 2. Create Payment Record
             new_payment_id = _generate_id(payments)
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
             converted_payment_date = _convert_date_format(kwargs["payment_date"])
 
             new_payment = {
@@ -240,7 +240,7 @@ class ExecutePaymentOperations(Tool):
             if "bank_confirmation_date" in kwargs and kwargs["bank_confirmation_date"] is not None:
                 payment["bank_confirmation_date"] = _convert_date_format(kwargs["bank_confirmation_date"])
 
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
             payment["updated_at"] = timestamp
 
             # SOP: Create Audit Entry
@@ -307,7 +307,7 @@ class ExecutePaymentOperations(Tool):
                         },
                         "payment_date": {
                             "type": "string",
-                            "description": "Payment date (YYYY-MM-DD, required for create_payment, must not be in the future)."
+                            "description": "Payment date (YYYY-MM-DD, required for create_payment, must not be in the future).",
                             "pattern": "^\\d{2}-\\d{2}-\\d{4}$"
                         },
                         "payment_method": {

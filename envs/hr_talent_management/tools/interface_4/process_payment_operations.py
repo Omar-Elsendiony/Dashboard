@@ -4,6 +4,7 @@ from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 from datetime import datetime, date
 
+
 class ProcessPaymentOperations(Tool):
 
     @staticmethod
@@ -14,7 +15,7 @@ class ProcessPaymentOperations(Tool):
         
         # --- Utility Functions ---
         def _generate_id(table: Dict[str, Any]) -> int:
-            """Utility to generate a new sequential ID for the payments table. Aligned start ID."""
+            """Utility to generate a new sequential ID for the payments table."""
             if not table:
                 return 10001
             return max(int(k) for k in table.keys()) + 1
@@ -32,7 +33,7 @@ class ProcessPaymentOperations(Tool):
                     if not allow_future:
                         simulated_today = date(2025, 10, 1) # Using same simulated date as other tools
                         if dt_obj.date() > simulated_today:
-                             return f"{field_name} cannot be in the future (compared to the system date)."
+                            return f"{field_name} cannot be in the future (compared to the system date)."
                 except ValueError:
                     return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
             return None
@@ -69,6 +70,8 @@ class ProcessPaymentOperations(Tool):
         employees = data.get("employees", {})
         users = data.get("users", {})
 
+        simulated_today = date(2025, 10, 1) # Used for past date checks
+
         # --- Payment Creation (create_payment) ---
         if operation_type == "create_payment":
             required_fields = ["employee_id", "cycle_id", "payslip_id", "amount", "payment_date", "payment_method", "user_id"]
@@ -82,7 +85,7 @@ class ProcessPaymentOperations(Tool):
                     "transfer_to_human": True
                 })
 
-            # 1. Validation Checks (Full SOP from original ManagePaymentOperations)
+            # 1. Validation Checks
             employee_id_str = str(kwargs["employee_id"])
             cycle_id_str = str(kwargs["cycle_id"])
             payslip_id_str = str(kwargs["payslip_id"])
@@ -123,12 +126,12 @@ class ProcessPaymentOperations(Tool):
             if method_error:
                 return json.dumps({"success": False, "payment_id": None, "message": f"Halt: {method_error}", "transfer_to_human": True})
 
-            # Validate payment_date format and ensure it's not in the future
+            # Validate payment_date format and ensure it's not in the future (allow_future=False)
             date_error = _validate_date_format(kwargs["payment_date"], "payment_date", allow_future=False)
             if date_error:
                 return json.dumps({"success": False, "payment_id": None, "message": f"Halt: {date_error}", "transfer_to_human": True})
 
-            # Verify employee bank details are valid
+            # Verify employee bank details are valid (SOP check)
             employee = employees.get(employee_id_str)
             if not employee:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Employee not found", "transfer_to_human": True})
@@ -136,14 +139,14 @@ class ProcessPaymentOperations(Tool):
             if not employee.get("bank_account_number") or not employee.get("routing_number"):
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Employee bank details invalid", "transfer_to_human": True})
 
-            # Check for existing payment for this payslip
+            # Check for existing payment for this payslip (prevents duplicates)
             existing_payment = any(p.get("payslip_id") == payslip_id_str for p in payments.values())
             if existing_payment:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Payment already exists for this payslip", "transfer_to_human": True})
 
             # 2. Create Payment Record
             new_payment_id = _generate_id(payments)
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
             converted_payment_date = _convert_date_format(kwargs["payment_date"])
 
             new_payment = {
@@ -179,6 +182,7 @@ class ProcessPaymentOperations(Tool):
                 }
                 audit_trails[new_audit_id] = audit_entry
             except Exception:
+                # If audit fails, we still report success for the primary operation
                 pass
 
             return json.dumps({
@@ -196,31 +200,38 @@ class ProcessPaymentOperations(Tool):
                 return json.dumps({
                     "success": False,
                     "payment_id": None,
-                    "message": f"Missing required fields for status update: {', '.join(missing_fields)}"
+                    "message": f"Halt: Missing required fields for status update: {', '.join(missing_fields)}",
+                    "transfer_to_human": True
                 })
 
+            # Validate payment exists
             payment_id_str = str(kwargs["payment_id"])
             if payment_id_str not in payments:
                 return json.dumps({
                     "success": False,
                     "payment_id": None,
-                    "message": f"Payment {payment_id_str} not found"
+                    "message": f"Halt: Payment {payment_id_str} not found",
+                    "transfer_to_human": True
                 })
 
+            # Validate payment status transition against schema (pending, processed, failed, reversed)
             valid_statuses = ["pending", "processed", "failed", "reversed"]
             status_error = _validate_status_field(kwargs["payment_status"], "payment_status", valid_statuses)
             if status_error:
-                return json.dumps({"success": False, "payment_id": None, "message": status_error})
+                return json.dumps({"success": False, "payment_id": payment_id_str, "message": f"Halt: {status_error}", "transfer_to_human": True})
 
+            # Validate bank_confirmation_date format if provided
             if "bank_confirmation_date" in kwargs and kwargs["bank_confirmation_date"] is not None:
-                # Allowing future dates for confirmation date as this might be recorded by bank systems
+                # Allowing future dates for bank confirmation date, assuming this is an external system update.
                 date_error = _validate_date_format(kwargs["bank_confirmation_date"], "bank_confirmation_date", allow_future=True)
                 if date_error:
-                    return json.dumps({"success": False, "payment_id": None, "message": date_error})
+                    return json.dumps({"success": False, "payment_id": payment_id_str, "message": f"Halt: {date_error}", "transfer_to_human": True})
 
+            # Execute Update
             payment = payments[payment_id_str]
             old_status = payment["payment_status"]
 
+            # Update fields
             payment["payment_status"] = kwargs["payment_status"]
 
             if "transaction_id" in kwargs and kwargs["transaction_id"] is not None:
@@ -229,7 +240,7 @@ class ProcessPaymentOperations(Tool):
             if "bank_confirmation_date" in kwargs and kwargs["bank_confirmation_date"] is not None:
                 payment["bank_confirmation_date"] = _convert_date_format(kwargs["bank_confirmation_date"])
 
-            timestamp = datetime.now().isoformat()
+            timestamp = "2025-10-10T12:00:00"
             payment["updated_at"] = timestamp
 
             # SOP: Create Audit Entry
@@ -254,7 +265,7 @@ class ProcessPaymentOperations(Tool):
             return json.dumps({
                 "success": True,
                 "payment_id": payment_id_str,
-                "message": f"Payment {payment_id_str} status updated to '{kwargs['payment_status']}' successfully"
+                "message": f"Payment {payment_id_str} status updated from '{old_status}' to '{kwargs['payment_status']}' successfully."
             })
 
         return json.dumps({
@@ -296,7 +307,8 @@ class ProcessPaymentOperations(Tool):
                         },
                         "payment_date": {
                             "type": "string",
-                            "description": "Payment date (YYYY-MM-DD, required for create_payment, must not be in the future)."
+                            "description": "Payment date (YYYY-MM-DD, required for create_payment, must not be in the future).",
+                            "pattern": "^\\d{2}-\\d{2}-\\d{4}$"
                         },
                         "payment_method": {
                             "type": "string",
@@ -305,7 +317,7 @@ class ProcessPaymentOperations(Tool):
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "Unique identifier of the Finance Manager or HR Director/Admin initiating the action (required for both operations)."
+                            "description": "Unique identifier of the Finance Manager or HR Director/Admin initiating the action (required for all operations)."
                         },
                         "payment_id": {
                             "type": "string",
@@ -319,9 +331,14 @@ class ProcessPaymentOperations(Tool):
                         "transaction_id": {
                             "type": "string",
                             "description": "Optional: The bank-generated transaction ID (optional for update_payment_status)."
+                        },
+                        "bank_confirmation_date": {
+                            "type": "string",
+                            "description": "Optional: The date the bank confirmed the status, in MM-DD-YYYY format (optional for update_payment_status).",
+                            "pattern": "^\\d{2}-\\d{2}-\\d{4}$"
                         }
                     },
-                    "required": ["operation_type"]
+                    "required": ["operation_type", "user_id"]
                 }
             }
         }

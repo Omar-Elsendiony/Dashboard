@@ -1,16 +1,14 @@
 import json
-import re
 from typing import Any, Dict, List, Optional
 from tau_bench.envs.tool import Tool
-from datetime import datetime, date
 
 
 class FetchPaymentEntities(Tool):
     @staticmethod
     def invoke(
-            data: Dict[str, Any],
-            entity_type: str,
-            filters: Optional[Dict[str, Any]] = None,
+        data: Dict[str, Any],
+        entity_type: str,
+        filters: Optional[Dict[str, Any]] = None,
     ) -> str:
         """
         Discover payment-related entities with optional filtering.
@@ -85,7 +83,7 @@ class FetchPaymentEntities(Tool):
             return None
 
         def apply_filters(
-                entities: Dict[str, Any], valid_filters: List[str], filters: Dict[str, Any]
+            entities: Dict[str, Any], valid_filters: List[str], filters: Dict[str, Any]
         ) -> Dict[str, Any]:
             if not filters:
                 return entities
@@ -100,10 +98,10 @@ class FetchPaymentEntities(Tool):
             if invalid:
                 return {
                     "error": (
-                            "Halt: Discovery tool execution failed due to system errors - invalid filter keys: "
-                            + ", ".join(invalid)
-                            + ". Valid filters are: "
-                            + ", ".join(valid_filters)
+                        "Halt: Discovery tool execution failed due to system errors - invalid filter keys: "
+                        + ", ".join(invalid)
+                        + ". Valid filters are: "
+                        + ", ".join(valid_filters)
                     )
                 }
 
@@ -255,3 +253,5 @@ class FetchPaymentEntities(Tool):
                 },
             },
         }
+
+

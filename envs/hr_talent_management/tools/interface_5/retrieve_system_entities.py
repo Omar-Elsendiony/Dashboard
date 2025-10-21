@@ -1,9 +1,6 @@
 import json
 from typing import Any, Dict, List, Optional
-# Assuming 'Tool' class is available from the context's environment (tau_bench.envs.tool)
-# If running independently, you'd need to define or import 'Tool'.
-class Tool:
-    pass
+from tau_bench.envs.tool import Tool
 
 
 class RetrieveSystemEntities(Tool):
@@ -29,21 +26,21 @@ class RetrieveSystemEntities(Tool):
         def matches_filter(entity: Dict[str, Any], filter_key: str, filter_value: Any) -> bool:
             """Check if entity matches a specific filter"""
             if filter_key.endswith("_from"):
-                # Date range filter - from date (inclusive)
+                # Date range filter - from date
                 field_name = filter_key.replace("_from", "")
                 entity_value = entity.get(field_name)
                 if not entity_value:
                     return False
                 return entity_value >= filter_value
             elif filter_key.endswith("_to"):
-                # Date range filter - to date (inclusive)
+                # Date range filter - to date
                 field_name = filter_key.replace("_to", "")
                 entity_value = entity.get(field_name)
                 if not entity_value:
                     return False
                 return entity_value <= filter_value
             else:
-                # Exact match filter (case-insensitive for strings)
+                # Exact match filter
                 entity_value = entity.get(filter_key)
                 if isinstance(filter_value, str) and isinstance(entity_value, str):
                     return entity_value.lower() == filter_value.lower()
@@ -53,14 +50,14 @@ class RetrieveSystemEntities(Tool):
             """Apply filters to entities and return matching results"""
             if not filters:
                 return entities
-
+            
             # Validate filter keys
             invalid_filters = [key for key in filters.keys() if key not in valid_filters]
             if invalid_filters:
                 return {
                     "error": f"Invalid filter keys: {', '.join(invalid_filters)}. Valid filters are: {', '.join(valid_filters)}"
                 }
-
+            
             filtered_entities = {}
             for entity_id, entity in entities.items():
                 matches = True
@@ -68,21 +65,21 @@ class RetrieveSystemEntities(Tool):
                     if not matches_filter(entity, filter_key, filter_value):
                         matches = False
                         break
-
+                
                 if matches:
                     filtered_entities[entity_id] = entity
-
+            
             return filtered_entities
 
         if entity_type == "employee_exits":
             entities = data.get("employee_exits", {})
             valid_filters = [
-                "exit_id", "employee_id", "exit_date_from", "exit_date_to",
-                "manager_clearance", "it_equipment_return", "finance_settlement_status",
-                "clearance_status", "approved_by", "approval_date_from", "approval_date_to",
+                "exit_id", "employee_id", "exit_date_from", "exit_date_to", 
+                "manager_clearance", "it_equipment_return", "finance_settlement_status", 
+                "clearance_status", "approved_by", "approval_date_from", "approval_date_to", 
                 "paid_date_from", "paid_date_to"
             ]
-
+            
             if filters:
                 filtered_entities = apply_filters(entities, valid_filters, filters)
                 if "error" in filtered_entities:
@@ -91,7 +88,7 @@ class RetrieveSystemEntities(Tool):
                         "error": filtered_entities["error"]
                     })
                 entities = filtered_entities
-
+            
             return json.dumps({
                 "success": True,
                 "entity_type": "employee_exits",
@@ -99,14 +96,14 @@ class RetrieveSystemEntities(Tool):
                 "employee_exits": entities,
                 "filters_applied": filters or {}
             })
-
+        
         elif entity_type == "notifications":
             entities = data.get("notifications", {})
             valid_filters = [
-                "notification_id", "recipient_user_id", "recipient_email",
+                "notification_id", "recipient_user_id", "recipient_email", 
                 "notification_type", "reference_type", "reference_id", "notification_status"
             ]
-
+            
             if filters:
                 filtered_entities = apply_filters(entities, valid_filters, filters)
                 if "error" in filtered_entities:
@@ -115,7 +112,7 @@ class RetrieveSystemEntities(Tool):
                         "error": filtered_entities["error"]
                     })
                 entities = filtered_entities
-
+            
             return json.dumps({
                 "success": True,
                 "entity_type": "notifications",
@@ -123,13 +120,13 @@ class RetrieveSystemEntities(Tool):
                 "notifications": entities,
                 "filters_applied": filters or {}
             })
-
+        
         elif entity_type == "audit_trails":
             entities = data.get("audit_trails", {})
             valid_filters = [
                 "audit_id", "reference_id", "reference_type", "action", "user_id", "field_name"
             ]
-
+            
             if filters:
                 filtered_entities = apply_filters(entities, valid_filters, filters)
                 if "error" in filtered_entities:
@@ -138,7 +135,7 @@ class RetrieveSystemEntities(Tool):
                         "error": filtered_entities["error"]
                     })
                 entities = filtered_entities
-
+            
             return json.dumps({
                 "success": True,
                 "entity_type": "audit_trails",
@@ -146,7 +143,7 @@ class RetrieveSystemEntities(Tool):
                 "audit_trails": entities,
                 "filters_applied": filters or {}
             })
-
+    
     @staticmethod
     def get_info() -> Dict[str, Any]:
         return {
@@ -180,7 +177,7 @@ class RetrieveSystemEntities(Tool):
                                 "approval_date_to": {"type": "string", "description": "Approval date to (YYYY-MM-DD)"},
                                 "paid_date_from": {"type": "string", "description": "Paid date from (YYYY-MM-DD)"},
                                 "paid_date_to": {"type": "string", "description": "Paid date to (YYYY-MM-DD)"},
-
+                                
                                 # Notifications filters
                                 "notification_id": {"type": "string", "description": "Exact notification ID match"},
                                 "recipient_user_id": {"type": "string", "description": "Recipient user ID match"},
@@ -189,7 +186,7 @@ class RetrieveSystemEntities(Tool):
                                 "reference_type": {"type": "string", "description": "Reference entity type"},
                                 "reference_id": {"type": "string", "description": "Reference entity ID"},
                                 "notification_status": {"type": "string", "description": "Notification status", "enum": ["pending", "sent", "delivered", "failed", "read"]},
-
+                                
                                 # Audit Trails filters
                                 "audit_id": {"type": "string", "description": "Exact audit ID match"},
                                 "reference_id": {"type": "string", "description": "Reference entity ID"},
