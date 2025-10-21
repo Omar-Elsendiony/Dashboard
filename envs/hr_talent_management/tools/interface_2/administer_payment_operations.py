@@ -6,49 +6,6 @@ from datetime import datetime, date
 
 
 class AdministerPaymentOperations(Tool):
-    
-    # --- Utility Methods ---
-    @staticmethod
-    def _generate_id(table: Dict[str, Any]) -> int:
-        """Utility to generate a new sequential ID for the payments table."""
-        if not table:
-            return 10001
-        return max(int(k) for k in table.keys()) + 1
-
-    @staticmethod
-    def _validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
-        """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
-        if date_str:
-            date_pattern = r'^\d{4}-\d{2}-\d{2}$'
-            if not re.match(date_pattern, date_str):
-                return f"Invalid {field_name} format. Must be YYYY-MM-DD"
-            
-            try:
-                dt_obj = datetime.strptime(date_str, '%Y-%m-%d')
-                # Check for future date if not allowed
-                if not allow_future:
-                    simulated_today = date(2025, 10, 1) # Using same simulated date as other tools
-                    if dt_obj.date() > simulated_today:
-                         return f"{field_name} cannot be in the future (compared to the system date)."
-            except ValueError:
-                return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
-        return None
-
-    @staticmethod
-    def _convert_date_format(date_str: str) -> str:
-        """Convert YYYY-MM-DD format for internal storage."""
-        if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
-            return date_str
-        return date_str
-
-    @staticmethod
-    def _validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
-        """Validate status field against allowed values."""
-        if status_value and status_value not in valid_statuses:
-            return f"Invalid {field_name}. Must be one of: {', '.join(valid_statuses)}"
-        return None
-
-    # --- Core Tool Logic ---
 
     @staticmethod
     def invoke(data: Dict[str, Any], operation_type: str, **kwargs) -> str:
@@ -56,6 +13,43 @@ class AdministerPaymentOperations(Tool):
         Manages payment operations for released payslips.
         """
         
+        # --- Utility Functions ---
+        def _generate_id(table: Dict[str, Any]) -> int:
+            """Utility to generate a new sequential ID for the payments table."""
+            if not table:
+                return 10001
+            return max(int(k) for k in table.keys()) + 1
+
+        def _validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
+            """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
+            if date_str:
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+                if not re.match(date_pattern, date_str):
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
+                
+                try:
+                    dt_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                    # Check for future date if not allowed
+                    if not allow_future:
+                        simulated_today = date(2025, 10, 1) # Using same simulated date as other tools
+                        if dt_obj.date() > simulated_today:
+                             return f"{field_name} cannot be in the future (compared to the system date)."
+                except ValueError:
+                    return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
+            return None
+
+        def _convert_date_format(date_str: str) -> str:
+            """Convert YYYY-MM-DD format for internal storage."""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
+            return date_str
+
+        def _validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
+            """Validate status field against allowed values."""
+            if status_value and status_value not in valid_statuses:
+                return f"Invalid {field_name}. Must be one of: {', '.join(valid_statuses)}"
+            return None
+
         valid_operations = ["create_payment"]
         if operation_type not in valid_operations:
             return json.dumps({
@@ -70,19 +64,19 @@ class AdministerPaymentOperations(Tool):
                 "payment_id": None,
                 "message": "Invalid data format for payment operations"
             })
-        
+
         payments = data.get("payments", {})
         payslips = data.get("payslips", {})
         employees = data.get("employees", {})
         users = data.get("users", {})
-        
+
         simulated_today = date(2025, 10, 1) # Used for past date checks
 
         # --- Payment Creation (create_payment) ---
         if operation_type == "create_payment":
             required_fields = ["employee_id", "cycle_id", "payslip_id", "amount", "payment_date", "payment_method", "user_id"]
             missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
-            
+
             if missing_fields:
                 return json.dumps({
                     "success": False,
@@ -101,7 +95,7 @@ class AdministerPaymentOperations(Tool):
             requester = users.get(requester_id_str)
             if not requester:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Operation failed due to system errors - requester user not found", "transfer_to_human": True})
-            
+
             if requester.get("employment_status") != "active" or requester.get("role") not in ["finance_manager", "hr_manager", "hr_admin"]:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Unauthorized requester attempting to process payment - must be active Finance Manager or HR Director", "transfer_to_human": True})
 
@@ -109,7 +103,7 @@ class AdministerPaymentOperations(Tool):
             payslip = payslips.get(payslip_id_str)
             if not payslip:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Payslip not found", "transfer_to_human": True})
-            
+
             if payslip.get("payslip_status") != "released":
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Payslip not in 'released' status", "transfer_to_human": True})
 
@@ -128,12 +122,12 @@ class AdministerPaymentOperations(Tool):
 
             # Validate payment_method
             valid_payment_methods = ["bank_transfer", "check", "cash"]
-            method_error = ManagePaymentOperations._validate_status_field(kwargs["payment_method"], "payment_method", valid_payment_methods)
+            method_error = _validate_status_field(kwargs["payment_method"], "payment_method", valid_payment_methods)
             if method_error:
                 return json.dumps({"success": False, "payment_id": None, "message": f"Halt: {method_error}", "transfer_to_human": True})
 
             # Validate payment_date format and ensure it's not in the future
-            date_error = ManagePaymentOperations._validate_date_format(kwargs["payment_date"], "payment_date", allow_future=False)
+            date_error = _validate_date_format(kwargs["payment_date"], "payment_date", allow_future=False)
             if date_error:
                 return json.dumps({"success": False, "payment_id": None, "message": f"Halt: {date_error}", "transfer_to_human": True})
 
@@ -141,7 +135,7 @@ class AdministerPaymentOperations(Tool):
             employee = employees.get(employee_id_str)
             if not employee:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Employee not found", "transfer_to_human": True})
-            
+
             if not employee.get("bank_account_number") or not employee.get("routing_number"):
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Employee bank details invalid", "transfer_to_human": True})
 
@@ -151,9 +145,9 @@ class AdministerPaymentOperations(Tool):
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Payment already exists for this payslip", "transfer_to_human": True})
 
             # 2. Create Payment Record
-            new_payment_id = ManagePaymentOperations._generate_id(payments)
-            timestamp = "2025-10-10T12:00:00"
-            converted_payment_date = ManagePaymentOperations._convert_date_format(kwargs["payment_date"])
+            new_payment_id = _generate_id(payments)
+            timestamp = datetime.now().isoformat()
+            converted_payment_date = _convert_date_format(kwargs["payment_date"])
 
             new_payment = {
                 "payment_id": str(new_payment_id),
@@ -168,9 +162,9 @@ class AdministerPaymentOperations(Tool):
                 "bank_confirmation_date": None,
                 "created_at": timestamp
             }
-            
+
             payments[str(new_payment_id)] = new_payment
-            
+
             # SOP: Create Audit Entry
             try:
                 audit_trails = data.setdefault("audit_trails", {})
@@ -196,7 +190,7 @@ class AdministerPaymentOperations(Tool):
                 "payment_id": str(new_payment_id),
                 "message": f"Payment {new_payment_id} created successfully. Status: pending. Transfer initiated."
             })
-        
+
         return json.dumps({
             "success": False,
             "payment_id": None,
@@ -236,7 +230,7 @@ class AdministerPaymentOperations(Tool):
                         },
                         "payment_date": {
                             "type": "string",
-                            "description": "Payment date (YYYY-MM-DD, required for create_payment, must not be in the future)."
+                            "description": "Payment date (MM-DD-YYYY, required for create_payment, must not be in the future)."
                         },
                         "payment_method": {
                             "type": "string",
@@ -245,7 +239,7 @@ class AdministerPaymentOperations(Tool):
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "Unique identifier of the Finance Manager or HR Director processing the payment (required for all operations)."
+                            "description": "Payment date (YYYY-MM-DD, required for create_payment, must not be in the future)."
                         }
                     },
                     "required": ["operation_type"]

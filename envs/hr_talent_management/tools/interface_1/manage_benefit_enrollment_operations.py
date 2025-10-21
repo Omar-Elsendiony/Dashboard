@@ -285,7 +285,7 @@ class ManageBenefitEnrollmentOperations(Tool):
                         "operation_type": {
                             "type": "string",
                             "description": "Type of operation to perform: 'create_enrollment'.",
-                            "enum": ["create_enrollment"]
+                            "enum": ["create_enrollment","approve_enrollment"]
                         },
                         "employee_id": {
                             "type": "string",

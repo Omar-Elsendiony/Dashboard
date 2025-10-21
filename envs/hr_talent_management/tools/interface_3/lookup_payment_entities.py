@@ -6,9 +6,9 @@ from tau_bench.envs.tool import Tool
 class LookupPaymentEntities(Tool):
     @staticmethod
     def invoke(
-        data: Dict[str, Any],
-        entity_type: str,
-        filters: Optional[Dict[str, Any]] = None,
+            data: Dict[str, Any],
+            entity_type: str,
+            filters: Optional[Dict[str, Any]] = None,
     ) -> str:
         """
         Discover payment-related entities with optional filtering.
@@ -16,28 +16,40 @@ class LookupPaymentEntities(Tool):
         Entity Types:
         - payslips: Discover payslips with employee/cycle/status and numeric/date range filters
         - payments: Discover payments with employee/cycle/method/status and amount/date filters
+
+        Args:
+            data: Dictionary containing payment entities data.
+            entity_type: Type of payment entity to discover ("payslips", "payments").
+            filters: Optional dictionary of filters to apply.
+
+        Returns:
+            JSON string with discovered entities and metadata.
         """
 
         def matches_filter(entity: Dict[str, Any], filter_key: str, filter_value: Any) -> bool:
             """Check if an entity matches a specific filter key/value."""
-            # Range: date
+            # Range: date (YYYY-MM-DD format comparison)
             if filter_key.endswith("_from") or filter_key.endswith("_to"):
                 base_key = filter_key.replace("_from", "").replace("_to", "")
                 entity_value = entity.get(base_key)
                 if entity_value is None:
                     return False
                 if filter_key.endswith("_from"):
+                    # Check if entity date is greater than or equal to filter date
                     return entity_value >= filter_value
+                # Check if entity date is less than or equal to filter date
                 return entity_value <= filter_value
 
-            # Range: numeric
+            # Range: numeric (min/max)
             if filter_key.endswith("_min") or filter_key.endswith("_max"):
                 base_key = filter_key.replace("_min", "").replace("_max", "")
                 entity_value = entity.get(base_key)
                 if entity_value is None:
                     return False
                 if filter_key.endswith("_min"):
+                    # Check if entity value is greater than or equal to filter value
                     return entity_value >= filter_value
+                # Check if entity value is less than or equal to filter value
                 return entity_value <= filter_value
 
             # Exact match (case-insensitive for strings)
@@ -83,28 +95,30 @@ class LookupPaymentEntities(Tool):
             return None
 
         def apply_filters(
-            entities: Dict[str, Any], valid_filters: List[str], filters: Dict[str, Any]
+                entities: Dict[str, Any], valid_filters: List[str], filters: Dict[str, Any]
         ) -> Dict[str, Any]:
+            """Applies filtering logic, including conflict and invalid key checks."""
             if not filters:
                 return entities
 
-            # Validate conflicts first
+            # 1. Validate conflicts first
             conflict_error = validate_filter_conflicts(filters)
             if conflict_error:
                 return {"error": conflict_error}
 
-            # Validate filter keys
+            # 2. Validate filter keys
             invalid = [k for k in filters.keys() if k not in valid_filters]
             if invalid:
                 return {
                     "error": (
-                        "Halt: Discovery tool execution failed due to system errors - invalid filter keys: "
-                        + ", ".join(invalid)
-                        + ". Valid filters are: "
-                        + ", ".join(valid_filters)
+                            "Halt: Discovery tool execution failed due to system errors - invalid filter keys: "
+                            + ", ".join(invalid)
+                            + ". Valid filters are: "
+                            + ", ".join(valid_filters)
                     )
                 }
 
+            # 3. Apply filters
             filtered: Dict[str, Any] = {}
             for entity_id, entity in entities.items():
                 include = True
@@ -253,5 +267,3 @@ class LookupPaymentEntities(Tool):
                 },
             },
         }
-
-

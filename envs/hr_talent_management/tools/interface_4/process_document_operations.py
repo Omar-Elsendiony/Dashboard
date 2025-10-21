@@ -77,7 +77,7 @@ class ProcessDocumentOperations(Tool):
 
         # --- Document Upload (upload_document) ---
         if operation_type == "upload_document":
-            required_fields = ["document_category", "related_entity_type", "related_entity_id", "file_name", "upload_date", "uploaded_by"]
+            required_fields = ["document_category", "related_entity_type", "related_entity_id", "file_name", "uploaded_by"]
             missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
             
             if missing_fields:
@@ -165,8 +165,11 @@ class ProcessDocumentOperations(Tool):
                         "message": "Halt: Document with this file name already exists"
                     })
 
-            # 6. Validate upload_date format
-            upload_date_error = validate_date_format(kwargs["upload_date"], "upload_date")
+            # 6. Handle upload_date (default to 2025-10-10 if not provided)
+            upload_date = kwargs.get("upload_date", "2025-10-10")
+            
+            # Validate upload_date format
+            upload_date_error = validate_date_format(upload_date, "upload_date")
             if upload_date_error:
                 return json.dumps({
                     "success": False,
@@ -176,8 +179,7 @@ class ProcessDocumentOperations(Tool):
             
             # Validate that upload_date is not in the future
             try:
-                from datetime import datetime
-                upload_dt = datetime.strptime(convert_date_format(kwargs["upload_date"]), '%Y-%m-%d')
+                upload_dt = datetime.strptime(convert_date_format(upload_date), '%Y-%m-%d')
                 current_dt = datetime.strptime("2025-10-10", '%Y-%m-%d')
                 if upload_dt > current_dt:
                     return json.dumps({
@@ -205,7 +207,6 @@ class ProcessDocumentOperations(Tool):
                 
                 # Validate that expiry_date is not in the past
                 try:
-                    from datetime import datetime
                     expiry_dt = datetime.strptime(convert_date_format(expiry_date), '%Y-%m-%d')
                     current_dt = datetime.strptime("2025-10-10", '%Y-%m-%d')
                     if expiry_dt < current_dt:
@@ -232,7 +233,7 @@ class ProcessDocumentOperations(Tool):
                 "related_entity_id": related_entity_id.strip(),
                 "file_name": file_name.strip(),
                 "file_format": file_extension,
-                "upload_date": convert_date_format(kwargs["upload_date"]),
+                "upload_date": convert_date_format(upload_date),
                 "uploaded_by": str(kwargs["uploaded_by"]),
                 "document_status": "active",
                 "expiry_date": convert_date_format(expiry_date) if expiry_date else None,
@@ -313,7 +314,6 @@ class ProcessDocumentOperations(Tool):
             
             # Validate that verified_date is not in the future
             try:
-                from datetime import datetime
                 verified_dt = datetime.strptime(convert_date_format(kwargs["verified_date"]), '%Y-%m-%d')
                 current_dt = datetime.strptime("2025-10-10", '%Y-%m-%d')
                 if verified_dt > current_dt:
@@ -459,7 +459,7 @@ class ProcessDocumentOperations(Tool):
                         },
                         "upload_date": {
                             "type": "string",
-                            "description": "Date when document was uploaded in YYYY-MM-DD format (required for upload_document)"
+                            "description": "Date when document was uploaded in YYYY-MM-DD format (optional for upload_document, defaults to 2025-10-10)"
                         },
                         "uploaded_by": {
                             "type": "string",
