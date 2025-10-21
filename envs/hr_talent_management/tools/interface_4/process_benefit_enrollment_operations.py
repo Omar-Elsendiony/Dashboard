@@ -7,65 +7,58 @@ from datetime import datetime, date
 
 class ProcessBenefitEnrollmentOperations(Tool):
     
-    # --- Utility Methods ---
-    @staticmethod
-    def _generate_id(table: Dict[str, Any]) -> int:
-        """Utility to generate a new sequential ID for the benefit_enrollments table."""
-        if not table:
-            return 11001
-        return max(int(k) for k in table.keys()) + 1
-
-    @staticmethod
-    def _validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
-        """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
-        if date_str:
-            date_pattern = r'^\d{4}-\d{2}-\d{2}$'
-            if not re.match(date_pattern, date_str):
-                return f"Invalid {field_name} format. Must be YYYY-MM-DD"
-            
-            try:
-                dt_obj = datetime.strptime(date_str, '%Y-%m-%d')
-                # Check for future date if not allowed
-                if not allow_future:
-                    simulated_today = date(2025, 10, 10) # Using same simulated date as other tools
-                    if dt_obj.date() > simulated_today:
-                         return f"{field_name} cannot be in the future (compared to the system date)."
-            except ValueError:
-                return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
-        return None
-
-    @staticmethod
-    def _convert_date_format(date_str: str) -> str:
-        """Convert YYYY-MM-DD format for internal storage."""
-        if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
-            return date_str
-        return date_str
-
-    @staticmethod
-    def _validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
-        """Validate status field against allowed values."""
-        if status_value and status_value not in valid_statuses:
-            return f"Invalid {field_name}. Must be one of: {', '.join(valid_statuses)}"
-        return None
-
-    @staticmethod
-    def _is_date_in_range(date_str: str, start_date: str, end_date: str) -> bool:
-        """Check if date is within the specified range."""
-        try:
-            date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()
-            start_obj = datetime.strptime(start_date, '%Y-%m-%d').date()
-            end_obj = datetime.strptime(end_date, '%Y-%m-%d').date()
-            return start_obj <= date_obj <= end_obj
-        except ValueError:
-            return False
-
-    # --- Core Tool Logic ---
-
     @staticmethod
     def invoke(data: Dict[str, Any], operation_type: str, **kwargs) -> str:
         """
         Manages benefit enrollment operations.
         """
+        
+        # --- Utility Functions ---
+        def generate_id(table: Dict[str, Any]) -> int:
+            """Utility to generate a new sequential ID for the benefit_enrollments table."""
+            if not table:
+                return 11001
+            return max(int(k) for k in table.keys()) + 1
+
+        def validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
+            """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
+            if date_str:
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+                if not re.match(date_pattern, date_str):
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
+                
+                try:
+                    dt_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                    # Check for future date if not allowed
+                    if not allow_future:
+                        simulated_today = date(2025, 10, 10) # Using same simulated date as other tools
+                        if dt_obj.date() > simulated_today:
+                             return f"{field_name} cannot be in the future (compared to the system date)."
+                except ValueError:
+                    return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
+            return None
+
+        def convert_date_format(date_str: str) -> str:
+            """Convert YYYY-MM-DD format for internal storage."""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
+            return date_str
+
+        def validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
+            """Validate status field against allowed values."""
+            if status_value and status_value not in valid_statuses:
+                return f"Invalid {field_name}. Must be one of: {', '.join(valid_statuses)}"
+            return None
+
+        def is_date_in_range(date_str: str, start_date: str, end_date: str) -> bool:
+            """Check if date is within the specified range."""
+            try:
+                date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()
+                start_obj = datetime.strptime(start_date, '%Y-%m-%d').date()
+                end_obj = datetime.strptime(end_date, '%Y-%m-%d').date()
+                return start_obj <= date_obj <= end_obj
+            except ValueError:
+                return False
         
         valid_operations = ["create_enrollment"]
         if operation_type not in valid_operations:
@@ -135,18 +128,18 @@ class ProcessBenefitEnrollmentOperations(Tool):
             selection_date = kwargs["selection_date"]
 
             # Convert dates for validation
-            converted_effective_date = ManageBenefitEnrollmentOperations._convert_date_format(effective_date)
-            converted_window_start = ManageBenefitEnrollmentOperations._convert_date_format(enrollment_window_start)
-            converted_window_end = ManageBenefitEnrollmentOperations._convert_date_format(enrollment_window_end)
-            converted_selection_date = ManageBenefitEnrollmentOperations._convert_date_format(selection_date)
+            converted_effective_date = convert_date_format(effective_date)
+            converted_window_start = convert_date_format(enrollment_window_start)
+            converted_window_end = convert_date_format(enrollment_window_end)
+            converted_selection_date = convert_date_format(selection_date)
 
             # Validate effective date is not in the past
-            effective_date_error = ManageBenefitEnrollmentOperations._validate_date_format(effective_date, "effective_date", allow_future=False)
+            effective_date_error = validate_date_format(effective_date, "effective_date", allow_future=False)
             if effective_date_error:
                 return json.dumps({"success": False, "enrollment_id": None, "message": f"Halt: {effective_date_error}", "transfer_to_human": True})
 
             # Validate selection date is within enrollment window
-            if not ManageBenefitEnrollmentOperations._is_date_in_range(converted_selection_date, converted_window_start, converted_window_end):
+            if not is_date_in_range(converted_selection_date, converted_window_start, converted_window_end):
                 return json.dumps({"success": False, "enrollment_id": None, "message": "Halt: Selection date outside enrollment window", "transfer_to_human": True})
 
             # Validate contribution amounts
@@ -178,7 +171,7 @@ class ProcessBenefitEnrollmentOperations(Tool):
                         return json.dumps({"success": False, "enrollment_id": None, "message": f"Halt: Duplicate document - {file_name}", "transfer_to_human": True})
 
             # 2. Create Benefit Enrollment Record
-            new_enrollment_id = ManageBenefitEnrollmentOperations._generate_id(enrollments)
+            new_enrollment_id = generate_id(enrollments)
             timestamp = "2025-10-10T12:00:00"
 
             new_enrollment = {

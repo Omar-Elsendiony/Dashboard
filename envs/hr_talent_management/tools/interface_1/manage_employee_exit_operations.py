@@ -7,54 +7,48 @@ from datetime import datetime, date
 
 class ManageEmployeeExitOperations(Tool):
     
-    # --- Utility Methods ---
-    @staticmethod
-    def _generate_id(table: Dict[str, Any]) -> int:
-        """Utility to generate a new sequential ID for the employee_exits table."""
-        if not table:
-            return 9001
-        return max(int(k) for k in table.keys()) + 1
-
-    @staticmethod
-    def _validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
-        """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
-        if date_str:
-            date_pattern = r'^\d{4}-\d{2}-\d{2}$'
-            if not re.match(date_pattern, date_str):
-                return f"Invalid {field_name} format. Must be YYYY-MM-DD"
-            
-            try:
-                dt_obj = datetime.strptime(date_str, '%Y-%m-%d')
-                # Check for future date if not allowed
-                if not allow_future:
-                    simulated_today = date(2025, 10, 1) # Using same simulated date as other tools
-                    if dt_obj.date() > simulated_today:
-                         return f"{field_name} cannot be in the future (compared to the system date)."
-            except ValueError:
-                return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
-        return None
-
-    @staticmethod
-    def _convert_date_format(date_str: str) -> str:
-        """Convert YYYY-MM-DD format for internal storage."""
-        if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
-            return date_str
-        return date_str
-
-    @staticmethod
-    def _validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
-        """Validate status field against allowed values."""
-        if status_value and status_value not in valid_statuses:
-            return f"Invalid {field_name}. Must be one of: {', '.join(valid_statuses)}"
-        return None
-
-    # --- Core Tool Logic ---
-
     @staticmethod
     def invoke(data: Dict[str, Any], operation_type: str, **kwargs) -> str:
         """
         Manages employee exit operations: creation, clearance updates, and final settlement processing.
         """
+        
+        # --- Utility Functions ---
+        def generate_id(table: Dict[str, Any]) -> int:
+            """Utility to generate a new sequential ID for the employee_exits table."""
+            if not table:
+                return 9001
+            return max(int(k) for k in table.keys()) + 1
+
+        def validate_date_format(date_str: str, field_name: str, allow_future: bool = True) -> Optional[str]:
+            """Validates date format (YYYY-MM-DD) and checks if it's not in the future."""
+            if date_str:
+                date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+                if not re.match(date_pattern, date_str):
+                    return f"Invalid {field_name} format. Must be YYYY-MM-DD"
+                
+                try:
+                    dt_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                    # Check for future date if not allowed
+                    if not allow_future:
+                        simulated_today = date(2025, 10, 1) # Using same simulated date as other tools
+                        if dt_obj.date() > simulated_today:
+                             return f"{field_name} cannot be in the future (compared to the system date)."
+                except ValueError:
+                    return f"Invalid date value provided for {field_name}. Please check year/month/day validity."
+            return None
+
+        def convert_date_format(date_str: str) -> str:
+            """Convert YYYY-MM-DD format for internal storage."""
+            if date_str and re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+                return date_str
+            return date_str
+
+        def validate_status_field(status_value: str, field_name: str, valid_statuses: list) -> Optional[str]:
+            """Validate status field against allowed values."""
+            if status_value and status_value not in valid_statuses:
+                return f"Invalid {field_name}. Must be one of: {', '.join(valid_statuses)}"
+            return None
         
         valid_operations = ["create_exit", "update_clearance", "process_settlement"]
         if operation_type not in valid_operations:
@@ -112,23 +106,23 @@ class ManageEmployeeExitOperations(Tool):
                 return json.dumps({"success": False, "exit_id": None, "message": f"Halt: Employee {employee_id_str} is already in the exit process.", "transfer_to_human": True})
 
             # Validate exit_date format and ensure it's not in the past
-            date_error = ManageEmployeeExitOperations._validate_date_format(kwargs["exit_date"], "exit_date")
+            date_error = validate_date_format(kwargs["exit_date"], "exit_date")
             if date_error:
                 return json.dumps({"success": False, "exit_id": None, "message": f"Halt: {date_error}", "transfer_to_human": True})
             
-            converted_exit_date = ManageEmployeeExitOperations._convert_date_format(kwargs["exit_date"])
+            converted_exit_date = convert_date_format(kwargs["exit_date"])
             exit_date_obj = datetime.strptime(converted_exit_date, '%Y-%m-%d').date()
             if exit_date_obj < simulated_today:
                 return json.dumps({"success": False, "exit_id": None, "message": "Halt: Exit date cannot be in the past", "transfer_to_human": True})
 
             # Validate exit_reason
             valid_reasons = ["resignation", "termination", "retirement", "contract_end"]
-            reason_error = ManageEmployeeExitOperations._validate_status_field(kwargs["exit_reason"], "exit_reason", valid_reasons)
+            reason_error = validate_status_field(kwargs["exit_reason"], "exit_reason", valid_reasons)
             if reason_error:
                 return json.dumps({"success": False, "exit_id": None, "message": f"Halt: {reason_error}", "transfer_to_human": True})
 
             # 2. Create Exit Record
-            new_exit_id = ManageEmployeeExitOperations._generate_id(exits)
+            new_exit_id = generate_id(exits)
             timestamp = "2025-10-10T12:00:00"
 
             new_exit = {
@@ -203,17 +197,17 @@ class ManageEmployeeExitOperations(Tool):
             valid_finance_settlement = ["draft", "calculated", "approved", "paid", "failed"]
 
             if manager_clearance:
-                error = ManageEmployeeExitOperations._validate_status_field(manager_clearance, "manager_clearance", valid_manager_clearance)
+                error = validate_status_field(manager_clearance, "manager_clearance", valid_manager_clearance)
                 if error: return json.dumps({"success": False, "exit_id": exit_id_str, "message": error})
                 exit_record["manager_clearance"] = manager_clearance
 
             if it_equipment_return:
-                error = ManageEmployeeExitOperations._validate_status_field(it_equipment_return, "it_equipment_return", valid_it_return)
+                error = validate_status_field(it_equipment_return, "it_equipment_return", valid_it_return)
                 if error: return json.dumps({"success": False, "exit_id": exit_id_str, "message": error})
                 exit_record["it_equipment_return"] = it_equipment_return
 
             if finance_settlement_status:
-                error = ManageEmployeeExitOperations._validate_status_field(finance_settlement_status, "finance_settlement_status", valid_finance_settlement)
+                error = validate_status_field(finance_settlement_status, "finance_settlement_status", valid_finance_settlement)
                 if error: return json.dumps({"success": False, "exit_id": exit_id_str, "message": error})
                 exit_record["finance_settlement_status"] = finance_settlement_status
             
@@ -269,12 +263,12 @@ class ManageEmployeeExitOperations(Tool):
                  return json.dumps({"success": False, "exit_id": exit_id_str, "message": "Final pay and leave encashment amounts must be valid numbers."})
 
             # 3. Validate Approval Date (must not be in the future)
-            date_error = ManageEmployeeExitOperations._validate_date_format(kwargs["approval_date"], "approval_date", allow_future=False)
+            date_error = validate_date_format(kwargs["approval_date"], "approval_date", allow_future=False)
             if date_error:
                 return json.dumps({"success": False, "exit_id": exit_id_str, "message": date_error})
 
             # 4. Process Settlement (Update financial fields and set status to 'approved' by finance)
-            converted_approval_date = ManageEmployeeExitOperations._convert_date_format(kwargs["approval_date"])
+            converted_approval_date = convert_date_format(kwargs["approval_date"])
 
             exit_record["final_pay_amount"] = final_pay
             exit_record["leave_encashment_amount"] = leave_encashment
