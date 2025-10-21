@@ -70,7 +70,7 @@ class RetrieveReferenceEntities(Tool):
 
             # Supported location filters
             location_exact_keys = [
-                "location_id", "city_name", "country", "status"
+                "location_id", "location_name", "city_name", "country", "status"
             ]
 
             for location_id, location in locations.items():
@@ -97,7 +97,7 @@ class RetrieveReferenceEntities(Tool):
 
             # Supported department filters
             department_exact_keys = [
-                "department_id", "name", "manager_id", "status"
+                "department_id", "department_name", "department_code", "manager_id", "status"
             ]
 
             for department_id, department in departments.items():
@@ -140,7 +140,7 @@ class RetrieveReferenceEntities(Tool):
                         },
                         "filters": {
                             "type": "object",
-                            "description": "Optional filters for discovery. For users: user_id, first_name, last_name, email, phone_number, role, employment_status. For locations: location_id, city_name, country, status. For departments: department_id, name, manager_id, status"
+                            "description": "Optional filters for discovery. For users: user_id, first_name, last_name, email, phone_number, role, employment_status. For locations: location_id, location_name, city_name, country, status. For departments: department_id, department_name, department_code, manager_id, status"
                         }
                     },
                     "required": ["entity_type"]
