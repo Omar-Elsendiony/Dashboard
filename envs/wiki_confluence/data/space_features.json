@@ -1,0 +1,98 @@
+{
+  "1": {
+    "feature_id": "1",
+    "space_id": "1",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "2": {
+    "feature_id": "2",
+    "space_id": "1",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "3": {
+    "feature_id": "3",
+    "space_id": "2",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "4": {
+    "feature_id": "4",
+    "space_id": "2",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "5": {
+    "feature_id": "5",
+    "space_id": "3",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "6": {
+    "feature_id": "6",
+    "space_id": "4",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "7": {
+    "feature_id": "7",
+    "space_id": "4",
+    "feature_type": "blogs",
+    "is_enabled": false
+  },
+  "8": {
+    "feature_id": "8",
+    "space_id": "5",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "9": {
+    "feature_id": "9",
+    "space_id": "5",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "10": {
+    "feature_id": "10",
+    "space_id": "5",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "11": {
+    "feature_id": "11",
+    "space_id": "6",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "12": {
+    "feature_id": "12",
+    "space_id": "7",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "13": {
+    "feature_id": "13",
+    "space_id": "8",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "14": {
+    "feature_id": "14",
+    "space_id": "9",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "15": {
+    "feature_id": "15",
+    "space_id": "10",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "16": {
+    "feature_id": "16",
+    "space_id": "10",
+    "feature_type": "folders",
+    "is_enabled": false
+  }
+}
