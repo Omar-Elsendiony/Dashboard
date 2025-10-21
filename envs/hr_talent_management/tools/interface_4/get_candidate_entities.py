@@ -7,7 +7,7 @@ class GetCandidateEntities(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], entity_type: str, filters: Optional[Dict[str, Any]] = None) -> str:
         """
-        Discover and retrieve candidate-related entities including candidates and applications.
+        Discover and retrieve candidate-related entities including candidates, applications, and shortlists.
 
         entity_type: "candidates" | "applications"
         filters: optional dict with exact-match filtering and date range support

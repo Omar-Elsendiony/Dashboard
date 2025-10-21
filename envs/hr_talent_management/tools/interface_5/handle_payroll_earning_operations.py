@@ -266,48 +266,48 @@ class HandlePayrollEarningOperations(Tool):
             "type": "function",
             "function": {
                 "name": "handle_payroll_earning_operations",
-                "description": "Create and approve additional earnings (bonuses, incentives, reimbursements, commissions) tied to approved payroll inputs.\n\nWhat this tool does:\n- create_earning: Adds an earning line item for an employee against an approved payroll input.\n- approve_earning: Lets the employee's manager approve or reject the earning.\n\nWho can use it:\n- create_earning: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_earning: The employee's manager (active user matching employees[payroll_input.employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_earning' or 'approve_earning'.\n- For create_earning:\n  - payroll_input_id: Existing payroll input with input_status 'submitted'.\n \n  - earning_type: One of bonus, incentive, reimbursement, commission, other.\n  - amount: Positive number (> 0).\n  - user_id: Authorized active user id.\n- For approve_earning:\n  - earning_id: Existing earning with approval_status 'pending'.\n  - approval_status: 'approved' or 'rejected'.\n  - approved_by: Active user id who is the employee's manager.\n  - approval_date: YYYY-MM-DD.\n\nExample create_earning:\n{\n  \"operation_type\": \"create_earning\",\n  \"payroll_input_id\": \"pi_55\",\n  \"earning_type\": \"bonus\",\n  \"amount\": 500,\n  \"user_id\": \"u_hr_1\"\n}\n\nExample approve_earning:\n{\n  \"operation_type\": \"approve_earning\",\n  \"earning_id\": \"pe_77\",\n  \"approval_status\": \"approved\",\n  \"approved_by\": \"u_mgr_7\",\n  \"approval_date\": \"2025-01-12\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- Requester not authorized or inactive.\n- Payroll input not found/not approved; employee mismatch with payroll input.\n- Invalid earning_type or non-positive amount.\n- For approval: approver not employee's manager; earning not pending; invalid approval status.",
+				"description": "Create and approve additional earnings (bonuses, incentives, reimbursements, commissions) tied to approved payroll inputs.\n\nWhat this tool does:\n- create_earning: Adds an earning line item for an employee against an approved payroll input.\n- approve_earning: Lets the employee's manager approve or reject the earning.\n\nWho can use it:\n- create_earning: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_earning: The employee's manager (active user matching employees[payroll_input.employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_earning' or 'approve_earning'.\n- For create_earning:\n  - payroll_input_id: Existing payroll input with input_status 'submitted'.\n \n  - earning_type: One of bonus, incentive, reimbursement, commission, other.\n  - amount: Positive number (> 0).\n  - user_id: Authorized active user id.\n- For approve_earning:\n  - earning_id: Existing earning with approval_status 'pending'.\n  - approval_status: 'approved' or 'rejected'.\n  - approved_by: Active user id who is the employee's manager.\n  - approval_date: YYYY-MM-DD.\n\nExample create_earning:\n{\n  \"operation_type\": \"create_earning\",\n  \"payroll_input_id\": \"pi_55\",\n  \"earning_type\": \"bonus\",\n  \"amount\": 500,\n  \"user_id\": \"u_hr_1\"\n}\n\nExample approve_earning:\n{\n  \"operation_type\": \"approve_earning\",\n  \"earning_id\": \"pe_77\",\n  \"approval_status\": \"approved\",\n  \"approved_by\": \"u_mgr_7\",\n  \"approval_date\": \"2025-01-12\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- Requester not authorized or inactive.\n- Payroll input not found/not approved; employee mismatch with payroll input.\n- Invalid earning_type or non-positive amount.\n- For approval: approver not employee's manager; earning not pending; invalid approval status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "operation_type": {
                             "type": "string",
-                            "description": "Operation to execute. Use 'create_earning' to add an earning; 'approve_earning' for manager decision.",
+							"description": "Operation to execute. Use 'create_earning' to add an earning; 'approve_earning' for manager decision.",
                             "enum": ["create_earning", "approve_earning"]
                         },
                         "payroll_input_id": {
                             "type": "string",
-                            "description": "Payroll input id (required for create_earning). Must exist and have input_status 'submitted'."
+							"description": "Payroll input id (required for create_earning). Must exist and have input_status 'submitted'."
                         },
                         "earning_type": {
                             "type": "string",
-                            "description": "Type of earning (required for create_earning). Allowed: bonus, incentive, reimbursement, commission, other.",
+							"description": "Type of earning (required for create_earning). Allowed: bonus, incentive, reimbursement, commission, other.",
                             "enum": ["bonus", "incentive", "reimbursement", "commission", "other"]
                         },
                         "amount": {
                             "type": "number",
-                            "description": "Earning amount (required for create_earning). Must be a positive number (> 0)."
+							"description": "Earning amount (required for create_earning). Must be a positive number (> 0)."
                         },
                         "user_id": {
                             "type": "string",
-                            "description": "Requester user id (required for create_earning). Must exist, be 'active', and role in {hr_payroll_administrator, hr_manager, hr_admin}."
+							"description": "Requester user id (required for create_earning). Must exist, be 'active', and role in {hr_payroll_administrator, hr_manager, hr_admin}."
                         },
                         "earning_id": {
                             "type": "string",
-                            "description": "Payroll earning id (required for approve_earning). Must exist and be in 'pending' status."
+							"description": "Payroll earning id (required for approve_earning). Must exist and be in 'pending' status."
                         },
                         "approval_status": {
                             "type": "string",
-                            "description": "Manager decision (required for approve_earning). Choose 'approved' or 'rejected'.",
+							"description": "Manager decision (required for approve_earning). Choose 'approved' or 'rejected'.",
                             "enum": ["approved", "rejected"]
                         },
                         "approved_by": {
                             "type": "string",
-                            "description": "Approver user id (required for approve_earning). Must be the employee's manager and 'active'."
+							"description": "Approver user id (required for approve_earning). Must be the employee's manager and 'active'."
                         },
                         "approval_date": {
                             "type": "string",
-                            "description": "Date of approval in YYYY-MM-DD format (required for approve_earning)"
+							"description": "Approval date (YYYY-MM-DD, required for approve_earning)."
                         }
                     },
                     "required": ["operation_type"]

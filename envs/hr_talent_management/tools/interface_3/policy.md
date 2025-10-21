@@ -42,8 +42,8 @@ Based on `entity_type`, choose the correct discovery tool:
 - **Tool:** `lookup_reference_entities`
 - **Parameters:** `entity_type` (mandatory), `filters` (optional dictionary)
 - For `entity_type` users, the valid filters keys are: `user_id`, `first_name`, `last_name`, `email`, `phone_number`, `role`, `employment_status`
-- For `entity_type` locations, the valid filters keys are: `location_id`, `city_name`, `country`, `status`
-- For Departments, the valid filters keys are: `department_id`, `name`, `manager_id`, `status`
+- For `entity_type` locations, the valid filters keys are: `location_id`, `location_name`, `city_name`, `country`, `status`
+- For Departments, the valid filters keys are: `department_id`, `department_name`, `department_code`, `manager_id`, `status`
 
 **Job Entities (Job Requisitions, Job Postings):**
 - **Tool:** `lookup_job_entities`

@@ -275,51 +275,51 @@ class AdministerPayrollInputOperations(Tool):
             "type": "function",
             "function": {
                 "name": "administer_payroll_input_operations",
-                "description": "Create and approve payroll inputs used for payslip calculations.\n\nWhat this tool does:\n- create_input: Records hours (regular and overtime) for an employee within a payroll cycle.\n- approve_input: Allows the employee's manager to approve or reject the recorded input.\n\nWho can use it:\n- create_input: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_input: The employee's manager (active user matching employees[employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_input' or 'approve_input'.\n- For create_input:\n  - employee_id: Existing, active employee id.\n  - cycle_id: Existing payroll cycle id with status 'open'; must be before cutoff date.\n  - hours_worked: Optional number >= 0 and <= 24.\n  - overtime_hours: Optional number >= 0 and <= 24.\n  - requesting_user_id: Authorized active user id.\n- For approve_input:\n  - input_id: Existing payroll input in 'draft' status.\n  - manager_approval_status: 'approved' or 'rejected'.\n  - manager_approved_by: Active user id who is the employee's manager.\n  - manager_approval_date: YYYY-MM-DD.\n\nExample create_input:\n{\n  \"operation_type\": \"create_input\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"hours_worked\": 8,\n  \"overtime_hours\": 2,\n  \"requesting_user_id\": \"u_hr_1\"\n}\n\nExample approve_input:\n{\n  \"operation_type\": \"approve_input\",\n  \"input_id\": \"pi_55\",\n  \"manager_approval_status\": \"approved\",\n  \"manager_approved_by\": \"u_mgr_7\",\n  \"manager_approval_date\": \"2025-01-10\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- User not authorized or inactive.\n- Employee not found/inactive.\n- Cycle not found/not open, or after cutoff.\n- Hours invalid (< 0 or > 24).\n- For approval: approver not employee's manager; input not in draft; invalid approval status.",
+				"description": "Create and approve payroll inputs used for payslip calculations.\n\nWhat this tool does:\n- create_input: Records hours (regular and overtime) for an employee within a payroll cycle.\n- approve_input: Allows the employee's manager to approve or reject the recorded input.\n\nWho can use it:\n- create_input: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_input: The employee's manager (active user matching employees[employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_input' or 'approve_input'.\n- For create_input:\n  - employee_id: Existing, active employee id.\n  - cycle_id: Existing payroll cycle id with status 'open'; must be before cutoff date.\n  - hours_worked: Optional number >= 0 and <= 24.\n  - overtime_hours: Optional number >= 0 and <= 24.\n  - requesting_user_id: Authorized active user id.\n- For approve_input:\n  - input_id: Existing payroll input in 'draft' status.\n  - manager_approval_status: 'approved' or 'rejected'.\n  - manager_approved_by: Active user id who is the employee's manager.\n  - manager_approval_date: YYYY-MM-DD.\n\nExample create_input:\n{\n  \"operation_type\": \"create_input\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"hours_worked\": 8,\n  \"overtime_hours\": 2,\n  \"requesting_user_id\": \"u_hr_1\"\n}\n\nExample approve_input:\n{\n  \"operation_type\": \"approve_input\",\n  \"input_id\": \"pi_55\",\n  \"manager_approval_status\": \"approved\",\n  \"manager_approved_by\": \"u_mgr_7\",\n  \"manager_approval_date\": \"2025-01-10\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- User not authorized or inactive.\n- Employee not found/inactive.\n- Cycle not found/not open, or after cutoff.\n- Hours invalid (< 0 or > 24).\n- For approval: approver not employee's manager; input not in draft; invalid approval status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "operation_type": {
                             "type": "string",
-                            "description": "Operation to execute. Use 'create_input' to record hours; 'approve_input' for manager decision.",
+							"description": "Operation to execute. Use 'create_input' to record hours; 'approve_input' for manager decision.",
                             "enum": ["create_input", "approve_input"]
                         },
                         "employee_id": {
                             "type": "string",
-                            "description": "Employee id (required for create_input). Must exist in data.employees and have employment_status 'active'."
+							"description": "Employee id (required for create_input). Must exist in data.employees and have employment_status 'active'."
                         },
                         "cycle_id": {
                             "type": "string",
-                            "description": "Payroll cycle id (required for create_input). Must exist and have status 'open'."
+							"description": "Payroll cycle id (required for create_input). Must exist and have status 'open'."
                         },
                         "hours_worked": {
                             "type": "number",
-                            "description": "Regular hours (optional for create_input). Must be a number between 0 and 24 inclusive."
+							"description": "Regular hours (optional for create_input). Must be a number between 0 and 24 inclusive."
                         },
                         "overtime_hours": {
                             "type": "number",
-                            "description": "Overtime hours (optional for create_input). Must be a number between 0 and 24 inclusive."
+							"description": "Overtime hours (optional for create_input). Must be a number between 0 and 24 inclusive."
                         },
                         "requesting_user_id": {
                             "type": "string",
-                            "description": "Requester user id (required for create_input). Must exist, be 'active', and role in {hr_payroll_administrator, hr_manager, hr_admin}."
+							"description": "Requester user id (required for create_input). Must exist, be 'active', and role in {hr_payroll_administrator, hr_manager, hr_admin}."
                         },
                         "input_id": {
                             "type": "string",
-                            "description": "Payroll input id (required for approve_input). Must exist and be in 'draft' status."
+							"description": "Payroll input id (required for approve_input). Must exist and be in 'draft' status."
                         },
                         "manager_approval_status": {
                             "type": "string",
-                            "description": "Manager decision (required for approve_input). Choose 'approved' or 'rejected'.",
+							"description": "Manager decision (required for approve_input). Choose 'approved' or 'rejected'.",
                             "enum": ["approved", "rejected"]
                         },
                         "manager_approved_by": {
                             "type": "string",
-                            "description": "Approver user id (required for approve_input). Must be the employee's manager and 'active'."
+							"description": "Approver user id (required for approve_input). Must be the employee's manager and 'active'."
                         },
                         "manager_approval_date": {
                             "type": "string",
-                            "description": "Date of manager approval in YYYY-MM-DD format (required for approve_input)"
+							"description": "Approval date (YYYY-MM-DD, required for approve_input)."
                         }
                     },
                     "required": ["operation_type"]
