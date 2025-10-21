@@ -46,7 +46,7 @@ class ManageNotificationOperations(Tool):
 
         # --- Notification Creation (create_notification) ---
         if operation_type == "create_notification":
-            required_fields = ["recipient_user_id", "sender_user_id", "notification_type", "reference_type", "subject"]
+            required_fields = ["sender_user_id", "notification_type", "reference_type", "subject"]
             missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
             
             if missing_fields:
@@ -65,14 +65,62 @@ class ManageNotificationOperations(Tool):
                     "message": "Halt: Sender user not found or inactive"
                 })
 
-            # 2. Validate recipient user exists and is active
-            recipient_user = users.get(str(kwargs["recipient_user_id"]))
-            if not recipient_user or recipient_user.get("employment_status") != "active":
+            # 2. Validate recipient information - either recipient_user_id OR recipient_email must be provided
+            recipient_user_id = kwargs.get("recipient_user_id")
+            recipient_email = kwargs.get("recipient_email")
+            
+            if not recipient_user_id and not recipient_email:
                 return json.dumps({
                     "success": False,
                     "notification_id": None,
-                    "message": "Halt: Recipient user not found or inactive"
+                    "message": "Halt: Either recipient_user_id or recipient_email must be provided"
                 })
+
+            # 2.1. If recipient_user_id is provided, validate user exists and is active
+            if recipient_user_id:
+                recipient_user = users.get(str(recipient_user_id))
+                if not recipient_user or recipient_user.get("employment_status") != "active":
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": None,
+                        "message": "Halt: Recipient user not found or inactive"
+                    })
+                
+                user_email = recipient_user.get("email")
+                if not user_email:
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": None,
+                        "message": "Halt: Recipient user has no email address"
+                    })
+                
+                # If both recipient_user_id and recipient_email are provided, check if they match
+                if recipient_email:
+                    if user_email.lower() != recipient_email.lower():
+                        return json.dumps({
+                            "success": False,
+                            "notification_id": None,
+                            "message": f"Halt: Recipient email '{recipient_email}' does not match the user's email '{user_email}'. Either leave recipient_email out or ensure they match"
+                        })
+                    # Use the provided recipient_email (they match)
+                    recipient_email = recipient_email
+                else:
+                    # Use recipient user's email
+                    recipient_email = user_email
+            # 2.2. If only recipient_email is provided, validate email format
+            else:
+                if not validate_email_format(recipient_email):
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": None,
+                        "message": "Halt: Invalid recipient_email format"
+                    })
+                if len(recipient_email) > 320:
+                    return json.dumps({
+                        "success": False,
+                        "notification_id": None,
+                        "message": "Halt: Recipient email cannot exceed 320 characters"
+                    })
 
             # 3. Validate notification_type enum
             valid_notification_types = [
@@ -124,30 +172,6 @@ class ManageNotificationOperations(Tool):
                     "message": "Subject cannot exceed 255 characters"
                 })
 
-            # 6. Validate recipient_email if provided
-            recipient_email = kwargs.get("recipient_email")
-            if recipient_email:
-                if not validate_email_format(recipient_email):
-                    return json.dumps({
-                        "success": False,
-                        "notification_id": None,
-                        "message": "Halt: Invalid recipient_email format"
-                    })
-                if len(recipient_email) > 320:
-                    return json.dumps({
-                        "success": False,
-                        "notification_id": None,
-                        "message": "Halt: Recipient email cannot exceed 320 characters"
-                    })
-            else:
-                # Use recipient user's email if not provided
-                recipient_email = recipient_user.get("email")
-                if not recipient_email:
-                    return json.dumps({
-                        "success": False,
-                        "notification_id": None,
-                        "message": "Halt: Recipient user has no email address and recipient_email not provided"
-                    })
 
             # 7. Create Notification
             new_notification_id = generate_id(notifications)
@@ -155,7 +179,7 @@ class ManageNotificationOperations(Tool):
 
             new_notification = {
                 "notification_id": str(new_notification_id),
-                "recipient_user_id": str(kwargs["recipient_user_id"]),
+                "recipient_user_id": str(recipient_user_id) if recipient_user_id else None,
                 "sender_user_id": str(kwargs["sender_user_id"]),
                 "recipient_email": recipient_email,
                 "notification_type": kwargs["notification_type"],
@@ -279,7 +303,7 @@ class ManageNotificationOperations(Tool):
             "type": "function",
             "function": {
                 "name": "manage_notification_operations",
-                "description": "Manages notification operations in the HR talent management system. 'create_notification' establishes new notification records with comprehensive validation of sender/recipient users, notification types (application_acknowledgment, interview_scheduled, offer_issued, onboarding_welcome, payslip_released, payment_processed, benefits_enrollment, payroll_query_update, exit_confirmation, document_request, other), reference types (application, interview, offer, employee, payroll, benefit, document, exit), and subject content. Validates email formats, user existence and active status, and enforces proper notification categorization. 'update_notification_status' manages notification lifecycle by updating status from pending to sent/failed/bounced with proper status transition validation. Essential for communication tracking, audit trails, and ensuring proper notification delivery throughout the employee lifecycle including application acknowledgments, interview scheduling, offer issuance, onboarding welcome messages, payslip releases, payment confirmations, benefits enrollment notifications, and exit confirmations.",
+                "description": "Manages notification operations in the HR talent management system. 'create_notification' establishes new notification records with comprehensive validation of sender users, notification types (application_acknowledgment, interview_scheduled, offer_issued, onboarding_welcome, payslip_released, payment_processed, benefits_enrollment, payroll_query_update, exit_confirmation, document_request, other), reference types (application, interview, offer, employee, payroll, benefit, document, exit), and subject content. Supports both internal notifications (via recipient_user_id) and external notifications (via recipient_email). When both recipient_user_id and recipient_email are provided, validates that the emails match. Validates email formats, user existence and active status, and enforces proper notification categorization. 'update_notification_status' manages notification lifecycle by updating status from pending to sent/failed/bounced with proper status transition validation. Essential for communication tracking, audit trails, and ensuring proper notification delivery throughout the employee lifecycle including application acknowledgments, interview scheduling, offer issuance, onboarding welcome messages, payslip releases, payment confirmations, benefits enrollment notifications, and exit confirmations.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -290,7 +314,7 @@ class ManageNotificationOperations(Tool):
                         },
                         "recipient_user_id": {
                             "type": "string",
-                            "description": "User ID of the notification recipient (required for create_notification, must exist and be active)"
+                            "description": "User ID of the notification recipient (optional for create_notification, must exist and be active if provided. If both recipient_user_id and recipient_email are provided, the emails must match)"
                         },
                         "sender_user_id": {
                             "type": "string",
@@ -316,7 +340,7 @@ class ManageNotificationOperations(Tool):
                         },
                         "recipient_email": {
                             "type": "string",
-                            "description": "Recipient email address (optional for create_notification, will use recipient user's email if not provided, must be valid format if provided)"
+                            "description": "Recipient email address (optional for create_notification, must be provided if recipient_user_id is not provided, must be valid format if provided. If both recipient_user_id and recipient_email are provided, the emails must match)"
                         },
                         "notification_id": {
                             "type": "string",
