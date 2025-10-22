@@ -12,7 +12,7 @@ class ConfirmAuthorization(Tool):
         Uses two-tier logic:
         1. Direct authorization: If requester has an authorized role → authorized
         2. Approval-based authorization: If requester lacks direct role but has an 
-           'approved' approval record from someone with an authorized role → authorized
+        'approved' approval record from someone with an authorized role → authorized
         3. Otherwise → not authorized
         
         Args:
@@ -88,6 +88,7 @@ class ConfirmAuthorization(Tool):
             # Communication Management (SOP 5.1)
             "create_communication": ["incident_manager", "technical_support"],  # SOP 5.1
             "update_communication": ["incident_manager", "technical_support"],  # SOP 5.1 (implied)
+            "update_communication_status": ["incident_manager", "technical_support", "system_administrator"],  # SOP 6.7
             
             # Change Management (SOP 6.1-6.6)
             "create_change_request": ["technical_support", "system_administrator", "executive", "incident_manager"],  # SOP 6.1
@@ -100,9 +101,11 @@ class ConfirmAuthorization(Tool):
             "update_escalation_status": ["incident_manager", "executive", "technical_support"],  # SOP 6.6
             
             # Reporting and Analysis (SOP 7.1-7.2)
-            "conduct_root_cause_analysis": ["technical_support", "incident_manager", "system_administrator"],  # SOP 7.1
+            "conduct_root_cause_analysis": ["technical_support", "incident_manager", "system_administrator"],  # SOP 6.8
+            "update_root_cause_analysis": ["incident_manager", "technical_support", "system_administrator"],  # SOP 6.9
             "create_incident_report": ["incident_manager", "executive"],  # SOP 7.1
             "update_incident_report": ["incident_manager", "executive"],  # SOP 7.1 (implied)
+            "generate_incident_report": ["incident_manager", "executive"],  # SOP 7.1 (alias)
             "create_post_incident_review": ["incident_manager", "executive"],  # SOP 7.2
             "update_post_incident_review": ["incident_manager", "executive"],  # SOP 7.2 (implied)
             
@@ -226,13 +229,13 @@ class ConfirmAuthorization(Tool):
             "type": "function",
             "function": {
                 "name": "confirm_authorization",
-                "description": "Validates authorization for Incident Management actions based on policy SOPs. First checks if the requester's role is directly authorized. If not, checks for an approved approval record from a user who has an authorized role. Supports approval workflow for: create_escalation, initiate_bridge, create_change_request, create_rollback_request, conduct_root_cause_analysis (via conduct_rca approval), close_incident.",
+    "description": "Validates authorization for Incident Management actions based on policy SOPs. Uses two-tier authorization: (1) Direct authorization if requester's role is authorized for the action, or (2) Approval-based authorization if requester has a valid approved approval request from an authorized user. Approval workflow is supported for: create_escalation, initiate_bridge, create_change_request, create_rollback_request, conduct_root_cause_analysis, close_incident.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "action": {
                             "type": "string",
-                            "description": "The incident management action being performed. Valid actions include: create_client, update_client, create_sla_agreement, update_sla_agreement, create_user, update_user, create_configuration_item, update_configuration_item, create_ci_client_assignment, create_incident, update_incident, resolve_incident, close_incident, create_escalation, update_escalation, initiate_bridge, close_bridge, request_approval, approve_request, create_problem_ticket, update_problem_ticket, link_incident_to_problem, create_problem_ci_assignment, create_incident_ci_assignment, create_communication, update_communication, create_change_request, update_change_request, create_rollback_request, update_rollback_request, create_work_note, update_work_note, create_attachment, update_escalation_status, conduct_root_cause_analysis, create_incident_report, update_incident_report, create_post_incident_review, update_post_incident_review, update_approval_request"
+                            "description": "The incident management action being performed. Valid actions include: create_client, update_client, create_sla_agreement, update_sla_agreement, create_user, update_user, create_configuration_item, update_configuration_item, create_ci_client_assignment, create_incident, update_incident, resolve_incident, close_incident, create_escalation, update_escalation, initiate_bridge, close_bridge, request_approval, approve_request, create_problem_ticket, update_problem_ticket, link_incident_to_problem, create_problem_ci_assignment, create_incident_ci_assignment, create_communication, update_communication, update_communication_status, create_change_request, update_change_request, create_rollback_request, update_rollback_request, create_work_note, update_work_note, create_attachment, update_escalation_status, conduct_root_cause_analysis, update_root_cause_analysis, create_incident_report, update_incident_report, generate_incident_report, create_post_incident_review, update_post_incident_review, update_approval_request"
                         },
                         "requester_email": {
                             "type": "string",

@@ -45,10 +45,13 @@ class LogAuditRecords(Tool):
         users = data.get("users", {})
         
         # Validate reference_type based on DBML schema
+        # Validate reference_type based on DBML schema
         valid_reference_types = [
             "user", "client", "sla", "ci", "incident", "escalation", "bridge", 
             "change", "rollback", "work_order", "problem", "incident_ci", 
-            "problem_ci", "client_ci"
+            "problem_ci", "client_ci", "communication", "attachment", 
+            "root_cause_analysis", "approval_request", "post_incident_review",
+            "work_note", "bridge_participant", "incident_report"
         ]
         if reference_type not in valid_reference_types:
             return json.dumps({
@@ -120,7 +123,12 @@ class LogAuditRecords(Tool):
             "client_ci": "ci_client_assignments",
             "communication": "communications",
             "attachment": "attachments",
-            "root_cause_analysis": "root_cause_analyses"
+            "root_cause_analysis": "root_cause_analyses",
+            "approval_request": "approval_requests",
+            "post_incident_review": "post_incident_reviews",
+            "work_note": "work_notes",
+            "bridge_participant": "bridge_participants",
+            "incident_report": "incident_reports"
         }
         
         reference_table = reference_tables.get(reference_type)
@@ -169,8 +177,8 @@ class LogAuditRecords(Tool):
                         },
                         "reference_type": {
                             "type": "string",
-                            "description": "Type of record being audited. Must be one of: user, client, sla, ci, incident, escalation, bridge, change, rollback, work_order, problem, incident_ci, problem_ci, client_ci",
-                            "enum": ["user", "client", "sla", "ci", "incident", "escalation", "bridge", "change", "rollback", "work_order", "problem", "incident_ci", "problem_ci", "client_ci", "communication", "attachment", "root_cause_analysis"]
+                            "description": "Type of record being audited. Must be one of: user, client, sla, ci, incident, escalation, bridge, change, rollback, work_order, problem, incident_ci, problem_ci, client_ci, communication, attachment, root_cause_analysis, approval_request, post_incident_review, work_note, bridge_participant, incident_report",
+                            "enum": ["user", "client", "sla", "ci", "incident", "escalation", "bridge", "change", "rollback", "work_order", "problem", "incident_ci", "problem_ci", "client_ci", "communication", "attachment", "root_cause_analysis", "approval_request", "post_incident_review", "work_note", "bridge_participant", "incident_report"]
                         },
                         "action": {
                             "type": "string",
