@@ -25,8 +25,13 @@ class MakeAuditEntry(Tool):
             return max(int(k) for k in audit_trails.keys()) + 1
         
         # Validate required fields
-        required_fields = ["reference_id", "reference_type", "action", "user_id"]
-        missing_fields = [field for field in required_fields if not locals().get(field)]
+        required_values = {
+            "reference_id": reference_id,
+            "reference_type": reference_type,
+            "action": action,
+            "user_id": user_id
+        }
+        missing_fields = [field for field, value in required_values.items() if not value]
         if missing_fields:
             return json.dumps({
                 "success": False,
