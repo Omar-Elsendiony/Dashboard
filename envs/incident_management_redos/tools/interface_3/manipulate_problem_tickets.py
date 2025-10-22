@@ -31,6 +31,22 @@ class ManipulateProblemTickets(Tool):
                     continue
             return f"{prefix}{max_id + 1}"
 
+        def generate_problem_number(table: Dict[str, Any]) -> str:
+            """Generate a unique problem number in format PRB0000001"""
+            if not table:
+                return "PRB0000001"
+            max_num = 0
+            for problem in table.values():
+                problem_num = problem.get("problem_number", "")
+                if problem_num.startswith("PRB"):
+                    try:
+                        num = int(problem_num[3:])
+                        if num > max_num:
+                            max_num = num
+                    except ValueError:
+                        continue
+            return f"PRB{max_num + 1:07d}"
+
         timestamp = "2025-10-07T12:00:00"
 
         if action not in ["create", "update"]:
@@ -59,9 +75,9 @@ class ManipulateProblemTickets(Tool):
                     "error": "problem_data is required for create action"
                 })
 
-            # Validate required fields as per DBML schema
+            # Validate required fields (problem_number is now auto-generated, not required)
             required_fields = [
-                "problem_number", "title", "description", "category",
+                "title", "description", "category",
                 "reported_by", "assigned_to", "detected_at"
             ]
             missing_fields = [field for field in required_fields if field not in problem_data]
@@ -77,15 +93,6 @@ class ManipulateProblemTickets(Tool):
                     return json.dumps({
                         "success": False,
                         "error": f"Field '{field}' cannot be empty"
-                    })
-
-            # Validate problem_number uniqueness
-            problem_number = str(problem_data["problem_number"]).strip()
-            for problem in problem_tickets.values():
-                if problem["problem_number"].lower() == problem_number.lower():
-                    return json.dumps({
-                        "success": False,
-                        "error": f"Problem with number '{problem_number}' already exists."
                     })
 
             # Validate enums
@@ -130,9 +137,11 @@ class ManipulateProblemTickets(Tool):
                 })
 
             new_id = generate_id(problem_tickets, "PRB")
+            problem_number = generate_problem_number(problem_tickets)  # Auto-generate
+            
             new_problem = {
                 "problem_id": new_id,
-                "problem_number": problem_number,
+                "problem_number": problem_number,  # Auto-generated
                 "title": problem_data["title"],
                 "description": problem_data["description"],
                 "category": problem_data["category"],
@@ -172,9 +181,9 @@ class ManipulateProblemTickets(Tool):
                     "error": "problem_data is required for update action"
                 })
 
-            # Allowed fields for update (all except problem_id, created_at)
+            # Allowed fields for update (problem_id, problem_number, created_at are not updatable)
             allowed_fields = [
-                "problem_number", "title", "description", "category",
+                "title", "description", "category",
                 "status", "reported_by", "assigned_to",
                 "detected_at", "resolved_at", "closed_at"
             ]
@@ -186,7 +195,7 @@ class ManipulateProblemTickets(Tool):
                 })
             
             # Validate non-empty fields (nullable fields can be None)
-            # NOT NULL fields: problem_number, title, description, category, reported_by, assigned_to, detected_at
+            # NOT NULL fields: title, description, category, reported_by, assigned_to, detected_at
             nullable_fields = ["resolved_at", "closed_at"]
             for field, value in problem_data.items():
                 if field not in nullable_fields and (value is None or (isinstance(value, str) and str(value).strip() == "")):
@@ -196,17 +205,6 @@ class ManipulateProblemTickets(Tool):
                     })
                 elif field in nullable_fields and (isinstance(value, str) and str(value).strip() == ""):
                     problem_data[field] = None  # Treat empty string as null for nullable fields
-
-            # Validate problem_number uniqueness if updated
-            if "problem_number" in problem_data:
-                updated_problem_number = str(problem_data["problem_number"]).strip()
-                for existing_problem_id, problem in problem_tickets.items():
-                    if existing_problem_id != problem_id and problem["problem_number"].lower() == updated_problem_number.lower():
-                        return json.dumps({
-                            "success": False,
-                            "error": f"Problem with number '{updated_problem_number}' already exists."
-                        })
-                problem_data["problem_number"] = updated_problem_number
 
             # Validate enums if provided
             if "category" in problem_data and problem_data["category"] not in valid_categories:
@@ -280,10 +278,6 @@ class ManipulateProblemTickets(Tool):
                             "type": "object",
                             "description": "Data object containing fields for creating or updating a problem ticket.",
                             "properties": {
-                                "problem_number": {
-                                    "type": "string",
-                                    "description": "A unique identifier for the problem ticket (required for create, must be unique, cannot be empty). Updatable."
-                                },
                                 "title": {
                                     "type": "string",
                                     "description": "A brief, descriptive title for the problem (required for create, cannot be empty). Updatable."

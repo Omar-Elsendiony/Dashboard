@@ -117,7 +117,10 @@ class LogAuditRecords(Tool):
             "problem": "problem_tickets",
             "incident_ci": "incident_configuration_items",
             "problem_ci": "problem_configuration_items",
-            "client_ci": "ci_client_assignments"
+            "client_ci": "ci_client_assignments",
+            "communication": "communications",
+            "attachment": "attachments",
+            "root_cause_analysis": "root_cause_analyses"
         }
         
         reference_table = reference_tables.get(reference_type)
@@ -167,7 +170,7 @@ class LogAuditRecords(Tool):
                         "reference_type": {
                             "type": "string",
                             "description": "Type of record being audited. Must be one of: user, client, sla, ci, incident, escalation, bridge, change, rollback, work_order, problem, incident_ci, problem_ci, client_ci",
-                            "enum": ["user", "client", "sla", "ci", "incident", "escalation", "bridge", "change", "rollback", "work_order", "problem", "incident_ci", "problem_ci", "client_ci"]
+                            "enum": ["user", "client", "sla", "ci", "incident", "escalation", "bridge", "change", "rollback", "work_order", "problem", "incident_ci", "problem_ci", "client_ci", "communication", "attachment", "root_cause_analysis"]
                         },
                         "action": {
                             "type": "string",
