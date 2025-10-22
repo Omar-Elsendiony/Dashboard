@@ -70,7 +70,7 @@ class HandlePayrollInputOperations(Tool):
             
             user = users[requesting_user_id]
             user_role = user.get("role")
-            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin"]
+            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin", "hr_director"]
             
             if user_role not in valid_roles:
                 return json.dumps({
@@ -92,10 +92,10 @@ class HandlePayrollInputOperations(Tool):
                 })
             
             employee = employees[employee_id]
-            if employee.get("employment_status") != "active":
+            if employee.get("employment_status") not in ["active", "on_leave"]:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Employee not found or inactive - employee is not active"
+                    "error": "Halt: Employee not found or inactive - employee is not active or on leave"
                 })
             
             # Verify cycle exists and is open for input collection

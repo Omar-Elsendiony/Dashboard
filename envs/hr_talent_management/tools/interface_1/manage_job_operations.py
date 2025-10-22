@@ -328,12 +328,34 @@ class ManageJobOperations(Tool):
                     "message": f"User with role '{user_role}' is not authorized to approve requisitions"
                 })
             
+            # Check if all three approvers have provided their approvals
+            hr_approved = requisition.get("hr_manager_approver") is not None
+            finance_approved = requisition.get("finance_manager_approver") is not None
+            dept_approved = requisition.get("dept_head_approver") is not None
+            
+            # Only change status to approved if all three approvers have approved
+            if hr_approved and finance_approved and dept_approved:
+                requisition["status"] = "approved"
+            
             requisition["updated_at"] = "2025-10-10T12:00:00"
+            
+            # Determine the appropriate success message
+            if hr_approved and finance_approved and dept_approved:
+                message = f"Job requisition {req_id} fully approved by all required approvers"
+            else:
+                pending_approvals = []
+                if not hr_approved:
+                    pending_approvals.append("HR Manager")
+                if not finance_approved:
+                    pending_approvals.append("Finance Manager")
+                if not dept_approved:
+                    pending_approvals.append("Department Head")
+                message = f"Job requisition {req_id} approved by {user_role}. Pending approvals from: {', '.join(pending_approvals)}"
             
             return json.dumps({
                 "success": True,
                 "requisition_id": req_id,
-                "message": f"Job requisition {req_id} approved by {user_role}"
+                "message": message
             })
         
         elif operation_type == "create_posting":
