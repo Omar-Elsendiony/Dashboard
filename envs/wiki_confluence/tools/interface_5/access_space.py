@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetSpace(Tool):
+class AccessSpace(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], identifier: str, identifier_type: Optional[str] = "space_id") -> str:
         """
@@ -52,7 +52,7 @@ class GetSpace(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "get_space",
+                "name": "access_space",
                 "description": "Retrieve space details by ID or key in the Confluence system. This tool fetches comprehensive space information including space ID, space key, space name, purpose, creator, creation timestamp, and deletion status. Supports lookup by space ID or space key. Essential for space verification, content organization, and validating space existence before performing operations.",
                 "parameters": {
                     "type": "object",

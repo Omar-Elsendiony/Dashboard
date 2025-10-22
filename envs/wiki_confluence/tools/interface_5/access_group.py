@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class GetGroup(Tool):
+class AccessGroup(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], identifier: str, identifier_type: Optional[str] = "group_id") -> str:
         """
@@ -52,7 +52,7 @@ class GetGroup(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "get_group",
+                "name": "access_group",
                 "description": "Retrieve group details by ID or name in the Confluence system. This tool fetches comprehensive group information including group ID, group name, and creation timestamp. Supports lookup by group ID or group name. Essential for group verification, permission management, and validating group existence before performing operations.",
                 "parameters": {
                     "type": "object",
