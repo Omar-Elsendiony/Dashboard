@@ -1,0 +1,578 @@
+{
+  "1": {
+    "user_id": "45",
+    "space_id": "1",
+    "role": "space_admin",
+    "joined_at": "2025-08-28T09:57:17.515316"
+  },
+  "2": {
+    "user_id": "2",
+    "space_id": "1",
+    "role": "reviewer_approver",
+    "joined_at": "2025-09-03T13:14:37.522204"
+  },
+  "3": {
+    "user_id": "5",
+    "space_id": "1",
+    "role": "space_member",
+    "joined_at": "2025-08-31T22:18:52.376510"
+  },
+  "4": {
+    "user_id": "8",
+    "space_id": "1",
+    "role": "reviewer_approver",
+    "joined_at": "2025-09-23T20:48:37.653334"
+  },
+  "5": {
+    "user_id": "9",
+    "space_id": "1",
+    "role": "space_member",
+    "joined_at": "2025-09-28T10:54:06.688506"
+  },
+  "6": {
+    "user_id": "10",
+    "space_id": "1",
+    "role": "space_member",
+    "joined_at": "2025-10-04T08:10:41.668528"
+  },
+  "7": {
+    "user_id": "12",
+    "space_id": "1",
+    "role": "guest",
+    "joined_at": "2025-09-05T13:50:15.575666"
+  },
+  "8": {
+    "user_id": "13",
+    "space_id": "1",
+    "role": "guest",
+    "joined_at": "2025-10-11T01:09:25.805062"
+  },
+  "9": {
+    "user_id": "30",
+    "space_id": "2",
+    "role": "space_admin",
+    "joined_at": "2025-02-07T07:29:57.247184"
+  },
+  "10": {
+    "user_id": "1",
+    "space_id": "2",
+    "role": "reviewer_approver",
+    "joined_at": "2025-10-08T04:31:59.547099"
+  },
+  "11": {
+    "user_id": "2",
+    "space_id": "2",
+    "role": "reviewer_approver",
+    "joined_at": "2025-03-01T02:38:08.961623"
+  },
+  "12": {
+    "user_id": "4",
+    "space_id": "2",
+    "role": "space_admin",
+    "joined_at": "2025-04-11T19:45:30.249846"
+  },
+  "13": {
+    "user_id": "8",
+    "space_id": "2",
+    "role": "reviewer_approver",
+    "joined_at": "2025-06-30T02:53:32.305732"
+  },
+  "14": {
+    "user_id": "9",
+    "space_id": "2",
+    "role": "guest",
+    "joined_at": "2025-05-24T19:25:21.615048"
+  },
+  "15": {
+    "user_id": "10",
+    "space_id": "2",
+    "role": "reviewer_approver",
+    "joined_at": "2025-07-09T20:35:56.185761"
+  },
+  "16": {
+    "user_id": "11",
+    "space_id": "2",
+    "role": "content_contributor",
+    "joined_at": "2025-07-15T13:30:06.249235"
+  },
+  "17": {
+    "user_id": "12",
+    "space_id": "2",
+    "role": "space_admin",
+    "joined_at": "2025-08-24T19:24:13.691121"
+  },
+  "18": {
+    "user_id": "13",
+    "space_id": "2",
+    "role": "guest",
+    "joined_at": "2025-05-15T15:34:56.501042"
+  },
+  "19": {
+    "user_id": "25",
+    "space_id": "3",
+    "role": "space_admin",
+    "joined_at": "2024-11-27T12:16:52.181580"
+  },
+  "20": {
+    "user_id": "1",
+    "space_id": "3",
+    "role": "content_contributor",
+    "joined_at": "2025-09-21T05:23:30.135747"
+  },
+  "21": {
+    "user_id": "2",
+    "space_id": "3",
+    "role": "guest",
+    "joined_at": "2025-03-04T22:52:22.992417"
+  },
+  "22": {
+    "user_id": "3",
+    "space_id": "3",
+    "role": "guest",
+    "joined_at": "2025-06-08T08:51:08.342722"
+  },
+  "23": {
+    "user_id": "4",
+    "space_id": "3",
+    "role": "guest",
+    "joined_at": "2025-04-17T00:53:50.411809"
+  },
+  "24": {
+    "user_id": "5",
+    "space_id": "3",
+    "role": "space_member",
+    "joined_at": "2025-06-01T20:22:44.181984"
+  },
+  "25": {
+    "user_id": "8",
+    "space_id": "3",
+    "role": "space_admin",
+    "joined_at": "2024-12-17T05:58:26.885821"
+  },
+  "26": {
+    "user_id": "9",
+    "space_id": "3",
+    "role": "space_member",
+    "joined_at": "2025-10-08T03:14:40.605164"
+  },
+  "27": {
+    "user_id": "10",
+    "space_id": "3",
+    "role": "guest",
+    "joined_at": "2024-12-30T00:43:22.775409"
+  },
+  "28": {
+    "user_id": "11",
+    "space_id": "3",
+    "role": "guest",
+    "joined_at": "2025-08-04T10:58:35.175570"
+  },
+  "29": {
+    "user_id": "30",
+    "space_id": "4",
+    "role": "space_admin",
+    "joined_at": "2025-03-29T05:35:32.896029"
+  },
+  "30": {
+    "user_id": "1",
+    "space_id": "4",
+    "role": "space_admin",
+    "joined_at": "2025-08-05T01:45:13.201396"
+  },
+  "31": {
+    "user_id": "2",
+    "space_id": "4",
+    "role": "guest",
+    "joined_at": "2025-05-22T17:50:23.405194"
+  },
+  "32": {
+    "user_id": "3",
+    "space_id": "4",
+    "role": "content_contributor",
+    "joined_at": "2025-04-14T22:55:59.155132"
+  },
+  "33": {
+    "user_id": "5",
+    "space_id": "4",
+    "role": "content_contributor",
+    "joined_at": "2025-05-17T15:20:17.076957"
+  },
+  "34": {
+    "user_id": "8",
+    "space_id": "4",
+    "role": "reviewer_approver",
+    "joined_at": "2025-07-20T22:18:08.120867"
+  },
+  "35": {
+    "user_id": "9",
+    "space_id": "4",
+    "role": "content_contributor",
+    "joined_at": "2025-04-30T11:23:35.382960"
+  },
+  "36": {
+    "user_id": "10",
+    "space_id": "4",
+    "role": "space_admin",
+    "joined_at": "2025-06-21T09:03:06.298809"
+  },
+  "37": {
+    "user_id": "11",
+    "space_id": "4",
+    "role": "guest",
+    "joined_at": "2025-08-18T05:25:08.266086"
+  },
+  "38": {
+    "user_id": "14",
+    "space_id": "4",
+    "role": "space_member",
+    "joined_at": "2025-07-04T00:33:01.410229"
+  },
+  "39": {
+    "user_id": "29",
+    "space_id": "5",
+    "role": "space_admin",
+    "joined_at": "2025-04-05T07:17:08.795702"
+  },
+  "40": {
+    "user_id": "1",
+    "space_id": "5",
+    "role": "space_member",
+    "joined_at": "2025-04-11T19:05:53.347639"
+  },
+  "41": {
+    "user_id": "5",
+    "space_id": "5",
+    "role": "space_member",
+    "joined_at": "2025-06-01T14:36:33.789981"
+  },
+  "42": {
+    "user_id": "8",
+    "space_id": "5",
+    "role": "guest",
+    "joined_at": "2025-05-31T12:53:44.947545"
+  },
+  "43": {
+    "user_id": "10",
+    "space_id": "5",
+    "role": "guest",
+    "joined_at": "2025-09-23T06:46:58.104432"
+  },
+  "44": {
+    "user_id": "11",
+    "space_id": "5",
+    "role": "guest",
+    "joined_at": "2025-04-19T11:04:32.749188"
+  },
+  "45": {
+    "user_id": "12",
+    "space_id": "5",
+    "role": "space_admin",
+    "joined_at": "2025-05-21T17:34:43.568340"
+  },
+  "46": {
+    "user_id": "14",
+    "space_id": "5",
+    "role": "space_admin",
+    "joined_at": "2025-05-27T22:11:15.698235"
+  },
+  "47": {
+    "user_id": "17",
+    "space_id": "5",
+    "role": "content_contributor",
+    "joined_at": "2025-09-09T16:27:29.169196"
+  },
+  "48": {
+    "user_id": "32",
+    "space_id": "6",
+    "role": "space_admin",
+    "joined_at": "2024-11-13T10:13:53.885561"
+  },
+  "49": {
+    "user_id": "1",
+    "space_id": "6",
+    "role": "content_contributor",
+    "joined_at": "2025-06-03T00:07:31.153639"
+  },
+  "50": {
+    "user_id": "2",
+    "space_id": "6",
+    "role": "content_contributor",
+    "joined_at": "2025-08-15T04:27:54.485652"
+  },
+  "51": {
+    "user_id": "3",
+    "space_id": "6",
+    "role": "content_contributor",
+    "joined_at": "2025-01-20T00:53:31.435199"
+  },
+  "52": {
+    "user_id": "8",
+    "space_id": "6",
+    "role": "reviewer_approver",
+    "joined_at": "2024-12-22T15:42:43.897624"
+  },
+  "53": {
+    "user_id": "10",
+    "space_id": "6",
+    "role": "content_contributor",
+    "joined_at": "2025-01-29T06:17:09.988459"
+  },
+  "54": {
+    "user_id": "12",
+    "space_id": "6",
+    "role": "content_contributor",
+    "joined_at": "2025-01-03T08:21:12.730984"
+  },
+  "55": {
+    "user_id": "13",
+    "space_id": "6",
+    "role": "reviewer_approver",
+    "joined_at": "2025-02-12T05:08:49.074181"
+  },
+  "56": {
+    "user_id": "14",
+    "space_id": "6",
+    "role": "reviewer_approver",
+    "joined_at": "2025-01-01T00:57:34.009743"
+  },
+  "57": {
+    "user_id": "15",
+    "space_id": "6",
+    "role": "space_admin",
+    "joined_at": "2024-12-03T19:25:37.388831"
+  },
+  "58": {
+    "user_id": "49",
+    "space_id": "7",
+    "role": "space_admin",
+    "joined_at": "2025-01-10T20:41:40.688966"
+  },
+  "59": {
+    "user_id": "1",
+    "space_id": "7",
+    "role": "space_member",
+    "joined_at": "2025-08-23T10:47:33.404621"
+  },
+  "60": {
+    "user_id": "2",
+    "space_id": "7",
+    "role": "content_contributor",
+    "joined_at": "2025-06-28T11:09:43.193365"
+  },
+  "61": {
+    "user_id": "3",
+    "space_id": "7",
+    "role": "space_member",
+    "joined_at": "2025-09-01T09:45:40.828700"
+  },
+  "62": {
+    "user_id": "4",
+    "space_id": "7",
+    "role": "space_admin",
+    "joined_at": "2025-09-28T21:03:49.961930"
+  },
+  "63": {
+    "user_id": "5",
+    "space_id": "7",
+    "role": "space_admin",
+    "joined_at": "2025-05-15T07:03:43.042590"
+  },
+  "64": {
+    "user_id": "9",
+    "space_id": "7",
+    "role": "space_member",
+    "joined_at": "2025-05-23T15:58:22.978196"
+  },
+  "65": {
+    "user_id": "10",
+    "space_id": "7",
+    "role": "content_contributor",
+    "joined_at": "2025-04-07T00:36:01.605277"
+  },
+  "66": {
+    "user_id": "13",
+    "space_id": "7",
+    "role": "guest",
+    "joined_at": "2025-05-04T21:51:57.900270"
+  },
+  "67": {
+    "user_id": "16",
+    "space_id": "7",
+    "role": "space_member",
+    "joined_at": "2025-03-29T00:02:43.682550"
+  },
+  "68": {
+    "user_id": "4",
+    "space_id": "8",
+    "role": "space_admin",
+    "joined_at": "2025-10-06T21:15:00.610673"
+  },
+  "69": {
+    "user_id": "5",
+    "space_id": "8",
+    "role": "content_contributor",
+    "joined_at": "2025-10-14T14:51:22.365245"
+  },
+  "70": {
+    "user_id": "9",
+    "space_id": "8",
+    "role": "space_member",
+    "joined_at": "2025-10-13T03:43:10.259684"
+  },
+  "71": {
+    "user_id": "10",
+    "space_id": "8",
+    "role": "space_admin",
+    "joined_at": "2025-10-15T10:48:40.732233"
+  },
+  "72": {
+    "user_id": "11",
+    "space_id": "8",
+    "role": "space_admin",
+    "joined_at": "2025-10-19T14:58:07.003400"
+  },
+  "73": {
+    "user_id": "13",
+    "space_id": "8",
+    "role": "reviewer_approver",
+    "joined_at": "2025-10-17T09:43:44.763750"
+  },
+  "74": {
+    "user_id": "14",
+    "space_id": "8",
+    "role": "space_member",
+    "joined_at": "2025-10-15T12:45:45.522438"
+  },
+  "75": {
+    "user_id": "15",
+    "space_id": "8",
+    "role": "space_member",
+    "joined_at": "2025-10-07T06:08:25.657545"
+  },
+  "76": {
+    "user_id": "16",
+    "space_id": "8",
+    "role": "content_contributor",
+    "joined_at": "2025-10-10T03:56:14.963729"
+  },
+  "77": {
+    "user_id": "46",
+    "space_id": "9",
+    "role": "space_admin",
+    "joined_at": "2025-05-21T08:59:37.075659"
+  },
+  "78": {
+    "user_id": "1",
+    "space_id": "9",
+    "role": "guest",
+    "joined_at": "2025-09-01T10:18:31.620933"
+  },
+  "79": {
+    "user_id": "2",
+    "space_id": "9",
+    "role": "guest",
+    "joined_at": "2025-09-29T21:21:18.571165"
+  },
+  "80": {
+    "user_id": "3",
+    "space_id": "9",
+    "role": "space_admin",
+    "joined_at": "2025-08-19T02:33:02.661265"
+  },
+  "81": {
+    "user_id": "4",
+    "space_id": "9",
+    "role": "content_contributor",
+    "joined_at": "2025-05-24T13:05:15.355508"
+  },
+  "82": {
+    "user_id": "5",
+    "space_id": "9",
+    "role": "content_contributor",
+    "joined_at": "2025-09-15T06:07:18.980621"
+  },
+  "83": {
+    "user_id": "8",
+    "space_id": "9",
+    "role": "guest",
+    "joined_at": "2025-09-23T21:57:10.974113"
+  },
+  "84": {
+    "user_id": "9",
+    "space_id": "9",
+    "role": "content_contributor",
+    "joined_at": "2025-08-17T10:39:28.607463"
+  },
+  "85": {
+    "user_id": "10",
+    "space_id": "9",
+    "role": "guest",
+    "joined_at": "2025-09-15T00:03:52.991746"
+  },
+  "86": {
+    "user_id": "11",
+    "space_id": "9",
+    "role": "guest",
+    "joined_at": "2025-06-17T03:35:25.012832"
+  },
+  "87": {
+    "user_id": "44",
+    "space_id": "10",
+    "role": "space_admin",
+    "joined_at": "2025-08-31T16:52:25.099888"
+  },
+  "88": {
+    "user_id": "1",
+    "space_id": "10",
+    "role": "space_admin",
+    "joined_at": "2025-09-26T21:54:41.085546"
+  },
+  "89": {
+    "user_id": "3",
+    "space_id": "10",
+    "role": "guest",
+    "joined_at": "2025-09-23T00:54:04.846705"
+  },
+  "90": {
+    "user_id": "4",
+    "space_id": "10",
+    "role": "space_member",
+    "joined_at": "2025-09-14T18:01:41.231126"
+  },
+  "91": {
+    "user_id": "5",
+    "space_id": "10",
+    "role": "space_admin",
+    "joined_at": "2025-10-21T01:16:28.359942"
+  },
+  "92": {
+    "user_id": "10",
+    "space_id": "10",
+    "role": "space_admin",
+    "joined_at": "2025-09-22T17:12:40.524830"
+  },
+  "93": {
+    "user_id": "12",
+    "space_id": "10",
+    "role": "content_contributor",
+    "joined_at": "2025-10-11T19:49:21.441139"
+  },
+  "94": {
+    "user_id": "13",
+    "space_id": "10",
+    "role": "content_contributor",
+    "joined_at": "2025-10-19T15:28:07.294550"
+  },
+  "95": {
+    "user_id": "14",
+    "space_id": "10",
+    "role": "content_contributor",
+    "joined_at": "2025-09-24T10:34:29.199158"
+  },
+  "96": {
+    "user_id": "15",
+    "space_id": "10",
+    "role": "space_member",
+    "joined_at": "2025-09-21T07:50:01.306745"
+  }
+}

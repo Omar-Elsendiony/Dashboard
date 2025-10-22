@@ -1,0 +1,200 @@
+{
+  "1": {
+    "history_id": "1",
+    "space_id": "1",
+    "changed_by_user_id": "1",
+    "changed_at": "2025-09-18T07:59:36.457760",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"weekly\"}"
+  },
+  "2": {
+    "history_id": "2",
+    "space_id": "1",
+    "changed_by_user_id": "45",
+    "changed_at": "2025-09-07T07:50:09.809582",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "3": {
+    "history_id": "3",
+    "space_id": "1",
+    "changed_by_user_id": "45",
+    "changed_at": "2025-10-07T12:55:47.111039",
+    "config_version": 3,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "4": {
+    "history_id": "4",
+    "space_id": "2",
+    "changed_by_user_id": "30",
+    "changed_at": "2025-03-23T13:56:05.765810",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "5": {
+    "history_id": "5",
+    "space_id": "2",
+    "changed_by_user_id": "2",
+    "changed_at": "2025-06-28T00:03:00.214133",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"never\"}"
+  },
+  "6": {
+    "history_id": "6",
+    "space_id": "2",
+    "changed_by_user_id": "1",
+    "changed_at": "2025-05-30T14:46:15.325351",
+    "config_version": 3,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"public\", \"allow_comments\": false, \"notification_frequency\": \"daily\"}"
+  },
+  "7": {
+    "history_id": "7",
+    "space_id": "3",
+    "changed_by_user_id": "8",
+    "changed_at": "2025-01-19T17:17:35.683213",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}"
+  },
+  "8": {
+    "history_id": "8",
+    "space_id": "3",
+    "changed_by_user_id": "25",
+    "changed_at": "2025-09-03T09:32:47.742406",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"weekly\"}"
+  },
+  "9": {
+    "history_id": "9",
+    "space_id": "3",
+    "changed_by_user_id": "8",
+    "changed_at": "2025-10-06T06:15:22.246404",
+    "config_version": 3,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": true, \"notification_frequency\": \"weekly\"}"
+  },
+  "10": {
+    "history_id": "10",
+    "space_id": "4",
+    "changed_by_user_id": "2",
+    "changed_at": "2025-07-19T23:21:43.243471",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": true, \"notification_frequency\": \"never\"}"
+  },
+  "11": {
+    "history_id": "11",
+    "space_id": "4",
+    "changed_by_user_id": "1",
+    "changed_at": "2025-07-07T21:00:09.243288",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"public\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "12": {
+    "history_id": "12",
+    "space_id": "4",
+    "changed_by_user_id": "1",
+    "changed_at": "2025-06-26T18:28:36.596589",
+    "config_version": 3,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"daily\"}"
+  },
+  "13": {
+    "history_id": "13",
+    "space_id": "5",
+    "changed_by_user_id": "2",
+    "changed_at": "2025-06-26T16:27:51.119567",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "14": {
+    "history_id": "14",
+    "space_id": "5",
+    "changed_by_user_id": "14",
+    "changed_at": "2025-08-29T23:21:27.928046",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}"
+  },
+  "15": {
+    "history_id": "15",
+    "space_id": "6",
+    "changed_by_user_id": "1",
+    "changed_at": "2025-08-05T19:09:44.447695",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"public\", \"allow_comments\": false, \"notification_frequency\": \"weekly\"}"
+  },
+  "16": {
+    "history_id": "16",
+    "space_id": "6",
+    "changed_by_user_id": "15",
+    "changed_at": "2025-06-19T07:29:33.588320",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"weekly\"}"
+  },
+  "17": {
+    "history_id": "17",
+    "space_id": "7",
+    "changed_by_user_id": "2",
+    "changed_at": "2025-06-21T02:47:08.070719",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"daily\"}"
+  },
+  "18": {
+    "history_id": "18",
+    "space_id": "7",
+    "changed_by_user_id": "2",
+    "changed_at": "2025-05-30T17:33:08.628990",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"weekly\"}"
+  },
+  "19": {
+    "history_id": "19",
+    "space_id": "8",
+    "changed_by_user_id": "11",
+    "changed_at": "2025-10-12T07:26:23.629525",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"public\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "20": {
+    "history_id": "20",
+    "space_id": "9",
+    "changed_by_user_id": "1",
+    "changed_at": "2025-08-24T21:26:44.402886",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "21": {
+    "history_id": "21",
+    "space_id": "10",
+    "changed_by_user_id": "1",
+    "changed_at": "2025-09-16T12:08:10.894236",
+    "config_version": 1,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"public\", \"allow_comments\": false, \"notification_frequency\": \"never\"}"
+  },
+  "22": {
+    "history_id": "22",
+    "space_id": "10",
+    "changed_by_user_id": "2",
+    "changed_at": "2025-10-06T13:57:55.076538",
+    "config_version": 2,
+    "old_config": "{\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}",
+    "new_config": "{\"space_visibility\": \"private\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}"
+  }
+}

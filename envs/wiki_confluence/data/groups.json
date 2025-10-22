@@ -1,0 +1,42 @@
+{
+  "1": {
+    "group_id": "1",
+    "group_name": "Engineering Team",
+    "created_at": "2025-05-05T22:33:25.299446"
+  },
+  "2": {
+    "group_id": "2",
+    "group_name": "Product Management",
+    "created_at": "2025-07-14T13:37:03.045470"
+  },
+  "3": {
+    "group_id": "3",
+    "group_name": "Quality Assurance",
+    "created_at": "2025-01-02T10:27:32.003508"
+  },
+  "4": {
+    "group_id": "4",
+    "group_name": "Documentation Team",
+    "created_at": "2025-02-11T19:38:49.711481"
+  },
+  "5": {
+    "group_id": "5",
+    "group_name": "Research & Development",
+    "created_at": "2025-10-19T10:27:26.528718"
+  },
+  "6": {
+    "group_id": "6",
+    "group_name": "Operations",
+    "created_at": "2025-06-15T07:53:31.297121"
+  },
+  "7": {
+    "group_id": "7",
+    "group_name": "Security Team",
+    "created_at": "2025-03-29T23:29:49.689668"
+  },
+  "8": {
+    "group_id": "8",
+    "group_name": "Marketing",
+    "created_at": "2025-04-28T00:09:45.175538"
+  }
+}

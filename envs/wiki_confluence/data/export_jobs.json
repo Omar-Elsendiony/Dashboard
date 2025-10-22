@@ -1,0 +1,167 @@
+{
+  "1": {
+    "job_id": "1",
+    "space_id": "10",
+    "requested_by_user_id": "25",
+    "requested_at": "2025-09-23T12:46:18.392256",
+    "status": "running",
+    "format": "XML",
+    "destination": "exports/1.html",
+    "estimated_size_kb": 12375,
+    "priority": 5
+  },
+  "2": {
+    "job_id": "2",
+    "space_id": "2",
+    "requested_by_user_id": "36",
+    "requested_at": "2025-06-09T03:29:23.032056",
+    "status": "completed",
+    "format": "PDF",
+    "destination": "exports/2.xml",
+    "estimated_size_kb": 35756,
+    "priority": 4
+  },
+  "3": {
+    "job_id": "3",
+    "space_id": "9",
+    "requested_by_user_id": "38",
+    "requested_at": "2025-06-02T04:33:22.890813",
+    "status": "pending",
+    "format": "HTML",
+    "destination": "exports/3.html",
+    "estimated_size_kb": 2953,
+    "priority": 5
+  },
+  "4": {
+    "job_id": "4",
+    "space_id": "7",
+    "requested_by_user_id": "26",
+    "requested_at": "2025-01-26T03:31:50.115391",
+    "status": "completed",
+    "format": "XML",
+    "destination": "exports/4.pdf",
+    "estimated_size_kb": 23502,
+    "priority": 0
+  },
+  "5": {
+    "job_id": "5",
+    "space_id": "6",
+    "requested_by_user_id": "18",
+    "requested_at": "2024-11-29T05:32:03.099902",
+    "status": "pending",
+    "format": "XML",
+    "destination": "exports/5.xml",
+    "estimated_size_kb": 49689,
+    "priority": 2
+  },
+  "6": {
+    "job_id": "6",
+    "space_id": "3",
+    "requested_by_user_id": "3",
+    "requested_at": "2025-01-24T03:43:24.252144",
+    "status": "completed",
+    "format": "XML",
+    "destination": "exports/6.html",
+    "estimated_size_kb": 42226,
+    "priority": 1
+  },
+  "7": {
+    "job_id": "7",
+    "space_id": "8",
+    "requested_by_user_id": "47",
+    "requested_at": "2025-10-20T16:35:47.823768",
+    "status": "failed",
+    "format": "XML",
+    "destination": "exports/7.pdf",
+    "estimated_size_kb": 8937,
+    "priority": 0
+  },
+  "8": {
+    "job_id": "8",
+    "space_id": "8",
+    "requested_by_user_id": "3",
+    "requested_at": "2025-10-13T01:21:57.321873",
+    "status": "completed",
+    "format": "PDF",
+    "destination": "exports/8.pdf",
+    "estimated_size_kb": 13172,
+    "priority": 0
+  },
+  "9": {
+    "job_id": "9",
+    "space_id": "6",
+    "requested_by_user_id": "22",
+    "requested_at": "2025-04-25T01:10:55.924725",
+    "status": "cancelled",
+    "format": "HTML",
+    "destination": "exports/9.xml",
+    "estimated_size_kb": 31124,
+    "priority": 2
+  },
+  "10": {
+    "job_id": "10",
+    "space_id": "1",
+    "requested_by_user_id": "44",
+    "requested_at": "2025-09-12T20:23:57.828314",
+    "status": "running",
+    "format": "HTML",
+    "destination": "exports/10.html",
+    "estimated_size_kb": 3232,
+    "priority": 5
+  },
+  "11": {
+    "job_id": "11",
+    "space_id": "6",
+    "requested_by_user_id": "20",
+    "requested_at": "2025-09-07T14:02:43.140966",
+    "status": "pending",
+    "format": "HTML",
+    "destination": "exports/11.html",
+    "estimated_size_kb": 26315,
+    "priority": 5
+  },
+  "12": {
+    "job_id": "12",
+    "space_id": "8",
+    "requested_by_user_id": "27",
+    "requested_at": "2025-10-14T04:22:15.826713",
+    "status": "completed",
+    "format": "PDF",
+    "destination": "exports/12.html",
+    "estimated_size_kb": 45455,
+    "priority": 3
+  },
+  "13": {
+    "job_id": "13",
+    "space_id": "6",
+    "requested_by_user_id": "36",
+    "requested_at": "2025-02-19T11:52:49.024467",
+    "status": "completed",
+    "format": "PDF",
+    "destination": "exports/13.xml",
+    "estimated_size_kb": 27920,
+    "priority": 0
+  },
+  "14": {
+    "job_id": "14",
+    "space_id": "7",
+    "requested_by_user_id": "41",
+    "requested_at": "2025-02-25T09:56:17.635448",
+    "status": "running",
+    "format": "XML",
+    "destination": "exports/14.html",
+    "estimated_size_kb": 21150,
+    "priority": 0
+  },
+  "15": {
+    "job_id": "15",
+    "space_id": "2",
+    "requested_by_user_id": "23",
+    "requested_at": "2025-06-06T23:53:09.313089",
+    "status": "completed",
+    "format": "HTML",
+    "destination": "exports/15.html",
+    "estimated_size_kb": 39593,
+    "priority": 5
+  }
+}
