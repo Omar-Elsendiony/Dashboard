@@ -96,7 +96,7 @@ class ExecutePaymentOperations(Tool):
             if not requester:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Operation failed due to system errors - requester user not found", "transfer_to_human": True})
 
-            if requester.get("employment_status") != "active" or requester.get("role") not in ["finance_manager", "hr_manager", "hr_admin"]:
+            if requester.get("employment_status") != "active" or requester.get("role") not in ["finance_manager", "hr_director", "hr_admin"]:
                 return json.dumps({"success": False, "payment_id": None, "message": "Halt: Unauthorized requester attempting to process payment - must be active Finance Manager or HR Director/Admin", "transfer_to_human": True})
 
             # Verify payslip exists and is released

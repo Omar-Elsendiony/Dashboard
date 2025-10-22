@@ -266,13 +266,13 @@ class AdministerEmployeeOperations(Tool):
                     "message": f"Missing required fields for employee update: {', '.join(missing_fields)}"
                 })
             
-            # Validate employee exists and is active
+            # Validate employee exists
             employee = employees.get(str(kwargs["employee_id"]))
-            if not employee or employee.get("employment_status") != "active":
+            if not employee:
                 return json.dumps({
                     "success": False,
                     "employee_id": None,
-                    "message": "Halt: Employee not found or inactive"
+                    "message": "Halt: Employee not found"
                 })
             
             # Validate user has appropriate role
