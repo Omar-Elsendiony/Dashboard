@@ -32,13 +32,12 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - System / Automation Agent
 
 1. Obtain entity_type (required: 'user', 'group', 'space', or 'page'), identifier (required: ID, key, name, or email), and actor_user_id (required).
-2. Based on entity_type, call the appropriate discovery tool:
+2. Call fetch_user to validate the existence of the requester's account.
+3. Based on entity_type, call the appropriate discovery tool:
    - If entity_type is 'user': use fetch_user
    - If entity_type is 'group': use fetch_group
    - If entity_type is 'space': use fetch_space
    - If entity_type is 'page': use fetch_page
-3. Call fetch_user to validate the existence of the requester's account.
-4. Create an audit entry with create_new_audit_trail.
 
 **Halt, and use switch_to_human if you receive the following errors; otherwise complete the SOP:**
 
