@@ -1,0 +1,102 @@
+{
+  "1": {
+    "space_id": "1",
+    "space_key": "SPACE1",
+    "space_name": "Project Phoenix Development Space",
+    "space_purpose": "Dedicated space for the 'Project Phoenix' development team to collaborate on design, code, and documentation for the re-engineered object-oriented system.",
+    "created_by_user_id": "45",
+    "created_at": "2025-08-28T09:57:17.515316",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "2": {
+    "space_id": "2",
+    "space_key": "SPACE2",
+    "space_name": "Brown PLC Architecture Review",
+    "space_purpose": "A collaborative environment for the Brown PLC team to review and refine the configurable contextually-based architecture, ensuring alignment with project goals and technical standards.",
+    "created_by_user_id": "30",
+    "created_at": "2025-02-07T07:29:57.247184",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "3": {
+    "space_id": "3",
+    "space_key": "SPACE3",
+    "space_name": "Neural-Net Customer Solutions",
+    "space_purpose": "This space is for the Garcia, Humphrey, and Baker teams to develop and manage customer-focused, value-added solutions leveraging neural network technologies.",
+    "created_by_user_id": "25",
+    "created_at": "2024-11-27T12:16:52.181580",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "4": {
+    "space_id": "4",
+    "space_key": "SPACE4",
+    "space_name": "Distributed Systems Optimization",
+    "space_purpose": "Team space for Henson, Russell, and Oliver to collaborate on strategies and implementations for distributed systems, focusing on disintermediation and complexity reduction.",
+    "created_by_user_id": "30",
+    "created_at": "2025-03-29T05:35:32.896029",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "5": {
+    "space_id": "5",
+    "space_key": "SPACE5",
+    "space_name": "Secure User Experience Design",
+    "space_purpose": "Dedicated to the Frost, Ryan, and Ball teams for designing and implementing user-centric, user-facing interfaces with a strong emphasis on security and data protection.",
+    "created_by_user_id": "29",
+    "created_at": "2025-04-05T07:17:08.795702",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "6": {
+    "space_id": "6",
+    "space_key": "SPACE6",
+    "space_name": "Dynamic Circuit Design & Architecture",
+    "space_purpose": "Collaboration space for Johnston, Higgins, and Cruz to work on the design, development, and documentation of open-architected dynamic circuits.",
+    "created_by_user_id": "32",
+    "created_at": "2024-11-13T10:13:53.885561",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "7": {
+    "space_id": "7",
+    "space_key": "SPACE7",
+    "space_name": "Demand-Driven Instruction Set Development",
+    "space_purpose": "This space supports the Rivera-Owens team in developing and managing a centralized, demand-driven instruction set for various applications.",
+    "created_by_user_id": "49",
+    "created_at": "2025-01-10T20:41:40.688966",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "8": {
+    "space_id": "8",
+    "space_key": "SPACE8",
+    "space_name": "Harrington Web Algorithm Project",
+    "space_purpose": "Harrington Ltd's space for developing, testing, and deploying balanced web-enabled algorithms to enhance online services and data processing.",
+    "created_by_user_id": "4",
+    "created_at": "2025-10-06T21:15:00.610673",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "9": {
+    "space_id": "9",
+    "space_key": "SPACE9",
+    "space_name": "Growth Model Enhancement",
+    "space_purpose": "A dedicated space for Snow, Stevens, and Hernandez to collaborate on enhancing and analyzing upward-trending models for business growth and market prediction.",
+    "created_by_user_id": "46",
+    "created_at": "2025-05-21T08:59:37.075659",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "10": {
+    "space_id": "10",
+    "space_key": "SPACE10",
+    "space_name": "Tran-Cooper Groupware Initiative",
+    "space_purpose": "This space is for the Tran-Cooper team to develop and refine user-friendly, neutral groupware solutions that foster effective team collaboration.",
+    "created_by_user_id": "44",
+    "created_at": "2025-08-31T16:52:25.099888",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+}

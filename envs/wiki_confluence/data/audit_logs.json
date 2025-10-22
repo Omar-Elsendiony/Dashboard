@@ -1,0 +1,902 @@
+{
+  "1": {
+    "log_id": "1",
+    "actor_user_id": "30",
+    "action_type": "configure_settings",
+    "target_entity_type": "space",
+    "target_entity_id": "8",
+    "occurred_at": "2025-10-21T04:54:09.370946",
+    "details": "{\"old\": {\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}, \"new\": {\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}}"
+  },
+  "2": {
+    "log_id": "2",
+    "actor_user_id": "25",
+    "action_type": "clone_page",
+    "target_entity_type": "page",
+    "target_entity_id": "6",
+    "occurred_at": "2025-10-21T04:55:48.497488",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "3": {
+    "log_id": "3",
+    "actor_user_id": "49",
+    "action_type": "move_page",
+    "target_entity_type": "page",
+    "target_entity_id": "79",
+    "occurred_at": "2025-10-21T04:55:08.996245",
+    "details": "{\"old\": {\"parent_page_id\": null, \"space_id\": \"8\"}, \"new\": {\"parent_page_id\": \"56\", \"space_id\": \"8\"}}"
+  },
+  "4": {
+    "log_id": "4",
+    "actor_user_id": "43",
+    "action_type": "update_space",
+    "target_entity_type": "space",
+    "target_entity_id": "2",
+    "occurred_at": "2025-10-21T04:58:35.754582",
+    "details": "{\"old\": {\"space_name\": \"Old Brown PLC Configurable contextually-based architecture\", \"space_purpose\": \"Previous purpose description.\"}, \"new\": {\"space_name\": \"Brown PLC Configurable contextually-based architecture\", \"space_purpose\": \"Push dog build three. Often always bank price north. Various daughter respond draw how public. Lead upon very act perform.\"}}"
+  },
+  "5": {
+    "log_id": "5",
+    "actor_user_id": "45",
+    "action_type": "rename_page",
+    "target_entity_type": "page",
+    "target_entity_id": "47",
+    "occurred_at": "2025-10-21T04:53:55.925570",
+    "details": "{\"old\": {\"title\": \"Old: Ago upon stop environment Congress reflect finally.\"}, \"new\": {\"title\": \"Ago upon stop environment Congress reflect finally.\"}}"
+  },
+  "6": {
+    "log_id": "6",
+    "actor_user_id": "35",
+    "action_type": "configure_settings",
+    "target_entity_type": "space",
+    "target_entity_id": "1",
+    "occurred_at": "2025-10-21T04:57:16.520724",
+    "details": "{\"old\": {\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}, \"new\": {\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}}"
+  },
+  "7": {
+    "log_id": "7",
+    "actor_user_id": "12",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "15",
+    "occurred_at": "2025-10-21T04:57:31.134516",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "8": {
+    "log_id": "8",
+    "actor_user_id": "3",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "3",
+    "occurred_at": "2025-10-21T04:58:33.117377",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "9": {
+    "log_id": "9",
+    "actor_user_id": "18",
+    "action_type": "move_page",
+    "target_entity_type": "page",
+    "target_entity_id": "47",
+    "occurred_at": "2025-10-21T04:53:27.517889",
+    "details": "{\"old\": {\"parent_page_id\": null, \"space_id\": \"5\"}, \"new\": {\"parent_page_id\": null, \"space_id\": \"5\"}}"
+  },
+  "10": {
+    "log_id": "10",
+    "actor_user_id": "41",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "22",
+    "occurred_at": "2025-10-21T04:58:31.376935",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "11": {
+    "log_id": "11",
+    "actor_user_id": "31",
+    "action_type": "move_page",
+    "target_entity_type": "page",
+    "target_entity_id": "48",
+    "occurred_at": "2025-10-21T04:55:53.113188",
+    "details": "{\"old\": {\"parent_page_id\": null, \"space_id\": \"5\"}, \"new\": {\"parent_page_id\": null, \"space_id\": \"5\"}}"
+  },
+  "12": {
+    "log_id": "12",
+    "actor_user_id": "39",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "17",
+    "occurred_at": "2025-10-21T04:56:36.043880",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "13": {
+    "log_id": "13",
+    "actor_user_id": "26",
+    "action_type": "rename_page",
+    "target_entity_type": "page",
+    "target_entity_id": "41",
+    "occurred_at": "2025-10-21T04:54:44.433965",
+    "details": "{\"old\": {\"title\": \"Old: Most law painting between reduce table prepare shoulder.\"}, \"new\": {\"title\": \"Most law painting between reduce table prepare shoulder.\"}}"
+  },
+  "14": {
+    "log_id": "14",
+    "actor_user_id": "44",
+    "action_type": "create_page",
+    "target_entity_type": "page",
+    "target_entity_id": "32",
+    "occurred_at": "2025-10-21T04:54:09.714766",
+    "details": "{\"old\": null, \"new\": {\"page_id\": \"32\", \"space_id\": \"3\", \"title\": \"Describe know door guy wonder happen.\", \"content_format\": \"html\", \"state\": \"published\", \"created_by_user_id\": \"2\", \"is_published\": true}}"
+  },
+  "15": {
+    "log_id": "15",
+    "actor_user_id": "10",
+    "action_type": "create_space",
+    "target_entity_type": "space",
+    "target_entity_id": "3",
+    "occurred_at": "2025-10-21T04:55:17.772638",
+    "details": "{\"old\": null, \"new\": {\"space_id\": \"3\", \"space_key\": \"SPACE3\", \"space_name\": \"Garcia, Humphrey and Baker Customer-focused value-added neural-net\", \"space_purpose\": \"Example decision garden reach table. Major town suffer begin interest everybody about.\\nClaim kind relationship night born. Nation strong old challenge.\", \"created_by_user_id\": \"25\", \"is_deleted\": false}}"
+  },
+  "16": {
+    "log_id": "16",
+    "actor_user_id": "34",
+    "action_type": "unpublish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "50",
+    "occurred_at": "2025-10-21T04:55:13.480994",
+    "details": "{\"old\": {\"state\": \"published\", \"is_published\": true}, \"new\": {\"state\": \"draft\", \"is_published\": false}}"
+  },
+  "17": {
+    "log_id": "17",
+    "actor_user_id": "38",
+    "action_type": "manage_permissions",
+    "target_entity_type": "permission",
+    "target_entity_id": "9",
+    "occurred_at": "2025-10-21T04:54:02.003294",
+    "details": "{\"old\": {\"is_active\": true, \"revoked_by_user_id\": null, \"revoked_at\": null}, \"new\": {\"is_active\": false, \"revoked_by_user_id\": \"38\", \"revoked_at\": \"2025-10-21T04:58:30.364526\"}}"
+  },
+  "18": {
+    "log_id": "18",
+    "actor_user_id": "19",
+    "action_type": "clone_page",
+    "target_entity_type": "page",
+    "target_entity_id": "28",
+    "occurred_at": "2025-10-21T04:57:05.916147",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "19": {
+    "log_id": "19",
+    "actor_user_id": "42",
+    "action_type": "update_page",
+    "target_entity_type": "page",
+    "target_entity_id": "89",
+    "occurred_at": "2025-10-21T04:55:54.273317",
+    "details": "{\"old\": {\"title\": \"Previous: Risk bad own state.\", \"current_version\": 3, \"updated_by_user_id\": null}, \"new\": {\"title\": \"Risk bad own state.\", \"current_version\": 4, \"updated_by_user_id\": \"1\"}}"
+  },
+  "20": {
+    "log_id": "20",
+    "actor_user_id": "34",
+    "action_type": "export_space",
+    "target_entity_type": "space",
+    "target_entity_id": "2",
+    "occurred_at": "2025-10-21T04:55:50.702274",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "21": {
+    "log_id": "21",
+    "actor_user_id": "11",
+    "action_type": "delete_space",
+    "target_entity_type": "space",
+    "target_entity_id": "8",
+    "occurred_at": "2025-10-21T04:53:04.776840",
+    "details": "{\"old\": {\"space_name\": \"Harrington Ltd Balanced web-enabled algorithm\", \"is_deleted\": false, \"deleted_at\": null}, \"new\": null}"
+  },
+  "22": {
+    "log_id": "22",
+    "actor_user_id": "14",
+    "action_type": "clone_page",
+    "target_entity_type": "page",
+    "target_entity_id": "12",
+    "occurred_at": "2025-10-21T04:55:09.217797",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "23": {
+    "log_id": "23",
+    "actor_user_id": "46",
+    "action_type": "delete_page",
+    "target_entity_type": "page",
+    "target_entity_id": "86",
+    "occurred_at": "2025-10-21T04:57:04.708901",
+    "details": "{\"old\": {\"page_id\": \"86\", \"title\": \"Though firm financial huge spring.\", \"state\": \"published\", \"is_trashed\": false}, \"new\": null}"
+  },
+  "24": {
+    "log_id": "24",
+    "actor_user_id": "25",
+    "action_type": "delete_space",
+    "target_entity_type": "space",
+    "target_entity_id": "9",
+    "occurred_at": "2025-10-21T04:57:11.339016",
+    "details": "{\"old\": {\"space_name\": \"Snow, Stevens and Hernandez Enhanced upward-trending model\", \"is_deleted\": false, \"deleted_at\": null}, \"new\": null}"
+  },
+  "25": {
+    "log_id": "25",
+    "actor_user_id": "37",
+    "action_type": "update_page",
+    "target_entity_type": "page",
+    "target_entity_id": "39",
+    "occurred_at": "2025-10-21T04:56:13.905141",
+    "details": "{\"old\": {\"title\": \"Previous: Leader who article look husband.\", \"current_version\": 2, \"updated_by_user_id\": null}, \"new\": {\"title\": \"Leader who article look husband.\", \"current_version\": 3, \"updated_by_user_id\": \"2\"}}"
+  },
+  "26": {
+    "log_id": "26",
+    "actor_user_id": "13",
+    "action_type": "configure_settings",
+    "target_entity_type": "space",
+    "target_entity_id": "6",
+    "occurred_at": "2025-10-21T04:56:17.596272",
+    "details": "{\"old\": {\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}, \"new\": {\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}}"
+  },
+  "27": {
+    "log_id": "27",
+    "actor_user_id": "35",
+    "action_type": "import_space",
+    "target_entity_type": "space",
+    "target_entity_id": "2",
+    "occurred_at": "2025-10-21T04:55:53.389818",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "28": {
+    "log_id": "28",
+    "actor_user_id": "15",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "8",
+    "occurred_at": "2025-10-21T04:53:26.894611",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "29": {
+    "log_id": "29",
+    "actor_user_id": "34",
+    "action_type": "create_space",
+    "target_entity_type": "space",
+    "target_entity_id": "6",
+    "occurred_at": "2025-10-21T04:53:51.171971",
+    "details": "{\"old\": null, \"new\": {\"space_id\": \"6\", \"space_key\": \"SPACE6\", \"space_name\": \"Johnston, Higgins and Cruz Open-architected dynamic circuit\", \"space_purpose\": \"Sing despite sound receive.\\nNewspaper true building. Soon property write other. Partner rest measure store natural today.\", \"created_by_user_id\": \"32\", \"is_deleted\": false}}"
+  },
+  "30": {
+    "log_id": "30",
+    "actor_user_id": "38",
+    "action_type": "watch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "18",
+    "occurred_at": "2025-10-21T04:58:05.151475",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "31": {
+    "log_id": "31",
+    "actor_user_id": "26",
+    "action_type": "clone_page",
+    "target_entity_type": "page",
+    "target_entity_id": "103",
+    "occurred_at": "2025-10-21T04:56:41.926082",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "32": {
+    "log_id": "32",
+    "actor_user_id": "38",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "20",
+    "occurred_at": "2025-10-21T04:57:53.534232",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "33": {
+    "log_id": "33",
+    "actor_user_id": "8",
+    "action_type": "delete_space",
+    "target_entity_type": "space",
+    "target_entity_id": "5",
+    "occurred_at": "2025-10-21T04:53:30.732193",
+    "details": "{\"old\": {\"space_name\": \"Frost, Ryan and Ball User-centric user-facing secured line\", \"is_deleted\": false, \"deleted_at\": null}, \"new\": null}"
+  },
+  "34": {
+    "log_id": "34",
+    "actor_user_id": "28",
+    "action_type": "publish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "68",
+    "occurred_at": "2025-10-21T04:58:19.953215",
+    "details": "{\"old\": {\"state\": \"draft\", \"is_published\": false}, \"new\": {\"state\": \"published\", \"is_published\": true}}"
+  },
+  "35": {
+    "log_id": "35",
+    "actor_user_id": "29",
+    "action_type": "restore_version",
+    "target_entity_type": "page",
+    "target_entity_id": "74",
+    "occurred_at": "2025-10-21T04:54:48.648164",
+    "details": "{\"old\": {\"current_version\": 1}, \"new\": {\"current_version\": 1, \"restored_from_version\": 1}}"
+  },
+  "36": {
+    "log_id": "36",
+    "actor_user_id": "5",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "11",
+    "occurred_at": "2025-10-21T04:55:37.507108",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "37": {
+    "log_id": "37",
+    "actor_user_id": "44",
+    "action_type": "delete_space",
+    "target_entity_type": "space",
+    "target_entity_id": "8",
+    "occurred_at": "2025-10-21T04:56:17.840104",
+    "details": "{\"old\": {\"space_name\": \"Harrington Ltd Balanced web-enabled algorithm\", \"is_deleted\": false, \"deleted_at\": null}, \"new\": null}"
+  },
+  "38": {
+    "log_id": "38",
+    "actor_user_id": "32",
+    "action_type": "unpublish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "45",
+    "occurred_at": "2025-10-21T04:53:47.361672",
+    "details": "{\"old\": {\"state\": \"published\", \"is_published\": true}, \"new\": {\"state\": \"draft\", \"is_published\": false}}"
+  },
+  "39": {
+    "log_id": "39",
+    "actor_user_id": "11",
+    "action_type": "archive_content",
+    "target_entity_type": "page",
+    "target_entity_id": "82",
+    "occurred_at": "2025-10-21T04:56:19.029870",
+    "details": "{\"old\": {\"state\": \"published\"}, \"new\": {\"state\": \"archived\"}}"
+  },
+  "40": {
+    "log_id": "40",
+    "actor_user_id": "40",
+    "action_type": "configure_settings",
+    "target_entity_type": "space",
+    "target_entity_id": "3",
+    "occurred_at": "2025-10-21T04:56:45.155718",
+    "details": "{\"old\": {\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}, \"new\": {\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}}"
+  },
+  "41": {
+    "log_id": "41",
+    "actor_user_id": "30",
+    "action_type": "unpublish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "8",
+    "occurred_at": "2025-10-21T04:52:44.545723",
+    "details": "{\"old\": {\"state\": \"published\", \"is_published\": true}, \"new\": {\"state\": \"draft\", \"is_published\": false}}"
+  },
+  "42": {
+    "log_id": "42",
+    "actor_user_id": "10",
+    "action_type": "unpublish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "20",
+    "occurred_at": "2025-10-21T04:55:52.644255",
+    "details": "{\"old\": {\"state\": \"published\", \"is_published\": true}, \"new\": {\"state\": \"draft\", \"is_published\": false}}"
+  },
+  "43": {
+    "log_id": "43",
+    "actor_user_id": "22",
+    "action_type": "configure_settings",
+    "target_entity_type": "space",
+    "target_entity_id": "3",
+    "occurred_at": "2025-10-21T04:54:13.204553",
+    "details": "{\"old\": {\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}, \"new\": {\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}}"
+  },
+  "44": {
+    "log_id": "44",
+    "actor_user_id": "23",
+    "action_type": "import_space",
+    "target_entity_type": "space",
+    "target_entity_id": "6",
+    "occurred_at": "2025-10-21T04:53:22.938354",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "45": {
+    "log_id": "45",
+    "actor_user_id": "36",
+    "action_type": "update_page",
+    "target_entity_type": "page",
+    "target_entity_id": "11",
+    "occurred_at": "2025-10-21T04:57:16.199268",
+    "details": "{\"old\": {\"title\": \"Previous: History professional star wonder manager already.\", \"current_version\": 4, \"updated_by_user_id\": null}, \"new\": {\"title\": \"History professional star wonder manager already.\", \"current_version\": 5, \"updated_by_user_id\": \"45\"}}"
+  },
+  "46": {
+    "log_id": "46",
+    "actor_user_id": "19",
+    "action_type": "export_space",
+    "target_entity_type": "space",
+    "target_entity_id": "9",
+    "occurred_at": "2025-10-21T04:54:35.745265",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "47": {
+    "log_id": "47",
+    "actor_user_id": "20",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "21",
+    "occurred_at": "2025-10-21T04:52:44.465472",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "48": {
+    "log_id": "48",
+    "actor_user_id": "22",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "3",
+    "occurred_at": "2025-10-21T04:55:05.522680",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "49": {
+    "log_id": "49",
+    "actor_user_id": "35",
+    "action_type": "configure_settings",
+    "target_entity_type": "space",
+    "target_entity_id": "10",
+    "occurred_at": "2025-10-21T04:58:02.080257",
+    "details": "{\"old\": {\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}, \"new\": {\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}}"
+  },
+  "50": {
+    "log_id": "50",
+    "actor_user_id": "40",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "6",
+    "occurred_at": "2025-10-21T04:55:21.616387",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "51": {
+    "log_id": "51",
+    "actor_user_id": "45",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "11",
+    "occurred_at": "2025-10-21T04:57:36.381091",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "52": {
+    "log_id": "52",
+    "actor_user_id": "39",
+    "action_type": "update_space",
+    "target_entity_type": "space",
+    "target_entity_id": "1",
+    "occurred_at": "2025-10-21T04:56:50.246726",
+    "details": "{\"old\": {\"space_name\": \"Old Washington, Ryan and Cummings Re-engineered object-oriented leverage\", \"space_purpose\": \"Previous purpose description.\"}, \"new\": {\"space_name\": \"Washington, Ryan and Cummings Re-engineered object-oriented leverage\", \"space_purpose\": \"Space couple best issue interest level rock. Art rock song body.\\nMovie cell contain leg themselves. Kitchen technology nearly anything.\\nWhy unit support. Image loss ten total. Her world enter six.\"}}"
+  },
+  "53": {
+    "log_id": "53",
+    "actor_user_id": "8",
+    "action_type": "update_space",
+    "target_entity_type": "space",
+    "target_entity_id": "10",
+    "occurred_at": "2025-10-21T04:56:59.979945",
+    "details": "{\"old\": {\"space_name\": \"Old Tran-Cooper User-friendly neutral groupware\", \"space_purpose\": \"Previous purpose description.\"}, \"new\": {\"space_name\": \"Tran-Cooper User-friendly neutral groupware\", \"space_purpose\": \"Even edge building court build movie several. Course school everybody operation. Others wonder strategy fast guess few remain.\"}}"
+  },
+  "54": {
+    "log_id": "54",
+    "actor_user_id": "19",
+    "action_type": "export_space",
+    "target_entity_type": "space",
+    "target_entity_id": "10",
+    "occurred_at": "2025-10-21T04:56:56.069439",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "55": {
+    "log_id": "55",
+    "actor_user_id": "29",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "1",
+    "occurred_at": "2025-10-21T04:57:31.178732",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "56": {
+    "log_id": "56",
+    "actor_user_id": "34",
+    "action_type": "archive_content",
+    "target_entity_type": "page",
+    "target_entity_id": "38",
+    "occurred_at": "2025-10-21T04:53:44.125408",
+    "details": "{\"old\": {\"state\": \"draft\"}, \"new\": {\"state\": \"archived\"}}"
+  },
+  "57": {
+    "log_id": "57",
+    "actor_user_id": "44",
+    "action_type": "update_page",
+    "target_entity_type": "page",
+    "target_entity_id": "62",
+    "occurred_at": "2025-10-21T04:57:40.060193",
+    "details": "{\"old\": {\"title\": \"Previous: His oil west school American training occur.\", \"current_version\": 1, \"updated_by_user_id\": null}, \"new\": {\"title\": \"His oil west school American training occur.\", \"current_version\": 2, \"updated_by_user_id\": \"2\"}}"
+  },
+  "58": {
+    "log_id": "58",
+    "actor_user_id": "18",
+    "action_type": "rename_page",
+    "target_entity_type": "page",
+    "target_entity_id": "39",
+    "occurred_at": "2025-10-21T04:54:08.316812",
+    "details": "{\"old\": {\"title\": \"Old: Leader who article look husband.\"}, \"new\": {\"title\": \"Leader who article look husband.\"}}"
+  },
+  "59": {
+    "log_id": "59",
+    "actor_user_id": "32",
+    "action_type": "delete_space",
+    "target_entity_type": "space",
+    "target_entity_id": "1",
+    "occurred_at": "2025-10-21T04:56:53.636081",
+    "details": "{\"old\": {\"space_name\": \"Washington, Ryan and Cummings Re-engineered object-oriented leverage\", \"is_deleted\": false, \"deleted_at\": null}, \"new\": null}"
+  },
+  "60": {
+    "log_id": "60",
+    "actor_user_id": "13",
+    "action_type": "clone_page",
+    "target_entity_type": "page",
+    "target_entity_id": "54",
+    "occurred_at": "2025-10-21T04:54:40.676503",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "61": {
+    "log_id": "61",
+    "actor_user_id": "33",
+    "action_type": "clone_page",
+    "target_entity_type": "page",
+    "target_entity_id": "27",
+    "occurred_at": "2025-10-21T04:57:02.006155",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "62": {
+    "log_id": "62",
+    "actor_user_id": "24",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "5",
+    "occurred_at": "2025-10-21T04:58:18.832297",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "63": {
+    "log_id": "63",
+    "actor_user_id": "23",
+    "action_type": "delete_page",
+    "target_entity_type": "page",
+    "target_entity_id": "94",
+    "occurred_at": "2025-10-21T04:54:34.316745",
+    "details": "{\"old\": {\"page_id\": \"94\", \"title\": \"Know baby case happen fire everything.\", \"state\": \"archived\", \"is_trashed\": false}, \"new\": null}"
+  },
+  "64": {
+    "log_id": "64",
+    "actor_user_id": "25",
+    "action_type": "rename_page",
+    "target_entity_type": "page",
+    "target_entity_id": "17",
+    "occurred_at": "2025-10-21T04:56:13.896180",
+    "details": "{\"old\": {\"title\": \"Old: Issue each include radio conference company.\"}, \"new\": {\"title\": \"Issue each include radio conference company.\"}}"
+  },
+  "65": {
+    "log_id": "65",
+    "actor_user_id": "26",
+    "action_type": "unpublish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "72",
+    "occurred_at": "2025-10-21T04:55:14.719587",
+    "details": "{\"old\": {\"state\": \"published\", \"is_published\": true}, \"new\": {\"state\": \"draft\", \"is_published\": false}}"
+  },
+  "66": {
+    "log_id": "66",
+    "actor_user_id": "9",
+    "action_type": "delete_page",
+    "target_entity_type": "page",
+    "target_entity_id": "31",
+    "occurred_at": "2025-10-21T04:53:14.117273",
+    "details": "{\"old\": {\"page_id\": \"31\", \"title\": \"Those pressure street past.\", \"state\": \"published\", \"is_trashed\": false}, \"new\": null}"
+  },
+  "67": {
+    "log_id": "67",
+    "actor_user_id": "32",
+    "action_type": "manage_permissions",
+    "target_entity_type": "permission",
+    "target_entity_id": "9",
+    "occurred_at": "2025-10-21T04:54:51.590917",
+    "details": "{\"old\": {\"is_active\": true, \"revoked_by_user_id\": null, \"revoked_at\": null}, \"new\": {\"is_active\": false, \"revoked_by_user_id\": \"32\", \"revoked_at\": \"2025-10-21T04:58:27.378937\"}}"
+  },
+  "68": {
+    "log_id": "68",
+    "actor_user_id": "31",
+    "action_type": "import_space",
+    "target_entity_type": "space",
+    "target_entity_id": "3",
+    "occurred_at": "2025-10-21T04:57:08.703253",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "69": {
+    "log_id": "69",
+    "actor_user_id": "9",
+    "action_type": "update_space",
+    "target_entity_type": "space",
+    "target_entity_id": "5",
+    "occurred_at": "2025-10-21T04:58:35.190854",
+    "details": "{\"old\": {\"space_name\": \"Old Frost, Ryan and Ball User-centric user-facing secured line\", \"space_purpose\": \"Previous purpose description.\"}, \"new\": {\"space_name\": \"Frost, Ryan and Ball User-centric user-facing secured line\", \"space_purpose\": \"Issue we TV perhaps professional by. Medical project for recent never.\\nProfessor here security community notice image. Fight decision size.\"}}"
+  },
+  "70": {
+    "log_id": "70",
+    "actor_user_id": "27",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "14",
+    "occurred_at": "2025-10-21T04:57:25.149225",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "71": {
+    "log_id": "71",
+    "actor_user_id": "18",
+    "action_type": "configure_settings",
+    "target_entity_type": "space",
+    "target_entity_id": "6",
+    "occurred_at": "2025-10-21T04:57:37.176736",
+    "details": "{\"old\": {\"space_visibility\": \"private\", \"allow_comments\": false, \"notification_frequency\": \"never\"}, \"new\": {\"space_visibility\": \"public\", \"allow_comments\": true, \"notification_frequency\": \"daily\"}}"
+  },
+  "72": {
+    "log_id": "72",
+    "actor_user_id": "39",
+    "action_type": "delete_page",
+    "target_entity_type": "page",
+    "target_entity_id": "25",
+    "occurred_at": "2025-10-21T04:53:52.920479",
+    "details": "{\"old\": {\"page_id\": \"25\", \"title\": \"Most tree store either station loss.\", \"state\": \"published\", \"is_trashed\": false}, \"new\": null}"
+  },
+  "73": {
+    "log_id": "73",
+    "actor_user_id": "13",
+    "action_type": "publish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "66",
+    "occurred_at": "2025-10-21T04:56:39.559274",
+    "details": "{\"old\": {\"state\": \"draft\", \"is_published\": false}, \"new\": {\"state\": \"published\", \"is_published\": true}}"
+  },
+  "74": {
+    "log_id": "74",
+    "actor_user_id": "32",
+    "action_type": "publish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "40",
+    "occurred_at": "2025-10-21T04:53:23.986281",
+    "details": "{\"old\": {\"state\": \"draft\", \"is_published\": false}, \"new\": {\"state\": \"published\", \"is_published\": true}}"
+  },
+  "75": {
+    "log_id": "75",
+    "actor_user_id": "34",
+    "action_type": "create_space",
+    "target_entity_type": "space",
+    "target_entity_id": "2",
+    "occurred_at": "2025-10-21T04:53:33.632857",
+    "details": "{\"old\": null, \"new\": {\"space_id\": \"2\", \"space_key\": \"SPACE2\", \"space_name\": \"Brown PLC Configurable contextually-based architecture\", \"space_purpose\": \"Push dog build three. Often always bank price north. Various daughter respond draw how public. Lead upon very act perform.\", \"created_by_user_id\": \"30\", \"is_deleted\": false}}"
+  },
+  "76": {
+    "log_id": "76",
+    "actor_user_id": "28",
+    "action_type": "unpublish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "59",
+    "occurred_at": "2025-10-21T04:57:26.557604",
+    "details": "{\"old\": {\"state\": \"published\", \"is_published\": true}, \"new\": {\"state\": \"draft\", \"is_published\": false}}"
+  },
+  "77": {
+    "log_id": "77",
+    "actor_user_id": "18",
+    "action_type": "export_space",
+    "target_entity_type": "space",
+    "target_entity_id": "10",
+    "occurred_at": "2025-10-21T04:54:31.225550",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "78": {
+    "log_id": "78",
+    "actor_user_id": "25",
+    "action_type": "update_space",
+    "target_entity_type": "space",
+    "target_entity_id": "1",
+    "occurred_at": "2025-10-21T04:56:58.074421",
+    "details": "{\"old\": {\"space_name\": \"Old Washington, Ryan and Cummings Re-engineered object-oriented leverage\", \"space_purpose\": \"Previous purpose description.\"}, \"new\": {\"space_name\": \"Washington, Ryan and Cummings Re-engineered object-oriented leverage\", \"space_purpose\": \"Space couple best issue interest level rock. Art rock song body.\\nMovie cell contain leg themselves. Kitchen technology nearly anything.\\nWhy unit support. Image loss ten total. Her world enter six.\"}}"
+  },
+  "79": {
+    "log_id": "79",
+    "actor_user_id": "21",
+    "action_type": "publish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "77",
+    "occurred_at": "2025-10-21T04:55:11.531291",
+    "details": "{\"old\": {\"state\": \"draft\", \"is_published\": false}, \"new\": {\"state\": \"published\", \"is_published\": true}}"
+  },
+  "80": {
+    "log_id": "80",
+    "actor_user_id": "44",
+    "action_type": "publish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "37",
+    "occurred_at": "2025-10-21T04:54:00.099855",
+    "details": "{\"old\": {\"state\": \"draft\", \"is_published\": false}, \"new\": {\"state\": \"published\", \"is_published\": true}}"
+  },
+  "81": {
+    "log_id": "81",
+    "actor_user_id": "37",
+    "action_type": "create_space",
+    "target_entity_type": "space",
+    "target_entity_id": "2",
+    "occurred_at": "2025-10-21T04:58:17.462216",
+    "details": "{\"old\": null, \"new\": {\"space_id\": \"2\", \"space_key\": \"SPACE2\", \"space_name\": \"Brown PLC Configurable contextually-based architecture\", \"space_purpose\": \"Push dog build three. Often always bank price north. Various daughter respond draw how public. Lead upon very act perform.\", \"created_by_user_id\": \"30\", \"is_deleted\": false}}"
+  },
+  "82": {
+    "log_id": "82",
+    "actor_user_id": "30",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "29",
+    "occurred_at": "2025-10-21T04:58:24.904395",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "83": {
+    "log_id": "83",
+    "actor_user_id": "19",
+    "action_type": "move_page",
+    "target_entity_type": "page",
+    "target_entity_id": "98",
+    "occurred_at": "2025-10-21T04:55:47.195646",
+    "details": "{\"old\": {\"parent_page_id\": null, \"space_id\": \"10\"}, \"new\": {\"parent_page_id\": \"52\", \"space_id\": \"10\"}}"
+  },
+  "84": {
+    "log_id": "84",
+    "actor_user_id": "3",
+    "action_type": "rename_page",
+    "target_entity_type": "page",
+    "target_entity_id": "7",
+    "occurred_at": "2025-10-21T04:54:50.625493",
+    "details": "{\"old\": {\"title\": \"Old: Woman during necessary himself two meet these.\"}, \"new\": {\"title\": \"Woman during necessary himself two meet these.\"}}"
+  },
+  "85": {
+    "log_id": "85",
+    "actor_user_id": "39",
+    "action_type": "archive_content",
+    "target_entity_type": "page",
+    "target_entity_id": "25",
+    "occurred_at": "2025-10-21T04:53:53.941241",
+    "details": "{\"old\": {\"state\": \"published\"}, \"new\": {\"state\": \"archived\"}}"
+  },
+  "86": {
+    "log_id": "86",
+    "actor_user_id": "26",
+    "action_type": "archive_content",
+    "target_entity_type": "page",
+    "target_entity_id": "37",
+    "occurred_at": "2025-10-21T04:53:12.836495",
+    "details": "{\"old\": {\"state\": \"archived\"}, \"new\": {\"state\": \"archived\"}}"
+  },
+  "87": {
+    "log_id": "87",
+    "actor_user_id": "5",
+    "action_type": "rename_page",
+    "target_entity_type": "page",
+    "target_entity_id": "65",
+    "occurred_at": "2025-10-21T04:52:41.521807",
+    "details": "{\"old\": {\"title\": \"Old: Smile positive at.\"}, \"new\": {\"title\": \"Smile positive at.\"}}"
+  },
+  "88": {
+    "log_id": "88",
+    "actor_user_id": "31",
+    "action_type": "archive_content",
+    "target_entity_type": "page",
+    "target_entity_id": "36",
+    "occurred_at": "2025-10-21T04:56:03.114159",
+    "details": "{\"old\": {\"state\": \"draft\"}, \"new\": {\"state\": \"archived\"}}"
+  },
+  "89": {
+    "log_id": "89",
+    "actor_user_id": "42",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "4",
+    "occurred_at": "2025-10-21T04:53:46.255446",
+    "details": "{\"old\": null, \"new\": null}"
+  },
+  "90": {
+    "log_id": "90",
+    "actor_user_id": "11",
+    "action_type": "manage_permissions",
+    "target_entity_type": "permission",
+    "target_entity_id": "13",
+    "occurred_at": "2025-10-21T04:56:41.547018",
+    "details": "{\"old\": {\"is_active\": true, \"revoked_by_user_id\": null, \"revoked_at\": null}, \"new\": {\"is_active\": false, \"revoked_by_user_id\": \"11\", \"revoked_at\": \"2025-10-21T04:57:57.771748\"}}"
+  },
+  "91": {
+    "log_id": "91",
+    "actor_user_id": "26",
+    "action_type": "delete_page",
+    "target_entity_type": "page",
+    "target_entity_id": "72",
+    "occurred_at": "2025-10-21T04:55:38.232946",
+    "details": "{\"old\": {\"page_id\": \"72\", \"title\": \"Wide particular sell six doctor.\", \"state\": \"published\", \"is_trashed\": false}, \"new\": null}"
+  },
+  "92": {
+    "log_id": "92",
+    "actor_user_id": "26",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "7",
+    "occurred_at": "2025-10-21T04:55:28.443708",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "93": {
+    "log_id": "93",
+    "actor_user_id": "41",
+    "action_type": "unpublish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "52",
+    "occurred_at": "2025-10-21T04:54:53.084790",
+    "details": "{\"old\": {\"state\": \"published\", \"is_published\": true}, \"new\": {\"state\": \"draft\", \"is_published\": false}}"
+  },
+  "94": {
+    "log_id": "94",
+    "actor_user_id": "35",
+    "action_type": "update_space",
+    "target_entity_type": "space",
+    "target_entity_id": "1",
+    "occurred_at": "2025-10-21T04:56:42.254107",
+    "details": "{\"old\": {\"space_name\": \"Old Washington, Ryan and Cummings Re-engineered object-oriented leverage\", \"space_purpose\": \"Previous purpose description.\"}, \"new\": {\"space_name\": \"Washington, Ryan and Cummings Re-engineered object-oriented leverage\", \"space_purpose\": \"Space couple best issue interest level rock. Art rock song body.\\nMovie cell contain leg themselves. Kitchen technology nearly anything.\\nWhy unit support. Image loss ten total. Her world enter six.\"}}"
+  },
+  "95": {
+    "log_id": "95",
+    "actor_user_id": "3",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "23",
+    "occurred_at": "2025-10-21T04:56:47.219773",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "96": {
+    "log_id": "96",
+    "actor_user_id": "24",
+    "action_type": "publish_page",
+    "target_entity_type": "page",
+    "target_entity_id": "67",
+    "occurred_at": "2025-10-21T04:55:27.475866",
+    "details": "{\"old\": {\"state\": \"draft\", \"is_published\": false}, \"new\": {\"state\": \"published\", \"is_published\": true}}"
+  },
+  "97": {
+    "log_id": "97",
+    "actor_user_id": "32",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "20",
+    "occurred_at": "2025-10-21T04:52:49.407456",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "98": {
+    "log_id": "98",
+    "actor_user_id": "35",
+    "action_type": "grant_admin_rights",
+    "target_entity_type": "permission",
+    "target_entity_id": "11",
+    "occurred_at": "2025-10-21T04:53:44.433214",
+    "details": "{\"old\": {\"permission_type\": \"edit\"}, \"new\": {\"permission_type\": \"admin\"}}"
+  },
+  "99": {
+    "log_id": "99",
+    "actor_user_id": "42",
+    "action_type": "delete_page",
+    "target_entity_type": "page",
+    "target_entity_id": "21",
+    "occurred_at": "2025-10-21T04:56:25.184128",
+    "details": "{\"old\": {\"page_id\": \"21\", \"title\": \"Against stop how account ten.\", \"state\": \"published\", \"is_trashed\": false}, \"new\": null}"
+  },
+  "100": {
+    "log_id": "100",
+    "actor_user_id": "28",
+    "action_type": "unwatch_content",
+    "target_entity_type": "watcher",
+    "target_entity_id": "10",
+    "occurred_at": "2025-10-21T04:56:15.138585",
+    "details": "{\"old\": null, \"new\": null}"
+  }
+}

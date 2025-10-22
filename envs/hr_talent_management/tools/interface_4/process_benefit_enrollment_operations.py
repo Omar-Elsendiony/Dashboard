@@ -60,7 +60,7 @@ class ProcessBenefitEnrollmentOperations(Tool):
             except ValueError:
                 return False
         
-        valid_operations = ["create_enrollment"]
+        valid_operations = ["create_enrollment", "approve_enrollment"]
         if operation_type not in valid_operations:
             return json.dumps({
                 "success": False,
@@ -265,6 +265,106 @@ class ProcessBenefitEnrollmentOperations(Tool):
                 "message": f"Benefit enrollment {new_enrollment_id} created successfully. Status: pending. Documents uploaded: {len(uploaded_docs)}.",
                 "uploaded_documents": uploaded_docs
             })
+
+        # --- Benefit Enrollment Approval (approve_enrollment) ---
+        elif operation_type == "approve_enrollment":
+            required_fields = ["enrollment_id", "hr_manager_approval_status", "approved_by", "approval_date"]
+            missing_fields = [field for field in required_fields if field not in kwargs or kwargs[field] is None]
+
+            if missing_fields:
+                return json.dumps({
+                    "success": False,
+                    "enrollment_id": None,
+                    "message": f"Halt: Missing mandatory fields for approval: {', '.join(missing_fields)}",
+                    "transfer_to_human": True
+                })
+
+            enrollment_id_str = str(kwargs["enrollment_id"])
+            approver_id_str = str(kwargs["approved_by"])
+            enrollment = enrollments.get(enrollment_id_str)
+
+            # 1. Authorization Check (Approver must be an active HR Admin/Manager/Director)
+            approver = users.get(approver_id_str)
+            if not approver:
+                return json.dumps({"success": False, "enrollment_id": enrollment_id_str, "message": "Halt: Operation failed due to system errors - approver user not found", "transfer_to_human": True})
+
+            if approver.get("employment_status") != "active" or approver.get("role") not in ["hr_manager", "hr_admin", "hr_payroll_administrator"]:
+                return json.dumps({"success": False, "enrollment_id": enrollment_id_str, "message": "Halt: Unauthorized user attempting to approve/reject enrollment - must be active HR Admin/Manager/Director", "transfer_to_human": True})
+
+
+            # 2. Verify Enrollment Exists and Status
+            if not enrollment:
+                return json.dumps({
+                    "success": False,
+                    "enrollment_id": enrollment_id_str,
+                    "message": f"Halt: Enrollment {enrollment_id_str} not found.",
+                    "transfer_to_human": True
+                })
+
+            # Check if enrollment is in 'pending' status for HR Manager approval
+            if enrollment.get("hr_manager_approval_status") != "pending":
+                return json.dumps({
+                    "success": False,
+                    "enrollment_id": enrollment_id_str,
+                    "message": f"Halt: Enrollment {enrollment_id_str} is not in 'pending' status for HR Manager approval.",
+                    "transfer_to_human": True
+                })
+
+            # 3. Validation
+            valid_statuses = ["approved", "rejected"]
+            approval_status = str(kwargs["hr_manager_approval_status"])
+
+            status_error = validate_status_field(approval_status, "hr_manager_approval_status", valid_statuses)
+            if status_error:
+                return json.dumps({"success": False, "enrollment_id": enrollment_id_str, "message": f"Halt: {status_error}", "transfer_to_human": True})
+
+                # Date format validation (allow_future=True is acceptable for an approval date)
+            date_error = validate_date_format(kwargs["approval_date"], "approval_date", allow_future=True)
+            if date_error:
+                return json.dumps({"success": False, "enrollment_id": enrollment_id_str, "message": f"Halt: {date_error}", "transfer_to_human": True})
+
+            converted_approval_date = convert_date_format(kwargs["approval_date"])
+
+            # 4. Execute Approval/Rejection
+            timestamp = "2025-10-10T12:00:00"
+
+            enrollment["hr_manager_approval_status"] = approval_status
+            enrollment["approved_by"] = approver_id_str
+            enrollment["approval_date"] = converted_approval_date
+            enrollment["updated_at"] = timestamp
+
+            # If approved, update the main enrollment status to 'approved'
+            if approval_status == "approved":
+                enrollment["enrollment_status"] = "approved"
+            else:
+                # If rejected, update the main enrollment status to 'rejected'
+                enrollment["enrollment_status"] = "rejected"
+
+            # SOP: Create Audit Entry
+            try:
+                audit_trails = data.setdefault("audit_trails", {})
+                new_audit_id = str(max([int(k) for k in audit_trails.keys()] + [0]) + 1)
+                audit_entry = {
+                    "audit_id": new_audit_id,
+                    "reference_id": enrollment_id_str,
+                    "reference_type": "benefit",
+                    "action": approval_status, # action is 'approved' or 'rejected'
+                    "user_id": approver_id_str,
+                    "field_name": "hr_manager_approval_status",
+                    "old_value": "pending",
+                    "new_value": approval_status,
+                    "created_at": timestamp
+                }
+                audit_trails[new_audit_id] = audit_entry
+            except Exception:
+                pass # If audit fails, we still report success for the primary operation
+
+            return json.dumps({
+                "success": True,
+                "enrollment_id": enrollment_id_str,
+                "message": f"Benefit enrollment {enrollment_id_str} successfully marked as '{approval_status}'.",
+                "enrollment_status": enrollment["enrollment_status"]
+            })
         
         return json.dumps({
             "success": False,
@@ -278,14 +378,14 @@ class ProcessBenefitEnrollmentOperations(Tool):
             "type": "function",
             "function": {
                 "name": "process_benefit_enrollment_operations",
-                "description": "Manages benefit enrollment operations. 'create_enrollment' creates benefit enrollments with proper validation of enrollment windows, contribution amounts, and supporting documents.",
+                "description": "Manages benefit enrollment lifecycle operations. 'create_enrollment' creates a new benefit enrollment (status: pending). 'approve_enrollment' allows an HR Manager/Admin/Director to approve or reject a pending enrollment.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "operation_type": {
                             "type": "string",
-                            "description": "Type of operation to perform: 'create_enrollment'.",
-                            "enum": ["create_enrollment"]
+                            "description": "Type of operation to perform: 'create_enrollment' or 'approve_enrollment'.",
+                            "enum": ["create_enrollment", "approve_enrollment"]
                         },
                         "employee_id": {
                             "type": "string",
@@ -322,6 +422,23 @@ class ProcessBenefitEnrollmentOperations(Tool):
                         "user_id": {
                             "type": "string",
                             "description": "Unique identifier of the HR Admin/Manager/Director creating the enrollment (required for all operations)."
+                        },
+                        "enrollment_id": {
+                            "type": "string",
+                            "description": "Unique identifier of the enrollment to approve/reject (required for approve_enrollment)."
+                        },
+                        "hr_manager_approval_status": {
+                            "type": "string",
+                            "description": "Approval status: 'approved' or 'rejected' (required for approve_enrollment).",
+                            "enum": ["approved", "rejected"]
+                        },
+                        "approved_by": {
+                            "type": "string",
+                            "description": "Unique identifier of the HR Admin/Manager/Director approving the enrollment (required for approve_enrollment)."
+                        },
+                        "approval_date": {
+                            "type": "string",
+                            "description": "Date when the enrollment was approved/rejected (YYYY-MM-DD, required for approve_enrollment)."
                         },
                         "supporting_documents": {
                             "type": "array",
