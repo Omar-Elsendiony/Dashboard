@@ -1,7 +1,7 @@
 {
   "1": {
     "employee_id": "1",
-    "candidate_id": "1",
+    "candidate_id": null,
     "first_name": "Ryan",
     "last_name": "Romero",
     "employee_type": "contractor",
@@ -22,7 +22,7 @@
   },
   "2": {
     "employee_id": "2",
-    "candidate_id": "85",
+    "candidate_id": null,
     "first_name": "John",
     "last_name": "Scott",
     "employee_type": "intern",
@@ -43,7 +43,7 @@
   },
   "3": {
     "employee_id": "3",
-    "candidate_id": "56",
+    "candidate_id": null,
     "first_name": "Sarah",
     "last_name": "Wiggins",
     "employee_type": "contractor",
@@ -64,7 +64,7 @@
   },
   "4": {
     "employee_id": "4",
-    "candidate_id": "62",
+    "candidate_id": null,
     "first_name": "Larry",
     "last_name": "Morgan",
     "employee_type": "part_time",
@@ -85,7 +85,7 @@
   },
   "5": {
     "employee_id": "5",
-    "candidate_id": "51",
+    "candidate_id": null,
     "first_name": "Alejandra",
     "last_name": "Carrillo",
     "employee_type": "contractor",
@@ -106,7 +106,7 @@
   },
   "6": {
     "employee_id": "6",
-    "candidate_id": "80",
+    "candidate_id": null,
     "first_name": "Nicole",
     "last_name": "Brown",
     "employee_type": "part_time",
@@ -127,7 +127,7 @@
   },
   "7": {
     "employee_id": "7",
-    "candidate_id": "42",
+    "candidate_id": null,
     "first_name": "Lisa",
     "last_name": "Perez",
     "employee_type": "contractor",
@@ -148,7 +148,7 @@
   },
   "8": {
     "employee_id": "8",
-    "candidate_id": "69",
+    "candidate_id": null,
     "first_name": "Jamie",
     "last_name": "Hodges",
     "employee_type": "contractor",
@@ -169,7 +169,7 @@
   },
   "9": {
     "employee_id": "9",
-    "candidate_id": "54",
+    "candidate_id": null,
     "first_name": "Annette",
     "last_name": "Silva",
     "employee_type": "contractor",
@@ -190,7 +190,7 @@
   },
   "10": {
     "employee_id": "10",
-    "candidate_id": "57",
+    "candidate_id": null,
     "first_name": "Victoria",
     "last_name": "Hebert",
     "employee_type": "full_time",
@@ -211,7 +211,7 @@
   },
   "11": {
     "employee_id": "11",
-    "candidate_id": "43",
+    "candidate_id": null,
     "first_name": "Elizabeth",
     "last_name": "Cowan",
     "employee_type": "intern",
@@ -232,7 +232,7 @@
   },
   "12": {
     "employee_id": "12",
-    "candidate_id": "69",
+    "candidate_id": null,
     "first_name": "Alexis",
     "last_name": "King",
     "employee_type": "contractor",
@@ -253,7 +253,7 @@
   },
   "13": {
     "employee_id": "13",
-    "candidate_id": "39",
+    "candidate_id": null,
     "first_name": "Tracy",
     "last_name": "Hammond",
     "employee_type": "contractor",
@@ -274,7 +274,7 @@
   },
   "14": {
     "employee_id": "14",
-    "candidate_id": "2",
+    "candidate_id": null,
     "first_name": "Hailey",
     "last_name": "Ryan",
     "employee_type": "full_time",
@@ -295,7 +295,7 @@
   },
   "15": {
     "employee_id": "15",
-    "candidate_id": "92",
+    "candidate_id": null,
     "first_name": "Michael",
     "last_name": "Morrison",
     "employee_type": "contractor",
