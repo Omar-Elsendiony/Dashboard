@@ -781,7 +781,7 @@ For P3 or P4 incidents, bridge initiation requires prior Incident Manager approv
 2. Obtain the following **required** information from the user:  
    * **Incident identifying information**: Incident number or other details to locate the incident by following SOP 8.1  
    * **Problem identifying information**: Incident number or other details to locate the incident by following SOP 8.1  
-   * **Communication type**: Type of communication (status_update, resolution_notice, escalation_notice, bridge_invitation)  
+   * **Communication type**: Type of communication (status_update, resolution_notice, escalation_notice, bridge_invitation, other)  
    * **Recipient type**: Type of recipient (client, internal, executive)  
    * **Recipient information (optional)**: Specific user details if targeting an individual   
    * **Message content**: Communication content  
