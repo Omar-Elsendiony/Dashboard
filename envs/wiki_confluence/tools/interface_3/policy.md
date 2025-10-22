@@ -258,7 +258,7 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 
 1. Obtain space_id (required), changed_by_user_id (required), old_config (required: JSON object), and new_config (required: JSON object).
 2. Call retrieve_config_history to fetch the last configuration version number to determine the next version.
-3. Call record_config_change to log the configuration update in the history table.
+3. Call track_config_change to log the configuration update in the history table.
 4. Create an audit entry with register_new_audit_trail.
 
 **Halt, and use escalate_to_human if you receive the following errors; otherwise complete the SOP:**
@@ -308,7 +308,7 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 2. Call retrieve_page to verify the page exists and retrieve its current version number for optimistic locking against current_version_number.
 3. Call manipulate_pages to apply the title, parent, and/or space changes to the primary page record.
 4. Call manipulate_page_versions to create a new version record with the provided content_snapshot.
-5. Call send_notification to confirm the successful update and new version number to the user.
+5. Call transmit_notification to confirm the successful update and new version number to the user.
 6. Create an audit entry with register_new_audit_trail.
 
 **Halt, and use escalate_to_human if you receive the following errors; otherwise complete the SOP:**
@@ -507,8 +507,8 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Content Contributor
 
 1. Obtain target_entity_type (required: 'page' or 'space'), target_entity_id (required), requested_by_user_id (required), steps (required: list of JSON objects defining order and assigned users/groups), and reason (optional).
-2. Call create_approval_request to register the workflow and steps.
-3. Call send_notification to immediately alert the first assigned approver.
+2. Call generate_approval_request to register the workflow and steps.
+3. Call transmit_notification to immediately alert the first assigned approver.
 4. Create an audit entry with register_new_audit_trail.
 
 **Halt, and use escalate_to_human if you receive the following errors; otherwise complete the SOP:**
@@ -529,9 +529,9 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Reviewer/Approver (The assigned user or member of the assigned group)
 
 1. Obtain step_id (required), approver_user_id (required), decision (required: 'approve', 'reject', 'escalate', or 'cancel'), and comment (optional).
-2. Call decide_approval_step to record the decision and update the step/request status.
+2. Call handle_approval_step to record the decision and update the step/request status.
 3. Call retrieve_approval_request to check the overall final status of the approval request.
-4. If the overall status is 'approved' or 'rejected', call send_notification to inform the initiator of the final outcome.
+4. If the overall status is 'approved' or 'rejected', call transmit_notification to inform the initiator of the final outcome.
 5. Create an audit entry with register_new_audit_trail.
 
 **Halt, and use escalate_to_human if you receive the following errors; otherwise complete the SOP:**
@@ -554,7 +554,7 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 
 1. Obtain recipient_user_id (required), event_type (required: 'system_alert', 'approval_update', etc.), message (required), sender_user_id (optional), and channel (optional: notification channel, defaults to 'system').
 2. Call retrieve_user to validate the existence of the recipient account.
-3. Call send_notification to create and dispatch the notification record.
+3. Call transmit_notification to create and dispatch the notification record.
 4. Create an audit entry with register_new_audit_trail.
 
 **Halt, and use escalate_to_human if you receive the following errors; otherwise complete the SOP:**
@@ -596,7 +596,7 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 
 1. Obtain space_id (required), format (required: 'PDF', 'HTML', or 'XML'), requested_by_user_id (required), and destination (optional: location for exported file).
 2. Call manipulate_exports to queue the export task and receive the job_id.
-3. Call send_notification to confirm job submission to the requesting user.
+3. Call transmit_notification to confirm job submission to the requesting user.
 4. Create an audit entry with register_new_audit_trail.
 
 **Halt, and use escalate_to_human if you receive the following errors; otherwise complete the SOP:**

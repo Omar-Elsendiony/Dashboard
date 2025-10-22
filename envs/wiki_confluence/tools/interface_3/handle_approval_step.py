@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class DecideApprovalStep(Tool):
+class HandleApprovalStep(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], request_id: str, approver_user_id: str,
                decision: str, comment: Optional[str] = None) -> str:
@@ -99,7 +99,7 @@ class DecideApprovalStep(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "decide_approval_step",
+                "name": "handle_approval_step",
                 "description": "Record a user's formal decision on an approval request in the Confluence system. This tool processes approval workflow decisions by recording approver responses (approve, reject, escalate, cancel) with optional comments and updating request status accordingly. Validates approver authorization and request state before recording decisions. Essential for workflow completion, governance enforcement, collaborative review processes, and maintaining decision audit trails.",
                 "parameters": {
                     "type": "object",

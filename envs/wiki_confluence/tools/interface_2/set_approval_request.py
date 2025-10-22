@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-class CreateApprovalRequest(Tool):
+class SetApprovalRequest(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], target_entity_type: str, target_entity_id: str,
                requested_by_user_id: str, reason: Optional[str] = None,
@@ -79,7 +79,7 @@ class CreateApprovalRequest(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "create_approval_request",
+                "name": "set_approval_request",
                 "description": "Create a new approval request workflow in the Confluence system. This tool initiates formal approval processes for content review or system changes requiring authorization. Creates approval request records with target entity specification, requester attribution, optional reasons, due dates, and custom metadata. Sets initial status as pending. Essential for workflow management, content governance, compliance processes, and collaborative review workflows.",
                 "parameters": {
                     "type": "object",

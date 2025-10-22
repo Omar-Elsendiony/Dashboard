@@ -2,11 +2,11 @@ import json
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
-class GetWatchers(Tool):
+class AccessPermissions(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], entity_type: str, entity_id: str) -> str:
         """
-        Retrieve all watchers for a space or page.
+        Retrieve all permissions for a space or page.
         """
         
         if not isinstance(data, dict):
@@ -15,7 +15,7 @@ class GetWatchers(Tool):
                 "error": "Invalid data format"
             })
         
-        watchers = data.get("watchers", {})
+        permissions = data.get("permissions", {})
         spaces = data.get("spaces", {})
         pages = data.get("pages", {})
         
@@ -40,20 +40,23 @@ class GetWatchers(Tool):
                     "error": f"Page {entity_id} not found"
                 })
         
-        # Find all watchers for the entity
-        matching_watchers = []
-        for watcher_id, watcher in watchers.items():
-            if entity_type == "space" and watcher.get("space_id") == entity_id:
-                matching_watchers.append(watcher.copy())
-            elif entity_type == "page" and watcher.get("page_id") == entity_id:
-                matching_watchers.append(watcher.copy())
+        # Find all permissions for the entity
+        matching_permissions = []
+        for permission_id, permission in permissions.items():
+            if entity_type == "space" and permission.get("space_id") == entity_id:
+                matching_permissions.append(permission.copy())
+            elif entity_type == "page" and permission.get("page_id") == entity_id:
+                matching_permissions.append(permission.copy())
+        
+        # Sort by granted_at descending
+        matching_permissions.sort(key=lambda x: x.get("granted_at", ""), reverse=True)
         
         return json.dumps({
             "success": True,
             "entity_type": entity_type,
             "entity_id": entity_id,
-            "count": len(matching_watchers),
-            "watchers": matching_watchers
+            "count": len(matching_permissions),
+            "permissions": matching_permissions
         })
     
     @staticmethod
@@ -61,14 +64,14 @@ class GetWatchers(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "get_watchers",
-                "description": "Retrieve all watchers for a space or page in the Confluence system. This tool fetches the complete list of users and groups subscribed to receive notifications about changes to a specific space or page. Returns watcher details including watcher IDs, types (user or group), and subscription timestamps. Essential for notification management, understanding content subscribers, and managing watch lists.",
+                "name": "access_permissions",
+                "description": "Retrieve all permissions for a space or page in the Confluence system. This tool fetches the complete list of access control permissions including permission IDs, types (view, edit, admin), grantees (users or groups), grantors, timestamps, active status, and expiration dates. Returns permissions sorted by grant date with most recent first. Essential for access control auditing, permission management, security reviews, and understanding who has access to content.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "entity_type": {
                             "type": "string",
-                            "description": "Type of entity to get watchers for (required)",
+                            "description": "Type of entity to get permissions for (required)",
                             "enum": ["space", "page"]
                         },
                         "entity_id": {

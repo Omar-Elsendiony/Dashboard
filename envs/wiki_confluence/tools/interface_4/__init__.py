@@ -8,8 +8,10 @@ from .address_space_features import AddressSpaceFeatures
 from .address_spaces import AddressSpaces
 from .address_users import AddressUsers
 from .address_watchers import AddressWatchers
-from .create_approval_request import CreateApprovalRequest
-from .decide_approval_step import DecideApprovalStep
+from .capture_config_change import CaptureConfigChange
+from .deliver_notification import DeliverNotification
+from .establish_approval_request import EstablishApprovalRequest
+from .execute_approval_step import ExecuteApprovalStep
 from .handover_to_human import HandOverToHuman
 from .lookup_approval_request import LookupApprovalRequest
 from .lookup_config_history import LookupConfigHistory
@@ -20,9 +22,7 @@ from .lookup_permissions import LookupPermissions
 from .lookup_space import LookupSpace
 from .lookup_user import LookupUser
 from .lookup_watchers import LookupWatchers
-from .record_config_change import RecordConfigChange
 from .record_new_audit_trail import RecordNewAuditTrail
-from .send_notification import SendNotification
 
 ALL_TOOLS_INTERFACE_4 = [
     AddressExports,
@@ -35,8 +35,10 @@ ALL_TOOLS_INTERFACE_4 = [
     AddressSpaces,
     AddressUsers,
     AddressWatchers,
-    CreateApprovalRequest,
-    DecideApprovalStep,
+    CaptureConfigChange,
+    DeliverNotification,
+    EstablishApprovalRequest,
+    ExecuteApprovalStep,
     HandOverToHuman,
     LookupApprovalRequest,
     LookupConfigHistory,
@@ -47,7 +49,5 @@ ALL_TOOLS_INTERFACE_4 = [
     LookupSpace,
     LookupUser,
     LookupWatchers,
-    RecordConfigChange,
     RecordNewAuditTrail,
-    SendNotification
 ]

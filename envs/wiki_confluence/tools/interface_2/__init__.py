@@ -1,6 +1,5 @@
-from .create_approval_request import CreateApprovalRequest
 from .create_new_audit_trail import CreateNewAuditTrail
-from .decide_approval_step import DecideApprovalStep
+from .dispatch_notification import DispatchNotification
 from .fetch_approval_request import FetchApprovalRequest
 from .fetch_config_history import FetchConfigHistory
 from .fetch_group import FetchGroup
@@ -10,8 +9,9 @@ from .fetch_permissions import FetchPermissions
 from .fetch_space import FetchSpace
 from .fetch_user import FetchUser
 from .fetch_watchers import FetchWatchers
-from .record_config_change import RecordConfigChange
-from .send_notification import SendNotification
+from .log_config_change import LogConfigChange
+from .set_approval_decision import SetApprovalDecision
+from .set_approval_request import SetApprovalRequest
 from .set_exports import SetExports
 from .set_group_memberships import SetGroupMemberships
 from .set_groups import SetGroups
@@ -25,9 +25,8 @@ from .set_watchers import SetWatchers
 from .switch_to_human import SwitchToHuman
 
 ALL_TOOLS_INTERFACE_2 = [
-    CreateApprovalRequest,
     CreateNewAuditTrail,
-    DecideApprovalStep,
+    DispatchNotification,
     FetchApprovalRequest,
     FetchConfigHistory,
     FetchGroup,
@@ -37,8 +36,9 @@ ALL_TOOLS_INTERFACE_2 = [
     FetchSpace,
     FetchUser,
     FetchWatchers,
-    RecordConfigChange,
-    SendNotification,
+    LogConfigChange,
+    SetApprovalDecision,
+    SetApprovalRequest,
     SetExports,
     SetGroupMemberships,
     SetGroups,
