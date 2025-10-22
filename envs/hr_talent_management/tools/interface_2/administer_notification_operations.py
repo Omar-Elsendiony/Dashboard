@@ -172,6 +172,16 @@ class AdministerNotificationOperations(Tool):
                     "message": "Subject cannot exceed 255 characters"
                 })
 
+            # 6. Validate notification_status if provided, otherwise default to "pending"
+            notification_status = kwargs.get("notification_status", "pending")
+            valid_statuses = ["pending", "sent", "failed", "bounced"]
+            if notification_status not in valid_statuses:
+                return json.dumps({
+                    "success": False,
+                    "notification_id": None,
+                    "message": f"Invalid notification_status. Must be one of: {', '.join(valid_statuses)}"
+                })
+
 
             # 7. Create Notification
             new_notification_id = generate_id(notifications)
@@ -186,7 +196,7 @@ class AdministerNotificationOperations(Tool):
                 "reference_type": kwargs["reference_type"],
                 "reference_id": reference_id,
                 "subject": subject.strip(),
-                "notification_status": "pending",
+                "notification_status": notification_status,
                 "sent_at": None,
                 "failed_reason": None,
                 "created_at": timestamp
@@ -348,7 +358,7 @@ class AdministerNotificationOperations(Tool):
                         },
                         "notification_status": {
                             "type": "string",
-                            "description": "New notification status (required for update_notification_status)",
+                            "description": "Notification status - for create_notification: initial status (optional, defaults to 'pending' if not provided); for update_notification_status: new status (required)",
                             "enum": ["pending", "sent", "failed", "bounced"]
                         },
                         "user_id": {
