@@ -7,11 +7,10 @@ from tau_bench.envs.wiki_confluence.tools import (
     ALL_TOOLS_INTERFACE_4,
     ALL_TOOLS_INTERFACE_5,
 )
-from tau_bench.envs.wiki_confluence.wiki import WIKI
 from tau_bench.envs.base import Env
 from typing import Optional, Union
 from tau_bench.envs.user import UserStrategy
-
+import os
 
 class MockWikiConfluenceDomainEnv(Env):
     def __init__(
@@ -53,12 +52,31 @@ class MockWikiConfluenceDomainEnv(Env):
                 tools = ALL_TOOLS_INTERFACE_5
             case _:
                 raise ValueError(f"Unknown interface_num: {interface_num}")
+            
+        # Load wiki based on interface_num
+        folder_path = os.path.dirname(__file__)
+        match interface_num:
+            case 1:
+                wiki_path = os.path.join(folder_path, "tools", "interface_1", "policy.md")
+            case 2:
+                wiki_path = os.path.join(folder_path, "tools", "interface_2", "policy.md")
+            case 3:
+                wiki_path = os.path.join(folder_path, "tools", "interface_3", "policy.md")
+            case 4:
+                wiki_path = os.path.join(folder_path, "tools", "interface_4", "policy.md")
+            case 5:
+                wiki_path = os.path.join(folder_path, "tools", "interface_5", "policy.md")
+            case _:
+                raise ValueError(f"Unknown interface_num: {interface_num}")
+        
+        with open(wiki_path, "r") as f:
+            wiki = f.read()
         
         super().__init__(
             data_load_func=load_data,
             tools=tools,
             tasks=tasks,
-            wiki=WIKI,
+            wiki=wiki,
             rules=RULES,
             user_strategy=user_strategy,
             user_model=user_model,

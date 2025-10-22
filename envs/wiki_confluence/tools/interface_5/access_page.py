@@ -2,7 +2,7 @@ import json
 from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
-class GetPage(Tool):
+class AccessPage(Tool):
     @staticmethod
     def invoke(data: Dict[str, Any], page_id: str) -> str:
         """
@@ -34,7 +34,7 @@ class GetPage(Tool):
         return {
             "type": "function",
             "function": {
-                "name": "get_page",
+                "name": "access_page",
                 "description": "Retrieve page details by ID in the Confluence system. This tool fetches comprehensive page information including page ID, space ID, parent page ID, title, content format, current version, state, creator, editor, timestamps, and publication status. Essential for page verification, content management, version tracking, and validating page existence before performing operations.",
                 "parameters": {
                     "type": "object",

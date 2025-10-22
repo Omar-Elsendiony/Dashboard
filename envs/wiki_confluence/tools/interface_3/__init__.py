@@ -1,6 +1,6 @@
-from .create_approval_request import CreateApprovalRequest
-from .decide_approval_step import DecideApprovalStep
 from .escalate_to_human import EscalateToHuman
+from .generate_approval_request import GenerateApprovalRequest
+from .handle_approval_step import HandleApprovalStep
 from .manipulate_exports import ManipulateExports
 from .manipulate_group_memberships import ManipulateGroupMemberships
 from .manipulate_groups import ManipulateGroups
@@ -11,7 +11,6 @@ from .manipulate_space_features import ManipulateSpaceFeatures
 from .manipulate_spaces import ManipulateSpaces
 from .manipulate_users import ManipulateUsers
 from .manipulate_watchers import ManipulateWatchers
-from .record_config_change import RecordConfigChange
 from .register_new_audit_trail import RegisterNewAuditTrail
 from .retrieve_approval_request import RetrieveApprovalRequest
 from .retrieve_config_history import RetrieveConfigHistory
@@ -22,12 +21,13 @@ from .retrieve_permissions import RetrievePermissions
 from .retrieve_space import RetrieveSpace
 from .retrieve_user import RetrieveUser
 from .retrieve_watchers import RetrieveWatchers
-from .send_notification import SendNotification
+from .track_config_change import TrackConfigChange
+from .transmit_notification import TransmitNotification
 
 ALL_TOOLS_INTERFACE_3 = [
-    CreateApprovalRequest,
-    DecideApprovalStep,
     EscalateToHuman,
+    GenerateApprovalRequest,
+    HandleApprovalStep,
     ManipulateExports,
     ManipulateGroupMemberships,
     ManipulateGroups,
@@ -38,7 +38,6 @@ ALL_TOOLS_INTERFACE_3 = [
     ManipulateSpaces,
     ManipulateUsers,
     ManipulateWatchers,
-    RecordConfigChange,
     RegisterNewAuditTrail,
     RetrieveApprovalRequest,
     RetrieveConfigHistory,
@@ -49,5 +48,6 @@ ALL_TOOLS_INTERFACE_3 = [
     RetrieveSpace,
     RetrieveUser,
     RetrieveWatchers,
-    SendNotification
+    TrackConfigChange,
+    TransmitNotification
 ]

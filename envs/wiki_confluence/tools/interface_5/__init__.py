@@ -1,15 +1,14 @@
-from .create_approval_request import CreateApprovalRequest
-from .decide_approval_step import DecideApprovalStep
+from .access_approval_request import AccessApprovalRequest
+from .access_config_history import AccessConfigHistory
+from .access_group import AccessGroup
+from .access_notifications import AccessNotifications
+from .access_page import AccessPage
+from .access_permissions import AccessPermissions
+from .access_space import AccessSpace
+from .access_user import AccessUser
+from .access_watchers import AccessWatchers
+from .broadcast_notification import BroadcastNotification
 from .generate_new_audit_trail import GenerateNewAuditTrail
-from .get_approval_request import GetApprovalRequest
-from .get_config_history import GetConfigHistory
-from .get_group import GetGroup
-from .get_notifications import GetNotifications
-from .get_page import GetPage
-from .get_permissions import GetPermissions
-from .get_space import GetSpace
-from .get_user import GetUser
-from .get_watchers import GetWatchers
 from .process_exports import ProcessExports
 from .process_group_memberships import ProcessGroupMemberships
 from .process_groups import ProcessGroups
@@ -20,23 +19,23 @@ from .process_space_features import ProcessSpaceFeatures
 from .process_spaces import ProcessSpaces
 from .process_users import ProcessUsers
 from .process_watchers import ProcessWatchers
-from .record_config_change import RecordConfigChange
+from .resolve_approval_step import ResolveApprovalStep
 from .route_to_human import RouteToHuman
-from .send_notification import SendNotification
+from .store_config_change import StoreConfigChange
+from .submit_approval_request import SubmitApprovalRequest
 
 ALL_TOOLS_INTERFACE_5 = [
-    CreateApprovalRequest,
-    DecideApprovalStep,
+    AccessApprovalRequest,
+    AccessConfigHistory,
+    AccessGroup,
+    AccessNotifications,
+    AccessPage,
+    AccessPermissions,
+    AccessSpace,
+    AccessUser,
+    AccessWatchers,
+    BroadcastNotification,
     GenerateNewAuditTrail,
-    GetApprovalRequest,
-    GetConfigHistory,
-    GetGroup,
-    GetNotifications,
-    GetPage,
-    GetPermissions,
-    GetSpace,
-    GetUser,
-    GetWatchers,
     ProcessExports,
     ProcessGroupMemberships,
     ProcessGroups,
@@ -47,7 +46,8 @@ ALL_TOOLS_INTERFACE_5 = [
     ProcessSpaces,
     ProcessUsers,
     ProcessWatchers,
-    RecordConfigChange,
+    ResolveApprovalStep,
     RouteToHuman,
-    SendNotification
+    StoreConfigChange,
+    SubmitApprovalRequest
 ]
