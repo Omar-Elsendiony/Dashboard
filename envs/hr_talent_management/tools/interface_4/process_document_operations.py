@@ -102,7 +102,7 @@ class ProcessDocumentOperations(Tool):
                 "verification_experience_letter", "verification_work_visa", "verification_pr_card",
                 "verification_bank_proof", "offer_letter", "contract", "policy_acknowledgment",
                 "tax_form", "insurance_form", "nda", "resume", "cover_letter", "job_description",
-                "budget_justification", "budget_approval", "workforce_plan", "recruitment_checklist",
+                "budget_justification", "budget_approval", "headcount_justification", "workforce_plan", "recruitment_checklist",
                 "promotion_letter", "transfer_memo", "other"
             ]
             if kwargs["document_category"] not in valid_categories:
@@ -114,7 +114,7 @@ class ProcessDocumentOperations(Tool):
 
             # 3. Validate related_entity_type enum
             valid_entity_types = [
-                "employee", "candidate", "offer", "onboarding", "job_requisition", "job_posting", "application"
+                "employee", "candidate", "offer", "onboarding", "job_requisition", "job_posting", "application", "benefit"
             ]
             if kwargs["related_entity_type"] not in valid_entity_types:
                 return json.dumps({
@@ -442,12 +442,12 @@ class ProcessDocumentOperations(Tool):
                         "document_category": {
                             "type": "string",
                             "description": "Category of the document (required for upload_document)",
-                            "enum": ["verification_id_proof", "verification_address_proof", "verification_educational_certificate", "verification_experience_letter", "verification_work_visa", "verification_pr_card", "verification_bank_proof", "offer_letter", "contract", "policy_acknowledgment", "tax_form", "insurance_form", "nda", "resume", "cover_letter", "job_description", "budget_justification", "budget_approval", "workforce_plan", "recruitment_checklist", "promotion_letter", "transfer_memo", "other"]
+                            "enum": ["verification_id_proof", "verification_address_proof", "verification_educational_certificate", "verification_experience_letter", "verification_work_visa", "verification_pr_card", "verification_bank_proof", "offer_letter", "contract", "policy_acknowledgment", "tax_form", "insurance_form", "nda", "resume", "cover_letter", "job_description", "budget_justification", "budget_approval", "headcount_justification", "workforce_plan", "recruitment_checklist", "promotion_letter", "transfer_memo", "other"]
                         },
                         "related_entity_type": {
                             "type": "string",
                             "description": "Type of entity this document relates to (required for upload_document)",
-                            "enum": ["employee", "candidate", "offer", "onboarding", "job_requisition", "job_posting", "application"]
+                            "enum": ["employee", "candidate", "offer", "onboarding", "job_requisition", "job_posting", "application", "benefit"]
                         },
                         "related_entity_id": {
                             "type": "string",
