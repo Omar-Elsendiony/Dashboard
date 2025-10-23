@@ -56,9 +56,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Global Admin
 
 1. Obtain email (required), full_name (required), password (required), global_role (required: 'global_admin', 'content_contributor'), and actor_user_id (required).
-2. Call get_user to verify the email address is not already registered within the system.
-3. Call manage_users to create the new user record.
-4. Create an audit entry with create_new_audit_trail.
+2. Validate the requester identity and authorization/permission to manage users (e.g., Global Admin). You can fetch the actor record with get_user to check their role/privileges. 
+3. Call get_user to verify the email address is not already registered within the system.
+Then call manage_users to create the new user record.
+4. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -77,9 +79,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Global Admin
 
 1. Obtain user_id (required), updates (required: JSON object with fields to change such as full_name, email), and actor_user_id (required).
-2. Call get_user to discover the current user record and ensure it exists.
-3. Call manage_users to apply the change set to the user record.
-4. Create an audit entry with create_new_audit_trail.
+2. Validate the requester identity and authorization/permission to manage users (e.g., Global Admin). You can fetch the actor record with get_user to check their role/privileges. 
+3. Call get_user to discover the current user record and ensure it exists.
+4. Then call manage_users to apply the change set to the user record.
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -99,9 +103,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Global Admin
 
 1. Obtain user_id (required) and actor_user_id (required).
-2. Call get_user to ensure the user exists and retrieve their details for the audit log.
-3. Call manage_users to delete the user record.
-4. Create an audit entry with create_new_audit_trail.
+2. Validate the requester identity and authorization/permission to manage users (e.g., Global Admin). You can fetch the actor record with get_user to check their role/privileges. 
+3. Call get_user to ensure the user exists and retrieve their details for the audit log.
+4. Then call manage_users to delete the user record.
+Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -120,10 +126,12 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Global Admin
 
 1. Obtain group_name (required), actor_user_id (required), and members (optional: list of user_ids).
-2. Call get_group to verify the group name is unique before creation.
-3. Call manage_groups to create the new group record.
-4. If the members list is provided, call manage_group_memberships for each member to populate the group.
-5. Create an audit entry with create_new_audit_trail.
+2. Use get_user to validate the role of the user making the request. 
+3. Call get_group to verify the group name is unique before creation.
+4. Then call manage_groups to create the new group record.
+5. If the members list is provided, call manage_group_memberships for each member to populate the group.
+6. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -142,10 +150,12 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Global Admin
 
 1. Obtain user_id (required), group_id (required), and actor_user_id (required).
-2. Call get_user to verify the user exists before creating the membership.
-3. Call get_group to verify the group exists before creating the membership.
-4. Call manage_group_memberships to create the user_groups membership record.
-5. Create an audit entry with create_new_audit_trail.
+2. Use get_user to validate the role of the user making the request. 
+3. Call get_user to verify the user exists before creating the membership.
+4. Then call get_group to verify the group exists before creating the membership.
+5. Call manage_group_memberships to create the user_groups membership record.
+6. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -166,9 +176,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Space Admin (with 'create space' privilege)
 
 1. Obtain space_key (required), space_name (required), created_by_user_id (required), and space_purpose (optional).
-2. Call get_space to verify the space key is unique before creation.
-3. Call manage_spaces to initialize the new space record.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to validate the role of the user making the request.
+3. Call get_space to verify the space key is unique before creation.
+4. Then call manage_spaces to initialize the new space record.
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -189,8 +201,10 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 
 1. Obtain space_id (required), updates (required: JSON object with fields to change), and actor_user_id (required).
 2. Call get_space to ensure the space exists and retrieve current configuration.
-3. Call manage_spaces to apply the modifications to the space record.
-4. Create an audit entry with create_new_audit_trail.
+3. Use get_user to retrieve the record of the user making the request and validate permissions using get_permissions. 
+4. Then call manage_spaces to apply the modifications to the space record.
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -211,9 +225,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Global Admin (for hard deletion)
 
 1. Obtain space_id (required), deletion_mode (required: 'soft_delete' or 'hard_delete'), and actor_user_id (required).
-2. Call get_space to verify the space exists and is eligible for deletion.
-3. Call manage_spaces to execute the removal based on the specified mode.
-4. Create an audit entry with create_new_audit_trail.
+2. Call get_space to ensure the space exists.
+3. Use get_user to retrieve the record of the user making the request and validate permissions using get_permissions.
+4. Then call manage_spaces to execute the removal based on the specified mode.
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -234,8 +250,9 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 
 1. Obtain space_id (required), feature_type (required), is_enabled (required), and actor_user_id (required).
 2. Call get_space to ensure the space exists prior to modifying its features.
-3. Call manage_space_features to update the feature status.
-4. Create an audit entry with create_new_audit_trail.
+3. Use get_user to retrieve the record of the user making the request and validate permissions using get_permissions.
+4. Then call manage_space_features to update the feature status.
+5. Create an audit entry with record_audit_log.
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -256,9 +273,12 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - System / Automation Agent
 
 1. Obtain space_id (required), changed_by_user_id (required), old_config (required: JSON object), and new_config (required: JSON object).
-2. Call get_config_history to fetch the last configuration version number to determine the next version.
-3. Call record_config_change to log the configuration update in the history table.
-4. Create an audit entry with create_new_audit_trail.
+2. Call get_space to check whether the space exists or not.
+3. Use get_user to retrieve the record of the user making the request and validate permissions using get_permissions.
+4. Call get_config_history to fetch the last configuration version number to determine the next version.
+5. Then call record_config_change to log the configuration update in the history table.
+6. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -280,9 +300,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Group-based-access member
 
 1. Obtain space_id (required), title (required), content_format (required: 'markdown' or 'html'), content_snapshot (required), created_by_user_id (required), and parent_page_id (optional).
-2. Call manage_pages to create the primary page record.
-3. Call manage_page_versions to save the initial content version (Version 1).
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. Then use get_permissions to retrieve the user permission.
+3. Call manage_pages to create the primary page record.
+4. Then call manage_page_versions to save the initial content version (Version 1).
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -304,11 +326,13 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Content Contributor (must have 'edit' permission)
 
 1. Obtain page_id (required), updated_by_user_id (required), content_snapshot (required), current_version_number (required: for optimistic locking), new_title (optional), new_parent_page_id (optional), and target_space_id (optional).
-2. Call get_page to verify the page exists and retrieve its current version number for optimistic locking against current_version_number.
-3. Call manage_pages to apply the title, parent, and/or space changes to the primary page record.
-4. Call manage_page_versions to create a new version record with the provided content_snapshot.
-5. Call send_notification to confirm the successful update and new version number to the user.
-6. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. Then use get_permissions to retrieve the user permission.
+3. Call get_page to verify the page exists and retrieve its current version number for optimistic locking against current_version_number.
+4. Call manage_pages to apply the title, parent, and/or space changes to the primary page record.
+5. Then call manage_page_versions to create a new version record with the provided content_snapshot.
+6. Call send_notification to confirm the successful update and new version number to the user.
+7. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -328,9 +352,12 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Content Contributor
 
 1. Obtain page_id (required) and updated_by_user_id (required).
-2. Call get_page to verify the page is in 'draft' state before attempting to publish.
-3. Call manage_pages to publish the page.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. Then use get_permissions to retrieve the user permission.
+3. Call get_page to verify the page is in 'draft' state before attempting to publish.
+4. Then call manage_pages to publish the page.
+5. Create an audit entry with record_audit_log.
+
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -351,9 +378,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Content Contributor
 
 1. Obtain page_id (required) and updated_by_user_id (required).
-2. Call get_page to verify the page is currently 'published' before attempting to unpublish.
-3. Call manage_pages to unpublish the page.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. Then use get_permissions to retrieve the user permission.
+3. Call get_page to verify the page is currently 'published' before attempting to unpublish.
+4. Then use manage_pages to unpublish the page.
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -374,9 +403,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Space Admin (for hard deletion)
 
 1. Obtain page_id (required), mode (required: 'soft_delete' or 'hard_delete'), and actor_user_id (required).
-2. Call get_page to retrieve the page and confirm its existence prior to deletion.
-3. Call manage_pages to execute the removal by trashing or permanently deleting the page.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. Then use get_permissions to retrieve the user permission.
+3. Call get_page to retrieve the page and confirm its existence prior to deletion.
+4. Then call manage_pages to execute the removal by trashing or permanently deleting the page.
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -396,9 +427,11 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Space Admin
 
 1. Obtain page_id (required) and actor_user_id (required).
-2. Call get_page to verify the page is currently trashed (is_trashed=true).
-3. Call manage_pages to reactivate the page.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. Then use get_permissions to retrieve the user permission.
+3. Call get_page to verify if the page is currently trashed.
+4. Then call manage_pages to reactivate the page.
+5. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -419,7 +452,7 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 1. Obtain action (required: 'add' or 'remove'), entity_id (required: space_id or page_id), entity_type (required: 'space' or 'page'), watcher_id (required), watcher_type (required: 'user' or 'group'), and actor_user_id (required).
 2. Call get_watchers to determine the current watching status and prevent redundant actions.
 3. Call manage_watchers to apply the watch or unwatch action by creating or deleting the record.
-4. Create an audit entry with create_new_audit_trail.
+4. Create an audit entry with record_audit_log.
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -439,9 +472,12 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Space Member (if they are the page creator/owner)
 
 1. Obtain entity_id (required: space_id or page_id), entity_type (required: 'space' or 'page'), permission_type (required: 'view', 'edit', or 'admin'), grantee_id (required), grantee_type (required: 'user' or 'group'), and granted_by_user_id (required).
-2. Call get_permissions to check for existing, conflicting permissions before granting new access.
-3. Call manage_permissions to create the new permission record.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. 
+3. Use get_permissions to verify the user is a space admin or get_page to verify the user is the page owner.
+4. Call get_permissions to check for existing, conflicting permissions before granting new access. 
+5. Then call manage_permissions to create the new permission record for the grantee.
+6. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -462,37 +498,17 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Space Member (if they are the page creator/owner)
 
 1. Obtain permission_id (required) and actor_user_id (required).
-2. Call get_permissions to retrieve the permission details for auditing and verification prior to removal.
-3. Call manage_permissions to delete the permission record.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record. 
+3. Use get_permissions to verify the user is a space admin or get_page to verify the user is the page owner.
+4. Call get_permissions to retrieve the permission details for auditing and verification prior to removal.
+5. Then call manage_permissions to delete the permission record.
+6. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
 - Permission record not found
 - Permission deletion failed
-
----
-
-## Add Page Restriction
-
-**Use this SOP when:** Applying a specific 'view' or 'edit' restriction to a page for a user or group.
-
-**Who can perform:**
-
-- Space Member (with 'edit' permission or higher)
-- Space Admin
-
-1. Obtain page_id (required), restriction_type (required: 'view' or 'edit'), restricted_to_id (required), restricted_to_type (required: 'user' or 'group'), and actor_user_id (required).
-2. Call get_page_restriction to check for pre-existing restriction and prevent duplication.
-3. Call manage_page_restrictions to enforce the restriction by creating the record.
-4. Create an audit entry with create_new_audit_trail.
-
-**Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
-
-- Page not found
-- Restricted entity (user or group) not found
-- Restriction already exists
-- Restriction creation failed
 
 ---
 
@@ -506,9 +522,13 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Content Contributor
 
 1. Obtain target_entity_type (required: 'page' or 'space'), target_entity_id (required), requested_by_user_id (required), steps (required: list of JSON objects defining order and assigned users/groups), and reason (optional).
-2. Call create_approval_request to register the workflow and steps.
-3. Call send_notification to immediately alert the first assigned approver.
-4. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record.
+3. Validate the entity that requires approval using the appropriate tool. E.g. for spaces, use get_space and for pages use get_page.
+4. Validate the user has the required privilege to request approval. Use get_permissions to get user privilege for the given entity. 
+5. Call create_approval_request to register the workflow and steps.
+6. Then call send_notification to immediately alert the first assigned approver. For space and page related approvals, send to space admin and page owner respectively.
+7. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -528,10 +548,14 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Reviewer/Approver (The assigned user or member of the assigned group)
 
 1. Obtain step_id (required), approver_user_id (required), decision (required: 'approve', 'reject', 'escalate', or 'cancel'), and comment (optional).
-2. Call decide_approval_step to record the decision and update the step/request status.
-3. Call get_approval_request to check the overall final status of the approval request.
-4. If the overall status is 'approved' or 'rejected', call send_notification to inform the initiator of the final outcome.
-5. Create an audit entry with create_new_audit_trail.
+2. Use get_user to retrieve the user record.
+3. Validate the entity that requires approval using the appropriate tool. E.g. for spaces, use get_space and for pages use get_page.
+4. Validate the user has the required privilege to decide approval. Use get_permissions to get user privilege for the given entity. 
+5. Call decide_approval_step to record the decision and update the step/request status.
+6. Then call get_approval_request to check the overall final status of the approval request.
+7. If the overall status is 'approved' or 'rejected', call send_notification to inform the initiator of the final outcome.
+8. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -554,7 +578,7 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 1. Obtain recipient_user_id (required), event_type (required: 'system_alert', 'approval_update', etc.), message (required), sender_user_id (optional), and channel (optional: notification channel, defaults to 'system').
 2. Call get_user to validate the existence of the recipient account.
 3. Call send_notification to create and dispatch the notification record.
-4. Create an audit entry with create_new_audit_trail.
+4. Create an audit entry with record_audit_log.
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -575,7 +599,7 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 1. Obtain user_id (required), status (optional: 'pending' or 'read'), and event_type (optional: filter by category).
 2. Call get_user to confirm the requester is a valid user.
 3. Call get_notifications to retrieve the filtered list of notifications, ordered by creation date.
-4. Create an audit entry with create_new_audit_trail.
+4. Create an audit entry with record_audit_log.
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
@@ -594,9 +618,12 @@ If any external integration (e.g., database or API) fails, you must halt and pro
 - Global Admin
 
 1. Obtain space_id (required), format (required: 'PDF', 'HTML', or 'XML'), requested_by_user_id (required), and destination (optional: location for exported file).
-2. Call manage_exports to queue the export task and receive the job_id.
-3. Call send_notification to confirm job submission to the requesting user.
-4. Create an audit entry with create_new_audit_trail.
+2. Call get_user to confirm the requester is a valid user.
+3. Validate the user role or do permission check using get_permissions.
+4. Call manage_exports to queue the export task and receive the job_id.
+5. Then call send_notification to confirm job submission to the requesting user.
+6. Create an audit entry with record_audit_log.
+
 
 **Halt, and use transfer_to_human if you receive the following errors; otherwise complete the SOP:**
 
