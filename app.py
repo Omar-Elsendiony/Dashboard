@@ -58,7 +58,7 @@ if not app.secret_key:
 cors = CORS(app) 
 
 app.config["SESSION_PERMANENT"] = True
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10) 
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=20) 
 
 # app.config['SESSION_TYPE'] = 'filesystem' 
 
