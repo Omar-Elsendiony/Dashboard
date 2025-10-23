@@ -469,7 +469,6 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 #### 2. Schedule Interview
 - Use `manage_interview_operations` with `operation_type` 'schedule_interview'
-- Use `create_audit_entry` to log interview scheduling
 
 #### 3. Create Audit Entry
 - Use `create_audit_entry` to log interview scheduling
