@@ -145,8 +145,24 @@ class ProcessInterviewOperations(Tool):
             
             # Validate panel members exist and are active
             panel_member_ids = kwargs["panel_member_ids"]
-            if not isinstance(panel_member_ids, list):
-                panel_member_ids = [panel_member_ids]
+            if not isinstance(panel_member_ids, str):
+                return json.dumps({
+                    "success": False,
+                    "interview_id": None,
+                    "message": "Halt: panel_member_ids must be a comma-separated string list of User IDs"
+                })
+            
+            # Split comma-separated string into list
+            panel_member_ids = [id.strip() for id in panel_member_ids.split(',')]
+            
+            # Validate all items are strings (user IDs)
+            for panel_member_id in panel_member_ids:
+                if not isinstance(panel_member_id, str):
+                    return json.dumps({
+                        "success": False,
+                        "interview_id": None,
+                        "message": "Halt: panel_member_ids must be a list of string user IDs"
+                    })
             
             for panel_member_id in panel_member_ids:
                 if str(panel_member_id) not in users:
@@ -417,11 +433,8 @@ class ProcessInterviewOperations(Tool):
                             "description": "Scheduled date. Format: YYYY-MM-DD. Required for: schedule_interview"
                         },
                         "panel_member_ids": {
-                            "type": "array",
-                            "description": "Array of panel member user IDs. Required for: schedule_interview",
-                            "items": {
-                                "type": "string"
-                            }
+                            "type": "string",
+                            "description": "Comma-separated string of panel member user IDs. Format: '123,456,789'. Required for: schedule_interview"
                         },
                         "user_id": {
                             "type": "string",

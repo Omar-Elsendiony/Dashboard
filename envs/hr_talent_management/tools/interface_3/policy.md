@@ -471,12 +471,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 - Use `execute_interview_operations` with `operation_type` 'schedule_interview'
 - Use `make_audit_entry` to log interview scheduling
 
-#### 3. Add Panel Members
-- For each panel member:
-  - Use `execute_interview_operations` with `operation_type` 'add_panel_member'
-  - Use `make_audit_entry` to log panel member addition
-
-#### 4. Create Audit Entry
+#### 3. Create Audit Entry
 - Use `make_audit_entry` to log interview scheduling
 
 ### Halt Conditions:

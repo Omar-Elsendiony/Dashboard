@@ -3,8 +3,8 @@ import os
 from flask import request, jsonify
 from dotenv import load_dotenv
 load_dotenv()
-from openai import OpenAI
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# from openai import OpenAI
+# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 db_utilities_bp = Blueprint('db_utilities', __name__)
 

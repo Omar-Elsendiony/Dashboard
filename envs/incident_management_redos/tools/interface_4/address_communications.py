@@ -37,7 +37,7 @@ class AddressCommunications(Tool):
         users = data.get("users", {})
 
         # allowed enums
-        valid_types = ["status_update", "resolution_notice", "escalation_notice", "bridge_invitation"]
+        valid_types = ["status_update", "resolution_notice", "escalation_notice", "bridge_invitation", "other"]
         valid_recipient_types = ["client", "internal", "executive"]
         valid_methods = ["email", "portal", "sms", "phone"]
         valid_statuses = ["pending", "sent", "delivered", "failed"]
@@ -422,7 +422,7 @@ class AddressCommunications(Tool):
                                 },
                                 "communication_type": {
                                     "type": "string",
-                                    "description": "Type of communication (required for create). Must be one of: status_update, resolution_notice, escalation_notice, bridge_invitation"
+                                    "description": "Type of communication (required for create). Must be one of: status_update, resolution_notice, escalation_notice, bridge_invitation, other"
                                 },
                                 "recipient_type": {
                                     "type": "string",

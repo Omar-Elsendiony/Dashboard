@@ -252,7 +252,55 @@ class ExecuteJobOperations(Tool):
             requisition = job_requisitions[req_id]
             user = users[str(kwargs["user_id"])]
             
-            valid_roles = ["hr_recruiter", "hr_manager", "hr_admin", "hiring_manager"]
+            # Handle status update separately with special validation
+            if "status" in kwargs and kwargs["status"] is not None:
+                new_status = kwargs["status"]
+                
+                # If changing status to "approved", verify all approvals are present
+                if new_status == "approved":
+                    # Only HR Admin or HR Director can approve
+                    if user.get("role") not in ["hr_admin", "hr_director"]:
+                        return json.dumps({
+                            "success": False,
+                            "requisition_id": req_id,
+                            "message": "Only HR Admin or HR Director can change status to approved"
+                        })
+                    
+                    # Verify requisition is in pending_approval status
+                    if requisition.get("status") != "pending_approval":
+                        return json.dumps({
+                            "success": False,
+                            "requisition_id": req_id,
+                            "message": f"Cannot approve requisition in '{requisition.get('status')}' status"
+                        })
+                    
+                    # Verify all three approvals are present with dates
+                    if not requisition.get("hr_manager_approver") or not requisition.get("hr_manager_approval_date"):
+                        return json.dumps({
+                            "success": False,
+                            "requisition_id": req_id,
+                            "message": "HR Manager approval is required before changing status to approved"
+                        })
+                    
+                    if not requisition.get("finance_manager_approver") or not requisition.get("finance_manager_approval_date"):
+                        return json.dumps({
+                            "success": False,
+                            "requisition_id": req_id,
+                            "message": "Finance Manager approval is required before changing status to approved"
+                        })
+                    
+                    if not requisition.get("dept_head_approver") or not requisition.get("dept_head_approval_date"):
+                        return json.dumps({
+                            "success": False,
+                            "requisition_id": req_id,
+                            "message": "Department Head approval is required before changing status to approved"
+                        })
+                
+                # Update the status
+                requisition["status"] = new_status
+            
+            # For non-status updates, check role authorization
+            valid_roles = ["hr_recruiter", "hr_manager", "hr_admin", "hr_director", "hiring_manager"]
             if user.get("role") not in valid_roles:
                 return json.dumps({"success": False, "error": "Halt: User lacks authorization to perform this action"})
             
@@ -330,11 +378,25 @@ class ExecuteJobOperations(Tool):
             
             requisition["updated_at"] = "2025-10-10T12:00:00"
             
-            return json.dumps({
-                "success": True,
-                "requisition_id": req_id,
-                "message": f"Job requisition {req_id} approved by {user_role}"
-            })
+            # Check if all three approvals are now present
+            has_all_approvals = (
+                requisition.get("hr_manager_approver") and requisition.get("hr_manager_approval_date") and
+                requisition.get("finance_manager_approver") and requisition.get("finance_manager_approval_date") and
+                requisition.get("dept_head_approver") and requisition.get("dept_head_approval_date")
+            )
+            
+            if has_all_approvals:
+                return json.dumps({
+                    "success": True,
+                    "requisition_id": req_id,
+                    "message": f"Job requisition {req_id} approved by {user_role}. All three approvals now complete. An HR Admin or HR Director can now change the status to 'approved' using update_requisition."
+                })
+            else:
+                return json.dumps({
+                    "success": True,
+                    "requisition_id": req_id,
+                    "message": f"Job requisition {req_id} approved by {user_role}. Additional approvals still required before status can be changed to 'approved'."
+                })
         
         elif operation_type == "create_posting":
             # Validate required fields
