@@ -185,7 +185,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 **For a status update:**
 - If the status is to change to "approved":
-  - Verify the user is active and has the appropriate role (HR Admin, HR Director) using `discover_reference_entities`
+  - Verify the user is active and has the appropriate role (HR Admin, HR Director, HR Manager) using `discover_reference_entities`
   - Verify requisition exists, is in "pending_approval" and all approvals (HR Manager, Finance Manager and Department head) have been provided and the approval dates recorded using `discover_job_entities`
 - If the requisition is to be reopened (changed from "closed" to "draft" or "pending_approval"):
   - Verify the user is an active HR Director using `discover_reference_entities`
