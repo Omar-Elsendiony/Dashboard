@@ -7,8 +7,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-12T07:09:06",
-    "responded_at": null,
-    "approver": "70"
+    "responded_at": null
   },
   "2": {
     "escalation_id": "2",
@@ -18,8 +17,7 @@
     "escalation_reason": "Cross-team coordination required for comprehensive solution.",
     "status": "pending",
     "requested_at": "2025-09-10T04:58:26",
-    "responded_at": null,
-    "approver": "371"
+    "responded_at": null
   },
   "3": {
     "escalation_id": "3",
@@ -29,8 +27,7 @@
     "escalation_reason": "SLA breach imminent. Management notification required per escalation policy.",
     "status": "pending",
     "requested_at": "2025-09-26T22:31:20",
-    "responded_at": null,
-    "approver": "391"
+    "responded_at": null
   },
   "4": {
     "escalation_id": "4",
@@ -40,8 +37,7 @@
     "escalation_reason": "Extended outage affecting revenue. Management decision needed on communication strategy.",
     "status": "pending",
     "requested_at": "2025-09-26T22:15:57",
-    "responded_at": null,
-    "approver": "362"
+    "responded_at": null
   },
   "5": {
     "escalation_id": "5",
@@ -51,8 +47,7 @@
     "escalation_reason": "Additional technical resources required for resolution.",
     "status": "pending",
     "requested_at": "2025-09-09T20:57:58",
-    "responded_at": null,
-    "approver": "21"
+    "responded_at": null
   },
   "6": {
     "escalation_id": "6",
@@ -62,8 +57,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-10-06T14:26:22",
-    "responded_at": null,
-    "approver": "14"
+    "responded_at": null
   },
   "7": {
     "escalation_id": "7",
@@ -73,8 +67,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-20T13:53:55",
-    "responded_at": null,
-    "approver": "390"
+    "responded_at": null
   },
   "8": {
     "escalation_id": "8",
@@ -84,8 +77,7 @@
     "escalation_reason": "Cross-team coordination required for comprehensive solution.",
     "status": "pending",
     "requested_at": "2025-09-20T14:14:59",
-    "responded_at": null,
-    "approver": "356"
+    "responded_at": null
   },
   "9": {
     "escalation_id": "9",
@@ -95,8 +87,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-09-11T14:23:12",
-    "responded_at": null,
-    "approver": "14"
+    "responded_at": null
   },
   "10": {
     "escalation_id": "10",
@@ -106,8 +97,7 @@
     "escalation_reason": "Unable to resolve within SLA timeframe. Escalating for additional support resources.",
     "status": "pending",
     "requested_at": "2025-09-11T14:06:24",
-    "responded_at": null,
-    "approver": "37"
+    "responded_at": null
   },
   "11": {
     "escalation_id": "11",
@@ -117,8 +107,7 @@
     "escalation_reason": "High severity incident requiring immediate management attention.",
     "status": "pending",
     "requested_at": "2025-09-10T17:39:29",
-    "responded_at": null,
-    "approver": "373"
+    "responded_at": null
   },
   "12": {
     "escalation_id": "12",
@@ -128,8 +117,7 @@
     "escalation_reason": "Issue complexity beyond current support capabilities. Requires advanced troubleshooting expertise.",
     "status": "pending",
     "requested_at": "2025-10-04T03:51:50",
-    "responded_at": null,
-    "approver": "33"
+    "responded_at": null
   },
   "13": {
     "escalation_id": "13",
@@ -139,8 +127,7 @@
     "escalation_reason": "Critical system failure needs executive oversight and resource prioritization.",
     "status": "pending",
     "requested_at": "2025-10-04T03:58:20",
-    "responded_at": null,
-    "approver": "58"
+    "responded_at": null
   },
   "14": {
     "escalation_id": "14",
@@ -150,8 +137,7 @@
     "escalation_reason": "Critical system failure needs executive oversight and resource prioritization.",
     "status": "pending",
     "requested_at": "2025-09-09T06:12:45",
-    "responded_at": null,
-    "approver": "6"
+    "responded_at": null
   },
   "15": {
     "escalation_id": "15",
@@ -161,8 +147,7 @@
     "escalation_reason": "High severity incident requiring immediate management attention.",
     "status": "pending",
     "requested_at": "2025-09-09T07:06:47",
-    "responded_at": null,
-    "approver": "29"
+    "responded_at": null
   },
   "16": {
     "escalation_id": "16",
@@ -172,8 +157,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-09-12T13:35:59",
-    "responded_at": null,
-    "approver": "1"
+    "responded_at": null
   },
   "17": {
     "escalation_id": "17",
@@ -183,8 +167,7 @@
     "escalation_reason": "Extended outage affecting revenue. Management decision needed on communication strategy.",
     "status": "pending",
     "requested_at": "2025-10-02T02:29:59",
-    "responded_at": null,
-    "approver": "59"
+    "responded_at": null
   },
   "18": {
     "escalation_id": "18",
@@ -194,8 +177,7 @@
     "escalation_reason": "Multiple system components involved. Need cross-functional team coordination.",
     "status": "pending",
     "requested_at": "2025-09-07T21:09:52",
-    "responded_at": null,
-    "approver": "370"
+    "responded_at": null
   },
   "19": {
     "escalation_id": "19",
@@ -205,8 +187,7 @@
     "escalation_reason": "Critical system failure needs executive oversight and resource prioritization.",
     "status": "pending",
     "requested_at": "2025-09-16T05:42:19",
-    "responded_at": null,
-    "approver": "29"
+    "responded_at": null
   },
   "20": {
     "escalation_id": "20",
@@ -216,8 +197,7 @@
     "escalation_reason": "Critical business impact requiring management decision on resource allocation.",
     "status": "pending",
     "requested_at": "2025-09-16T05:34:15",
-    "responded_at": null,
-    "approver": "37"
+    "responded_at": null
   },
   "21": {
     "escalation_id": "21",
@@ -227,8 +207,7 @@
     "escalation_reason": "Major incident with widespread customer impact. Executive awareness required.",
     "status": "pending",
     "requested_at": "2025-09-28T20:19:57",
-    "responded_at": null,
-    "approver": "66"
+    "responded_at": null
   },
   "22": {
     "escalation_id": "22",
@@ -238,8 +217,7 @@
     "escalation_reason": "Unable to resolve within SLA timeframe. Escalating for additional support resources.",
     "status": "pending",
     "requested_at": "2025-09-11T03:12:28",
-    "responded_at": null,
-    "approver": "58"
+    "responded_at": null
   },
   "23": {
     "escalation_id": "23",
@@ -249,8 +227,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-09-11T03:12:36",
-    "responded_at": null,
-    "approver": "388"
+    "responded_at": null
   },
   "24": {
     "escalation_id": "24",
@@ -260,8 +237,7 @@
     "escalation_reason": "Critical system failure needs executive oversight and resource prioritization.",
     "status": "pending",
     "requested_at": "2025-09-13T19:58:37",
-    "responded_at": null,
-    "approver": "68"
+    "responded_at": null
   },
   "25": {
     "escalation_id": "25",
@@ -271,8 +247,7 @@
     "escalation_reason": "Critical business impact requiring management decision on resource allocation.",
     "status": "pending",
     "requested_at": "2025-09-25T03:34:27",
-    "responded_at": null,
-    "approver": "6"
+    "responded_at": null
   },
   "26": {
     "escalation_id": "26",
@@ -282,8 +257,7 @@
     "escalation_reason": "SLA breach imminent. Management notification required per escalation policy.",
     "status": "pending",
     "requested_at": "2025-09-08T20:41:23",
-    "responded_at": null,
-    "approver": "352"
+    "responded_at": null
   },
   "27": {
     "escalation_id": "27",
@@ -293,8 +267,7 @@
     "escalation_reason": "Cross-team coordination required for comprehensive solution.",
     "status": "pending",
     "requested_at": "2025-09-17T05:50:13",
-    "responded_at": null,
-    "approver": "25"
+    "responded_at": null
   },
   "28": {
     "escalation_id": "28",
@@ -304,8 +277,7 @@
     "escalation_reason": "Service degradation affecting multiple clients requires escalated response.",
     "status": "pending",
     "requested_at": "2025-09-17T05:51:44",
-    "responded_at": null,
-    "approver": "395"
+    "responded_at": null
   },
   "29": {
     "escalation_id": "29",
@@ -315,8 +287,7 @@
     "escalation_reason": "High severity incident requiring immediate management attention.",
     "status": "pending",
     "requested_at": "2025-09-14T09:54:58",
-    "responded_at": null,
-    "approver": "6"
+    "responded_at": null
   },
   "30": {
     "escalation_id": "30",
@@ -326,8 +297,7 @@
     "escalation_reason": "Critical business impact requiring management decision on resource allocation.",
     "status": "pending",
     "requested_at": "2025-10-03T07:00:22",
-    "responded_at": null,
-    "approver": "65"
+    "responded_at": null
   },
   "31": {
     "escalation_id": "31",
@@ -337,8 +307,7 @@
     "escalation_reason": "Issue complexity beyond current support capabilities. Requires advanced troubleshooting expertise.",
     "status": "pending",
     "requested_at": "2025-09-19T12:20:53",
-    "responded_at": null,
-    "approver": "31"
+    "responded_at": null
   },
   "32": {
     "escalation_id": "32",
@@ -348,8 +317,7 @@
     "escalation_reason": "Critical business impact requiring management decision on resource allocation.",
     "status": "pending",
     "requested_at": "2025-09-10T10:23:31",
-    "responded_at": null,
-    "approver": "62"
+    "responded_at": null
   },
   "33": {
     "escalation_id": "33",
@@ -359,8 +327,7 @@
     "escalation_reason": "Issue complexity beyond current support capabilities. Requires advanced troubleshooting expertise.",
     "status": "pending",
     "requested_at": "2025-09-29T00:41:33",
-    "responded_at": null,
-    "approver": "22"
+    "responded_at": null
   },
   "34": {
     "escalation_id": "34",
@@ -370,8 +337,7 @@
     "escalation_reason": "Unable to resolve within SLA timeframe. Escalating for additional support resources.",
     "status": "pending",
     "requested_at": "2025-09-15T01:55:38",
-    "responded_at": null,
-    "approver": "388"
+    "responded_at": null
   },
   "35": {
     "escalation_id": "35",
@@ -381,8 +347,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-15T01:54:34",
-    "responded_at": null,
-    "approver": "3"
+    "responded_at": null
   },
   "36": {
     "escalation_id": "36",
@@ -392,8 +357,7 @@
     "escalation_reason": "Cross-team coordination required for comprehensive solution.",
     "status": "pending",
     "requested_at": "2025-09-17T11:50:22",
-    "responded_at": null,
-    "approver": "360"
+    "responded_at": null
   },
   "37": {
     "escalation_id": "37",
@@ -403,8 +367,7 @@
     "escalation_reason": "Critical system failure needs executive oversight and resource prioritization.",
     "status": "pending",
     "requested_at": "2025-09-08T13:10:43",
-    "responded_at": null,
-    "approver": "386"
+    "responded_at": null
   },
   "38": {
     "escalation_id": "38",
@@ -414,8 +377,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-08T13:23:53",
-    "responded_at": null,
-    "approver": "57"
+    "responded_at": null
   },
   "39": {
     "escalation_id": "39",
@@ -425,8 +387,7 @@
     "escalation_reason": "Vendor engagement needed for specialized component troubleshooting.",
     "status": "pending",
     "requested_at": "2025-09-24T09:47:03",
-    "responded_at": null,
-    "approver": "26"
+    "responded_at": null
   },
   "40": {
     "escalation_id": "40",
@@ -436,8 +397,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-12T18:38:30",
-    "responded_at": null,
-    "approver": "40"
+    "responded_at": null
   },
   "41": {
     "escalation_id": "41",
@@ -447,8 +407,7 @@
     "escalation_reason": "Multiple system components involved. Need cross-functional team coordination.",
     "status": "pending",
     "requested_at": "2025-09-17T02:00:09",
-    "responded_at": null,
-    "approver": "28"
+    "responded_at": null
   },
   "42": {
     "escalation_id": "42",
@@ -458,8 +417,7 @@
     "escalation_reason": "Multiple system components involved. Need cross-functional team coordination.",
     "status": "pending",
     "requested_at": "2025-10-05T16:24:59",
-    "responded_at": null,
-    "approver": "360"
+    "responded_at": null
   },
   "43": {
     "escalation_id": "43",
@@ -469,8 +427,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-10-05T16:32:50",
-    "responded_at": null,
-    "approver": "14"
+    "responded_at": null
   },
   "44": {
     "escalation_id": "44",
@@ -480,8 +437,7 @@
     "escalation_reason": "Cross-team coordination required for comprehensive solution.",
     "status": "pending",
     "requested_at": "2025-09-15T10:01:30",
-    "responded_at": null,
-    "approver": "55"
+    "responded_at": null
   },
   "45": {
     "escalation_id": "45",
@@ -491,8 +447,7 @@
     "escalation_reason": "Service degradation affecting multiple clients requires escalated response.",
     "status": "pending",
     "requested_at": "2025-09-15T09:58:36",
-    "responded_at": null,
-    "approver": "47"
+    "responded_at": null
   },
   "46": {
     "escalation_id": "46",
@@ -502,8 +457,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-09-09T17:49:18",
-    "responded_at": null,
-    "approver": "55"
+    "responded_at": null
   },
   "47": {
     "escalation_id": "47",
@@ -513,8 +467,7 @@
     "escalation_reason": "Critical business impact requiring management decision on resource allocation.",
     "status": "pending",
     "requested_at": "2025-09-09T17:41:10",
-    "responded_at": null,
-    "approver": "377"
+    "responded_at": null
   },
   "48": {
     "escalation_id": "48",
@@ -524,8 +477,7 @@
     "escalation_reason": "Additional technical resources required for resolution.",
     "status": "pending",
     "requested_at": "2025-09-13T15:40:17",
-    "responded_at": null,
-    "approver": "36"
+    "responded_at": null
   },
   "49": {
     "escalation_id": "49",
@@ -535,8 +487,7 @@
     "escalation_reason": "Extended outage affecting revenue. Management decision needed on communication strategy.",
     "status": "pending",
     "requested_at": "2025-09-13T15:39:49",
-    "responded_at": null,
-    "approver": "66"
+    "responded_at": null
   },
   "50": {
     "escalation_id": "50",
@@ -546,8 +497,7 @@
     "escalation_reason": "Extended outage affecting revenue. Management decision needed on communication strategy.",
     "status": "pending",
     "requested_at": "2025-09-13T09:07:21",
-    "responded_at": null,
-    "approver": "22"
+    "responded_at": null
   },
   "51": {
     "escalation_id": "51",
@@ -557,8 +507,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-09-17T09:26:18",
-    "responded_at": null,
-    "approver": "399"
+    "responded_at": null
   },
   "52": {
     "escalation_id": "52",
@@ -568,8 +517,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-17T09:23:50",
-    "responded_at": null,
-    "approver": "353"
+    "responded_at": null
   },
   "53": {
     "escalation_id": "53",
@@ -579,8 +527,7 @@
     "escalation_reason": "Multiple system components involved. Need cross-functional team coordination.",
     "status": "pending",
     "requested_at": "2025-09-20T07:57:08",
-    "responded_at": null,
-    "approver": "36"
+    "responded_at": null
   },
   "54": {
     "escalation_id": "54",
@@ -590,8 +537,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-09-08T22:02:02",
-    "responded_at": null,
-    "approver": "394"
+    "responded_at": null
   },
   "55": {
     "escalation_id": "55",
@@ -601,8 +547,7 @@
     "escalation_reason": "Extended outage affecting revenue. Management decision needed on communication strategy.",
     "status": "pending",
     "requested_at": "2025-09-10T07:25:58",
-    "responded_at": null,
-    "approver": "55"
+    "responded_at": null
   },
   "56": {
     "escalation_id": "56",
@@ -612,8 +557,7 @@
     "escalation_reason": "Service degradation affecting multiple clients requires escalated response.",
     "status": "pending",
     "requested_at": "2025-09-10T07:28:21",
-    "responded_at": null,
-    "approver": "59"
+    "responded_at": null
   },
   "57": {
     "escalation_id": "57",
@@ -623,8 +567,7 @@
     "escalation_reason": "Cross-team coordination required for comprehensive solution.",
     "status": "pending",
     "requested_at": "2025-09-18T06:34:31",
-    "responded_at": null,
-    "approver": "16"
+    "responded_at": null
   },
   "58": {
     "escalation_id": "58",
@@ -634,8 +577,7 @@
     "escalation_reason": "Additional technical resources required for resolution.",
     "status": "pending",
     "requested_at": "2025-09-18T06:33:35",
-    "responded_at": null,
-    "approver": "390"
+    "responded_at": null
   },
   "59": {
     "escalation_id": "59",
@@ -645,8 +587,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-09T18:23:45",
-    "responded_at": null,
-    "approver": "12"
+    "responded_at": null
   },
   "60": {
     "escalation_id": "60",
@@ -656,8 +597,7 @@
     "escalation_reason": "Vendor engagement needed for specialized component troubleshooting.",
     "status": "pending",
     "requested_at": "2025-09-14T11:36:36",
-    "responded_at": null,
-    "approver": "30"
+    "responded_at": null
   },
   "61": {
     "escalation_id": "61",
@@ -667,8 +607,7 @@
     "escalation_reason": "Unable to resolve within SLA timeframe. Escalating for additional support resources.",
     "status": "pending",
     "requested_at": "2025-09-11T17:00:55",
-    "responded_at": null,
-    "approver": "6"
+    "responded_at": null
   },
   "62": {
     "escalation_id": "62",
@@ -678,8 +617,7 @@
     "escalation_reason": "Resolution time approaching critical threshold. Immediate attention required.",
     "status": "pending",
     "requested_at": "2025-09-13T15:28:48",
-    "responded_at": null,
-    "approver": "11"
+    "responded_at": null
   },
   "63": {
     "escalation_id": "63",
@@ -689,8 +627,7 @@
     "escalation_reason": "Vendor engagement needed for specialized component troubleshooting.",
     "status": "pending",
     "requested_at": "2025-09-14T23:03:25",
-    "responded_at": null,
-    "approver": "60"
+    "responded_at": null
   },
   "64": {
     "escalation_id": "64",
@@ -700,8 +637,7 @@
     "escalation_reason": "Critical system failure needs executive oversight and resource prioritization.",
     "status": "pending",
     "requested_at": "2025-09-14T23:23:11",
-    "responded_at": null,
-    "approver": "58"
+    "responded_at": null
   },
   "65": {
     "escalation_id": "65",
@@ -711,8 +647,7 @@
     "escalation_reason": "Cross-team coordination required for comprehensive solution.",
     "status": "pending",
     "requested_at": "2025-09-09T10:10:31",
-    "responded_at": null,
-    "approver": "70"
+    "responded_at": null
   },
   "66": {
     "escalation_id": "66",
@@ -722,8 +657,7 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-30T19:21:09",
-    "responded_at": null,
-    "approver": "51"
+    "responded_at": null
   },
   "67": {
     "escalation_id": "67",
@@ -733,8 +667,7 @@
     "escalation_reason": "Vendor engagement needed for specialized component troubleshooting.",
     "status": "pending",
     "requested_at": "2025-09-12T20:39:05",
-    "responded_at": null,
-    "approver": "357"
+    "responded_at": null
   },
   "68": {
     "escalation_id": "68",
@@ -744,8 +677,7 @@
     "escalation_reason": "Service degradation affecting multiple clients requires escalated response.",
     "status": "pending",
     "requested_at": "2025-09-12T20:29:36",
-    "responded_at": null,
-    "approver": "378"
+    "responded_at": null
   },
   "69": {
     "escalation_id": "69",
@@ -755,7 +687,6 @@
     "escalation_reason": "Technical complexity requires specialized knowledge and additional resources.",
     "status": "pending",
     "requested_at": "2025-09-25T05:40:05",
-    "responded_at": null,
-    "approver": "14"
+    "responded_at": null
   }
 }
