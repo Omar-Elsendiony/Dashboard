@@ -258,12 +258,12 @@ class AdministerJobOperations(Tool):
                 
                 # If changing status to "approved", verify all approvals are present
                 if new_status == "approved":
-                    # Only HR Admin or HR Director can approve
-                    if user.get("role") not in ["hr_admin", "hr_director"]:
+                    # Only HR Admin, HR Director, or HR Manager can approve
+                    if user.get("role") not in ["hr_admin", "hr_director", "hr_manager"]:
                         return json.dumps({
                             "success": False,
                             "requisition_id": req_id,
-                            "message": "Only HR Admin or HR Director can change status to approved"
+                            "message": "Only HR Admin, HR Director, or HR Manager can change status to approved"
                         })
                     
                     # Verify requisition is in pending_approval status
@@ -389,7 +389,7 @@ class AdministerJobOperations(Tool):
                 return json.dumps({
                     "success": True,
                     "requisition_id": req_id,
-                    "message": f"Job requisition {req_id} approved by {user_role}. All three approvals now complete. An HR Admin or HR Director can now change the status to 'approved' using update_requisition."
+                    "message": f"Job requisition {req_id} approved by {user_role}. All three approvals now complete. An HR Admin, HR Director, or HR Manager can now change the status to 'approved' using update_requisition."
                 })
             else:
                 return json.dumps({

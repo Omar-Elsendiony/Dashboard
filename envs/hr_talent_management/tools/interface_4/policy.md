@@ -185,7 +185,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 **For a status update:**
 - If the status is to change to "approved":
-  - Verify the user is active and has the appropriate role (HR Admin, HR Director) using `get_reference_entities`
+  - Verify the user is active and has the appropriate role (HR Admin, HR Director, HR Manager) using `get_reference_entities`
   - Verify requisition exists, is in "pending_approval" and all approvals (HR Manager, Finance Manager and Department head) have been provided and the approval dates recorded using `get_job_entities`
 - If the requisition is to be reopened (changed from "closed" to "draft" or "pending_approval"):
   - Verify the user is an active HR Director using `get_reference_entities`
@@ -469,7 +469,6 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 #### 2. Schedule Interview
 - Use `process_interview_operations` with `operation_type` 'schedule_interview'
-- Use `build_audit_entry` to log interview scheduling
 
 #### 3. Create Audit Entry
 - Use `build_audit_entry` to log interview scheduling
@@ -1050,7 +1049,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 ## Payroll Cycle Creation
 
-**Use this SOP when:** HR Payroll Administrator, HR Manager, or HR Director needs to create a new payroll cycle for processing employee payments.
+**Use this SOP when:** HR Payroll Administrator, HR Manager, HR Admin, or HR Director needs to create a new payroll cycle for processing employee payments.
 
 **Goal:** To establish a new payroll cycle with defined start/end dates, frequency, and cutoff dates for payroll processing.
 
@@ -1058,7 +1057,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 #### 1. Collect Cycle Details
 - Obtain mandatory fields: `cycle_start_date`, `cycle_end_date`, `frequency`, `cutoff_date`, `requesting_user_id`
-- Verify the user is an active HR Payroll Administrator, HR Manager, or HR Director using `get_reference_entities`
+- Verify the user is an active HR Payroll Administrator, HR Manager, HR Admin, or HR Director using `get_reference_entities`
 
 #### 2. Create Payroll Cycle
 - Use `process_payroll_cycle_operations` with `operation_type` 'create_cycle'
