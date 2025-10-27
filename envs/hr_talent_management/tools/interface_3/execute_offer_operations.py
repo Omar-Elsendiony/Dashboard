@@ -12,6 +12,7 @@ class ExecuteOfferOperations(Tool):
         
         Operations:
         - create_offer: Create new offer (requires candidate_id, requisition_id, position, start_date, base_salary, reporting_manager_id, user_id)
+        - update_offer: Update existing offer parameters (requires offer_id, and at least one field to update)
         - add_benefit: Add benefit to offer (requires offer_id, benefit_type, benefit_description)
         - verify_compliance: Verify compliance approval (requires offer_id, compliance_approved_by, compliance_approval_date)
         - approve_offer: Approve offer (requires offer_id, hr_manager_approved_by, hr_manager_approval_date)
@@ -39,7 +40,7 @@ class ExecuteOfferOperations(Tool):
             return date_str
         
         # Validate operation_type
-        valid_operations = ["create_offer", "add_benefit", "verify_compliance", "approve_offer", "issue_offer", "record_acceptance"]
+        valid_operations = ["create_offer", "update_offer", "add_benefit", "verify_compliance", "approve_offer", "issue_offer", "record_acceptance"]
         if operation_type not in valid_operations:
             return json.dumps({
                 "success": False,
@@ -157,6 +158,116 @@ class ExecuteOfferOperations(Tool):
                 "success": True,
                 "offer_id": str(new_offer_id),
                 "message": f"Offer {new_offer_id} created successfully"
+            })
+        
+        elif operation_type == "update_offer":
+            # Validate required fields for offer update
+            if "offer_id" not in kwargs or kwargs["offer_id"] is None:
+                return json.dumps({
+                    "success": False,
+                    "offer_id": None,
+                    "message": "Missing required field for offer update: offer_id"
+                })
+            
+            # Validate offer exists
+            if str(kwargs["offer_id"]) not in offers:
+                return json.dumps({
+                    "success": False,
+                    "offer_id": None,
+                    "message": f"Offer {kwargs['offer_id']} not found"
+                })
+            
+            # Check that at least one field to update is provided
+            updatable_fields = ["base_salary", "stock_options_amount", "signing_bonus_amount", 
+                               "relocation_allowance_amount", "position", "start_date", 
+                               "reporting_manager_id", "offer_status"]
+            fields_to_update = {k: v for k, v in kwargs.items() if k in updatable_fields and v is not None}
+            
+            if not fields_to_update:
+                return json.dumps({
+                    "success": False,
+                    "offer_id": None,
+                    "message": "No valid fields provided for update. Updatable fields: " + ", ".join(updatable_fields)
+                })
+            
+            offer = offers[str(kwargs["offer_id"])]
+            
+            # Validate base_salary if provided
+            if "base_salary" in fields_to_update:
+                try:
+                    base_salary = float(fields_to_update["base_salary"])
+                    if base_salary <= 0:
+                        return json.dumps({
+                            "success": False,
+                            "offer_id": None,
+                            "message": "Base salary must be positive"
+                        })
+                    offer["base_salary"] = base_salary
+                except (ValueError, TypeError):
+                    return json.dumps({
+                        "success": False,
+                        "offer_id": None,
+                        "message": "Invalid base_salary format"
+                    })
+            
+            # Validate optional numeric fields if provided
+            optional_numeric_fields = ["stock_options_amount", "signing_bonus_amount", "relocation_allowance_amount"]
+            for field in optional_numeric_fields:
+                if field in fields_to_update:
+                    try:
+                        value = float(fields_to_update[field])
+                        if value < 0:
+                            return json.dumps({
+                                "success": False,
+                                "offer_id": None,
+                                "message": f"{field} must be non-negative"
+                            })
+                        offer[field] = value
+                    except (ValueError, TypeError):
+                        return json.dumps({
+                            "success": False,
+                            "offer_id": None,
+                            "message": f"Invalid {field} format"
+                        })
+            
+            # Validate start_date if provided
+            if "start_date" in fields_to_update:
+                date_error = validate_date_format(fields_to_update["start_date"], "start_date")
+                if date_error:
+                    return json.dumps({
+                        "success": False,
+                        "offer_id": None,
+                        "message": date_error
+                    })
+                offer["start_date"] = convert_date_format(fields_to_update["start_date"])
+            
+            # Update position if provided
+            if "position" in fields_to_update:
+                offer["position"] = fields_to_update["position"]
+            
+            # Update reporting_manager_id if provided
+            if "reporting_manager_id" in fields_to_update:
+                offer["reporting_manager_id"] = str(fields_to_update["reporting_manager_id"])
+            
+            # Validate and update offer_status if provided
+            if "offer_status" in fields_to_update:
+                valid_statuses = ["draft", "compliance_pending", "approved_for_issue", "issued", "accepted", "declined"]
+                if fields_to_update["offer_status"] not in valid_statuses:
+                    return json.dumps({
+                        "success": False,
+                        "offer_id": None,
+                        "message": f"Invalid offer_status. Must be one of: {', '.join(valid_statuses)}"
+                    })
+                offer["offer_status"] = fields_to_update["offer_status"]
+            
+            # Update timestamp
+            offer["updated_at"] = "2025-10-10T12:00:00"
+            
+            updated_fields = ", ".join(fields_to_update.keys())
+            return json.dumps({
+                "success": True,
+                "offer_id": str(kwargs["offer_id"]),
+                "message": f"Offer {kwargs['offer_id']} updated successfully. Updated fields: {updated_fields}"
             })
         
         elif operation_type == "add_benefit":
@@ -380,14 +491,14 @@ class ExecuteOfferOperations(Tool):
             "type": "function",
             "function": {
                 "name": "execute_offer_operations",
-                "description": "Manage job offer operations including creation, benefits, compliance, approval, issuance, and acceptance. This tool handles the complete offer lifecycle from initial creation through final acceptance. For creation, establishes new offer records with comprehensive validation of candidate and user existence, positive salary requirements, and proper date formatting. For benefits, adds additional compensation and benefit details to existing offers. For compliance and approval, records necessary authorization steps with proper date tracking. For issuance, marks offers as officially sent to candidates. For acceptance, records candidate acceptance with complete audit trail. Essential for talent acquisition workflow management, compliance tracking, and offer administration.",
+                "description": "Manage job offer operations including creation, updates, benefits, compliance, approval, issuance, and acceptance. This tool handles the complete offer lifecycle from initial creation through final acceptance. For creation, establishes new offer records with comprehensive validation of candidate and user existence, positive salary requirements, and proper date formatting. For updates, allows modification of offer parameters including status changes (e.g., draft to compliance_pending), salary adjustments, and other offer details. For benefits, adds additional compensation and benefit details to existing offers. For compliance and approval, records necessary authorization steps with proper date tracking. For issuance, marks offers as officially sent to candidates. For acceptance, records candidate acceptance with complete audit trail. Essential for talent acquisition workflow management, compliance tracking, and offer administration.",
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "operation_type": {
                             "type": "string",
-                            "description": "Type of operation to perform: 'create_offer' to establish new offer record, 'add_benefit' to add benefit to offer, 'verify_compliance' to record compliance approval, 'approve_offer' to record HR manager approval, 'issue_offer' to mark offer as issued, 'record_acceptance' to record candidate acceptance",
-                            "enum": ["create_offer", "add_benefit", "verify_compliance", "approve_offer", "issue_offer", "record_acceptance"]
+                            "description": "Type of operation to perform: 'create_offer' to establish new offer record, 'update_offer' to modify existing offer parameters and status, 'add_benefit' to add benefit to offer, 'verify_compliance' to record compliance approval, 'approve_offer' to record HR manager approval, 'issue_offer' to mark offer as issued, 'record_acceptance' to record candidate acceptance",
+                            "enum": ["create_offer", "update_offer", "add_benefit", "verify_compliance", "approve_offer", "issue_offer", "record_acceptance"]
                         },
                         "candidate_id": {
                             "type": "string",
@@ -468,6 +579,10 @@ class ExecuteOfferOperations(Tool):
                         "offer_accepted_date": {
                             "type": "string",
                             "description": "Date when the offer acceptance was recorded in the system. Enter date in YYYY-MM-DD format (e.g., '2025-02-19' for February 19, 2025). This field is required only when operation_type is 'record_acceptance'. Must follow the exact format YYYY-MM-DD with hyphens as separators. May differ from acceptance_date if there was a delay in recording. Example: '2025-02-26'"
+                        },
+                        "offer_status": {
+                            "type": "string",
+                            "description": "Status of the offer. Enter one of the valid status values: 'draft', 'compliance_pending', 'approved_for_issue', 'issued', 'accepted', 'declined'. This field is optional and only applies when operation_type is 'update_offer'. Used to change the offer status through the workflow (e.g., from 'draft' to 'compliance_pending'). Example: 'compliance_pending'"
                         }
                     },
                     "required": ["operation_type"]
