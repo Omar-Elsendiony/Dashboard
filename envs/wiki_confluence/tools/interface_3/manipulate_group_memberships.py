@@ -57,6 +57,7 @@ class ManipulateGroupMemberships(Tool):
             timestamp = "2025-10-01T12:00:00"
             
             new_membership = {
+                "_id": membership_key,
                 "user_id": user_id,
                 "group_id": group_id,
                 "joined_at": timestamp
