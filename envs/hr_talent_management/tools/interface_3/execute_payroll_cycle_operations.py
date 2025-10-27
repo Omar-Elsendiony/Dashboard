@@ -66,18 +66,18 @@ class ExecutePayrollCycleOperations(Tool):
             
             user = users[requesting_user_id]
             user_role = user.get("role")
-            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin"]
+            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_director", "hr_admin"]
             
             if user_role not in valid_roles:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Missing or invalid inputs - user must be an HR Payroll Administrator, HR Manager, or HR Admin"
+                    "error": f"Halt: Access denied - user role '{user_role}' is not authorized. Required roles: hr_payroll_administrator, hr_manager, hr_director, or hr_admin"
                 })
             
             if user.get("employment_status") != "active":
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Missing or invalid inputs - user must be active"
+                    "error": f"Halt: Access denied - user employment status '{user.get('employment_status')}' is not active. User must be active to create payroll cycles"
                 })
             
             # Validate mandatory fields
@@ -169,7 +169,7 @@ class ExecutePayrollCycleOperations(Tool):
             "type": "function",
             "function": {
                 "name": "execute_payroll_cycle_operations",
-				"description": "Create and validate payroll cycles when setting up payroll processing periods.\n\nWhat this tool does:\n- Creates a payroll cycle with required dates and frequency.\n- Validates date relationships (start < end, cutoff within the range).\n- Ensures frequency is supported.\n- Prevents overlapping cycles.\n- Verifies the requester is an active HR user with appropriate role.\n\nWho can use it:\n- Active users with role one of: hr_payroll_administrator, hr_manager, hr_admin.\n\nInput guidance (enter exactly as described):\n- operation_type: Use 'create_cycle' to create a new payroll cycle.\n- cycle_start_date: Enter date in YYYY-MM-DD (e.g., 2025-01-01). Must be before cycle_end_date.\n- cycle_end_date: Enter date in YYYY-MM-DD (e.g., 2025-01-31). Must be after cycle_start_date.\n- frequency: Choose one of: weekly, bi_weekly, monthly.\n- cutoff_date: Enter date in YYYY-MM-DD that lies between cycle_start_date and cycle_end_date (inclusive).\n- requesting_user_id: Provide a valid user id present in data.users with an allowed role and employment_status 'active'.\n\nBusiness rules enforced:\n- Dates must be valid and in correct order.\n- cutoff_date must be within [cycle_start_date, cycle_end_date].\n- No overlap with any existing payroll cycle date ranges.\n- frequency must be one of the allowed values.\n- Requester must exist, be active, and have a permitted role.\n\nExample input object (JSON):\n{\n  \"operation_type\": \"create_cycle\",\n  \"cycle_start_date\": \"2025-01-01\",\n  \"cycle_end_date\": \"2025-01-31\",\n  \"frequency\": \"monthly\",\n  \"cutoff_date\": \"2025-01-25\",\n  \"requesting_user_id\": \"u_123\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields\n- Invalid date relationships (start >= end, cutoff out of range)\n- Overlapping cycle exists\n- Unsupported frequency\n- Requester not found / inactive / role not permitted",
+				"description": "Create and validate payroll cycles when setting up payroll processing periods.\n\nWhat this tool does:\n- Creates a payroll cycle with required dates and frequency.\n- Validates date relationships (start < end, cutoff within the range).\n- Ensures frequency is supported.\n- Prevents overlapping cycles.\n- Verifies the requester is an active HR user with appropriate role.\n\nWho can use it:\n- Active users with role one of: hr_payroll_administrator, hr_manager, hr_director, hr_admin.\n\nInput guidance (enter exactly as described):\n- operation_type: Use 'create_cycle' to create a new payroll cycle.\n- cycle_start_date: Enter date in YYYY-MM-DD (e.g., 2025-01-01). Must be before cycle_end_date.\n- cycle_end_date: Enter date in YYYY-MM-DD (e.g., 2025-01-31). Must be after cycle_start_date.\n- frequency: Choose one of: weekly, bi_weekly, monthly.\n- cutoff_date: Enter date in YYYY-MM-DD that lies between cycle_start_date and cycle_end_date (inclusive).\n- requesting_user_id: Provide a valid user id present in data.users with an allowed role and employment_status 'active'.\n\nBusiness rules enforced:\n- Dates must be valid and in correct order.\n- cutoff_date must be within [cycle_start_date, cycle_end_date].\n- No overlap with any existing payroll cycle date ranges.\n- frequency must be one of the allowed values.\n- Requester must exist, be active, and have a permitted role.\n\nExample input object (JSON):\n{\n  \"operation_type\": \"create_cycle\",\n  \"cycle_start_date\": \"2025-01-01\",\n  \"cycle_end_date\": \"2025-01-31\",\n  \"frequency\": \"monthly\",\n  \"cutoff_date\": \"2025-01-25\",\n  \"requesting_user_id\": \"u_123\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields\n- Invalid date relationships (start >= end, cutoff out of range)\n- Overlapping cycle exists\n- Unsupported frequency\n- Requester not found / inactive / role not permitted",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -197,7 +197,7 @@ class ExecutePayrollCycleOperations(Tool):
                         },
                         "requesting_user_id": {
                             "type": "string",
-							"description": "User id of the requester. Required. User must exist in data.users, have employment_status 'active', and role in {hr_payroll_administrator, hr_manager, hr_admin}."
+							"description": "User id of the requester. Required. User must exist in data.users, have employment_status 'active', and role in {hr_payroll_administrator, hr_manager, hr_director, hr_admin}."
                         }
                     },
                     "required": ["operation_type", "cycle_start_date", "cycle_end_date", "frequency", "cutoff_date", "requesting_user_id"]

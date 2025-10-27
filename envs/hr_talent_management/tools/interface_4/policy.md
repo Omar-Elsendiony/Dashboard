@@ -1049,7 +1049,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 ## Payroll Cycle Creation
 
-**Use this SOP when:** HR Payroll Administrator, HR Manager, or HR Director needs to create a new payroll cycle for processing employee payments.
+**Use this SOP when:** HR Payroll Administrator, HR Manager, HR Admin, or HR Director needs to create a new payroll cycle for processing employee payments.
 
 **Goal:** To establish a new payroll cycle with defined start/end dates, frequency, and cutoff dates for payroll processing.
 
@@ -1057,7 +1057,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 #### 1. Collect Cycle Details
 - Obtain mandatory fields: `cycle_start_date`, `cycle_end_date`, `frequency`, `cutoff_date`, `requesting_user_id`
-- Verify the user is an active HR Payroll Administrator, HR Manager, or HR Director using `get_reference_entities`
+- Verify the user is an active HR Payroll Administrator, HR Manager, HR Admin, or HR Director using `get_reference_entities`
 
 #### 2. Create Payroll Cycle
 - Use `process_payroll_cycle_operations` with `operation_type` 'create_cycle'
