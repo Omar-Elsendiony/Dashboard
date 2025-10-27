@@ -34,32 +34,30 @@ class RecordNewAuditTrail(Tool):
         
         # Validate action_type enum
         valid_actions = [
-            "create_user",
-            "update_user",
-            "delete_user",
-            "create_group",
-            "add_user_to_group",
-            "create_space",
-            "update_space",
-            "delete_space",
-            "manage_space_permissions",
-            "record_configuration_change",
-            "create_page",
-            "update_page",
-            "publish_page",
-            "unpublish_page",
-            "delete_page",
-            "restore_page",
-            "watch_content",
-            "unwatch_content",
-            "add_permission",
-            "remove_permission",
-            "add_page_permission",
-            "create_approval_request",
-            "decide_approval_step",
-            "send_notification",
-            "retrieve_notifications",
-            "export_space"
+            "establish_approval_request",
+            "execute_approval_step",
+            "lookup_approval_request",
+            "lookup_config_history",
+            "lookup_group",
+            "lookup_notifications",
+            "lookup_page",
+            "lookup_permissions",
+            "lookup_space",
+            "lookup_user",
+            "lookup_watchers",
+            "address_exports",
+            "address_group_memberships",
+            "address_groups",
+            "address_page_versions",
+            "address_pages",
+            "address_permissions",
+            "address_space_features",
+            "address_spaces",
+            "address_users",
+            "address_watchers",
+            "capture_config_change",
+            "deliver_notification",
+            "handover_to_human"
         ]
         if action_type not in valid_actions:
             return json.dumps({
@@ -107,7 +105,7 @@ class RecordNewAuditTrail(Tool):
                         "action_type": {
                             "type": "string",
                             "description": "Type of action performed (required)",
-                            "enum": ["create_user", "update_user", "delete_user", "create_group", "add_user_to_group", "create_space", "update_space", "delete_space", "manage_space_permissions", "record_configuration_change", "create_page", "update_page", "publish_page", "unpublish_page", "delete_page", "restore_page", "watch_content", "unwatch_content", "add_permission", "remove_permission", "add_page_permission", "create_approval_request", "decide_approval_step", "send_notification", "retrieve_notifications", "export_space"]
+                            "enum": ["establish_approval_request", "execute_approval_step", "lookup_approval_request", "lookup_config_history", "lookup_group", "lookup_notifications", "lookup_page", "lookup_permissions", "lookup_space", "lookup_user", "lookup_watchers", "address_exports", "address_group_memberships", "address_groups", "address_page_versions", "address_pages", "address_permissions", "address_space_features", "address_spaces", "address_users", "address_watchers", "capture_config_change", "deliver_notification", "handover_to_human"]
                         },
                         "target_entity_type": {
                             "type": "string",

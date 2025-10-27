@@ -34,34 +34,31 @@ class CreateNewAuditTrail(Tool):
         
         # Validate action_type enum
         valid_actions = [
-                "create_user",
-                "update_user",
-                "delete_user",
-                "create_group",
-                "add_user_to_group",
-                "create_space",
-                "update_space",
-                "delete_space",
-                "manage_space_permissions",
-                "record_configuration_change",
-                "create_page",
-                "update_page",
-                "publish_page",
-                "unpublish_page",
-                "delete_page",
-                "restore_page",
-                "watch_content",
-                "unwatch_content",
-                "add_permission",
-                "remove_permission",
-                "add_page_permission",
-                "create_approval_request",
-                "decide_approval_step",
-                "send_notification",
-                "retrieve_notifications",
-                "export_space"
-            ]
-
+            "set_approval_request",
+            "set_approval_decision",
+            "fetch_approval_request",
+            "fetch_config_history",
+            "fetch_group",
+            "fetch_notifications",
+            "fetch_page",
+            "fetch_permissions",
+            "fetch_space",
+            "fetch_user",
+            "fetch_watchers",
+            "set_exports",
+            "set_group_memberships",
+            "set_groups",
+            "set_page_versions",
+            "set_pages",
+            "set_permissions",
+            "set_space_features",
+            "set_spaces",
+            "set_users",
+            "set_watchers",
+            "log_config_change",
+            "dispatch_notification",
+            "switch_to_human"
+        ]
         if action_type not in valid_actions:
             return json.dumps({
                 "success": False,
@@ -108,7 +105,7 @@ class CreateNewAuditTrail(Tool):
                         "action_type": {
                             "type": "string",
                             "description": "Type of action performed (required)",
-                            "enum": ["create_user", "update_user", "delete_user", "create_group", "add_user_to_group", "create_space", "update_space", "delete_space", "manage_space_permissions", "record_configuration_change", "create_page", "update_page", "publish_page", "unpublish_page", "delete_page", "restore_page", "watch_content", "unwatch_content", "add_permission", "remove_permission", "add_page_permission", "create_approval_request", "decide_approval_step", "send_notification", "retrieve_notifications", "export_space"]
+                            "enum": ["set_approval_request", "set_approval_decision", "fetch_approval_request", "fetch_config_history", "fetch_group", "fetch_notifications", "fetch_page", "fetch_permissions", "fetch_space", "fetch_user", "fetch_watchers", "set_exports", "set_group_memberships", "set_groups", "set_page_versions", "set_pages", "set_permissions", "set_space_features", "set_spaces", "set_users", "set_watchers", "log_config_change", "dispatch_notification", "switch_to_human"]
                         },
                         "target_entity_type": {
                             "type": "string",
