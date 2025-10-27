@@ -109,7 +109,7 @@ Use this SOP when logging a modification to a space's configuration settings for
 
 **Steps:**
 
-1. Use lookup_user to retrieve the requester’s record. Then use lookup_permissions to verify the requester has an edit permission on the space.  
+1. Use lookup_user to retrieve the requester’s record. Then use lookup_permissions to verify the requester has an admin or edit permission on the space.  
 2. Call address_pages to create the primary page record.  
 3. Then call address_page_versions to save the initial content version (Version 1).  
 4. Create an audit entry with record_new_audit_trail.

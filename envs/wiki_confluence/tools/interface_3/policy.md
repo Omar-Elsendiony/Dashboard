@@ -109,7 +109,7 @@ Use this SOP when logging a modification to a space's configuration settings for
 
 **Steps:**
 
-1. Use retrieve_user to retrieve the requester’s record. Then use retrieve_permissions to verify the requester has an edit permission on the space.  
+1. Use retrieve_user to retrieve the requester’s record. Then use retrieve_permissions to verify the requester has an admin or edit permission on the space.  
 2. Call manipulate_pages to create the primary page record.  
 3. Then call manipulate_page_versions to save the initial content version (Version 1).  
 4. Create an audit entry with register_new_audit_trail.
