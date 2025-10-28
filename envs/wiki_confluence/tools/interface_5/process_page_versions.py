@@ -59,7 +59,21 @@ class ProcessPageVersions(Tool):
             
             # Get current version number from page
             current_page = pages[page_id]
-            new_version_number = current_page.get("current_version", 0) + 1
+
+            existing_versions_for_page = [
+                v.get("version_number", 0)
+                for v in page_versions.values()
+                if isinstance(v, dict) and v.get("page_id") == page_id
+            ]
+
+          
+            if existing_versions_for_page:
+
+                new_version_number = max(existing_versions_for_page) + 1
+            else:
+
+                page_current_version = current_page.get("current_version", 1)
+                new_version_number = page_current_version
             
             # Generate new version ID
             new_version_id = generate_id(page_versions)
@@ -111,8 +125,18 @@ class ProcessPageVersions(Tool):
             
             # Create a new version with the restored content
             current_page = pages[page_id]
-            new_version_number = current_page.get("current_version", 0) + 1
             
+            # Determine next version just like in create path
+            existing_versions_for_page = [
+                v.get("version_number", 0)
+                for v in page_versions.values()
+                if isinstance(v, dict) and v.get("page_id") == page_id
+            ]
+            if existing_versions_for_page:
+                new_version_number = max(existing_versions_for_page) + 1
+            else:
+                new_version_number = current_page.get("current_version", 1) + 1
+            # Determine next version just like in create path
             new_version_id = generate_id(page_versions)
             timestamp = "2025-10-01T12:00:00"
             
