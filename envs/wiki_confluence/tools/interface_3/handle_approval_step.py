@@ -57,7 +57,43 @@ class HandleApprovalStep(Tool):
         
         # Generate new decision ID
         new_decision_id = generate_id(approval_decisions)
-        timestamp = "2025-10-01T12:00:00"
+        
+        # Generate timestamp that's always after the request creation and any existing decisions
+        def _parse_timestamp(ts: str) -> datetime:
+            """Parse timestamp in various formats."""
+            if not ts:
+                return datetime(2025, 10, 1, 12, 0, 0)
+            try:
+                # Handle timestamps with microseconds
+                if '.' in ts:
+                    return datetime.strptime(ts.split('.')[0], '%Y-%m-%dT%H:%M:%S')
+                # Handle timestamps with timezone info
+                elif '+' in ts or ts.endswith('Z'):
+                    return datetime.strptime(ts.split('+')[0].split('Z')[0], '%Y-%m-%dT%H:%M:%S')
+                else:
+                    return datetime.strptime(ts, '%Y-%m-%dT%H:%M:%S')
+            except:
+                return datetime(2025, 10, 1, 12, 0, 0)
+        
+        # Start with request creation time as baseline
+        base_timestamp = current_request.get("created_at", "2025-10-01T12:00:00")
+        max_decision_time = _parse_timestamp(base_timestamp)
+        
+        # Find the latest decision for this request
+        existing_decisions_for_request = [d for d in approval_decisions.values() 
+                                           if isinstance(d, dict) and d.get("step_id") == request_id]
+        
+        for decision in existing_decisions_for_request:
+            decided_at = decision.get("decided_at")
+            if decided_at:
+                decision_dt = _parse_timestamp(decided_at)
+                if decision_dt > max_decision_time:
+                    max_decision_time = decision_dt
+        
+        # New decision is always at least 1 second after the latest decision
+        # Format to match existing data format: 2025-10-07T20:10:58.170905
+        new_dt = max_decision_time + timedelta(seconds=1)
+        decision_timestamp = new_dt.strftime('%Y-%m-%dT%H:%M:%S.%f')[:26]  # Keep 6 digits after decimal
         
         new_decision = {
             "decision_id": str(new_decision_id),
@@ -65,7 +101,7 @@ class HandleApprovalStep(Tool):
             "approver_user_id": approver_user_id,
             "decision": decision,
             "comment": comment,
-            "decided_at": timestamp
+            "decided_at": decision_timestamp
         }
         
         approval_decisions[str(new_decision_id)] = new_decision
@@ -81,7 +117,7 @@ class HandleApprovalStep(Tool):
         elif decision == "escalate":
             updated_request["status"] = "in_review"
         
-        updated_request["updated_at"] = timestamp
+        updated_request["updated_at"] = decision_timestamp
         approval_requests[request_id] = updated_request
         
         return json.dumps({

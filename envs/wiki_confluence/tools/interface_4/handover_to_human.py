@@ -4,7 +4,7 @@ from typing import Any, Dict
 from tau_bench.envs.tool import Tool
 
 
-class HandOverToHuman(Tool):
+class HandoverToHuman(Tool):
     @staticmethod
     def invoke(
         data: Dict[str, Any],
