@@ -1,92 +1,93 @@
 import json
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
 
 class RetrievePermissions(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], entity_type: str, entity_id: str) -> str:
+    def invoke(
+        data: Dict[str, Any],
+        entity_type: str,
+        entity_id: Optional[str] = None,
+        filters: Optional[Dict[str, Any]] = None,
+    ) -> str:
         """
-        Retrieve all permissions for a space, page, user, or group. 
-        And also supports user-centric and group-centric permission queries.
+        Retrieve permissions for spaces or pages.
+        If entity_id is provided, returns permissions for that specific entity.
+        If omitted, returns all permissions for the entity_type across all entities.
         """
-
         if not isinstance(data, dict):
-            return json.dumps({
-                "success": False,
-                "error": "Invalid data format"
-            })
-        
+            return json.dumps({"success": False, "error": "Invalid data format"})
+
         permissions = data.get("permissions", {})
         spaces = data.get("spaces", {})
         pages = data.get("pages", {})
-        users = data.get("users", {})
-        groups = data.get("groups", {})
 
         # Validate entity_type
-        if entity_type not in ["space", "page", "user", "group"]:
-            return json.dumps({
-                "success": False,
-                "error": f"Invalid entity_type '{entity_type}'. Must be 'space', 'page', 'user', or 'group'"
-            })
-        
-        # Validate entity exists
-        if entity_type == "space":
-            if entity_id not in spaces:
-                return json.dumps({
+        if entity_type not in ["space", "page"]:
+            return json.dumps(
+                {
                     "success": False,
-                    "error": f"Space {entity_id} not found"
-                })
-        elif entity_type == "page":
-            if entity_id not in pages:
-                return json.dumps({
-                    "success": False,
-                    "error": f"Page {entity_id} not found"
-                })
-        elif entity_type == "user":
-            if entity_id not in users:
-                return json.dumps({
-                    "success": False,
-                    "error": f"User {entity_id} not found"
-                })
-        elif entity_type == "group":
-            if entity_id not in groups:
-                return json.dumps({
-                    "success": False,
-                    "error": f"Group {entity_id} not found"
-                })
+                    "error": f"Invalid entity_type '{entity_type}'. "
+                    "Must be 'space' or 'page'",
+                }
+            )
 
-        # Find all permissions for the entity
+        # Validate entity exists if provided
+        if entity_id is not None:
+            if entity_type == "space":
+                if entity_id not in spaces:
+                    return json.dumps(
+                        {"success": False, "error": f"Space {entity_id} not found"}
+                    )
+            elif entity_type == "page":
+                if entity_id not in pages:
+                    return json.dumps(
+                        {"success": False, "error": f"Page {entity_id} not found"}
+                    )
+
+        # Determine the entity ID key for permissions
+        entity_id_key = "space_id" if entity_type == "space" else "page_id"
+
+        # Find matching permissions
         matching_permissions = []
-        if entity_type in ["space", "page"]:
-            # permissions assigned TO the space/page
-            for _, permission in permissions.items():
-                if entity_type == "space" and permission.get("space_id") == entity_id:
-                    matching_permissions.append(permission.copy())
-                elif entity_type == "page" and permission.get("page_id") == entity_id:
-                    matching_permissions.append(permission.copy())
-        else:
-            # permissions held BY the user/group
-            for _, permission in permissions.items():
-                if entity_type == "user" and permission.get("user_id") == entity_id:
-                    matching_permissions.append(permission.copy())
-                elif entity_type == "group" and permission.get("group_id") == entity_id:
-                    matching_permissions.append(permission.copy())
+        for permission_id, permission in permissions.items():
+            # Skip if not for this entity_type
+            perm_entity_id = permission.get(entity_id_key)
+            if perm_entity_id is None:
+                continue
+
+            # Skip if entity_id provided but doesn't match
+            if entity_id is not None and perm_entity_id != entity_id:
+                continue
+
+            # Apply filters if provided
+            if filters:
+                match = True
+                for filter_key, filter_value in filters.items():
+                    perm_value = permission.get(filter_key)
+                    if perm_value != filter_value:
+                        match = False
+                        break
+                if not match:
+                    continue
+
+            matching_permissions.append(permission.copy())
 
         # Sort by granted_at descending
         matching_permissions.sort(
-            key=lambda x: x.get("granted_at", ""), reverse=True)
+            key=lambda x: x.get("granted_at", ""), reverse=True
+        )
 
-        # Response Object
-        response = {
-            "success": True,
-            "entity_type": entity_type,
-            "entity_id": entity_id,
-            "count": len(matching_permissions),
-            "permissions": matching_permissions
-        }
-
-        return json.dumps(response)
+        return json.dumps(
+            {
+                "success": True,
+                "entity_type": entity_type,
+                "entity_id": entity_id,
+                "count": len(matching_permissions),
+                "permissions": matching_permissions,
+            }
+        )
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
@@ -94,21 +95,49 @@ class RetrievePermissions(Tool):
             "type": "function",
             "function": {
                 "name": "retrieve_permissions",
-                "description": "Retrieve all permissions for spaces, pages, users, or groups in the Confluence system. This tool supports both entity-centric queries (what permissions exist for a space/page) and user-centric queries (what permissions does a user/group have). Fetches complete access control permissions including permission IDs, types (view, edit, admin), grantees, grantors, timestamps, active status, and expiration dates. Returns permissions sorted by grant date with most recent first. Essential for access control auditing, permission management, security reviews, user access analysis, and understanding who has access to content.",
+                "description": (
+                    "Retrieve permissions for spaces or pages in the Confluence system, "
+                    "optionally filtered and scoped to a specific entity. Fetches access "
+                    "control permissions including IDs, types (view/edit/admin), "
+                    "grantees (users/groups), grantors, timestamps, status, and "
+                    "expiration. Sorted by grant date (most recent first). Ideal for "
+                    "auditing, management, security reviews."
+                ),
                 "parameters": {
                     "type": "object",
                     "properties": {
                         "entity_type": {
                             "type": "string",
-                            "description": "Type of entity to get permissions for (required). Use 'space' or 'page' to see permissions assigned TO those entities. Use 'user' or 'group' to see permissions held BY those entities.",
-                            "enum": ["space", "page", "user", "group"]
+                            "description": (
+                                "Type of entity (required): 'space' or 'page'. "
+                                "When entity_id omitted, returns ALL permissions "
+                                "for this type across all entities."
+                            ),
+                            "enum": ["space", "page"],
                         },
                         "entity_id": {
                             "type": "string",
-                            "description": "ID of the space, page, user, or group (required)"
-                        }
+                            "description": (
+                                "ID of specific space/page (optional). Omit for "
+                                "ALL permissions of the entity_type."
+                            ),
+                        },
+                        "filters": {
+                            "type": "object",
+                            "description": (
+                                "Optional filters (JSON object, key-value pairs). "
+                                "Single: {'key': 'value'}; Multiple: "
+                                "{'key1': 'value1', 'key2': 'value2'} (AND logic). "
+                                "Exact matches. Timestamps: ISO 8601. Booleans: "
+                                "true/false. Fields: permission_id (str), type "
+                                "('view'|'edit'|'admin'), grantee_type "
+                                "('user'|'group'), grantee_id (str), grantor_id "
+                                "(str), granted_at (timestamp), expires_at "
+                                "(timestamp), is_active (bool)."
+                            ),
+                        },
                     },
-                    "required": ["entity_type", "entity_id"]
-                }
-            }
+                    "required": ["entity_type"],
+                },
+            },
         }
