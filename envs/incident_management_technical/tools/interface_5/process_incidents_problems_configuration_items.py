@@ -26,16 +26,8 @@ class ProcessIncidentsProblemsConfigurationItems(Tool):
 
         def generate_id(table: Dict[str, Any], prefix: str) -> str:
             if not table:
-                return f"{prefix}1"
-            max_id = 0
-            for k in table.keys():
-                try:
-                    num = int(k[len(prefix):])
-                    if num > max_id:
-                        max_id = num
-                except ValueError:
-                    continue
-            return f"{prefix}{max_id + 1}"
+                return 1
+            return str(max(int(k) for k in table.keys()) + 1)
 
         timestamp = "2025-10-07T12:00:00"
 
