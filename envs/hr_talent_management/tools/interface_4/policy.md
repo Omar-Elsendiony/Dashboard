@@ -1101,7 +1101,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 - Missing mandatory fields (`employee_id`, `cycle_id`)
 - Employee not found or inactive
 - Cycle not found or not in 'open' status
-- Invalid hours (negative or > 24 per day)
+- Invalid hours (negative or exceeds cycle duration: must be <= (cycle_end_date - cycle_start_date + 1 day) × 24 hours)
 - Input submitted after cutoff date
 - Operation failed due to system errors
 

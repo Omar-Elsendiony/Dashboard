@@ -71,12 +71,12 @@ class AdministerPayslipOperations(Tool):
             
             user = users[user_id]
             user_role = user.get("role")
-            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin"]
+            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin", "hr_director"]
             
             if user_role not in valid_roles:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Missing or invalid inputs - user must be an HR Payroll Administrator, HR Manager, or HR Admin"
+                    "error": "Halt: Missing or invalid inputs - user must be an HR Payroll Administrator, HR Manager, HR Admin, or HR Director"
                 })
             
             if user.get("employment_status") != "active":
@@ -228,12 +228,12 @@ class AdministerPayslipOperations(Tool):
             
             user = users[user_id]
             user_role = user.get("role")
-            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin"]
+            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin", "hr_director"]
             
             if user_role not in valid_roles:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Missing or invalid inputs - user must be an HR Payroll Administrator, HR Manager, or HR Admin"
+                    "error": "Halt: Missing or invalid inputs - user must be an HR Payroll Administrator, HR Manager, HR Admin, or HR Director"
                 })
             
             if user.get("employment_status") != "active":
@@ -303,7 +303,7 @@ class AdministerPayslipOperations(Tool):
                     "error": "Halt: Missing mandatory fields - employee_id, cycle_id, payslip_id, amount, payment_date, payment_method, and user_id are required"
                 })
             
-            # Verify the user is an active finance manager
+            # Verify the user is an active finance manager, HR director, or HR admin
             if user_id not in users:
                 return json.dumps({
                     "success": False,
@@ -311,10 +311,13 @@ class AdministerPayslipOperations(Tool):
                 })
             
             user = users[user_id]
-            if user.get("role") != "finance_manager":
+            user_role = user.get("role")
+            valid_roles = ["finance_manager", "hr_director", "hr_admin"]
+            
+            if user_role not in valid_roles:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Missing or invalid inputs - user must be a Finance Manager"
+                    "error": "Halt: Missing or invalid inputs - user must be a Finance Manager, HR Director, or HR Admin"
                 })
             
             if user.get("employment_status") != "active":
@@ -422,7 +425,7 @@ class AdministerPayslipOperations(Tool):
             "type": "function",
             "function": {
                 "name": "administer_payslip_operations",
-				"description": "Generate payslips, release them to employees, and process payments with clear input requirements and validations.\n\nWhat this tool does:\n- create_payslip: Generates a payslip after validating employee, cycle, approved inputs, and financial calculations.\n- update_payslip_status: Marks a payslip as released with a release date.\n- create_payment: Processes payment for a released payslip by an authorized finance manager.\n\nWho can use it:\n- create_payslip / update_payslip_status: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- create_payment: Active users with role finance_manager.\n\nInput guidance:\n- operation_type: 'create_payslip' | 'update_payslip_status' | 'create_payment'.\n- For create_payslip:\n  - employee_id: Existing, active employee id.\n  - cycle_id: Existing payroll cycle id.\n  - gross_pay, base_salary, total_deductions, net_pay: Non-negative numbers; net_pay must equal gross_pay - total_deductions.\n  - bonus_earned, incentives_earned, reimbursements: Optional non-negative numbers.\n  - proration_status: Optional; one of not_applicable, applied, none.\n  - user_id: Authorized active user id.\n- For update_payslip_status:\n  - payslip_id: Existing payslip in status generated or verified.\n  - released_date: YYYY-MM-DD, not in the future.\n  - user_id: Authorized active user id.\n- For create_payment:\n  - employee_id, cycle_id: Must match the payslip.\n  - payslip_id: Existing payslip with status released.\n  - amount: Must exactly equal payslip.net_pay.\n  - payment_date: YYYY-MM-DD, not in the future.\n  - payment_method: bank_transfer | check | cash.\n  - user_id: Active finance_manager user id.\n\nExample create_payslip:\n{\n  \"operation_type\": \"create_payslip\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"gross_pay\": 6000,\n  \"base_salary\": 5000,\n  \"total_deductions\": 1000,\n  \"net_pay\": 5000,\n  \"bonus_earned\": 0,\n  \"user_id\": \"u_hr_1\"\n}\n\nExample update_payslip_status:\n{\n  \"operation_type\": \"update_payslip_status\",\n  \"payslip_id\": \"ps_900\",\n  \"released_date\": \"2025-01-14\",\n  \"user_id\": \"u_hr_1\"\n}\n\nExample create_payment:\n{\n  \"operation_type\": \"create_payment\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"payslip_id\": \"ps_900\",\n  \"amount\": 5000,\n  \"payment_date\": \"2025-01-15\",\n  \"payment_method\": \"bank_transfer\",\n  \"user_id\": \"u_fin_3\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- User not authorized or inactive.\n- Employee not found/inactive or no approved input for the cycle.\n- Amount validations fail (negative values; net_pay mismatch).\n- Release/payment date in the future.\n- Payslip not in required status (not generated/verified for release; not released for payment).\n- Payment amount mismatch or invalid payment method; missing employee bank details.",
+				"description": "Generate payslips, release them to employees, and process payments with clear input requirements and validations.\n\nWhat this tool does:\n- create_payslip: Generates a payslip after validating employee, cycle, approved inputs, and financial calculations.\n- update_payslip_status: Marks a payslip as released with a release date.\n- create_payment: Processes payment for a released payslip by an authorized finance manager.\n\nWho can use it:\n- create_payslip / update_payslip_status: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin, hr_director}.\n- create_payment: Active users with role in {finance_manager, hr_director, hr_admin}.\n\nInput guidance:\n- operation_type: 'create_payslip' | 'update_payslip_status' | 'create_payment'.\n- For create_payslip:\n  - employee_id: Existing, active employee id.\n  - cycle_id: Existing payroll cycle id.\n  - gross_pay, base_salary, total_deductions, net_pay: Non-negative numbers; net_pay must equal gross_pay - total_deductions.\n  - bonus_earned, incentives_earned, reimbursements: Optional non-negative numbers.\n  - proration_status: Optional; one of not_applicable, applied, none.\n  - user_id: Authorized active user id.\n- For update_payslip_status:\n  - payslip_id: Existing payslip in status generated or verified.\n  - released_date: YYYY-MM-DD, not in the future.\n  - user_id: Authorized active user id.\n- For create_payment:\n  - employee_id, cycle_id: Must match the payslip.\n  - payslip_id: Existing payslip with status released.\n  - amount: Must exactly equal payslip.net_pay.\n  - payment_date: YYYY-MM-DD, not in the future.\n  - payment_method: bank_transfer | check | cash.\n  - user_id: Active finance_manager user id.\n\nExample create_payslip:\n{\n  \"operation_type\": \"create_payslip\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"gross_pay\": 6000,\n  \"base_salary\": 5000,\n  \"total_deductions\": 1000,\n  \"net_pay\": 5000,\n  \"bonus_earned\": 0,\n  \"user_id\": \"u_hr_1\"\n}\n\nExample update_payslip_status:\n{\n  \"operation_type\": \"update_payslip_status\",\n  \"payslip_id\": \"ps_900\",\n  \"released_date\": \"2025-01-14\",\n  \"user_id\": \"u_hr_1\"\n}\n\nExample create_payment:\n{\n  \"operation_type\": \"create_payment\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"payslip_id\": \"ps_900\",\n  \"amount\": 5000,\n  \"payment_date\": \"2025-01-15\",\n  \"payment_method\": \"bank_transfer\",\n  \"user_id\": \"u_fin_3\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- User not authorized or inactive.\n- Employee not found/inactive or no approved input for the cycle.\n- Amount validations fail (negative values; net_pay mismatch).\n- Release/payment date in the future.\n- Payslip not in required status (not generated/verified for release; not released for payment).\n- Payment amount mismatch or invalid payment method; missing employee bank details.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -457,7 +460,7 @@ class AdministerPayslipOperations(Tool):
                         },
                         "user_id": {
                             "type": "string",
-							"description": "User id (required for all operations). Must be active hr_payroll_administrator/hr_manager/hr_admin for create_payslip/update_payslip_status; finance_manager for create_payment."
+							"description": "User id (required for all operations). Must be active hr_payroll_administrator/hr_manager/hr_admin/hr_director for create_payslip/update_payslip_status; finance_manager/hr_director/hr_admin for create_payment."
                         },
                         "bonus_earned": {
                             "type": "number",
