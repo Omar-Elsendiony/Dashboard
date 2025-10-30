@@ -104,7 +104,7 @@ class ProcessEmployeeOperations(Tool):
                 })
             
             # Validate employee_type enum
-            valid_employee_types = ["Full-time", "Part-time", "Contractor"]
+            valid_employee_types = ["full_time", "part_time", "contractor"]
             if kwargs["employee_type"] not in valid_employee_types:
                 return json.dumps({
                     "success": False,
@@ -222,8 +222,8 @@ class ProcessEmployeeOperations(Tool):
             new_employee_id = generate_id(employees)
             timestamp = "2025-10-10T12:00:00"
             
-            # Convert employee_type to lowercase with underscore for internal storage
-            employee_type_internal = kwargs["employee_type"].lower().replace("-", "_")
+            # Use employee_type directly as it's already in the correct format
+            employee_type_internal = kwargs["employee_type"]
             
             new_employee = {
                 "employee_id": str(new_employee_id),
@@ -340,8 +340,8 @@ class ProcessEmployeeOperations(Tool):
                         },
                         "employee_type": {
                             "type": "string",
-                            "description": "Type of employment classification. Select from: 'Full-time' for regular full-time employees (typically 40 hours/week), 'Part-time' for part-time employees (less than full-time hours), or 'Contractor' for contract workers. This field is required only when operation_type is 'create_employee'. Must be exactly one of these three values with proper capitalization and hyphenation. Determines benefits eligibility and employment terms. Example: 'Full-time'",
-                            "enum": ["Full-time", "Part-time", "Contractor"]
+                            "description": "Type of employment classification. Select from: 'full_time' for regular full-time employees (typically 40 hours/week), 'part_time' for part-time employees (less than full-time hours), or 'contractor' for contract workers. This field is required only when operation_type is 'create_employee'. Must be exactly one of these three values in lowercase with underscores. Determines benefits eligibility and employment terms. Example: 'full_time'",
+                            "enum": ["full_time", "part_time", "contractor"]
                         },
                         "department_id": {
                             "type": "string",

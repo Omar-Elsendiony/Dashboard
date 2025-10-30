@@ -1,3 +1,5 @@
+from .submit_approval_request import SubmitApprovalRequest
+from .resolve_approval_step import ResolveApprovalStep
 from .access_approval_request import AccessApprovalRequest
 from .access_config_history import AccessConfigHistory
 from .access_group import AccessGroup
@@ -7,8 +9,6 @@ from .access_permissions import AccessPermissions
 from .access_space import AccessSpace
 from .access_user import AccessUser
 from .access_watchers import AccessWatchers
-from .broadcast_notification import BroadcastNotification
-from .generate_new_audit_trail import GenerateNewAuditTrail
 from .process_exports import ProcessExports
 from .process_group_memberships import ProcessGroupMemberships
 from .process_groups import ProcessGroups
@@ -19,12 +19,14 @@ from .process_space_features import ProcessSpaceFeatures
 from .process_spaces import ProcessSpaces
 from .process_users import ProcessUsers
 from .process_watchers import ProcessWatchers
-from .resolve_approval_step import ResolveApprovalStep
-from .route_to_human import RouteToHuman
+from .generate_new_audit_trail import GenerateNewAuditTrail
 from .store_config_change import StoreConfigChange
-from .submit_approval_request import SubmitApprovalRequest
+from .broadcast_notification import BroadcastNotification
+from .route_to_human import RouteToHuman
 
 ALL_TOOLS_INTERFACE_5 = [
+    SubmitApprovalRequest,
+    ResolveApprovalStep,
     AccessApprovalRequest,
     AccessConfigHistory,
     AccessGroup,
@@ -34,8 +36,6 @@ ALL_TOOLS_INTERFACE_5 = [
     AccessSpace,
     AccessUser,
     AccessWatchers,
-    BroadcastNotification,
-    GenerateNewAuditTrail,
     ProcessExports,
     ProcessGroupMemberships,
     ProcessGroups,
@@ -46,8 +46,8 @@ ALL_TOOLS_INTERFACE_5 = [
     ProcessSpaces,
     ProcessUsers,
     ProcessWatchers,
-    ResolveApprovalStep,
-    RouteToHuman,
+    GenerateNewAuditTrail,
     StoreConfigChange,
-    SubmitApprovalRequest
+    BroadcastNotification,
+    RouteToHuman
 ]

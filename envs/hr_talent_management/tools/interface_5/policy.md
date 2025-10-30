@@ -185,7 +185,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 **For a status update:**
 - If the status is to change to "approved":
-  - Verify the user is active and has the appropriate role (HR Admin, HR Director) using `retrieve_reference_entities`
+  - Verify the user is active and has the appropriate role (HR Admin, HR Director, HR Manager) using `retrieve_reference_entities`
   - Verify requisition exists, is in "pending_approval" and all approvals (HR Manager, Finance Manager and Department head) have been provided and the approval dates recorded using `retrieve_job_entities`
 - If the requisition is to be reopened (changed from "closed" to "draft" or "pending_approval"):
   - Verify the user is an active HR Director using `retrieve_reference_entities`
@@ -469,14 +469,8 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 #### 2. Schedule Interview
 - Use `handle_interview_operations` with `operation_type` 'schedule_interview'
-- Use `open_audit_entry` to log interview scheduling
 
-#### 3. Add Panel Members
-- For each panel member:
-  - Use `handle_interview_operations` with `operation_type` 'add_panel_member'
-  - Use `open_audit_entry` to log panel member addition
-
-#### 4. Create Audit Entry
+#### 3. Create Audit Entry
 - Use `open_audit_entry` to log interview scheduling
 
 ### Halt Conditions:
@@ -1055,7 +1049,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 ## Payroll Cycle Creation
 
-**Use this SOP when:** HR Payroll Administrator, HR Manager, or HR Director needs to create a new payroll cycle for processing employee payments.
+**Use this SOP when:** HR Payroll Administrator, HR Manager, HR Admin, or HR Director needs to create a new payroll cycle for processing employee payments.
 
 **Goal:** To establish a new payroll cycle with defined start/end dates, frequency, and cutoff dates for payroll processing.
 
@@ -1063,7 +1057,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 
 #### 1. Collect Cycle Details
 - Obtain mandatory fields: `cycle_start_date`, `cycle_end_date`, `frequency`, `cutoff_date`, `requesting_user_id`
-- Verify the user is an active HR Payroll Administrator, HR Manager, or HR Director using `retrieve_reference_entities`
+- Verify the user is an active HR Payroll Administrator, HR Manager, HR Admin, or HR Director using `retrieve_reference_entities`
 
 #### 2. Create Payroll Cycle
 - Use `handle_payroll_cycle_operations` with `operation_type` 'create_cycle'
@@ -1107,7 +1101,7 @@ Halt, and use `transfer_to_human` if you receive the following errors; otherwise
 - Missing mandatory fields (`employee_id`, `cycle_id`)
 - Employee not found or inactive
 - Cycle not found or not in 'open' status
-- Invalid hours (negative or > 24 per day)
+- Invalid hours (negative or exceeds cycle duration: must be <= (cycle_end_date - cycle_start_date + 1 day) × 24 hours)
 - Input submitted after cutoff date
 - Operation failed due to system errors
 

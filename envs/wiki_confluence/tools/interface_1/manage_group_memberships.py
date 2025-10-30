@@ -13,6 +13,11 @@ class ManageGroupMemberships(Tool):
         - remove: Remove user from group
         """
         
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
         if action not in ["add", "remove"]:
             return json.dumps({
                 "success": False,
@@ -56,18 +61,23 @@ class ManageGroupMemberships(Tool):
             
             timestamp = "2025-10-01T12:00:00"
             
+            # Generate new ID
+            new_id = generate_id(user_groups)
+            
             new_membership = {
+                "_id": str(new_id),
                 "user_id": user_id,
                 "group_id": group_id,
                 "joined_at": timestamp
             }
             
-            user_groups[membership_key] = new_membership
+            user_groups[str(new_id)] = new_membership
             
             return json.dumps({
                 "success": True,
                 "action": "add",
                 "message": f"User {user_id} added to group {group_id} successfully",
+                "membership_id": str(new_id),
                 "membership_data": new_membership
             })
         
@@ -94,6 +104,7 @@ class ManageGroupMemberships(Tool):
                 "success": True,
                 "action": "remove",
                 "message": f"User {user_id} removed from group {group_id} successfully",
+                "membership_id": key_to_remove,
                 "membership_data": membership_to_remove
             })
     

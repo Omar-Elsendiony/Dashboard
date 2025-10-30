@@ -12,39 +12,44 @@ class SetGroupMemberships(Tool):
         - add: Add user to group
         - remove: Remove user from group
         """
-        
+
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+
         if action not in ["add", "remove"]:
             return json.dumps({
                 "success": False,
                 "error": f"Invalid action '{action}'. Must be 'add' or 'remove'"
             })
-        
+
         if not isinstance(data, dict):
             return json.dumps({
                 "success": False,
                 "error": "Invalid data format"
             })
-        
+
         user_groups = data.get("user_groups", {})
         users = data.get("users", {})
         groups = data.get("groups", {})
-        
+
         # Validate user and group exist
         if user_id not in users:
             return json.dumps({
                 "success": False,
                 "error": f"User {user_id} not found"
             })
-        
+
         if group_id not in groups:
             return json.dumps({
                 "success": False,
                 "error": f"Group {group_id} not found"
             })
-        
+
         # Create a composite key for user_groups
         membership_key = f"{user_id}_{group_id}"
-        
+
         if action == "add":
             # Check if membership already exists
             for ug_id, membership in user_groups.items():
@@ -53,21 +58,26 @@ class SetGroupMemberships(Tool):
                         "success": False,
                         "error": f"User {user_id} is already a member of group {group_id}"
                     })
-            
+
             timestamp = "2025-10-01T12:00:00"
-            
+
+            # Generate new ID
+            new_id = generate_id(user_groups)
+
             new_membership = {
+                "_id": str(new_id),
                 "user_id": user_id,
                 "group_id": group_id,
                 "joined_at": timestamp
             }
-            
-            user_groups[membership_key] = new_membership
-            
+
+            user_groups[str(new_id)] = new_membership
+
             return json.dumps({
                 "success": True,
                 "action": "add",
                 "message": f"User {user_id} added to group {group_id} successfully",
+                "membership_id": str(new_id),
                 "membership_data": new_membership
             })
         
@@ -75,7 +85,7 @@ class SetGroupMemberships(Tool):
             # Find and remove the membership
             membership_to_remove = None
             key_to_remove = None
-            
+
             for ug_id, membership in user_groups.items():
                 if membership.get("user_id") == user_id and membership.get("group_id") == group_id:
                     membership_to_remove = membership.copy()
@@ -89,11 +99,12 @@ class SetGroupMemberships(Tool):
                 })
             
             del user_groups[key_to_remove]
-            
+
             return json.dumps({
                 "success": True,
                 "action": "remove",
                 "message": f"User {user_id} removed from group {group_id} successfully",
+                "membership_id": key_to_remove,
                 "membership_data": membership_to_remove
             })
     

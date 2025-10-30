@@ -34,34 +34,31 @@ class RegisterNewAuditTrail(Tool):
         
         # Validate action_type enum
         valid_actions = [
-                "create_user",
-                "update_user",
-                "delete_user",
-                "create_group",
-                "add_user_to_group",
-                "create_space",
-                "update_space",
-                "delete_space",
-                "manage_space_permissions",
-                "record_configuration_change",
-                "create_page",
-                "update_page",
-                "publish_page",
-                "unpublish_page",
-                "delete_page",
-                "restore_page",
-                "watch_content",
-                "unwatch_content",
-                "add_permission",
-                "remove_permission",
-                "add_page_permission",
-                "create_approval_request",
-                "decide_approval_step",
-                "send_notification",
-                "retrieve_notifications",
-                "export_space"
-            ]
-
+            "generate_approval_request",
+            "handle_approval_step",
+            "retrieve_approval_request",
+            "retrieve_config_history",
+            "retrieve_group",
+            "retrieve_notifications",
+            "retrieve_page",
+            "retrieve_permissions",
+            "retrieve_space",
+            "retrieve_user",
+            "retrieve_watchers",
+            "manipulate_exports",
+            "manipulate_group_memberships",
+            "manipulate_groups",
+            "manipulate_page_versions",
+            "manipulate_pages",
+            "manipulate_permissions",
+            "manipulate_space_features",
+            "manipulate_spaces",
+            "manipulate_users",
+            "manipulate_watchers",
+            "track_config_change",
+            "transmit_notification",
+            "escalate_to_human"
+        ]
         if action_type not in valid_actions:
             return json.dumps({
                 "success": False,
@@ -108,7 +105,7 @@ class RegisterNewAuditTrail(Tool):
                         "action_type": {
                             "type": "string",
                             "description": "Type of action performed (required)",
-                            "enum":  ["create_user", "update_user", "delete_user", "create_group", "add_user_to_group", "create_space", "update_space", "delete_space", "manage_space_permissions", "record_configuration_change", "create_page", "update_page", "publish_page", "unpublish_page", "delete_page", "restore_page", "watch_content", "unwatch_content", "add_permission", "remove_permission", "add_page_permission", "create_approval_request", "decide_approval_step", "send_notification", "retrieve_notifications", "export_space"]
+                            "enum": ["generate_approval_request", "handle_approval_step", "retrieve_approval_request", "retrieve_config_history", "retrieve_group", "retrieve_notifications", "retrieve_page", "retrieve_permissions", "retrieve_space", "retrieve_user", "retrieve_watchers", "manipulate_exports", "manipulate_group_memberships", "manipulate_groups", "manipulate_page_versions", "manipulate_pages", "manipulate_permissions", "manipulate_space_features", "manipulate_spaces", "manipulate_users", "manipulate_watchers", "track_config_change", "transmit_notification", "escalate_to_human"]
                         },
                         "target_entity_type": {
                             "type": "string",

@@ -1,5 +1,6 @@
 import json
 from typing import Any, Dict
+from datetime import datetime
 from tau_bench.envs.tool import Tool
 
 class AdministerPayrollInputOperations(Tool):
@@ -21,9 +22,39 @@ class AdministerPayrollInputOperations(Tool):
                 return "1"
             return str(max(int(k) for k in table.keys()) + 1)
             
-        def is_valid_hours(hours: float) -> bool:
-            """Check if hours are valid (positive and <= 24 per day)"""
-            return hours is not None and hours >= 0 and hours <= 24
+        def is_valid_hours(hours: float, cycle_id: str, payroll_cycles: Dict[str, Any]) -> bool:
+            """Check if hours are valid (not negative and within cycle duration * 24)"""
+            if hours is None:
+                return True
+            
+            # Check for negative hours
+            if hours < 0:
+                return False
+            
+            # Get cycle information
+            if cycle_id not in payroll_cycles:
+                return False
+            
+            cycle = payroll_cycles[cycle_id]
+            start_date_str = cycle.get("cycle_start_date")
+            end_date_str = cycle.get("cycle_end_date")
+            
+            if not start_date_str or not end_date_str:
+                return False
+            
+            try:
+                # Parse dates
+                start_date = datetime.strptime(start_date_str, "%Y-%m-%d")
+                end_date = datetime.strptime(end_date_str, "%Y-%m-%d")
+                
+                # Calculate maximum hours (days * 24), including both start and end dates
+                days_in_cycle = (end_date - start_date).days + 1
+                max_hours = days_in_cycle * 24
+                
+                # Validate hours don't exceed max
+                return hours <= max_hours
+            except (ValueError, AttributeError):
+                return False
             
         def is_after_cutoff_date(cycle_id: str, payroll_cycles: Dict[str, Any]) -> bool:
             """Check if current date is after cutoff date"""
@@ -70,7 +101,7 @@ class AdministerPayrollInputOperations(Tool):
             
             user = users[requesting_user_id]
             user_role = user.get("role")
-            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin"]
+            valid_roles = ["hr_payroll_administrator", "hr_manager", "hr_admin", "hr_director"]
             
             if user_role not in valid_roles:
                 return json.dumps({
@@ -92,10 +123,10 @@ class AdministerPayrollInputOperations(Tool):
                 })
             
             employee = employees[employee_id]
-            if employee.get("employment_status") != "active":
+            if employee.get("employment_status") not in ["active", "on_leave"]:
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Employee not found or inactive - employee is not active"
+                    "error": "Halt: Employee not found or inactive - employee is not active or on leave"
                 })
             
             # Verify cycle exists and is open for input collection
@@ -120,16 +151,16 @@ class AdministerPayrollInputOperations(Tool):
                 })
             
             # Validate hours if provided
-            if hours_worked is not None and not is_valid_hours(hours_worked):
+            if hours_worked is not None and not is_valid_hours(hours_worked, cycle_id, payroll_cycles):
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Invalid hours (negative or > 24 per day) - hours_worked is invalid"
+                    "error": "Halt: Invalid hours (negative or exceeds cycle duration) - hours_worked is invalid"
                 })
             
-            if overtime_hours is not None and not is_valid_hours(overtime_hours):
+            if overtime_hours is not None and not is_valid_hours(overtime_hours, cycle_id, payroll_cycles):
                 return json.dumps({
                     "success": False,
-                    "error": "Halt: Invalid hours (negative or > 24 per day) - overtime_hours is invalid"
+                    "error": "Halt: Invalid hours (negative or exceeds cycle duration) - overtime_hours is invalid"
                 })
             
             # Generate new input ID
@@ -275,7 +306,7 @@ class AdministerPayrollInputOperations(Tool):
             "type": "function",
             "function": {
                 "name": "administer_payroll_input_operations",
-				"description": "Create and approve payroll inputs used for payslip calculations.\n\nWhat this tool does:\n- create_input: Records hours (regular and overtime) for an employee within a payroll cycle.\n- approve_input: Allows the employee's manager to approve or reject the recorded input.\n\nWho can use it:\n- create_input: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_input: The employee's manager (active user matching employees[employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_input' or 'approve_input'.\n- For create_input:\n  - employee_id: Existing, active employee id.\n  - cycle_id: Existing payroll cycle id with status 'open'; must be before cutoff date.\n  - hours_worked: Optional number >= 0 and <= 24.\n  - overtime_hours: Optional number >= 0 and <= 24.\n  - requesting_user_id: Authorized active user id.\n- For approve_input:\n  - input_id: Existing payroll input in 'draft' status.\n  - manager_approval_status: 'approved' or 'rejected'.\n  - manager_approved_by: Active user id who is the employee's manager.\n  - manager_approval_date: YYYY-MM-DD.\n\nExample create_input:\n{\n  \"operation_type\": \"create_input\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"hours_worked\": 8,\n  \"overtime_hours\": 2,\n  \"requesting_user_id\": \"u_hr_1\"\n}\n\nExample approve_input:\n{\n  \"operation_type\": \"approve_input\",\n  \"input_id\": \"pi_55\",\n  \"manager_approval_status\": \"approved\",\n  \"manager_approved_by\": \"u_mgr_7\",\n  \"manager_approval_date\": \"2025-01-10\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- User not authorized or inactive.\n- Employee not found/inactive.\n- Cycle not found/not open, or after cutoff.\n- Hours invalid (< 0 or > 24).\n- For approval: approver not employee's manager; input not in draft; invalid approval status.",
+				"description": "Create and approve payroll inputs used for payslip calculations.\n\nWhat this tool does:\n- create_input: Records hours (regular and overtime) for an employee within a payroll cycle.\n- approve_input: Allows the employee's manager to approve or reject the recorded input.\n\nWho can use it:\n- create_input: Active users with role in {hr_payroll_administrator, hr_manager, hr_admin}.\n- approve_input: The employee's manager (active user matching employees[employee_id].manager_id).\n\nInput guidance:\n- operation_type: 'create_input' or 'approve_input'.\n- For create_input:\n  - employee_id: Existing, active employee id.\n  - cycle_id: Existing payroll cycle id with status 'open'; must be before cutoff date.\n  - hours_worked: Optional number >= 0 and must not exceed (cycle_end_date - cycle_start_date) * 24.\n  - overtime_hours: Optional number >= 0 and must not exceed (cycle_end_date - cycle_start_date) * 24.\n  - requesting_user_id: Authorized active user id.\n- For approve_input:\n  - input_id: Existing payroll input in 'draft' status.\n  - manager_approval_status: 'approved' or 'rejected'.\n  - manager_approved_by: Active user id who is the employee's manager.\n  - manager_approval_date: YYYY-MM-DD.\n\nExample create_input:\n{\n  \"operation_type\": \"create_input\",\n  \"employee_id\": \"e_101\",\n  \"cycle_id\": \"c_12\",\n  \"hours_worked\": 8,\n  \"overtime_hours\": 2,\n  \"requesting_user_id\": \"u_hr_1\"\n}\n\nExample approve_input:\n{\n  \"operation_type\": \"approve_input\",\n  \"input_id\": \"pi_55\",\n  \"manager_approval_status\": \"approved\",\n  \"manager_approved_by\": \"u_mgr_7\",\n  \"manager_approval_date\": \"2025-01-10\"\n}\n\nTypical errors if inputs are incorrect:\n- Missing mandatory fields for the chosen operation.\n- User not authorized or inactive.\n- Employee not found/inactive.\n- Cycle not found/not open, or after cutoff.\n- Hours invalid (negative or exceeds cycle duration * 24).\n- For approval: approver not employee's manager; input not in draft; invalid approval status.",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -294,11 +325,11 @@ class AdministerPayrollInputOperations(Tool):
                         },
                         "hours_worked": {
                             "type": "number",
-							"description": "Regular hours (optional for create_input). Must be a number between 0 and 24 inclusive."
+							"description": "Regular hours (optional for create_input). Must be non-negative and not exceed (cycle_end_date - cycle_start_date) * 24 hours."
                         },
                         "overtime_hours": {
                             "type": "number",
-							"description": "Overtime hours (optional for create_input). Must be a number between 0 and 24 inclusive."
+							"description": "Overtime hours (optional for create_input). Must be non-negative and not exceed (cycle_end_date - cycle_start_date) * 24 hours."
                         },
                         "requesting_user_id": {
                             "type": "string",

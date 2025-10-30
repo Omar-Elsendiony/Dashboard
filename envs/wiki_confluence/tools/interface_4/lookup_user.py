@@ -18,8 +18,8 @@ class LookupUser(Tool):
         users = data.get("users", {})
         
         if identifier_type == "user_id":
-            if identifier in users:
-                user_data = users[identifier].copy()
+            if str(identifier) in users:
+                user_data = users[str(identifier)].copy()
                 return json.dumps({
                     "success": True,
                     "user_data": user_data
@@ -63,7 +63,7 @@ class LookupUser(Tool):
                         },
                         "identifier_type": {
                             "type": "string",
-                            "description": "Type of identifier (optional, defaults to 'user_id')",
+                            "description": "'user_id'* or 'email' (optional, * = default)",
                             "enum": ["user_id", "email"]
                         }
                     },

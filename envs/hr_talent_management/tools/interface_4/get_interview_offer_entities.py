@@ -57,6 +57,7 @@ class GetInterviewOfferEntities(Tool):
 
         if entity_type == "interviews":
             interviews = data.get("interviews", {})
+            interview_panel_members = data.get("interview_panel_members", {})
 
             # Supported interview filters
             interview_exact_keys = [
@@ -81,6 +82,15 @@ class GetInterviewOfferEntities(Tool):
                     # Numeric range filters for rating
                     if not in_numeric_range(record.get("rating"), "rating_min", "rating_max", filters):
                         continue
+
+                # Look up panel members for this interview
+                panel_member_ids = []
+                for panel_member_id, panel_member in interview_panel_members.items():
+                    if panel_member.get("interview_id") == interview_id:
+                        panel_member_ids.append(panel_member.get("user_id"))
+                
+                # Add panel_member_ids to the record
+                record["panel_member_ids"] = panel_member_ids
 
                 # ensure id present as string
                 record["interview_id"] = str(interview_id)
@@ -142,7 +152,7 @@ class GetInterviewOfferEntities(Tool):
             "type": "function",
             "function": {
                 "name": "get_interview_offer_entities",
-                "description": "Discover and retrieve interview and offer entities.",
+                "description": "Discover and retrieve interview and offer entities. For interviews, panel_member_ids (user_ids of panel members) are included in the returned entities.",
                 "parameters": {
                     "type": "object",
                     "properties": {
