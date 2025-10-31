@@ -6,11 +6,12 @@ import requests
 import json
 # Third-party libraries
 from flask_cors import CORS
-from datetime import timedelta
+from datetime import timedelta, datetime
 from functools import lru_cache
 from flask_session import Session
 from oauthlib.oauth2 import WebApplicationClient
 from flask import Flask, render_template, request, redirect, url_for, session, g
+from werkzeug.middleware.proxy_fix import ProxyFix
 from flask_login import (
     LoginManager,
     current_user,
@@ -32,11 +33,18 @@ from modules.interface_connections import interface_connections_bp
 from dotenv import load_dotenv
 load_dotenv()
 
+# Enable insecure transport for local OAuth development
+# if os.environ.get('OAUTHLIB_INSECURE_TRANSPORT'):
+#     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY")
 if not app.secret_key:
     raise ValueError("FLASK_SECRET_KEY environment variable must be set")
+
+# Configure app to trust proxy headers (for HTTPS detection behind nginx)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
 # Talisman(app, 
 #     force_https=True,
@@ -112,11 +120,15 @@ def get_oauth_config():
     if "dashboard-omega-swart-74.vercel.app" in request.host:
         client_id = os.environ.get("GOOGLE_CLIENT_ID")
         client_secret = os.environ.get("GOOGLE_CLIENT_SECRET")
+    elif "turing-amazon-toolings.turing.com" in request.host:
+        client_id = os.environ.get("GOOGLE_CLIENT_ID_3")
+        client_secret = os.environ.get("GOOGLE_CLIENT_SECRET_3")
     else:
         client_id = os.environ.get("GOOGLE_CLIENT_ID_2")
         client_secret = os.environ.get("GOOGLE_CLIENT_SECRET_2")
     
     if not client_id or not client_secret:
+        print(f"OAuth credentials not found: {client_id}, {client_secret}")
         raise ValueError("OAuth credentials not configured properly")
     
     return client_id, client_secret
@@ -272,7 +284,32 @@ def logout():
 def home_page():
     return render_template('main.html')
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    """Health check endpoint for load balancers and monitoring"""
+    try:
+        # Check Redis connection
+        redis_client = app.config.get('SESSION_REDIS')
+        if redis_client:
+            redis_client.ping()
+        
+        return {
+            'status': 'healthy',
+            'timestamp': str(datetime.now()),
+            'services': {
+                'redis': 'connected' if redis_client else 'not_configured'
+            }
+        }, 200
+    except Exception as e:
+        return {
+            'status': 'unhealthy',
+            'error': str(e),
+            'timestamp': str(datetime.now())
+        }, 503
+
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run()
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('FLASK_ENV') != 'production'
+    app.run(host='0.0.0.0', port=port, debug=debug)
