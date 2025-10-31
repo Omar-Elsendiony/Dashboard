@@ -284,6 +284,11 @@ def logout():
 def home_page():
     return render_template('main.html')
 
+@app.route('/trajectory_viewer', strict_slashes=False, methods=['GET'])
+def trajectory_viewer():
+    return render_template('trajectory_viewer.html')
+
+####################### Deployment Health Check Endpoint #######################
 @app.route('/health', methods=['GET'])
 def health_check():
     """Health check endpoint for load balancers and monitoring"""
@@ -306,6 +311,7 @@ def health_check():
             'error': str(e),
             'timestamp': str(datetime.now())
         }, 503
+
 
 
 if __name__ == "__main__":
