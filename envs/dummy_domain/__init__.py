@@ -1,1 +1,0 @@
-from tau_bench.envs.incident_management_technical.env import MockIncidentManagementTechnicalDomainEnv as MockIncidentManagementTechnicalDomainEnv
