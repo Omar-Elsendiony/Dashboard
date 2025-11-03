@@ -50,7 +50,7 @@ RULES = [
     "The assistant must validate that the user status is active for each participant before adding them to the bridge.",
     "The assistant must obtain the participant's role in the bridge (host, technical_support, account_manager, or executive) for each participant.",
     "The assistant must check for existing participant to prevent duplicates using discover_coordination before adding each participant.",
-    "The assistant must add the participant to the bridge using manage_bridge_participants after all validations are complete.",
+    "The assistant must add the participant to the bridge using manage_coordinations after all validations are complete.",
     "The assistant must add a Work Note to the parent incident documenting the participant addition: 'Bridge participant(s) added to bridge [Bridge Number] for incident [Incident ID]' after adding participants.",
     
     # Closing an Incident Bridge (SOP 5)

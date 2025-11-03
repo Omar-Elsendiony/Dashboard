@@ -100,21 +100,21 @@ class LookupIncidentTracking(Tool):
                             "type": "object",
                             "description": "Optional filters to narrow down search results. Only exact matches are supported (AND logic for multiple filters).",
                             "properties": {
-                                "incident_id": {
+                            "incident_id": {
                                     "type": "string",
-                                    "description": "Incident ID"
+                                    "description": "The unique, internal system identifier (e.g., database primary key or GUID) for the incident record."
                                 },
                                 "problem_id": {
                                     "type": "string",
-                                    "description": "Problem ticket ID"
+                                    "description": "The unique, internal system identifier (e.g., database primary key or GUID) for the problem record."
                                 },
                                 "incident_number": {
                                     "type": "string",
-                                    "description": "Incident number, e.g., INC0012345 (for incidents)"
+                                    "description": "The human-readable, external identifier for the incident (e.g., INC0012345), used for support and tracking."
                                 },
                                 "problem_number": {
                                     "type": "string",
-                                    "description": "Problem number, e.g., PRB0001234 (for problem_tickets)"
+                                    "description": "The human-readable, external identifier for the problem (e.g., PRB0001234), used for support and tracking."
                                 },
                                 "title": {
                                     "type": "string",

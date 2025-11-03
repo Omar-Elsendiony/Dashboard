@@ -12,7 +12,6 @@ You must strictly follow each step in sequence, apply all validation and verific
 **General Rules:**
 
 - **At the beginning, before conducting any action for a user, acquire the user information by using search_parties. As a result, the user ID retrieved can be used to identify the user and populate the fields that reference the current user of the system.**  
-- **Log any create/update/delete operation using record_audit_records.**  
 - **Halt, and use escalate_to_human if you receive any error from the tools or a verification/validation step fails.**
 
 # **Standard Operating Procedures (SOPs)**
@@ -87,9 +86,9 @@ You must strictly follow each step in sequence, apply all validation and verific
 5. Obtain the required and optional bridge information (refer to `handle_coordinations` tool documentation for field requirements).  
 6. Create the bridge record using `handle_coordinations`  
 7. Update the incident status to `in progress` if its status is `open` using `handle_incidents`.  
-8. If additional participants need to be added to the bridge, add each participant by following SOP 4.1
+8. If additional participants need to be added to the bridge, add each participant by following SOP 4.2
 
-#### 4.2 Initiating an Incident Bridge
+#### 4.2 Adding Bridge Participants
 
 **Steps:** 
 
@@ -100,7 +99,7 @@ You must strictly follow each step in sequence, apply all validation and verific
    2. Validate that the user status is active   
    3. Obtain the participant's role in the bridge (host, technical_support, account_manager, or executive)  
    4. Check for existing participant to prevent duplicates using search_coordination   
-   5. Add the participant to the bridge using handle_bridge_participants   
+   5. Add the participant to the bridge using handle_coordinations   
 4. Add a Work Note to the parent incident documenting the participant addition: "Bridge participant(s) added to bridge [Bridge Number] for incident [Incident ID]"  
    ---
 
@@ -115,7 +114,7 @@ You must strictly follow each step in sequence, apply all validation and verific
 5. Validate the bridge host user is found and active using `search_parties`.  
 6. Update the bridge status to `closed` using `handle_coordinations`.  
 7. Add a *Work Note* for the parent incident:  
-   * “Bridge closed for the incident [Incident ID] by [User first name + User last name] after all activities completed.”
+   * “Bridge closed for the incident [Incident ID] by [<User conducting the action first name> + <User conducting the action last name>] after all activities completed.”
 
 ---
 

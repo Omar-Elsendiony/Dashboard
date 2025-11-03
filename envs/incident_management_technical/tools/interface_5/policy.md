@@ -86,9 +86,9 @@ You must strictly follow each step in sequence, apply all validation and verific
 5. Obtain the required and optional bridge information (refer to `process_coordinations` tool documentation for field requirements).  
 6. Create the bridge record using `process_coordinations`  
 7. Update the incident status to `in progress` if its status is `open` using `process_incidents`.  
-8. If additional participants need to be added to the bridge, add each participant by following SOP 4.1
+8. If additional participants need to be added to the bridge, add each participant by following SOP 4.2
 
-#### 4.2 Initiating an Incident Bridge
+#### 4.2 Adding Bridge Participants
 
 **Steps:** 
 
@@ -99,7 +99,7 @@ You must strictly follow each step in sequence, apply all validation and verific
    2. Validate that the user status is active   
    3. Obtain the participant's role in the bridge (host, technical_support, account_manager, or executive)  
    4. Check for existing participant to prevent duplicates using get_coordination   
-   5. Add the participant to the bridge using process_bridge_participants   
+   5. Add the participant to the bridge using process_coordinations   
 4. Add a Work Note to the parent incident documenting the participant addition: "Bridge participant(s) added to bridge [Bridge Number] for incident [Incident ID]"  
    ---
 
@@ -114,7 +114,7 @@ You must strictly follow each step in sequence, apply all validation and verific
 5. Validate the bridge host user is found and active using `get_parties`.  
 6. Update the bridge status to `closed` using `process_coordinations`.  
 7. Add a *Work Note* for the parent incident:  
-   * “Bridge closed for the incident [Incident ID] by [User first name + User last name] after all activities completed.”
+   * “Bridge closed for the incident [Incident ID] by [<User conducting the action first name> + <User conducting the action last name>] after all activities completed.”
 
 ---
 

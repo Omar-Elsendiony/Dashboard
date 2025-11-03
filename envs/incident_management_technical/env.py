@@ -52,15 +52,15 @@ class MockIncidentManagementTechnicalDomainEnv(Env):
         folder_path = os.path.dirname(__file__)
         match interface_num:
             case 1:
-                wiki_path = os.path.join(folder_path, "tools", "interface_1", "wiki.md")
+                wiki_path = os.path.join(folder_path, "tools", "interface_1", "policy.md")
             case 2:
-                wiki_path = os.path.join(folder_path, "tools", "interface_2", "wiki.md")
+                wiki_path = os.path.join(folder_path, "tools", "interface_2", "policy.md")
             case 3:
-                wiki_path = os.path.join(folder_path, "tools", "interface_3", "wiki.md")
+                wiki_path = os.path.join(folder_path, "tools", "interface_3", "policy.md")
             case 4:
-                wiki_path = os.path.join(folder_path, "tools", "interface_4", "wiki.md")
+                wiki_path = os.path.join(folder_path, "tools", "interface_4", "policy.md")
             case 5:
-                wiki_path = os.path.join(folder_path, "tools", "interface_5", "wiki.md")
+                wiki_path = os.path.join(folder_path, "tools", "interface_5", "policy.md")
             case _:
                 raise ValueError(f"Unknown interface_num: {interface_num}")
         

@@ -350,8 +350,8 @@ class HandleIncidents(Tool):
                                 },
                                 "category": {
                                     "type": "string",
-                                    "description": "The category of the incident (required for create). Must be one of: inquiry/help, software, hardware, Network, Database. Updatable.",
-                                    "enum": ["inquiry/help", "software", "hardware", "Network", "Database"]
+                                    "description": "The category of the incident (required for create). Must be one of: inquiry/help, software, hardware, network, database. Updatable.",
+                                    "enum": ["inquiry/help", "software", "hardware", "network", "database"]
                                 },
                                 "severity": {
                                     "type": "string",

@@ -100,7 +100,7 @@ You must strictly follow each step in sequence, apply all validation and verific
    2. Validate that the user status is active   
    3. Obtain the participant's role in the bridge (host, technical_support, account_manager, or executive)  
    4. Check for existing participant to prevent duplicates using discover_coordination   
-   5. Add the participant to the bridge using manage_bridge_participants   
+   5. Add the participant to the bridge using manage_coordinations   
 4. Add a Work Note to the parent incident documenting the participant addition: "Bridge participant(s) added to bridge [Bridge Number] for incident [Incident ID]"  
    ---
 
