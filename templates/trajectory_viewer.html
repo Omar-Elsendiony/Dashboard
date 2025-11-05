@@ -570,6 +570,15 @@
             return { level: 'Invalid Range', class: 'complexity-not-passed', icon: '⚠️' };
         }
 
+        function isJsonString(str) {
+            try {
+                JSON.parse(str);
+            } catch (e) {
+                return false;
+            }
+            return true;
+        }
+
         queryBtn.onclick = async function() {
             const textarea = document.querySelector('.form-input');
             const query = textarea.value;
@@ -582,6 +591,11 @@
                 const query_JSON = JSON.parse(query);
                 trialsData = query_JSON;
                 
+                if (isJsonString(trialsData)){
+                    trialsData = JSON.parse(trialsData);
+                    trialsData = trialsData['results'];
+                }
+
                 if (!Array.isArray(trialsData) || trialsData.length === 0) {
                     alert("Invalid data format. Expected an array of trials.");
                     return;
