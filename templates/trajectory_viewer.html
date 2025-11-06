@@ -510,11 +510,23 @@
             <button class="query-btn">View Trajectory</button>
 
             <div class="complexity-section" id="complexitySection">
-                <div class="complexity-label">Results Summary</div>
+                <div class="complexity-label">Passing Trajectories</div>
                 <div class="complexity-stats">
                     <div class="stat-item">
                         <div class="stat-number" id="passCount">0</div>
                         <div class="stat-label">Passed</div>
+                    </div>
+                    <div style="color: rgba(255, 255, 255, 0.4);">of</div>
+                    <div class="stat-item">
+                        <div class="stat-number">16</div>
+                        <div class="stat-label">Total</div>
+                    </div>
+                </div>
+                <div class="complexity-label">Incomplete Trajectories</div>
+                <div class="complexity-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="incompleteCount">0</div>
+                        <div class="stat-label">Incomplete</div>
                     </div>
                     <div style="color: rgba(255, 255, 255, 0.4);">of</div>
                     <div class="stat-item">
@@ -570,14 +582,14 @@
             return { level: 'Invalid Range', class: 'complexity-not-passed', icon: '⚠️' };
         }
 
-        function isJsonString(str) {
-            try {
-                JSON.parse(str);
-            } catch (e) {
-                return false;
-            }
-            return true;
-        }
+        // function isJsonString(str) {
+        //     try {
+        //         JSON.parse(str);
+        //     } catch (e) {
+        //         return false;
+        //     }
+        //     return true;
+        // }
 
         queryBtn.onclick = async function() {
             const textarea = document.querySelector('.form-input');
@@ -590,10 +602,9 @@
             try {
                 const query_JSON = JSON.parse(query);
                 trialsData = query_JSON;
-                
-                if (isJsonString(trialsData)){
-                    trialsData = JSON.parse(trialsData);
-                    trialsData = trialsData['results'];
+                if (trialsData.hasOwnProperty("response_data")) {
+                    // trialsData = JSON.parse(trialsData);
+                    trialsData = trialsData['response_data']['results'];
                 }
 
                 if (!Array.isArray(trialsData) || trialsData.length === 0) {
@@ -622,6 +633,18 @@
             const badge = document.getElementById('complexityBadge');
             badge.className = `complexity-badge ${complexity.class}`;
             badge.textContent = `${complexity.level}`;
+
+            let completeTrajCount = 0;
+            for (let trial of trialsData) {
+                for (let turn of trial['traj']) {
+                    if (turn.content && turn.content.includes("###STOP###")) {
+                        completeTrajCount++;
+                    }
+                }
+            }
+
+            document.getElementById('incompleteCount').textContent = total - completeTrajCount;
+
         }
 
         function setStatusPill(index) {
