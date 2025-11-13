@@ -272,7 +272,7 @@ class ChangePage(Tool):
                     )
 
         # --- Apply updates ---
-        updated_at = datetime.utcnow().isoformat() + "Z"
+        updated_at = "2025-11-12T12:00:00"
 
         if title is not None:
             page["title"] = title
@@ -335,7 +335,7 @@ class ChangePage(Tool):
                         },
                         "title": {
                             "type": "string",
-                            "description": "New title for the page. Optional. Only provide if you want to change the title. When changing space or parent, the new title must be unique among siblings.",
+                            "description": "New title for the page. Optional. Only provide if you want to change the title. When changing space or parent, the new title must be unique (case-insensitive) among siblings.",
                         },
                         "space_id": {
                             "type": "string",
