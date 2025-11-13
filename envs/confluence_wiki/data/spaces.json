@@ -1,0 +1,222 @@
+{
+  "1": {
+    "space_id": "1",
+    "space_key": "SPACE001",
+    "name": "Space: Adkins, Thompson and Carroll",
+    "description": "Shared planning hub for Adkins, Thompson and Carroll portfolio. Houses quarterly business reviews, launch playbooks, and decision logs for the tri-regional go-to-market crew.",
+    "type": "global",
+    "status": "current",
+    "created_by": "2",
+    "created_at": "2024-09-15T08:06:23.914079",
+    "updated_at": "2025-10-18T10:37:51.518866"
+  },
+  "2": {
+    "space_id": "2",
+    "space_key": "SPACE002",
+    "name": "Space: Salazar-Ball",
+    "description": "Lightweight personal scratchpad for the Salazar-Ball partnership. Track hiring plans, stakeholder notes, and quick retros without cluttering the main knowledge base.",
+    "type": "personal",
+    "status": "current",
+    "created_by": "16",
+    "created_at": "2025-01-21T04:13:39.229055",
+    "updated_at": "2025-10-28T22:13:38.848970"
+  },
+  "3": {
+    "space_id": "3",
+    "space_key": "SPACE003",
+    "name": "Space: Elliott, Johnson and Day",
+    "description": "Global workspace for the Elliott, Johnson and Day transformation program. Collects architecture diagrams, vendor contracts, and readiness checklists so every region executes the same play.",
+    "type": "global",
+    "status": "current",
+    "created_by": "9",
+    "created_at": "2024-12-07T09:02:32.737038",
+    "updated_at": "2025-10-12T00:24:10.273232"
+  },
+  "4": {
+    "space_id": "4",
+    "space_key": "SPACE004",
+    "name": "Space: Reid-Poole",
+    "description": "Reid-Poole operations library. Contains SOPs, tooling inventories, and postmortems that keep support shifts synchronized across time zones.",
+    "type": "global",
+    "status": "current",
+    "created_by": "44",
+    "created_at": "2024-11-05T07:01:27.582264",
+    "updated_at": "2025-04-15T17:39:23.564459"
+  },
+  "5": {
+    "space_id": "5",
+    "space_key": "SPACE005",
+    "name": "Space: Cooper, Barajas and Pierce",
+    "description": "Cooper, Barajas and Pierce discovery lab. Product requirements, experiment readouts, and customer feedback summaries live here for fast handoffs.",
+    "type": "global",
+    "status": "current",
+    "created_by": "38",
+    "created_at": "2025-01-11T00:35:48.151318",
+    "updated_at": "2025-06-04T16:25:11.412685"
+  },
+  "6": {
+    "space_id": "6",
+    "space_key": "SPACE006",
+    "name": "Space: Morales Inc",
+    "description": "Morales Inc personal R&D vault. Draft technical spikes, integration proofs, and interview takeaways before promoting them into team-visible docs.",
+    "type": "personal",
+    "status": "current",
+    "created_by": "3",
+    "created_at": "2025-08-03T16:21:24.199775",
+    "updated_at": "2025-08-15T04:55:38.905655"
+  },
+  "7": {
+    "space_id": "7",
+    "space_key": "SPACE007",
+    "name": "Space: Kerr and Sons",
+    "description": "Kerr and Sons delivery control tower. Release calendars, dependency maps, and risk call notes ensure program managers stay aligned daily.",
+    "type": "global",
+    "status": "current",
+    "created_by": "6",
+    "created_at": "2024-02-05T01:14:46.951639",
+    "updated_at": "2024-06-29T10:08:07.023634"
+  },
+  "8": {
+    "space_id": "8",
+    "space_key": "SPACE008",
+    "name": "Space: Garrett-Wolf",
+    "description": "Garrett-Wolf brand studio. Creative briefs, asset approvals, and measurement dashboards converge here for marketing and design partners.",
+    "type": "global",
+    "status": "current",
+    "created_by": "15",
+    "created_at": "2024-11-25T22:04:26.079767",
+    "updated_at": "2025-07-02T22:39:13.629897"
+  },
+  "9": {
+    "space_id": "9",
+    "space_key": "SPACE009",
+    "name": "Space: Hughes-Alvarado",
+    "description": "Hughes-Alvarado compliance center. Policy updates, audit evidence, and remediation plans are organized so regulators get answers quickly.",
+    "type": "global",
+    "status": "current",
+    "created_by": "36",
+    "created_at": "2024-07-02T15:09:28.719933",
+    "updated_at": "2025-02-23T04:50:04.974171"
+  },
+  "10": {
+    "space_id": "10",
+    "space_key": "SPACE010",
+    "name": "Space: Jenkins, Maldonado and White",
+    "description": "Jenkins, Maldonado and White customer success lounge. Journey maps, escalation responses, and health metrics give CSMs one source of truth.",
+    "type": "global",
+    "status": "current",
+    "created_by": "46",
+    "created_at": "2024-08-13T00:34:38.623984",
+    "updated_at": "2024-10-18T12:01:12.580626"
+  },
+  "11": {
+    "space_id": "11",
+    "space_key": "SPACE011",
+    "name": "Space: Becker, Taylor and Davis",
+    "description": "Becker, Taylor and Davis personal innovation stack. Capture wild ideas, reference links, and half-written demos until they are ready for prime time.",
+    "type": "personal",
+    "status": "current",
+    "created_by": "15",
+    "created_at": "2024-05-14T06:54:43.527002",
+    "updated_at": "2025-07-01T21:25:24.316004"
+  },
+  "12": {
+    "space_id": "12",
+    "space_key": "SPACE012",
+    "name": "Space: Murphy, Bishop and Holland",
+    "description": "Murphy, Bishop and Holland growth engine. Campaign strategy docs, budget trackers, and KPI reviews help demand generation stay focused on pipeline.",
+    "type": "personal",
+    "status": "current",
+    "created_by": "38",
+    "created_at": "2024-10-22T14:44:58.105994",
+    "updated_at": "2025-06-18T19:21:19.475724"
+  },
+  "13": {
+    "space_id": "13",
+    "space_key": "SPACE013",
+    "name": "Space: Garrison-Thomas",
+    "description": "Garrison-Thomas private workspace. Long-form research, notebook exports, and strategic memos stay safe while drafts evolve.",
+    "type": "personal",
+    "status": "current",
+    "created_by": "1",
+    "created_at": "2025-06-11T07:10:01.503575",
+    "updated_at": "2025-09-11T07:30:54.515750"
+  },
+  "14": {
+    "space_id": "14",
+    "space_key": "SPACE014",
+    "name": "Space: Schmidt, Chavez and Jacobs",
+    "description": "Schmidt, Chavez and Jacobs engineering guild. Coding standards, design reviews, and incident libraries keep the platform stable at scale.",
+    "type": "global",
+    "status": "current",
+    "created_by": "45",
+    "created_at": "2024-12-17T18:33:54.446331",
+    "updated_at": "2025-04-04T01:22:58.073597"
+  },
+  "15": {
+    "space_id": "15",
+    "space_key": "SPACE015",
+    "name": "Space: Wilson-Ramirez",
+    "description": "Wilson-Ramirez personal enablement hub. Training outlines, mentoring plans, and speaking notes live here for quick reuse.",
+    "type": "personal",
+    "status": "current",
+    "created_by": "22",
+    "created_at": "2024-01-31T06:16:33.817652",
+    "updated_at": "2025-08-03T23:05:12.856577"
+  },
+  "16": {
+    "space_id": "16",
+    "space_key": "SPACE016",
+    "name": "Space: Rose-Parker",
+    "description": "Rose-Parker personal operations kit. Meeting cadences, contract trackers, and automation snippets streamline the day-to-day workload.",
+    "type": "personal",
+    "status": "current",
+    "created_by": "10",
+    "created_at": "2024-06-07T02:47:04.158521",
+    "updated_at": "2025-05-28T08:29:33.723278"
+  },
+  "17": {
+    "space_id": "17",
+    "space_key": "SPACE017",
+    "name": "Space: Bell-Mullen",
+    "description": "Bell-Mullen transformation war room. Program scorecards, cross-team commitments, and daily standup notes maintain momentum.",
+    "type": "global",
+    "status": "current",
+    "created_by": "22",
+    "created_at": "2024-12-04T19:21:08.498899",
+    "updated_at": "2025-02-09T07:01:36.322750"
+  },
+  "18": {
+    "space_id": "18",
+    "space_key": "SPACE018",
+    "name": "Space: Stout-Armstrong",
+    "description": "Stout-Armstrong customer intelligence hub. Voice-of-customer analyses, opportunity scorecards, and executive-ready summaries align the org.",
+    "type": "global",
+    "status": "current",
+    "created_by": "6",
+    "created_at": "2025-06-13T14:48:46.376809",
+    "updated_at": "2025-10-27T20:32:22.202081"
+  },
+  "19": {
+    "space_id": "19",
+    "space_key": "ARCH019",
+    "name": "Archived Space: Jones Inc",
+    "description": "Archived knowledge from Jones Inc pilot. Kept for historical reference: contains the final retros, budget approvals, and rollout guides.",
+    "type": "personal",
+    "status": "archived",
+    "created_by": "7",
+    "created_at": "2024-04-01T11:11:12.938731",
+    "updated_at": "2025-11-12T16:13:55.784826"
+  },
+  "20": {
+    "space_id": "20",
+    "space_key": "ARCH020",
+    "name": "Archived Space: Dawson PLC",
+    "description": "Archived Dawson PLC rollout library. Includes decommissioned process docs, archived cadences, and closure reports for audit readiness.",
+    "type": "personal",
+    "status": "archived",
+    "created_by": "23",
+    "created_at": "2025-08-12T17:38:31.336280",
+    "updated_at": "2025-10-02T17:28:11.195515"
+  }
+}

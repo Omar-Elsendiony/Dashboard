@@ -1,0 +1,362 @@
+{
+  "1": {
+    "component_id": "1",
+    "page_version_id": "1",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"11\", \"content\": [{\"id\": \"1\", \"type\": \"oval\", \"text\": \"Ergonomic dynamic policy\", \"x_position\": 100, \"y_position\": 531, \"width\": 100, \"height\": 100, \"color\": \"orange\"}, {\"id\": \"2\", \"type\": \"rectangle\", \"text\": \"Vision-oriented well-modulated\", \"x_position\": 200, \"y_position\": 287, \"width\": 100, \"height\": 100, \"color\": \"orange\"}], \"version\": \"current\"}"
+  },
+  "2": {
+    "component_id": "2",
+    "page_version_id": "5",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"10\", \"url\": \"https://www.scott.biz/\", \"title\": \"Link: Pre-emptive asymmetric contingency\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "3": {
+    "component_id": "3",
+    "page_version_id": "5",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"25\", \"url\": \"https://jenkins.com/\", \"title\": \"Link: Customer-focused needs-based projection\", \"target_type\": \"whiteboard\", \"target_id\": \"22\"}"
+  },
+  "4": {
+    "component_id": "4",
+    "page_version_id": "15",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"8\", \"url\": \"http://bennett-kirby.com/\", \"title\": \"Link: Future-proofed incremental solution\", \"target_type\": \"database\", \"target_id\": \"8\"}"
+  },
+  "5": {
+    "component_id": "5",
+    "page_version_id": "18",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"4\", \"content\": [{\"id\": \"1\", \"type\": \"sticky_note\", \"text\": \"Organic modular parallelism\", \"x_position\": 100, \"y_position\": 349, \"width\": 100, \"height\": 100, \"color\": \"green\"}], \"version\": \"current\"}"
+  },
+  "6": {
+    "component_id": "6",
+    "page_version_id": "35",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"22\", \"url\": \"http://stephenson-murray.info/\", \"title\": \"Link: De-engineered responsive help-desk\", \"target_type\": \"database\", \"target_id\": \"3\"}"
+  },
+  "7": {
+    "component_id": "7",
+    "page_version_id": "35",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"10\", \"content\": [{\"id\": \"1\", \"type\": \"circle\", \"text\": \"Decentralized zero-defect arch\", \"x_position\": 100, \"y_position\": 227, \"width\": 100, \"height\": 100, \"color\": \"white\"}], \"version\": \"current\"}"
+  },
+  "8": {
+    "component_id": "8",
+    "page_version_id": "39",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"17\", \"url\": \"http://johnson-valenzuela.com/\", \"title\": \"Link: Public-key 3rdgeneration process improvement\", \"target_type\": \"database\", \"target_id\": \"12\"}"
+  },
+  "9": {
+    "component_id": "9",
+    "page_version_id": "39",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"37\", \"url\": \"http://johnson.com/\", \"title\": \"Link: Virtual stable knowledgebase\", \"target_type\": \"whiteboard\", \"target_id\": \"5\"}"
+  },
+  "10": {
+    "component_id": "10",
+    "page_version_id": "42",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"35\", \"url\": \"https://www.york-lee.com/\", \"title\": \"Link: Proactive 3rdgeneration process improvement\", \"target_type\": \"database\", \"target_id\": \"11\"}"
+  },
+  "11": {
+    "component_id": "11",
+    "page_version_id": "46",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"29\", \"url\": \"http://www.pittman-cox.com/\", \"title\": \"Link: Multi-channeled dedicated synergy\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "12": {
+    "component_id": "12",
+    "page_version_id": "46",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"5\", \"content\": [{\"id\": \"1\", \"type\": \"sticky_note\", \"text\": \"Organized next generation proj\", \"x_position\": 100, \"y_position\": 341, \"width\": 100, \"height\": 100, \"color\": \"gray\"}], \"version\": \"current\"}"
+  },
+  "13": {
+    "component_id": "13",
+    "page_version_id": "49",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"20\", \"content\": [{\"id\": \"1\", \"type\": \"sticky_note\", \"text\": \"Assimilated regional alliance\", \"x_position\": 100, \"y_position\": 51, \"width\": 100, \"height\": 100, \"color\": \"white\"}, {\"id\": \"2\", \"type\": \"oval\", \"text\": \"Public-key bottom-line workfor\", \"x_position\": 200, \"y_position\": 473, \"width\": 100, \"height\": 100, \"color\": \"red\"}], \"version\": \"current\"}"
+  },
+  "14": {
+    "component_id": "14",
+    "page_version_id": "59",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"2\", \"url\": \"https://www.guerra.org/\", \"title\": \"Link: Networked fault-tolerant methodology\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "15": {
+    "component_id": "15",
+    "page_version_id": "62",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"18\", \"url\": \"http://www.johnson.info/\", \"title\": \"Link: Centralized human-resource throughput\", \"target_type\": \"page\", \"target_id\": \"57\"}"
+  },
+  "16": {
+    "component_id": "16",
+    "page_version_id": "64",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"38\", \"url\": \"https://dominguez.biz/\", \"title\": \"Link: Multi-tiered dedicated leverage\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "17": {
+    "component_id": "17",
+    "page_version_id": "80",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"13\", \"content\": [{\"id\": \"1\", \"type\": \"diamond\", \"text\": \"Phased client-driven Graphical\", \"x_position\": 100, \"y_position\": 195, \"width\": 100, \"height\": 100, \"color\": \"blue\"}], \"version\": \"current\"}"
+  },
+  "18": {
+    "component_id": "18",
+    "page_version_id": "90",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"34\", \"url\": \"http://www.flores.com/\", \"title\": \"Link: Synergistic hybrid collaboration\", \"target_type\": \"database\", \"target_id\": \"10\"}"
+  },
+  "19": {
+    "component_id": "19",
+    "page_version_id": "94",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"12\", \"url\": \"http://www.johnson.com/\", \"title\": \"Link: Automated methodical matrices\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "20": {
+    "component_id": "20",
+    "page_version_id": "102",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"1\", \"url\": \"https://miller-johnson.com/\", \"title\": \"Link: Implemented responsive interface\", \"target_type\": \"whiteboard\", \"target_id\": \"1\"}"
+  },
+  "21": {
+    "component_id": "21",
+    "page_version_id": "105",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"30\", \"url\": \"http://garcia-hoffman.com/\", \"title\": \"Link: Phased global strategy\", \"target_type\": \"whiteboard\", \"target_id\": \"19\"}"
+  },
+  "22": {
+    "component_id": "22",
+    "page_version_id": "105",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"40\", \"url\": \"https://www.cochran.com/\", \"title\": \"Link: Organized static artificial intelligence\", \"target_type\": \"whiteboard\", \"target_id\": \"16\"}"
+  },
+  "23": {
+    "component_id": "23",
+    "page_version_id": "106",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"28\", \"url\": \"http://www.miller.com/\", \"title\": \"Link: Seamless well-modulated pricing structure\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "24": {
+    "component_id": "24",
+    "page_version_id": "107",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"14\", \"content\": [{\"id\": \"1\", \"type\": \"oval\", \"text\": \"Function-based modular array\", \"x_position\": 100, \"y_position\": 177, \"width\": 100, \"height\": 100, \"color\": \"gray\"}, {\"id\": \"2\", \"type\": \"diamond\", \"text\": \"Enterprise-wide empowering ini\", \"x_position\": 200, \"y_position\": 462, \"width\": 100, \"height\": 100, \"color\": \"orange\"}], \"version\": \"current\"}"
+  },
+  "25": {
+    "component_id": "25",
+    "page_version_id": "111",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"14\", \"url\": \"http://www.peterson.com/\", \"title\": \"Link: Expanded uniform functionalities\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "26": {
+    "component_id": "26",
+    "page_version_id": "111",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"1\", \"content\": [{\"id\": \"1\", \"type\": \"sticky_note\", \"text\": \"Inverse tangible encryption\", \"x_position\": 100, \"y_position\": 239, \"width\": 100, \"height\": 100, \"color\": \"yellow\"}], \"version\": \"current\"}"
+  },
+  "27": {
+    "component_id": "27",
+    "page_version_id": "114",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"19\", \"url\": \"https://young.info/\", \"title\": \"Link: Horizontal systemic pricing structure\", \"target_type\": \"page\", \"target_id\": \"6\"}"
+  },
+  "28": {
+    "component_id": "28",
+    "page_version_id": "120",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"6\", \"content\": [{\"id\": \"1\", \"type\": \"rectangle\", \"text\": \"Synergized heuristic architect\", \"x_position\": 100, \"y_position\": 308, \"width\": 100, \"height\": 100, \"color\": \"gray\"}], \"version\": \"current\"}"
+  },
+  "29": {
+    "component_id": "29",
+    "page_version_id": "122",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"3\", \"url\": \"http://www.rasmussen.com/\", \"title\": \"Link: Enhanced secondary functionalities\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "30": {
+    "component_id": "30",
+    "page_version_id": "125",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"33\", \"url\": \"https://huerta-tanner.com/\", \"title\": \"Link: Enterprise-wide local adapter\", \"target_type\": \"database\", \"target_id\": \"10\"}"
+  },
+  "31": {
+    "component_id": "31",
+    "page_version_id": "129",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"3\", \"content\": [{\"id\": \"1\", \"type\": \"diamond\", \"text\": \"Stand-alone neutral definition\", \"x_position\": 100, \"y_position\": 64, \"width\": 100, \"height\": 100, \"color\": \"white\"}], \"version\": \"current\"}"
+  },
+  "32": {
+    "component_id": "32",
+    "page_version_id": "139",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"5\", \"url\": \"https://www.bowman.com/\", \"title\": \"Link: Compatible transitional database\", \"target_type\": \"database\", \"target_id\": \"10\"}"
+  },
+  "33": {
+    "component_id": "33",
+    "page_version_id": "139",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"7\", \"url\": \"https://duncan.com/\", \"title\": \"Link: Fully-configurable regional secured line\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "34": {
+    "component_id": "34",
+    "page_version_id": "141",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"31\", \"url\": \"https://charles.com/\", \"title\": \"Link: Secured incremental complexity\", \"target_type\": \"page\", \"target_id\": \"85\"}"
+  },
+  "35": {
+    "component_id": "35",
+    "page_version_id": "144",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"7\", \"content\": [{\"id\": \"1\", \"type\": \"rectangle\", \"text\": \"Universal radical matrix\", \"x_position\": 100, \"y_position\": 104, \"width\": 100, \"height\": 100, \"color\": \"green\"}, {\"id\": \"2\", \"type\": \"circle\", \"text\": \"Optional tertiary task-force\", \"x_position\": 200, \"y_position\": 361, \"width\": 100, \"height\": 100, \"color\": \"blue\"}], \"version\": \"current\"}"
+  },
+  "36": {
+    "component_id": "36",
+    "page_version_id": "144",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"19\", \"content\": [{\"id\": \"1\", \"type\": \"oval\", \"text\": \"Enhanced leadingedge strategy\", \"x_position\": 100, \"y_position\": 140, \"width\": 100, \"height\": 100, \"color\": \"purple\"}], \"version\": \"current\"}"
+  },
+  "37": {
+    "component_id": "37",
+    "page_version_id": "145",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"18\", \"content\": [{\"id\": \"1\", \"type\": \"diamond\", \"text\": \"Proactive contextually-based m\", \"x_position\": 100, \"y_position\": 157, \"width\": 100, \"height\": 100, \"color\": \"green\"}, {\"id\": \"2\", \"type\": \"diamond\", \"text\": \"Extended grid-enabled attitude\", \"x_position\": 200, \"y_position\": 471, \"width\": 100, \"height\": 100, \"color\": \"gray\"}], \"version\": \"current\"}"
+  },
+  "38": {
+    "component_id": "38",
+    "page_version_id": "148",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"27\", \"url\": \"http://www.stewart-sanchez.com/\", \"title\": \"Link: Re-engineered zero tolerance website\", \"target_type\": \"whiteboard\", \"target_id\": \"21\"}"
+  },
+  "39": {
+    "component_id": "39",
+    "page_version_id": "148",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"9\", \"content\": [{\"id\": \"1\", \"type\": \"sticky_note\", \"text\": \"Visionary needs-based software\", \"x_position\": 100, \"y_position\": 111, \"width\": 100, \"height\": 100, \"color\": \"black\"}, {\"id\": \"2\", \"type\": \"rectangle\", \"text\": \"Reverse-engineered foreground \", \"x_position\": 200, \"y_position\": 262, \"width\": 100, \"height\": 100, \"color\": \"yellow\"}], \"version\": \"current\"}"
+  },
+  "40": {
+    "component_id": "40",
+    "page_version_id": "149",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"20\", \"url\": \"http://www.walsh-thompson.biz/\", \"title\": \"Link: Persevering national hierarchy\", \"target_type\": \"whiteboard\", \"target_id\": \"12\"}"
+  },
+  "41": {
+    "component_id": "41",
+    "page_version_id": "150",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"9\", \"url\": \"https://www.wang.com/\", \"title\": \"Link: Right-sized 24/7 product\", \"target_type\": \"whiteboard\", \"target_id\": \"4\"}"
+  },
+  "42": {
+    "component_id": "42",
+    "page_version_id": "150",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"26\", \"url\": \"http://www.bradley-jackson.org/\", \"title\": \"Link: Optional contextually-based intranet\", \"target_type\": \"database\", \"target_id\": \"2\"}"
+  },
+  "43": {
+    "component_id": "43",
+    "page_version_id": "150",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"36\", \"url\": \"http://www.allen.biz/\", \"title\": \"Link: Assimilated mobile functionalities\", \"target_type\": \"page\", \"target_id\": \"40\"}"
+  },
+  "44": {
+    "component_id": "44",
+    "page_version_id": "157",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"4\", \"url\": \"http://lyons.com/\", \"title\": \"Link: Synergized intermediate support\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "45": {
+    "component_id": "45",
+    "page_version_id": "165",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"2\", \"content\": [{\"id\": \"1\", \"type\": \"sticky_note\", \"text\": \"Triple-buffered methodical mon\", \"x_position\": 100, \"y_position\": 587, \"width\": 100, \"height\": 100, \"color\": \"black\"}, {\"id\": \"2\", \"type\": \"diamond\", \"text\": \"Intuitive bi-directional workf\", \"x_position\": 200, \"y_position\": 152, \"width\": 100, \"height\": 100, \"color\": \"yellow\"}], \"version\": \"current\"}"
+  },
+  "46": {
+    "component_id": "46",
+    "page_version_id": "167",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"15\", \"content\": [{\"id\": \"1\", \"type\": \"rectangle\", \"text\": \"Mandatory local system engine\", \"x_position\": 100, \"y_position\": 90, \"width\": 100, \"height\": 100, \"color\": \"pink\"}, {\"id\": \"2\", \"type\": \"diamond\", \"text\": \"Cross-platform multi-tasking e\", \"x_position\": 200, \"y_position\": 306, \"width\": 100, \"height\": 100, \"color\": \"red\"}], \"version\": \"current\"}"
+  },
+  "47": {
+    "component_id": "47",
+    "page_version_id": "171",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"39\", \"url\": \"https://www.ball-tran.info/\", \"title\": \"Link: Optimized incremental strategy\", \"target_type\": \"whiteboard\", \"target_id\": \"17\"}"
+  },
+  "48": {
+    "component_id": "48",
+    "page_version_id": "187",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"15\", \"url\": \"https://www.wagner-perez.com/\", \"title\": \"Link: Stand-alone analyzing infrastructure\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "49": {
+    "component_id": "49",
+    "page_version_id": "193",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"8\", \"content\": [{\"id\": \"1\", \"type\": \"sticky_note\", \"text\": \"Integrated national standardiz\", \"x_position\": 100, \"y_position\": 281, \"width\": 100, \"height\": 100, \"color\": \"white\"}, {\"id\": \"2\", \"type\": \"oval\", \"text\": \"Synergistic exuding groupware\", \"x_position\": 200, \"y_position\": 511, \"width\": 100, \"height\": 100, \"color\": \"gray\"}], \"version\": \"current\"}"
+  },
+  "50": {
+    "component_id": "50",
+    "page_version_id": "194",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"21\", \"url\": \"https://williams.net/\", \"title\": \"Link: Multi-layered user-facing adapter\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "51": {
+    "component_id": "51",
+    "page_version_id": "198",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"23\", \"url\": \"https://www.moreno.org/\", \"title\": \"Link: Multi-lateral global Graphic Interface\", \"target_type\": \"database\", \"target_id\": \"8\"}"
+  },
+  "52": {
+    "component_id": "52",
+    "page_version_id": "214",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"16\", \"url\": \"http://martin.com/\", \"title\": \"Link: Assimilated leadingedge architecture\", \"target_type\": \"page\", \"target_id\": \"31\"}"
+  },
+  "53": {
+    "component_id": "53",
+    "page_version_id": "217",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"24\", \"url\": \"https://huffman.com/\", \"title\": \"Link: Switchable zero tolerance process improvement\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "54": {
+    "component_id": "54",
+    "page_version_id": "224",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"11\", \"url\": \"http://clements.info/\", \"title\": \"Link: Re-contextualized empowering benchmark\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "55": {
+    "component_id": "55",
+    "page_version_id": "224",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"13\", \"url\": \"https://thomas.net/\", \"title\": \"Link: Cloned disintermediate Internet solution\", \"target_type\": \"external\", \"target_id\": null}"
+  },
+  "56": {
+    "component_id": "56",
+    "page_version_id": "224",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"17\", \"content\": [{\"id\": \"1\", \"type\": \"diamond\", \"text\": \"Networked fault-tolerant algor\", \"x_position\": 100, \"y_position\": 235, \"width\": 100, \"height\": 100, \"color\": \"black\"}, {\"id\": \"2\", \"type\": \"oval\", \"text\": \"Re-contextualized non-volatile\", \"x_position\": 200, \"y_position\": 553, \"width\": 100, \"height\": 100, \"color\": \"blue\"}], \"version\": \"current\"}"
+  },
+  "57": {
+    "component_id": "57",
+    "page_version_id": "231",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"16\", \"content\": [{\"id\": \"1\", \"type\": \"diamond\", \"text\": \"Multi-layered bandwidth-monito\", \"x_position\": 100, \"y_position\": 91, \"width\": 100, \"height\": 100, \"color\": \"green\"}], \"version\": \"current\"}"
+  },
+  "58": {
+    "component_id": "58",
+    "page_version_id": "240",
+    "component_type": "whiteboard",
+    "component_data": "{\"whiteboard_id\": \"12\", \"content\": [{\"id\": \"1\", \"type\": \"rectangle\", \"text\": \"Managed background attitude\", \"x_position\": 100, \"y_position\": 289, \"width\": 100, \"height\": 100, \"color\": \"orange\"}, {\"id\": \"2\", \"type\": \"sticky_note\", \"text\": \"Open-architected object-orient\", \"x_position\": 200, \"y_position\": 252, \"width\": 100, \"height\": 100, \"color\": \"pink\"}], \"version\": \"current\"}"
+  },
+  "59": {
+    "component_id": "59",
+    "page_version_id": "255",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"6\", \"url\": \"https://www.serrano-watson.biz/\", \"title\": \"Link: Implemented 24hour encoding\", \"target_type\": \"page\", \"target_id\": \"41\"}"
+  },
+  "60": {
+    "component_id": "60",
+    "page_version_id": "255",
+    "component_type": "smart_link",
+    "component_data": "{\"smart_link_id\": \"32\", \"url\": \"https://jackson-smith.com/\", \"title\": \"Link: Balanced client-driven implementation\", \"target_type\": \"page\", \"target_id\": \"78\"}"
+  }
+}

@@ -1,0 +1,3242 @@
+{
+  "1": {
+    "permission_id": "1",
+    "content_id": "1",
+    "content_type": "space",
+    "user_id": "6",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-10-08T06:12:15.322582"
+  },
+  "2": {
+    "permission_id": "2",
+    "content_id": "1",
+    "content_type": "space",
+    "user_id": "28",
+    "operation": "restrict_other_users",
+    "granted_by": "6",
+    "granted_at": "2025-01-14T10:43:40.276801"
+  },
+  "3": {
+    "permission_id": "3",
+    "content_id": "1",
+    "content_type": "space",
+    "user_id": "39",
+    "operation": "restrict_other_users",
+    "granted_by": "28",
+    "granted_at": "2025-05-10T06:30:20.912715"
+  },
+  "4": {
+    "permission_id": "4",
+    "content_id": "1",
+    "content_type": "space",
+    "user_id": "12",
+    "operation": "delete",
+    "granted_by": "28",
+    "granted_at": "2025-04-11T04:50:44.567061"
+  },
+  "5": {
+    "permission_id": "5",
+    "content_id": "1",
+    "content_type": "space",
+    "user_id": "35",
+    "operation": "restrict_other_users",
+    "granted_by": "6",
+    "granted_at": "2025-05-02T13:43:36.793745"
+  },
+  "6": {
+    "permission_id": "6",
+    "content_id": "1",
+    "content_type": "space",
+    "user_id": "19",
+    "operation": "edit",
+    "granted_by": "39",
+    "granted_at": "2025-09-26T18:09:32.781742"
+  },
+  "7": {
+    "permission_id": "7",
+    "content_id": "2",
+    "content_type": "space",
+    "user_id": "24",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-11T10:06:31.904039"
+  },
+  "8": {
+    "permission_id": "8",
+    "content_id": "2",
+    "content_type": "space",
+    "user_id": "33",
+    "operation": "create",
+    "granted_by": "24",
+    "granted_at": "2025-10-11T09:07:00.474614"
+  },
+  "9": {
+    "permission_id": "9",
+    "content_id": "2",
+    "content_type": "space",
+    "user_id": "44",
+    "operation": "restrict_other_users",
+    "granted_by": "24",
+    "granted_at": "2025-10-24T01:09:09.349648"
+  },
+  "10": {
+    "permission_id": "10",
+    "content_id": "2",
+    "content_type": "space",
+    "user_id": "11",
+    "operation": "restrict_other_users",
+    "granted_by": "44",
+    "granted_at": "2025-02-08T12:56:30.360724"
+  },
+  "11": {
+    "permission_id": "11",
+    "content_id": "2",
+    "content_type": "space",
+    "user_id": "2",
+    "operation": "delete",
+    "granted_by": "44",
+    "granted_at": "2025-03-19T08:42:20.730509"
+  },
+  "12": {
+    "permission_id": "12",
+    "content_id": "2",
+    "content_type": "space",
+    "user_id": "10",
+    "operation": "restrict_other_users",
+    "granted_by": "44",
+    "granted_at": "2025-03-09T02:20:40.381769"
+  },
+  "13": {
+    "permission_id": "13",
+    "content_id": "3",
+    "content_type": "space",
+    "user_id": "2",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-07-20T01:30:57.244889"
+  },
+  "14": {
+    "permission_id": "14",
+    "content_id": "3",
+    "content_type": "space",
+    "user_id": "48",
+    "operation": "restrict_other_users",
+    "granted_by": "2",
+    "granted_at": "2025-09-16T00:56:34.586162"
+  },
+  "15": {
+    "permission_id": "15",
+    "content_id": "3",
+    "content_type": "space",
+    "user_id": "12",
+    "operation": "restrict_other_users",
+    "granted_by": "48",
+    "granted_at": "2025-08-18T16:33:16.861543"
+  },
+  "16": {
+    "permission_id": "16",
+    "content_id": "4",
+    "content_type": "space",
+    "user_id": "45",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-11-14T21:32:31.695163"
+  },
+  "17": {
+    "permission_id": "17",
+    "content_id": "4",
+    "content_type": "space",
+    "user_id": "32",
+    "operation": "create",
+    "granted_by": "45",
+    "granted_at": "2024-12-04T18:25:58.553161"
+  },
+  "18": {
+    "permission_id": "18",
+    "content_id": "4",
+    "content_type": "space",
+    "user_id": "13",
+    "operation": "restrict_other_users",
+    "granted_by": "45",
+    "granted_at": "2025-11-11T12:13:19.606941"
+  },
+  "19": {
+    "permission_id": "19",
+    "content_id": "4",
+    "content_type": "space",
+    "user_id": "8",
+    "operation": "view",
+    "granted_by": "13",
+    "granted_at": "2025-04-11T05:12:00.122801"
+  },
+  "20": {
+    "permission_id": "20",
+    "content_id": "4",
+    "content_type": "space",
+    "user_id": "9",
+    "operation": "delete",
+    "granted_by": "13",
+    "granted_at": "2025-06-08T03:16:57.127946"
+  },
+  "21": {
+    "permission_id": "21",
+    "content_id": "5",
+    "content_type": "space",
+    "user_id": "8",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-01-27T05:31:10.847585"
+  },
+  "22": {
+    "permission_id": "22",
+    "content_id": "5",
+    "content_type": "space",
+    "user_id": "13",
+    "operation": "view",
+    "granted_by": "8",
+    "granted_at": "2025-04-10T00:21:45.704574"
+  },
+  "23": {
+    "permission_id": "23",
+    "content_id": "5",
+    "content_type": "space",
+    "user_id": "9",
+    "operation": "restrict_other_users",
+    "granted_by": "8",
+    "granted_at": "2025-05-18T04:02:43.614785"
+  },
+  "24": {
+    "permission_id": "24",
+    "content_id": "5",
+    "content_type": "space",
+    "user_id": "16",
+    "operation": "create",
+    "granted_by": "8",
+    "granted_at": "2025-05-19T02:59:57.973955"
+  },
+  "25": {
+    "permission_id": "25",
+    "content_id": "6",
+    "content_type": "space",
+    "user_id": "37",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-23T12:23:09.297034"
+  },
+  "26": {
+    "permission_id": "26",
+    "content_id": "6",
+    "content_type": "space",
+    "user_id": "5",
+    "operation": "restrict_other_users",
+    "granted_by": "37",
+    "granted_at": "2025-09-05T09:54:22.693830"
+  },
+  "27": {
+    "permission_id": "27",
+    "content_id": "6",
+    "content_type": "space",
+    "user_id": "9",
+    "operation": "delete",
+    "granted_by": "37",
+    "granted_at": "2025-10-17T11:50:58.290629"
+  },
+  "28": {
+    "permission_id": "28",
+    "content_id": "6",
+    "content_type": "space",
+    "user_id": "21",
+    "operation": "restrict_other_users",
+    "granted_by": "37",
+    "granted_at": "2025-08-31T00:42:53.635217"
+  },
+  "29": {
+    "permission_id": "29",
+    "content_id": "6",
+    "content_type": "space",
+    "user_id": "42",
+    "operation": "edit",
+    "granted_by": "21",
+    "granted_at": "2025-09-13T22:17:10.032346"
+  },
+  "30": {
+    "permission_id": "30",
+    "content_id": "6",
+    "content_type": "space",
+    "user_id": "47",
+    "operation": "edit",
+    "granted_by": "37",
+    "granted_at": "2025-10-27T23:56:41.651656"
+  },
+  "31": {
+    "permission_id": "31",
+    "content_id": "7",
+    "content_type": "space",
+    "user_id": "6",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-10-31T16:07:05.432182"
+  },
+  "32": {
+    "permission_id": "32",
+    "content_id": "7",
+    "content_type": "space",
+    "user_id": "17",
+    "operation": "restrict_other_users",
+    "granted_by": "6",
+    "granted_at": "2025-04-27T22:05:12.335542"
+  },
+  "33": {
+    "permission_id": "33",
+    "content_id": "7",
+    "content_type": "space",
+    "user_id": "13",
+    "operation": "view",
+    "granted_by": "6",
+    "granted_at": "2024-02-17T15:08:07.574573"
+  },
+  "34": {
+    "permission_id": "34",
+    "content_id": "7",
+    "content_type": "space",
+    "user_id": "41",
+    "operation": "restrict_other_users",
+    "granted_by": "17",
+    "granted_at": "2024-11-06T21:35:04.222106"
+  },
+  "35": {
+    "permission_id": "35",
+    "content_id": "7",
+    "content_type": "space",
+    "user_id": "36",
+    "operation": "restrict_other_users",
+    "granted_by": "41",
+    "granted_at": "2025-07-25T23:09:59.404789"
+  },
+  "36": {
+    "permission_id": "36",
+    "content_id": "8",
+    "content_type": "space",
+    "user_id": "42",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-02-27T05:36:29.119022"
+  },
+  "37": {
+    "permission_id": "37",
+    "content_id": "8",
+    "content_type": "space",
+    "user_id": "14",
+    "operation": "create",
+    "granted_by": "42",
+    "granted_at": "2025-01-19T15:59:28.276106"
+  },
+  "38": {
+    "permission_id": "38",
+    "content_id": "8",
+    "content_type": "space",
+    "user_id": "37",
+    "operation": "delete",
+    "granted_by": "42",
+    "granted_at": "2025-07-04T16:48:35.688162"
+  },
+  "39": {
+    "permission_id": "39",
+    "content_id": "8",
+    "content_type": "space",
+    "user_id": "27",
+    "operation": "delete",
+    "granted_by": "42",
+    "granted_at": "2025-10-14T10:16:56.758299"
+  },
+  "40": {
+    "permission_id": "40",
+    "content_id": "8",
+    "content_type": "space",
+    "user_id": "40",
+    "operation": "restrict_other_users",
+    "granted_by": "42",
+    "granted_at": "2025-11-12T10:51:17.135830"
+  },
+  "41": {
+    "permission_id": "41",
+    "content_id": "9",
+    "content_type": "space",
+    "user_id": "21",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-09-28T17:31:27.981570"
+  },
+  "42": {
+    "permission_id": "42",
+    "content_id": "9",
+    "content_type": "space",
+    "user_id": "46",
+    "operation": "edit",
+    "granted_by": "21",
+    "granted_at": "2025-02-17T06:03:34.673721"
+  },
+  "43": {
+    "permission_id": "43",
+    "content_id": "9",
+    "content_type": "space",
+    "user_id": "47",
+    "operation": "view",
+    "granted_by": "21",
+    "granted_at": "2025-02-13T06:37:52.249341"
+  },
+  "44": {
+    "permission_id": "44",
+    "content_id": "9",
+    "content_type": "space",
+    "user_id": "23",
+    "operation": "restrict_other_users",
+    "granted_by": "21",
+    "granted_at": "2025-02-19T14:46:19.782641"
+  },
+  "45": {
+    "permission_id": "45",
+    "content_id": "10",
+    "content_type": "space",
+    "user_id": "16",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-12-05T11:14:31.751132"
+  },
+  "46": {
+    "permission_id": "46",
+    "content_id": "10",
+    "content_type": "space",
+    "user_id": "11",
+    "operation": "create",
+    "granted_by": "16",
+    "granted_at": "2025-03-26T23:46:34.471044"
+  },
+  "47": {
+    "permission_id": "47",
+    "content_id": "10",
+    "content_type": "space",
+    "user_id": "21",
+    "operation": "create",
+    "granted_by": "16",
+    "granted_at": "2025-09-30T19:51:41.519317"
+  },
+  "48": {
+    "permission_id": "48",
+    "content_id": "10",
+    "content_type": "space",
+    "user_id": "37",
+    "operation": "restrict_other_users",
+    "granted_by": "16",
+    "granted_at": "2024-12-10T03:43:20.239754"
+  },
+  "49": {
+    "permission_id": "49",
+    "content_id": "10",
+    "content_type": "space",
+    "user_id": "46",
+    "operation": "restrict_other_users",
+    "granted_by": "16",
+    "granted_at": "2025-03-02T15:37:03.548939"
+  },
+  "50": {
+    "permission_id": "50",
+    "content_id": "10",
+    "content_type": "space",
+    "user_id": "13",
+    "operation": "restrict_other_users",
+    "granted_by": "46",
+    "granted_at": "2025-08-18T03:14:46.466640"
+  },
+  "51": {
+    "permission_id": "51",
+    "content_id": "11",
+    "content_type": "space",
+    "user_id": "7",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-05-31T23:06:44.981555"
+  },
+  "52": {
+    "permission_id": "52",
+    "content_id": "11",
+    "content_type": "space",
+    "user_id": "28",
+    "operation": "delete",
+    "granted_by": "7",
+    "granted_at": "2024-10-10T12:02:01.093151"
+  },
+  "53": {
+    "permission_id": "53",
+    "content_id": "11",
+    "content_type": "space",
+    "user_id": "9",
+    "operation": "delete",
+    "granted_by": "7",
+    "granted_at": "2024-11-04T09:44:29.143814"
+  },
+  "54": {
+    "permission_id": "54",
+    "content_id": "12",
+    "content_type": "space",
+    "user_id": "5",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-04-21T08:06:08.109368"
+  },
+  "55": {
+    "permission_id": "55",
+    "content_id": "12",
+    "content_type": "space",
+    "user_id": "25",
+    "operation": "restrict_other_users",
+    "granted_by": "5",
+    "granted_at": "2025-08-17T23:47:48.797987"
+  },
+  "56": {
+    "permission_id": "56",
+    "content_id": "12",
+    "content_type": "space",
+    "user_id": "33",
+    "operation": "view",
+    "granted_by": "25",
+    "granted_at": "2024-11-12T00:31:10.290193"
+  },
+  "57": {
+    "permission_id": "57",
+    "content_id": "12",
+    "content_type": "space",
+    "user_id": "29",
+    "operation": "restrict_other_users",
+    "granted_by": "25",
+    "granted_at": "2025-04-08T03:53:36.512351"
+  },
+  "58": {
+    "permission_id": "58",
+    "content_id": "12",
+    "content_type": "space",
+    "user_id": "36",
+    "operation": "restrict_other_users",
+    "granted_by": "5",
+    "granted_at": "2024-12-16T13:04:55.442031"
+  },
+  "59": {
+    "permission_id": "59",
+    "content_id": "13",
+    "content_type": "space",
+    "user_id": "31",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-14T05:19:30.582813"
+  },
+  "60": {
+    "permission_id": "60",
+    "content_id": "13",
+    "content_type": "space",
+    "user_id": "34",
+    "operation": "edit",
+    "granted_by": "31",
+    "granted_at": "2025-08-27T12:19:17.918865"
+  },
+  "61": {
+    "permission_id": "61",
+    "content_id": "13",
+    "content_type": "space",
+    "user_id": "30",
+    "operation": "restrict_other_users",
+    "granted_by": "31",
+    "granted_at": "2025-08-20T08:31:43.496388"
+  },
+  "62": {
+    "permission_id": "62",
+    "content_id": "13",
+    "content_type": "space",
+    "user_id": "10",
+    "operation": "edit",
+    "granted_by": "30",
+    "granted_at": "2025-10-31T12:52:25.520855"
+  },
+  "63": {
+    "permission_id": "63",
+    "content_id": "13",
+    "content_type": "space",
+    "user_id": "39",
+    "operation": "restrict_other_users",
+    "granted_by": "30",
+    "granted_at": "2025-09-03T13:24:32.271813"
+  },
+  "64": {
+    "permission_id": "64",
+    "content_id": "14",
+    "content_type": "space",
+    "user_id": "47",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-02-06T22:21:18.940098"
+  },
+  "65": {
+    "permission_id": "65",
+    "content_id": "14",
+    "content_type": "space",
+    "user_id": "45",
+    "operation": "restrict_other_users",
+    "granted_by": "47",
+    "granted_at": "2025-06-08T03:20:40.405568"
+  },
+  "66": {
+    "permission_id": "66",
+    "content_id": "14",
+    "content_type": "space",
+    "user_id": "41",
+    "operation": "edit",
+    "granted_by": "47",
+    "granted_at": "2025-09-06T05:51:03.301965"
+  },
+  "67": {
+    "permission_id": "67",
+    "content_id": "14",
+    "content_type": "space",
+    "user_id": "2",
+    "operation": "create",
+    "granted_by": "47",
+    "granted_at": "2025-01-31T18:01:57.052341"
+  },
+  "68": {
+    "permission_id": "68",
+    "content_id": "14",
+    "content_type": "space",
+    "user_id": "39",
+    "operation": "restrict_other_users",
+    "granted_by": "47",
+    "granted_at": "2025-09-06T14:25:47.924933"
+  },
+  "69": {
+    "permission_id": "69",
+    "content_id": "15",
+    "content_type": "space",
+    "user_id": "45",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-05-05T18:41:39.633085"
+  },
+  "70": {
+    "permission_id": "70",
+    "content_id": "15",
+    "content_type": "space",
+    "user_id": "14",
+    "operation": "view",
+    "granted_by": "45",
+    "granted_at": "2024-10-18T12:27:53.787832"
+  },
+  "71": {
+    "permission_id": "71",
+    "content_id": "15",
+    "content_type": "space",
+    "user_id": "27",
+    "operation": "edit",
+    "granted_by": "45",
+    "granted_at": "2025-05-13T23:58:32.097011"
+  },
+  "72": {
+    "permission_id": "72",
+    "content_id": "15",
+    "content_type": "space",
+    "user_id": "33",
+    "operation": "create",
+    "granted_by": "45",
+    "granted_at": "2025-05-06T02:39:18.794587"
+  },
+  "73": {
+    "permission_id": "73",
+    "content_id": "15",
+    "content_type": "space",
+    "user_id": "40",
+    "operation": "restrict_other_users",
+    "granted_by": "45",
+    "granted_at": "2025-06-06T16:04:08.389679"
+  },
+  "74": {
+    "permission_id": "74",
+    "content_id": "15",
+    "content_type": "space",
+    "user_id": "31",
+    "operation": "restrict_other_users",
+    "granted_by": "40",
+    "granted_at": "2024-07-16T18:45:00.999864"
+  },
+  "75": {
+    "permission_id": "75",
+    "content_id": "16",
+    "content_type": "space",
+    "user_id": "19",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-01-22T04:54:05.169930"
+  },
+  "76": {
+    "permission_id": "76",
+    "content_id": "16",
+    "content_type": "space",
+    "user_id": "46",
+    "operation": "restrict_other_users",
+    "granted_by": "19",
+    "granted_at": "2024-06-07T19:14:35.491242"
+  },
+  "77": {
+    "permission_id": "77",
+    "content_id": "16",
+    "content_type": "space",
+    "user_id": "14",
+    "operation": "restrict_other_users",
+    "granted_by": "46",
+    "granted_at": "2024-09-17T16:06:29.378792"
+  },
+  "78": {
+    "permission_id": "78",
+    "content_id": "16",
+    "content_type": "space",
+    "user_id": "45",
+    "operation": "delete",
+    "granted_by": "46",
+    "granted_at": "2025-02-20T01:50:17.806649"
+  },
+  "79": {
+    "permission_id": "79",
+    "content_id": "16",
+    "content_type": "space",
+    "user_id": "32",
+    "operation": "restrict_other_users",
+    "granted_by": "19",
+    "granted_at": "2025-05-11T01:39:55.276065"
+  },
+  "80": {
+    "permission_id": "80",
+    "content_id": "17",
+    "content_type": "space",
+    "user_id": "48",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-23T15:12:18.409503"
+  },
+  "81": {
+    "permission_id": "81",
+    "content_id": "17",
+    "content_type": "space",
+    "user_id": "31",
+    "operation": "restrict_other_users",
+    "granted_by": "48",
+    "granted_at": "2024-12-16T05:10:56.806080"
+  },
+  "82": {
+    "permission_id": "82",
+    "content_id": "17",
+    "content_type": "space",
+    "user_id": "14",
+    "operation": "delete",
+    "granted_by": "48",
+    "granted_at": "2025-04-16T13:38:29.933947"
+  },
+  "83": {
+    "permission_id": "83",
+    "content_id": "17",
+    "content_type": "space",
+    "user_id": "13",
+    "operation": "restrict_other_users",
+    "granted_by": "48",
+    "granted_at": "2025-08-07T17:38:00.338891"
+  },
+  "84": {
+    "permission_id": "84",
+    "content_id": "17",
+    "content_type": "space",
+    "user_id": "35",
+    "operation": "edit",
+    "granted_by": "13",
+    "granted_at": "2025-06-08T21:44:46.972279"
+  },
+  "85": {
+    "permission_id": "85",
+    "content_id": "18",
+    "content_type": "space",
+    "user_id": "1",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-06-15T05:24:24.997314"
+  },
+  "86": {
+    "permission_id": "86",
+    "content_id": "18",
+    "content_type": "space",
+    "user_id": "36",
+    "operation": "create",
+    "granted_by": "1",
+    "granted_at": "2025-07-14T05:22:44.535316"
+  },
+  "87": {
+    "permission_id": "87",
+    "content_id": "18",
+    "content_type": "space",
+    "user_id": "11",
+    "operation": "restrict_other_users",
+    "granted_by": "1",
+    "granted_at": "2025-09-26T13:02:41.555210"
+  },
+  "88": {
+    "permission_id": "88",
+    "content_id": "18",
+    "content_type": "space",
+    "user_id": "27",
+    "operation": "restrict_other_users",
+    "granted_by": "11",
+    "granted_at": "2025-11-07T04:03:35.554873"
+  },
+  "89": {
+    "permission_id": "89",
+    "content_id": "1",
+    "content_type": "page",
+    "user_id": "48",
+    "operation": "admin",
+    "granted_by": "39",
+    "granted_at": "2024-10-08T20:58:08.897904"
+  },
+  "90": {
+    "permission_id": "90",
+    "content_id": "1",
+    "content_type": "page",
+    "user_id": "47",
+    "operation": "edit",
+    "granted_by": "6",
+    "granted_at": "2024-08-05T21:09:39.435786"
+  },
+  "91": {
+    "permission_id": "91",
+    "content_id": "1",
+    "content_type": "page",
+    "user_id": "3",
+    "operation": "view",
+    "granted_by": "6",
+    "granted_at": "2024-11-24T23:37:03.938955"
+  },
+  "92": {
+    "permission_id": "92",
+    "content_id": "1",
+    "content_type": "page",
+    "user_id": "27",
+    "operation": "edit",
+    "granted_by": "48",
+    "granted_at": "2025-07-27T13:25:57.997720"
+  },
+  "93": {
+    "permission_id": "93",
+    "content_id": "9",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "admin",
+    "granted_by": "23",
+    "granted_at": "2025-05-13T17:08:15.549854"
+  },
+  "94": {
+    "permission_id": "94",
+    "content_id": "9",
+    "content_type": "page",
+    "user_id": "9",
+    "operation": "restrict_other_users",
+    "granted_by": "32",
+    "granted_at": "2024-09-08T14:16:45.904229"
+  },
+  "95": {
+    "permission_id": "95",
+    "content_id": "9",
+    "content_type": "page",
+    "user_id": "33",
+    "operation": "delete",
+    "granted_by": "32",
+    "granted_at": "2025-04-16T21:36:54.581622"
+  },
+  "96": {
+    "permission_id": "96",
+    "content_id": "9",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "restrict_other_users",
+    "granted_by": "23",
+    "granted_at": "2024-10-01T23:59:46.893742"
+  },
+  "97": {
+    "permission_id": "97",
+    "content_id": "31",
+    "content_type": "page",
+    "user_id": "12",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-10-30T16:24:12.076583"
+  },
+  "98": {
+    "permission_id": "98",
+    "content_id": "34",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "edit",
+    "granted_by": "10",
+    "granted_at": "2025-11-01T00:50:22.914012"
+  },
+  "99": {
+    "permission_id": "99",
+    "content_id": "27",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-03-02T00:16:15.660402"
+  },
+  "100": {
+    "permission_id": "100",
+    "content_id": "27",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "delete",
+    "granted_by": "29",
+    "granted_at": "2024-11-09T03:56:22.973432"
+  },
+  "101": {
+    "permission_id": "101",
+    "content_id": "41",
+    "content_type": "page",
+    "user_id": "43",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-11-05T17:39:16.180824"
+  },
+  "102": {
+    "permission_id": "102",
+    "content_id": "53",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-05-19T08:39:10.636238"
+  },
+  "103": {
+    "permission_id": "103",
+    "content_id": "53",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "restrict_other_users",
+    "granted_by": "26",
+    "granted_at": "2024-10-13T18:02:35.980496"
+  },
+  "104": {
+    "permission_id": "104",
+    "content_id": "2",
+    "content_type": "page",
+    "user_id": "40",
+    "operation": "admin",
+    "granted_by": "10",
+    "granted_at": "2025-10-09T09:56:38.996745"
+  },
+  "105": {
+    "permission_id": "105",
+    "content_id": "2",
+    "content_type": "page",
+    "user_id": "15",
+    "operation": "restrict_other_users",
+    "granted_by": "40",
+    "granted_at": "2025-09-29T12:23:05.023241"
+  },
+  "106": {
+    "permission_id": "106",
+    "content_id": "2",
+    "content_type": "page",
+    "user_id": "9",
+    "operation": "delete",
+    "granted_by": "15",
+    "granted_at": "2025-05-02T11:53:00.119377"
+  },
+  "107": {
+    "permission_id": "107",
+    "content_id": "2",
+    "content_type": "page",
+    "user_id": "31",
+    "operation": "restrict_other_users",
+    "granted_by": "44",
+    "granted_at": "2025-08-20T15:41:54.270657"
+  },
+  "108": {
+    "permission_id": "108",
+    "content_id": "22",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-29T08:20:43.463984"
+  },
+  "109": {
+    "permission_id": "109",
+    "content_id": "22",
+    "content_type": "page",
+    "user_id": "34",
+    "operation": "restrict_other_users",
+    "granted_by": "29",
+    "granted_at": "2025-02-07T18:57:15.980698"
+  },
+  "110": {
+    "permission_id": "110",
+    "content_id": "22",
+    "content_type": "page",
+    "user_id": "46",
+    "operation": "view",
+    "granted_by": "29",
+    "granted_at": "2024-08-07T04:46:52.680883"
+  },
+  "111": {
+    "permission_id": "111",
+    "content_id": "63",
+    "content_type": "page",
+    "user_id": "6",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-07-14T20:40:26.832837"
+  },
+  "112": {
+    "permission_id": "112",
+    "content_id": "63",
+    "content_type": "page",
+    "user_id": "33",
+    "operation": "restrict_other_users",
+    "granted_by": "6",
+    "granted_at": "2025-10-28T19:03:50.710352"
+  },
+  "113": {
+    "permission_id": "113",
+    "content_id": "40",
+    "content_type": "page",
+    "user_id": "4",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-08-15T11:33:46.034795"
+  },
+  "114": {
+    "permission_id": "114",
+    "content_id": "40",
+    "content_type": "page",
+    "user_id": "36",
+    "operation": "view",
+    "granted_by": "4",
+    "granted_at": "2024-06-16T00:40:12.647931"
+  },
+  "115": {
+    "permission_id": "115",
+    "content_id": "40",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "restrict_other_users",
+    "granted_by": "4",
+    "granted_at": "2025-03-07T11:52:50.025612"
+  },
+  "116": {
+    "permission_id": "116",
+    "content_id": "43",
+    "content_type": "page",
+    "user_id": "31",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-10-13T15:17:08.039871"
+  },
+  "117": {
+    "permission_id": "117",
+    "content_id": "43",
+    "content_type": "page",
+    "user_id": "3",
+    "operation": "restrict_other_users",
+    "granted_by": "31",
+    "granted_at": "2025-08-20T12:06:29.274193"
+  },
+  "118": {
+    "permission_id": "118",
+    "content_id": "49",
+    "content_type": "page",
+    "user_id": "27",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-09T01:45:44.489926"
+  },
+  "119": {
+    "permission_id": "119",
+    "content_id": "49",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "restrict_other_users",
+    "granted_by": "27",
+    "granted_at": "2025-10-06T04:58:45.530794"
+  },
+  "120": {
+    "permission_id": "120",
+    "content_id": "49",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "edit",
+    "granted_by": "27",
+    "granted_at": "2025-10-18T09:38:53.084721"
+  },
+  "121": {
+    "permission_id": "121",
+    "content_id": "88",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-08-08T10:08:12.226627"
+  },
+  "122": {
+    "permission_id": "122",
+    "content_id": "88",
+    "content_type": "page",
+    "user_id": "47",
+    "operation": "restrict_other_users",
+    "granted_by": "30",
+    "granted_at": "2025-08-08T18:27:01.280632"
+  },
+  "123": {
+    "permission_id": "123",
+    "content_id": "88",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "admin",
+    "granted_by": "30",
+    "granted_at": "2025-08-25T20:48:12.235857"
+  },
+  "124": {
+    "permission_id": "124",
+    "content_id": "3",
+    "content_type": "page",
+    "user_id": "27",
+    "operation": "admin",
+    "granted_by": "2",
+    "granted_at": "2024-12-17T19:53:50.219900"
+  },
+  "125": {
+    "permission_id": "125",
+    "content_id": "3",
+    "content_type": "page",
+    "user_id": "40",
+    "operation": "restrict_other_users",
+    "granted_by": "27",
+    "granted_at": "2025-02-26T12:47:10.978508"
+  },
+  "126": {
+    "permission_id": "126",
+    "content_id": "3",
+    "content_type": "page",
+    "user_id": "16",
+    "operation": "view",
+    "granted_by": "48",
+    "granted_at": "2024-12-28T03:22:34.076296"
+  },
+  "127": {
+    "permission_id": "127",
+    "content_id": "3",
+    "content_type": "page",
+    "user_id": "14",
+    "operation": "restrict_other_users",
+    "granted_by": "40",
+    "granted_at": "2024-11-21T20:00:29.886966"
+  },
+  "128": {
+    "permission_id": "128",
+    "content_id": "6",
+    "content_type": "page",
+    "user_id": "39",
+    "operation": "restrict_other_users",
+    "granted_by": "37",
+    "granted_at": "2024-11-16T18:39:00.075610"
+  },
+  "129": {
+    "permission_id": "129",
+    "content_id": "6",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "restrict_other_users",
+    "granted_by": "39",
+    "granted_at": "2024-08-01T06:02:47.598207"
+  },
+  "130": {
+    "permission_id": "130",
+    "content_id": "25",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-19T04:47:10.520009"
+  },
+  "131": {
+    "permission_id": "131",
+    "content_id": "25",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "restrict_other_users",
+    "granted_by": "41",
+    "granted_at": "2025-11-12T00:41:26.818009"
+  },
+  "132": {
+    "permission_id": "132",
+    "content_id": "52",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-01T06:58:18.462830"
+  },
+  "133": {
+    "permission_id": "133",
+    "content_id": "52",
+    "content_type": "page",
+    "user_id": "34",
+    "operation": "restrict_other_users",
+    "granted_by": "25",
+    "granted_at": "2025-11-06T19:43:50.848151"
+  },
+  "134": {
+    "permission_id": "134",
+    "content_id": "52",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "restrict_other_users",
+    "granted_by": "25",
+    "granted_at": "2025-10-09T11:18:32.714566"
+  },
+  "135": {
+    "permission_id": "135",
+    "content_id": "52",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "restrict_other_users",
+    "granted_by": "34",
+    "granted_at": "2025-08-25T00:44:31.034690"
+  },
+  "136": {
+    "permission_id": "136",
+    "content_id": "61",
+    "content_type": "page",
+    "user_id": "36",
+    "operation": "restrict_other_users",
+    "granted_by": "29",
+    "granted_at": "2025-08-02T17:55:28.080329"
+  },
+  "137": {
+    "permission_id": "137",
+    "content_id": "61",
+    "content_type": "page",
+    "user_id": "34",
+    "operation": "restrict_other_users",
+    "granted_by": "36",
+    "granted_at": "2025-08-08T16:04:44.357704"
+  },
+  "138": {
+    "permission_id": "138",
+    "content_id": "4",
+    "content_type": "page",
+    "user_id": "4",
+    "operation": "view",
+    "granted_by": "13",
+    "granted_at": "2025-07-03T23:46:48.158236"
+  },
+  "139": {
+    "permission_id": "139",
+    "content_id": "4",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "edit",
+    "granted_by": "45",
+    "granted_at": "2025-09-17T05:23:42.515580"
+  },
+  "140": {
+    "permission_id": "140",
+    "content_id": "4",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "edit",
+    "granted_by": "45",
+    "granted_at": "2025-04-22T15:59:35.799097"
+  },
+  "141": {
+    "permission_id": "141",
+    "content_id": "4",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "restrict_other_users",
+    "granted_by": "45",
+    "granted_at": "2025-04-30T03:35:25.531522"
+  },
+  "142": {
+    "permission_id": "142",
+    "content_id": "28",
+    "content_type": "page",
+    "user_id": "46",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-26T02:58:31.635417"
+  },
+  "143": {
+    "permission_id": "143",
+    "content_id": "28",
+    "content_type": "page",
+    "user_id": "14",
+    "operation": "delete",
+    "granted_by": "46",
+    "granted_at": "2025-10-24T12:51:12.021981"
+  },
+  "144": {
+    "permission_id": "144",
+    "content_id": "28",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "restrict_other_users",
+    "granted_by": "46",
+    "granted_at": "2025-10-29T12:09:08.524027"
+  },
+  "145": {
+    "permission_id": "145",
+    "content_id": "28",
+    "content_type": "page",
+    "user_id": "16",
+    "operation": "restrict_other_users",
+    "granted_by": "26",
+    "granted_at": "2025-11-04T05:34:26.852920"
+  },
+  "146": {
+    "permission_id": "146",
+    "content_id": "77",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-28T12:29:07.796204"
+  },
+  "147": {
+    "permission_id": "147",
+    "content_id": "77",
+    "content_type": "page",
+    "user_id": "14",
+    "operation": "restrict_other_users",
+    "granted_by": "21",
+    "granted_at": "2025-05-29T01:10:09.741698"
+  },
+  "148": {
+    "permission_id": "148",
+    "content_id": "45",
+    "content_type": "page",
+    "user_id": "2",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-07-06T18:40:41.054432"
+  },
+  "149": {
+    "permission_id": "149",
+    "content_id": "45",
+    "content_type": "page",
+    "user_id": "17",
+    "operation": "create",
+    "granted_by": "2",
+    "granted_at": "2024-12-12T18:55:34.749039"
+  },
+  "150": {
+    "permission_id": "150",
+    "content_id": "56",
+    "content_type": "page",
+    "user_id": "16",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-01T07:39:27.166025"
+  },
+  "151": {
+    "permission_id": "151",
+    "content_id": "56",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "delete",
+    "granted_by": "16",
+    "granted_at": "2025-11-12T05:13:06.331343"
+  },
+  "152": {
+    "permission_id": "152",
+    "content_id": "56",
+    "content_type": "page",
+    "user_id": "36",
+    "operation": "restrict_other_users",
+    "granted_by": "16",
+    "granted_at": "2025-10-05T11:36:37.254905"
+  },
+  "153": {
+    "permission_id": "153",
+    "content_id": "57",
+    "content_type": "page",
+    "user_id": "35",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-20T22:55:24.370346"
+  },
+  "154": {
+    "permission_id": "154",
+    "content_id": "57",
+    "content_type": "page",
+    "user_id": "12",
+    "operation": "view",
+    "granted_by": "35",
+    "granted_at": "2025-09-22T16:31:33.268389"
+  },
+  "155": {
+    "permission_id": "155",
+    "content_id": "57",
+    "content_type": "page",
+    "user_id": "42",
+    "operation": "view",
+    "granted_by": "35",
+    "granted_at": "2025-07-23T21:00:36.319479"
+  },
+  "156": {
+    "permission_id": "156",
+    "content_id": "5",
+    "content_type": "page",
+    "user_id": "40",
+    "operation": "admin",
+    "granted_by": "8",
+    "granted_at": "2025-07-14T12:22:03.256961"
+  },
+  "157": {
+    "permission_id": "157",
+    "content_id": "5",
+    "content_type": "page",
+    "user_id": "31",
+    "operation": "restrict_other_users",
+    "granted_by": "40",
+    "granted_at": "2025-07-23T11:34:24.127401"
+  },
+  "158": {
+    "permission_id": "158",
+    "content_id": "5",
+    "content_type": "page",
+    "user_id": "43",
+    "operation": "view",
+    "granted_by": "31",
+    "granted_at": "2025-07-16T10:06:56.223891"
+  },
+  "159": {
+    "permission_id": "159",
+    "content_id": "5",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "restrict_other_users",
+    "granted_by": "9",
+    "granted_at": "2025-09-25T11:17:46.332438"
+  },
+  "160": {
+    "permission_id": "160",
+    "content_id": "5",
+    "content_type": "page",
+    "user_id": "2",
+    "operation": "delete",
+    "granted_by": "8",
+    "granted_at": "2025-03-28T01:33:13.030488"
+  },
+  "161": {
+    "permission_id": "161",
+    "content_id": "8",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "admin",
+    "granted_by": "42",
+    "granted_at": "2025-03-29T05:43:53.097760"
+  },
+  "162": {
+    "permission_id": "162",
+    "content_id": "8",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "restrict_other_users",
+    "granted_by": "18",
+    "granted_at": "2025-07-16T18:00:22.198748"
+  },
+  "163": {
+    "permission_id": "163",
+    "content_id": "8",
+    "content_type": "page",
+    "user_id": "6",
+    "operation": "restrict_other_users",
+    "granted_by": "40",
+    "granted_at": "2025-04-25T07:20:51.029164"
+  },
+  "164": {
+    "permission_id": "164",
+    "content_id": "13",
+    "content_type": "page",
+    "user_id": "3",
+    "operation": "admin",
+    "granted_by": "39",
+    "granted_at": "2025-11-03T04:02:14.229593"
+  },
+  "165": {
+    "permission_id": "165",
+    "content_id": "36",
+    "content_type": "page",
+    "user_id": "37",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-04-30T22:56:09.718402"
+  },
+  "166": {
+    "permission_id": "166",
+    "content_id": "36",
+    "content_type": "page",
+    "user_id": "7",
+    "operation": "view",
+    "granted_by": "37",
+    "granted_at": "2025-09-10T16:58:14.978613"
+  },
+  "167": {
+    "permission_id": "167",
+    "content_id": "81",
+    "content_type": "page",
+    "user_id": "31",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-11-27T09:54:16.246767"
+  },
+  "168": {
+    "permission_id": "168",
+    "content_id": "81",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "delete",
+    "granted_by": "31",
+    "granted_at": "2024-12-17T06:17:08.931141"
+  },
+  "169": {
+    "permission_id": "169",
+    "content_id": "81",
+    "content_type": "page",
+    "user_id": "3",
+    "operation": "view",
+    "granted_by": "31",
+    "granted_at": "2025-05-24T04:37:12.194851"
+  },
+  "170": {
+    "permission_id": "170",
+    "content_id": "81",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "restrict_other_users",
+    "granted_by": "31",
+    "granted_at": "2025-04-20T14:21:14.405501"
+  },
+  "171": {
+    "permission_id": "171",
+    "content_id": "7",
+    "content_type": "page",
+    "user_id": "37",
+    "operation": "admin",
+    "granted_by": "17",
+    "granted_at": "2025-05-14T14:21:01.315072"
+  },
+  "172": {
+    "permission_id": "172",
+    "content_id": "7",
+    "content_type": "page",
+    "user_id": "16",
+    "operation": "delete",
+    "granted_by": "6",
+    "granted_at": "2025-03-24T01:02:39.982976"
+  },
+  "173": {
+    "permission_id": "173",
+    "content_id": "7",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "restrict_other_users",
+    "granted_by": "37",
+    "granted_at": "2024-04-02T21:48:59.066305"
+  },
+  "174": {
+    "permission_id": "174",
+    "content_id": "19",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-09-03T04:49:00.080187"
+  },
+  "175": {
+    "permission_id": "175",
+    "content_id": "19",
+    "content_type": "page",
+    "user_id": "22",
+    "operation": "create",
+    "granted_by": "5",
+    "granted_at": "2024-11-16T20:09:52.341235"
+  },
+  "176": {
+    "permission_id": "176",
+    "content_id": "20",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-03T13:18:17.484988"
+  },
+  "177": {
+    "permission_id": "177",
+    "content_id": "20",
+    "content_type": "page",
+    "user_id": "15",
+    "operation": "create",
+    "granted_by": "32",
+    "granted_at": "2025-10-26T04:20:06.173246"
+  },
+  "178": {
+    "permission_id": "178",
+    "content_id": "20",
+    "content_type": "page",
+    "user_id": "23",
+    "operation": "restrict_other_users",
+    "granted_by": "32",
+    "granted_at": "2025-09-11T07:37:42.717178"
+  },
+  "179": {
+    "permission_id": "179",
+    "content_id": "33",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "restrict_other_users",
+    "granted_by": "39",
+    "granted_at": "2025-10-06T23:23:43.107087"
+  },
+  "180": {
+    "permission_id": "180",
+    "content_id": "39",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-02T15:00:37.799275"
+  },
+  "181": {
+    "permission_id": "181",
+    "content_id": "39",
+    "content_type": "page",
+    "user_id": "24",
+    "operation": "restrict_other_users",
+    "granted_by": "29",
+    "granted_at": "2025-03-08T01:14:48.690409"
+  },
+  "182": {
+    "permission_id": "182",
+    "content_id": "39",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "restrict_other_users",
+    "granted_by": "24",
+    "granted_at": "2025-10-15T15:19:18.830136"
+  },
+  "183": {
+    "permission_id": "183",
+    "content_id": "60",
+    "content_type": "page",
+    "user_id": "39",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-04-21T21:19:43.762393"
+  },
+  "184": {
+    "permission_id": "184",
+    "content_id": "60",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "restrict_other_users",
+    "granted_by": "39",
+    "granted_at": "2025-06-29T04:38:48.993380"
+  },
+  "185": {
+    "permission_id": "185",
+    "content_id": "60",
+    "content_type": "page",
+    "user_id": "1",
+    "operation": "restrict_other_users",
+    "granted_by": "21",
+    "granted_at": "2025-08-07T00:35:39.948938"
+  },
+  "186": {
+    "permission_id": "186",
+    "content_id": "10",
+    "content_type": "page",
+    "user_id": "27",
+    "operation": "admin",
+    "granted_by": "13",
+    "granted_at": "2024-11-05T05:06:02.059202"
+  },
+  "187": {
+    "permission_id": "187",
+    "content_id": "10",
+    "content_type": "page",
+    "user_id": "20",
+    "operation": "restrict_other_users",
+    "granted_by": "16",
+    "granted_at": "2024-10-22T13:11:14.223593"
+  },
+  "188": {
+    "permission_id": "188",
+    "content_id": "10",
+    "content_type": "page",
+    "user_id": "31",
+    "operation": "create",
+    "granted_by": "37",
+    "granted_at": "2025-05-30T05:39:27.309855"
+  },
+  "189": {
+    "permission_id": "189",
+    "content_id": "10",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "edit",
+    "granted_by": "46",
+    "granted_at": "2025-05-23T12:15:46.325143"
+  },
+  "190": {
+    "permission_id": "190",
+    "content_id": "29",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-09T23:01:48.459217"
+  },
+  "191": {
+    "permission_id": "191",
+    "content_id": "29",
+    "content_type": "page",
+    "user_id": "22",
+    "operation": "edit",
+    "granted_by": "29",
+    "granted_at": "2025-09-27T10:57:19.705767"
+  },
+  "192": {
+    "permission_id": "192",
+    "content_id": "29",
+    "content_type": "page",
+    "user_id": "28",
+    "operation": "restrict_other_users",
+    "granted_by": "29",
+    "granted_at": "2025-08-23T02:52:06.166836"
+  },
+  "193": {
+    "permission_id": "193",
+    "content_id": "95",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-24T05:12:29.185854"
+  },
+  "194": {
+    "permission_id": "194",
+    "content_id": "95",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "delete",
+    "granted_by": "45",
+    "granted_at": "2025-11-01T23:35:43.085221"
+  },
+  "195": {
+    "permission_id": "195",
+    "content_id": "95",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "restrict_other_users",
+    "granted_by": "45",
+    "granted_at": "2025-11-08T12:52:30.408043"
+  },
+  "196": {
+    "permission_id": "196",
+    "content_id": "97",
+    "content_type": "page",
+    "user_id": "14",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-06-22T01:16:43.510870"
+  },
+  "197": {
+    "permission_id": "197",
+    "content_id": "97",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "view",
+    "granted_by": "14",
+    "granted_at": "2025-09-05T21:12:05.015348"
+  },
+  "198": {
+    "permission_id": "198",
+    "content_id": "97",
+    "content_type": "page",
+    "user_id": "19",
+    "operation": "create",
+    "granted_by": "14",
+    "granted_at": "2025-08-09T22:31:35.533383"
+  },
+  "199": {
+    "permission_id": "199",
+    "content_id": "11",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "admin",
+    "granted_by": "7",
+    "granted_at": "2025-07-16T18:36:41.526438"
+  },
+  "200": {
+    "permission_id": "200",
+    "content_id": "11",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "create",
+    "granted_by": "7",
+    "granted_at": "2025-08-06T22:42:02.495512"
+  },
+  "201": {
+    "permission_id": "201",
+    "content_id": "11",
+    "content_type": "page",
+    "user_id": "39",
+    "operation": "restrict_other_users",
+    "granted_by": "7",
+    "granted_at": "2025-02-09T04:26:43.084695"
+  },
+  "202": {
+    "permission_id": "202",
+    "content_id": "11",
+    "content_type": "page",
+    "user_id": "31",
+    "operation": "delete",
+    "granted_by": "39",
+    "granted_at": "2025-04-22T01:03:06.318671"
+  },
+  "203": {
+    "permission_id": "203",
+    "content_id": "14",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "admin",
+    "granted_by": "47",
+    "granted_at": "2024-01-07T18:35:15.265031"
+  },
+  "204": {
+    "permission_id": "204",
+    "content_id": "14",
+    "content_type": "page",
+    "user_id": "42",
+    "operation": "create",
+    "granted_by": "45",
+    "granted_at": "2024-08-18T22:59:09.704953"
+  },
+  "205": {
+    "permission_id": "205",
+    "content_id": "14",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "restrict_other_users",
+    "granted_by": "44",
+    "granted_at": "2024-07-04T00:37:59.092530"
+  },
+  "206": {
+    "permission_id": "206",
+    "content_id": "14",
+    "content_type": "page",
+    "user_id": "22",
+    "operation": "restrict_other_users",
+    "granted_by": "39",
+    "granted_at": "2025-05-01T01:15:04.484915"
+  },
+  "207": {
+    "permission_id": "207",
+    "content_id": "89",
+    "content_type": "page",
+    "user_id": "2",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-03-06T12:38:52.840956"
+  },
+  "208": {
+    "permission_id": "208",
+    "content_id": "89",
+    "content_type": "page",
+    "user_id": "31",
+    "operation": "restrict_other_users",
+    "granted_by": "2",
+    "granted_at": "2024-07-22T11:05:51.537353"
+  },
+  "209": {
+    "permission_id": "209",
+    "content_id": "72",
+    "content_type": "page",
+    "user_id": "23",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-07-15T20:52:05.038943"
+  },
+  "210": {
+    "permission_id": "210",
+    "content_id": "72",
+    "content_type": "page",
+    "user_id": "20",
+    "operation": "restrict_other_users",
+    "granted_by": "23",
+    "granted_at": "2025-02-27T04:05:32.299363"
+  },
+  "211": {
+    "permission_id": "211",
+    "content_id": "12",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "admin",
+    "granted_by": "25",
+    "granted_at": "2025-02-24T13:39:12.916752"
+  },
+  "212": {
+    "permission_id": "212",
+    "content_id": "12",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "view",
+    "granted_by": "25",
+    "granted_at": "2025-08-07T09:37:46.719322"
+  },
+  "213": {
+    "permission_id": "213",
+    "content_id": "12",
+    "content_type": "page",
+    "user_id": "20",
+    "operation": "edit",
+    "granted_by": "25",
+    "granted_at": "2024-12-24T17:29:10.192525"
+  },
+  "214": {
+    "permission_id": "214",
+    "content_id": "23",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-10-22T22:28:05.362266"
+  },
+  "215": {
+    "permission_id": "215",
+    "content_id": "23",
+    "content_type": "page",
+    "user_id": "43",
+    "operation": "restrict_other_users",
+    "granted_by": "41",
+    "granted_at": "2024-06-16T18:54:33.319534"
+  },
+  "216": {
+    "permission_id": "216",
+    "content_id": "37",
+    "content_type": "page",
+    "user_id": "46",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-03-03T03:47:15.455842"
+  },
+  "217": {
+    "permission_id": "217",
+    "content_id": "37",
+    "content_type": "page",
+    "user_id": "14",
+    "operation": "restrict_other_users",
+    "granted_by": "46",
+    "granted_at": "2025-01-22T16:02:41.799637"
+  },
+  "218": {
+    "permission_id": "218",
+    "content_id": "38",
+    "content_type": "page",
+    "user_id": "12",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-04-20T08:04:58.767308"
+  },
+  "219": {
+    "permission_id": "219",
+    "content_id": "38",
+    "content_type": "page",
+    "user_id": "24",
+    "operation": "restrict_other_users",
+    "granted_by": "12",
+    "granted_at": "2025-07-01T13:18:58.583046"
+  },
+  "220": {
+    "permission_id": "220",
+    "content_id": "38",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "restrict_other_users",
+    "granted_by": "24",
+    "granted_at": "2025-07-05T10:42:29.814127"
+  },
+  "221": {
+    "permission_id": "221",
+    "content_id": "38",
+    "content_type": "page",
+    "user_id": "13",
+    "operation": "delete",
+    "granted_by": "21",
+    "granted_at": "2025-05-23T00:38:33.471820"
+  },
+  "222": {
+    "permission_id": "222",
+    "content_id": "82",
+    "content_type": "page",
+    "user_id": "46",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-07-11T16:57:23.843888"
+  },
+  "223": {
+    "permission_id": "223",
+    "content_id": "82",
+    "content_type": "page",
+    "user_id": "20",
+    "operation": "restrict_other_users",
+    "granted_by": "46",
+    "granted_at": "2025-08-09T17:08:19.895672"
+  },
+  "224": {
+    "permission_id": "224",
+    "content_id": "82",
+    "content_type": "page",
+    "user_id": "40",
+    "operation": "restrict_other_users",
+    "granted_by": "46",
+    "granted_at": "2025-07-20T22:24:37.825988"
+  },
+  "225": {
+    "permission_id": "225",
+    "content_id": "82",
+    "content_type": "page",
+    "user_id": "38",
+    "operation": "restrict_other_users",
+    "granted_by": "20",
+    "granted_at": "2025-07-06T01:09:42.994260"
+  },
+  "226": {
+    "permission_id": "226",
+    "content_id": "15",
+    "content_type": "page",
+    "user_id": "28",
+    "operation": "admin",
+    "granted_by": "40",
+    "granted_at": "2025-07-10T15:24:59.998371"
+  },
+  "227": {
+    "permission_id": "227",
+    "content_id": "15",
+    "content_type": "page",
+    "user_id": "12",
+    "operation": "restrict_other_users",
+    "granted_by": "40",
+    "granted_at": "2025-08-13T04:08:39.065765"
+  },
+  "228": {
+    "permission_id": "228",
+    "content_id": "15",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "edit",
+    "granted_by": "40",
+    "granted_at": "2025-04-24T14:14:56.755698"
+  },
+  "229": {
+    "permission_id": "229",
+    "content_id": "15",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "create",
+    "granted_by": "31",
+    "granted_at": "2025-04-28T22:24:45.025550"
+  },
+  "230": {
+    "permission_id": "230",
+    "content_id": "71",
+    "content_type": "page",
+    "user_id": "9",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-07-22T00:07:40.718106"
+  },
+  "231": {
+    "permission_id": "231",
+    "content_id": "71",
+    "content_type": "page",
+    "user_id": "13",
+    "operation": "create",
+    "granted_by": "9",
+    "granted_at": "2024-11-30T02:59:46.628957"
+  },
+  "232": {
+    "permission_id": "232",
+    "content_id": "71",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "restrict_other_users",
+    "granted_by": "9",
+    "granted_at": "2025-07-25T13:33:24.289654"
+  },
+  "233": {
+    "permission_id": "233",
+    "content_id": "74",
+    "content_type": "page",
+    "user_id": "19",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-08-12T05:21:32.746002"
+  },
+  "234": {
+    "permission_id": "234",
+    "content_id": "76",
+    "content_type": "page",
+    "user_id": "11",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-06-03T20:25:00.341744"
+  },
+  "235": {
+    "permission_id": "235",
+    "content_id": "76",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "create",
+    "granted_by": "11",
+    "granted_at": "2024-07-10T21:20:30.690506"
+  },
+  "236": {
+    "permission_id": "236",
+    "content_id": "84",
+    "content_type": "page",
+    "user_id": "24",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-11-03T14:42:08.998649"
+  },
+  "237": {
+    "permission_id": "237",
+    "content_id": "84",
+    "content_type": "page",
+    "user_id": "35",
+    "operation": "create",
+    "granted_by": "24",
+    "granted_at": "2025-11-01T04:45:39.884728"
+  },
+  "238": {
+    "permission_id": "238",
+    "content_id": "84",
+    "content_type": "page",
+    "user_id": "3",
+    "operation": "restrict_other_users",
+    "granted_by": "24",
+    "granted_at": "2025-11-01T11:16:40.484959"
+  },
+  "239": {
+    "permission_id": "239",
+    "content_id": "16",
+    "content_type": "page",
+    "user_id": "6",
+    "operation": "admin",
+    "granted_by": "46",
+    "granted_at": "2025-06-18T16:51:38.681160"
+  },
+  "240": {
+    "permission_id": "240",
+    "content_id": "16",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "restrict_other_users",
+    "granted_by": "6",
+    "granted_at": "2025-07-01T09:53:45.201813"
+  },
+  "241": {
+    "permission_id": "241",
+    "content_id": "16",
+    "content_type": "page",
+    "user_id": "8",
+    "operation": "delete",
+    "granted_by": "46",
+    "granted_at": "2025-11-11T07:48:24.549283"
+  },
+  "242": {
+    "permission_id": "242",
+    "content_id": "16",
+    "content_type": "page",
+    "user_id": "16",
+    "operation": "create",
+    "granted_by": "46",
+    "granted_at": "2025-04-22T11:02:04.167757"
+  },
+  "243": {
+    "permission_id": "243",
+    "content_id": "21",
+    "content_type": "page",
+    "user_id": "35",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-06-27T19:34:28.729583"
+  },
+  "244": {
+    "permission_id": "244",
+    "content_id": "21",
+    "content_type": "page",
+    "user_id": "11",
+    "operation": "restrict_other_users",
+    "granted_by": "35",
+    "granted_at": "2024-05-22T07:48:07.430870"
+  },
+  "245": {
+    "permission_id": "245",
+    "content_id": "21",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "view",
+    "granted_by": "11",
+    "granted_at": "2024-07-11T00:02:19.073938"
+  },
+  "246": {
+    "permission_id": "246",
+    "content_id": "47",
+    "content_type": "page",
+    "user_id": "10",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-03-02T02:59:56.858812"
+  },
+  "247": {
+    "permission_id": "247",
+    "content_id": "47",
+    "content_type": "page",
+    "user_id": "37",
+    "operation": "restrict_other_users",
+    "granted_by": "10",
+    "granted_at": "2024-10-04T15:37:09.841848"
+  },
+  "248": {
+    "permission_id": "248",
+    "content_id": "47",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "restrict_other_users",
+    "granted_by": "10",
+    "granted_at": "2025-08-12T00:35:49.476759"
+  },
+  "249": {
+    "permission_id": "249",
+    "content_id": "91",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-08-14T10:02:17.976081"
+  },
+  "250": {
+    "permission_id": "250",
+    "content_id": "91",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "create",
+    "granted_by": "30",
+    "granted_at": "2025-09-15T23:10:41.716899"
+  },
+  "251": {
+    "permission_id": "251",
+    "content_id": "17",
+    "content_type": "page",
+    "user_id": "19",
+    "operation": "admin",
+    "granted_by": "48",
+    "granted_at": "2025-10-22T13:44:43.794687"
+  },
+  "252": {
+    "permission_id": "252",
+    "content_id": "17",
+    "content_type": "page",
+    "user_id": "22",
+    "operation": "restrict_other_users",
+    "granted_by": "48",
+    "granted_at": "2025-06-24T17:48:45.455059"
+  },
+  "253": {
+    "permission_id": "253",
+    "content_id": "17",
+    "content_type": "page",
+    "user_id": "36",
+    "operation": "delete",
+    "granted_by": "19",
+    "granted_at": "2025-10-09T11:42:44.353931"
+  },
+  "254": {
+    "permission_id": "254",
+    "content_id": "17",
+    "content_type": "page",
+    "user_id": "37",
+    "operation": "view",
+    "granted_by": "48",
+    "granted_at": "2025-10-27T07:25:55.710688"
+  },
+  "255": {
+    "permission_id": "255",
+    "content_id": "26",
+    "content_type": "page",
+    "user_id": "13",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-06-28T01:48:41.085238"
+  },
+  "256": {
+    "permission_id": "256",
+    "content_id": "26",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "delete",
+    "granted_by": "13",
+    "granted_at": "2025-10-20T19:53:14.871778"
+  },
+  "257": {
+    "permission_id": "257",
+    "content_id": "26",
+    "content_type": "page",
+    "user_id": "9",
+    "operation": "restrict_other_users",
+    "granted_by": "13",
+    "granted_at": "2025-07-16T22:51:52.625481"
+  },
+  "258": {
+    "permission_id": "258",
+    "content_id": "32",
+    "content_type": "page",
+    "user_id": "4",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-04-06T22:54:32.615677"
+  },
+  "259": {
+    "permission_id": "259",
+    "content_id": "32",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "edit",
+    "granted_by": "4",
+    "granted_at": "2025-11-01T20:53:33.108956"
+  },
+  "260": {
+    "permission_id": "260",
+    "content_id": "42",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-11-10T17:32:28.582000"
+  },
+  "261": {
+    "permission_id": "261",
+    "content_id": "42",
+    "content_type": "page",
+    "user_id": "9",
+    "operation": "restrict_other_users",
+    "granted_by": "5",
+    "granted_at": "2025-09-24T13:19:43.175198"
+  },
+  "262": {
+    "permission_id": "262",
+    "content_id": "42",
+    "content_type": "page",
+    "user_id": "38",
+    "operation": "view",
+    "granted_by": "5",
+    "granted_at": "2023-11-22T20:09:02.968739"
+  },
+  "263": {
+    "permission_id": "263",
+    "content_id": "69",
+    "content_type": "page",
+    "user_id": "15",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-08T16:05:37.245632"
+  },
+  "264": {
+    "permission_id": "264",
+    "content_id": "78",
+    "content_type": "page",
+    "user_id": "7",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-02-07T17:49:10.499930"
+  },
+  "265": {
+    "permission_id": "265",
+    "content_id": "78",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "restrict_other_users",
+    "granted_by": "7",
+    "granted_at": "2025-09-05T00:51:48.088840"
+  },
+  "266": {
+    "permission_id": "266",
+    "content_id": "18",
+    "content_type": "page",
+    "user_id": "42",
+    "operation": "admin",
+    "granted_by": "11",
+    "granted_at": "2025-10-24T09:55:07.948792"
+  },
+  "267": {
+    "permission_id": "267",
+    "content_id": "18",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "restrict_other_users",
+    "granted_by": "27",
+    "granted_at": "2025-09-21T04:47:32.103341"
+  },
+  "268": {
+    "permission_id": "268",
+    "content_id": "18",
+    "content_type": "page",
+    "user_id": "10",
+    "operation": "edit",
+    "granted_by": "11",
+    "granted_at": "2025-10-31T02:57:03.085110"
+  },
+  "269": {
+    "permission_id": "269",
+    "content_id": "55",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-12-26T04:05:36.609201"
+  },
+  "270": {
+    "permission_id": "270",
+    "content_id": "55",
+    "content_type": "page",
+    "user_id": "14",
+    "operation": "restrict_other_users",
+    "granted_by": "29",
+    "granted_at": "2025-07-05T19:42:24.328391"
+  },
+  "271": {
+    "permission_id": "271",
+    "content_id": "55",
+    "content_type": "page",
+    "user_id": "6",
+    "operation": "restrict_other_users",
+    "granted_by": "29",
+    "granted_at": "2025-08-20T04:37:51.663839"
+  },
+  "272": {
+    "permission_id": "272",
+    "content_id": "55",
+    "content_type": "page",
+    "user_id": "7",
+    "operation": "delete",
+    "granted_by": "29",
+    "granted_at": "2025-05-21T01:07:57.148080"
+  },
+  "273": {
+    "permission_id": "273",
+    "content_id": "58",
+    "content_type": "page",
+    "user_id": "19",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-02-07T08:35:52.388704"
+  },
+  "274": {
+    "permission_id": "274",
+    "content_id": "58",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "edit",
+    "granted_by": "19",
+    "granted_at": "2025-01-13T12:27:13.706100"
+  },
+  "275": {
+    "permission_id": "275",
+    "content_id": "58",
+    "content_type": "page",
+    "user_id": "2",
+    "operation": "restrict_other_users",
+    "granted_by": "19",
+    "granted_at": "2025-08-26T12:16:56.640698"
+  },
+  "276": {
+    "permission_id": "276",
+    "content_id": "58",
+    "content_type": "page",
+    "user_id": "43",
+    "operation": "restrict_other_users",
+    "granted_by": "19",
+    "granted_at": "2025-03-25T01:01:49.536498"
+  },
+  "277": {
+    "permission_id": "277",
+    "content_id": "83",
+    "content_type": "page",
+    "user_id": "24",
+    "operation": "restrict_other_users",
+    "granted_by": "48",
+    "granted_at": "2025-05-23T08:26:41.945996"
+  },
+  "278": {
+    "permission_id": "278",
+    "content_id": "83",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "create",
+    "granted_by": "24",
+    "granted_at": "2025-09-10T13:37:53.471554"
+  },
+  "279": {
+    "permission_id": "279",
+    "content_id": "85",
+    "content_type": "page",
+    "user_id": "38",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-06-16T15:06:57.360216"
+  },
+  "280": {
+    "permission_id": "280",
+    "content_id": "85",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "restrict_other_users",
+    "granted_by": "38",
+    "granted_at": "2024-07-04T11:37:50.887060"
+  },
+  "281": {
+    "permission_id": "281",
+    "content_id": "24",
+    "content_type": "page",
+    "user_id": "33",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-12-16T11:37:41.801844"
+  },
+  "282": {
+    "permission_id": "282",
+    "content_id": "24",
+    "content_type": "page",
+    "user_id": "19",
+    "operation": "restrict_other_users",
+    "granted_by": "33",
+    "granted_at": "2025-02-10T22:18:49.736408"
+  },
+  "283": {
+    "permission_id": "283",
+    "content_id": "24",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "restrict_other_users",
+    "granted_by": "19",
+    "granted_at": "2025-03-07T08:39:49.767779"
+  },
+  "284": {
+    "permission_id": "284",
+    "content_id": "24",
+    "content_type": "page",
+    "user_id": "46",
+    "operation": "view",
+    "granted_by": "33",
+    "granted_at": "2025-05-15T12:18:16.663340"
+  },
+  "285": {
+    "permission_id": "285",
+    "content_id": "48",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-12-03T18:26:45.934012"
+  },
+  "286": {
+    "permission_id": "286",
+    "content_id": "48",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "view",
+    "granted_by": "21",
+    "granted_at": "2025-07-28T15:46:42.406646"
+  },
+  "287": {
+    "permission_id": "287",
+    "content_id": "48",
+    "content_type": "page",
+    "user_id": "38",
+    "operation": "restrict_other_users",
+    "granted_by": "21",
+    "granted_at": "2025-10-12T13:15:31.295362"
+  },
+  "288": {
+    "permission_id": "288",
+    "content_id": "48",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "admin",
+    "granted_by": "21",
+    "granted_at": "2025-11-07T13:46:34.649416"
+  },
+  "289": {
+    "permission_id": "289",
+    "content_id": "62",
+    "content_type": "page",
+    "user_id": "1",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-26T13:29:55.145357"
+  },
+  "290": {
+    "permission_id": "290",
+    "content_id": "62",
+    "content_type": "page",
+    "user_id": "46",
+    "operation": "restrict_other_users",
+    "granted_by": "1",
+    "granted_at": "2024-11-17T21:03:15.393358"
+  },
+  "291": {
+    "permission_id": "291",
+    "content_id": "65",
+    "content_type": "page",
+    "user_id": "47",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-07-01T12:52:51.986513"
+  },
+  "292": {
+    "permission_id": "292",
+    "content_id": "65",
+    "content_type": "page",
+    "user_id": "17",
+    "operation": "restrict_other_users",
+    "granted_by": "47",
+    "granted_at": "2025-07-08T04:17:05.993178"
+  },
+  "293": {
+    "permission_id": "293",
+    "content_id": "65",
+    "content_type": "page",
+    "user_id": "11",
+    "operation": "delete",
+    "granted_by": "17",
+    "granted_at": "2025-07-17T19:55:46.807534"
+  },
+  "294": {
+    "permission_id": "294",
+    "content_id": "65",
+    "content_type": "page",
+    "user_id": "24",
+    "operation": "view",
+    "granted_by": "17",
+    "granted_at": "2025-07-26T08:53:13.394785"
+  },
+  "295": {
+    "permission_id": "295",
+    "content_id": "68",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-08-24T01:19:24.013005"
+  },
+  "296": {
+    "permission_id": "296",
+    "content_id": "68",
+    "content_type": "page",
+    "user_id": "24",
+    "operation": "edit",
+    "granted_by": "30",
+    "granted_at": "2024-11-16T22:52:49.799923"
+  },
+  "297": {
+    "permission_id": "297",
+    "content_id": "70",
+    "content_type": "page",
+    "user_id": "15",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-08-25T17:04:11.387092"
+  },
+  "298": {
+    "permission_id": "298",
+    "content_id": "70",
+    "content_type": "page",
+    "user_id": "48",
+    "operation": "restrict_other_users",
+    "granted_by": "15",
+    "granted_at": "2024-10-23T05:20:02.594055"
+  },
+  "299": {
+    "permission_id": "299",
+    "content_id": "79",
+    "content_type": "page",
+    "user_id": "10",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-01T12:50:15.220655"
+  },
+  "300": {
+    "permission_id": "300",
+    "content_id": "79",
+    "content_type": "page",
+    "user_id": "12",
+    "operation": "create",
+    "granted_by": "10",
+    "granted_at": "2025-11-08T07:59:26.687073"
+  },
+  "301": {
+    "permission_id": "301",
+    "content_id": "79",
+    "content_type": "page",
+    "user_id": "3",
+    "operation": "restrict_other_users",
+    "granted_by": "10",
+    "granted_at": "2025-09-30T03:40:42.663948"
+  },
+  "302": {
+    "permission_id": "302",
+    "content_id": "80",
+    "content_type": "page",
+    "user_id": "44",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-31T10:25:40.907446"
+  },
+  "303": {
+    "permission_id": "303",
+    "content_id": "80",
+    "content_type": "page",
+    "user_id": "4",
+    "operation": "restrict_other_users",
+    "granted_by": "44",
+    "granted_at": "2025-08-31T09:29:43.012603"
+  },
+  "304": {
+    "permission_id": "304",
+    "content_id": "80",
+    "content_type": "page",
+    "user_id": "12",
+    "operation": "restrict_other_users",
+    "granted_by": "44",
+    "granted_at": "2025-09-15T15:29:42.460221"
+  },
+  "305": {
+    "permission_id": "305",
+    "content_id": "92",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-04-01T21:11:40.815137"
+  },
+  "306": {
+    "permission_id": "306",
+    "content_id": "92",
+    "content_type": "page",
+    "user_id": "6",
+    "operation": "view",
+    "granted_by": "21",
+    "granted_at": "2025-03-06T15:03:29.205138"
+  },
+  "307": {
+    "permission_id": "307",
+    "content_id": "30",
+    "content_type": "page",
+    "user_id": "40",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-01-20T23:57:34.423039"
+  },
+  "308": {
+    "permission_id": "308",
+    "content_id": "30",
+    "content_type": "page",
+    "user_id": "16",
+    "operation": "edit",
+    "granted_by": "40",
+    "granted_at": "2025-01-26T06:31:54.001547"
+  },
+  "309": {
+    "permission_id": "309",
+    "content_id": "30",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "edit",
+    "granted_by": "40",
+    "granted_at": "2024-10-20T22:10:06.782331"
+  },
+  "310": {
+    "permission_id": "310",
+    "content_id": "30",
+    "content_type": "page",
+    "user_id": "24",
+    "operation": "restrict_other_users",
+    "granted_by": "40",
+    "granted_at": "2024-11-09T18:44:48.471072"
+  },
+  "311": {
+    "permission_id": "311",
+    "content_id": "30",
+    "content_type": "page",
+    "user_id": "38",
+    "operation": "view",
+    "granted_by": "40",
+    "granted_at": "2024-10-01T14:32:34.775119"
+  },
+  "312": {
+    "permission_id": "312",
+    "content_id": "35",
+    "content_type": "page",
+    "user_id": "27",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-08-27T14:27:12.973343"
+  },
+  "313": {
+    "permission_id": "313",
+    "content_id": "35",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "edit",
+    "granted_by": "27",
+    "granted_at": "2025-08-05T12:27:17.069320"
+  },
+  "314": {
+    "permission_id": "314",
+    "content_id": "51",
+    "content_type": "page",
+    "user_id": "27",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-02-16T22:23:34.598068"
+  },
+  "315": {
+    "permission_id": "315",
+    "content_id": "51",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "view",
+    "granted_by": "27",
+    "granted_at": "2024-07-08T00:53:26.002128"
+  },
+  "316": {
+    "permission_id": "316",
+    "content_id": "51",
+    "content_type": "page",
+    "user_id": "30",
+    "operation": "create",
+    "granted_by": "27",
+    "granted_at": "2025-02-19T23:12:29.061999"
+  },
+  "317": {
+    "permission_id": "317",
+    "content_id": "54",
+    "content_type": "page",
+    "user_id": "15",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-05-03T21:16:23.786970"
+  },
+  "318": {
+    "permission_id": "318",
+    "content_id": "54",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "restrict_other_users",
+    "granted_by": "15",
+    "granted_at": "2025-01-26T05:18:53.708411"
+  },
+  "319": {
+    "permission_id": "319",
+    "content_id": "54",
+    "content_type": "page",
+    "user_id": "13",
+    "operation": "view",
+    "granted_by": "15",
+    "granted_at": "2025-04-12T23:47:59.002052"
+  },
+  "320": {
+    "permission_id": "320",
+    "content_id": "94",
+    "content_type": "page",
+    "user_id": "14",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-08-30T11:34:43.216339"
+  },
+  "321": {
+    "permission_id": "321",
+    "content_id": "94",
+    "content_type": "page",
+    "user_id": "29",
+    "operation": "restrict_other_users",
+    "granted_by": "14",
+    "granted_at": "2025-11-12T04:37:00.209326"
+  },
+  "322": {
+    "permission_id": "322",
+    "content_id": "96",
+    "content_type": "page",
+    "user_id": "46",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-19T08:52:57.190098"
+  },
+  "323": {
+    "permission_id": "323",
+    "content_id": "96",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "edit",
+    "granted_by": "46",
+    "granted_at": "2025-08-14T06:58:12.159140"
+  },
+  "324": {
+    "permission_id": "324",
+    "content_id": "87",
+    "content_type": "page",
+    "user_id": "26",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-10-17T13:21:13.005365"
+  },
+  "325": {
+    "permission_id": "325",
+    "content_id": "87",
+    "content_type": "page",
+    "user_id": "33",
+    "operation": "delete",
+    "granted_by": "26",
+    "granted_at": "2024-10-14T06:36:17.055424"
+  },
+  "326": {
+    "permission_id": "326",
+    "content_id": "87",
+    "content_type": "page",
+    "user_id": "4",
+    "operation": "edit",
+    "granted_by": "26",
+    "granted_at": "2025-04-14T01:18:08.312444"
+  },
+  "327": {
+    "permission_id": "327",
+    "content_id": "44",
+    "content_type": "page",
+    "user_id": "9",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-01-21T12:39:56.115114"
+  },
+  "328": {
+    "permission_id": "328",
+    "content_id": "44",
+    "content_type": "page",
+    "user_id": "8",
+    "operation": "restrict_other_users",
+    "granted_by": "9",
+    "granted_at": "2025-11-08T17:29:21.663009"
+  },
+  "329": {
+    "permission_id": "329",
+    "content_id": "44",
+    "content_type": "page",
+    "user_id": "1",
+    "operation": "edit",
+    "granted_by": "8",
+    "granted_at": "2025-11-07T07:46:26.334585"
+  },
+  "330": {
+    "permission_id": "330",
+    "content_id": "46",
+    "content_type": "page",
+    "user_id": "38",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-04-07T23:10:04.089979"
+  },
+  "331": {
+    "permission_id": "331",
+    "content_id": "46",
+    "content_type": "page",
+    "user_id": "17",
+    "operation": "edit",
+    "granted_by": "38",
+    "granted_at": "2024-10-17T09:20:05.990422"
+  },
+  "332": {
+    "permission_id": "332",
+    "content_id": "46",
+    "content_type": "page",
+    "user_id": "5",
+    "operation": "create",
+    "granted_by": "38",
+    "granted_at": "2025-09-19T05:55:56.454522"
+  },
+  "333": {
+    "permission_id": "333",
+    "content_id": "46",
+    "content_type": "page",
+    "user_id": "2",
+    "operation": "view",
+    "granted_by": "38",
+    "granted_at": "2025-03-04T17:47:31.758807"
+  },
+  "334": {
+    "permission_id": "334",
+    "content_id": "59",
+    "content_type": "page",
+    "user_id": "2",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-01-11T17:38:02.083169"
+  },
+  "335": {
+    "permission_id": "335",
+    "content_id": "59",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "edit",
+    "granted_by": "2",
+    "granted_at": "2024-04-07T14:58:01.892954"
+  },
+  "336": {
+    "permission_id": "336",
+    "content_id": "75",
+    "content_type": "page",
+    "user_id": "10",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-04T13:51:42.947859"
+  },
+  "337": {
+    "permission_id": "337",
+    "content_id": "75",
+    "content_type": "page",
+    "user_id": "3",
+    "operation": "edit",
+    "granted_by": "10",
+    "granted_at": "2025-11-10T12:42:34.398566"
+  },
+  "338": {
+    "permission_id": "338",
+    "content_id": "64",
+    "content_type": "page",
+    "user_id": "6",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-09-26T14:32:43.364508"
+  },
+  "339": {
+    "permission_id": "339",
+    "content_id": "64",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "restrict_other_users",
+    "granted_by": "6",
+    "granted_at": "2024-10-01T09:03:31.290894"
+  },
+  "340": {
+    "permission_id": "340",
+    "content_id": "73",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-02-25T07:07:50.419455"
+  },
+  "341": {
+    "permission_id": "341",
+    "content_id": "73",
+    "content_type": "page",
+    "user_id": "35",
+    "operation": "create",
+    "granted_by": "41",
+    "granted_at": "2024-10-28T12:51:42.792314"
+  },
+  "342": {
+    "permission_id": "342",
+    "content_id": "50",
+    "content_type": "page",
+    "user_id": "33",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-06-19T17:05:49.722671"
+  },
+  "343": {
+    "permission_id": "343",
+    "content_id": "50",
+    "content_type": "page",
+    "user_id": "21",
+    "operation": "restrict_other_users",
+    "granted_by": "33",
+    "granted_at": "2024-08-21T01:38:40.063547"
+  },
+  "344": {
+    "permission_id": "344",
+    "content_id": "50",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "view",
+    "granted_by": "33",
+    "granted_at": "2024-03-15T00:14:15.514642"
+  },
+  "345": {
+    "permission_id": "345",
+    "content_id": "50",
+    "content_type": "page",
+    "user_id": "18",
+    "operation": "delete",
+    "granted_by": "33",
+    "granted_at": "2025-08-26T19:43:52.524966"
+  },
+  "346": {
+    "permission_id": "346",
+    "content_id": "50",
+    "content_type": "page",
+    "user_id": "12",
+    "operation": "restrict_other_users",
+    "granted_by": "33",
+    "granted_at": "2025-10-30T17:12:40.802217"
+  },
+  "347": {
+    "permission_id": "347",
+    "content_id": "86",
+    "content_type": "page",
+    "user_id": "37",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-09-25T04:17:31.209930"
+  },
+  "348": {
+    "permission_id": "348",
+    "content_id": "86",
+    "content_type": "page",
+    "user_id": "25",
+    "operation": "restrict_other_users",
+    "granted_by": "37",
+    "granted_at": "2025-10-27T12:42:41.541934"
+  },
+  "349": {
+    "permission_id": "349",
+    "content_id": "90",
+    "content_type": "page",
+    "user_id": "45",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2024-05-19T14:41:25.526732"
+  },
+  "350": {
+    "permission_id": "350",
+    "content_id": "90",
+    "content_type": "page",
+    "user_id": "23",
+    "operation": "restrict_other_users",
+    "granted_by": "45",
+    "granted_at": "2024-05-17T05:36:40.565978"
+  },
+  "351": {
+    "permission_id": "351",
+    "content_id": "90",
+    "content_type": "page",
+    "user_id": "38",
+    "operation": "edit",
+    "granted_by": "23",
+    "granted_at": "2025-09-24T11:50:03.530139"
+  },
+  "352": {
+    "permission_id": "352",
+    "content_id": "66",
+    "content_type": "page",
+    "user_id": "15",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-08-20T01:13:11.462985"
+  },
+  "353": {
+    "permission_id": "353",
+    "content_id": "66",
+    "content_type": "page",
+    "user_id": "39",
+    "operation": "restrict_other_users",
+    "granted_by": "15",
+    "granted_at": "2024-03-22T03:53:02.898734"
+  },
+  "354": {
+    "permission_id": "354",
+    "content_id": "66",
+    "content_type": "page",
+    "user_id": "2",
+    "operation": "restrict_other_users",
+    "granted_by": "15",
+    "granted_at": "2025-10-06T11:38:18.563832"
+  },
+  "355": {
+    "permission_id": "355",
+    "content_id": "67",
+    "content_type": "page",
+    "user_id": "4",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-11-07T17:58:56.135224"
+  },
+  "356": {
+    "permission_id": "356",
+    "content_id": "67",
+    "content_type": "page",
+    "user_id": "10",
+    "operation": "delete",
+    "granted_by": "4",
+    "granted_at": "2025-11-06T13:08:23.561587"
+  },
+  "357": {
+    "permission_id": "357",
+    "content_id": "93",
+    "content_type": "page",
+    "user_id": "28",
+    "operation": "admin",
+    "granted_by": null,
+    "granted_at": "2025-05-18T21:10:44.351596"
+  },
+  "358": {
+    "permission_id": "358",
+    "content_id": "93",
+    "content_type": "page",
+    "user_id": "41",
+    "operation": "restrict_other_users",
+    "granted_by": "28",
+    "granted_at": "2025-07-10T06:55:24.844695"
+  },
+  "359": {
+    "permission_id": "359",
+    "content_id": "93",
+    "content_type": "page",
+    "user_id": "32",
+    "operation": "delete",
+    "granted_by": "41",
+    "granted_at": "2025-06-24T21:14:51.158132"
+  },
+  "360": {
+    "permission_id": "360",
+    "content_id": "93",
+    "content_type": "page",
+    "user_id": "42",
+    "operation": "restrict_other_users",
+    "granted_by": "41",
+    "granted_at": "2025-07-21T18:48:45.567272"
+  }
+}
