@@ -152,7 +152,7 @@ class RetrievePermissions(Tool):
         #         seen_ops.add(op)
         #         perms_out.append({"operation": op, "user_id": str(filters["user_id"])})
 
-        return json.dumps({"success": True, "count": len(perms_out), "permissions": matching_permissions})
+        return json.dumps({"success": True, "count": len(matching_permissions), "permissions": matching_permissions})
 
 
     @staticmethod
