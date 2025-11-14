@@ -60,6 +60,10 @@ class AlterPage(Tool):
                 if exclude_page_id and str(page.get("page_id")) == str(exclude_page_id):
                     continue
 
+                # Skip deleted pages
+                if page.get("status") == "deleted":
+                    continue
+
                 # Check if in same space
                 if str(page.get("space_id")) != str(space_id):
                     continue
@@ -180,8 +184,8 @@ class AlterPage(Tool):
 
         # --- Validate parent_page_id if provided ---
         if parent_page_id is not None:
-            # Allow explicit null to set as root page
-            if parent_page_id != "":
+            # Allow explicit "-1" string to set as root page
+            if parent_page_id != "-1":
                 parent_id_str = str(parent_page_id)
                 if parent_id_str not in pages_dict:
                     return json.dumps(
@@ -221,6 +225,16 @@ class AlterPage(Tool):
                         )
                     current = pages_dict.get(current.get("parent_page_id"), {})
 
+        # --- Normalize parent_page_id for comparison ---
+        # Convert parent_page_id parameter to normalized form (None for "-1" or None)
+        if parent_page_id:
+            normalized_new_parent = None if parent_page_id == "-1" else str(parent_page_id)
+        else:
+            normalized_new_parent = None  # Not being changed
+
+        # Get current parent (already in normalized form)
+        current_parent = page.get("parent_page_id")
+
         # --- Validate no duplicate titles when changing space or parent ---
         # Determine the final title (after update)
         final_title = title if title is not None else page.get("title")
@@ -229,18 +243,18 @@ class AlterPage(Tool):
         final_space_id = str(space_id) if space_id is not None else page.get("space_id")
 
         # Determine the final parent (after update)
-        if parent_page_id is not None:
-            final_parent_page_id = str(parent_page_id) if parent_page_id != "" else None
+        if parent_page_id:
+            # User is explicitly setting the parent (either to a value or to root with "")
+            final_parent_page_id = normalized_new_parent
         else:
-            final_parent_page_id = page.get("parent_page_id")
+            # Not changing parent, keep current
+            final_parent_page_id = current_parent
 
         # Check if space or parent is changing
-        space_is_changing = space_id is not None and str(space_id) != page.get(
-            "space_id"
-        )
-        parent_is_changing = parent_page_id is not None and (
-            str(parent_page_id) if parent_page_id != "" else None
-        ) != page.get("parent_page_id")
+        space_is_changing = space_id is not None and str(space_id) != page.get("space_id")
+        
+        # Parent is changing if parent_page_id was provided AND it's different from current
+        parent_is_changing = (parent_page_id is not None and normalized_new_parent != current_parent)
 
         # If space or parent is changing, check for duplicate titles in the new location
         if space_is_changing or parent_is_changing:
@@ -281,9 +295,9 @@ class AlterPage(Tool):
             page["space_id"] = str(space_id)
 
         if parent_page_id is not None:
-            # Empty string means set as root page (null parent)
+            # "-1" string means set as root page
             page["parent_page_id"] = (
-                str(parent_page_id) if parent_page_id != "" else None
+                str(parent_page_id) if parent_page_id != "-1" else None
             )
 
         if body_storage is not None:
@@ -321,6 +335,7 @@ class AlterPage(Tool):
                     "- Update page titles and content"
                     "- Change page status (draft, current, archived, locked)"
                     "- Reassign child pages to a new parent when their original parent is being removed"
+                    "- Make a page root-level by providing parent_page_id as '-1'"
                 ),
                 "parameters": {
                     "type": "object",
@@ -343,7 +358,7 @@ class AlterPage(Tool):
                         },
                         "parent_page_id": {
                             "type": "string",
-                            "description": "ID of the new parent page to nest this page under. Optional. Provide empty string to make this a root-level page with no parent. Must not create circular references (page cannot be its own ancestor). Validates that no sibling under the new parent has the same title. Only provide when reorganizing page hierarchy.",
+                            "description": "ID of the new parent page to nest this page under. Optional. Provide string '-1' to make this a root-level page with no parent. Must not create circular references (page cannot be its own ancestor). Validates that no sibling under the new parent has the same title. Only provide when reorganizing page hierarchy.",
                         },
                         "body_storage": {
                             "type": "string",
