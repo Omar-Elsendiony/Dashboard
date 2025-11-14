@@ -135,12 +135,14 @@ You **must halt** the procedure and immediately initiate a escalate_to_human if 
 
 4. Verify that the “current user” has “admin” or “restrict_other_users” permission privilege using `retrieve_permissions`.
 
-5. Update permission of the “target user” using `alter_permission`.
+5. Retrieve the current permission of the “target user” using `retrieve_permissions`.
+
+6. Update permission of the “target user” using `alter_permission`.
    **Note:** You can only modify direct permissions explicitly granted on this page. Inherited permissions (cascaded from parent pages or the containing space) cannot be modified at the page level.
 
-6. If the page has descendants (`retrieve_descendants`), apply permission updates to all descendants.
+7. If the page has descendants (`retrieve_descendants`), apply permission updates to all descendants.
 
-7. Create a new page version using `generate_page_version`.
+8. Create a new page version using `generate_page_version`.
 
 #### **5. Create Whiteboard**
 
