@@ -222,7 +222,7 @@ You **must halt** the procedure and immediately initiate a escalate_to_human if 
 
    * If the entity type is “page”, retrieve the page details using `retrieve_page`.
 
-   * If the entity is external, proceed to step 3. 
+   * If the entity is "external", proceed to step 3. 
 
    * Otherwise:
 
@@ -232,7 +232,7 @@ You **must halt** the procedure and immediately initiate a escalate_to_human if 
 
 3. Retrieve the user details and verify the user exists and with “active” status using `retrieve_user`
 
-4. Verify “delete” permission using `retrieve_permissions`.
+4. Verify the user has "delete" permission for the host page using `retrieve_permissions`.
 
 5. Delete the smart link using `destroy_smart_link`.
 
