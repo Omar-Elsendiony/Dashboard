@@ -129,7 +129,10 @@ class GenerateSmartLink(Tool):
             "type": "function",
             "function": {
                 "name": "generate_smart_link",
-                "description": "create a smart link on the Wiki system.",
+                "description": (
+                                "Creates a smart link on a wiki page that points to an internal entity or an external URL. "
+                                "Required: 'title', 'url', 'host_page_id', 'target_type', 'target_id', 'created_by'.\n"
+                            ),
                 "parameters": {
                     "type": "object",
                     "properties": {

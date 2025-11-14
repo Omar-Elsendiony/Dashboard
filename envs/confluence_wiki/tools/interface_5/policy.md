@@ -54,7 +54,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
    * Create the initial page version using `make_page_version`.
 
-   * Create a permission entry for the new page using `make_permission and make the page creator the page_admin`.
+   * Create a permission entry for the new page using `make_permission` and make the page creator the `page_admin`.
 
 #### **2. Update Page**
 
@@ -82,7 +82,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 6. If updating the page title:
 
-   * Verify the title is unique within the space using `access_page`.
+   * Verify the title is unique (case-insensitive) within the space using `access_page`.
 
 7. Apply the update using `change_page`.
 
@@ -126,15 +126,17 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 1. Retrieve the target page using `access_page`.
 
-2. Retrieve the user details and verify the user exists and with “active” status using `access_user`
+2. The user who wants to change the permissions is the “current user” while the user whose permission is to be changed is the “target user”
 
-3. Verify that the user has “admin” permission using `access_permissions`.
+3. Retrieve the “current user” and the “target user” details, and verify that both users exists with “active” status using `access_user`
 
-4. Update permissions using `change_permission`.
+4. Verify that the “current user” has “admin” or “restrict_other_users” permission privilege using `access_permissions`.
 
-5. If the page has descendants (`access_descendants`), apply permission updates to all descendants.
+5. Update permission of the “target user” using `change_permission`.
 
-6. Create a new page version using `make_page_version`.
+6. If the page has descendants (`access_descendants`), apply permission updates to all descendants.
+
+7. Create a new page version using `make_page_version`.
 
 #### **5. Create Whiteboard**
 
@@ -148,7 +150,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 4. Create the whiteboard using `make_whiteboard`.
 
-5. Create a page version using `make_page_version`.
+5. If the whiteboard is created on a page level, create a page version using `make_page_version`.
 
 #### **6. Update Whiteboard**
 
@@ -164,7 +166,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 5. Update the whiteboard using `change_whiteboard`.
 
-6. Create a page version using `make_page_version`.
+6. If the whiteboard is updated on a page level, create a page version using `make_page_version`.
 
 #### **7. Remove Whiteboard**
 
@@ -182,7 +184,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 6. Delete the whiteboard using `erase_whiteboard`.
 
-7. Create a page version using `make_page_version`.
+7. If the whiteboard on a page level, create a page version using `make_page_version`.
 
 #### **8. Create Smart Link**
 
@@ -207,6 +209,8 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 4. Verify “create” permission using `access_permissions`.
 
 5. Create the smart link using `make_smart_link`.
+
+6. Create a page version using `make_page_version`.
 
 #### **9. Remove Smart Link**
 
@@ -254,7 +258,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 **Steps:**
 
-1. Retrieve the hosting space/page and confirm that the page exists using `access_space` or `access_page`.
+1. Retrieve the hosting space/page and confirm that the space or page exists using `access_space` or `access_page` respectively
 
 2. Retrieve the user details and verify the user exists and with “active” status using `access_user`
 
@@ -266,7 +270,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 **Steps:**
 
-1. Retrieve the hosting space/page and confirm that the page exists using `access_space` or `access_page`.
+1. Retrieve the hosting space/page and confirm that the space or page exists using `access_space` or `access_page` respectively
 
 2. Retrieve the user details and verify the user exists and with “active” status using `access_user`
 
@@ -282,7 +286,7 @@ You **must halt** the procedure and immediately initiate a route_to_human if you
 
 **Steps:**
 
-1. Retrieve the hosting space/page and confirm that the page exists using `access_space` or `access_page`.
+1. Retrieve the hosting space/page and confirm that the space or page exists using `access_space` or `access_page` respectively
 
 2. Retrieve the user details and verify the user exists and with “active” status using `access_user`
 
