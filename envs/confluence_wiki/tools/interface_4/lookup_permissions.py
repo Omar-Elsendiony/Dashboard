@@ -144,15 +144,16 @@ class LookupPermissions(Tool):
                 matching_permissions.extend(inherited_perms)
         
         # Dedupe by operation only and return minimal fields (operation, user_id)
-        seen_ops = set()
-        perms_out = []
-        for perm in matching_permissions:
-            op = str(perm.get("operation"))
-            if op not in seen_ops:
-                seen_ops.add(op)
-                perms_out.append({"operation": op, "user_id": str(filters["user_id"])})
+        # seen_ops = set()
+        # perms_out = []
+        # for perm in matching_permissions:
+        #     op = str(perm.get("operation"))
+        #     if op not in seen_ops:
+        #         seen_ops.add(op)
+        #         perms_out.append({"operation": op, "user_id": str(filters["user_id"])})
 
-        return json.dumps({"success": True, "count": len(perms_out), "permissions": perms_out})
+        return json.dumps({"success": True, "count": len(perms_out), "permissions": matching_permissions})
+
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
