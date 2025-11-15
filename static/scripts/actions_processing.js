@@ -156,7 +156,7 @@ function addAction() {
         <div class="form-group">
             <label class="form-label">Select API</label>
             <div class="radio-button-container" id="${actionId}_radio_container">
-                ${Array.from(APIs.keys()).map(apiKey => `
+                ${Array.from(APIs.keys()).sort().map(apiKey => `
                     <input type="radio" 
                         id="${actionId}_${apiKey}" 
                         name="${actionId}_api" 
