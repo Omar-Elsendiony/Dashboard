@@ -16,7 +16,6 @@ class NewSmartLink(Tool):
             "url",
             "host_page_id",
             "target_type",
-            "target_id",
             "created_by",
         }
         target_enum = {"page", "database", "whiteboard", "external"}
@@ -83,19 +82,41 @@ class NewSmartLink(Tool):
                 }
             )
 
-        # Target entity existence check (Skip if target_type is 'external')
-        if payload["target_type"] != "external":
-            target_dict = data.get(payload["target_type"] + "s", {})
-            if payload["target_id"] not in target_dict:
+        # Handle target_id based on target_type
+        if payload["target_type"] == "external":
+            # For external links, target_id can be null or empty
+            # target_id = payload.get("target_id", None)
+            # if target_id == "":
+            target_id = None
+        else:
+            # For internal links, target_id is required and must exist
+            if "target_id" not in payload:
                 return json.dumps(
                     {
                         "success": False,
-                        "error": f"{payload['target_type']}_id '{payload['target_id']}' does not exist in {payload['target_type']}s",
+                        "error": "Missing required field: target_id",
+                    }
+                )
+            
+            if not payload.get("target_id", "").strip():
+                return json.dumps(
+                    {
+                        "success": False,
+                        "error": "Field 'target_id' cannot be empty for non-external links",
+                    }
+                )
+            
+            target_id = payload["target_id"]
+            target_dict = data.get(payload["target_type"] + "s", {})
+            if target_id not in target_dict:
+                return json.dumps(
+                    {
+                        "success": False,
+                        "error": f"{payload['target_type']}_id '{target_id}' does not exist in {payload['target_type']}s",
                     }
                 )
 
         # Generate a new smart_link_id
-        # Note: This ID generation method is fragile but matches the provided implementation logic.
         existing_ids = [int(k) for k in smart_links_dict.keys() if k.isdigit()]
         max_id = max(existing_ids) if existing_ids else 0
         new_id = str(max_id + 1)
@@ -108,14 +129,14 @@ class NewSmartLink(Tool):
             "url": payload["url"],
             "host_page_id": payload["host_page_id"],
             "target_type": payload["target_type"],
-            "target_id": payload["target_id"],
+            "target_id": target_id,
             "created_by": payload["created_by"],
             "updated_by": payload["created_by"],
             "created_at": timestamp,
             "updated_at": timestamp,
         }
 
-        # Update original data dictionary (though often unnecessary in isolated tool invokation)
+        # Update original data dictionary
         data["smart_links"] = smart_links_dict
 
         return json.dumps(
@@ -129,10 +150,12 @@ class NewSmartLink(Tool):
             "type": "function",
             "function": {
                 "name": "new_smart_link",
-                "description":(
-                                "Creates a smart link on a wiki page that points to an internal entity or an external URL. "
-                                "Required: 'title', 'url', 'host_page_id', 'target_type', 'target_id', 'created_by'.\n"
-                            ),
+                "description": (
+                    "Creates a smart link on a wiki page that points to an internal entity or an external URL. "
+                    "Required: 'title', 'url', 'host_page_id', 'target_type', 'created_by'. "
+                    "For internal links (page, database, whiteboard), 'target_id' is also required. "
+                    "For external links, 'target_id' should not be provided.\n"
+                ),
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -155,19 +178,19 @@ class NewSmartLink(Tool):
                                 "target_type": {
                                     "type": "string",
                                     "description": (
-                                        "The type of the target linked by the smart link. Enum = ['page','database','whiteboard','external',]"
+                                        "The type of the target linked by the smart link. Enum = ['page','database','whiteboard','external']"
                                     ),
                                 },
                                 "target_id": {
                                     "type": "string",
-                                    "description": "The ID of the target linked by the smart link.",
+                                    "description": "The ID of the target linked by the smart link. Required for internal links (page, database, whiteboard), but should not be provided for external links.",
                                 },
                                 "created_by": {
                                     "type": "string",
                                     "description": "User ID of the person creating the smart link.",
                                 },
                             },
-                            "required": ["created_by"],
+                            "required": ["title", "url", "host_page_id", "target_type", "created_by"],
                         },
                     },
                     "required": ["payload"],
