@@ -473,6 +473,7 @@ async function executeAPI(actionId) {
                         if (!Array.isArray(value)){
                             throw new Error('Not an array');
                         }
+                        console.log(value)
                     } catch (e) {
                         // Invalid JSON, keep as string
                     }
@@ -883,7 +884,23 @@ function importActions() {
                                     console.warn(`Failed to stringify value for ${paramName}`, e);
                                     value = JSON.stringify(value);
                                 }
-                            } else if (typeof value === 'number' && Number.isInteger(value) && actionFloatFields.has(paramName)) {
+                            } else if (Array.isArray(value)) {
+                                try {
+                                    // Use custom JSON stringify for arrays as well
+                                    const jsonStr = JSON.stringify(value, (key, val) => {
+                                        if (typeof val === 'number' && Number.isInteger(val) && actionFloatFields.has(`${paramName}[${key}]`)) {
+                                            return `__FLOAT__${val}__FLOAT__`;
+                                        }
+                                        return val;
+                                    });
+                                    value = jsonStr.replace(/"__FLOAT__(\d+)__FLOAT__"/g, '$1.0');
+                                } catch (e) {
+                                    console.warn(`Failed to stringify array for ${paramName}`, e);
+                                    value = JSON.stringify(value);
+                                }
+                            }
+                            
+                            else if (typeof value === 'number' && Number.isInteger(value) && actionFloatFields.has(paramName)) {
                                 // For direct number fields, add .0 (as string representation)
                                 value = value + '.0';
                             }
