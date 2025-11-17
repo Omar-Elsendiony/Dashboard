@@ -47,7 +47,7 @@ class DeleteSmartLink(Tool):
                 # Update the original data dictionary
                 data["smart_links"] = smart_links_dict
 
-                return json.dumps({"success": True, "smart_links": smart_links_dict})
+                return json.dumps({"success": True, "deleted_smart_link": smart_link_id})
 
             except (KeyError, TypeError):
                 # This should not be hit if the prior 'in' check worked
