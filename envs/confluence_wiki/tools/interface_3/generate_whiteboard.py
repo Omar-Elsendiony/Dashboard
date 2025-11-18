@@ -181,7 +181,7 @@ class GenerateWhiteboard(Tool):
                 "title": title.strip(),  # Strip whitespace from title
                 "host_space_id": host_space_id,
                 "host_page_id": host_page_id,
-                "content": "",  # Always empty on creation
+                "content": "[]",  # Always empty on creation
                 "status": "current",
                 "created_by": created_by_str,
                 "created_at": current_time,
@@ -204,7 +204,7 @@ class GenerateWhiteboard(Tool):
                         "title": title.strip(),
                         "host_space_id": host_space_id,
                         "host_page_id": host_page_id,
-                        "content": "",  # Always empty on creation
+                        "content": "[]",  # Always empty on creation
                         "status": "current",
                         "created_by": created_by_str,
                         "created_at": current_time,
@@ -248,7 +248,7 @@ class GenerateWhiteboard(Tool):
                     "- Status to 'current' (active/published)"
                     "- 'created_at' and 'updated_at' timestamps"
                     "- 'created_by' and 'updated_by' to the creator's user ID"
-                    "- Content to empty string (whiteboards start blank)"
+                    "- Content set to empty upon creation (whiteboards start blank)"
                 ),
                 "parameters": {
                     "type": "object",
