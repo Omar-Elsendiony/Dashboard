@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, Set
 from tau_bench.envs.tool import Tool
 
 
@@ -53,7 +53,7 @@ class FetchEntity(Tool):
         def finish(
             collection: Dict[str, Any],
             id_field: str,
-            allowed: set[str],
+            allowed: Set[str],
             validate_cb=None,
         ):
             # entity_id existence check, if provided
@@ -283,7 +283,8 @@ class FetchEntity(Tool):
                             "description": "One of: label, attachment, database, smart_link, whiteboard",
                         },
                         "entity_id": {
-                            "type": ["string", "null"],
+                            "type": "string",
+                            "nullable": True,
                             "description": "Optional primary identifier for the entity type",
                         },
                         "filters": {
